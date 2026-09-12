@@ -1,26 +1,42 @@
+import { Children, isValidElement } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { Components } from "react-markdown";
 
+// react-markdown wraps `![alt](src)` in a <p>, but this renders a <figure>
+// with a <figcaption> — and HTML forbids block elements like <figure>
+// inside <p>, which causes a hydration mismatch. Named so the `p` override
+// below can detect it by reference and unwrap the <p> in that case.
+function MarkdownImage({ src, alt }: { src?: string | Blob; alt?: string }) {
+  if (typeof src !== "string") return null;
+  return (
+    <figure className="my-8">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src={src}
+        alt={alt ?? ""}
+        loading="lazy"
+        className="w-full rounded-lg border border-zinc-200"
+      />
+      {alt && (
+        <figcaption className="mt-2 text-center text-sm text-zinc-500">
+          {alt}
+        </figcaption>
+      )}
+    </figure>
+  );
+}
+
 const components: Components = {
-  img: ({ src, alt }) => {
-    if (typeof src !== "string") return null;
-    return (
-      <figure className="my-8">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src={src}
-          alt={alt ?? ""}
-          loading="lazy"
-          className="w-full rounded-lg border border-zinc-200"
-        />
-        {alt && (
-          <figcaption className="mt-2 text-center text-sm text-zinc-500">
-            {alt}
-          </figcaption>
-        )}
-      </figure>
+  img: MarkdownImage,
+  p: ({ children }) => {
+    const containsBlockImage = Children.toArray(children).some(
+      (child) => isValidElement(child) && child.type === MarkdownImage
     );
+    // Render without the <p> wrapper so the <figure>/<figcaption> below
+    // isn't nested inside one — an image-only line becomes its own block.
+    if (containsBlockImage) return <>{children}</>;
+    return <p>{children}</p>;
   },
   blockquote: ({ children }) => (
     <blockquote className="my-6 rounded-r-md border-l-4 border-blue-500 bg-blue-50 px-4 py-3 text-blue-900 not-italic [&_p]:m-0">
