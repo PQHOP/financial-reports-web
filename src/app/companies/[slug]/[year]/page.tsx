@@ -1,9 +1,35 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { periodLabels, periodOrder } from "@/lib/period";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; year: string }>;
+}): Promise<Metadata> {
+  const { slug, year } = await params;
+
+  const company = await prisma.company.findUnique({ where: { slug } });
+  if (!company) return {};
+
+  const title = `${year} Reports — ${company.name}`;
+  const description = `Financial report analysis for ${company.name}${
+    company.ticker ? ` (${company.ticker})` : ""
+  } covering fiscal year ${year}.`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `/companies/${company.slug}/${year}`,
+    },
+    openGraph: { title, description },
+  };
+}
 
 export default async function CompanyYearPage({
   params,
@@ -55,7 +81,7 @@ export default async function CompanyYearPage({
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
                     src={report.coverImageUrl}
-                    alt=""
+                    alt={report.title}
                     className="h-20 w-32 shrink-0 rounded-md object-cover"
                   />
                 )}

@@ -1,0 +1,4026 @@
+[
+  {
+    "slug": "mmm",
+    "name": "3M",
+    "ticker": "MMM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "aos",
+    "name": "A. O. Smith",
+    "ticker": "AOS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "abt",
+    "name": "Abbott Laboratories",
+    "ticker": "ABT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "abbv",
+    "name": "AbbVie",
+    "ticker": "ABBV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "acn",
+    "name": "Accenture",
+    "ticker": "ACN",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "adbe",
+    "name": "Adobe Inc.",
+    "ticker": "ADBE",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "amd",
+    "name": "Advanced Micro Devices",
+    "ticker": "AMD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "aes",
+    "name": "AES Corporation",
+    "ticker": "AES",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "afl",
+    "name": "Aflac",
+    "ticker": "AFL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "a",
+    "name": "Agilent Technologies",
+    "ticker": "A",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "apd",
+    "name": "Air Products",
+    "ticker": "APD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "abnb",
+    "name": "Airbnb",
+    "ticker": "ABNB",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "akam",
+    "name": "Akamai Technologies",
+    "ticker": "AKAM",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "alb",
+    "name": "Albemarle Corporation",
+    "ticker": "ALB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "are",
+    "name": "Alexandria Real Estate Equities",
+    "ticker": "ARE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "algn",
+    "name": "Align Technology",
+    "ticker": "ALGN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "alle",
+    "name": "Allegion",
+    "ticker": "ALLE",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "lnt",
+    "name": "Alliant Energy",
+    "ticker": "LNT",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "all",
+    "name": "Allstate",
+    "ticker": "ALL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "googl",
+    "name": "Alphabet Inc. (Class A)",
+    "ticker": "GOOGL",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "goog",
+    "name": "Alphabet Inc. (Class C)",
+    "ticker": "GOOG",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "mo",
+    "name": "Altria",
+    "ticker": "MO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "amzn",
+    "name": "Amazon",
+    "ticker": "AMZN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "amcr",
+    "name": "Amcor",
+    "ticker": "AMCR",
+    "country": "United Kingdom",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "aee",
+    "name": "Ameren",
+    "ticker": "AEE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "aep",
+    "name": "American Electric Power",
+    "ticker": "AEP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "axp",
+    "name": "American Express",
+    "ticker": "AXP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "aig",
+    "name": "American International Group",
+    "ticker": "AIG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "amt",
+    "name": "American Tower",
+    "ticker": "AMT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "awk",
+    "name": "American Water Works",
+    "ticker": "AWK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "amp",
+    "name": "Ameriprise Financial",
+    "ticker": "AMP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ame",
+    "name": "Ametek",
+    "ticker": "AME",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "amgn",
+    "name": "Amgen",
+    "ticker": "AMGN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "aph",
+    "name": "Amphenol",
+    "ticker": "APH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "adi",
+    "name": "Analog Devices",
+    "ticker": "ADI",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "aon",
+    "name": "Aon plc",
+    "ticker": "AON",
+    "country": "United Kingdom",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "apa",
+    "name": "APA Corporation",
+    "ticker": "APA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Energy"
+  },
+  {
+    "slug": "apo",
+    "name": "Apollo Global Management",
+    "ticker": "APO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "aapl",
+    "name": "Apple Inc.",
+    "ticker": "AAPL",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "amat",
+    "name": "Applied Materials",
+    "ticker": "AMAT",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "app",
+    "name": "AppLovin",
+    "ticker": "APP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "aptv",
+    "name": "Aptiv",
+    "ticker": "APTV",
+    "country": "Switzerland",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "acgl",
+    "name": "Arch Capital Group",
+    "ticker": "ACGL",
+    "country": "Bermuda",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "adm",
+    "name": "Archer Daniels Midland",
+    "ticker": "ADM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "ares",
+    "name": "Ares Management",
+    "ticker": "ARES",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "anet",
+    "name": "Arista Networks",
+    "ticker": "ANET",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "ajg",
+    "name": "Arthur J. Gallagher & Co.",
+    "ticker": "AJG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "aiz",
+    "name": "Assurant",
+    "ticker": "AIZ",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "t",
+    "name": "AT&T",
+    "ticker": "T",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "ato",
+    "name": "Atmos Energy",
+    "ticker": "ATO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "adsk",
+    "name": "Autodesk",
+    "ticker": "ADSK",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "adp",
+    "name": "Automatic Data Processing",
+    "ticker": "ADP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "azo",
+    "name": "AutoZone",
+    "ticker": "AZO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "avy",
+    "name": "Avery Dennison",
+    "ticker": "AVY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "axon",
+    "name": "Axon Enterprise",
+    "ticker": "AXON",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "bkr",
+    "name": "Baker Hughes",
+    "ticker": "BKR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Energy"
+  },
+  {
+    "slug": "ball",
+    "name": "Ball Corporation",
+    "ticker": "BALL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "bac",
+    "name": "Bank of America",
+    "ticker": "BAC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "bax",
+    "name": "Baxter International",
+    "ticker": "BAX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "bdx",
+    "name": "Becton Dickinson",
+    "ticker": "BDX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "brk-b",
+    "name": "Berkshire Hathaway",
+    "ticker": "BRK.B",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "bby",
+    "name": "Best Buy",
+    "ticker": "BBY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "tech",
+    "name": "Bio-Techne",
+    "ticker": "TECH",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "biib",
+    "name": "Biogen",
+    "ticker": "BIIB",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "blk",
+    "name": "BlackRock",
+    "ticker": "BLK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "bx",
+    "name": "Blackstone Inc.",
+    "ticker": "BX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "xyz",
+    "name": "Block, Inc.",
+    "ticker": "XYZ",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "bny",
+    "name": "BNY Mellon",
+    "ticker": "BNY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ba",
+    "name": "Boeing",
+    "ticker": "BA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "bkng",
+    "name": "Booking Holdings",
+    "ticker": "BKNG",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "bsx",
+    "name": "Boston Scientific",
+    "ticker": "BSX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "bmy",
+    "name": "Bristol Myers Squibb",
+    "ticker": "BMY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "avgo",
+    "name": "Broadcom",
+    "ticker": "AVGO",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "br",
+    "name": "Broadridge Financial Solutions",
+    "ticker": "BR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "bro",
+    "name": "Brown & Brown",
+    "ticker": "BRO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "bf-b",
+    "name": "Brown–Forman",
+    "ticker": "BF.B",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "bldr",
+    "name": "Builders FirstSource",
+    "ticker": "BLDR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "bg",
+    "name": "Bunge Global",
+    "ticker": "BG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "bxp",
+    "name": "BXP, Inc.",
+    "ticker": "BXP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "chrw",
+    "name": "C.H. Robinson",
+    "ticker": "CHRW",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "cdns",
+    "name": "Cadence Design Systems",
+    "ticker": "CDNS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "cpt",
+    "name": "Camden Property Trust",
+    "ticker": "CPT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "cof",
+    "name": "Capital One",
+    "ticker": "COF",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "cah",
+    "name": "Cardinal Health",
+    "ticker": "CAH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "ccl",
+    "name": "Carnival Corporation",
+    "ticker": "CCL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "carr",
+    "name": "Carrier Global",
+    "ticker": "CARR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "cvna",
+    "name": "Carvana",
+    "ticker": "CVNA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "casy",
+    "name": "Casey's",
+    "ticker": "CASY",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "cat",
+    "name": "Caterpillar Inc.",
+    "ticker": "CAT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "cboe",
+    "name": "Cboe Global Markets",
+    "ticker": "CBOE",
+    "country": "United States",
+    "exchange": "CBOE BZX",
+    "industry": "Financials"
+  },
+  {
+    "slug": "cbre",
+    "name": "CBRE Group",
+    "ticker": "CBRE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "cdw",
+    "name": "CDW Corporation",
+    "ticker": "CDW",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "cor",
+    "name": "Cencora",
+    "ticker": "COR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "cnc",
+    "name": "Centene Corporation",
+    "ticker": "CNC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "cnp",
+    "name": "CenterPoint Energy",
+    "ticker": "CNP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "cf",
+    "name": "CF Industries",
+    "ticker": "CF",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "crl",
+    "name": "Charles River Laboratories",
+    "ticker": "CRL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "schw",
+    "name": "Charles Schwab Corporation",
+    "ticker": "SCHW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "chtr",
+    "name": "Charter Communications",
+    "ticker": "CHTR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "cvx",
+    "name": "Chevron Corporation",
+    "ticker": "CVX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "cmg",
+    "name": "Chipotle Mexican Grill",
+    "ticker": "CMG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "cb",
+    "name": "Chubb Limited",
+    "ticker": "CB",
+    "country": "Switzerland",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "chd",
+    "name": "Church & Dwight",
+    "ticker": "CHD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "cien",
+    "name": "Ciena",
+    "ticker": "CIEN",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "ci",
+    "name": "Cigna",
+    "ticker": "CI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "cinf",
+    "name": "Cincinnati Financial",
+    "ticker": "CINF",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ctas",
+    "name": "Cintas",
+    "ticker": "CTAS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "csco",
+    "name": "Cisco",
+    "ticker": "CSCO",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "c",
+    "name": "Citigroup",
+    "ticker": "C",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "cfg",
+    "name": "Citizens Financial Group",
+    "ticker": "CFG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "clx",
+    "name": "Clorox",
+    "ticker": "CLX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "cme",
+    "name": "CME Group",
+    "ticker": "CME",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "cms",
+    "name": "CMS Energy",
+    "ticker": "CMS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "ko",
+    "name": "Coca-Cola Company (The)",
+    "ticker": "KO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "ctsh",
+    "name": "Cognizant",
+    "ticker": "CTSH",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "cohr",
+    "name": "Coherent Corp.",
+    "ticker": "COHR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "coin",
+    "name": "Coinbase",
+    "ticker": "COIN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "cl",
+    "name": "Colgate-Palmolive",
+    "ticker": "CL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "cmcsa",
+    "name": "Comcast",
+    "ticker": "CMCSA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "fix",
+    "name": "Comfort Systems USA",
+    "ticker": "FIX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "cop",
+    "name": "ConocoPhillips",
+    "ticker": "COP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "ed",
+    "name": "Consolidated Edison",
+    "ticker": "ED",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "stz",
+    "name": "Constellation Brands",
+    "ticker": "STZ",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "ceg",
+    "name": "Constellation Energy",
+    "ticker": "CEG",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "coo",
+    "name": "Cooper Companies (The)",
+    "ticker": "COO",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "cprt",
+    "name": "Copart",
+    "ticker": "CPRT",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "glw",
+    "name": "Corning Inc.",
+    "ticker": "GLW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "cpay",
+    "name": "Corpay",
+    "ticker": "CPAY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ctva",
+    "name": "Corteva",
+    "ticker": "CTVA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "csgp",
+    "name": "CoStar Group",
+    "ticker": "CSGP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "cost",
+    "name": "Costco",
+    "ticker": "COST",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "crh",
+    "name": "CRH plc",
+    "ticker": "CRH",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "crwd",
+    "name": "CrowdStrike",
+    "ticker": "CRWD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "cci",
+    "name": "Crown Castle",
+    "ticker": "CCI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "csx",
+    "name": "CSX Corporation",
+    "ticker": "CSX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "cmi",
+    "name": "Cummins",
+    "ticker": "CMI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "cvs",
+    "name": "CVS Health",
+    "ticker": "CVS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "dhr",
+    "name": "Danaher Corporation",
+    "ticker": "DHR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "dri",
+    "name": "Darden Restaurants",
+    "ticker": "DRI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "ddog",
+    "name": "Datadog",
+    "ticker": "DDOG",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "dva",
+    "name": "DaVita",
+    "ticker": "DVA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "deck",
+    "name": "Deckers Brands",
+    "ticker": "DECK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "de",
+    "name": "Deere & Company",
+    "ticker": "DE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "dell",
+    "name": "Dell Technologies",
+    "ticker": "DELL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "dal",
+    "name": "Delta Air Lines",
+    "ticker": "DAL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "dvn",
+    "name": "Devon Energy",
+    "ticker": "DVN",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "dxcm",
+    "name": "Dexcom",
+    "ticker": "DXCM",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "fang",
+    "name": "Diamondback Energy",
+    "ticker": "FANG",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Energy"
+  },
+  {
+    "slug": "dlr",
+    "name": "Digital Realty",
+    "ticker": "DLR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "dg",
+    "name": "Dollar General",
+    "ticker": "DG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "dltr",
+    "name": "Dollar Tree",
+    "ticker": "DLTR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "d",
+    "name": "Dominion Energy",
+    "ticker": "D",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "dpz",
+    "name": "Domino's",
+    "ticker": "DPZ",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "dash",
+    "name": "DoorDash",
+    "ticker": "DASH",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "dov",
+    "name": "Dover Corporation",
+    "ticker": "DOV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "dow",
+    "name": "Dow Inc.",
+    "ticker": "DOW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "dhi",
+    "name": "D. R. Horton",
+    "ticker": "DHI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "dte",
+    "name": "DTE Energy",
+    "ticker": "DTE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "duk",
+    "name": "Duke Energy",
+    "ticker": "DUK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "dd",
+    "name": "DuPont",
+    "ticker": "DD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "etn",
+    "name": "Eaton Corporation",
+    "ticker": "ETN",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "ebay",
+    "name": "eBay Inc.",
+    "ticker": "EBAY",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "echo",
+    "name": "EchoStar",
+    "ticker": "ECHO",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "ecl",
+    "name": "Ecolab",
+    "ticker": "ECL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "eix",
+    "name": "Edison International",
+    "ticker": "EIX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "ew",
+    "name": "Edwards Lifesciences",
+    "ticker": "EW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "elv",
+    "name": "Elevance Health",
+    "ticker": "ELV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "eme",
+    "name": "Emcor",
+    "ticker": "EME",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "emr",
+    "name": "Emerson Electric",
+    "ticker": "EMR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "etr",
+    "name": "Entergy",
+    "ticker": "ETR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "eog",
+    "name": "EOG Resources",
+    "ticker": "EOG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "eqt",
+    "name": "EQT Corporation",
+    "ticker": "EQT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "efx",
+    "name": "Equifax",
+    "ticker": "EFX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "eqix",
+    "name": "Equinix",
+    "ticker": "EQIX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "erie",
+    "name": "Erie Indemnity",
+    "ticker": "ERIE",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ess",
+    "name": "Essex Property Trust",
+    "ticker": "ESS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "el",
+    "name": "Estée Lauder Companies (The)",
+    "ticker": "EL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "eg",
+    "name": "Everest Group",
+    "ticker": "EG",
+    "country": "Bermuda",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "evrg",
+    "name": "Evergy",
+    "ticker": "EVRG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "es",
+    "name": "Eversource Energy",
+    "ticker": "ES",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "exc",
+    "name": "Exelon",
+    "ticker": "EXC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "exe",
+    "name": "Expand Energy",
+    "ticker": "EXE",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Energy"
+  },
+  {
+    "slug": "expe",
+    "name": "Expedia Group",
+    "ticker": "EXPE",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "expd",
+    "name": "Expeditors International",
+    "ticker": "EXPD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "exr",
+    "name": "Extra Space Storage",
+    "ticker": "EXR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "xom",
+    "name": "ExxonMobil",
+    "ticker": "XOM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "ffiv",
+    "name": "F5, Inc.",
+    "ticker": "FFIV",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "fds",
+    "name": "FactSet",
+    "ticker": "FDS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "fico",
+    "name": "Fair Isaac",
+    "ticker": "FICO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "fast",
+    "name": "Fastenal",
+    "ticker": "FAST",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "frt",
+    "name": "Federal Realty Investment Trust",
+    "ticker": "FRT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "fdx",
+    "name": "FedEx",
+    "ticker": "FDX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "fdxf",
+    "name": "FedEx Freight",
+    "ticker": "FDXF",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "ferg",
+    "name": "Ferguson Enterprises",
+    "ticker": "FERG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "fis",
+    "name": "Fidelity National Information Services",
+    "ticker": "FIS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "fitb",
+    "name": "Fifth Third Bancorp",
+    "ticker": "FITB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "fslr",
+    "name": "First Solar",
+    "ticker": "FSLR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "fe",
+    "name": "FirstEnergy",
+    "ticker": "FE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "fisv",
+    "name": "Fiserv",
+    "ticker": "FISV",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "flex",
+    "name": "Flex Ltd.",
+    "ticker": "FLEX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "f",
+    "name": "Ford Motor Company",
+    "ticker": "F",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "ftnt",
+    "name": "Fortinet",
+    "ticker": "FTNT",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "ftv",
+    "name": "Fortive",
+    "ticker": "FTV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "foxa",
+    "name": "Fox Corporation (Class A)",
+    "ticker": "FOXA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "fox",
+    "name": "Fox Corporation (Class B)",
+    "ticker": "FOX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "ben",
+    "name": "Franklin Resources",
+    "ticker": "BEN",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "fcx",
+    "name": "Freeport-McMoRan",
+    "ticker": "FCX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "grmn",
+    "name": "Garmin",
+    "ticker": "GRMN",
+    "country": "Switzerland",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "it",
+    "name": "Gartner",
+    "ticker": "IT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "ge",
+    "name": "GE Aerospace",
+    "ticker": "GE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "gehc",
+    "name": "GE HealthCare",
+    "ticker": "GEHC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "gev",
+    "name": "GE Vernova",
+    "ticker": "GEV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "gen",
+    "name": "Gen Digital",
+    "ticker": "GEN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "gnrc",
+    "name": "Generac",
+    "ticker": "GNRC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "gd",
+    "name": "General Dynamics",
+    "ticker": "GD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "gis",
+    "name": "General Mills",
+    "ticker": "GIS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "gm",
+    "name": "General Motors",
+    "ticker": "GM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "gpc",
+    "name": "Genuine Parts Company",
+    "ticker": "GPC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "gild",
+    "name": "Gilead Sciences",
+    "ticker": "GILD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "gpn",
+    "name": "Global Payments",
+    "ticker": "GPN",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "gl",
+    "name": "Globe Life",
+    "ticker": "GL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "gddy",
+    "name": "GoDaddy",
+    "ticker": "GDDY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "gs",
+    "name": "Goldman Sachs",
+    "ticker": "GS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "hal",
+    "name": "Halliburton",
+    "ticker": "HAL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "hig",
+    "name": "Hartford (The)",
+    "ticker": "HIG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "has",
+    "name": "Hasbro",
+    "ticker": "HAS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "hca",
+    "name": "HCA Healthcare",
+    "ticker": "HCA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "doc",
+    "name": "Healthpeak Properties",
+    "ticker": "DOC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "hsic",
+    "name": "Henry Schein",
+    "ticker": "HSIC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "hsy",
+    "name": "Hershey Company (The)",
+    "ticker": "HSY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "hpe",
+    "name": "Hewlett Packard Enterprise",
+    "ticker": "HPE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "hlt",
+    "name": "Hilton Worldwide",
+    "ticker": "HLT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "hd",
+    "name": "Home Depot (The)",
+    "ticker": "HD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "hona",
+    "name": "Honeywell Aerospace",
+    "ticker": "HONA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "hon",
+    "name": "Honeywell Technologies",
+    "ticker": "HON",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "hrl",
+    "name": "Hormel Foods",
+    "ticker": "HRL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "hst",
+    "name": "Host Hotels & Resorts",
+    "ticker": "HST",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "hwm",
+    "name": "Howmet Aerospace",
+    "ticker": "HWM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "hpq",
+    "name": "HP Inc.",
+    "ticker": "HPQ",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "hubb",
+    "name": "Hubbell Incorporated",
+    "ticker": "HUBB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "hum",
+    "name": "Humana",
+    "ticker": "HUM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "hban",
+    "name": "Huntington Bancshares",
+    "ticker": "HBAN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "hii",
+    "name": "Huntington Ingalls Industries",
+    "ticker": "HII",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "ibm",
+    "name": "IBM",
+    "ticker": "IBM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "iex",
+    "name": "IDEX Corporation",
+    "ticker": "IEX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "idxx",
+    "name": "Idexx Laboratories",
+    "ticker": "IDXX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "itw",
+    "name": "Illinois Tool Works",
+    "ticker": "ITW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "incy",
+    "name": "Incyte",
+    "ticker": "INCY",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "ir",
+    "name": "Ingersoll Rand",
+    "ticker": "IR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "podd",
+    "name": "Insulet Corporation",
+    "ticker": "PODD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "intc",
+    "name": "Intel",
+    "ticker": "INTC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "ibkr",
+    "name": "Interactive Brokers",
+    "ticker": "IBKR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ice",
+    "name": "Intercontinental Exchange",
+    "ticker": "ICE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "iff",
+    "name": "International Flavors & Fragrances",
+    "ticker": "IFF",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "ip",
+    "name": "International Paper",
+    "ticker": "IP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "intu",
+    "name": "Intuit",
+    "ticker": "INTU",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "isrg",
+    "name": "Intuitive Surgical",
+    "ticker": "ISRG",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "ivz",
+    "name": "Invesco",
+    "ticker": "IVZ",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "invh",
+    "name": "Invitation Homes",
+    "ticker": "INVH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "iqv",
+    "name": "IQVIA",
+    "ticker": "IQV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "irm",
+    "name": "Iron Mountain",
+    "ticker": "IRM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "jbht",
+    "name": "J.B. Hunt",
+    "ticker": "JBHT",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "jbl",
+    "name": "Jabil",
+    "ticker": "JBL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "jkhy",
+    "name": "Jack Henry & Associates",
+    "ticker": "JKHY",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "j",
+    "name": "Jacobs Solutions",
+    "ticker": "J",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "jnj",
+    "name": "Johnson & Johnson",
+    "ticker": "JNJ",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "jci",
+    "name": "Johnson Controls",
+    "ticker": "JCI",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "jpm",
+    "name": "JPMorgan Chase",
+    "ticker": "JPM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "kvue",
+    "name": "Kenvue",
+    "ticker": "KVUE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "kdp",
+    "name": "Keurig Dr Pepper",
+    "ticker": "KDP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "key",
+    "name": "KeyCorp",
+    "ticker": "KEY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "keys",
+    "name": "Keysight Technologies",
+    "ticker": "KEYS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "kmb",
+    "name": "Kimberly-Clark",
+    "ticker": "KMB",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "kim",
+    "name": "Kimco Realty",
+    "ticker": "KIM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "kmi",
+    "name": "Kinder Morgan",
+    "ticker": "KMI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "kkr",
+    "name": "KKR & Co.",
+    "ticker": "KKR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "klac",
+    "name": "KLA Corporation",
+    "ticker": "KLAC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "khc",
+    "name": "Kraft Heinz",
+    "ticker": "KHC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "kr",
+    "name": "Kroger",
+    "ticker": "KR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "lhx",
+    "name": "L3Harris",
+    "ticker": "LHX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "lh",
+    "name": "Labcorp",
+    "ticker": "LH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "lrcx",
+    "name": "Lam Research",
+    "ticker": "LRCX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "lvs",
+    "name": "Las Vegas Sands",
+    "ticker": "LVS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "ldos",
+    "name": "Leidos",
+    "ticker": "LDOS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "len",
+    "name": "Lennar",
+    "ticker": "LEN",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "lii",
+    "name": "Lennox International",
+    "ticker": "LII",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "lly",
+    "name": "Lilly (Eli)",
+    "ticker": "LLY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "lin",
+    "name": "Linde plc",
+    "ticker": "LIN",
+    "country": "United Kingdom",
+    "exchange": "NASDAQ",
+    "industry": "Materials"
+  },
+  {
+    "slug": "lyv",
+    "name": "Live Nation Entertainment",
+    "ticker": "LYV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "lmt",
+    "name": "Lockheed Martin",
+    "ticker": "LMT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "l",
+    "name": "Loews Corporation",
+    "ticker": "L",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "low",
+    "name": "Lowe's",
+    "ticker": "LOW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "lulu",
+    "name": "Lululemon Athletica",
+    "ticker": "LULU",
+    "country": "Canada",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "lite",
+    "name": "Lumentum",
+    "ticker": "LITE",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "lyb",
+    "name": "LyondellBasell",
+    "ticker": "LYB",
+    "country": "Netherlands",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "mtb",
+    "name": "M&T Bank",
+    "ticker": "MTB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "mpc",
+    "name": "Marathon Petroleum",
+    "ticker": "MPC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "mar",
+    "name": "Marriott International",
+    "ticker": "MAR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "mrsh",
+    "name": "Marsh McLennan",
+    "ticker": "MRSH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "mlm",
+    "name": "Martin Marietta Materials",
+    "ticker": "MLM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "mrvl",
+    "name": "Marvell Technology",
+    "ticker": "MRVL",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "mas",
+    "name": "Masco",
+    "ticker": "MAS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "ma",
+    "name": "Mastercard",
+    "ticker": "MA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "mkc",
+    "name": "McCormick & Company",
+    "ticker": "MKC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "mcd",
+    "name": "McDonald's",
+    "ticker": "MCD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "mck",
+    "name": "McKesson Corporation",
+    "ticker": "MCK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "mdt",
+    "name": "Medtronic",
+    "ticker": "MDT",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "mrk",
+    "name": "Merck & Co.",
+    "ticker": "MRK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "meta",
+    "name": "Meta Platforms",
+    "ticker": "META",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "met",
+    "name": "MetLife",
+    "ticker": "MET",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "mtd",
+    "name": "Mettler Toledo",
+    "ticker": "MTD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "mgm",
+    "name": "MGM Resorts",
+    "ticker": "MGM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "mchp",
+    "name": "Microchip Technology",
+    "ticker": "MCHP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "mu",
+    "name": "Micron Technology",
+    "ticker": "MU",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "msft",
+    "name": "Microsoft",
+    "ticker": "MSFT",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "maa",
+    "name": "Mid-America Apartment Communities",
+    "ticker": "MAA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "mrna",
+    "name": "Moderna",
+    "ticker": "MRNA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "tap",
+    "name": "Molson Coors Beverage Company",
+    "ticker": "TAP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "mdlz",
+    "name": "Mondelez International",
+    "ticker": "MDLZ",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "mpwr",
+    "name": "Monolithic Power Systems",
+    "ticker": "MPWR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "mnst",
+    "name": "Monster Beverage",
+    "ticker": "MNST",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "mco",
+    "name": "Moody's Corporation",
+    "ticker": "MCO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ms",
+    "name": "Morgan Stanley",
+    "ticker": "MS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "mos",
+    "name": "Mosaic Company (The)",
+    "ticker": "MOS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "msi",
+    "name": "Motorola Solutions",
+    "ticker": "MSI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "msci",
+    "name": "MSCI",
+    "ticker": "MSCI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ndaq",
+    "name": "Nasdaq, Inc.",
+    "ticker": "NDAQ",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ntap",
+    "name": "NetApp",
+    "ticker": "NTAP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "nflx",
+    "name": "Netflix",
+    "ticker": "NFLX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "nem",
+    "name": "Newmont",
+    "ticker": "NEM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "nwsa",
+    "name": "News Corp (Class A)",
+    "ticker": "NWSA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "nws",
+    "name": "News Corp (Class B)",
+    "ticker": "NWS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "nee",
+    "name": "NextEra Energy",
+    "ticker": "NEE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "nke",
+    "name": "Nike, Inc.",
+    "ticker": "NKE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "ni",
+    "name": "NiSource",
+    "ticker": "NI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "ndsn",
+    "name": "Nordson Corporation",
+    "ticker": "NDSN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "nsc",
+    "name": "Norfolk Southern",
+    "ticker": "NSC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "ntrs",
+    "name": "Northern Trust",
+    "ticker": "NTRS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "noc",
+    "name": "Northrop Grumman",
+    "ticker": "NOC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "nclh",
+    "name": "Norwegian Cruise Line Holdings",
+    "ticker": "NCLH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "nrg",
+    "name": "NRG Energy",
+    "ticker": "NRG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "nue",
+    "name": "Nucor",
+    "ticker": "NUE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "nvda",
+    "name": "Nvidia",
+    "ticker": "NVDA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "nvr",
+    "name": "NVR, Inc.",
+    "ticker": "NVR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "nxpi",
+    "name": "NXP Semiconductors",
+    "ticker": "NXPI",
+    "country": "Netherlands",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "orly",
+    "name": "O'Reilly Automotive",
+    "ticker": "ORLY",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "oxy",
+    "name": "Occidental Petroleum",
+    "ticker": "OXY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "odfl",
+    "name": "Old Dominion",
+    "ticker": "ODFL",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "omc",
+    "name": "Omnicom Group",
+    "ticker": "OMC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "on",
+    "name": "ON Semiconductor",
+    "ticker": "ON",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "oke",
+    "name": "Oneok",
+    "ticker": "OKE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "orcl",
+    "name": "Oracle Corporation",
+    "ticker": "ORCL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "otis",
+    "name": "Otis Worldwide",
+    "ticker": "OTIS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "pcar",
+    "name": "Paccar",
+    "ticker": "PCAR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "pkg",
+    "name": "Packaging Corporation of America",
+    "ticker": "PKG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "pltr",
+    "name": "Palantir Technologies",
+    "ticker": "PLTR",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "panw",
+    "name": "Palo Alto Networks",
+    "ticker": "PANW",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "psky",
+    "name": "Paramount Skydance Corporation",
+    "ticker": "PSKY",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "ph",
+    "name": "Parker Hannifin",
+    "ticker": "PH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "payx",
+    "name": "Paychex",
+    "ticker": "PAYX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "pypl",
+    "name": "PayPal",
+    "ticker": "PYPL",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "pnr",
+    "name": "Pentair",
+    "ticker": "PNR",
+    "country": "United Kingdom",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "pep",
+    "name": "PepsiCo",
+    "ticker": "PEP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "pfe",
+    "name": "Pfizer",
+    "ticker": "PFE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "pcg",
+    "name": "PG&E Corporation",
+    "ticker": "PCG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "pm",
+    "name": "Philip Morris International",
+    "ticker": "PM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "psx",
+    "name": "Phillips 66",
+    "ticker": "PSX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "pnw",
+    "name": "Pinnacle West Capital",
+    "ticker": "PNW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "pnc",
+    "name": "PNC Financial Services",
+    "ticker": "PNC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ppg",
+    "name": "PPG Industries",
+    "ticker": "PPG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "ppl",
+    "name": "PPL Corporation",
+    "ticker": "PPL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "pfg",
+    "name": "Principal Financial Group",
+    "ticker": "PFG",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "pg",
+    "name": "Procter & Gamble",
+    "ticker": "PG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "pgr",
+    "name": "Progressive Corporation",
+    "ticker": "PGR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "pld",
+    "name": "Prologis",
+    "ticker": "PLD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "pru",
+    "name": "Prudential Financial",
+    "ticker": "PRU",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "peg",
+    "name": "Public Service Enterprise Group",
+    "ticker": "PEG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "ptc",
+    "name": "PTC Inc.",
+    "ticker": "PTC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "psa",
+    "name": "Public Storage",
+    "ticker": "PSA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "phm",
+    "name": "PulteGroup",
+    "ticker": "PHM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "pwr",
+    "name": "Quanta Services",
+    "ticker": "PWR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "qcom",
+    "name": "Qualcomm",
+    "ticker": "QCOM",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "dgx",
+    "name": "Quest Diagnostics",
+    "ticker": "DGX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "q",
+    "name": "Qnity Electronics",
+    "ticker": "Q",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "rl",
+    "name": "Ralph Lauren Corporation",
+    "ticker": "RL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "rjf",
+    "name": "Raymond James Financial",
+    "ticker": "RJF",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "rddt",
+    "name": "Reddit",
+    "ticker": "RDDT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "rtx",
+    "name": "RTX Corporation",
+    "ticker": "RTX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "o",
+    "name": "Realty Income",
+    "ticker": "O",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "reg",
+    "name": "Regency Centers",
+    "ticker": "REG",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "regn",
+    "name": "Regeneron Pharmaceuticals",
+    "ticker": "REGN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "rf",
+    "name": "Regions Financial Corporation",
+    "ticker": "RF",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "rsg",
+    "name": "Republic Services",
+    "ticker": "RSG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "rmd",
+    "name": "ResMed|",
+    "ticker": "RMD",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "rvty",
+    "name": "Revvity",
+    "ticker": "RVTY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "hood",
+    "name": "Robinhood Markets",
+    "ticker": "HOOD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "rok",
+    "name": "Rockwell Automation",
+    "ticker": "ROK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "rol",
+    "name": "Rollins, Inc.",
+    "ticker": "ROL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "rop",
+    "name": "Roper Technologies",
+    "ticker": "ROP",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "rost",
+    "name": "Ross Stores",
+    "ticker": "ROST",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "rcl",
+    "name": "Royal Caribbean Group",
+    "ticker": "RCL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "spgi",
+    "name": "S&P Global",
+    "ticker": "SPGI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "crm",
+    "name": "Salesforce",
+    "ticker": "CRM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "sndk",
+    "name": "Sandisk",
+    "ticker": "SNDK",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "sbac",
+    "name": "SBA Communications",
+    "ticker": "SBAC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "slb",
+    "name": "Schlumberger",
+    "ticker": "SLB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "stx",
+    "name": "Seagate Technology",
+    "ticker": "STX",
+    "country": "Ireland",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "sre",
+    "name": "Sempra",
+    "ticker": "SRE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "now",
+    "name": "ServiceNow",
+    "ticker": "NOW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "shw",
+    "name": "Sherwin-Williams",
+    "ticker": "SHW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "spg",
+    "name": "Simon Property Group",
+    "ticker": "SPG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "swks",
+    "name": "Skyworks Solutions",
+    "ticker": "SWKS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "sjm",
+    "name": "J.M. Smucker Company (The)",
+    "ticker": "SJM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "sw",
+    "name": "Smurfit Westrock",
+    "ticker": "SW",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "sna",
+    "name": "Snap-on",
+    "ticker": "SNA",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "solv",
+    "name": "Solventum",
+    "ticker": "SOLV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "so",
+    "name": "Southern Company",
+    "ticker": "SO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "luv",
+    "name": "Southwest Airlines",
+    "ticker": "LUV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "swk",
+    "name": "Stanley Black & Decker",
+    "ticker": "SWK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "sbux",
+    "name": "Starbucks",
+    "ticker": "SBUX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "stt",
+    "name": "State Street Corporation",
+    "ticker": "STT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "stld",
+    "name": "Steel Dynamics",
+    "ticker": "STLD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Materials"
+  },
+  {
+    "slug": "ste",
+    "name": "Steris",
+    "ticker": "STE",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "syk",
+    "name": "Stryker Corporation",
+    "ticker": "SYK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "smci",
+    "name": "Supermicro",
+    "ticker": "SMCI",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "syf",
+    "name": "Synchrony Financial",
+    "ticker": "SYF",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "snps",
+    "name": "Synopsys",
+    "ticker": "SNPS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "syy",
+    "name": "Sysco",
+    "ticker": "SYY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "tmus",
+    "name": "T-Mobile US",
+    "ticker": "TMUS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "trow",
+    "name": "T. Rowe Price",
+    "ticker": "TROW",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "ttwo",
+    "name": "Take-Two Interactive",
+    "ticker": "TTWO",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "tpr",
+    "name": "Tapestry, Inc.",
+    "ticker": "TPR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "trgp",
+    "name": "Targa Resources",
+    "ticker": "TRGP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "tgt",
+    "name": "Target Corporation",
+    "ticker": "TGT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "tel",
+    "name": "TE Connectivity",
+    "ticker": "TEL",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "tdy",
+    "name": "Teledyne Technologies",
+    "ticker": "TDY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "ter",
+    "name": "Teradyne",
+    "ticker": "TER",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "tsla",
+    "name": "Tesla, Inc.",
+    "ticker": "TSLA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "txn",
+    "name": "Texas Instruments",
+    "ticker": "TXN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "tpl",
+    "name": "Texas Pacific Land Corporation",
+    "ticker": "TPL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "txt",
+    "name": "Textron",
+    "ticker": "TXT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "tmo",
+    "name": "Thermo Fisher Scientific",
+    "ticker": "TMO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "tjx",
+    "name": "TJX Companies",
+    "ticker": "TJX",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "tko",
+    "name": "TKO Group Holdings",
+    "ticker": "TKO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "ttd",
+    "name": "Trade Desk (The)",
+    "ticker": "TTD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "tsco",
+    "name": "Tractor Supply",
+    "ticker": "TSCO",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "tt",
+    "name": "Trane Technologies",
+    "ticker": "TT",
+    "country": "Ireland",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "tdg",
+    "name": "TransDigm Group",
+    "ticker": "TDG",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "trv",
+    "name": "Travelers Companies (The)",
+    "ticker": "TRV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "trmb",
+    "name": "Trimble Inc.",
+    "ticker": "TRMB",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "tfc",
+    "name": "Truist Financial",
+    "ticker": "TFC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "tyl",
+    "name": "Tyler Technologies",
+    "ticker": "TYL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "tsn",
+    "name": "Tyson Foods",
+    "ticker": "TSN",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "usb",
+    "name": "U.S. Bancorp",
+    "ticker": "USB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "uber",
+    "name": "Uber",
+    "ticker": "UBER",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "udr",
+    "name": "UDR, Inc.",
+    "ticker": "UDR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "ulta",
+    "name": "Ulta Beauty",
+    "ticker": "ULTA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "unp",
+    "name": "Union Pacific Corporation",
+    "ticker": "UNP",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "ual",
+    "name": "United Airlines Holdings",
+    "ticker": "UAL",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "ups",
+    "name": "United Parcel Service",
+    "ticker": "UPS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "uri",
+    "name": "United Rentals",
+    "ticker": "URI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "unh",
+    "name": "UnitedHealth Group",
+    "ticker": "UNH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "uhs",
+    "name": "Universal Health Services",
+    "ticker": "UHS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "vlo",
+    "name": "Valero Energy",
+    "ticker": "VLO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "veev",
+    "name": "Veeva Systems",
+    "ticker": "VEEV",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "vtr",
+    "name": "Ventas",
+    "ticker": "VTR",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "vlto",
+    "name": "Veralto",
+    "ticker": "VLTO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "vrsn",
+    "name": "Verisign",
+    "ticker": "VRSN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "vrsk",
+    "name": "Verisk Analytics",
+    "ticker": "VRSK",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "vz",
+    "name": "Verizon",
+    "ticker": "VZ",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "vrtx",
+    "name": "Vertex Pharmaceuticals",
+    "ticker": "VRTX",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "vrt",
+    "name": "Vertiv",
+    "ticker": "VRT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "vtrs",
+    "name": "Viatris",
+    "ticker": "VTRS",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "vici",
+    "name": "Vici Properties",
+    "ticker": "VICI",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "v",
+    "name": "Visa Inc.",
+    "ticker": "V",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "vst",
+    "name": "Vistra Corp.",
+    "ticker": "VST",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "vmrk",
+    "name": "Vivmark Residential",
+    "ticker": "VMRK",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "vmc",
+    "name": "Vulcan Materials Company",
+    "ticker": "VMC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Materials"
+  },
+  {
+    "slug": "wrb",
+    "name": "W. R. Berkley Corporation",
+    "ticker": "WRB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "gww",
+    "name": "W. W. Grainger",
+    "ticker": "GWW",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "wab",
+    "name": "Wabtec",
+    "ticker": "WAB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "wmt",
+    "name": "Walmart",
+    "ticker": "WMT",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Staples"
+  },
+  {
+    "slug": "dis",
+    "name": "Walt Disney Company (The)",
+    "ticker": "DIS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "wbd",
+    "name": "Warner Bros. Discovery",
+    "ticker": "WBD",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Communication Services"
+  },
+  {
+    "slug": "wm",
+    "name": "Waste Management",
+    "ticker": "WM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "wat",
+    "name": "Waters Corporation",
+    "ticker": "WAT",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "wec",
+    "name": "WEC Energy Group",
+    "ticker": "WEC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "wfc",
+    "name": "Wells Fargo",
+    "ticker": "WFC",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Financials"
+  },
+  {
+    "slug": "well",
+    "name": "Welltower",
+    "ticker": "WELL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "wst",
+    "name": "West Pharmaceutical Services",
+    "ticker": "WST",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "wdc",
+    "name": "Western Digital",
+    "ticker": "WDC",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "wy",
+    "name": "Weyerhaeuser",
+    "ticker": "WY",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Real Estate"
+  },
+  {
+    "slug": "wsm",
+    "name": "Williams-Sonoma, Inc.",
+    "ticker": "WSM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "wmb",
+    "name": "Williams Companies",
+    "ticker": "WMB",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Energy"
+  },
+  {
+    "slug": "wtw",
+    "name": "Willis Towers Watson",
+    "ticker": "WTW",
+    "country": "United Kingdom",
+    "exchange": "NASDAQ",
+    "industry": "Financials"
+  },
+  {
+    "slug": "wday",
+    "name": "Workday, Inc.",
+    "ticker": "WDAY",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "wynn",
+    "name": "Wynn Resorts",
+    "ticker": "WYNN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "xel",
+    "name": "Xcel Energy",
+    "ticker": "XEL",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Utilities"
+  },
+  {
+    "slug": "xyl",
+    "name": "Xylem Inc.",
+    "ticker": "XYL",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "yum",
+    "name": "Yum! Brands",
+    "ticker": "YUM",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Consumer Discretionary"
+  },
+  {
+    "slug": "zbra",
+    "name": "Zebra Technologies",
+    "ticker": "ZBRA",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "zbh",
+    "name": "Zimmer Biomet",
+    "ticker": "ZBH",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "zts",
+    "name": "Zoetis",
+    "ticker": "ZTS",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Health Care"
+  }
+]

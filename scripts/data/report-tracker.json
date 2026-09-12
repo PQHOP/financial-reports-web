@@ -1,0 +1,55 @@
+{
+  "_meta": {
+    "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop — see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
+    "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, after full backlog coverage) — not a blocker during Phase 1 backlog processing.",
+    "lastUpdated": "2026-09-13"
+  },
+  "AAPL": {
+    "name": "Apple Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7862c000004jp68yqj1pi" },
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-27", "filedAt": "2026-07-31" },
+    "nextExpectedFiling": { "type": "10-K (FY2026 Annual)", "estimate": "2026-10-30", "basis": "Apple's fiscal year ends late September; prior FY10-Ks have filed late Oct/early Nov", "confidence": "estimated" },
+    "lastChecked": "2026-09-13"
+  },
+  "MSFT": {
+    "name": "Microsoft Corporation",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7bh91000004l3r0wxrx4l" },
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-07-29" },
+    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027 — out of 2026-coverage scope)", "estimate": "2026-10-29", "basis": "prior Q1 FY10-Qs filed ~Oct 29", "confidence": "estimated" },
+    "lastChecked": "2026-09-13"
+  },
+  "MMM": {
+    "name": "3M",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7ekeq000004l5jgl5k8hc" },
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-07-21" },
+    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-10-20", "basis": "prior Q3 10-Q filed 2025-10-21", "confidence": "estimated" },
+    "lastChecked": "2026-09-13"
+  },
+  "AOS": {
+    "name": "A. O. Smith",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7ftee000104l5xvfhymew" },
+    "lastFilingSeen": { "type": "8-K/10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-07-30" },
+    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-10-29", "basis": "quarterly cadence from Q2 filing date", "confidence": "estimated" },
+    "lastChecked": "2026-09-13"
+  },
+  "ABT": {
+    "name": "Abbott Laboratories",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtybdbea000004l73dxkuqoa" },
+    "lastFilingSeen": { "type": "8-K/10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-07-16" },
+    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-10-15", "basis": "quarterly cadence from Q2 filing date", "confidence": "estimated" },
+    "lastChecked": "2026-09-13"
+  },
+  "ABBV": {
+    "name": "AbbVie Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtybfew2000104l7jmzbg0m1" },
+    "lastFilingSeen": { "type": "8-K/10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-07-31" },
+    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-10-30", "basis": "quarterly cadence from Q2 filing date", "confidence": "estimated" },
+    "lastChecked": "2026-09-13"
+  }
+}

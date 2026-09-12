@@ -1,8 +1,32 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+
+  const industry = await prisma.industry.findUnique({ where: { slug } });
+  if (!industry) return {};
+
+  const title = industry.name;
+  const description = `Financial report analysis for publicly listed ${industry.name} companies.`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `/industries/${industry.slug}`,
+    },
+    openGraph: { title, description },
+  };
+}
 
 export default async function IndustryPage({
   params,

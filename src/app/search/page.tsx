@@ -1,7 +1,16 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Search",
+  robots: {
+    index: false,
+    follow: true,
+  },
+};
 
 export default async function SearchPage({
   searchParams,
@@ -15,8 +24,8 @@ export default async function SearchPage({
     ? await prisma.company.findMany({
         where: {
           OR: [
-            { name: { contains: query } },
-            { ticker: { contains: query } },
+            { name: { contains: query, mode: "insensitive" } },
+            { ticker: { contains: query, mode: "insensitive" } },
           ],
         },
         include: { industries: true },

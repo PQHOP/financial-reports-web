@@ -6,8 +6,9 @@
  * needed at all.
  *
  * Usage:
- *   npm run admin-publish -- --list                  # see valid company names
- *   npm run admin-publish -- path/to/report.json      # publish a report
+ *   npm run admin-publish -- --list                        # see valid company names
+ *   npm run admin-publish -- path/to/report.json            # publish a new report
+ *   npm run admin-publish -- --edit <reportId> report.json  # update an existing report
  *
  * Env vars:
  *   SITE_URL        Defaults to http://localhost:3000
@@ -122,8 +123,8 @@ async function selectOptionContaining(page: Page, selector: string, needle: stri
   await page.selectOption(selector, value);
 }
 
-async function publish(page: Page, input: ReportInput) {
-  await page.goto(`${SITE_URL}/admin/reports/new`);
+async function publish(page: Page, input: ReportInput, editId?: string) {
+  await page.goto(editId ? `${SITE_URL}/admin/reports/${editId}/edit` : `${SITE_URL}/admin/reports/new`);
 
   await selectOptionContaining(page, 'select[name="companyId"]', input.company);
   await page.fill('input[name="year"]', String(input.year));
@@ -152,14 +153,16 @@ async function publish(page: Page, input: ReportInput) {
     );
   }
 
-  console.log(`Published: ${input.title}`);
+  console.log(`${editId ? "Updated" : "Published"}: ${input.title}`);
   console.log(`View: ${page.url()}`);
   console.log(`Edit: ${page.url().replace("/reports/", "/admin/reports/")}/edit`);
 }
 
 async function main() {
   const arg = process.argv[2];
-  if (!arg) fail("Usage: npm run admin-publish -- --list | path/to/report.json");
+  if (!arg) {
+    fail("Usage: npm run admin-publish -- --list | path/to/report.json | --edit <reportId> report.json");
+  }
 
   const browser = await chromium.launch();
   try {
@@ -168,6 +171,14 @@ async function main() {
 
     if (arg === "--list") {
       await listCompanies(page);
+    } else if (arg === "--edit") {
+      const editId = process.argv[3];
+      const jsonPath = process.argv[4];
+      if (!editId || !jsonPath) {
+        fail("Usage: npm run admin-publish -- --edit <reportId> report.json");
+      }
+      const input = loadInput(jsonPath);
+      await publish(page, input, editId);
     } else {
       const input = loadInput(arg);
       await publish(page, input);
