@@ -1,6 +1,6 @@
 "use server";
 
-import { cookies } from "next/headers";
+import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { ReportPeriod } from "@/generated/prisma/client";
@@ -13,10 +13,35 @@ import {
 
 export type ReportFormState = { error?: string };
 
+const LOGIN_RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
+const LOGIN_RATE_LIMIT_MAX_ATTEMPTS = 5;
+
+async function getClientIdentifier(): Promise<string> {
+  const store = await headers();
+  const forwardedFor = store.get("x-forwarded-for");
+  return forwardedFor?.split(",")[0]?.trim() || "unknown";
+}
+
 export async function loginAction(formData: FormData): Promise<void> {
   const password = String(formData.get("password") ?? "");
+  const identifier = await getClientIdentifier();
+  const windowStart = new Date(Date.now() - LOGIN_RATE_LIMIT_WINDOW_MS);
+
+  // Opportunistic cleanup so this table doesn't grow unbounded.
+  await prisma.loginAttempt.deleteMany({
+    where: { createdAt: { lt: windowStart } },
+  });
+
+  const recentAttempts = await prisma.loginAttempt.count({
+    where: { identifier, createdAt: { gte: windowStart } },
+  });
+
+  if (recentAttempts >= LOGIN_RATE_LIMIT_MAX_ATTEMPTS) {
+    redirect("/admin/login?error=ratelimited");
+  }
 
   if (!process.env.ADMIN_PASSWORD || password !== process.env.ADMIN_PASSWORD) {
+    await prisma.loginAttempt.create({ data: { identifier } });
     redirect("/admin/login?error=1");
   }
 

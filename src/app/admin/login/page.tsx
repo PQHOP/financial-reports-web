@@ -13,10 +13,16 @@ export default async function AdminLoginPage({
     <div className="mx-auto max-w-sm">
       <h1 className="mb-6 text-xl font-semibold">Admin Login</h1>
       <form action={loginAction} className="flex flex-col gap-4">
-        {error && (
+        {error === "ratelimited" ? (
           <p className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-700">
-            Incorrect password.
+            Too many attempts. Try again in a few minutes.
           </p>
+        ) : (
+          error && (
+            <p className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-700">
+              Incorrect password.
+            </p>
+          )
         )}
         <label className="flex flex-col gap-1 text-sm font-medium">
           Password

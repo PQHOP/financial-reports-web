@@ -57,3 +57,11 @@ model Report {
 
   @@unique([companyId, year, period])
 }
+
+model LoginAttempt {
+  id         String   @id @default(cuid())
+  identifier String
+  createdAt  DateTime @default(now())
+
+  @@index([identifier, createdAt])
+}

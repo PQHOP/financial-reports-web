@@ -126,12 +126,27 @@ findable.
 ### Operating window
 
 This background task only runs **23:00–05:00 Japan Standard Time (JST)**
-nightly — i.e. 14:00–19:59 UTC — set up as a recurring cloud schedule (see
-`schedule` skill), not a session-local `/loop`, so it keeps running across
-nights without a terminal open. If you're re-establishing this schedule,
-the cron expression is hour-range-based (`14-19` in UTC covers the window)
-at whatever minute cadence fits a research-heavy task (every 20-30 minutes
-is reasonable — one or a few companies per firing).
+nightly — i.e. 14:00–19:59 UTC. A cloud `schedule` routine was tried for
+this (so it'd keep running without a terminal open) but GitHub App
+installation for repo access couldn't be gotten working from this account
+— don't retry that path without a specific reason to think it'll behave
+differently. Use a session-local `/loop` (dynamic/self-paced) instead, with
+the time window enforced manually in the loop's own logic since
+`ScheduleWakeup` has no native time-of-day gating and its `delaySeconds` is
+capped at 3600:
+
+- On each wake, get the current time and convert to JST (UTC+9, no DST).
+- If it's inside 23:00–05:00 JST: do a normal batch (research + publish a
+  few companies per the tracker-driven priority below), then
+  `ScheduleWakeup` again in ~20-30 minutes (`noop: false`).
+- If it's outside the window: do nothing, and `ScheduleWakeup` for 3600
+  seconds (the max) with `noop: true`, repeating hourly until the check
+  lands back inside the window — there's no way to jump straight to 23:00
+  in one call, so this chains several no-op hourly wakeups while waiting.
+
+This only runs while the session/terminal stays open on the machine — if
+that's not viable, that's a real limitation to flag to the user rather
+than something to silently route around by re-attempting the cloud path.
 
 ### Model for the research/analysis step
 
