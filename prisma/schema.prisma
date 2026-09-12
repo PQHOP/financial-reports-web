@@ -1,0 +1,66 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Industry {
+  id        String    @id @default(cuid())
+  slug      String    @unique
+  name      String
+  companies Company[]
+  createdAt DateTime  @default(now())
+}
+
+model Company {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  name       String
+  ticker     String?
+  country    String
+  exchange   String?
+  industryId String
+  industry   Industry @relation(fields: [industryId], references: [id])
+  reports    Report[]
+  createdAt  DateTime @default(now())
+}
+
+enum ReportPeriod {
+  Q1
+  Q2
+  Q3
+  Q4
+  H1
+  ANNUAL
+}
+
+model Report {
+  id          String        @id @default(cuid())
+  companyId   String
+  company     Company       @relation(fields: [companyId], references: [id])
+  year        Int
+  period      ReportPeriod
+  title       String
+  contentMd   String
+  author      String        @default("Claude")
+  publishedAt DateTime      @default(now())
+  images      ReportImage[]
+
+  @@unique([companyId, year, period])
+}
+
+model ReportImage {
+  id       String @id @default(cuid())
+  reportId String
+  report   Report @relation(fields: [reportId], references: [id], onDelete: Cascade)
+  url      String
+  caption  String?
+  order    Int    @default(0)
+}
