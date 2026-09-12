@@ -9,13 +9,20 @@ the local scripts below.
 
 ## Publishing a report analysis (the main recurring task)
 
-When asked to research and publish a financial report for a company, follow
-this pipeline end to end in one session — no need to touch the browser:
+Publishing happens by driving the real `/admin` UI with a headless browser
+(`scripts/admin-publish.ts`, using Playwright) — the same login, the same
+form, the same validation a human admin would go through. There is no
+direct-database path; this also means it works unchanged against a deployed
+site (set `SITE_URL`), not just local dev, with no DB credentials involved.
 
-1. **Find the company's slug.** Run `npm run list-companies` to see every
-   existing slug, ticker, and its industries. If the company doesn't exist
-   yet, it must be added first via `/admin/companies` (there is no CLI for
-   creating companies, only reports).
+When asked to research and publish a financial report for a company, follow
+this pipeline end to end in one session:
+
+1. **Find the company's exact listing.** Run `npm run admin-publish -- --list`
+   to print every company name/ticker as it appears in the admin dropdown.
+   If the company doesn't exist yet, it must be added first via
+   `/admin/companies` (there is no scripted path for creating companies,
+   only for publishing reports).
 2. **Get the source filing.** For US companies, fetch the 10-Q/10-K or
    earnings release from SEC EDGAR (https://www.sec.gov/cgi-bin/browse-edgar)
    or the company's investor relations page. For non-US companies, ask the
@@ -55,7 +62,7 @@ this pipeline end to end in one session — no need to touch the browser:
 
    ```json
    {
-     "companySlug": "aapl",
+     "company": "Apple",
      "year": 2026,
      "period": "Q3",
      "title": "AAPL — Q3 2026 Financial Report Analysis",
@@ -65,22 +72,28 @@ this pipeline end to end in one session — no need to touch the browser:
    }
    ```
 
+   `company` is matched as a case-insensitive substring against the admin
+   dropdown's visible text (name or ticker) — use whatever `--list` printed.
    `period` must be one of `Q1 Q2 Q3 Q4 H1 ANNUAL` (`H1` = interim/half-year,
    `ANNUAL` = full year). Then run:
 
    ```
-   npm run publish-report -- path/to/report.json
+   npm run admin-publish -- path/to/report.json
    ```
 
-   This writes straight to the database via Prisma (see
-   `scripts/publish-report.ts`) — no browser, no admin login needed. Running
-   it again for the same company/year/period **updates** that report instead
-   of erroring, so it's safe to re-run after fixing something.
+   This logs into `/admin/login` and submits `/admin/reports/new` exactly
+   like a human admin would (see `scripts/admin-publish.ts`). There's no
+   upsert-on-conflict here — if a report for that company/year/period
+   already exists, the real form's own uniqueness validation will reject it
+   with the same error a human would see; edit the existing report via
+   `/admin` instead in that case.
 5. Report the resulting `/reports/<id>` URL back to the user.
 
-`scripts/publish-report.ts` and `scripts/list-companies.ts` are local-only
-tools with no auth — they exist because whoever can run them already has
-full access to this machine. Never expose either as a network endpoint.
+By default this targets `http://localhost:3000`. Once the site is deployed,
+point at it instead: `SITE_URL=https://your-deployed-domain npm run
+admin-publish -- report.json` (and set `ADMIN_PASSWORD` to match that
+deployment's password if different from `.env`). No database credentials
+are ever needed for this — only the site URL and the admin password.
 
 ## Stack notes
 
