@@ -26,20 +26,13 @@ CREATE TABLE "Report" (
     "year" INTEGER NOT NULL,
     "period" TEXT NOT NULL,
     "title" TEXT NOT NULL,
+    "summary" TEXT NOT NULL,
     "contentMd" TEXT NOT NULL,
+    "coverImageUrl" TEXT,
     "author" TEXT NOT NULL DEFAULT 'Claude',
     "publishedAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "updatedAt" DATETIME NOT NULL,
     CONSTRAINT "Report_companyId_fkey" FOREIGN KEY ("companyId") REFERENCES "Company" ("id") ON DELETE RESTRICT ON UPDATE CASCADE
-);
-
--- CreateTable
-CREATE TABLE "ReportImage" (
-    "id" TEXT NOT NULL PRIMARY KEY,
-    "reportId" TEXT NOT NULL,
-    "url" TEXT NOT NULL,
-    "caption" TEXT,
-    "order" INTEGER NOT NULL DEFAULT 0,
-    CONSTRAINT "ReportImage_reportId_fkey" FOREIGN KEY ("reportId") REFERENCES "Report" ("id") ON DELETE CASCADE ON UPDATE CASCADE
 );
 
 -- CreateIndex

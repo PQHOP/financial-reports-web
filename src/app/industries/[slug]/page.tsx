@@ -26,19 +26,19 @@ export default async function IndustryPage({
     <div className="flex flex-col gap-6">
       <div>
         <Link href="/" className="text-sm text-zinc-500 hover:underline">
-          ← Ngành nghề
+          ← Industries
         </Link>
         <h1 className="mt-1 text-2xl font-semibold">{industry.name}</h1>
       </div>
 
       {industry.companies.length === 0 ? (
-        <p className="text-zinc-500">Chưa có công ty nào trong ngành này.</p>
+        <p className="text-zinc-500">No companies in this industry yet.</p>
       ) : (
         <ul className="flex flex-col gap-3">
           {industry.companies.map((company) => (
             <li key={company.id}>
               <Link
-                href={`/cong-ty/${company.slug}`}
+                href={`/companies/${company.slug}`}
                 className="block rounded-lg border border-zinc-200 bg-white px-4 py-3 hover:border-zinc-400"
               >
                 <div className="font-medium">

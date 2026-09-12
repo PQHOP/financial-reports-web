@@ -42,25 +42,18 @@ enum ReportPeriod {
 }
 
 model Report {
-  id          String        @id @default(cuid())
-  companyId   String
-  company     Company       @relation(fields: [companyId], references: [id])
-  year        Int
-  period      ReportPeriod
-  title       String
-  contentMd   String
-  author      String        @default("Claude")
-  publishedAt DateTime      @default(now())
-  images      ReportImage[]
+  id            String       @id @default(cuid())
+  companyId     String
+  company       Company      @relation(fields: [companyId], references: [id])
+  year          Int
+  period        ReportPeriod
+  title         String
+  summary       String
+  contentMd     String
+  coverImageUrl String?
+  author        String       @default("Claude")
+  publishedAt   DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
 
   @@unique([companyId, year, period])
-}
-
-model ReportImage {
-  id       String @id @default(cuid())
-  reportId String
-  report   Report @relation(fields: [reportId], references: [id], onDelete: Cascade)
-  url      String
-  caption  String?
-  order    Int    @default(0)
 }

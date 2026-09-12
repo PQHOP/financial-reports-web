@@ -32,7 +32,7 @@ export default async function CompanyPage({
     <div className="flex flex-col gap-6">
       <div>
         <Link
-          href={`/nganh/${company.industry.slug}`}
+          href={`/industries/${company.industry.slug}`}
           className="text-sm text-zinc-500 hover:underline"
         >
           ← {company.industry.name}
@@ -52,15 +52,15 @@ export default async function CompanyPage({
       </div>
 
       <div>
-        <h2 className="mb-3 text-lg font-medium">Báo cáo theo năm</h2>
+        <h2 className="mb-3 text-lg font-medium">Reports by Year</h2>
         {years.length === 0 ? (
-          <p className="text-zinc-500">Chưa có báo cáo nào cho công ty này.</p>
+          <p className="text-zinc-500">No reports for this company yet.</p>
         ) : (
           <ul className="flex flex-wrap gap-3">
             {years.map((year) => (
               <li key={year}>
                 <Link
-                  href={`/cong-ty/${company.slug}/${year}`}
+                  href={`/companies/${company.slug}/${year}`}
                   className="block rounded-lg border border-zinc-200 bg-white px-5 py-3 hover:border-zinc-400"
                 >
                   {year}

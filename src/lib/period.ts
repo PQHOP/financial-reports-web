@@ -1,12 +1,12 @@
 import { ReportPeriod } from "@/generated/prisma/client";
 
 export const periodLabels: Record<ReportPeriod, string> = {
-  Q1: "Quý 1",
-  Q2: "Quý 2",
-  Q3: "Quý 3",
-  Q4: "Quý 4",
-  H1: "Giữa kỳ (6 tháng đầu năm)",
-  ANNUAL: "Cả năm",
+  Q1: "Q1",
+  Q2: "Q2",
+  Q3: "Q3",
+  Q4: "Q4",
+  H1: "H1 (Interim)",
+  ANNUAL: "Full Year",
 };
 
 export const periodOrder: ReportPeriod[] = [
