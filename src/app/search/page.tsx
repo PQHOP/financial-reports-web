@@ -19,7 +19,7 @@ export default async function SearchPage({
             { ticker: { contains: query } },
           ],
         },
-        include: { industry: true },
+        include: { industries: true },
         orderBy: { name: "asc" },
       })
     : [];
@@ -53,7 +53,8 @@ export default async function SearchPage({
                   )}
                 </div>
                 <div className="text-sm text-zinc-500">
-                  {company.industry.name} · {company.country}
+                  {company.industries.map((i) => i.name).join(", ")} ·{" "}
+                  {company.country}
                 </div>
               </Link>
             </li>

@@ -16,7 +16,7 @@ export default async function ReportPage({
   const report = await prisma.report.findUnique({
     where: { id },
     include: {
-      company: { include: { industry: true } },
+      company: true,
     },
   });
 

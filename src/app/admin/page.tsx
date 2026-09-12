@@ -1,16 +1,13 @@
 import Link from "next/link";
-import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { periodLabels } from "@/lib/period";
-import { getIsAdmin } from "@/lib/adminAuth";
+import { requireAdmin } from "@/lib/adminAuth";
 import { logoutAction, deleteReportAction } from "@/app/admin/actions";
 
 export const dynamic = "force-dynamic";
 
 export default async function AdminDashboard() {
-  if (!(await getIsAdmin())) {
-    redirect("/admin/login");
-  }
+  await requireAdmin();
 
   const reports = await prisma.report.findMany({
     include: { company: true },
@@ -26,6 +23,13 @@ export default async function AdminDashboard() {
             Sign out
           </button>
         </form>
+      </div>
+
+      <div className="flex gap-4 text-sm">
+        <span className="font-medium text-zinc-900">Reports</span>
+        <Link href="/admin/companies" className="text-zinc-500 hover:underline">
+          Companies
+        </Link>
       </div>
 
       <Link

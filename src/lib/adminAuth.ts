@@ -1,5 +1,6 @@
 import crypto from "node:crypto";
 import { cookies } from "next/headers";
+import { redirect } from "next/navigation";
 import { ADMIN_COOKIE_NAME, ADMIN_COOKIE_MAX_AGE } from "@/lib/adminCookie";
 
 export { ADMIN_COOKIE_NAME, ADMIN_COOKIE_MAX_AGE };
@@ -39,4 +40,12 @@ export function isValidSessionToken(token: string | undefined): boolean {
 export async function getIsAdmin(): Promise<boolean> {
   const store = await cookies();
   return isValidSessionToken(store.get(ADMIN_COOKIE_NAME)?.value);
+}
+
+// Call at the top of every admin Server Action and page. Proxy only does an
+// optimistic redirect based on cookie presence; this is the real check.
+export async function requireAdmin(): Promise<void> {
+  if (!(await getIsAdmin())) {
+    redirect("/admin/login");
+  }
 }

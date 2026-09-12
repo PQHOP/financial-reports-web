@@ -20,16 +20,15 @@ model Industry {
 }
 
 model Company {
-  id         String   @id @default(cuid())
-  slug       String   @unique
+  id         String     @id @default(cuid())
+  slug       String     @unique
   name       String
   ticker     String?
   country    String
   exchange   String?
-  industryId String
-  industry   Industry @relation(fields: [industryId], references: [id])
+  industries Industry[]
   reports    Report[]
-  createdAt  DateTime @default(now())
+  createdAt  DateTime   @default(now())
 }
 
 enum ReportPeriod {

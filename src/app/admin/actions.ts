@@ -8,7 +8,7 @@ import {
   ADMIN_COOKIE_MAX_AGE,
   ADMIN_COOKIE_NAME,
   createSessionToken,
-  getIsAdmin,
+  requireAdmin,
 } from "@/lib/adminAuth";
 
 export type ReportFormState = { error?: string };
@@ -36,12 +36,6 @@ export async function logoutAction(): Promise<void> {
   const store = await cookies();
   store.delete(ADMIN_COOKIE_NAME);
   redirect("/admin/login");
-}
-
-async function requireAdmin() {
-  if (!(await getIsAdmin())) {
-    redirect("/admin/login");
-  }
 }
 
 function readReportFields(formData: FormData) {

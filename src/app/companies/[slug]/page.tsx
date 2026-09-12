@@ -14,7 +14,7 @@ export default async function CompanyPage({
   const company = await prisma.company.findUnique({
     where: { slug },
     include: {
-      industry: true,
+      industries: true,
       reports: {
         select: { year: true },
         orderBy: { year: "desc" },
@@ -31,11 +31,8 @@ export default async function CompanyPage({
   return (
     <div className="flex flex-col gap-6">
       <div>
-        <Link
-          href={`/industries/${company.industry.slug}`}
-          className="text-sm text-zinc-500 hover:underline"
-        >
-          ← {company.industry.name}
+        <Link href="/" className="text-sm text-zinc-500 hover:underline">
+          ← Industries
         </Link>
         <h1 className="mt-1 text-2xl font-semibold">
           {company.name}
@@ -49,6 +46,17 @@ export default async function CompanyPage({
           {company.country}
           {company.exchange ? ` · ${company.exchange}` : ""}
         </p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {company.industries.map((industry) => (
+            <Link
+              key={industry.id}
+              href={`/industries/${industry.slug}`}
+              className="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs text-zinc-600 hover:border-zinc-400"
+            >
+              {industry.name}
+            </Link>
+          ))}
+        </div>
       </div>
 
       <div>
