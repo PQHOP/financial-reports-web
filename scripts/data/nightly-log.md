@@ -58,6 +58,26 @@ it's still in the prompt text, just a fresh value); and
 `scripts/admin-publish.ts` now honors `PLAYWRIGHT_EXECUTABLE_PATH` so the
 routine doesn't have to re-patch the Chromium path every run either.
 
+## 2026-09-15 night — network fix verified, local loop stood down
+
+Manually triggered the cloud routine at 22:41 JST (19 min before the
+window) to test the network fix: confirmed working — `sec.gov` and the
+deployed site both returned 200 with the proper User-Agent (the earlier
+403 was SEC's own bot-block, not the proxy). The routine correctly did
+nothing else since it was outside the operating window (no
+research/publish, tracker/log untouched, reverted an incidental
+`package-lock.json` diff from `npm install`) — exactly the intended
+behavior. Its next natural cron firing is 23:06 JST, the first firing
+expected to actually publish since 2026-09-12.
+
+The session-local `/loop` fallback was stopped this same night (user is
+shutting down the machine) — it can't survive that regardless, so no
+loss. From here, the **cloud routine is the only mechanism running
+tonight**; it doesn't need this machine on. Next session: check
+`RemoteTrigger {action: "list_runs", trigger_id: "trig_01GNdUY59Na4x3JxMr6p7mxK"}`
+for tonight's firings (23:06 JST onward) and report what actually got
+published before doing anything else.
+
 ## Nightly log (one entry per 23:00–05:00 JST window, from 2026-09-15 on)
 
 <!-- New entries appended below. Format:
