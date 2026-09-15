@@ -107,20 +107,46 @@ async function listCompanies(page: Page) {
 }
 
 async function selectOptionContaining(page: Page, selector: string, needle: string) {
-  const value = await page.locator(selector).evaluate((el, needle) => {
+  const result = await page.locator(selector).evaluate((el, needle) => {
     const select = el as HTMLSelectElement;
-    const match = Array.from(select.options).find((o) =>
-      o.textContent?.toLowerCase().includes(needle.toLowerCase())
-    );
-    return match?.value ?? null;
+    const lowerNeedle = needle.toLowerCase();
+    const options = Array.from(select.options);
+    const matches = options.filter((o) => o.textContent?.toLowerCase().includes(lowerNeedle));
+
+    if (matches.length <= 1) {
+      return { value: matches[0]?.value ?? null, ambiguous: null as string[] | null };
+    }
+
+    // Ambiguous substring match (e.g. "Apple" also matches "Apple Hospitality
+    // REIT" and "Pineapple Financial"). Prefer an exact ticker match, shown
+    // in the label as "(TICKER)" — tickers are unique, unlike name substrings.
+    const tickerMatch = matches.filter((o) => {
+      const text = o.textContent?.toLowerCase() ?? "";
+      return text.endsWith(`(${lowerNeedle})`);
+    });
+    if (tickerMatch.length === 1) {
+      return { value: tickerMatch[0].value, ambiguous: null as string[] | null };
+    }
+
+    return {
+      value: null,
+      ambiguous: matches.map((o) => o.textContent?.trim() ?? ""),
+    };
   }, needle);
 
-  if (!value) {
+  if (result.ambiguous) {
+    throw new Error(
+      `"${needle}" matches multiple companies in the dropdown:\n` +
+        result.ambiguous.map((label) => `  - ${label}`).join("\n") +
+        `\nUse a more specific value, e.g. the exact ticker in parentheses (e.g. "(AAPL)").`
+    );
+  }
+  if (!result.value) {
     throw new Error(
       `No company matching "${needle}" in the dropdown. Run "npm run admin-publish -- --list" to see valid names.`
     );
   }
-  await page.selectOption(selector, value);
+  await page.selectOption(selector, result.value);
 }
 
 async function publish(page: Page, input: ReportInput, editId?: string) {
@@ -164,7 +190,15 @@ async function main() {
     fail("Usage: npm run admin-publish -- --list | path/to/report.json | --edit <reportId> report.json");
   }
 
-  const browser = await chromium.launch();
+  // Some sandboxes (e.g. the cloud "2026 Report Coverage - Nightly" routine)
+  // pre-install a Chromium build at a fixed path instead of the revision
+  // Playwright's own installer would fetch — set PLAYWRIGHT_EXECUTABLE_PATH
+  // to point at it rather than re-discovering/patching this every run.
+  const browser = await chromium.launch(
+    process.env.PLAYWRIGHT_EXECUTABLE_PATH
+      ? { executablePath: process.env.PLAYWRIGHT_EXECUTABLE_PATH }
+      : undefined
+  );
   try {
     const page = await browser.newPage();
     await login(page);

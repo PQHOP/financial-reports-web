@@ -38,24 +38,50 @@ case-sensitive by default, unlike SQLite's, and this bit us once already
 after the Postgres migration (search silently returned nothing for
 non-exact-case queries until fixed).
 
-## Standing priority: 2026 report coverage, top companies first
+## Standing priority: fresh filings first, then 2026 coverage, then multi-year backfill
 
-Until this is caught up, treat "get every company a published 2026 report"
-as the default background task whenever there's no more specific ask.
-"2026 report" means: ANNUAL if FY2026 results are already out, otherwise
-the latest 2026 quarter that's been reported (Q1/Q2/Q3/H1) — don't wait on
-a quarter that hasn't been filed yet. Once a company has one qualifying
-report, it's **done** for this initiative — this is a one-report-per-
-company backlog to clear, not a commitment to republish every quarter.
+Until this is caught up, treat keeping report coverage current and broad as
+the default background task whenever there's no more specific ask. Work
+happens in three priority tiers, always in this order — the goal is that a
+visitor landing on the site sees analysis of a report that came out
+*recently*, not just eventually:
 
-Priority order across companies:
-
-1. **S&P 500 companies first** (the 503 seeded via `scripts/seed-sp500.ts` —
-   being in the S&P 500 at all is the "top companies" cut, so no further
-   ranking within that tier is needed).
-2. **Everything else** (the ~5,060 companies from `scripts/seed-us-listed.ts`,
-   sitting in the `Uncategorized` industry) only after the S&P 500 tier is
-   done.
+0. **Companies whose filing just landed on EDGAR.** Run
+   `npm run scan-recent-filings` at the start of a batch (defaults to the
+   last 7 days of 10-K/10-Q filings; `-- --days N` / `-- --forms
+   10-Q,10-K,8-K` to adjust). It cross-references SEC EDGAR's daily filing
+   index against `scripts/data/sp500.json` / `scripts/data/us-listed.json`
+   via SEC's ticker↔CIK map, excludes tickers already `"done"` or
+   `"skipped"` in the tracker, and writes
+   `scripts/data/recent-filings-candidates.json` (gitignored — a
+   regenerated scan artifact, never commit it) sorted newest-filed-first.
+   Work through that list before touching the plain backlog below — S&P
+   500 tickers still sort ahead of `us-listed` ones on a same-day tie, but
+   a fresher `us-listed` filing outranks a stale S&P 500 backlog entry.
+1. **2026 report coverage, S&P 500 first.** Once the fresh-filing queue for
+   this batch is exhausted, fall back to "get every company a published
+   2026 report" (see the tracker mechanics below). "2026 report" means:
+   ANNUAL if FY2026 results are already out, otherwise the latest 2026
+   quarter that's been reported (Q1/Q2/Q3/H1) — don't wait on a quarter
+   that hasn't been filed yet. Once a company has one qualifying report,
+   it's **done** for this tier — this is a one-2026-report-per-company
+   backlog to clear, not a commitment to republish every quarter (further
+   quarters are tier 2's job, below). Within this tier: S&P 500 companies
+   (the 503 seeded via `scripts/seed-sp500.ts` — being in the S&P 500 at
+   all is the "top companies" cut, so no further ranking within the tier
+   is needed) come before the ~5,060 companies from
+   `scripts/seed-us-listed.ts` sitting in the `Uncategorized` industry.
+2. **Multi-year backfill.** Only once every company in both files is
+   `"done"` or `"skipped"` for 2026: go back through already-`"done"`
+   companies and add reports for their other available fiscal years, most
+   recent not-yet-covered year first (e.g. 2025 before 2024), same
+   S&P-500-first ordering, tracked via each entry's `reports` array. This
+   has no finish line — it's a standing expansion of how much history the
+   site carries per company, not a one-off backlog, so keep working
+   backward through years for as long as the operating window allows.
+   Phase 2 freshness maintenance (below) still takes priority over this
+   tier once triggered — keeping an already-published company's *current*
+   year up to date beats adding another company's old history.
 
 ### The tracker file — read it first, update it after every company
 
@@ -92,22 +118,32 @@ yet.
 
 ### Deciding what to work on this run
 
-1. Skip anything in the tracker already marked `"done"`.
-2. Among what's left, prefer anything marked `"pending"` whose
-   `nextExpectedFiling.estimate` has passed (or anything you have direct
-   evidence — e.g. a fresh EDGAR filing — is now available) — its report
-   is likely sitting on EDGAR unresearched and is higher-value than working
-   further down an alphabetical backlog.
-3. Otherwise, work through the backlog in file order (`scripts/data/sp500.json`
-   then `scripts/data/us-listed.json`), skipping tickers already in the
-   tracker as `"done"` or `"skipped"`.
+1. Run `npm run scan-recent-filings` and work its output first (tier 0) —
+   it has already excluded `"done"`/`"skipped"` tickers, so anything it
+   lists is fair game, newest-filed first.
+2. Once that list is exhausted (or empty), skip anything in the tracker
+   already marked `"done"` for 2026, and among what's left, prefer anything
+   marked `"pending"` whose `nextExpectedFiling.estimate` has passed (or
+   anything you have direct evidence — e.g. a fresh EDGAR filing the scan
+   missed — is now available) — its report is likely sitting on EDGAR
+   unresearched and is higher-value than working further down an
+   alphabetical backlog.
+3. Otherwise, work through the tier-1 backlog in file order
+   (`scripts/data/sp500.json` then `scripts/data/us-listed.json`), skipping
+   tickers already in the tracker as `"done"` or `"skipped"` for 2026.
 4. Once literally every company in both files is `"done"` or `"skipped"`
-   in the tracker, the initiative shifts to Phase 2: sweep the tracker for
-   entries whose `nextExpectedFiling.estimate` has passed, confirm/update
-   the date if needed, and check whether a newer filing now exists —
-   if so, treat it like a normal new report (edit the existing one, or add
-   the new period, per the publishing pipeline below) and refresh the
-   tracker entry.
+   for 2026, two ongoing tracks open up — Phase 2 freshness maintenance
+   takes priority over tier 2 multi-year backfill when both apply to the
+   same company:
+   - **Phase 2 (freshness):** sweep the tracker for entries whose
+     `nextExpectedFiling.estimate` has passed, confirm/update the date if
+     needed, and check whether a newer filing now exists — if so, treat it
+     like a normal new report (edit the existing one, or add the new
+     period, per the publishing pipeline below) and refresh the tracker
+     entry.
+   - **Tier 2 (multi-year backfill):** for `"done"` companies with no
+     pending freshness check, add their next-most-recent uncovered fiscal
+     year (see tier 2 above), S&P 500 first.
 
 As a live secondary check (not a replacement for the tracker), you can
 still spot-check `https://<SITE_URL>/companies/<slug>` — if the tracker and
@@ -126,14 +162,44 @@ findable.
 ### Operating window
 
 This background task only runs **23:00–05:00 Japan Standard Time (JST)**
-nightly — i.e. 14:00–19:59 UTC. A cloud `schedule` routine was tried for
-this (so it'd keep running without a terminal open) but GitHub App
-installation for repo access couldn't be gotten working from this account
-— don't retry that path without a specific reason to think it'll behave
-differently. Use a session-local `/loop` (dynamic/self-paced) instead, with
-the time window enforced manually in the loop's own logic since
-`ScheduleWakeup` has no native time-of-day gating and its `delaySeconds` is
-capped at 3600:
+nightly — i.e. 14:00–19:59 UTC.
+
+**A cloud routine already exists for this — check it before creating
+another one.** `trig_01GNdUY59Na4x3JxMr6p7mxK` ("2026 Report Coverage -
+Nightly", created 2026-09-12) fires hourly across the whole window on its
+own, no terminal required — strictly better than the session-local `/loop`
+fallback below when it works. Check its state first with `RemoteTrigger
+{action: "list_runs", trigger_id: "trig_01GNdUY59Na4x3JxMr6p7mxK"}` (and
+`get_run_log` on a recent run) before assuming nothing is scheduled or
+spinning up a second one — a repeated task run twice a night wastes a
+research pass and can race on tracker/nightly-log updates.
+
+As of 2026-09-15 this routine has fired every night since 09-12 but
+published nothing every single time — its cloud sandbox's network egress
+policy blocks `www.sec.gov` and `financial-reports-web.vercel.app` (see
+`scripts/data/nightly-log.md` for the full diagnosis). Also as of
+2026-09-15: `ADMIN_PASSWORD` had been sitting in plaintext in this
+routine's stored prompt since creation (visible in every run's
+transcript) — rotated the credential and tried moving it to
+`job_config.ccr.session_context.environment_variables` instead, but the
+API rejects that field on triggers ("not supported on triggers — trigger
+configs are persisted and replayed on every fire"). There's currently no
+way to give a routine a secret without it living in the prompt text — if
+a real secrets mechanism for routines ships later, migrate to it; until
+then, treat the prompt as the only option and rotate periodically. This needs a human
+to fix (allowlist those hosts for Environment `env_01BS8ej9WZxyj4AZyF5TrTyC`
+at https://claude.ai/code's environment settings) — no tool available to
+a session can change an Environment's network policy from inside it. An
+earlier note here blamed "GitHub App installation" for the cloud routine
+not working; that was wrong — repo access has been fine in every run
+(confirmed via `get_run_log`), the network policy is the actual and only
+blocker. Until it's fixed, fall back to a session-local `/loop`
+(dynamic/self-paced), with the time window enforced manually in the
+loop's own logic since `ScheduleWakeup` has no native time-of-day gating
+and its `delaySeconds` is capped at 3600 — but don't run both
+simultaneously once the cloud routine works, to avoid duplicate/competing
+runs; stop the session-local one (`ScheduleWakeup({stop: true})`) once the
+cloud routine is confirmed to be publishing again.
 
 - On each wake, get the current time and convert to JST (UTC+9, no DST).
 - If it's inside 23:00–05:00 JST: do a normal batch (research + publish a
@@ -148,6 +214,23 @@ This only runs while the session/terminal stays open on the machine — if
 that's not viable, that's a real limitation to flag to the user rather
 than something to silently route around by re-attempting the cloud path.
 
+### Nightly log — update after every batch
+
+`scripts/data/nightly-log.md` is a human-readable, per-night running log
+(separate from the tracker, which is the machine-readable source of
+truth) — it's what answers "how many reports got done last night vs. the
+night before" without having to recompute it from `report-tracker.json`
+every time. At the end of every batch during the operating window (i.e.
+right before each `ScheduleWakeup(noop: false)`), append to or update
+tonight's entry (identified by the JST calendar date the 23:00 window
+started on) with: how many report-periods got published this batch and
+in total tonight, which tickers/periods, any skips with their reason, and
+which tier/phase was worked. Don't create a new entry per batch — a night
+spans several wakes 20-30 minutes apart, so accumulate into one entry per
+night. A batch that produced nothing (e.g. a subagent came back
+incomplete and nothing was published, see below) still gets a note in
+that night's entry rather than silently vanishing.
+
 ### Model for the research/analysis step
 
 Do the actual filing research and report-writing via an Agent subagent
@@ -157,6 +240,39 @@ before deciding what's next and updating the tracker. Whatever model is
 orchestrating the loop itself doesn't need to be Opus; the analysis quality
 matters more for the actual research/writing step, so that's what should
 run on it.
+
+**If the subagent runs low on budget mid-analysis, it must stop and
+report back incomplete — never publish a partial report.** A subagent can
+run out of context/output budget while reading a filing or writing the
+markdown; if it pushes ahead and calls `admin-publish` anyway with
+whatever it has (e.g. content that cuts off mid-sentence, a metrics table
+with placeholder-looking figures), that goes live exactly like a finished
+report — the admin form only validates that fields are non-empty, not
+that the content is actually complete. Tell every research subagent
+explicitly, as part of its task prompt: if you can't finish a thorough,
+sourced analysis within your available budget, stop and say so instead of
+publishing something partial. On the orchestrating side, treat a subagent
+result as untrusted until checked, not as ground truth:
+
+- If the subagent reports it didn't finish (or its final message doesn't
+  contain a clean `/reports/<id>` URL matching what `admin-publish`
+  itself prints on success), do **not** mark the tracker `"done"` — leave
+  it `"pending"` (or unset) with a short note so the next run retries it,
+  and do not count it in the nightly log's published total.
+- If it reports success, do one cheap sanity check before trusting it:
+  fetch the resulting `/reports/<id>` URL and confirm the content is
+  present and doesn't look truncated (ends mid-sentence, a table with an
+  obviously unclosed row, a summary shorter than a sentence). If it looks
+  broken, fix it via edit mode (`--edit <reportId>`) rather than leaving a
+  half-finished report live, and note what happened in the tracker/nightly
+  log.
+- This also means running out of the *session's* own budget (not just the
+  subagent's) mid-write is recoverable, not catastrophic: nothing reaches
+  the live site until the JSON file is written and `admin-publish` is
+  actually run, so a session that stops before that point has simply
+  wasted that iteration's partial work, not published broken data. Only a
+  subagent that ignores the instruction above and publishes prematurely
+  creates a real risk, which is what the post-publish sanity check catches.
 
 ### Writing for a lay audience
 

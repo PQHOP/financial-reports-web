@@ -48,3 +48,6 @@ next-env.d.ts
 
 .vercel
 .env*
+
+# regenerated scan artifact — see scripts/scan-recent-filings.ts
+/scripts/data/recent-filings-candidates.json
