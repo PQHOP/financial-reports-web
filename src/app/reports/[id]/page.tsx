@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { headers } from "next/headers";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { periodLabels } from "@/lib/period";
@@ -61,7 +62,10 @@ export default async function ReportPage({
 }) {
   const { id } = await params;
 
-  const report = await getReport(id);
+  const [report, nonce] = await Promise.all([
+    getReport(id),
+    headers().then((h) => h.get("x-nonce") ?? undefined),
+  ]);
 
   if (!report) notFound();
 
@@ -88,6 +92,7 @@ export default async function ReportPage({
     <article className="flex flex-col gap-6">
       <script
         type="application/ld+json"
+        nonce={nonce}
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
         }}

@@ -1,5 +1,6 @@
 "use server";
 
+import crypto from "node:crypto";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
@@ -15,6 +16,15 @@ export type ReportFormState = { error?: string };
 
 const LOGIN_RATE_LIMIT_WINDOW_MS = 15 * 60 * 1000;
 const LOGIN_RATE_LIMIT_MAX_ATTEMPTS = 5;
+
+// Plain !== leaks password length/prefix via response-time differences.
+// Rate limiting already caps this at 5 guesses/15min, but the fix is free.
+function passwordMatches(input: string, expected: string): boolean {
+  const inputBuf = Buffer.from(input);
+  const expectedBuf = Buffer.from(expected);
+  if (inputBuf.length !== expectedBuf.length) return false;
+  return crypto.timingSafeEqual(inputBuf, expectedBuf);
+}
 
 async function getClientIdentifier(): Promise<string> {
   const store = await headers();
@@ -40,7 +50,7 @@ export async function loginAction(formData: FormData): Promise<void> {
     redirect("/admin/login?error=ratelimited");
   }
 
-  if (!process.env.ADMIN_PASSWORD || password !== process.env.ADMIN_PASSWORD) {
+  if (!process.env.ADMIN_PASSWORD || !passwordMatches(password, process.env.ADMIN_PASSWORD)) {
     await prisma.loginAttempt.create({ data: { identifier } });
     redirect("/admin/login?error=1");
   }
