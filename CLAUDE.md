@@ -174,29 +174,72 @@ fallback below when it works. Check its state first with `RemoteTrigger
 spinning up a second one — a repeated task run twice a night wastes a
 research pass and can race on tracker/nightly-log updates.
 
-As of 2026-09-15 this routine has fired every night since 09-12 but
-published nothing every single time — its cloud sandbox's network egress
-policy blocks `www.sec.gov` and `financial-reports-web.vercel.app` (see
-`scripts/data/nightly-log.md` for the full diagnosis). Also as of
-2026-09-15: `ADMIN_PASSWORD` had been sitting in plaintext in this
-routine's stored prompt since creation (visible in every run's
-transcript) — rotated the credential and tried moving it to
-`job_config.ccr.session_context.environment_variables` instead, but the
-API rejects that field on triggers ("not supported on triggers — trigger
-configs are persisted and replayed on every fire"). There's currently no
-way to give a routine a secret without it living in the prompt text — if
-a real secrets mechanism for routines ships later, migrate to it; until
-then, treat the prompt as the only option and rotate periodically. This needs a human
-to fix (allowlist those hosts for Environment `env_01BS8ej9WZxyj4AZyF5TrTyC`
-at https://claude.ai/code's environment settings) — no tool available to
-a session can change an Environment's network policy from inside it. An
-earlier note here blamed "GitHub App installation" for the cloud routine
-not working; that was wrong — repo access has been fine in every run
-(confirmed via `get_run_log`), the network policy is the actual and only
-blocker. Until it's fixed, fall back to a session-local `/loop`
-(dynamic/self-paced), with the time window enforced manually in the
-loop's own logic since `ScheduleWakeup` has no native time-of-day gating
-and its `delaySeconds` is capped at 3600 — but don't run both
+This routine fired every night from 09-12 through 09-14 and published
+nothing every single time — its cloud sandbox's network egress policy
+blocked `www.sec.gov` and `financial-reports-web.vercel.app`. **Fixed
+2026-09-15** by the user (Network access on Environment
+`env_01BS8ej9WZxyj4AZyF5TrTyC` "Default", changed from "Trusted" to
+"Full"/unrestricted at https://claude.ai/code's environment settings —
+edit the environment, no tool available to a session can do this from
+inside itself). Confirmed working via a manual `RemoteTrigger run` and
+via the 6 real cron firings on the night of 09-15: both `sec.gov` and the
+deployed site return 200. Full diagnosis history: `scripts/data/
+nightly-log.md`.
+
+Fixing the network unblocked the routine only to hit two more blockers on
+09-15 night, **zero report-periods published that night either** — see
+`scripts/data/nightly-log.md`'s 2026-09-15 entry for the full detail:
+
+1. **Rotating `ADMIN_PASSWORD` needs a redeploy to actually take effect.**
+   `vercel env rm/add` alone does **not** update an already-running
+   production deployment — Vercel bakes env vars into the deployed
+   function at deploy time, not read live per request. Every firing on
+   09-15 night failed to log in because the routine's prompt had the
+   *new* password while production was still serving the *old* one.
+   **Fixed 2026-09-16**: ran `vercel --prod` again. Whenever
+   `ADMIN_PASSWORD` is rotated going forward, redeploy in the same breath
+   — updating the routine's prompt and Vercel's env var isn't enough by
+   itself. (Also as of 2026-09-15: routines have no secrets mechanism —
+   `job_config.ccr.session_context.environment_variables` is rejected on
+   triggers ("not supported on triggers — trigger configs are persisted
+   and replayed on every fire") — so the password still lives in the
+   prompt text; rotate periodically as the only available mitigation.)
+2. **The GitHub App backing this routine can clone/fetch but cannot
+   push** — `git push`, `mcp__github__push_files`, and
+   `mcp__github__create_or_update_file` all returned `403 Resource not
+   accessible by integration` on every 09-15 firing that got far enough
+   to try, with: *"Claude doesn't have GitHub access to
+   PQHOP/financial-reports-web for your organization. An org admin can
+   install the Claude GitHub App at
+   https://github.com/apps/claude/installations/select_target, or
+   reconnect GitHub from claude.ai settings
+   (https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1)."*
+   **Unresolved as of 2026-09-16 — still needs a human with admin rights
+   on the GitHub org/repo**, via one of the two links above. (An earlier
+   version of this note claimed repo access was "fine in every run" and
+   blamed the old, wrong network-policy-was-GitHub-App theory — that was
+   read-only clone/fetch working, which is a different permission from
+   push; don't conflate the two again.) Until fixed, the routine can
+   still research and publish reports to the live site (that path is
+   Playwright-against-the-deployed-admin-UI, unrelated to git), but
+   **cannot persist `report-tracker.json`/`nightly-log.md` updates** —
+   each firing re-derives "what's next" from scratch. Treat this as the
+   current top-priority blocker to get a human to fix.
+3. One firing also hit Playwright's Chromium not trusting the sandbox's
+   TLS-intercepting proxy (`ERR_CERT_AUTHORITY_INVALID`) — a fresh
+   container every firing means this isn't a one-time fix. Confirmed
+   working: `apt-get install -y libnss3-tools && certutil -A -n
+   "ccr-agent-proxy" -t "CT,C,C" -i /root/.ccr/agent-proxy-ca.crt -d
+   sql:/root/.pki/nssdb`. **Put this in the Environment's Setup script**
+   (the "Edit cloud environment" dialog, same place as Network access —
+   it runs before Claude Code launches, so it applies every firing
+   instead of being rediscovered each time) along with `npm install`.
+   Not yet added as of 2026-09-16 — needs the user.
+
+Fall back to a session-local `/loop` (dynamic/self-paced) when the cloud
+routine isn't reliably publishing, with the time window enforced manually
+in the loop's own logic since `ScheduleWakeup` has no native time-of-day
+gating and its `delaySeconds` is capped at 3600 — but don't run both
 simultaneously once the cloud routine works, to avoid duplicate/competing
 runs; stop the session-local one (`ScheduleWakeup({stop: true})`) once the
 cloud routine is confirmed to be publishing again.

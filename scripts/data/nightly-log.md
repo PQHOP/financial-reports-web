@@ -92,3 +92,59 @@ published before doing anything else.
 - Notes: anything unusual (a subagent that came back incomplete and was
   NOT published, a company that needed a skip, etc.)
 -->
+
+### 2026-09-15 night (23:00 JST 2026-09-15 → 05:00 JST 2026-09-16)
+
+- Mechanism: cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`), 6 firings at
+  23:06/00:07/01:07/02:07/03:06/04:06 JST — its first real chance to work
+  since 2026-09-12 now that network access is fixed.
+- Published: **0 report-periods.** Tier 0 scan (`scan-recent-filings`) ran
+  fine each time (88 fresh candidates found), but every firing was stopped
+  before any research began by two blockers, both since fixed or flagged
+  below:
+  1. **`ADMIN_PASSWORD` mismatch** (every firing): the password rotated
+     2026-09-15 was set on Vercel via `vercel env add` but the production
+     deployment was never redone afterward — Vercel env var changes only
+     take effect on the *next* deploy, not retroactively on an already-
+     running deployment. Confirmed and **fixed 2026-09-16 morning**: ran
+     `vercel --prod` again, `admin-publish -- --list` now logs in fine
+     with the current password.
+  2. **GitHub App has no write access to `PQHOP/financial-reports-web`**
+     (every firing, once it got past #1): `git push` and both
+     `mcp__github__push_files` / `create_or_update_file` all returned
+     `403 Resource not accessible by integration`, with: *"Claude doesn't
+     have GitHub access to PQHOP/financial-reports-web for your
+     organization. An org admin can install the Claude GitHub App at
+     https://github.com/apps/claude/installations/select_target, or
+     reconnect GitHub from claude.ai settings
+     (https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1)."*
+     **Still unresolved as of 2026-09-16 morning — needs a human with
+     admin rights on the PQHOP GitHub org to fix via one of those two
+     links.** Every prior firing (09-12 through 09-14) failed even
+     earlier at the network check, so this was never surfaced before —
+     it may have been broken since the routine's creation. Until fixed,
+     the routine can research and even publish reports to the live site,
+     but **cannot persist `report-tracker.json`/`nightly-log.md` updates**
+     — each firing would re-discover the same "what's next" state from
+     scratch (wasteful, though not harmful — `admin-publish`'s own
+     uniqueness check still rejects a true duplicate).
+  3. One firing (23:06 JST) also hit Playwright's bundled Chromium not
+     trusting the sandbox's TLS-intercepting proxy (`ERR_CERT_AUTHORITY_
+     INVALID` navigating to the deployed site) — fresh container each
+     firing, so this isn't a one-time fix. Confirmed working fix:
+     `apt-get install -y libnss3-tools && certutil -A -n "ccr-agent-proxy"
+     -t "CT,C,C" -i /root/.ccr/agent-proxy-ca.crt -d sql:/root/.pki/nssdb`.
+     Belongs in the cloud Environment's **Setup script** (runs before
+     Claude Code launches, so it'd apply every firing) rather than
+     rediscovered each time — not yet added, needs the user via the
+     Environment edit dialog (see `CLAUDE.md` "Operating window").
+- Tier worked: 0 only (scan ran; never got past login to research/publish).
+- Running total after tonight: unchanged — 16 companies done, 32
+  report-periods published (all from before 2026-09-15).
+- Notes: two of the routine's own local commits from tonight (an
+  unconfirmed alternate Chromium-TLS-trust code fix, and a nightly-log
+  write-up) never reached GitHub because of blocker #2 above and were
+  lost when their ephemeral containers were reclaimed — this entry was
+  reconstructed from `RemoteTrigger get_run_log` transcripts instead, and
+  pushed from a local session that still has working git access (unlike
+  the routine, until #2 is fixed).
