@@ -352,5 +352,16 @@
     "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
     "nextExpectedFiling": { "type": "10-Q (fiscal Q2, period end 2026-10-31)", "estimate": "2026-12-15", "basis": "April 30 fiscal year end; ~90-day cadence off this filing, not confirmed by search", "confidence": "estimated" },
     "lastChecked": "2026-09-16"
+  },
+  "RFIL": {
+    "name": "RF Industries, Ltd.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48r6km000204l6vtwduvvg" },
+    "reports": [
+      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48r6km000204l6vtwduvvg", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+    ],
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-K (FY2026)", "estimate": "2027-01-14", "basis": "prior-year FY2025 10-K filed 2026-01-14 per this filing's Item 1A reference; Oct 31 fiscal year end", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }

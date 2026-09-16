@@ -219,12 +219,51 @@ published before doing anything else.
     same for its Sept-FYE quarters) — each report's own title/body states
     the company's fiscal label explicitly so the page itself isn't
     misleading.
+- Third batch (a later firing this same night; re-ran `npm run
+  scan-recent-filings`, got 53 fresh candidates — the same underlying
+  09-14/09-11/09-10 filings minus the 10 already published above, plus
+  WFCF's 10-Q/A still surfacing since it was deliberately left untouched
+  in the tracker). Skipped WFCF again for the same reason (amendment only
+  touches Item 4 controls/certifications, no financial data). Worked the
+  top 5 of the 09-14 group in list order, via 5 parallel opus subagents:
+  - **MWYN** (Marwynn Holdings) — 2026 Q1 (10-Q, fiscal Q1 FY2027 by the
+    company's own label, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu48paih000004kxeswl3wc0
+    Revenue jumped on two new low-margin scrap-copper-resale and
+    food-and-beverage lines; flagged thin cash ($3,541) against $1.31M
+    receivables and an explicit going-concern doubt.
+  - **PLCE** (Children's Place) — 2026 Q2 (10-Q, thirteen weeks ended
+    2026-08-01): https://financial-reports-web.vercel.app/reports/cmu48q2x5000004l6kqicbnkw
+    Net sales down 18.9%; reported gross margin rose only because ~$39M of
+    refunded IEEPA tariffs was booked as a COGS reduction — underlying
+    margin actually fell ~1,550bps per management's own bridge.
+  - **PLAY** (Dave & Buster's) — 2026 Q2 (10-Q, 13 weeks ended
+    2026-08-04): https://financial-reports-web.vercel.app/reports/cmu48qqgo000104l646z9vunr
+    Net loss of $12.5M; separated a one-off breakage-accounting swing from
+    genuine comp-sales softness and a margin-mix shift toward food & bev.
+  - **OPTT** (Ocean Power Technologies) — 2026 Q1 (10-Q, fiscal Q1 FY2027
+    by the company's own label, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu48q0c4000104kxds5lj3gx
+    Gross margin went negative on foreseeable-loss contract charges; going
+    concern doubt, unwaived note default, 1-for-30 reverse split effective
+    2026-09-11.
+  - **RFIL** (RF Industries) — 2026 Q3 (10-Q, three months ended
+    2026-07-31): https://financial-reports-web.vercel.app/reports/cmu48r6km000204l6vtwduvvg
+    Record quarterly revenue +21.1%, net income tripled; flagged that most
+    of the margin gain was a non-repeating tariff refund and that a
+    valuation-allowance release will distort one future quarter's EPS.
+  - All 5 subagents ran their own post-publish sanity check before
+    reporting success; one (OPTT) hit a briefly-stale CDN response on
+    first fetch (same symptom noted for ABAT earlier tonight) that
+    resolved on a cache-busted re-fetch — recurring enough now to flag as
+    a real (if minor) deploy-config quirk, not a one-off.
 - Tier worked: 0 (fresh filings only; tier-1 backlog untouched tonight).
-- Running total after tonight: **26 companies done, 42 report-periods
-  published** (16/32 before tonight + 10 this batch across two sub-batches
-  of 5). All 10 of tonight's fresh-filing candidates that were attempted
-  published successfully; only WFCF (of the 15 candidates considered) was
-  set aside, for the non-financial-amendment reason above.
+- Running total after tonight: **31 companies done, 47 report-periods
+  published** (16/32 before tonight + 10 in the first two sub-batches + 5
+  in this third sub-batch). All 15 of tonight's fresh-filing candidates
+  that were attempted published successfully; only WFCF (considered twice,
+  in sub-batch 1 and again here) was set aside, for the non-financial-
+  amendment reason above.
 - Notes: none of the 5 subagents reported running low on budget; all
   passed their own post-publish sanity check (fetched the live page,
   confirmed no truncation) before reporting success. **`git push` to
@@ -234,4 +273,9 @@ published before doing anything else.
   section, blocker #2: `403 Resource not accessible by integration`) did
   **not** reproduce this firing. Treat this one clean push as encouraging
   but not conclusive — CLAUDE.md should be updated to reflect this fix
-  once a couple more firings confirm it holds.
+  once a couple more firings confirm it holds. This third sub-batch's own
+  5 pushes (one per company, to keep the stop-hook's "commit before
+  finishing" check satisfied incrementally) also succeeded cleanly against
+  `origin master`, so GitHub App write access held across at least 6
+  pushes this session — treat as further (still not fully conclusive)
+  evidence blocker #2 is resolved.
