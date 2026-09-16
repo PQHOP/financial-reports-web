@@ -199,4 +199,11 @@ published before doing anything else.
   published (16/32 before tonight + this batch's 5).
 - Notes: none of the 5 subagents reported running low on budget; all
   passed their own post-publish sanity check (fetched the live page,
-  confirmed no truncation) before reporting success.
+  confirmed no truncation) before reporting success. **`git push` to
+  `origin master` succeeded** (commit `4e49f88`, fast-forward
+  `fd5311c..4e49f88`) — the GitHub App write-access blocker reported
+  unresolved as of 2026-09-16 morning (CLAUDE.md's "Operating window"
+  section, blocker #2: `403 Resource not accessible by integration`) did
+  **not** reproduce this firing. Treat this one clean push as encouraging
+  but not conclusive — CLAUDE.md should be updated to reflect this fix
+  once a couple more firings confirm it holds.
