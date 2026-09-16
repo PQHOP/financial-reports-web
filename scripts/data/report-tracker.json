@@ -275,5 +275,27 @@
     "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
     "nextExpectedFiling": { "type": "10-K (FY2026, year ended 2026-10-31)", "estimate": "2027-01-29", "basis": "October 31 fiscal year end; prior-year FY2025 10-K filed 2026-01-29 per the 10-Q's own note", "confidence": "estimated" },
     "lastChecked": "2026-09-16"
+  },
+  "KMTS": {
+    "name": "Kestra Medical Technologies, Ltd.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46wltv000304jq9dp9y784" },
+    "reports": [
+      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46wltv000304jq9dp9y784", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+    ],
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (Q2, period end approx 2026-10-31)", "estimate": "2026-12-08", "basis": "April 30 fiscal year end; estimated ~40 days after the Oct 31, 2026 quarter end per typical accelerated-filer cadence, not confirmed by search", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "IMMR": {
+    "name": "Immersion Corporation",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46wp11000104l89qs4znzs" },
+    "reports": [
+      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46wp11000104l89qs4znzs", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+    ],
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (Q2, period end approx 2026-10-31)", "estimate": "2026-12-10", "basis": "April 30 fiscal year end; estimated ~40 days after the Oct 31, 2026 quarter end, not confirmed by search", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }
