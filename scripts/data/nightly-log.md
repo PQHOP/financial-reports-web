@@ -200,11 +200,31 @@ published before doing anything else.
     Oct 31 FYE): https://financial-reports-web.vercel.app/reports/cmu46v6ow000104jqcu2w59r9
     Pre-revenue regen-medicine direct-listing; flagged going-concern
     doubt and ~2 months of cash runway at quarter-end.
-  - CODA, FEIM, IMMR, KMTS: subagents still running as of this write-up;
-    will be appended once they finish.
+  - **CODA** (Coda Octopus Group) — 2026 Q3 (10-Q, fiscal Q3 ends
+    2026-07-31, Oct 31 FYE): https://financial-reports-web.vercel.app/reports/cmu46w45d000204jqarvyqwsh
+  - **KMTS** (Kestra Medical Technologies) — 2026 Q1 (10-Q, quarter ended
+    2026-07-31, Apr 30 FYE): https://financial-reports-web.vercel.app/reports/cmu46wltv000304jq9dp9y784
+  - **IMMR** (Immersion Corporation) — 2026 Q1 (10-Q, quarter ended
+    2026-07-31, Apr 30 FYE, fiscal Q1 2027 by the company's own label):
+    https://financial-reports-web.vercel.app/reports/cmu46wp11000104l89qs4znzs
+  - **FEIM** (Frequency Electronics) — 2026 Q1 (10-Q, quarter ended
+    2026-07-31, Apr 30 FYE, fiscal Q1 2027 by the company's own label):
+    https://financial-reports-web.vercel.app/reports/cmu46x2kn000404jqjmtuq6pz
+  - Note: several of tonight's non-calendar-fiscal-year companies (VRA,
+    IMMR, FEIM) file quarters that the company itself labels one fiscal
+    year ahead of the calendar year the quarter falls in (e.g. "fiscal Q1
+    2027" for a quarter ended July 2026). Consistently bucketed these
+    under the *calendar* year the period falls in (year 2026) per this
+    tracker's existing convention (see AAPL's entries, which do the
+    same for its Sept-FYE quarters) — each report's own title/body states
+    the company's fiscal label explicitly so the page itself isn't
+    misleading.
 - Tier worked: 0 (fresh filings only; tier-1 backlog untouched tonight).
-- Running total after tonight: 22 companies done, 38 report-periods
-  published so far (16/32 before tonight + 6 this batch), 4 more pending.
+- Running total after tonight: **26 companies done, 42 report-periods
+  published** (16/32 before tonight + 10 this batch across two sub-batches
+  of 5). All 10 of tonight's fresh-filing candidates that were attempted
+  published successfully; only WFCF (of the 15 candidates considered) was
+  set aside, for the non-financial-amendment reason above.
 - Notes: none of the 5 subagents reported running low on budget; all
   passed their own post-publish sanity check (fetched the live page,
   confirmed no truncation) before reporting success. **`git push` to
