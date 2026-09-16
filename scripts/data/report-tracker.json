@@ -263,5 +263,17 @@
     "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
     "nextExpectedFiling": { "type": "10-K (FY2026, year ended 2026-10-31)", "estimate": "2027-01-29", "basis": "October 31 fiscal year end; first annual report as a newly-listed smaller reporting company, estimated ~90 days after fiscal year end, not confirmed by search", "confidence": "estimated" },
     "lastChecked": "2026-09-16"
+  },
+  "CODA": {
+    "name": "Coda Octopus Group, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46w45d000204jqarvyqwsh" },
+    "reports": [
+      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46w45d000204jqarvyqwsh", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-K (FY2026, year ended 2026-10-31)", "estimate": "2027-01-29", "basis": "October 31 fiscal year end; prior-year FY2025 10-K filed 2026-01-29 per the 10-Q's own note", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }
