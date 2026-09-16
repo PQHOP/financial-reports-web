@@ -423,5 +423,65 @@
     "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
     "nextExpectedFiling": { "type": "10-Q (fiscal Q3 2027 / calendar Q3 2026, period end 2026-10-31)", "estimate": "2026-12-12", "basis": "~90 days after this 10-Q filing; Jan 31 FYE", "confidence": "estimated" },
     "lastChecked": "2026-09-16"
+  },
+  "AXR": {
+    "name": "AMREP Corporation",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hmhze000404jrz9bohs7w" },
+    "reports": [
+      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hmhze000404jrz9bohs7w", "periodEnd": "2026-07-31", "filedAt": "2026-09-11", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-11" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)", "estimate": "2026-12-10", "basis": "~90 days after this 10-Q filing; Apr 30 FYE", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "CSBR": {
+    "name": "Champions Oncology, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hprfc000404kzr5u2s280" },
+    "reports": [
+      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hprfc000404kzr5u2s280", "periodEnd": "2026-07-31", "filedAt": "2026-09-11", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-11" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)", "estimate": "2026-12-10", "basis": "~90 days after this 10-Q filing; Apr 30 FYE", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "CULP": {
+    "name": "Culp, Inc. - Common Shares",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hopgu000204kz2b17nib7" },
+    "reports": [
+      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hopgu000204kz2b17nib7", "periodEnd": "2026-08-02", "filedAt": "2026-09-11", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (early-May FYE)" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-08-02", "filedAt": "2026-09-11" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026)", "estimate": "2026-12-10", "basis": "~90 days after this 10-Q filing; early-May FYE", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "FLWS": {
+    "name": "1-800-FLOWERS.COM, Inc. - Class A",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hovk5000304kzmku7tbkz" },
+    "reports": [
+      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hovk5000304kzmku7tbkz", "periodEnd": "2026-06-28", "filedAt": "2026-09-11" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-28", "filedAt": "2026-09-11" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q1 2027)", "estimate": "2026-11-11", "basis": "~90 days after FY2026 10-K filing; late-June fiscal year end", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "GWRE": {
+    "name": "Guidewire Software, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hoiku000104kz5h6mrokk" },
+    "reports": [
+      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hoiku000104kz5h6mrokk", "periodEnd": "2026-07-31", "filedAt": "2026-09-11" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-07-31", "filedAt": "2026-09-11" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q1 2027)", "estimate": "2026-12-08", "basis": "~90 days after FY2026 10-K filing; July 31 fiscal year end", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }

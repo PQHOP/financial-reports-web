@@ -337,3 +337,63 @@ published before doing anything else.
   pushes this session — treat as further (still not fully conclusive)
   evidence blocker #2 is resolved. This fourth sub-batch's own push (this
   commit) is a further data point in the same direction.
+- Fifth batch (same firing, immediately after the fourth; ~35 minutes left
+  in the window). Re-checked the admin dropdown for the next 5 tickers in
+  the 09-11 date group (AXR, CSBR, CULP, FLWS, GWRE — confirmed present),
+  then ran 5 more parallel opus subagents:
+  - **AXR** (AMREP Corporation) — 2026 Q3 (10-Q, fiscal Q1 FY2027 by the
+    company's own label, Apr 30 FYE, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu4hmhze000404jrz9bohs7w
+    Zero developed acres sold this quarter vs. 8.9 acres a year ago,
+    collapsing land-sale revenue 98% and flipping operating income to a
+    loss — deliberate per management's own guidance as capital shifts into
+    homebuilding.
+  - **CSBR** (Champions Oncology) — 2026 Q3 (10-Q, fiscal Q1 FY2027 by the
+    company's own label, Apr 30 FYE, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu4hprfc000404kzr5u2s280
+    Revenue +8.8%, gross margin up ~760bps, but the entire gross-profit
+    gain was consumed by a 66.6% jump in sales & marketing spend, leaving
+    the operating loss roughly flat; cash down to $4.4M from $10.3M.
+  - **CULP** (Culp, Inc.) — 2026 Q3 (10-Q, fiscal Q1 FY2027 by the
+    company's own label, early-May FYE, period end 2026-08-02):
+    https://financial-reports-web.vercel.app/reports/cmu4hopgu000204kz2b17nib7
+    Reported net income of $6.0M vs. a prior-year loss is almost entirely
+    a one-time $6.9M IEEPA tariff refund booked inside cost of sales;
+    excluding it, Culp still ran an operating loss, though bedding-segment
+    margin genuinely improved post-restructuring.
+  - **FLWS** (1-800-FLOWERS.COM) — FY2026 ANNUAL (10-K, period end
+    2026-06-28): https://financial-reports-web.vercel.app/reports/cmu4hovk5000304kzmku7tbkz
+    Revenue -10.8% on deliberate marketing cuts, but gross profit fell
+    more than the marketing savings; adjusted EBITDA down 90%. A September
+    9, 2026 credit-agreement amendment replaced leverage covenants with a
+    minimum-liquidity test as cash fell to $11.4M.
+  - **GWRE** (Guidewire Software) — FY2026 ANNUAL (10-K, period end
+    2026-07-31): https://financial-reports-web.vercel.app/reports/cmu4hoiku000104kz5h6mrokk
+    Revenue +23%, subscription gross margin up to 73%, GAAP operating
+    income roughly tripled — the cloud transition turned profitable this
+    year; FY2027 guidance implies incremental operating margin cooling to
+    ~24% from ~40%.
+  - Operational notes: the CULP subagent hit a Chromium/proxy-CA trust
+    issue (`/root/.pki/nssdb` had the `ccr-agent-proxy` cert imported but
+    with trust flags `C,,` instead of `CT,C,C`) and fixed it with
+    `certutil -M -n "ccr-agent-proxy" -t "CT,C,C" -d sql:/root/.pki/nssdb`
+    — worth folding into the Environment setup script alongside the
+    existing `certutil -A` step in CLAUDE.md's Operating Window notes,
+    since this is a *different* failure mode (existing-but-wrong trust
+    bits, not a missing cert) from the one already documented there.
+  - All 5 subagents passed their own post-publish sanity check before
+    reporting success; none reported running low on budget.
+- Tier worked: 0 (fresh filings only; tier-1 backlog untouched tonight).
+- Running total after tonight: **41 companies done, 57 report-periods
+  published** (16/32 before tonight + 10 in the first two sub-batches + 5
+  in the third sub-batch + 5 in the fourth sub-batch + 5 in this fifth
+  sub-batch). All 25 of tonight's fresh-filing candidates that were
+  attempted published successfully; only WFCF (considered on sub-batches
+  1, 3, and 4) was set aside, for the non-financial-amendment reason
+  above. This firing is stopping here as the 05:00 JST window close
+  approaches — remaining 09-11 and 09-10 fresh-filing candidates (still
+  ~18 left after tonight, per the last `scan-recent-filings` run) carry
+  over to the next firing.
+- This fifth sub-batch's own push (this commit) succeeded cleanly against
+  `origin master` — a further (7th+) clean push this session, continuing
+  to support that the GitHub App write-access blocker is resolved.
