@@ -174,67 +174,35 @@ fallback below when it works. Check its state first with `RemoteTrigger
 spinning up a second one — a repeated task run twice a night wastes a
 research pass and can race on tracker/nightly-log updates.
 
-This routine fired every night from 09-12 through 09-14 and published
-nothing every single time — its cloud sandbox's network egress policy
-blocked `www.sec.gov` and `financial-reports-web.vercel.app`. **Fixed
-2026-09-15** by the user (Network access on Environment
-`env_01BS8ej9WZxyj4AZyF5TrTyC` "Default", changed from "Trusted" to
-"Full"/unrestricted at https://claude.ai/code's environment settings —
-edit the environment, no tool available to a session can do this from
-inside itself). Confirmed working via a manual `RemoteTrigger run` and
-via the 6 real cron firings on the night of 09-15: both `sec.gov` and the
-deployed site return 200. Full diagnosis history: `scripts/data/
-nightly-log.md`.
+**Status as of 2026-09-16 night: working end to end.** This routine fired
+every night from 09-12 through 09-14 and published nothing every single
+time (blocked by the cloud sandbox's network egress policy — see
+`scripts/data/nightly-log.md` for that history), then hit two further
+blockers on 09-15 night (an `ADMIN_PASSWORD` rotation that needed a
+redeploy to take effect, and what looked like broken GitHub App write
+access) that are now resolved. On 09-16 night — the first fully clean
+run — it published **25 report-periods across 25 companies** (16→41
+companies done, 32→57 report-periods total) across 5 sub-batches in one
+extended firing, with GitHub `git push` succeeding cleanly 7+ times in a
+row. Full per-blocker diagnosis and the running total: `scripts/data/
+nightly-log.md`. Known remaining rough edges, none blocking:
 
-Fixing the network unblocked the routine only to hit two more blockers on
-09-15 night, **zero report-periods published that night either** — see
-`scripts/data/nightly-log.md`'s 2026-09-15 entry for the full detail:
-
-1. **Rotating `ADMIN_PASSWORD` needs a redeploy to actually take effect.**
-   `vercel env rm/add` alone does **not** update an already-running
-   production deployment — Vercel bakes env vars into the deployed
-   function at deploy time, not read live per request. Every firing on
-   09-15 night failed to log in because the routine's prompt had the
-   *new* password while production was still serving the *old* one.
-   **Fixed 2026-09-16**: ran `vercel --prod` again. Whenever
-   `ADMIN_PASSWORD` is rotated going forward, redeploy in the same breath
-   — updating the routine's prompt and Vercel's env var isn't enough by
-   itself. (Also as of 2026-09-15: routines have no secrets mechanism —
-   `job_config.ccr.session_context.environment_variables` is rejected on
-   triggers ("not supported on triggers — trigger configs are persisted
-   and replayed on every fire") — so the password still lives in the
-   prompt text; rotate periodically as the only available mitigation.)
-2. **The GitHub App backing this routine can clone/fetch but cannot
-   push** — `git push`, `mcp__github__push_files`, and
-   `mcp__github__create_or_update_file` all returned `403 Resource not
-   accessible by integration` on every 09-15 firing that got far enough
-   to try, with: *"Claude doesn't have GitHub access to
-   PQHOP/financial-reports-web for your organization. An org admin can
-   install the Claude GitHub App at
-   https://github.com/apps/claude/installations/select_target, or
-   reconnect GitHub from claude.ai settings
-   (https://claude.ai/customize/connectors?auth_start=github&auth_start_force=1)."*
-   **Unresolved as of 2026-09-16 — still needs a human with admin rights
-   on the GitHub org/repo**, via one of the two links above. (An earlier
-   version of this note claimed repo access was "fine in every run" and
-   blamed the old, wrong network-policy-was-GitHub-App theory — that was
-   read-only clone/fetch working, which is a different permission from
-   push; don't conflate the two again.) Until fixed, the routine can
-   still research and publish reports to the live site (that path is
-   Playwright-against-the-deployed-admin-UI, unrelated to git), but
-   **cannot persist `report-tracker.json`/`nightly-log.md` updates** —
-   each firing re-derives "what's next" from scratch. Treat this as the
-   current top-priority blocker to get a human to fix.
-3. One firing also hit Playwright's Chromium not trusting the sandbox's
-   TLS-intercepting proxy (`ERR_CERT_AUTHORITY_INVALID`) — a fresh
-   container every firing means this isn't a one-time fix. Confirmed
-   working: `apt-get install -y libnss3-tools && certutil -A -n
-   "ccr-agent-proxy" -t "CT,C,C" -i /root/.ccr/agent-proxy-ca.crt -d
-   sql:/root/.pki/nssdb`. **Put this in the Environment's Setup script**
-   (the "Edit cloud environment" dialog, same place as Network access —
-   it runs before Claude Code launches, so it applies every firing
-   instead of being rediscovered each time) along with `npm install`.
-   Not yet added as of 2026-09-16 — needs the user.
+- **Chromium/TLS-proxy trust** needs re-establishing every firing (fresh
+  container each time) — two distinct failure modes seen so far: a
+  missing cert (`certutil -A -n "ccr-agent-proxy" -t "CT,C,C" -i
+  /root/.ccr/agent-proxy-ca.crt -d sql:/root/.pki/nssdb`) and, separately,
+  a cert present with the wrong trust bits (`certutil -M -n
+  "ccr-agent-proxy" -t "CT,C,C" -d sql:/root/.pki/nssdb`). Firings work
+  around this in-session when hit, but it'd be one less thing to
+  rediscover if the Environment's **Setup script** (the "Edit cloud
+  environment" dialog, same place as Network access — runs before Claude
+  Code launches, so it'd apply every firing) ran both `certutil` commands
+  plus `npm install`. Not yet added as of 2026-09-16 — optional, needs
+  the user.
+- **A `/reports/<id>` URL occasionally serves a briefly-stale CDN
+  response** right after publish (seen on ABAT and OPTT, both on 09-16) —
+  a cache-busted re-fetch gets the correct content. Recurring enough to
+  be a real (minor) deploy-config quirk, not investigated further yet.
 
 Fall back to a session-local `/loop` (dynamic/self-paced) when the cloud
 routine isn't reliably publishing, with the time window enforced manually
