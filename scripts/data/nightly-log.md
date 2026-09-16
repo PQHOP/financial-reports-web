@@ -257,17 +257,74 @@ published before doing anything else.
     first fetch (same symptom noted for ABAT earlier tonight) that
     resolved on a cache-busted re-fetch — recurring enough now to flag as
     a real (if minor) deploy-config quirk, not a one-off.
+- Fourth batch (a later firing this same night, 04:06-04:16 JST; network
+  check re-verified from scratch first — `curl` to sec.gov without a
+  User-Agent returned SEC's own 403, not a proxy block, confirmed by a
+  clean 200 with the required header, and the deployed site also returned
+  200 — SEC and the site remained reachable). Re-ran `npm run
+  scan-recent-filings`: 48 fresh candidates (same underlying 09-14/09-11/
+  09-10 filings minus the 15 already published above, plus WFCF's 10-Q/A
+  still surfacing since it remains deliberately untouched in the tracker).
+  Skipped WFCF again for the same reason (amendment only touches Item 4
+  controls/certifications, no financial data — still left out of the
+  tracker on purpose). Worked the remaining 5 tickers in the 09-14 group
+  (the last of that date's candidates), via 5 parallel opus subagents:
+  - **RLGT** (Radiant Logistics) — FY2026 ANNUAL (10-K, July-June fiscal
+    year, period end 2026-06-30):
+    https://financial-reports-web.vercel.app/reports/cmu4hee7e000004kzwvppcj18
+    Revenue +3.5%, diluted EPS +11.4%, but adjusted EBITDA (the bank
+    covenant metric) fell 5.3% — the GAAP gain came from a non-cash
+    earn-out revaluation and lower acquisition amortization; ~$29M of the
+    $31.7M revenue increase came from the Weport (Mexico) acquisition, and
+    receivables days stretched with a larger bad-debt allowance.
+  - **UNFI** (United Natural Foods) — FY2026 ANNUAL (10-K, 52 weeks ended
+    2026-08-01):
+    https://financial-reports-web.vercel.app/reports/cmu4haz92000104jrjw21rina
+    Net sales -2.0% but net income swung from a $118M loss to $84M profit
+    and adjusted EBITDA +27%, driven by exiting a ~$1B low-margin East
+    region customer agreement and DC consolidation rather than volume
+    growth; flagged a cybersecurity-insurance recovery, a LIFO
+    liquidation benefit, and rising customer concentration (28%, one
+    customer).
+  - **UROY** (Uranium Royalty Corp.) — 2026 Q3 (10-Q, fiscal Q1 FY2027 by
+    the company's own label, Apr 30 FYE, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu4hbbs8000304jrnme812o6
+    Sold nearly its entire physical uranium stockpile to help fund a
+    $964.3M soda-ash royalty acquisition (Sweetwater); the resulting
+    inventory gain is nearly all of operating income, and the filing
+    discloses a going-concern doubt against a $40M bridge loan due
+    January 2027.
+  - **VALU** (Value Line) — 2026 Q3 (10-Q, fiscal Q1 FY2027 by the
+    company's own label, Apr 30 FYE, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu4haw15000004jrja5l4l06
+    Net income -27.9% with all three income streams (publishing, EAM
+    asset-management interests, investment gains) down together; Value
+    Line Funds AUM fell 32.2% while the Russell 2000 rose 32.5% over the
+    same span, implying sustained redemptions rather than market losses.
+  - **WLTH** (Wealthfront) — 2026 Q2 (10-Q, fiscal Q2 FY2027 by the
+    company's own label, Jan 31 FYE, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu4hbaao000204jrcqhyugs7
+    Revenue flat (+1%) but net income -49% as stock-based comp jumped
+    roughly 10x after December 2025 IPO-triggered RSU vesting began
+    expensing; client assets kept shifting from the higher-fee cash-sweep
+    product into lower-fee advisory, which is the real reason revenue
+    stalled despite AUM growth.
+  - One transient hiccup: the RLGT subagent's first `admin-publish` run
+    timed out waiting for the login form; a plain retry of the identical
+    command succeeded immediately, so treated as a one-off rather than
+    the previously-diagnosed CDN-staleness or TLS-trust issues.
 - Tier worked: 0 (fresh filings only; tier-1 backlog untouched tonight).
-- Running total after tonight: **31 companies done, 47 report-periods
+- Running total after tonight: **36 companies done, 52 report-periods
   published** (16/32 before tonight + 10 in the first two sub-batches + 5
-  in this third sub-batch). All 15 of tonight's fresh-filing candidates
-  that were attempted published successfully; only WFCF (considered twice,
-  in sub-batch 1 and again here) was set aside, for the non-financial-
-  amendment reason above.
-- Notes: none of the 5 subagents reported running low on budget; all
-  passed their own post-publish sanity check (fetched the live page,
-  confirmed no truncation) before reporting success. **`git push` to
-  `origin master` succeeded** (commit `4e49f88`, fast-forward
+  in the third sub-batch + 5 in this fourth sub-batch). All 20 of
+  tonight's fresh-filing candidates that were attempted published
+  successfully; only WFCF (considered three times now, in sub-batches 1,
+  3, and 4) was set aside each time, for the non-financial-amendment
+  reason above.
+- Notes: none of tonight's fourth-batch subagents reported running low on
+  budget; all 5 passed their own post-publish sanity check (fetched the
+  live page, confirmed no truncation) before reporting success. **`git
+  push` to `origin master` succeeded** (commit `4e49f88`, fast-forward
   `fd5311c..4e49f88`) — the GitHub App write-access blocker reported
   unresolved as of 2026-09-16 morning (CLAUDE.md's "Operating window"
   section, blocker #2: `403 Resource not accessible by integration`) did
@@ -278,4 +335,5 @@ published before doing anything else.
   finishing" check satisfied incrementally) also succeeded cleanly against
   `origin master`, so GitHub App write access held across at least 6
   pushes this session — treat as further (still not fully conclusive)
-  evidence blocker #2 is resolved.
+  evidence blocker #2 is resolved. This fourth sub-batch's own push (this
+  commit) is a further data point in the same direction.

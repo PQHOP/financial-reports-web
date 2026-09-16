@@ -363,5 +363,65 @@
     "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
     "nextExpectedFiling": { "type": "10-K (FY2026)", "estimate": "2027-01-14", "basis": "prior-year FY2025 10-K filed 2026-01-14 per this filing's Item 1A reference; Oct 31 fiscal year end", "confidence": "estimated" },
     "lastChecked": "2026-09-16"
+  },
+  "RLGT": {
+    "name": "Radiant Logistics, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hee7e000004kzwvppcj18" },
+    "reports": [
+      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hee7e000004kzwvppcj18", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q1 2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "~90 days after FY2026 10-K filing; July-June fiscal year", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "UNFI": {
+    "name": "United Natural Foods, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4haz92000104jrjw21rina" },
+    "reports": [
+      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4haz92000104jrjw21rina", "periodEnd": "2026-08-01", "filedAt": "2026-09-14" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-08-01", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q1 2027)", "estimate": "2026-12-10", "basis": "~90 days after FY2026 10-K filing; fiscal Q1 FY2027 ends ~late Oct/early Nov 2026", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "UROY": {
+    "name": "Uranium Royalty Corp.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hbbs8000304jrnme812o6" },
+    "reports": [
+      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hbbs8000304jrnme812o6", "periodEnd": "2026-07-31", "filedAt": "2026-09-14", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)", "estimate": "2026-12-12", "basis": "~90 days after this 10-Q filing; Apr 30 FYE", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "VALU": {
+    "name": "Value Line, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4haw15000004jrja5l4l06" },
+    "reports": [
+      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4haw15000004jrja5l4l06", "periodEnd": "2026-07-31", "filedAt": "2026-09-14", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)", "estimate": "2026-12-12", "basis": "~90 days after this 10-Q filing; Apr 30 FYE", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "WLTH": {
+    "name": "Wealthfront Corporation",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hbaao000204jrcqhyugs7" },
+    "reports": [
+      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hbaao000204jrcqhyugs7", "periodEnd": "2026-07-31", "filedAt": "2026-09-14", "note": "calendar Q2 2026; company labels this fiscal Q2 2027 (Jan 31 FYE)" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q3 2027 / calendar Q3 2026, period end 2026-10-31)", "estimate": "2026-12-12", "basis": "~90 days after this 10-Q filing; Jan 31 FYE", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }
