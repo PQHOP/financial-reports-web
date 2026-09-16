@@ -251,5 +251,17 @@
     "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" },
     "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "June 30 fiscal year end; estimated ~45 days after Sept 30, 2026 quarter end per typical smaller-reporting-company cadence, not confirmed by search", "confidence": "estimated" },
     "lastChecked": "2026-09-16"
+  },
+  "CNXU": {
+    "name": "Conexeu Sciences Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46v6ow000104jqcu2w59r9" },
+    "reports": [
+      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46v6ow000104jqcu2w59r9", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-K (FY2026, year ended 2026-10-31)", "estimate": "2027-01-29", "basis": "October 31 fiscal year end; first annual report as a newly-listed smaller reporting company, estimated ~90 days after fiscal year end, not confirmed by search", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }

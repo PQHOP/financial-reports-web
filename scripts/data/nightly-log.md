@@ -194,9 +194,17 @@ published before doing anything else.
     publish (a re-fetch with cache-busting returned the correct content).
     Not something this batch could fix — noting for whoever next touches
     the deploy config.
+- Second batch (tier 0, 09-14 date group, next 5 in ticker order): CNXU,
+  CODA, FEIM, IMMR, KMTS — also via parallel opus subagents.
+  - **CNXU** (Conexeu Sciences) — 2026 Q3 (10-Q, fiscal Q3 ends 2026-07-31,
+    Oct 31 FYE): https://financial-reports-web.vercel.app/reports/cmu46v6ow000104jqcu2w59r9
+    Pre-revenue regen-medicine direct-listing; flagged going-concern
+    doubt and ~2 months of cash runway at quarter-end.
+  - CODA, FEIM, IMMR, KMTS: subagents still running as of this write-up;
+    will be appended once they finish.
 - Tier worked: 0 (fresh filings only; tier-1 backlog untouched tonight).
-- Running total after tonight: 21 companies done, 37 report-periods
-  published (16/32 before tonight + this batch's 5).
+- Running total after tonight: 22 companies done, 38 report-periods
+  published so far (16/32 before tonight + 6 this batch), 4 more pending.
 - Notes: none of the 5 subagents reported running low on budget; all
   passed their own post-publish sanity check (fetched the live page,
   confirmed no truncation) before reporting success. **`git push` to
