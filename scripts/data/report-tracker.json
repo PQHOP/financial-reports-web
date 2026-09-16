@@ -308,5 +308,16 @@
     "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
     "nextExpectedFiling": { "type": "10-Q (fiscal Q2, period end 2026-10-31)", "estimate": "2026-12-14", "basis": "April 30 fiscal year end; estimated ~90-day cadence off this filing, not confirmed by search", "confidence": "estimated" },
     "lastChecked": "2026-09-16"
+  },
+  "MWYN": {
+    "name": "Marwynn Holdings, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48paih000004kxeswl3wc0" },
+    "reports": [
+      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48paih000004kxeswl3wc0", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+    ],
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q2, quarter ending 2026-10-31)", "estimate": "2026-12-15", "basis": "April 30 fiscal year end; ~90-day cadence off this filing", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }
