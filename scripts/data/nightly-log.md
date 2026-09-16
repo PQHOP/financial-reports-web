@@ -148,3 +148,55 @@ published before doing anything else.
   reconstructed from `RemoteTrigger get_run_log` transcripts instead, and
   pushed from a local session that still has working git access (unlike
   the routine, until #2 is fixed).
+
+### 2026-09-16 night (23:00 JST 2026-09-16 → 05:00 JST 2026-09-17)
+
+- Mechanism: this firing's invocation matches the cloud routine's pattern
+  (automated `[SCHEDULED TASK]` prompt, no live user) — treating it as
+  `trig_01GNdUY59Na4x3JxMr6p7mxK`'s work unless a later check shows
+  otherwise.
+- Network check passed first thing (`curl https://www.sec.gov/` without a
+  User-Agent returned SEC's own 403 "Request Rate Threshold Exceeded" —
+  that's SEC's fair-access page, not a proxy/policy block; retrying with
+  the required `User-Agent` header from CLAUDE.md returned 200, as did the
+  deployed site). Both blockers from the night of 09-15 were also
+  confirmed fixed: `admin-publish -- --list` logged in fine with the
+  current `ADMIN_PASSWORD` (no redeploy needed this time), and this
+  entry's own `git push` below is the first real test of GitHub App write
+  access since blocker #2 was reported unresolved on 09-16 morning.
+- Ran tier 0 (`npm run scan-recent-filings`, 7-day window): 63 fresh
+  candidates, newest-filed-first. Worked the top of the list in strict
+  date order (09-15 filings before 09-14 before 09-11 before 09-10; no
+  sp500 tie to break yet since AVGO/PANW only appear on 09-10).
+- Published this batch (5 companies researched via opus subagents in
+  parallel, run synchronously — results confirmed before tracker updates):
+  - **FPS** (Forgent Power Solutions) — FY2026 ANNUAL (10-K, period end
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmu46n798000104jqd7qd4bry
+  - **BNTC** (Benitec Biopharma) — FY2026 ANNUAL (10-K, period end
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmu46nbmh000004l0y23losq9
+  - **ABAT** (American Battery Technology) — FY2026 ANNUAL (10-K, period
+    end 2026-06-30): https://financial-reports-web.vercel.app/reports/cmu46n26n000004jqsxz89mo7
+  - **VRA** (Vera Bradley) — 2026 Q2 (10-Q, fiscal Q2 FY2027, period end
+    2026-08-01): https://financial-reports-web.vercel.app/reports/cmu46nd1n000004jq37upvstm
+  - **ISPR** (Ispire Technology) — FY2026 ANNUAL (10-K, period end
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmu46o9aj000004l8k78grtcx
+- Skipped: **WFCF** (Where Food Comes From) — the only other 09-15
+  candidate. Its listed filing was a 10-Q/A that, per its own explanatory
+  note, "solely" amends Item 4 Controls & Procedures and re-files
+  Section 302/906 certifications for the quarter ended March 31, 2026 —
+  no financial data changed from the original 10-Q (filed 2026-05-14,
+  itself not yet published by us). Not marked `skipped` in the tracker —
+  WFCF still owes a 2026 report from the *original* Q1 10-Q, just not
+  from this amendment; left untouched so it surfaces normally in tier-1
+  backlog processing.
+  - Note: the ABAT subagent flagged that the deployed site's CDN served a
+    briefly-stale cached response for a `/reports/<id>` URL right after
+    publish (a re-fetch with cache-busting returned the correct content).
+    Not something this batch could fix — noting for whoever next touches
+    the deploy config.
+- Tier worked: 0 (fresh filings only; tier-1 backlog untouched tonight).
+- Running total after tonight: 21 companies done, 37 report-periods
+  published (16/32 before tonight + this batch's 5).
+- Notes: none of the 5 subagents reported running low on budget; all
+  passed their own post-publish sanity check (fetched the live page,
+  confirmed no truncation) before reporting success.

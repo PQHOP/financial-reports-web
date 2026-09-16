@@ -2,7 +2,7 @@
   "_meta": {
     "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop — see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
     "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published — this is the tier-1 finish line, see CLAUDE.md 'Standing priority'. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, once tier 1 is fully done/skipped) — not a blocker during tier-1 backlog processing. 'reports' (added 2026-09-13, backfilled retroactively where known) lists every period already published for that company, across all fiscal years — originally scoped to fiscal-2026 only, now also the record for tier-2 multi-year backfill (2026-09-15+: once a company is 'done', additional entries for other years get appended here as tier 2 adds them). 'allAvailable2026QuartersCovered: true' means no further *2026* backfill is owed as of lastChecked — it says nothing about other years' coverage.",
-    "lastUpdated": "2026-09-15"
+    "lastUpdated": "2026-09-16"
   },
   "AAPL": {
     "name": "Apple Inc.",
@@ -191,5 +191,65 @@
     "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-08-05" },
     "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-11-04", "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231); Q2 2026 10-Q filed 2026-08-05 with the earnings 8-K the same day, so Q3 2026 (period end 2026-09-30) is next. Prior Q3 10-Qs filed 2025-11-05, 2024-11-06 and 2023-11-01. A WebSearch for Albemarle's Q3 2026 earnings date surfaced no company-confirmed date, so this stays estimated from the three-year filing pattern", "confidence": "estimated" },
     "lastChecked": "2026-09-13"
+  },
+  "FPS": {
+    "name": "Forgent Power Solutions, Inc. Class A",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46n798000104jqd7qd4bry" },
+    "reports": [
+      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46n798000104jqd7qd4bry", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" },
+    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "June 30 fiscal year end; FY2026 10-K filed 2026-09-15 (about 77 days after fiscal year end); estimating the next 10-Q roughly 45 days after its Sept 30, 2026 quarter end per typical smaller-reporting-company cadence — no prior-year quarterly filing history yet (recent IPO) to anchor a tighter estimate", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "BNTC": {
+    "name": "Benitec Biopharma Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46nbmh000004l0y23losq9" },
+    "reports": [
+      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46nbmh000004l0y23losq9", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-10", "basis": "June 30 fiscal year end; estimated ~45 days after Sept 30, 2026 quarter end per typical cadence, not yet confirmed by search", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "ABAT": {
+    "name": "American Battery Technology Company",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46n26n000004jqsxz89mo7" },
+    "reports": [
+      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46n26n000004jqsxz89mo7", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "June 30 fiscal year end; estimated mid-November 2026 from prior-year cadence, not confirmed by search", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "VRA": {
+    "name": "Vera Bradley, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46nd1n000004jq37upvstm" },
+    "reports": [
+      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46nd1n000004jq37upvstm", "periodEnd": "2026-08-01", "filedAt": "2026-09-15" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-08-01", "filedAt": "2026-09-15" },
+    "nextExpectedFiling": { "type": "10-Q (Q3 FY2027)", "estimate": "2026-12-08", "basis": "fiscal year ends late Jan; Q1 FY2027 10-Q filed 2026-06-11, Q2 filed 2026-09-15 (~96 days apart); estimating Q3 similarly ~90 days out, not confirmed by search", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
+  },
+  "ISPR": {
+    "name": "Ispire Technology Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46o9aj000004l8k78grtcx" },
+    "reports": [
+      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46o9aj000004l8k78grtcx", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" },
+    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "June 30 fiscal year end; estimated ~45 days after Sept 30, 2026 quarter end per typical smaller-reporting-company cadence, not confirmed by search", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }
