@@ -341,5 +341,16 @@
     "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-08-04", "filedAt": "2026-09-14" },
     "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-12-11", "basis": "~90-day cadence off this filing, not confirmed by search", "confidence": "estimated" },
     "lastChecked": "2026-09-16"
+  },
+  "OPTT": {
+    "name": "Ocean Power Technologies, Inc.",
+    "status": "done",
+    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48q0c4000104kxds5lj3gx" },
+    "reports": [
+      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48q0c4000104kxds5lj3gx", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+    ],
+    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
+    "nextExpectedFiling": { "type": "10-Q (fiscal Q2, period end 2026-10-31)", "estimate": "2026-12-15", "basis": "April 30 fiscal year end; ~90-day cadence off this filing, not confirmed by search", "confidence": "estimated" },
+    "lastChecked": "2026-09-16"
   }
 }
