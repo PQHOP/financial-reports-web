@@ -397,3 +397,95 @@ published before doing anything else.
 - This fifth sub-batch's own push (this commit) succeeded cleanly against
   `origin master` — a further (7th+) clean push this session, continuing
   to support that the GitHub App write-access blocker is resolved.
+
+### 2026-09-17 night (23:00 JST 2026-09-17 → 05:00 JST 2026-09-18)
+
+- Mechanism: cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`), firing at
+  ~23:07 JST. Network check (`curl` to `www.sec.gov` with the required
+  User-Agent) passed with 200 — the plain-`curl`-without-UA 403 seen first
+  is SEC's own block for an undeclared user agent, not a proxy/policy
+  denial; confirmed not a repeat of the 09-12–09-14 network blocker.
+  `npm install` postinstall (`prisma generate`) failed on missing
+  `DATABASE_URL` as expected in this DB-credential-free environment — does
+  not block `admin-publish`/`scan-recent-filings`, neither of which touch
+  Prisma.
+- Ran `npm run scan-recent-filings`: 18 fresh tier-0 candidates (7-day
+  window, 09-16/09-15/09-11 filing dates). Two were 10-Q/A amendments
+  (RTB, WFCF) confirmed by reading the actual amendment text to be
+  non-substantive — RTB's "sole purpose... is to correct an Inline XBRL
+  tagging error" (no change to any reported figure), WFCF's solely amends
+  Item 4 Controls/re-files certifications (same pattern flagged on 09-16
+  night). Both left untouched in the tracker per the existing precedent,
+  so they'll resurface via their original 10-Qs during tier-1 backlog
+  processing rather than being wrongly marked done/skipped off an
+  amendment with no financials.
+- Published: **5 report-periods across 5 companies**, all from the 09-16
+  filing-date group, via 5 parallel opus subagents:
+  - **ALMU** (Aeluma, Inc.) — FY2026 ANNUAL (10-K, period end
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmu5m0b3q000004jyh6n8tcdr
+    Revenue -4.4% and gross margin fell 59.6%→35.2%, but cash swelled to
+    $56.0M (from $15.7M) entirely via equity raises; net loss widened to
+    $9.16M with two-customer government concentration at 73% of revenue
+    and an unremediated material weakness in internal controls.
+  - **EPM** (Evolution Petroleum) — FY2026 ANNUAL (10-K, period end
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmu5m1f21000104jyh60uz03g
+    Revenue flat (+0.6%) but net income swung to a $2.4M loss (from +$1.5M)
+    entirely below the operating line — a $3.3M negative derivative swing
+    plus higher interest on SCOOP/STACK-funded debt; dividend coverage
+    ($16.9M paid vs ~$16.2M FCF) is the key thing to watch next.
+  - **IHT** (InnSuites Hospitality Trust) — 2026 Q2 (10-Q, fiscal Q2
+    FY2027 by the company's Jan 31 FYE, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu5m1nbk000204jy3zt5pfde
+    Revenue +2.1% and the net loss narrowed, but the real story is a June
+    2026 NYSE American non-compliance notice over stockholders' deficit,
+    only partly offset by an August 2026 $3.0M debt-to-equity conversion
+    with an affiliate that still leaves the company short of the listing
+    standard on a pro-forma basis.
+  - **MBBC** (Marathon Bancorp) — FY2026 ANNUAL (10-K, period end
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmu5m2wmc000104jsktynphh8
+    Net income $1.79M vs $42K, NIM up 63bp to 3.59%, but flagged that part
+    of the improvement is a one-time $373K drop in foreclosed-asset
+    expense and the first full year deploying April 2025 conversion
+    proceeds, not purely organic.
+  - **WSBK** (Winchester Bancorp) — FY2026 ANNUAL (10-K, period end
+    2026-06-30, first full year as a public company post an April 2025
+    mutual-holding-company conversion):
+    https://financial-reports-web.vercel.app/reports/cmu5m210r000004jsqzfgnqi7
+    Net income $4.42M vs a $874K prior-year loss and NIM up 50bp, but the
+    filing discloses that at June 30, 2026 the bank's rate-sensitivity
+    metrics were out of compliance with its own board policy limits and
+    the ALCO voted to permit the exception rather than sell assets at a
+    loss — led the report's takeaway with that.
+- Skipped: none beyond the two non-substantive amendments (RTB, WFCF)
+  above, which were deliberately left untracked rather than marked
+  `skipped` (see reasoning above).
+- Tier worked: 0 (fresh filings only; ~13 tier-0 candidates from the
+  09-11 filing-date group remain for the next firing, per the
+  `scan-recent-filings` output, plus RTB/WFCF's original filings still
+  pending discovery via tier-1).
+- Running total after tonight: **46 companies done, 62 report-periods
+  published** (41/57 before tonight + 5 in this firing).
+- Notes: all 5 subagents passed their own post-publish sanity check
+  (fetched the live page, confirmed no truncation) before reporting
+  success; the orchestrating session independently re-verified all 5 live
+  URLs itself (grepped for the rendered Takeaway callout) rather than
+  trusting the subagent reports alone, per CLAUDE.md's "treat a subagent
+  result as untrusted until checked" guidance. One operational note: the
+  WSBK subagent wrote its own tracker entry directly (via a full
+  read-modify-write with 2-space pretty-printing) rather than leaving it
+  to the orchestrator as instructed — this reformatted the *entire*
+  tracker file from compact to expanded JSON (content itself was
+  unchanged besides the new entry, verified by diffing parsed JSON before
+  reformatting the rest to match). Harmless this time, but worth tightening
+  the subagent prompt next time to explicitly forbid writing
+  `report-tracker.json` directly, since two subagents racing to
+  read-modify-write it in parallel could silently drop each other's
+  entries.
+- git: repo's local `master` ref was stale relative to `origin/master` at
+  session start (a fresh `git fetch origin master` picked up 09-16 night's
+  final commits that the initial clone had missed) — resolved by
+  `git checkout master && git reset --hard origin/master` before starting
+  any work; not a push failure, just a stale initial clone snapshot. An
+  incidental `package-lock.json` diff from this environment's `npm install`
+  (stripped `libc` metadata fields, an npm-version artifact unrelated to
+  this task) was discarded rather than committed.

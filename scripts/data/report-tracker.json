@@ -1,487 +1,1544 @@
 {
   "_meta": {
-    "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop — see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
-    "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published — this is the tier-1 finish line, see CLAUDE.md 'Standing priority'. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, once tier 1 is fully done/skipped) — not a blocker during tier-1 backlog processing. 'reports' (added 2026-09-13, backfilled retroactively where known) lists every period already published for that company, across all fiscal years — originally scoped to fiscal-2026 only, now also the record for tier-2 multi-year backfill (2026-09-15+: once a company is 'done', additional entries for other years get appended here as tier 2 adds them). 'allAvailable2026QuartersCovered: true' means no further *2026* backfill is owed as of lastChecked — it says nothing about other years' coverage.",
-    "lastUpdated": "2026-09-16"
+    "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop \u2014 see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
+    "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published \u2014 this is the tier-1 finish line, see CLAUDE.md 'Standing priority'. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, once tier 1 is fully done/skipped) \u2014 not a blocker during tier-1 backlog processing. 'reports' (added 2026-09-13, backfilled retroactively where known) lists every period already published for that company, across all fiscal years \u2014 originally scoped to fiscal-2026 only, now also the record for tier-2 multi-year backfill (2026-09-15+: once a company is 'done', additional entries for other years get appended here as tier 2 adds them). 'allAvailable2026QuartersCovered: true' means no further *2026* backfill is owed as of lastChecked \u2014 it says nothing about other years' coverage.",
+    "lastUpdated": "2026-09-17"
   },
   "AAPL": {
     "name": "Apple Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7862c000004jp68yqj1pi" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-12",
+      "url": "https://financial-reports-web.vercel.app/reports/cmty7862c000004jp68yqj1pi"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzqgx38000004jppofd3j50", "periodEnd": "2025-12-27", "filedAt": "2026-01-30" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzqh5tf000004jtj1612yec", "periodEnd": "2026-03-28", "filedAt": "2026-05-01" },
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7862c000004jp68yqj1pi", "periodEnd": "2026-06-27", "filedAt": "2026-07-31" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzqgx38000004jppofd3j50",
+        "periodEnd": "2025-12-27",
+        "filedAt": "2026-01-30"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzqh5tf000004jtj1612yec",
+        "periodEnd": "2026-03-28",
+        "filedAt": "2026-05-01"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-12",
+        "url": "https://financial-reports-web.vercel.app/reports/cmty7862c000004jp68yqj1pi",
+        "periodEnd": "2026-06-27",
+        "filedAt": "2026-07-31"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-27", "filedAt": "2026-07-31" },
-    "nextExpectedFiling": { "type": "10-K (FY2026 Annual)", "estimate": "2026-10-30", "basis": "Apple's fiscal year ends late September; prior FY10-Ks have filed late Oct/early Nov", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-10-30",
+      "basis": "Apple's fiscal year ends late September; prior FY10-Ks have filed late Oct/early Nov",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "MSFT": {
     "name": "Microsoft Corporation",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7bh91000004l3r0wxrx4l" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-12",
+      "url": "https://financial-reports-web.vercel.app/reports/cmty7bh91000004l3r0wxrx4l"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzqshrl000104jp6cwzgb0v", "periodEnd": "2025-09-30", "filedAt": "2025-10-29" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzqsq94000004l5n5o1zka1", "periodEnd": "2025-12-31", "filedAt": "2026-01-28" },
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzqsxjb000104jt98ppbuxn", "periodEnd": "2026-03-31", "filedAt": "2026-04-29" },
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7bh91000004l3r0wxrx4l", "periodEnd": "2026-06-30", "filedAt": "2026-07-29" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzqshrl000104jp6cwzgb0v",
+        "periodEnd": "2025-09-30",
+        "filedAt": "2025-10-29"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzqsq94000004l5n5o1zka1",
+        "periodEnd": "2025-12-31",
+        "filedAt": "2026-01-28"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzqsxjb000104jt98ppbuxn",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-04-29"
+      },
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-12",
+        "url": "https://financial-reports-web.vercel.app/reports/cmty7bh91000004l3r0wxrx4l",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-29"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-07-29" },
-    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027 — out of 2026-coverage scope)", "estimate": "2026-10-29", "basis": "prior Q1 FY10-Qs filed ~Oct 29", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027 \u2014 out of 2026-coverage scope)",
+      "estimate": "2026-10-29",
+      "basis": "prior Q1 FY10-Qs filed ~Oct 29",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "MMM": {
     "name": "3M",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7ekeq000004l5jgl5k8hc" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-12",
+      "url": "https://financial-reports-web.vercel.app/reports/cmty7ekeq000004l5jgl5k8hc"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzr0b6r000104l5ha3ojanm", "periodEnd": "2026-03-31", "filedAt": "2026-04-21" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7ekeq000004l5jgl5k8hc", "periodEnd": "2026-06-30", "filedAt": "2026-07-21" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzr0b6r000104l5ha3ojanm",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-04-21"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-12",
+        "url": "https://financial-reports-web.vercel.app/reports/cmty7ekeq000004l5jgl5k8hc",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-21"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-07-21" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-10-20", "basis": "prior Q3 10-Q filed 2025-10-21", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-20",
+      "basis": "prior Q3 10-Q filed 2025-10-21",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "AOS": {
     "name": "A. O. Smith",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7ftee000104l5xvfhymew" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-12",
+      "url": "https://financial-reports-web.vercel.app/reports/cmty7ftee000104l5xvfhymew"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzr61wy000204jptoqk1nak", "periodEnd": "2026-03-31", "filedAt": "2026-04-30" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-12", "url": "https://financial-reports-web.vercel.app/reports/cmty7ftee000104l5xvfhymew", "periodEnd": "2026-06-30", "filedAt": "2026-07-30" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzr61wy000204jptoqk1nak",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-04-30"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-12",
+        "url": "https://financial-reports-web.vercel.app/reports/cmty7ftee000104l5xvfhymew",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-30"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "8-K/10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-07-30" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-10-29", "basis": "quarterly cadence from Q2 filing date", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "8-K/10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "quarterly cadence from Q2 filing date",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "ABT": {
     "name": "Abbott Laboratories",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtybdbea000004l73dxkuqoa" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtybdbea000004l73dxkuqoa"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzrchxr000304jp7eojnws2", "periodEnd": "2026-03-31", "filedAt": "2026-04-29" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtybdbea000004l73dxkuqoa", "periodEnd": "2026-06-30", "filedAt": "2026-07-28" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzrchxr000304jp7eojnws2",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-04-29"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtybdbea000004l73dxkuqoa",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-28"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-07-28", "note": "filedAt corrected 2026-09-13 — the previous 2026-07-16 date was the earnings-release 8-K, not the 10-Q itself" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-10-15", "basis": "quarterly cadence from Q2 filing date", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28",
+      "note": "filedAt corrected 2026-09-13 \u2014 the previous 2026-07-16 date was the earnings-release 8-K, not the 10-Q itself"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-15",
+      "basis": "quarterly cadence from Q2 filing date",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "ABBV": {
     "name": "AbbVie Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtybfew2000104l7jmzbg0m1" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtybfew2000104l7jmzbg0m1"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzrldf5000404jp6lgaij96", "periodEnd": "2026-03-31", "filedAt": "2026-05-08" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtybfew2000104l7jmzbg0m1", "periodEnd": "2026-06-30", "filedAt": "2026-08-03" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzrldf5000404jp6lgaij96",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-05-08"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtybfew2000104l7jmzbg0m1",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-03"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-08-03", "note": "filedAt corrected 2026-09-13 — the previous 2026-07-31 date was the earnings-release 8-K, not the 10-Q itself" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-10-30", "basis": "quarterly cadence from Q2 filing date", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03",
+      "note": "filedAt corrected 2026-09-13 \u2014 the previous 2026-07-31 date was the earnings-release 8-K, not the 10-Q itself"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "quarterly cadence from Q2 filing date",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "ACN": {
     "name": "Accenture plc",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtz9u6iw000004iaxvqxadw9" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtz9u6iw000004iaxvqxadw9"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzrurfu000504jp0wbdcklz", "periodEnd": "2025-11-30", "filedAt": "2025-12-18" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzruytc000604jppm0oboap", "periodEnd": "2026-02-28", "filedAt": "2026-03-19" },
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtz9u6iw000004iaxvqxadw9", "periodEnd": "2026-05-31", "filedAt": "2026-06-18" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzrurfu000504jp0wbdcklz",
+        "periodEnd": "2025-11-30",
+        "filedAt": "2025-12-18"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzruytc000604jppm0oboap",
+        "periodEnd": "2026-02-28",
+        "filedAt": "2026-03-19"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtz9u6iw000004iaxvqxadw9",
+        "periodEnd": "2026-05-31",
+        "filedAt": "2026-06-18"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-05-31", "filedAt": "2026-06-18" },
-    "nextExpectedFiling": { "type": "10-K (FY2026 Annual)", "estimate": "2026-10-09", "basis": "fiscal year ends Aug 31; prior three 10-Ks filed 2025-10-10, 2024-10-10 and 2023-10-12; Q4/FY26 earnings release not yet scheduled publicly as of 2026-09-13", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-06-18"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-10-09",
+      "basis": "fiscal year ends Aug 31; prior three 10-Ks filed 2025-10-10, 2024-10-10 and 2023-10-12; Q4/FY26 earnings release not yet scheduled publicly as of 2026-09-13",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "ADBE": {
     "name": "Adobe Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtza9tku000004jhgwdg0hrj" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtza9tku000004jhgwdg0hrj"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzs4jcq000004l5vmrejo0t", "periodEnd": "2026-02-27", "filedAt": "2026-03-25" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzs4rjm000204l5nt7361wa", "periodEnd": "2026-05-29", "filedAt": "2026-06-15" },
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtza9tku000004jhgwdg0hrj", "periodEnd": "2026-08-28", "filedAt": "2026-09-10", "note": "sourced from the 8-K earnings release since the 10-Q wasn't filed yet; the 10-Q was expected ~2026-09-23 and may add detail worth a future revision" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzs4jcq000004l5vmrejo0t",
+        "periodEnd": "2026-02-27",
+        "filedAt": "2026-03-25"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzs4rjm000204l5nt7361wa",
+        "periodEnd": "2026-05-29",
+        "filedAt": "2026-06-15"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtza9tku000004jhgwdg0hrj",
+        "periodEnd": "2026-08-28",
+        "filedAt": "2026-09-10",
+        "note": "sourced from the 8-K earnings release since the 10-Q wasn't filed yet; the 10-Q was expected ~2026-09-23 and may add detail worth a future revision"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "8-K (Ex-99.1, Q3 FY2026 earnings release)", "periodEnd": "2026-08-28", "filedAt": "2026-09-10" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 FY2026)", "estimate": "2026-09-24", "basis": "fiscal year ends late Nov (FYE 11/27); Q3 FY2026 results released via 8-K on 2026-09-10 and the release states Adobe 'expects to file' the 10-Q in Sept. 2026; prior three Q3 10-Qs filed 2025-09-24, 2024-09-25, 2023-09-27. Q4/FY2026 earnings release reported as 2026-12-10, with the FY2026 10-K expected ~mid-Jan 2027 (prior 10-Ks filed 2026-01-15 and 2025-01-13)", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "8-K (Ex-99.1, Q3 FY2026 earnings release)",
+      "periodEnd": "2026-08-28",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026)",
+      "estimate": "2026-09-24",
+      "basis": "fiscal year ends late Nov (FYE 11/27); Q3 FY2026 results released via 8-K on 2026-09-10 and the release states Adobe 'expects to file' the 10-Q in Sept. 2026; prior three Q3 10-Qs filed 2025-09-24, 2024-09-25, 2023-09-27. Q4/FY2026 earnings release reported as 2026-12-10, with the FY2026 10-K expected ~mid-Jan 2027 (prior 10-Ks filed 2026-01-15 and 2025-01-13)",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "AMD": {
     "name": "Advanced Micro Devices, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzah6kq000104jhxgdnv0sh" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtzah6kq000104jhxgdnv0sh"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzsevxq000104l558jmsrtq", "periodEnd": "2026-03-28", "filedAt": "2026-05-06" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzah6kq000104jhxgdnv0sh", "periodEnd": "2026-06-27", "filedAt": "2026-08-05" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzsevxq000104l558jmsrtq",
+        "periodEnd": "2026-03-28",
+        "filedAt": "2026-05-06"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzah6kq000104jhxgdnv0sh",
+        "periodEnd": "2026-06-27",
+        "filedAt": "2026-08-05"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-27", "filedAt": "2026-08-05" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-11-04", "basis": "52/53-week fiscal year ending the last Saturday in December (FY2026 ends 2026-12-26), so Q3 FY2026 ends 2026-09-26. AMD has announced Q3 2026 earnings for 2026-11-03 after market close; the Q2 10-Q was filed the day after the Q2 earnings release (8-K 2026-08-04, 10-Q 2026-08-05), so the Q3 10-Q is expected 2026-11-04", "confidence": "confirmed" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "52/53-week fiscal year ending the last Saturday in December (FY2026 ends 2026-12-26), so Q3 FY2026 ends 2026-09-26. AMD has announced Q3 2026 earnings for 2026-11-03 after market close; the Q2 10-Q was filed the day after the Q2 earnings release (8-K 2026-08-04, 10-Q 2026-08-05), so the Q3 10-Q is expected 2026-11-04",
+      "confidence": "confirmed"
+    },
     "lastChecked": "2026-09-13"
   },
   "AES": {
     "name": "AES Corporation",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzaq37s000204jhxe5gdsti" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtzaq37s000204jhxe5gdsti"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzsmb29000004l0ku5eckv9", "periodEnd": "2026-03-31", "filedAt": "2026-05-05" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzaq37s000204jhxe5gdsti", "periodEnd": "2026-06-30", "filedAt": "2026-08-04" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzsmb29000004l0ku5eckv9",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-05-05"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzaq37s000204jhxe5gdsti",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-04"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-08-04" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-11-03", "basis": "calendar fiscal year (FYE 12/31); prior Q3 10-Qs filed 2025-11-04 and 2024-10-31, and 2026 quarterlies filed 2026-05-05 (Q1) and 2026-08-04 (Q2). NOTE: AES is under a signed take-private ($15.00/share cash, Horizon Parent L.P. — GIP + EQT Infrastructure VI; stockholder approval 2026-06-26, HSR expired 2026-06-22, CFIUS cleared 2026-08-27, still pending PUCO/NY PSC/FERC/foreign approvals, outside date 2027-06-01). It has filed NO earnings-release 8-K (Item 2.02) since 2025-11-04 and gives no guidance, so no earnings date will be announced; the 10-Q is the only disclosure. If the merger closes before then, equity may deregister and filing cadence could change", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "calendar fiscal year (FYE 12/31); prior Q3 10-Qs filed 2025-11-04 and 2024-10-31, and 2026 quarterlies filed 2026-05-05 (Q1) and 2026-08-04 (Q2). NOTE: AES is under a signed take-private ($15.00/share cash, Horizon Parent L.P. \u2014 GIP + EQT Infrastructure VI; stockholder approval 2026-06-26, HSR expired 2026-06-22, CFIUS cleared 2026-08-27, still pending PUCO/NY PSC/FERC/foreign approvals, outside date 2027-06-01). It has filed NO earnings-release 8-K (Item 2.02) since 2025-11-04 and gives no guidance, so no earnings date will be announced; the 10-Q is the only disclosure. If the merger closes before then, equity may deregister and filing cadence could change",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "AFL": {
     "name": "Aflac Incorporated",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzaxsk1000304jhweq7fnxs" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtzaxsk1000304jhweq7fnxs"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzsssau000004l8zjtpj3me", "periodEnd": "2026-03-31", "filedAt": "2026-05-06" },
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzaxsk1000304jhweq7fnxs", "periodEnd": "2026-06-30", "filedAt": "2026-08-07" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzsssau000004l8zjtpj3me",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-05-06"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-13",
+        "url": "https://financial-reports-web.vercel.app/reports/cmtzaxsk1000304jhweq7fnxs",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-08-07" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-11-05", "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231). Aflac files its 10-Q the day after the earnings-release 8-K (Q2 2026: 8-K 2026-08-06, 10-Q 2026-08-07; Q1 2026 10-Q 2026-05-06). Prior Q3 10-Qs filed 2025-11-05, 2024-11-01, 2023-11-02, so Q3 2026 is expected in the first week of November; no Q3 2026 earnings-date press release was confirmable at time of check", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231). Aflac files its 10-Q the day after the earnings-release 8-K (Q2 2026: 8-K 2026-08-06, 10-Q 2026-08-07; Q1 2026 10-Q 2026-05-06). Prior Q3 10-Qs filed 2025-11-05, 2024-11-01, 2023-11-02, so Q3 2026 is expected in the first week of November; no Q3 2026 earnings-date press release was confirmable at time of check",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "A": {
     "name": "Agilent Technologies, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzb4a1u000004jy3g2u8061" },
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-01" },
-    "nextExpectedFiling": { "type": "10-K (FY2026 Annual)", "estimate": "2026-12-21", "basis": "fiscal year ends October 31 (EDGAR fiscalYearEnd 1031), so FY2026 Q3 (period end 2026-07-31) is the last quarter before the annual report. Prior 10-Ks filed 2025-12-22, 2024-12-20, 2023-12-20, 2022-12-21 — consistently the third week of December. The Q4/FY2026 earnings-release 8-K should land ~2026-11-30 (FY2025 release was 2025-11-24), several weeks ahead of the 10-K itself; a web search surfaced a third-party estimate of 2026-11-30 for the earnings date but no Agilent confirmation, so this stays estimated", "confidence": "estimated" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtzb4a1u000004jy3g2u8061"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-01"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-12-21",
+      "basis": "fiscal year ends October 31 (EDGAR fiscalYearEnd 1031), so FY2026 Q3 (period end 2026-07-31) is the last quarter before the annual report. Prior 10-Ks filed 2025-12-22, 2024-12-20, 2023-12-20, 2022-12-21 \u2014 consistently the third week of December. The Q4/FY2026 earnings-release 8-K should land ~2026-11-30 (FY2025 release was 2025-11-24), several weeks ahead of the 10-K itself; a web search surfaced a third-party estimate of 2026-11-30 for the earnings date but no Agilent confirmation, so this stays estimated",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "APD": {
     "name": "Air Products and Chemicals, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzbe1la000104jyunwydv01" },
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-07-30" },
-    "nextExpectedFiling": { "type": "10-K (FY2026 Annual)", "estimate": "2026-11-19", "basis": "fiscal year ends September 30 (EDGAR fiscalYearEnd 0930), so Q3 (period end 2026-06-30, 10-Q filed 2026-07-30) is the last quarter before the FY2026 annual report. Prior-year pattern: FY2025 Q4/full-year earnings release 2025-11-06 and FY2025 10-K filed 2025-11-20 (per the 10-Q's own reference to the 2025 Form 10-K). A WebSearch for the FY2026 Q4 earnings date returned no Air Products confirmation, so both the ~2026-11-05 earnings release and the ~2026-11-19 10-K remain estimated from cadence", "confidence": "estimated" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtzbe1la000104jyunwydv01"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-11-19",
+      "basis": "fiscal year ends September 30 (EDGAR fiscalYearEnd 0930), so Q3 (period end 2026-06-30, 10-Q filed 2026-07-30) is the last quarter before the FY2026 annual report. Prior-year pattern: FY2025 Q4/full-year earnings release 2025-11-06 and FY2025 10-K filed 2025-11-20 (per the 10-Q's own reference to the 2025 Form 10-K). A WebSearch for the FY2026 Q4 earnings date returned no Air Products confirmation, so both the ~2026-11-05 earnings release and the ~2026-11-19 10-K remain estimated from cadence",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "ABNB": {
     "name": "Airbnb, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzbl3vt000004i7ei5mxwzc" },
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-08-06" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-11-05", "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231); Q2 2026 10-Q filed 2026-08-06 is the latest periodic filing, so Q3 2026 (period end 2026-09-30) is next. Prior Q3 10-Qs filed 2023-11-01, 2024-11-07 and 2025-11-06, a consistent early-November cadence. A WebSearch for an Airbnb Q3 2026 earnings date returned no company confirmation (results conflated the 2026-08-06 Q2 release), so this stays estimated from the three-year filing pattern", "confidence": "estimated" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtzbl3vt000004i7ei5mxwzc"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231); Q2 2026 10-Q filed 2026-08-06 is the latest periodic filing, so Q3 2026 (period end 2026-09-30) is next. Prior Q3 10-Qs filed 2023-11-01, 2024-11-07 and 2025-11-06, a consistent early-November cadence. A WebSearch for an Airbnb Q3 2026 earnings date returned no company confirmation (results conflated the 2026-08-06 Q2 release), so this stays estimated from the three-year filing pattern",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "AKAM": {
     "name": "Akamai Technologies, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzbsrtv000004i95k8pqzv0" },
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-08-07" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-11-10", "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231); FY2025 10-K filed 2026-02-20 and Q2 2026 10-Q filed 2026-08-07 are the latest periodic filings, so Q3 2026 (period end 2026-09-30) is next. Prior Q3 10-Qs filed 2024-11-08 and 2025-11-07, with the earnings 8-K one day ahead of the 10-Q each time. A WebSearch for Akamai's Q3 2026 earnings date returned conflicting third-party estimates (2026-11-05 vs 2026-11-10) and no company confirmation, so this stays estimated from the filing cadence", "confidence": "estimated" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtzbsrtv000004i95k8pqzv0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231); FY2025 10-K filed 2026-02-20 and Q2 2026 10-Q filed 2026-08-07 are the latest periodic filings, so Q3 2026 (period end 2026-09-30) is next. Prior Q3 10-Qs filed 2024-11-08 and 2025-11-07, with the earnings 8-K one day ahead of the 10-Q each time. A WebSearch for Akamai's Q3 2026 earnings date returned conflicting third-party estimates (2026-11-05 vs 2026-11-10) and no company confirmation, so this stays estimated from the filing cadence",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "ALB": {
     "name": "Albemarle Corporation",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-13", "url": "https://financial-reports-web.vercel.app/reports/cmtzc17a9000004jq6aril3oy" },
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-06-30", "filedAt": "2026-08-05" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-11-04", "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231); Q2 2026 10-Q filed 2026-08-05 with the earnings 8-K the same day, so Q3 2026 (period end 2026-09-30) is next. Prior Q3 10-Qs filed 2025-11-05, 2024-11-06 and 2023-11-01. A WebSearch for Albemarle's Q3 2026 earnings date surfaced no company-confirmed date, so this stays estimated from the three-year filing pattern", "confidence": "estimated" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-13",
+      "url": "https://financial-reports-web.vercel.app/reports/cmtzc17a9000004jq6aril3oy"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "calendar fiscal year (EDGAR fiscalYearEnd 1231); Q2 2026 10-Q filed 2026-08-05 with the earnings 8-K the same day, so Q3 2026 (period end 2026-09-30) is next. Prior Q3 10-Qs filed 2025-11-05, 2024-11-06 and 2023-11-01. A WebSearch for Albemarle's Q3 2026 earnings date surfaced no company-confirmed date, so this stays estimated from the three-year filing pattern",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-13"
   },
   "FPS": {
     "name": "Forgent Power Solutions, Inc. Class A",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46n798000104jqd7qd4bry" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46n798000104jqd7qd4bry"
+    },
     "reports": [
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46n798000104jqd7qd4bry", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" }
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46n798000104jqd7qd4bry",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-15"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" },
-    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "June 30 fiscal year end; FY2026 10-K filed 2026-09-15 (about 77 days after fiscal year end); estimating the next 10-Q roughly 45 days after its Sept 30, 2026 quarter end per typical smaller-reporting-company cadence — no prior-year quarterly filing history yet (recent IPO) to anchor a tighter estimate", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, period end 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "June 30 fiscal year end; FY2026 10-K filed 2026-09-15 (about 77 days after fiscal year end); estimating the next 10-Q roughly 45 days after its Sept 30, 2026 quarter end per typical smaller-reporting-company cadence \u2014 no prior-year quarterly filing history yet (recent IPO) to anchor a tighter estimate",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "BNTC": {
     "name": "Benitec Biopharma Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46nbmh000004l0y23losq9" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46nbmh000004l0y23losq9"
+    },
     "reports": [
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46nbmh000004l0y23losq9", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46nbmh000004l0y23losq9",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-14"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-10", "basis": "June 30 fiscal year end; estimated ~45 days after Sept 30, 2026 quarter end per typical cadence, not yet confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, period end 2026-09-30)",
+      "estimate": "2026-11-10",
+      "basis": "June 30 fiscal year end; estimated ~45 days after Sept 30, 2026 quarter end per typical cadence, not yet confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "ABAT": {
     "name": "American Battery Technology Company",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46n26n000004jqsxz89mo7" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46n26n000004jqsxz89mo7"
+    },
     "reports": [
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46n26n000004jqsxz89mo7", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46n26n000004jqsxz89mo7",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-14"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "June 30 fiscal year end; estimated mid-November 2026 from prior-year cadence, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, period end 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "June 30 fiscal year end; estimated mid-November 2026 from prior-year cadence, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "VRA": {
     "name": "Vera Bradley, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46nd1n000004jq37upvstm" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46nd1n000004jq37upvstm"
+    },
     "reports": [
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46nd1n000004jq37upvstm", "periodEnd": "2026-08-01", "filedAt": "2026-09-15" }
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46nd1n000004jq37upvstm",
+        "periodEnd": "2026-08-01",
+        "filedAt": "2026-09-15"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-08-01", "filedAt": "2026-09-15" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 FY2027)", "estimate": "2026-12-08", "basis": "fiscal year ends late Jan; Q1 FY2027 10-Q filed 2026-06-11, Q2 filed 2026-09-15 (~96 days apart); estimating Q3 similarly ~90 days out, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2027)",
+      "estimate": "2026-12-08",
+      "basis": "fiscal year ends late Jan; Q1 FY2027 10-Q filed 2026-06-11, Q2 filed 2026-09-15 (~96 days apart); estimating Q3 similarly ~90 days out, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "ISPR": {
     "name": "Ispire Technology Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46o9aj000004l8k78grtcx" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46o9aj000004l8k78grtcx"
+    },
     "reports": [
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46o9aj000004l8k78grtcx", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" }
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46o9aj000004l8k78grtcx",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-15"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-15" },
-    "nextExpectedFiling": { "type": "10-Q (Q1 FY2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "June 30 fiscal year end; estimated ~45 days after Sept 30, 2026 quarter end per typical smaller-reporting-company cadence, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, period end 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "June 30 fiscal year end; estimated ~45 days after Sept 30, 2026 quarter end per typical smaller-reporting-company cadence, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "CNXU": {
     "name": "Conexeu Sciences Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46v6ow000104jqcu2w59r9" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46v6ow000104jqcu2w59r9"
+    },
     "reports": [
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46v6ow000104jqcu2w59r9", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46v6ow000104jqcu2w59r9",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-K (FY2026, year ended 2026-10-31)", "estimate": "2027-01-29", "basis": "October 31 fiscal year end; first annual report as a newly-listed smaller reporting company, estimated ~90 days after fiscal year end, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, year ended 2026-10-31)",
+      "estimate": "2027-01-29",
+      "basis": "October 31 fiscal year end; first annual report as a newly-listed smaller reporting company, estimated ~90 days after fiscal year end, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "CODA": {
     "name": "Coda Octopus Group, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46w45d000204jqarvyqwsh" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46w45d000204jqarvyqwsh"
+    },
     "reports": [
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46w45d000204jqarvyqwsh", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46w45d000204jqarvyqwsh",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-K (FY2026, year ended 2026-10-31)", "estimate": "2027-01-29", "basis": "October 31 fiscal year end; prior-year FY2025 10-K filed 2026-01-29 per the 10-Q's own note", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, year ended 2026-10-31)",
+      "estimate": "2027-01-29",
+      "basis": "October 31 fiscal year end; prior-year FY2025 10-K filed 2026-01-29 per the 10-Q's own note",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "KMTS": {
     "name": "Kestra Medical Technologies, Ltd.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46wltv000304jq9dp9y784" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46wltv000304jq9dp9y784"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46wltv000304jq9dp9y784", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46wltv000304jq9dp9y784",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14"
+      }
     ],
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (Q2, period end approx 2026-10-31)", "estimate": "2026-12-08", "basis": "April 30 fiscal year end; estimated ~40 days after the Oct 31, 2026 quarter end per typical accelerated-filer cadence, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2, period end approx 2026-10-31)",
+      "estimate": "2026-12-08",
+      "basis": "April 30 fiscal year end; estimated ~40 days after the Oct 31, 2026 quarter end per typical accelerated-filer cadence, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "IMMR": {
     "name": "Immersion Corporation",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46wp11000104l89qs4znzs" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46wp11000104l89qs4znzs"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46wp11000104l89qs4znzs", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46wp11000104l89qs4znzs",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14"
+      }
     ],
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (Q2, period end approx 2026-10-31)", "estimate": "2026-12-10", "basis": "April 30 fiscal year end; estimated ~40 days after the Oct 31, 2026 quarter end, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2, period end approx 2026-10-31)",
+      "estimate": "2026-12-10",
+      "basis": "April 30 fiscal year end; estimated ~40 days after the Oct 31, 2026 quarter end, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "FEIM": {
     "name": "Frequency Electronics, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46x2kn000404jqjmtuq6pz" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu46x2kn000404jqjmtuq6pz"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu46x2kn000404jqjmtuq6pz", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu46x2kn000404jqjmtuq6pz",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14"
+      }
     ],
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q2, period end 2026-10-31)", "estimate": "2026-12-14", "basis": "April 30 fiscal year end; estimated ~90-day cadence off this filing, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2, period end 2026-10-31)",
+      "estimate": "2026-12-14",
+      "basis": "April 30 fiscal year end; estimated ~90-day cadence off this filing, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "MWYN": {
     "name": "Marwynn Holdings, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48paih000004kxeswl3wc0" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu48paih000004kxeswl3wc0"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48paih000004kxeswl3wc0", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu48paih000004kxeswl3wc0",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14"
+      }
     ],
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q2, quarter ending 2026-10-31)", "estimate": "2026-12-15", "basis": "April 30 fiscal year end; ~90-day cadence off this filing", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2, quarter ending 2026-10-31)",
+      "estimate": "2026-12-15",
+      "basis": "April 30 fiscal year end; ~90-day cadence off this filing",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "PLCE": {
     "name": "Children's Place, Inc. (The)",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48q2x5000004l6kqicbnkw" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu48q2x5000004l6kqicbnkw"
+    },
     "reports": [
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48q2x5000004l6kqicbnkw", "periodEnd": "2026-08-01", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu48q2x5000004l6kqicbnkw",
+        "periodEnd": "2026-08-01",
+        "filedAt": "2026-09-14"
+      }
     ],
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-08-01", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q3)", "estimate": "2026-12-10", "basis": "fiscal year begins Feb 1; ~90-day cadence off this filing, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3)",
+      "estimate": "2026-12-10",
+      "basis": "fiscal year begins Feb 1; ~90-day cadence off this filing, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "PLAY": {
     "name": "Dave & Buster's Entertainment, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48qqgo000104l646z9vunr" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu48qqgo000104l646z9vunr"
+    },
     "reports": [
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48qqgo000104l646z9vunr", "periodEnd": "2026-08-04", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu48qqgo000104l646z9vunr",
+        "periodEnd": "2026-08-04",
+        "filedAt": "2026-09-14"
+      }
     ],
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-08-04", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (Q3 2026)", "estimate": "2026-12-11", "basis": "~90-day cadence off this filing, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-04",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-12-11",
+      "basis": "~90-day cadence off this filing, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "OPTT": {
     "name": "Ocean Power Technologies, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48q0c4000104kxds5lj3gx" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu48q0c4000104kxds5lj3gx"
+    },
     "reports": [
-      { "year": 2026, "period": "Q1", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48q0c4000104kxds5lj3gx", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu48q0c4000104kxds5lj3gx",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14"
+      }
     ],
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q2, period end 2026-10-31)", "estimate": "2026-12-15", "basis": "April 30 fiscal year end; ~90-day cadence off this filing, not confirmed by search", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2, period end 2026-10-31)",
+      "estimate": "2026-12-15",
+      "basis": "April 30 fiscal year end; ~90-day cadence off this filing, not confirmed by search",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "RFIL": {
     "name": "RF Industries, Ltd.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48r6km000204l6vtwduvvg" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu48r6km000204l6vtwduvvg"
+    },
     "reports": [
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu48r6km000204l6vtwduvvg", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu48r6km000204l6vtwduvvg",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14"
+      }
     ],
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-K (FY2026)", "estimate": "2027-01-14", "basis": "prior-year FY2025 10-K filed 2026-01-14 per this filing's Item 1A reference; Oct 31 fiscal year end", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-14",
+      "basis": "prior-year FY2025 10-K filed 2026-01-14 per this filing's Item 1A reference; Oct 31 fiscal year end",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "RLGT": {
     "name": "Radiant Logistics, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hee7e000004kzwvppcj18" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4hee7e000004kzwvppcj18"
+    },
     "reports": [
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hee7e000004kzwvppcj18", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4hee7e000004kzwvppcj18",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-14"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-30", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q1 2027, period end 2026-09-30)", "estimate": "2026-11-14", "basis": "~90 days after FY2026 10-K filing; July-June fiscal year", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027, period end 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "~90 days after FY2026 10-K filing; July-June fiscal year",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "UNFI": {
     "name": "United Natural Foods, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4haz92000104jrjw21rina" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4haz92000104jrjw21rina"
+    },
     "reports": [
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4haz92000104jrjw21rina", "periodEnd": "2026-08-01", "filedAt": "2026-09-14" }
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4haz92000104jrjw21rina",
+        "periodEnd": "2026-08-01",
+        "filedAt": "2026-09-14"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-08-01", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q1 2027)", "estimate": "2026-12-10", "basis": "~90 days after FY2026 10-K filing; fiscal Q1 FY2027 ends ~late Oct/early Nov 2026", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-12-10",
+      "basis": "~90 days after FY2026 10-K filing; fiscal Q1 FY2027 ends ~late Oct/early Nov 2026",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "UROY": {
     "name": "Uranium Royalty Corp.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hbbs8000304jrnme812o6" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4hbbs8000304jrnme812o6"
+    },
     "reports": [
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hbbs8000304jrnme812o6", "periodEnd": "2026-07-31", "filedAt": "2026-09-14", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)" }
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4hbbs8000304jrnme812o6",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14",
+        "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)", "estimate": "2026-12-12", "basis": "~90 days after this 10-Q filing; Apr 30 FYE", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)",
+      "estimate": "2026-12-12",
+      "basis": "~90 days after this 10-Q filing; Apr 30 FYE",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "VALU": {
     "name": "Value Line, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4haw15000004jrja5l4l06" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4haw15000004jrja5l4l06"
+    },
     "reports": [
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4haw15000004jrja5l4l06", "periodEnd": "2026-07-31", "filedAt": "2026-09-14", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)" }
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4haw15000004jrja5l4l06",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14",
+        "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)", "estimate": "2026-12-12", "basis": "~90 days after this 10-Q filing; Apr 30 FYE", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)",
+      "estimate": "2026-12-12",
+      "basis": "~90 days after this 10-Q filing; Apr 30 FYE",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "WLTH": {
     "name": "Wealthfront Corporation",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hbaao000204jrcqhyugs7" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4hbaao000204jrcqhyugs7"
+    },
     "reports": [
-      { "year": 2026, "period": "Q2", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hbaao000204jrcqhyugs7", "periodEnd": "2026-07-31", "filedAt": "2026-09-14", "note": "calendar Q2 2026; company labels this fiscal Q2 2027 (Jan 31 FYE)" }
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4hbaao000204jrcqhyugs7",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-14",
+        "note": "calendar Q2 2026; company labels this fiscal Q2 2027 (Jan 31 FYE)"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-14" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q3 2027 / calendar Q3 2026, period end 2026-10-31)", "estimate": "2026-12-12", "basis": "~90 days after this 10-Q filing; Jan 31 FYE", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2027 / calendar Q3 2026, period end 2026-10-31)",
+      "estimate": "2026-12-12",
+      "basis": "~90 days after this 10-Q filing; Jan 31 FYE",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "AXR": {
     "name": "AMREP Corporation",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hmhze000404jrz9bohs7w" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4hmhze000404jrz9bohs7w"
+    },
     "reports": [
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hmhze000404jrz9bohs7w", "periodEnd": "2026-07-31", "filedAt": "2026-09-11", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)" }
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4hmhze000404jrz9bohs7w",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-11",
+        "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-11" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)", "estimate": "2026-12-10", "basis": "~90 days after this 10-Q filing; Apr 30 FYE", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)",
+      "estimate": "2026-12-10",
+      "basis": "~90 days after this 10-Q filing; Apr 30 FYE",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "CSBR": {
     "name": "Champions Oncology, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hprfc000404kzr5u2s280" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4hprfc000404kzr5u2s280"
+    },
     "reports": [
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hprfc000404kzr5u2s280", "periodEnd": "2026-07-31", "filedAt": "2026-09-11", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)" }
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4hprfc000404kzr5u2s280",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-11",
+        "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (Apr 30 FYE)"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-07-31", "filedAt": "2026-09-11" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)", "estimate": "2026-12-10", "basis": "~90 days after this 10-Q filing; Apr 30 FYE", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026, period end 2026-10-31)",
+      "estimate": "2026-12-10",
+      "basis": "~90 days after this 10-Q filing; Apr 30 FYE",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "CULP": {
     "name": "Culp, Inc. - Common Shares",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hopgu000204kz2b17nib7" },
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4hopgu000204kz2b17nib7"
+    },
     "reports": [
-      { "year": 2026, "period": "Q3", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hopgu000204kz2b17nib7", "periodEnd": "2026-08-02", "filedAt": "2026-09-11", "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (early-May FYE)" }
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4hopgu000204kz2b17nib7",
+        "periodEnd": "2026-08-02",
+        "filedAt": "2026-09-11",
+        "note": "calendar Q3 2026; company labels this fiscal Q1 2027 (early-May FYE)"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-Q", "periodEnd": "2026-08-02", "filedAt": "2026-09-11" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026)", "estimate": "2026-12-10", "basis": "~90 days after this 10-Q filing; early-May FYE", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027 / calendar Q4 2026)",
+      "estimate": "2026-12-10",
+      "basis": "~90 days after this 10-Q filing; early-May FYE",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "FLWS": {
     "name": "1-800-FLOWERS.COM, Inc. - Class A",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hovk5000304kzmku7tbkz" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4hovk5000304kzmku7tbkz"
+    },
     "reports": [
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hovk5000304kzmku7tbkz", "periodEnd": "2026-06-28", "filedAt": "2026-09-11" }
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4hovk5000304kzmku7tbkz",
+        "periodEnd": "2026-06-28",
+        "filedAt": "2026-09-11"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-06-28", "filedAt": "2026-09-11" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q1 2027)", "estimate": "2026-11-11", "basis": "~90 days after FY2026 10-K filing; late-June fiscal year end", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-11-11",
+      "basis": "~90 days after FY2026 10-K filing; late-June fiscal year end",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
   },
   "GWRE": {
     "name": "Guidewire Software, Inc.",
     "status": "done",
-    "latestReport": { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hoiku000104kz5h6mrokk" },
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-16",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu4hoiku000104kz5h6mrokk"
+    },
     "reports": [
-      { "year": 2026, "period": "ANNUAL", "publishedAt": "2026-09-16", "url": "https://financial-reports-web.vercel.app/reports/cmu4hoiku000104kz5h6mrokk", "periodEnd": "2026-07-31", "filedAt": "2026-09-11" }
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-16",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu4hoiku000104kz5h6mrokk",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-11"
+      }
     ],
     "allAvailable2026QuartersCovered": true,
-    "lastFilingSeen": { "type": "10-K", "periodEnd": "2026-07-31", "filedAt": "2026-09-11" },
-    "nextExpectedFiling": { "type": "10-Q (fiscal Q1 2027)", "estimate": "2026-12-08", "basis": "~90 days after FY2026 10-K filing; July 31 fiscal year end", "confidence": "estimated" },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-12-08",
+      "basis": "~90 days after FY2026 10-K filing; July 31 fiscal year end",
+      "confidence": "estimated"
+    },
     "lastChecked": "2026-09-16"
+  },
+  "WSBK": {
+    "name": "Winchester Bancorp, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5m210r000004jsqzfgnqi7"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ended 2026-09-30)",
+      "estimate": "2026-11-13",
+      "basis": "~45 days after fiscal quarter end for a non-accelerated filer; first 10-Q following the FY2026 10-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "ALMU": {
+    "name": "Aeluma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5m0b3q000004jyh6n8tcdr"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~45 days after fiscal quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "EPM": {
+    "name": "Evolution Petroleum Corporation, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5m1f21000104jyh60uz03g"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-10",
+      "basis": "~90 days from FY-end filing cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "IHT": {
+    "name": "InnSuites Hospitality Trust Shares of Beneficial Interest",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5m1nbk000204jy3zt5pfde"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2027, quarter ends 2026-10-31)",
+      "estimate": "2026-12-15",
+      "basis": "this Q2 filed 46 days after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "MBBC": {
+    "name": "Marathon Bancorp, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5m2wmc000104jsktynphh8"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "quarterly cadence from FY-end 6/30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
   }
 }
