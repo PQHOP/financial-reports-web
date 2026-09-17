@@ -1925,5 +1925,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-17"
+  },
+  "VNCE": {
+    "name": "Vince Holding Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5qlitp000004l3yzm9pbov"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-12-10",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
   }
 }

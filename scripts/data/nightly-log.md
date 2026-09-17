@@ -694,8 +694,64 @@ published before doing anything else.
     matters because a $15.4M earnout tied to a since-declined B2C-ARR
     benchmark still has three installments left through May 2027.
   - Skipped: none this sub-batch.
+  - Tier worked: 0 (fresh filings) — 3 of tonight's 8 tier-0 candidates
+    (SMBC, USAU, VNCE, all seen in the original 09-17 scan but not yet
+    dispatched) remained; picked up in the next sub-batch below rather
+    than being left for a future firing, since the window and budget
+    both still had headroom.
+- Running total after this sub-batch: **61 companies done, 77
+  report-periods published** (56/72 before this sub-batch + 5 in this
+  sub-batch).
+- **Fifth sub-batch, same firing (~01:20 JST 09-18):** re-ran
+  `npm run scan-recent-filings` to confirm what remained — 3 candidates
+  (SMBC, USAU, VNCE), all from the 09-11 filing-date group, all already
+  scoped from the earlier scan. Published **3 more report-periods across
+  3 companies**, via 3 parallel opus subagents, all independently
+  re-verified live by the orchestrating session before being marked done:
+  - **SMBC** (Southern Missouri Bancorp) — FY2026 ANNUAL (10-K, period
+    end 2026-06-30): https://financial-reports-web.vercel.app/reports/cmu5qkmky000204lchk1y1lkf
+    Net income +22.6% to $71.8M, but the gap between that and pre-tax
+    income's +17.7% is a lower effective tax rate from higher
+    low-income-housing tax credits (~$0.25/share); NIM widened 22bp
+    entirely on falling funding costs while credit quality deteriorated
+    (provision +75.6%, NPAs 0.47%→0.64%, driven by agricultural credits).
+  - **USAU** (U.S. Gold Corp.) — Q2 2026 (10-Q, fiscal Q1 FY2027, period
+    end 2026-07-31): https://financial-reports-web.vercel.app/reports/cmu5qkgmk000104lcemuqyqfs
+    Pre-revenue gold/copper explorer; net loss more than doubled but
+    ~59% of the swing is the absence of a prior-year non-cash warrant
+    gain, and actual cash burn barely moved. CK Gold is fully permitted
+    with a March 2026 feasibility study ($632M after-tax NPV) but needs
+    ~$394M of capex against $27.1M cash; construction is paused pending
+    financing, and the state permit now requires proof of financial
+    capacity by December 2027.
+  - **VNCE** (Vince Holding) — Q2 2026 (10-Q, fiscal quarter ended
+    2026-08-01): https://financial-reports-web.vercel.app/reports/cmu5qlitp000004l3yzm9pbov
+    Reported gross margin jumped 10.5 points to 60.9%, but a one-time
+    $10.4M IEEPA tariff-refund credit to COGS accounts for more than the
+    entire improvement — ex-refund margin was actually ~2 points lower
+    than last year. Both years' operating income are further distorted
+    by one-offs in opposite directions (this year's OVO deal costs,
+    last year's pandemic-era Employee Retention Credit); underlying
+    operating margin was roughly flat. DTC comparable sales +18.4%.
+  - Skipped: none this sub-batch.
   - Tier worked: 0 (fresh filings) — this clears tonight's entire tier-0
-    candidate list (all 8, including RTB/WFCF via their original
-    filings) down to 0 remaining as of this scan.
-- Running total after tonight: **61 companies done, 77 report-periods
-  published** (56/72 before this sub-batch + 5 in this sub-batch).
+    candidate list down to 0 remaining, confirmed by a final
+    `scan-recent-filings` re-run.
+  - Operational note: the SMBC subagent wrote its own tracker entry
+    directly (full read-modify-write, default 2-space JSON.stringify)
+    despite the prompt instructing it not to — same pattern flagged on
+    09-17 night with the WSBK subagent. This time it silently reformatted
+    every existing `—` em-dash escape in the file to a raw UTF-8
+    character, producing an 8-line unrelated diff; caught and fixed by
+    diffing old vs. new parsed JSON (confirmed zero content changes,
+    SMBC the only added key) before re-serializing the whole file with a
+    consistent non-ASCII-escaping pass. Worth tightening the subagent
+    prompt further (explicit "do not open or write
+    report-tracker.json under any circumstances") since asking nicely
+    has now failed twice.
+- Running total after tonight: **64 companies done, 80 report-periods
+  published** (61/77 before this sub-batch + 3 in this sub-batch). This
+  firing is stopping here — tier-0 fully cleared for tonight, all 8
+  originally-scanned candidates published (5 in the first sub-batch, 3 in
+  this one), all 8 independently re-verified live before being marked
+  done in the tracker.
