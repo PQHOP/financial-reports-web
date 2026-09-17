@@ -1870,5 +1870,60 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-17"
+  },
+  "SMBC": {
+    "name": "Southern Missouri Bancorp, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5qkmky000204lchk1y1lkf"
+    },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-17",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu5qkmky000204lchk1y1lkf",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-11"
+      }
+    ],
+    "allAvailable2026QuartersCovered": true,
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ending 2026-09-30)",
+      "estimate": "2026-11-09",
+      "basis": "June fiscal year end; prior fiscal Q1 10-Qs have filed in early-to-mid November, ~40 days after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "USAU": {
+    "name": "U.S. Gold Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5qkgmk000104lcemuqyqfs"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027, period ending 2026-10-31)",
+      "estimate": "2026-12-11",
+      "basis": "~91 days after prior 10-Q filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
   }
 }
