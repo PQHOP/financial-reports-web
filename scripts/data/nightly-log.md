@@ -532,9 +532,67 @@ published before doing anything else.
   - Tier worked: 0 (fresh filings) — this exhausts the entire tier-0
     09-16/09-15/09-11 candidate list from tonight's scan except the two
     deliberately-untouched amendments.
-  - Running total after this firing: **51 companies done, 67
+  - Running total after this sub-batch: **51 companies done, 67
     report-periods published** (46/62 after the first firing + 5 in this
-    firing).
+    sub-batch).
+- **Third sub-batch, same firing (~00:35 JST 09-18):** tier 0 exhausted
+  (only RTB/WFCF amendments left, deliberately untouched), so moved to
+  tier 1 per priority order — S&P 500 backlog, in `sp500.json` file order,
+  skipping the 16 tickers already `done`. Looked up each company's CIK via
+  `https://www.sec.gov/files/company_tickers.json` and its latest 10-Q/10-K
+  via `data.sec.gov/submissions/CIK##########.json` directly (bypassing
+  the EDGAR browse UI) to hand each subagent an exact filing-index URL
+  up front. All 5 next-in-line S&P 500 tickers (ARE, ALGN, ALLE, LNT, ALL)
+  had Q2 2026 (period end 2026-06-30) as their latest already-reported
+  quarter — Q3 2026 isn't due yet for calendar-year filers — so all 5
+  qualify as Q2 2026 reports per the tracker's "2026 report" definition.
+  Published **5 more report-periods across 5 companies**, via 5 parallel
+  opus subagents, all independently re-verified live by the orchestrating
+  session:
+  - **ARE** (Alexandria Real Estate Equities) — Q2 2026 (10-Q, period end
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmu5oigkr000404jmfx3007ik
+    Revenue -13.0% and same-property occupancy fell to 87.1% from 92.6%
+    on previously-disclosed lease expirations; Nareit FFO/share actually
+    rose 26.4% only because that measure adds back $1.30/share of Q2
+    impairments, while adjusted FFO/share fell 25.8%. Leverage is 7.0x
+    against a 5.6x-6.2x target with only $170M of a $2.90B disposition
+    plan closed so far; FY26 guidance midpoint held but implies a further
+    step-down in 2H26.
+  - **ALGN** (Align Technology) — Q2 2026 (10-Q, period end 2026-06-30):
+    https://financial-reports-web.vercel.app/reports/cmu5ohcpu000204jmh6ayokjf
+    Clear aligner case volume +7.4% and gross margin +1.8pt, but a new
+    $38.7M UK VAT provision (after a July 2026 Upper Tribunal reversal of
+    Align's earlier win) erased the operating gain, cutting operating
+    income 5.5% despite the operational improvement; revenue per case
+    rose just 0.8%, so growth is volume/mix-driven, not pricing power.
+  - **ALLE** (Allegion) — Q2 2026 (10-Q, period end 2026-06-30):
+    https://financial-reports-web.vercel.app/reports/cmu5oiwao000604jm75flzi10
+    Reported revenue +12.7% but organic growth was only 6.9% once
+    acquisitions (+5.1pt) and FX (+0.7pt) are stripped out, and the two
+    segments are diverging: Americas organic +8.9% vs. International
+    organic -1.2% (its 16.2% reported growth is entirely acquisitions/FX,
+    and its GAAP segment income actually fell YoY ex-deals).
+  - **LNT** (Alliant Energy) — Q2 2026 (10-Q, period end 2026-06-30):
+    https://financial-reports-web.vercel.app/reports/cmu5oifhy000304jm3v7k2g10
+    Consolidated EPS dipped only slightly ($0.68→$0.65), masking a 22%
+    drop in regulated utility operating income (higher O&M, depreciation,
+    and interest landing ahead of rate relief) offset by a one-off swing
+    in corporate venture-fund equity income; full-year guidance of
+    $3.36-$3.46 reaffirmed, but H1 ongoing EPS is actually down 2% YoY.
+  - **ALL** (Allstate) — Q2 2026 (10-Q, period end 2026-06-30):
+    https://financial-reports-web.vercel.app/reports/cmu5oiljk000504jmu4v82gjd
+    Headline combined ratio improved 4.5 points to 86.6% and EPS +61%,
+    but adjusting for below-average catastrophe losses and near-doubled
+    non-cat prior-year reserve releases, the underlying combined ratio
+    was flat YoY (~79.7%) — Allstate is trading margin for volume
+    (average auto premium -3.6%, PIF +2.8%, advertising +18.6%) against
+    rising auto injury severity the filing itself flags.
+  - Skipped: none this sub-batch.
+  - Tier worked: 1 (S&P 500 2026 backlog, first batch) — 487 of 503 S&P
+    500 tickers remain after this sub-batch.
+  - Running total after this sub-batch: **56 companies done, 72
+    report-periods published** (51/67 after the second sub-batch + 5 in
+    this sub-batch).
 - Notes: all 5 subagents passed their own post-publish sanity check
   (fetched the live page, confirmed no truncation) before reporting
   success; the orchestrating session independently re-verified all 5 live

@@ -1650,5 +1650,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-17"
+  },
+  "ARE": {
+    "name": "Alexandria Real Estate Equities",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5oigkr000404jmfx3007ik"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "~90 days after Q2 filing date, calendar-year quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "ALGN": {
+    "name": "Align Technology",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5ohcpu000204jmh6ayokjf"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90 days after Q2 filing date, calendar-year quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "ALLE": {
+    "name": "Allegion",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5oiwao000604jm75flzi10"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "~90 days after Q2 filing date, calendar-year quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "LNT": {
+    "name": "Alliant Energy",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5oifhy000304jm3v7k2g10"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "~90 days after Q2 filing date, calendar-year quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "ALL": {
+    "name": "Allstate",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5oiljk000504jmu4v82gjd"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90 days after Q2 filing date, calendar-year quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
   }
 }
