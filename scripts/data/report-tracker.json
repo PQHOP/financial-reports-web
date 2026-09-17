@@ -1760,5 +1760,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-17"
+  },
+  "WFCF": {
+    "name": "Where Food Comes From, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5qc7l2000004jphw05u5ch"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "RTB": {
+    "name": "RTB Digital, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5qcg06000004lc0mu0ztnc"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "REF": {
+    "name": "Reformation Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5qcn4p000104jp4921mt0v"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-12-11",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "RENT": {
+    "name": "Rent the Runway, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5qcqgb000204jplfb6tt7w"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026, quarter ending 2026-10-31)",
+      "estimate": "2026-12-10",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "RSSS": {
+    "name": "Research Solutions, Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5qdp62000304jp3tswu16d"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (FY2027 Q1)",
+      "estimate": "2026-11-14",
+      "basis": "prior year's Q1 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
   }
 }
