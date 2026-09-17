@@ -465,6 +465,76 @@ published before doing anything else.
   pending discovery via tier-1).
 - Running total after tonight: **46 companies done, 62 report-periods
   published** (41/57 before tonight + 5 in this firing).
+- **Second firing this window (~00:08 JST 09-18):** re-ran
+  `npm run scan-recent-filings` fresh (18 candidates again — same list,
+  since none of the 09-16 group's remainder had been picked up since the
+  first firing). Network re-checked from scratch as instructed by this
+  firing's prompt: the plain-`curl` 403 was again confirmed to be SEC's
+  own fair-access block for a missing `User-Agent` (AkamaiGHost error
+  page, "Request Rate Threshold Exceeded" / fair-access notice), not a
+  proxy denial — the same request with the required header returned 200,
+  and the deployed site was independently reachable too, so this was not
+  a repeat of the 09-12–09-14 blocker. `npm install`'s `prisma generate`
+  postinstall step failed on missing `DATABASE_URL` as expected (this
+  environment is DB-credential-free by design); Playwright's browser
+  bindings were already present so this didn't block `admin-publish`.
+  Worked the remaining 09-11 filing-date group from tier 0 (skipping RTB
+  and WFCF per the precedent above): published **5 more report-periods
+  across 5 companies**, via 5 parallel opus subagents, all independently
+  re-verified live (title tag + rendered Takeaway callout) by the
+  orchestrating session before being marked done:
+  - **HOFT** (Hooker Furnishings) — fiscal Q2 FY2027, filed as 2026 Q2
+    (10-Q, period end 2026-08-02):
+    https://financial-reports-web.vercel.app/reports/cmu5o5nii000004jmdbcgzve0
+    Swung to a $1.3M operating profit from a $0.5M loss, but the entire
+    swing (and then some) is $7.9M of one-time IEEPA tariff refunds
+    following the Feb 2026 Supreme Court ruling; stripped of that, sales
+    fell 8.7%, unit volume fell 10.8%, and the underlying business lost
+    more than a year ago — the one repeatable positive is Hooker Branded
+    backlog up ~35% YoY.
+  - **JVA** (Coffee Holding) — fiscal Q3 FY2026, filed as 2026 Q3 (10-Q,
+    period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu5o91i5000104jjesw7yazi
+    Net sales fell 9.3% but gross margin jumped from 9.4% to 25.0% and
+    EPS swung from -$0.21 to +$0.35, mostly from selling green-coffee
+    inventory bought before the price crash — 44% of the gross-profit
+    gain is actually a coffee futures/options trading swing management
+    says it's deliberately scaling down, and ~2.8pts of the margin
+    "expansion" is a prior-period SG&A-to-COGS reclassification, not new
+    performance.
+  - **KEQU** (Kewaunee Scientific) — fiscal Q1 FY2027, filed as 2026 Q1
+    (10-Q, period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu5o5x7e000104jm8n58uc5k
+    Sales fell 6.7% and EPS fell 44%, but gross margin actually rose;
+    the earnings drop is mostly flat opex spread over less revenue plus
+    an 8.6-point jump in the effective tax rate — order backlog, down
+    17.6% YoY, was up sequentially from the April 30 year-end for the
+    first time, a possible sign orders have troughed.
+  - **LPTH** (LightPath Technologies) — FY2026 ANNUAL (10-K, period end
+    2026-06-30):
+    https://financial-reports-web.vercel.app/reports/cmu5o62lc000004gw0ebyp9j2
+    Revenue +93% to $71.7M driven by G5 Infrared camera/module shipments
+    and the AML acquisition, but the reported net loss widened to $20.6M
+    purely on a $15.6M non-cash earnout fair-value markup (the acquired
+    business beating its targets); adjusted EBITDA swung to +$4.2M.
+    Backlog nearly tripled to $110.9M but ~$58M of the increase is one
+    customer, and the top three now make up 37% of revenue.
+  - **MSB** (Mesabi Trust) — fiscal Q2 FY2027, filed as 2026 Q2 (10-Q,
+    period end 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmu5o73sa000004jjoyxmdl93
+    Swung to a $95K net loss despite pellet shipments rising 3.4%,
+    because Cliffs now consumes nearly all Northshore output internally,
+    collapsing the arm's-length pricing reference used to set bonus
+    royalties, while legal expenses for the Trust's AAA arbitration
+    against Cliffs/Northshore nearly tripled operating costs;
+    distribution cut to $0.05/unit from $0.12.
+  - Skipped: none this sub-batch (RTB/WFCF already excluded above).
+  - Tier worked: 0 (fresh filings) — this exhausts the entire tier-0
+    09-16/09-15/09-11 candidate list from tonight's scan except the two
+    deliberately-untouched amendments.
+  - Running total after this firing: **51 companies done, 67
+    report-periods published** (46/62 after the first firing + 5 in this
+    firing).
 - Notes: all 5 subagents passed their own post-publish sanity check
   (fetched the live page, confirmed no truncation) before reporting
   success; the orchestrating session independently re-verified all 5 live

@@ -1540,5 +1540,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-17"
+  },
+  "HOFT": {
+    "name": "Hooker Furnishings Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5o5nii000004jmdbcgzve0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027, period ending ~2026-11-01)",
+      "estimate": "2026-12-11",
+      "basis": "~40 days after fiscal quarter end, matching this filing's own period-end-to-filed lag",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "JVA": {
+    "name": "Coffee Holding Co., Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5o91i5000104jjesw7yazi"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FYE 2026-10-31 annual)",
+      "estimate": "2027-01-29",
+      "basis": "~90 days after fiscal year end (Oct 31), typical small-filer 10-K deadline",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "KEQU": {
+    "name": "Kewaunee Scientific Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5o5x7e000104jm8n58uc5k"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027, period ending ~2026-10-31)",
+      "estimate": "2026-12-12",
+      "basis": "~42 days after fiscal quarter end, matching this filing's own period-end-to-filed lag",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "LPTH": {
+    "name": "LightPath Technologies, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5o62lc000004gw0ebyp9j2"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027, period ending ~2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "~45 days after fiscal quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
+  },
+  "MSB": {
+    "name": "Mesabi Trust",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-17",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu5o73sa000004jjoyxmdl93"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027, period ending ~2026-10-31)",
+      "estimate": "2026-12-12",
+      "basis": "~42 days after fiscal quarter end, matching this filing's own period-end-to-filed lag",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-17"
   }
 }
