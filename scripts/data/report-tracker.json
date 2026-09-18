@@ -2013,5 +2013,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-18"
+  },
+  "GOOGL": {
+    "name": "Alphabet Inc. (Class A)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-18",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu71rfto000104jp8b3edoqp"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q3 10-Qs have landed in late October in each of the prior three years (2025-10-30, 2024-10-30)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-18"
+  },
+  "GOOG": {
+    "name": "Alphabet Inc. (Class C)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-18",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu71rnpo000204jpgnt18inw"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q3 10-Qs have landed in late October in each of the prior three years (2025-10-30, 2024-10-30)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-18"
   }
 }
