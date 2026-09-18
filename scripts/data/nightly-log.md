@@ -839,8 +839,10 @@ published before doing anything else.
 - Running total after batch 1: **69 companies done, 85 report-periods
   published** (64/80 before tonight + 5 in batch 1).
 
-**Batch 2** (this session, ~15:08-15:39 UTC / ~00:08-00:39 JST 2026-09-19,
-session-local — not the cloud routine this time):
+**Batch 2** (this session, invoked ~15:08 UTC / ~00:08 JST 2026-09-19 via
+the automated scheduled-task mechanism — most likely
+`trig_01GNdUY59Na4x3JxMr6p7mxK` firing again, though this session had no
+`RemoteTrigger` tool available to confirm the trigger ID directly):
 
 - Network re-check: same as batch 1, `curl https://www.sec.gov/` 403 was
   SEC's own Akamai UA/rate-limit block, not a proxy/policy denial —
@@ -951,10 +953,26 @@ session-local — not the cloud routine this time):
     excluded. CoreSite data centers (+13.4%) and leverage falling to
     4.9x from 5.1x are the genuine bright spots; two-thirds of the raised
     FY2026 AFFO/share guidance is currency, not operations.
+  - **AWK** (American Water Works) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-07-29, accession 0001410636-26-000120): https://financial-reports-web.vercel.app/reports/cmu75h52m000604l75u8q5a1p
+    Revenue +6.2% to $1,355M and diluted EPS +8.8% to $1.61, but only
+    $52M of the $90M regulated-segment revenue increase came from
+    authorized rate increases — the rest was volume/weather (a favorable
+    comp against a poor Q2 2025). The consolidated result also lost the
+    Homeowner Services seller-note interest income (repaid February
+    2026), cutting interest income from $22M to $3M and masking 14.9%
+    net income growth at the regulated utility itself. Regulators keep
+    awarding ROEs below AWK's asks (Pennsylvania 9.55% vs. requested
+    10.50-10.75% on a $6.6B rate base, West Virginia 9.80%, Maryland/
+    Virginia 9.75%); a $958M half-year gap between operating cash flow
+    and capex/acquisitions was plugged partly by the one-time note
+    repayment and equity forward settlements, with ~2.4% of dilution
+    still pending.
   - Skipped: none this batch.
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog, file
-  order — AMZN, AMCR, AEE, AEP, AXP, AIG, AMT).
-- Running total after tonight so far: **76 companies done, 92
-  report-periods published** (69/85 after batch 1 + 7 in batch 2).
-  Continuing the S&P 500 backlog from AWK onward (next in file order
-  after AMT) if the operating window allows.
+  order — AMZN, AMCR, AEE, AEP, AXP, AIG, AMT, AWK).
+- Running total after tonight: **77 companies done, 93 report-periods
+  published** (69/85 after batch 1 + 8 in batch 2). This firing is
+  stopping here for now with the operating window still open (~01:05 JST,
+  4 hours of runway left); a later firing tonight can continue the S&P
+  500 backlog from AMP onward (next in file order after AWK).
