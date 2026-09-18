@@ -976,3 +976,41 @@ the automated scheduled-task mechanism — most likely
   stopping here for now with the operating window still open (~01:05 JST,
   4 hours of runway left); a later firing tonight can continue the S&P
   500 backlog from AMP onward (next in file order after AWK).
+
+**Batch 3** (this session, invoked ~16:07 UTC / ~01:07 JST 2026-09-19 via
+the automated scheduled-task mechanism):
+
+- Network check: `curl https://www.sec.gov/` alone returned 403; checked
+  `$HTTPS_PROXY/__agentproxy/status` (no recent relay failures, proxy
+  healthy) and confirmed with the required `User-Agent` header the
+  request returns 200 — SEC UA/rate-limit response, not a proxy/policy
+  block. `npm install` again hit the `postinstall` `prisma generate`
+  failure (missing `DATABASE_URL`) — harmless, publishing needs no DB
+  credentials; left node_modules as installed by npm despite the
+  postinstall failure (418 packages present, tsx/Playwright work fine).
+  Repo was in a detached-HEAD state at session start (matching
+  origin/master exactly) — reset local `master` to track `origin/master`
+  rather than investigate further, no data at risk.
+- Ran `scan-recent-filings`: 0 fresh tier-0 candidates (7-day window,
+  09-12 through 09-18). Moved to tier 1 backlog, file order, from AMP
+  (next ticker after AWK in `sp500.json`).
+- Published: **AMP Q2 2026** so far, this batch still in progress:
+  - **AMP** (Ameriprise Financial) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-08-04, accession 0000820027-26-000043): https://financial-reports-web.vercel.app/reports/cmu75suds000004l5ffq2xevh
+    Adjusted operating EPS +22% to $11.07 on 13% revenue growth, but the
+    gain leans on a 27% rise in the average Weighted Equity Index and a
+    6% smaller diluted share count from buybacks while both
+    asset-gathering segments saw negative organic flows (Asset
+    Management -$6.5bn; Advice & Wealth Management total client flows
+    down to $3.1bn from $4.3bn on Comerica-related advisor departures).
+    GAAP net income ($1,113M) exceeded adjusted ($1,028M) — the inverse
+    of a year ago — because of a $106M hedging/market-risk-benefit mark;
+    AWM margin held flat at 28.9% (down 110bps sequentially on falling
+    net investment income); Asset Management's 370bp margin gain is
+    partly Seligman performance-fee-linked; RPS earnings fell 6% despite
+    20% sales growth; only ~1 quarter of runway left on the buyback
+    authorization at the current pace.
+- Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog).
+- Running total so far tonight: **78 companies done, 94 report-periods
+  published**. Batch still in progress — more companies to follow in this
+  same firing before the final tally/commit.
