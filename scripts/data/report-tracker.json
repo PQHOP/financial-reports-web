@@ -26,6 +26,28 @@
     },
     "lastChecked": "2026-09-18"
   },
+  "AMCR": {
+    "name": "Amcor plc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-18",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu73v8a3000104l7p17gums1"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (transition period ending 2026-12-31)",
+      "estimate": "2027-02-12",
+      "basis": "Amcor is moving its fiscal year end from June 30 to December 31 effective 2026-07-01, creating a 6-month transition period ending 2026-12-31; next filing is that transition-period report, estimated ~45 days after period end per accelerated-filer 10-Q cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-18"
+  },
   "AAPL": {
     "name": "Apple Inc.",
     "status": "done",
