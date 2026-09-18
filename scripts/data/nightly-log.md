@@ -911,10 +911,24 @@ session-local — not the cloud routine this time):
     equity (8% of shares outstanding), while allowed ROEs are settling
     below what AEP requested in recent rate cases (Ohio 9.84% vs. 10.9%
     asked).
+  - **AXP** (American Express) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-24, accession 0000004962-26-000322): https://financial-reports-web.vercel.app/reports/cmu74m7au000404l77eqkwncr
+    Revenue net of interest expense +10% to $19.64B on 9% billed-business
+    growth (highest in three years, FX-adjusted) and EPS +11% to $4.53,
+    but 62% of the $521M pretax income increase came from a $190M credit
+    reserve *release* versus a $198M *build* a year ago — actual net
+    write-offs rose 8% with the write-off rate flat at 2.0%.
+    Pre-provision profit (revenue minus expenses) grew only 4% against
+    10% revenue growth because Card Member services expense jumped 50%
+    on the refreshed U.S. Platinum benefits, outstripping the entire
+    increase in net card fees. Net card fee growth is price-led, not
+    volume-led (fee per card +12%, new cards acquired actually down
+    slightly). FY26 revenue guidance raised to 10% but EPS guidance held
+    at $17.30-$17.90, explicitly to reinvest the beat.
   - Skipped: none this batch.
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog, file
-  order — AMZN, AMCR, AEE, AEP).
-- Running total after tonight so far: **73 companies done, 89
-  report-periods published** (69/85 after batch 1 + 4 in batch 2).
-  Continuing the S&P 500 backlog from AXP onward (next in file order
-  after AEP) if the operating window allows.
+  order — AMZN, AMCR, AEE, AEP, AXP).
+- Running total after tonight so far: **74 companies done, 90
+  report-periods published** (69/85 after batch 1 + 5 in batch 2).
+  Continuing the S&P 500 backlog from AIG onward (next in file order
+  after AXP) if the operating window allows.
