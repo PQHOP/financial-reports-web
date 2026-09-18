@@ -836,8 +836,42 @@ published before doing anything else.
   re-run) then 1 (2026 S&P 500 backlog, file order — MO, then GOOGL/GOOG
   as one subagent call since both are the same underlying Alphabet
   filing published to two separate site listings).
-- Running total after tonight: **69 companies done, 85 report-periods
-  published** (64/80 before tonight + 5 in this batch). This firing is
-  stopping here for now with time/budget still left in the window; a
-  later firing tonight can continue the S&P 500 backlog from AMZN
-  onward (next in file order after MO/GOOGL/GOOG).
+- Running total after batch 1: **69 companies done, 85 report-periods
+  published** (64/80 before tonight + 5 in batch 1).
+
+**Batch 2** (this session, ~15:08-15:39 UTC / ~00:08-00:39 JST 2026-09-19,
+session-local — not the cloud routine this time):
+
+- Network re-check: same as batch 1, `curl https://www.sec.gov/` 403 was
+  SEC's own Akamai UA/rate-limit block, not a proxy/policy denial —
+  retried with required `User-Agent` header, got 200. Confirmed via
+  `$HTTPS_PROXY/__agentproxy/status`: no recent relay failures, proxy
+  healthy. `npm install` needed the same dummy-`DATABASE_URL` workaround
+  as batch 1 (postinstall `prisma generate` requires it, publishing
+  itself does not).
+- Ran `scan-recent-filings` fresh: 0 new tier-0 candidates (7-day window,
+  09-12 through 09-18). Moved to tier 1 backlog, file order, from AMZN
+  (next ticker after MO/GOOGL/GOOG in `sp500.json`).
+- Published: **1 report-period** — AMZN Q2 2026:
+  - **AMZN** (Amazon.com) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-07-31, accession 0001018724-26-000026): https://financial-reports-web.vercel.app/reports/cmu73nxp3000004l7qmx98ypj
+    AWS revenue +36.8% to $42.2B (18-quarter high, 5th straight quarter
+    of acceleration), AWS operating margin 32.9%→39.4%, now 61% of
+    company operating income. The $62.6B net income / $5.75 diluted EPS
+    is mostly non-cash: $50.5B of it is an upward revaluation of
+    Amazon's Anthropic preferred stake (private-investment carrying
+    value $16.2B→$122.3B in six months); pre-tax income excluding all
+    non-operating income was +39% (vs. reported net income +245%).
+    North America's apparent margin expansion reverses to a decline
+    once a disclosed $640M one-off IEEPA tariff refund is backed out.
+    Trailing-12-month free cash flow swung from +$18.2B to **-$7.6B** on
+    64% higher capex; long-term debt nearly doubled to $128.9B in six
+    months. Q3 guidance midpoint is *below* Q2 actuals, confirming a
+    Prime Day timing shift flattered the quarter just reported.
+  - Skipped: none this batch.
+- Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog, file
+  order, AMZN).
+- Running total after tonight so far: **70 companies done, 86
+  report-periods published** (69/85 after batch 1 + 1 in batch 2).
+  Continuing the S&P 500 backlog from AMCR onward (next in file order
+  after AMZN) if the operating window allows.

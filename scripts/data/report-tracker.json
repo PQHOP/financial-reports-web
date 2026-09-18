@@ -2,7 +2,29 @@
   "_meta": {
     "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop \u2014 see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
     "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published \u2014 this is the tier-1 finish line, see CLAUDE.md 'Standing priority'. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, once tier 1 is fully done/skipped) \u2014 not a blocker during tier-1 backlog processing. 'reports' (added 2026-09-13, backfilled retroactively where known) lists every period already published for that company, across all fiscal years \u2014 originally scoped to fiscal-2026 only, now also the record for tier-2 multi-year backfill (2026-09-15+: once a company is 'done', additional entries for other years get appended here as tier 2 adds them). 'allAvailable2026QuartersCovered: true' means no further *2026* backfill is owed as of lastChecked \u2014 it says nothing about other years' coverage.",
-    "lastUpdated": "2026-09-17"
+    "lastUpdated": "2026-09-18"
+  },
+  "AMZN": {
+    "name": "Amazon.com, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-18",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu73nxp3000004l7qmx98ypj"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-18"
   },
   "AAPL": {
     "name": "Apple Inc.",
