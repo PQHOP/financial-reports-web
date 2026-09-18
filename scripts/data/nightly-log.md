@@ -994,7 +994,8 @@ the automated scheduled-task mechanism):
 - Ran `scan-recent-filings`: 0 fresh tier-0 candidates (7-day window,
   09-12 through 09-18). Moved to tier 1 backlog, file order, from AMP
   (next ticker after AWK in `sp500.json`).
-- Published: **AMP, AME Q2 2026** so far, this batch still in progress:
+- Published: **AMP, AME, AMGN Q2 2026** so far, this batch still in
+  progress:
   - **AMP** (Ameriprise Financial) — Q2 2026 (10-Q, period end
     2026-06-30, filed 2026-08-04, accession 0000820027-26-000043): https://financial-reports-web.vercel.app/reports/cmu75suds000004l5ffq2xevh
     Adjusted operating EPS +22% to $11.07 on 13% revenue growth, but the
@@ -1026,7 +1027,24 @@ the automated scheduled-task mechanism):
     falling to 17.4% from 19.0% rather than operations. The pending
     $5.0B all-cash Indicor Instrumentation acquisition (~4.5x sales)
     takes debt-to-capital from 15.3% to roughly 38%.
+  - **AMGN** (Amgen) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-08-05, accession 0000318154-26-000126): https://financial-reports-web.vercel.app/reports/cmu7677tl000204l5nog9ado6
+    Revenue +10% to $10,054M, but GAAP EPS's 65% jump ($2.65→$4.37) is
+    largely non-operating — $523M of the $858M operating-income increase
+    is Horizon-acquisition amortization rolling off, plus a prior-year
+    $394M BeOne equity mark; non-GAAP EPS rose just 4% to $6.29 and
+    non-GAAP cost of sales worsened 1.9pp on profit-share/mix. Portfolio
+    is two-directional: Prolia -32%/XGEVA -34% (denosumab patent
+    expiry, "accelerated erosion" guided), ENBREL's -22% net price
+    (IRA Part D price-setting) masked by a sales-deduction true-up, vs.
+    Repatha +37%, EVENITY +38%, TEZSPIRE +42%, UPLIZNA +90%, IMDELLTRA
+    +115%, PAVBLU +121%. Raised guidance ($38.2-39.4B revenue) implies
+    H2 revenue growth of only ~4% vs. +8% in H1. Flagged: MariTide's
+    nine Phase 3 studies, the $3.6B/$5.1B+~$2.0B-penalty IRS Puerto Rico
+    dispute (Tax Court decision expected late 2026-early 2027), FDA's
+    request to withdraw TAVNEOS, and a partial clinical hold on
+    subcutaneous blinatumomab.
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog).
-- Running total so far tonight: **79 companies done, 95 report-periods
+- Running total so far tonight: **80 companies done, 96 report-periods
   published**. Batch still in progress — more companies to follow in this
   same firing before the final tally/commit.
