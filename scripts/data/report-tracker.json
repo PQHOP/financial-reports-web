@@ -92,6 +92,28 @@
     },
     "lastChecked": "2026-09-18"
   },
+  "ADI": {
+    "name": "Analog Devices",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-18",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu76n5oc000004kwkjko4jzx"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-08-19"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 ANNUAL)",
+      "estimate": "2026-12-15",
+      "basis": "ADI fiscal year ends late October; annual 10-K typically filed ~6-7 weeks after fiscal year end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-18"
+  },
   "AMZN": {
     "name": "Amazon.com, Inc.",
     "status": "done",

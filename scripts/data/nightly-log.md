@@ -994,8 +994,11 @@ the automated scheduled-task mechanism):
 - Ran `scan-recent-filings`: 0 fresh tier-0 candidates (7-day window,
   09-12 through 09-18). Moved to tier 1 backlog, file order, from AMP
   (next ticker after AWK in `sp500.json`).
-- Published: **AMP, AME, AMGN, APH Q2 2026** so far, this batch still in
-  progress:
+- Published: **5 report-periods across 5 companies** — AMP Q2 2026, AME
+  Q2 2026, AMGN Q2 2026, APH Q2 2026, ADI Q3 2026 (ADI runs an offset
+  fiscal year ending late October; its Q3 FY2026 10-Q, period end
+  2026-08-01, is the latest filed period — confirmed from EDGAR/XBRL,
+  not assumed):
   - **AMP** (Ameriprise Financial) — Q2 2026 (10-Q, period end
     2026-06-30, filed 2026-08-04, accession 0000820027-26-000043): https://financial-reports-web.vercel.app/reports/cmu75suds000004l5ffq2xevh
     Adjusted operating EPS +22% to $11.07 on 13% revenue growth, but the
@@ -1065,7 +1068,30 @@ the automated scheduled-task mechanism):
     (First publish attempt this ticker hit a transient "page couldn't
     load" browser error — not a data/validation issue — a bare retry
     with the same JSON succeeded immediately.)
-- Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog).
-- Running total so far tonight: **81 companies done, 97 report-periods
-  published**. Batch still in progress — more companies to follow in this
-  same firing before the final tally/commit.
+  - **ADI** (Analog Devices) — fiscal Q3 2026 (10-Q, period end
+    2026-08-01, filed 2026-08-19, accession 0000006281-26-000073): https://financial-reports-web.vercel.app/reports/cmu76n5oc000004kwkjko4jzx
+    Record revenue $4,021.9M (+40%), led by Communications +84% (MD&A
+    attributes this explicitly to data-center/AI-infrastructure
+    investment) and Industrial +53%, while Automotive (+16%) and
+    Consumer (+6%) lagged and lost revenue share. Gross margin +520bps
+    on fab utilization, achieved on only $392.7M of nine-month capex
+    (~3.6% of revenue, below management's own 4-6% guide). GAAP EPS's
+    163% jump is mostly a comp artifact: the prior-year quarter carried
+    a one-off $153.8M OBBBA-related deferred tax charge (~60pts of the
+    growth rate), and GAAP still trails adjusted EPS by $0.71 on
+    acquisition-intangible amortization. Inventory days flat at 131 but
+    WIP-heavy; receivables +66% with DSO 44→50. Closed the $1.5B Empower
+    Semiconductor acquisition (integrated voltage regulators, an AI
+    power-delivery bottleneck) July 7; capital returns exceeded free
+    cash flow, partly funded with commercial paper. Q4 guidance $4.3B
+    ±$100M / adjusted EPS $3.86 implies a full FY2026 of ~$15.1B against
+    the prior $12.31B (FY2023) peak.
+- Skipped: none this batch.
+- Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog, file
+  order — AMP, AME, AMGN, APH, ADI).
+- Running total after tonight: **82 companies done, 98 report-periods
+  published** (77/93 before tonight + 5 in batch 3). This firing is
+  stopping here for now with the operating window still open (~01:40
+  JST, over 3 hours of runway left); a later firing tonight can continue
+  the S&P 500 backlog from AON onward (next in file order after ADI:
+  AON, APA, APO, AMAT, APP, APTV, ACGL, ADM, ARES, ANET, ...).
