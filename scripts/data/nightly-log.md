@@ -925,10 +925,23 @@ session-local — not the cloud routine this time):
     volume-led (fee per card +12%, new cards acquired actually down
     slightly). FY26 revenue guidance raised to 10% but EPS guidance held
     at $17.30-$17.90, explicitly to reinvest the beat.
+  - **AIG** (American International Group) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-08-07, accession 0000005272-26-000076): https://financial-reports-web.vercel.app/reports/cmu74veaf000004jp5k3giul5
+    GAAP diluted EPS fell 10% to $1.78 (prior-year quarter had $464M of
+    pre-tax Corebridge/equity marks vs. $173M this year) while adjusted
+    EPS rose 10% to $2.00 even though adjusted after-tax income grew only
+    2.4% — the gap is almost entirely a 7.7% lower share count. Combined
+    ratio improved 0.3pts to 89.0%, but that rests on higher favorable
+    prior-year reserve development; North America Commercial's
+    accident-year ratio actually worsened and International Commercial's
+    accident-year ratio deteriorated 2.3pts with cat losses tripling on
+    Middle East conflict exposure. Corebridge fully exited (final stake
+    sold May 2026); AIG added stakes in Convex (35%) and Onex (9.9%) in
+    February 2026, which explains part of the quarter's NPW growth.
   - Skipped: none this batch.
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog, file
-  order — AMZN, AMCR, AEE, AEP, AXP).
-- Running total after tonight so far: **74 companies done, 90
-  report-periods published** (69/85 after batch 1 + 5 in batch 2).
-  Continuing the S&P 500 backlog from AIG onward (next in file order
-  after AXP) if the operating window allows.
+  order — AMZN, AMCR, AEE, AEP, AXP, AIG).
+- Running total after tonight so far: **75 companies done, 91
+  report-periods published** (69/85 after batch 1 + 6 in batch 2).
+  Continuing the S&P 500 backlog from AMT onward (next in file order
+  after AIG) if the operating window allows.
