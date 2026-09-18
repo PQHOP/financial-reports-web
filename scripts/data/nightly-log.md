@@ -868,10 +868,37 @@ session-local — not the cloud routine this time):
     64% higher capex; long-term debt nearly doubled to $128.9B in six
     months. Q3 guidance midpoint is *below* Q2 actuals, confirming a
     Prime Day timing shift flattered the quarter just reported.
+  - **AMCR** (Amcor plc) — FY2026 ANNUAL (10-K, period end 2026-06-30,
+    filed 2026-08-14, accession 0001748790-26-000022): https://financial-reports-web.vercel.app/reports/cmu73v8a3000104l7p17gums1
+    Net sales +57% to $23.5B and net income +116% to $1,106M almost
+    entirely reflect the Berry Global merger (+$7,864M of the $8,497M
+    revenue increase) plus FX (+$649M) and cost pass-through (+$240M) —
+    underlying sales actually fell ~2% on lower volumes in both segments.
+    All of the profit improvement traces to ~$240M of realized Berry
+    merger synergies (against a $530M target by June 2028); GAAP EPS
+    +49% vs. adjusted EPS +13% reflects a depressed FY2025 base
+    (transaction costs, inventory step-up), not underlying acceleration.
+    Also flagged: 1-for-5 reverse stock split (Jan 2026), fiscal year end
+    moving from June 30 to December 31 (creating a 6-month transition
+    period), a LatAm segment recast, no buybacks in FY2026, and goodwill
+    now exceeding shareholders' equity.
+  - **AEE** (Ameren) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-08-03, accession 0001002910-26-000023): https://financial-reports-web.vercel.app/reports/cmu7456aq000204l79wn0lvco
+    Revenue fell 5.8% while diluted EPS rose 11.9% to $1.13 — the gap is
+    a MISO capacity-auction price collapse ($720/MW-day to $70/MW-day)
+    that passes through to customers via the fuel adjustment clause,
+    earnings-neutral. The load-bearing finding: reaffirmed full-year
+    guidance of $5.25-$5.45 (midpoint identical to FY2025's $5.35 actual)
+    arithmetically implies second-half 2026 EPS 7-13% *below* second-half
+    2025, given H1 2026 already running 33 cents ahead of H1 2025 — driven
+    by a fall Callaway nuclear refueling outage, forward-sale share
+    settlement, and normal-weather assumption. Also flagged: 44% of the
+    quarter's net income increase came from equity-method gains on
+    non-regulated investments, not the regulated utility segments.
   - Skipped: none this batch.
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog, file
-  order, AMZN).
-- Running total after tonight so far: **70 companies done, 86
-  report-periods published** (69/85 after batch 1 + 1 in batch 2).
-  Continuing the S&P 500 backlog from AMCR onward (next in file order
-  after AMZN) if the operating window allows.
+  order — AMZN, AMCR, AEE).
+- Running total after tonight so far: **72 companies done, 88
+  report-periods published** (69/85 after batch 1 + 3 in batch 2).
+  Continuing the S&P 500 backlog from AEP onward (next in file order
+  after AEE) if the operating window allows.

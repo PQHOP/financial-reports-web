@@ -48,6 +48,28 @@
     },
     "lastChecked": "2026-09-18"
   },
+  "AEE": {
+    "name": "Ameren Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-18",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu7456aq000204l79wn0lvco"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-01",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-18"
+  },
   "AAPL": {
     "name": "Apple Inc.",
     "status": "done",
