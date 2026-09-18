@@ -994,7 +994,7 @@ the automated scheduled-task mechanism):
 - Ran `scan-recent-filings`: 0 fresh tier-0 candidates (7-day window,
   09-12 through 09-18). Moved to tier 1 backlog, file order, from AMP
   (next ticker after AWK in `sp500.json`).
-- Published: **AMP Q2 2026** so far, this batch still in progress:
+- Published: **AMP, AME Q2 2026** so far, this batch still in progress:
   - **AMP** (Ameriprise Financial) — Q2 2026 (10-Q, period end
     2026-06-30, filed 2026-08-04, accession 0000820027-26-000043): https://financial-reports-web.vercel.app/reports/cmu75suds000004l5ffq2xevh
     Adjusted operating EPS +22% to $11.07 on 13% revenue growth, but the
@@ -1010,7 +1010,23 @@ the automated scheduled-task mechanism):
     partly Seligman performance-fee-linked; RPS earnings fell 6% despite
     20% sales growth; only ~1 quarter of runway left on the buyback
     authorization at the current pace.
+  - **AME** (Ametek) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-08-04, accession 0001037868-26-000175): https://financial-reports-web.vercel.app/reports/cmu7600p2000104l56o24jgum
+    Record Q2 sales of $2,044.4M (+15.0%: 10 points organic, 5 points
+    acquired), GAAP EPS $1.77 and adjusted EPS $2.09 (+17.4%). The two
+    segments diverged: EMG's margin rose 290bps on 15% organic volume
+    growth, while EIG's GAAP margin fell 170bps purely on FARO/LKC
+    integration costs (110bps) and acquisition dilution (120bps) — EIG's
+    core margin was actually up 60bps. Orders (+28.2%: organic +25%,
+    acquired +6%, FX -3%) far outpaced the 10% organic sales growth, a
+    1.12 book-to-bill and record $4,110.2M backlog, yet guidance implies
+    only ~7% second-half sales growth against that backlog. A one-time
+    $10.0M Indicor bridge-loan fee inflated interest expense 78.6%, and
+    roughly 3.5 cents of the 22-cent EPS gain came from the tax rate
+    falling to 17.4% from 19.0% rather than operations. The pending
+    $5.0B all-cash Indicor Instrumentation acquisition (~4.5x sales)
+    takes debt-to-capital from 15.3% to roughly 38%.
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog).
-- Running total so far tonight: **78 companies done, 94 report-periods
+- Running total so far tonight: **79 companies done, 95 report-periods
   published**. Batch still in progress — more companies to follow in this
   same firing before the final tally/commit.
