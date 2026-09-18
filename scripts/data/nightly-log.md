@@ -938,10 +938,23 @@ session-local — not the cloud routine this time):
     Middle East conflict exposure. Corebridge fully exited (final stake
     sold May 2026); AIG added stakes in Convex (35%) and Onex (9.9%) in
     February 2026, which explains part of the quarter's NPW growth.
+  - **AMT** (American Tower) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-28, accession 0001053507-26-000133): https://financial-reports-web.vercel.app/reports/cmu756pr1000504l77godudcu
+    Net income more than doubled to $867.5M (diluted EPS $0.78→$1.86) on
+    a $526M non-cash swing in euro-debt currency translation — larger
+    than the entire increase in net income; AFFO, which strips FX out,
+    grew only 3.8-4.2% to $2.71/share. Organic tenant billings growth
+    halved to 1.7% from 4.7%: U.S. & Canada revenue fell 2.5% on DISH
+    churn (Chapter 11 filed 2026-06-30) plus a $44.0M straight-line
+    accounting reversal, and Latin America's headline +13.4% masks
+    negative 2.4% organic growth once FX and lower revenue reserves are
+    excluded. CoreSite data centers (+13.4%) and leverage falling to
+    4.9x from 5.1x are the genuine bright spots; two-thirds of the raised
+    FY2026 AFFO/share guidance is currency, not operations.
   - Skipped: none this batch.
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog, file
-  order — AMZN, AMCR, AEE, AEP, AXP, AIG).
-- Running total after tonight so far: **75 companies done, 91
-  report-periods published** (69/85 after batch 1 + 6 in batch 2).
-  Continuing the S&P 500 backlog from AMT onward (next in file order
-  after AIG) if the operating window allows.
+  order — AMZN, AMCR, AEE, AEP, AXP, AIG, AMT).
+- Running total after tonight so far: **76 companies done, 92
+  report-periods published** (69/85 after batch 1 + 7 in batch 2).
+  Continuing the S&P 500 backlog from AWK onward (next in file order
+  after AMT) if the operating window allows.
