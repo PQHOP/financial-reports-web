@@ -895,10 +895,26 @@ session-local — not the cloud routine this time):
     settlement, and normal-weather assumption. Also flagged: 44% of the
     quarter's net income increase came from equity-method gains on
     non-regulated investments, not the regulated utility segments.
+  - **AEP** (American Electric Power) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-07-30, accession 0000004904-26-000059): https://financial-reports-web.vercel.app/reports/cmu74erbh000304l7l5avtkj4
+    GAAP diluted EPS fell 41.8% to $1.30 while operating (non-GAAP) EPS
+    fell only 3.1% to $1.36 — the entire gap is a June 2025 FERC order
+    worth $480M to the year-ago quarter (mostly a one-time transmission
+    revenue/excess-ADIT item), not a 2026 deterioration; backing it out,
+    underlying revenue growth was ~13% versus the reported 7.0%.
+    Data-center-driven load growth is real and already in the numbers:
+    combined retail volumes +8.2%, commercial +14.9-17.4% and industrial
+    +15.0%, achieved despite milder weather; AEP Texas collected ~$2B in
+    financial security in July against 40 GW of contracted ERCOT load.
+    Funding strain flagged: a ~$3.2B six-month cash shortfall funded with
+    new debt (debt-to-cap up to 61.4%) and ~$5.0B of unsettled forward
+    equity (8% of shares outstanding), while allowed ROEs are settling
+    below what AEP requested in recent rate cases (Ohio 9.84% vs. 10.9%
+    asked).
   - Skipped: none this batch.
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog, file
-  order — AMZN, AMCR, AEE).
-- Running total after tonight so far: **72 companies done, 88
-  report-periods published** (69/85 after batch 1 + 3 in batch 2).
-  Continuing the S&P 500 backlog from AEP onward (next in file order
-  after AEE) if the operating window allows.
+  order — AMZN, AMCR, AEE, AEP).
+- Running total after tonight so far: **73 companies done, 89
+  report-periods published** (69/85 after batch 1 + 4 in batch 2).
+  Continuing the S&P 500 backlog from AXP onward (next in file order
+  after AEP) if the operating window allows.

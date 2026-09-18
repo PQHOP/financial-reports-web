@@ -70,6 +70,28 @@
     },
     "lastChecked": "2026-09-18"
   },
+  "AEP": {
+    "name": "American Electric Power Company, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-18",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu74erbh000304l7l5avtkj4"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-18"
+  },
   "AAPL": {
     "name": "Apple Inc.",
     "status": "done",
