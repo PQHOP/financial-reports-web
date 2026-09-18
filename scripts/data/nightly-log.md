@@ -994,7 +994,7 @@ the automated scheduled-task mechanism):
 - Ran `scan-recent-filings`: 0 fresh tier-0 candidates (7-day window,
   09-12 through 09-18). Moved to tier 1 backlog, file order, from AMP
   (next ticker after AWK in `sp500.json`).
-- Published: **AMP, AME, AMGN Q2 2026** so far, this batch still in
+- Published: **AMP, AME, AMGN, APH Q2 2026** so far, this batch still in
   progress:
   - **AMP** (Ameriprise Financial) — Q2 2026 (10-Q, period end
     2026-06-30, filed 2026-08-04, accession 0000820027-26-000043): https://financial-reports-web.vercel.app/reports/cmu75suds000004l5ffq2xevh
@@ -1044,7 +1044,28 @@ the automated scheduled-task mechanism):
     dispute (Tax Court decision expected late 2026-early 2027), FDA's
     request to withdraw TAVNEOS, and a partial clinical hold on
     subcutaneous blinatumomab.
+  - **APH** (Amphenol) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-07-31, accession 0001104659-26-089194): https://financial-reports-web.vercel.app/reports/cmu76h46g000704l7hqd7g1st
+    Net sales +55% reported to $8,758.1M but only +30% organic (+24pts
+    from acquisitions, mainly CommScope's connectivity/broadband
+    business closed Jan 9, 2026 — $2,100.9M of sales, ~14% of the
+    quarter, and $190.2M of net income since close); GAAP diluted EPS
+    $1.37 vs $0.86, adjusted $1.35 vs $0.81, operating margin +4.4pts to
+    29.5%. AI/IT-datacom demand drove organic growth unevenly by
+    segment: Communications Solutions +85% reported/+42% organic, Harsh
+    Environment +28%/+22%, Interconnect & Sensor Systems +17%/+13%. An
+    $80.0M non-recurring IEEPA tariff recovery added $0.04/share, and a
+    China tax dispute ($230M paid in Q2 plus a $160M reassessment)
+    pushed the H1 GAAP effective rate to 32.4% and the adjusted rate to
+    27.0% from 24.5% going forward; GAAP EPS exceeded adjusted EPS on
+    $80.5M of stock-option tax benefits. Q3 guidance ($9.3-9.4B sales,
+    $1.40-1.42 adjusted EPS) excludes further tariff recoveries; the
+    CommScope contribution outlook was raised to $4.6B sales/$0.30
+    accretion from $4.1B/$0.15; book-to-bill 1.23:1.
+    (First publish attempt this ticker hit a transient "page couldn't
+    load" browser error — not a data/validation issue — a bare retry
+    with the same JSON succeeded immediately.)
 - Tier worked: 0 (confirmed empty) then 1 (2026 S&P 500 backlog).
-- Running total so far tonight: **80 companies done, 96 report-periods
+- Running total so far tonight: **81 companies done, 97 report-periods
   published**. Batch still in progress — more companies to follow in this
   same firing before the final tally/commit.
