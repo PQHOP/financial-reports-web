@@ -755,3 +755,89 @@ published before doing anything else.
   originally-scanned candidates published (5 in the first sub-batch, 3 in
   this one), all 8 independently re-verified live before being marked
   done in the tracker.
+
+### 2026-09-18 night (23:00 JST 2026-09-18 → 05:00 JST 2026-09-19)
+
+- Mechanism: cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`), firing at
+  ~23:07 JST.
+- Setup notes this firing: `npm install` failed on `postinstall` (`prisma
+  generate`) with `Missing required environment variable: DATABASE_URL` —
+  worked around with a dummy `DATABASE_URL` value (publishing needs no
+  real DB credentials, only `SITE_URL`/`ADMIN_PASSWORD`, so this is safe).
+  Chromium/TLS proxy cert was present but with the wrong trust bits
+  (`certutil -M -n "ccr-agent-proxy" -t "CT,C,C" -d sql:/root/.pki/nssdb`
+  fixed it — the second of the two failure modes CLAUDE.md already
+  documents). Also found the container's `master` branch ref stale/
+  detached relative to `origin/master` at session start — turned out to
+  be a local ref-cache artifact, not an actual divergence; a fresh
+  `git fetch` showed origin already had everything (including an
+  unrelated real commit from the user, "Add Vercel Web Analytics for
+  visitor tracking", made outside this routine). No data was at risk;
+  documented here in case it recurs.
+- Network check: initial `curl https://www.sec.gov/` returned 403, but
+  confirmed via verbose headers that this was SEC's own Akamai
+  rate-limit/UA response (`SEC.gov | Request Rate Threshold Exceeded`),
+  not a proxy/policy block — retrying with the required `User-Agent`
+  header returned 200 immediately. Network access is fine tonight.
+- Published: **5 report-periods across 5 companies** — VOGX Q2 2026, PZG
+  FY2026 ANNUAL, MO Q2 2026, GOOGL Q2 2026, GOOG Q2 2026:
+  - **VOGX** (Vogenx Inc) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-09-17): https://financial-reports-web.vercel.app/reports/cmu71ha4b000004jmd6ftyb44
+    Pre-revenue clinical-stage biotech (mizagliflozin for post-bariatric
+    hypoglycemia); net loss widened 30.4% to $384,430 entirely on
+    non-cash fair-value marks on related-party convertible notes/warrants
+    that were extinguished at the August 2026 IPO, while reported cash
+    burn ($323,119) understates real spend — accrued officer compensation
+    payable roughly doubled to $719,043. The IPO raised ~$84.9M net
+    (~50x the current annual spend rate), but the EMERGE Phase 2b trial
+    hadn't started yet and two material weaknesses (already forcing a
+    FY2024/FY2025 restatement) remain unremediated.
+  - **PZG** (Paramount Gold Nevada Corp.) — FY2026 ANNUAL (10-K, period
+    end 2026-06-30, filed 2026-09-17): https://financial-reports-web.vercel.app/reports/cmu71ixei000004l9szztj7ar
+    Net loss +72% to $15.56M, but 81% of the increase is two non-cash
+    fair-value marks that moved *because* gold/silver prices rose (a
+    Sprott embedded-royalty derivative and liability-classified pre-
+    funded warrants); opex rose only 19.8%. The real story is a
+    well-timed ATM raise (1.86x the shares of FY2025 for 5.9x the cash)
+    alongside the January 2026 BLM Record of Decision at Grassy Mountain
+    and an updated feasibility study. Going-concern doubt persists —
+    management's own runway estimate is ~March 2027 against $189.8M of
+    initial capital needed, ~19x year-end cash.
+  - **MO** (Altria) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-07-30): https://financial-reports-web.vercel.app/reports/cmu71qxj7000004jpmppz4a9i
+    Reported diluted EPS fell 2.8% to $1.37 while adjusted EPS rose 2.8%
+    to $1.48 — the gap is litigation, a $78M plant-consolidation charge,
+    and ABI special items. Cigarette pricing (+$309M) barely outran
+    volume/mix drag (-$279M); discount-brand volume +67.3% is propping up
+    share while Marlboro volume fell 7.4%. Oral tobacco is the real
+    deterioration: `on!` shipped 4.2% fewer cans and lost 1.7pp of
+    pouch-category share even as the category grew 8.1pp of total oral
+    tobacco. Buybacks collapsed to $55M from $274M with only $665M left
+    on an authorization expiring 2026-12-31; FY26 guidance narrowed to
+    $5.61-$5.72 adjusted EPS.
+  - **GOOGL** (Alphabet Inc., Class A) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-07-23): https://financial-reports-web.vercel.app/reports/cmu71rfto000104jp8b3edoqp
+  - **GOOG** (Alphabet Inc., Class C) — same filing/analysis as GOOGL,
+    published to the separate Class C listing: https://financial-reports-web.vercel.app/reports/cmu71rnpo000204jpgnt18inw
+    Net income +298% to $112.2B is not an operating result — it includes
+    a $99.0B unrealized gain on SpaceX/private-company equity holdings;
+    excluding that, pre-tax income was +22%, roughly matching +30%
+    operating profit growth. Cloud revenue +82% to $24.8B is the first
+    quarter to include Wiz ($32.9B deal, closed March 2026) and TPU
+    hardware sales, so organic growth isn't derivable from the filing —
+    flagged rather than implied. Most consequential: Q2 capex ($44.9B)
+    exceeded operating cash flow ($39.1B) for the first time, funded by a
+    full capital-allocation reversal — zero buybacks, a $30.5B common
+    raise (incl. $10.0B from Berkshire Hathaway), Alphabet's first-ever
+    preferred stock ($19.0B), and $51.8B of new notes.
+  - Skipped: none this batch.
+- Tier worked: 0 (fresh filings — both scanned candidates, PZG and VOGX,
+  cleared; confirmed 0 remaining on a post-batch `scan-recent-filings`
+  re-run) then 1 (2026 S&P 500 backlog, file order — MO, then GOOGL/GOOG
+  as one subagent call since both are the same underlying Alphabet
+  filing published to two separate site listings).
+- Running total after tonight: **69 companies done, 85 report-periods
+  published** (64/80 before tonight + 5 in this batch). This firing is
+  stopping here for now with time/budget still left in the window; a
+  later firing tonight can continue the S&P 500 backlog from AMZN
+  onward (next in file order after MO/GOOGL/GOOG).
