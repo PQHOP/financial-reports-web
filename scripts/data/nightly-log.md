@@ -1095,3 +1095,45 @@ the automated scheduled-task mechanism):
   JST, over 3 hours of runway left); a later firing tonight can continue
   the S&P 500 backlog from AON onward (next in file order after ADI:
   AON, APA, APO, AMAT, APP, APTV, ACGL, ADM, ARES, ANET, ...).
+
+### 2026-09-19 night (23:00 JST 2026-09-19 → 05:00 JST 2026-09-20)
+
+- Batch 1 (~23:25 JST): **1 report-period published, 1 company.**
+- Tier worked: **0** (fresh EDGAR filings — from
+  `scripts/data/recent-filings-candidates.json`, S&P 500 entry, filed
+  2026-09-18).
+- Published:
+  - **KR** (Kroger) — **Q2 FY2026** (10-Q, period end 2026-08-15, filed
+    2026-09-18, accession 0001104659-26-108926): https://financial-reports-web.vercel.app/reports/cmu8hbgby000004l5bdxg6m1j
+    Note the fiscal-calendar trap: Kroger's FY2025 ended 2026-01-31, so
+    the quarter ended 2026-08-15 is Q2 of **fiscal 2026**, not a 2025
+    period. Total sales +2.0% to $34,621M, but the entire increase is
+    fuel — supermarket fuel sales +25.6% to $4,105M on a 25.3% higher
+    average retail fuel price, while sales to retail customers excluding
+    fuel fell 0.5% to $30,189M. Identical sales ex-fuel +0.2% vs +3.4%
+    a year ago, with the MD&A quantifying ~264bps of drag (Inflation
+    Reduction Act −138bps, brand→generic Rx shift −61bps, Cyclospora
+    outbreak ~−35bps, egg deflation −30bps) and conceding "increased
+    spend per item, partially offset by a reduction in the number of
+    units sold." Reported operating profit +12.5% to $971M and GAAP EPS
+    +15.4% to $1.05, but adjusted FIFO operating profit *fell* 1.4% to
+    $1,076M and adjusted net earnings fell 4.0% — the reported gain is a
+    prior-year comp artifact ($129M after-tax of Q2 FY2025 merger-
+    litigation/severance charges vs $52M this year), a lower LIFO charge
+    ($39M vs $62M), 16bps of D&A relief from the Q4 FY2025 fulfillment-
+    network closures, and an 8.6% smaller diluted share count (608M vs
+    665M; $1.0B repurchased in the quarter). Underlying: FIFO gross
+    margin ex-fuel +13bps against OG&A ex-fuel +33bps. Guidance was
+    **cut on sales and held on profit** — identical sales ex-fuel
+    1.0–2.0% → 0.2–0.8%, while adjusted FIFO operating profit
+    ($5.0–5.2B), adjusted EPS ($5.10–5.30), FCF and capex were all
+    reaffirmed. Also covered: the ~$1.65B Giant Eagle acquisition
+    announced 2026-07-01 (expected to close FY2027), leverage rising to
+    1.91x from 1.63x despite total debt falling $569M, and the
+    2026-10-20 investor update where longer-term targets land.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8hbgby000004l5bdxg6m1j`
+  re-fetched cache-busted; full content present through the closing
+  paragraph, no truncation, no stale-CDN issue this time.
+- Running total after this batch: **83 companies done, 99 report-periods
+  published** (82/98 before this batch + 1).

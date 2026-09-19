@@ -1,8 +1,8 @@
 {
   "_meta": {
-    "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop \u2014 see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
-    "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published \u2014 this is the tier-1 finish line, see CLAUDE.md 'Standing priority'. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, once tier 1 is fully done/skipped) \u2014 not a blocker during tier-1 backlog processing. 'reports' (added 2026-09-13, backfilled retroactively where known) lists every period already published for that company, across all fiscal years \u2014 originally scoped to fiscal-2026 only, now also the record for tier-2 multi-year backfill (2026-09-15+: once a company is 'done', additional entries for other years get appended here as tier 2 adds them). 'allAvailable2026QuartersCovered: true' means no further *2026* backfill is owed as of lastChecked \u2014 it says nothing about other years' coverage.",
-    "lastUpdated": "2026-09-18"
+    "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop — see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
+    "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published — this is the tier-1 finish line, see CLAUDE.md 'Standing priority'. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, once tier 1 is fully done/skipped) — not a blocker during tier-1 backlog processing. 'reports' (added 2026-09-13, backfilled retroactively where known) lists every period already published for that company, across all fiscal years — originally scoped to fiscal-2026 only, now also the record for tier-2 multi-year backfill (2026-09-15+: once a company is 'done', additional entries for other years get appended here as tier 2 adds them). 'allAvailable2026QuartersCovered: true' means no further *2026* backfill is owed as of lastChecked — it says nothing about other years' coverage.",
+    "lastUpdated": "2026-09-19"
   },
   "AMP": {
     "name": "Ameriprise Financial",
@@ -389,7 +389,7 @@
       "filedAt": "2026-07-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027 \u2014 out of 2026-coverage scope)",
+      "type": "10-Q (Q1 FY2027 — out of 2026-coverage scope)",
       "estimate": "2026-10-29",
       "basis": "prior Q1 FY10-Qs filed ~Oct 29",
       "confidence": "estimated"
@@ -510,7 +510,7 @@
       "type": "10-Q",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-07-28",
-      "note": "filedAt corrected 2026-09-13 \u2014 the previous 2026-07-16 date was the earnings-release 8-K, not the 10-Q itself"
+      "note": "filedAt corrected 2026-09-13 — the previous 2026-07-16 date was the earnings-release 8-K, not the 10-Q itself"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -552,7 +552,7 @@
       "type": "10-Q",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-03",
-      "note": "filedAt corrected 2026-09-13 \u2014 the previous 2026-07-31 date was the earnings-release 8-K, not the 10-Q itself"
+      "note": "filedAt corrected 2026-09-13 — the previous 2026-07-31 date was the earnings-release 8-K, not the 10-Q itself"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -738,7 +738,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-03",
-      "basis": "calendar fiscal year (FYE 12/31); prior Q3 10-Qs filed 2025-11-04 and 2024-10-31, and 2026 quarterlies filed 2026-05-05 (Q1) and 2026-08-04 (Q2). NOTE: AES is under a signed take-private ($15.00/share cash, Horizon Parent L.P. \u2014 GIP + EQT Infrastructure VI; stockholder approval 2026-06-26, HSR expired 2026-06-22, CFIUS cleared 2026-08-27, still pending PUCO/NY PSC/FERC/foreign approvals, outside date 2027-06-01). It has filed NO earnings-release 8-K (Item 2.02) since 2025-11-04 and gives no guidance, so no earnings date will be announced; the 10-Q is the only disclosure. If the merger closes before then, equity may deregister and filing cadence could change",
+      "basis": "calendar fiscal year (FYE 12/31); prior Q3 10-Qs filed 2025-11-04 and 2024-10-31, and 2026 quarterlies filed 2026-05-05 (Q1) and 2026-08-04 (Q2). NOTE: AES is under a signed take-private ($15.00/share cash, Horizon Parent L.P. — GIP + EQT Infrastructure VI; stockholder approval 2026-06-26, HSR expired 2026-06-22, CFIUS cleared 2026-08-27, still pending PUCO/NY PSC/FERC/foreign approvals, outside date 2027-06-01). It has filed NO earnings-release 8-K (Item 2.02) since 2025-11-04 and gives no guidance, so no earnings date will be announced; the 10-Q is the only disclosure. If the merger closes before then, equity may deregister and filing cadence could change",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-13"
@@ -801,7 +801,7 @@
     "nextExpectedFiling": {
       "type": "10-K (FY2026 Annual)",
       "estimate": "2026-12-21",
-      "basis": "fiscal year ends October 31 (EDGAR fiscalYearEnd 1031), so FY2026 Q3 (period end 2026-07-31) is the last quarter before the annual report. Prior 10-Ks filed 2025-12-22, 2024-12-20, 2023-12-20, 2022-12-21 \u2014 consistently the third week of December. The Q4/FY2026 earnings-release 8-K should land ~2026-11-30 (FY2025 release was 2025-11-24), several weeks ahead of the 10-K itself; a web search surfaced a third-party estimate of 2026-11-30 for the earnings date but no Agilent confirmation, so this stays estimated",
+      "basis": "fiscal year ends October 31 (EDGAR fiscalYearEnd 1031), so FY2026 Q3 (period end 2026-07-31) is the last quarter before the annual report. Prior 10-Ks filed 2025-12-22, 2024-12-20, 2023-12-20, 2022-12-21 — consistently the third week of December. The Q4/FY2026 earnings-release 8-K should land ~2026-11-30 (FY2025 release was 2025-11-24), several weeks ahead of the 10-K itself; a web search surfaced a third-party estimate of 2026-11-30 for the earnings date but no Agilent confirmation, so this stays estimated",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-13"
@@ -922,7 +922,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q1 FY2027, period end 2026-09-30)",
       "estimate": "2026-11-14",
-      "basis": "June 30 fiscal year end; FY2026 10-K filed 2026-09-15 (about 77 days after fiscal year end); estimating the next 10-Q roughly 45 days after its Sept 30, 2026 quarter end per typical smaller-reporting-company cadence \u2014 no prior-year quarterly filing history yet (recent IPO) to anchor a tighter estimate",
+      "basis": "June 30 fiscal year end; FY2026 10-K filed 2026-09-15 (about 77 days after fiscal year end); estimating the next 10-Q roughly 45 days after its Sept 30, 2026 quarter end per typical smaller-reporting-company cadence — no prior-year quarterly filing history yet (recent IPO) to anchor a tighter estimate",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-16"
@@ -2343,5 +2343,36 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-18"
+  },
+  "KR": {
+    "name": "Kroger",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-19",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu8hbgby000004l5bdxg6m1j"
+    },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu8hbgby000004l5bdxg6m1j"
+      }
+    ],
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-15",
+      "filedAt": "2026-09-18",
+      "accession": "0001104659-26-108926"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026)",
+      "estimate": "2026-12-17",
+      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); non-calendar fiscal year ending late January, Q3 FY2026 ends ~2026-11-07",
+      "confidence": "estimated"
+    },
+    "note": "Fiscal year ends late January (FY2025 ended 2026-01-31), so the 10-Q for the quarter ended 2026-08-15 is Q2 FY2026. Guidance cut on identical sales (1.0-2.0% -> 0.2-0.8%), adj. EPS reaffirmed at $5.10-5.30. Giant Eagle acquisition (~$1.65bn) announced 2026-07-01, expected to close FY2027. Investor update meeting 2026-10-20.",
+    "lastChecked": "2026-09-19"
   }
 }
