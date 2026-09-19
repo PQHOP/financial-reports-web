@@ -1406,3 +1406,40 @@ the automated scheduled-task mechanism):
 - Tonight's totals so far (9 batches): **9 report-periods published, 9
   companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO). Next in
   file order: AMAT, APP, APTV, ACGL, ADM, ARES, ANET, ...
+
+- Batch 10 (~01:20-01:45 JST 09-20): **1 report-period published, 1
+  company.**
+- Tier worked: **1** (S&P 500 backlog, file order, next after APO).
+- Published:
+  - **AMAT** (Applied Materials) — **fiscal Q3 2026** (13 weeks ended
+    2026-07-26; AMAT's fiscal year is non-calendar, ending the last
+    Sunday of October — labeled year=2026/period=Q3 here since the
+    period-end date and the company's own cover-page label both agree;
+    report includes an explicit fiscal-calendar note for readers) (10-Q
+    filed 2026-08-20, accession 0001628280-26-058235; also drew on the
+    2026-08-13 earnings-release 8-K Ex. 99.1, accession
+    0001628280-26-056699, and the FY2025 10-K, accession
+    0001628280-25-056742, for the prior-year comparison base):
+    https://financial-reports-web.vercel.app/reports/cmu8jz5it000004l58h2epjhi
+    Revenue +24.8% to $9,115M, operating income +37.7% to $3,075M, GAAP
+    EPS +43% to $3.17 — but the EPS jump is mostly a ~$580M favorable
+    swing in unrealized marks on listed-equity stakes plus an 18-point
+    tax-rate drop from a prior-year one-off CAMT valuation-allowance
+    charge, not operating improvement of that scale (operating income
+    still grew a real 38% on 25% revenue growth, the more meaningful
+    figure). China revenue fell 2% to $2,506M, dropping from 35% to 28%
+    of total revenue even as total revenue grew — the growth came from
+    the US (more than doubled to $1,367M) and Europe (+202%). Q4 FY2026
+    guidance: $10.25B revenue ±$500M, non-GAAP EPS $4.02 ±$0.20.
+    Flagged the $253M BIS export-controls settlement paid this fiscal
+    year, receivables growing 48% against 11% nine-month revenue growth,
+    and a 71% cut to buybacks in favor of capex.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8jz5it000004l58h2epjhi`
+  re-fetched cache-busted; Takeaway callout, fiscal-calendar note and
+  China/segment detail all present, no truncation.
+- Running total after this batch: **92 companies done, 108 report-periods
+  published** (91/107 before this batch + 1).
+- Tonight's totals so far (10 batches): **10 report-periods published,
+  10 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO,
+  AMAT). Next in file order: APP, APTV, ACGL, ADM, ARES, ANET, ...

@@ -2595,5 +2595,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-19"
+  },
+  "AMAT": {
+    "name": "Applied Materials",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-19",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu8jz5it000004l58h2epjhi"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-26",
+      "filedAt": "2026-08-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual, fiscal year ends last Sunday of October)",
+      "estimate": "2026-12-11",
+      "basis": "AMAT non-calendar fiscal year ends ~2026-10-25; annual 10-K typically follows ~6-7 weeks later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-19"
   }
 }
