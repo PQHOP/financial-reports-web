@@ -1303,3 +1303,41 @@ the automated scheduled-task mechanism):
   ADI per the 09-18 night entry: AON, APA, APO, AMAT, APP, APTV, ACGL,
   ADM, ARES, ANET, ...) unless a re-run of `scan-recent-filings` turns up
   new tier-0 candidates first.
+
+- Batch 7 (~00:20-00:40 JST 09-20): **1 report-period published, 1
+  company.**
+- Tier worked: **1** (S&P 500 backlog, file order). Re-ran
+  `scan-recent-filings` first — 0 new tier-0 candidates (last 7 days
+  already fully covered by tonight's earlier batches), so fell through
+  to tier 1 per CLAUDE.md's "Deciding what to work on this run". Next in
+  file order after ADI: AON, APA, APO, AMAT, APP, ... — started with AON.
+- Published:
+  - **AON** (Aon plc) — **Q2 2026** (10-Q, period ended 2026-06-30, filed
+    2026-07-29, accession 0001628280-26-050610; also drew on the
+    2026-07-29 earnings-release 8-K Ex. 99.1, accession
+    0001628280-26-050367, for adjusted-metric reconciliations):
+    https://financial-reports-web.vercel.app/reports/cmu8jebm3000004jqfainbc4y
+    Revenue +2% to $4,246M (5% organic growth, 1% FX tailwind, 4%
+    divestiture drag from the NFP Wealth and Stroz Friedberg
+    divestitures); operating margin +80bps to 21.5%, adjusted operating
+    margin +70bps to 28.9%; GAAP diluted EPS -3% to $2.58 vs adjusted EPS
+    +9% to $3.81 — the GAAP decline is an artifact of a non-repeating
+    $88M prior-year Blackstone deferred-consideration gain plus the
+    effective tax rate jumping 650bps (15.5%→22.0%), not underlying
+    deterioration. All four solution lines grew 5% organically despite a
+    reinsurance-pricing headwind; fiduciary investment income fell
+    $66M→$58M, the one genuine soft spot since it sits outside the
+    organic-growth figure Aon leads with. H1 free cash flow +4% to
+    $846M; $775M returned to shareholders; Accelerating Aon United
+    restructuring program now $1.3B cumulative spend against $25M net
+    quarterly savings so far.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8jebm3000004jqfainbc4y`
+  re-fetched cache-busted; Takeaway callout, metrics table and
+  restructuring detail all present, no truncation.
+- Running total after this batch: **89 companies done, 105 report-periods
+  published** (88/104 before this batch + 1).
+- Tonight's totals so far (7 batches): **7 report-periods published, 7
+  companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON). Next in file
+  order for the next batch: APA, APO, AMAT, APP, APTV, ACGL, ADM, ARES,
+  ANET, ...
