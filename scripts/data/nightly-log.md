@@ -1167,3 +1167,36 @@ the automated scheduled-task mechanism):
   no truncation.
 - Running total after this batch: **84 companies done, 100 report-periods
   published** (83/99 before this batch + 1).
+
+- Batch 3 (~00:10 JST): **1 report-period published, 1 company.**
+- Tier worked: **0** (fresh EDGAR filings — us-listed catch-all entry,
+  10-Q/A filed 2026-09-18).
+- Published:
+  - **GRDX** (GridAI Technologies Corp.) — **Q2 2026** (10-Q/A filed
+    2026-09-18, accession 0001104659-26-108635; original 10-Q filed
+    2026-08-21, accession 0001104659-26-099751, period end
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmu8hp94l000004l9z8b3f655
+    The amendment was diffed against the original and confirmed
+    non-financial: an SEC-comment-driven rewrite of the goodwill
+    disclosure in Notes 3/7 (withdrawing the original's "expected
+    synergies" rationale in favor of "continues to operate as a
+    separate business," plus newly quantified impairment-test inputs)
+    and expanded Critical Accounting Policies — no reported figures
+    changed. Analyzed the unchanged Q2 numbers as authoritative. Net
+    loss $13.04M (vs $998K a year earlier), including a $10.07M
+    non-cash goodwill impairment — 45% of the goodwill from the Grid AI
+    Corp. acquisition (closed 2025-09-30) written off within three
+    quarters, attributed to delays in commercialization and customer
+    contracts. Revenue just $85,876 against $122,390 of cost of
+    services (gross margin −42.5%); goodwill + acquired intangibles are
+    93.8% of total assets; ~$11.8M working-capital deficit; management
+    states going-concern doubt is not alleviated. Also flagged, via the
+    2026-09-11 8-K: after an ~$8.5M July capital raise, the company
+    lent ~$2.96M to Pronghorn Resources, an unrelated party in which one
+    of its own shareholders holds an interest.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8hp94l000004l9z8b3f655`
+  re-fetched cache-busted; full content present through the closing
+  metrics table, no truncation.
+- Running total after this batch: **85 companies done, 101 report-periods
+  published** (84/100 before this batch + 1).

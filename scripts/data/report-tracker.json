@@ -2405,5 +2405,36 @@
     },
     "note": "Clinical-stage oncology biotech, pre-revenue. IPO closed 2026-08-10 ($151.7M net proceeds); this 10-Q covers Q2 2026 (ended 2026-06-30), which predates the IPO. Cash $95.4M at quarter-end; management states runway into Q2 2028 pro forma for IPO proceeds. Lead asset BH-30643 (EGFR inhibitor) pivotal Phase 2 first dose expected Q1 2027.",
     "lastChecked": "2026-09-19"
+  },
+  "GRDX": {
+    "name": "GridAI Technologies Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-19",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu8hp94l000004l9z8b3f655"
+    },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu8hp94l000004l9z8b3f655"
+      }
+    ],
+    "lastFilingSeen": {
+      "type": "10-Q/A",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-18",
+      "accession": "0001104659-26-108635"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "quarter ends 2026-09-30; ~45-day filing deadline typical for a smaller reporting company",
+      "confidence": "estimated"
+    },
+    "note": "10-Q/A filed 2026-09-18 was a non-financial amendment (SEC-comment-driven goodwill disclosure rewrite in Notes 3/7 + expanded Critical Accounting Policies) — no figures changed vs. the original 10-Q (accession 0001104659-26-099751, filed 2026-08-21); verified by diffing both. Analyzed the unchanged Q2 figures as authoritative. Net loss $13.04M incl. $10.07M non-cash goodwill impairment (45% of Grid AI Corp. acquisition goodwill, written off within 3 quarters) on revenue of just $85,876. Going-concern doubt not alleviated per management. Also drew on the 2026-09-11 8-K for a post-quarter fact (Pronghorn Resources loan increased to $2.964M total).",
+    "lastChecked": "2026-09-19"
   }
 }
