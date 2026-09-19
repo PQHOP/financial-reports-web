@@ -1371,3 +1371,38 @@ the automated scheduled-task mechanism):
 - Tonight's totals so far (8 batches): **8 report-periods published, 8
   companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA). Next in file
   order: APO, AMAT, APP, APTV, ACGL, ADM, ARES, ANET, ...
+
+- Batch 9 (~01:00-01:20 JST 09-20): **1 report-period published, 1
+  company.**
+- Tier worked: **1** (S&P 500 backlog, file order, next after APA).
+- Published:
+  - **APO** (Apollo Global Management) — **Q2 2026** (10-Q, period ended
+    2026-06-30, filed 2026-08-10, accession 0001858681-26-000040; also
+    drew on the 2026-08-04 earnings-release 8-K Ex. 99.1, accession
+    0001858681-26-000036): https://financial-reports-web.vercel.app/reports/cmu8jrp1t000004if333fn1zz
+    GAAP revenue +63.7% to $11,153M and net income to common +120.8% to
+    $1,336M ($2.15 diluted EPS) is mostly a $2.1B mark-up on
+    indexed-annuity hedging derivatives (S&P 500 +14.9% in the quarter),
+    largely offset elsewhere by a $2.3B rise in interest-sensitive
+    contract benefits, plus a one-off $673M gain on the early call of AP
+    Grange. The cleaner operating measure, Segment Income, rose a more
+    modest 12.2% to $1,678M — FRE +25.2% to $785M (margin 58.5%) but
+    ~76% of the fee-revenue growth traces to the Bridge and
+    Athora/PIC acquisitions, not organic fundraising; net flows halved
+    to $25.2B as redemptions and realizations both roughly doubled.
+    Athene's SRE +6.8% to $877M despite investment spread compressing
+    11bps to 1.47% — growing because the balance sheet is bigger, not
+    because each dollar earns more. Six-month net LOSS of $(594)M /
+    $(1.06) EPS is a Q1 non-cash $1.7B valuation allowance against
+    Bermuda deferred tax assets following the OECD's Pillar Two
+    guidance (6-month effective tax rate 75.5%) — flagged as a one-off,
+    not an operating deterioration.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8jrp1t000004if333fn1zz`
+  re-fetched cache-busted; Takeaway callout, metrics table and
+  "What to watch" section all present, no truncation.
+- Running total after this batch: **91 companies done, 107 report-periods
+  published** (90/106 before this batch + 1).
+- Tonight's totals so far (9 batches): **9 report-periods published, 9
+  companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO). Next in
+  file order: AMAT, APP, APTV, ACGL, ADM, ARES, ANET, ...
