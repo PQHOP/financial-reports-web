@@ -1200,3 +1200,34 @@ the automated scheduled-task mechanism):
   metrics table, no truncation.
 - Running total after this batch: **85 companies done, 101 report-periods
   published** (84/100 before this batch + 1).
+
+- Batch 4 (~00:35 JST): **1 report-period published, 1 company.**
+- Tier worked: **0** (fresh EDGAR filings — us-listed catch-all entry,
+  10-K filed 2026-09-18).
+- Published:
+  - **MGLD** (The Marygold Companies, Inc.) — **FY2026 ANNUAL** (10-K,
+    fiscal year ended 2026-06-30, filed 2026-09-18, accession
+    0001493152-26-043341): https://financial-reports-web.vercel.app/reports/cmu8hvovx000004jwx3uzcdhf
+    June-30 fiscal year end confirmed from the EDGAR company record and
+    the filing's own cover page. Revenue from continuing operations
+    +8% to $25.3M, net loss narrowed 25% to $4.4M ($0.10/share vs
+    $0.14) — both headlines undersell a much better underlying year:
+    USCF Investments' average AUM +41% to $4.1B on commodity moves was
+    masked by a $2.5M USO oil-futures trading-error reimbursement
+    booked as a *revenue reduction* (ex that, fund-management revenue
+    would have been +38% not +23%, segment operating income +65% not
+    -11%) and by the July 2025 sale of the Brigadier security segment
+    (to related party/director Scott Schoenberger) out of the base.
+    $3.6M of impairments (UK financial-services goodwill/intangibles
+    $2.7M, private-bank stake $0.9M) also hit the year; goodwill and
+    intangibles are now carried at zero. The profitable New Zealand
+    Food Products segment was reclassified to discontinued operations
+    2026-03-31 pending sale. Flagged: $19.5M cumulative fintech
+    investment since 2019 against only $19.2M total stockholders'
+    equity, with both the US and UK consumer apps now paused.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8hvovx000004jwx3uzcdhf`
+  re-fetched cache-busted; full content present (three tables, Takeaway
+  callout, closing source footnote), no truncation.
+- Running total after this batch: **86 companies done, 102 report-periods
+  published** (85/101 before this batch + 1).

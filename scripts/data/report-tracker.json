@@ -2436,5 +2436,36 @@
     },
     "note": "10-Q/A filed 2026-09-18 was a non-financial amendment (SEC-comment-driven goodwill disclosure rewrite in Notes 3/7 + expanded Critical Accounting Policies) — no figures changed vs. the original 10-Q (accession 0001104659-26-099751, filed 2026-08-21); verified by diffing both. Analyzed the unchanged Q2 figures as authoritative. Net loss $13.04M incl. $10.07M non-cash goodwill impairment (45% of Grid AI Corp. acquisition goodwill, written off within 3 quarters) on revenue of just $85,876. Going-concern doubt not alleviated per management. Also drew on the 2026-09-11 8-K for a post-quarter fact (Pronghorn Resources loan increased to $2.964M total).",
     "lastChecked": "2026-09-19"
+  },
+  "MGLD": {
+    "name": "The Marygold Companies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-19",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu8hvovx000004jwx3uzcdhf"
+    },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu8hvovx000004jwx3uzcdhf"
+      }
+    ],
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-18",
+      "accession": "0001493152-26-043341"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "fiscal year ends 2026-06-30; first fiscal-2027 quarterly 10-Q typically ~45 days after quarter end (~2026-09-30)",
+      "confidence": "estimated"
+    },
+    "note": "Fiscal year ends June 30, so FY2026 = July 2025-June 2026. Revenue from continuing ops +8% to $25.3M, net loss narrowed 25% to $4.4M, but both figures are distorted: USCF Investments average AUM +41% to $4.1B, masked by a $2.5M USO oil-futures trading-error reimbursement booked as a revenue reduction (ex that, fund-mgmt revenue +38% not +23%) and by the July 2025 Brigadier segment sale (to related party/director Scott Schoenberger) leaving the base. $3.6M of impairments (UK financial-services goodwill/intangibles + private-bank stake) also hit the year; goodwill/intangibles now at zero. NZ Food Products (profitable) reclassified to discontinued ops 2026-03-31 pending sale. $19.5M cumulative fintech investment since 2019 vs $19.2M total equity; both US/UK apps paused.",
+    "lastChecked": "2026-09-19"
   }
 }
