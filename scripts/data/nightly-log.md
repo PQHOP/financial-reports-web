@@ -1443,3 +1443,36 @@ the automated scheduled-task mechanism):
 - Tonight's totals so far (10 batches): **10 report-periods published,
   10 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO,
   AMAT). Next in file order: APP, APTV, ACGL, ADM, ARES, ANET, ...
+
+- Batch 11 (~01:45-02:10 JST 09-20): **1 report-period published, 1
+  company.**
+- Tier worked: **1** (S&P 500 backlog, file order, next after AMAT).
+- Published:
+  - **APP** (AppLovin) — **Q2 2026** (10-Q, period ended 2026-06-30,
+    filed 2026-08-05, accession 0001751008-26-000059; also drew on the
+    2026-08-05 earnings-release 8-K Ex. 99.1, accession
+    0001751008-26-000057): https://financial-reports-web.vercel.app/reports/cmu8k4yoo000104ifaf29bbjt
+    Revenue +52.8% to $1,923.7M, operating margin +1.6pp to 77.7%, net
+    income from continuing operations +64.1% to $1,266.5M ($3.76
+    diluted EPS) — growth is genuinely like-for-like (the 2025-06-30
+    Apps-business divestiture means prior-year figures were already
+    restated to exclude it) but is entirely a pricing story on a
+    shrinking base: installs fell 2% while revenue per install rose
+    58%. Headline net income growth actually understates the operating
+    improvement, since Q2 2025 included $47.7M of discontinued-ops
+    income (a $106.2M divestiture gain net of costs, against a $125.6M
+    deferred-tax write-off) that isn't repeated this year. Q3 2026
+    guidance ($2.055-2.085B revenue, $1.710-1.740B Adjusted EBITDA,
+    ~83% margin) implies orderly deceleration from 53% growth toward
+    ~47%, with guided margin below what was just delivered. R&D +127%
+    is almost entirely stock compensation, widening the GAAP-vs-
+    Adjusted-EBITDA gap; effective tax rate rose to 15.9% from 12.7%.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8k4yoo000104ifaf29bbjt`
+  re-fetched cache-busted; Takeaway callout, metrics table and guidance
+  section all present, no truncation.
+- Running total after this batch: **93 companies done, 109 report-periods
+  published** (92/108 before this batch + 1).
+- Tonight's totals so far (11 batches): **11 report-periods published,
+  11 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO, AMAT,
+  APP). Next in file order: APTV, ACGL, ADM, ARES, ANET, ...
