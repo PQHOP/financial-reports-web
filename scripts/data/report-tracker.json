@@ -2374,5 +2374,36 @@
     },
     "note": "Fiscal year ends late January (FY2025 ended 2026-01-31), so the 10-Q for the quarter ended 2026-08-15 is Q2 FY2026. Guidance cut on identical sales (1.0-2.0% -> 0.2-0.8%), adj. EPS reaffirmed at $5.10-5.30. Giant Eagle acquisition (~$1.65bn) announced 2026-07-01, expected to close FY2027. Investor update meeting 2026-10-20.",
     "lastChecked": "2026-09-19"
+  },
+  "BLSM": {
+    "name": "BlossomHill Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-19",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu8hhj87000004jn1otxfb9v"
+    },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu8hhj87000004jn1otxfb9v"
+      }
+    ],
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-18",
+      "accession": "0001193125-26-395043"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "quarter ends 2026-09-30; ~45-day filing deadline typical for a newly-public smaller reporting company (this was its first 10-Q, covering the pre-IPO quarter)",
+      "confidence": "estimated"
+    },
+    "note": "Clinical-stage oncology biotech, pre-revenue. IPO closed 2026-08-10 ($151.7M net proceeds); this 10-Q covers Q2 2026 (ended 2026-06-30), which predates the IPO. Cash $95.4M at quarter-end; management states runway into Q2 2028 pro forma for IPO proceeds. Lead asset BH-30643 (EGFR inhibitor) pivotal Phase 2 first dose expected Q1 2027.",
+    "lastChecked": "2026-09-19"
   }
 }

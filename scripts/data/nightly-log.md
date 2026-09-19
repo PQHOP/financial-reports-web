@@ -1137,3 +1137,33 @@ the automated scheduled-task mechanism):
   paragraph, no truncation, no stale-CDN issue this time.
 - Running total after this batch: **83 companies done, 99 report-periods
   published** (82/98 before this batch + 1).
+
+- Batch 2 (~23:45 JST): **1 report-period published, 1 company.**
+- Tier worked: **0** (fresh EDGAR filings — us-listed catch-all entry,
+  filed 2026-09-18).
+- Published:
+  - **BLSM** (BlossomHill Therapeutics, Inc.) — **Q2 2026** (10-Q, period
+    end 2026-06-30, filed 2026-09-18, accession
+    0001193125-26-395043): https://financial-reports-web.vercel.app/reports/cmu8hhj87000004jn1otxfb9v
+    Clinical-stage oncology biotech, pre-revenue; first 10-Q as a public
+    company, covering a quarter that predates its 2026-08-10 IPO. R&D
+    +70% YoY to $21.4M (external BH-30643 clinical/manufacturing spend
+    $9.0M of that, up from $3.8M), net loss +79% to $23.8M. Cash fell
+    $136.7M → $95.4M over H1 (H1 operating burn $44.2M, +120% YoY),
+    ~13 months of runway on balance-sheet cash alone — extended by the
+    $151.7M net IPO proceeds to management's stated "into the second
+    quarter of 2028." Flagged: reported EPS $(8.75) divides by pre-IPO
+    weighted-average shares only (excludes 18.26M preferred converted at
+    IPO) — against the 31.78M shares outstanding on the 10-Q cover page,
+    the same loss is closer to $(0.75)/share. Management's Q2 2028
+    runway guidance implies burn accelerating ~40% above the H1 pace
+    (pivotal Phase 2 first dose expected Q1 2027, ahead of that
+    runway's end), so another raise is likely before pivotal data reads
+    out. Milestones: Q4 2026 end-of-Phase-1 FDA meeting, Q1 2027 pivotal
+    Phase 2 start + BH-501284 IND, H1 2027 durability data.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8hhj87000004jn1otxfb9v`
+  re-fetched cache-busted; full content present, Takeaway callout intact,
+  no truncation.
+- Running total after this batch: **84 companies done, 100 report-periods
+  published** (83/99 before this batch + 1).
