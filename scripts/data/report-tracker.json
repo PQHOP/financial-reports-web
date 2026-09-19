@@ -2467,5 +2467,36 @@
     },
     "note": "Fiscal year ends June 30, so FY2026 = July 2025-June 2026. Revenue from continuing ops +8% to $25.3M, net loss narrowed 25% to $4.4M, but both figures are distorted: USCF Investments average AUM +41% to $4.1B, masked by a $2.5M USO oil-futures trading-error reimbursement booked as a revenue reduction (ex that, fund-mgmt revenue +38% not +23%) and by the July 2025 Brigadier segment sale (to related party/director Scott Schoenberger) leaving the base. $3.6M of impairments (UK financial-services goodwill/intangibles + private-bank stake) also hit the year; goodwill/intangibles now at zero. NZ Food Products (profitable) reclassified to discontinued ops 2026-03-31 pending sale. $19.5M cumulative fintech investment since 2019 vs $19.2M total equity; both US/UK apps paused.",
     "lastChecked": "2026-09-19"
+  },
+  "NEUP": {
+    "name": "Neuphoria Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-19",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu8i2tmh000104jwi3tvdafs"
+    },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu8i2tmh000104jwi3tvdafs"
+      }
+    ],
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-18",
+      "accession": "0001193125-26-395536"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027) — but see note",
+      "estimate": "2026-11-14",
+      "basis": "fiscal year ends 2026-06-30; ~45-day smaller-reporting-company deadline",
+      "confidence": "estimated"
+    },
+    "note": "Clinical-stage biotech (fiscal year ends June 30). Phase 3 AFFIRM-1 (BNC210, social anxiety) missed its primary endpoint 2025-10-20; company terminated leases and nearly all staff (now 1 FTE), PTSD program on hold. Revenue -92.5% to $1.17M (FY2025 had a one-off $15.0M Merck milestone); net loss widened to $13.45M, mostly a $5.36M non-cash goodwill impairment after Merck ended the MK-1167 Alzheimer's Phase 2 for futility, plus $1.28M restructuring — underlying R&D+G&A spend actually fell 34.5%. Cash rose to $19.87M via ATM share sales (+173.5% share count). Agreed 2026-07-23 to be acquired by Scancell Holdings plc at ~$4.55/share (~$24.6M), below the ATM average price and below Lynx1's earlier withdrawn indications; holders get ~11.1% of combined co. + 1 CVR. Merger targeted to close late 2026 — NEUP may stop filing standalone, worth checking before assuming another quarterly is coming.",
+    "lastChecked": "2026-09-19"
   }
 }

@@ -1231,3 +1231,33 @@ the automated scheduled-task mechanism):
   callout, closing source footnote), no truncation.
 - Running total after this batch: **86 companies done, 102 report-periods
   published** (85/101 before this batch + 1).
+
+- Batch 5 (~01:00 JST): **1 report-period published, 1 company.**
+- Tier worked: **0** (fresh EDGAR filings — us-listed catch-all entry,
+  10-K filed 2026-09-18).
+- Published:
+  - **NEUP** (Neuphoria Therapeutics Inc.) — **FY2026 ANNUAL** (10-K,
+    fiscal year ended 2026-06-30, filed 2026-09-18, accession
+    0001193125-26-395536): https://financial-reports-web.vercel.app/reports/cmu8i2tmh000104jwi3tvdafs
+    Clinical-stage biotech. Phase 3 AFFIRM-1 (BNC210, social anxiety
+    disorder) missed its primary endpoint on 2025-10-20; the company
+    then terminated its leases and nearly all staff (down to 1 FTE)
+    and put its PTSD program on hold. Revenue -92.5% to $1.17M (FY2025
+    included a one-off $15.0M Merck milestone); net loss widened from
+    $0.37M to $13.45M, mostly a $5.36M non-cash goodwill impairment
+    after Merck ended the MK-1167 Alzheimer's Phase 2 for futility,
+    plus $1.28M restructuring — underlying R&D+G&A spend actually fell
+    34.5%. Cash rose to $19.87M purely via ATM share sales (share count
+    +173.5%). On 2026-07-23 agreed to be acquired by Scancell Holdings
+    plc at ~$4.55/share (~$24.6M), below the average ATM sale price and
+    below Lynx1's earlier withdrawn/revised cash indications; holders
+    get ~11.1% of the combined company plus one non-transferable CVR.
+    Flagged in the tracker: the merger is targeted to close in late
+    2026, so NEUP may stop filing as a standalone registrant before its
+    next quarterly would otherwise be due.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8i2tmh000104jwi3tvdafs`
+  re-fetched cache-busted; metrics table, Takeaway callout and closing
+  source line all present, no truncation.
+- Running total after this batch: **87 companies done, 103 report-periods
+  published** (86/102 before this batch + 1).
