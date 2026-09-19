@@ -2498,5 +2498,36 @@
     },
     "note": "Clinical-stage biotech (fiscal year ends June 30). Phase 3 AFFIRM-1 (BNC210, social anxiety) missed its primary endpoint 2025-10-20; company terminated leases and nearly all staff (now 1 FTE), PTSD program on hold. Revenue -92.5% to $1.17M (FY2025 had a one-off $15.0M Merck milestone); net loss widened to $13.45M, mostly a $5.36M non-cash goodwill impairment after Merck ended the MK-1167 Alzheimer's Phase 2 for futility, plus $1.28M restructuring — underlying R&D+G&A spend actually fell 34.5%. Cash rose to $19.87M via ATM share sales (+173.5% share count). Agreed 2026-07-23 to be acquired by Scancell Holdings plc at ~$4.55/share (~$24.6M), below the ATM average price and below Lynx1's earlier withdrawn indications; holders get ~11.1% of combined co. + 1 CVR. Merger targeted to close late 2026 — NEUP may stop filing standalone, worth checking before assuming another quarterly is coming.",
     "lastChecked": "2026-09-19"
+  },
+  "NTNX": {
+    "name": "Nutanix, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-19",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu8ia50r000204jwvvmuk8u2"
+    },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu8ia50r000204jwvvmuk8u2"
+      }
+    ],
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-18",
+      "accession": "0001193125-26-394793"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-12-09",
+      "basis": "fiscal year ends 2026-07-31, quarters end Oct/Jan/Apr/Jul 31; ~40-day post-quarter filing cadence observed historically",
+      "confidence": "estimated"
+    },
+    "note": "Fiscal year ends July 31. Revenue +12% to $2,853.5M, non-GAAP operating margin +260bps to 23.7%. GAAP net income's 8x jump to $1,506.8M ($5.17 diluted EPS) is almost entirely a $1,208.2M non-cash release of the US deferred-tax valuation allowance — pre-tax income only rose $211.6M->$327.1M; GAAP EPS ($5.17) now exceeds non-GAAP EPS ($2.04), flagged as backwards vs the usual direction. FY2027 guidance ($3.180-3.230B revenue, 24-25% non-GAAP op margin, $850-950M FCF) implies no growth acceleration. Aug 2026 5% headcount cut booked $27.6M severance with zero cash paid, flattering FY2026's $840.7M FCF. ARR +16%, RPO +28%, both ahead of revenue growth. Repurchased 9.4M shares at avg $51.24 while separately selling 4.14M shares to AMD at $36.26 (May 2026 private placement). Stockholders' equity flipped from -$694.5M to +$702.6M.",
+    "lastChecked": "2026-09-19"
   }
 }

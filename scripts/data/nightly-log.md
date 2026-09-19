@@ -1261,3 +1261,45 @@ the automated scheduled-task mechanism):
   source line all present, no truncation.
 - Running total after this batch: **87 companies done, 103 report-periods
   published** (86/102 before this batch + 1).
+
+- Batch 6 (~01:25 JST): **1 report-period published, 1 company.**
+- Tier worked: **0** (fresh EDGAR filings — us-listed catch-all entry,
+  10-K filed 2026-09-18). **This clears tonight's entire tier-0 queue**
+  (all 6 candidates from `recent-filings-candidates.json` now done:
+  KR, BLSM, GRDX, MGLD, NEUP, NTNX).
+- Published:
+  - **NTNX** (Nutanix, Inc. - Class A) — **FY2026 ANNUAL** (10-K, fiscal
+    year ended 2026-07-31, filed 2026-09-18, accession
+    0001193125-26-394793; also drew on the 2026-08-26 earnings-release
+    8-K Ex. 99.1, accession 0001171843-26-005752, for non-GAAP
+    reconciliations and FY2027 guidance): https://financial-reports-web.vercel.app/reports/cmu8ia50r000204jwvvmuk8u2
+    Revenue +12% to $2,853.5M, non-GAAP operating margin +260bps to
+    23.7%. GAAP net income's 8x jump to $1,506.8M ($5.17 diluted EPS)
+    is almost entirely a $1,208.2M non-cash release of the US
+    deferred-tax valuation allowance — pre-tax income only rose
+    $211.6M→$327.1M, and GAAP EPS now *exceeds* non-GAAP EPS ($5.17 vs
+    $2.04), the reverse of the usual direction, which the report flags
+    explicitly. FY2027 guidance ($3.180–3.230B revenue, 24–25%
+    non-GAAP op margin, $850–950M FCF) implies no growth acceleration
+    despite the VMware/Broadcom displacement opportunity. An August
+    2026 5%-headcount cut booked $27.6M of severance with zero cash
+    paid, flattering FY2026's reported $840.7M FCF. ARR +16% and RPO
+    +28% both ran ahead of revenue growth; gross margin flat at 86.8%
+    (product-GM gain offset by services mix). Capital allocation:
+    repurchased 9.4M shares at an average $51.24 while separately
+    selling 4.14M shares to AMD at $36.26 in a May 2026 private
+    placement; stockholders' equity flipped from a $694.5M deficit to
+    $702.6M positive.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8ia50r000204jwvvmuk8u2`
+  re-fetched cache-busted; both tables and the Takeaway callout render,
+  content ends cleanly, no truncation.
+- Running total after this batch: **88 companies done, 104 report-periods
+  published** (87/103 before this batch + 1).
+- Tonight's totals so far (6 batches): **6 report-periods published, 6
+  companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX), all tier 0. Tier-0
+  queue for tonight is now fully cleared; a later firing tonight would
+  fall through to the tier-1 S&P 500 backlog (next in file order after
+  ADI per the 09-18 night entry: AON, APA, APO, AMAT, APP, APTV, ACGL,
+  ADM, ARES, ANET, ...) unless a re-run of `scan-recent-filings` turns up
+  new tier-0 candidates first.
