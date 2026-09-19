@@ -1512,3 +1512,38 @@ the automated scheduled-task mechanism):
 - Tonight's totals so far (12 batches): **12 report-periods published,
   12 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO, AMAT,
   APP, APTV). Next in file order: ACGL, ADM, ARES, ANET, ...
+
+- Batch 13 (~02:35-03:10 JST 09-20): **1 report-period published, 1
+  company.** Research subagent hit SEC's ~10-minute per-IP rate block
+  mid-download (from the volume of SEC requests across 6 prior batches
+  tonight) and had to retry — its own monitors caught it, no manual
+  intervention needed, just ran longer than usual (~6.5 min).
+- Tier worked: **1** (S&P 500 backlog, file order, next after APTV).
+- Published:
+  - **ACGL** (Arch Capital Group) — **Q2 2026** (10-Q, period ended
+    2026-06-30, filed 2026-08-04, accession 0000947484-26-000124; also
+    drew on the 2026-07-28 earnings-release 8-K Ex. 99.1, accession
+    0000947484-26-000118): https://financial-reports-web.vercel.app/reports/cmu8kkw7a000204if35b87wio
+    Underwriting income -19.7% to $657M, combined ratio worsened to
+    83.5% from 81.2% (82.5% vs 80.9% ex-catastrophe/ex-prior-year); net
+    premiums earned -8.1% to $3,985M; net income to common -14.7% to
+    $1,047M, diluted EPS $3.00 vs $3.23; operating ROE fell to 15.3%
+    from 18.2%; BVPS rose to $68.04. Insurance segment carried a 98.5%
+    combined ratio (7.6 catastrophe points from the Iran conflict and US
+    severe convective storms, vs 2.9 last year) and contributed just
+    $27M of underwriting income — about 4% of the group total — while
+    Reinsurance (77.5% CR, $410M) and Mortgage (22.8% CR, $220M) did the
+    real work. A $221M rise in reinsurance retrocession cut net written
+    premium on flat gross. Investment yield fell to 3.91% from 4.25%.
+    $1.2B of Q2 buybacks executed above book value — flagged as capital
+    going into shares rather than premium growth while the underwriting
+    book is shrinking and getting marginally less profitable ex-cats.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8kkw7a000204if35b87wio`
+  re-fetched cache-busted; Takeaway callout, combined-ratio table and
+  segment detail all present, no truncation.
+- Running total after this batch: **95 companies done, 111 report-periods
+  published** (94/110 before this batch + 1).
+- Tonight's totals so far (13 batches): **13 report-periods published,
+  13 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO, AMAT,
+  APP, APTV, ACGL). Next in file order: ADM, ARES, ANET, ...
