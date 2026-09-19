@@ -1476,3 +1476,39 @@ the automated scheduled-task mechanism):
 - Tonight's totals so far (11 batches): **11 report-periods published,
   11 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO, AMAT,
   APP). Next in file order: APTV, ACGL, ADM, ARES, ANET, ...
+
+- Batch 12 (~02:10-02:35 JST 09-20): **1 report-period published, 1
+  company.**
+- Tier worked: **1** (S&P 500 backlog, file order, next after APP).
+- Published:
+  - **APTV** (Aptiv PLC) — **Q2 2026** (10-Q, period ended 2026-06-30,
+    filed 2026-08-04, accession 0001521332-26-000061; also drew on the
+    2026-08-04 earnings-release 8-K Ex. 99.1, accession
+    0001521332-26-000057): https://financial-reports-web.vercel.app/reports/cmu8kbr0v000104jtznphwbgz
+    Aptiv spun off its Electrical Distribution Systems segment as
+    Versigent PLC (NYSE: VGNT) on 2026-04-01 (1 VGNT share per 3 APTV
+    shares); EDS is now discontinued operations with prior periods
+    restated, and the two remaining segments were renamed (Advanced
+    Safety & User Experience → Intelligent Systems; Engineered
+    Components Group → Engineered Components) — flagged explicitly
+    since reported net income fell 37% purely from the disc-ops line
+    while continuing operations actually grew 12.5%. Revenue +2.3% to
+    $3,274M, operating income +12.9% to $367M (margin +105bps),
+    continuing EPS $1.40 vs $1.21. But quality was weak: the filing's
+    own bridge shows $38M of the $44M gross-margin gain came from
+    currency, not operations; H1 volume-net-of-price was negative $12M
+    against +$115M FX, meaning all H1 growth was exchange-rate driven;
+    and Intelligent Systems' GAAP operating income actually fell to
+    $100M from $116M, rescued at the adjusted level by a $35M peso
+    tailwind and $15M of SG&A cuts. Free cash flow -94.5% to $12M in
+    Q2, YTD FCF -$196M against $625-725M full-year guidance, implying
+    H2 must generate $821-921M.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8kbr0v000104jtznphwbgz`
+  re-fetched cache-busted; Takeaway callout, Versigent spin-off note and
+  free-cash-flow detail all present, no truncation.
+- Running total after this batch: **94 companies done, 110 report-periods
+  published** (93/109 before this batch + 1).
+- Tonight's totals so far (12 batches): **12 report-periods published,
+  12 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO, AMAT,
+  APP, APTV). Next in file order: ACGL, ADM, ARES, ANET, ...
