@@ -1547,3 +1547,101 @@ the automated scheduled-task mechanism):
 - Tonight's totals so far (13 batches): **13 report-periods published,
   13 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO, AMAT,
   APP, APTV, ACGL). Next in file order: ADM, ARES, ANET, ...
+
+- Batch 14 (~01:20-02:00 JST 09-20, this firing): **5 report-periods
+  published, 5 companies**, via 5 parallel opus subagents run
+  simultaneously (a change from tonight's earlier one-at-a-time batches).
+  Network re-checked first: plain `curl https://www.sec.gov/` returned
+  403, confirmed via response headers to be SEC's own Akamai
+  rate-limit/UA block ("Request Rate Threshold Exceeded"), not a
+  proxy/policy denial — the identical request with the required
+  `User-Agent` header returned 200. Not a repeat of the 09-12–09-14
+  blocker. `npm install` needed the same dummy-`DATABASE_URL` workaround
+  as prior batches (`prisma generate` postinstall only, doesn't block
+  publishing). Repo was in a detached-HEAD state at session start with a
+  stale cached `origin/master` ref (`git log origin/master` showed
+  `fd5311c`, six nights behind, until a fresh `git fetch` picked up
+  `1e12469`) — reset to `git checkout -B master origin/master` after
+  fetching; no data at risk. Re-ran `scan-recent-filings`: 0 fresh tier-0
+  candidates (7-day window fully covered), confirming tier 1 (S&P 500
+  backlog, file order, next after ACGL) as tonight's continuing work.
+  - **ADM** (Archer-Daniels-Midland) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-08-04, accession 0000007084-26-000042):
+    https://financial-reports-web.vercel.app/reports/cmu8lkl0m000104l5uul07bz0
+    Net earnings quadrupled to $908M, but ~$324M of the gap is prior-year
+    impairment/restructuring and investment-revaluation losses — clean
+    comparison is adjusted EPS $1.84 vs $0.93. Revenue +7.2% almost
+    entirely on higher oils/soybean/biodiesel selling prices. Crushing
+    swung to $363M from $33M, driven by the March 2026 finalized
+    Renewable Volume Obligations widening crush spreads. Guidance raised
+    to $5.15-$5.60 adjusted EPS from $4.15-$4.70.
+  - **ARES** (Ares Management) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-08-07, accession 0001628280-26-054538):
+    https://financial-reports-web.vercel.app/reports/cmu8lljmb000204i929q8euod
+    Fee-related earnings +20% to $491.1M (margin 42.2%) but carried
+    interest -22.8% on mark-to-market reversals at LREF VIII and Kodiak
+    AI; GAAP net income to Ares +9.9% (vs realized income +31%) partly
+    because non-controlling-interest income in consolidated funds jumped
+    to $71.2M from $4.0M. AUM $671.3B (+17.3%), record $36.4B gross
+    inflows.
+  - **ANET** (Arista Networks) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-08-05, accession 0001596532-26-000175):
+    https://financial-reports-web.vercel.app/reports/cmu8ljrzy000004l5qrgubbol
+    First $3B+ quarter, revenue +37.7%. Gross margin fell 230bp on "an
+    increased proportion of sales to large end customers who generally
+    receive higher discounts" (filing's own words), but operating margin
+    rose on opex leverage. Two customers were 26% and 16% of FY2025
+    revenue; $9.7B of non-cancellable purchase commitments. Q3 guidance
+    margin (48-49%) below what was just delivered (49.9%).
+  - **AJG** (Arthur J. Gallagher & Co.) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-08-05, accession 0001628280-26-053489):
+    https://financial-reports-web.vercel.app/reports/cmu8ll02t000104i915p2azjc
+    Revenue +24.2% but GAAP EPS fell to $1.25 from $1.40 (adjusted EPS
+    +23.5% to $2.84) — spread is AssuredPartners purchase-accounting
+    amortization plus $113M of integration costs. Of the $849M Brokerage
+    revenue increase, 96% was acquisitions; organic growth was 5%. Risk
+    Management segment (little M&A noise) grew organic fees 12%.
+  - **AIZ** (Assurant) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-08-06, accession 0001267238-26-000041):
+    https://financial-reports-web.vercel.app/reports/cmu8lkmbo000004i9dcoz0mev
+    Record quarter, net income +27%, GAAP diluted EPS +30%. First-half
+    net income +50% is heavily a comp effect ($118.6M of the $190.8M
+    increase is lower cat losses vs. the Jan 2025 California wildfires).
+    Global Lifestyle's +21% EBITDA is entirely Connected Living; Global
+    Automotive revenue was actually down 0.6%. Guidance assumes zero
+    prior-year reserve development in 2H26.
+  - Skipped: none this batch.
+  - **Operational note on the tracker file:** all 5 subagents were told
+    (per CLAUDE.md's per-company prompt) how to shape a tracker entry but
+    this batch's prompts did not explicitly forbid writing
+    `report-tracker.json` directly — 3 of 5 (ADM, AIZ, ARES) went ahead
+    and self-wrote via read-modify-write despite AJG and ANET correctly
+    leaving it to the orchestrator. This reproduced the exact race
+    flagged on 09-17 night (WSBK, SMBC): AIZ's own 22-line insertion was
+    silently clobbered by a later write from another subagent that read
+    the file before AIZ's write landed — caught by comparing tracker key
+    counts against expectation (96 at session start + 5 new companies
+    should be 101; was 97 after the race, i.e. AIZ's entry lost). Fixed
+    by manually re-adding AIZ's entry from its own reported findings, and
+    added AJG/ANET's entries manually too. One of the self-writes also
+    reformatted the entire file (different key order, e.g. `_meta` no
+    longer first) — verified via a full structural diff (`JSON.stringify`
+    per key, old vs. new) that this was pure reordering, not data loss:
+    zero content mismatches on any of the 96 pre-existing keys. Tightened
+    for future batches: subagent prompts should explicitly say "do not
+    read or write report-tracker.json under any circumstances — report
+    your findings back to the orchestrator instead," per the standing
+    note from 09-17 night that asking nicely (without an explicit
+    prohibition) has now failed on 3 separate nights.
+  - Tier worked: 1 (S&P 500 backlog, file order, ADM through AIZ = next 5
+    after ACGL).
+  - Running total after this batch: **100 companies done, 116
+    report-periods published** (95/111 before tonight + 21 across
+    batches 1-14 tonight — 6 tier-0 + 8 tier-1 from earlier firings this
+    week per running totals, reconciled against tracker key count: 101
+    tracker entries total, of which 100 are `status: "done"`, 0
+    `"skipped"`).
+  - Tonight's totals so far (14 batches): **18 report-periods published,
+    18 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO,
+    AMAT, APP, APTV, ACGL, ADM, ARES, ANET, AJG, AIZ). Next in file order
+    for the next batch: AZO, AVY, AXON, BKR, BALL, ...
