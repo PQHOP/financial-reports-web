@@ -1341,3 +1341,33 @@ the automated scheduled-task mechanism):
   companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON). Next in file
   order for the next batch: APA, APO, AMAT, APP, APTV, ACGL, ADM, ARES,
   ANET, ...
+
+- Batch 8 (~00:40-01:00 JST 09-20): **1 report-period published, 1
+  company.**
+- Tier worked: **1** (S&P 500 backlog, file order, next after AON).
+- Published:
+  - **APA** (APA Corporation) — **Q2 2026** (10-Q, period ended
+    2026-06-30, filed 2026-08-06, accession 0001841666-26-000053; also
+    drew on the 2026-08-05 earnings-release 8-K Ex. 99.1, accession
+    0001841666-26-000050): https://financial-reports-web.vercel.app/reports/cmu8jloyl000004jts5e8vtpk
+    Net income $747M / $2.11 diluted EPS (+26% YoY), but adjusted EPS
+    $1.89 vs $0.87 (+117%) once last year's $282M divestiture gain and
+    both years' unrealized derivative marks are stripped out. Revenue
+    +9% to $2,373M despite production falling 12% to 409,959 boe/d —
+    almost entirely realized oil price (+50% to $98.24/bbl) and a
+    Permian natural-gas anomaly where realized US gas flipped from
+    +$1.03/Mcf to -$2.98/Mcf, turning "purchased oil and gas costs" from
+    a $304M cost into $122M of net proceeds, a $426M swing. Hedges cost
+    $109M in cash. FCF $738M vs $134M; total debt down to $3,743M from
+    $4,493M at 2025 year-end. Flagged the durable story as flat US oil
+    output on ~20% less capital plus $2.3B of debt retirement since
+    2024, not the headline EPS jump, which is mostly non-repeatable.
+- Skips: none this batch.
+- Post-publish sanity check: `/reports/cmu8jloyl000004jts5e8vtpk`
+  re-fetched cache-busted; Takeaway callout, metrics table and the
+  realized-price/boe-d detail all present, no truncation.
+- Running total after this batch: **90 companies done, 106 report-periods
+  published** (89/105 before this batch + 1).
+- Tonight's totals so far (8 batches): **8 report-periods published, 8
+  companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA). Next in file
+  order: APO, AMAT, APP, APTV, ACGL, ADM, ARES, ANET, ...
