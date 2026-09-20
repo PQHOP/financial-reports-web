@@ -2051,3 +2051,43 @@ the automated scheduled-task mechanism):
   report-periods published** (112/128 before this batch + 1).
 - Remaining in tonight's third hot-list batch: UNH (in progress), HD
   queued.
+- Note: this session's own batch (below) was researching XOM and UNH
+  concurrently in parallel via two Opus subagents when the batch above
+  landed from a separate concurrent firing of the cloud routine — XOM
+  was already published by the time this session's XOM subagent
+  finished, so that subagent's completed output was discarded
+  (duplicate) rather than published. Renumbered as batch 14 to avoid
+  colliding with the batch-13 label above; both are genuinely separate
+  batches from two concurrent sessions racing during the same window.
+
+- Batch 14 (~01:3x JST, this session): **1 report-period published, 1
+  company.**
+- Tier worked: **2-hot-list** (fourth hot-list batch: XOM, UNH, HD, PG,
+  JNJ — researched XOM and UNH in parallel via two Opus subagents).
+- Published:
+  - **UNH** (UnitedHealth Group) — **Q2 2026** (10-Q, period end
+    2026-06-30, filed 2026-08-10, accession 0000731766-26-000197):
+    https://financial-reports-web.vercel.app/reports/cmu9yv6t8000304l19r6azkxb
+    Operating earnings rose 55% to $7,991M on essentially flat revenue
+    ($112,032M, +0.4%) — entirely a medical care ratio improvement to
+    86.7% from 89.4%, driven by repricing plus a 1.59M (3.2%) drop in
+    UnitedHealthcare medical membership (MA -785k, Medicaid -710k,
+    commercial risk-based -9%), not volume growth. ~1 point of the
+    2.7-point MCR improvement is $860M of net favorable prior-period
+    reserve development (per the Q2 earnings release; $1,250M released
+    YTD vs $320M a year earlier) — flagged as a quality-of-earnings
+    caveat. MD&A states underlying cost trend "remains above historical
+    levels" (higher No Surprises Act provider reimbursement, commercial
+    coding intensity). Optum Health margin 1.7% → 5.1% (earnings $429M
+    → $1,190M); Optum Rx adjusted scripts fell 414M → 387M. Forward
+    signal: full-year guidance of 88.1% MCR against an 85.3% first half
+    implies a ~91% second-half MCR, and full-year adjusted EPS midpoint
+    of $19.75 vs $13.61 already earned implies second-half adjusted EPS
+    *below* this single quarter's $6.38.
+    Post-publish sanity check: re-fetched, 83.8KB, Takeaway callout and
+    Source filing link both present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **114 companies done, 130
+  report-periods published** (113/129 before this batch + 1).
+- Remaining in tonight's fourth hot-list batch: HD, PG, JNJ queued
+  (XOM already covered by the concurrent batch 13 above).
