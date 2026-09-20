@@ -3194,5 +3194,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-20"
+  },
+  "BAC": {
+    "name": "Bank of America",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmua7oc1s000104l5db1s5qpn"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "~90 days after the Q2 filing, consistent with BAC quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }

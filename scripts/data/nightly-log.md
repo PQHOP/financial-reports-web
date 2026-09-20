@@ -2170,7 +2170,30 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **117 companies done, 133
   report-periods published** (116/132 before this batch + 1). This
   completes tonight's fourth hot-list batch (HD, PG, JNJ; XOM was
-  covered by a concurrent firing's batch 13). Fifth hot-list batch
-  (BAC, CRM) queued for the next firing per `next-batch` output — window
-  close (~05:00 JST) is imminent, so this firing stops here rather than
-  starting a new batch it couldn't finish and verify in time.
+  covered by a concurrent firing's batch 13).
+
+- Batch 16 (~04:2x-04:3x JST, same firing): reports were completing in
+  ~4-5 minutes each, well inside the remaining window, so dispatched one
+  more pair of parallel opus subagents (BAC, CRM) from `next-batch`'s
+  fifth hot-list slot rather than stopping.
+- Tier worked: **2-hot-list** (fifth hot-list batch, started).
+- Published:
+  - **BAC** (Bank of America) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-07-31):
+    https://financial-reports-web.vercel.app/reports/cmua7oc1s000104l5db1s5qpn
+    Net income +26.6% to $9.07B on revenue +15.0%, diluted EPS +34.4%
+    (buybacks cut share count 4.7%) — but nearly half the revenue gain
+    came from Global Markets (Equities trading +70% to $3,622M), not
+    the core deposit franchise; Global Markets financing also supplied
+    $644M of the $1,327M consolidated NII increase. GWIM's 19% fee
+    growth was driven by $198B of market appreciation while net client
+    flows actually fell YoY. Effective tax rate rose to 21.5% from
+    17.3% (lower renewable-energy credits), so pretax growth (+33.4%)
+    outran net income. CET1 at 11.2% leaves only 120bps of buffer with
+    the G-SIB surcharge rising Jan 2027; NII sensitivity is asymmetric
+    (-$2.2B for -100bps vs +$1.0B for +100bps).
+    Post-publish sanity check: cache-busted re-fetch, 76KB, 2 tables (19
+    rows) closed, Takeaway callout and Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **118 companies done, 134
+  report-periods published** (117/133 before this batch + 1).
