@@ -3040,5 +3040,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-20"
+  },
+  "COST": {
+    "name": "Costco",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-20",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu9yfm1r000204il8l5zlywt"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-05-10",
+      "filedAt": "2026-06-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual, ends 2026-08-30)",
+      "estimate": "2026-10-08",
+      "basis": "FY ends 2026-08-30; prior-year 10-K filed 2025-10-08 (~5 weeks after FYE)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-20"
   }
 }

@@ -1962,3 +1962,34 @@ the automated scheduled-task mechanism):
   completes tonight's second hot-list batch of 5 (LLY, V, MA, NFLX,
   ORCL) — all five published cleanly, no skips. 10 companies published
   tonight so far across 10 batches, all hot-list tier, zero skips.
+
+- Batch 11 (~00:3x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list** (third hot-list batch: COST, WMT, XOM, UNH,
+  HD).
+- Published:
+  - **COST** (Costco) — **fiscal Q3 2026** (10-Q, 12 weeks ended
+    2026-05-10, filed 2026-06-03, accession 0000909832-26-000051):
+    https://financial-reports-web.vercel.app/reports/cmu9yfm1r000204il8l5zlywt
+    Fiscal-calendar note: Costco's FY2026 ended 2026-08-30 but no
+    FY2026 10-K or Q4 earnings 8-K has been filed yet (due ~Oct 2026),
+    so the fiscal Q3 10-Q is the correct 2026-tier filing. Total revenue
+    +11.6% to $70,527M, net income +15.2% to $2,192M. Headline comp-
+    sales growth (10% vs 8% ex-gas/FX) is largely a fuel-price and FX
+    artifact: gas inflation added 221bps and FX added 104bps to the
+    headline; comps excluding both actually decelerated to +7% from
+    +8%. Reported gross margin fell 21bps purely on gasoline mix, but
+    core merchandise margin (ex-gas) was down 29bps once two non-
+    recurring favorable comparisons (a smaller LIFO charge, the absence
+    of a prior-year vacation charge) are stripped out. EPS growth
+    (15.2%) outpaced operating income growth (11.3%) on higher interest
+    income ($155M vs $85M on a $19,996M cash pile, ~2.6pts) and a lower
+    tax rate (~1.3pts). Membership fee income = 48.8% of operating
+    income; the contribution from the Sept-2024 fee increase is fading
+    (35% → 25% of the fee-income growth).
+    Post-publish sanity check: re-fetched, 82KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **111 companies done, 127
+  report-periods published** (110/126 before this batch + 1).
+- Remaining in tonight's third hot-list batch: WMT (in progress), XOM,
+  UNH, HD queued.
