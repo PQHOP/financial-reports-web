@@ -2091,3 +2091,35 @@ the automated scheduled-task mechanism):
   report-periods published** (113/129 before this batch + 1).
 - Remaining in tonight's fourth hot-list batch: HD, PG, JNJ queued
   (XOM already covered by the concurrent batch 13 above).
+
+- Batch 15 (~04:2x JST, new firing): network re-checked from scratch per
+  this firing's prompt — plain `curl` to `www.sec.gov` returned 403
+  (SEC's own fair-access block for a missing `User-Agent`, confirmed by a
+  clean 200 with the required header added); the deployed site returned
+  200 independently. Not a repeat of the 09-12–09-14 proxy/policy
+  blocker. `npm run scan-recent-filings` found 0 fresh tier-0 candidates,
+  so fell through to `npm run next-batch -- --n 5`: HD, PG, JNJ, BAC, CRM
+  (continuing the fourth hot-list batch queued by the prior firing, then
+  into a fifth). With ~35 minutes left in the operating window, dispatched
+  3 parallel opus subagents (HD, PG, JNJ) rather than all 5, to leave room
+  to verify and commit before window close.
+- Tier worked: **2-hot-list** (fourth hot-list batch, continued).
+- Published:
+  - **HD** (Home Depot) — **Q2 2026** (10-Q, 13 weeks ended 2026-08-02,
+    filed 2026-08-25):
+    https://financial-reports-web.vercel.app/reports/cmua7ft45000004l93maafynk
+    Reported diluted EPS +4.6% to $4.79, but ~$685M of IEEPA tariff
+    refunds booked as a COGS reduction accounts for essentially the
+    entire gross-margin gain (+30bps reported; ~-115bps ex-refund) —
+    stripped of it, EPS would be roughly $4.27, down ~7% YoY. Comp sales
+    +1.7% is entirely price (avg ticket +2.8%, comparable transactions
+    -1.0%), and +5.7% total sales growth is largely inorganic (the GMS
+    acquisition added $1.4B). Consolidated operating margin fell 20bps
+    to 14.3% as the fast-growing (+62%) SRS distribution segment (4.9%
+    margin) dilutes the 15.4%-margin Primary segment.
+    Post-publish sanity check: cache-busted re-fetch, 81KB, 3 GFM tables
+    (30 rows, all closed), Takeaway callout and Source filing link both
+    present, no truncation.
+  - Skipped: none this batch.
+- Running total after this batch: **115 companies done, 131
+  report-periods published** (114/130 before this batch + 1).

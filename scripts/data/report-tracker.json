@@ -3128,5 +3128,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "HD": {
+    "name": "Home Depot (The)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-20",
+      "url": "https://financial-reports-web.vercel.app/reports/cmua7ft45000004l93maafynk"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-08-25"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026)",
+      "estimate": "2026-11-24",
+      "basis": "HD Q3 10-Qs have historically landed late November (2025-11-25, 2024-11-19)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-20"
   }
 }
