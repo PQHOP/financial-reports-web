@@ -2145,3 +2145,32 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **116 companies done, 132
   report-periods published** (115/131 before this batch + 1).
+  - **JNJ** (Johnson & Johnson) — **Q2 2026** (10-Q, fiscal quarter ended
+    2026-06-28, filed 2026-07-23):
+    https://financial-reports-web.vercel.app/reports/cmua7hepg000104l9ugfbv5zo
+    Sales +6.6% to $25,310M (first $25B quarter) and pre-tax profit
+    +3.9%, but net earnings were flat and diluted EPS fell 0.9% to
+    $2.27 — entirely a tax-rate timing artifact (18.0% vs 14.7% a year
+    ago), not an operating issue. TREMFYA's +72.5% ($860M) increase
+    covers 94% of STELARA's biosimilar-driven -55.2% ($913M) decline —
+    the Immunology patent-cliff handoff is now essentially absorbed.
+    MedTech is the soft spot: 3.6% operational growth with segment
+    margin down 90bps on Orthopaedics-separation costs and tariffs,
+    Electrophysiology slowing on pulsed-field-ablation competition.
+    Talc litigation is back to a recurring ~$0.4B quarterly charge
+    (~76,000 plaintiffs, ~$3.7B reserve) — the prior year's ~$7.0B
+    reserve reversal is why the six-month comparison looks like a 35%
+    profit collapse. Raised FY26 guidance is FX-driven, not operational
+    strength: the $0.18 EPS raise vs $0.13 for adjusted EPS reflects a
+    less favorable euro assumption, not better underlying performance.
+    Post-publish sanity check: cache-busted re-fetch, 83KB, all 3 tables
+    closed, Takeaway callout and Source filing link both present, no
+    truncation.
+  - Skipped: none this batch.
+- Running total after this batch: **117 companies done, 133
+  report-periods published** (116/132 before this batch + 1). This
+  completes tonight's fourth hot-list batch (HD, PG, JNJ; XOM was
+  covered by a concurrent firing's batch 13). Fifth hot-list batch
+  (BAC, CRM) queued for the next firing per `next-batch` output — window
+  close (~05:00 JST) is imminent, so this firing stops here rather than
+  starting a new batch it couldn't finish and verify in time.
