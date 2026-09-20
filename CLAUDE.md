@@ -66,11 +66,13 @@ visitor landing on the site sees analysis of a report that came out
    that hasn't been filed yet. Once a company has one qualifying report,
    it's **done** for this tier — this is a one-2026-report-per-company
    backlog to clear, not a commitment to republish every quarter (further
-   quarters are tier 2's job, below). Within this tier: S&P 500 companies
-   (the 503 seeded via `scripts/seed-sp500.ts` — being in the S&P 500 at
-   all is the "top companies" cut, so no further ranking within the tier
-   is needed) come before the ~5,060 companies from
+   quarters are tier 2's job, below). Within this tier: the **hot list**
+   (`scripts/data/priority-tickers.json`, ~120 of the most-searched
+   tickers) comes first, then the rest of the S&P 500 (the 503 seeded via
+   `scripts/seed-sp500.ts`), then the ~5,060 companies from
    `scripts/seed-us-listed.ts` sitting in the `Uncategorized` industry.
+   `npm run next-batch` applies exactly this order (see "Deciding what to
+   work on this run").
 2. **Multi-year backfill.** Only once every company in both files is
    `"done"` or `"skipped"` for 2026: go back through already-`"done"`
    companies and add reports for their other available fiscal years, most
@@ -121,16 +123,19 @@ yet.
 1. Run `npm run scan-recent-filings` and work its output first (tier 0) —
    it has already excluded `"done"`/`"skipped"` tickers, so anything it
    lists is fair game, newest-filed first.
-2. Once that list is exhausted (or empty), skip anything in the tracker
-   already marked `"done"` for 2026, and among what's left, prefer anything
-   marked `"pending"` whose `nextExpectedFiling.estimate` has passed (or
-   anything you have direct evidence — e.g. a fresh EDGAR filing the scan
-   missed — is now available) — its report is likely sitting on EDGAR
-   unresearched and is higher-value than working further down an
-   alphabetical backlog.
-3. Otherwise, work through the tier-1 backlog in file order
-   (`scripts/data/sp500.json` then `scripts/data/us-listed.json`), skipping
-   tickers already in the tracker as `"done"` or `"skipped"` for 2026.
+2. **Then run `npm run next-batch -- --n 5` and take its output in the
+   order it prints — do not re-derive the ordering by hand.** It encodes:
+   fresh-filing candidates (tier 0), then `"pending"` entries whose
+   `nextExpectedFiling.estimate` has passed, then the **hot list**
+   (`scripts/data/priority-tickers.json` — mega-caps and the names retail
+   investors search for most, in search-demand order, so a visitor's likely
+   query "`<ticker>` earnings" is answered before an obscure company's),
+   then the rest of the S&P 500 in file order, then `us-listed`. It already
+   skips anything `"done"`/`"skipped"`. The hot list replaced pure
+   alphabetical order on 2026-09-20 because search demand for "X earnings"
+   is concentrated on a few hundred well-known tickers.
+3. If you have direct evidence a company outside the printed batch has a
+   fresh filing the scan missed, that outranks the batch order.
 4. Once literally every company in both files is `"done"` or `"skipped"`
    for 2026, two ongoing tracks open up — Phase 2 freshness maintenance
    takes priority over tier 2 multi-year backfill when both apply to the
@@ -262,7 +267,12 @@ report — the admin form only validates that fields are non-empty, not
 that the content is actually complete. Tell every research subagent
 explicitly, as part of its task prompt: if you can't finish a thorough,
 sourced analysis within your available budget, stop and say so instead of
-publishing something partial. On the orchestrating side, treat a subagent
+publishing something partial. Also tell it explicitly: **never read or
+write `scripts/data/report-tracker.json` or `nightly-log.md`** — report
+findings back to the orchestrator, which is the only writer of those
+files (subagents that self-wrote raced and clobbered each other's tracker
+entries on three separate nights; asking nicely without an explicit
+prohibition did not work). On the orchestrating side, treat a subagent
 result as untrusted until checked, not as ground truth:
 
 - If the subagent reports it didn't finish (or its final message doesn't
@@ -397,9 +407,40 @@ this pipeline end to end in one session:
      "title": "AAPL — Q3 2026 Financial Report Analysis",
      "summary": "One sentence shown in report lists and search.",
      "contentMd": "## Overview\n...",
-     "coverImageUrl": "https://placehold.co/1200x630/111827/ffffff?text=..."
+     "sourceUrl": "https://www.sec.gov/Archives/edgar/data/<cik>/<accession>/<primary-doc>.htm",
+     "metrics": {
+       "currency": "USD",
+       "revenue": 94930,
+       "revenueYoyPct": 6.0,
+       "netIncome": 21448,
+       "netIncomeYoyPct": 9.3,
+       "epsDiluted": 1.4,
+       "epsYoyPct": 12.0,
+       "operatingMarginPct": 30.2
+     }
    }
    ```
+
+   - **`sourceUrl` is required for every new report:** the URL of the
+     primary filing document you actually read (10-Q/10-K, or the
+     earnings-release exhibit). It renders as "Source filing" on the
+     report and is the main trust signal for a finance site.
+   - **`metrics` is required too** (omit only a field the filing genuinely
+     doesn't report, e.g. `operatingMarginPct` for a bank). Money is in
+     **millions** of `currency`; percentages are plain numbers (6.0 means
+     6.0%); `epsDiluted` is per share. These feed the report page's
+     figures strip, the generated social card, social posts, the weekly
+     newsletter draft and future sector scorecards, so they must match the
+     metrics table in the report body exactly.
+   - **Do not set `coverImageUrl`.** Placeholder images (placehold.co) are
+     ignored by the site now; the site generates a social card from the
+     metrics automatically. Omit the field.
+   - When **editing** an existing report (`--edit`), include `sourceUrl`
+     and `metrics` in the JSON too — an edit replaces those fields, so
+     omitting them clears them.
+   - Publishing pings IndexNow (Bing/Yandex) automatically from the
+     server; nothing to do. A daily Vercel cron (`/api/cron/social`)
+     announces new reports on Bluesky/X when credentials are configured.
 
    `company` is matched as a case-insensitive substring against the admin
    dropdown's visible text (name or ticker) — use whatever `--list` printed.
@@ -433,6 +474,31 @@ point at it instead: `SITE_URL=https://your-deployed-domain npm run
 admin-publish -- report.json` (and set `ADMIN_PASSWORD` to match that
 deployment's password if different from `.env`). No database credentials
 are ever needed for this — only the site URL and the admin password.
+
+## Growth work (traffic, SEO, distribution)
+
+The plan lives in `docs/GROWTH_PLAN.md`; what's implemented vs. waiting on
+the user is tracked at its end. Things future sessions should know:
+
+- **Editorial articles** (guides, earnings previews, comparisons,
+  scorecards) are a separate model (`Article`) from reports. Publish with
+  `npm run admin-publish -- --article path/to/article.json` (shape in the
+  script header; upserts by `slug`). Guides render at `/learn/<slug>`,
+  everything else at `/insights/<slug>`. Guide sources live in
+  `content/guides/*.json`.
+- **Thin pages stay out of the index:** companies/industries/years with no
+  report are `noindex` and absent from `sitemap.xml`. Don't add them back.
+- **Env vars that gate features** (all optional, set with `vercel env add
+  ... --value`): `CONTACT_EMAIL` (shown on `/contact`), `CRON_SECRET` (must
+  be set for `/api/cron/social` to run at all), `BLUESKY_HANDLE` +
+  `BLUESKY_APP_PASSWORD`, `X_API_KEY` / `X_API_SECRET` / `X_ACCESS_TOKEN` /
+  `X_ACCESS_SECRET`. With none of the social ones set the cron is a no-op.
+- **Usage budget is the bottleneck, not schedule slots.** The nightly
+  routine has repeatedly hit the account's 5-hour session limit (later
+  hourly firings exit in seconds with "session limit"). Don't add LLM
+  routines casually; each one takes report capacity from the nightly job.
+- `/admin/newsletter` generates the weekly digest draft from the last 7
+  days of publications.
 
 ## Stack notes
 

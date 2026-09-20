@@ -1,10 +1,15 @@
 "use server";
 
 import crypto from "node:crypto";
+import { after } from "next/server";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
-import { ReportPeriod } from "@/generated/prisma/client";
+import { ArticleKind, Prisma, ReportPeriod } from "@/generated/prisma/client";
+import { articlePath } from "@/lib/articles";
+import { parseMetricsInput } from "@/lib/metrics";
+import { pingIndexNow } from "@/lib/indexnow";
+import { SITE_URL } from "@/lib/site";
 import {
   ADMIN_COOKIE_MAX_AGE,
   ADMIN_COOKIE_NAME,
@@ -82,12 +87,42 @@ function readReportFields(formData: FormData) {
     summary: String(formData.get("summary") ?? "").trim(),
     contentMd: String(formData.get("contentMd") ?? ""),
     coverImageUrl: String(formData.get("coverImageUrl") ?? "").trim() || null,
+    sourceUrl: String(formData.get("sourceUrl") ?? "").trim() || null,
+    metricsRaw: String(formData.get("metrics") ?? ""),
   };
 }
 
-function validateReportFields(
-  fields: ReturnType<typeof readReportFields>
-): string | null {
+type ReportFields = ReturnType<typeof readReportFields>;
+
+// Splits the raw form fields into the validated Prisma payload, or an error.
+function buildReportData(
+  fields: ReportFields
+): { data: Prisma.ReportUncheckedCreateInput } | { error: string } {
+  const validationError = validateReportFields(fields);
+  if (validationError) return { error: validationError };
+
+  const parsed = parseMetricsInput(fields.metricsRaw);
+  if ("error" in parsed) return { error: parsed.error };
+
+  return {
+    data: {
+      companyId: fields.companyId,
+      year: fields.year,
+      period: fields.period,
+      title: fields.title,
+      summary: fields.summary,
+      contentMd: fields.contentMd,
+      coverImageUrl: fields.coverImageUrl,
+      sourceUrl: fields.sourceUrl,
+      metrics: parsed.metrics ?? Prisma.DbNull,
+    },
+  };
+}
+
+function validateReportFields(fields: ReportFields): string | null {
+  if (fields.sourceUrl && !/^https?:\/\//i.test(fields.sourceUrl)) {
+    return "Source URL must start with http:// or https://.";
+  }
   if (!fields.companyId) return "Please select a company.";
   if (Number.isNaN(fields.year)) return "Please enter a valid year.";
   if (!fields.period) return "Please select a reporting period.";
@@ -103,13 +138,12 @@ export async function createReportAction(
 ): Promise<ReportFormState> {
   await requireAdmin();
 
-  const fields = readReportFields(formData);
-  const validationError = validateReportFields(fields);
-  if (validationError) return { error: validationError };
+  const built = buildReportData(readReportFields(formData));
+  if ("error" in built) return { error: built.error };
 
   let reportId: string;
   try {
-    const report = await prisma.report.create({ data: fields });
+    const report = await prisma.report.create({ data: built.data });
     reportId = report.id;
   } catch {
     return {
@@ -117,6 +151,7 @@ export async function createReportAction(
     };
   }
 
+  after(() => pingIndexNow([`${SITE_URL}/reports/${reportId}`]));
   redirect(`/reports/${reportId}`);
 }
 
@@ -129,18 +164,18 @@ export async function updateReportAction(
   const id = String(formData.get("id") ?? "");
   if (!id) return { error: "Missing report id." };
 
-  const fields = readReportFields(formData);
-  const validationError = validateReportFields(fields);
-  if (validationError) return { error: validationError };
+  const built = buildReportData(readReportFields(formData));
+  if ("error" in built) return { error: built.error };
 
   try {
-    await prisma.report.update({ where: { id }, data: fields });
+    await prisma.report.update({ where: { id }, data: built.data });
   } catch {
     return {
       error: "A report for this company, year, and period already exists.",
     };
   }
 
+  after(() => pingIndexNow([`${SITE_URL}/reports/${id}`]));
   redirect(`/reports/${id}`);
 }
 
@@ -148,4 +183,42 @@ export async function deleteReportAction(id: string): Promise<void> {
   await requireAdmin();
   await prisma.report.delete({ where: { id } });
   redirect("/admin");
+}
+
+const ARTICLE_KINDS = ["GUIDE", "PREVIEW", "COMPARISON", "SCORECARD"] as const;
+
+// Upserts by slug so re-running the publish script updates the piece.
+export async function saveArticleAction(
+  _prevState: ReportFormState,
+  formData: FormData
+): Promise<ReportFormState> {
+  await requireAdmin();
+
+  const slug = String(formData.get("slug") ?? "").trim();
+  const kind = String(formData.get("kind") ?? "") as ArticleKind;
+  const title = String(formData.get("title") ?? "").trim();
+  const summary = String(formData.get("summary") ?? "").trim();
+  const contentMd = String(formData.get("contentMd") ?? "");
+  const tickers = String(formData.get("tickers") ?? "")
+    .split(",")
+    .map((t) => t.trim().toUpperCase())
+    .filter(Boolean);
+
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) {
+    return { error: "Slug must be lowercase letters, digits and hyphens." };
+  }
+  if (!ARTICLE_KINDS.includes(kind)) return { error: "Please select a kind." };
+  if (!title) return { error: "Please enter a title." };
+  if (!summary) return { error: "Please enter a short summary." };
+  if (!contentMd.trim()) return { error: "Please write the article content." };
+
+  await prisma.article.upsert({
+    where: { slug },
+    create: { slug, kind, title, summary, contentMd, tickers },
+    update: { kind, title, summary, contentMd, tickers },
+  });
+
+  const path = articlePath(kind, slug);
+  after(() => pingIndexNow([`${SITE_URL}${path}`]));
+  redirect(path);
 }

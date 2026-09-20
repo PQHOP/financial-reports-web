@@ -30,6 +30,12 @@ export default async function AdminDashboard() {
         <Link href="/admin/companies" className="text-zinc-500 hover:underline">
           Companies
         </Link>
+        <Link href="/admin/articles/new" className="text-zinc-500 hover:underline">
+          New article
+        </Link>
+        <Link href="/admin/newsletter" className="text-zinc-500 hover:underline">
+          Newsletter draft
+        </Link>
       </div>
 
       <Link

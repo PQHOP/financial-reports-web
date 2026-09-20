@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { periodLabels, periodOrder } from "@/lib/period";
+import { realCoverImage } from "@/lib/reportMeta";
 
 export const dynamic = "force-dynamic";
 
@@ -15,6 +16,9 @@ export async function generateMetadata({
 
   const company = await prisma.company.findUnique({ where: { slug } });
   if (!company) return {};
+  const reportCount = await prisma.report.count({
+    where: { companyId: company.id, year: Number(year) || 0 },
+  });
 
   const title = `${year} Reports — ${company.name}`;
   const description = `Financial report analysis for ${company.name}${
@@ -28,6 +32,7 @@ export async function generateMetadata({
       canonical: `/companies/${company.slug}/${year}`,
     },
     openGraph: { title, description },
+    ...(reportCount === 0 ? { robots: { index: false, follow: true } } : {}),
   };
 }
 
@@ -77,10 +82,10 @@ export default async function CompanyYearPage({
                 href={`/reports/${report.id}`}
                 className="flex gap-4 rounded-lg border border-zinc-200 bg-white p-4 hover:border-zinc-400"
               >
-                {report.coverImageUrl && (
+                {realCoverImage(report.coverImageUrl) && (
                   // eslint-disable-next-line @next/next/no-img-element
                   <img
-                    src={report.coverImageUrl}
+                    src={realCoverImage(report.coverImageUrl) ?? ""}
                     alt={report.title}
                     className="h-20 w-32 shrink-0 rounded-md object-cover"
                   />

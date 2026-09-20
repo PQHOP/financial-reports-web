@@ -42,6 +42,8 @@ export default async function EditReportPage({
           summary: report.summary,
           contentMd: report.contentMd,
           coverImageUrl: report.coverImageUrl,
+          sourceUrl: report.sourceUrl,
+          metrics: report.metrics ? JSON.stringify(report.metrics) : "",
         }}
       />
     </div>

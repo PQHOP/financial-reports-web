@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
+import { ReportCard } from "@/components/ReportCard";
 
 export const dynamic = "force-dynamic";
 
@@ -14,7 +15,7 @@ export async function generateMetadata({
 
   const company = await prisma.company.findUnique({
     where: { slug },
-    include: { industries: true },
+    include: { industries: true, _count: { select: { reports: true } } },
   });
   if (!company) return {};
 
@@ -34,6 +35,11 @@ export async function generateMetadata({
       canonical: `/companies/${company.slug}`,
     },
     openGraph: { title, description },
+    // ~5,500 directory pages have no analysis yet; keeping them out of the
+    // index avoids thousands of near-empty pages diluting the site.
+    ...(company._count.reports === 0
+      ? { robots: { index: false, follow: true } }
+      : {}),
   };
 }
 
@@ -49,8 +55,7 @@ export default async function CompanyPage({
     include: {
       industries: true,
       reports: {
-        select: { year: true },
-        orderBy: { year: "desc" },
+        orderBy: [{ year: "desc" }, { publishedAt: "desc" }],
       },
     },
   });
@@ -91,6 +96,21 @@ export default async function CompanyPage({
           ))}
         </div>
       </div>
+
+      {company.reports.length > 0 && (
+        <div>
+          <h2 className="mb-3 text-lg font-medium">
+            {company.name} earnings analyses
+          </h2>
+          <ul className="flex flex-col gap-3">
+            {company.reports.map((report) => (
+              <li key={report.id}>
+                <ReportCard report={{ ...report, company }} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
 
       <div>
         <h2 className="mb-3 text-lg font-medium">Reports by Year</h2>

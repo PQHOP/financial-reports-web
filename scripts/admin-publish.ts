@@ -9,6 +9,8 @@
  *   npm run admin-publish -- --list                        # see valid company names
  *   npm run admin-publish -- path/to/report.json            # publish a new report
  *   npm run admin-publish -- --edit <reportId> report.json  # update an existing report
+ *   npm run admin-publish -- --article article.json         # publish/update an editorial article
+ *   npm run admin-publish -- --articles-dir content/guides   # publish/update every .md/.json in a folder
  *
  * Env vars:
  *   SITE_URL        Defaults to http://localhost:3000
@@ -23,11 +25,26 @@
  *   "title": "AAPL — Q3 2026 Financial Report Analysis",
  *   "summary": "One sentence shown in report lists and search.",
  *   "contentMd": "## Overview\n...",
- *   "coverImageUrl": "https://..."   // optional
+ *   "coverImageUrl": "https://...",  // optional; never use placehold.co
+ *   "sourceUrl": "https://www.sec.gov/Archives/edgar/data/...",  // primary filing
+ *   "metrics": { "revenue": 94930, "revenueYoyPct": 6.0, "netIncome": 21448,
+ *                "netIncomeYoyPct": 9.3, "epsDiluted": 1.4, "epsYoyPct": 12.0,
+ *                "operatingMarginPct": 30.2, "currency": "USD" }
+ *                // optional; money in millions, percentages as plain numbers
+ * }
+ *
+ * Article JSON shape (--article; upserts by slug, so re-running updates it):
+ * {
+ *   "slug": "how-to-read-a-10-q",
+ *   "kind": "GUIDE",            // GUIDE PREVIEW COMPARISON SCORECARD
+ *   "title": "...",
+ *   "summary": "One sentence.",
+ *   "contentMd": "## ...",
+ *   "tickers": ["AAPL", "MSFT"]  // optional
  * }
  */
 import "dotenv/config";
-import { readFileSync } from "node:fs";
+import { readFileSync, readdirSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { chromium, type Page } from "playwright";
@@ -43,7 +60,20 @@ type ReportInput = {
   summary: string;
   contentMd: string;
   coverImageUrl?: string;
+  sourceUrl?: string;
+  metrics?: Record<string, unknown>;
 };
+
+type ArticleInput = {
+  slug: string;
+  kind: string;
+  title: string;
+  summary: string;
+  contentMd: string;
+  tickers?: string[];
+};
+
+const VALID_KINDS = ["GUIDE", "PREVIEW", "COMPARISON", "SCORECARD"];
 
 const VALID_PERIODS = ["Q1", "Q2", "Q3", "Q4", "H1", "ANNUAL"];
 
@@ -160,6 +190,12 @@ async function publish(page: Page, input: ReportInput, editId?: string) {
   if (input.coverImageUrl) {
     await page.fill('input[name="coverImageUrl"]', input.coverImageUrl);
   }
+  if (input.sourceUrl) {
+    await page.fill('input[name="sourceUrl"]', input.sourceUrl);
+  }
+  if (input.metrics) {
+    await page.fill('textarea[name="metrics"]', JSON.stringify(input.metrics));
+  }
   await page.fill('textarea[name="contentMd"]', input.contentMd);
 
   const isPublicReportUrl = (url: URL) =>
@@ -184,10 +220,79 @@ async function publish(page: Page, input: ReportInput, editId?: string) {
   console.log(`Edit: ${page.url().replace("/reports/", "/admin/reports/")}/edit`);
 }
 
+// Markdown articles carry their fields in a simple "key: value" frontmatter
+// block (slug, kind, title, summary, tickers) followed by the body.
+function parseMarkdownArticle(raw: string): Partial<ArticleInput> {
+  const text = raw.split(String.fromCharCode(13)).join("");
+  const lines = text.split("\n");
+  const closing = lines.indexOf("---", 1);
+  if (lines[0] !== "---" || closing < 0) {
+    throw new Error("missing --- frontmatter block");
+  }
+  const fields: Record<string, string> = {};
+  for (const line of lines.slice(1, closing)) {
+    const idx = line.indexOf(":");
+    if (idx > 0) fields[line.slice(0, idx).trim()] = line.slice(idx + 1).trim();
+  }
+  return {
+    slug: fields.slug,
+    kind: fields.kind,
+    title: fields.title,
+    summary: fields.summary,
+    tickers: fields.tickers
+      ? fields.tickers.split(",").map((t) => t.trim()).filter(Boolean)
+      : [],
+    contentMd: lines.slice(closing + 1).join("\n").trim(),
+  };
+}
+
+function loadArticle(path: string): ArticleInput {
+  let data: Partial<ArticleInput>;
+  try {
+    const raw = readFileSync(path, "utf-8");
+    data = path.endsWith(".md") ? parseMarkdownArticle(raw) : JSON.parse(raw);
+  } catch (e) {
+    fail(`Could not read/parse ${path}: ${(e as Error).message}`);
+  }
+  const missing = (["slug", "kind", "title", "summary", "contentMd"] as const).filter(
+    (key) => !data[key]
+  );
+  if (missing.length > 0) fail(`Missing required field(s): ${missing.join(", ")}`);
+  if (!VALID_KINDS.includes(data.kind as string)) {
+    fail(`Invalid kind "${data.kind}". Must be one of: ${VALID_KINDS.join(", ")}`);
+  }
+  return data as ArticleInput;
+}
+
+async function publishArticle(page: Page, input: ArticleInput) {
+  await page.goto(`${SITE_URL}/admin/articles/new`);
+  await page.fill('input[name="slug"]', input.slug);
+  await page.selectOption('select[name="kind"]', input.kind);
+  await page.fill('input[name="title"]', input.title);
+  await page.fill('textarea[name="summary"]', input.summary);
+  await page.fill('input[name="tickers"]', (input.tickers ?? []).join(", "));
+  await page.fill('textarea[name="contentMd"]', input.contentMd);
+
+  const isArticleUrl = (url: URL) =>
+    url.pathname.startsWith("/learn/") || url.pathname.startsWith("/insights/");
+
+  await Promise.all([
+    page.waitForURL(isArticleUrl, { timeout: 15_000 }).catch(() => null),
+    page.click('button[type="submit"]'),
+  ]);
+
+  if (!isArticleUrl(new URL(page.url()))) {
+    const errorText = await page.locator(".bg-red-50").first().textContent().catch(() => null);
+    fail(`Article publish did not succeed (stuck on ${page.url()}).${errorText ? ` Form error: ${errorText.trim()}` : ""}`);
+  }
+  console.log(`Published article: ${input.title}`);
+  console.log(`View: ${page.url()}`);
+}
+
 async function main() {
   const arg = process.argv[2];
   if (!arg) {
-    fail("Usage: npm run admin-publish -- --list | path/to/report.json | --edit <reportId> report.json");
+    fail("Usage: npm run admin-publish -- --list | path/to/report.json | --edit <reportId> report.json | --article article.json");
   }
 
   // Some sandboxes (e.g. the cloud "2026 Report Coverage - Nightly" routine)
@@ -205,6 +310,18 @@ async function main() {
 
     if (arg === "--list") {
       await listCompanies(page);
+    } else if (arg === "--articles-dir") {
+      const dir = process.argv[3];
+      if (!dir) fail("Usage: npm run admin-publish -- --articles-dir content/guides");
+      const files = readdirSync(dir).filter((f) => f.endsWith(".md") || f.endsWith(".json")).sort();
+      if (files.length === 0) fail(`No .md/.json files in ${dir}`);
+      for (const file of files) {
+        await publishArticle(page, loadArticle(join(dir, file)));
+      }
+    } else if (arg === "--article") {
+      const jsonPath = process.argv[3];
+      if (!jsonPath) fail("Usage: npm run admin-publish -- --article article.json");
+      await publishArticle(page, loadArticle(jsonPath));
     } else if (arg === "--edit") {
       const editId = process.argv[3];
       const jsonPath = process.argv[4];

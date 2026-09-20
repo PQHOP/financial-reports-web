@@ -42,20 +42,50 @@ enum ReportPeriod {
 }
 
 model Report {
-  id            String       @id @default(cuid())
-  companyId     String
-  company       Company      @relation(fields: [companyId], references: [id])
-  year          Int
-  period        ReportPeriod
-  title         String
-  summary       String
-  contentMd     String
-  coverImageUrl String?
-  author        String       @default("Claude")
-  publishedAt   DateTime     @default(now())
-  updatedAt     DateTime     @updatedAt
+  id             String       @id @default(cuid())
+  companyId      String
+  company        Company      @relation(fields: [companyId], references: [id])
+  year           Int
+  period         ReportPeriod
+  title          String
+  summary        String
+  contentMd      String
+  coverImageUrl  String?
+  author         String       @default("Claude")
+  // Link to the primary filing on SEC EDGAR (or the company's IR page).
+  sourceUrl      String?
+  // Structured headline figures — see src/lib/metrics.ts for the shape.
+  metrics        Json?
+  // Set by the social cron once the report has been announced.
+  socialPostedAt DateTime?
+  publishedAt    DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
 
   @@unique([companyId, year, period])
+}
+
+enum ArticleKind {
+  GUIDE
+  PREVIEW
+  COMPARISON
+  SCORECARD
+}
+
+// Editorial pieces that aren't a single company-period report: evergreen
+// guides, earnings previews, two-company comparisons, sector scorecards.
+model Article {
+  id          String      @id @default(cuid())
+  slug        String      @unique
+  kind        ArticleKind
+  title       String
+  summary     String
+  contentMd   String
+  // Tickers the piece is about, for internal linking (may be empty).
+  tickers     String[]
+  publishedAt DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+
+  @@index([kind, publishedAt])
 }
 
 model LoginAttempt {

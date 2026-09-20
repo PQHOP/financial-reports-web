@@ -10,7 +10,8 @@
     "lint": "eslint",
     "postinstall": "prisma generate",
     "admin-publish": "tsx scripts/admin-publish.ts",
-    "scan-recent-filings": "tsx scripts/scan-recent-filings.ts"
+    "scan-recent-filings": "tsx scripts/scan-recent-filings.ts",
+    "next-batch": "tsx scripts/next-batch.ts"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",

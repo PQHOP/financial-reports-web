@@ -16,6 +16,8 @@ type InitialReport = {
   summary: string;
   contentMd: string;
   coverImageUrl: string | null;
+  sourceUrl: string | null;
+  metrics: string;
 };
 
 export function AdminReportForm({
@@ -129,6 +131,34 @@ export function AdminReportForm({
             defaultValue={initialReport?.coverImageUrl ?? ""}
             placeholder="https://..."
             className="rounded-md border border-zinc-300 px-3 py-2 text-sm"
+          />
+        </label>
+
+        <label className="flex flex-col gap-1 text-sm font-medium">
+          Source filing URL{" "}
+          <span className="font-normal text-zinc-400">
+            (SEC EDGAR document or IR page; shown on the report)
+          </span>
+          <input
+            type="url"
+            name="sourceUrl"
+            defaultValue={initialReport?.sourceUrl ?? ""}
+            placeholder="https://www.sec.gov/Archives/edgar/data/..."
+            className="rounded-md border border-zinc-300 px-3 py-2 text-sm"
+          />
+        </label>
+
+        <label className="flex flex-col gap-1 text-sm font-medium">
+          Metrics JSON{" "}
+          <span className="font-normal text-zinc-400">
+            (optional; money in millions, percentages as plain numbers)
+          </span>
+          <textarea
+            name="metrics"
+            defaultValue={initialReport?.metrics ?? ""}
+            rows={3}
+            placeholder='{"revenue": 94930, "revenueYoyPct": 6.0, "netIncome": 21448, "epsDiluted": 1.4, "operatingMarginPct": 30.2}'
+            className="rounded-md border border-zinc-300 px-3 py-2 font-mono text-xs"
           />
         </label>
 

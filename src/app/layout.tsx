@@ -37,6 +37,9 @@ export const metadata: Metadata = {
     title: SITE_NAME,
     description: DEFAULT_DESCRIPTION,
   },
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
   robots: {
     index: true,
     follow: true,
@@ -55,6 +58,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/" className="text-lg font-semibold tracking-tight">
               Financial Report Insights
             </Link>
+            <nav className="flex gap-4 text-sm text-zinc-600">
+              <Link href="/reports" className="hover:text-zinc-900">
+                Reports
+              </Link>
+              <Link href="/insights" className="hover:text-zinc-900">
+                Insights
+              </Link>
+              <Link href="/learn" className="hover:text-zinc-900">
+                Learn
+              </Link>
+            </nav>
             <form action="/search" method="GET" className="flex-1 max-w-xs">
               <input
                 type="search"
@@ -68,8 +82,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8">
           {children}
         </main>
-        <footer className="border-t border-zinc-200 py-6 text-center text-xs text-zinc-400">
-          Analysis authored by Claude. For informational purposes only — not investment advice.
+        <footer className="border-t border-zinc-200 py-6">
+          <nav className="mx-auto flex max-w-4xl flex-wrap justify-center gap-x-5 gap-y-2 px-4 text-xs text-zinc-500">
+            <Link href="/about" className="hover:underline">About</Link>
+            <Link href="/methodology" className="hover:underline">Methodology</Link>
+            <Link href="/corrections" className="hover:underline">Corrections</Link>
+            <Link href="/privacy" className="hover:underline">Privacy</Link>
+            <Link href="/contact" className="hover:underline">Contact</Link>
+            <a href="/feed.xml" className="hover:underline">RSS</a>
+          </nav>
         </footer>
         <Analytics />
       </body>
