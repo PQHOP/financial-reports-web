@@ -2930,5 +2930,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-20"
+  },
+  "LLY": {
+    "name": "Lilly (Eli)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-20",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu9xlopa000004l3wdmj8ojv"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-08-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-20"
   }
 }

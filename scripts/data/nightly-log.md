@@ -1810,3 +1810,36 @@ the automated scheduled-task mechanism):
   completes tonight's first hot-list batch of 5 (NVDA, META, TSLA, AVGO,
   JPM) — all five published cleanly, no skips, every subagent finished
   within budget on its first or (AVGO) second attempt.
+
+- Batch 6 (~00:5x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list** (second batch: LLY, V, MA, NFLX, ORCL).
+- Published:
+  - **LLY** (Lilly (Eli)) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-05, accession 0000059478-26-000081):
+    https://financial-reports-web.vercel.app/reports/cmu9xlopa000004l3wdmj8ojv
+    Revenue +47.7% to $22,974M, but net income only +25.3% to $7,095M —
+    the gap is acquired IPR&D charges of $2,776M vs $154M a year ago
+    (Orna $1,233M, Ajax $909M, both Phase 1), which also pushed the
+    effective tax rate to 23.3% from 16.5% (IPR&D largely non-
+    deductible). Revenue growth decomposes as +60% volume, −13% price,
+    +1% FX; ex-US price was −36%, tied to Mounjaro's addition to
+    China's national reimbursement list. Flagged: prior-period rebate/
+    discount true-ups were 3% of US revenue vs 1% a year ago (~$430M),
+    corroborated by Trulicity being +12% in the quarter but −2%
+    year-to-date. Mounjaro's non-US revenue ($5,152M) exceeded US
+    revenue ($4,791M) for the first time. Foundayo (orforglipron)
+    launched in the quarter but added essentially nothing yet. Full-year
+    guidance raised on revenue ($85–87bn) but non-GAAP EPS range
+    narrowed downward ($35.50–36.50) purely on the IPR&D charges, and
+    guidance excludes any IPR&D after June 30 even though ~$2.0bn of
+    July deals and a pending ~$2.8bn AtaiBeckley acquisition are already
+    disclosed. Operating margin (39.1% vs 44.1%) was derived from the
+    filing's own line items since Lilly doesn't report an operating-
+    income subtotal; the derivation is shown in the report body.
+    Post-publish sanity check: re-fetched, 85KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **106 companies done, 122
+  report-periods published** (105/121 before this batch + 1).
+- Remaining in tonight's second hot-list batch: V (in progress), MA,
+  NFLX, ORCL queued.
