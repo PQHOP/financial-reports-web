@@ -1645,3 +1645,59 @@ the automated scheduled-task mechanism):
     18 companies** (KR, BLSM, GRDX, MGLD, NEUP, NTNX, AON, APA, APO,
     AMAT, APP, APTV, ACGL, ADM, ARES, ANET, AJG, AIZ). Next in file order
     for the next batch: AZO, AVY, AXON, BKR, BALL, ...
+
+### 2026-09-20 night (23:00 JST 2026-09-20 → 05:00 JST 2026-09-21)
+
+- Mechanism: cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`) firing.
+- Pre-batch: ran the one-time pending guide-publish task from CLAUDE.md
+  (`npm run admin-publish -- --articles-dir content/guides`) — all 9
+  guides now live at `/learn/*`; removed the completed-task paragraph
+  from CLAUDE.md and committed/pushed.
+- Also fixed local git state at session start: the working copy was on a
+  detached HEAD one commit ahead of the local `master` branch ref, and
+  `git checkout master` briefly landed on a stale, unrelated-looking
+  local `master` (a shallow-clone artifact — `git merge-base` found no
+  common ancestor because of the shallow history boundary, not real
+  divergence). Reset local `master` to `origin/master` to fix; no data
+  lost, confirmed via `git log`/`git diff`.
+- `npm run scan-recent-filings` (tier 0): **0 fresh candidates** (all
+  filings in the last 7 days already `"done"`/`"skipped"` or outside
+  10-K/10-Q). Fell through to `npm run next-batch -- --n 5`, which for
+  the first time returned **hot-list** tickers (the hot-list ordering
+  landed 2026-09-20 per CLAUDE.md, ahead of the S&P-500 file-order
+  backlog that was being worked through AZO/AVY/AXON/... at the end of
+  last night): NVDA, META, TSLA, AVGO, JPM.
+- Batch 1 (~23:2x–23:3x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list** (first batch worked under the new hot-list
+  ordering).
+- Published:
+  - **NVDA** (Nvidia) — **FY2026 ANNUAL** (10-K, period end 2026-01-25,
+    filed 2026-02-25, accession 0001045810-26-000021):
+    https://financial-reports-web.vercel.app/reports/cmu9wsm6x000004l3ugm32o56
+    Fiscal-calendar note: NVDA's FY2026 ended 2026-01-25 and is already
+    fully reported, so this is an ANNUAL report, not a quarter — the two
+    10-Qs filed since (2026-05-20, 2026-08-26) are FY2027 Q1/Q2, out of
+    scope for the 2026 tier. Revenue +65.5% to $215,938M, net income
+    +64.7% to $120,067M, diluted EPS +66.7% to $4.90. Notable: GAAP EPS
+    *exceeded* non-GAAP EPS ($4.90 vs $4.77), a reversal of the usual
+    direction, driven by $8,918M of unrealized gains on non-marketable
+    and publicly-held equity securities (including the Intel stake) that
+    are excluded from the non-GAAP figure. Gross margin fell to 71.1%
+    from 75.0% on the $4.5B Q1 H20-China write-off (against which only
+    ~$60M of H20 revenue was ever recognized) plus the Hopper-to-
+    Blackwell mix shift — Q4 gross margin had already recovered to
+    75.0%, and Q1 FY27 is guided to 74.9%. Networking revenue grew 142%
+    vs compute's 59%. Inventory roughly doubled (+112% to $21,403M)
+    against 65% revenue growth, alongside $95.2B of inventory purchase
+    and supply obligations (a PwC critical audit matter) and worsening
+    customer concentration (one customer at 22%, another at 14%, vs
+    12%/11%/11% in FY25). Guidance: Q1 FY27 revenue $78.0B ±2%
+    *assuming zero China data-center compute revenue*; GAAP gross margin
+    74.9% ±50bp.
+    Post-publish sanity check: re-fetched, 69KB of content, Takeaway
+    callout and Source filing link both present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **101 companies done, 117
+  report-periods published** (100/116 before tonight + 1).
+- Remaining in tonight's hot-list batch: META, TSLA, AVGO, JPM in
+  progress/queued.
