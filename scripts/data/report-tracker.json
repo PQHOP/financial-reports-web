@@ -2886,5 +2886,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-20"
+  },
+  "AVGO": {
+    "name": "Broadcom",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-20",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu9xam3z000004il1v8f2ao1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual, ends 2026-11-01)",
+      "estimate": "2026-12-11",
+      "basis": "~90 days after fiscal year end 2026-11-01, following prior-year annual filing cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-20"
   }
 }

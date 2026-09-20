@@ -1751,4 +1751,32 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **103 companies done, 119
   report-periods published** (102/118 before this batch + 1).
-- Remaining in tonight's hot-list batch: AVGO (in progress), JPM queued.
+
+- Batch 4 (~00:1x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **AVGO** (Broadcom) — **fiscal Q3 2026** (10-Q, period end 2026-08-02,
+    filed 2026-09-10, accession 0001730168-26-000080):
+    https://financial-reports-web.vercel.app/reports/cmu9xam3z000004il1v8f2ao1
+    Fiscal-calendar note: Broadcom's FY2026 ends 2026-11-01, so the
+    Q3 10-Q (not yet an annual) is the correct 2026-tier filing. Revenue
+    +85.5% to $29,591M; GAAP net income +216.1% to $13,088M; operating
+    margin 36.9% → 53.9% as opex fell in absolute terms while revenue
+    nearly doubled. AI semiconductor revenue $16.7bn (+221% YoY, company-
+    stated); Q4 guide $34.8bn revenue with AI at $21.7bn. Flagged:
+    infrastructure-software growth is ~4/5 a recognition-timing effect —
+    upfront license revenue jumped $1,549M YoY after Broadcom removed
+    termination-for-convenience from most new software contracts,
+    front-loading revenue recognition, against $1,966M of total segment
+    growth. RPO ~$179.2bn including a new long-term custom AI-accelerator
+    contract signed in Q2 FY2026. Customer concentration rose sharply:
+    one distributor now 50% of revenue (was 32%); top five end customers
+    ~55% (was ~40%). GAAP EPS $2.68 vs non-GAAP $3.32, gap narrowing as
+    flat VMware intangible amortization shrinks as a share of a much
+    larger revenue base.
+    Post-publish sanity check: re-fetched, 73KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **104 companies done, 120
+  report-periods published** (103/119 before this batch + 1).
+- Remaining in tonight's hot-list batch: JPM (in progress).
