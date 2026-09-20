@@ -1899,5 +1899,33 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **108 companies done, 124
   report-periods published** (107/123 before this batch + 1).
-- Remaining in tonight's second hot-list batch: NFLX (in progress), ORCL
-  queued.
+
+- Batch 9 (~01:5x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **NFLX** (Netflix) — **Q2 2026** (10-Q, period end 2026-06-30, filed
+    2026-07-17, accession 0001065280-26-000212):
+    https://financial-reports-web.vercel.app/reports/cmu9y33iy000304l3wtus034x
+    Revenue +13.4% to $12,559.9M but growth is decelerating each
+    quarter (17.6% Q4'25 → 16.2% Q1'26 → 13.4% Q2'26 → 11.7% guided
+    Q3'26); ~1.4pts of Q2's headline was FX (constant-currency growth
+    was 12%). Operating margin fell 34.1% → 33.4% on a $479M rise in
+    content amortization, which management frames as H1 front-loading.
+    Cash content spend ($4,928M) ran ahead of amortization ($4,311M,
+    1.14x vs ~1.00x a year ago); free cash flow fell 32.7% to $1,525M.
+    Flagged as a one-off: the WBD merger was terminated 2026-02-27 (WBD
+    went to Paramount Skydance instead), and Netflix received a $2.8B
+    break fee in Q1 2026 that inflates H1 net income's +44% headline —
+    ex-fee, H1 pre-tax income grew a more modest 14.2%. Takeaway: the
+    FY guide of 31.5% operating margin implies ~30% in H2 against a
+    flat H1 margin (32.8% vs 32.9%), meaning all of 2026's guided
+    margin expansion is back-loaded and rests on a single mechanism
+    (amortization growth cooling in H2) that hasn't shown up yet.
+    Post-publish sanity check: re-fetched (after one transient TLS
+    retry, unrelated to the report itself), 82KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **109 companies done, 125
+  report-periods published** (108/124 before this batch + 1).
+- Remaining in tonight's second hot-list batch: ORCL (in progress) —
+  last ticker in this firing's two planned batches of 5.
