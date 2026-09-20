@@ -463,8 +463,15 @@ are ever needed for this — only the site URL and the admin password.
   connection string (e.g. a Neon branch) — the schema has a single
   `postgresql` datasource, so there's no local SQLite fallback anymore.
 - Deployed on Vercel (project `hop22/financial-reports-web`, production
-  domain `https://financial-reports-web.vercel.app` until a custom domain
-  is attached) via `vercel --prod` run directly from this directory — no
+  domain `https://financialreportinsights.com` since 2026-09-20, bought
+  through Vercel (registrar + nameservers both Vercel, expires 2027-09-20,
+  $11.25/yr renewal); `www.` is attached too. The old
+  `https://financial-reports-web.vercel.app` alias still serves the same
+  site, and canonical/sitemap/OG URLs follow `SITE_URL` so they point at
+  the custom domain. Changing `SITE_URL` needs a redeploy to take effect.
+  The nightly cloud routine's stored prompt still says the old
+  `.vercel.app` URL for `SITE_URL` — that keeps working via the alias, so
+  it wasn't changed) via `vercel --prod` run directly from this directory — no
   GitHub connection is used for deploys. Vercel env vars (`DATABASE_URL` and
   friends from the Postgres integration, plus `ADMIN_PASSWORD`,
   `ADMIN_SESSION_SECRET`, `SITE_URL`) are managed with `vercel env add/rm`;
