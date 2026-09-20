@@ -1779,4 +1779,34 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **104 companies done, 120
   report-periods published** (103/119 before this batch + 1).
-- Remaining in tonight's hot-list batch: JPM (in progress).
+
+- Batch 5 (~00:3x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **JPM** (JPMorgan Chase) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-06, accession 0001628280-26-054343):
+    https://financial-reports-web.vercel.app/reports/cmu9xfw7m000104l1a8s492w7
+    Revenue +27.7% to $57,347M, net income +41.2% to $21,155M, diluted
+    EPS +47.0% to $7.70 — but the headline is largely a $4.6bn Visa
+    Class B-2 exchange gain plus $1.0bn of equity-investment marks;
+    revenue excluding those is ~$51.7bn (+15%) against 15% expense
+    growth. NIM actually compressed 3bps to 2.40%; ~60% of NII growth
+    came from Markets NII ($1,945M vs $561M), which has offsetting costs
+    in principal transactions. Prior-year comp was itself inflated by a
+    $774M tax benefit (effective tax rate 23.1% vs 18.0% this quarter).
+    Allowance coverage slipped to 1.79% from 1.85%; Card NCO rate 3.34%
+    vs 3.40%. CET1 fell 90bps to 14.2% into a new $50bn buyback
+    authorization. Management's FY2026 guidance: NII ~$105.5bn, adjusted
+    expense ~$107.5bn, Card NCO ~3.2%.
+    `operatingMarginPct` correctly omitted (not meaningful for a bank);
+    bank-specific metrics (NIM, provision, NCO, ROTCE, CET1) placed in
+    the body table only, per this report's own judgment call, which
+    matches how a bank report should differ from an industrial one.
+    Post-publish sanity check: re-fetched, 76KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **105 companies done, 121
+  report-periods published** (104/120 before this batch + 1). This
+  completes tonight's first hot-list batch of 5 (NVDA, META, TSLA, AVGO,
+  JPM) — all five published cleanly, no skips, every subagent finished
+  within budget on its first or (AVGO) second attempt.
