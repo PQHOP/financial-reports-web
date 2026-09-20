@@ -477,6 +477,16 @@ are ever needed for this — only the site URL and the admin password.
 
 ## Growth work (traffic, SEO, distribution)
 
+**One-time pending task (delete this paragraph once done):** the 9 guides
+in `content/guides/*.md` are written but not yet published (the local
+`.env` password doesn't match production, and Vercel won't reveal it).
+The first nightly firing should run, with the automation
+`ADMIN_PASSWORD` and `SITE_URL` from its prompt:
+`npm run admin-publish -- --articles-dir content/guides`, confirm
+`/learn` lists 9 guides, then remove this paragraph and commit. It's
+idempotent (upserts by slug), so a repeat is harmless. Do this before
+starting research so it never gets skipped.
+
 The plan lives in `docs/GROWTH_PLAN.md`; what's implemented vs. waiting on
 the user is tracked at its end. Things future sessions should know:
 
