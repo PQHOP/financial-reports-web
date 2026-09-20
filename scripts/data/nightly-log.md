@@ -2020,5 +2020,34 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **112 companies done, 128
   report-periods published** (111/127 before this batch + 1).
-- Remaining in tonight's third hot-list batch: XOM (in progress), UNH,
-  HD queued.
+
+- Batch 13 (~01:3x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **XOM** (ExxonMobil) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-03, accession 0000034088-26-000093):
+    https://financial-reports-web.vercel.app/reports/cmu9ytk7n000104l3pmac5jnk
+    Revenue +42.3% to $116,017M, net income more than doubled (+105.1%)
+    to $14,525M — almost entirely price, not volume: oil-equivalent
+    production was actually down 2.5%, refinery throughput down 9.5%,
+    chemical volumes down 15%. MD&A attributes conditions to Middle
+    East supply disruptions plus "unprecedented global refining
+    capacity reductions" — those disruptions cost XOM ~$1.48bn of
+    segment earnings while price/margin effects added ~$9.1bn. Energy
+    Products' roughly 4x earnings jump includes +$2,560M of
+    mark-to-market timing effects the filing itself says will unwind,
+    netted against −$1,180M of impairments. Effective tax rate fell
+    from 34% to 24%; at last year's rate, tax would have been about
+    $1.5bn higher — roughly a fifth of the earnings increase. First
+    half was far duller than the quarter: H1 earnings were only +26.4%,
+    implying Q1 2026 was down about 46% YoY. Operating margin (16.9%
+    vs 13.3%) was derived from pre-tax income plus interest expense
+    over total revenue, since XOM's income statement carries no
+    operating-income line; the derivation is shown in the report body.
+    Post-publish sanity check: re-fetched, 65KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **113 companies done, 129
+  report-periods published** (112/128 before this batch + 1).
+- Remaining in tonight's third hot-list batch: UNH (in progress), HD
+  queued.
