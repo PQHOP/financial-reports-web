@@ -1991,5 +1991,34 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **111 companies done, 127
   report-periods published** (110/126 before this batch + 1).
-- Remaining in tonight's third hot-list batch: WMT (in progress), XOM,
-  UNH, HD queued.
+
+- Batch 12 (~01:0x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **WMT** (Walmart) — **fiscal Q2 2026** (10-Q, period end 2026-07-31,
+    filed 2026-08-28, accession 0000104169-26-000154):
+    https://financial-reports-web.vercel.app/reports/cmu9yngb9000404l3g8lymvqz
+    Revenue +5.9% to $187,937M; net income fell 9.4% to $6,366M despite
+    operating income rising 28.8% to $9,383M. Both moves are largely
+    one-offs pulling in opposite directions: a $2.9bn one-time customs
+    tariff refund (IEEPA duties, mostly Walmart U.S.) is *larger than*
+    the entire $2,097M operating-income increase, so the operating
+    growth is not organic — management's own +17.4% constant-currency
+    adjusted figure does not strip the refund out, only prior-year
+    legal/reorg charges and FX. Net income fell only because "other
+    (gains) and losses" swung $3,908M on equity-investment marks (a
+    $1,200M loss vs a $2,708M gain LY); adjusted EPS actually rose 19.1%
+    to $0.81. Walmart US comp sales (+3.3%) were entirely eCommerce
+    (~4.9pp), meaning brick-and-mortar/other was roughly flat to
+    negative; International's +12.8% is ~4.8pp FX; Sam's Club's +8.6%
+    is 4.2pp fuel. Durable underneath: advertising +38%, membership fee
+    revenue +17% globally. Guidance implies a deceleration: FY27
+    adjusted EPS of $2.80-2.87 implies H2 adjusted EPS of $1.34-1.41 vs
+    H1's +13% pace.
+    Post-publish sanity check: re-fetched, 88KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **112 companies done, 128
+  report-periods published** (111/127 before this batch + 1).
+- Remaining in tonight's third hot-list batch: XOM (in progress), UNH,
+  HD queued.
