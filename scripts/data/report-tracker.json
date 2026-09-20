@@ -3216,5 +3216,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "CRM": {
+    "name": "Salesforce",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmua7pf3b000004jl0ychumrr"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-01-31",
+      "filedAt": "2026-03-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027)",
+      "estimate": "2026-12-03",
+      "basis": "CRM fiscal Q3 10-Qs have historically landed early December, ~90 days after the Q2 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }

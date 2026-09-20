@@ -2197,3 +2197,28 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **118 companies done, 134
   report-periods published** (117/133 before this batch + 1).
+  - **CRM** (Salesforce) — **FY2026 ANNUAL** (10-K, period end
+    2026-01-31, filed 2026-03-02):
+    https://financial-reports-web.vercel.app/reports/cmua7pf3b000004jl0ychumrr
+    Revenue +9.6% to $41.53B, GAAP operating margin up to 20.1% from
+    19.0%, but the headline 22.6% EPS jump ($7.80 vs $6.36) is mostly
+    non-operating: gains on strategic investments swung from a $121M
+    loss to a $1,017M gain (company-disclosed $0.90/share of the
+    $1.44 EPS increase), largely a $1.2B markup on one private holding.
+    Ex-that, EPS grew ~8%, and organic constant-currency revenue growth
+    was ~8% once Informatica (~1pt) and FX (~1pt) are stripped out.
+    Balance sheet flipped from ~$5.5B net cash to ~$4.9B net debt after
+    the $9.6B Informatica deal (funded with $6.0B of floating-rate
+    credit facilities) alongside $12.6B of buybacks. FY2027 GAAP EPS
+    guidance ($7.85-7.93) looks flat only because it assumes no repeat
+    investment gains — against FY2026's ~$6.99 operating EPS it implies
+    ~12-13% underlying growth.
+    Post-publish sanity check: cache-busted re-fetch, 84KB, tables
+    closed, Takeaway callout and Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **119 companies done, 135
+  report-periods published** (118/134 before this batch + 1). This
+  completes tonight's fifth hot-list batch (BAC, CRM). Stopping here as
+  the 05:00 JST window close is imminent (~28 min were left when this
+  pair was dispatched, now essentially none) — next-in-line hot-list
+  tickers carry over to the next firing.
