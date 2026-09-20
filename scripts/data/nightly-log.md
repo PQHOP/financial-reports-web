@@ -1868,5 +1868,36 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **107 companies done, 123
   report-periods published** (106/122 before this batch + 1).
-- Remaining in tonight's second hot-list batch: MA (in progress), NFLX,
-  ORCL queued.
+
+- Batch 8 (~01:2x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **MA** (Mastercard) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-07-30, accession 0001141391-26-000083):
+    https://financial-reports-web.vercel.app/reports/cmu9xx84h000104il36y0l3v9
+    Revenue +14.1% to $9,277M, net income +18.6% to $4,388M. The 14%
+    headline overstates underlying volume: 2 points are currency, and
+    every volume driver decelerated in local currency (GDV +8% vs +9%,
+    cross-border +12% vs +15%, switched transactions +9% vs +10%).
+    Rebates/incentives grew faster than gross assessments (21.8% vs
+    16.0%), rising to 52.4% of gross network fees from 49.9% — why net
+    payment-network revenue grew only 10% on 16% gross growth.
+    Value-added services (+20% to $3,826M, 41.2% of revenue) contributed
+    more to total growth (7.8 of 14.1 points) than the core network did
+    (6.2 points). GAAP margin gain (+1.5ppt) is flattered 0.3ppt by a
+    smaller litigation provision vs last year. EPS growth (+22.1%)
+    outpaced net income (+18.6%) on a 2.9% smaller share count ($8.9B
+    YTD buybacks funded partly by a $5.0B June bond issue) plus ~1pt
+    from a lower tax rate. US MDL litigation accrual fell to $149M from
+    $637M (a payment, not a resolution); Block/Intuit opt-out claim
+    seeks >$5B, trial set September 2026. No numeric FY guidance exists
+    in the filing (Mastercard guides on the earnings call only) —
+    confirmed absent by checking the earnings-release exhibit too rather
+    than assuming.
+    Post-publish sanity check: re-fetched, 81KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **108 companies done, 124
+  report-periods published** (107/123 before this batch + 1).
+- Remaining in tonight's second hot-list batch: NFLX (in progress), ORCL
+  queued.
