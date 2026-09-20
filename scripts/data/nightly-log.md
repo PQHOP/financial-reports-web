@@ -1724,5 +1724,31 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **102 companies done, 118
   report-periods published** (101/117 before this batch + 1).
-- Remaining in tonight's hot-list batch: TSLA (in progress), AVGO, JPM
-  queued.
+
+- Batch 3 (~00:0x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **TSLA** (Tesla, Inc.) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-07-23, accession 0001628280-26-049270):
+    https://financial-reports-web.vercel.app/reports/cmu9x4dwu000104l3dnfj1om9
+    Revenue +25.5% to $28,236M, but operating income fell 57% to $398M
+    (margin 1.4% vs 4.1%) — the $525M operating-income decline is almost
+    exactly matched by a $516M jump in stock-based comp ($1,151M vs
+    $635M), largely the CEO Performance Award. Net income (−4.9% to
+    $1,114M) is itself propped up by a $1,000M unrealized gain on
+    Tesla's new SpaceX stake (Level 2 fair value, <1% ownership) — ex-
+    that gain, pre-tax income would be roughly a fifth of last year's.
+    Regulatory credit revenue −67% to $146M ("recent governmental and
+    regulatory actions have restricted certain regulatory credit
+    programs" per the filing). Energy segment gross margin fell from
+    30.3% to 20.4% even as segment revenue grew 13%; ~10% of that
+    segment's revenue was Megapack sales to related party SpaceX.
+    "Other international" revenue +62.2% vs US +11.8% — filing itself
+    cites a weaker dollar, flagged as partly FX not demand. H1 FCF
+    ~$350M against 2026 capex guidance "in excess of $25 billion."
+    Post-publish sanity check: re-fetched, 74KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **103 companies done, 119
+  report-periods published** (102/118 before this batch + 1).
+- Remaining in tonight's hot-list batch: AVGO (in progress), JPM queued.
