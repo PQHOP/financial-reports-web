@@ -1927,5 +1927,38 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **109 companies done, 125
   report-periods published** (108/124 before this batch + 1).
-- Remaining in tonight's second hot-list batch: ORCL (in progress) —
-  last ticker in this firing's two planned batches of 5.
+
+- Batch 10 (~00:0x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **ORCL** (Oracle Corporation) — **FY2026 ANNUAL** (10-K, period end
+    2026-05-31, filed 2026-06-22, accession 0001193125-26-277521):
+    https://financial-reports-web.vercel.app/reports/cmu9y9hk6000204l1b32eqyyu
+    Fiscal-calendar note: Oracle's FY ends 2026-05-31, so this is
+    already the FY2026 annual filing (the 10-Q filed 2026-09-11 is
+    FY2027 Q1, out of scope). Revenue +17.3% to $67,357M, but operating
+    income grew only +16.6% while net income jumped +37.3% to
+    $17,087M — the gap is almost entirely below the operating line:
+    $3,547M of non-operating income (vs $60M), including a $2.7bn
+    Ampere gain, plus a 12.6% effective tax rate that Oracle itself
+    states would have been 19.9% without discrete items. Cloud
+    infrastructure revenue +77% to $18,101M supplied 84% of
+    constant-currency cloud growth, while software support was flat to
+    down in constant currency (the reported +1% is entirely FX).
+    Cloud & software segment margin fell from 63% to 59% on a $3.7bn
+    jump in depreciation from the OCI buildout; capex rose 162% to
+    $55,663M, driving free cash flow to -$23,686M from -$394M, funded
+    by $43.0bn of new senior notes plus $5.0bn of mandatory convertible
+    preferred (total debt now $129,541M vs $92,568M); buybacks
+    effectively stopped ($93M). RPO reached $638bn (from $138bn) but
+    only ~12% recognizes in the next 12 months, and there's a further
+    $260bn of off-balance-sheet data-center lease commitments starting
+    FY2027–FY2029.
+    Post-publish sanity check: re-fetched, 77KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **110 companies done, 126
+  report-periods published** (109/125 before this batch + 1). This
+  completes tonight's second hot-list batch of 5 (LLY, V, MA, NFLX,
+  ORCL) — all five published cleanly, no skips. 10 companies published
+  tonight so far across 10 batches, all hot-list tier, zero skips.
