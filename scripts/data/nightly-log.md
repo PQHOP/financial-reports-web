@@ -1841,5 +1841,32 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **106 companies done, 122
   report-periods published** (105/121 before this batch + 1).
-- Remaining in tonight's second hot-list batch: V (in progress), MA,
-  NFLX, ORCL queued.
+
+- Batch 7 (~01:0x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **V** (Visa Inc.) — **fiscal Q3 2026** (10-Q, period end 2026-06-30,
+    filed 2026-07-29, accession 0001403161-26-000104):
+    https://financial-reports-web.vercel.app/reports/cmu9xqpun000204l30z6rt7wj
+    Fiscal-calendar note: Visa's FY ends 2026-09-30, so this Q3 10-Q
+    (no FY2026 10-K yet) is the correct 2026-tier filing. Revenue
+    +14.4% to $11,633M but GAAP net income only +6.8% to $5,628M — the
+    gap is a $563M pre-tax severance charge ($438M after tax, $0.23/sh)
+    inside a 40% jump in personnel expense, partially offset the other
+    way by litigation provisions falling to $253M from $615M. Non-GAAP
+    opex still grew 17% vs 14% revenue, so the margin pressure isn't
+    purely one-off. International transaction revenue grew just 6%
+    against 12% constant-dollar cross-border volume — the filing cites
+    "lower volatility of a broad range of currencies and business mix"
+    as the softest line in the mix. Client incentives grew faster than
+    gross revenue (17.8% vs 15.3%), rising to 28.7% of gross billings.
+    Nine-month operating cash flow fell YoY despite net income +16.9%,
+    on litigation and incentive payments. No numeric FY guidance exists
+    in the 10-Q/8-K (Visa guides on the earnings call only).
+    Post-publish sanity check: re-fetched, 74KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **107 companies done, 123
+  report-periods published** (106/122 before this batch + 1).
+- Remaining in tonight's second hot-list batch: MA (in progress), NFLX,
+  ORCL queued.
