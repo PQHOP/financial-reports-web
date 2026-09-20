@@ -496,6 +496,36 @@ the user is tracked at its end. Things future sessions should know:
   script header; upserts by `slug`). Guides render at `/learn/<slug>`,
   everything else at `/insights/<slug>`. Guide sources live in
   `content/guides/*.json`.
+- **Editorial content piggybacks on the nightly firing** (no separate
+  routine: a second routine would need its own copy of the admin
+  credential and would compete for the same usage budget). Do these
+  *after* the guide task above and *before* the report batch, only when
+  the condition holds, and count them in the nightly log:
+  - **Weekly earnings preview** — on the first firing of each Sunday (UTC)
+    from 2026-10-11 through the end of earnings season (roughly
+    2026-11-20), if no `PREVIEW` article for that week exists yet
+    (check `/insights`). Find which hot-list / S&P 500 companies report
+    Monday–Friday of the coming week (WebSearch an earnings calendar; use
+    only dates a source states). Keep the ones that already have a report
+    on the site (so there is a "last quarter" to anchor on); if fewer than
+    3 qualify, skip the week. For each: expected report date, what the
+    last published quarter showed (figures **only from our own published
+    reports** and management's own guidance in them), and the 1-2 things
+    to watch. Do **not** state analyst consensus numbers unless you fetched
+    a source you can name inline; otherwise leave consensus out. Link each
+    company's latest report (`/reports/<id>`). Slug
+    `earnings-preview-<YYYY-MM-DD>` (the Monday), kind `PREVIEW`, `tickers`
+    set. Publish with `--article`. Same research-subagent rules as reports.
+  - **Comparison** — at most one per firing, at most two per week: when
+    two companies in the same industry both have a current-period report
+    with `metrics` and no comparison of that pair exists, publish a
+    `COMPARISON` (`<a>-vs-<b>-<period>-<year>`) using only the two
+    reports' own figures: growth, margins, what drove each, and where they
+    diverge and why.
+  - **Scorecard** — not automated; run by hand once ≥20 companies have
+    `metrics` for the same quarter (kind `SCORECARD`, table of revenue
+    growth / operating margin / EPS growth by company, top and bottom
+    movers with the reason from each report).
 - **Thin pages stay out of the index:** companies/industries/years with no
   report are `noindex` and absent from `sitemap.xml`. Don't add them back.
 - **Env vars that gate features** (all optional, set with `vercel env add

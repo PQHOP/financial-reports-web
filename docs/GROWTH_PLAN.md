@@ -108,3 +108,30 @@ Kèm theo:
 - 2026-10-11: giai đoạn 1 xong, Search Console đã nhận sitemap, hot list Q2 xong.
 - 2026-10-14: bắt đầu mùa earnings Q3, bật đăng social và preview.
 - 2026-11-20: đánh giá lần đầu (lượt hiển thị, số trang được index, quốc gia); quyết định AdSense.
+
+## Trạng thái triển khai (cập nhật 2026-09-20)
+
+Đã làm và đã deploy lên https://financialreportinsights.com (commit 2e03c99 trở đi):
+
+| Mục | Trạng thái |
+|---|---|
+| 1.2 Sitemap chỉ có trang có report; trang rỗng `noindex` | Xong |
+| 1.3 About, Methodology, Corrections, Privacy, Contact + footer | Xong. Contact cần biến `CONTACT_EMAIL` |
+| 1.4 Link filing gốc (`sourceUrl`) trên mỗi report | Xong (trường mới, form admin, script publish, CLAUDE.md bắt buộc từ nay) |
+| 1.5 Ảnh OG động (`next/og`), bỏ placehold.co | Xong |
+| 1.6 JSON-LD (BreadcrumbList, dateModified, publisher, WebSite), RSS `/feed.xml` | Xong |
+| 1.7 Internal links (kỳ khác của công ty, cùng ngành), trang chủ có Latest, `/reports` | Xong |
+| 1.8 Bỏ `force-dynamic`/cache | Không làm: CSP nonce theo request (proxy.ts) buộc trang phải dynamic; cache sẽ làm hỏng hydration |
+| 1.9 Xóa dòng disclaimer footer | Xong |
+| 2 Hot list + `npm run next-batch` + CLAUDE.md | Xong; routine đêm nay sẽ đi theo hot list |
+| 2 Metrics có cấu trúc (`metrics` JSON) | Xong; các report cũ chưa có, report mới bắt buộc |
+| 3 Bảng bài mới: `Article` (GUIDE/PREVIEW/COMPARISON/SCORECARD), `/learn`, `/insights` | Xong |
+| 3 9 guide đã viết (content/guides) | Chờ publish: routine đêm chạy `--articles-dir content/guides` ở lần bắn đầu tiên |
+| 3 Preview tuần, comparison | Đưa vào chỉ dẫn của routine đêm hiện có (không tạo routine mới) |
+| 4 IndexNow | Xong, tự ping khi publish |
+| 4 Social tự động (Bluesky, X) | Code xong; cần tạo tài khoản + biến môi trường + `CRON_SECRET` |
+| 4 Newsletter | `/admin/newsletter` sinh bản nháp; cần tài khoản Beehiiv/Substack |
+| 5 FTSE/TSX/ASX | Chưa làm: pipeline nghiên cứu hiện chỉ đọc EDGAR, cần quyết định nguồn dữ liệu |
+| 6 AdSense, affiliate | Chưa: chờ đủ ~150 report và Search Console có dữ liệu |
+
+Việc chỉ bạn làm được: xem phần "Việc cần bạn" ở tin nhắn cuối phiên.
