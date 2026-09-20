@@ -3150,5 +3150,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-20"
+  },
+  "PG": {
+    "name": "Procter & Gamble",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-20",
+      "url": "https://financial-reports-web.vercel.app/reports/cmua7gplj000004l58zyltwu2"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "estimate": "2026-10-22",
+      "basis": "PG fiscal-year-end late Oct 10-Q filings have historically landed in the fourth week of October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-20"
   }
 }

@@ -2123,3 +2123,25 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **115 companies done, 131
   report-periods published** (114/130 before this batch + 1).
+  - **PG** (Procter & Gamble) — **FY2026 ANNUAL** (10-K, period end
+    2026-06-30, filed 2026-08-04):
+    https://financial-reports-web.vercel.app/reports/cmua7gplj000004l58zyltwu2
+    Net sales +3% to $87.0B, but the 10-K attributes all of it to FX
+    (+2pt) and price (+1pt) — volume/mix flat, organic sales growth
+    slowed to 1% from 2% in FY2025. Operating margin fell 160bps to
+    22.7% (unfavorable product mix -120bps, only partly offset by
+    +180bps manufacturing productivity); net earnings held flat at
+    $16.0B only because non-operating income swung +$922M on the
+    absence of the prior-year Argentina hyperinflation-accounting
+    charge plus a Glad JV gain — currency-neutral core EPS was
+    literally flat, and all five segments posted lower margins with
+    share losses in three. FY2027 guidance (organic +1-3%, core EPS
+    $6.89-7.11) requires acceleration from a Q4 that printed 0% organic
+    growth and -15% GAAP EPS against a stated $0.56/share cost
+    headwind.
+    Post-publish sanity check: cache-busted re-fetch, 80KB, all 4 GFM
+    tables closed, Takeaway callout and Source filing link both
+    present, no truncation.
+  - Skipped: none this batch.
+- Running total after this batch: **116 companies done, 132
+  report-periods published** (115/131 before this batch + 1).
