@@ -1699,5 +1699,30 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **101 companies done, 117
   report-periods published** (100/116 before tonight + 1).
-- Remaining in tonight's hot-list batch: META, TSLA, AVGO, JPM in
-  progress/queued.
+
+- Batch 2 (~23:4x JST): **1 report-period published, 1 company.**
+- Tier worked: **2-hot-list**.
+- Published:
+  - **META** (Meta Platforms) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-07-30, accession 0001628280-26-050705):
+    https://financial-reports-web.vercel.app/reports/cmu9wzh5k000004l1ffgy1u1i
+    Revenue +28.0% to $60,801M, but operating income *fell* 8% and net
+    income fell 13.6% to $15,848M — total costs rose 55%. R&D +67% to
+    $21,660M (now 36% of revenue vs 27%); G&A +111% on $2,400M of legal-
+    proceedings charges; plus $1,180M of severance from the May 2026
+    ~8,000-person headcount cut. Ad engine still strong underneath:
+    impressions +14%, price per ad +12%, ARPP +24% to $16.86 despite DAP
+    only +3%. Flagged as a comp distortion: H1 net income's headline
+    strength is largely a tax artifact — a $2,110M H1 tax benefit (Q1
+    only) from U.S. Treasury CAMT relief guidance; Q2's own effective
+    rate was 16%. Reality Labs operating loss −$4,620M, guided to stay
+    "similar to 2025" for FY2026. FY2026 capex guidance raised to
+    $130–145B against ~$128B annualized H1 operating cash flow; zero
+    buybacks in H1.
+    Post-publish sanity check: re-fetched, 70KB, Takeaway callout and
+    Source filing link both present.
+  - Skipped: none this batch.
+- Running total after this batch: **102 companies done, 118
+  report-periods published** (101/117 before this batch + 1).
+- Remaining in tonight's hot-list batch: TSLA (in progress), AVGO, JPM
+  queued.

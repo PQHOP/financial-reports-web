@@ -2842,5 +2842,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-20"
+  },
+  "META": {
+    "name": "Meta Platforms",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-20",
+      "url": "https://financial-reports-web.vercel.app/reports/cmu9wzh5k000004l1ffgy1u1i"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-20"
   }
 }
