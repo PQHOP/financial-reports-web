@@ -3041,6 +3041,50 @@
     },
     "lastChecked": "2026-09-21"
   },
+  "CSCO": {
+    "name": "Cisco",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubctqfa000104l8uq9mcxl5"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-25",
+      "filedAt": "2026-09-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-18",
+      "basis": "Cisco's fiscal year runs Aug-late Jul; Q1 FY2027 ends ~late Oct 2026 with the 10-Q typically filed ~3-4 weeks later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "MCD": {
+    "name": "McDonald's",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubctapq000004l8jrfe0in7"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-08-07; MCD typically reports Q3 in late October/early November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
   "LLY": {
     "name": "Lilly (Eli)",
     "status": "done",

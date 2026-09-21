@@ -2391,3 +2391,59 @@ the automated scheduled-task mechanism):
   report-periods published** (123/139 before this batch + 1). This
   completes tonight's third hot-list batch (MRK) and clears the full
   `next-batch -- --n 5` round (KO, PEP, CVX, WFC, MRK) with zero skips.
+
+- Batch 4 (~23:4x JST, same firing): still well inside the window with
+  time and budget to spare, so ran `next-batch -- --n 5` again for a
+  second round: CSCO, MCD, TMO, IBM, QCOM (all hot-list, all fresh).
+  Dispatched CSCO and MCD as the first pair.
+- Tier worked: **2-hot-list** (second round, started).
+- Published:
+  - **CSCO** (Cisco) — **FY2026 ANNUAL** (10-K, fiscal year ended
+    2026-07-25 — Cisco's fiscal year runs Aug-Jul, so this is *not*
+    calendar 2026 — filed 2026-09-02, accession 0000858877-26-000132):
+    https://financial-reports-web.vercel.app/reports/cmubctqfa000104l8uq9mcxl5
+    Revenue +11.8% to $63,325M, GAAP diluted EPS +30.6% to $3.33, but
+    Networking alone (+22.5%, $6.4B) supplied almost all of the $6.7B
+    revenue increase, driven by hyperscaler AI infrastructure that grew
+    from under 2% to ~6% of revenue (~$4B on $9.3B of FY2026 orders);
+    Security grew just 1.7%, subscription revenue 1.4%, services flat.
+    Operating margin +3.5pts to 24.3% purely on expense leverage
+    (opex +3% vs revenue +12%), while gross margin *fell* 0.4pts on
+    product mix. Two offsetting distortions: FY2026 got a $1,313M swing
+    from unrealized marks on private-company stakes, FY2025 got a $720M
+    discrete tax benefit (8.3% effective rate vs 17.1% this year) — why
+    GAAP EPS grew 31% but non-GAAP EPS only 14%. Operating cash flow was
+    flat at $14,177M despite net income +$3.1B, as inventory jumped 80%
+    to $5,694M. FY2027 guidance: revenue $72.2-73.4B (+14-16%), GAAP EPS
+    $4.00-4.06, on Q4 product orders +35% (+25% ex-hyperscalers). CSCO's
+    first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 86KB, metrics
+    table and gross-margin bridge present, closing sentence intact.
+  - Skipped: none this batch.
+- Running total after this batch: **125 companies done, 141
+  report-periods published** (124/140 before this batch + 1).
+  - **MCD** (McDonald's) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-07, accession 0000063908-26-000073):
+    https://financial-reports-web.vercel.app/reports/cmubctapq000004l8jrfe0in7
+    Revenue +3.7% to $7,099M, diluted EPS +5.7% to $3.32, but global
+    comparable sales grew only 1.3% vs 3.8% a year earlier, decelerating
+    in every segment (US 2.5%->0.8%, International Operated 4.0%->1.5%,
+    Developmental Licensed 5.6%->1.9%); US comps came entirely from
+    higher check/mix against explicitly negative guest counts. Of the
+    $106M operating income increase, $66M was a swing in other operating
+    income ($40M restaurant-sale gains + $38M asset-disposition swing),
+    while SG&A rose 17% on incentive comp and the 2026 Worldwide
+    Owner/Operator convention. EPS growth was further flattered by a
+    19.5% effective tax rate (vs 21.3%, discrete restructuring benefits,
+    against 21-23% full-year guidance), a $0.03 FX benefit and a 0.9%
+    lower share count — roughly $0.05 of the $0.18 EPS gain was
+    operational, matching 2% constant-currency operating income growth.
+    No comparable-sales guidance given; management's 2026 growth relies
+    on ~2.5% of systemwide sales from net unit expansion (46,028
+    restaurants, +1,915 YoY). MCD's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 64KB, metrics
+    strip, Outlook section and Source filing link all present.
+  - Skipped: none this batch.
+- Running total after this batch: **126 companies done, 142
+  report-periods published** (125/141 before this batch + 1). TMO, IBM,
+  QCOM carry over to the next batch within this firing.
