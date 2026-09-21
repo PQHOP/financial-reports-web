@@ -3854,5 +3854,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "LOW": {
+    "name": "Lowe's Companies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubjw9ic000004jgmtnaw6q4"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2026)",
+      "estimate": "2026-11-25",
+      "basis": "prior-year filing cadence, ~90 days after Q2",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "TGT": {
+    "name": "Target Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubjx0d4000004jgdcp9pte8"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-08-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2026)",
+      "estimate": "2026-11-25",
+      "basis": "prior-year filing cadence, ~90 days after Q2",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }

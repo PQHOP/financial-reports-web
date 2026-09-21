@@ -3101,3 +3101,57 @@ the automated scheduled-task mechanism):
   (VZ, UBER, PLTR, COIN, INTC, MU, PYPL, BA, NKE, SBUX), plus T
   backfilled into the tracker as already-live from a concurrent run.
   Still comfortably inside the window (~03:00 JST, ~2h left).
+
+- Batch 17 (~03:0x JST, same session): ran `next-batch -- --n 5` a
+  sixth time: LOW, TGT, PFE, GILD, BKNG (all hot-list, all fresh).
+  Dispatched LOW and TGT as the first pair.
+- Tier worked: **2-hot-list** (sixth round, started).
+- Published:
+  - **LOW** (Lowe's) — **fiscal Q2 2026** (published as year 2026,
+    period Q2 — Lowe's fiscal year ends late January, so this quarter
+    covers May-July 2026, period end 2026-07-31; 10-Q filed 2026-08-27,
+    accession 0000060667-26-000117):
+    https://financial-reports-web.vercel.app/reports/cmubjw9ic000004jgmtnaw6q4
+    Net sales +8.3% to $25,956M, net earnings flat at $2,399M, diluted
+    EPS flat at $4.27, adjusted EPS $4.40 vs $4.33, operating margin
+    -81bps to 13.67%. Two distortions flagged: ~90% of the $1,997M sales
+    increase came from the FBM/ADG acquisitions (new "Other" segment:
+    $1,941M of sales vs $138M LY, but only $3M of operating income),
+    leaving actual retail-segment sales up just 0.8% with its own margin
+    *improving* 18bps; and the entire adjusted-EPS gain is an $80M
+    pre-tax IEEPA tariff refund worth $0.11/share that management's
+    non-GAAP adjustment does not strip out — ex-refund adjusted EPS was
+    ~$4.29 vs $4.33, down ~1%. Comps +0.2% but online contributed ~195bps,
+    implying physical-store comps of roughly -1.75% (transactions -2.1%,
+    ticket +2.3%). FY2026 guidance collapsed to the floor of each prior
+    range (sales $92.0B, diluted EPS ~$11.75). LOW's first report on the
+    site.
+    Post-publish sanity check: cache-busted re-fetch, full content
+    through the closing Source section, metrics table and Takeaway
+    callout present, not truncated.
+  - **TGT** (Target) — **Q2 2026** (10-Q, period end 2026-08-01, filed
+    2026-08-28, accession 0000027419-26-000042):
+    https://financial-reports-web.vercel.app/reports/cmubjx0d4000004jgdcp9pte8
+    Net sales +5.3% to $26.54B, diluted EPS doubled to $4.11 from $2.05
+    — but $1.65 of that EPS came from a single one-off: $994M of IEEPA
+    tariff refunds recognized as a reduction of cost of sales after the
+    February 2026 Supreme Court ruling. Ex-refund, operating income grew
+    ~19% to ~$1,566M (margin ~5.9% vs 5.2%) and EPS rose ~20% to $2.46 —
+    and even that gain is mostly the absence of last year's elevated
+    markdowns/PO-cancellation costs rather than structural improvement.
+    Comparable traffic +3.6% (vs -1.3% a year ago) drove a +3.8% comp,
+    though the two-year net sales CAGR of just 2.1% shows how depressed
+    the base was; apparel (+0.1%) and home (+0.2%) flat while food, Fun
+    101 hardlines and beauty supplied 83% of the merchandise sales
+    increase. SG&A rate rose to 21.6% from 21.3% despite 5.3% sales
+    growth. FY2026 guidance raised to ~5% sales growth, ~6% operating
+    margin, $9.90-$10.90 EPS (implying ~$8.25-$9.25 ex-refund); zero
+    buybacks in H1 with $8.3B authorization remaining. TGT's first
+    report on the site.
+    Post-publish sanity check: cache-busted re-fetch, figures strip, all
+    five GFM tables, Takeaway callout, Source filing link and final
+    sentence present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **148 companies done, 164
+  report-periods published** (146/162 before this batch + 2). PFE,
+  GILD, BKNG carry over to the next batch within this firing.
