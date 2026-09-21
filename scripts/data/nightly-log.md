@@ -2892,3 +2892,61 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **139 companies done, 155
   report-periods published** (137/153 before this batch + 2). COIN,
   INTC carry over to the next batch within this firing.
+
+- Batch 13 (~02:3x JST, same session): dispatched COIN and INTC, the
+  last two tickers from this round's `next-batch` output, completing
+  it. No further duplicate-submission collisions this batch — both
+  subagents confirmed no existing report before researching.
+- Tier worked: **2-hot-list** (fourth round, completed).
+- Published:
+  - **COIN** (Coinbase Global) — **Q2 2026** (10-Q, period end
+    2026-06-30, filed 2026-07-30, accession 0001679788-26-000088):
+    https://financial-reports-web.vercel.app/reports/cmubj2gcm000004jpipmzq6zl
+    Total revenue $1,220.1M (-18.5% YoY), net loss $359.5M vs $1,428.9M
+    profit a year ago, diluted EPS -$1.36 vs $5.14, Adjusted EBITDA
+    $207.8M (-59%). Last year's profit was almost entirely a $1.47B
+    non-operating mark-up on Coinbase's Circle stake post-IPO; this
+    quarter carried $209.5M of losses on its own Bitcoin/Ethereum
+    holdings. Adjusting both years for one-offs (this year's $52.4M
+    restructuring covering ~700 job cuts, last year's $306.7M
+    data-theft costs) still shows underlying operating profit of ~$282M
+    turning into a ~$55M loss. Consumer transaction revenue -31% on a
+    38% drop in consumer spot volume; institutional +65% almost
+    entirely from the acquired Deribit business; stablecoin revenue -5%
+    on a $55.9M interest-rate headwind despite growing USDC balances.
+    Assets on platform $245.9B (-42%), MTUs 7.6M (-13%); 26%-of-revenue
+    single-counterparty concentration flagged; Coinbase retired Trading
+    Volume as a disclosed key metric this quarter. COIN's first report
+    on the site.
+    Post-publish sanity check: cache-busted re-fetch, 78KB, final
+    sentence, Takeaway callout, Source filing link and metrics strip
+    all present, not truncated.
+  - **INTC** (Intel) — **Q2 2026** (10-Q, period end 2026-06-27, filed
+    2026-07-24, accession 0000050863-26-000157):
+    https://financial-reports-web.vercel.app/reports/cmubj2yiy000104jpduk38f4s
+    Revenue +25.4% to $16,128M, gross margin +12.9pts to 40.4%,
+    operating income swung to +$1,796M from -$3,176M — but a **$12.5B
+    non-cash mark-to-market loss** on shares escrowed for the US
+    Department of Commerce under the August 2025 CHIPS "Secure Enclave"
+    agreement (a charge that grows as Intel's stock rises) drove a net
+    loss attributable to Intel of $11,033M, $(2.16)/share, vs non-GAAP
+    EPS of $0.42. Growth is ASP/mix-led (client ASPs +27% on 8% lower
+    volume; server ASPs +48% on 9% volume); roughly half the
+    gross-profit improvement is the absence of Q2 2025 period charges
+    including a $797M impairment. Foundry's narrower $(2,089)M loss
+    also leans on absent charges while 18A wafers are currently
+    dilutive. $14.2B buyout of Apollo's 49% Ireland SCIP (Fab 34) stake
+    funded by $6.5B of new senior notes. Q3 2026 guidance: $15.8-16.8B
+    revenue, GAAP EPS $0.31. INTC's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, final sentence
+    present, Takeaway callout, Source filing link and figures strip
+    (revenue, EPS, operating margin) all present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **141 companies done, 157
+  report-periods published** (139/155 before this batch + 2). This
+  clears the fourth `next-batch -- --n 5/6` round (GS, MS, VZ, UBER,
+  PLTR, COIN, INTC — T needed no new work, already live) with zero
+  skips. **23 companies published so far tonight** across four full
+  rounds (this session continuing the same operating-window firing that
+  produced batches 1-10 earlier). Still well inside the window (~02:35
+  JST, ~2h25m left).

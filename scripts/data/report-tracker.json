@@ -3700,5 +3700,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "COIN": {
+    "name": "Coinbase Global, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubj2gcm000004jpipmzq6zl"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~91-day cadence from Q2 filing (filed 2026-07-30)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "INTC": {
+    "name": "Intel Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubj2yiy000104jpduk38f4s"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-07-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "~91-day cadence from Q2 filing (filed 2026-07-24)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }
