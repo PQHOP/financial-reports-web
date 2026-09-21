@@ -2358,3 +2358,36 @@ the automated scheduled-task mechanism):
   report-periods published** (122/138 before this batch + 1). This
   completes tonight's second hot-list batch (CVX, WFC); MRK carries
   over to the next batch within this firing.
+
+- Batch 3 (~23:3x JST, same firing): dispatched MRK, the fifth ticker
+  from the earlier `next-batch` output, completing that batch.
+- Tier worked: **2-hot-list** (completed this `next-batch` round).
+- Published:
+  - **MRK** (Merck & Co.) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-07, accession 0000310158-26-000212):
+    https://financial-reports-web.vercel.app/reports/cmubcn8n2000005jn4gll77n6
+    Sales +5.1% to $16,607M (+4% ex-FX) but a **net loss of $1,335M**
+    (EPS $(0.54)) vs $4,427M profit a year ago — entirely a **$5.7B
+    acquired-IPR&D charge for the May 2026 Terns Pharmaceuticals deal**,
+    expensed immediately (asset-acquisition structure) and
+    non-deductible (effective tax rate -95.9% on a pretax loss).
+    Underlying gross profit actually fell in dollar terms ($12,212M vs
+    $12,249M) on acquisition-related intangible amortization ($1,067M
+    vs $576M) and inventory write-downs. Keytruda/Keytruda Qlex $8,366M
+    (+5.2%, 50.4% of sales, $463M from the new subcutaneous Qlex);
+    Winrevair +75%, Welireg +67%, Capvaxive +42%, new Ohtuvayre $204M
+    offset Januvia/Janumet -31% and Vaxneuvance -35%. FY26 non-GAAP EPS
+    guidance cut to $2.66-2.76 from $5.04-5.16, but the entire cut is
+    the $2.43/share Terns charge+financing — underlying guidance
+    actually rose ~$0.04 (sales guidance raised to $66.3-67.3B); adding
+    back Cidara+Terns charges implies ~$8.64 underlying EPS vs $8.98 in
+    2025. ~$16B of cash deals in six months (Cidara $9.2B January, Terns
+    $6.8B May) cut cash to $6,849M from $14,565M and lifted long-term
+    debt to $51,081M. MRK's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 87KB, Takeaway
+    callout and Source filing link both present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **124 companies done, 140
+  report-periods published** (123/139 before this batch + 1). This
+  completes tonight's third hot-list batch (MRK) and clears the full
+  `next-batch -- --n 5` round (KO, PEP, CVX, WFC, MRK) with zero skips.
