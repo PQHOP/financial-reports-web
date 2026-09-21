@@ -2299,3 +2299,62 @@ the automated scheduled-task mechanism):
   report-periods published** (120/136 before this batch + 1). This
   completes tonight's first hot-list batch (KO, PEP); CVX, WFC, MRK
   carry over to the next batch within this firing.
+
+- Batch 2 (~23:3x JST, same firing): dispatched CVX and WFC (next two
+  hot-list tickers from the earlier `next-batch` output) in parallel.
+- Tier worked: **2-hot-list** (continued).
+- Published:
+  - **CVX** (Chevron Corporation) — **Q2 2026** (10-Q, period end
+    2026-06-30, filed 2026-08-06, accession 0000093410-26-000167):
+    https://financial-reports-web.vercel.app/reports/cmubce7it000004k0ah7nvw79
+    Net income $12.07B ($6.11 diluted EPS) vs $2.49B ($1.45) a year ago,
+    on revenue +56.3% to $70.06B — driven by the first full quarter of
+    Hess assets (worldwide production +19.8% to 4,070 MBOED, a US
+    record 2,077 MBOED), higher crude realizations (international
+    liquids $96.41/bbl vs $58.88) and downstream earnings up 6.6x to
+    $4.87B on refining margins. ~$1.4-1.5B of the quarter is favorable
+    "timing effects" that reverse a $2.9B adverse hit in Q1 2026, so H1
+    ($14.28B vs $5.99B) is the cleaner comparison; effective tax rate
+    fell from 39% to 27% on jurisdiction/mix the filing says not to
+    extrapolate. US natural gas realization halved to $0.91/MCF despite
+    flat Henry Hub (Permian basis blowout), and refined product volumes
+    fell both in the US (-4%) and internationally (-13%, Middle East
+    supply disruption) — the downstream gain was margin, not volume. Q2
+    free cash flow $18.1B, debt cut by a record $8.4B to $37.1B, $3.0B
+    buybacks, dividend raised to $1.78/share. CVX's first report on the
+    site.
+    Post-publish sanity check: cache-busted re-fetch, 74KB, Takeaway
+    callout and Source filing link both present, all YoY percentages
+    independently re-verified against the filing's own figures.
+  - Skipped: none this batch.
+- Running total after this batch: **122 companies done, 138
+  report-periods published** (121/137 before this batch + 1).
+  - **WFC** (Wells Fargo) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-07-28, accession 0000072971-26-000302):
+    https://financial-reports-web.vercel.app/reports/cmubcfzwf000004l2im6o231b
+    Net income $6.4B ($2.00 diluted EPS, +25.0%) vs $5.5B ($1.60) a
+    year ago, revenue +8.6% to $22.6B, expenses +2.1%, efficiency ratio
+    improved from 64% to 60%. The 25% EPS growth overstates underlying
+    momentum: net interest income excluding Markets grew just 1.8%
+    ($11,816M vs $11,604M per the filing's own table), $728M of the
+    $1,191M fee increase was venture-capital equity-securities marks,
+    and a 5.9% smaller share count (from $7.1B of H1 buybacks) explains
+    most of the gap between +18% net income to common and +25% EPS. NIM
+    fell 25bp to 2.43% as average assets grew 15.2% to $2.23T on
+    lower-yielding Markets assets, a shift that also cut CET1 87bp to
+    10.26% (vs 8.50% requirement). Credit improved (net charge-offs
+    -11%, criticized CRE down from $13.4B to $11.8B) but the group
+    provision only fell because CIB released $181M of reserves while
+    Consumer held flat and criticized C&I loans rose $1B on tech/telecom
+    and equipment manufacturing. Two comp distortions flagged: a Q3 2025
+    business-customer transfer from Commercial to Consumer Banking, and
+    a prior-year discrete tax benefit (effective rate 14.3% -> 17.4%
+    this year, a ~$250M headwind). WFC's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 85KB, headline
+    figures (NIM, CET1, advisory assets), Takeaway callout and Source
+    filing link all present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **123 companies done, 139
+  report-periods published** (122/138 before this batch + 1). This
+  completes tonight's second hot-list batch (CVX, WFC); MRK carries
+  over to the next batch within this firing.

@@ -2975,6 +2975,50 @@
     },
     "lastChecked": "2026-09-21"
   },
+  "CVX": {
+    "name": "Chevron Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubce7it000004k0ah7nvw79"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-08-06; CVX typically reports Q3 in early November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "WFC": {
+    "name": "Wells Fargo",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubcfzwf000004l2im6o231b"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-26",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-28; WFC typically reports Q3 in mid-to-late October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
   "LLY": {
     "name": "Lilly (Eli)",
     "status": "done",
