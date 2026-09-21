@@ -3085,6 +3085,50 @@
     },
     "lastChecked": "2026-09-21"
   },
+  "TMO": {
+    "name": "Thermo Fisher Scientific",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubd0zof000104k0enwiymfm"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-31; TMO typically reports Q3 in late October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "IBM": {
+    "name": "IBM",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubd12sw000204l8ka5e0y7v"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-23; IBM typically reports Q3 in mid-to-late October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
   "LLY": {
     "name": "Lilly (Eli)",
     "status": "done",

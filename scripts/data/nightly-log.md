@@ -2447,3 +2447,59 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **126 companies done, 142
   report-periods published** (125/141 before this batch + 1). TMO, IBM,
   QCOM carry over to the next batch within this firing.
+
+- Batch 5 (~23:4x JST, same firing): dispatched TMO and IBM, the next
+  two tickers from the second `next-batch` round.
+- Tier worked: **2-hot-list** (continued).
+- Published:
+  - **TMO** (Thermo Fisher Scientific) — **Q2 2026** (10-Q, period end
+    2026-06-27, filed 2026-07-31, accession 0000097745-26-000144):
+    https://financial-reports-web.vercel.app/reports/cmubd0zof000104k0enwiymfm
+    Revenue +10% to $11.99B but only +5% organic — acquisitions (Clario,
+    closed 2026-03-24 for $9.10B; Solventum's filtration business) added
+    5pts, FX 1pt. Segment ranking inverts once decomposed: Life Sciences
+    Solutions has the biggest headline (+13%) but smallest organic gain
+    (+3%), while Analytical Instruments was entirely organic (+7% across
+    all three businesses, segment margin +4.2pts to 23.0%) — the
+    strongest sign in the filing of a lab capex recovery. GAAP operating
+    margin +0.5pt to 17.4% came from SG&A/R&D leverage, not gross
+    margin (flat at 40.7%). Operating income +14% became EPS +9% only
+    because net interest expense nearly doubled to $194M (cash fell
+    $9.85B->$4.06B, debt rose to $42.5B funding Clario plus $4.0B of H1
+    buybacks) and the GAAP tax rate rose to 8.7% from 5.4%. FY2026
+    guidance raised to $47.4-48.1B revenue, ~4% organic growth,
+    $24.93-25.33 adjusted EPS; ~$220M of Clario-related restructuring
+    charges still to book. TMO's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 90KB, both tables
+    rendered, Takeaway callout and Source filing link present.
+  - Skipped: none this batch.
+- Running total after this batch: **127 companies done, 143
+  report-periods published** (126/142 before this batch + 1).
+  - **IBM** — **Q2 2026** (10-Q, period end 2026-06-30, filed
+    2026-07-23, accession 0000051143-26-000078):
+    https://financial-reports-web.vercel.app/reports/cmubd12sw000204l8ka5e0y7v
+    Revenue grew just 1.1% to $17,162M — management said outright the
+    quarter came in below expectations, with the miss landing in the
+    final weeks of June as customers redirected budget from mainframe
+    deals toward supply-constrained servers/storage/memory ahead of
+    expected price increases: IBM Z fell 42.0% while Distributed
+    Infrastructure rose a record 37.3%. Gross margin -1.0pt to 57.7% on
+    that mix shift, pre-tax income -4.5%, but net income was nearly flat
+    (-1.3%) only because the effective tax rate fell to 12.6% from
+    15.6%. GAAP diluted EPS -1.7% to $2.27 while non-GAAP operating EPS
+    rose 4.6% to $2.93 — the gap is $548M of after-tax charges tied to
+    the $11.6B Confluent acquisition, the same deal supplying much of
+    the Software growth the adjusted figure credits. Software +5.1%
+    (ARR $24.6B), Consulting revenue flat but segment profit +15.1%
+    (backlog $30.8B, book-to-bill ~1.05), Infrastructure profit -13.4%.
+    IBM cut full-year guidance from ">5% constant-currency growth with a
+    0.5-1pt FX tailwind" to "4-5% constant currency, FX neutral" (~1.5-
+    2.5pt cut in dollar terms) while holding FCF guidance at ~+$1B
+    despite H1 FCF flat at $4.8B — loading the entire improvement into
+    H2. IBM's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 77KB, metrics
+    table, Takeaway callout and Source filing link present.
+  - Skipped: none this batch.
+- Running total after this batch: **128 companies done, 144
+  report-periods published** (127/143 before this batch + 1). QCOM
+  carries over to the next batch within this firing.
