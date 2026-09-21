@@ -2836,3 +2836,59 @@ the automated scheduled-task mechanism):
   report-periods published** (152 + VZ). PLTR, COIN, INTC carry over to
   the next batch within this firing (UBER also still pending — see
   below for whether the concurrent run touches it first).
+
+- Batch 12 (~02:2x JST, same session): re-ran `admin-publish -- --list`
+  to confirm clean dropdown entries for UBER, PLTR, COIN, INTC (no
+  further collisions found this time) and dispatched UBER and PLTR in
+  parallel, each instructed to check for an existing live report before
+  doing any research (to avoid wasting a pass if the suspected
+  concurrent firing had already covered either).
+- Tier worked: **2-hot-list** (fourth round, continued).
+- Published:
+  - **UBER** (Uber Technologies) — **Q2 2026** (10-Q, period end
+    2026-06-30, filed 2026-08-05, accession 0001543151-26-000032):
+    https://financial-reports-web.vercel.app/reports/cmubivbmp000204l9m5vy44cg
+    Reported revenue +12% to $14.19B badly understates the business — a
+    2026-01-02 UK business-model change moved driver payments from cost
+    of revenue to a reduction of revenue, cutting reported revenue by
+    $1.1B (8pts of growth), while Gross Bookings grew 24% to $58.02B and
+    Trips +18% to 3.87B on 208M MAPCs (+16%). Net income +77% to $2.39B
+    ($1.17 diluted EPS) is three-quarters a $1.6B pre-tax paper
+    revaluation of equity stakes (Delivery Hero +$1.1B, Aurora +$899M,
+    Didi -$437M) that reversed against Uber only one quarter earlier —
+    H1 net income actually fell YoY. Cleaner margin read: operating
+    income as % of Gross Bookings 3.10%->3.26%, Adjusted EBITDA
+    4.5%->4.9%. Delivery overtook Mobility on growth (bookings +26%);
+    S&M/G&A costs (+25%/+40%, the latter on legal accruals) outpaced
+    trip growth. Q3 guidance $58.25-60.25B bookings, $0.84-0.88 non-GAAP
+    EPS. UBER's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 76KB, Takeaway
+    callout, metrics tables, Source filing link and closing sentence all
+    present, not truncated.
+  - **PLTR** (Palantir Technologies) — **Q2 2026** (10-Q, period end
+    2026-06-30, filed 2026-08-04, accession 0001321655-26-000041):
+    https://financial-reports-web.vercel.app/reports/cmubivqoa000304l90zvv7b3s
+    Revenue +92.8% to $1,935.5M, operating margin 47.1% vs 26.8%, net
+    income +225.0% to $1,061.9M, diluted EPS $0.41 vs $0.13 — but this
+    was an expansion quarter, not new-logo growth: 98% of the $437M
+    government revenue increase and 82% of the $495M commercial increase
+    came from customers already on the books at 2025-12-31 (S&M grew
+    only 39% against 93% revenue growth). Three distortions flagged: a
+    ~1.4% effective tax rate ($15.4M on $1,081.3M pretax), $66M of
+    unrealized mark-to-market gains buried in other income (16% of
+    pretax income came from below the operating line), and adjusted net
+    income ($1,047.0M) sitting *below* GAAP net income on a $297.4M tax
+    adjustment. Soft spot: stripping the record $2.132B US commercial
+    TCV out of the $3.373B total leaves ~$1.24B elsewhere vs ~$1.42B a
+    year ago (~13% decline); international revenue grew just 34% vs 115%
+    in the US. FY2026 guidance raised (revenue $8.150-8.158B) but implies
+    deceleration to ~83% YoY in Q3, ~72% in Q4. PLTR's first report on
+    the site.
+    Post-publish sanity check: cache-busted re-fetch, full body through
+    the closing "Sources and definitions" bullet, both GFM tables,
+    Takeaway callout and Source filing link present, figures strip
+    matches body table exactly.
+  - Skipped: none this batch.
+- Running total after this batch: **139 companies done, 155
+  report-periods published** (137/153 before this batch + 2). COIN,
+  INTC carry over to the next batch within this firing.
