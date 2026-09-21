@@ -3195,6 +3195,50 @@
     },
     "lastChecked": "2026-09-22"
   },
+  "GE": {
+    "name": "GE Aerospace",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubdou2k000104l7pnic4eiz"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-15",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-16; GE typically reports Q3 in mid-October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "DIS": {
+    "name": "Walt Disney Company (The)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubdptyk000404l89mindi02"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual, ends 2026-10-03)",
+      "estimate": "2026-11-19",
+      "basis": "fiscal year ends early October (53-week FY2026); prior-year 10-K filed ~mid-November following prior-year fiscal close",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
   "LLY": {
     "name": "Lilly (Eli)",
     "status": "done",

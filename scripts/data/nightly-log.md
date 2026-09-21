@@ -2602,3 +2602,65 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **131 companies done, 147
   report-periods published** (130/146 before this batch + 1). GE, DIS,
   CAT carry over to the next batch within this firing.
+
+- Batch 8 (~00:0x JST, same firing): dispatched GE and DIS, the next
+  two tickers from the third `next-batch` round.
+- Tier worked: **2-hot-list** (continued).
+- Published:
+  - **GE** (GE Aerospace) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-07-16, accession 0000040545-26-000049):
+    https://financial-reports-web.vercel.app/reports/cmubdou2k000104l7pnic4eiz
+    Revenue +21.1% to $13,349M on services +23.6% (internal shop-visit
+    revenue +25%, spare parts +25%) and commercial engine shipments +25.5%
+    to 659 units (LEAP +24.4%). GAAP profit margin fell 70bps to 21.0%
+    (non-GAAP operating margin -130bps to 21.7%) because low-margin
+    new-engine deliveries — the 10-Q names "install engine growth
+    (including GE9X), investments, and inflation" — outgrew services;
+    the margin decline is the cost of backlog growth, not cost
+    deterioration. Diluted continuing EPS +23% to $2.30 outran 17%
+    pre-tax profit growth on a lower 14.5% tax rate (OBBBA benefits) and
+    $2.0B of Q2 buybacks; GAAP EPS sits *above* adjusted EPS of $2.02
+    because run-off insurance (+$0.13), non-operating pension income
+    (+$0.13) and equity gains (+$0.05) are excluded from the adjusted
+    figure. Backlog (RPO) $210,790M, 85% contracted services. Full-year
+    guidance raised across the board: adjusted EPS to $7.65-7.85 from
+    $7.10-7.40, FCF to $8.9-9.2B from $8.0-8.4B. One flagged non-repeat:
+    2026 IEEPA tariff refunds plus a Q1 reversal of the prior-year
+    tariff charge flatter the YoY comparison. GE's first report on the
+    site.
+    Post-publish sanity check: cache-busted re-fetch, 100KB, Takeaway
+    callout, metrics tables and Source filing link present.
+  - Skipped: none this batch.
+- Running total after this batch: **132 companies done, 148
+  report-periods published** (131/147 before this batch + 1).
+  - **DIS** (Walt Disney Company) — **fiscal Q3 2026** (published as
+    year 2026, period Q3 — Disney's fiscal year ends early October, so
+    this quarter is the three months ended 2026-06-27, a 53-week
+    FY2026; 10-Q filed 2026-08-05, accession 0001744489-26-000057):
+    https://financial-reports-web.vercel.app/reports/cmubdptyk000404l89mindi02
+    Revenue +6.8% to $25,248M, total segment operating income +21.4% to
+    $5,555M (margin 19.3%->22.0%), but reported net income fell 49.9%
+    to $2,638M and diluted EPS fell 48.3% to $1.51 — almost entirely a
+    comp distortion: the year-ago quarter had a $3,277M non-cash tax
+    benefit from reclassifying Hulu for US tax purposes (prior-year
+    effective tax rate -85.1% vs 22.0% now), while this quarter absorbed
+    an $812M non-cash impairment of the A+E investment; adjusted EPS
+    rose 28% to $2.06. Entertainment SVOD (Disney+/Hulu on-demand)
+    operating income more than doubled to $712M on 11.3% revenue growth
+    (margin 6.6%->12.9%, subscription fees +~15% on 9pts of subscriber
+    growth) — Disney no longer discloses a Disney+ subscriber count.
+    Sports was the weak segment: operating income -17.3% to $858M
+    (missing its own ~14% decline guidance) on NBA-renewal programming
+    costs shifting into Q3, NBA playoff sweeps, and the unresolved NFL
+    Network/Comcast Xfinity carriage dispute. Experiences grew operating
+    income 19.9% to $3,017M (domestic parks +27% OI, 91% hotel
+    occupancy, new cruise ships) but international parks OI fell 13% on
+    Asia softness expected to persist into Q4. Guidance: FY2026 adjusted
+    EPS growth ~12% ex-53rd week (~16% including), Q4 segment OI ~$4.9B,
+    buybacks raised to at least $9B. DIS's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 81KB, Takeaway
+    callout, metrics/tables and Source filing link present.
+  - Skipped: none this batch.
+- Running total after this batch: **133 companies done, 149
+  report-periods published** (132/148 before this batch + 1). CAT
+  carries over to the next batch within this firing.
