@@ -3832,5 +3832,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "SBUX": {
+    "name": "Starbucks Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubjq9ek000004lbdkaa0iwu"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual)",
+      "estimate": "2026-11-14",
+      "basis": "prior-year annual cadence (FY2025 10-K filed 2025-11-14 for FY ended 2025-09-28)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }

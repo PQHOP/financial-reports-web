@@ -3064,3 +3064,40 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **145 companies done, 161
   report-periods published** (143/159 before this batch + 2). SBUX
   carries over to the next batch within this firing.
+
+- Batch 16 (~02:5x JST, same session): dispatched SBUX, the last ticker
+  from the fifth `next-batch` round, completing it.
+- Tier worked: **2-hot-list** (fifth round completed).
+- Published:
+  - **SBUX** (Starbucks) — **fiscal Q3 2026** (published as year 2026,
+    period Q3 — Starbucks' fiscal year ends late September/early
+    October, so this quarter is the 13 weeks ended 2026-06-28; 10-Q
+    filed 2026-07-29, accession 0000829224-26-000130):
+    https://financial-reports-web.vercel.app/reports/cmubjq9ek000004lbdkaa0iwu
+    Revenue fell 1.4% to $9,322.7M, but only because the China retail
+    business was deconsolidated mid-quarter when Boyu Capital took a 60%
+    stake (removing $776M of company-operated revenue and converting
+    7,991 stores to licensed). Underlying demand was the strongest of
+    the "Back to Starbucks" turnaround: global comps +7.9% with
+    transactions (+4.2%) leading ticket (+3.5%), North America comps
+    +8.1%. GAAP EPS $0.91 (+85.7%) is distorted both ways — a $0.47/share
+    divestiture gain offset by a $302.6M restructuring charge (mostly a
+    $217.4M Reserve/Roastery write-down) — so non-GAAP EPS $0.85 (+70%)
+    and non-GAAP operating margin 14.4% (+430bps vs GAAP's +60bps) are
+    the better read; a one-off IEEPA tariff refund covering three
+    quarters flattered product costs and drove ~1,370bps of Channel
+    Development's 700bps margin jump. FY2026 guidance raised: non-GAAP
+    EPS $2.55-$2.65, non-GAAP operating margin >11.0%, Q4 US comps
+    >=6.5%. SBUX's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, full article
+    through the closing "Source:" paragraph, both GFM tables, Takeaway
+    callout, metrics strip and Source filing link present, not
+    truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **146 companies done, 162
+  report-periods published** (145/161 before this batch + 1). This
+  clears the fifth `next-batch -- --n 5` round (MU, PYPL, BA, NKE, SBUX)
+  with zero skips — **10 new report-periods published this session**
+  (VZ, UBER, PLTR, COIN, INTC, MU, PYPL, BA, NKE, SBUX), plus T
+  backfilled into the tracker as already-live from a concurrent run.
+  Still comfortably inside the window (~03:00 JST, ~2h left).
