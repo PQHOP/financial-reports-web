@@ -2222,3 +2222,80 @@ the automated scheduled-task mechanism):
   the 05:00 JST window close is imminent (~28 min were left when this
   pair was dispatched, now essentially none) — next-in-line hot-list
   tickers carry over to the next firing.
+
+### 2026-09-21 night (23:00 JST 2026-09-21 → 05:00 JST 2026-09-22)
+
+- Mechanism: cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`) firing.
+- Pre-batch housekeeping: local `master` had again diverged from
+  `origin/master` (stale local ref one force-push behind, same pattern
+  as the 09-20 note) — confirmed no unique local commits beyond the old
+  history and reset local `master` to `origin/master`. `npm install`'s
+  `postinstall` (`prisma generate`) failed with a missing `DATABASE_URL`
+  (none set in this container, and none is needed for admin-publish per
+  CLAUDE.md's Stack notes) — worked around by exporting a dummy
+  `DATABASE_URL` for the one `npm install` call only; not persisted
+  anywhere. Discarded an unrelated `package-lock.json` diff (npm
+  regenerating lockfile `libc` metadata, not a real dependency change)
+  before this entry's commit.
+- Network check: `curl https://www.sec.gov/` without a `User-Agent`
+  returned 403 — this is SEC's normal block for a missing/generic user
+  agent (documented in CLAUDE.md), not a proxy/policy denial; retried
+  with the required `User-Agent` header and got a clean 200, confirming
+  network access is fine tonight.
+- `npm run scan-recent-filings` (tier 0): **0 fresh candidates** (all
+  10-K/10-Q filings in the last 7 days already `"done"`/`"skipped"` or
+  outside those two forms). Fell through to `npm run next-batch -- --n
+  5`, which returned the next five hot-list tickers: KO, PEP, CVX, WFC,
+  MRK.
+- Batch 1 (~23:2x–23:3x JST): **2 report-periods published, 2
+  companies.**
+- Tier worked: **2-hot-list.**
+- Published:
+  - **KO** (Coca-Cola Company) — **Q2 2026** (10-Q, period end
+    2026-07-03, filed 2026-07-29, accession 0001628280-26-050503):
+    https://financial-reports-web.vercel.app/reports/cmubc7lso000004jsb9gjpk61
+    Net operating revenues +7% to $13,380M (4pt concentrate volume, 2pt
+    price/mix, 2pt currency — an unusual FX *tailwind* on a weaker
+    dollar vs. the peso/real/euro/rand, adding 5pts to operating
+    income). Reported diluted EPS +16% to $1.03 but comparable EPS grew
+    only 11% ($0.97, 9% currency-neutral) — the gap is a $320M net gain
+    on equity/trading securities, a $66M African-bottling-impairment
+    reversal, and a lower 18.9% effective tax rate vs. 20.7% a year ago.
+    Asia Pacific: concentrate volume +11% but price/mix -9pts (revenue
+    +1%) on explicit "affordability initiatives" (smaller/cheaper
+    packs) driving unit-case growth of 13% in India, 8% in Greater
+    China; segment margin held at 44.1%. Guidance raised (organic
+    revenue to ~5%, comparable EPS to 9–10%, FCF to ~$12.4B). Largest
+    unresolved risk: the $6.0B IRS transfer-pricing deposit (Eleventh
+    Circuit appeal heard 2026-06-25; ~$14B further 2010–2025 exposure if
+    KO loses).
+    Post-publish sanity check: cache-busted re-fetch, 90KB, Takeaway
+    callout and Source filing link both present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **120 companies done, 136
+  report-periods published** (119/135 before this batch + 1).
+  - **PEP** (PepsiCo) — **Q2 FY2026** (10-Q, 12 weeks ended 2026-06-13,
+    filed 2026-07-09, accession 0000077476-26-000035):
+    https://financial-reports-web.vercel.app/reports/cmubc7t47000004jma7cw5thn
+    Headline reported operating profit +125% and diluted EPS +137% to
+    $2.18 are entirely a comp effect — Q2 2025 absorbed a $1,860M
+    Rockstar/Be & Cheery intangible impairment. On PepsiCo's own core
+    basis, operating profit and EPS both grew just 4% (core
+    constant-currency EPS +1%). Revenue +6.4% to $24,181M breaks down as
+    only +2.4pp organic, +2.2pp FX translation, +1.8pp acquisitions
+    (poppi); core operating margin contracted 40bps to 16.8%. North
+    America (56% of revenue) is the weak spot — PFNA revenue -2% on
+    negative net pricing, PBNA's headline +7% masks +1% organic with
+    unit volume -4% (CSD -3%, NCB -4%) — while Asia Pacific Foods
+    (volume +10%) and Latin America (+15% reported, but 11pts of that is
+    peso translation) carried the quarter. FY2026 guidance affirmed
+    unchanged (organic revenue +2–4%, core constant-currency EPS
+    +4–6%), which now implies a second-half acceleration since YTD core
+    constant-currency EPS is only +3%.
+    Post-publish sanity check: cache-busted re-fetch, 82KB, Takeaway
+    callout and Source filing link both present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **121 companies done, 137
+  report-periods published** (120/136 before this batch + 1). This
+  completes tonight's first hot-list batch (KO, PEP); CVX, WFC, MRK
+  carry over to the next batch within this firing.

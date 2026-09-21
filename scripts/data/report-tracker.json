@@ -2931,6 +2931,50 @@
     },
     "lastChecked": "2026-09-20"
   },
+  "KO": {
+    "name": "Coca-Cola Company (The)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubc7lso000004jsb9gjpk61"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-29; KO typically reports Q3 in late October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "PEP": {
+    "name": "PepsiCo",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubc7t47000004jma7cw5thn"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-13",
+      "filedAt": "2026-07-09"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-08",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-09; PEP typically reports Q3 in early October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
   "LLY": {
     "name": "Lilly (Eli)",
     "status": "done",
