@@ -2950,3 +2950,61 @@ the automated scheduled-task mechanism):
   rounds (this session continuing the same operating-window firing that
   produced batches 1-10 earlier). Still well inside the window (~02:35
   JST, ~2h25m left).
+
+- Batch 14 (~02:3x-02:4x JST, same session): ran `next-batch -- --n 5`
+  a fifth time: MU, PYPL, BA, NKE, SBUX (all hot-list, all fresh).
+  Dispatched MU and PYPL as the first pair.
+- Tier worked: **2-hot-list** (fifth round, started).
+- Published:
+  - **MU** (Micron Technology) — **fiscal Q3 FY2026** (published as year
+    2026, period Q3 — Micron's fiscal year ends early September, so
+    this quarter covers ~March-May 2026, period end 2026-05-28; 10-Q
+    filed 2026-06-25, accession 0000723125-26-000015):
+    https://financial-reports-web.vercel.app/reports/cmubjaoux000404l9phcbzmwt
+    Revenue $41,456M, +346% YoY from $9,301M, operating margin 80.4%
+    (vs 23.3%), diluted EPS $24.67 (vs $1.68) — the MD&A frames it
+    explicitly as a pricing event, not a volume boom: DRAM ASPs up
+    "low-260% range" on only a "low-20% range" bit-shipment increase,
+    NAND ASPs up "mid-310%" on low-double-digit bits, so cost of goods
+    sold rose only 10% against quadrupled revenue. Mobile and Client
+    revenue +254% at an 86% operating margin on *lower* bit shipments —
+    supply reallocated to data center. New multi-year take-or-pay
+    strategic customer agreements trade cycle upside for a floor: the
+    10-Q states the largest agreements' ceiling price "approximates the
+    market price in the second calendar quarter of 2026" — the quarter
+    just reported — against only ~$5B of disclosed remaining
+    performance obligations. $9.38B of 9-month debt prepayment vs just
+    $650M of buyback; structural tax-rate step-up to 15.0% from
+    Singapore's Pillar Two enactment. FQ4 guidance: $50.0B ±$1.0B
+    revenue, ~86% gross margin, $30.73 ±$1.00 GAAP EPS. MU's first
+    report on the site.
+    Post-publish sanity check: cache-busted re-fetch, metrics strip, all
+    four GFM tables, Takeaway callout, Source filing link and final
+    paragraph all present, not truncated.
+  - **PYPL** (PayPal) — **Q2 2026** (10-Q, period end 2026-06-30, filed
+    2026-07-28, accession 0001633917-26-000082):
+    https://financial-reports-web.vercel.app/reports/cmubjafse000004jn3nelxhuk
+    Total payment volume +10% to $486.4B but net revenues only +4.8% to
+    $8,682M (3% currency-neutral); GAAP operating income -5.1% to
+    $1,427M (margin -171bps to 16.4%), net income -12.5% to $1,104M,
+    diluted EPS -3.1% to $1.25. Take rate compressed 1.869%->1.785%
+    (-8.4bps) as mix shifted to lower-rate Braintree processing while
+    branded PayPal product revenue fell ~$130M on lower co-marketing and
+    FX fee revenue; transaction expense rate ticked up to 0.90% on
+    unfavorable funding mix, squeezing transaction margin dollars to
+    just +1.5% growth on 10% volume growth. Three distortions flagged:
+    an $80M FX tailwind (~20% of the revenue increase), a $27M credit
+    reserve release masking net charge-offs that rose to $101M (rate
+    4.8% vs 3.6%), and a 9.7% lower diluted share count converting a
+    12.5% net income decline into just a 3.1% EPS decline. FY26
+    non-GAAP EPS guidance raised to ~$5.38; the April 2026
+    reorganization's $1.5B run-rate savings target is still almost
+    entirely ahead ($44M of charges booked so far). PYPL's first report
+    on the site.
+    Post-publish sanity check: cache-busted re-fetch, full 14-row
+    metrics table, Takeaway callout, guidance section and source-filing
+    line all present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **143 companies done, 159
+  report-periods published** (141/157 before this batch + 2). BA, NKE,
+  SBUX carry over to the next batch within this firing.

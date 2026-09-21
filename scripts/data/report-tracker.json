@@ -3744,5 +3744,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "MU": {
+    "name": "Micron Technology, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubjaoux000404l9phcbzmwt"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-05-28",
+      "filedAt": "2026-06-25"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual)",
+      "estimate": "2026-10-02",
+      "basis": "Micron's fiscal year ends early September; prior FY2025 10-K was filed 2025-10-03",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "PYPL": {
+    "name": "PayPal Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubjafse000004jn3nelxhuk"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "~91-day cadence from Q2 filing (filed 2026-07-28)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }
