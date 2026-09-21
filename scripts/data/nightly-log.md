@@ -2764,3 +2764,75 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **136 companies done, 152
   report-periods published** (135/151 before this batch + 1). T, VZ,
   UBER carry over to the next batch within this firing.
+
+- Batch 11 (~01:1x JST, this session — a fresh session picked up this
+  same firing's in-progress state from disk: local `master` had again
+  gone detached/diverged from `origin/master`, confirmed no unique local
+  commits beyond the shared history and reset to `origin/master`, which
+  matched HEAD exactly (`dbb8119`) — no data lost). Network check: bare
+  `curl https://www.sec.gov/` (no `User-Agent`) returned SEC's own
+  "Request Rate Threshold Exceeded" 403 (Akamai-served, confirmed via
+  the proxy status endpoint showing zero relay failures, i.e. the
+  request reached SEC) — not a proxy/policy denial; retried with the
+  required `User-Agent` header and got a clean 200. `scan-recent-filings`
+  (tier 0): 0 fresh candidates. `next-batch -- --n 6` returned T, VZ,
+  UBER, PLTR, COIN, INTC (T/VZ/UBER carrying over as expected, plus 3
+  new). Dispatched T and VZ in parallel.
+- Tier worked: **2-hot-list** (fourth round, continued).
+- Published:
+  - **VZ** (Verizon) — **Q2 2026** (10-Q, period end 2026-06-30, filed
+    2026-07-31, accession 0000732712-26-000046):
+    https://financial-reports-web.vercel.app/reports/cmubimcf0000004l9qh092k6n
+    Reported revenue -0.7% to $34,253M, operating income -12.2%, diluted
+    EPS -22.0% to $0.92 — driven almost entirely by $1,810M of pre-tax
+    special items ($0.38/sh after tax, vs $192M a year ago), principally
+    a $746M non-deductible write-down on the international wireline
+    business being contributed to a BT joint venture plus $397M of fresh
+    severance; ex-items adjusted EPS actually rose 6.6% to $1.30. The
+    3.5% service-revenue growth cited to validate the strategy is
+    smaller than Frontier's contribution alone: fiber broadband revenue
+    rose $712M "primarily due to the inclusion of Frontier results"
+    while postpaid revenue fell $365M on promotional/acquisition-
+    discount amortization (184k postpaid phone net adds vs -9k, but
+    ARPA -1.4% — buying volume with price). FWA net adds fell 30.6%;
+    interest expense +21.1% on $25.4B higher average debt from the
+    $9.8B Frontier deal. Guidance raised for the second straight quarter
+    (adjusted EPS $4.99-$5.04, FCF growth 9-10%). VZ's first report on
+    the site.
+    Post-publish sanity check: cache-busted re-fetch, full body through
+    the final sentence, both GFM tables closed, Takeaway callout and
+    Source filing link present, not truncated.
+  - **T** (AT&T) — **no new report-period published.** The research
+    subagent independently found and read the same Q2 2026 10-Q (period
+    end 2026-06-30, filed 2026-07-22, accession 0000732717-26-000297)
+    but the admin form's own uniqueness check rejected the submission:
+    a complete AT&T Q2 2026 report already existed on the live site
+    (https://financial-reports-web.vercel.app/reports/cmube9nmp000204k0a2ky69ed,
+    published earlier today, 2026-09-21) — evidently from **a second,
+    concurrent firing of the nightly routine racing this one**, since
+    `report-tracker.json` had no `T` entry yet when this batch started
+    (confirmed by both this session's and the subagent's independent
+    read) and `origin/master` had not moved past `dbb8119` when this
+    batch began. The subagent verified the live report against its own
+    independently-read figures (revenue $31,558M, operating income
+    $7,038M, net income $4,627M, diluted EPS $0.66, adjusted EPS $0.65
+    vs $0.54) — they matched line-for-line, so the existing report is
+    correct and complete; left it as-is rather than overwriting via
+    `--edit`. **Flagging this race for the user/orchestration:** if two
+    sessions are firing on `trig_01GNdUY59Na4x3JxMr6p7mxK` concurrently
+    tonight, that wastes a research pass per duplicate (as CLAUDE.md
+    warns) and risks a tracker/nightly-log write conflict — this session
+    could not check `RemoteTrigger` run history to confirm (tool not
+    available in this session's toolset) and proceeded carefully
+    (re-fetching `origin/master` before each commit) rather than
+    stopping outright, since AT&T's own report is intact and no data
+    was lost.
+    Backfilled the tracker entry for T (previously missing) using the
+    subagent's verified filing details, since a live-site report
+    existed but nothing had recorded it yet.
+- Skipped: none this batch (T needed no action — already covered).
+- Running total after this batch: **137 companies done** (136 + T
+  backfilled since it was already live but untracked), **153
+  report-periods published** (152 + VZ). PLTR, COIN, INTC carry over to
+  the next batch within this firing (UBER also still pending — see
+  below for whether the concurrent run touches it first).
