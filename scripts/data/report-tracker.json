@@ -3151,6 +3151,50 @@
     },
     "lastChecked": "2026-09-21"
   },
+  "INTU": {
+    "name": "Intuit",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubdgv37000304l8e717p0w7"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-09"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-20",
+      "basis": "Intuit's fiscal year ends Jul 31; Q1 FY2027 ends ~Oct 31 2026 with the 10-Q typically filed ~3 weeks later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "NOW": {
+    "name": "ServiceNow",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubdhyt6000105jnv2z2q5me"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-23; NOW typically reports Q3 in mid-to-late October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
   "LLY": {
     "name": "Lilly (Eli)",
     "status": "done",

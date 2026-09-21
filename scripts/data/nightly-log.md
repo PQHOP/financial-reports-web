@@ -2538,3 +2538,67 @@ the automated scheduled-task mechanism):
   clears the second `next-batch -- --n 5` round (CSCO, MCD, TMO, IBM,
   QCOM) with zero skips — 9 companies published so far tonight across
   two full rounds.
+
+- Batch 7 (~23:5x-00:0x JST, same firing): still well inside the
+  window, ran a third `next-batch -- --n 5` round: INTU, NOW, GE, DIS,
+  CAT (all hot-list, all fresh). Dispatched INTU and NOW as the first
+  pair.
+- Tier worked: **2-hot-list** (third round, started).
+- Published:
+  - **INTU** (Intuit) — **FY2026 ANNUAL** (10-K, fiscal year ended
+    2026-07-31 — Intuit's fiscal year covers the whole 2026 US
+    tax-filing season, not calendar 2026 — filed 2026-09-09, accession
+    0000896878-26-000037):
+    https://financial-reports-web.vercel.app/reports/cmubdgv37000304l8e717p0w7
+    Revenue +13.9% to $21,448M, operating income +19.5% to $5,884M
+    (margin 27.4% vs 26.1%), net income +18.0% to $4,566M, diluted EPS
+    +20.4% to $16.46. Growth came from monetization, not expansion:
+    Online Ecosystem ARPC +15% while paying customers grew only 3%, and
+    TurboTax revenue +7% while filing 2% *fewer* federal returns (39.0M
+    vs 39.9M) — offset by TurboTax Live growing 37% to 53% of TurboTax
+    revenue. Mailchimp becomes a separate reportable segment from
+    2026-08-01; restated, it subtracts 8pts from Online Services growth
+    (+16% reported vs +24% ex-Mailchimp), with FY2027 Mailchimp guided
+    to -1% to 0%. $8.8B operating cash flow (+42%) was boosted by OBBBA
+    R&D expensing cutting cash taxes; $293M of 2026 Plan restructuring
+    suppressed reported operating income (~25% growth ex-restructuring).
+    FY2027 guidance: revenue decelerating to +9-10% (TurboTax only
+    +2-3%) but operating income +26-27%; non-GAAP EPS will stop
+    excluding stock comp from 2026-08-01, so FY2027 non-GAAP EPS will
+    look like a decline against FY2026's $24.27 despite real growth.
+    INTU's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 90KB, Takeaway
+    callout, metrics tables and Source filing link present.
+  - Skipped: none this batch.
+- Running total after this batch: **130 companies done, 146
+  report-periods published** (129/145 before this batch + 1).
+  - **NOW** (ServiceNow) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-07-23, accession 0001373715-26-000076):
+    https://financial-reports-web.vercel.app/reports/cmubdhyt6000105jnv2z2q5me
+    Revenue +24.0% to $3,987M (subscription $3,877M, +24.5%) but GAAP
+    operating income fell 54.7% to $162M (margin 4.1% vs 11.1%) — the
+    entire $196M swing traces to acquisition accounting and comp:
+    purchased-intangible amortization $25M->$219M, deal costs
+    $14M->$75M, severance $29M->$62M, stock comp $499M->$655M, against
+    a non-repeating $30M prior-year impairment; non-GAAP operating
+    margin was essentially flat (29.4% vs 29.7%). Driver: $8.8B of
+    security M&A in H1 2026 (Armis $7.6B closed 2026-04-20, Veza $1.2B
+    closed 2026-03-02), funded by a $4.0B term loan refinanced into
+    $4.0B of senior notes plus $2.1B commercial paper, flipping net
+    interest from a $110M quarterly tailwind to $4M. Subscription gross
+    margin fell from 80% to 73%, roughly half from non-amortization
+    hosting cost (third-party cloud spend +$63M) that management guides
+    to persist (FY26 guided to 75%). Demand looks intact: cRPO $13.20B
+    and RPO $29.0B both +21%, $5M+ ACV customers +23.5% to 658, renewal
+    rate steady at 98% — though $149M of upfront self-hosted revenue and
+    pulled-forward US Federal on-premise revenue flattered the quarter,
+    and $273M of unrealized strategic-investment gains (excluded from
+    non-GAAP) propped up GAAP net income. FY2026 subscription revenue
+    guidance raised to $15,760-15,780M (+22.5%). NOW's first report on
+    the site.
+    Post-publish sanity check: cache-busted re-fetch, 76KB, metrics
+    strip and Source filing link present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **131 companies done, 147
+  report-periods published** (130/146 before this batch + 1). GE, DIS,
+  CAT carry over to the next batch within this firing.
