@@ -3898,5 +3898,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "PFE": {
+    "name": "Pfizer Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubk3lza000104jg3hjv6e79"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~91-day cadence from Q2 filing (filed 2026-08-04)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "GILD": {
+    "name": "Gilead Sciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubk399k000004l94xpoqswa"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~91-day cadence from Q2 filing (filed 2026-08-06)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }

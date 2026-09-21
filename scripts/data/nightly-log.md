@@ -3155,3 +3155,58 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **148 companies done, 164
   report-periods published** (146/162 before this batch + 2). PFE,
   GILD, BKNG carry over to the next batch within this firing.
+
+- Batch 18 (~03:0x-03:1x JST, same session): dispatched PFE and GILD,
+  the next two tickers from the sixth `next-batch` round.
+- Tier worked: **2-hot-list** (continued).
+- Published:
+  - **PFE** (Pfizer) — **Q2 2026** (10-Q, period end 2026-06-28, filed
+    2026-08-04, accession 0000078003-26-000095):
+    https://financial-reports-web.vercel.app/reports/cmubk3lza000104jg3hjv6e79
+    GAAP net loss $248M (vs $2,910M profit) driven entirely below the
+    operating line: a $4.3B intangible impairment ($3.8B sigvotatug
+    vedotin IPR&D from the Seagen deal after failed Phase 3 results,
+    $525M Oxbryta after the FDA path closed in July 2026) plus $842M of
+    legal charges, roughly two-thirds offset by a one-time $1.87B gain
+    on the ViiV stake sale — adjusted diluted EPS essentially flat at
+    $0.77 vs $0.78. Revenue +2.6% to $15,034M but only ~1% operationally
+    (FX contributed $217M of the $381M increase); COVID products fell to
+    $282M combined (Paxlovid $21M globally, zero in the US), so the rest
+    of the portfolio grew ~6.6% reported / 5% operationally. Eliquis's
+    +19% operational growth is driven by US net price/lower rebates
+    rather than volume; Padcev's +23% is understated by a prior-year
+    wholesaler-transition benefit; Comirnaty's -34% is partly an
+    accounting returns-provision comp. FY2026 revenue guidance raised
+    $500M at the midpoint to $60.5-62.5B; adjusted EPS reaffirmed
+    $2.80-3.00 while absorbing ~$0.10 of Innovent dilution. PFE's first
+    report on the site.
+    Post-publish sanity check: cache-busted re-fetch, ~66KB, Takeaway
+    callout, both tables, guidance section and Source filing link
+    present, not truncated.
+  - **GILD** (Gilead Sciences) — **Q2 2026** (10-Q, period end
+    2026-06-30, filed 2026-08-06, accession 0000882095-26-000031):
+    https://financial-reports-web.vercel.app/reports/cmubk399k000004l94xpoqswa
+    Revenue +10.2% to $7,803M (product sales +8.1%), HIV franchise
+    $5,693M (+12%) — Biktarvy $3,772M (+7%), Descovy $967M (+48%), the
+    new Yeztugo/lenacapavir PrEP launch $232M vs $15M — plus Trodelvy
+    $457M (+26%). Despite that, net loss of $10,496M, diluted EPS
+    $(8.45) (vs +$1,960M/$1.56), caused by $11,183M of acquired-IPR&D
+    expense (Arcellx $7.0B, Tubulis $3.1B, Ouro Medicines $1.0B net of
+    Lakefront's $860M) and a $1,750M impairment after EVOKE-03 was
+    discontinued; non-GAAP EPS $(6.75). Biktarvy's growth is partly
+    price, wholesaler inventory build and cannibalization of Genvoya
+    (-23%) and Odefsey (-20%); ~$560M of the R&D/SG&A increase is
+    one-off acquisition stock comp; (2.4)% effective tax rate reflects
+    non-deductible IPR&D. FY2026 ex-Veklury product sales guidance
+    raised to $29.8-30.1B while GAAP EPS guidance cut to
+    $(3.75)-$(3.40); cash and marketable securities fell from $10.6B to
+    $3.2B. GILD's first report on the site (netIncomeYoyPct/epsYoyPct
+    omitted as not meaningful — profit-to-loss swing, matching the
+    filing's own "n.m." labeling).
+    Post-publish sanity check: cache-busted re-fetch, metrics table,
+    Takeaway callout, guidance table and Source filing link present,
+    not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **150 companies done, 166
+  report-periods published** (148/164 before this batch + 2). BKNG
+  carries over to the next batch within this firing.
