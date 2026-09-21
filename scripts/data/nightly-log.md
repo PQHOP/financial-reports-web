@@ -2503,3 +2503,38 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **128 companies done, 144
   report-periods published** (127/143 before this batch + 1). QCOM
   carries over to the next batch within this firing.
+
+- Batch 6 (~23:5x JST, same firing): dispatched QCOM, the last ticker
+  from the second `next-batch` round, completing it.
+- Tier worked: **2-hot-list** (second round completed).
+- Published:
+  - **QCOM** (Qualcomm) — **fiscal Q3 FY2026** (published as year 2026,
+    period Q3 — Qualcomm's fiscal year ends late September, so this
+    quarter covers ~April-June 2026, period end 2026-06-28; 10-Q filed
+    2026-07-29, accession 0000804328-26-000086):
+    https://financial-reports-web.vercel.app/reports/cmubd9uc9000004l7cw40fyp5
+    Revenue -4.0% to $9,947M but operating income -41.1% to $1,626M
+    (margin 16.3% vs 26.6%) — handset chipset revenue fell 19.6%
+    (-$1,242M), which the MD&A attributes specifically to customers
+    cutting build plans due to third-party memory supply constraints
+    and price increases, not lost sockets. Gross margin fell to 53.0%
+    from 55.6% on broad semiconductor input-cost inflation. Automotive
+    grew 61.4% to $1,588M (23rd straight double-digit quarter) and IoT
+    +8.9%, so automotive+IoT are now 40.2% of QCT revenue vs 29.6% —
+    but their combined $753M of growth replaced only ~3/5 of the
+    handset shortfall. $726M of net gains on marketable securities
+    (QSI-investment IPO gains) cushioned GAAP EPS to only -23% ($1.87);
+    excluding QSI, reportable-segment pre-tax profit fell 15%. 9-month
+    net income looks up (+43%) only due to a one-time $5.7B tax
+    valuation-allowance release (9-month operating income actually fell
+    22.6%). Q4 FY2026 guidance of $9.7-10.5B implies ~10% YoY decline
+    vs $11.27B in Q4 FY2025 — the decline is set to deepen. QCOM's
+    first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 94KB, both
+    Takeaway callouts, figures strip and Source filing link present.
+  - Skipped: none this batch.
+- Running total after this batch: **129 companies done, 145
+  report-periods published** (128/144 before this batch + 1). This
+  clears the second `next-batch -- --n 5` round (CSCO, MCD, TMO, IBM,
+  QCOM) with zero skips — 9 companies published so far tonight across
+  two full rounds.

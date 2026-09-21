@@ -3129,6 +3129,28 @@
     },
     "lastChecked": "2026-09-21"
   },
+  "QCOM": {
+    "name": "Qualcomm",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubd9uc9000004l7cw40fyp5"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-11-05",
+      "basis": "fiscal year ends late September (2026-09-27); prior-year 10-K filed 2025-11-05, ~5.5 weeks after fiscal year end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
   "LLY": {
     "name": "Lilly (Eli)",
     "status": "done",
