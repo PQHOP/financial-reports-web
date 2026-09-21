@@ -3246,3 +3246,65 @@ the automated scheduled-task mechanism):
   session** (VZ, UBER, PLTR, COIN, INTC, MU, PYPL, BA, NKE, SBUX, LOW,
   TGT, PFE, GILD, BKNG), plus T backfilled as already-live from a
   concurrent run. Still inside the window (~03:20 JST, ~1h40m left).
+
+- Batch 20 (~03:1x JST, same session): sent a push notification to the
+  user summarizing tonight's progress and flagging the AT&T concurrent-
+  firing race as worth a look. Then ran `next-batch -- --n 5` a seventh
+  time: DASH, PANW, CRWD, LRCX, KLAC (all hot-list, all fresh).
+  Dispatched DASH and PANW as the first pair.
+- Tier worked: **2-hot-list** (seventh round, started).
+- Published:
+  - **DASH** (DoorDash) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-05, accession 0001792789-26-000050):
+    https://financial-reports-web.vercel.app/reports/cmubkeslh000104l9nwjxsbt7
+    Revenue +35.6% to $4,454M, Marketplace GOV +36.4% to $33,078M on
+    970M Total Orders (+27.5%) at a flat 13.5% take rate, but GAAP net
+    income fell 29.8% to $200M and diluted EPS to $0.46 — income from
+    operations only fell $7M, with nearly all of the profit decline
+    sitting below the operating line in prior-year one-offs (a
+    deal-contingent FX hedge gain and a one-time valuation-allowance tax
+    benefit) plus lower interest income. Roughly a third of reported
+    growth is inorganic — Deliveroo closed 2025-10-02 for $3,724M and is
+    absent from the Q2 2025 base; management's own ex-Deliveroo rates
+    are orders +17%, GOV +23%, revenue +24%. Acquired-intangible
+    amortization (+$82M), a 52% R&D increase and a $108M jump in
+    legal/tax/regulatory costs consumed the operating leverage. Q3 2026
+    guidance: GOV $33.0-34.0B, Adjusted EBITDA $950M-$1.10B (roughly
+    flat sequentially) — management's view is Q3 is the last quarter the
+    Deliveroo comparison flatters growth. Free cash flow $742M (vs
+    $355M), $6.2B cash/investments. DASH's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 3 GFM tables,
+    Takeaway callout, Source filing link and figures strip present, not
+    truncated.
+  - **PANW** (Palo Alto Networks) — **FY2026 ANNUAL** (10-K, fiscal year
+    ended 2026-07-31 — Palo Alto's fiscal year is not calendar 2026, but
+    FY2026 results are already fully out, so this qualifies as the
+    "ANNUAL" 2026 report; filed 2026-09-10, accession
+    0001327567-26-000023):
+    https://financial-reports-web.vercel.app/reports/cmubkfkh2000204l9a99gk5fw
+    Revenue +24.5% to $11.48B, but GAAP operating income fell 44% to
+    $695M (6.1% margin) and diluted EPS fell 75% to $0.40 — almost
+    entirely the accounting consequence of ~$24.5B of acquisitions, led
+    by the $21.1B CyberArk deal that closed 2026-02-11. Note 6 discloses
+    CyberArk and Chronosphere contributed $930M of revenue and a $797M
+    operating loss, implying the pre-existing business grew only ~14%
+    (management's own pro forma table shows 17% like-for-like growth
+    with a net loss in both years) — so the headline acceleration and
+    the 63% jump in NGS ARR to $9.1B are largely purchased rather than
+    produced. GAAP decline traces to $638M of acquired-intangible
+    amortization, $1,815M of stock comp (15.8% of revenue), a doubled
+    G&A line, and a $562M non-cash mark-to-market loss on CyberArk's
+    assumed 2030 convertible notes that rises when PANW's own share
+    price rises (also pushing the effective tax rate to 42.7%), against
+    $4,414M of adjusted free cash flow. FY27 guidance: revenue
+    $14.10-14.20B, NGS ARR $11.075-11.175B (only 22-23% once CyberArk is
+    in both sides of the comparison), non-GAAP op margin 29.5%. $22B of
+    goodwill now ~60% of total assets flagged as the main risk. PANW's
+    first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, metrics table,
+    Takeaway callout, guidance section and Source filing link present,
+    not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **153 companies done, 169
+  report-periods published** (151/167 before this batch + 2). CRWD,
+  LRCX, KLAC carry over to the next batch within this firing.

@@ -3964,5 +3964,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "DASH": {
+    "name": "DoorDash, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubkeslh000104l9nwjxsbt7"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~91-day cadence from Q2 filing (filed 2026-08-05)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "PANW": {
+    "name": "Palo Alto Networks, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubkfkh2000204l9a99gk5fw"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "estimate": "2026-11-25",
+      "basis": "prior-year filing cadence after fiscal year-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }
