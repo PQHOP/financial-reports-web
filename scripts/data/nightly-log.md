@@ -2700,3 +2700,67 @@ the automated scheduled-task mechanism):
   window (00:12 JST, ~4h48m left) with no signs yet of the account's
   5-hour session limit. Continuing with a fourth round since research
   quality is holding and there's no signal to stop.
+
+- Batch 10 (~00:1x JST, same firing): ran `next-batch -- --n 5` a fourth
+  time: GS, MS, T, VZ, UBER. Dispatched GS and MS as the first pair —
+  both required careful company-name disambiguation, since the admin
+  dropdown has several unrelated same-name-prefix entries (Goldman
+  Sachs BDC / STRATS trust; several Morgan Stanley closed-end funds).
+  Both subagents verified they published against the correct ticker.
+- Tier worked: **2-hot-list** (fourth round, started).
+- Published:
+  - **GS** (Goldman Sachs) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-03, accession 0000886982-26-000297):
+    https://financial-reports-web.vercel.app/reports/cmube1sg6000604l8pbkchyqy
+    Net revenues +39.5% to $20.34B, net earnings +78.0% to $6.63B,
+    diluted EPS +92.3% to $20.98, annualized ROE 23.5% vs 12.8%. Global
+    Banking & Markets drove nearly all of it ($15.52B, +53%): Equities
+    $7.42B (+72%, prime financing +91% into a 15% S&P 500 rally),
+    investment banking fees $3.40B (+55%, equity underwriting more than
+    doubled, advisory only +17%). Quality-of-earnings flags: the
+    prior-year quarter carried $384M of credit-card provisions vs $102M
+    this year (~6pts of profit growth); FICC gains are management's own
+    "improved market-making conditions on our inventory," not client
+    flow; AWM's Investments line tripled on private-equity marks;
+    Platform Solutions fell 64% on Apple Card markdowns against a
+    $19.5B held-for-sale book being transitioned to another issuer. H1's
+    18.5% effective tax rate was flattered by ~$965M of share-based-
+    award benefits, but Q2's own rate was a clean 22.6% so the quarter's
+    EPS isn't inflated by it. Quarterly dividend raised to $5.00 from
+    $4.50 (2026-07-13). GS's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 66KB, figures
+    strip matches body table exactly, Takeaway callout and Source
+    filing link present.
+  - Skipped: none this batch.
+- Running total after this batch: **135 companies done, 151
+  report-periods published** (134/150 before this batch + 1).
+  - **MS** (Morgan Stanley) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-04, accession 0000895421-26-000212):
+    https://financial-reports-web.vercel.app/reports/cmube3ak4000204l7d7jbfocc
+    Net revenues +27% to $21,348M, net income applicable to MS +58% to
+    $5,581M (diluted EPS $3.46 vs $2.13, +62%), ROTCE 26.6%, expense
+    efficiency ratio improved to 65% from 71%. Growth is narrow:
+    Institutional Securities supplied $3,397M of the $4,556M revenue
+    increase, driven by equity trading +69% to $6,300M (mostly Asia,
+    +71% regionally) plus investment banking +58% to $2,437M on
+    completed M&A and IPO/convertible issuance. Two comp effects
+    flagged: the prior-year quarter had a $377M DCP mark-to-market gain
+    no longer routed through revenue (comparable growth is 30%, not
+    27%, by the firm's own disclosure), and Wealth Management's
+    headline $148.1B of net new assets is over half Workplace-channel
+    IPO vesting inflows — the cleaner fee-based flow measure actually
+    *fell* to $39.1B from $42.8B. Investment Management AUM +17% to
+    $2,004B but revenue only +6% as blended fee rate compressed to
+    28bps from 31bps on mix shift into lower-fee Parametric products
+    ($13B of equity net outflows). CET1 14.9% vs 11.8% requirement,
+    dividend raised to $1.15 from $1.00, $1.5B of buybacks; SLR fell to
+    4.9% from 5.4% as total assets grew 18% in six months to $1,675B.
+    MS's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 83KB, confirmed
+    correct company (`/companies/ms`, tickerSymbol MS — not any of the
+    similarly-named funds), Takeaway callout and Source filing link
+    present.
+  - Skipped: none this batch.
+- Running total after this batch: **136 companies done, 152
+  report-periods published** (135/151 before this batch + 1). T, VZ,
+  UBER carry over to the next batch within this firing.
