@@ -3008,3 +3008,59 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **143 companies done, 159
   report-periods published** (141/157 before this batch + 2). BA, NKE,
   SBUX carry over to the next batch within this firing.
+
+- Batch 15 (~02:4x JST, same session): dispatched BA and NKE, the next
+  two tickers from the fifth `next-batch` round.
+- Tier worked: **2-hot-list** (continued).
+- Published:
+  - **BA** (Boeing) — **Q2 2026** (10-Q, period end 2026-06-30, filed
+    2026-07-28, accession 0001628280-26-050038):
+    https://financial-reports-web.vercel.app/reports/cmubji0rh000204jpntujfdf0
+    Revenue +8.0% to $24,560M, GAAP operating earnings $156M vs a
+    $176M loss a year ago — but $445M of that $332M swing is just the
+    absence of Q2 2025's DOJ charge; segment operating earnings only
+    moved $602M->$631M and core (non-GAAP) operating earnings were $1M.
+    Net loss narrowed to $444M ($0.67 diluted LPS) as $600M of quarterly
+    interest expense and a swing to non-operating pension expense offset
+    the operating gain. Commercial Airplanes delivered 171 aircraft (vs
+    150), nearly all growth from the 737 (129 vs 104, line transitioning
+    42->47/month) with ~40 uncertified 737-7/-10 still parked in
+    inventory; Defense swung to a $15M operating loss on a fresh $280M
+    VC-25B (Air Force One) reach-forward loss. H1 free cash flow
+    improved to -$823M from -$2,490M, driven by a $4.66B customer-advance
+    build against a $3.86B inventory build; total debt fell to $45.9B
+    from $54.1B, backlog a record $715.3B. BA's first report on the
+    site.
+    Post-publish sanity check: cache-busted re-fetch, metrics table,
+    Takeaway callout, Source filing link and closing sentence present,
+    not truncated.
+  - **NKE** (Nike) — **FY2026 ANNUAL** (10-K, fiscal year ended
+    2026-05-31 — Nike's fiscal year is not calendar 2026, but FY2026
+    results are already fully out, so this qualifies as the "ANNUAL"
+    2026 report; filed 2026-07-15, accession 0000320187-26-000088):
+    https://financial-reports-web.vercel.app/reports/cmubjik7y000304jpsu7mifjs
+    Revenue flat at $46,398M (+0.2% reported, -2% currency-neutral — FX
+    supplied the entire reported gain), gross margin +20bps to 42.9%,
+    EBIT +1.9% to $3,850M, but net income -3.4% to $3,108M and diluted
+    EPS -2.8% to $2.10 — not operational: pre-tax income was flat at
+    $3,900M and the entire EPS decline is the effective tax rate rising
+    17.1%->20.3% against a prior-year one-time non-cash deferred tax
+    benefit. A $986M IEEPA tariff recovery booked into Q4 cost of sales
+    ($965M to North America) largely offsets tariffs expensed earlier in
+    the year but distorts North America's +210bps margin/+14% EBIT
+    shape, with $684M still a receivable at year-end contributing to
+    operating cash flow falling 22% to $2,868M (below net income).
+    Deliberate channel remix: wholesale +6% to $27,453M vs Nike Direct
+    -6% to $17,720M (digital -12% cn). North America recovered (+5% cn)
+    while Greater China (-13% cn, EBIT -20%) and Converse (-32% cn, EBIT
+    $240M->$18M) deteriorated; management says both keep hurting through
+    fiscal 2027. Buybacks paused ($122M for the year, none in Q4). NKE's
+    first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, metrics/segment
+    tables, Takeaway callout, outlook section and closing sentence
+    present, not truncated (confirmed the page source's `$$` is React
+    Flight's escaping of a leading `$`, not a rendering defect).
+  - Skipped: none this batch.
+- Running total after this batch: **145 companies done, 161
+  report-periods published** (143/159 before this batch + 2). SBUX
+  carries over to the next batch within this firing.

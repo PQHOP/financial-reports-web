@@ -3788,5 +3788,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "BA": {
+    "name": "Boeing Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubji0rh000204jpntujfdf0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "~91-day cadence from Q2 filing (filed 2026-07-28)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
+  },
+  "NKE": {
+    "name": "Nike, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubjik7y000304jpsu7mifjs"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-07-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027, period end 2026-08-31)",
+      "estimate": "2026-10-01",
+      "basis": "prior-year filing cadence after fiscal year-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }
