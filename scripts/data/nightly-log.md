@@ -3210,3 +3210,39 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **150 companies done, 166
   report-periods published** (148/164 before this batch + 2). BKNG
   carries over to the next batch within this firing.
+
+- Batch 19 (~03:1x JST, same session): dispatched BKNG, the last ticker
+  from the sixth `next-batch` round, completing it.
+- Tier worked: **2-hot-list** (sixth round completed).
+- Published:
+  - **BKNG** (Booking Holdings) — **Q2 2026** (10-Q, period end
+    2026-06-30, filed 2026-08-04, accession 0001075531-26-000037):
+    https://financial-reports-web.vercel.app/reports/cmubk8dn8000204jg91kygmm8
+    Revenue +8.1% to $7,352M, operating income +11.1% to $2,500M
+    (margin 34.0%, +0.9pt), but net income +117.9% to $1,950M and
+    diluted EPS +130.0% to $2.53 — almost the entire EPS jump is a
+    $1.17B swing in "Other income (expense), net" from FX remeasurement
+    of Euro-denominated debt (a $180M gain vs a $989M loss), not
+    operations; stripping that line from both periods, pre-tax income
+    grew ~16%, not 132%. Room nights +5.3% to 325M (down from 6% in Q1)
+    on continued Middle East conflict impacts; gross bookings +9.0% to
+    $50,957M; take rate slipped to 14.4% from 14.5%. Margin gains came
+    from flat personnel expense (+0.5% despite 3% headcount growth) and
+    D&A -18.3%, while marketing grew faster than revenue (+10.8%) as SEO
+    traffic declines — flagged as the key structural cost risk. 25-for-1
+    stock split (2026-04-02, all per-share figures retroactively
+    adjusted); tax rate rose 18.9%->23.8% on BBB Act provisions; $7.8B of
+    H1 buybacks cut diluted shares 5.5%; raised ~$650M Transformation
+    Program savings target; new July 2026 FTC staff action against
+    Priceline noted. BKNG's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, headline, both
+    tables, Takeaway callout, Outlook section and Source filing link
+    present, not truncated.
+  - Skipped: none this batch.
+- Running total after this batch: **151 companies done, 167
+  report-periods published** (150/166 before this batch + 1). This
+  clears the sixth `next-batch -- --n 5` round (LOW, TGT, PFE, GILD,
+  BKNG) with zero skips — **15 new report-periods published this
+  session** (VZ, UBER, PLTR, COIN, INTC, MU, PYPL, BA, NKE, SBUX, LOW,
+  TGT, PFE, GILD, BKNG), plus T backfilled as already-live from a
+  concurrent run. Still inside the window (~03:20 JST, ~1h40m left).

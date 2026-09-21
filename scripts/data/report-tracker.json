@@ -3942,5 +3942,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "BKNG": {
+    "name": "Booking Holdings Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-21",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubk8dn8000204jg91kygmm8"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~91-day cadence from Q2 filing (filed 2026-08-04)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-21"
   }
 }
