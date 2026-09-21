@@ -3239,6 +3239,28 @@
     },
     "lastChecked": "2026-09-22"
   },
+  "CAT": {
+    "name": "Caterpillar Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmubdvggi000504l8svaisbr9"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~90 days after Q2 2026 10-Q filed 2026-08-05; CAT typically reports Q3 in early November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
   "LLY": {
     "name": "Lilly (Eli)",
     "status": "done",

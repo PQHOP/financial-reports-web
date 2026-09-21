@@ -2664,3 +2664,39 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **133 companies done, 149
   report-periods published** (132/148 before this batch + 1). CAT
   carries over to the next batch within this firing.
+
+- Batch 9 (~00:1x JST, same firing): dispatched CAT, the last ticker
+  from the third `next-batch` round, completing it.
+- Tier worked: **2-hot-list** (third round completed).
+- Published:
+  - **CAT** (Caterpillar) — **Q2 2026** (10-Q, period end 2026-06-30,
+    filed 2026-08-05, accession 0000018230-26-000046):
+    https://financial-reports-web.vercel.app/reports/cmubdvggi000504l8svaisbr9
+    Caterpillar's first $20B quarter — sales and revenues $20.543B,
+    +24% YoY ($3.1B volume, $595M price, only $199M currency); diluted
+    EPS $7.77 vs $4.62, profit $3.593B vs $2.179B. Reported operating
+    margin 20.9% (vs 17.3%) is flattered by a one-off **$392M of
+    expected IEEPA tariff recoveries** booked into cost of goods sold
+    after the Supreme Court's 2026-02-20 ruling struck down those
+    tariffs; excluding it, operating profit was ~$3.90B (+36%) on a
+    ~19.0% margin, with ~$2.2B of 2026 tariff cost still expected and no
+    further recoveries assumed in the H2 outlook. Construction
+    Industries drove the quarter (sales +35%, segment profit +57%,
+    margin 23.3% vs 20.1%), but **$1.9B of H1 sales went into dealer
+    inventory** (H1 dealer build $2.6B vs $0.2B last year), which
+    management expects to unwind with a $1.0B+ Q4 destock. Firm backlog
+    reached **$72.1B, up 92% from $37.5B a year ago** (+$9.4B QoQ,
+    largest increase in Power & Energy on data-centre-driven Power
+    Generation demand, +29%); full-year guidance set at mid-to-high-
+    teens revenue growth. CAT's first report on the site.
+    Post-publish sanity check: cache-busted re-fetch, 77KB, Takeaway
+    callout, metrics table and Source filing link present.
+  - Skipped: none this batch.
+- Running total after this batch: **134 companies done, 150
+  report-periods published** (133/149 before this batch + 1). This
+  clears the third `next-batch -- --n 5` round (INTU, NOW, GE, DIS,
+  CAT) with zero skips — **15 companies published so far tonight**
+  across three full rounds, still comfortably inside the operating
+  window (00:12 JST, ~4h48m left) with no signs yet of the account's
+  5-hour session limit. Continuing with a fourth round since research
+  quality is holding and there's no signal to stop.
