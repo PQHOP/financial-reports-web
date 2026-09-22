@@ -3489,3 +3489,70 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **163 companies done, 179
   report-periods published** (158/174 before this batch + 5).
+
+- Batch 4 (~23:4x JST, same firing): `npm run next-batch -- --n 5`
+  returned CMG, LULU, ISRG, SPGI, BLK. Note: the cached SEC
+  `company_tickers.json` initially looked wrong for BLK (an EDGAR
+  full-text company-name search for "blackrock inc" surfaced only a
+  stale/inactive CIK 1364742, "BlackRock Finance, Inc.", last filed
+  2024-08-06) — cross-checked by fetching `data.sec.gov/submissions/`
+  directly for the ticker-mapped CIK (2012383) and confirmed it *is*
+  the correct, currently-reporting "BlackRock, Inc." (ticker BLK, NYSE,
+  10-Q filed 2026-08-06) before dispatching the subagent, so the
+  research went to the right filer. Dispatched all 5 as parallel opus
+  subagents. All 5 succeeded; each independently re-verified live
+  before being marked done.
+- Tier worked: **2-hot-list**.
+- Published:
+  - **CMG** (Chipotle Mexican Grill) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-07-31): https://financial-reports-web.vercel.app/reports/cmucs94dl000304jvy9129qhx
+    Revenue +9.3% but operating income -6.0% and net income -7.5%
+    (diluted EPS flat only because buybacks cut shares 5.3%); the
+    filing's own revenue bridge shows 80% of the increase came from
+    restaurants not yet in the comp base versus 23% from comps, and
+    restaurant-level margin fell 2.2 points on beef/freight inflation
+    partly offset by menu pricing. Comps +2.2% split into +1.0%
+    transactions and +1.2% price, lapping a -4.0% comp a year ago.
+  - **LULU** (lululemon athletica) — Q2 2026 (fiscal Q2 FY2026, 10-Q,
+    period end 2026-08-02, filed 2026-09-03): https://financial-reports-web.vercel.app/reports/cmucs9mx1000404jve8lqjgdm
+    Reported gross margin rose 200bps, but the filing states 560bps of
+    that is $134.5M of IEEPA tariff refunds booked in COGS after the
+    Feb 2026 Supreme Court ruling — ex-refund, gross margin actually
+    fell ~360bps and operating margin was ~13.2%, not the reported
+    18.8%. Revenue -4.3%, Americas comps -12% on lower traffic,
+    conversion, and order value simultaneously; China Mainland comps
+    -8% constant-currency despite reported growth from FX and new
+    stores. New CEO Heidi O'Neill started Sept 8, 2026.
+  - **ISRG** (Intuitive Surgical) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-07-21): https://financial-reports-web.vercel.app/reports/cmucs8vnw000204la6957jfzn
+    Revenue +18.5%, operating margin +3.1pts to 33.6%, but roughly half
+    a point of that margin gain is a net ~$15M non-repeating tariff
+    credit (refunds of $35.9M against $20.8M of tariff costs charged
+    this quarter) that reverses once refunds stop. Procedure growth
+    (+15%) and system placements (+18%) both decelerated slightly
+    versus a year ago; China named as a specific soft spot on domestic
+    competition and a new national robotic-surgery price-cap framework.
+  - **SPGI** (S&P Global) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-07-28): https://financial-reports-web.vercel.app/reports/cmucsazaa000504jv5pq3fp1s
+    Revenue +10.4%, operating margin +2.4pts to 43.7%, but growth is
+    narrow — Ratings alone supplied ~76% of the operating-profit
+    increase, on bond-issuance volumes the filing itself flags as
+    partly a lap of a "low base" quarter a year ago; Market Intelligence
+    and Energy added almost nothing to profit growth. H1 EPS growth of
+    25.1% includes ~$0.59/share of one-time disposal gains (EDM/
+    thinkFolio, Centennial); ex those, H1 EPS growth is ~17%. Mobility
+    segment spun off effective July 1, 2026, breaking segment
+    comparability from Q3 onward.
+  - **BLK** (BlackRock) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-08-06): https://financial-reports-web.vercel.app/reports/cmucsbikq000604jvx3t4mbd3
+    Revenue +30.6%, AUM +22.5% to $15.345tn, but ~87% of the quarter's
+    $1.450tn AUM increase was market appreciation, not new client money
+    (net inflows were $191.7bn). The HPS Investment Partners acquisition
+    (closed July 1, 2025) added ~$230M of base fees and roughly doubled
+    intangible amortization; YTD GAAP margin expansion of 630bps is
+    materially inflated by a $538M non-cash contingent-consideration
+    fair-value gain tied to BLK's own share price (adjusted margin
+    expansion is a more honest +200bps).
+  - Skipped: none this batch.
+- Running total after this batch: **168 companies done, 184
+  report-periods published** (163/179 before this batch + 5).

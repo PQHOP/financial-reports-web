@@ -4228,5 +4228,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-22"
+  },
+  "CMG": {
+    "name": "Chipotle Mexican Grill, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucs94dl000304jvy9129qhx"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "LULU": {
+    "name": "lululemon athletica inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucs9mx1000404jve8lqjgdm"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-09-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2026)",
+      "estimate": "2026-12-03",
+      "basis": "fiscal year starts early Feb; prior quarterlies land roughly 90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "ISRG": {
+    "name": "Intuitive Surgical, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucs8vnw000204la6957jfzn"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-21",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "SPGI": {
+    "name": "S&P Global Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucsazaa000504jv5pq3fp1s"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "BLK": {
+    "name": "BlackRock, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucsbikq000604jvx3t4mbd3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
   }
 }
