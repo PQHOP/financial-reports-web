@@ -3697,3 +3697,70 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **178 companies done, 194
   report-periods published** (173/189 before this batch + 5).
+
+- Batch 7 (~01:3x JST 09-23, same firing): `npm run next-batch -- --n 5`
+  returned **RTX, HON, UPS, FDX, DE**. Dispatched all 5 as parallel opus
+  subagents, again with the already-published-duplicate check built into
+  each prompt. All 5 succeeded as genuinely new publishes — no duplicates
+  this round. Each independently re-verified its own live URL before
+  reporting success.
+- Tier worked: **2-hot-list**.
+- Published:
+  - **RTX** (RTX Corporation) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-23): https://financial-reports-web.vercel.app/reports/cmucwbnxw000004jta91u0loo
+    Sales +14.5% to $24.71B (~16% organic once 2025 Collins divestitures
+    are excluded), operating margin +150bps to 11.4%, GAAP EPS +28.7% to
+    $1.57 (flattered partly by the absence of a Q2 2025 Pratt & Whitney
+    bankruptcy charge, achieved despite a higher tax rate). Raytheon
+    segment led on Patriot/Standard Missile/AMRAAM demand — 2.4x
+    book-to-bill including $3.7B of Ukraine-bound Patriot GEM-T. Backlog
+    +22.5% to $289B. Pratt's GTF powder-metal matter took no new charge
+    this quarter; FY2026 guidance raised.
+  - **HON** (Honeywell) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-07-23): https://financial-reports-web.vercel.app/reports/cmucwdusv000504js0hw7hqay
+    Last quarter with Aerospace consolidated (HONA spin-off closed
+    2026-06-29, one day before quarter-end; Aerospace moves to
+    discontinued ops from Q3, alongside a 1-for-2 reverse split). Sales
+    +4.3% but the company's own bridge shows 0 points of volume growth —
+    all price. Reported diluted EPS +312% to $17.83 is almost entirely a
+    $6.6B non-cash gain on deconsolidating Quantinuum after its June IPO;
+    adjusted EPS actually *fell* 4% to $4.52 on $820M of separation costs.
+    Building Automation the standout (+9% organic, margin +90bps);
+    Process Automation & Technology fell 1% organically with margin down
+    180bps.
+  - **UPS** (United Parcel Service) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-08-05): https://financial-reports-web.vercel.app/reports/cmucwc4w8000404jsh0f0zaak
+    Revenue +7.6% to $22.83B but volume fell — global small-package ADV
+    -3.7% — with ~$1.0B of the revenue gain from fuel surcharges on
+    Middle East disruption, not growth. GAAP EPS -53% to $0.71 on ~$1.2B
+    of Driver Choice Program buyout/separation costs; adjusted EPS $1.76.
+    US Domestic adjusted margin actually expanded to 8.0% from 7.0% on a
+    3.3% volume decline, and the deliberate Amazon volume glide-down
+    "concluded during the quarter" per the filing. International margin
+    fell from 15.0% to 12.4% on higher charter costs and EMEA-to-US
+    de-minimis lane losses.
+  - **FDX** (FedEx) — **FY2026 ANNUAL** (10-K, fiscal year ended
+    2026-05-31, filed 2026-07-20): https://financial-reports-web.vercel.app/reports/cmucwdxrc000604js4m6e1pmk
+    Revenue +7.7% to $94.72B, diluted EPS +10.4% to $18.55 — growth was
+    price/mix (composite yield +6%) not volume (ADV +3%). Consolidated
+    operating margin fell 10bps to 5.8% despite the core Federal Express
+    segment expanding margin 70bps, because FedEx Freight's margin
+    collapsed to 7.0% from 16.7% on $492M of spin-off separation costs
+    (the Freight spin completed June 1, 2026). A $647M non-cash pension
+    mark-to-market gain supplied ~31% of the net income increase. FedEx
+    also changed its fiscal year end to December 31 — next filing is a
+    seven-month transition 10-K covering June-December 2026.
+  - **DE** (Deere & Company) — fiscal Q3 2026, filed as **2026 Q3** (10-Q,
+    quarter ended 2026-08-02, filed 2026-08-27): https://financial-reports-web.vercel.app/reports/cmucwf7nc000504l64a1lela1
+    Net income +7.0% to $1.379B and FY2026 guidance raised, but Production
+    & Precision Ag (the core large-ag business) sales fell 6%, implying
+    roughly an 11% shipment-volume drop once price and FX are backed out,
+    concentrated in Brazil and Europe. All consolidated growth came from
+    Small Ag & Turf (+12%) and Construction & Forestry (+18%), aided by a
+    non-repeatable $110M tariff refund. Financial Services is building
+    reserves against construction borrowers even as that segment carries
+    the earnings growth — flagged as undercutting management's "2026 is
+    the ag-cycle bottom" framing.
+  - Skipped: none this batch.
+- Running total after this batch: **183 companies done, 199
+  report-periods published** (178/194 before this batch + 5).

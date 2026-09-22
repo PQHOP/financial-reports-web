@@ -4558,5 +4558,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-23"
+  },
+  "RTX": {
+    "name": "RTX Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwbnxw000004jta91u0loo"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "HON": {
+    "name": "Honeywell Technologies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwdusv000504js0hw7hqay"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-23. Note: Aerospace segment spun off (HONA) 2026-06-29 and moves to discontinued operations starting Q3 2026, alongside a 1-for-2 reverse split effective the same date -- Q3 report will look structurally different (standalone ex-Aerospace)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "UPS": {
+    "name": "United Parcel Service",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwc4w8000404jsh0f0zaak"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "FDX": {
+    "name": "FedEx",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwdxrc000604js4m6e1pmk"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-07-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (transition report, June-December 2026)",
+      "estimate": "2027-02-20",
+      "basis": "FedEx changed its fiscal year end to December 31 (from May 31); next filing is a seven-month transition 10-K covering June-December 2026, estimated ~90 days after period end per typical annual-report cadence -- unconfirmed, first filing under the new fiscal calendar",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "DE": {
+    "name": "Deere & Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwf7nc000504l64a1lela1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-12-19",
+      "basis": "fiscal year ends late October; FY2026 Q3 (period end 2026-08-02) is the last quarter before the annual report; estimating based on typical ~7-week lag after fiscal year end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
   }
 }
