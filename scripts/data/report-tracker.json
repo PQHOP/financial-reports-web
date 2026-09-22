@@ -4668,5 +4668,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-23"
+  },
+  "SO": {
+    "name": "Southern Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwlui6000704js4naxpu6o"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "NEE": {
+    "name": "NextEra Energy, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwlcez000604l62n8s81rr"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-24",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "DUK": {
+    "name": "Duke Energy Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwnlf5000104jtym3j0lmw"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "SMCI": {
+    "name": "Supermicro",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwnk11000804js0mm53xxa"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "fiscal year ends June 30; estimating ~45 days after fiscal Q1 FY2027 quarter end (2026-09-30) per typical 10-Q cadence. Note: company had a history of delayed filings (FY2024 10-K + 2 10-Qs filed late together 2025-02-25) but FY2025 and FY2026 10-Ks both landed on schedule",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "ARM": {
+    "name": "Arm Holdings plc - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucwonl0000904js2rl6gjpe"
+    },
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-05-26"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (fiscal Q2 FY2027, quarter ended 2026-09-30)",
+      "estimate": "2026-11-05",
+      "basis": "foreign private issuer, fiscal year ends March 31, files 20-F annually plus 6-K quarterly earnings releases. A fiscal Q1 FY2027 6-K (quarter ended 2026-06-30, accession 0001973239-26-000114) with full financial statements already exists on EDGAR but was not used for this cycle since the FY2026 20-F satisfied the annual-report bar -- worth using for tier-2 backfill/freshness since it postdates the FY2026 20-F and shows operating margin compressing to 7.1%. Next 6-K (fiscal Q2 FY2027) estimated ~90 days after Q1's release",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
   }
 }

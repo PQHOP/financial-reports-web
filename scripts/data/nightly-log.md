@@ -3764,3 +3764,63 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **183 companies done, 199
   report-periods published** (178/194 before this batch + 5).
+
+- Batch 8 (~01:4x JST 09-23, same firing): `npm run next-batch -- --n 5`
+  returned **SO, NEE, DUK, SMCI, ARM**. Dispatched all 5 as parallel opus
+  subagents (SMCI and ARM flagged in their prompts as non-calendar-fiscal-
+  year / foreign-private-issuer cases needing extra EDGAR verification
+  before assuming period/form type). All 5 succeeded as genuinely new
+  publishes — no duplicates this round.
+- Tier worked: **2-hot-list**.
+- Published:
+  - **SO** (Southern Company) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-30): https://financial-reports-web.vercel.app/reports/cmucwlui6000704js4naxpu6o
+    Net income +33.4% to $1,174M on essentially flat revenue — operating
+    income rose only $12M, and the jump came from below the operating
+    line: non-repeat of a $129M prior-year debt-extinguishment loss, a
+    venture-fund mark swing, and a smaller tax valuation-allowance
+    charge. Adjusted EPS +22.8% to $1.13. Real demand story: weather-
+    adjusted commercial sales +7.4% (+10.9% at Georgia Power) on data
+    centers, ~16GW of large-load contracts ramping through 2028.
+  - **NEE** (NextEra Energy) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-24): https://financial-reports-web.vercel.app/reports/cmucwlcez000604l62n8s81rr
+    GAAP EPS +53% to $1.50, but ~two-thirds of the net income increase is
+    a mark-to-market swing on non-qualifying hedges; adjusted EPS +9.5%
+    to $1.15. FPL rate base and NEER's renewable backlog (up to ~35.1GW)
+    both genuinely growing; 2026 adjusted EPS guidance held at
+    $3.92-4.02. Dominion Energy merger filings went in July 15, close
+    expected 2H 2027.
+  - **DUK** (Duke Energy) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-08-04): https://financial-reports-web.vercel.app/reports/cmucwnlf5000104jtym3j0lmw
+    Adjusted EPS +14.4% to $1.43 driven by rate cases and riders (+$0.22)
+    against depreciation/interest drag (-$0.13); weather-normalized
+    retail sales +1.3%. Six-month capex +28.2% to $8.24B against
+    operating cash flow -15%, bridged by ~$5.3B of one-time asset-sale
+    proceeds (Brookfield's Florida Progress stake, Piedmont's Tennessee
+    gas business to Spire). 2026 guidance reaffirmed at $6.55-6.80.
+  - **SMCI** (Supermicro) — **FY2026 ANNUAL** (10-K, fiscal year ended
+    2026-06-30, filed 2026-08-31): https://financial-reports-web.vercel.app/reports/cmucwnk11000804js0mm53xxa
+    Revenue +77.8% to $39.06B, net income +112.7% to $2.23B, but
+    operations *consumed* $6.81B of cash (vs +$1.66B a year ago), funded
+    by $9.48B of new financing. Gross margin fell again to 10.8% on
+    deliberate price competition and lost vendor rebates. Largest
+    customer now 28.1% of net sales (from 20.9%). Internal controls over
+    financial reporting still not effective (one IT general-controls
+    weakness remaining after remediating three others); ongoing SEC/
+    SDNY/DOJ/BIS inquiries disclosed. Filing timeliness has normalized
+    after a 2025 delinquency episode.
+  - **ARM** (Arm Holdings) — **FY2026 ANNUAL** (20-F, fiscal year ended
+    2026-03-31, filed 2026-05-26): https://financial-reports-web.vercel.app/reports/cmucwonl0000904js2rl6gjpe
+    Revenue +22.8% to $4,920M, but 61% of the increase ($559M of $913M)
+    came from a single SoftBank-affiliate licensing/consulting
+    arrangement — third-party licence revenue actually fell 8.7%.
+    Royalty revenue (the arm's-length engine) +20.5% on better Armv9
+    rate-per-chip. R&D +34% for the new Arm AGI CPU cut operating margin
+    2.4pt to 18.3%; stock-based comp ($1,052M) exceeded GAAP operating
+    income ($900M). A newer Q1 FY2027 6-K (quarter ended 2026-06-30,
+    already on EDGAR) shows the margin squeeze intensifying to 7.1%
+    operating margin — flagged as a tier-2/freshness candidate since it
+    postdates this ANNUAL report.
+  - Skipped: none this batch.
+- Running total after this batch: **188 companies done, 204
+  report-periods published** (183/199 before this batch + 5).
