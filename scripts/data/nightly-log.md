@@ -3628,3 +3628,72 @@ the automated scheduled-task mechanism):
   trusting the subagent's independent re-derivation of the live report's
   figures (all 5 cross-checked clean against their own filing reads this
   batch) rather than re-publishing.
+
+- Batch 6 (~01:2x JST 09-23, same firing): `npm run next-batch -- --n 5`
+  returned **CMCSA, CVS, MDLZ, PM, LMT**. Dispatched all 5 as parallel
+  opus subagents, each explicitly instructed to check for an
+  already-published duplicate first (per the Batch 5 lesson above) before
+  treating a uniqueness rejection as a failure. All 5 genuinely published
+  new reports — no duplicates this round. Each independently re-verified
+  its own live URL (cache-busted fetch: metrics table, Takeaway callout,
+  Source filing link, no truncation) before reporting success.
+- Tier worked: **2-hot-list**.
+- Published:
+  - **CMCSA** (Comcast) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-07-23): https://financial-reports-web.vercel.app/reports/cmucw4h9w000204l6utioarty
+    Reported revenue -1.2% and diluted EPS -66.9% to $0.99, but both are
+    distorted by a $9.4B pre-tax Hulu gain in the year-ago quarter and the
+    since-completed Versant spin-off (Jan 2026) and Sky Germany sale (May
+    2026) — on a pro forma basis revenue was actually +4.7% while Adjusted
+    EBITDA fell 5.3%. Domestic broadband revenue -5.5% on lower average
+    rates plus continued (though slightly smaller) customer net losses,
+    offset by a record 448k wireless line adds. Peacock posted its first-
+    ever profitable quarter (+$189M EBITDA) but the quarter uniquely
+    stacked NBA playoffs and the FIFA World Cup. Buybacks paused pending
+    the announced NBCUniversal/Sky spin-off.
+  - **CVS** (CVS Health) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-08-05): https://financial-reports-web.vercel.app/reports/cmucw3tn0000304jszsubd1ah
+    Revenue +7.3% to $106.1B, GAAP diluted EPS $2.31 vs $0.80 — but ~56%
+    of the operating-income jump is the absence of prior-year one-offs
+    ($833M litigation charges, $471M Medicare Advantage reserve) plus a
+    tax rate falling from ~38.5% to ~24.7%. The durable improvement is
+    Aetna's medical benefit ratio down 250bps to 87.4% (~$647M of
+    underlying gain ex the reserve), though membership shrank 700K after
+    exiting individual exchanges. Retail same-store sales grew only 2.9%
+    despite 7.0% script growth, on reimbursement pressure. FY2026 guidance
+    raised to $6.84-7.04 GAAP EPS / $7.90-8.10 adjusted.
+  - **MDLZ** (Mondelez) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-07-28): https://financial-reports-web.vercel.app/reports/cmucw56s4000304l6qxla5ai9
+    Net revenue +4.1%, but net earnings +141.5% and diluted EPS +144.9%
+    to $1.20 are almost entirely an $827M mark-to-market gain on
+    commodity/FX derivatives (vs a $93M loss a year ago — a $920M swing
+    bigger than the entire operating-income increase) plus a lapped
+    pension charge and a lower tax rate. Adjusted EPS was flat at $0.73;
+    organic growth just 2.2%. Europe (36% of revenue) posted -3.5%
+    organic with negative pricing and margin down 3.8pt to 11.3%. Falling
+    cocoa costs are showing up as derivative gains now while COGS still
+    carries previously contracted higher prices.
+  - **PM** (Philip Morris International) — Q2 2026 (10-Q, period end
+    2026-06-30, filed 2026-07-24): https://financial-reports-web.vercel.app/reports/cmucw3orv000004jkdxyywpa8
+    Reported diluted EPS -7.7% to $1.80 purely on a $511M non-cash
+    impairment of a legacy Canadian equity stake (carrying value now just
+    $51M, so this drag is nearly exhausted); adjusted EPS +15.2% to
+    $2.20. Net revenue +10.4% (7.6% organic), operating margin +3.9pt to
+    40.5%, driven by 10% combustible pricing with volume that actually
+    grew 1.1%. Smoke-free products now 41.5% of revenue, but the U.S. is
+    the weak spot — ZYN shipment growth just 1.8% with flat consumer
+    offtake in a growing category, implying share loss.
+  - **LMT** (Lockheed Martin) — Q2 2026 (10-Q, period end 2026-06-28,
+    filed 2026-07-23): https://financial-reports-web.vercel.app/reports/cmucw5mui000404l65bbffghh
+    Diluted EPS $7.94 vs $1.46 (+444%) is almost entirely a comp
+    artifact: Q2 2025 carried $1,615M of reach-forward program losses
+    (classified Aeronautics, CMHP, TUHP) absent this quarter. Backing
+    those out, underlying sales growth was 6.2% and segment operating
+    margin 9.1% vs 8.7% — real but modest improvement. Backlog hit a
+    record $230.4B (+38.4%) on an undefinitized THAAD award. FY2026
+    guidance raised, but the $450M FCF raise comes entirely from a capex
+    cut (operating cash flow midpoint unchanged), and the sales-guidance
+    raise carries only ~2.5% incremental margin.
+  - Skipped: none this batch.
+- Running total after this batch: **178 companies done, 194
+  report-periods published** (173/189 before this batch + 5).
