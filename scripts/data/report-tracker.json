@@ -4030,5 +4030,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-22"
+  },
+  "CRWD": {
+    "name": "CrowdStrike Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrrun3000004la6jucr1mc"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027)",
+      "estimate": "2026-11-26",
+      "basis": "fiscal year ends Jan 31; quarterlies land roughly 90 days apart (this one filed 2026-08-27, ~90 days after fiscal Q1 10-Q on 2026-06-04)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "LRCX": {
+    "name": "Lam Research Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrrbbq000004lbompuk8ci"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "estimate": "2026-10-21",
+      "basis": "prior-year cadence: FY2026 Q1 10-Q filed 2025-10-22 after FY2025 10-K filed 2025-08-08",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "KLAC": {
+    "name": "KLA Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrs5fs000204lbvnperwow"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "estimate": "2026-10-29",
+      "basis": "prior-year cadence: FY2026 Q1 10-Q filed 2025-10-30 after FY2025 10-K filed 2025-08-08",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "TXN": {
+    "name": "Texas Instruments Incorporated",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrrd57000104lbsj7zszeg"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "calendar fiscal year; prior-year Q3 10-Q filed 2025-10-24, roughly 90 days after Q2 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
   }
 }

@@ -3370,7 +3370,58 @@ the automated scheduled-task mechanism):
   `npm run next-batch -- --n 5` (which orders fresh filings, overdue
   pending, hot list, then S&P 500, then us-listed): dispatched the
   carried-over hot-list tickers from last night — **CRWD, LRCX, KLAC,
-  TXN** — as 4 parallel opus subagents (in progress; results and tracker
-  update to follow once each subagent reports back and is independently
-  verified, per CLAUDE.md's "treat a subagent result as untrusted until
-  checked" rule).
+  TXN** — as 4 parallel opus subagents. All 4 succeeded; each
+  independently re-verified live (cache-busted fetch: title, metrics
+  table(s), Takeaway callout, Source filing link, content ends on a
+  complete sentence) before being marked done.
+- Tier worked: **2-hot-list** (completes the round carried over from
+  09-21 night).
+- Published:
+  - **CRWD** (CrowdStrike Holdings) — Q2 2026 (fiscal Q2 FY2027 by the
+    company's own Jan-31-FYE label; 10-Q, period end 2026-07-31, filed
+    2026-08-27): https://financial-reports-web.vercel.app/reports/cmucrrun3000004la6jucr1mc
+    Revenue +25.8% to $1,470.9M; GAAP flipped to a thin $5.3M profit
+    ($0.01 diluted) only via $43.9M of interest income — operating loss
+    was still $33.2M. About half the YoY operating-loss improvement is a
+    comp artifact (absence of $38.4M prior-year restructuring charges);
+    stock-based comp ($376.9M, 25.6% of revenue, growing faster than
+    revenue) remains the whole GAAP/non-GAAP gap. ARR +25% to $5.84B,
+    accelerating, with net new ARR +50.5% — the demand signal is
+    genuinely strong even though GAAP profitability is not real yet.
+  - **LRCX** (Lam Research) — FY2026 ANNUAL (10-K, fiscal year ended
+    2026-06-28): https://financial-reports-web.vercel.app/reports/cmucrrbbq000004lbompuk8ci
+    Revenue +26.0% to $23,232.7M on a foundry mix shift (45%→54% of
+    equipment/upgrade revenue); operating margin +330bps to 35.3%; net
+    income +35.6%, EPS +38.8% (buybacks cut shares 2.3%). Flagged as the
+    key quality-of-earnings catch: operating cash flow *fell* 5.1%
+    despite net income +35.6%, on accounts receivable +58.1% (DSO
+    ~67→~84 days) and deferred revenue declining — a softer pre-funded
+    pipeline into FY2027 than the income statement alone suggests.
+  - **KLAC** (KLA Corporation) — FY2026 ANNUAL (10-K, fiscal year ended
+    2026-06-30): https://financial-reports-web.vercel.app/reports/cmucrs5fs000204lbvnperwow
+    Revenue +11.7% to $13,579.5M; net income +18.9%, diluted EPS +20.4%
+    (reflects a 10-for-1 split effected June 2026, plus $2.29B buybacks).
+    Computed operating margin (KLA doesn't present the line) rose to
+    41.7% from 39.3%, but FY2025 carried a $239.1M PCB impairment — ex
+    that, the like-for-like margin gain is only ~0.4pt, not 2.4pt. China
+    revenue flat in dollars and down to 29.8% of sales from 33.3% on
+    export-control limits; one customer (TSMC) now ~19% of revenue.
+    Company names a DRAM component shortage as a named FY2027 gross-
+    margin headwind but gives no numeric guidance.
+  - **TXN** (Texas Instruments) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-24): https://financial-reports-web.vercel.app/reports/cmucrrd57000104lbsj7zszeg
+    Revenue +22.8% to $5,463M, gross margin 61.4% vs 57.9%, operating
+    margin 42.3% vs 35.1%, net income +52.9%, diluted EPS +51.8% —
+    incremental gross margin on the extra revenue was 76.6% against flat
+    opex, the fixed-cost-leverage effect of TI's owned-fab model. A $51M
+    discrete tax benefit added roughly 5 cents to EPS not in original
+    guidance. Capex fell 51% H1 while depreciation rose 23% (cash
+    spending down, accounting cost still arriving); pending $7.5B Silicon
+    Labs acquisition (cash, expected close 1H 2027) is funded partly via
+    a near-halt in buybacks. Q3 2026 guidance: revenue $5.65-6.15B, EPS
+    $2.23-2.57.
+  - Skipped: none this batch.
+- Running total after this batch: **158 companies done, 174
+  report-periods published** (154/170 before this batch + 4). This
+  clears the entire hot-list round carried over from 09-21 night with
+  zero skips.
