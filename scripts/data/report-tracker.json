@@ -4008,5 +4008,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
+  },
+  "TULP": {
+    "name": "Bloomia Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrklfo000004jv01psxa58"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "fiscal year ends June 30; prior-year first-quarter 10-Q would be due ~45 days after quarter end (mid-November) for a smaller reporting company",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
   }
 }

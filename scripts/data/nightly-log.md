@@ -3308,3 +3308,69 @@ the automated scheduled-task mechanism):
 - Running total after this batch: **153 companies done, 169
   report-periods published** (151/167 before this batch + 2). CRWD,
   LRCX, KLAC carry over to the next batch within this firing.
+  (This firing ended here — apparently the account's 5-hour session
+  limit, per the standing "usage budget is the bottleneck" note in
+  CLAUDE.md's Growth work section. CRWD/LRCX/KLAC were never actually
+  published; confirmed by the 2026-09-22 night session finding all
+  three still absent from `report-tracker.json`.)
+
+### 2026-09-22 night (23:00 JST 2026-09-22 → 05:00 JST 2026-09-23)
+
+- Mechanism: cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`), firing at
+  ~23:17 JST (this session IS that firing — confirmed via
+  `list_triggers`, `last_run.session_id` matches this session).
+- Pre-batch housekeeping: `npm install` postinstall (`prisma generate`)
+  failed on missing `DATABASE_URL` as expected in this DB-credential-free
+  environment (worked around with a dummy value for that one call only,
+  not persisted) — doesn't block `admin-publish`/`scan-recent-filings`.
+  Local `master` was in detached HEAD (stale ref from container init);
+  reset via `git fetch origin master && git checkout -B master
+  origin/master`, discarded an incidental `package-lock.json` diff (npm
+  lockfile metadata churn, not a real dependency change).
+- Network check: plain `curl https://www.sec.gov/` (no User-Agent)
+  returned 403 — confirmed via verbose headers/body to be SEC's own
+  Akamai "Request Rate Threshold Exceeded" fair-access page (a real TLS
+  handshake to the real sec.gov, not a proxy denial), not the
+  09-12–09-14 network-policy blocker. Retried with the required
+  `User-Agent` header: 200. The deployed site also returned 200
+  independently. Network access confirmed fine tonight.
+- `npm run scan-recent-filings` (tier 0): **1 fresh candidate** — TULP
+  (Bloomia Holdings, Inc.), 10-K filed 2026-09-21.
+- Batch 1 (~23:2x JST): published TULP via one opus subagent (run
+  synchronously), independently re-verified live (cache-busted fetch:
+  title tag, metrics table, Takeaway callout, Source filing link present,
+  content ends on a complete sentence) before marking done.
+- Tier worked: **0 (fresh filing)**.
+- Published:
+  - **TULP** (Bloomia Holdings, Inc.) — **FY2026 ANNUAL** (10-K, fiscal
+    year ended 2026-06-30, filed 2026-09-21):
+    https://financial-reports-web.vercel.app/reports/cmucrklfo000004jv01psxa58
+    First full fiscal year under the new June 30 year-end and as
+    "Bloomia Holdings" (renamed from Lendway, Inc.; ticker LDWY→TULP,
+    Feb 2026) — no directly comparable prior 12-month audited period, so
+    the report uses the filing's own unaudited 12-months-ended
+    2026-06-30 comparison, flagged as such. Revenue roughly flat (-0.6%)
+    but gross margin fell 16.4% from 20.9% on a 21% jump in average bulb
+    price plus a stronger euro and over $2.5M of industry-wide
+    mite-related bulb waste in Q4, only partly offset by a 12% price
+    increase. Net loss widened to $11.18M, driven by an $11.1M goodwill
+    write-off (goodwill now zero) and a $2.0M trade-name impairment,
+    partly offset by a $7.0M gain on debt settlement from a Q1
+    calendar-2026 rights offering that also cut cash but raised
+    ~173% share dilution. Three consecutive covenant breaches (all
+    waived) led to a Sept 16, 2026 waiver/amendment — five days before
+    this 10-K — resetting covenants and starting a refinancing clock;
+    no going-concern qualification. Management states FY2027 bulb costs
+    are contracted near FY2025 levels with margin improvement expected,
+    but gives no numeric guidance.
+  - Skipped: none this batch.
+- Running total after this batch: **154 companies done, 170
+  report-periods published** (153/169 before this batch + 1).
+- Batch 2 (~23:4x JST, same firing): tier 0 now empty, so per
+  `npm run next-batch -- --n 5` (which orders fresh filings, overdue
+  pending, hot list, then S&P 500, then us-listed): dispatched the
+  carried-over hot-list tickers from last night — **CRWD, LRCX, KLAC,
+  TXN** — as 4 parallel opus subagents (in progress; results and tracker
+  update to follow once each subagent reports back and is independently
+  verified, per CLAUDE.md's "treat a subagent result as untrusted until
+  checked" rule).
