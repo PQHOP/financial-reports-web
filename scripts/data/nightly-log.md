@@ -3556,3 +3556,75 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **168 companies done, 184
   report-periods published** (163/179 before this batch + 5).
+
+- Batch 5 (~00:2x-01:2x JST 09-23, this same firing — continuing after this
+  session's context was summarized between Batch 4 and here): `npm run
+  next-batch -- --n 5` returned **SCHW, C, USB, PNC, TMUS**. Dispatched all
+  5 as parallel opus subagents as usual. All 5 independently completed
+  full research (downloaded and read the actual 10-Q themselves) and then
+  hit the admin form's own uniqueness rejection on publish: *"A report for
+  this company, year, and period already exists."* Checking the live
+  URLs confirmed all 5 were already published, Q2 2026, all sourced to the
+  correct filing, all around **14:49 UTC** (~90 min before this batch's
+  dispatch) — i.e. an earlier round this same firing (before the context
+  summarization boundary) already researched and published these 5, but
+  the tracker/nightly-log update and commit for that round never happened
+  before the context got summarized. Each subagent independently
+  cross-checked the live report's figures against its own fresh read of
+  the filing (all matched) before standing down rather than overwriting a
+  good report with `--edit`. Net effect: **0 new report-periods
+  published this batch** (all 5 already live), but all 5 were previously
+  untracked — reconciling them into `report-tracker.json` now:
+  - **SCHW** (Charles Schwab) — Q2 2026: https://financial-reports-web.vercel.app/reports/cmucsinp5000304laazp59ijx
+    Net revenues +20.9% to $7,072M, net income +31.7% to $2,800M, diluted
+    EPS +42.6% to $1.54, pre-tax margin 51.9% vs 47.9%. NIM +34bp to 3.00%
+    almost entirely from funding-cost relief (bank deposit cost fell to
+    0.19% from 0.55%, FHLB borrowings nearly eliminated) rather than
+    higher asset yields, which were roughly flat. Client assets $13.08T
+    (+22%), core net new assets +49% to $119.8B.
+  - **C** (Citigroup) — Q2 2026: https://financial-reports-web.vercel.app/reports/cmucsiz2f000604lbp0uj9j8c
+    Revenue net of interest expense +14% to $24,766M, net income +45% to
+    $5,831M, diluted EPS +61% to $3.15 — EPS growth far outran profit
+    growth on an 8.3% smaller diluted share count (~$10.3B H1 buybacks).
+    12% lower loan-loss provision came entirely from a smaller reserve
+    build even as actual charge-offs rose 8%; NIM only +3bp despite 13%
+    NII growth, which was mostly balance-sheet volume plus a Markets
+    NII/NIR mix shift.
+  - **USB** (U.S. Bancorp) — Q2 2026: https://financial-reports-web.vercel.app/reports/cmucsia8i000704jvcu14l6gm
+    Revenue +10.1% to $7,712M, net income +19.9% to $2,177M, diluted EPS
+    +21.6% to $1.35, efficiency ratio improved to 57.1% from 59.2%. NIM
+    +13bp to 2.79%, but earning-asset yields actually *fell* 13bp — the
+    entire margin gain was cheaper funding (time deposits -18.4%, savings
+    +26.7%). Capital-markets revenue (+62.5%) supplied ~49% of the fee
+    increase off one month of the BTIG acquisition (closed June 1, 2026).
+  - **PNC** (PNC Financial Services) — Q2 2026: https://financial-reports-web.vercel.app/reports/cmucsj1qu000404lafehpe9lu
+    Revenue +21.4% to $6,875M, diluted EPS +24.9% to $4.81, NIM 2.96%
+    (+16bp YoY, +1bp sequentially). A $448M Visa exchange gain was nearly
+    fully offset by a $139M securities-repositioning loss, an $85M Visa
+    derivative mark, FirstBank integration costs, and a foundation
+    contribution — net ~$37M pre-tax drag, so growth reads as operating.
+    Loans grew 13% against 5% deposit growth, funded by a 50% jump in FHLB
+    borrowings; CET1 fell to 9.9% from 10.6% at year-end.
+  - **TMUS** (T-Mobile US) — Q2 2026: https://financial-reports-web.vercel.app/reports/cmucsisns000504lbzr1v96zt
+    Revenue +7.9% to $22,791M, Core Adjusted EBITDA +11.7% to $9.54B, but
+    net income flat (+0.5%) as higher interest expense and Lumos/Metronet
+    JV losses absorbed the operating gain; the 5.3% EPS rise to $2.99 is
+    almost entirely the 4.6% smaller share count from H1 buybacks, not
+    earnings growth. Postpaid accounts +10.2% but largely acquired
+    (UScellular/Metronet/Lumos); ARPA +2%, net account adds -12.9%, churn
+    +7bps; prepaid and wholesale both shrank.
+  - Skipped: none this batch (all 5 reconciled as already-done).
+- Tier worked: **2-hot-list** (reconciliation only — no new research
+  output added to the site this batch, but 5 tracker entries backfilled).
+- Running total after this batch: **173 companies done, 189
+  report-periods published** (168/184 before this batch + 5 newly tracked,
+  0 newly published to the site).
+- Process note for future firings: when `next-batch` returns a ticker and
+  the subagent finds it's already live, treat that as a signal the tracker
+  fell behind a prior round in *this same* firing (e.g. across a context
+  summarization boundary) rather than a second concurrent firing — checked
+  `list_triggers` on `trig_01GNdUY59Na4x3JxMr6p7mxK` and confirmed only one
+  `last_run` this window, session id matching this session. Reconcile by
+  trusting the subagent's independent re-derivation of the live report's
+  figures (all 5 cross-checked clean against their own filing reads this
+  batch) rather than re-publishing.
