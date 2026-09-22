@@ -4118,5 +4118,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-22"
+  },
+  "HOOD": {
+    "name": "Robinhood Markets, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrxyvv000304lbdjxxtol5"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "F": {
+    "name": "Ford Motor Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrz2eo000404lb1pwpoky3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-29",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "GM": {
+    "name": "General Motors Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrz5fc000104la42gvv1d5"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-20",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-21",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "DAL": {
+    "name": "Delta Air Lines, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrzlpx000204jv9znusmz3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-09",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
+  },
+  "UAL": {
+    "name": "United Airlines Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-22",
+      "url": "https://financial-reports-web.vercel.app/reports/cmucrywz3000104jvgw8uqdy6"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-15",
+      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-16",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-22"
   }
 }

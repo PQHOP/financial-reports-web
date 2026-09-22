@@ -3425,3 +3425,67 @@ the automated scheduled-task mechanism):
   report-periods published** (154/170 before this batch + 4). This
   clears the entire hot-list round carried over from 09-21 night with
   zero skips.
+
+- Batch 3 (~23:3x JST, same firing): tier 0 still empty (re-confirmed).
+  `npm run next-batch -- --n 5` returned the next hot-list round: HOOD,
+  F, GM, DAL, UAL. Dispatched all 5 as parallel opus subagents. All 5
+  succeeded; each independently re-verified live (cache-busted fetch)
+  before being marked done.
+- Tier worked: **2-hot-list**.
+- Published:
+  - **HOOD** (Robinhood Markets) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-30): https://financial-reports-web.vercel.app/reports/cmucrxyvv000304lbdjxxtol5
+    Revenue +32.3%, net income +45.3%, diluted EPS +47.6% — but the
+    pre-tax jump is inflated by $129M of one-offs (a non-cash gain on
+    deconsolidating a fund plus equity-securities gains) that management
+    itself excludes from Adjusted EBITDA; ex those, growth is in line
+    with revenue. Composition shifted hard toward event-contract trading
+    (1%→12% of revenue) while crypto revenue fell 38% on lower rebate
+    rates and fewer/smaller crypto trades; net interest revenue is
+    explicitly flagged by management as exposed to future Fed rate cuts.
+  - **F** (Ford Motor) — Q2 2026 (10-Q, period end 2026-06-30, filed
+    2026-07-29): https://financial-reports-web.vercel.app/reports/cmucrz2eo000404lb1pwpoky3
+    GAAP net loss $(1,327)M vs a small prior-year loss, but Company
+    adjusted EBIT +17.0% to $2,503M — the gap is a $3,612M charge from
+    unwinding the BlueOval SK battery joint venture (closed May 2026),
+    only ~$500M of it cash. Ford Pro (the profit center) fell $600M on
+    volume and aluminum-sourcing cost; Ford Blue improved on price/mix;
+    Model e's loss narrowed only because volume collapsed 53%. FY2026
+    guidance ($10.0-11.0B adjusted EBIT) implies a slower H2 than H1's
+    run rate.
+  - **GM** (General Motors) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-21): https://financial-reports-web.vercel.app/reports/cmucrz5fc000104la42gvv1d5
+    GAAP operating income -31.4% and net income -31.1%, but EBIT-adjusted
+    +29.8% — the gap is $2,456M of Q2 EV-strategic-realignment and China
+    restructuring charges (cumulative $7.9B in 2025 + $3.4B in H1 2026).
+    GMNA adjusted EBIT +42.7% on flat volume, roughly half of it simply
+    the absence of last year's EV inventory write-downs/warranty costs
+    rather than new earnings power. GM Financial's provision for loan
+    losses +10% and falling prime-originations share flagged as an early
+    credit-cycle signal. FY2026 guidance reaffirmed at $14.0-16.0B
+    EBIT-adjusted.
+  - **DAL** (Delta Air Lines) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-10): https://financial-reports-web.vercel.app/reports/cmucrzlpx000204jv9znusmz3
+    Revenue +18.7% but operating income -11.3% and net income -24.7% —
+    airline-segment operating income fell 28%, partly offset by the
+    Monroe oil refinery swinging from a $10M loss to $351M profit on
+    refining margins (an unplanned outage started mid-June). Fuel price
+    +66%, with GAAP results flattered by $301M of hedge gains that the
+    six-month total shows aren't repeatable (implies a Q1 hedge loss).
+    Pricing outran volume (yield +12%, load factor down slightly);
+    premium-cabin revenue outearned main cabin for the first time this
+    tracker has seen Delta report it.
+  - **UAL** (United Airlines) — Q2 2026 (10-Q, period end 2026-06-30,
+    filed 2026-07-16): https://financial-reports-web.vercel.app/reports/cmucrywz3000104jvgw8uqdy6
+    Revenue +16.0% (record quarter) but operating income -17.3% and net
+    income -17.3% — fuel price +79.4% (no hedging disclosed, so it flows
+    straight through) explains nearly all of the cost increase. Reported
+    results are flattered twice: a $592M special-items swing to a credit
+    (dominated by $351M of aircraft sale-leaseback gains) and the
+    resulting higher aircraft rent expense understates the real
+    deterioration — ex-special operating income fell ~46% on the
+    subagent's own recomputation. Domestic capacity is the soft spot
+    (only region with load factor down); buybacks essentially halted.
+  - Skipped: none this batch.
+- Running total after this batch: **163 companies done, 179
+  report-periods published** (158/174 before this batch + 5).
