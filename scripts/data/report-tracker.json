@@ -4778,5 +4778,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-23"
+  },
+  "AYTU": {
+    "name": "Aytu BioPharma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmue6xdrk000004kzloyqi40d"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-12",
+      "basis": "fiscal year ends June 30; smaller reporting company 10-Qs typically land ~45 days after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
+  },
+  "THO": {
+    "name": "Thor Industries, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-23",
+      "url": "https://financial-reports-web.vercel.app/reports/cmue6y21k000004l8njethivm"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-12-05",
+      "basis": "fiscal year ends July 31; quarterlies typically filed ~90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-23"
   }
 }

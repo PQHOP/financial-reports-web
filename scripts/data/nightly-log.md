@@ -3824,3 +3824,60 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **188 companies done, 204
   report-periods published** (183/199 before this batch + 5).
+
+### 2026-09-23 night (23:00 JST 2026-09-23 → 05:00 JST 2026-09-24)
+
+- Mechanism: this firing's invocation matches the cloud routine's pattern
+  (automated `[SCHEDULED TASK]` prompt, no live user).
+- Network check: `curl https://www.sec.gov/` without a User-Agent returned
+  403 (confirmed via verbose headers to be SEC's own Akamai response, a
+  real TLS handshake to the real host — not a proxy/policy denial); retry
+  with the required `User-Agent` header returned 200, as did the deployed
+  site. Network access confirmed fine tonight.
+- Pre-batch housekeeping: `npm install` postinstall (`prisma generate`)
+  failed on missing `DATABASE_URL` as expected (doesn't block
+  `admin-publish`/`scan-recent-filings`, which need no DB access);
+  discarded an incidental `package-lock.json` diff from the install.
+- `npm run scan-recent-filings` (tier 0): **2 fresh candidates** — AYTU
+  (Aytu BioPharma) and THO (Thor Industries, Inc.), both 10-K filed
+  2026-09-22.
+- Batch 1: published both via two opus subagents run in parallel;
+  independently re-verified each live (cache-busted fetch: title, metrics
+  table, Takeaway callout, Source filing link present, content ends on a
+  complete sentence) before marking done.
+- Tier worked: **0 (fresh filing)**.
+- Published:
+  - **AYTU** (Aytu BioPharma, Inc.) — **FY2026 ANNUAL** (10-K, fiscal year
+    ended 2026-06-30, filed 2026-09-22):
+    https://financial-reports-web.vercel.app/reports/cmue6xdrk000004kzloyqi40d
+    Revenue fell 13.3% to $57.6M — the new antidepressant EXXUA (launched
+    Dec 2025) added $6.6M, but legacy ADHD drugs fell 20.4% and Pediatric
+    fell 41.4% on generic competition. Net loss widened slightly to
+    $14.3M, but that understates the deterioration: the prior year
+    included ~$11.7M of one-time write-downs/restructuring, so the
+    underlying result swung roughly $12M worse. Gross margin fell from
+    69% to 64% (partly a $2.2M inventory write-down); diluted loss per
+    share improved only because share count nearly doubled. No going-
+    concern flag (cash $26.3M vs ~$17.0M debt), but no revenue guidance
+    either, and a cheaper generic Cotempla launched July 2026 plus a
+    generic-Adzenys patent trial starting Jan 2027 are named risks against
+    an ADHD portfolio that's still 80% of revenue.
+  - **THO** (Thor Industries, Inc.) — **FY2026 ANNUAL** (10-K, fiscal year
+    ended 2026-07-31, filed 2026-09-22):
+    https://financial-reports-web.vercel.app/reports/cmue6y21k000004l8njethivm
+    Sales roughly flat (+0.3% to $9,608.1M), but only because a stronger
+    euro added $179.4M — ex-FX sales fell ~1.6%. North American towables
+    fell 16.1% (units -20.7%) while motorhomes grew 12.8% and Europe grew
+    9.0%. Profit fell much more than sales: gross margin dropped from
+    14.0% to 12.6% on mix shift and un-passed-through tariff/cost
+    increases, and the tax rate roughly doubled (13.4%→26.8%), driving net
+    income to $177.5M (-31.3%) and diluted EPS to $3.38 (-30.2%).
+    Operating cash flow fell 44.4% to $321.2M. Order backlog rose 8.0% to
+    $3.30B, but the mix flipped versus this year's results — towables
+    +74.6%, motorhomes -27.5% — so FY2027 could see the opposite pattern
+    from FY2026. No numeric FY2027 guidance given; operating margin
+    (2.1%) is the subagent's own calculation since Thor's income statement
+    has no operating-income line, footnoted as such in the report.
+  - Skipped: none this batch.
+- Running total after this batch: **190 companies done, 206
+  report-periods published** (188/204 before this batch + 2).
