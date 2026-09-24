@@ -2,6 +2,7 @@ import crypto from "node:crypto";
 import { SITE_URL } from "@/lib/site";
 import { periodLabels } from "@/lib/period";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
+import { reportSearchTitle } from "@/lib/reportMeta";
 import type { ReportPeriod } from "@/generated/prisma/client";
 
 export type PostableReport = {
@@ -45,6 +46,42 @@ export function blueskyConfigured(): boolean {
   return Boolean(process.env.BLUESKY_HANDLE && process.env.BLUESKY_APP_PASSWORD);
 }
 
+// Bluesky doesn't unfurl links itself: without an explicit external embed a
+// post shows a bare URL. Upload the report's generated OG card as the thumb.
+async function blueskyLinkCard(report: PostableReport, url: string, accessJwt: string) {
+  const card = {
+    $type: "app.bsky.embed.external",
+    external: {
+      uri: url,
+      title: reportSearchTitle(
+        report.company,
+        report.year,
+        report.period,
+        readMetrics(report.metrics)
+      ),
+      description: truncate(report.summary, 280),
+    },
+  };
+  try {
+    const image = await fetch(`${url}/opengraph-image`);
+    if (!image.ok) return card;
+    const blob = await fetch(`${BSKY}/com.atproto.repo.uploadBlob`, {
+      method: "POST",
+      headers: {
+        "Content-Type": image.headers.get("content-type") ?? "image/png",
+        Authorization: `Bearer ${accessJwt}`,
+      },
+      body: Buffer.from(await image.arrayBuffer()),
+    });
+    if (!blob.ok) return card;
+    const { blob: thumb } = (await blob.json()) as { blob: unknown };
+    return { ...card, external: { ...card.external, thumb } };
+  } catch {
+    // A card without a picture still beats a bare link.
+    return card;
+  }
+}
+
 export async function postToBluesky(report: PostableReport): Promise<PostResult> {
   try {
     const url = reportUrl(report.id);
@@ -71,6 +108,7 @@ export async function postToBluesky(report: PostableReport): Promise<PostResult>
     const enc = new TextEncoder();
     const byteStart = enc.encode(text.slice(0, text.lastIndexOf(url))).length;
     const byteEnd = byteStart + enc.encode(url).length;
+    const embed = await blueskyLinkCard(report, url, accessJwt);
 
     const res = await fetch(`${BSKY}/com.atproto.repo.createRecord`, {
       method: "POST",
@@ -92,6 +130,7 @@ export async function postToBluesky(report: PostableReport): Promise<PostResult>
               features: [{ $type: "app.bsky.richtext.facet#link", uri: url }],
             },
           ],
+          embed,
         },
       }),
     });

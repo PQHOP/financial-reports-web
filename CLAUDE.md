@@ -641,6 +641,14 @@ the user is tracked at its end. Things future sessions should know:
   be set for `/api/cron/social` to run at all), `BLUESKY_HANDLE` +
   `BLUESKY_APP_PASSWORD`, `X_API_KEY` / `X_API_SECRET` / `X_ACCESS_TOKEN` /
   `X_ACCESS_SECRET`. With none of the social ones set the cron is a no-op.
+- **Bluesky is live (2026-09-24):** account `@financialreportinsights.com`
+  (domain handle via the `_atproto` TXT record in Vercel DNS; originally
+  `finreportinsights.bsky.social`). `BLUESKY_HANDLE` holds the account's
+  DID (`did:plc:mxxajezbqpgikhmf2lhssdce`), not the handle, so a future
+  handle change can't break login. `/api/cron/social` runs at 23:10 UTC,
+  right after the nightly window, posting up to 8 reports from the last 3
+  days, each with a link card using the report's OG image (Bluesky doesn't
+  unfurl links on its own). X is not set up.
 - **Usage budget is the bottleneck, not schedule slots.** The nightly
   routine has repeatedly hit the account's 5-hour session limit (later
   hourly firings exit in seconds with "session limit"). Don't add LLM

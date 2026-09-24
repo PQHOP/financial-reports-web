@@ -147,4 +147,5 @@ Việc chỉ bạn làm được: xem phần "Việc cần bạn" ở tin nhắn
 | `/earnings` lịch filing dự kiến | Xong, đọc tracker trực tiếp từ GitHub (không cần redeploy) |
 | So sánh | 6 bài đầu tiên (KO/PEP, V/MA, HD/LOW, TJX/ROST, GS/MS, MAR/HLT) |
 | Tính năng community/news/digest | Khôi phục từ bản deploy 09-21 (chưa từng được commit) |
-| Còn chờ bạn | Tài khoản Bluesky/X + API key, `CONTACT_EMAIL`, Bing Webmaster, tài khoản newsletter |
+| Bluesky | Xong: @financialreportinsights.com, tự đăng 23:10 UTC kèm thẻ ảnh |
+| Còn chờ bạn | X (API key), `CONTACT_EMAIL`, Bing Webmaster, tài khoản newsletter |

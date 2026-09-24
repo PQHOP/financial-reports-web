@@ -12,7 +12,9 @@ import {
 
 export const dynamic = "force-dynamic";
 
-const MAX_POSTS_PER_RUN = 5;
+// Runs once a day right after the nightly publishing window (16:00–22:59
+// UTC), which can produce ~20 reports; older ones age out after LOOKBACK_MS.
+const MAX_POSTS_PER_RUN = 8;
 const LOOKBACK_MS = 3 * 24 * 60 * 60 * 1000;
 
 type Poster = (report: PostableReport) => Promise<PostResult>;
