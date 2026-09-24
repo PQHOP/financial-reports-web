@@ -475,7 +475,85 @@ admin-publish -- report.json` (and set `ADMIN_PASSWORD` to match that
 deployment's password if different from `.env`). No database credentials
 are ever needed for this — only the site URL and the admin password.
 
+## Community reports
+
+Visitors can write their own report for any company at
+`/companies/<slug>/write` (button on the company and report pages). They
+leave a public name and a private email (never rendered; the admin sees it in
+the review queue). Stored as `Report` rows with `origin: COMMUNITY`; system
+reports are `origin: ADMIN` (the default, so every existing script and report
+is unchanged). Rules future changes must keep:
+
+- **Every public listing filters with `systemReports` / `communityReports`
+  from `src/lib/community.ts`.** A new query that lists reports without one of
+  them would leak PENDING submissions or mix community text into the system
+  feed/sitemap/newsletter/social cron. Company and year pages show the system
+  view by default and `?source=community` for the community view.
+- Submissions start `PENDING` and only appear after `/admin` -> Approve
+  (Reject deletes). `COMMUNITY_AUTO_PUBLISH=true` skips the queue.
+- Community report pages are `noindex`, excluded from the sitemap, feed and
+  IndexNow, and their Markdown renders with `untrusted` (no images, links
+  `nofollow ugc`).
+- Uniqueness is `(company, year, period, authorEmail)`; `authorEmail` is `""`
+  for system reports, so there is still one system report per period.
+- Spam controls: honeypot field, max 3 per email and 5 per IP-hash per rolling
+  24h (`COMMUNITY_LIMITS`). Email is not verified.
+
+## Daily market brief (automated news digest)
+
+`/api/cron/news` (Vercel cron, `30 11 * * 1-5` UTC: weekday mornings, ahead of
+the 13:30 UTC US market open, because the readers are English-speaking and
+US-market focused) publishes one `Article` of
+kind `NEWS` per UTC day at `/insights/market-brief-YYYY-MM-DD`. It does not
+use the nightly Claude Code routine, so it does not draw on that usage budget;
+it calls the Claude API directly and costs real money per run (about $0.1-0.2
+with the default `claude-opus-5`; set `NEWS_MODEL=claude-sonnet-5` to roughly
+halve it). Rules to keep:
+
+- Needs `ANTHROPIC_API_KEY` and `CRON_SECRET` in Vercel env (both unset =
+  the cron is a no-op / 401). `?force=1` with the bearer secret regenerates
+  today's brief; otherwise an existing slug is skipped.
+- Sources are fixed in `src/lib/newsFeeds.ts` (Fed, SEC, BLS, EDGAR 8-K
+  filtered to companies we cover, CNBC, MarketWatch, Yahoo Finance RSS). Press
+  items are only paraphrased and linked, never quoted at length. Fewer than 8
+  usable items in the feed window (30h; 66h on Mondays to cover the weekend)
+  = the run is skipped, not padded. No brief is scheduled for Saturday/Sunday.
+- The model returns structured JSON (`source_ids`, not URLs) and
+  `assembleBrief` in `src/lib/newsBrief.ts` builds the Markdown: source links
+  come only from the feed items, tickers must be ones we cover, and a story
+  whose dollar/percent figures don't appear in its cited items is dropped. If
+  fewer than 3 stories survive, nothing is published. Keep that validation
+  when changing the prompt.
+- SEO: the title is `<headline naming the day's events> – Market Brief, <date>`
+  (headline first, since search results truncate from the right; if its
+  figures aren't in the kept stories it falls back to the first story's
+  headline), the summary is capped at 160 chars, `NEWS` pages emit
+  `NewsArticle` JSON-LD, and `src/app/insights/[slug]/opengraph-image.tsx`
+  generates the social card.
+
+## Weekly digest (the "newsletter", published to the web)
+
+`/api/cron/digest` (Vercel cron, `0 23 * * 0`, Sunday 23:00 UTC) publishes one
+`DIGEST` article per run date at `/insights/weekly-digest-YYYY-MM-DD`, straight
+to the site with no review. It calls no model: `renderDigest` in
+`src/lib/weeklyDigest.ts` only re-assembles what the site already published in
+the last 7 UTC days (system reports with their `metrics`, plus `NEWS` briefs),
+so every figure is one already published in a report. Skipped when fewer than 3
+items. This is a web page plus the RSS feed, not an email send: there is no
+subscriber list or mail provider. `/admin/newsletter` still generates a manual
+paste-into-an-email-tool draft.
+
 ## Growth work (traffic, SEO, distribution)
+
+**One-time pending task (delete this paragraph once done):** the 9 guides
+in `content/guides/*.md` are written but not yet published (the local
+`.env` password doesn't match production, and Vercel won't reveal it).
+The first nightly firing should run, with the automation
+`ADMIN_PASSWORD` and `SITE_URL` from its prompt:
+`npm run admin-publish -- --articles-dir content/guides`, confirm
+`/learn` lists 9 guides, then remove this paragraph and commit. It's
+idempotent (upserts by slug), so a repeat is harmless. Do this before
+starting research so it never gets skipped.
 
 The plan lives in `docs/GROWTH_PLAN.md`; what's implemented vs. waiting on
 the user is tracked at its end. Things future sessions should know:

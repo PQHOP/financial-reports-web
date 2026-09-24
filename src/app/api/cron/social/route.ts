@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
+import { systemReports } from "@/lib/community";
 import {
   blueskyConfigured,
   postToBluesky,
@@ -38,6 +39,7 @@ export async function GET(request: Request) {
 
   const reports = await prisma.report.findMany({
     where: {
+      ...systemReports,
       socialPostedAt: null,
       publishedAt: { gte: new Date(Date.now() - LOOKBACK_MS) },
     },

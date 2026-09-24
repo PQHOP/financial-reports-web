@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { prisma } from "@/lib/prisma";
 import { SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
+import { systemReports } from "@/lib/community";
 
 // Sitemaps are built at request time, not baked into the build.
 export const dynamic = "force-dynamic";
@@ -13,17 +14,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // analysis are near-empty directory pages (also `noindex`ed on the page).
   const [industries, companies, reports, articles] = await Promise.all([
     prisma.industry.findMany({
-      where: { companies: { some: { reports: { some: {} } } } },
+      where: { companies: { some: { reports: { some: systemReports } } } },
       select: { slug: true },
     }),
     prisma.company.findMany({
-      where: { reports: { some: {} } },
+      where: { reports: { some: systemReports } },
       select: {
         slug: true,
-        reports: { select: { year: true } },
+        reports: { where: systemReports, select: { year: true } },
       },
     }),
     prisma.report.findMany({
+      where: systemReports,
       select: { id: true, publishedAt: true, updatedAt: true },
     }),
     prisma.article.findMany({

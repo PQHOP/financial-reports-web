@@ -2,6 +2,7 @@ import Link from "next/link";
 import { prisma } from "@/lib/prisma";
 import { ReportContent } from "@/components/ReportContent";
 import { ReportCard } from "@/components/ReportCard";
+import { systemReports } from "@/lib/community";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { articleKindLabels, articlePath } from "@/lib/articles";
@@ -13,7 +14,7 @@ export async function ArticleView({ article }: { article: Article }) {
     article.tickers.length === 0
       ? []
       : await prisma.report.findMany({
-          where: { company: { ticker: { in: article.tickers } } },
+          where: { ...systemReports, company: { ticker: { in: article.tickers } } },
           orderBy: { publishedAt: "desc" },
           take: 4,
           include: { company: { select: { name: true, ticker: true } } },
@@ -30,9 +31,12 @@ export async function ArticleView({ article }: { article: Article }) {
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "Article",
+              "@type": article.kind === "NEWS" ? "NewsArticle" : "Article",
               headline: article.title,
               description: article.summary,
+              ...(article.tickers.length > 0
+                ? { keywords: article.tickers.join(", ") }
+                : {}),
               datePublished: article.publishedAt.toISOString(),
               dateModified: article.updatedAt.toISOString(),
               author: { "@type": "Person", name: "Claude" },

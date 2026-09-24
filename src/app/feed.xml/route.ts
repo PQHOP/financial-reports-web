@@ -2,6 +2,7 @@ import { prisma } from "@/lib/prisma";
 import { periodLabels } from "@/lib/period";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
+import { systemReports } from "@/lib/community";
 
 export const dynamic = "force-dynamic";
 
@@ -17,6 +18,7 @@ function escapeXml(value: string): string {
 export async function GET() {
   const [reports, articles] = await Promise.all([
     prisma.report.findMany({
+      where: systemReports,
       orderBy: { publishedAt: "desc" },
       take: 40,
       include: { company: { select: { name: true, ticker: true } } },

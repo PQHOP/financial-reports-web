@@ -10,4 +10,6 @@ export const articleKindLabels: Record<ArticleKind, string> = {
   PREVIEW: "Earnings preview",
   COMPARISON: "Comparison",
   SCORECARD: "Scorecard",
+  NEWS: "Market brief",
+  DIGEST: "Weekly digest",
 };

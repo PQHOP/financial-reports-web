@@ -28,6 +28,13 @@ export async function generateMetadata({
       publishedTime: article.publishedAt.toISOString(),
       modifiedTime: article.updatedAt.toISOString(),
     },
+    // With no explicit `images`, Next attaches the generated card from
+    // ./opengraph-image.tsx.
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.summary,
+    },
   };
 }
 

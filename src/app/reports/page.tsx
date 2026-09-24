@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { ReportCard } from "@/components/ReportCard";
+import { systemReports } from "@/lib/community";
 
 export const dynamic = "force-dynamic";
 
@@ -23,8 +24,9 @@ export default async function ReportsIndex({
   const page = Math.max(1, Number.parseInt(pageParam ?? "1", 10) || 1);
 
   const [total, reports] = await Promise.all([
-    prisma.report.count(),
+    prisma.report.count({ where: systemReports }),
     prisma.report.findMany({
+      where: systemReports,
       orderBy: { publishedAt: "desc" },
       skip: (page - 1) * PAGE_SIZE,
       take: PAGE_SIZE,

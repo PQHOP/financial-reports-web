@@ -14,8 +14,9 @@ export default async function OpengraphImage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const report = await prisma.report.findUnique({
-    where: { id },
+  // Pending submissions must not leak through their social card either.
+  const report = await prisma.report.findFirst({
+    where: { id, status: "PUBLISHED" },
     include: { company: { select: { name: true, ticker: true } } },
   });
 

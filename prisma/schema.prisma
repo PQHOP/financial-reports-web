@@ -32,6 +32,18 @@ model Company {
   createdAt  DateTime   @default(now())
 }
 
+enum ReportOrigin {
+  // Written by us (Claude via the admin UI / scripts). The default view.
+  ADMIN
+  // Submitted by a visitor through /companies/<slug>/write.
+  COMMUNITY
+}
+
+enum ReportStatus {
+  PENDING
+  PUBLISHED
+}
+
 enum ReportPeriod {
   Q1
   Q2
@@ -58,10 +70,23 @@ model Report {
   metrics        Json?
   // Set by the social cron once the report has been announced.
   socialPostedAt DateTime?
+  origin         ReportOrigin @default(ADMIN)
+  // Community submissions start PENDING until an admin approves them (see
+  // src/lib/community.ts). Everything else is PUBLISHED.
+  status         ReportStatus @default(PUBLISHED)
+  // Community authors only, never shown publicly: contact address for the
+  // admin. "" for system reports. Lower-cased. It is part of the unique key
+  // below so the system gets one report per period and each community author
+  // gets one per period (NULLs would be distinct in Postgres, hence "").
+  authorEmail    String       @default("")
+  // sha256(ip + secret) of the submitter, used only to rate-limit.
+  submitterHash  String?
   publishedAt    DateTime     @default(now())
   updatedAt      DateTime     @updatedAt
 
-  @@unique([companyId, year, period])
+  @@unique([companyId, year, period, authorEmail])
+  @@index([origin, status, publishedAt])
+  @@index([submitterHash, publishedAt])
 }
 
 enum ArticleKind {
@@ -69,6 +94,10 @@ enum ArticleKind {
   PREVIEW
   COMPARISON
   SCORECARD
+  // Daily automated market brief (see src/lib/newsBrief.ts).
+  NEWS
+  // Weekly roundup of the week's reports and briefs (see src/lib/weeklyDigest.ts).
+  DIGEST
 }
 
 // Editorial pieces that aren't a single company-period report: evergreen

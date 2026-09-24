@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { periodLabels, periodOrder } from "@/lib/period";
 import { realCoverImage } from "@/lib/reportMeta";
+import { parseSource, sourceWhere, systemReports } from "@/lib/community";
 
 export const dynamic = "force-dynamic";
 
@@ -17,7 +18,7 @@ export async function generateMetadata({
   const company = await prisma.company.findUnique({ where: { slug } });
   if (!company) return {};
   const reportCount = await prisma.report.count({
-    where: { companyId: company.id, year: Number(year) || 0 },
+    where: { companyId: company.id, year: Number(year) || 0, ...systemReports },
   });
 
   const title = `${year} Reports — ${company.name}`;
@@ -38,10 +39,13 @@ export async function generateMetadata({
 
 export default async function CompanyYearPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ slug: string; year: string }>;
+  searchParams: Promise<{ source?: string }>;
 }) {
   const { slug, year } = await params;
+  const source = parseSource((await searchParams).source);
   const yearNum = Number(year);
 
   const company = await prisma.company.findUnique({
@@ -51,7 +55,7 @@ export default async function CompanyYearPage({
   if (!company || Number.isNaN(yearNum)) notFound();
 
   const reports = await prisma.report.findMany({
-    where: { companyId: company.id, year: yearNum },
+    where: { companyId: company.id, year: yearNum, ...sourceWhere(source) },
   });
 
   const sortedReports = [...reports].sort(
@@ -62,13 +66,14 @@ export default async function CompanyYearPage({
     <div className="flex flex-col gap-6">
       <div>
         <Link
-          href={`/companies/${company.slug}`}
+          href={`/companies/${company.slug}${source === "community" ? "?source=community" : ""}`}
           className="text-sm text-zinc-500 hover:underline"
         >
           ← {company.name}
         </Link>
         <h1 className="mt-1 text-2xl font-semibold">
-          {yearNum} Reports — {company.name}
+          {yearNum} {source === "community" ? "Community " : ""}Reports —{" "}
+          {company.name}
         </h1>
       </div>
 
@@ -93,6 +98,7 @@ export default async function CompanyYearPage({
                 <div>
                   <div className="text-sm font-medium text-zinc-500">
                     {periodLabels[report.period]}
+                    {source === "community" && ` · by ${report.author}`}
                   </div>
                   <div className="font-medium">{report.title}</div>
                   <p className="mt-1 line-clamp-2 text-sm text-zinc-500">
