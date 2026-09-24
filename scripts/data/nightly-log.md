@@ -3909,3 +3909,9 @@ the automated scheduled-task mechanism):
 - Skipped: none.
 - Running total: **212 companies done, 228 report-periods published**
   (191/207 + 21). Hot list: 124/124 done.
+- Later the same day (manual session): published **6 COMPARISON articles**
+  built only from our own published reports — KO vs PEP, V vs MA, HD vs
+  LOW, TJX vs ROST, GS vs MS, MAR vs HLT (`/insights/<a>-vs-<b>-q2-2026`).
+  Also shipped `/earnings` (calendar from the tracker), tier-0 scan now
+  re-surfaces done companies with newer filings + S&P 500 earnings 8-Ks,
+  and the routine window moved to 16–22 UTC with a ~20/night cap.

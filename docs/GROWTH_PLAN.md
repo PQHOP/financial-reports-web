@@ -135,3 +135,16 @@ Kèm theo:
 | 6 AdSense, affiliate | Chưa: chờ đủ ~150 report và Search Console có dữ liệu |
 
 Việc chỉ bạn làm được: xem phần "Việc cần bạn" ở tin nhắn cuối phiên.
+
+## Cập nhật 2026-09-24
+
+| Mục | Trạng thái |
+|---|---|
+| Hot list | Xong 124/124 (PARA → PSKY) |
+| SEO title report/công ty, noindex trang Uncategorized | Xong. 96% impression trước đó là truy vấn bot "tên công ty + breach/ransomware" vào trang Uncategorized |
+| Tier 0 cho công ty đã "done" + 8-K Item 2.02 (S&P 500) | Xong. Trước đó scan bỏ qua mọi công ty đã có report, nên quý Q3 của hot list sẽ không bao giờ được viết |
+| Giờ chạy routine | 16–22 UTC (bắt được công ty báo sau giờ đóng cửa), trần ~20 report/đêm để không hết hạn mức tuần |
+| `/earnings` lịch filing dự kiến | Xong, đọc tracker trực tiếp từ GitHub (không cần redeploy) |
+| So sánh | 6 bài đầu tiên (KO/PEP, V/MA, HD/LOW, TJX/ROST, GS/MS, MAR/HLT) |
+| Tính năng community/news/digest | Khôi phục từ bản deploy 09-21 (chưa từng được commit) |
+| Còn chờ bạn | Tài khoản Bluesky/X + API key, `CONTACT_EMAIL`, Bing Webmaster, tài khoản newsletter |
