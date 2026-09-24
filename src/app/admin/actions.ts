@@ -179,13 +179,21 @@ export async function updateReportAction(
   redirect(`/reports/${id}`);
 }
 
+// Moves a community submission out of the review queue. Deliberately no
+// IndexNow ping: community pages are noindex.
+export async function approveReportAction(id: string): Promise<void> {
+  await requireAdmin();
+  await prisma.report.update({ where: { id }, data: { status: "PUBLISHED" } });
+  redirect("/admin");
+}
+
 export async function deleteReportAction(id: string): Promise<void> {
   await requireAdmin();
   await prisma.report.delete({ where: { id } });
   redirect("/admin");
 }
 
-const ARTICLE_KINDS = ["GUIDE", "PREVIEW", "COMPARISON", "SCORECARD"] as const;
+const ARTICLE_KINDS = ["GUIDE", "PREVIEW", "COMPARISON", "SCORECARD", "NEWS", "DIGEST"] as const;
 
 // Upserts by slug so re-running the publish script updates the piece.
 export async function saveArticleAction(

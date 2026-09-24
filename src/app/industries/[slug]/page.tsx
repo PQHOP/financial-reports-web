@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { ReportCard } from "@/components/ReportCard";
+import { systemReports } from "@/lib/community";
 
 export const dynamic = "force-dynamic";
 
@@ -19,7 +20,10 @@ export async function generateMetadata({
   const industry = await prisma.industry.findUnique({ where: { slug } });
   if (!industry) return {};
   const reportCount = await prisma.report.count({
-    where: { company: { industries: { some: { id: industry.id } } } },
+    where: {
+      ...systemReports,
+      company: { industries: { some: { id: industry.id } } },
+    },
   });
 
   const uncategorized = industry.slug === UNCATEGORIZED_SLUG;
@@ -57,7 +61,9 @@ export default async function IndustryPage({
     include: {
       companies: {
         orderBy: { name: "asc" },
-        include: { _count: { select: { reports: true } } },
+        include: {
+          _count: { select: { reports: { where: systemReports } } },
+        },
       },
     },
   });
@@ -65,7 +71,10 @@ export default async function IndustryPage({
   if (!industry) notFound();
 
   const recentReports = await prisma.report.findMany({
-    where: { company: { industries: { some: { id: industry.id } } } },
+    where: {
+      ...systemReports,
+      company: { industries: { some: { id: industry.id } } },
+    },
     orderBy: { publishedAt: "desc" },
     take: 12,
     include: { company: { select: { name: true, ticker: true } } },

@@ -11,6 +11,8 @@ export type ReportCardData = {
   period: ReportPeriod;
   publishedAt: Date;
   metrics: unknown;
+  origin?: "ADMIN" | "COMMUNITY";
+  author?: string;
   company: { name: string; ticker: string | null };
 };
 
@@ -27,6 +29,11 @@ export function ReportCard({ report }: { report: ReportCardData }) {
         {report.company.name}
         {report.company.ticker ? ` (${report.company.ticker})` : ""} ·{" "}
         {periodLabels[report.period]} {report.year}
+        {report.origin === "COMMUNITY" && (
+          <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-xs font-normal text-amber-900">
+            Community{report.author ? ` · ${report.author}` : ""}
+          </span>
+        )}
       </div>
       <div className="mt-1 font-medium">{report.title}</div>
       {headline && <div className="mt-1 text-sm text-zinc-700">{headline}</div>}

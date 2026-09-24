@@ -2,6 +2,8 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
+import { getIsAdmin } from "@/lib/adminAuth";
+import { communityReports, systemReports } from "@/lib/community";
 import { periodLabels, periodOrder } from "@/lib/period";
 import { ReportContent } from "@/components/ReportContent";
 import { ReportCard } from "@/components/ReportCard";
@@ -17,13 +19,17 @@ import {
 
 export const dynamic = "force-dynamic";
 
+// A PENDING community submission is only visible to the admin reviewing it.
 async function getReport(id: string) {
-  return prisma.report.findUnique({
+  const report = await prisma.report.findUnique({
     where: { id },
     include: {
       company: { include: { industries: true } },
     },
   });
+  if (!report) return null;
+  if (report.status !== "PUBLISHED" && !(await getIsAdmin())) return null;
+  return report;
 }
 
 export async function generateMetadata({
@@ -41,12 +47,17 @@ export async function generateMetadata({
   // With no explicit `images`, Next attaches the generated card from
   // ./opengraph-image.tsx. Only a real (non-placeholder) cover overrides it.
   const cover = realCoverImage(report.coverImageUrl);
-  const searchTitle = reportSearchTitle(
-    report.company,
-    report.year,
-    report.period,
-    readMetrics(report.metrics)
-  );
+  // Community submissions keep the visitor's own title so they never read
+  // as our analysis.
+  const searchTitle =
+    report.origin === "COMMUNITY"
+      ? `${report.title} (community report)`
+      : reportSearchTitle(
+          report.company,
+          report.year,
+          report.period,
+          readMetrics(report.metrics)
+        );
 
   return {
     // Absolute: the " | Financial Report Insights" suffix would push the
@@ -56,6 +67,11 @@ export async function generateMetadata({
     alternates: {
       canonical: `/reports/${report.id}`,
     },
+    // Visitor-written pages stay out of search results (and everything
+    // pending is hidden anyway); only our own analyses are indexed.
+    ...(report.origin === "COMMUNITY"
+      ? { robots: { index: false, follow: false } }
+      : {}),
     openGraph: {
       type: "article",
       title: searchTitle,
@@ -146,10 +162,16 @@ export default async function ReportPage({
   const industryIds = report.company.industries
     .filter((i) => i.slug !== "uncategorized")
     .map((i) => i.id);
-  const [companyReports, industryReports] = await Promise.all([
+  const isCommunity = report.origin === "COMMUNITY";
+  const [companyReports, industryReports, communityCount] = await Promise.all([
+    // Sibling periods come from the same side (ours or community) as this one.
     prisma.report.findMany({
-      where: { companyId: report.companyId, NOT: { id: report.id } },
-      select: { id: true, year: true, period: true },
+      where: {
+        companyId: report.companyId,
+        NOT: { id: report.id },
+        ...(isCommunity ? communityReports : systemReports),
+      },
+      select: { id: true, year: true, period: true, author: true },
     }),
     // Skip the catch-all "Uncategorized" bucket so the "related" block doesn't
     // link unrelated tickers together.
@@ -157,6 +179,7 @@ export default async function ReportPage({
       ? Promise.resolve([])
       : prisma.report.findMany({
           where: {
+            ...systemReports,
             NOT: { companyId: report.companyId },
             company: { industries: { some: { id: { in: industryIds } } } },
           },
@@ -164,6 +187,9 @@ export default async function ReportPage({
           take: 3,
           include: { company: { select: { name: true, ticker: true } } },
         }),
+    prisma.report.count({
+      where: { companyId: report.companyId, ...communityReports },
+    }),
   ]);
 
   const otherPeriods = [...companyReports].sort(
@@ -257,9 +283,35 @@ export default async function ReportPage({
             timeZone: "UTC",
           })}{" "}
           by {report.author}
+          {isCommunity && (
+            <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-900">
+              Community
+            </span>
+          )}
         </p>
         <p className="mt-3 text-base text-zinc-700">{report.summary}</p>
       </div>
+
+      {report.status === "PENDING" && (
+        <p className="rounded-md bg-red-50 px-3 py-2 text-sm text-red-800">
+          Pending review: visible to admins only.
+        </p>
+      )}
+
+      {isCommunity && (
+        <p className="rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-900">
+          Community report by {report.author}. Written by a visitor, not by{" "}
+          {SITE_NAME}; we review submissions before they appear but do not
+          verify the figures. Check them against the source filing.{" "}
+          <Link
+            href={`/companies/${report.company.slug}`}
+            className="underline"
+          >
+            See our own analysis of {report.company.name}
+          </Link>
+          .
+        </p>
+      )}
 
       {metrics && <MetricsSnapshot metrics={metrics} />}
 
@@ -273,7 +325,7 @@ export default async function ReportPage({
       )}
 
       <div className="rounded-lg border border-zinc-200 bg-white p-6">
-        <ReportContent markdown={report.contentMd} />
+        <ReportContent markdown={report.contentMd} untrusted={isCommunity} />
       </div>
 
       <aside className="rounded-lg border border-zinc-200 bg-white p-4 text-sm text-zinc-600">
@@ -331,12 +383,35 @@ export default async function ReportPage({
                   className="block rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm hover:border-zinc-400"
                 >
                   {periodLabels[other.period]} {other.year}
+                  {isCommunity && ` · ${other.author}`}
                 </Link>
               </li>
             ))}
           </ul>
         </section>
       )}
+
+      <section className="flex flex-wrap items-center gap-3 rounded-lg border border-zinc-200 bg-white p-4 text-sm">
+        <span className="text-zinc-600">
+          {isCommunity
+            ? "Have your own take on this company?"
+            : `Read ${communityCount} community ${communityCount === 1 ? "report" : "reports"} on ${report.company.name}, or write your own.`}
+        </span>
+        {!isCommunity && communityCount > 0 && (
+          <Link
+            href={`/companies/${report.company.slug}?source=community`}
+            className="underline"
+          >
+            Community reports
+          </Link>
+        )}
+        <Link
+          href={`/companies/${report.company.slug}/write`}
+          className="rounded-md bg-zinc-900 px-3 py-1.5 font-medium text-white"
+        >
+          Write a report
+        </Link>
+      </section>
 
       {industryReports.length > 0 && primaryIndustry && (
         <section className="flex flex-col gap-2">

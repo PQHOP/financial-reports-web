@@ -5,9 +5,9 @@ import { ArticleList } from "@/components/ArticleList";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: "Insights: earnings previews, comparisons, scorecards",
+  title: "Insights: market briefs, weekly digests, earnings previews",
   description:
-    "Earnings previews, side-by-side company comparisons, and sector scorecards built from SEC filings.",
+    "Daily market briefs, a weekly digest of new analyses, earnings previews, side-by-side company comparisons, and sector scorecards built from SEC filings and public feeds.",
   alternates: { canonical: "/insights" },
 };
 
@@ -22,7 +22,7 @@ export default async function InsightsIndex() {
       <div>
         <h1 className="text-2xl font-semibold">Insights</h1>
         <p className="mt-1 text-zinc-500">
-          Previews of upcoming earnings, company comparisons, and sector scorecards.
+          A daily market brief, a weekly digest of new analyses, previews of upcoming earnings, company comparisons, and sector scorecards.
         </p>
       </div>
       <ArticleList items={items} empty="The first insights are coming soon." />

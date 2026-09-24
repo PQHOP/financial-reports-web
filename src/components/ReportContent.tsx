@@ -58,10 +58,32 @@ const components: Components = {
   ),
 };
 
-export function ReportContent({ markdown }: { markdown: string }) {
+// Visitor-submitted Markdown: no remote images (tracking pixels, hotlinked
+// junk) and links marked as user-generated so they pass no SEO credit.
+const communityComponents: Components = {
+  ...components,
+  img: () => null,
+  p: ({ children }) => <p>{children}</p>,
+  a: ({ href, children }) => (
+    <a href={href} target="_blank" rel="nofollow ugc noopener noreferrer">
+      {children}
+    </a>
+  ),
+};
+
+export function ReportContent({
+  markdown,
+  untrusted = false,
+}: {
+  markdown: string;
+  untrusted?: boolean;
+}) {
   return (
     <div className="prose prose-zinc max-w-none prose-headings:font-semibold prose-h2:mt-10 prose-h2:text-xl prose-h2:border-b prose-h2:border-zinc-200 prose-h2:pb-2 prose-img:rounded-lg">
-      <ReactMarkdown remarkPlugins={[remarkGfm]} components={components}>
+      <ReactMarkdown
+        remarkPlugins={[remarkGfm]}
+        components={untrusted ? communityComponents : components}
+      >
         {markdown}
       </ReactMarkdown>
     </div>

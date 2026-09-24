@@ -14,6 +14,7 @@
     "next-batch": "tsx scripts/next-batch.ts"
   },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.127.0",
     "@neondatabase/serverless": "^1.1.0",
     "@prisma/adapter-neon": "^6.19.3",
     "@prisma/client": "^6.19.3",

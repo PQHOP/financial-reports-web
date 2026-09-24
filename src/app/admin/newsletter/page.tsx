@@ -5,6 +5,7 @@ import { getIsAdmin } from "@/lib/adminAuth";
 import { periodLabels } from "@/lib/period";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { systemReports } from "@/lib/community";
 
 export const dynamic = "force-dynamic";
 
@@ -22,7 +23,7 @@ export default async function NewsletterDraftPage() {
   const since = daysAgo(7);
   const [reports, articles] = await Promise.all([
     prisma.report.findMany({
-      where: { publishedAt: { gte: since } },
+      where: { ...systemReports, publishedAt: { gte: since } },
       orderBy: { publishedAt: "desc" },
       include: { company: { select: { name: true, ticker: true } } },
     }),

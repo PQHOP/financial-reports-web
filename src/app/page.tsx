@@ -4,6 +4,7 @@ import { ReportCard } from "@/components/ReportCard";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
+import { systemReports } from "@/lib/community";
 import hotList from "../../scripts/data/priority-tickers.json";
 
 // Most-searched tickers first (same list the report backlog is worked in).
@@ -13,18 +14,19 @@ const POPULAR_LIMIT = 16;
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const [industries, latest, guides, popularCandidates] = await Promise.all([
+  const [industries, latest, guides, briefs, popularCandidates] = await Promise.all([
     prisma.industry.findMany({
       orderBy: { name: "asc" },
       include: {
         _count: { select: { companies: true } },
         companies: {
-          where: { reports: { some: {} } },
+          where: { reports: { some: systemReports } },
           select: { id: true },
         },
       },
     }),
     prisma.report.findMany({
+      where: systemReports,
       orderBy: { publishedAt: "desc" },
       take: 6,
       include: { company: { select: { name: true, ticker: true } } },
@@ -35,8 +37,14 @@ export default async function Home() {
       take: 4,
       select: { slug: true, kind: true, title: true },
     }),
+    prisma.article.findMany({
+      where: { kind: { in: ["NEWS", "DIGEST"] } },
+      orderBy: { publishedAt: "desc" },
+      take: 3,
+      select: { slug: true, kind: true, title: true, summary: true },
+    }),
     prisma.company.findMany({
-      where: { ticker: { in: POPULAR_TICKERS }, reports: { some: {} } },
+      where: { ticker: { in: POPULAR_TICKERS }, reports: { some: systemReports } },
       select: { slug: true, name: true, ticker: true },
     }),
   ]);
@@ -128,6 +136,32 @@ export default async function Home() {
           </ul>
         )}
       </section>
+
+      {briefs.length > 0 && (
+        <section className="flex flex-col gap-3">
+          <div className="flex items-baseline justify-between">
+            <h2 className="text-lg font-medium">Briefs and weekly digests</h2>
+            <Link href="/insights" className="text-sm text-zinc-500 hover:underline">
+              All insights →
+            </Link>
+          </div>
+          <ul className="flex flex-col gap-3">
+            {briefs.map((brief) => (
+              <li key={brief.slug}>
+                <Link
+                  href={articlePath(brief.kind, brief.slug)}
+                  className="block rounded-lg border border-zinc-200 bg-white p-4 hover:border-zinc-400"
+                >
+                  <div className="font-medium">{brief.title}</div>
+                  <p className="mt-1 line-clamp-2 text-sm text-zinc-500">
+                    {brief.summary}
+                  </p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {guides.length > 0 && (
         <section className="flex flex-col gap-3">
