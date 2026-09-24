@@ -6,6 +6,9 @@ import { ReportCard } from "@/components/ReportCard";
 
 export const dynamic = "force-dynamic";
 
+const UNCATEGORIZED_SLUG = "uncategorized";
+const PENDING_LIMIT = 100;
+
 export async function generateMetadata({
   params,
 }: {
@@ -19,8 +22,13 @@ export async function generateMetadata({
     where: { company: { industries: { some: { id: industry.id } } } },
   });
 
-  const title = industry.name;
-  const description = `Financial report analysis for publicly listed ${industry.name} companies.`;
+  const uncategorized = industry.slug === UNCATEGORIZED_SLUG;
+  const title = uncategorized
+    ? "Other US-Listed Companies"
+    : `${industry.name} Stocks: Earnings Reports & Analysis`;
+  const description = `Plain-English earnings analysis for ${reportCount} ${
+    industry.name
+  } ${reportCount === 1 ? "report" : "reports"}, each built from the company's own SEC filing.`;
 
   return {
     title,
@@ -29,7 +37,11 @@ export async function generateMetadata({
       canonical: `/industries/${industry.slug}`,
     },
     openGraph: { title, description },
-    ...(reportCount === 0 ? { robots: { index: false, follow: true } } : {}),
+    // The catch-all bucket has no theme to rank for; its reports are indexed
+    // on their own pages.
+    ...(reportCount === 0 || uncategorized
+      ? { robots: { index: false, follow: true } }
+      : {}),
   };
 }
 
@@ -60,9 +72,12 @@ export default async function IndustryPage({
   });
   // Analyzed companies first; the long tail of un-analyzed directory entries
   // follows so the page leads with content, not a wall of empty names.
-  const companies = [...industry.companies].sort(
-    (a, b) => Number(b._count.reports > 0) - Number(a._count.reports > 0)
-  );
+  const analyzed = industry.companies.filter((c) => c._count.reports > 0);
+  const pending = industry.companies.filter((c) => c._count.reports === 0);
+  // Uncategorized holds ~5,000 directory entries; rendering them all made the
+  // page megabytes of empty links. Show a slice and point to search instead.
+  const companies = [...analyzed, ...pending.slice(0, PENDING_LIMIT)];
+  const hiddenCount = pending.length - Math.min(pending.length, PENDING_LIMIT);
 
   return (
     <div className="flex flex-col gap-6">
@@ -121,6 +136,17 @@ export default async function IndustryPage({
             </li>
           ))}
         </ul>
+      )}
+
+      {hiddenCount > 0 && (
+        <p className="text-sm text-zinc-500">
+          {hiddenCount.toLocaleString("en-US")} more companies without an
+          analysis yet.{" "}
+          <Link href="/search" className="underline">
+            Search by name or ticker
+          </Link>
+          .
+        </p>
       )}
     </div>
   );

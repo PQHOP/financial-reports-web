@@ -15,18 +15,30 @@ export async function generateMetadata({
 
   const company = await prisma.company.findUnique({
     where: { slug },
-    include: { industries: true, _count: { select: { reports: true } } },
+    include: {
+      industries: true,
+      _count: { select: { reports: true } },
+      reports: {
+        orderBy: { publishedAt: "desc" },
+        take: 1,
+        select: { summary: true },
+      },
+    },
   });
   if (!company) return {};
 
-  const title = company.ticker
+  const name = company.ticker
     ? `${company.name} (${company.ticker})`
     : company.name;
-  const description = `Financial report analysis for ${company.name}${
-    company.ticker ? ` (${company.ticker})` : ""
-  }, ${company.country}${
-    company.exchange ? ` · ${company.exchange}` : ""
-  }. Browse reports by year.`;
+  const title = `${name} Earnings & Financial Report Analysis`;
+  // Lead with the latest report's own one-line finding: a concrete sentence
+  // earns more clicks than a generic "browse reports" blurb.
+  const latest = company.reports[0];
+  const description = latest
+    ? `Latest ${name} results: ${latest.summary}`
+    : `Financial report analysis for ${name}, ${company.country}${
+        company.exchange ? ` · ${company.exchange}` : ""
+      }.`;
 
   return {
     title,

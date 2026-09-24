@@ -13,7 +13,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // analysis are near-empty directory pages (also `noindex`ed on the page).
   const [industries, companies, reports, articles] = await Promise.all([
     prisma.industry.findMany({
-      where: { companies: { some: { reports: { some: {} } } } },
+      // The catch-all "uncategorized" bucket is noindex'd on the page itself.
+      where: {
+        companies: { some: { reports: { some: {} } } },
+        NOT: { slug: "uncategorized" },
+      },
       select: { slug: true },
     }),
     prisma.company.findMany({

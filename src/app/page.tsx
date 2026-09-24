@@ -4,11 +4,16 @@ import { ReportCard } from "@/components/ReportCard";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
+import hotList from "../../scripts/data/priority-tickers.json";
+
+// Most-searched tickers first (same list the report backlog is worked in).
+const POPULAR_TICKERS: string[] = hotList.tickers;
+const POPULAR_LIMIT = 16;
 
 export const dynamic = "force-dynamic";
 
 export default async function Home() {
-  const [industries, latest, guides] = await Promise.all([
+  const [industries, latest, guides, popularCandidates] = await Promise.all([
     prisma.industry.findMany({
       orderBy: { name: "asc" },
       include: {
@@ -30,12 +35,28 @@ export default async function Home() {
       take: 4,
       select: { slug: true, kind: true, title: true },
     }),
+    prisma.company.findMany({
+      where: { ticker: { in: POPULAR_TICKERS }, reports: { some: {} } },
+      select: { slug: true, name: true, ticker: true },
+    }),
   ]);
 
-  // Industries with published coverage first; empty ones (e.g. the catch-all
-  // "Uncategorized" bucket) stay reachable but sink to the bottom.
+  const popular = popularCandidates
+    .sort(
+      (a, b) =>
+        POPULAR_TICKERS.indexOf(a.ticker ?? "") -
+        POPULAR_TICKERS.indexOf(b.ticker ?? "")
+    )
+    .slice(0, POPULAR_LIMIT);
+
+  // Industries with published coverage first; the catch-all "Uncategorized"
+  // bucket stays reachable but always sinks to the bottom.
+  const isCatchAll = (slug: string) => slug === "uncategorized";
   const sortedIndustries = [...industries].sort(
-    (a, b) => b.companies.length - a.companies.length || a.name.localeCompare(b.name)
+    (a, b) =>
+      Number(isCatchAll(a.slug)) - Number(isCatchAll(b.slug)) ||
+      b.companies.length - a.companies.length ||
+      a.name.localeCompare(b.name)
   );
 
   return (
@@ -68,6 +89,25 @@ export default async function Home() {
           .
         </p>
       </section>
+
+      {popular.length > 0 && (
+        <section className="flex flex-col gap-3">
+          <h2 className="text-lg font-medium">Popular companies</h2>
+          <ul className="flex flex-wrap gap-2">
+            {popular.map((company) => (
+              <li key={company.slug}>
+                <Link
+                  href={`/companies/${company.slug}`}
+                  className="block rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm hover:border-zinc-400"
+                >
+                  <span className="font-medium">{company.ticker}</span>{" "}
+                  <span className="text-zinc-500">{company.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       <section className="flex flex-col gap-3">
         <div className="flex items-baseline justify-between">

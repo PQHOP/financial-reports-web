@@ -7,7 +7,7 @@ import { ReportContent } from "@/components/ReportContent";
 import { ReportCard } from "@/components/ReportCard";
 import { JsonLd } from "@/components/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
-import { realCoverImage } from "@/lib/reportMeta";
+import { realCoverImage, reportSearchTitle } from "@/lib/reportMeta";
 import {
   formatMoneyMillions,
   formatPct,
@@ -41,16 +41,24 @@ export async function generateMetadata({
   // With no explicit `images`, Next attaches the generated card from
   // ./opengraph-image.tsx. Only a real (non-placeholder) cover overrides it.
   const cover = realCoverImage(report.coverImageUrl);
+  const searchTitle = reportSearchTitle(
+    report.company,
+    report.year,
+    report.period,
+    readMetrics(report.metrics)
+  );
 
   return {
-    title: report.title,
+    // Absolute: the " | Financial Report Insights" suffix would push the
+    // figures past where Google truncates the title.
+    title: { absolute: searchTitle },
     description,
     alternates: {
       canonical: `/reports/${report.id}`,
     },
     openGraph: {
       type: "article",
-      title: report.title,
+      title: searchTitle,
       description,
       url,
       publishedTime: new Date(report.publishedAt).toISOString(),
@@ -60,7 +68,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: report.title,
+      title: searchTitle,
       description,
       ...(cover ? { images: [cover] } : {}),
     },
