@@ -3881,3 +3881,31 @@ the automated scheduled-task mechanism):
   - Skipped: none this batch.
 - Running total after this batch: **190 companies done, 206
   report-periods published** (188/204 before this batch + 2).
+
+### 2026-09-24 daytime — manual session (outside the nightly window)
+
+- Mechanism: interactive local session at the user's request ("update all
+  hot-list tickers now"), run while the cloud routine is blocked by the
+  account's weekly usage limit (every firing from ~00:17 JST 09-24 exited
+  in seconds with "weekly limit · resets Sep 26, 3am UTC").
+- Tier worked: **1 (hot list)** — cleared the remaining 21 hot-list tickers.
+  PARA in `priority-tickers.json` replaced by **PSKY** (Paramount Skydance;
+  PARA no longer trades after the Aug 2025 merger).
+- Research via 11 opus subagents (drafts only, no publishing); orchestrator
+  published all 21 with `admin-publish` against
+  https://financialreportinsights.com and re-verified each live
+  (cache-busted fetch: 200, title, Takeaway callout, Source filing link,
+  last sentence present).
+- Year labelling: MRVL, DELL, TJX, GIS call these quarters fiscal 2027;
+  published as **year 2026** (calendar year of the quarter) to match the
+  existing WMT/TGT/LOW precedent. TTWO covered by its FY2026 ANNUAL (Q1
+  FY2027 10-Q figures summarised in its outlook section).
+- Published (21): MRVL Q2, DELL Q2, HPQ Q3, TTWO ANNUAL, WBD Q2, PSKY Q2,
+  LYV Q2, RCL Q2, CCL Q2, MAR Q2, HLT Q2, ORLY Q2, AZO ANNUAL (8-K
+  earnings release; 10-K due ~10-26), ROST Q2, TJX Q2, DG Q2, ULTA Q2,
+  EL ANNUAL, CL Q2, KMB Q2, GIS Q1.
+- Follow-up: **CCL Q3 results confirmed for 2026-09-29** — Q2 report will
+  be superseded within a week.
+- Skipped: none.
+- Running total: **212 companies done, 228 report-periods published**
+  (191/207 + 21). Hot list: 124/124 done.

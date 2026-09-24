@@ -4822,5 +4822,467 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-23"
+  },
+  "MRVL": {
+    "name": "Marvell Technology",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1kqu6000004l43bsueuyg"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-08-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027)",
+      "estimate": "2026-12-03",
+      "basis": "~90 days after last 10-Q; prior-year Q3 results early December",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "DELL": {
+    "name": "Dell Technologies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1kurm000104l4c3u7fxi6"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027)",
+      "estimate": "2026-12-07",
+      "basis": "~90 days after last 10-Q; prior-year Q3 results late November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "HPQ": {
+    "name": "HP Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1kymn000004kudtm65a2b"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2026-12-10",
+      "basis": "prior-year 10-K filed 2025-12-10; earnings release ~late November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "TTWO": {
+    "name": "Take-Two Interactive",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1l28f000204l4dnq5lkpf"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027)",
+      "estimate": "2026-11-06",
+      "basis": "prior-year Q2 10-Q filed 2025-11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "WBD": {
+    "name": "Warner Bros. Discovery",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1l6dl000304l4rtr63qu9"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "prior-year Q3 10-Q filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "PSKY": {
+    "name": "Paramount Skydance Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1lamy000104kusjvmu7eq"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "prior-year Q3 10-Q filed 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "LYV": {
+    "name": "Live Nation Entertainment",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1lejh000004jxsqajbn37"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "prior-year Q3 10-Q filed 2025-11-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "RCL": {
+    "name": "Royal Caribbean Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1li7j000004jqc3saa60e"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "prior-year Q3 10-Q filed 2025-10-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "CCL": {
+    "name": "Carnival Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1lm8k000204kudtbemxbv"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-06-26"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026)",
+      "estimate": "2026-09-29",
+      "basis": "Q3 results call scheduled for 2026-09-29 per news/IR sources",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "MAR": {
+    "name": "Marriott International",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1lprr000104jqb67rfb8j"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~90 days after last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "HLT": {
+    "name": "Hilton Worldwide",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1ltfc000004kwpbnamydu"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "~90-day cadence (Q1 04-28, Q2 07-28)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "ORLY": {
+    "name": "O'Reilly Automotive",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1lx35000104kwwrtc8bii"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "cadence: earnings release ~10-28, 10-Q ~9 days later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "AZO": {
+    "name": "AutoZone",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1m0r3000204kwb8l6ppqa"
+    },
+    "lastFilingSeen": {
+      "type": "8-K (FY2026 earnings release)",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-09-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2026-10-26",
+      "basis": "prior 10-Ks filed 2025-10-27, 2024-10-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "ROST": {
+    "name": "Ross Stores",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1m3sc000304kuqkfmwtm0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-01"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 FY2026)",
+      "estimate": "2026-11-19",
+      "basis": "prior-year Q3 earnings 8-K 2025-11-20, 10-Q 2025-12-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "TJX": {
+    "name": "TJX Companies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1m76p000404l4kx9qm9ng"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-08-28"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 FY2027)",
+      "estimate": "2026-11-18",
+      "basis": "prior-year Q3 8-K 2025-11-19, 10-Q 2025-12-02",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "DG": {
+    "name": "Dollar General",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1mcc3000204jqy0zkst8z"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026)",
+      "estimate": "2026-12-03",
+      "basis": "prior-year Q3 10-Q and earnings filed 2025-12-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "ULTA": {
+    "name": "Ulta Beauty",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1mflz000504l4wk2a99z9"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026)",
+      "estimate": "2026-12-03",
+      "basis": "prior-year Q3 10-Q filed 2025-12-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "EL": {
+    "name": "Estée Lauder",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1mjt3000304jqoxu5jwj3"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-10-29",
+      "basis": "prior-year Q1 10-Q filed 2025-10-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "CL": {
+    "name": "Colgate-Palmolive",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1mn61000404jqvtyln3s1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "~90 days after last 10-Q; prior-year Q3 ~10-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "KMB": {
+    "name": "Kimberly-Clark",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1mqqd000504jqxdyjs2ms"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "~90 days after last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
+  },
+  "GIS": {
+    "name": "General Mills",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-24",
+      "url": "https://financialreportinsights.com/reports/cmuf1muit000604l4jt2s4tqp"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-30",
+      "filedAt": "2026-09-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027)",
+      "estimate": "2026-12-16",
+      "basis": "~90-day cadence; Q2 usually reported mid/late December",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-24"
   }
 }
