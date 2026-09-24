@@ -48,16 +48,40 @@ visitor landing on the site sees analysis of a report that came out
 
 0. **Companies whose filing just landed on EDGAR.** Run
    `npm run scan-recent-filings` at the start of a batch (defaults to the
-   last 7 days of 10-K/10-Q filings; `-- --days N` / `-- --forms
-   10-Q,10-K,8-K` to adjust). It cross-references SEC EDGAR's daily filing
-   index against `scripts/data/sp500.json` / `scripts/data/us-listed.json`
-   via SEC's ticker↔CIK map, excludes tickers already `"done"` or
-   `"skipped"` in the tracker, and writes
+   last 7 days of 10-K/10-Q filings **plus S&P 500 earnings-release 8-Ks
+   (Item 2.02)**, which land on results day weeks before the 10-Q; `--
+   --days N` / `-- --no-8k` to adjust). It cross-references SEC EDGAR's
+   daily filing index against `scripts/data/sp500.json` /
+   `scripts/data/us-listed.json` via SEC's ticker↔CIK map, drops
+   `"skipped"` tickers, and writes
    `scripts/data/recent-filings-candidates.json` (gitignored — a
-   regenerated scan artifact, never commit it) sorted newest-filed-first.
-   Work through that list before touching the plain backlog below — S&P
-   500 tickers still sort ahead of `us-listed` ones on a same-day tie, but
-   a fresher `us-listed` filing outranks a stale S&P 500 backlog entry.
+   regenerated scan artifact, never commit it) sorted hot list → S&P 500 →
+   us-listed, newest first within each. Work through that list before
+   touching the plain backlog below.
+
+   **`"done"` companies come back as `kind: "update"`** when the filing is
+   newer than their tracker `lastFilingSeen.filedAt` (amendments
+   excluded). Since 2026-09-24 this is how an already-covered company's
+   *next* quarter gets published — before that the scan dropped every
+   `"done"` ticker, so a hot-list company's Q3 results would have been
+   invisible until all ~5,500 companies were covered. For an update:
+   - **New period** (e.g. Q3 results after a published Q2): publish a new
+     report for that period, then set the tracker's `latestReport`,
+     `lastFilingSeen`, `nextExpectedFiling`.
+   - **Same period already published** (e.g. the 10-Q arriving weeks after
+     the earnings 8-K we already wrote from): no new report — just update
+     `lastFilingSeen` so the scan stops listing it. Only edit the existing
+     report (`--edit`) if the full filing changes a figure or adds
+     something material.
+   - **8-K Item 2.02 source:** write from the earnings release (Exhibit
+     99.1) and use it as `sourceUrl`; say in the report that the full
+     10-Q/10-K isn't filed yet if segment/MD&A detail is missing.
+
+   **Earnings season (roughly mid-Oct to mid-Nov, mid-Jan to late Feb,
+   mid-Apr to mid-May, mid-Jul to mid-Aug):** tier 0 is the whole job.
+   Search demand for "`<ticker>` earnings" peaks in the 1–3 days after
+   results, so a hot-list company that reported today beats any backlog
+   company; don't touch tiers 1–2 on a night tier 0 isn't empty.
 1. **2026 report coverage, S&P 500 first.** Once the fresh-filing queue for
    this batch is exhausted, fall back to "get every company a published
    2026 report" (see the tracker mechanics below). "2026 report" means:
@@ -121,8 +145,9 @@ yet.
 ### Deciding what to work on this run
 
 1. Run `npm run scan-recent-filings` and work its output first (tier 0) —
-   it has already excluded `"done"`/`"skipped"` tickers, so anything it
-   lists is fair game, newest-filed first.
+   it has already dropped `"skipped"` tickers and `"done"` ones with
+   nothing newer, so anything it lists is fair game (see the `"update"`
+   rules under tier 0 above).
 2. **Then run `npm run next-batch -- --n 5` and take its output in the
    order it prints — do not re-derive the ordering by hand.** It encodes:
    fresh-filing candidates (tier 0), then `"pending"` entries whose
@@ -130,8 +155,8 @@ yet.
    (`scripts/data/priority-tickers.json` — mega-caps and the names retail
    investors search for most, in search-demand order, so a visitor's likely
    query "`<ticker>` earnings" is answered before an obscure company's),
-   then the rest of the S&P 500 in file order, then `us-listed`. It already
-   skips anything `"done"`/`"skipped"`. The hot list replaced pure
+   then the rest of the S&P 500 in file order, then `us-listed`. Outside
+   tier 0 it skips anything `"done"`/`"skipped"`. The hot list replaced pure
    alphabetical order on 2026-09-20 because search demand for "X earnings"
    is concentrated on a few hundred well-known tickers.
 3. If you have direct evidence a company outside the printed batch has a
@@ -166,8 +191,22 @@ findable.
 
 ### Operating window
 
-This background task only runs **23:00–05:00 Japan Standard Time (JST)**
-nightly — i.e. 14:00–19:59 UTC.
+This background task only runs **01:00–07:59 Japan Standard Time (JST)**
+nightly — i.e. 16:00–22:59 UTC (routine cron `0 16-22 * * *`). Moved on
+2026-09-24 from 23:00–05:00 JST (14:00–19:59 UTC): US companies that
+report after the close file their earnings 8-K around 20:05–21:00 UTC,
+which the old window missed by a full day; pre-market reporters (~11:00–
+12:30 UTC) are still picked up by the first firing.
+
+**Nightly cap: at most ~20 report-periods per night.** The account's
+*weekly* usage limit is shared with everything else; on 09-21 and 09-22
+the routine published ~35 per night and then was locked out from 09-24
+00:17 JST until 09-26 03:00 UTC — two and a half dark days. During
+earnings season a dark day is the worst possible outcome, so pace the
+week: once tonight's entry in the nightly log reaches ~20, stop and end
+the firing with a short summary (later firings that night should see the
+count and exit immediately). Tier 0 hot-list/S&P 500 items may exceed the
+cap by a few if they reported that day.
 
 **A cloud routine already exists for this — check it before creating
 another one.** `trig_01GNdUY59Na4x3JxMr6p7mxK` ("2026 Report Coverage -
@@ -218,12 +257,12 @@ runs; stop the session-local one (`ScheduleWakeup({stop: true})`) once the
 cloud routine is confirmed to be publishing again.
 
 - On each wake, get the current time and convert to JST (UTC+9, no DST).
-- If it's inside 23:00–05:00 JST: do a normal batch (research + publish a
+- If it's inside 01:00–07:59 JST: do a normal batch (research + publish a
   few companies per the tracker-driven priority below), then
   `ScheduleWakeup` again in ~20-30 minutes (`noop: false`).
 - If it's outside the window: do nothing, and `ScheduleWakeup` for 3600
   seconds (the max) with `noop: true`, repeating hourly until the check
-  lands back inside the window — there's no way to jump straight to 23:00
+  lands back inside the window — there's no way to jump straight to 01:00
   in one call, so this chains several no-op hourly wakeups while waiting.
 
 This only runs while the session/terminal stays open on the machine — if
@@ -238,8 +277,9 @@ truth) — it's what answers "how many reports got done last night vs. the
 night before" without having to recompute it from `report-tracker.json`
 every time. At the end of every batch during the operating window (i.e.
 right before each `ScheduleWakeup(noop: false)`), append to or update
-tonight's entry (identified by the JST calendar date the 23:00 window
-started on) with: how many report-periods got published this batch and
+tonight's entry (identified by the JST calendar date of the evening
+before the window — a window starting 01:00 JST on 09-25 is the "09-24
+night" entry, same labelling as before the window moved) with: how many report-periods got published this batch and
 in total tonight, which tickers/periods, any skips with their reason, and
 which tier/phase was worked. Don't create a new entry per batch — a night
 spans several wakes 20-30 minutes apart, so accumulate into one entry per

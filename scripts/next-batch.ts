@@ -10,7 +10,8 @@
  *   4. us-listed: scripts/data/us-listed.json, in file order
  *
  * Tickers already "done" or "skipped" in report-tracker.json are excluded
- * (tier 0 candidates are already filtered by the scan itself).
+ * (tier 0 candidates are already filtered by the scan itself, and may include
+ * done companies with a newer filing — those are kept on purpose).
  *
  * Usage:
  *   npm run next-batch              # next 5
@@ -55,8 +56,9 @@ function main() {
 
   const picks: Pick[] = [];
   const seen = new Set<string>();
-  const add = (ticker: string, tier: string, note?: string) => {
-    if (seen.has(ticker) || finished(ticker) || !names.has(ticker)) return;
+  // `force`: tier 0 already decided a done company has a newer filing.
+  const add = (ticker: string, tier: string, note?: string, force = false) => {
+    if (seen.has(ticker) || (!force && finished(ticker)) || !names.has(ticker)) return;
     seen.add(ticker);
     picks.push({ ticker, name: names.get(ticker)!, tier, note });
   };
@@ -65,9 +67,17 @@ function main() {
   const candidatesFile = join(DATA_DIR, "recent-filings-candidates.json");
   if (existsSync(candidatesFile)) {
     const scan = readJson<{
-      candidates: { ticker: string; form: string; filedDate: string }[];
+      candidates: { ticker: string; form: string; filedDate: string; kind?: string }[];
     }>("recent-filings-candidates.json");
-    for (const c of scan.candidates) add(c.ticker, "0-fresh-filing", `${c.form} filed ${c.filedDate}`);
+    for (const c of scan.candidates) {
+      const update = c.kind === "update";
+      add(
+        c.ticker,
+        "0-fresh-filing",
+        `${c.form} filed ${c.filedDate}${update ? ", newer than last report" : ""}`,
+        update
+      );
+    }
   }
 
   // Pending entries whose expected filing date has passed.
