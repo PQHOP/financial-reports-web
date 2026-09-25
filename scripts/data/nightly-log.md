@@ -3984,3 +3984,7 @@ the automated scheduled-task mechanism):
   user stopped: GRMN, IT, GEHC, GEV, GEN — next run starts there (IT's
   draft cited guidance from a transcript summary; redo from filings).
   Tracker: **356 companies done.**
+- Update: GRMN Q2, IT Q2, GEHC Q2, GEV Q2 and GEN FY (the drafts above)
+  were published afterwards at the user's request. IT's transcript-sourced
+  guidance and CEO/CFO quotes were removed first (filings only). Final
+  for the day: **145 report-periods**, 356 companies done.
