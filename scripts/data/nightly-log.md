@@ -3963,3 +3963,14 @@ the automated scheduled-task mechanism):
   acquired by Merck KGaA (may stop filing); BSX warned it will miss July
   guidance after an Aug 25 cyberattack (Q3 date Oct 28 confirmed); COF Q3
   date Oct 20 confirmed.
+- Checkpoint: **90 tier-1 reports** published this session so far (the 50
+  above plus CTSH Q2, COHR FY, FIX Q2, COP Q2, ED Q2, STZ FY, CEG Q2,
+  COO Q3, CPRT FY (from the 8-K; 10-K due ~09-29), GLW Q2, CPAY Q2,
+  CTVA Q2, CSGP Q2, CRH Q2, CCI Q2, CSX Q2, CMI Q2, DHR Q2, DDOG Q2,
+  DVA Q2, DECK FY, DVN Q2, DXCM Q2, FANG Q2, DLR Q2, DLTR Q2, D Q2,
+  DPZ Q2, DOV Q2, DOW Q2, DHI Q3, DTE Q2, DD Q2, ETN Q2, EBAY Q2, ECHO Q2,
+  ECL Q2, EIX Q2, EW Q2, ELV Q2). Also: "X (The)" names now display as
+  "The X" (COO, KO); DD metrics use the total basis for both net income
+  and EPS (the table shows both bases); ECHO's $8.5B profit is a $9.73B
+  deconsolidation gain from the DISH DBS/Wireless prepackaged Chapter 11
+  (checked against the 10-Q). Running total: **306 companies done.**
