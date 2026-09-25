@@ -4033,3 +4033,13 @@ the automated scheduled-task mechanism):
   (+130 bps, $0.08 EPS; ex-refund view labelled ours); HII free cash flow
   −$611M in H1 on billing timing vs $500–600M FY guide. Day total:
   **170 report-periods**, **381 companies done.**
+- Continued: published (5) INCY Q2, IR Q2, PODD Q2, IBKR Q2, ICE Q2.
+  Notes: INCY revenue includes a one-time $246M Opzelura Medicaid rebate
+  reversal (vs a $242M Novartis credit to expenses a year ago) and a
+  ~$1.27B Vega IPR&D charge is coming in Q3; IR swung from a loss (Q2 2025
+  impairments), YoY % omitted, and a $162.5M ILC Dover settlement lands in
+  Q3; IBKR net income = common stockholders' $312M of $1,338M total
+  (26.5% ownership of IBG LLC), op-margin field = pretax margin; ICE
+  revenue = net revenues, MarketAxess $6.0B deal agreed 07-29. IBKR
+  (10-15) and ICE (10-29) Q3 dates confirmed. Day total: **175
+  report-periods**, **386 companies done.**
