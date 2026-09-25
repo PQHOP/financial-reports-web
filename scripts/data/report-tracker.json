@@ -6618,5 +6618,155 @@
         "url": "https://financialreportinsights.com/companies/carr/2026/q2"
       }
     ]
+  },
+  "CVNA": {
+    "name": "Carvana",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cvna/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q3 2025 10-Q 2025-10-29; 10-Q same day as results",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cvna/2026/q2"
+      }
+    ]
+  },
+  "CASY": {
+    "name": "Casey's",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/casy/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (Q1 FY2027)",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-08"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q2 FY2027)",
+      "estimate": "2026-12-08",
+      "basis": "prior Q2 10-Qs 2024-12-09, 2025-12-09; same day as 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/casy/2026/annual"
+      }
+    ]
+  },
+  "CBOE": {
+    "name": "Cboe Global Markets",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cboe/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q3 10-Qs 2025-10-31, 2024-11-01, 2023-11-03, same day as 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cboe/2026/q2"
+      }
+    ]
+  },
+  "CBRE": {
+    "name": "CBRE Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cbre/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q3 2025 10-Q 2025-10-23; 2026 filings within a day of 2025 dates",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cbre/2026/q2"
+      }
+    ]
+  },
+  "CDW": {
+    "name": "CDW Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cdw/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 10-Q 2025-11-04; 10-Q on earnings day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cdw/2026/q2"
+      }
+    ]
   }
 }
