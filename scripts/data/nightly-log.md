@@ -4009,3 +4009,12 @@ the automated scheduled-task mechanism):
   pre-2026 periods), and its operating margin is our calculation (pre-tax
   + interest), labelled; HAL Q3 date 10-20 confirmed by its IR release.
   Day total: **155 report-periods**, **366 companies done.**
+- Continued: published (5) DOC Q2, HSIC Q2, HSY Q2, HPE Q3 (fiscal Q3
+  ended 07-31), HONA Q2. Notes: HONA is Honeywell Aerospace Inc. (CIK
+  2089271), spun off 06-29; its own Q2 10-Q is the last carve-out quarter
+  (prior-year EPS illustrative on the 317M distributed shares; operating
+  margin is our EBIT calc, labelled). HSY's +630% net income is the
+  commodity-derivative mark-to-market swing ($103M gain vs $201M loss).
+  HPE's YoY is inflated by Juniper (closed 2025-07-02) and a $444M H3C
+  gain. Healthpeak no longer reports CCRC separately (Senior Housing via
+  Janus Living). Day total: **160 report-periods**, **371 companies done.**

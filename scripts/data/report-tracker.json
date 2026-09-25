@@ -9924,5 +9924,155 @@
         "url": "https://financialreportinsights.com/companies/hca/2026/q2"
       }
     ]
+  },
+  "DOC": {
+    "name": "Healthpeak Properties",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/doc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q3 2025 8-K 10-23, 10-Q 10-24; 2026 filings ~10 days later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/doc/2026/q2"
+      }
+    ]
+  },
+  "HSIC": {
+    "name": "Henry Schein",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hsic/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q3 10-Q filed 2025-11-04, 2024-11-05; 8-K same day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hsic/2026/q2"
+      }
+    ]
+  },
+  "HSY": {
+    "name": "Hershey Company (The)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hsy/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~quarterly cadence from Q2 filing 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hsy/2026/q2"
+      }
+    ]
+  },
+  "HPE": {
+    "name": "Hewlett Packard Enterprise",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hpe/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-03"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (FQ4/FY2026); 10-K ~12-17",
+      "estimate": "2026-12-03",
+      "basis": "FY earnings 8-K 2025-12-04, 2024-12-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hpe/2026/q3"
+      }
+    ]
+  },
+  "HONA": {
+    "name": "Honeywell Aerospace",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hona/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q2 results 39 days after quarter-end; Q3 ends 2026-09-26",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hona/2026/q2"
+      }
+    ]
   }
 }
