@@ -4150,3 +4150,27 @@ the automated scheduled-task mechanism):
   Skipped: none this batch.
 - Running total: **421 companies done**, **15 report-periods published
   this window**.
+- Batch 4: published (5) via 5 opus subagents in parallel, same
+  validate → publish → live-verify loop: MCK Q1 (fiscal Q1 FY2027, labeled
+  year 2026 per WMT/TGT precedent), MDT Q1 (fiscal Q1 FY2027, a 53-week-
+  quarter year, labeled year 2026), MET Q2, MTD Q2, MGM Q2.
+  Note: two subagents (MCK and MTD) wrote to same-named generic scratch
+  filenames (`content.md`) in the shared scratchpad and one overwrote the
+  other; the MTD subagent caught the contamination itself, rewrote under a
+  ticker-prefixed name, and confirmed the final JSON was clean (checked
+  again here before publishing) — worth telling future subagents to always
+  use ticker-prefixed scratch filenames.
+  Notes: MCK GAAP EPS -17.6% on two non-cash charges tied to Apollo's new
+  Med-Surg stake and Core Ventures (adjusted EPS +20%); MDT revenue +13.7%
+  partly an extra week in a 53-week fiscal quarter (~7% organic,
+  Electrophysiology/PFA ablation the main driver), MiniMed diabetes
+  spin-off exchange offer opened 09-14; MET (life insurer, general metrics
+  fields only, no combined ratio) GAAP EPS +5.8% held back by derivative/
+  investment mark-to-market losses, adjusted EPS +20%; MTD GAAP EPS +18.3%
+  inflated by a one-off $52.4M IEEPA tariff refund (adjusted EPS +13.6%,
+  cleaner read), guidance raised; MGM GAAP EPS $1.11 vs $0.18 driven by a
+  Northfield Park sale gain and an FX swing on MGM China debt, adjusted
+  EPS actually fell 25% (MGM Digital/LeoVegas $111M goodwill write-down).
+  Skipped: none this batch.
+- Running total: **426 companies done**, **20 report-periods published
+  this window**.

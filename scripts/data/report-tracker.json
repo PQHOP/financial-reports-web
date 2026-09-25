@@ -11454,5 +11454,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25"
+  },
+  "MCK": {
+    "name": "McKesson Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/mck/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2026-11-04",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "MDT": {
+    "name": "Medtronic",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/mdt/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2026-11-24",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "MET": {
+    "name": "MetLife",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/met/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "MTD": {
+    "name": "Mettler Toledo",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/mtd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "MGM": {
+    "name": "MGM Resorts",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/mgm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
   }
 }
