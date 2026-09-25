@@ -8,6 +8,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { periodLabels, periodOrder } from "@/lib/period";
 import { reportPath } from "@/lib/reportPath";
 import { formatMoneyMillions, formatPct, readMetrics } from "@/lib/metrics";
+import { cleanCompanyName } from "@/lib/companyName";
 
 export const dynamic = "force-dynamic";
 
@@ -165,7 +166,7 @@ export default async function IndustryPage({
                         href={`/companies/${r.company.slug}`}
                         className="text-blue-700 hover:underline"
                       >
-                        {r.company.ticker ?? r.company.name}
+                        {r.company.ticker ?? cleanCompanyName(r.company.name)}
                       </Link>
                     </td>
                     <td className="whitespace-nowrap px-3 py-2">
@@ -230,7 +231,7 @@ export default async function IndustryPage({
                 className="block rounded-lg border border-zinc-200 bg-white px-4 py-3 hover:border-zinc-400"
               >
                 <div className="font-medium">
-                  {company.name}
+                  {cleanCompanyName(company.name)}
                   {company.ticker && (
                     <span className="ml-2 text-sm text-zinc-500">
                       ({company.ticker})

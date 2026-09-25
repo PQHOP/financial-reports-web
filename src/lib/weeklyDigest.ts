@@ -10,6 +10,7 @@ import {
   type ReportMetrics,
 } from "@/lib/metrics";
 import type { ReportPeriod } from "@/generated/prisma/client";
+import { cleanCompanyName } from "@/lib/companyName";
 
 // Weekly digest: everything the site published in the last 7 days, assembled
 // from our own database with no model call, so every number in it is a number
@@ -203,7 +204,7 @@ export async function buildDigest(now: Date): Promise<Digest | null> {
       id: r.id,
       path: reportPath(r),
       ticker: r.company.ticker,
-      companyName: r.company.name,
+      companyName: cleanCompanyName(r.company.name),
       year: r.year,
       period: r.period,
       summary: r.summary,

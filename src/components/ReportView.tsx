@@ -20,6 +20,7 @@ import {
   readMetrics,
   type ReportMetrics,
 } from "@/lib/metrics";
+import { cleanCompanyName } from "@/lib/companyName";
 
 // Shared by the canonical /companies/<slug>/<year>/<period> route and by
 // /reports/<id> (community reports, and the admin's view of any report).
@@ -209,7 +210,7 @@ export async function ReportView({ report }: { report: FullReport }) {
     ...(cover ? { image: [cover] } : {}),
     about: {
       "@type": "Corporation",
-      name: report.company.name,
+      name: cleanCompanyName(report.company.name),
       url: `${SITE_URL}${companyHref}`,
       ...(ticker ? { tickerSymbol: ticker } : {}),
     },
@@ -228,7 +229,7 @@ export async function ReportView({ report }: { report: FullReport }) {
             ...(primaryIndustry
               ? [{ name: primaryIndustry.name, href: `/industries/${primaryIndustry.slug}` }]
               : []),
-            { name: report.company.name, href: companyHref },
+            { name: cleanCompanyName(report.company.name), href: companyHref },
             { name: String(report.year), href: `${companyHref}/${report.year}` },
             {
               name: isCommunity ? `${periodName} (community)` : periodName,
@@ -278,7 +279,7 @@ export async function ReportView({ report }: { report: FullReport }) {
           {SITE_NAME}; we review submissions before they appear but do not
           verify the figures. Check them against the source filing.{" "}
           <Link href={companyHref} className="underline">
-            See our own analysis of {report.company.name}
+            See our own analysis of {cleanCompanyName(report.company.name)}
           </Link>
           .
         </p>
@@ -320,7 +321,7 @@ export async function ReportView({ report }: { report: FullReport }) {
       {nextFiling && isLatest && (
         <aside className="rounded-lg border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-950">
           <span className="font-medium">Next report: </span>
-          {report.company.name}&apos;s {nextFiling.type ?? "next filing"} is{" "}
+          {cleanCompanyName(report.company.name)}&apos;s {nextFiling.type ?? "next filing"} is{" "}
           {nextFiling.confidence === "confirmed" ? "scheduled for" : "expected around"}{" "}
           {formatFilingDate(nextFiling.estimate)}
           {nextFiling.confidence === "confirmed" ? "" : " (our estimate from past filing dates)"}.
@@ -350,7 +351,7 @@ export async function ReportView({ report }: { report: FullReport }) {
             (search{" "}
             <a
               href={`https://www.sec.gov/edgar/search/#/q=${encodeURIComponent(
-                ticker ?? report.company.name
+                ticker ?? cleanCompanyName(report.company.name)
               )}`}
               target="_blank"
               rel="noopener noreferrer"
@@ -376,7 +377,7 @@ export async function ReportView({ report }: { report: FullReport }) {
       {related.length > 0 && (
         <section className="flex flex-col gap-2">
           <h2 className="text-lg font-medium">
-            More on {report.company.name}
+            More on {cleanCompanyName(report.company.name)}
           </h2>
           <ul className="flex flex-col gap-2">
             {related.map((article) => (
@@ -399,7 +400,7 @@ export async function ReportView({ report }: { report: FullReport }) {
       {otherPeriods.length > 0 && (
         <section className="flex flex-col gap-2">
           <h2 className="text-lg font-medium">
-            More {report.company.name} reports
+            More {cleanCompanyName(report.company.name)} reports
           </h2>
           <ul className="flex flex-wrap gap-2">
             {otherPeriods.map((other) => (
@@ -421,7 +422,7 @@ export async function ReportView({ report }: { report: FullReport }) {
         <span className="text-zinc-600">
           {isCommunity
             ? "Have your own take on this company?"
-            : `Read ${communityCount} community ${communityCount === 1 ? "report" : "reports"} on ${report.company.name}, or write your own.`}
+            : `Read ${communityCount} community ${communityCount === 1 ? "report" : "reports"} on ${cleanCompanyName(report.company.name)}, or write your own.`}
         </span>
         {!isCommunity && communityCount > 0 && (
           <Link href={`${companyHref}?source=community`} className="underline">

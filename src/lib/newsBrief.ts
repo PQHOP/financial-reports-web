@@ -5,6 +5,7 @@ import { systemReports } from "@/lib/community";
 import { periodLabels } from "@/lib/period";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import { FEEDS, fetchFeed, type FeedItem } from "@/lib/newsFeeds";
+import { cleanCompanyName } from "@/lib/companyName";
 
 // Model for the daily brief. Override with NEWS_MODEL (e.g. claude-sonnet-5
 // to cut the cost roughly in half).
@@ -132,7 +133,7 @@ async function loadCompanies(): Promise<CompanyContext[]> {
     const metrics = readMetrics(report.metrics);
     companies.push({
       ticker,
-      name: report.company.name,
+      name: cleanCompanyName(report.company.name),
       reportPath: reportPath(report),
       label: `${ticker} ${periodLabels[report.period]} ${report.year} analysis`,
       headline: metrics ? metricsHeadline(metrics) : "",
@@ -281,7 +282,7 @@ export function assembleBrief(
       .filter((t) => companiesByTicker.has(t))
       .filter((t) => {
         const company = companiesByTicker.get(t)!;
-        const name = normalizeName(company.name);
+        const name = normalizeName(cleanCompanyName(company.name));
         return (
           (name.length >= 3 && citedNormalized.includes(name)) ||
           (t.length >= 3 && new RegExp(`\\b${t.replace(/[^A-Z0-9]/g, "\\$&")}\\b`).test(citedText))

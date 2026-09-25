@@ -19,6 +19,7 @@ import {
   readMetrics,
 } from "@/lib/metrics";
 import type { ReportPeriod } from "@/generated/prisma/client";
+import { cleanCompanyName } from "@/lib/companyName";
 
 export const dynamic = "force-dynamic";
 
@@ -43,7 +44,7 @@ const getCompany = cache(async (slug: string) => {
 });
 
 function displayName(company: { name: string; ticker: string | null }) {
-  return company.ticker ? `${company.name} (${company.ticker})` : company.name;
+  return company.ticker ? `${cleanCompanyName(company.name)} (${company.ticker})` : cleanCompanyName(company.name);
 }
 
 function periodShort(r: { year: number; period: ReportPeriod }) {
@@ -137,7 +138,7 @@ export default async function CompanyPage({
           data={{
             "@context": "https://schema.org",
             "@type": "Corporation",
-            name: company.name,
+            name: cleanCompanyName(company.name),
             url: `${SITE_URL}${companyHref}`,
             ...(company.ticker ? { tickerSymbol: company.ticker } : {}),
             address: { "@type": "PostalAddress", addressCountry: company.country },
@@ -151,11 +152,11 @@ export default async function CompanyPage({
             ...(primaryIndustry
               ? [{ name: primaryIndustry.name, href: `/industries/${primaryIndustry.slug}` }]
               : []),
-            { name: company.name, href: companyHref },
+            { name: cleanCompanyName(company.name), href: companyHref },
           ]}
         />
         <h1 className="mt-2 text-2xl font-semibold">
-          {company.name}
+          {cleanCompanyName(company.name)}
           {company.ticker && (
             <span className="ml-2 text-lg text-zinc-500">({company.ticker})</span>
           )}{" "}
@@ -223,7 +224,7 @@ export default async function CompanyPage({
 
       {source === "system" && history.length > 0 && (
         <section className="flex flex-col gap-2">
-          <h2 className="text-lg font-medium">{company.name} results by period</h2>
+          <h2 className="text-lg font-medium">{cleanCompanyName(company.name)} results by period</h2>
           <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
             <table className="w-full text-sm">
               <thead className="bg-zinc-50 text-left text-zinc-600">
@@ -327,8 +328,8 @@ export default async function CompanyPage({
         <section>
           <h2 className="mb-3 text-lg font-medium">
             {source === "community"
-              ? `Community reports on ${company.name}`
-              : `${company.name} earnings analyses`}
+              ? `Community reports on ${cleanCompanyName(company.name)}`
+              : `${cleanCompanyName(company.name)} earnings analyses`}
           </h2>
           <ul className="flex flex-col gap-3">
             {shown.map((report) => (

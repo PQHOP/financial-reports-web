@@ -8,6 +8,7 @@ import { systemReports } from "@/lib/community";
 import type { Metadata } from "next";
 import hotList from "../../scripts/data/priority-tickers.json";
 import { formatFilingDate, loadTracker } from "@/lib/tracker";
+import { cleanCompanyName } from "@/lib/companyName";
 
 // Most-searched tickers first (same list the report backlog is worked in).
 const POPULAR_TICKERS: string[] = hotList.tickers;
@@ -182,7 +183,7 @@ export default async function Home() {
                   className="block rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm hover:border-zinc-400"
                 >
                   <span className="font-medium">{company.ticker}</span>{" "}
-                  <span className="text-zinc-500">{company.name}</span>
+                  <span className="text-zinc-500">{cleanCompanyName(company.name)}</span>
                 </Link>
               </li>
             ))}

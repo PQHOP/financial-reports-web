@@ -7,6 +7,7 @@ import { periodLabels } from "@/lib/period";
 import hotList from "../../../scripts/data/priority-tickers.json";
 import { formatFilingDate, loadTracker } from "@/lib/tracker";
 import { reportPath } from "@/lib/reportPath";
+import { cleanCompanyName } from "@/lib/companyName";
 
 export const dynamic = "force-dynamic";
 
@@ -124,7 +125,7 @@ export default async function EarningsCalendarPage() {
                         href={`/companies/${company.slug}`}
                         className="font-medium hover:underline"
                       >
-                        {company.name} ({item.ticker})
+                        {cleanCompanyName(company.name)} ({item.ticker})
                       </Link>
                       <div className="text-sm text-zinc-500">
                         {item.type}

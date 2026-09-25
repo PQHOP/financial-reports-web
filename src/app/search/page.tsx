@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
+import { cleanCompanyName } from "@/lib/companyName";
 
 export const dynamic = "force-dynamic";
 
@@ -54,7 +55,7 @@ export default async function SearchPage({
                 className="block rounded-lg border border-zinc-200 bg-white px-4 py-3 hover:border-zinc-400"
               >
                 <div className="font-medium">
-                  {company.name}
+                  {cleanCompanyName(company.name)}
                   {company.ticker && (
                     <span className="ml-2 text-sm text-zinc-500">
                       ({company.ticker})

@@ -657,6 +657,11 @@ the user is tracked at its end. Things future sessions should know:
   results-by-period table built from `metrics`. Industry pages show a peer
   table from the same `metrics` — another reason `metrics` must be set.
 - `www.` 308s to the bare domain in `src/proxy.ts`.
+- **Company names:** ~1,250 us-listed names carry a NASDAQ listing suffix
+  ("- Class A", "- Ordinary Shares"). Public pages wrap names in
+  `cleanCompanyName()` (`src/lib/companyName.ts`); the stored name stays
+  as-is because `admin-publish` matches the admin dropdown text, so report
+  JSON `company` must still use the name `--list` prints.
 - **Env vars that gate features** (all optional, set with `vercel env add
   ... --value`): `CONTACT_EMAIL` (shown on `/contact`), `CRON_SECRET` (must
   be set for `/api/cron/social` to run at all), `BLUESKY_HANDLE` +

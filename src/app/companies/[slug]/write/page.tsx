@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { prisma } from "@/lib/prisma";
 import { CommunityReportForm } from "@/components/CommunityReportForm";
+import { cleanCompanyName } from "@/lib/companyName";
 
 export const dynamic = "force-dynamic";
 
@@ -15,7 +16,7 @@ export async function generateMetadata({
   const company = await prisma.company.findUnique({ where: { slug } });
   if (!company) return {};
   return {
-    title: `Write a report on ${company.name}`,
+    title: `Write a report on ${cleanCompanyName(company.name)}`,
     robots: { index: false, follow: false },
   };
 }
@@ -39,10 +40,10 @@ export default async function WriteReportPage({
           href={`/companies/${company.slug}`}
           className="text-sm text-zinc-500 hover:underline"
         >
-          ← {company.name}
+          ← {cleanCompanyName(company.name)}
         </Link>
         <h1 className="mt-1 text-2xl font-semibold">
-          Write a report on {company.name}
+          Write a report on {cleanCompanyName(company.name)}
           {company.ticker && (
             <span className="ml-2 text-lg text-zinc-500">({company.ticker})</span>
           )}

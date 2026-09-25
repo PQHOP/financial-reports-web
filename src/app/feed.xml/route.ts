@@ -4,6 +4,7 @@ import { periodLabels } from "@/lib/period";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
+import { cleanCompanyName } from "@/lib/companyName";
 
 export const dynamic = "force-dynamic";
 
@@ -36,7 +37,7 @@ export async function GET() {
       link: reportUrl(report),
       description: report.summary,
       date: report.publishedAt,
-      category: `${report.company.ticker ?? report.company.name} ${periodLabels[report.period]} ${report.year}`,
+      category: `${report.company.ticker ?? cleanCompanyName(report.company.name)} ${periodLabels[report.period]} ${report.year}`,
     })),
     ...articles.map((article) => ({
       title: article.title,

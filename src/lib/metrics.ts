@@ -72,6 +72,9 @@ export function formatMoneyMillions(millions: number, currency = "USD"): string 
   const sign = millions < 0 ? "-" : "";
   if (abs >= 1_000_000) return `${sign}${symbol}${(abs / 1_000_000).toFixed(2)}T`;
   if (abs >= 1_000) return `${sign}${symbol}${(abs / 1_000).toFixed(1)}B`;
+  // Small companies: "$365K" / "$2.9M" rather than rounding to "$0M" / "$3M".
+  if (abs < 1) return `${sign}${symbol}${Math.round(abs * 1_000)}K`;
+  if (abs < 10) return `${sign}${symbol}${abs.toFixed(1)}M`;
   return `${sign}${symbol}${abs.toFixed(0)}M`;
 }
 

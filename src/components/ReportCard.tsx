@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { periodLabels } from "@/lib/period";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
+import { cleanCompanyName } from "@/lib/companyName";
 import type { ReportPeriod } from "@/generated/prisma/client";
 import { reportPath } from "@/lib/reportPath";
 
@@ -28,7 +29,7 @@ export function ReportCard({ report }: { report: ReportCardData }) {
       className="block rounded-lg border border-zinc-200 bg-white p-4 hover:border-zinc-400"
     >
       <div className="font-medium">
-        {report.company.name}
+        {cleanCompanyName(report.company.name)}
         {report.company.ticker ? ` (${report.company.ticker})` : ""} ·{" "}
         {periodLabels[report.period]} {report.year}
         {isCommunity && (

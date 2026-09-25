@@ -3915,3 +3915,35 @@ the automated scheduled-task mechanism):
   Also shipped `/earnings` (calendar from the tracker), tier-0 scan now
   re-surfaces done companies with newer filings + S&P 500 earnings 8-Ks,
   and the routine window moved to 16–22 UTC with a ~20/night cap.
+
+### 2026-09-25 daytime — manual session (outside the nightly window)
+
+- Mechanism: interactive local session at the user's request ("continue
+  updating report data"), 03:50–05:00 UTC; the cloud routine was not
+  running (outside 16–22 UTC).
+- Tier worked: **0 (fresh filings)** — `scan-recent-filings` (7 days) gave
+  16 candidates; all handled.
+- Research via 15 opus subagents (drafts only, no publishing, no tracker
+  writes); orchestrator validated each JSON (fields, Takeaway, no images,
+  metrics present in text), cross-checked revenue/net income against the
+  SEC source text, published with `admin-publish` against
+  https://financialreportinsights.com and re-verified each live
+  (cache-busted: 200, title, Takeaway, Source filing, last sentence).
+- Published (15), all at the new `/companies/<slug>/<year>/<period>` URLs:
+  COST ANNUAL (FY2026, from the 09-24 earnings 8-K; 10-K due ~10-08),
+  DRI Q1 (8-K), PAYX Q1, CTAS Q1 (8-K), BB Q2, CPB ANNUAL, FUL Q3,
+  KTCC ANNUAL, SFIX ANNUAL, RZLT ANNUAL, LGCY ANNUAL, RAVE ANNUAL,
+  TRT ANNUAL, AMST ANNUAL, ESP ANNUAL. Fiscal-2027 quarters ending in
+  calendar 2026 (DRI, PAYX, CTAS, BB) labelled year 2026 per precedent.
+- ADBE: Q3 10-Q (filed 09-22) is the same period as the published
+  8-K-based Q3 report — tracker `lastFilingSeen` updated only, no edit.
+- Editorial note: RAVE's report covers the CEO's harassment/
+  discrimination complaint against the board exactly as the 10-K's Legal
+  Proceedings describes it (facts checked against the filing).
+- Skipped: none.
+- Also shipped: public pages drop NASDAQ listing suffixes from company
+  names ("Stitch Fix, Inc. - Class A" → "Stitch Fix, Inc.";
+  `cleanCompanyName`), and amounts under $10M show as "$365K"/"$2.9M"
+  instead of "$0M"/"$3M".
+- Running total: **226 companies done, 243 report-periods published**
+  (212/228 + 14 new companies + COST's second period).

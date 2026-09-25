@@ -7,6 +7,7 @@ import { realCoverImage } from "@/lib/reportMeta";
 import { parseSource, sourceWhere, systemReports } from "@/lib/community";
 import { reportPath } from "@/lib/reportPath";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { cleanCompanyName } from "@/lib/companyName";
 
 export const dynamic = "force-dynamic";
 
@@ -23,8 +24,8 @@ export async function generateMetadata({
     where: { companyId: company.id, year: Number(year) || 0, ...systemReports },
   });
 
-  const title = `${company.name}${company.ticker ? ` (${company.ticker})` : ""} ${year} Earnings Reports`;
-  const description = `Financial report analysis for ${company.name}${
+  const title = `${cleanCompanyName(company.name)}${company.ticker ? ` (${company.ticker})` : ""} ${year} Earnings Reports`;
+  const description = `Financial report analysis for ${cleanCompanyName(company.name)}${
     company.ticker ? ` (${company.ticker})` : ""
   } covering fiscal year ${year}.`;
 
@@ -69,13 +70,13 @@ export default async function CompanyYearPage({
       <div>
         <Breadcrumbs
           items={[
-            { name: company.name, href: `/companies/${company.slug}` },
+            { name: cleanCompanyName(company.name), href: `/companies/${company.slug}` },
             { name: String(yearNum), href: `/companies/${company.slug}/${yearNum}` },
           ]}
         />
         <h1 className="mt-1 text-2xl font-semibold">
           {yearNum} {source === "community" ? "Community " : ""}Reports —{" "}
-          {company.name}
+          {cleanCompanyName(company.name)}
         </h1>
       </div>
 

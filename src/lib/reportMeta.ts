@@ -1,5 +1,6 @@
 import type { ReportPeriod } from "@/generated/prisma/client";
 import { formatMoneyMillions, formatPct, type ReportMetrics } from "@/lib/metrics";
+import { cleanCompanyName } from "@/lib/companyName";
 
 // Cover images from placehold.co are fake-chart placeholders (see CLAUDE.md:
 // text only, no placeholder charts). Treat them as "no cover image" so they
@@ -22,7 +23,7 @@ export function reportSearchTitle(
   period: ReportPeriod,
   metrics: ReportMetrics | null
 ): string {
-  const who = company.ticker ? `${company.name} (${company.ticker})` : company.name;
+  const who = company.ticker ? `${cleanCompanyName(company.name)} (${company.ticker})` : cleanCompanyName(company.name);
   const when = period === "ANNUAL" ? `FY${year}` : `${period} ${year}`;
   const base = `${who} ${when} Earnings`;
   if (metrics?.revenue === undefined) return `${base} Analysis`;

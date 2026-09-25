@@ -9,6 +9,7 @@ import {
   submitCommunityReportAction,
   type CommunityFormState,
 } from "@/app/companies/[slug]/write/actions";
+import { cleanCompanyName } from "@/lib/companyName";
 
 const inputClass = "rounded-md border border-zinc-300 px-3 py-2 text-sm";
 
@@ -47,7 +48,7 @@ export function CommunityReportForm({
           href={`/companies/${company.slug}`}
           className="mt-3 inline-block underline"
         >
-          ← Back to {company.name}
+          ← Back to {cleanCompanyName(company.name)}
         </Link>
       </div>
     );

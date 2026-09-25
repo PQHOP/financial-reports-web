@@ -3,6 +3,7 @@ import { periodLabels } from "@/lib/period";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import { SITE_NAME } from "@/lib/site";
 import type { ReportPeriod } from "@/generated/prisma/client";
+import { cleanCompanyName } from "@/lib/companyName";
 
 // The generated social card for a report, shared by /reports/<id> and the
 // canonical /companies/<slug>/<year>/<period> route.
@@ -19,7 +20,7 @@ type OgReport = {
 export function reportOgImage(report: OgReport | null) {
   const size = ogSize;
   const label = report
-    ? `${report.company.ticker ?? report.company.name} · ${periodLabels[report.period]} ${report.year}`
+    ? `${report.company.ticker ?? cleanCompanyName(report.company.name)} · ${periodLabels[report.period]} ${report.year}`
     : SITE_NAME;
   const metrics = report ? readMetrics(report.metrics) : null;
   const headline = metrics ? metricsHeadline(metrics) : "";
@@ -49,7 +50,7 @@ export function reportOgImage(report: OgReport | null) {
           </div>
           {report && (
             <div style={{ display: "flex", fontSize: 34, color: "#cbd5e1" }}>
-              {report.company.name} earnings analysis
+              {cleanCompanyName(report.company.name)} earnings analysis
             </div>
           )}
           {headline && (

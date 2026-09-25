@@ -4,6 +4,7 @@ import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import { reportSearchTitle } from "@/lib/reportMeta";
 import { reportUrl as canonicalReportUrl } from "@/lib/reportPath";
 import type { ReportPeriod } from "@/generated/prisma/client";
+import { cleanCompanyName } from "@/lib/companyName";
 
 export type PostableReport = {
   id: string;
@@ -25,7 +26,7 @@ function truncate(text: string, max: number): string {
 function buildBody(report: PostableReport, cashtag: boolean, budget: number): string {
   const metrics = readMetrics(report.metrics);
   const ticker = report.company.ticker;
-  const label = ticker ? `${cashtag ? "$" : ""}${ticker}` : report.company.name;
+  const label = ticker ? `${cashtag ? "$" : ""}${ticker}` : cleanCompanyName(report.company.name);
   const head = `${label} ${periodLabels[report.period]} ${report.year} earnings:`;
   const detail = metrics ? metricsHeadline(metrics) : "";
   const body = detail

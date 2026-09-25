@@ -318,17 +318,17 @@
     ],
     "allAvailable2026QuartersCovered": true,
     "lastFilingSeen": {
-      "type": "8-K (Ex-99.1, Q3 FY2026 earnings release)",
+      "type": "10-Q",
       "periodEnd": "2026-08-28",
-      "filedAt": "2026-09-10"
+      "filedAt": "2026-09-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 FY2026)",
-      "estimate": "2026-09-24",
-      "basis": "fiscal year ends late Nov (FYE 11/27); Q3 FY2026 results released via 8-K on 2026-09-10 and the release states Adobe 'expects to file' the 10-Q in Sept. 2026; prior three Q3 10-Qs filed 2025-09-24, 2024-09-25, 2023-09-27. Q4/FY2026 earnings release reported as 2026-12-10, with the FY2026 10-K expected ~mid-Jan 2027 (prior 10-Ks filed 2026-01-15 and 2025-01-13)",
+      "type": "8-K (Q4/FY2026 earnings release)",
+      "estimate": "2026-12-10",
+      "basis": "Q4/FY2026 earnings release reported for 2026-12-10; FY2026 10-K ~mid-Jan 2027. Q3 10-Q (filed 2026-09-22) is the same period as the published 8-K-based Q3 report; not re-edited",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-13"
+    "lastChecked": "2026-09-25"
   },
   "ADI": {
     "name": "Analog Devices",
@@ -3420,22 +3420,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-20",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu9yfm1r000204il8l5zlywt"
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cost/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-05-10",
-      "filedAt": "2026-06-03"
+      "type": "8-K (Item 2.02, FY2026 earnings release)",
+      "periodEnd": "2026-08-30",
+      "filedAt": "2026-09-24"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026 annual, ends 2026-08-30)",
+      "type": "10-K (FY2026)",
       "estimate": "2026-10-08",
-      "basis": "FY ends 2026-08-30; prior-year 10-K filed 2025-10-08 (~5 weeks after FYE)",
+      "basis": "FY2025 10-K filed ~5-6 weeks after FYE; release gives no 10-K date. Next quarterly after that: Q1 FY2027 10-Q ~mid-Dec 2026",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-20"
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-20",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu9yfm1r000204il8l5zlywt"
+      },
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cost/2026/annual"
+      }
+    ]
   },
   "WMT": {
     "name": "Walmart",
@@ -5284,5 +5298,425 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-24"
+  },
+  "DRI": {
+    "name": "Darden Restaurants",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dri/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "8-K (Item 2.02, Q1 FY2027 earnings release)",
+      "periodEnd": "2026-08-30",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-10-02",
+      "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks; Q2 FY2027 earnings 8-K ~2026-12-17",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dri/2026/q1"
+      }
+    ]
+  },
+  "PAYX": {
+    "name": "Paychex",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/payx/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027)",
+      "estimate": "2026-12-22",
+      "basis": "~90 days after Q1 10-Q; Paychex reports fiscal Q2 in late December",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/payx/2026/q1"
+      }
+    ]
+  },
+  "CTAS": {
+    "name": "Cintas",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ctas/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "8-K (Item 2.02, Q1 FY2027 earnings release)",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-10-08",
+      "basis": "10-Q usually 2-3 weeks after the release; Q2 FY2027 earnings 8-K ~2026-12-18. When the 10-Q lands, consider --edit to add MD&A margin drivers",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/ctas/2026/q1"
+      }
+    ]
+  },
+  "BB": {
+    "name": "BlackBerry Limited",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/bb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2027)",
+      "estimate": "2026-12-18",
+      "basis": "Q3 10-Qs filed 2025-12-19 and 2024-12-20",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/bb/2026/q2"
+      }
+    ]
+  },
+  "CPB": {
+    "name": "The Campbell's Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cpb/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-12-08",
+      "basis": "Q1 FY2027 ends ~2026-11-01; Campbell's usually reports Q1 in early December",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cpb/2026/annual"
+      }
+    ]
+  },
+  "FUL": {
+    "name": "H. B. Fuller Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ful/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-21",
+      "basis": "FY ends 2026-11-28; 10-K historically mid-to-late January",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/ful/2026/q3"
+      }
+    ]
+  },
+  "KTCC": {
+    "name": "Key Tronic Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ktcc/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-10",
+      "basis": "Q1 ends ~2026-09-26; Q1 10-Q usually 6-7 weeks after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/ktcc/2026/annual"
+      }
+    ]
+  },
+  "SFIX": {
+    "name": "Stitch Fix, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/sfix/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-12-09",
+      "basis": "Q1 ends ~2026-10-31; Stitch Fix normally reports Q1 in early December",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/sfix/2026/annual"
+      }
+    ]
+  },
+  "RZLT": {
+    "name": "Rezolute, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/rzlt/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-12",
+      "basis": "FYE June 30; Q1 10-Q ~40-45 days after Sep 30. upLIFT topline expected by end-2026, likely via 8-K first",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/rzlt/2026/annual"
+      }
+    ]
+  },
+  "LGCY": {
+    "name": "Legacy Education Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/lgcy/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-13",
+      "basis": "prior Q1 10-Q filed 2025-11-13 (EDGAR submissions history)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/lgcy/2026/annual"
+      }
+    ]
+  },
+  "RAVE": {
+    "name": "Rave Restaurant Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/rave/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-10",
+      "basis": "Q1 ends ~2026-09-27; Q1 10-Q usually early-to-mid November. Watch for 8-K on the CEO complaint investigation",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/rave/2026/annual"
+      }
+    ]
+  },
+  "TRT": {
+    "name": "Trio-Tech International",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/trt/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-13",
+      "basis": "45-day smaller-reporting-company deadline after Sep 30; historically mid-November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/trt/2026/annual"
+      }
+    ]
+  },
+  "AMST": {
+    "name": "Amesite Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/amst/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-13",
+      "basis": "~45 days after Sep 30 quarter end (smaller reporting company deadline)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/amst/2026/annual"
+      }
+    ]
+  },
+  "ESP": {
+    "name": "Espey Mfg. & Electronics Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/esp/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-12",
+      "basis": "~45 days after Sep 30 quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/esp/2026/annual"
+      }
+    ]
   }
 }
