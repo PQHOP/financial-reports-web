@@ -7968,5 +7968,155 @@
         "url": "https://financialreportinsights.com/companies/dlr/2026/q2"
       }
     ]
+  },
+  "DLTR": {
+    "name": "Dollar Tree",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dltr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 FY2026)",
+      "estimate": "2026-12-02",
+      "basis": "prior Q3 10-Q 2025-12-03; quarterlies ~26-27 days after quarter end, 8-K same day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dltr/2026/q2"
+      }
+    ]
+  },
+  "D": {
+    "name": "Dominion Energy",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/d/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "~90-day cadence; Q2 8-K and 10-Q same day. NextEra merger approved by shareholders 2026-09-03, closing expected H2 2027",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/d/2026/q2"
+      }
+    ]
+  },
+  "DPZ": {
+    "name": "Domino's",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dpz/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-14",
+      "filedAt": "2026-07-20"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-12",
+      "basis": "Q3 ends ~09-06; 10-Q same day as earnings ~5 weeks after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dpz/2026/q2"
+      }
+    ]
+  },
+  "DOV": {
+    "name": "Dover Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dov/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q3 10-Qs 2025-10-23, 2024-10-24, same day as 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dov/2026/q2"
+      }
+    ]
+  },
+  "DOW": {
+    "name": "Dow Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dow/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-24"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "10-Q the day after the 8-K (04-24, 07-24)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dow/2026/q2"
+      }
+    ]
   }
 }
