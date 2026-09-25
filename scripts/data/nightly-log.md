@@ -4043,3 +4043,11 @@ the automated scheduled-task mechanism):
   revenue = net revenues, MarketAxess $6.0B deal agreed 07-29. IBKR
   (10-15) and ICE (10-29) Q3 dates confirmed. Day total: **175
   report-periods**, **386 companies done.**
+- Continued: published (5) IFF Q2, IP Q2, IVZ Q2, INVH Q2, IQV Q2.
+  Notes: IFF Food Ingredients now discontinued ops (~$3.8B sale to CVC
+  agreed 05-29), metrics are continuing ops, GAAP EPS −94% vs a prior-year
+  $488M debt gain; IP swung to a −$12M loss (EMEA/DS Smith −$80M segment
+  loss, Pine Hill shutdown), op margin = segment profit ÷ sales (labelled);
+  IVZ and IP YoY % omitted (sign flip); INVH profit lifted by $132M of
+  home-sale gains; IQV now reports two segments (Commercial Solutions,
+  R&DS). Day total: **180 report-periods**, **391 companies done.**
