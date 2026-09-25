@@ -1,16 +1,19 @@
 /**
- * Builds the static data behind /economy from the IMF World Economic Outlook
- * (DataMapper API, free, no key) plus a pre-projected world map.
+ * Builds the bundled data behind /economy, plus a pre-projected world map.
  *
  *   npm run fetch-macro
  *
  * Writes:
- *   src/data/macro.json      indicator values per country/aggregate, 2000-2030
- *   src/data/world-map.json  SVG path per ISO3 country (Natural Earth projection)
+ *   src/data/macro.json       IMF WEO annual values per country/aggregate,
+ *                             2000-2030, and the country list (name, region,
+ *                             ISO2, currency)
+ *   src/data/macro-live.json  latest monthly/quarterly/daily figures
+ *                             (src/lib/macroLive.ts)
+ *   src/data/world-map.json   SVG path per ISO3 country (Natural Earth)
  *
- * The IMF publishes the WEO twice a year (April and October), so re-run this
- * after each release and redeploy. Nothing on the site calls the IMF at
- * request time.
+ * In production /api/cron/macro refreshes both data sets daily into the
+ * database; these files are the fallback when the database has nothing yet.
+ * Re-run this when the country list or map should change.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -20,76 +23,37 @@ import type { Topology, GeometryCollection } from "topojson-specification";
 import type { Feature, FeatureCollection, Geometry } from "geojson";
 import worldCountries from "world-countries";
 import { INDICATORS, AGGREGATES } from "../src/lib/macro";
+import { fetchWeoCountryLabels, fetchWeoSeries, WEO_YEARS } from "../src/lib/macroWeo";
+import { fetchLive } from "../src/lib/macroLive";
 
-const API = "https://www.imf.org/external/datamapper/api/v1";
-const FIRST_YEAR = 2000;
-const LAST_YEAR = 2030;
 const OUT_DIR = path.join(__dirname, "..", "src", "data");
 
 // IMF uses a few non-ISO codes.
 const IMF_CODE_FIXES: Record<string, string> = { XKX: "UVK", PSE: "WBG" };
-// Territories IMF reports that aren't worth a table row (no own economy data
-// in most indicators) are dropped by requiring at least 3 indicators below.
-
-async function getJson<T>(url: string): Promise<T> {
-  for (let attempt = 1; ; attempt++) {
-    try {
-      const res = await fetch(url, { headers: { "User-Agent": "FinancialReportInsights macro-fetch" } });
-      if (!res.ok) throw new Error(`${res.status} ${url}`);
-      return (await res.json()) as T;
-    } catch (err) {
-      if (attempt >= 3) throw err;
-      await new Promise((r) => setTimeout(r, 2000 * attempt));
-    }
-  }
-}
-
-function round(v: number, code: string): number {
-  // Dollar levels keep whole units; rates keep one decimal.
-  if (code === "NGDPDPC") return Math.round(v);
-  if (code === "NGDPD") return Math.round(v * 10) / 10;
-  return Math.round(v * 10) / 10;
-}
+// world-countries' own code for the same places.
+const WORLD_COUNTRIES_CODE: Record<string, string> = { UVK: "UNK", WBG: "PSE" };
 
 async function fetchValues() {
-  const years = Array.from({ length: LAST_YEAR - FIRST_YEAR + 1 }, (_, i) => FIRST_YEAR + i);
-  const countries = await getJson<{ countries: Record<string, { label: string }> }>(`${API}/countries`);
-  const meta = await getJson<{ indicators: Record<string, { label: string; source: string }> }>(
-    `${API}/indicators`,
-  );
-  const sourceLabel = meta.indicators[INDICATORS[0].code]?.source ?? "IMF World Economic Outlook";
+  const [labels, { source, series }] = await Promise.all([fetchWeoCountryLabels(), fetchWeoSeries()]);
+  for (const ind of INDICATORS) console.log(`${ind.code}: ${Object.keys(series[ind.code]).length} entities`);
 
-  // series[code][entity] = values aligned to `years` (null = missing)
-  const series: Record<string, Record<string, (number | null)[]>> = {};
-  for (const ind of INDICATORS) {
-    const res = await getJson<{ values: Record<string, Record<string, Record<string, number>>> }>(
-      `${API}/${ind.code}`,
-    );
-    const byEntity = res.values[ind.code] ?? {};
-    series[ind.code] = {};
-    for (const [entity, byYear] of Object.entries(byEntity)) {
-      const row = years.map((y) => (byYear[y] == null ? null : round(byYear[y], ind.code)));
-      if (row.some((v) => v != null)) series[ind.code][entity] = row;
-    }
-    console.log(`${ind.code}: ${Object.keys(byEntity).length} entities`);
-  }
-
-  const regionOf = new Map(worldCountries.map((c) => [c.cca3, c.region === "Americas" ? c.subregion : c.region]));
+  const byCode = new Map(worldCountries.map((c) => [c.cca3, c]));
   // Plain-English names (IMF's own labels read "Korea, Republic of" etc.).
-  const commonName = new Map(worldCountries.map((c) => [c.cca3, c.name.common]));
-  commonName.set("COD", "DR Congo");
-  commonName.set("COG", "Republic of the Congo");
-  regionOf.set("XKX", "Europe");
+  const nameOverride: Record<string, string> = { COD: "DR Congo", COG: "Republic of the Congo" };
 
-  const entities: { code: string; name: string; region: string }[] = [];
-  for (const [code, { label }] of Object.entries(countries.countries)) {
+  // Territories IMF reports that aren't worth a row (no own data in most
+  // indicators) are dropped by requiring at least 3 indicators.
+  const entities: { code: string; name: string; region: string; iso2?: string; currency?: string }[] = [];
+  for (const [code, { label }] of Object.entries(labels)) {
     const present = INDICATORS.filter((ind) => series[ind.code][code]).length;
     if (present < 3) continue;
-    const isoForRegion = Object.entries(IMF_CODE_FIXES).find(([, imf]) => imf === code)?.[0] ?? code;
+    const wc = byCode.get(WORLD_COUNTRIES_CODE[code] ?? code);
     entities.push({
       code,
-      name: commonName.get(isoForRegion) ?? label.replace(/, The$/, ""),
-      region: regionOf.get(isoForRegion) ?? "Other",
+      name: nameOverride[code] ?? wc?.name.common ?? label.replace(/, The$/, ""),
+      region: wc ? (wc.region === "Americas" ? wc.subregion : wc.region) : "Other",
+      iso2: wc?.cca2,
+      currency: code === "WBG" ? "ILS" : wc ? Object.keys(wc.currencies ?? {})[0] : undefined,
     });
   }
   entities.sort((a, b) => a.name.localeCompare(b.name));
@@ -103,9 +67,9 @@ async function fetchValues() {
   }
 
   return {
-    source: sourceLabel,
+    source,
     fetchedAt: new Date().toISOString().slice(0, 10),
-    years,
+    years: WEO_YEARS,
     countries: entities,
     aggregates: aggregates.map((a) => a.code),
     series,
@@ -166,6 +130,15 @@ async function main() {
   const macro = await fetchValues();
   fs.writeFileSync(path.join(OUT_DIR, "macro.json"), JSON.stringify(macro));
   console.log(`macro.json: ${macro.countries.length} countries, ${macro.aggregates.length} aggregates`);
+
+  const livePath = path.join(OUT_DIR, "macro-live.json");
+  const previousLive = fs.existsSync(livePath) ? JSON.parse(fs.readFileSync(livePath, "utf8")) : null;
+  const live = await fetchLive(macro.countries, previousLive);
+  fs.writeFileSync(livePath, JSON.stringify(live));
+  for (const [k, v] of Object.entries(live.sources)) {
+    const n = k === "fx" ? Object.keys(live.fx).length : Object.keys(live.metrics[k as keyof typeof live.metrics]).length;
+    console.log(`live ${k}: ${v.ok ? "ok" : "FAILED " + v.error} (${n} countries)`);
+  }
 
   const map = buildMap();
   fs.writeFileSync(path.join(OUT_DIR, "world-map.json"), JSON.stringify(map));

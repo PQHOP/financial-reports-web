@@ -18,7 +18,7 @@ export type Indicator = {
   // Year-over-year change is shown as a % change for dollar levels and as a
   // percentage-point difference for rates.
   changeAs: "pct" | "pp";
-  format: "pct" | "usdBn" | "usd";
+  format: "pct" | "pctSigned" | "usdBn" | "usd";
   // Map classes: `breaks.length + 1` colors, low to high.
   breaks: number[];
   colors: string[];
@@ -38,6 +38,7 @@ const B3 = "#2a78d6";
 const B4 = "#104281";
 // Sequential blue for pure size (no good/bad reading).
 const SEQ = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#104281"];
+const SEQ7 = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"];
 
 export const DIVERGING = { R4, R3, R2, R1, MID, B1, B2, B3, B4 };
 export const NO_DATA = "#f4f3ef";
@@ -142,6 +143,70 @@ export const INDICATORS: Indicator[] = [
   },
 ];
 
+// The "Latest" view: the most recent monthly/quarterly/daily figure per
+// country (src/lib/macroLive.ts), falling back to the IMF annual number
+// where a country publishes nothing more recent.
+export const LIVE_INDICATORS: Indicator[] = [
+  {
+    ...INDICATORS[1],
+    code: "L_CPI",
+    label: "Inflation, latest month",
+    unit: "% vs a year earlier",
+    legendNote:
+      "How much prices rose over the past 12 months, as of each country's latest release. Darkest blue = near the ~2% most central banks aim for; red = high inflation.",
+  },
+  {
+    ...INDICATORS[0],
+    code: "L_GDPQ",
+    label: "GDP growth, latest quarter",
+    unit: "% vs the same quarter a year earlier",
+    legendNote: "Growth after inflation in the latest reported quarter, compared with a year before. Red = shrinking or weak, blue = strong.",
+  },
+  {
+    ...INDICATORS[4],
+    code: "L_UNEMP",
+    label: "Unemployment, latest",
+    legendNote: "Share of people looking for work who can't find it, latest month or quarter.",
+  },
+  {
+    code: "L_POLICY",
+    label: "Central bank policy rate",
+    short: "Policy rate",
+    unit: "% per year",
+    polarity: "neutral",
+    changeAs: "pp",
+    format: "pct",
+    breaks: [1, 2.5, 4, 6, 10, 20],
+    colors: SEQ7,
+    legendNote:
+      "The interest rate the central bank sets, which steers borrowing costs across the economy. Higher = tighter money. Euro area countries share the ECB's rate.",
+  },
+  {
+    code: "L_BOND",
+    label: "10-year government bond yield",
+    short: "10Y yield",
+    unit: "% per year",
+    polarity: "neutral",
+    changeAs: "pp",
+    format: "pct",
+    breaks: [2, 3, 4, 5, 7, 10],
+    colors: SEQ7,
+    legendNote: "What the government pays to borrow for about ten years, monthly average. Higher = markets want more to lend to it.",
+  },
+  {
+    code: "L_FX",
+    label: "Currency vs US dollar, this year",
+    short: "Currency YTD",
+    unit: "% change since Dec 31",
+    polarity: "up-good",
+    changeAs: "pp",
+    format: "pctSigned",
+    breaks: [-20, -10, -4, -1, 1, 4, 10],
+    colors: [R4, R3, R2, R1, MID, B1, B3, B4],
+    legendNote: "How much the local currency has gained (blue) or lost (red) against the dollar since the start of the year, at today's rate.",
+  },
+];
+
 export const AGGREGATES: { code: string; label: string }[] = [
   { code: "WEOWORLD", label: "World" },
   { code: "ADVEC", label: "Advanced economies" },
@@ -161,7 +226,7 @@ export type MacroData = {
   source: string;
   fetchedAt: string;
   years: number[];
-  countries: { code: string; name: string; region: string }[];
+  countries: { code: string; name: string; region: string; iso2?: string; currency?: string }[];
   aggregates: string[];
   series: Record<string, Record<string, (number | null)[]>>;
 };
@@ -178,7 +243,9 @@ export function formatValue(v: number | null | undefined, ind: Indicator): strin
     if (Math.abs(v) >= 1000) return `$${(v / 1000).toFixed(v >= 10000 ? 1 : 2)}T`;
     return `$${v >= 100 ? v.toFixed(0) : v.toFixed(1)}B`;
   }
-  if (ind.format === "usd") return `$${Math.round(v).toLocaleString("en-US")}`;
+  if (ind.format === "usd") return `${Math.round(v).toLocaleString("en-US")}`;
+  if (ind.format === "pctSigned") return `${v > 0 ? "+" : v < 0 ? "−" : ""}${Math.abs(v).toFixed(1)}%`;
+  if (ind.code === "L_POLICY" || ind.code === "L_BOND") return `${v.toFixed(2)}%`;
   return `${v.toFixed(1)}%`;
 }
 

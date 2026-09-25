@@ -124,3 +124,11 @@ model LoginAttempt {
 
   @@index([identifier, createdAt])
 }
+
+// Data behind /economy, refreshed daily by /api/cron/macro. One row per data
+// set: "weo" (IMF annual values) and "live" (latest monthly/daily figures).
+model MacroSnapshot {
+  id        String   @id
+  data      Json
+  updatedAt DateTime @updatedAt
+}

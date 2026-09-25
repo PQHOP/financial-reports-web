@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { formatValue, type Indicator } from "@/lib/macro";
 
 const W = 280;
 const H = 110;
@@ -9,37 +8,45 @@ const PAD = { l: 4, r: 4, t: 10, b: 18 };
 const LINE = "#2a78d6";
 const WORLD = "#898781";
 
-// One indicator over time for one country: solid line for reported years,
-// dashed for IMF projections, gray line for the world figure, a marker on the
-// year selected above, and a hover crosshair with the exact value.
+// One indicator over time for one country: solid line for reported periods,
+// dashed after `forecastFrom` (IMF projections), dotted gray for the world
+// figure, a marker on the highlighted period, and a hover crosshair.
 export function TrendChart({
-  ind,
-  years,
+  label,
+  labels,
   values,
   world,
-  selectedYear,
-  firstProjectionYear,
+  highlight,
+  forecastFrom,
+  fmt,
+  zeroBase,
 }: {
-  ind: Indicator;
-  years: number[];
+  label: string;
+  labels: string[];
   values: (number | null)[];
-  world: (number | null)[] | undefined;
-  selectedYear: number;
-  firstProjectionYear: number;
+  world?: (number | null)[];
+  highlight: number;
+  forecastFrom: number | null;
+  fmt: (v: number | null | undefined) => string;
+  zeroBase: boolean;
 }) {
   const [hover, setHover] = useState<number | null>(null);
-  const all = [...values, ...(ind.format === "pct" ? (world ?? []) : [])].filter((v): v is number => v != null);
-  if (values.every((v) => v == null)) {
-    return <p className="py-8 text-center text-xs text-zinc-500">No IMF data</p>;
+  const all = [...values, ...(world ?? [])].filter((v): v is number => v != null);
+  if (values.every((v) => v == null) || labels.length < 2) {
+    return <p className="py-8 text-center text-xs text-zinc-500">No data</p>;
   }
   let min = Math.min(...all);
   let max = Math.max(...all);
-  if (ind.format === "pct") {
+  if (zeroBase) {
     min = Math.min(min, 0);
     max = Math.max(max, 0);
   }
-  if (max === min) max = min + 1;
-  const x = (i: number) => PAD.l + (i / (years.length - 1)) * (W - PAD.l - PAD.r);
+  if (max === min) {
+    max += 1;
+    min -= 1;
+  }
+  const n = labels.length;
+  const x = (i: number) => PAD.l + (i / (n - 1)) * (W - PAD.l - PAD.r);
   const y = (v: number) => PAD.t + (1 - (v - min) / (max - min)) * (H - PAD.t - PAD.b);
 
   const line = (series: (number | null)[], from: number, to: number) => {
@@ -56,9 +63,8 @@ export function TrendChart({
     }
     return d;
   };
-  const split = years.indexOf(firstProjectionYear) - 1; // last reported index
-  const selIdx = years.indexOf(selectedYear);
-  const hi = hover ?? selIdx;
+  const split = forecastFrom == null ? n - 1 : Math.max(0, forecastFrom - 1);
+  const hi = hover ?? highlight;
 
   return (
     <div className="relative">
@@ -68,50 +74,52 @@ export function TrendChart({
         onPointerMove={(e) => {
           const r = e.currentTarget.getBoundingClientRect();
           const px = ((e.clientX - r.left) / r.width) * W;
-          const i = Math.round(((px - PAD.l) / (W - PAD.l - PAD.r)) * (years.length - 1));
-          setHover(Math.max(0, Math.min(years.length - 1, i)));
+          const i = Math.round(((px - PAD.l) / (W - PAD.l - PAD.r)) * (n - 1));
+          setHover(Math.max(0, Math.min(n - 1, i)));
         }}
         onPointerLeave={() => setHover(null)}
         role="img"
-        aria-label={`${ind.label}, ${years[0]}–${years[years.length - 1]}`}
+        aria-label={`${label}, ${labels[0]} to ${labels[n - 1]}`}
       >
-        {ind.format === "pct" && min < 0 && (
+        {zeroBase && min < 0 && (
           <line x1={PAD.l} x2={W - PAD.r} y1={y(0)} y2={y(0)} stroke="#c3c2b7" strokeWidth={1} />
         )}
-        <rect
-          x={x(split)}
-          y={PAD.t - 6}
-          width={W - PAD.r - x(split)}
-          height={H - PAD.t - PAD.b + 6}
-          fill="#f4f3ef"
-        />
-        <text x={W - PAD.r} y={PAD.t - 1} textAnchor="end" fontSize={8} fill="#898781">
-          IMF forecast
-        </text>
-        {world && ind.format === "pct" && (
-          <path d={line(world, 0, years.length - 1)} fill="none" stroke={WORLD} strokeWidth={1} strokeDasharray="1 2" />
+        {forecastFrom != null && forecastFrom < n && (
+          <>
+            <rect
+              x={x(split)}
+              y={PAD.t - 6}
+              width={W - PAD.r - x(split)}
+              height={H - PAD.t - PAD.b + 6}
+              fill="#f4f3ef"
+            />
+            <text x={W - PAD.r} y={PAD.t - 1} textAnchor="end" fontSize={8} fill="#898781">
+              IMF forecast
+            </text>
+          </>
         )}
+        {world && <path d={line(world, 0, n - 1)} fill="none" stroke={WORLD} strokeWidth={1} strokeDasharray="1 2" />}
         <path d={line(values, 0, split)} fill="none" stroke={LINE} strokeWidth={2} strokeLinejoin="round" />
-        <path d={line(values, split, years.length - 1)} fill="none" stroke={LINE} strokeWidth={2} strokeDasharray="4 3" />
-        {hi >= 0 && values[hi] != null && (
+        {split < n - 1 && (
+          <path d={line(values, split, n - 1)} fill="none" stroke={LINE} strokeWidth={2} strokeDasharray="4 3" />
+        )}
+        {hi >= 0 && hi < n && values[hi] != null && (
           <>
             <line x1={x(hi)} x2={x(hi)} y1={PAD.t - 4} y2={H - PAD.b} stroke="#c3c2b7" strokeWidth={1} />
             <circle cx={x(hi)} cy={y(values[hi]!)} r={4} fill={LINE} stroke="#fff" strokeWidth={2} />
           </>
         )}
         <text x={PAD.l} y={H - 4} fontSize={9} fill="#898781">
-          {years[0]}
+          {labels[0]}
         </text>
         <text x={W - PAD.r} y={H - 4} textAnchor="end" fontSize={9} fill="#898781">
-          {years[years.length - 1]}
+          {labels[n - 1]}
         </text>
       </svg>
-      {hi >= 0 && (
+      {hi >= 0 && hi < n && (
         <div className="pointer-events-none absolute left-1 top-0 rounded bg-white/90 px-1 text-[11px] tabular-nums text-zinc-700">
-          <span className="font-medium">{years[hi]}</span>: {formatValue(values[hi], ind)}
-          {world && world[hi] != null && ind.format === "pct" && (
-            <span className="text-zinc-500"> · world {formatValue(world[hi], ind)}</span>
-          )}
+          <span className="font-medium">{labels[hi]}</span>: {fmt(values[hi])}
+          {world && world[hi] != null && <span className="text-zinc-500"> · world {fmt(world[hi])}</span>}
         </div>
       )}
     </div>
