@@ -4018,3 +4018,11 @@ the automated scheduled-task mechanism):
   HPE's YoY is inflated by Juniper (closed 2025-07-02) and a $444M H3C
   gain. Healthpeak no longer reports CCRC separately (Senior Housing via
   Janus Living). Day total: **160 report-periods**, **371 companies done.**
+- Continued: published (5) HRL Q3 (fiscal Q3 ended 07-26), HST Q2,
+  HWM Q2, HUBB Q2, HUM Q2. Notes: HRL GAAP EPS −67% on $155M of one-offs
+  (Brazil sale loss, Indonesia write-down, antitrust settlement) vs
+  adjusted +6%; HUBB GAAP EPS flat on NSI (~$3.0B, closed 06-09) deal
+  costs vs adjusted +12%; HUM benefit ratio 91.1% vs 89.7% (Stars
+  headwind), GAAP EPS guide cut to ≥$6.52; HST, HUM, HWM and HUBB
+  operating margins are our calc from the income statement. Day total:
+  **165 report-periods**, **376 companies done.**

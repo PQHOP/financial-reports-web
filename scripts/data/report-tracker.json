@@ -10074,5 +10074,155 @@
         "url": "https://financialreportinsights.com/companies/hona/2026/q2"
       }
     ]
+  },
+  "HRL": {
+    "name": "Hormel Foods",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hrl/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-26",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (FQ4/FY2026); 10-K next day",
+      "estimate": "2026-12-03",
+      "basis": "FY2025 earnings 8-K 2025-12-04, 10-K 12-05; FY ends 2026-10-25",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hrl/2026/q3"
+      }
+    ]
+  },
+  "HST": {
+    "name": "Host Hotels & Resorts",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~11-06",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 8-K 11-05, 10-Q 11-07; 2026 same 8-K-then-10-Q pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hst/2026/q2"
+      }
+    ]
+  },
+  "HWM": {
+    "name": "Howmet Aerospace",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hwm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90-day cadence (Q1 05-07, Q2 08-06)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hwm/2026/q2"
+      }
+    ]
+  },
+  "HUBB": {
+    "name": "Hubbell Incorporated",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hubb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026); 10-Q next day",
+      "estimate": "2026-10-27",
+      "basis": "Q2 8-K 07-28, 10-Q 07-29; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hubb/2026/q2"
+      }
+    ]
+  },
+  "HUM": {
+    "name": "Humana",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/hum/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "~90-day cadence (Q1 04-29, Q2 07-29)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/hum/2026/q2"
+      }
+    ]
   }
 }
