@@ -4174,3 +4174,26 @@ the automated scheduled-task mechanism):
   Skipped: none this batch.
 - Running total: **426 companies done**, **20 report-periods published
   this window**.
+- Batch 5: published (5) via 5 opus subagents in parallel, same
+  validate → publish → live-verify loop: MCHP Q1 (fiscal Q1 FY2027,
+  labeled year 2026), MAA Q2, MRNA Q2, TAP Q2, MPWR Q2.
+  All 5 subagents finished cleanly this batch (told explicitly to use
+  ticker-prefixed scratch filenames after batch 4's near-miss — no
+  collisions this time).
+  Notes: MCHP swung from a $18.6M loss to $229.8M profit as customers
+  worked through excess inventory (distributor inventory at a 10-year-low
+  25 days), ~23% of the gross-margin jump is one-off lower inventory
+  write-downs/idle-factory charges (labelled); MAA (REIT) EPS +13% on a
+  $35.3M property-sale gain while Core FFO/share actually fell 3.3% on
+  higher interest expense — FFO/AFFO shown in body only (no metrics
+  field), operatingMarginPct is our own calc (no GAAP operating-income
+  line); MRNA revenue +2.1% only from non-product fees (Spikevax COVID
+  sales -20%), net loss narrowed to $782M on cost cuts, netIncomeYoyPct/
+  epsYoyPct omitted (loss-to-loss, not meaningful), $3B convertible note
+  closed after quarter-end; TAP EPS -42.3% on volume declines, aluminum
+  surcharges and a $98M unrealized-hedge-loss swing (underlying EPS
+  -22.9%, cleaner read); MPWR revenue +47.6%/EPS +85.8% driven by
+  Enterprise Data (AI/server power) segment +164.3%, now 38.8% of sales.
+  Skipped: none this batch.
+- Running total: **431 companies done**, **25 report-periods published
+  this window**.

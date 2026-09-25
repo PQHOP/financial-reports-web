@@ -11564,5 +11564,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25"
+  },
+  "MCHP": {
+    "name": "Microchip Technology",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/mchp/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2026-11-05",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "MAA": {
+    "name": "Mid-America Apartment Communities",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/maa/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "MRNA": {
+    "name": "Moderna",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/mrna/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "TAP": {
+    "name": "Molson Coors Beverage Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/tap/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "prior Q3 filings landed early November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "MPWR": {
+    "name": "Monolithic Power Systems",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/mpwr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
   }
 }
