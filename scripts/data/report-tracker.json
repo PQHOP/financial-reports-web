@@ -8418,5 +8418,155 @@
         "url": "https://financialreportinsights.com/companies/elv/2026/q2"
       }
     ]
+  },
+  "EME": {
+    "name": "Emcor",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/eme/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q3 10-Qs 2023-10-26, 2024-10-31, 2025-10-30, same day as 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/eme/2026/q2"
+      }
+    ]
+  },
+  "EMR": {
+    "name": "Emerson Electric",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/emr/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (FY2026 results); 10-K ~2026-11-10",
+      "estimate": "2026-11-04",
+      "basis": "last year Q4 8-K 2025-11-05, 10-K 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/emr/2026/q3"
+      }
+    ]
+  },
+  "ETR": {
+    "name": "Entergy",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/etr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "8-K 1-2 days before 10-Q (Q3 2025: 10-29 / 10-31)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/etr/2026/q2"
+      }
+    ]
+  },
+  "EOG": {
+    "name": "EOG Resources",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/eog/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 10-Qs 2024-11-07, 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/eog/2026/q2"
+      }
+    ]
+  },
+  "EQT": {
+    "name": "EQT Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/eqt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-22"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-20",
+      "basis": "8-K a day before the 10-Q (Q1 10-Q 04-22, Q2 07-22)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/eqt/2026/q2"
+      }
+    ]
   }
 }
