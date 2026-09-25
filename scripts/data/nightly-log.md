@@ -4075,3 +4075,58 @@ the automated scheduled-task mechanism):
   DoW preferred in the missile unit. **Session end (user asked to stop
   after this batch). Day total: 195 report-periods, 406 companies done.**
   Next `next-batch` starts after LHX.
+
+### 2026-09-25 night (16:00 UTC 2026-09-25 → 22:59 UTC 2026-09-25 / 01:00–07:59 JST 2026-09-26)
+
+- Mechanism: cloud routine automated firing (`[SCHEDULED TASK]`, no live
+  user). This is the first firing of tonight's window; a large manual
+  session earlier today (logged above as "2026-09-25 daytime") already
+  published 195 report-periods before this window opened, so this entry's
+  count starts fresh at 0 for the nightly cap.
+- Network check: `curl https://www.sec.gov/` without a User-Agent returned
+  403 (SEC's own response, confirmed real TLS handshake); retry with the
+  required User-Agent returned 200. Network fine tonight.
+- Pre-batch: `npm install` postinstall (`prisma generate`) failed on
+  missing `DATABASE_URL` as expected (doesn't block admin-publish/
+  scan-recent-filings). No weekly-limit lockout encountered this firing.
+- `npm run scan-recent-filings` (tier 0): **0 fresh candidates** — today's
+  daytime session already cleared the week's EDGAR filings.
+- Tier worked: **3 (S&P 500 backlog)**, `next-batch` order continuing
+  alphabetically after LHX.
+- Batch 1: published (5) via 5 opus subagents run in parallel, each
+  independently re-verified live (cache-busted fetch: 200, Takeaway,
+  Source filing link, content ends on a complete sentence) before marking
+  done: LH Q2, LVS Q2, LDOS Q2, LEN Q3, LII Q2.
+  Notes: LH GAAP EPS +28.5% inflated by a non-repeat of a prior-year
+  $32.7M venture-fund loss (adjusted EPS +14.9%); LVS profit fall driven by
+  poor VIP-table luck in Macao (-1.15% win rate) — hold-adjusted EBITDA
+  still down ~6%, our calculation, labelled; LDOS operating margin fell to
+  11.3% on a Health-segment volume decline plus a non-repeating $25M prior-
+  year insurance reimbursement; LEN (fiscal Q3, calendar Q3 2026, from the
+  09-16 earnings 8-K — 10-Q not yet filed) EPS -48% on price cuts to hold
+  volume, full-year delivery guidance cut; LII EPS flat only because of a
+  ~$30M IEEPA tariff-refund one-off (our estimate, labelled) that offset a
+  weak residential (Home Comfort) segment, full-year EPS guidance cut.
+  Skipped: none this batch.
+- Running total: **411 companies done** (406 + 5 new: LH, LVS, LDOS, LEN,
+  LII), **5 report-periods published this window** (0 before this batch +
+  5).
+- Batch 2: published (5) via 5 opus subagents in parallel, same
+  validate → publish → live-verify loop: LIN Q2, L Q2, LITE FY2026 ANNUAL,
+  LYB Q2, MTB Q2.
+  Notes: LIN sales +9.3% but only ~4 points organic (2 price, 2 volume);
+  L (Loews Corp — holding company, not Lowe's) EPS +15.5% on higher CNA
+  investment income and Boardwalk/Hotels profit outweighing weaker CNA
+  underwriting (combined ratio 96.5% vs 94.1%), insurer metrics fields
+  used; LITE FY2026 revenue +83.2% on AI/cloud optical demand, GAAP net
+  loss of $6.94B is a one-time non-cash charge from a convertible-note
+  exchange (adjusted EPS $8.67 vs $2.06), netIncomeYoyPct/epsYoyPct
+  omitted as not meaningful (profit-to-loss swing); LYB GAAP EPS +402.9%
+  inflated by a weak prior-year comp and a $734M European-plant
+  divestiture loss this year (adjusted EPS $4.30 vs $0.62), Middle East
+  supply disruption cited as the main margin driver; MTB (bank metrics)
+  EPS +25.5% partly from an 8% smaller share count, NIM 3.70% vs 3.62%,
+  CET1 down to 10.19% on buybacks.
+  Skipped: none this batch.
+- Running total: **416 companies done**, **10 report-periods published
+  this window**.
