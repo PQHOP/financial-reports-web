@@ -156,7 +156,7 @@ Việc chỉ bạn làm được: xem phần "Việc cần bạn" ở tin nhắn
 |---|---|
 | URL report có từ khóa `/companies/<ticker>/<năm>/<kỳ>`; `/reports/<id>` chuyển 308 (admin vẫn xem tại chỗ để script publish chạy như cũ) | Xong |
 | `www.` chuyển 308 về tên miền chính | Xong (trong `proxy.ts`) |
-| Tác giả: "Financial Report Insights Research" (JSON-LD `Organization`), vẫn ghi rõ AI soạn | Xong |
+| Tác giả: "Admin" (JSON-LD `Person`), vẫn ghi rõ AI soạn | Xong |
 | Trang công ty: kết quả mới nhất + Takeaway, ngày báo cáo tới, bảng số liệu các kỳ, breadcrumb, JSON-LD `Corporation` | Xong |
 | Trang report: mục lục, ô "Next report", bài liên quan (preview/so sánh), breadcrumb khớp JSON-LD | Xong |
 | Trang ngành: bảng so sánh kỳ gần nhất các công ty | Xong |

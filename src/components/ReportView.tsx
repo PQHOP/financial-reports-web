@@ -200,13 +200,11 @@ export async function ReportView({ report }: { report: FullReport }) {
     description: report.summary,
     datePublished: new Date(report.publishedAt).toISOString(),
     dateModified: new Date(report.updatedAt).toISOString(),
-    author: isCommunity
-      ? { "@type": "Person", name: report.author }
-      : {
-          "@type": "Organization",
-          name: EDITORIAL_AUTHOR,
-          url: `${SITE_URL}/methodology`,
-        },
+    author: {
+      "@type": "Person",
+      name: isCommunity ? report.author : EDITORIAL_AUTHOR,
+      ...(isCommunity ? {} : { url: `${SITE_URL}/methodology` }),
+    },
     publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
     ...(cover ? { image: [cover] } : {}),
     about: {
