@@ -256,10 +256,15 @@ export function change(cur: number | null, prev: number | null, ind: Indicator):
   return cur - prev;
 }
 
+// Interest rates move in quarter points, so they keep two decimals.
+export function changeDecimals(ind: Indicator): number {
+  return ind.code === "L_POLICY" || ind.code === "L_BOND" ? 2 : 1;
+}
+
 export function formatChange(delta: number | null, ind: Indicator): string {
   if (delta == null) return "–";
-  const sign = delta > 0 ? "+" : delta < 0 ? "−" : "±";
-  const abs = Math.abs(delta).toFixed(1);
+  const abs = Math.abs(delta).toFixed(changeDecimals(ind));
+  const sign = Number(abs) === 0 ? "±" : delta > 0 ? "+" : "−";
   return ind.changeAs === "pct" ? `${sign}${abs}%` : `${sign}${abs} pt`;
 }
 

@@ -9,6 +9,7 @@ import {
   NO_DATA,
   change,
   changeColor,
+  changeDecimals,
   formatChange,
   formatValue,
   levelColor,
@@ -34,8 +35,10 @@ function Delta({ cell, ind, withNote = false }: { cell: Cell; ind: Indicator; wi
   const d = change(cell.value, cell.prev, ind);
   if (d == null) return <span className="text-zinc-400">–</span>;
   const v = verdict(cell.value, cell.prev, ind);
-  const arrow = Math.abs(d) < 0.005 ? "■" : d > 0 ? "▲" : "▼";
-  const color = v > 0 ? GOOD : v < 0 ? BAD : INK_2;
+  // A move that rounds to zero at the displayed precision is shown as flat.
+  const flat = Number(Math.abs(d).toFixed(changeDecimals(ind))) === 0;
+  const arrow = flat ? "■" : d > 0 ? "▲" : "▼";
+  const color = flat ? INK_2 : v > 0 ? GOOD : v < 0 ? BAD : INK_2;
   return (
     <span className="whitespace-nowrap tabular-nums">
       <span style={{ color }}>
