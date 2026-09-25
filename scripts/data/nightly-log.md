@@ -4023,6 +4023,6 @@ the automated scheduled-task mechanism):
   (Brazil sale loss, Indonesia write-down, antitrust settlement) vs
   adjusted +6%; HUBB GAAP EPS flat on NSI (~$3.0B, closed 06-09) deal
   costs vs adjusted +12%; HUM benefit ratio 91.1% vs 89.7% (Stars
-  headwind), GAAP EPS guide cut to ≥$6.52; HST, HUM, HWM and HUBB
-  operating margins are our calc from the income statement. Day total:
+  headwind), GAAP EPS guide cut to ≥$6.52; HUM operating margin is our
+  calc (income from operations ÷ revenue), labelled. Day total:
   **165 report-periods**, **376 companies done.**
