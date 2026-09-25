@@ -4283,3 +4283,30 @@ the automated scheduled-task mechanism):
   Skipped: none this batch.
 - Running total: **450 companies done**, **44 report-periods published
   this window**.
+- Batch 10 (final batch tonight): published (5) via 5 opus subagents in
+  parallel, same validate → publish → live-verify loop: OXY Q2, ODFL Q2,
+  OMC Q2, ON Q2, OKE Q2.
+  Notes: OXY EPS $2.75 vs $0.26 mostly a much higher realized oil price
+  ($96.78/bbl vs $63.76, filing partly attributes this to Iran-conflict
+  risk premiums), OxyChem sale proceeds cut debt from $20.4B to $11.8B in
+  six months, operatingMarginPct is our calc (no GAAP operating-income
+  line), labelled; ODFL revenue +10.4%/EPS +32.3% despite tonnage -4.1%
+  (declines narrowing to ~1% in Jul/Aug), most of the revenue-per-cwt gain
+  is fuel surcharges not pricing, margin widened on a smaller workforce
+  and a $17.2M equipment-sale gain (ex-gain the operating-ratio gain is
+  smaller, labelled); OMC revenue +63.4%/net income +127% almost entirely
+  the IPG merger (closed 2025-11-26, second full quarter included) —
+  like-for-like "Core Operations" organic growth 6.1%, up from Q1, cleaner
+  read; ON revenue +9.2% led by AI/data-center ("Other" end market +21.3%
+  YoY, +33.6% QoQ) while Automotive fell QoQ, pending Synaptics all-stock
+  acquisition noted; OKE revenue +52.8% almost entirely commodity resale
+  pass-through (operating margin fell on this even as operating income
+  grew), EPS +14.2% on Natural Gas Pipelines trading gains and higher
+  Refined Products/Crude volumes, EnLink/Medallion/Delaware Basin JV
+  already consolidated a year ago so no acquisition distortion this
+  quarter, 2026 guidance raised, $4.425B Brazos Midland deal and $9B
+  Apollo equity investment noted as post-quarter items.
+  Skipped: none this batch.
+- **Night total: 49 report-periods published, 455 companies done**
+  (406 companies done at the start of this window). Stopping here for
+  this firing — 49 is at the ~50 nightly cap.
