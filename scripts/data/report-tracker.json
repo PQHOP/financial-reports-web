@@ -7518,5 +7518,155 @@
         "url": "https://financialreportinsights.com/companies/glw/2026/q2"
       }
     ]
+  },
+  "CPAY": {
+    "name": "Corpay",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cpay/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 8-K 2025-11-05, 10-Q 11-08..11-10 in 2021-2025",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cpay/2026/q2"
+      }
+    ]
+  },
+  "CTVA": {
+    "name": "Corteva",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ctva/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 8-K 11-04, 10-Q 11-05. Seed spin-off (Vylor Inc.) distribution due 2026-10-01 — Q3 will show Seed as discontinued",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/ctva/2026/q2"
+      }
+    ]
+  },
+  "CSGP": {
+    "name": "CoStar Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/csgp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "10-Qs ~1 day after 8-K (04-29, 07-29)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/csgp/2026/q2"
+      }
+    ]
+  },
+  "CRH": {
+    "name": "CRH plc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/crh/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q3 2025 10-Q 2025-11-05; 2026 filings 5-7 days earlier; same-day 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/crh/2026/q2"
+      }
+    ]
+  },
+  "CCI": {
+    "name": "Crown Castle",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cci/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "Q2 8-K 07-22, 10-Q ~2 weeks later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cci/2026/q2"
+      }
+    ]
   }
 }
