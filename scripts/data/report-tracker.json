@@ -7818,5 +7818,155 @@
         "url": "https://financialreportinsights.com/companies/dva/2026/q2"
       }
     ]
+  },
+  "DECK": {
+    "name": "Deckers Brands",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/deck/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (Q1 FY2027)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q2 FY2027)",
+      "estimate": "2026-10-22",
+      "basis": "last year's Q2 8-K 2025-10-23, 10-Q 2025-10-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/deck/2026/annual"
+      }
+    ]
+  },
+  "DVN": {
+    "name": "Devon Energy",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dvn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q2 8-K 08-04, 10-Q 08-05; ~90-day cadence. Coterra merger closed 2026-05-07 — Q3 is first full quarter combined",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dvn/2026/q2"
+      }
+    ]
+  },
+  "DXCM": {
+    "name": "Dexcom",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dxcm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q2 8-K and 10-Q both Thu 07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dxcm/2026/q2"
+      }
+    ]
+  },
+  "FANG": {
+    "name": "Diamondback Energy",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/fang/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "Q3 2025 10-Q 2025-11-05; Q2 10-Q 2 days after 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/fang/2026/q2"
+      }
+    ]
+  },
+  "DLR": {
+    "name": "Digital Realty",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dlr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q2 8-K 07-23, 10-Q 07-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dlr/2026/q2"
+      }
+    ]
   }
 }
