@@ -4,6 +4,8 @@ import { SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
 import { reportUrl } from "@/lib/reportPath";
+import { loadMacro } from "@/lib/macroStore";
+import { buildRates } from "@/lib/rates";
 
 // Sitemaps are built at request time, not baked into the build.
 export const dynamic = "force-dynamic";
@@ -13,7 +15,7 @@ const STATIC_PAGES = ["/economy", "/about", "/methodology", "/corrections", "/pr
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Only list what has real content: companies/industries with no published
   // analysis are near-empty directory pages (also `noindex`ed on the page).
-  const [industries, companies, reports, articles] = await Promise.all([
+  const [industries, companies, reports, articles, macro] = await Promise.all([
     prisma.industry.findMany({
       // The catch-all "uncategorized" bucket is noindex'd on the page itself.
       where: {
@@ -43,7 +45,10 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     prisma.article.findMany({
       select: { slug: true, kind: true, updatedAt: true },
     }),
+    loadMacro(),
   ]);
+  const rates = buildRates(macro.weo, macro.live, new Date().toISOString().slice(0, 10));
+  const ratesUpdated = new Date(macro.live.updatedAt);
 
   const companyYearEntries = companies.flatMap((company) => {
     const years = Array.from(new Set(company.reports.map((r) => r.year)));
@@ -70,6 +75,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "daily",
       priority: 0.8,
     },
+    {
+      url: `${SITE_URL}/rates`,
+      lastModified: ratesUpdated,
+      changeFrequency: "daily",
+      priority: 0.8,
+    },
+    ...rates.map((row) => ({
+      url: `${SITE_URL}/rates/${row.slug}`,
+      lastModified: ratesUpdated,
+      changeFrequency: "daily" as const,
+      priority: 0.6,
+    })),
     {
       url: `${SITE_URL}/insights`,
       changeFrequency: "weekly",

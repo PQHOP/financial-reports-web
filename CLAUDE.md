@@ -679,6 +679,14 @@ the user is tracked at its end. Things future sessions should know:
   (from the tracker; only a `confirmed` date goes in the `<title>`), and a
   results-by-period table built from `metrics`. Industry pages show a peer
   table from the same `metrics` — another reason `metrics` must be set.
+- **Interest rates hub (`/rates`, `/rates/<country>`, since 2026-09-25):**
+  central bank policy rates by country built by `src/lib/rates.ts` from
+  the same daily `MacroSnapshot` as `/economy` (BIS/IMF policy rates, CPI,
+  OECD/IMF 10-year yields) — no model calls, no usage budget. Euro members
+  share one `/rates/euro-area` page (member slugs 308 there); a rate not
+  reported for ~9 months drops out (404). Only central bank *names* are
+  hand-written (`CENTRAL_BANKS`). No `loading.tsx` under `src/app/rates/`:
+  streaming would turn those 308s/404s into 200s.
 - `www.` 308s to the bare domain in `src/proxy.ts`.
 - **Company names:** ~1,250 us-listed names carry a NASDAQ listing suffix
   ("- Class A", "- Ordinary Shares"). Public pages wrap names in
