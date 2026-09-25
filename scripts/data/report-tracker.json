@@ -11784,5 +11784,99 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25"
+  },
+  "NDAQ": {
+    "name": "Nasdaq, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ndaq/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "NTAP": {
+    "name": "NetApp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ntap/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2026-11-25",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "NEM": {
+    "name": "Newmont",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/nem/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "NWSA": {
+    "name": "News Corp (Class A)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/nwsa/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-11-06",
+      "basis": "prior year filed 2025-11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "NWS": {
+    "name": "News Corp (Class B)",
+    "status": "skipped",
+    "skipReason": "Same issuer as NWSA (News Corp Class A) — one report per issuer, covered by NWSA FY2026 ANNUAL",
+    "lastChecked": "2026-09-25"
   }
 }

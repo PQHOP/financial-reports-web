@@ -4217,3 +4217,22 @@ the automated scheduled-task mechanism):
   Skipped: none this batch.
 - Running total: **436 companies done**, **30 report-periods published
   this window**.
+- Batch 7: published (4) via 4 opus subagents in parallel, same
+  validate → publish → live-verify loop: NDAQ Q2, NTAP Q1 (fiscal Q1
+  FY2027, labeled year 2026), NEM Q2, NWSA FY2026 ANNUAL. NWS (News Corp
+  Class B) skipped — same issuer as NWSA, one report per issuer per the
+  FOXA/FOX precedent.
+  Notes: NDAQ net revenue +14.9% led by Index (+38%, mostly rising ETF
+  asset values not new money) and steady FinTech ARR growth (+16%);
+  NTAP revenue +29.9% (~26% ex a 14-vs-13-week quarter) on all-flash
+  storage/price increases; NEM sales +15.1% on a 33% higher realized
+  gold price outweighing 13% fewer ounces sold (AISC +22% on Cadia
+  earthquake/Peñasquito/Ahafo South production hits), adjusted EPS +47%
+  the cleaner read vs GAAP's easier prior-year comp; NWSA (fiscal year
+  ended 06-30) revenue +6.8%, continuing-ops EPS +22.6% led by REA/
+  Realtor.com property listings (+23% segment EBITDA) and Dow Jones
+  (+13%), reported total net income fell 51% only because FY2025 included
+  a one-off $692M Foxtel sale gain (metrics use continuing-ops figures).
+  Skipped: NWS (same issuer as NWSA).
+- Running total: **440 companies done**, **34 report-periods published
+  this window**.
