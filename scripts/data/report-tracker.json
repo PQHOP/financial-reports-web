@@ -10824,5 +10824,155 @@
         "url": "https://financialreportinsights.com/companies/j/2026/q3"
       }
     ]
+  },
+  "JCI": {
+    "name": "Johnson Controls",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/jci/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (FY2026); 10-K ~11-13",
+      "estimate": "2026-11-04",
+      "basis": "FY2025 earnings 8-K 2025-11-05, 10-K 11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/jci/2026/q3"
+      }
+    ]
+  },
+  "KVUE": {
+    "name": "Kenvue",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/kvue/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026) — may not be filed if Kimberly-Clark deal closes first (expected Q4 2026)",
+      "estimate": "2026-11-05",
+      "basis": "39 days after quarter-end (~09-27) per Q1/Q2 cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/kvue/2026/q2"
+      }
+    ]
+  },
+  "KDP": {
+    "name": "Keurig Dr Pepper",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/kdp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~11-09",
+      "estimate": "2026-11-05",
+      "basis": "Q2 2026 release 37 days after quarter-end; Q3 2025 10-Q 2025-10-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/kdp/2026/q2"
+      }
+    ]
+  },
+  "KEY": {
+    "name": "KeyCorp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/key/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026); 10-Q early Nov",
+      "estimate": "2026-10-15",
+      "basis": "earnings 8-Ks 2025-10-16, 2026-01-20, 04-16, 07-21",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/key/2026/q2"
+      }
+    ]
+  },
+  "KEYS": {
+    "name": "Keysight Technologies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/keys/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-02"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (FY2026); 10-K ~12-16",
+      "estimate": "2026-11-23",
+      "basis": "FY2025 8-K 2025-11-24, FY2024 2024-11-19",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/keys/2026/q3"
+      }
+    ]
   }
 }

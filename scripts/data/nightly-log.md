@@ -4058,3 +4058,11 @@ the automated scheduled-task mechanism):
   omitted); J GAAP EPS −26% on PA Consulting buyout costs (43% tax rate)
   and a lost prior-year Amentum gain vs adjusted +14%. Day total: **185
   report-periods**, **396 companies done.**
+- Continued: published (5) JCI Q3 (fiscal Q3 ended 06-30), KVUE Q2,
+  KDP Q2, KEY Q2, KEYS Q3 (fiscal Q3 ended 07-31). Notes: KVUE still files
+  standalone (Kimberly-Clark deal expected to close Q4 2026 — Q3 10-Q may
+  never come); KDP consolidates JDE Peet's from 04-01 (revenue +76%, GAAP
+  EPS −90% on a $314M inventory step-up and deal costs; adjusted +16%);
+  JCI net income includes discontinued ops (continuing +21%), op margin our
+  calc (labelled); KEYS orders +56%, book-to-bill 1.13. Day total: **190
+  report-periods**, **401 companies done.**
