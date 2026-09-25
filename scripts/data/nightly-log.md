@@ -4197,3 +4197,23 @@ the automated scheduled-task mechanism):
   Skipped: none this batch.
 - Running total: **431 companies done**, **25 report-periods published
   this window**.
+- Batch 6: published (5) via 5 opus subagents in parallel, same
+  validate → publish → live-verify loop: MNST Q2, MCO Q2, MOS Q2, MSI Q2,
+  MSCI Q2.
+  Notes: MNST sales +20.2% entirely from volume (international mix,
+  price/case actually fell), operating margin down on heavier marketing
+  spend; MCO ratings segment (MIS) +25% on AI/data-center and leveraged-
+  finance debt issuance, GAAP EPS +56.7% inflated by a $181M
+  Regulatory-Solutions divestiture gain (adjusted EPS +31%, cleaner read),
+  guidance implies a much slower H2 for ratings growth; MOS swung to a
+  $272.8M net loss (-166% YoY, shown as n/m in the body) as North American
+  sulfur costs +150% outpaced phosphate price recovery, $351M of "notable
+  items" widened the GAAP loss (adjusted EPS $0.13 vs $0.51); MSI revenue
+  +13.3% but ~$243M from the Silvus acquisition (organic growth ~5%), a
+  one-off $60M tariff refund flattered margin (ex-refund op margin ~23.9%,
+  below last year, labelled); MSCI revenue +12.2% organic, more than half
+  the increase from asset-based ETF fees (mostly market appreciation, not
+  new money), Analytics margin fell on a smaller prior-year earn-out gain.
+  Skipped: none this batch.
+- Running total: **436 companies done**, **30 report-periods published
+  this window**.
