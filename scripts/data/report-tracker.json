@@ -11878,5 +11878,115 @@
     "status": "skipped",
     "skipReason": "Same issuer as NWSA (News Corp Class A) — one report per issuer, covered by NWSA FY2026 ANNUAL",
     "lastChecked": "2026-09-25"
+  },
+  "NI": {
+    "name": "NiSource",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ni/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "NDSN": {
+    "name": "Nordson Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ndsn/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (fiscal FY2026)",
+      "estimate": "2026-12-18",
+      "basis": "fiscal year ends ~Oct 31, annual 10-K typically ~7 weeks later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "NSC": {
+    "name": "Norfolk Southern",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/nsc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "NTRS": {
+    "name": "Northern Trust",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ntrs/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
+  },
+  "NOC": {
+    "name": "Northrop Grumman",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/noc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-20",
+      "basis": "~90 day cadence from last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25"
   }
 }

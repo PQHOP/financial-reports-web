@@ -4236,3 +4236,26 @@ the automated scheduled-task mechanism):
   Skipped: NWS (same issuer as NWSA).
 - Running total: **440 companies done**, **34 report-periods published
   this window**.
+- Batch 8: published (5) via 5 opus subagents in parallel, same
+  validate → publish → live-verify loop: NI Q2, NDSN Q3 (fiscal Q3
+  FY2026), NSC Q2, NOC Q2, NTRS Q2 (bank metrics fields).
+  Notes: NI diluted EPS $0.09 vs $0.22 on higher depreciation from new
+  NIPSCO rates, a $30.5M April union-lockout cost and interest expense
+  +43% — all ahead of the data-center-driven rate-base growth (Amazon/
+  Alphabet contracts approved this quarter), 2026 adjusted EPS guidance
+  reaffirmed; NDSN sales +10.3% (organic +11.7%) led by Advanced
+  Technology Solutions +30.9% organic on electronics dispensing, guidance
+  raised a second time; NSC revenue +11.4% but ~60% of the increase was
+  fuel-surcharge pass-through, GAAP EPS -4.4% only on a non-repeating
+  prior-year East Palestine insurance recovery and this year's Union
+  Pacific merger costs (adjusted EPS +7%), merger status covered factually
+  per the filing with no closing-date speculation; NOC sales +5.1%/backlog
+  a record $104.7B, operating margin fell on a non-repeating prior-year
+  divestiture gain plus new GEM 63XL and SiAW program charges (B-21
+  cumulative losses unchanged at ~$2.0B); NTRS EPS $4.23 vs $2.13 almost
+  entirely a $525.4M pre-tax Visa share-exchange gain (underlying revenue
+  growth ~12% vs costs ~5%, the cleaner read), efficiencyRatioPct/
+  rotcePct/netChargeOffRatioPct omitted as not disclosed by the filing.
+  Skipped: none this batch.
+- Running total: **445 companies done**, **39 report-periods published
+  this window**.
