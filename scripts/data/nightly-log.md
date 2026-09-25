@@ -3974,3 +3974,13 @@ the automated scheduled-task mechanism):
   and EPS (the table shows both bases); ECHO's $8.5B profit is a $9.73B
   deconsolidation gain from the DISH DBS/Wireless prepackaged Chapter 11
   (checked against the 10-Q). Running total: **306 companies done.**
+- **Session end (user stopped it): 140 report-periods published today**
+  (15 tier-0 + 125 tier-1). Tier-1 after the 90 checkpoint: EME, EMR Q3,
+  ETR, EOG, EQT, EFX, EQIX, ERIE, ESS, EG, EVRG, ES, EXC, EXE, EXPE, EXPD,
+  EXR, FFIV Q3, FDS Q3 (Q4 results due 09-30, confirmed), FICO Q3, FAST,
+  FRT, FDXF FY (spun off 2026-06-01), FERG Q2 (FYE moved to Dec 31),
+  FIS, FITB, FSLR, FE, FISV, FLEX FY, FTNT, FTV, FOXA FY, BEN Q3, FCX.
+  FOX skipped (same issuer as FOXA). Drafted but NOT published when the
+  user stopped: GRMN, IT, GEHC, GEV, GEN — next run starts there (IT's
+  draft cited guidance from a transcript summary; redo from filings).
+  Tracker: **351 companies done.**
