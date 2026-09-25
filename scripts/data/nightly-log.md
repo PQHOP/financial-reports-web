@@ -4026,3 +4026,10 @@ the automated scheduled-task mechanism):
   headwind), GAAP EPS guide cut to ≥$6.52; HUM operating margin is our
   calc (income from operations ÷ revenue), labelled. Day total:
   **165 report-periods**, **376 companies done.**
+- Continued: published (5) HBAN Q2, HII Q2, IEX Q2, IDXX Q2, ITW Q2.
+  Notes: HBAN net income +36% but EPS −3% (Veritex + Cadence stock deals
+  lifted diluted shares 38%; $152M merger costs), revenue defined as NII +
+  noninterest income; IEX's margin gain is a one-off IEEPA tariff refund
+  (+130 bps, $0.08 EPS; ex-refund view labelled ours); HII free cash flow
+  −$611M in H1 on billing timing vs $500–600M FY guide. Day total:
+  **170 report-periods**, **381 companies done.**
