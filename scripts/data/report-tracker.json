@@ -9474,5 +9474,155 @@
         "url": "https://financialreportinsights.com/companies/fcx/2026/q2"
       }
     ]
+  },
+  "GRMN": {
+    "name": "Garmin",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/grmn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Wednesday filings 04-29, 07-29; Q3 2025 10-Q 2025-10-29; same-day 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/grmn/2026/q2"
+      }
+    ]
+  },
+  "IT": {
+    "name": "Gartner",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/it/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~90 days after Q2 10-Q; 10-Q same day as 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/it/2026/q2"
+      }
+    ]
+  },
+  "GEHC": {
+    "name": "GE HealthCare",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/gehc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "8-K and 10-Q same day (Q3 2025 10-29, Q2 2026 07-29, Wednesdays)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/gehc/2026/q2"
+      }
+    ]
+  },
+  "GEV": {
+    "name": "GE Vernova",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/gev/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-22"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "Nasdaq calendar lists 10/21/2026 (not company-confirmed); 8-K and 10-Q same day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/gev/2026/q2"
+      }
+    ]
+  },
+  "GEN": {
+    "name": "Gen Digital",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/gen/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (Q1 FY2027)",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q2 FY2027)",
+      "estimate": "2026-11-05",
+      "basis": "last year Q2 8-K 2025-11-06, 10-Q 11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/gen/2026/annual"
+      }
+    ]
   }
 }
