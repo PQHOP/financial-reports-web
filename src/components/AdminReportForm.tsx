@@ -151,7 +151,8 @@ export function AdminReportForm({
         <label className="flex flex-col gap-1 text-sm font-medium">
           Metrics JSON{" "}
           <span className="font-normal text-zinc-400">
-            (optional; money in millions, percentages as plain numbers)
+            (optional; money in millions, percentages as plain numbers; banks
+            and insurers have extra fields, see src/lib/metrics.ts)
           </span>
           <textarea
             name="metrics"

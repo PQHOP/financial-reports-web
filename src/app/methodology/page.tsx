@@ -47,7 +47,10 @@ export default function MethodologyPage() {
         <li>
           A metrics table comparing the period with the same period a year
           earlier: revenue, margin, net income, earnings per share, and one
-          or two measures specific to the industry.
+          or two measures specific to the industry. Banks are also compared
+          on net interest margin, efficiency ratio, net charge-offs and CET1
+          capital; insurers on premiums written, combined ratio and book
+          value per share.
         </li>
         <li>
           Explanations tied to a specific line item or a sentence in the

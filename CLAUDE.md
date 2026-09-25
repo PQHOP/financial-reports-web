@@ -477,7 +477,30 @@ this pipeline end to end in one session:
      6.0%); `epsDiluted` is per share. These feed the report page's
      figures strip, the generated social card, social posts, the weekly
      newsletter draft and future sector scorecards, so they must match the
-     metrics table in the report body exactly.
+     metrics table in the report body exactly. Unknown keys are rejected
+     (a typo fails the publish instead of silently dropping the figure).
+   - **Banks and insurers add their industry's own fields** (all in
+     `src/lib/metrics.ts`). They switch the report's figures strip, the
+     company's results table and the industry page's peer table to that
+     industry's columns, so fill every one the filing reports:
+     - **Banks** (including card issuers/consumer lenders with a stated NIM):
+       `netInterestIncome`, `netInterestIncomeYoyPct`,
+       `netInterestMarginPct`, `totalLoans`, `totalDeposits` (period-end),
+       `efficiencyRatioPct`, `netChargeOffRatioPct` (annualized, as the
+       filing states it), `cet1RatioPct`, `rotcePct`. Use the company's own
+       stated figure (e.g. its reported NIM or efficiency ratio) rather
+       than recomputing; if it only reports a non-GAAP/FTE version, use it
+       and say so in the body. Keep `revenue` (total net revenue) and
+       `netIncome`/`epsDiluted` as usual; omit `operatingMarginPct`.
+     - **P&C / multiline insurers:** `netPremiumsWritten`,
+       `netPremiumsWrittenYoyPct`, `combinedRatioPct`, `lossRatioPct`,
+       `catastropheLosses` (pre-tax), `bookValuePerShare`,
+       `bookValuePerShareYoyPct`. Life/health insurers and brokers without
+       a combined ratio just use the general fields.
+     - The profile is detected from the fields present (`netInterestMarginPct`
+       or `netInterestIncome` → bank; `combinedRatioPct` or
+       `netPremiumsWritten` → insurer), so don't set bank fields on a
+       non-bank just because it has interest income.
    - **Do not set `coverImageUrl`.** Placeholder images (placehold.co) are
      ignored by the site now; the site generates a social card from the
      metrics automatically. Omit the field.

@@ -15,8 +15,8 @@ import { tableOfContents } from "@/lib/markdown";
 import { formatFilingDate, upcomingFiling } from "@/lib/tracker";
 import type { FullReport } from "@/lib/reportData";
 import {
-  formatMoneyMillions,
-  formatPct,
+  metricsProfile,
+  PROFILE_LAYOUT,
   readMetrics,
   type ReportMetrics,
 } from "@/lib/metrics";
@@ -76,43 +76,11 @@ export function reportMetadata(report: FullReport): Metadata {
 }
 
 function MetricsSnapshot({ metrics }: { metrics: ReportMetrics }) {
-  const items: { label: string; value: string; change?: string }[] = [];
-  if (metrics.revenue !== undefined) {
-    items.push({
-      label: "Revenue",
-      value: formatMoneyMillions(metrics.revenue, metrics.currency),
-      change:
-        metrics.revenueYoyPct !== undefined
-          ? formatPct(metrics.revenueYoyPct)
-          : undefined,
-    });
-  }
-  if (metrics.netIncome !== undefined) {
-    items.push({
-      label: "Net income",
-      value: formatMoneyMillions(metrics.netIncome, metrics.currency),
-      change:
-        metrics.netIncomeYoyPct !== undefined
-          ? formatPct(metrics.netIncomeYoyPct)
-          : undefined,
-    });
-  }
-  if (metrics.epsDiluted !== undefined) {
-    const prefix =
-      metrics.currency && metrics.currency !== "USD" ? `${metrics.currency} ` : "$";
-    items.push({
-      label: "Diluted EPS",
-      value: `${prefix}${metrics.epsDiluted.toFixed(2)}`,
-      change:
-        metrics.epsYoyPct !== undefined ? formatPct(metrics.epsYoyPct) : undefined,
-    });
-  }
-  if (metrics.operatingMarginPct !== undefined) {
-    items.push({
-      label: "Operating margin",
-      value: formatPct(metrics.operatingMarginPct, false),
-    });
-  }
+  const layout = PROFILE_LAYOUT[metricsProfile(metrics)];
+  const items = layout.snapshot.flatMap((col) => {
+    const value = col.value(metrics);
+    return value === undefined ? [] : [{ label: col.label, value, change: col.change?.(metrics) }];
+  });
   if (items.length === 0) return null;
 
   return (
@@ -129,6 +97,9 @@ function MetricsSnapshot({ metrics }: { metrics: ReportMetrics }) {
           )}
         </div>
       ))}
+      {layout.glossary && (
+        <p className="col-span-2 text-xs text-zinc-500 sm:col-span-4">{layout.glossary}</p>
+      )}
     </dl>
   );
 }

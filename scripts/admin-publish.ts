@@ -30,7 +30,9 @@
  *   "metrics": { "revenue": 94930, "revenueYoyPct": 6.0, "netIncome": 21448,
  *                "netIncomeYoyPct": 9.3, "epsDiluted": 1.4, "epsYoyPct": 12.0,
  *                "operatingMarginPct": 30.2, "currency": "USD" }
- *                // optional; money in millions, percentages as plain numbers
+ *                // optional; money in millions, percentages as plain numbers.
+ *                // Banks/insurers add their own fields (netInterestMarginPct,
+ *                // combinedRatioPct, ...): see ReportMetrics in src/lib/metrics.ts
  * }
  *
  * Article JSON shape (--article; upserts by slug, so re-running updates it):

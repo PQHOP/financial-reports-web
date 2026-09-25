@@ -13,9 +13,9 @@ import { SITE_URL } from "@/lib/site";
 import { takeaway, truncate } from "@/lib/markdown";
 import { formatFilingDate, upcomingFiling } from "@/lib/tracker";
 import {
-  formatMoneyMillions,
-  formatPct,
   metricsHeadline,
+  metricsProfile,
+  PROFILE_LAYOUT,
   readMetrics,
 } from "@/lib/metrics";
 import type { ReportPeriod } from "@/generated/prisma/client";
@@ -128,6 +128,10 @@ export default async function CompanyPage({
   const history = system
     .map((r) => ({ report: r, metrics: readMetrics(r.metrics) }))
     .filter((row) => row.metrics);
+  // A bank's or insurer's table uses its industry's figures; the latest
+  // period decides, so an older report without them just shows dashes.
+  const historyLayout =
+    PROFILE_LAYOUT[history.length > 0 ? metricsProfile(history[0].metrics!) : "general"];
 
   const years = Array.from(new Set(shown.map((r) => r.year))).sort((a, b) => b - a);
 
@@ -230,11 +234,11 @@ export default async function CompanyPage({
               <thead className="bg-zinc-50 text-left text-zinc-600">
                 <tr>
                   <th className="px-3 py-2 font-semibold">Period</th>
-                  <th className="px-3 py-2 text-right font-semibold">Revenue</th>
-                  <th className="px-3 py-2 text-right font-semibold">YoY</th>
-                  <th className="px-3 py-2 text-right font-semibold">Net income</th>
-                  <th className="px-3 py-2 text-right font-semibold">Diluted EPS</th>
-                  <th className="px-3 py-2 text-right font-semibold">Op. margin</th>
+                  {historyLayout.history.map((col) => (
+                    <th key={col.label} className="px-3 py-2 text-right font-semibold">
+                      {col.short}
+                    </th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
@@ -248,25 +252,11 @@ export default async function CompanyPage({
                         {periodLabels[report.period]} {report.year}
                       </Link>
                     </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
-                      {m!.revenue !== undefined ? formatMoneyMillions(m!.revenue, m!.currency) : "–"}
-                    </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
-                      {m!.revenueYoyPct !== undefined ? formatPct(m!.revenueYoyPct) : "–"}
-                    </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
-                      {m!.netIncome !== undefined ? formatMoneyMillions(m!.netIncome, m!.currency) : "–"}
-                    </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
-                      {m!.epsDiluted !== undefined
-                        ? `${m!.currency && m!.currency !== "USD" ? `${m!.currency} ` : "$"}${m!.epsDiluted.toFixed(2)}`
-                        : "–"}
-                    </td>
-                    <td className="px-3 py-2 text-right tabular-nums">
-                      {m!.operatingMarginPct !== undefined
-                        ? formatPct(m!.operatingMarginPct, false)
-                        : "–"}
-                    </td>
+                    {historyLayout.history.map((col) => (
+                      <td key={col.label} className="px-3 py-2 text-right tabular-nums">
+                        {col.value(m!) ?? "–"}
+                      </td>
+                    ))}
                   </tr>
                 ))}
               </tbody>
@@ -275,6 +265,7 @@ export default async function CompanyPage({
           <p className="text-xs text-zinc-500">
             Figures as reported in each period&apos;s filing; YoY compares with
             the same period a year earlier. Money in the reporting currency.
+            {historyLayout.glossary ? ` ${historyLayout.glossary}` : ""}
           </p>
         </section>
       )}
