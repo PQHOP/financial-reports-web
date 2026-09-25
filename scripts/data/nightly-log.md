@@ -3988,3 +3988,15 @@ the automated scheduled-task mechanism):
   were published afterwards at the user's request. IT's transcript-sourced
   guidance and CEO/CFO quotes were removed first (filings only). Final
   for the day: **145 report-periods**, 356 companies done.
+- **Second manual session (16:10 JST, user: "update the site's financial
+  reports").** Tier 0 scan (09-19 → 09-25): 0 fresh candidates. Tier 1,
+  `next-batch` order, 5 opus drafts → structure/filler/metrics-in-text
+  check + headline figures grepped in the downloaded filing text →
+  publish → live check (200, Takeaway, Source filing). Published (5):
+  GNRC Q2, GD Q2, GPC Q2, GPN Q2, GL Q2. Notes: GNRC's margin includes a
+  ~$71M IEEPA tariff refund (report shows the ex-refund view) and covers
+  the 09-16 Amazon supply/warrant 8-K; GPN's GAAP strip (+68.6% revenue,
+  −94.6% net income) is Worldpay/Issuer-divestiture distortion, explained
+  in the body with the company's normalized ~+4%; GPC covers the Q1 2027
+  separation (09-09 8-K). Skipped: none. Day total: **150 report-periods**,
+  **361 companies done.**
