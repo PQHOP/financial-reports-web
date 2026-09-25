@@ -8961,7 +8961,7 @@
   },
   "FDS": {
     "name": "FactSet",
-    "status": "pending",
+    "status": "done",
     "latestReport": {
       "year": 2026,
       "period": "Q3",
