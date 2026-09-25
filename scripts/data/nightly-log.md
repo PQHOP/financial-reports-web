@@ -4066,3 +4066,12 @@ the automated scheduled-task mechanism):
   JCI net income includes discontinued ops (continuing +21%), op margin our
   calc (labelled); KEYS orders +56%, book-to-bill 1.13. Day total: **190
   report-periods**, **401 companies done.**
+- Continued: published (5) KIM Q2, KMI Q2, KKR Q2, KHC Q2, LHX Q2.
+  Notes: KHC −$5.46B loss on $7.35B impairments (separation paused 02-11;
+  the 09-14 move is only a Nasdaq→NYSE listing change), YoY % on the loss
+  lines dropped from metrics so the strip doesn't show them as growth;
+  KMI no longer reports DCF (free cash flow used); KKR FRE +37% inflated
+  by K-Series fee reclassification (~$160M); LHX CEO change 08-17 and $1B
+  DoW preferred in the missile unit. **Session end (user asked to stop
+  after this batch). Day total: 195 report-periods, 406 companies done.**
+  Next `next-batch` starts after LHX.
