@@ -32,6 +32,7 @@ const R3 = "#c93836";
 const R2 = "#ec7c79";
 const R1 = "#f8c3c0";
 const MID = "#e7e5df";
+const DEFLATION = "#a8a69c";
 const B1 = "#b7d3f6";
 const B2 = "#6da7ec";
 const B3 = "#2a78d6";
@@ -66,8 +67,10 @@ export const INDICATORS: Indicator[] = [
     changeAs: "pp",
     format: "pct",
     breaks: [0, 1, 3, 5, 8, 15, 30],
-    colors: [B1, B2, B4, B1, R1, R2, R3, R4],
-    legendNote: "Average price rise. Darkest blue = near the ~2% most central banks aim for; red = high inflation.",
+    // Gray = falling prices; darkest blue = the 1-3% band around the ~2% most
+    // central banks target; lighter blue on either side; red = high.
+    colors: [DEFLATION, B1, B4, B2, R1, R2, R3, R4],
+    legendNote: "Average price rise. Darkest blue = near the ~2% most central banks aim for; red = high inflation; gray = prices falling.",
   },
   {
     code: "GGXWDG_NGDP",
@@ -153,7 +156,7 @@ export const LIVE_INDICATORS: Indicator[] = [
     label: "Inflation, latest month",
     unit: "% vs a year earlier",
     legendNote:
-      "How much prices rose over the past 12 months, as of each country's latest release. Darkest blue = near the ~2% most central banks aim for; red = high inflation.",
+      "How much prices rose over the past 12 months, as of each country's latest release. Darkest blue = near the ~2% most central banks aim for; red = high inflation; gray = prices falling.",
   },
   {
     ...INDICATORS[0],

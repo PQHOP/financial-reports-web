@@ -34,8 +34,10 @@ export default async function EconomyPage({ searchParams }: PageProps<"/economy"
   const country = c && weo.countries.some((x) => x.code === c) ? c : null;
 
   return (
-    // Wider than the site's reading column: the map and tables need the room.
-    <div className="relative left-1/2 w-[min(80rem,calc(100vw-2rem))] -translate-x-1/2">
+    // Wider than the site's reading column (the map and tables need the
+    // room), centered with margins rather than a transform: a transformed
+    // ancestor would re-anchor the fixed tooltip and phone bottom sheet.
+    <div className="ml-[calc(50%-min(40rem,50vw-1rem))] w-[min(80rem,calc(100vw-2rem))]">
       <JsonLd
         data={{
           "@context": "https://schema.org",
@@ -57,13 +59,17 @@ export default async function EconomyPage({ searchParams }: PageProps<"/economy"
           dateModified: live.updatedAt,
         }}
       />
-      <div className="mb-6">
-        <h1 className="text-2xl font-semibold">Global economy dashboard</h1>
-        <p className="mt-2 max-w-3xl text-zinc-600">
-          Inflation, growth, jobs, interest rates and currencies for {weo.countries.length} economies on one page, using each
-          country&apos;s latest release and refreshed every day. Blue on the map is healthier, red is weaker; in the tables, green ▲/▼
-          means better than the previous release and red means worse. Switch to <em>Annual &amp; forecasts</em> for IMF data back to{" "}
-          {weo.years[1]} and forecasts to {weo.years[weo.years.length - 1]}.
+      <div className="mb-5 flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
+        <div>
+          <h1 className="text-2xl font-semibold">Global economy dashboard</h1>
+          <p className="mt-1 max-w-3xl text-zinc-600">
+            Inflation, growth, jobs, interest rates and currencies for {weo.countries.length} economies, from each country&apos;s latest
+            release. Blue on the map is healthier, red is weaker.
+          </p>
+        </div>
+        <p className="flex items-center gap-1.5 text-xs text-zinc-500">
+          <span className="inline-block h-2 w-2 rounded-full bg-emerald-600" aria-hidden />
+          Updated daily · last {new Date(live.updatedAt).toUTCString().slice(5, 16)}
         </p>
       </div>
       <EconomyDashboard data={weo} live={live} map={map} initial={{ view, indicator, year, country }} />

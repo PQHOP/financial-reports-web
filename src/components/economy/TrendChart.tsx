@@ -3,7 +3,6 @@
 import { useState } from "react";
 
 const W = 280;
-const H = 110;
 const PAD = { l: 4, r: 4, t: 10, b: 18 };
 const LINE = "#2a78d6";
 const WORLD = "#898781";
@@ -20,6 +19,7 @@ export function TrendChart({
   forecastFrom,
   fmt,
   zeroBase,
+  height = 110,
 }: {
   label: string;
   labels: string[];
@@ -29,7 +29,11 @@ export function TrendChart({
   forecastFrom: number | null;
   fmt: (v: number | null | undefined) => string;
   zeroBase: boolean;
+  height?: number;
 }) {
+  const H = height;
+  // Small charts sit next to their value, so the overlay label only shows on hover.
+  const compact = height < 90;
   const [hover, setHover] = useState<number | null>(null);
   const all = [...values, ...(world ?? [])].filter((v): v is number => v != null);
   if (values.every((v) => v == null) || labels.length < 2) {
@@ -116,7 +120,7 @@ export function TrendChart({
           {labels[n - 1]}
         </text>
       </svg>
-      {hi >= 0 && hi < n && (
+      {hi >= 0 && hi < n && (!compact || hover != null) && (
         <div className="pointer-events-none absolute left-1 top-0 rounded bg-white/90 px-1 text-[11px] tabular-nums text-zinc-700">
           <span className="font-medium">{labels[hi]}</span>: {fmt(values[hi])}
           {world && world[hi] != null && <span className="text-zinc-500"> · world {fmt(world[hi])}</span>}

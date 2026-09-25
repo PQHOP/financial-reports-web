@@ -30,6 +30,8 @@ const OUT_DIR = path.join(__dirname, "..", "src", "data");
 
 // IMF uses a few non-ISO codes.
 const IMF_CODE_FIXES: Record<string, string> = { XKX: "UVK", PSE: "WBG" };
+// world-countries lists several currencies for these; the one in use first.
+const CURRENCY_OVERRIDE: Record<string, string> = { WBG: "ILS", ZWE: "ZWG" };
 // world-countries' own code for the same places.
 const WORLD_COUNTRIES_CODE: Record<string, string> = { UVK: "UNK", WBG: "PSE" };
 
@@ -53,7 +55,7 @@ async function fetchValues() {
       name: nameOverride[code] ?? wc?.name.common ?? label.replace(/, The$/, ""),
       region: wc ? (wc.region === "Americas" ? wc.subregion : wc.region) : "Other",
       iso2: wc?.cca2,
-      currency: code === "WBG" ? "ILS" : wc ? Object.keys(wc.currencies ?? {})[0] : undefined,
+      currency: CURRENCY_OVERRIDE[code] ?? (wc ? Object.keys(wc.currencies ?? {})[0] : undefined),
     });
   }
   entities.sort((a, b) => a.name.localeCompare(b.name));

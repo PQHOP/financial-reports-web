@@ -108,6 +108,14 @@ function monthsAgo(n: number): string {
 
 type SdmxSeries = { attrs: Record<string, string>; obs: Point[] };
 
+// Some IMF series carry stray observations dated in the future (seen:
+// "2027-M03" in a 2026 exchange-rate series); anything past the current
+// period is dropped.
+function inFuture(period: string): boolean {
+  const now = new Date().toISOString().slice(0, 10);
+  return periodEnd(period).slice(0, 7) > now.slice(0, 7);
+}
+
 function parseSdmx(xml: string): SdmxSeries[] {
   const out: SdmxSeries[] = [];
   for (const chunk of xml.split("<Series ").slice(1)) {
@@ -117,7 +125,8 @@ function parseSdmx(xml: string): SdmxSeries[] {
     const obs: Point[] = [];
     for (const m of chunk.matchAll(/<Obs\b[^>]*?TIME_PERIOD="([^"]+)"[^>]*?OBS_VALUE="([^"]+)"/g)) {
       const v = Number(m[2]);
-      if (Number.isFinite(v)) obs.push([normPeriod(m[1]), v]);
+      const p = normPeriod(m[1]);
+      if (Number.isFinite(v) && !inFuture(p)) obs.push([p, v]);
     }
     obs.sort((a, b) => a[0].localeCompare(b[0]));
     out.push({ attrs, obs });
@@ -169,7 +178,10 @@ async function imfCpi(): Promise<Record<string, LiveSeries>> {
   const xml = await getText(`${IMF},CPI/.CPI._T.YOY_PCH_PA_PT.M?startPeriod=${monthsAgo(MONTHS_KEPT + 1)}`);
   const out: Record<string, LiveSeries> = {};
   for (const s of parseSdmx(xml)) {
-    if (s.obs.length) out[s.attrs.COUNTRY] = { hist: trim(s.obs, MONTHS_KEPT), source: "IMF CPI" };
+    // A reading of exactly 0.00% right after a clearly non-zero one is a
+    // missing index reported as zero (seen for Kuwait), not real price data.
+    const obs = s.obs.filter(([, v], i) => !(v === 0 && i > 0 && Math.abs(s.obs[i - 1][1]) >= 1));
+    if (obs.length) out[s.attrs.COUNTRY] = { hist: trim(obs, MONTHS_KEPT), source: "IMF CPI" };
   }
   return out;
 }
@@ -350,7 +362,7 @@ function mergeHist(older: Point[] | undefined, newer: Point[]): Point[] {
 async function bondYields(previous?: Record<string, LiveSeries>): Promise<Record<string, LiveSeries>> {
   const [oecd, imf] = await Promise.allSettled([
     getText(
-      `https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_FINMARK,4.0/.M.IRLT.PA.....?startPeriod=${monthsAgo(8)}&format=csvfile`,
+      `https://sdmx.oecd.org/public/rest/data/OECD.SDD.STES,DSD_STES@DF_FINMARK,4.0/.M.IRLT.PA.....?startPeriod=${monthsAgo(8)}&format=csvfilewithlabels`,
     ),
     getText(`${IMF},MFS_IR/.S13BOND_RT_PT_A_PT.M?startPeriod=${monthsAgo(MONTHS_KEPT + 1)}`),
   ]);
@@ -403,6 +415,12 @@ async function exchangeRates(countries: CountryMeta[]): Promise<Record<string, F
     const rate = spot.rates[c.currency];
     if (!rate) continue;
     const hist = eop.get(c.code)?.length ? eop.get(c.code)! : (byCurrency.get(c.currency) ?? []);
+    // A spot rate far from the last official month-end rate usually means the
+    // two sources quote different things (a parallel-market rate, a
+    // redenominated currency), not a real move; leave the country out rather
+    // than show a bogus percentage.
+    const lastEop = hist[hist.length - 1];
+    if (lastEop && Math.abs(rate / lastEop[1] - 1) > 0.25) continue;
     out[c.code] = { currency: c.currency, spot: tidy(rate), spotDate, hist: trim(hist, MONTHS_KEPT) };
   }
   return out;
