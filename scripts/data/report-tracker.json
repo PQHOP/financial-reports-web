@@ -7368,5 +7368,155 @@
         "url": "https://financialreportinsights.com/companies/ed/2026/q2"
       }
     ]
+  },
+  "STZ": {
+    "name": "Constellation Brands",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/stz/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (Q1 FY2027)",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-07-01"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q2 FY2027)",
+      "estimate": "2026-10-07",
+      "basis": "Q2 FY2026 10-Q filed 2025-10-07; release on or just before",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/stz/2026/annual"
+      }
+    ]
+  },
+  "CEG": {
+    "name": "Constellation Energy",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ceg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q and 8-K together 2025-11-07; 10-Q on earnings day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/ceg/2026/q2"
+      }
+    ]
+  },
+  "COO": {
+    "name": "Cooper Companies (The)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/coo/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-09"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (FY2026 results); 10-K next day",
+      "estimate": "2026-12-03",
+      "basis": "FY2025 8-K 2025-12-04, 10-K 2025-12-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/coo/2026/q3"
+      }
+    ]
+  },
+  "CPRT": {
+    "name": "Copart",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cprt/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings)",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2026-09-29",
+      "basis": "published from the earnings 8-K; 10-K usually late September (60-day deadline ~09-29). When it lands, consider --edit to add unit volumes/ASPs",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cprt/2026/annual"
+      }
+    ]
+  },
+  "GLW": {
+    "name": "Corning Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/glw/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "Q3 2025 10-Q 2025-10-31; Q2 2026 8-K 07-28, 10-Q a day later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/glw/2026/q2"
+      }
+    ]
   }
 }

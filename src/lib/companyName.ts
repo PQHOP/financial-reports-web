@@ -7,5 +7,8 @@ const SECURITY_SUFFIX =
   /\s+-\s+(?=[^-]*\b(?:Shares?|Stock|ADSs?|ADRs?|Class\s+[A-Z]|Series\s+\w+|Units?|Voting)\b)(?![^-]*\b(?:Fund|Company|Trust)\b)[^-].*$/i;
 
 export function cleanCompanyName(name: string): string {
-  return name.replace(SECURITY_SUFFIX, "").trim() || name;
+  const base = name.replace(SECURITY_SUFFIX, "").trim() || name;
+  // S&P list style "Coca-Cola Company (The)" -> "The Coca-Cola Company".
+  const the = /^(.*\S)\s+\(The\)$/.exec(base);
+  return the ? `The ${the[1]}` : base;
 }
