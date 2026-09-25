@@ -7668,5 +7668,155 @@
         "url": "https://financialreportinsights.com/companies/cci/2026/q2"
       }
     ]
+  },
+  "CSX": {
+    "name": "CSX Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/csx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-22"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "CSX press release 2026-09-21: Q3 results after close Wed Oct 21, 2026; 10-Q same day historically",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/csx/2026/q2"
+      }
+    ]
+  },
+  "CMI": {
+    "name": "Cummins",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/cmi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~90-day cadence (05-05, 08-04); same-day 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/cmi/2026/q2"
+      }
+    ]
+  },
+  "DHR": {
+    "name": "Danaher Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dhr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-26",
+      "filedAt": "2026-07-21"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-20",
+      "basis": "Q3 ends 09-25; 10-Q and 8-K on the Tuesday ~25 days after quarter end (04-21, 07-21)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dhr/2026/q2"
+      }
+    ]
+  },
+  "DDOG": {
+    "name": "Datadog",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ddog/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2025 10-Q 2025-11-07; Q2 10-Q and 8-K same day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/ddog/2026/q2"
+      }
+    ]
+  },
+  "DVA": {
+    "name": "DaVita",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/dva/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q3 2025 10-Q and 8-K both 2025-10-29",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/dva/2026/q2"
+      }
+    ]
   }
 }
