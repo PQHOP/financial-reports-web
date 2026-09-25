@@ -4051,3 +4051,10 @@ the automated scheduled-task mechanism):
   IVZ and IP YoY % omitted (sign flip); INVH profit lifted by $132M of
   home-sale gains; IQV now reports two segments (Commercial Solutions,
   R&DS). Day total: **180 report-periods**, **391 companies done.**
+- Continued: published (5) IRM Q2, JBHT Q2, JBL Q3 (fiscal Q3 ended
+  05-31; FY2026 8-K not on EDGAR yet at 08:03 UTC 09-25, due any day —
+  should surface as a tier-0 update), JKHY ANNUAL (FY ended 06-30),
+  J Q3 (fiscal Q3 ended 06-26). Notes: IRM swung to profit (YoY %
+  omitted); J GAAP EPS −26% on PA Consulting buyout costs (43% tax rate)
+  and a lost prior-year Amentum gain vs adjusted +14%. Day total: **185
+  report-periods**, **396 companies done.**
