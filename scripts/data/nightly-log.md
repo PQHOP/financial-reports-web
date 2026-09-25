@@ -4130,3 +4130,23 @@ the automated scheduled-task mechanism):
   Skipped: none this batch.
 - Running total: **416 companies done**, **10 report-periods published
   this window**.
+- Batch 3: published (5) via 5 opus subagents in parallel, same
+  validate → publish → live-verify loop: MPC Q2, MRSH Q2, MLM Q2, MAS Q2,
+  MKC Q2 (fiscal Q2 ended 05-31; fiscal Q3 ends 08-31 so may already be
+  filed — flagged in the tracker for next check).
+  Notes: MPC net income +322.5%/EPS +347.7% almost entirely a refining-
+  crack-spread swing ($17.58→$36.33/bbl on Middle East supply disruption),
+  not an operating change; MRSH (rebranded from Marsh &amp; McLennan/MMC
+  to "Marsh" on 2026-01-14, admin dropdown still lists "Marsh McLennan")
+  Consulting (Oliver Wyman/Mercer) offsetting a soft Guy Carpenter
+  reinsurance-pricing cycle; MLM revenue +21% almost entirely from the
+  QUIKRETE/New Frontier acquired quarries (org. growth only 2.3%), EPS
+  -12% on inventory step-up/higher D&amp;A from those deals, $13.5B Lhoist
+  North America acquisition closed 08-21 (after quarter-end, covered as a
+  forward item); MAS EPS +25% mostly a ~$95M one-off IEEPA tariff refund
+  (ex-refund EPS roughly flat, our estimate, labelled); MKC sales +16.7%
+  driven by consolidating McCormick de Mexico (org. growth 1.7%), GAAP EPS
+  -13.8% on $57.6M Unilever Foods deal costs, adjusted EPS +16%.
+  Skipped: none this batch.
+- Running total: **421 companies done**, **15 report-periods published
+  this window**.
