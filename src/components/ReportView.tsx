@@ -203,7 +203,7 @@ export async function ReportView({ report }: { report: FullReport }) {
     author: {
       "@type": "Person",
       name: isCommunity ? report.author : EDITORIAL_AUTHOR,
-      ...(isCommunity ? {} : { url: `${SITE_URL}/methodology` }),
+      ...(isCommunity ? {} : { url: `${SITE_URL}/about` }),
     },
     publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
     ...(cover ? { image: [cover] } : {}),

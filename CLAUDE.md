@@ -646,7 +646,7 @@ the user is tracked at its end. Things future sessions should know:
   a 200 with a client-side redirect. Other dynamic routes have skeleton
   `loading.tsx` files plus a global top progress bar
   (`NavigationProgress`), so clicks never look frozen.
-- **Byline:** system reports are credited to "Admin" (`EDITORIAL_AUTHOR`;
+- **Byline:** system reports are credited to "Pham Hop", the site operator (`EDITORIAL_AUTHOR`;
   JSON-LD `Person`, the user's choice on 2026-09-25) with an
   "AI-drafted from the SEC filing" link to `/methodology`. `Report.author`
   still stores the drafting model; it's only displayed for community
