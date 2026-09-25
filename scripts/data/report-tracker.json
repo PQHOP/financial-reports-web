@@ -8868,5 +8868,155 @@
         "url": "https://financialreportinsights.com/companies/expe/2026/q2"
       }
     ]
+  },
+  "EXPD": {
+    "name": "Expeditors International",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/expd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 10-Qs 2024-11-05, 2025-11-06; 8-K a day earlier",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/expd/2026/q2"
+      }
+    ]
+  },
+  "EXR": {
+    "name": "Extra Space Storage",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/exr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "8-K ~3 days before 10-Q (Q2 07-28 / 07-31)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/exr/2026/q2"
+      }
+    ]
+  },
+  "FFIV": {
+    "name": "F5, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ffiv/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (FY2026 results); 10-K ~late Nov",
+      "estimate": "2026-10-27",
+      "basis": "FY results 8-K 2024-10-28, 2025-10-27",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/ffiv/2026/q3"
+      }
+    ]
+  },
+  "FDS": {
+    "name": "FactSet",
+    "status": "pending",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/fds/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-07-01"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q4/FY2026 results)",
+      "estimate": "2026-09-30",
+      "basis": "FactSet press release 2026-09-02 scheduled the Q4 FY2026 call for Sept 30, 2026 — publish a 2026 ANNUAL report then",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/fds/2026/q3"
+      }
+    ]
+  },
+  "FICO": {
+    "name": "Fair Isaac",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/fico/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (FY2026 results); 10-K ~2026-11-06",
+      "estimate": "2026-11-04",
+      "basis": "FY2025 8-K 2025-11-05, 10-K 2025-11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/fico/2026/q3"
+      }
+    ]
   }
 }
