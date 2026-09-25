@@ -8568,5 +8568,155 @@
         "url": "https://financialreportinsights.com/companies/eqt/2026/q2"
       }
     ]
+  },
+  "EFX": {
+    "name": "Equifax",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/efx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-21"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "Q3 10-Qs 2025-10-21, 2024-10-21; 10-Q on earnings day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/efx/2026/q2"
+      }
+    ]
+  },
+  "EQIX": {
+    "name": "Equinix",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/eqix/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "10-Q on earnings day ~13 weeks after quarter end (2025-10-29)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/eqix/2026/q2"
+      }
+    ]
+  },
+  "ERIE": {
+    "name": "Erie Indemnity",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/erie/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q3 10-Qs 2025-10-30, 2024-10-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/erie/2026/q2"
+      }
+    ]
+  },
+  "ESS": {
+    "name": "Essex Property Trust",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/ess/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "8-K the day before the 10-Q (04-28/29, 07-29/30)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/ess/2026/q2"
+      }
+    ]
+  },
+  "EG": {
+    "name": "Everest Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-25",
+      "url": "https://financialreportinsights.com/companies/eg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "10-Q ~5 days after 8-K (Q2 8-K 07-29, 10-Q 08-03)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/eg/2026/q2"
+      }
+    ]
   }
 }
