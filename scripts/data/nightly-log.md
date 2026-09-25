@@ -4000,3 +4000,12 @@ the automated scheduled-task mechanism):
   in the body with the company's normalized ~+4%; GPC covers the Q1 2027
   separation (09-09 8-K). Skipped: none. Day total: **150 report-periods**,
   **361 companies done.**
+- Continued (user: "keep going now"): published (5) GDDY Q2, HAL Q2,
+  HIG Q2, HAS Q2, HCA Q2 — same draft → check → publish → live-verify loop.
+  Notes: HIG net income includes a $251M tax benefit on the Hartford Funds
+  sale (report centres on core earnings); HAS net income/EPS YoY omitted
+  (prior-year loss from the $1.02B goodwill write-down); HCA's quarter is
+  lifted by a $1.37B Florida Medicaid directed-payment catch-up ($980M for
+  pre-2026 periods), and its operating margin is our calculation (pre-tax
+  + interest), labelled; HAL Q3 date 10-20 confirmed by its IR release.
+  Day total: **155 report-periods**, **366 companies done.**
