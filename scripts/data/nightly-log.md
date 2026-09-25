@@ -4259,3 +4259,27 @@ the automated scheduled-task mechanism):
   Skipped: none this batch.
 - Running total: **445 companies done**, **39 report-periods published
   this window**.
+- Batch 9: published (5) via 5 opus subagents in parallel, same
+  validate → publish → live-verify loop: NCLH Q2, NRG Q2, NUE Q2, NVR Q2,
+  NXPI Q2.
+  Notes: NCLH GAAP EPS $0.48 vs $0.07 mostly a euro-debt FX remeasurement
+  gain and a non-repeating prior-year refinancing charge — adjusted EPS
+  actually -6.6% on Net Yield -2.1% and fuel cost +$888/ton vs $659,
+  guidance cut (FY adjusted EPS ~$1.50, implying near-breakeven Q4);
+  NRG GAAP EPS $2.31 vs -$0.62 mostly unrealized-hedge mark-to-market
+  swings and a non-repeating legal charge, netIncomeYoyPct/epsYoyPct
+  omitted (loss-to-profit), adjusted EPS actually -14% on higher interest
+  from the LS Power debt-funded acquisition, unsigned 1.2 GW data-center
+  gas-plant deal in Texas noted factually; NUE revenue +23%/EPS +93.8% on
+  record shipments and wider metal margins with tariff support cited by
+  the company, operatingMarginPct is our pre-tax calc (no GAAP operating
+  line), labelled; NVR revenue -10.5%/EPS -22.6% on fewer closings and a
+  3.2% lower average price despite orders +9.4% (cancellation rate
+  improved), adjustable-rate mortgage share up sharply (21% vs 5%) flagged
+  as an affordability-stress signal; NXPI revenue +19.5% across all four
+  end markets, GAAP EPS +72.6% on an easy prior-year comp (restructuring
+  charge, cyclical trough) — non-GAAP EPS +32.7% the cleaner read, channel
+  inventory rising (9→11 weeks) flagged as a distributor-restocking risk.
+  Skipped: none this batch.
+- Running total: **450 companies done**, **44 report-periods published
+  this window**.
