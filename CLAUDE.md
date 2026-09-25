@@ -198,15 +198,18 @@ report after the close file their earnings 8-K around 20:05–21:00 UTC,
 which the old window missed by a full day; pre-market reporters (~11:00–
 12:30 UTC) are still picked up by the first firing.
 
-**Nightly cap: at most ~20 report-periods per night.** The account's
-*weekly* usage limit is shared with everything else; on 09-21 and 09-22
-the routine published ~35 per night and then was locked out from 09-24
-00:17 JST until 09-26 03:00 UTC — two and a half dark days. During
-earnings season a dark day is the worst possible outcome, so pace the
-week: once tonight's entry in the nightly log reaches ~20, stop and end
-the firing with a short summary (later firings that night should see the
-count and exit immediately). Tier 0 hot-list/S&P 500 items may exceed the
-cap by a few if they reported that day.
+**Nightly cap: at most ~50 report-periods per night.** The account's
+*weekly* usage limit is shared with everything else. On the old Pro plan
+the cap was ~20: on 09-21 and 09-22 the routine published ~35 per night
+and was then locked out from 09-24 00:17 JST until 09-26 03:00 UTC — two
+and a half dark days. The account moved to Max 5x on 2026-09-25 (~5x the
+usage budget), so the cap was raised to ~50. During earnings season a
+dark day is the worst possible outcome, so still pace the week: once
+tonight's entry in the nightly log reaches ~50, stop and end the firing
+with a short summary (later firings that night should see the count and
+exit immediately). Tier 0 hot-list/S&P 500 items may exceed the cap by a
+few if they reported that day. If a firing ever exits early on a
+weekly-limit message again, lower the cap and note it here.
 
 **A cloud routine already exists for this — check it before creating
 another one.** `trig_01GNdUY59Na4x3JxMr6p7mxK` ("2026 Report Coverage -
@@ -585,16 +588,6 @@ paste-into-an-email-tool draft.
 
 ## Growth work (traffic, SEO, distribution)
 
-**One-time pending task (delete this paragraph once done):** the 9 guides
-in `content/guides/*.md` are written but not yet published (the local
-`.env` password doesn't match production, and Vercel won't reveal it).
-The first nightly firing should run, with the automation
-`ADMIN_PASSWORD` and `SITE_URL` from its prompt:
-`npm run admin-publish -- --articles-dir content/guides`, confirm
-`/learn` lists 9 guides, then remove this paragraph and commit. It's
-idempotent (upserts by slug), so a repeat is harmless. Do this before
-starting research so it never gets skipped.
-
 The plan lives in `docs/GROWTH_PLAN.md`; what's implemented vs. waiting on
 the user is tracked at its end. Things future sessions should know:
 
@@ -607,7 +600,7 @@ the user is tracked at its end. Things future sessions should know:
 - **Editorial content piggybacks on the nightly firing** (no separate
   routine: a second routine would need its own copy of the admin
   credential and would compete for the same usage budget). Do these
-  *after* the guide task above and *before* the report batch, only when
+  *before* the report batch, only when
   the condition holds, and count them in the nightly log:
   - **Weekly earnings preview** — on the first firing of each Sunday (UTC)
     from 2026-10-11 through the end of earnings season (roughly
@@ -691,9 +684,8 @@ the user is tracked at its end. Things future sessions should know:
   `https://financial-reports-web.vercel.app` alias still serves the same
   site, and canonical/sitemap/OG URLs follow `SITE_URL` so they point at
   the custom domain. Changing `SITE_URL` needs a redeploy to take effect.
-  The nightly cloud routine's stored prompt still says the old
-  `.vercel.app` URL for `SITE_URL` — that keeps working via the alias, so
-  it wasn't changed) via `vercel --prod` run directly from this directory — no
+  The nightly cloud routine's prompt uses the custom domain for
+  `SITE_URL` since 2026-09-25) via `vercel --prod` run directly from this directory — no
   GitHub connection is used for deploys. Vercel env vars (`DATABASE_URL` and
   friends from the Postgres integration, plus `ADMIN_PASSWORD`,
   `ADMIN_SESSION_SECRET`, `SITE_URL`) are managed with `vercel env add/rm`;
