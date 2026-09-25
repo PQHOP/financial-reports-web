@@ -10,6 +10,7 @@ import { articlePath } from "@/lib/articles";
 import { parseMetricsInput } from "@/lib/metrics";
 import { pingIndexNow } from "@/lib/indexnow";
 import { SITE_URL } from "@/lib/site";
+import { reportUrl } from "@/lib/reportPath";
 import {
   ADMIN_COOKIE_MAX_AGE,
   ADMIN_COOKIE_NAME,
@@ -142,16 +143,23 @@ export async function createReportAction(
   if ("error" in built) return { error: built.error };
 
   let reportId: string;
+  let publicUrl: string;
   try {
-    const report = await prisma.report.create({ data: built.data });
+    const report = await prisma.report.create({
+      data: built.data,
+      include: { company: { select: { slug: true } } },
+    });
     reportId = report.id;
+    publicUrl = reportUrl(report);
   } catch {
     return {
       error: "A report for this company, year, and period already exists.",
     };
   }
 
-  after(() => pingIndexNow([`${SITE_URL}/reports/${reportId}`]));
+  after(() => pingIndexNow([publicUrl]));
+  // /reports/<id> renders in place for the admin (scripts/admin-publish.ts
+  // waits for it); visitors are sent on to the canonical URL.
   redirect(`/reports/${reportId}`);
 }
 
@@ -167,15 +175,21 @@ export async function updateReportAction(
   const built = buildReportData(readReportFields(formData));
   if ("error" in built) return { error: built.error };
 
+  let publicUrl: string;
   try {
-    await prisma.report.update({ where: { id }, data: built.data });
+    const report = await prisma.report.update({
+      where: { id },
+      data: built.data,
+      include: { company: { select: { slug: true } } },
+    });
+    publicUrl = reportUrl(report);
   } catch {
     return {
       error: "A report for this company, year, and period already exists.",
     };
   }
 
-  after(() => pingIndexNow([`${SITE_URL}/reports/${id}`]));
+  after(() => pingIndexNow([publicUrl]));
   redirect(`/reports/${id}`);
 }
 

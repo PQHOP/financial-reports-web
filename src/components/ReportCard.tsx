@@ -2,6 +2,7 @@ import Link from "next/link";
 import { periodLabels } from "@/lib/period";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import type { ReportPeriod } from "@/generated/prisma/client";
+import { reportPath } from "@/lib/reportPath";
 
 export type ReportCardData = {
   id: string;
@@ -13,7 +14,7 @@ export type ReportCardData = {
   metrics: unknown;
   origin?: "ADMIN" | "COMMUNITY";
   author?: string;
-  company: { name: string; ticker: string | null };
+  company: { name: string; ticker: string | null; slug: string };
 };
 
 export function ReportCard({ report }: { report: ReportCardData }) {
@@ -23,7 +24,7 @@ export function ReportCard({ report }: { report: ReportCardData }) {
 
   return (
     <Link
-      href={`/reports/${report.id}`}
+      href={reportPath(report)}
       className="block rounded-lg border border-zinc-200 bg-white p-4 hover:border-zinc-400"
     >
       <div className="font-medium">

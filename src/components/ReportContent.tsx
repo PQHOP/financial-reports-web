@@ -1,7 +1,19 @@
-import { Children, isValidElement } from "react";
+import { Children, isValidElement, type ReactNode } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import type { Components } from "react-markdown";
+import { headingId } from "@/lib/markdown";
+
+// Visible text of rendered children, for the heading anchor id.
+function textOf(node: ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(textOf).join("");
+  if (isValidElement<{ children?: ReactNode }>(node)) return textOf(node.props.children);
+  return "";
+}
+
+const anchorFor = (children: ReactNode) =>
+  headingId(textOf(children).replace(/\s+/g, " ").trim());
 
 // react-markdown wraps `![alt](src)` in a <p>, but this renders a <figure>
 // with a <figcaption> — and HTML forbids block elements like <figure>
@@ -29,6 +41,17 @@ function MarkdownImage({ src, alt }: { src?: string | Blob; alt?: string }) {
 
 const components: Components = {
   img: MarkdownImage,
+  // Anchored so the report page's table of contents can link to them.
+  h2: ({ children }) => (
+    <h2 id={anchorFor(children)} className="scroll-mt-6">
+      {children}
+    </h2>
+  ),
+  h3: ({ children }) => (
+    <h3 id={anchorFor(children)} className="scroll-mt-6">
+      {children}
+    </h3>
+  ),
   p: ({ children }) => {
     const containsBlockImage = Children.toArray(children).some(
       (child) => isValidElement(child) && child.type === MarkdownImage

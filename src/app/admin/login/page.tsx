@@ -1,4 +1,5 @@
 import { loginAction } from "@/app/admin/actions";
+import { SubmitButton } from "@/components/SubmitButton";
 
 export const dynamic = "force-dynamic";
 
@@ -34,12 +35,7 @@ export default async function AdminLoginPage({
             className="rounded-md border border-zinc-300 px-3 py-2 text-sm"
           />
         </label>
-        <button
-          type="submit"
-          className="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white"
-        >
-          Sign in
-        </button>
+        <SubmitButton className="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white" pendingText="Signing in…">Sign in</SubmitButton>
       </form>
     </div>
   );

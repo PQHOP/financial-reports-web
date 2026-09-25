@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
+import Form from "next/form";
+import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { NavigationProgress } from "@/components/NavigationProgress";
+import { SiteNav } from "@/components/SiteNav";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -40,10 +44,8 @@ export const metadata: Metadata = {
   alternates: {
     types: { "application/rss+xml": "/feed.xml" },
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  // No site-wide `robots` here: indexing is the default, and a layout-level
+  // "index, follow" was emitted next to the not-found page's "noindex".
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -53,36 +55,31 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-zinc-50 text-zinc-900">
+        <Suspense fallback={null}>
+          <NavigationProgress />
+        </Suspense>
         <header className="border-b border-zinc-200 bg-white">
-          <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-4 px-4 py-4">
-            <Link href="/" className="text-lg font-semibold tracking-tight">
+          {/* Mobile: logo + search on one row, the menu scrolls sideways
+              below. From sm up: logo, menu, search in one row. */}
+          <div className="mx-auto flex max-w-4xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3 sm:py-4">
+            <Link href="/" className="shrink-0 text-base font-semibold tracking-tight sm:text-lg">
               Financial Report Insights
             </Link>
-            <nav className="flex gap-4 text-sm text-zinc-600">
-              <Link href="/reports" className="hover:text-zinc-900">
-                Reports
-              </Link>
-              <Link href="/earnings" className="hover:text-zinc-900">
-                Earnings
-              </Link>
-              <Link href="/economy" className="hover:text-zinc-900">
-                Economy
-              </Link>
-              <Link href="/insights" className="hover:text-zinc-900">
-                Insights
-              </Link>
-              <Link href="/learn" className="hover:text-zinc-900">
-                Learn
-              </Link>
-            </nav>
-            <form action="/search" method="GET" className="flex-1 max-w-xs">
+            <div className="order-3 w-full sm:order-2 sm:w-auto">
+              <SiteNav />
+            </div>
+            {/* Client-side navigation (no full reload) via next/form. No
+                submit button: scripts/admin-publish.ts clicks the page's
+                only button[type=submit]. */}
+            <Form action="/search" role="search" className="order-2 min-w-0 flex-1 sm:order-3 sm:ml-auto sm:max-w-xs">
               <input
                 type="search"
                 name="q"
-                placeholder="Search company name or ticker..."
+                aria-label="Search companies"
+                placeholder="Company or ticker…"
                 className="w-full rounded-md border border-zinc-300 px-3 py-1.5 text-sm outline-none focus:border-zinc-500"
               />
-            </form>
+            </Form>
           </div>
         </header>
         <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-8">

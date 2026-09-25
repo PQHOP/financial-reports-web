@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SubmitButton } from "@/components/SubmitButton";
 import { prisma } from "@/lib/prisma";
 import { requireAdmin } from "@/lib/adminAuth";
 import { deleteCompanyAction } from "@/app/admin/companies/actions";
@@ -111,12 +112,7 @@ export default async function AdminCompaniesPage({
                         Edit
                       </Link>
                       <form action={deleteCompanyAction.bind(null, company.id)}>
-                        <button
-                          type="submit"
-                          className="text-red-600 hover:underline"
-                        >
-                          Delete
-                        </button>
+                        <SubmitButton className="text-red-600 hover:underline" pendingText="Deleting…">Delete</SubmitButton>
                       </form>
                     </div>
                   </td>

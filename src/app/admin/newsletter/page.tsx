@@ -1,3 +1,4 @@
+import { reportUrl } from "@/lib/reportPath";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
@@ -25,7 +26,7 @@ export default async function NewsletterDraftPage() {
     prisma.report.findMany({
       where: { ...systemReports, publishedAt: { gte: since } },
       orderBy: { publishedAt: "desc" },
-      include: { company: { select: { name: true, ticker: true } } },
+      include: { company: { select: { name: true, ticker: true, slug: true } } },
     }),
     prisma.article.findMany({
       where: { publishedAt: { gte: since } },
@@ -48,7 +49,7 @@ export default async function NewsletterDraftPage() {
       ...(headline ? [`**${headline}**`, ""] : []),
       report.summary,
       "",
-      `[Read the full analysis](${SITE_URL}/reports/${report.id})`,
+      `[Read the full analysis](${reportUrl(report)})`,
       ""
     );
   }

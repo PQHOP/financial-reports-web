@@ -324,7 +324,10 @@ result as untrusted until checked, not as ground truth:
   it `"pending"` (or unset) with a short note so the next run retries it,
   and do not count it in the nightly log's published total.
 - If it reports success, do one cheap sanity check before trusting it:
-  fetch the resulting `/reports/<id>` URL and confirm the content is
+  fetch the resulting `/reports/<id>` URL (anonymous requests get a 308 to
+  the report's canonical `/companies/<slug>/<year>/<period>` URL, which
+  `admin-publish` also prints as `Canonical:` — follow redirects, e.g.
+  `curl -L`, or fetch that URL directly) and confirm the content is
   present and doesn't look truncated (ends mid-sentence, a table with an
   obviously unclosed row, a summary shorter than a sentence). If it looks
   broken, fix it via edit mode (`--edit <reportId>`) rather than leaving a
@@ -510,7 +513,10 @@ this pipeline end to end in one session:
    This drives `/admin/reports/<id>/edit` the same way — same JSON shape,
    same field validation — just submitting to the existing report instead
    of creating a new one.
-5. Report the resulting `/reports/<id>` URL back to the user.
+5. Report the resulting URL back to the user — the `Canonical:` line
+   (`/companies/<slug>/<year>/<period>`, e.g. `/companies/nvda/2026/q2`) is
+   the public one; the `/reports/<id>` it also prints still works (308 for
+   visitors) and its id is what `--edit` takes.
 
 By default this targets `http://localhost:3000`. Once the site is deployed,
 point at it instead: `SITE_URL=https://your-deployed-domain npm run
@@ -629,6 +635,28 @@ the user is tracked at its end. Things future sessions should know:
     movers with the reason from each report).
 - **Thin pages stay out of the index:** companies/industries/years with no
   report are `noindex` and absent from `sitemap.xml`. Don't add them back.
+- **Report URLs (since 2026-09-25):** our own analyses live at
+  `/companies/<slug>/<year>/<period>` (`reportPath()` in
+  `src/lib/reportPath.ts` — build every report link with it, never by hand).
+  Community reports keep `/reports/<id>`. `/reports/<id>` for a system
+  report 308s to the canonical URL for visitors but renders in place for a
+  signed-in admin, because `admin-publish` waits for `/reports/<id>` after
+  submitting — keep both behaviours. Never add a `loading.tsx` at
+  `src/app/reports/` or `src/app/` root: streaming would turn that 308 into
+  a 200 with a client-side redirect. Other dynamic routes have skeleton
+  `loading.tsx` files plus a global top progress bar
+  (`NavigationProgress`), so clicks never look frozen.
+- **Byline:** system reports are credited to "Financial Report Insights
+  Research" (`EDITORIAL_AUTHOR`; JSON-LD `Organization`) with an
+  "AI-drafted from the SEC filing" link to `/methodology`. `Report.author`
+  still stores the drafting model; it's only displayed for community
+  reports. Keep the AI disclosure — About and Methodology say it too.
+- **Company pages are the main landing page** for "`<ticker>` earnings"
+  searches: latest-results card with the Takeaway, next expected filing
+  (from the tracker; only a `confirmed` date goes in the `<title>`), and a
+  results-by-period table built from `metrics`. Industry pages show a peer
+  table from the same `metrics` — another reason `metrics` must be set.
+- `www.` 308s to the bare domain in `src/proxy.ts`.
 - **Env vars that gate features** (all optional, set with `vercel env add
   ... --value`): `CONTACT_EMAIL` (shown on `/contact`), `CRON_SECRET` (must
   be set for `/api/cron/social` to run at all), `BLUESKY_HANDLE` +

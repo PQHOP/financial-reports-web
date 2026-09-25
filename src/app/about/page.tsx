@@ -47,7 +47,8 @@ export default function AboutPage() {
       <p>
         The analyses are written by Claude, an AI model made by Anthropic,
         working from the company&apos;s own filings, and published by the
-        site operator. Every report shows its author, and every report links
+        site operator under the name Financial Report Insights Research. Every
+        report says it was drafted by an AI model, and every report links
         to the filing it was built from so you can check any figure against
         the original. The process is described in detail on the{" "}
         <Link href="/methodology">methodology page</Link>. Because an AI

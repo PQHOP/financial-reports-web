@@ -1,3 +1,4 @@
+import { reportPath } from "@/lib/reportPath";
 import { prisma } from "@/lib/prisma";
 import { systemReports } from "@/lib/community";
 import { periodLabels } from "@/lib/period";
@@ -25,6 +26,7 @@ const MONTHS = [
 
 export type DigestReport = {
   id: string;
+  path: string;
   ticker: string | null;
   companyName: string;
   year: number;
@@ -88,7 +90,7 @@ export function renderDigest(
 
   const range = `${shortDate(start)} to ${shortDate(end)}, ${end.getUTCFullYear()}`;
   const link = (r: DigestReport) =>
-    `[${label(r)} ${periodLabels[r.period]} ${r.year}](/reports/${r.id})`;
+    `[${label(r)} ${periodLabels[r.period]} ${r.year}](${r.path})`;
   const withMetrics = reports.map((r) => ({ r, m: readMetrics(r.metrics) }));
 
   const parts: string[] = [];
@@ -187,7 +189,7 @@ export async function buildDigest(now: Date): Promise<Digest | null> {
     prisma.report.findMany({
       where: { ...systemReports, publishedAt: { gte: start } },
       orderBy: { publishedAt: "desc" },
-      include: { company: { select: { name: true, ticker: true } } },
+      include: { company: { select: { name: true, ticker: true, slug: true } } },
     }),
     prisma.article.findMany({
       where: { kind: "NEWS", publishedAt: { gte: start } },
@@ -199,6 +201,7 @@ export async function buildDigest(now: Date): Promise<Digest | null> {
   return renderDigest(
     reports.map((r) => ({
       id: r.id,
+      path: reportPath(r),
       ticker: r.company.ticker,
       companyName: r.company.name,
       year: r.year,

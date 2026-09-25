@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
+import { reportUrl } from "@/lib/reportPath";
 
 // Sitemaps are built at request time, not baked into the build.
 export const dynamic = "force-dynamic";
@@ -30,7 +31,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }),
     prisma.report.findMany({
       where: systemReports,
-      select: { id: true, publishedAt: true, updatedAt: true },
+      select: {
+        id: true,
+        year: true,
+        period: true,
+        publishedAt: true,
+        updatedAt: true,
+        company: { select: { slug: true } },
+      },
     }),
     prisma.article.findMany({
       select: { slug: true, kind: true, updatedAt: true },
@@ -89,7 +97,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...companyYearEntries,
     ...reports.map((report) => ({
-      url: `${SITE_URL}/reports/${report.id}`,
+      url: reportUrl(report),
       lastModified: new Date(report.updatedAt ?? report.publishedAt),
       changeFrequency: "monthly" as const,
       priority: 0.8,

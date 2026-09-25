@@ -9,7 +9,7 @@ export async function JsonLd({ data }: { data: Record<string, unknown> }) {
       type="application/ld+json"
       nonce={nonce}
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(data).replace(/</g, "\u003c"),
+        __html: JSON.stringify(data).replace(/</g, "\\u003c"),
       }}
     />
   );

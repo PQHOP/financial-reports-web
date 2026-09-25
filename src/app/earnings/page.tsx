@@ -4,38 +4,14 @@ import { prisma } from "@/lib/prisma";
 import { systemReports } from "@/lib/community";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import { periodLabels } from "@/lib/period";
-import bundledTracker from "../../../scripts/data/report-tracker.json";
 import hotList from "../../../scripts/data/priority-tickers.json";
+import { formatFilingDate, loadTracker } from "@/lib/tracker";
+import { reportPath } from "@/lib/reportPath";
 
 export const dynamic = "force-dynamic";
 
-// The nightly routine pushes tracker updates to GitHub but doesn't redeploy,
-// so read the live file from the (public) repo and fall back to the copy
-// bundled at build time.
-const TRACKER_URL =
-  "https://raw.githubusercontent.com/PQHOP/financial-reports-web/master/scripts/data/report-tracker.json";
 const LOOKBACK_DAYS = 3;
 const LOOKAHEAD_DAYS = 28;
-
-type TrackerEntry = {
-  name?: string;
-  status?: string;
-  nextExpectedFiling?: {
-    type?: string;
-    estimate?: string;
-    confidence?: string;
-  };
-};
-
-async function loadTracker(): Promise<Record<string, TrackerEntry>> {
-  try {
-    const res = await fetch(TRACKER_URL, { next: { revalidate: 900 } });
-    if (res.ok) return (await res.json()) as Record<string, TrackerEntry>;
-  } catch {
-    // fall through to the bundled copy
-  }
-  return bundledTracker as Record<string, TrackerEntry>;
-}
 
 function isoDay(offsetDays: number): string {
   const d = new Date();
@@ -44,12 +20,7 @@ function isoDay(offsetDays: number): string {
 }
 
 function formatDay(iso: string): string {
-  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", {
-    weekday: "short",
-    month: "short",
-    day: "numeric",
-    timeZone: "UTC",
-  });
+  return formatFilingDate(iso, true);
 }
 
 export const metadata: Metadata = {
@@ -169,7 +140,7 @@ export default async function EarningsCalendarPage() {
                       </div>
                     </div>
                     <Link
-                      href={`/reports/${last.id}`}
+                      href={reportPath({ ...last, company })}
                       className="text-sm text-zinc-700 hover:underline sm:text-right"
                     >
                       Last: {periodLabels[last.period]} {last.year}

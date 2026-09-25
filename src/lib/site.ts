@@ -3,3 +3,12 @@ export const SITE_URL = (
 ).replace(/\/$/, "");
 
 export const SITE_NAME = "Financial Report Insights";
+
+// Byline for our own analyses (Report.author still stores the drafting model
+// for the record). Structured data names the organization, not a "Person",
+// and the methodology page explains how the reports are produced.
+export const EDITORIAL_AUTHOR = `${SITE_NAME} Research`;
+
+export function reportByline(report: { origin: string; author: string }): string {
+  return report.origin === "COMMUNITY" ? report.author : EDITORIAL_AUTHOR;
+}

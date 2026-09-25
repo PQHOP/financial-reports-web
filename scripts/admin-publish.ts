@@ -218,6 +218,13 @@ async function publish(page: Page, input: ReportInput, editId?: string) {
   console.log(`${editId ? "Updated" : "Published"}: ${input.title}`);
   console.log(`View: ${page.url()}`);
   console.log(`Edit: ${page.url().replace("/reports/", "/admin/reports/")}/edit`);
+  // Visitors are 308'd from /reports/<id> to this keyword URL (the admin
+  // session sees /reports/<id> in place); it's the one search engines index.
+  const canonical = await page
+    .locator('link[rel="canonical"]')
+    .getAttribute("href", { timeout: 5_000 })
+    .catch(() => null);
+  if (canonical) console.log(`Canonical: ${canonical}`);
 }
 
 // Markdown articles carry their fields in a simple "key: value" frontmatter

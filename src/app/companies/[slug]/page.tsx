@@ -1,11 +1,54 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
+import { cache } from "react";
 import { prisma } from "@/lib/prisma";
 import { ReportCard } from "@/components/ReportCard";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { JsonLd } from "@/components/JsonLd";
 import { communityReports, parseSource, systemReports } from "@/lib/community";
+import { periodLabels, periodOrder } from "@/lib/period";
+import { reportPath } from "@/lib/reportPath";
+import { SITE_URL } from "@/lib/site";
+import { takeaway, truncate } from "@/lib/markdown";
+import { formatFilingDate, upcomingFiling } from "@/lib/tracker";
+import {
+  formatMoneyMillions,
+  formatPct,
+  metricsHeadline,
+  readMetrics,
+} from "@/lib/metrics";
+import type { ReportPeriod } from "@/generated/prisma/client";
 
 export const dynamic = "force-dynamic";
+
+const DESCRIPTION_MAX = 155;
+
+const rank = (r: { year: number; period: ReportPeriod }) =>
+  r.year * 10 + periodOrder.indexOf(r.period);
+
+// System reports, most recent fiscal period first (not publish order: a
+// backfilled 2024 annual shouldn't read as the "latest" results).
+const getCompany = cache(async (slug: string) => {
+  const company = await prisma.company.findUnique({
+    where: { slug },
+    include: {
+      industries: true,
+      reports: { where: systemReports },
+    },
+  });
+  if (!company) return null;
+  company.reports.sort((a, b) => rank(b) - rank(a));
+  return company;
+});
+
+function displayName(company: { name: string; ticker: string | null }) {
+  return company.ticker ? `${company.name} (${company.ticker})` : company.name;
+}
+
+function periodShort(r: { year: number; period: ReportPeriod }) {
+  return r.period === "ANNUAL" ? `FY${r.year}` : `${r.period} ${r.year}`;
+}
 
 export async function generateMetadata({
   params,
@@ -13,37 +56,32 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-
-  const company = await prisma.company.findUnique({
-    where: { slug },
-    include: {
-      industries: true,
-      _count: { select: { reports: { where: systemReports } } },
-      reports: {
-        where: systemReports,
-        orderBy: { publishedAt: "desc" },
-        take: 1,
-        select: { summary: true },
-      },
-    },
-  });
+  const company = await getCompany(slug);
   if (!company) return {};
 
-  const name = company.ticker
-    ? `${company.name} (${company.ticker})`
-    : company.name;
-  const title = `${name} Earnings & Financial Report Analysis`;
+  const name = displayName(company);
+  const latest = company.reports[0];
+  const next = await upcomingFiling(company.ticker);
+  // What people search is "<company> earnings" and "<company> earnings date";
+  // the title answers both when we have a confirmed date. An estimated date
+  // stays on the page, labelled, but out of the search snippet.
+  const nextPart =
+    next?.confidence === "confirmed"
+      ? `, Next Report ${formatFilingDate(next.estimate).replace(/, \d{4}$/, "")}`
+      : "";
+  const title = latest
+    ? `${name} Earnings: ${periodShort(latest)} Results${nextPart || " & Analysis"}`
+    : `${name} Earnings & Financial Report Analysis`;
   // Lead with the latest report's own one-line finding: a concrete sentence
   // earns more clicks than a generic "browse reports" blurb.
-  const latest = company.reports[0];
   const description = latest
-    ? `Latest ${name} results: ${latest.summary}`
+    ? truncate(`${name} ${periodShort(latest)}: ${latest.summary}`, DESCRIPTION_MAX)
     : `Financial report analysis for ${name}, ${company.country}${
         company.exchange ? ` · ${company.exchange}` : ""
       }.`;
 
   return {
-    title,
+    title: { absolute: title },
     description,
     alternates: {
       canonical: `/companies/${company.slug}`,
@@ -51,7 +89,7 @@ export async function generateMetadata({
     openGraph: { title, description },
     // ~5,500 directory pages have no analysis yet; keeping them out of the
     // index avoids thousands of near-empty pages diluting the site.
-    ...(company._count.reports === 0
+    ...(company.reports.length === 0
       ? { robots: { index: false, follow: true } }
       : {}),
   };
@@ -67,70 +105,183 @@ export default async function CompanyPage({
   const { slug } = await params;
   const source = parseSource((await searchParams).source);
 
-  const company = await prisma.company.findUnique({
-    where: { slug },
-    include: {
-      industries: true,
-      reports: {
-        where: source === "community" ? communityReports : systemReports,
-        orderBy: [{ year: "desc" }, { publishedAt: "desc" }],
-      },
-    },
-  });
-
+  const company = await getCompany(slug);
   if (!company) notFound();
 
-  // The other view's count, for the tab label.
-  const otherCount = await prisma.report.count({
-    where: {
-      companyId: company.id,
-      ...(source === "community" ? systemReports : communityReports),
-    },
-  });
-  const systemCount = source === "system" ? company.reports.length : otherCount;
-  const communityCount =
-    source === "community" ? company.reports.length : otherCount;
+  const [community, next] = await Promise.all([
+    prisma.report.findMany({
+      where: { companyId: company.id, ...communityReports },
+      orderBy: [{ year: "desc" }, { publishedAt: "desc" }],
+    }),
+    upcomingFiling(company.ticker),
+  ]);
+  const system = company.reports;
+  const shown = source === "community" ? community : system;
   const sourceQuery = source === "community" ? "?source=community" : "";
+  const companyHref = `/companies/${company.slug}`;
+  const primaryIndustry = company.industries.find((i) => i.slug !== "uncategorized");
 
-  const years = Array.from(new Set(company.reports.map((r) => r.year))).sort(
-    (a, b) => b - a
-  );
+  const latest = system[0];
+  const latestMetrics = latest ? readMetrics(latest.metrics) : null;
+  const latestTakeaway = latest ? takeaway(latest.contentMd) : null;
+  const history = system
+    .map((r) => ({ report: r, metrics: readMetrics(r.metrics) }))
+    .filter((row) => row.metrics);
+
+  const years = Array.from(new Set(shown.map((r) => r.year))).sort((a, b) => b - a);
 
   return (
     <div className="flex flex-col gap-6">
+      {system.length > 0 && (
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "Corporation",
+            name: company.name,
+            url: `${SITE_URL}${companyHref}`,
+            ...(company.ticker ? { tickerSymbol: company.ticker } : {}),
+            address: { "@type": "PostalAddress", addressCountry: company.country },
+          }}
+        />
+      )}
+
       <div>
-        <Link href="/" className="text-sm text-zinc-500 hover:underline">
-          ← Industries
-        </Link>
-        <h1 className="mt-1 text-2xl font-semibold">
+        <Breadcrumbs
+          items={[
+            ...(primaryIndustry
+              ? [{ name: primaryIndustry.name, href: `/industries/${primaryIndustry.slug}` }]
+              : []),
+            { name: company.name, href: companyHref },
+          ]}
+        />
+        <h1 className="mt-2 text-2xl font-semibold">
           {company.name}
           {company.ticker && (
-            <span className="ml-2 text-lg text-zinc-500">
-              ({company.ticker})
-            </span>
-          )}
+            <span className="ml-2 text-lg text-zinc-500">({company.ticker})</span>
+          )}{" "}
+          earnings
         </h1>
         <p className="text-sm text-zinc-500">
           {company.country}
           {company.exchange ? ` · ${company.exchange}` : ""}
+          {company.industries
+            .filter((i) => i.slug !== "uncategorized")
+            .map((industry) => (
+              <span key={industry.id}>
+                {" · "}
+                <Link href={`/industries/${industry.slug}`} className="hover:underline">
+                  {industry.name}
+                </Link>
+              </span>
+            ))}
         </p>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {company.industries.map((industry) => (
-            <Link
-              key={industry.id}
-              href={`/industries/${industry.slug}`}
-              className="rounded-full border border-zinc-200 bg-white px-3 py-1 text-xs text-zinc-600 hover:border-zinc-400"
-            >
-              {industry.name}
-            </Link>
-          ))}
-        </div>
       </div>
+
+      {source === "system" && (latest || next) && (
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+          {latest && (
+            <Link
+              href={reportPath({ ...latest, company })}
+              className="flex flex-col gap-1 rounded-lg border border-zinc-200 bg-white p-4 hover:border-zinc-400 sm:col-span-2"
+            >
+              <span className="text-xs font-medium uppercase tracking-wide text-zinc-500">
+                Latest results · {periodLabels[latest.period]} {latest.year}
+              </span>
+              {latestMetrics && (
+                <span className="font-semibold">{metricsHeadline(latestMetrics)}</span>
+              )}
+              <span className="line-clamp-4 text-sm text-zinc-700 sm:line-clamp-none">
+                {latestTakeaway ?? latest.summary}
+              </span>
+              <span className="mt-1 text-sm font-medium text-blue-700">
+                Read the full analysis →
+              </span>
+            </Link>
+          )}
+          {next && (
+            <div className="flex flex-col gap-1 rounded-lg border border-blue-200 bg-blue-50 p-4 text-blue-950">
+              <span className="text-xs font-medium uppercase tracking-wide text-blue-800">
+                Next earnings report
+              </span>
+              <span className="text-lg font-semibold">
+                {formatFilingDate(next.estimate)}
+              </span>
+              <span className="text-sm">
+                {next.type}
+                {" · "}
+                {next.confidence === "confirmed"
+                  ? "Confirmed date"
+                  : "Estimated from past filing dates"}
+              </span>
+              <Link href="/earnings" className="mt-1 text-sm underline">
+                Earnings calendar
+              </Link>
+            </div>
+          )}
+        </div>
+      )}
+
+      {source === "system" && history.length > 0 && (
+        <section className="flex flex-col gap-2">
+          <h2 className="text-lg font-medium">{company.name} results by period</h2>
+          <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
+            <table className="w-full text-sm">
+              <thead className="bg-zinc-50 text-left text-zinc-600">
+                <tr>
+                  <th className="px-3 py-2 font-semibold">Period</th>
+                  <th className="px-3 py-2 text-right font-semibold">Revenue</th>
+                  <th className="px-3 py-2 text-right font-semibold">YoY</th>
+                  <th className="px-3 py-2 text-right font-semibold">Net income</th>
+                  <th className="px-3 py-2 text-right font-semibold">Diluted EPS</th>
+                  <th className="px-3 py-2 text-right font-semibold">Op. margin</th>
+                </tr>
+              </thead>
+              <tbody>
+                {history.map(({ report, metrics: m }) => (
+                  <tr key={report.id} className="border-t border-zinc-100">
+                    <td className="whitespace-nowrap px-3 py-2">
+                      <Link
+                        href={reportPath({ ...report, company })}
+                        className="text-blue-700 hover:underline"
+                      >
+                        {periodLabels[report.period]} {report.year}
+                      </Link>
+                    </td>
+                    <td className="px-3 py-2 text-right tabular-nums">
+                      {m!.revenue !== undefined ? formatMoneyMillions(m!.revenue, m!.currency) : "–"}
+                    </td>
+                    <td className="px-3 py-2 text-right tabular-nums">
+                      {m!.revenueYoyPct !== undefined ? formatPct(m!.revenueYoyPct) : "–"}
+                    </td>
+                    <td className="px-3 py-2 text-right tabular-nums">
+                      {m!.netIncome !== undefined ? formatMoneyMillions(m!.netIncome, m!.currency) : "–"}
+                    </td>
+                    <td className="px-3 py-2 text-right tabular-nums">
+                      {m!.epsDiluted !== undefined
+                        ? `${m!.currency && m!.currency !== "USD" ? `${m!.currency} ` : "$"}${m!.epsDiluted.toFixed(2)}`
+                        : "–"}
+                    </td>
+                    <td className="px-3 py-2 text-right tabular-nums">
+                      {m!.operatingMarginPct !== undefined
+                        ? formatPct(m!.operatingMarginPct, false)
+                        : "–"}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-zinc-500">
+            Figures as reported in each period&apos;s filing; YoY compares with
+            the same period a year earlier. Money in the reporting currency.
+          </p>
+        </section>
+      )}
 
       <div className="flex flex-wrap items-center justify-between gap-3">
         <nav aria-label="Report source" className="flex gap-2 text-sm">
           <Link
-            href={`/companies/${company.slug}`}
+            href={companyHref}
             aria-current={source === "system" ? "page" : undefined}
             className={`rounded-full border px-4 py-1.5 ${
               source === "system"
@@ -138,10 +289,10 @@ export default async function CompanyPage({
                 : "border-zinc-200 bg-white hover:border-zinc-400"
             }`}
           >
-            Our analysis ({systemCount})
+            Our analysis ({system.length})
           </Link>
           <Link
-            href={`/companies/${company.slug}?source=community`}
+            href={`${companyHref}?source=community`}
             aria-current={source === "community" ? "page" : undefined}
             className={`rounded-full border px-4 py-1.5 ${
               source === "community"
@@ -149,11 +300,11 @@ export default async function CompanyPage({
                 : "border-zinc-200 bg-white hover:border-zinc-400"
             }`}
           >
-            Community ({communityCount})
+            Community ({community.length})
           </Link>
         </nav>
         <Link
-          href={`/companies/${company.slug}/write`}
+          href={`${companyHref}/write`}
           className="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white"
         >
           Write your own report
@@ -172,46 +323,46 @@ export default async function CompanyPage({
         </p>
       )}
 
-      {company.reports.length > 0 && (
-        <div>
+      {shown.length > 0 ? (
+        <section>
           <h2 className="mb-3 text-lg font-medium">
             {source === "community"
               ? `Community reports on ${company.name}`
               : `${company.name} earnings analyses`}
           </h2>
           <ul className="flex flex-col gap-3">
-            {company.reports.map((report) => (
+            {shown.map((report) => (
               <li key={report.id}>
                 <ReportCard report={{ ...report, company }} />
               </li>
             ))}
           </ul>
-        </div>
+        </section>
+      ) : (
+        <p className="text-zinc-500">
+          {source === "community"
+            ? "No community reports for this company yet. Be the first to write one."
+            : "No analysis for this company yet."}
+        </p>
       )}
 
-      <div>
-        <h2 className="mb-3 text-lg font-medium">Reports by Year</h2>
-        {years.length === 0 ? (
-          <p className="text-zinc-500">
-            {source === "community"
-              ? "No community reports for this company yet. Be the first to write one."
-              : "No reports for this company yet."}
-          </p>
-        ) : (
-          <ul className="flex flex-wrap gap-3">
+      {years.length > 1 && (
+        <section>
+          <h2 className="mb-2 text-sm font-medium text-zinc-600">By fiscal year</h2>
+          <ul className="flex flex-wrap gap-2">
             {years.map((year) => (
               <li key={year}>
                 <Link
-                  href={`/companies/${company.slug}/${year}${sourceQuery}`}
-                  className="block rounded-lg border border-zinc-200 bg-white px-5 py-3 hover:border-zinc-400"
+                  href={`${companyHref}/${year}${sourceQuery}`}
+                  className="block rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm hover:border-zinc-400"
                 >
                   {year}
                 </Link>
               </li>
             ))}
           </ul>
-        )}
-      </div>
+        </section>
+      )}
     </div>
   );
 }

@@ -149,3 +149,18 @@ Việc chỉ bạn làm được: xem phần "Việc cần bạn" ở tin nhắn
 | Tính năng community/news/digest | Khôi phục từ bản deploy 09-21 (chưa từng được commit) |
 | Bluesky | Xong: @financialreportinsights.com, tự đăng 23:10 UTC kèm thẻ ảnh |
 | Còn chờ bạn | X (API key), `CONTACT_EMAIL`, Bing Webmaster, tài khoản newsletter |
+
+## Cập nhật 2026-09-25: layout + SEO kỹ thuật
+
+| Mục | Trạng thái |
+|---|---|
+| URL report có từ khóa `/companies/<ticker>/<năm>/<kỳ>`; `/reports/<id>` chuyển 308 (admin vẫn xem tại chỗ để script publish chạy như cũ) | Xong |
+| `www.` chuyển 308 về tên miền chính | Xong (trong `proxy.ts`) |
+| Tác giả: "Financial Report Insights Research" (JSON-LD `Organization`), vẫn ghi rõ AI soạn | Xong |
+| Trang công ty: kết quả mới nhất + Takeaway, ngày báo cáo tới, bảng số liệu các kỳ, breadcrumb, JSON-LD `Corporation` | Xong |
+| Trang report: mục lục, ô "Next report", bài liên quan (preview/so sánh), breadcrumb khớp JSON-LD | Xong |
+| Trang ngành: bảng so sánh kỳ gần nhất các công ty | Xong |
+| Trang chủ: canonical, title mới, mục "Reporting this week" | Xong |
+| Trang 404 riêng, bỏ thẻ robots mâu thuẫn | Xong |
+| Phản hồi khi click: thanh tiến trình, skeleton `loading.tsx`, nút admin có trạng thái chờ, ô tìm kiếm không tải lại trang | Xong |
+| Việc cần bạn | Search Console: gửi lại sitemap, theo dõi "Page with redirect" (bình thường, là URL cũ) và "Crawled – not indexed" |

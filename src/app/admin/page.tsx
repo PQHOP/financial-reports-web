@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { SubmitButton } from "@/components/SubmitButton";
 import { prisma } from "@/lib/prisma";
 import { periodLabels } from "@/lib/period";
 import { requireAdmin } from "@/lib/adminAuth";
@@ -26,9 +27,7 @@ export default async function AdminDashboard() {
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-semibold">Admin</h1>
         <form action={logoutAction}>
-          <button type="submit" className="text-sm text-zinc-500 hover:underline">
-            Sign out
-          </button>
+          <SubmitButton className="text-sm text-zinc-500 hover:underline" pendingText="Signing out…">Sign out</SubmitButton>
         </form>
       </div>
 
@@ -81,17 +80,10 @@ export default async function AdminDashboard() {
                     Preview
                   </Link>
                   <form action={approveReportAction.bind(null, report.id)}>
-                    <button
-                      type="submit"
-                      className="text-green-700 hover:underline"
-                    >
-                      Approve
-                    </button>
+                    <SubmitButton className="text-green-700 hover:underline" pendingText="Approving…">Approve</SubmitButton>
                   </form>
                   <form action={deleteReportAction.bind(null, report.id)}>
-                    <button type="submit" className="text-red-600 hover:underline">
-                      Reject
-                    </button>
+                    <SubmitButton className="text-red-600 hover:underline" pendingText="Rejecting…">Reject</SubmitButton>
                   </form>
                 </div>
               </li>
@@ -135,9 +127,7 @@ export default async function AdminDashboard() {
                   Edit
                 </Link>
                 <form action={deleteReportAction.bind(null, report.id)}>
-                  <button type="submit" className="text-red-600 hover:underline">
-                    Delete
-                  </button>
+                  <SubmitButton className="text-red-600 hover:underline" pendingText="Deleting…">Delete</SubmitButton>
                 </form>
               </div>
             </li>

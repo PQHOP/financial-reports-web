@@ -1,3 +1,4 @@
+import { reportPath } from "@/lib/reportPath";
 import Anthropic from "@anthropic-ai/sdk";
 import { prisma } from "@/lib/prisma";
 import { systemReports } from "@/lib/community";
@@ -19,7 +20,7 @@ type SourceItem = FeedItem & { id: string };
 type CompanyContext = {
   ticker: string;
   name: string;
-  reportId: string;
+  reportPath: string;
   label: string;
   headline: string;
 };
@@ -120,7 +121,7 @@ async function loadCompanies(): Promise<CompanyContext[]> {
   const reports = await prisma.report.findMany({
     where: systemReports,
     orderBy: { publishedAt: "desc" },
-    include: { company: { select: { name: true, ticker: true } } },
+    include: { company: { select: { name: true, ticker: true, slug: true } } },
   });
   const seen = new Set<string>();
   const companies: CompanyContext[] = [];
@@ -132,7 +133,7 @@ async function loadCompanies(): Promise<CompanyContext[]> {
     companies.push({
       ticker,
       name: report.company.name,
-      reportId: report.id,
+      reportPath: reportPath(report),
       label: `${ticker} ${periodLabels[report.period]} ${report.year} analysis`,
       headline: metrics ? metricsHeadline(metrics) : "",
     });
@@ -307,7 +308,7 @@ export function assembleBrief(
     if (tickers.length > 0) {
       const links = tickers.map((t) => {
         const c = companiesByTicker.get(t)!;
-        return `[${c.label}](/reports/${c.reportId})`;
+        return `[${c.label}](${c.reportPath})`;
       });
       lines.push("", `*On this site:* ${links.join(" · ")}`);
     }

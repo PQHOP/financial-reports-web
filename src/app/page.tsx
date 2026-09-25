@@ -5,16 +5,61 @@ import { JsonLd } from "@/components/JsonLd";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
+import type { Metadata } from "next";
 import hotList from "../../scripts/data/priority-tickers.json";
+import { formatFilingDate, loadTracker } from "@/lib/tracker";
 
 // Most-searched tickers first (same list the report backlog is worked in).
 const POPULAR_TICKERS: string[] = hotList.tickers;
 const POPULAR_LIMIT = 16;
+const UPCOMING_DAYS = 7;
+const UPCOMING_LIMIT = 12;
 
 export const dynamic = "force-dynamic";
 
+export const metadata: Metadata = {
+  title: { absolute: "Financial Report Insights: Earnings Reports Explained in Plain English" },
+  description:
+    "Plain-English analysis of US company earnings, built from each company's own SEC filing: what the numbers were, what drove them, and what management expects next.",
+  alternates: { canonical: "/" },
+};
+
+// Covered companies expected to report in the next week, well-known names
+// first: during earnings season this is what brings people back.
+async function reportingSoon() {
+  const tracker = await loadTracker();
+  const today = new Date().toISOString().slice(0, 10);
+  const until = new Date(Date.now() + UPCOMING_DAYS * 86_400_000).toISOString().slice(0, 10);
+  const hot = new Map(POPULAR_TICKERS.map((t, i) => [t, i]));
+  const upcoming = Object.entries(tracker)
+    .filter(([ticker, e]) => {
+      const d = e.nextExpectedFiling?.estimate;
+      return ticker !== "_meta" && e.status === "done" && !!d && d >= today && d <= until;
+    })
+    .map(([ticker, e]) => ({
+      ticker,
+      date: e.nextExpectedFiling!.estimate!,
+      confirmed: e.nextExpectedFiling!.confidence === "confirmed",
+    }))
+    .sort(
+      (a, b) =>
+        a.date.localeCompare(b.date) ||
+        (hot.get(a.ticker) ?? 1e9) - (hot.get(b.ticker) ?? 1e9)
+    );
+  if (upcoming.length === 0) return [];
+  const companies = await prisma.company.findMany({
+    where: { ticker: { in: upcoming.map((u) => u.ticker) }, reports: { some: systemReports } },
+    select: { slug: true, ticker: true },
+  });
+  const slugs = new Map(companies.map((c) => [c.ticker, c.slug]));
+  return upcoming
+    .filter((u) => slugs.has(u.ticker))
+    .slice(0, UPCOMING_LIMIT)
+    .map((u) => ({ ...u, slug: slugs.get(u.ticker)! }));
+}
+
 export default async function Home() {
-  const [industries, latest, guides, briefs, popularCandidates] = await Promise.all([
+  const [industries, latest, guides, briefs, popularCandidates, soon] = await Promise.all([
     prisma.industry.findMany({
       orderBy: { name: "asc" },
       include: {
@@ -29,7 +74,7 @@ export default async function Home() {
       where: systemReports,
       orderBy: { publishedAt: "desc" },
       take: 6,
-      include: { company: { select: { name: true, ticker: true } } },
+      include: { company: { select: { name: true, ticker: true, slug: true } } },
     }),
     prisma.article.findMany({
       where: { kind: "GUIDE" },
@@ -47,6 +92,7 @@ export default async function Home() {
       where: { ticker: { in: POPULAR_TICKERS }, reports: { some: systemReports } },
       select: { slug: true, name: true, ticker: true },
     }),
+    reportingSoon(),
   ]);
 
   const popular = popularCandidates
@@ -97,6 +143,33 @@ export default async function Home() {
           .
         </p>
       </section>
+
+      {soon.length > 0 && (
+        <section className="flex flex-col gap-3">
+          <div className="flex items-baseline justify-between">
+            <h2 className="text-lg font-medium">Reporting this week</h2>
+            <Link href="/earnings" className="text-sm text-zinc-500 hover:underline">
+              Earnings calendar →
+            </Link>
+          </div>
+          <ul className="flex flex-wrap gap-2">
+            {soon.map((item) => (
+              <li key={item.ticker}>
+                <Link
+                  href={`/companies/${item.slug}`}
+                  className="block rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm hover:border-zinc-400"
+                >
+                  <span className="font-medium">{item.ticker}</span>{" "}
+                  <span className="text-zinc-500">
+                    {formatFilingDate(item.date, true)}
+                    {item.confirmed ? "" : " (est.)"}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
 
       {popular.length > 0 && (
         <section className="flex flex-col gap-3">

@@ -19,7 +19,14 @@ import { ADMIN_COOKIE_NAME } from "@/lib/adminCookie";
 // higher-severity risk and stays strictly nonce-gated; nothing in this
 // app accepts user-supplied CSS.
 export function proxy(request: NextRequest) {
-  const { pathname } = request.nextUrl;
+  const { pathname, search } = request.nextUrl;
+
+  // One host for search engines: www.<domain> served the whole site as a
+  // duplicate with a 200. Send it to the bare domain permanently.
+  const host = request.headers.get("host") ?? "";
+  if (host.startsWith("www.")) {
+    return NextResponse.redirect(`https://${host.slice(4)}${pathname}${search}`, 308);
+  }
   const isDev = process.env.NODE_ENV === "development";
 
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");

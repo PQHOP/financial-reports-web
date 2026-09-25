@@ -47,7 +47,7 @@ export async function GET(request: Request) {
     },
     orderBy: { publishedAt: "asc" },
     take: MAX_POSTS_PER_RUN,
-    include: { company: { select: { name: true, ticker: true } } },
+    include: { company: { select: { name: true, ticker: true, slug: true } } },
   });
 
   const results: { reportId: string; results: PostResult[] }[] = [];

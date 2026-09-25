@@ -17,7 +17,7 @@ export async function ArticleView({ article }: { article: Article }) {
           where: { ...systemReports, company: { ticker: { in: article.tickers } } },
           orderBy: { publishedAt: "desc" },
           take: 4,
-          include: { company: { select: { name: true, ticker: true } } },
+          include: { company: { select: { name: true, ticker: true, slug: true } } },
         });
 
   const url = `${SITE_URL}${articlePath(article.kind, article.slug)}`;

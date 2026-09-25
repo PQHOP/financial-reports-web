@@ -1,3 +1,4 @@
+import { reportUrl } from "@/lib/reportPath";
 import { prisma } from "@/lib/prisma";
 import { periodLabels } from "@/lib/period";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
@@ -21,7 +22,7 @@ export async function GET() {
       where: systemReports,
       orderBy: { publishedAt: "desc" },
       take: 40,
-      include: { company: { select: { name: true, ticker: true } } },
+      include: { company: { select: { name: true, ticker: true, slug: true } } },
     }),
     prisma.article.findMany({
       orderBy: { publishedAt: "desc" },
@@ -32,7 +33,7 @@ export async function GET() {
   const items = [
     ...reports.map((report) => ({
       title: report.title,
-      link: `${SITE_URL}/reports/${report.id}`,
+      link: reportUrl(report),
       description: report.summary,
       date: report.publishedAt,
       category: `${report.company.ticker ?? report.company.name} ${periodLabels[report.period]} ${report.year}`,

@@ -1,8 +1,8 @@
 import crypto from "node:crypto";
-import { SITE_URL } from "@/lib/site";
 import { periodLabels } from "@/lib/period";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import { reportSearchTitle } from "@/lib/reportMeta";
+import { reportUrl as canonicalReportUrl } from "@/lib/reportPath";
 import type { ReportPeriod } from "@/generated/prisma/client";
 
 export type PostableReport = {
@@ -11,7 +11,7 @@ export type PostableReport = {
   period: ReportPeriod;
   summary: string;
   metrics: unknown;
-  company: { name: string; ticker: string | null };
+  company: { name: string; ticker: string | null; slug: string };
 };
 
 export type PostResult = { platform: string; ok: boolean; detail?: string };
@@ -34,8 +34,8 @@ function buildBody(report: PostableReport, cashtag: boolean, budget: number): st
   return truncate(body, budget);
 }
 
-export function reportUrl(id: string): string {
-  return `${SITE_URL}/reports/${id}`;
+export function reportUrl(report: PostableReport): string {
+  return canonicalReportUrl(report);
 }
 
 // ---- Bluesky (AT Protocol; app password auth) -------------------------------
@@ -84,7 +84,7 @@ async function blueskyLinkCard(report: PostableReport, url: string, accessJwt: s
 
 export async function postToBluesky(report: PostableReport): Promise<PostResult> {
   try {
-    const url = reportUrl(report.id);
+    const url = reportUrl(report);
     // 300-character limit for the whole post; the link is appended after the body.
     const text = `${buildBody(report, false, 300 - url.length - 2)}\n${url}`;
 
@@ -192,7 +192,7 @@ function oauthHeader(method: string, url: string): string {
 
 export async function postToX(report: PostableReport): Promise<PostResult> {
   try {
-    const url = reportUrl(report.id);
+    const url = reportUrl(report);
     // X counts any link as 23 characters of the 280.
     const text = `${buildBody(report, true, 280 - 23 - 2)}\n${url}`;
     const endpoint = "https://api.twitter.com/2/tweets";

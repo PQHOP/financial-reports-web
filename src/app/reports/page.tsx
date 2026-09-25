@@ -30,7 +30,7 @@ export default async function ReportsIndex({
       orderBy: { publishedAt: "desc" },
       skip: (page - 1) * PAGE_SIZE,
       take: PAGE_SIZE,
-      include: { company: { select: { name: true, ticker: true } } },
+      include: { company: { select: { name: true, ticker: true, slug: true } } },
     }),
   ]);
   const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE));
