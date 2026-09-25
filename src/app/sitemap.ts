@@ -7,7 +7,7 @@ import { systemReports } from "@/lib/community";
 // Sitemaps are built at request time, not baked into the build.
 export const dynamic = "force-dynamic";
 
-const STATIC_PAGES = ["/about", "/methodology", "/corrections", "/privacy", "/contact"];
+const STATIC_PAGES = ["/economy", "/about", "/methodology", "/corrections", "/privacy", "/contact"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Only list what has real content: companies/industries with no published

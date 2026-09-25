@@ -11,7 +11,8 @@
     "postinstall": "prisma generate",
     "admin-publish": "tsx scripts/admin-publish.ts",
     "scan-recent-filings": "tsx scripts/scan-recent-filings.ts",
-    "next-batch": "tsx scripts/next-batch.ts"
+    "next-batch": "tsx scripts/next-batch.ts",
+    "fetch-macro": "tsx scripts/fetch-macro.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.127.0",
@@ -29,17 +30,23 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@tailwindcss/typography": "^0.5.20",
+    "@types/d3-geo": "^3.1.1",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/topojson-client": "^3.1.5",
     "@types/ws": "^8.18.1",
+    "d3-geo": "^3.1.1",
     "dotenv": "^17.4.2",
     "eslint": "^9",
     "eslint-config-next": "16.3.5",
     "playwright": "^1.63.0",
     "prisma": "^6.19.3",
     "tailwindcss": "^4",
+    "topojson-client": "^3.1.0",
     "tsx": "^4.23.13",
-    "typescript": "^5"
+    "typescript": "^5",
+    "world-atlas": "^2.0.2",
+    "world-countries": "^5.1.0"
   }
 }
