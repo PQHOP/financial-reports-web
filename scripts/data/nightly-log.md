@@ -3947,3 +3947,19 @@ the automated scheduled-task mechanism):
   instead of "$0M"/"$3M".
 - Running total: **226 companies done, 243 report-periods published**
   (212/228 + 14 new companies + COST's second period).
+- **Continued (same session, user: "keep going until the 5h quota runs
+  out") — tier 1, S&P 500 backlog in `next-batch` order**, batches of 5
+  opus subagents, same validate → source cross-check → publish → live
+  verify loop. Published so far (50): ATO Q3, ADSK FY, ADP FY, AVY Q2,
+  AXON Q2, BKR Q2, BALL Q2, BAX Q2, BDX Q3, BRK.B Q2, BBY FY, TECH FY,
+  BIIB Q2, BX Q2, XYZ Q2, BNY Q2, BSX Q2, BMY Q2, BR FY, BRO Q2, BF.B FY,
+  BLDR Q2, BG Q2, BXP Q2, CHRW Q2, CDNS Q2, CPT Q2, COF Q2, CAH FY,
+  CARR Q2, CVNA Q2, CASY FY, CBOE Q2, CBRE Q2, CDW Q2, COR Q3, CNC Q2,
+  CNP Q2, CF Q2, CRL Q2, CHTR Q2, CB Q2, CHD Q2, CIEN Q3, CI Q2, CINF Q2,
+  CFG Q2, CLX FY, CME Q2, CMS Q2. Tracker pushed after every batch.
+  Notes: publish JSON `company` now always uses "Name (TICKER)" — "Block,
+  Inc." also matched "H&R Block, Inc."; CLX's sourceUrl points at the
+  10-K's Exhibit 99.1 (where Clorox puts its statements); TECH is being
+  acquired by Merck KGaA (may stop filing); BSX warned it will miss July
+  guidance after an Aug 25 cyberattack (Q3 date Oct 28 confirmed); COF Q3
+  date Oct 20 confirmed.
