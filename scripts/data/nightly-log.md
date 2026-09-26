@@ -4466,3 +4466,29 @@ the automated scheduled-task mechanism):
   OTIS/PCAR/PKG/PH remain unclaimed for whenever the outage clears. With
   the window closing at 22:59 UTC, it's likely tonight ends at 0
   published unless the outage clears in the next firing or two.
+- **Final firing, 22:05 UTC (confirmed via `get_trigger`: this fired at
+  `22:04:45Z`, and `next_run_at` has already rolled to
+  `2026-09-27T16:04:04Z` — tomorrow's window — so this is the last firing
+  inside tonight's 16:00–22:59 UTC window).** Network check: SEC 403
+  without a User-Agent (expected), 200 with it — network still fine.
+  `npm install` (dummy `DATABASE_URL` for the `prisma generate` postinstall
+  step; reverted the resulting `package-lock.json` diff, local regen
+  artifact only). Re-tested one more time: `/` and `/reports` still 500 on
+  `financialreportinsights.com`; `/economy`, `/companies/msft`,
+  `/admin/login` (GET), `/insights`, `/search` all still 200 — identical
+  pattern to every check tonight, no change. `admin-publish -- --list`
+  still fails with "Login failed — check ADMIN_PASSWORD", masking the same
+  server-side 500 on the `loginAction` POST. No Vercel CLI/token or DB
+  access from this session, so still no further root-cause narrowing
+  possible.
+  **Tonight's window is now closed with the outage never clearing: 0
+  report-periods published across all ~9 firings tonight (2026-09-26
+  16:04–22:04 UTC), night total unchanged at 0 / 455 companies done.** No
+  tracker entries touched all night; the 8 tier-0 candidates (ASTC, CBRL,
+  DCI, HFBL, IXHL, PPCB, SCHL, SRBK) and OTIS/PCAR/PKG/PH remain unclaimed
+  for the next window (2026-09-27, 16:00–22:59 UTC) whenever the outage
+  clears. **Sending a final push notification** to close the loop: this is
+  a full 8-hour production outage confirmed to have lasted the entire
+  night, definitively 0 published (not just "likely" as reported at
+  21:06 UTC) — needs the user or a session with Vercel/Neon access to
+  check function logs and DB status before the next window opens.
