@@ -4403,3 +4403,28 @@ the automated scheduled-task mechanism):
   is the same unresolved issue already surfaced ~2h ago with nothing new
   to add; still **0 report-periods published this firing, night total
   unchanged at 0 / 455 companies done**. No tracker entries touched.
+- **Follow-up firing, 20:04 UTC (~1h after the previous check): outage
+  unchanged.** Confirmed via `get_trigger` this is the same routine's next
+  scheduled firing (`last_fired_at` 2026-09-26T20:04:40Z, session id
+  matches). Network check: SEC 403 without a User-Agent (expected, SEC's
+  own response), 200 with the required User-Agent — network fine.
+  Re-tested the site: `/` and `/reports/<id>` (tried the Agilent report
+  used in earlier checks) still 500; `/economy`, `/rates`, `/search`,
+  `/about`, `/insights`, `/companies/msft`, `/companies/aapl/2026/q3`,
+  `/companies/a/2026/q3` (canonical for the same Agilent report) and
+  `/admin/login` (GET) all still 200 — identical pattern, so the failure
+  is still confined to multi-query/index-style pages and the single-report
+  redirect route, not single-company pages. `npm install` (with a dummy
+  `DATABASE_URL` for the `prisma generate` postinstall step, as expected —
+  reverted the resulting `package-lock.json` diff since it's just a local
+  regen artifact, not a real dependency change) then `admin-publish --
+  --list` against both `financialreportinsights.com` and the `.vercel.app`
+  alias: both still fail with "Login failed — check ADMIN_PASSWORD",
+  masking the same server-side 500 as before. No Vercel/DB access from
+  this session, so no further root-cause narrowing possible. Not
+  re-sending a push notification — same unresolved outage already
+  surfaced to the user twice tonight, nothing new to report. **Still 0
+  report-periods published this firing, night total unchanged at 0 / 455
+  companies done.** No tracker entries touched; the 8 tier-0 candidates
+  (ASTC, CBRL, DCI, HFBL, IXHL, PPCB, SCHL, SRBK) and OTIS/PCAR/PKG/PH
+  remain unclaimed for whenever the outage clears.
