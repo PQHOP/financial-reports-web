@@ -4310,3 +4310,79 @@ the automated scheduled-task mechanism):
 - **Night total: 49 report-periods published, 455 companies done**
   (406 companies done at the start of this window). Stopping here for
   this firing — 49 is at the ~50 nightly cap.
+
+### 2026-09-26 night (16:00 UTC 2026-09-26 → 22:59 UTC 2026-09-26 / 01:00–07:59 JST 2026-09-27)
+
+- Mechanism: cloud routine automated firing (`[SCHEDULED TASK]`, no live
+  user) — confirmed via `get_trigger` on `trig_01GNdUY59Na4x3JxMr6p7mxK`
+  that this session *is* that routine's own firing (`last_fired_at`
+  2026-09-26T17:04:46Z, `session_id` matches this session), so no
+  duplicate/competing run risk.
+- Network check: `curl https://www.sec.gov/` without a User-Agent
+  returned 403 (SEC's own response); retry with the required
+  User-Agent returned 200. SEC access fine tonight.
+- `npm install` postinstall (`prisma generate`) failed on missing
+  `DATABASE_URL` as expected — doesn't block admin-publish/
+  scan-recent-filings.
+- Chromium/TLS-proxy cert trust needed re-establishing again this firing
+  (fresh container): both `ccr-agent-proxy` certs were present but with
+  trust bits `C,,` instead of `CT,C,C` — fixed with `certutil -M`, per
+  the known rough edge noted above. This was **not** the eventual
+  blocker (see below) but had to be ruled out first.
+- `npm run scan-recent-filings` (tier 0): **8 fresh candidates** — ASTC,
+  CBRL, DCI, HFBL, IXHL, PPCB, SCHL, SRBK (all `us-listed`, all new
+  10-K/10-Q filed 2026-09-25). `next-batch -- --n 12` confirmed the order:
+  those 8, then S&P 500 backlog continuing OTIS, PCAR, PKG, PH. None of
+  the 8 had an existing tracker entry.
+- **Blocked before any research/publishing started: `admin-publish`
+  login fails with a 500 on both `https://financialreportinsights.com`
+  and `https://financial-reports-web.vercel.app`.** Diagnosis (no DB or
+  Vercel credentials available in this session, so this is as far as it
+  could be narrowed down):
+  - The generic Playwright error ("Login failed — check ADMIN_PASSWORD")
+    was misleading — a debug script (fetched with the required
+    User-Agent, cert trust fixed) showed the *server* itself returns
+    HTTP 500 on the `/admin/login` POST (`loginAction` server action),
+    with a minified React error (#441) and error digest `3018947969`.
+    This happens before the password check can be confirmed either way
+    (the action's first two calls are `prisma.loginAttempt.deleteMany`/
+    `count`, ahead of the `passwordMatches` check), so it is not
+    necessarily a wrong `ADMIN_PASSWORD` — it looks like a server-side
+    exception, and it reproduces identically on both domains.
+  - This is not isolated to `/admin/login`: `GET /` (homepage) and
+    `GET /reports` (the reports index) also return a consistent 500 (5/5
+    and 3/3 retries respectively), same error digest pattern. By
+    contrast, every other page tried worked fine: `/economy`, `/rates`,
+    `/search`, `/about`, `/insights`, `/companies/msft`,
+    `/companies/aapl/2026/q3`, and — importantly — every individual
+    report page from tonight's *last* published batch (`/companies/oxy`,
+    `/odfl`, `/omc`, `/on`, `/oke/2026/q2`, plus `/companies/ntrs`
+    whose report uses the newer bank-metrics fields) all returned 200.
+    That rules out bad data in a specific just-published report or a bug
+    in `ReportCard`/bank-metrics rendering (company pages use the same
+    `ReportCard` component and render fine) — the failure is specific to
+    `/`, `/reports`, and `/admin/login`, i.e. pages that run several
+    Prisma queries per request or write to the `LoginAttempt` table,
+    while single-company-scoped pages are fine. Root cause not
+    identified further without Vercel function logs or DB access, which
+    this session doesn't have.
+  - The last known-good check was literally the previous firing's
+    live-verification of OXY/ODFL/OMC/ON/OKE at the end of the
+    2026-09-25 night entry above, so whatever broke did so sometime
+    between then and now (over an hour, no code deploy from this
+    session in between — deploys here are `vercel --prod`, not
+    git-push-triggered, and the only commits since are data-only
+    tracker/log updates).
+  - Per the standing instruction to stop and report clearly rather than
+    burn turns working around a blocker outside this session's access:
+    **no research or publishing was attempted this firing.** No tracker
+    entries were touched (the 8 tier-0 candidates and OTIS/PCAR/PKG/PH
+    remain untouched/unclaimed for the next firing once this is fixed).
+  - Notified the user directly (push notification) since this also means
+    the live site is showing 500s to real visitors on its homepage and
+    reports-index page, not just blocking this routine.
+- **Night total so far: 0 report-periods published, 455 companies done**
+  (unchanged from the end of the 2026-09-25 night entry). Next firing
+  should re-check `https://financialreportinsights.com/` and
+  `/admin/login` before resuming — if still broken, keep reporting
+  rather than retrying the same debug steps.
