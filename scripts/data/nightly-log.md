@@ -4428,3 +4428,41 @@ the automated scheduled-task mechanism):
   companies done.** No tracker entries touched; the 8 tier-0 candidates
   (ASTC, CBRL, DCI, HFBL, IXHL, PPCB, SCHL, SRBK) and OTIS/PCAR/PKG/PH
   remain unclaimed for whenever the outage clears.
+- **Follow-up firing, ~21:06 UTC (~1h after the previous check): outage
+  still unchanged, now 4+ hours into tonight's window with zero
+  publishing.** Network check: SEC 403 without a User-Agent (expected),
+  200 with it — network fine. Chromium/TLS-proxy cert trust needed
+  re-establishing again (fresh container): both `ccr-agent-proxy` certs
+  present but with trust bits `C,,` instead of `CT,C,C` — fixed with
+  `certutil -M`. This was ruled out as the cause (not related — it's a
+  local Playwright/proxy trust setting, unrelated to the site's own
+  server-side 500s). `npm install` with a dummy `DATABASE_URL` again for
+  the `prisma generate` postinstall step; reverted the resulting
+  `package-lock.json` diff (local regen artifact only). Re-tested: `/`
+  and `/reports` still 500 on both `financialreportinsights.com` and the
+  `.vercel.app` alias (identical error-page shape each time); `/economy`,
+  `/companies/msft`, `/admin/login` (GET) all still 200. `admin-publish
+  -- --list` still fails with "Login failed — check ADMIN_PASSWORD",
+  masking the same server-side 500 on the `loginAction` POST as every
+  prior check tonight. No `vercel` CLI and no DB/Vercel credentials in
+  this session (confirmed again), so no further root-cause narrowing
+  possible from here. Also found and fixed local git state: this
+  session's clone started with `HEAD` detached and a stale cached
+  `origin/master` ref (pointing at an older commit than what was
+  actually on GitHub) — an explicit `git fetch origin master` showed the
+  previous firing's commits (through `5f33f5f`) were already pushed
+  successfully; no work was lost, this was just a stale local ref.
+  Reset local `master` to match `origin/master` before making this
+  entry's commit.
+  **Sending a push notification this time** despite the "nothing new"
+  precedent from the last two checks — this is now a 4+ hour production
+  outage on the site's homepage and reports index during the entire
+  nightly window, tonight's report-period count is stuck at 0, and
+  fixing it needs Vercel function logs / Neon DB access this session
+  doesn't have.
+  **Still 0 report-periods published this firing, night total unchanged
+  at 0 / 455 companies done.** No tracker entries touched; the same 8
+  tier-0 candidates (ASTC, CBRL, DCI, HFBL, IXHL, PPCB, SCHL, SRBK) and
+  OTIS/PCAR/PKG/PH remain unclaimed for whenever the outage clears. With
+  the window closing at 22:59 UTC, it's likely tonight ends at 0
+  published unless the outage clears in the next firing or two.
