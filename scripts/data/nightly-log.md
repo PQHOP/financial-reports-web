@@ -4386,3 +4386,20 @@ the automated scheduled-task mechanism):
   should re-check `https://financialreportinsights.com/` and
   `/admin/login` before resuming — if still broken, keep reporting
   rather than retrying the same debug steps.
+- **Follow-up firing, 19:04 UTC (~2h later): outage unchanged.** Confirmed
+  via `get_trigger` this is the same routine's own next scheduled firing
+  (`last_fired_at` 2026-09-26T19:04:52Z, session id matches), not a
+  duplicate. Re-ran the network check (SEC 200 with the required
+  User-Agent) and re-tested the site: `/` and `/reports` still 500 (5/5
+  retries over several minutes), `/economy`, `/companies/msft`,
+  `/insights`, `/search` still all 200 — identical pattern to the first
+  report. After `npm install`, `admin-publish -- --list` still fails
+  login (masking the same server-side 500, not a password issue). No
+  Vercel CLI/token or DB access available from this session to look at
+  function logs or the database directly, so no further root-cause
+  narrowing possible from here — this needs the user (or a session with
+  Vercel/DB access) to check the Vercel deployment/function logs and
+  Neon DB status directly. Not re-sending a push notification since this
+  is the same unresolved issue already surfaced ~2h ago with nothing new
+  to add; still **0 report-periods published this firing, night total
+  unchanged at 0 / 455 companies done**. No tracker entries touched.
