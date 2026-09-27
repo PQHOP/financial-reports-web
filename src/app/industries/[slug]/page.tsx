@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import { ReportCard } from "@/components/ReportCard";
 import { systemReports } from "@/lib/community";
 import { Breadcrumbs } from "@/components/Breadcrumbs";

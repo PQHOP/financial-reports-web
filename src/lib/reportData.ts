@@ -1,5 +1,5 @@
 import { cache } from "react";
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import { systemReports } from "@/lib/community";
 import { periodFromSlug } from "@/lib/reportPath";
 

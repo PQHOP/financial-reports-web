@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { invalidateDbCache, prisma } from "@/lib/prisma";
 import { INDICATORS, type MacroData } from "@/lib/macro";
 import { fetchLive, type LiveData } from "@/lib/macroLive";
 import { fetchWeoSeries } from "@/lib/macroWeo";
@@ -57,5 +57,6 @@ export async function GET(request: Request) {
     summary.weo = { ok: false, error: weoRes.status === "rejected" ? String(weoRes.reason).slice(0, 300) : "incomplete" };
   }
 
+  invalidateDbCache();
   return NextResponse.json(summary);
 }

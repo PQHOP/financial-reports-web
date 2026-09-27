@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import { ReportContent } from "@/components/ReportContent";
 import { ReportCard } from "@/components/ReportCard";
 import { systemReports } from "@/lib/community";

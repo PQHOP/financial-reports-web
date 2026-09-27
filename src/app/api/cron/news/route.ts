@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { prisma } from "@/lib/prisma";
+import { invalidateDbCache, prisma } from "@/lib/prisma";
 import { pingIndexNow } from "@/lib/indexnow";
 import { SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
@@ -57,6 +57,7 @@ export async function GET(request: Request) {
       create: { slug, ...data },
       update: data,
     });
+    invalidateDbCache();
     const path = articlePath("NEWS", slug);
     await pingIndexNow([`${SITE_URL}${path}`]);
 

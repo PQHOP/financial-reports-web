@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/og";
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import { articleKindLabels } from "@/lib/articles";
 import { SITE_NAME } from "@/lib/site";
 

@@ -4,7 +4,7 @@ import crypto from "node:crypto";
 import { after } from "next/server";
 import { cookies, headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { prisma } from "@/lib/prisma";
+import { invalidateDbCache, prisma } from "@/lib/prisma";
 import { ArticleKind, Prisma, ReportPeriod } from "@/generated/prisma/client";
 import { articlePath } from "@/lib/articles";
 import { parseMetricsInput } from "@/lib/metrics";
@@ -157,6 +157,7 @@ export async function createReportAction(
     };
   }
 
+  invalidateDbCache();
   after(() => pingIndexNow([publicUrl]));
   // /reports/<id> renders in place for the admin (scripts/admin-publish.ts
   // waits for it); visitors are sent on to the canonical URL.
@@ -189,6 +190,7 @@ export async function updateReportAction(
     };
   }
 
+  invalidateDbCache();
   after(() => pingIndexNow([publicUrl]));
   redirect(`/reports/${id}`);
 }
@@ -198,12 +200,14 @@ export async function updateReportAction(
 export async function approveReportAction(id: string): Promise<void> {
   await requireAdmin();
   await prisma.report.update({ where: { id }, data: { status: "PUBLISHED" } });
+  invalidateDbCache();
   redirect("/admin");
 }
 
 export async function deleteReportAction(id: string): Promise<void> {
   await requireAdmin();
   await prisma.report.delete({ where: { id } });
+  invalidateDbCache();
   redirect("/admin");
 }
 
@@ -240,6 +244,7 @@ export async function saveArticleAction(
     update: { kind, title, summary, contentMd, tickers },
   });
 
+  invalidateDbCache();
   const path = articlePath(kind, slug);
   after(() => pingIndexNow([`${SITE_URL}${path}`]));
   redirect(path);

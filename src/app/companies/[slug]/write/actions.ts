@@ -2,7 +2,7 @@
 
 import crypto from "node:crypto";
 import { headers } from "next/headers";
-import { prisma } from "@/lib/prisma";
+import { invalidateDbCache, prisma } from "@/lib/prisma";
 import type { ReportPeriod } from "@/generated/prisma/client";
 import { COMMUNITY_AUTO_PUBLISH, COMMUNITY_LIMITS as L } from "@/lib/community";
 
@@ -132,6 +132,7 @@ export async function submitCommunityReportAction(
         status,
       },
     });
+    if (status === "PUBLISHED") invalidateDbCache();
     return {
       submitted: { reportId: report.id, published: status === "PUBLISHED" },
     };

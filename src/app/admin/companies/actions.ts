@@ -1,7 +1,7 @@
 "use server";
 
 import { redirect } from "next/navigation";
-import { prisma } from "@/lib/prisma";
+import { invalidateDbCache, prisma } from "@/lib/prisma";
 import { requireAdmin } from "@/lib/adminAuth";
 
 export type CompanyFormState = { error?: string };
@@ -75,6 +75,7 @@ export async function createCompanyAction(
     return { error: "A company with this slug already exists." };
   }
 
+  invalidateDbCache();
   redirect("/admin/companies");
 }
 
@@ -113,6 +114,7 @@ export async function updateCompanyAction(
     return { error: "A company with this slug already exists." };
   }
 
+  invalidateDbCache();
   redirect("/admin/companies");
 }
 
@@ -129,5 +131,6 @@ export async function deleteCompanyAction(id: string): Promise<void> {
   }
 
   await prisma.company.delete({ where: { id } });
+  invalidateDbCache();
   redirect("/admin/companies");
 }

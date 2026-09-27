@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import { ogSize, reportOgImage } from "@/lib/reportOgImage";
 
 export const alt = "Earnings report analysis";

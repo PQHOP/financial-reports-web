@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { Metadata } from "next";
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import { communityReports, systemReports } from "@/lib/community";
 import { periodLabels, periodOrder } from "@/lib/period";
 import { ReportContent } from "@/components/ReportContent";

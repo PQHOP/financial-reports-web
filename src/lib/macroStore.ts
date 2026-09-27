@@ -1,4 +1,4 @@
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import type { MacroData } from "@/lib/macro";
 import type { LiveData } from "@/lib/macroLive";
 import bundledWeo from "@/data/macro.json";

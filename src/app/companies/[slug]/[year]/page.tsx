@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import { periodLabels, periodOrder } from "@/lib/period";
 import { realCoverImage } from "@/lib/reportMeta";
 import { parseSource, sourceWhere, systemReports } from "@/lib/community";

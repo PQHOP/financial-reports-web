@@ -1,5 +1,5 @@
 import { reportUrl } from "@/lib/reportPath";
-import { prisma } from "@/lib/prisma";
+import { prismaCached as prisma } from "@/lib/prisma";
 import { periodLabels } from "@/lib/period";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
