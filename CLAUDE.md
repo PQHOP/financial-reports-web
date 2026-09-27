@@ -698,6 +698,10 @@ the user is tracked at its end. Things future sessions should know:
   be set for `/api/cron/social` to run at all), `BLUESKY_HANDLE` +
   `BLUESKY_APP_PASSWORD`, `X_API_KEY` / `X_API_SECRET` / `X_ACCESS_TOKEN` /
   `X_ACCESS_SECRET`. With none of the social ones set the cron is a no-op.
+  `ADSENSE_CLIENT` (`pub-` + 16 digits) switches on Google AdSense: the
+  loader tag in `<head>`, `/ads.txt`, and the ad/consent-banner hosts in
+  the CSP (`src/lib/adsense.ts`, `src/proxy.ts`). Unset = no ads, strict
+  CSP. Needs a redeploy after setting.
 - **Bluesky is live (2026-09-24):** account `@financialreportinsights.com`
   (domain handle via the `_atproto` TXT record in Vercel DNS; originally
   `finreportinsights.bsky.social`). `BLUESKY_HANDLE` holds the account's
