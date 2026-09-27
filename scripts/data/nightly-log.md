@@ -4619,4 +4619,23 @@ the automated scheduled-task mechanism):
   batch.
   **Batch 4 total: 5 report-periods. Night running total: 20
   report-periods, 506 companies done.**
-- `npm run next-batch -- --n 5` (batch 5): pending.
+- `npm run next-batch -- --n 5` (batch 5): SPG, SWKS, SJM, SW, SNA (S&P
+  500 backlog, in file order).
+- **Batch 5 — 5 Opus subagents in parallel.** All 5 succeeded, all checked
+  live (200, Takeaway + Source filing present): SPG Q2 2026 (revenue +19.5%
+  mostly from full Taubman consolidation, Real Estate FFO/share +7.9%,
+  occupancy flat at 96.0%, guidance raised), SWKS fiscal Q3 2026 (revenue
+  -3.1% on share loss at an unnamed significant customer, GAAP EPS -68.6%
+  on Qorvo-merger fees and facility-closure charges, dividend discontinued
+  in favor of a $2B buyback), SJM **fiscal Q1 2027** (company's own fiscal
+  labelling; tariff refund worth ~$0.84 of adjusted EPS flagged as
+  one-off, Hostess segment sales -7%, prior-year-loss comparisons omitted
+  as not meaningful), SW (Smurfit Westrock) Q2 2026 (revenue growth
+  entirely FX, price/mix actually -$60M, Adjusted EBITDA -6.0%; one
+  publish retry after a login-field timeout, confirmed only one report
+  created), SNA Q2 2026 (Commercial & Industrial segment organic +11.0%
+  the standout, Tools Group margin compressed on mix/freight/personnel
+  costs). Skipped: none this batch.
+  **Batch 5 total: 5 report-periods. Night running total: 25
+  report-periods, 511 companies done — halfway to tonight's ~50 cap.**
+- `npm run next-batch -- --n 5` (batch 6): pending.

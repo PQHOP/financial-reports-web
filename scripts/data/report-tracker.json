@@ -13264,5 +13264,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "SPG": {
+    "name": "Simon Property Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1c1s2000304jmunbwjnss"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "~90-day cadence from 2026-08-10 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SWKS": {
+    "name": "Skyworks Solutions",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1bivt000104jm5dcf6mu9"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-11-10",
+      "basis": "fiscal year ends around early October; estimated based on typical November reporting",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SJM": {
+    "name": "J.M. Smucker Company (The)",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1bmsr000204jmhvc1z1ca"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-26"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2026-11-25",
+      "basis": "~90-day cadence from 2026-08-26 filing; fiscal year ends April 30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SNA": {
+    "name": "Snap-on",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1cd39000104i1ccabhon7"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-04",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "~13-week cadence (04-23, 07-23)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SW": {
+    "name": "Smurfit Westrock",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1dklo000504jfmq3lx4bz"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q1 release 04-30, Q2 release 07-29, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }
