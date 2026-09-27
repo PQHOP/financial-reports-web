@@ -4781,3 +4781,22 @@ the automated scheduled-task mechanism):
   firings that night should see the count and exit immediately") —
   published nothing new this firing, tracker untouched. Exiting without
   further batches.
+- **Fifth firing this same night (checked in at 20:06 UTC / 05:06 JST
+  2026-09-28):** confirmed network access again (SEC 403 without
+  User-Agent as expected, 200 with the required header; both
+  `financialreportinsights.com` and the `.vercel.app` alias returned
+  200). `npm install` hit the same expected `prisma generate`/
+  `DATABASE_URL` postinstall failure (no DB access needed for this
+  pipeline) and left `package-lock.json` modified; reverted that diff.
+  Re-ran `npm run scan-recent-filings` fresh rather than relying on the
+  earlier firings' read — confirmed 0 fresh candidates again (still the
+  weekend scan window, 2026-09-21 through 2026-09-27, nothing new). Read
+  this entry before starting: four prior firings already closed tonight
+  out at 45/~50 report-periods, the first with an explicit "stopping
+  here for tonight," the second through fourth explicitly declining to
+  top up the remaining ~5 to the cap. No tier-0 item justifies exceeding
+  the cap tonight. Still the same 16:00–22:59 UTC window (2026-09-27
+  night) and nothing has changed since the last check-in, so deferring
+  to the same stopping point again per CLAUDE.md ("later firings that
+  night should see the count and exit immediately") — published nothing
+  new this firing, tracker untouched. Exiting without further batches.
