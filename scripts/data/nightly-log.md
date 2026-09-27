@@ -4734,3 +4734,12 @@ the automated scheduled-task mechanism):
   TXT, TKO, TTD). No skips all night. All tier 1 (S&P 500 backlog); tier 0
   fresh-filing scan was empty (weekend, prior days already covered).
   Companies done: 486 → 531.
+- **Aside, not part of tonight's report count:** the `PushNotification`
+  tool (end-of-run summary ping) errored on every call attempt tonight —
+  `InputValidationError` rejecting its own required `status: "proactive"`
+  value, even when the field was omitted entirely from the call. This
+  looks like an environment/harness-level bug, not something fixable by
+  changing the call's input. Not a blocker for the actual publishing
+  pipeline (admin-publish/scan-recent-filings are unaffected) — just means
+  no phone/email ping went out for this firing; the summary only landed
+  in the session transcript.
