@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import type { NextRequest } from "next/server";
 import { ADMIN_COOKIE_NAME } from "@/lib/adminCookie";
+import { ADSENSE_CSP, ADSENSE_PUBLISHER_ID } from "@/lib/adsense";
 
 // Runs on every page request (not just /admin) so it can hand out a fresh
 // per-request CSP nonce — see src/app/reports/[id]/page.tsx for the one
@@ -30,13 +31,17 @@ export function proxy(request: NextRequest) {
   const isDev = process.env.NODE_ENV === "development";
 
   const nonce = Buffer.from(crypto.randomUUID()).toString("base64");
+  // AdSense hosts are only allowed once ads are switched on (src/lib/adsense.ts).
+  const ads = ADSENSE_PUBLISHER_ID ? ADSENSE_CSP : null;
+  const extra = (hosts: string[] | undefined) => (hosts ? " " + hosts.join(" ") : "");
   const cspHeader = `
     default-src 'self';
     script-src 'self' 'nonce-${nonce}' 'strict-dynamic'${isDev ? " 'unsafe-eval'" : ""};
-    style-src 'self' 'unsafe-inline';
+    style-src 'self' 'unsafe-inline'${extra(ads?.style)};
     img-src 'self' https: data: blob:;
-    font-src 'self';
-    connect-src 'self';
+    font-src 'self'${extra(ads?.font)};
+    connect-src 'self'${extra(ads?.connect)};
+    frame-src 'self'${extra(ads?.frame)};
     object-src 'none';
     base-uri 'self';
     form-action 'self';
