@@ -4828,3 +4828,23 @@ the automated scheduled-task mechanism):
   nothing has changed since that check-in, so exiting immediately per
   CLAUDE.md without running `scan-recent-filings` or `next-batch` or
   touching the tracker — published nothing new this firing.
+- **Seventh firing this same night (checked in at 22:06 UTC / 07:06 JST
+  2026-09-28, near the very end of the window):** confirmed network
+  access first (SEC 403 without a `User-Agent` header, as expected —
+  SEC's own response, not a proxy denial; 200 once the required header
+  was added; both `financialreportinsights.com` and the `.vercel.app`
+  alias returned 200). `npm install` hit the same expected `prisma
+  generate`/`DATABASE_URL` postinstall failure (no DB access needed for
+  this pipeline — `admin-publish` and `scan-recent-filings` don't import
+  the Prisma client) and again left `package-lock.json` modified;
+  reverted that diff, leaving the tree clean. `git fetch` showed
+  `origin/master` at `8ca767a` (two commits ahead of the last-checked
+  `d9fa120`: an AdSense-groundwork commit and a CLAUDE.md doc update,
+  neither report-coverage work) with local `HEAD` already matching it.
+  Read this entry before starting: the night's running total is already
+  50/~50, at the cap, with two prior firings explicitly noting "later
+  firings tonight should exit." Still the same 16:00–22:59 UTC window
+  (2026-09-27 night) and nothing has changed since the last check-in, so
+  exiting immediately per CLAUDE.md without running `scan-recent-filings`
+  or `next-batch` or touching the tracker — published nothing new this
+  firing.
