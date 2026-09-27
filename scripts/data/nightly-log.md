@@ -4664,4 +4664,27 @@ the automated scheduled-task mechanism):
   none this batch.
   **Batch 6 total: 5 report-periods. Night running total: 30
   report-periods, 516 companies done.**
-- `npm run next-batch -- --n 5` (batch 7): pending.
+- `npm run next-batch -- --n 5` (batch 7): STE, SYK, SYF, SNPS, SYY (S&P
+  500 backlog, in file order). Subagent prompts this batch onward
+  instruct each subagent to use its own unique `/tmp/<ticker>-work-*`
+  scratch subdirectory, per the SOLV collision noted in batch 6.
+- **Batch 7 — 5 Opus subagents in parallel.** All 5 succeeded, all checked
+  live (200, Takeaway + Source filing present): STE **fiscal Q1 2027**
+  (company's own fiscal labelling; recurring service/consumables revenue
+  now 82.4% of sales, new multi-year restructuring announced), SYK Q2
+  2026 (recovery quarter after an earlier-2026 cyber incident, reported
+  EPS flattered $0.34 by a one-time tariff-reversal credit — flagged as
+  the Takeaway, adjusted EPS +17.9% is the cleaner read), SYF Q2 2026
+  (bank/card-issuer metrics profile; net earnings -8.5% but EPS +3.6% on
+  buybacks, credit quality improved — charge-off rate 5.43% vs 5.70%),
+  SNPS fiscal Q3 2026 (revenue +42.4% almost entirely the now-full-quarter
+  Ansys acquisition — non-Ansys growth ~6.6% by the subagent's own
+  calculation since Synopsys doesn't publish organic growth; GAAP
+  profit further inflated by a Processor IP divestiture gain), SYY
+  **FY2026 ANNUAL** (fiscal year ended 2026-06-27; growth mostly
+  inflation-driven, pending ~$29.1B Jetro Restaurant Depot acquisition
+  already incurring bridge-financing costs and buybacks suspended).
+  Skipped: none this batch.
+  **Batch 7 total: 5 report-periods. Night running total: 35
+  report-periods, 521 companies done.**
+- `npm run next-batch -- --n 5` (batch 8): pending.
