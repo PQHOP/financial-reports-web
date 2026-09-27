@@ -12824,5 +12824,335 @@
       "confidence": "confirmed"
     },
     "lastChecked": "2026-09-27"
+  },
+  "Q": {
+    "name": "Qnity Electronics",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0mky7000004l5nwlsd3po"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q or earnings 8-K (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "prior-year Q3 release came 2025-11-06; ~90-day cadence from 2026-08-04 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "RL": {
+    "name": "Ralph Lauren Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0lu75000004l3mj77fl9v"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2026-11-05",
+      "basis": "~90-day cadence from 2026-08-06 filing; fiscal year ends early April",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "RJF": {
+    "name": "Raymond James Financial",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0ng5a000104l5ayysl98p"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-10-22",
+      "basis": "fiscal year ends September 30; prior earnings releases came Jan 28, Apr 22, Jul 22, so Q4/FY annual results estimated late October 2026",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "RDDT": {
+    "name": "Reddit, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0nb2q000004jpd6uu6yn9"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q or earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~90-day cadence from 2026-07-31 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "O": {
+    "name": "Realty Income Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0nmm7000104jpev4v2z8r"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 10-Q filed 05-07, Q2 10-Q filed 08-06, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "REG": {
+    "name": "Regency Centers",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0s11a000204l5njruaddz"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q or earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q2 earnings 8-K filed 2026-07-29; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "REGN": {
+    "name": "Regeneron Pharmaceuticals",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0t5jh000004jf2nbtu1xa"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q1 filed 2026-04-29, Q2 filed 2026-07-30, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "RF": {
+    "name": "Regions Financial Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0tpsk000304l5kzfmkky7"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K / 10-Q (Q3 2026)",
+      "estimate": "2026-10-17",
+      "basis": "Q2 earnings released 2026-07-17, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "RSG": {
+    "name": "Republic Services",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0tt1q000204jpvxfxhuql"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q2 10-Q filed 2026-08-07, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "RMD": {
+    "name": "ResMed",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0tqx0000404l5df2unim6"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-10-30",
+      "basis": "fiscal year ends June 30; FY2026 Q3 10-Q filed 2026-05-01, roughly 4 weeks after quarter end pattern applied to Sep 30 2026 quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "RVTY": {
+    "name": "Revvity",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0xrpc000104jfw9j0qma4"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-05",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q or earnings 8-K (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "earnings 8-Ks on 05-05 and 08-04, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "ROK": {
+    "name": "Rockwell Automation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0xw6u000004jm7djmmrrc"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-11-12",
+      "basis": "fiscal year ends Sept 30; prior FY2025 10-K audit report dated 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "ROL": {
+    "name": "Rollins, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0xyd0000204jfwjwga2on"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "~90-day cadence from 2026-07-23 filing; earnings 8-K typically a day earlier",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "ROP": {
+    "name": "Roper Technologies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0yenf000304jfxmrvdyco"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q or earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "company guided Q3 results for late October 2026",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SNDK": {
+    "name": "Sandisk",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk0z7tt000304jpikc1muqk"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-08-17"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-11-05",
+      "basis": "fiscal year ends Friday nearest June 30; estimated ~90 days after Q1 quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }

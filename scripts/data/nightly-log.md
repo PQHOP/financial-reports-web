@@ -4523,3 +4523,81 @@ the automated scheduled-task mechanism):
   Q3 2026, quarter ended 2026-06-30). All 8 checked live. Q3 dates
   confirmed for PLD (10-15), PHM (10-22), DGX (10-22). No skips.
   **Running total for this entry: 28 report-periods, 483 companies done.**
+
+### 2026-09-27 night (16:00 UTC 2026-09-27 → 22:59 UTC 2026-09-27 / 01:00–07:59 JST 2026-09-28)
+
+- Mechanism: cloud routine automated firing (`[SCHEDULED TASK]`, no live
+  user).
+- Network check: `curl https://www.sec.gov/` without a User-Agent
+  returned 403 (SEC's own response, expected); retry with the required
+  User-Agent returned 200. `financialreportinsights.com` and the
+  `.vercel.app` alias both 200. SEC and site access fine tonight.
+- `npm install` postinstall (`prisma generate`) failed on missing
+  `DATABASE_URL` as expected; ran `prisma generate` directly with a dummy
+  `DATABASE_URL` instead, then reverted the resulting `package-lock.json`
+  diff (local regen artifact only, per prior nights).
+- Chromium/TLS-proxy cert trust needed re-establishing again this firing
+  (fresh container): both `ccr-agent-proxy` certs present with trust bits
+  `C,,` instead of `CT,C,C` — fixed with `certutil -M`.
+- `admin-publish -- --list` confirms login works against
+  `financialreportinsights.com` with tonight's `ADMIN_PASSWORD`.
+- `npm run scan-recent-filings`: 0 fresh tier-0 candidates (last 5
+  scanned days, 21st-25th, already covered by prior nights; 26th/27th are
+  weekend with no EDGAR filings). Falling through to tier 1.
+- `npm run next-batch -- --n 5`: Q, RL, RJF, RDDT, O (S&P 500 backlog, in
+  file order).
+- **Batch 1 — 5 Opus subagents, one per company, run in parallel.** All 5
+  succeeded and were checked live (200, Takeaway + Source filing present,
+  size sane): Q Q2 2026 (spin-off from DuPont, operating margin
+  self-calculated since the income statement has no operating-income
+  line, said so in the report), RL fiscal **Q1 2027** (company's own
+  fiscal-year labelling; quarter ended 2026-06-27, gross margin +140bps
+  on higher AUR not discounting, Asia +25% cc, guidance raised — edited
+  once via `--edit` to tighten wording/remove an unsourced phrase), RJF
+  fiscal Q3 2026 (general metrics profile, not bank — NIM exists but
+  isn't RJF's headline metric; record net revenue, ~$99M of the pretax
+  gain from a non-repeating legal settlement comp and a reserve release),
+  RDDT Q2 2026 (ad-price-driven growth, US DAUq flat QoQ, stock-based
+  comp is most of the GAAP/adjusted gap), O (Realty Income) Q2 2026 (AFFO
+  per share +3.8% despite AFFO dollars +7.9%, diluted by more shares;
+  guidance raised). Skipped: none this batch.
+  **Batch 1 total: 5 report-periods, 488 companies done.**
+- `npm run next-batch -- --n 5` (batch 2): REG, REGN, RF, RSG, RMD (S&P
+  500 backlog, in file order).
+- **Batch 2 — 5 Opus subagents in parallel.** All 5 succeeded, all checked
+  live (200, Takeaway + Source filing present): REG Q2 2026 (Core
+  Operating Earnings/share +5.5% vs FFO dollars +6.7%, diluted by
+  financing costs + share count, guidance raised), REGN Q2 2026 (Dupixent
+  +38% global/+51% collaboration revenue, Eylea franchise -12% combined
+  as biosimilar erosion continues, Sanofi development-balance repayment
+  removes a profit-share deduction from Q3 on), RF Q2 2026 (bank fields;
+  8% EPS growth almost entirely from a smaller loan-loss provision + buybacks,
+  revenue flat on a bond-sale loss), RSG Q2 2026 (price +3.4%/fuel
+  surcharge +1.8% vs volume only +1.6%, guidance reaffirmed), RMD
+  **FY2026 ANNUAL** (fiscal year ended 2026-06-30; masks/accessories
+  growing faster than devices, gross margin up despite an Astral
+  ventilator component charge, MatrixCare divestiture and Noctrix
+  acquisition noted). Skipped: none this batch.
+  **Batch 2 total: 5 report-periods. Night running total: 10
+  report-periods, 493 companies done.**
+- `npm run next-batch -- --n 5` (batch 3): RVTY, ROK, ROL, ROP, SNDK (S&P
+  500 backlog, in file order).
+- **Batch 3 — 5 Opus subagents in parallel.** All 5 succeeded, all checked
+  live (200, Takeaway + Source filing present): RVTY Q2 2026 (organic
+  growth +3% ex the divested China IDX business, adjusted EPS +19.5%
+  helped ~$0.11 by tariff refunds), ROK fiscal Q3 2026 (organic sales
+  +10%, GAAP EPS +40% inflated by a Sensia JV dissolution gain, adjusted
+  EPS +22%, operating margin self-calculated since the income statement
+  has no operating-income line — said so in the report), ROL Q2 2026
+  (organic growth decelerated to 5.7% from 6.6%, residential only +3.6%,
+  FY guidance cut to "at least 6%" organic from 7-8%), ROP Q2 2026 (GAAP
+  net income +209%/EPS +233% almost entirely a non-cash markup of its
+  Indicor stake ahead of an AMETEK sale; adjusted EPS +10% is the real
+  read), SNDK **FY2026 ANNUAL** (fiscal year ended 2026-07-03; revenue
+  +175% and swung from a net loss to $11.4B net income mostly on
+  memory-pricing upcycle, YoY % fields omitted for net income/EPS since
+  the prior year was a loss — flagged in the report). Skipped: none this
+  batch.
+  **Batch 3 total: 5 report-periods. Night running total: 15
+  report-periods, 501 companies done.**
+- `npm run next-batch -- --n 5` (batch 4): pending.
