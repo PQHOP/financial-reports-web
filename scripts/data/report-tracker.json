@@ -12208,5 +12208,269 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25"
+  },
+  "ASTC": {
+    "name": "Astrotech Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6fwqg000004l59mfrny5d"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 10-Qs filed 2023-11-13, 2024-11-13, 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "CBRL": {
+    "name": "Cracker Barrel Old Country Store, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6fjlg000104jqcpxl9haz"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-12-02",
+      "basis": "~90 days after FY2026 filings; Q1 usually late Nov/early Dec",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "DCI": {
+    "name": "Donaldson Company, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6f6sl000004jqiaqiiaob"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings / 10-Q (Q1 FY2027)",
+      "estimate": "2026-12-03",
+      "basis": "Q1 FY2026 earnings 8-K filed 2025-12-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "HFBL": {
+    "name": "Home Federal Bancorp, Inc. of Louisiana",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6gb0k000104l5nek9hr8i"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-12",
+      "basis": "Q1 10-Qs filed 2025-11-10, 2024-11-13, 2023-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "IXHL": {
+    "name": "Incannex Healthcare Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6kh1v000204jqizkghjm8"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-16",
+      "basis": "Q1 10-Qs filed 2025-11-14, 2024-11-14; 11-14 is a Saturday",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PPCB": {
+    "name": "Propanc Biopharma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6kxkg000204l596prc9sq"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-16",
+      "basis": "Sep-quarter 10-Qs filed 11-14 in 2023-2025 (45-day deadline); 11-14 is a Saturday",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SCHL": {
+    "name": "Scholastic Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6kn3n000004l8fhsux8zw"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027)",
+      "estimate": "2026-12-18",
+      "basis": "Q2 FY2026 8-K 2025-12-18, 10-Q 2025-12-19",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SRBK": {
+    "name": "SR Bancorp, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6l0id000004lbmemz345o"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q1 FY2027), 10-Q ~2026-11-13",
+      "estimate": "2026-10-29",
+      "basis": "Q1 FY2026 8-K 2025-10-30, 10-Q 2025-11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "OTIS": {
+    "name": "Otis Worldwide",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6q05w000504l58pfflez0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings / 10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "2026 cadence: Q1 Apr 22/23, Q2 Jul 22/23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PCAR": {
+    "name": "Paccar",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6otry000404l5j5ql98r3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026), 10-Q ~2026-10-29",
+      "estimate": "2026-10-21",
+      "basis": "Q3 2025 8-K 2025-10-21, 10-Q 2025-10-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PKG": {
+    "name": "Packaging Corporation of America",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6okr5000304l51bmeietf"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026), 10-Q ~2026-11-06",
+      "estimate": "2026-10-21",
+      "basis": "PCA press release 2026-09-17: Q3 results after close 10-21, call 10-22",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PH": {
+    "name": "Parker Hannifin",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj6q9ty000604l5ineosmcw"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-21"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings / 10-Q (Q1 FY2027)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 FY2026 8-K 2025-11-06, 10-Q 2025-11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }

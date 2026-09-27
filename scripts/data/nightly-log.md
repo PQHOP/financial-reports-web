@@ -4492,3 +4492,21 @@ the automated scheduled-task mechanism):
   night, definitively 0 published (not just "likely" as reported at
   21:06 UTC) — needs the user or a session with Vercel/Neon access to
   check function logs and DB status before the next window opens.
+- **Catch-up run, 2026-09-27 ~02:00–02:40 UTC (manual session, outside
+  the window, at the user's request to finish last night's work).** The
+  outage was fixed by `009168d` (public pages now read through
+  `prismaCached`; Neon had run out of compute). Re-checked before starting:
+  `/`, `/reports`, `/companies/msft`, `/admin/login` all 200, and
+  `admin-publish -- --list` logs in fine. `scan-recent-filings` returned
+  the same 8 tier-0 candidates. **Published 12 report-periods across 12
+  companies** (Opus subagents, 3 waves of 4), and all 12 canonical pages
+  were checked live: 200, Takeaway and Source filing present:
+  - Tier 0 (10-Ks/10-Q filed 2026-09-25): ASTC FY2026 ANNUAL, CBRL FY2026
+    ANNUAL, DCI FY2026 ANNUAL, HFBL FY2026 ANNUAL (bank fields), IXHL
+    FY2026 ANNUAL, PPCB FY2026 ANNUAL, SCHL **2027 Q1** (Scholastic's own
+    fiscal label; quarter ended 2026-08-31), SRBK FY2026 ANNUAL (bank
+    fields).
+  - Tier 1 S&P 500 backlog: OTIS 2026 Q2, PCAR 2026 Q2, PKG 2026 Q2 (Q3
+    date confirmed 2026-10-21), PH FY2026 ANNUAL.
+  - No skips. **Night total (09-26 night incl. catch-up): 12
+    report-periods published, 467 companies done.**
