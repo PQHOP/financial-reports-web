@@ -4767,3 +4767,17 @@ the automated scheduled-task mechanism):
   check-in, so deferring to the same stopping point again rather than
   re-opening tonight's batch — published nothing new this firing,
   tracker untouched. Exiting without further batches.
+- **Fourth firing this same night (checked in at 19:05 UTC / 04:05 JST
+  2026-09-28):** confirmed network access again (SEC 403 without
+  User-Agent as expected, 200 with `curl -H "User-Agent: ..."`; both
+  `financialreportinsights.com` and the `.vercel.app` alias returned
+  200). Working tree clean on `master` before starting. Read this entry
+  before starting: three prior firings already closed tonight out at
+  45/~50 report-periods — the first with an explicit "stopping here for
+  tonight," the second and third explicitly declining to top up the
+  remaining ~5 to the cap. Still the same 16:00–22:59 UTC window
+  (2026-09-27 night) and nothing has changed since the last check-in, so
+  deferring to the same stopping point again per CLAUDE.md ("later
+  firings that night should see the count and exit immediately") —
+  published nothing new this firing, tracker untouched. Exiting without
+  further batches.
