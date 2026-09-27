@@ -13374,5 +13374,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "SOLV": {
+    "name": "Solventum",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1iohm000104lbnwr3durg"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90-day cadence from 2026-08-05 filing; note ERP-switch pull-forward may distort Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "LUV": {
+    "name": "Southwest Airlines",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1hp5x000004lb9r5c7xwp"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K / 10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q1/Q2 pattern: earnings release then 10-Q the next day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SWK": {
+    "name": "Stanley Black & Decker",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1i6gx000604jfji3113cd"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-04",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~90-day cadence from 2026-07-29 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "STLD": {
+    "name": "Steel Dynamics",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1ijbq000704jf42uyc7rl"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings release (Q3 2026)",
+      "estimate": "2026-10-19",
+      "basis": "company confirmed via 8-K it will report after market close 2026-10-19",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "STT": {
+    "name": "State Street Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1jl1k000804jf5qti3cqz"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-16",
+      "basis": "Q1/Q2 earnings released April 17 and July 16",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }

@@ -4638,4 +4638,30 @@ the automated scheduled-task mechanism):
   costs). Skipped: none this batch.
   **Batch 5 total: 5 report-periods. Night running total: 25
   report-periods, 511 companies done — halfway to tonight's ~50 cap.**
-- `npm run next-batch -- --n 5` (batch 6): pending.
+- `npm run next-batch -- --n 5` (batch 6): SOLV, LUV, SWK, STT, STLD (S&P
+  500 backlog, in file order).
+- **Batch 6 — 5 Opus subagents in parallel.** All 5 succeeded, all checked
+  live (200, Takeaway + Source filing present): SOLV Q2 2026 (organic
+  growth +9.5% inflated ~$125M by pre-ERP-switch order pull-forward,
+  flagged as likely to hurt Q3; a ~$120M tariff refund also boosted
+  margin — **note:** this subagent hit a `/tmp` filename collision with
+  concurrent batch-6 subagents overwriting its scratch files mid-run,
+  caught it, re-downloaded into a private folder and re-verified every
+  figure before publishing; spot-checked the live page afterward for
+  cross-contamination and found none, but future prompts should tell
+  subagents to use a unique scratch subdirectory per company), LUV Q2
+  2026 (record revenue partly a $285M breakage-accounting reversal,
+  RASM +16.2%/+20.1% ex that item, guidance cut to $3.25-4.25 adjusted
+  EPS from "at least $4.00" on fuel costs), SWK Q2 2026 (organic sales
+  +3% ex a divested aerospace-fastener business, $118M IEEPA tariff
+  refund after the Supreme Court struck the tariffs down, guidance
+  raised, operating margin self-calculated), STT Q2 2026 (bank metrics
+  profile — NIM/NII are STT's own headline metrics; record AUC/A $57.9T
+  and AUM $6.28T, EPS +68% but ~44% like-for-like after a prior-year
+  one-off charge), STLD Q2 2026 (metal spread widened 22%, but record
+  shipment volume mostly from a Dec-2025 acquisition rather than organic
+  mill output, Q3 guidance already confirmed by the company). Skipped:
+  none this batch.
+  **Batch 6 total: 5 report-periods. Night running total: 30
+  report-periods, 516 companies done.**
+- `npm run next-batch -- --n 5` (batch 7): pending.
