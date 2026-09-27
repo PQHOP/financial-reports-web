@@ -4687,4 +4687,24 @@ the automated scheduled-task mechanism):
   Skipped: none this batch.
   **Batch 7 total: 5 report-periods. Night running total: 35
   report-periods, 521 companies done.**
-- `npm run next-batch -- --n 5` (batch 8): pending.
+- `npm run next-batch -- --n 5` (batch 8): TROW, TPR, TRGP, TEL, TDY (S&P
+  500 backlog, in file order).
+- **Batch 8 — 5 Opus subagents in parallel.** All 5 succeeded, all checked
+  live (200, Takeaway + Source filing present): TROW Q2 2026 (AUM record
+  $1,893.4B despite $6.5B net outflows, average fee rate compressed to
+  38.1bps, GAAP EPS lifted ~$0.41 by seed-capital gains vs adjusted
+  +14.7%), TPR (Tapestry) **FY2026 ANNUAL** (fiscal year ended
+  2026-06-27; huge YoY % growth is a base-effect artifact of a
+  FY2025 Kate Spade impairment — adjusted EPS +38% is the real read;
+  Kate Spade brand swung to an operating loss), TRGP Q2 2026 (Adjusted
+  EBITDA +37.8% on Permian volume growth, guidance trending to top end of
+  range), TEL Q3 2026 (fiscal quarter; AI/datacenter-driven Digital Data
+  Networks and Energy segments supplied over half the revenue increase,
+  restructuring charges hid an adjusted margin gain), TDY Q2 2026 (growth
+  almost entirely organic — acquisitions added only $12.2M — Digital
+  Imaging margin jump partly from a tariff-refund benefit of unstated
+  size). Skipped: none this batch.
+  **Batch 8 total: 5 report-periods. Night running total: 40
+  report-periods, 526 companies done — nightly cap (~50) nearly reached.**
+- `npm run next-batch -- --n 5` (batch 9): pending — final batch this
+  firing to stay within the ~50 nightly cap.

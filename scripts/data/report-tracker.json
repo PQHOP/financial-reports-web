@@ -13594,5 +13594,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "TROW": {
+    "name": "T. Rowe Price",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1tx07000104jyn5nn3vfq"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q or earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q1/Q2 late-month cadence (04-30, 07-31)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TPR": {
+    "name": "Tapestry, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1tenq000004js877r15r9"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K (fiscal Q1 2027)",
+      "estimate": "2026-11-05",
+      "basis": "company confirmed Q1 FY2027 results date of 2026-11-05 in its release",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TRGP": {
+    "name": "Targa Resources",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1twes000004jyf54ma56f"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 10-Q filed 2026-05-07, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TEL": {
+    "name": "TE Connectivity",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1uep0000004jt8plymkue"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-26",
+      "filedAt": "2026-07-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-11-15",
+      "basis": "fiscal year ends late September; estimated mid-November 10-K based on prior-year pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TDY": {
+    "name": "Teledyne Technologies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1ukf1000104jtfglt71y0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-07-24"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q2 pattern: 8-K on 07-22, 10-Q on 07-24",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }
