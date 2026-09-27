@@ -4800,3 +4800,18 @@ the automated scheduled-task mechanism):
   to the same stopping point again per CLAUDE.md ("later firings that
   night should see the count and exit immediately") — published nothing
   new this firing, tracker untouched. Exiting without further batches.
+- **Manual top-up batch, 2026-09-27 ~20:45–21:10 UTC (local session, at
+  the user's request; inside the window, cloud firings had stopped at
+  45).** `scan-recent-filings`: 0 fresh candidates (weekend). Tier 1 S&P
+  500 backlog per `next-batch -- --n 5`: **5 report-periods published**,
+  all checked live (200, Takeaway + Source filing present): TSCO Q2 2026
+  (comps -1.5%, Petsense closure charges, FY guidance cut and long-term
+  targets withdrawn), TT Q2 2026 (record $7.8B orders, backlog +70%, but
+  gross margin -200bps; guidance raised), TDG fiscal Q3 2026 (quarter
+  ended 2026-06-27; sales +22.5% of which 12.6% organic, interest expense
+  +29.5%; guidance raised), TRV Q2 2026 (insurer fields; EPS +57% mostly
+  lower cat losses + reserve releases, underlying combined ratio only
+  -0.6pt; Q3 date confirmed 2026-10-16), TRMB Q2 2026 (revenue +11%, ARR
+  +14%, GAAP loss from a $562M T&L goodwill write-down; YoY % omitted for
+  net income/EPS). No skips. **Night total: 50 report-periods — cap
+  reached; later firings tonight should exit.**

@@ -13814,5 +13814,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "TSCO": {
+    "name": "Tractor Supply",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmukakxk6000104k1peakrnc7"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "prior-year Q3 release 2025-10-23; Q2 2026 release 2026-07-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TT": {
+    "name": "Trane Technologies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmukajyv8000004le64x31nqr"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "prior-year Q3 filed 2025-10-30; unconfirmed third-party mention of 2026-11-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TDG": {
+    "name": "TransDigm Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmukak637000104lepc2wck8z"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K + 10-K (FY2026)",
+      "estimate": "2026-11-10",
+      "basis": "FY2025 10-K filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TRV": {
+    "name": "Travelers Companies (The)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmukako2c000204leceq0wdbb"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-17"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K + 10-Q (Q3 2026)",
+      "estimate": "2026-10-16",
+      "basis": "Travelers press release scheduling Q3 2026 results call for 2026-10-16",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TRMB": {
+    "name": "Trimble Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmukakvak000004k1rrpvqtyj"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + earnings 8-K (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "~90 days after Q2 filing (05-06, 08-12 cadence)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }
