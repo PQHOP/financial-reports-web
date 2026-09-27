@@ -4517,3 +4517,9 @@ the automated scheduled-task mechanism):
   live (Takeaway + Source filing present). Q3 dates confirmed for PCG
   (10-22) and PSX (10-28). No skips. **Running total for this entry: 20
   report-periods, 475 companies done.**
+- **Second daytime batch, 2026-09-27 ~03:00–03:30 UTC (manual, user
+  request).** Tier 1 S&P 500 backlog: **8 report-periods published**:
+  PLD, PRU, PEG, PSA, PHM, PWR, DGX (all Q2 2026 10-Qs) and PTC (fiscal
+  Q3 2026, quarter ended 2026-06-30). All 8 checked live. Q3 dates
+  confirmed for PLD (10-15), PHM (10-22), DGX (10-22). No skips.
+  **Running total for this entry: 28 report-periods, 483 companies done.**

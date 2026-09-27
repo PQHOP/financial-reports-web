@@ -12648,5 +12648,181 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "PLD": {
+    "name": "Prologis",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj8hfim000004lhvujoj9zq"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026), 10-Q late Oct",
+      "estimate": "2026-10-15",
+      "basis": "Prologis press release 2026-09-03: Q3 results Oct 15, 2026",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PRU": {
+    "name": "Prudential Financial",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj8etzf000104l69tdl0hn0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026), 10-Q ~2026-11-04",
+      "estimate": "2026-11-03",
+      "basis": "Q3 2025 release 10-29; 2026 quarters ~5 days later (May 5, Aug 4)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PEG": {
+    "name": "Public Service Enterprise Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj8dpn5000004l6nbxriwxa"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + 8-K earnings (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q3 2025 10-Q/8-K 2025-11-03; 2026 filings same day as release",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PTC": {
+    "name": "PTC Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj8d4fh000004jmpicwi66p"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q4/FY2026), 10-K mid-Nov",
+      "estimate": "2026-11-04",
+      "basis": "Q4 FY25 reported Wed 2025-11-05; always Wednesdays after close",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PSA": {
+    "name": "Public Storage",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj8kvf0000004jpykrfn4mn"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + 8-K earnings (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q1/Q2 2026 results 04-27, 07-29 after close",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PHM": {
+    "name": "PulteGroup",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj8lkap000004lbw9zqf7ep"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-22"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings + 10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "PulteGroup release 2026-08-27: Q3 results before open Oct 22, 2026",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PWR": {
+    "name": "Quanta Services",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj8m7xl000104igcfgbcs6w"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + 8-K earnings (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Thursday at end of month after quarter end (04-30, 07-30)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "DGX": {
+    "name": "Quest Diagnostics",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj8lriw000004ig8063ezqk"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings + 10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Quest newsroom 2026-09-22: Q3 results Oct 22, 2026",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
   }
 }
