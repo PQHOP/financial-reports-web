@@ -724,6 +724,12 @@ the user is tracked at its end. Things future sessions should know:
 - Cache Components is **not** enabled; all data-reading pages use
   `export const dynamic = "force-dynamic"` and query Prisma directly per
   request. Keep new data pages consistent with that pattern.
+- **Public pages read through `prismaCached`** (`src/lib/prisma.ts`, a
+  15-minute Next data cache), not `prisma`: uncached page views kept Neon
+  awake around the clock and exhausted the Free plan's compute on
+  2026-09-26 (site down all night; now on the Launch plan, billed per
+  CU-hour). Admin pages, crons and Server Actions use plain `prisma`, and
+  any new write path must call `invalidateDbCache()` after writing.
 - Database is Postgres via Neon (Vercel Storage integration), not SQLite.
   The Prisma generator uses `engineType = "client"` (see
   `prisma/schema.prisma`) so the query engine is engine-free at runtime —
