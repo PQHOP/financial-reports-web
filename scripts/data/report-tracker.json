@@ -13704,5 +13704,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "TER": {
+    "name": "Teradyne",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1ykij000104jsbkpb52kg"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "prior-year pattern suggests late-October results",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TPL": {
+    "name": "Texas Pacific Land Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1zcof000104jti1m6xy3w"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "prior-year Q3 10-Q filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TXT": {
+    "name": "Textron",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1zaxy000004jtdoo7wa9w"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-04",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "~90-day cadence from 2026-07-28 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TKO": {
+    "name": "TKO Group Holdings",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1znti000204jtmlprp8xd"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q1 filed 05-06, Q2 filed 08-03, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "TTD": {
+    "name": "Trade Desk (The)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk2041z000304jt36pg53xe"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "prior-year Q3 results released 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }

@@ -4706,5 +4706,31 @@ the automated scheduled-task mechanism):
   size). Skipped: none this batch.
   **Batch 8 total: 5 report-periods. Night running total: 40
   report-periods, 526 companies done — nightly cap (~50) nearly reached.**
-- `npm run next-batch -- --n 5` (batch 9): pending — final batch this
-  firing to stay within the ~50 nightly cap.
+- `npm run next-batch -- --n 5` (batch 9): TER, TPL, TXT, TKO, TTD (S&P
+  500 backlog, in file order) — final batch this firing.
+- **Batch 9 — 5 Opus subagents in parallel.** All 5 succeeded, all checked
+  live (200, Takeaway + Source filing present): TER (Teradyne) Q2 2026
+  (revenue +104% almost entirely AI-driven Semiconductor Test demand,
+  memory test +248% on HBM/DRAM), TPL Q2 2026 (royalty growth mostly the
+  oil price, not more barrels — production +5.9% vs price +52%, figures
+  split-adjusted for the Dec-2025 3-for-1 split), TXT Q2 2026 (segment
+  profit flat only because of a one-time tariff refund — underlying ~6%
+  lower; Bell's MV-75 program funding lapsed mid-July with a possible
+  charge flagged), TKO Q2 2026 (new UFC/WWE media-rights deals — Paramount,
+  Netflix, ESPN — drove revenue +18.2%, guidance raised; subagent flagged
+  a possible duplicate "TKO Group Holdings, Inc." company record with no
+  ticker in the admin dropdown, worth a look in /admin/companies but not
+  fixed by this pipeline), TTD (Trade Desk) Q2 2026 (revenue growth
+  decelerated to +3.0%, GAAP profit fell faster on a higher effective tax
+  rate, a ~15% workforce-cut restructuring announced Sept 4 post-quarter).
+  Skipped: none this batch.
+  **Batch 9 total: 5 report-periods. Night running total: 45
+  report-periods, 531 companies done.**
+- **Stopping here for tonight at 45/~50 — within the nightly cap.**
+  Cumulative for 2026-09-27 night: 45 report-periods across 9 batches (Q,
+  RL, RJF, RDDT, O, REG, REGN, RF, RSG, RMD, RVTY, ROK, ROL, ROP, SNDK,
+  SBAC, SLB, STX, SRE, SHW, SPG, SWKS, SJM, SW, SNA, SOLV, LUV, SWK, STT,
+  STLD, STE, SYK, SYF, SNPS, SYY, TROW, TPR, TRGP, TEL, TDY, TER, TPL,
+  TXT, TKO, TTD). No skips all night. All tier 1 (S&P 500 backlog); tier 0
+  fresh-filing scan was empty (weekend, prior days already covered).
+  Companies done: 486 → 531.
