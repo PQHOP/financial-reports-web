@@ -4743,3 +4743,16 @@ the automated scheduled-task mechanism):
   pipeline (admin-publish/scan-recent-filings are unaffected) — just means
   no phone/email ping went out for this firing; the summary only landed
   in the session transcript.
+- **Later firing this same night (checked in at 17:06 UTC / 02:06 JST
+  2026-09-28):** confirmed network access (SEC 200 with User-Agent, both
+  site domains 200), `npm install` clean modulo the same expected
+  `prisma generate`/`DATABASE_URL` postinstall failure (reverted the
+  resulting `package-lock.json` diff, no DB access needed for this
+  pipeline). Read this entry before starting any work: the prior firing
+  already closed out tonight at 45/~50 report-periods with an explicit
+  "stopping here for tonight" and all changes already committed/pushed
+  (git tree was clean apart from the transient `package-lock.json` diff).
+  Treated that as this night's stopping point per CLAUDE.md ("later
+  firings that night should see the count and exit immediately") rather
+  than topping up the remaining ~5 to the cap — published nothing new
+  this firing, tracker untouched. Exiting without further batches.
