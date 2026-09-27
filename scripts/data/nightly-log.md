@@ -4756,3 +4756,14 @@ the automated scheduled-task mechanism):
   firings that night should see the count and exit immediately") rather
   than topping up the remaining ~5 to the cap — published nothing new
   this firing, tracker untouched. Exiting without further batches.
+- **Third firing this same night (checked in at 18:05 UTC / 03:05 JST
+  2026-09-28):** confirmed network access again (SEC 403 without
+  User-Agent as expected, 200 with it; both site domains 200). Read this
+  entry before starting: two prior firings already closed tonight out at
+  45/~50 report-periods, the first with an explicit "stopping here for
+  tonight" and the second explicitly declining to top up the remaining
+  ~5 to the cap. No new day has started (still within the same
+  16:00–22:59 UTC window) and nothing else has changed since that
+  check-in, so deferring to the same stopping point again rather than
+  re-opening tonight's batch — published nothing new this firing,
+  tracker untouched. Exiting without further batches.
