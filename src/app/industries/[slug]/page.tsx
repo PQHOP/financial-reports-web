@@ -18,7 +18,6 @@ import { cleanCompanyName } from "@/lib/companyName";
 export const dynamic = "force-dynamic";
 
 const UNCATEGORIZED_SLUG = "uncategorized";
-const PENDING_LIMIT = 100;
 
 export async function generateMetadata({
   params,
@@ -149,14 +148,10 @@ export default async function IndustryPage({
       return { profile, layout, rows };
     })
     .filter((t) => t.rows.length >= 2);
-  // Analyzed companies first; the long tail of un-analyzed directory entries
-  // follows so the page leads with content, not a wall of empty names.
+  // Only analyzed companies are linked; the rest are listed as plain text
+  // (not at all for Uncategorized, which holds ~5,000 directory entries).
   const analyzed = industry.companies.filter((c) => c._count.reports > 0);
   const pending = industry.companies.filter((c) => c._count.reports === 0);
-  // Uncategorized holds ~5,000 directory entries; rendering them all made the
-  // page megabytes of empty links. Show a slice and point to search instead.
-  const companies = [...analyzed, ...pending.slice(0, PENDING_LIMIT)];
-  const hiddenCount = pending.length - Math.min(pending.length, PENDING_LIMIT);
 
   return (
     <div className="flex flex-col gap-6">
@@ -244,11 +239,11 @@ export default async function IndustryPage({
         Companies in {industry.name}
       </h2>
 
-      {industry.companies.length === 0 ? (
-        <p className="text-zinc-500">No companies in this industry yet.</p>
+      {analyzed.length === 0 ? (
+        <p className="text-zinc-500">No analyses in this industry yet.</p>
       ) : (
         <ul className="flex flex-col gap-3">
-          {companies.map((company) => (
+          {analyzed.map((company) => (
             <li key={company.id}>
               <Link
                 href={`/companies/${company.slug}`}
@@ -265,9 +260,7 @@ export default async function IndustryPage({
                 <div className="text-sm text-zinc-500">
                   {company.country}
                   {company.exchange ? ` · ${company.exchange}` : ""}
-                  {company._count.reports > 0
-                    ? ` · ${company._count.reports} ${company._count.reports === 1 ? "analysis" : "analyses"}`
-                    : ""}
+                  {` · ${company._count.reports} ${company._count.reports === 1 ? "analysis" : "analyses"}`}
                 </div>
               </Link>
             </li>
@@ -275,15 +268,27 @@ export default async function IndustryPage({
         </ul>
       )}
 
-      {hiddenCount > 0 && (
-        <p className="text-sm text-zinc-500">
-          {hiddenCount.toLocaleString("en-US")} more companies without an
-          analysis yet.{" "}
-          <Link href="/search" className="underline">
-            Search by name or ticker
-          </Link>
-          .
-        </p>
+      {pending.length > 0 && (
+        <section className="flex flex-col gap-2 text-sm text-zinc-500">
+          <h2 className="text-base font-medium text-zinc-700">
+            Not analyzed yet ({pending.length.toLocaleString("en-US")})
+          </h2>
+          {/* Plain text, not links: these company pages have no analysis
+              yet (and are noindex), so they aren't worth a visit. */}
+          {!uncategorized && (
+            <p>
+              {pending
+                .map((c) => (c.ticker ? `${cleanCompanyName(c.name)} (${c.ticker})` : cleanCompanyName(c.name)))
+                .join(" · ")}
+            </p>
+          )}
+          <p>
+            We publish an analysis after each company&apos;s next filing.{" "}
+            <Link href="/earnings" className="underline">
+              Earnings calendar
+            </Link>
+          </p>
+        </section>
       )}
     </div>
   );

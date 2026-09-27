@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <StaticPage title={`About ${SITE_NAME}`} updated="September 20, 2026">
+    <StaticPage title={`About ${SITE_NAME}`} updated="September 28, 2026">
       <p>
         {SITE_NAME} publishes plain-English analysis of the earnings reports
         that publicly listed companies file with regulators. Each report
@@ -37,11 +37,25 @@ export default function AboutPage() {
           side-by-side comparisons of two companies, and sector scorecards.
         </li>
         <li>
+          <Link href="/scorecards">Scorecards</Link>: every company we have
+          analyzed for a quarter, compared sector by sector, and on each
+          report, how the company ranks against its industry peers.
+        </li>
+        <li>
           <Link href="/learn">Guides</Link>: short explanations of terms
           such as operating margin, free cash flow, and how to read a 10-Q,
           written for readers with no finance background.
         </li>
       </ul>
+
+      <h2>Who runs it</h2>
+      <p>
+        {SITE_NAME} is run by one person, Pham Hop, who enjoys finance and
+        reading company results, and wanted a place where anyone can see
+        what a company actually reported, in plain English, with the source
+        one click away. It is an independent side project, not part of a
+        bank, broker, or media company.
+      </p>
 
       <h2>Who writes it</h2>
       <p>

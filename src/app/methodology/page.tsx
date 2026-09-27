@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 
 export default function MethodologyPage() {
   return (
-    <StaticPage title="Methodology" updated="September 20, 2026">
+    <StaticPage title="Methodology" updated="September 28, 2026">
       <p>
         This page explains how a report on this site goes from a company&apos;s
         filing to a published analysis, and where the process can fail.
@@ -58,8 +58,20 @@ export default function MethodologyPage() {
           called out when the filing supports that reading.
         </li>
         <li>
+          A quality check: whether cash flow backs up reported profit, what
+          the company&apos;s &quot;adjusted&quot; figures leave out, and how much of
+          any earnings-per-share growth came from buybacks, tax or interest
+          rather than the business itself.
+        </li>
+        <li>
           A single takeaway, plus management&apos;s guidance where given and
           our reading of the trajectory.
+        </li>
+        <li>
+          A comparison with the company&apos;s industry peers (rank and peer
+          median for growth and margins), calculated from the figures in our
+          other published reports for the same year. The same figures feed
+          the sector <Link href="/scorecards">scorecards</Link>.
         </li>
       </ul>
 

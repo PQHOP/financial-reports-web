@@ -6,6 +6,8 @@ import { systemReports } from "@/lib/community";
 import { reportUrl } from "@/lib/reportPath";
 import { loadMacro } from "@/lib/macroStore";
 import { buildRates } from "@/lib/rates";
+import { availableScorecards } from "@/lib/scorecard";
+import { scorecardPath } from "@/lib/scorecardPath";
 
 // Sitemaps are built at request time, not baked into the build.
 export const dynamic = "force-dynamic";
@@ -15,7 +17,7 @@ const STATIC_PAGES = ["/economy", "/about", "/methodology", "/corrections", "/pr
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Only list what has real content: companies/industries with no published
   // analysis are near-empty directory pages (also `noindex`ed on the page).
-  const [industries, companies, reports, articles, macro] = await Promise.all([
+  const [industries, companies, reports, articles, macro, scorecards] = await Promise.all([
     prisma.industry.findMany({
       // The catch-all "uncategorized" bucket is noindex'd on the page itself.
       where: {
@@ -46,6 +48,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       select: { slug: true, kind: true, updatedAt: true },
     }),
     loadMacro(),
+    availableScorecards(),
   ]);
   const rates = buildRates(macro.weo, macro.live, new Date().toISOString().slice(0, 10));
   const ratesUpdated = new Date(macro.live.updatedAt);
@@ -86,6 +89,16 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: ratesUpdated,
       changeFrequency: "daily" as const,
       priority: 0.6,
+    })),
+    {
+      url: `${SITE_URL}/scorecards`,
+      changeFrequency: "weekly",
+      priority: 0.7,
+    },
+    ...scorecards.map((card) => ({
+      url: `${SITE_URL}${scorecardPath(card.year, card.period)}`,
+      changeFrequency: "daily" as const,
+      priority: 0.8,
     })),
     {
       url: `${SITE_URL}/insights`,

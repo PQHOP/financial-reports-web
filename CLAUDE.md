@@ -423,6 +423,31 @@ this pipeline end to end in one session:
    - Some forward-looking read: management's guidance if given, plus your
      own view on trajectory
 
+   **What makes a report worth reading here rather than elsewhere** (added
+   2026-09-28 for the AdSense "low value content" risk: hundreds of
+   AI-drafted pages on one template only pass if each says something a
+   press-release rewrite doesn't). Also include:
+   - **An "At a glance" list of 3 bullets** right after the opening
+     paragraph: each one figure plus what it means, for a reader who stops
+     there.
+   - **A quality check section** (e.g. `## What the headline numbers
+     hide`): go through this list and write up only what the filing
+     supports, in plain words: cash conversion (operating cash flow vs net
+     income, YTD is fine); the GAAP vs adjusted gap and exactly what is
+     excluded; one-offs in either year; receivables or inventory growing
+     faster than sales; how much of EPS growth came from buybacks, a lower
+     tax rate or lower interest rather than operations; guidance now vs
+     the previous guidance. If nothing is off, say so in one sentence — "a
+     clean quarter" is information too.
+   - **Did last time's read hold up?** If we already published this
+     company's previous period (check `/companies/<slug>`), look at what
+     that report's outlook said to watch and state in a sentence or two
+     whether it happened.
+   - Don't write a peer table: the report page renders one automatically
+     from every same-industry report's `metrics` (`src/lib/peers.ts`), and
+     the sector scorecards at `/scorecards` are built the same way — one
+     more reason `metrics` must be complete and match the body.
+
    **Writing style — analyze like an actual equity/credit analyst would,**
    not like generic press-release rewriting:
    - State what moved and why, backed by the specific line item or MD&A

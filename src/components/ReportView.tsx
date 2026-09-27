@@ -21,6 +21,13 @@ import {
   type ReportMetrics,
 } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
+import {
+  formatPeerValue,
+  latestPerCompany,
+  ordinal,
+  peerPositions,
+  type PeerPosition,
+} from "@/lib/peers";
 
 // Shared by the canonical /companies/<slug>/<year>/<period> route and by
 // /reports/<id> (community reports, and the admin's view of any report).
@@ -104,6 +111,66 @@ function MetricsSnapshot({ metrics }: { metrics: ReportMetrics }) {
   );
 }
 
+// Where this report's figures sit among the same industry's other reports for
+// the same fiscal year, from figures already published on the site.
+function PeerComparison({
+  positions,
+  label,
+  industry,
+  year,
+}: {
+  positions: PeerPosition[];
+  label: string;
+  industry: { name: string; slug: string };
+  year: number;
+}) {
+  return (
+    <section className="flex flex-col gap-2">
+      <h2 className="text-lg font-medium">
+        How {label} compares with {industry.name} peers
+      </h2>
+      <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
+        <table className="w-full text-sm">
+          <thead className="bg-zinc-50 text-left text-zinc-600">
+            <tr>
+              <th className="px-3 py-2 font-semibold">Figure</th>
+              <th className="px-3 py-2 text-right font-semibold">{label}</th>
+              <th className="px-3 py-2 text-right font-semibold">Peer median</th>
+              <th className="px-3 py-2 text-right font-semibold">Rank</th>
+            </tr>
+          </thead>
+          <tbody>
+            {positions.map((p) => (
+              <tr key={p.metric.key} className="border-t border-zinc-100">
+                <td className="px-3 py-2">{p.metric.label}</td>
+                <td className="px-3 py-2 text-right font-medium tabular-nums">
+                  {formatPeerValue(p.metric, p.value)}
+                </td>
+                <td className="px-3 py-2 text-right tabular-nums text-zinc-600">
+                  {formatPeerValue(p.metric, p.median)}
+                </td>
+                <td className="whitespace-nowrap px-3 py-2 text-right tabular-nums">
+                  {ordinal(p.rank)} of {p.of}
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p className="text-xs text-zinc-500">
+        Rank 1 = {positions.map((p) => p.metric.best).join(", ")}. Peers are
+        the other{" "}
+        <Link href={`/industries/${industry.slug}`} className="underline">
+          {industry.name}
+        </Link>{" "}
+        companies with a {year} report on this site, each at its latest period
+        we&apos;ve analyzed; fiscal calendars differ, so periods are not always the
+        same months.
+      </p>
+    </section>
+  );
+}
+
 export async function ReportView({ report }: { report: FullReport }) {
   const primaryIndustry = report.company.industries.find(
     (i) => i.slug !== "uncategorized"
@@ -113,7 +180,7 @@ export async function ReportView({ report }: { report: FullReport }) {
     .map((i) => i.id);
   const isCommunity = report.origin === "COMMUNITY";
   const ticker = report.company.ticker;
-  const [companyReports, industryReports, communityCount, related, nextFiling] =
+  const [companyReports, industryReports, communityCount, related, nextFiling, peerReports] =
     await Promise.all([
       // Sibling periods come from the same side (ours or community) as this one.
       prisma.report.findMany({
@@ -151,6 +218,18 @@ export async function ReportView({ report }: { report: FullReport }) {
           })
         : Promise.resolve([]),
       isCommunity ? Promise.resolve(null) : upcomingFiling(ticker),
+      // Same-industry, same-fiscal-year figures for the peer comparison.
+      isCommunity || !primaryIndustry
+        ? Promise.resolve([])
+        : prisma.report.findMany({
+            where: {
+              ...systemReports,
+              year: report.year,
+              NOT: { companyId: report.companyId },
+              company: { industries: { some: { id: primaryIndustry.id } } },
+            },
+            select: { companyId: true, year: true, period: true, metrics: true },
+          }),
     ]);
 
   const rank = (r: { year: number; period: FullReport["period"] }) =>
@@ -160,6 +239,13 @@ export async function ReportView({ report }: { report: FullReport }) {
   const isLatest = otherPeriods.every((other) => rank(other) < rank(report));
 
   const metrics = readMetrics(report.metrics);
+  const peers = latestPerCompany(
+    peerReports.flatMap((r) => {
+      const m = readMetrics(r.metrics);
+      return m ? [{ ...r, metrics: m }] : [];
+    })
+  );
+  const positions = metrics ? peerPositions(metrics, peers.map((p) => p.metrics)) : [];
   const cover = realCoverImage(report.coverImageUrl);
   const canonicalUrl = reportUrl(report);
   const toc = tableOfContents(report.contentMd);
@@ -257,6 +343,15 @@ export async function ReportView({ report }: { report: FullReport }) {
       )}
 
       {metrics && <MetricsSnapshot metrics={metrics} />}
+
+      {positions.length > 0 && primaryIndustry && (
+        <PeerComparison
+          positions={positions}
+          label={ticker ?? cleanCompanyName(report.company.name)}
+          industry={primaryIndustry}
+          year={report.year}
+        />
+      )}
 
       {cover && (
         // eslint-disable-next-line @next/next/no-img-element
