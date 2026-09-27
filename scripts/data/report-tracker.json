@@ -12472,5 +12472,181 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "PNR": {
+    "name": "Pentair",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj7ausk000004kzttlym0y5"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + 8-K earnings (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "Q1/Q2 2026 10-Q same day as release, 4th Tuesday after quarter end; Q3 2025 10-Q 2025-10-21",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PCG": {
+    "name": "PG&E Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj7aagb000204kx69dlw606"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + 8-K earnings (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "PG&E release: Q3 2026 earnings call Thu 2026-10-22 11:00 ET; 10-Q filed same day in Q1/Q2",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PSX": {
+    "name": "Phillips 66",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj7a4vw000104kxvbxglu6g"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + 8-K earnings (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Phillips 66 release 2026-09-16: Q3 results Oct 28, 2026",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PNW": {
+    "name": "Pinnacle West Capital",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj79wtk000004kxduupvl86"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q3 10-Qs filed 2025-11-03, 2024-11-06, 2023-11-02",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PPG": {
+    "name": "PPG Industries",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj7en4i000004l4a3xzxw8n"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026), 10-Q ~2026-10-28",
+      "estimate": "2026-10-27",
+      "basis": "Q2 release 07-28, 10-Q 07-29; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PPL": {
+    "name": "PPL Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj7f3am000304kxfj2r03bi"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q + 8-K earnings (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 10-Qs filed 2025-11-05, 2024-11-01, 2023-11-02",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PFG": {
+    "name": "Principal Financial Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj7ftzd000004l0y7zdum65"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026), 10-Q ~2026-10-28",
+      "estimate": "2026-10-26",
+      "basis": "Q2 release Mon 07-27 after close, 10-Q two days later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "PGR": {
+    "name": "Progressive Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuj7fzk7000004le1oaj7bdj"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026), 10-Q ~2026-11-02",
+      "estimate": "2026-10-14",
+      "basis": "Q3 2025 release 2025-10-15; third-party calendar lists 10/14/2026",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }

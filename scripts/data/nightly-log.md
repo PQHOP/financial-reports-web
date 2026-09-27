@@ -4510,3 +4510,10 @@ the automated scheduled-task mechanism):
     date confirmed 2026-10-21), PH FY2026 ANNUAL.
   - No skips. **Night total (09-26 night incl. catch-up): 12
     report-periods published, 467 companies done.**
+- **Extra daytime batch, 2026-09-27 ~02:30–03:10 UTC (manual session, at
+  the user's request, outside the window).** Tier 1 S&P 500 backlog, in
+  `next-batch` order: **8 report-periods published**, all Q2 2026 (10-Qs):
+  PNR, PCG, PSX, PNW, PPG, PPL, PFG, PGR (insurer fields). All 8 checked
+  live (Takeaway + Source filing present). Q3 dates confirmed for PCG
+  (10-22) and PSX (10-28). No skips. **Running total for this entry: 20
+  report-periods, 475 companies done.**
