@@ -4815,3 +4815,16 @@ the automated scheduled-task mechanism):
   +14%, GAAP loss from a $562M T&L goodwill write-down; YoY % omitted for
   net income/EPS). No skips. **Night total: 50 report-periods — cap
   reached; later firings tonight should exit.**
+- **Sixth firing this same night (checked in at 21:05 UTC / 06:05 JST
+  2026-09-28):** confirmed network access first (SEC 403 without
+  User-Agent as expected — SEC's own response, not a proxy denial — 200
+  with the required header; both `financialreportinsights.com` and the
+  `.vercel.app` alias returned 200). Working tree clean, `HEAD` at
+  `d9fa120` matching `origin/master` — the manual top-up batch above is
+  already committed and pushed. Read this entry before starting: the
+  night's running total is already 50/~50, at the cap, with the prior
+  (manual top-up) entry explicitly noting "later firings tonight should
+  exit." Still the same 16:00–22:59 UTC window (2026-09-27 night) and
+  nothing has changed since that check-in, so exiting immediately per
+  CLAUDE.md without running `scan-recent-filings` or `next-batch` or
+  touching the tracker — published nothing new this firing.
