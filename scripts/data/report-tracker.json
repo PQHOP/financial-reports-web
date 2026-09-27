@@ -13154,5 +13154,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "SBAC": {
+    "name": "SBA Communications",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk15v96000504l57zpnkcik"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q or earnings 8-K (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "Q2 earnings 8-K filed 2026-08-03, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SLB": {
+    "name": "Schlumberger",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk1679x000404jf1n8ku6xl"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "Q2 earnings released 2026-07-24, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "STX": {
+    "name": "Seagate Technology",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk16h2s000004i1fakfien6"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "earnings 8-K (fiscal Q1 2027)",
+      "estimate": "2026-10-28",
+      "basis": "prior-year Q1 FY earnings 8-K filed 2025-10-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SRE": {
+    "name": "Sempra",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk16tn6000704l5a9g8z05a"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90-day cadence from 2026-08-06 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
+  },
+  "SHW": {
+    "name": "Sherwin-Williams",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-27",
+      "url": "https://financialreportinsights.com/reports/cmuk16mfz000604l58kg1i3b7"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "Q1 and Q2 both filed same-day as 8-K, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-27"
   }
 }

@@ -4600,4 +4600,23 @@ the automated scheduled-task mechanism):
   batch.
   **Batch 3 total: 5 report-periods. Night running total: 15
   report-periods, 501 companies done.**
-- `npm run next-batch -- --n 5` (batch 4): pending.
+- `npm run next-batch -- --n 5` (batch 4): SBAC, SLB, STX, SRE, SHW (S&P
+  500 backlog, in file order).
+- **Batch 4 — 5 Opus subagents in parallel.** All 5 succeeded, all checked
+  live (200, Takeaway + Source filing present): SBAC Q2 2026 (AFFO/share
+  -3.8% on higher interest and taxes despite tower cash flow growth, US
+  leasing revenue -3.7% from Sprint/EchoStar non-renewals), SLB Q2 2026
+  (revenue growth entirely from the ChampionX acquisition — organic
+  revenue -5% — Middle East conflict cut segment margins sharply, EPS
+  -30% on dilution from acquisition shares), STX **FY2026 ANNUAL** (fiscal
+  year ended 2026-07-03; revenue +34%/net income +117% on AI/cloud-driven
+  HDD demand, exabytes shipped 789 vs 595), SRE Q2 2026 (Oncor Texas
+  earnings jumped on a retroactive rate-settlement catch-up booked in one
+  quarter — flagged as one-off — operating margin self-calculated since
+  Sempra doesn't report one), SHW Q2 2026 (Paint Stores same-store sales
+  +4.2%, price-led growth with an 8% September price increase announced,
+  guidance raised, operating margin self-calculated). Skipped: none this
+  batch.
+  **Batch 4 total: 5 report-periods. Night running total: 20
+  report-periods, 506 companies done.**
+- `npm run next-batch -- --n 5` (batch 5): pending.
