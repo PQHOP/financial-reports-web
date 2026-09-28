@@ -4848,3 +4848,64 @@ the automated scheduled-task mechanism):
   exiting immediately per CLAUDE.md without running `scan-recent-filings`
   or `next-batch` or touching the tracker — published nothing new this
   firing.
+
+### 2026-09-28 night (16:00 UTC 2026-09-28 → 22:59 UTC 2026-09-28 / 01:00–07:59 JST 2026-09-29)
+
+- Mechanism: cloud routine automated firing (`[SCHEDULED TASK]`, no live
+  user).
+- Network check: `curl https://www.sec.gov/` without a `User-Agent`
+  returned 403 (SEC's own response, expected, not a proxy denial); retry
+  with the required `User-Agent` header returned 200.
+  `financialreportinsights.com` and the `.vercel.app` alias both 200. SEC
+  and site access fine tonight.
+- Repo was in a detached-HEAD state pointing at the same commit as
+  `origin/master` at session start; `git checkout master` then showed
+  local `master` diverged from `origin/master` (stale local history —
+  `origin/master` had been force-updated to a newer `a6d9100`).
+  `git reset --hard origin/master` brought local `master` in line with
+  the remote (working tree was clean, nothing local to lose).
+- `npm install` postinstall (`prisma generate`) failed on missing
+  `DATABASE_URL` as expected (no DB access needed for this pipeline);
+  left `package-lock.json` modified, reverted with `git checkout --`.
+- This is a fresh night: no `### 2026-09-28 night` entry existed yet, so
+  the ~50 report-period cap resets for tonight.
+- `npm run scan-recent-filings`: 0 fresh tier-0 candidates (scanned
+  2026-09-22 through 2026-09-28; weekend + already-covered days).
+  Falling through to tier 1.
+- `npm run next-batch -- --n 5`: TFC, TYL, TSN, UDR, UNP (S&P 500
+  backlog, in file order) — all five had no prior tracker entry.
+- **Batch 1 — 5 Opus subagents, one per company, run in parallel.** All 5
+  succeeded and were checked live (200, Takeaway + Source filing
+  present): **TFC** Q2 2026 (EPS +37% to $1.23 but net interest income up
+  only 0.9% despite 5.7% average loan growth — most of the EPS gain came
+  from buybacks, a lower tax rate, and a reserve release rather than core
+  banking; pending sale of ~$5.5B Regional Acceptance near-prime auto
+  book noted; bank metrics profile), **TYL** Q2 2026 (SaaS revenue +21.7%
+  but GAAP operating margin fell to 14.7% from 16.0% on higher G&A/R&D; a
+  $25.0M non-cash gain on the For The Record acquisition inflated GAAP
+  net income — normalized net income was down ~19%; swung from ~$0.56B
+  net cash to ~$0.4B net debt on converts, buybacks and the acquisition),
+  **TSN** fiscal Q3 2026 (flat sales; GAAP EPS $0.52 vs $0.17 a year ago
+  when a $343M goodwill impairment hit; adjusted EPS +9% to $0.99; FY
+  adjusted operating income guidance cut on a widened Beef segment loss,
+  $500–650M vs $2.1–2.3B total; published as Q3 2026 per Tyson's own
+  fiscal-quarter labelling, quarter ended 2026-06-27), **UDR** Q2 2026
+  (FFOA/AFFO per share flat YoY despite 86% higher GAAP net income, which
+  included a $35.7M property-sale gain; same-store NOI +1.4%,
+  occupancy -0.2pt; FFOA guidance raised $0.01 but FFO guidance cut
+  $0.02 on RealPage antitrust legal costs; REIT — no dedicated FFO field
+  in the metrics schema, so JSON carries GAAP net income/EPS with FFO/AFFO
+  covered in the body), **UNP** Q2 2026 (revenue +12% but only +4%
+  excluding fuel surcharges; operating ratio worsened 0.7pt to 59.7%;
+  adjusted EPS +13% looks inflated by an uneven tax-benefit comparison
+  between years, apples-to-apples closer to +11%; buybacks paused since
+  the Norfolk Southern merger announcement, merger costs $35M in Q2/$71M
+  YTD, STB review paused pending supplemental filing due 2026-07-27).
+  Two subagents (TYL, TSN) independently caught the shared scratchpad
+  being overwritten by concurrent subagents' downloads mid-run, re-pulled
+  their filings into per-company subfolders, and verified every figure
+  came from the clean copy before publishing — noted for future batches:
+  tell each parallel subagent to use its own scratchpad subfolder
+  up front rather than relying on self-correction. No skips.
+  **Night total so far: 5 report-periods, 5 companies done (TFC, TYL,
+  TSN, UDR, UNP) — all newly added to the tracker tonight.**

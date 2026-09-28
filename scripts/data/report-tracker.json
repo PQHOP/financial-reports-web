@@ -13924,5 +13924,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-27"
+  },
+  "TFC": {
+    "name": "Truist Financial",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/tfc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q1/Q2 10-Qs filed ~2 weeks after earnings release (May 1, Jul 31); Q3 earnings 8-K expected ~2026-10-16 based on Apr 17/Jul 17 release pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "TYL": {
+    "name": "Tyler Technologies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/tyl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Tyler releases earnings and files the 10-Q same day, end of month after quarter-end (2026-04-29, then 2026-07-29)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "UDR": {
+    "name": "UDR, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/udr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q1 release 04-29, Q2 release 07-27, each 10-Q a day later; aggregators (MarketBeat, Nasdaq) list 10/28/2026 but UDR itself has not confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "UNP": {
+    "name": "Union Pacific Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/unp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "2026 filings landed Jan 27, Apr 23, Jul 23 — about 90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "TSN": {
+    "name": "Tyson Foods",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/tsn/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2026-11-16",
+      "basis": "FY2025 10-K/earnings 8-K filed 2025-11-10, FY2024 filed 2024-11-12; FY2026 is a 53-week year ending ~2026-10-03, pushing filing slightly later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
