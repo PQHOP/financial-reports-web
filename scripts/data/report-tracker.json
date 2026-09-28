@@ -14034,5 +14034,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "URI": {
+    "name": "United Rentals",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/uri/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "Files 10-Q same day as earnings 8-K; Q1/Q2 2026 both filed together on 04-22 and 07-22, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
