@@ -4909,3 +4909,35 @@ the automated scheduled-task mechanism):
   up front rather than relying on self-correction. No skips.
   **Night total so far: 5 report-periods, 5 companies done (TFC, TYL,
   TSN, UDR, UNP) — all newly added to the tracker tonight.**
+- **Batch 2 — 5 more Opus subagents, one per company, run in parallel**
+  (this time each given its own scratchpad subfolder up front per the
+  note above). `next-batch -- --n 5` gave URI, UHS, VLO, VEEV, VTR — all
+  five had no prior tracker entry. All 5 succeeded and were checked live
+  (200, Takeaway + Source filing present): **URI** Q2 2026 (rental
+  revenue +12.7% on a larger fleet plus "fleet productivity"; a scaffold-
+  business-stake sale added $0.58 to EPS; excluding it, adjusted EBITDA
+  margin actually fell 40bps; cash taxes fell sharply on the 2025 federal
+  tax law, a timing effect not a lower rate), **UHS** Q2 2026 (net income
+  +1.5% but EPS +10.1% — almost entirely buybacks, diluted share count
+  -7.8%; a $100M one-time Florida Medicaid benefit partly offset by a
+  $28M malpractice reserve increase; adjusted EPS guidance midpoint cut
+  2.6% despite including that benefit; confirmed distinct from Universal
+  Health Realty Income Trust (UHT), a different company in the same
+  dropdown), **VLO** Q2 2026 (refining margin per barrel more than
+  doubled to $23.62 from $12.35 on wider diesel/gasoline cracks; net
+  income +421%; Port Arthur refinery fire and Benicia closure both
+  covered), **VEEV** fiscal Q2 2027 (Veeva's own label; quarter ended
+  2026-07-31, published on this site as calendar-year 2026 Q2 — stated
+  explicitly in the body to avoid ambiguity; beat its own guidance range
+  again, but Q3/Q4 guidance implies growth decelerating from ~18% to
+  ~12.5%; last year's quarter carried a one-off $30.6M legal charge that
+  flatters the YoY net income comparison), **VTR** Q2 2026 (normalized
+  FFO/share +9% but total normalized FFO +18% — diluted share count grew
+  8.4% on equity-funded acquisitions; SHOP (senior housing) same-store
+  cash NOI +16.3% on occupancy recovery, the main growth driver; GAAP EPS
+  fell YoY only because Q2 2025 had a one-off $33.8M property-sale gain;
+  no dedicated FFO field in the metrics schema, so JSON carries GAAP
+  figures with FFO/normalized-FFO covered in the body). No skips.
+  **Night total: 10 report-periods, 10 companies done tonight (TFC, TYL,
+  TSN, UDR, UNP, URI, UHS, VLO, VEEV, VTR) — well under the ~50 cap, still
+  early in the window (~01:20 JST). Continuing with more batches.**

@@ -14122,5 +14122,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "VEEV": {
+    "name": "Veeva Systems",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/veev/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2027)",
+      "estimate": "2026-12-03",
+      "basis": "Veeva reports ~4-5 weeks after quarter end (Q1 on 06-03, Q2 on 08-26/08-27); Q3 FY2027 quarter ends 2026-10-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
