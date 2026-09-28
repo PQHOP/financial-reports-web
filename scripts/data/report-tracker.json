@@ -14628,5 +14628,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "WTW": {
+    "name": "Willis Towers Watson",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wtw/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q1/Q2 10-Q and earnings 8-K each filed same day (Apr 30, Jul 30), ~90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "WDAY": {
+    "name": "Workday, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wday/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2027)",
+      "estimate": "2026-11-24",
+      "basis": "Q3 FY2026 earnings 8-K filed 2025-11-25; ~90 day cadence from 2026-08-27",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
