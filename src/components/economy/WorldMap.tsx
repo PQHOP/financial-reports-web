@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState, type ReactNode } from "react";
 import type { MapData } from "@/lib/macro";
 
 type View = { k: number; x: number; y: number };
@@ -18,6 +18,8 @@ export function WorldMap({
   focusCode,
   onHover,
   onSelect,
+  overlay,
+  hint = "click a country for its details",
 }: {
   map: MapData;
   fill: (code: string) => string;
@@ -26,6 +28,11 @@ export function WorldMap({
   focusCode: { code: string; nonce: number } | null;
   onHover: (code: string | null, name: string, clientX: number, clientY: number) => void;
   onSelect: (code: string | null) => void;
+  // Extra marks drawn above the countries, given the zoom factor so marker
+  // sizes can stay constant on screen. Marks set data-code / data-name like
+  // the country paths to take part in hover and tap.
+  overlay?: (k: number) => ReactNode;
+  hint?: string;
 }) {
   const svgRef = useRef<SVGSVGElement>(null);
   const pathRefs = useRef(new Map<string, SVGPathElement>());
@@ -189,6 +196,7 @@ export function WorldMap({
               pointerEvents="none"
             />
           ))}
+          {overlay?.(view.k)}
         </g>
       </svg>
       <div className="absolute right-2 top-2 flex flex-col overflow-hidden rounded-md border border-zinc-300 bg-white shadow-sm">
@@ -203,7 +211,7 @@ export function WorldMap({
         </button>
       </div>
       <p className="mt-1 text-xs text-zinc-500">
-        Scroll or pinch to zoom, drag to move, click a country for its details.
+        Scroll or pinch to zoom, drag to move, {hint}.
         {view.k > 1 && <span> Zoom {view.k.toFixed(1)}×</span>}
       </p>
     </div>

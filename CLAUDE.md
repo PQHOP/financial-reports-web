@@ -721,6 +721,17 @@ the user is tracked at its end. Things future sessions should know:
   reported for ~9 months drops out (404). Only central bank *names* are
   hand-written (`CENTRAL_BANKS`). No `loading.tsx` under `src/app/rates/`:
   streaming would turn those 308s/404s into 200s.
+- **World risk monitor (`/world-risks`, since 2026-09-29):** disasters
+  (GDACS), earthquakes (USGS), WHO Disease Outbreak News and ship transits
+  through 28 maritime chokepoints (IMF PortWatch), on the `/economy` map
+  geometry. `src/lib/worldRisks.ts` fetches each source server-side and
+  caches its result with `unstable_cache` (10–60 min) — no DB, no model
+  calls, no usage budget. Markers are placed with the map's own
+  NaturalEarth1 projection (constants in `src/data/world-places.json`,
+  regenerate with `npx tsx scripts/build-world-places.ts` only if the map
+  changes). A feed that fails leaves its layer empty with a red status dot;
+  it never breaks the page. Figures are shown as the source publishes them
+  (PortWatch lags about a week — say so, don't call it real-time).
 - `www.` 308s to the bare domain in `src/proxy.ts`.
 - **Company names:** ~1,250 us-listed names carry a NASDAQ listing suffix
   ("- Class A", "- Ordinary Shares"). Public pages wrap names in

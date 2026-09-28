@@ -77,7 +77,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 type="search"
                 name="q"
                 aria-label="Search companies"
-                placeholder="Company or ticker…"
+                placeholder="Search ticker…"
                 className="w-full rounded-md border border-zinc-300 px-3 py-1.5 text-sm outline-none focus:border-zinc-500"
               />
             </Form>

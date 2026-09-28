@@ -1,3 +1,4 @@
+import Link from "next/link";
 import type { Metadata } from "next";
 import { EconomyDashboard } from "@/components/economy/EconomyDashboard";
 import { JsonLd } from "@/components/JsonLd";
@@ -84,7 +85,11 @@ export default async function EconomyPage({ searchParams }: PageProps<"/economy"
           (today&apos;s exchange rates). Latest figures refreshed {live.updatedAt.slice(0, 16).replace("T", " ")} UTC.
         </p>
         <p>
-          Countries publish on different schedules, so &quot;latest&quot; means different months for different countries; each figure shows
+          Disasters, outbreaks and shipping chokepoints are on the{" "}
+          <Link href="/world-risks" className="underline">
+            world risk monitor
+          </Link>
+          . Countries publish on different schedules, so &quot;latest&quot; means different months for different countries; each figure shows
           its own period. Region and group totals are IMF annual figures. IMF estimates and forecasts are revised with each edition (April and
           October). Map boundaries are for illustration only.
         </p>

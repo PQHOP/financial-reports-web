@@ -9,6 +9,7 @@ const LINKS = [
   { href: "/scorecards", label: "Scorecards" },
   { href: "/economy", label: "Economy" },
   { href: "/rates", label: "Rates" },
+  { href: "/world-risks", label: "Risks" },
   { href: "/insights", label: "Insights" },
   { href: "/learn", label: "Learn" },
 ];
@@ -19,7 +20,7 @@ export function SiteNav() {
   const pathname = usePathname();
   return (
     <nav aria-label="Main" className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
-      <ul className="flex gap-5 whitespace-nowrap text-sm">
+      <ul className="flex gap-4 whitespace-nowrap text-sm">
         {LINKS.map((link) => {
           const active = pathname === link.href || pathname.startsWith(`${link.href}/`);
           return (
