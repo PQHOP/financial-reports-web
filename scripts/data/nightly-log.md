@@ -5048,3 +5048,42 @@ the automated scheduled-task mechanism):
   `--edit` to tighten one outlook sentence). No skips.
   **Night total: 25 report-periods, 25 companies done tonight — still
   well under the ~50 cap, ~01:41 JST. Continuing with more batches.**
+- **Batch 6 — 5 more Opus subagents, one per company, run in parallel**
+  (each given its own scratchpad subfolder). `next-batch -- --n 5` gave
+  WEC, WELL, WST, WDC, WY — all five had no prior tracker entry. All 5
+  succeeded and were checked live (200, Takeaway + Source filing
+  present): **WEC** Q2 2026 (utility; EPS +19.7% to $0.91; new Wisconsin
+  rates added $44.2M of margin, roughly offset by unfavorable weather
+  (-$20.4M) against new Microsoft data-center load (+$20.2M, first phase
+  in service since April) — the two nearly cancelled out; ~42% of the H1
+  net-income rise came from AFUDC-equity, the return booked on
+  still-under-construction projects, not from operations already earning
+  revenue; guidance reaffirmed at $5.51-5.61), **WELL** Q2 2026
+  (normalized FFO/share +25% even with diluted share count +10.4% from
+  ~$4.48B of new equity issued to fund acquisitions; same-store Senior
+  Housing Operating NOI +20.5% on occupancy recovery to 89.4%; GAAP EPS
+  inflated by a $98.5M property-sale gain and a $71.3M Canadian tax
+  benefit; full-year normalized FFO guidance raised but GAAP EPS guidance
+  cut on higher depreciation), **WST** Q2 2026 (Biologics sales +29.2%
+  ex-currency led Proprietary Products gross margin to 42.6%, +2.5pt, but
+  the renamed West Vantage contract-manufacturing segment's operating
+  profit fell 27.5% partly on a May 2026 cyberattack costing ~$7M of
+  sales; some growth flagged as pull-forward stocking of a device ahead
+  of its sale to AbbVie closing in July; guidance raised but Q3 guidance
+  implies only 1.9-3.8% reported growth, a deceleration), **WDC**
+  published as **ANNUAL** (FY2026 10-K, a 53-week year ended 2026-07-03 —
+  the only annual report this batch, correctly identified since FY2026
+  results were already fully out; GAAP net income +474% almost entirely
+  from a one-time non-cash $6.5B gain on retained SanDisk shares since
+  fully sold/swapped by year-end, so won't repeat; non-GAAP EPS $10.22 vs
+  $5.02 stated separately in the body; underlying Cloud/hyperscaler HDD
+  demand strong on its own — exabytes shipped +25%, price/exabyte +8%),
+  **WY** Q2 2026 (timber REIT; GAAP EPS $0.12→$0.23 driven almost
+  entirely by a $71M Oregon timberland sale gain plus a tax swing —
+  underlying adjusted EBITDA actually fell 7.7% and pre-tax earnings
+  before special items fell 23%; Wood Products segment EBITDA +28% on
+  lumber price, Timberlands segment EBITDA -19%; YTD dividends already
+  running ahead of adjusted funds available for distribution, flagged as
+  a coverage concern). No skips.
+  **Night total: 30 report-periods, 30 companies done tonight — still
+  well under the ~50 cap, ~01:48 JST. Continuing with more batches.**

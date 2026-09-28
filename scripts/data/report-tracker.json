@@ -14562,5 +14562,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "WEC": {
+    "name": "WEC Energy Group",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wec/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q3 2025 10-Q filed 2025-10-31; Q2 2026 10-Q filed 2026-08-04, ~90 days earlier",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
