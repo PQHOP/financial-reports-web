@@ -14386,5 +14386,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "GWW": {
+    "name": "W. W. Grainger",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/gww/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q1 filed May 7, Q2 filed Aug 4; 8-K and 10-Q filed same day each quarter",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "WAB": {
+    "name": "Wabtec",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wab/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Files 10-Q same day as earnings 8-K, ~22 days after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "WM": {
+    "name": "Waste Management",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings)",
+      "estimate": "2026-10-27",
+      "basis": "WM press release 2026-09-24 confirmed results after close 2026-10-27, call 2026-10-28; 10-Q to follow ~2026-10-28 (estimated)",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
