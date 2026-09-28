@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { JsonLd } from "@/components/JsonLd";
 import { RiskMap } from "@/components/worldRisks/RiskMap";
+import { ImpactBody } from "@/components/worldRisks/ImpactBody";
 import { LEVEL_COLOR, LEVEL_LABEL, formatEventDate } from "@/components/worldRisks/riskStyle";
 import type { MapData } from "@/lib/macro";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
@@ -14,6 +15,9 @@ import {
   type RiskEvent,
   type SourceStatus,
 } from "@/lib/worldRisks";
+import { allImpactTickers, impactFor, type ResolvedImpact } from "@/lib/riskImpacts";
+import { prismaCached as prisma } from "@/lib/prisma";
+import { systemReports } from "@/lib/community";
 import mapJson from "@/data/world-map.json";
 
 // Dynamic like every data page (per-request CSP nonce); the feeds themselves
@@ -137,6 +141,27 @@ function ChokepointTable({ events }: { events: RiskEvent[] }) {
   );
 }
 
+function ImpactList({ items }: { items: { e: RiskEvent; impact: ResolvedImpact }[] }) {
+  return (
+    <ul className="flex flex-col gap-3">
+      {items.map(({ e, impact }) => (
+        <li key={e.id} className="rounded-lg border border-zinc-200 bg-white p-4">
+          <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+            <span className="font-medium text-zinc-900">{e.title}</span>
+            <Badge e={e} />
+            {e.layer === "chokepoint" && e.change !== undefined && (
+              <span className="text-xs text-zinc-600">
+                ships {e.change.toFixed(0)}% vs a year ago
+              </span>
+            )}
+          </div>
+          <ImpactBody impact={impact} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function Tile({ value, label, note }: { value: number | string; label: string; note: string }) {
   return (
     <div className="rounded-lg border border-zinc-200 bg-white px-4 py-3">
@@ -182,6 +207,36 @@ export default async function WorldRisksPage() {
   const choke = [...chokepoints.events].sort((a, b) => a.change! - b.change!);
   const all = [...disasters.events, ...quakes.events, ...outbreaks.events, ...chokepoints.events];
 
+  // Link only companies with a published analysis (their page is the target).
+  // A database hiccup only drops the company links, not the page.
+  const covered = await prisma.company
+    .findMany({
+      where: { ticker: { in: allImpactTickers() }, reports: { some: systemReports } },
+      select: { ticker: true, slug: true },
+    })
+    .catch(() => []);
+  const hrefByTicker = new Map(covered.map((c) => [c.ticker!, `/companies/${c.slug}`]));
+  const impacts: Record<string, ResolvedImpact> = {};
+  for (const e of all) {
+    const impact = impactFor(e);
+    if (!impact) continue;
+    const groups = impact.groups
+      .map((g) => ({
+        role: g.role,
+        companies: g.tickers.flatMap((t) => {
+          const href = hrefByTicker.get(t);
+          return href ? [{ ticker: t, href }] : [];
+        }),
+      }))
+      .filter((g) => g.companies.length > 0);
+    if (groups.length > 0) impacts[e.id] = { why: impact.why, groups };
+  }
+  const impactItems = all
+    .filter((e) => impacts[e.id])
+    // Same level: the bigger traffic drop first.
+    .sort((a, b) => bySeverity(a, b) || (a.change ?? 0) - (b.change ?? 0))
+    .map((e) => ({ e, impact: impacts[e.id] }));
+
   const activeSevere = serious.filter((e) => e.current).length;
   // Titles read "M6.6 earthquake".
   const bigQuakes = quakes.events.filter((e) => e.current && parseFloat(e.title.slice(1)) >= 6).length;
@@ -226,7 +281,24 @@ export default async function WorldRisksPage() {
         />
       </div>
 
-      <RiskMap map={map} events={all} />
+      <RiskMap map={map} events={all} impacts={impacts} />
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-medium">Why markets care: companies in the path</h2>
+        <p className="max-w-3xl text-sm text-zinc-600">
+          For the events above that have a well-established link to business results, how the effect usually
+          travels and which companies we cover sit on that path. This describes exposure, not a forecast: how
+          much an event matters depends on how long it lasts, and each company&apos;s latest analysis has the
+          detail.
+        </p>
+        {impactItems.length > 0 ? (
+          <ImpactList items={impactItems} />
+        ) : (
+          <p className="text-sm text-zinc-500">
+            None of today&apos;s events has a direct link to the companies we cover.
+          </p>
+        )}
+      </section>
 
       <section className="flex flex-col gap-2">
         <h2 className="text-lg font-medium">Shipping chokepoints: traffic vs a year ago</h2>

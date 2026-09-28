@@ -732,6 +732,12 @@ the user is tracked at its end. Things future sessions should know:
   changes). A feed that fails leaves its layer empty with a red status dot;
   it never breaks the page. Figures are shown as the source publishes them
   (PortWatch lags about a week — say so, don't call it real-time).
+  "Why markets care" (`src/lib/riskImpacts.ts`) is a hand-written rule
+  table: event type + place -> the channel it travels through -> tickers
+  we cover (linked only if they have a published report). Keep rules to
+  well-established links (a chokepoint's cargo, Gulf storms and
+  refineries, drought in grain exporters); never claim a specific
+  company's exposure or add a rule you can't source.
 - `www.` 308s to the bare domain in `src/proxy.ts`.
 - **Company names:** ~1,250 us-listed names carry a NASDAQ listing suffix
   ("- Class A", "- Ordinary Shares"). Public pages wrap names in

@@ -4,6 +4,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { WorldMap } from "@/components/economy/WorldMap";
 import type { MapData } from "@/lib/macro";
 import type { RiskEvent, RiskLayer, RiskLevel } from "@/lib/worldRisks";
+import type { ResolvedImpact } from "@/lib/riskImpacts";
+import { ImpactBody } from "@/components/worldRisks/ImpactBody";
 import { LAYER_INFO, LEVEL_COLOR, LEVEL_LABEL, formatEventDate } from "@/components/worldRisks/riskStyle";
 
 const LAND = "#e4e3de";
@@ -41,7 +43,15 @@ function Marker({ e, k, unit }: { e: RiskEvent; k: number; unit: number }) {
   }
 }
 
-export function RiskMap({ map, events }: { map: MapData; events: RiskEvent[] }) {
+export function RiskMap({
+  map,
+  events,
+  impacts,
+}: {
+  map: MapData;
+  events: RiskEvent[];
+  impacts: Record<string, ResolvedImpact>;
+}) {
   const [layers, setLayers] = useState<Record<RiskLayer, boolean>>({
     disaster: true,
     quake: true,
@@ -136,6 +146,12 @@ export function RiskMap({ map, events }: { map: MapData; events: RiskEvent[] }) 
               ✕
             </button>
           </div>
+          {impacts[selected.id] && (
+            <div className="mt-3 border-t border-zinc-100 pt-2">
+              <div className="text-xs font-medium uppercase tracking-wide text-zinc-500">Why markets care</div>
+              <ImpactBody impact={impacts[selected.id]} />
+            </div>
+          )}
           <a href={selected.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block text-blue-700 underline">
             Source details
           </a>
