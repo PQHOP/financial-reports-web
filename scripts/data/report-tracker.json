@@ -14916,5 +14916,110 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "AAPG": {
+    "name": "Ascentage Pharma Group International",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-28",
+      "url": "https://financialreportinsights.com/companies/aapg/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim report)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-17"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-29",
+      "basis": "FY2025 20-F filed 2026-04-29; annual results 6-K likely late March 2027",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-28"
+  },
+  "AARD": {
+    "name": "Aardvark Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-28",
+      "url": "https://financialreportinsights.com/companies/aard/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-28"
+  },
+  "ABCL": {
+    "name": "AbCellera Biologics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-28",
+      "url": "https://financialreportinsights.com/companies/abcl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2025 10-Q filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-28"
+  },
+  "ABEO": {
+    "name": "Abeona Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-28",
+      "url": "https://financialreportinsights.com/companies/abeo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-28"
+  },
+  "ABLV": {
+    "name": "Able View Global Inc.",
+    "status": "skipped",
+    "skipReason": "no 2026 financial results on EDGAR as of 2026-09-28; latest periodic filing is the FY2025 20-F (filed 2026-04-27); Sept 2026 6-K/424B5 cover only a US$2M share sale",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-27"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 results)",
+      "estimate": "2026-10-15",
+      "basis": "H1 2025 6-K filed 2025-09-30, H1 2024 filed 2024-12-19 - timing has varied, re-check early October",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-28"
   }
 }

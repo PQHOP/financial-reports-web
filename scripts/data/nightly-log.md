@@ -5245,3 +5245,66 @@ the automated scheduled-task mechanism):
   running `next-batch`, not just before publishing, to avoid acting on a
   stale tracker snapshot when a prior turn in the same session may still
   be finishing.**
+- **Batch 10 (~18:05 UTC / ~03:05 JST), next hourly firing.** Pulled
+  `origin/master` before running `next-batch` this time (per the lesson
+  above) — confirmed in sync at `b8b240d`. `scan-recent-filings` found 0
+  fresh tier-0 candidates again (same window as batch 9). Tier 1 is now
+  entirely `us-listed`, as noted after batch 9. `next-batch -- --n 5`
+  returned **AAPG, AARD, ABCL, ABEO, ABLV** (first 5 of the `us-listed`
+  backlog in file order). 44/~50 published so far tonight left room for
+  one more modest batch before the cap; dispatched 5 Opus subagents in
+  parallel, one per company. All 5 finished and reported back; the
+  orchestrator did its own cache-busted fetch of each live page to
+  confirm the Takeaway callout and Source filing link render with no
+  truncation before counting it, per CLAUDE.md's sanity-check rule. 4
+  published, 1 skipped:
+  - **AAPG** (Ascentage Pharma Group International, ADS) — published as
+    **H1 2026** (foreign private issuer, files 20-F/6-K; the qualifying
+    period is the six months to 2026-06-30, from the 6-K filed
+    2026-09-17). Revenue (RMB) +29.3% to RMB302.2M but product sales were
+    essentially flat vs H2 2025, so the YoY comparison is mostly against
+    the pre-lisaftoclax-launch period; net loss widened 38.3% to RMB817M
+    on higher selling costs (lisaftoclax launch) and R&D (nine Phase III
+    trials); ~RMB68M of one-offs (impairment, FX loss, donations) flagged;
+    borrowings (RMB2.09B) exceed cash (RMB1.90B) with RMB1.48B due within
+    a year — funding need within 12-18 months flagged in the outlook. One
+    inaccurate sentence in the first publish ("held in a range for a
+    year" — only true for two halves) was caught and fixed via `--edit`
+    before the live-page check.
+  - **AARD** (Aardvark Therapeutics) — published **Q2 2026**. No revenue;
+    lead drug ARD-101 on FDA clinical hold since May 2026 (Phase 3 HERO
+    trial ended June 2026); net loss flat at $14.4M; cash runway guidance
+    extended three times this year (Q2 2027 → mid-2027 → late 2027) each
+    time via cost cuts, not new financing — report notes current cash
+    wouldn't cover a new Phase 3 trial without a raise.
+  - **ABCL** (AbCellera Biologics) — published **Q2 2026**. Revenue -76%
+    to $4.1M and net loss widened to $55.4M against a Q2 2025 that
+    included a one-time $10.4M licensing payment and a $9.5M FX gain;
+    underlying quarterly cash burn ~$50M once the $56M Jazz upfront and
+    $36M settlement cash are excluded from H1's reported $7.6M burn;
+    post-quarter events covered (Vertex $28M upfront, positive ABCL635
+    Phase 2 data, $200M share sale).
+  - **ABEO** (Abeona Therapeutics) — published **Q2 2026**. ZEVASKYN
+    (gene therapy) net revenue $11.4M (+31% vs Q1) on 5 patients treated;
+    operating loss narrowed to $13.7M from Q1's $23.0M (which included a
+    one-time $7.0M licensing fee); net loss $20.2M including a $7.2M
+    non-cash warrant-revaluation loss; gross margin fell to 63.3% from
+    69.1% on a cost reclassification; revenueYoyPct/netIncomeYoyPct/
+    epsYoyPct omitted as not meaningful (prior-year profit came from a
+    one-time $152.4M priority-review-voucher sale).
+  - **ABLV** (Able View Global) — **skipped**: no 2026 financial results
+    on EDGAR yet. Latest periodic filing is the FY2025 20-F (filed
+    2026-04-27); the only September 2026 6-K/424B5 activity is a $2.0M
+    share sale, no financials. H1 2026 results likely due late
+    Sept-Dec 2026 based on prior-year timing (re-check early October).
+  All 4 published reports verified live (200, full content, no
+  truncation) via a cache-busted fetch by the orchestrator itself, not
+  just the subagents' own claims.
+  **Night total: 48 report-periods published tonight (44 through batch 9,
+  plus AAPG/AARD/ABCL/ABEO in batch 10), 5 companies skipped with reasons
+  tonight (AACI, AACO, AACP, AACG, ABLV) — 581 companies done / 7 skipped
+  overall (tracker-wide, across all nights), 598 report-periods total
+  across all time. Stopping here: 48/~50 is at the cap, and this was the
+  planned single small batch for this firing (44 + 5 candidates, one
+  skipped) rather than a full new round. Next firing should treat tonight
+  as done unless the count needs rechecking against a fresh pull.**
