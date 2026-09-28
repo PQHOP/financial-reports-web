@@ -14584,5 +14584,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "WSM": {
+    "name": "Williams-Sonoma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wsm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-08-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2026)",
+      "estimate": "2026-11-24",
+      "basis": "Q3 2025 8-K filed 2025-11-19, 10-Q filed 2025-11-25",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "WMB": {
+    "name": "Williams Companies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wmb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "Q1 released 05-04, Q2 released 08-03, 10-Q same day each time, ~90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
