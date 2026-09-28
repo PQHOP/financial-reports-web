@@ -14144,5 +14144,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "VLTO": {
+    "name": "Veralto",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/vlto/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Files earnings 8-K then 10-Q next day, ~25 days after quarter-end (Q1 Apr 28/29, Q2 Jul 28/29); Q3 ends 2026-10-02",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
