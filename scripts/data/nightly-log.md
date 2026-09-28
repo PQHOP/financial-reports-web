@@ -5339,3 +5339,24 @@ the automated scheduled-task mechanism):
   immediately per CLAUDE.md's "later firings that night should see the
   count and exit immediately." **Night total unchanged: 48
   report-periods published, 5 skipped.**
+- **Batch 13 (~21:0x UTC / ~06:0x JST), later hourly firing.** Network
+  check passed (SEC 403 without `User-Agent`, expected; 200 with it; both
+  `financialreportinsights.com` and the `.vercel.app` alias 200). Local
+  checkout was in a stale detached-HEAD state again at session start
+  (`git checkout master` reported local/`origin/master` as unrelated
+  histories — a shallow-clone depth artifact, confirmed by unshallowing
+  and checking `merge-base --is-ancestor`, not real divergence); brought
+  in sync with a plain `git merge --ff-only origin/master` at `5756b17`
+  (working tree was clean, nothing local to lose). `npm install`
+  postinstall (`prisma generate`) failed on missing `DATABASE_URL` as
+  expected; left `package-lock.json` modified, reverted with
+  `git checkout --`. Per this entry's own running count, tonight already
+  sits at 48/~50 — at the cap, per batch 10's explicit stop decision and
+  batches 11-12's reconfirmation. Ran `scan-recent-filings` anyway to
+  check for a tier-0 exception: **0 fresh candidates** (2026-09-22
+  through 2026-09-28 scanned, same window as batches 9-12 — nothing new
+  since). No exception applies, so this firing did not dispatch any
+  research subagents or publish anything — exiting immediately per
+  CLAUDE.md's "later firings that night should see the count and exit
+  immediately." **Night total unchanged: 48 report-periods published,
+  5 skipped.**
