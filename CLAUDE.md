@@ -681,6 +681,13 @@ the user is tracked at its end. Things future sessions should know:
     `metrics` for the same quarter (kind `SCORECARD`, table of revenue
     growth / operating margin / EPS growth by company, top and bottom
     movers with the reason from each report).
+- **Charts (since 2026-09-29)** live in `src/components/ReportCharts.tsx`,
+  plain server-rendered HTML (no chart library, light-only palette):
+  "this period vs a year ago" bars on every report (year-ago figure implied
+  from the stored YoY %), a dot strip per peer figure in the peer
+  comparison, and a headline-figure trend on company pages once there are
+  ≥2 quarters (or ≥2 full years). All three read only `metrics` — one more
+  reason it must be complete.
 - **Thin pages stay out of the index:** companies/industries/years with no
   report are `noindex` and absent from `sitemap.xml`. Don't add them back.
 - **Report URLs (since 2026-09-25):** our own analyses live at

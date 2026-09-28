@@ -21,6 +21,7 @@ import {
   type ReportMetrics,
 } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
+import { PeerStrip, PeerStripLegend, YearOverYearChart } from "@/components/ReportCharts";
 import {
   formatPeerValue,
   latestPerCompany,
@@ -129,33 +130,25 @@ function PeerComparison({
       <h2 className="text-lg font-medium">
         How {label} compares with {industry.name} peers
       </h2>
-      <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
-        <table className="w-full text-sm">
-          <thead className="bg-zinc-50 text-left text-zinc-600">
-            <tr>
-              <th className="px-3 py-2 font-semibold">Figure</th>
-              <th className="px-3 py-2 text-right font-semibold">{label}</th>
-              <th className="px-3 py-2 text-right font-semibold">Peer median</th>
-              <th className="px-3 py-2 text-right font-semibold">Rank</th>
-            </tr>
-          </thead>
-          <tbody>
-            {positions.map((p) => (
-              <tr key={p.metric.key} className="border-t border-zinc-100">
-                <td className="px-3 py-2">{p.metric.label}</td>
-                <td className="px-3 py-2 text-right font-medium tabular-nums">
+      <div className="flex flex-col gap-4 rounded-lg border border-zinc-200 bg-white p-4">
+        <PeerStripLegend label={label} />
+        {positions.map((p) => (
+          <div key={p.metric.key} className="flex flex-col gap-1.5 border-t border-zinc-100 pt-3">
+            <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-0.5 text-sm">
+              <span className="text-zinc-700">{p.metric.label}</span>
+              <span className="tabular-nums text-zinc-600">
+                <span className="font-semibold text-zinc-900">
                   {formatPeerValue(p.metric, p.value)}
-                </td>
-                <td className="px-3 py-2 text-right tabular-nums text-zinc-600">
-                  {formatPeerValue(p.metric, p.median)}
-                </td>
-                <td className="whitespace-nowrap px-3 py-2 text-right tabular-nums">
+                </span>{" "}
+                · median {formatPeerValue(p.metric, p.median)} ·{" "}
+                <span className="whitespace-nowrap font-medium text-zinc-900">
                   {ordinal(p.rank)} of {p.of}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+                </span>
+              </span>
+            </div>
+            <PeerStrip position={p} label={label} />
+          </div>
+        ))}
       </div>
       <p className="text-xs text-zinc-500">
         Rank 1 = {positions.map((p) => p.metric.best).join(", ")}. Peers are
@@ -228,7 +221,13 @@ export async function ReportView({ report }: { report: FullReport }) {
               NOT: { companyId: report.companyId },
               company: { industries: { some: { id: primaryIndustry.id } } },
             },
-            select: { companyId: true, year: true, period: true, metrics: true },
+            select: {
+              companyId: true,
+              year: true,
+              period: true,
+              metrics: true,
+              company: { select: { name: true, ticker: true } },
+            },
           }),
     ]);
 
@@ -245,7 +244,15 @@ export async function ReportView({ report }: { report: FullReport }) {
       return m ? [{ ...r, metrics: m }] : [];
     })
   );
-  const positions = metrics ? peerPositions(metrics, peers.map((p) => p.metrics)) : [];
+  const positions = metrics
+    ? peerPositions(
+        metrics,
+        peers.map((p) => ({
+          metrics: p.metrics,
+          label: p.company.ticker ?? cleanCompanyName(p.company.name),
+        }))
+      )
+    : [];
   const cover = realCoverImage(report.coverImageUrl);
   const canonicalUrl = reportUrl(report);
   const toc = tableOfContents(report.contentMd);
@@ -336,6 +343,8 @@ export async function ReportView({ report }: { report: FullReport }) {
       )}
 
       {metrics && <MetricsSnapshot metrics={metrics} />}
+
+      {metrics && <YearOverYearChart metrics={metrics} />}
 
       {positions.length > 0 && primaryIndustry && (
         <PeerComparison

@@ -73,29 +73,38 @@ export function latestPerCompany<T extends WithCompany>(rows: T[]): T[] {
   return [...latest.values()];
 }
 
+export type PeerPoint = { value: number; label: string };
+
 export type PeerPosition = {
   metric: PeerMetric;
   value: number;
   median: number;
   rank: number; // 1 = best
   of: number;
+  // Every peer's figure (self excluded), for the distribution chart.
+  points: PeerPoint[];
 };
 
 // Where `self` sits among `peers` (self included in the count) for each of its
 // profile's figures. Only peers of the same profile are compared, since a
 // bank's "revenue growth" and an industrial's are not like for like.
-export function peerPositions(self: ReportMetrics, peers: ReportMetrics[]): PeerPosition[] {
+export function peerPositions(
+  self: ReportMetrics,
+  peers: { metrics: ReportMetrics; label: string }[]
+): PeerPosition[] {
   const profile = metricsProfile(self);
-  const sameProfile = peers.filter((m) => metricsProfile(m) === profile);
+  const sameProfile = peers.filter((p) => metricsProfile(p.metrics) === profile);
   return PEER_METRICS[profile].flatMap((metric) => {
     const value = self[metric.key];
     if (typeof value !== "number") return [];
-    const others = sameProfile
-      .map((m) => m[metric.key])
-      .filter((v): v is number => typeof v === "number");
+    const points = sameProfile.flatMap((p) => {
+      const v = p.metrics[metric.key];
+      return typeof v === "number" ? [{ value: v, label: p.label }] : [];
+    });
+    const others = points.map((p) => p.value);
     const all = [...others, value];
     if (all.length < MIN_PEERS) return [];
     const better = others.filter((v) => (metric.higherIsBetter ? v > value : v < value)).length;
-    return [{ metric, value, median: median(all)!, rank: better + 1, of: all.length }];
+    return [{ metric, value, median: median(all)!, rank: better + 1, of: all.length, points }];
   });
 }

@@ -20,6 +20,7 @@ import {
 } from "@/lib/metrics";
 import type { ReportPeriod } from "@/generated/prisma/client";
 import { cleanCompanyName } from "@/lib/companyName";
+import { PeriodTrendChart } from "@/components/ReportCharts";
 
 export const dynamic = "force-dynamic";
 
@@ -224,6 +225,17 @@ export default async function CompanyPage({
             </div>
           )}
         </div>
+      )}
+
+      {source === "system" && (
+        <PeriodTrendChart
+          rows={history.map(({ report, metrics: m }) => ({
+            year: report.year,
+            period: report.period,
+            metrics: m!,
+            href: reportPath({ ...report, company }),
+          }))}
+        />
       )}
 
       {source === "system" && history.length > 0 && (
