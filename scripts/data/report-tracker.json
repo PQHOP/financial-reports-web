@@ -14342,5 +14342,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "VST": {
+    "name": "Vistra Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/vst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2025 earnings release 2025-11-06, 10-Q filed 2025-11-07; TipRanks lists Nov 5 2026 but unverified against a primary source",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }

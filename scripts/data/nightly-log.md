@@ -4975,3 +4975,45 @@ the automated scheduled-task mechanism):
   roughly doubled since December — as a partial stand-in). No skips.
   **Night total: 15 report-periods, 15 companies done tonight — still
   well under the ~50 cap, ~01:27 JST. Continuing with more batches.**
+- **Batch 4 — 5 more Opus subagents, one per company, run in parallel**
+  (each given its own scratchpad subfolder again). `next-batch -- --n 5`
+  gave VTRS, VICI, VST, VMRK, VMC — all five had no prior tracker entry.
+  Before dispatching, independently verified via SEC's
+  `company_tickers.json` and the EDGAR submissions API that "Vivmark
+  Residential (VMRK)" — an unfamiliar name — is not bad seed data: it's
+  the new legal name of **Equity Residential** (same CIK 906107) following
+  its 2026-08-17 all-stock merger of equals with AvalonBay Communities
+  (AVB is the accounting acquirer), so the company/filing were real and
+  research proceeded normally; gave the subagent this context up front
+  rather than let it discover/reverify from scratch. All 5 succeeded and
+  were checked live (200, Takeaway + Source filing present): **VTRS** Q2
+  2026 (revenue +4.9% on Greater China +21%, but a GAAP net loss of
+  $118.8M from a $177.8M Tyrvaya write-down tied to its sale to Harrow;
+  adjusted EPS +11% almost entirely from operations, not buybacks; flagged
+  a Nashik, India plant supply issue expected to cost $100-150M of H2
+  revenue), **VICI** Q2 2026 (GAAP net income -39% purely from a $413.1M
+  swing in the credit-loss reserve versus a reserve release a year ago;
+  AFFO/share, the metric that actually matters for this REIT, was +4.6%;
+  Caesars and MGM together are 70% of contractual rent, flagged as
+  concentration risk; refinancing 2026 notes at ~150bp higher rates),
+  **VST** Q2 2026 (GAAP net income -6.7% almost entirely from a $472M
+  unrealized hedge mark-to-market loss vs a $16M gain a year ago, while
+  the business's own Adjusted EBITDA measure rose 31% on PJM capacity
+  prices and Texas gas-plant margins; explained the GAAP/hedge-noise gap
+  explicitly so a reader isn't misled by the headline decline; covered
+  Meta/AWS nuclear contracts and the pending Cogentrix acquisition),
+  **VMRK** Q2 2026 (published under the post-merger "Vivmark Residential"
+  name/ticker per the verification above; GAAP net income -40.7% with no
+  operating-income line item, so NOI margin used instead; explained that
+  Q3 2026 won't compare cleanly since AvalonBay is the accounting
+  acquirer and future statements carry AVB's historical results, not
+  EQR's; EPS/FFO guidance was withdrawn because of the merger, so no
+  guidance comparison was possible this quarter), **VMC** Q2 2026
+  (aggregates pricing +3.9% but cash cost per ton +7% (+3% ex-diesel)
+  left cash gross profit per ton nearly flat at $12.02; pre-tax earnings
+  actually fell 2.3% — EPS growth came from a one-time deferred-tax
+  benefit tied to a California divestiture plus buybacks, not operations;
+  flagged that hitting full-year guidance needs H2 Adjusted EBITDA growth
+  of ~12% against 2.9% in H1). No skips.
+  **Night total: 20 report-periods, 20 companies done tonight — still
+  well under the ~50 cap, ~01:35 JST. Continuing with more batches.**
