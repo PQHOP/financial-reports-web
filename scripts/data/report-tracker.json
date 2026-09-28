@@ -14474,5 +14474,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "WST": {
+    "name": "West Pharmaceutical Services",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q1 10-Q/8-K filed 04-23, Q2 filed 07-23; fourth Thursday of October pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "WELL": {
+    "name": "Welltower",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/well/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q3 2025 8-K 2025-10-27, 10-Q 2025-10-28; 2026 pattern Q1 04-28/29, Q2 07-27/28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
