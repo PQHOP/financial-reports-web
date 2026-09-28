@@ -5017,3 +5017,34 @@ the automated scheduled-task mechanism):
   of ~12% against 2.9% in H1). No skips.
   **Night total: 20 report-periods, 20 companies done tonight — still
   well under the ~50 cap, ~01:35 JST. Continuing with more batches.**
+- **Batch 5 — 5 more Opus subagents, one per company, run in parallel**
+  (each given its own scratchpad subfolder). `next-batch -- --n 5` gave
+  WRB, GWW, WAB, WM, WAT — all five had no prior tracker entry. All 5
+  succeeded and were checked live (200, Takeaway + Source filing
+  present): **WRB** Q2 2026 (P&C insurer, bank/insurer metrics profile;
+  EPS +15% driven by lower catastrophe losses, smaller FX losses and
+  record investment income rather than underwriting improvement — the
+  underlying ex-cat combined ratio was flat at 88.1% and renewal price
+  increases slowed sharply to 3.5% from 7.6% a year ago), **GWW** Q2 2026
+  (underlying daily organic constant-currency sales +13.7%; a $43M IEEPA
+  tariff refund flattered GAAP operating margin — without it, margin and
+  EPS growth would both be meaingfully lower, quantified in the body;
+  cash conversion only 0.74x on rising receivables), **WAB** Q2 2026
+  (sales +17.5% but only 8.5 points organic, 8.6 points from three 2025-26
+  acquisitions; record $30.9B multi-year backlog grew only $130M in the
+  quarter itself, a deceleration flagged explicitly; $1.05B of net new
+  debt funded the Dellner acquisition), **WM** Q2 2026 (core price +5.7%
+  decelerating from Q1's 6.3%; volume -1.8% (-0.4% ex last year's
+  wildfire-cleanup comp); fuel surcharges added 1.6 points of the 4.0%
+  headline revenue growth; Healthcare Solutions/Stericycle segment
+  returned to margin improvement on cost cuts despite a revenue decline;
+  Q3 earnings date already confirmed by WM's own 09-24 press release, so
+  marked `confidence: "confirmed"` in the tracker rather than estimated),
+  **WAT** Q2 2026 (GAAP swung to a $136M loss from a $147M profit purely
+  on purchase-accounting/integration charges from the now-closed $13B BD
+  Biosciences & Diagnostic Solutions combination — adjusted EPS still
+  grew, but only 3% against 71% adjusted net income growth because share
+  count rose ~65% from deal shares issued; edited once post-publish via
+  `--edit` to tighten one outlook sentence). No skips.
+  **Night total: 25 report-periods, 25 companies done tonight — still
+  well under the ~50 cap, ~01:41 JST. Continuing with more batches.**
