@@ -5087,3 +5087,39 @@ the automated scheduled-task mechanism):
   a coverage concern). No skips.
   **Night total: 30 report-periods, 30 companies done tonight — still
   well under the ~50 cap, ~01:48 JST. Continuing with more batches.**
+- **Batch 7 — 5 more Opus subagents, one per company, run in parallel**
+  (each given its own scratchpad subfolder). `next-batch -- --n 5` gave
+  WSM, WMB, WTW, WDAY, WYNN — all five had no prior tracker entry. All 5
+  succeeded and were checked live (200, Takeaway + Source filing
+  present): **WSM** fiscal Q2 2026 (quarter ended 2026-08-02; a ~$117M
+  pre-tax IEEPA tariff refund added $0.74 to the $2.84 GAAP EPS —
+  excluding it, operating margin actually fell to 17.3% from 17.9% on
+  230bp of tariff-driven merchandise-margin pressure; adjusted EPS growth
+  of only ~5% came almost entirely from buybacks, not operating income;
+  another $29.3M of the same deferred refund will hit Q3), **WMB** Q2
+  2026 (adjusted EBITDA +6% but GAAP EPS +51% inflated by a $126M
+  divestiture gain, $142M of unrealized derivative gains and a smaller
+  gain — adjusted EPS was only +8.7%; capex nearly doubled to $3.28B
+  funding the Momentum Midstream acquisition and new gas-fired power
+  plants for large power users; capex+dividends exceeded operating cash
+  flow by ~$1.5B), **WTW** Q2 2026 (insurance broker — used general
+  metrics fields, not insurer fields, per the site's convention that
+  brokers without a combined ratio aren't underwriters; organic growth
+  accelerated to 5% from Q1's 3%; GAAP EPS -27% vs adjusted EPS +17%, a
+  divergence driven by Newfront-deal/share-based-pay costs this year
+  against a one-off tax benefit last year — explained explicitly so the
+  GAAP decline doesn't read as a business problem), **WDAY** fiscal Q2
+  2027 (Workday's own label; quarter ended 2026-07-31, published as
+  calendar 2026 Q2; GAAP EPS +206% almost entirely from a one-time $374M
+  deferred tax benefit from an internal IP transfer — flagged prominently
+  that underlying EPS was closer to +25%; 12-month subscription backlog
+  +14.2% but total backlog growth decelerated to +8.0% from +10.9% the
+  prior quarter), **WYNN** Q2 2026 (GAAP EPS +106% mostly from derivative
+  value swings and smaller currency losses — adjusted EPS only +13.8%;
+  adjusted Property EBITDAR +2.9% overall masked a one-property story:
+  Wynn Palace +28.2% on favorable mass-market hold, while Las Vegas -8.3%
+  and Encore Boston Harbor -12.2% on unfavorable table hold; flagged that
+  Wynn's Al Marjan (UAE) remaining equity funding need rose to $525-650M
+  from $350-450M with no explanation given in the filing). No skips.
+  **Night total: 35 report-periods, 35 companies done tonight — 15
+  remaining to the ~50 cap, ~01:54 JST. Continuing with more batches.**
