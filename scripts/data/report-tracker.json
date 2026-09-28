@@ -14518,5 +14518,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "WY": {
+    "name": "Weyerhaeuser",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wy/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q3 2025 8-K 2025-10-30, 10-Q 2025-10-31; 10-Q follows 8-K by one day in 2026",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "WDC": {
+    "name": "Western Digital",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/wdc/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-11-05",
+      "basis": "Fiscal year ends ~July; usual ~4 week gap for earnings 8-K (~2026-10-29) and ~5 weeks for 10-Q after quarter-end (~2026-10-02)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
