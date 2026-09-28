@@ -5308,3 +5308,16 @@ the automated scheduled-task mechanism):
   planned single small batch for this firing (44 + 5 candidates, one
   skipped) rather than a full new round. Next firing should treat tonight
   as done unless the count needs rechecking against a fresh pull.**
+- **Batch 11 (~19:05 UTC / ~04:05 JST), later hourly firing.** Network
+  check passed (SEC 200 with the required User-Agent, site 200). Repo was
+  already in sync with `origin/master` at `b28faf9`. Per this entry's own
+  count above, tonight already sits at 48/~50 — at the cap per the prior
+  batch's explicit stop decision. Ran `scan-recent-filings` anyway to
+  check for a tier-0 exception (hot-list/S&P 500 same-day filings are
+  allowed to push a few past the cap): **0 fresh candidates** (same as
+  batch 9/10's window: 2026-09-22 through 2026-09-28 all already scanned,
+  nothing new). No exception applies, so this firing did not dispatch any
+  research subagents or publish anything — exiting immediately per
+  CLAUDE.md's "later firings that night should see the count and exit
+  immediately." **Night total unchanged: 48 report-periods published,
+  5 skipped.**
