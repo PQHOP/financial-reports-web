@@ -4941,3 +4941,37 @@ the automated scheduled-task mechanism):
   **Night total: 10 report-periods, 10 companies done tonight (TFC, TYL,
   TSN, UDR, UNP, URI, UHS, VLO, VEEV, VTR) — well under the ~50 cap, still
   early in the window (~01:20 JST). Continuing with more batches.**
+- **Batch 3 — 5 more Opus subagents, one per company, run in parallel**
+  (each given its own scratchpad subfolder again). `next-batch -- --n 5`
+  gave VLTO, VRSN, VRSK, VRTX, VRT — all five had no prior tracker entry.
+  All 5 succeeded and were checked live (200, Takeaway + Source filing
+  present): **VLTO** Q2 2026 (core sales +4.2%, ChemTreat +10.7% led;
+  GAAP operating profit flat on $29M of severance charges under a new
+  cost-optimization program; adjusted EPS +19% helped by a one-time
+  IEEPA tariff refund), **VRSN** Q2 2026 (domain name base +5.1% to
+  179.1M on record new registrations; EPS +7.7% with buybacks explaining
+  about 3.2 of the 7.7 points; buybacks+dividends ran ~120% of free cash
+  flow, explaining the company's ongoing stockholders' deficit — noted
+  as a structural feature of VRSN's model, not a red flag; confirmed
+  distinct from Verisk Analytics, researched in parallel by another
+  subagent), **VRSK** Q2 2026 (organic constant-currency growth
+  accelerated to 5.8% from 4.7% in Q1, but GAAP net income fell 9.8% on
+  $18.7M of AccuLynx-litigation-related acquisition fees, higher interest
+  expense from debt-funded buybacks, and a higher tax rate; adjusted EPS
+  growth of 5.3% came entirely from a 6.7% lower share count, since
+  adjusted net income itself fell 1.9%; stockholders' equity now
+  negative), **VRTX** Q2 2026 (CF franchise still 96% of revenue but
+  ALYFTREK nearly quadrupled to $573.6M while legacy TRIKAFTA declined;
+  newer launches CASGEVY and JOURNAVX still small in dollar terms;
+  pending ~$10.0B Crinetics acquisition, to be funded with cash plus a
+  $4.5B term loan, explicitly excluded from guidance; Royalty Pharma
+  arbitration over the ALYFTREK royalty rate noted), **VRT** Q2 2026
+  (organic growth of 17.8% missed the company's own 20-24% guided range,
+  blamed on supply-chain congestion and phased project delivery, but
+  adjusted operating profit and EPS both beat guidance; full-year
+  guidance raised on every line regardless; Vertiv no longer discloses
+  orders/backlog as of this release, so the report says so explicitly
+  rather than inventing a number and uses deferred revenue — which
+  roughly doubled since December — as a partial stand-in). No skips.
+  **Night total: 15 report-periods, 15 companies done tonight — still
+  well under the ~50 cap, ~01:27 JST. Continuing with more batches.**
