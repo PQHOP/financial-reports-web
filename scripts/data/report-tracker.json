@@ -14298,5 +14298,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "VMC": {
+    "name": "Vulcan Materials Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/vmc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q3 10-Qs filed 2025-10-30, 2024-10-30, 2023-10-27; 2026 Q1/Q2 both filed on the 29th",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "VMRK": {
+    "name": "Vivmark Residential",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/vmrk/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "92 days after Q2 10-Q (07-30) and usual late-Oct earnings date; note this ticker is the renamed Equity Residential post its 2026-08-17 all-stock merger of equals with AvalonBay (AVB accounting acquirer) — Q3 figures will compare against AVB historicals, not EQR, and timing could move as the first combined-company report",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
