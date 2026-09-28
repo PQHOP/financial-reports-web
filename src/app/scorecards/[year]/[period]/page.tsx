@@ -8,6 +8,7 @@ import { buildScorecard, type ScorecardEntry } from "@/lib/scorecard";
 import { scorecardPath } from "@/lib/scorecardPath";
 import { formatPct } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
+import { RankedBarChart } from "@/components/ReportCharts";
 
 export const dynamic = "force-dynamic";
 
@@ -139,6 +140,26 @@ export default async function ScorecardPage({ params }: { params: Params }) {
 
       <section className="flex flex-col gap-2">
         <h2 className="text-lg font-medium">Sectors at a glance</h2>
+        <div className="rounded-lg border border-zinc-200 bg-white p-4">
+          <h3 className="mb-3 text-sm font-medium text-zinc-700">Median revenue growth by sector</h3>
+          <RankedBarChart
+            items={card.sectors.flatMap((s) =>
+              s.medianRevenueGrowth === null
+                ? []
+                : [
+                    {
+                      key: s.slug,
+                      label: s.name,
+                      href: `#${s.slug}`,
+                      value: s.medianRevenueGrowth,
+                      title: `${s.name}: median ${pct(s.medianRevenueGrowth)} across ${s.count} ${s.count === 1 ? "company" : "companies"}`,
+                    },
+                  ]
+            )}
+            format={(v) => pct(v)}
+            wideLabels
+          />
+        </div>
         <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
           <table className="w-full text-sm">
             <thead className="bg-zinc-50 text-left text-zinc-600">

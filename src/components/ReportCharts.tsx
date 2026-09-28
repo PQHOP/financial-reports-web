@@ -289,3 +289,91 @@ export function PeriodTrendChart({ rows }: { rows: TrendRow[] }) {
     </section>
   );
 }
+
+// Growth is polarity (up vs down), so it takes the diverging pair; the text
+// label always carries the sign as well.
+const POSITIVE = "#2a78d6";
+const NEGATIVE = "#e34948";
+
+export type RankedItem = { key: string; label: string; href: string; value: number; title?: string };
+
+// A ranked list of horizontal bars growing left or right from zero. A lone
+// extreme value (+240% off a tiny base) would flatten every other bar, so any
+// of the top/bottom three that is more than twice the next one is cut at the
+// scale edge with a marker (the label keeps the true figure).
+function outlierEdge(desc: number[]): number {
+  // `desc`: magnitudes on one side of zero, largest first.
+  let i = 0;
+  while (i < 3 && i + 1 < desc.length && desc[i] > 2 * desc[i + 1]) i++;
+  return i === 0 ? desc[0] ?? 0 : desc[i] * 1.15;
+}
+
+export function RankedBarChart({
+  items,
+  format,
+  wideLabels = false,
+}: {
+  items: RankedItem[];
+  format: (v: number) => string;
+  wideLabels?: boolean;
+}) {
+  if (items.length < 2) return null;
+  const values = items.map((i) => i.value);
+  let hi = outlierEdge(values.filter((v) => v > 0).sort((a, b) => b - a));
+  let lo = -outlierEdge(values.filter((v) => v < 0).map((v) => -v).sort((a, b) => b - a));
+  if (hi === lo) hi = lo + 1;
+  const span = hi - lo;
+  lo -= span * 0.02;
+  hi += span * 0.02;
+  const x = (v: number) => ((Math.min(Math.max(v, lo), hi) - lo) / (hi - lo)) * 100;
+  const zero = x(0);
+
+  return (
+    <div className="flex flex-col gap-1">
+      {items.map((item) => {
+        const left = Math.min(x(item.value), zero);
+        const width = Math.max(Math.abs(x(item.value) - zero), 0.5);
+        const cut = item.value > hi || item.value < lo;
+        const negative = item.value < 0;
+        return (
+          <div
+            key={item.key}
+            className={`group grid items-center gap-2 text-xs ${
+              wideLabels
+                ? "grid-cols-[8.5rem_1fr_3.5rem] sm:grid-cols-[11rem_1fr_4.5rem]"
+                : "grid-cols-[4.5rem_1fr_4rem] sm:grid-cols-[9rem_1fr_4.5rem]"
+            }`}
+            title={item.title ?? `${item.label}: ${format(item.value)}`}
+          >
+            <a href={item.href} className="truncate text-blue-700 hover:underline">
+              {item.label}
+            </a>
+            <div className="relative h-3.5">
+              <div className="absolute top-0 bottom-0 w-px bg-zinc-300" style={{ left: `${zero}%` }} />
+              <div
+                className={`absolute top-0.5 bottom-0.5 transition-opacity group-hover:opacity-80 ${
+                  negative ? "rounded-l-[4px]" : "rounded-r-[4px]"
+                }`}
+                style={{
+                  left: `${left}%`,
+                  width: `${width}%`,
+                  background: negative ? NEGATIVE : POSITIVE,
+                }}
+              />
+              {cut && (
+                <span
+                  aria-hidden="true"
+                  className="absolute top-1/2 -translate-y-1/2 text-[10px] font-bold text-white"
+                  style={negative ? { left: "2px" } : { right: "2px" }}
+                >
+                  {negative ? "«" : "»"}
+                </span>
+              )}
+            </div>
+            <span className="text-right tabular-nums text-zinc-700">{format(item.value)}</span>
+          </div>
+        );
+      })}
+    </div>
+  );
+}

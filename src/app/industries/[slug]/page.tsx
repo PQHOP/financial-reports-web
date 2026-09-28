@@ -8,12 +8,14 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { periodLabels, periodOrder } from "@/lib/period";
 import { reportPath } from "@/lib/reportPath";
 import {
+  formatPct,
   metricsProfile,
   PROFILE_LAYOUT,
   readMetrics,
   type MetricsProfile,
 } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
+import { RankedBarChart } from "@/components/ReportCharts";
 
 export const dynamic = "force-dynamic";
 
@@ -148,6 +150,29 @@ export default async function IndustryPage({
       return { profile, layout, rows };
     })
     .filter((t) => t.rows.length >= 2);
+  // The headline growth figure for each profile, ranked across the industry.
+  const growthItems = peerRows
+    .flatMap(({ report: r, m }) => {
+      const profile = metricsProfile(m);
+      const value =
+        profile === "bank"
+          ? m.netInterestIncomeYoyPct
+          : profile === "insurer"
+            ? m.netPremiumsWrittenYoyPct
+            : m.revenueYoyPct;
+      if (typeof value !== "number") return [];
+      const label = r.company.ticker ?? cleanCompanyName(r.company.name);
+      return [
+        {
+          key: r.id,
+          label,
+          href: reportPath(r),
+          value,
+          title: `${cleanCompanyName(r.company.name)}, ${periodLabels[r.period]} ${r.year}: ${formatPct(value)}`,
+        },
+      ];
+    })
+    .sort((a, b) => b.value - a.value);
   // Only analyzed companies are linked; the rest are listed as plain text
   // (not at all for Uncategorized, which holds ~5,000 directory entries).
   const analyzed = industry.companies.filter((c) => c._count.reports > 0);
@@ -163,6 +188,21 @@ export default async function IndustryPage({
           {uncategorized ? industry.name : `${industry.name} earnings`}
         </h1>
       </div>
+
+      {growthItems.length >= 4 && (
+        <section className="flex flex-col gap-2">
+          <h2 className="text-lg font-medium">{industry.name}: revenue growth ranked</h2>
+          <div className="rounded-lg border border-zinc-200 bg-white p-4">
+            <RankedBarChart items={growthItems} format={(v) => formatPct(v)} />
+          </div>
+          <p className="text-xs text-zinc-500">
+            Year-over-year revenue growth in each company&apos;s most recent
+            period we&apos;ve analyzed (banks: net interest income growth;
+            insurers: premiums written growth). Very long bars are cut (» / «);
+            the figure on the right is exact.
+          </p>
+        </section>
+      )}
 
       {peerTables.map(({ profile, layout, rows }) => (
         <section key={profile} className="flex flex-col gap-2">
