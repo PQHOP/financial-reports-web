@@ -14056,5 +14056,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "UHS": {
+    "name": "Universal Health Services",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/uhs/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Last year Q3 8-K filed 2025-10-28, 10-Q filed 2025-11-07; this year Q2 8-K Jul 28, 10-Q Aug 7",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "VLO": {
+    "name": "Valero Energy",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/vlo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Files earnings 8-K and 10-Q same day, ~30 days after quarter-end (04-30 for Q1, 07-30 for Q2)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
