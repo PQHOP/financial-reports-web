@@ -5164,3 +5164,58 @@ the automated scheduled-task mechanism):
   No skips.
   **Night total: 40 report-periods, 40 companies done tonight — 10
   remaining to the ~50 cap, ~02:00 JST. Continuing with more batches.**
+- **Batch 9 — final batch of the night.** `next-batch -- --n 5` returned
+  **ZTS as the last remaining S&P 500 constituent**, plus the first 4
+  companies of the `us-listed` backlog (AACG, AACI, AACO, AACP — file
+  order). Before dispatching research, spot-checked the three
+  `...Acquisition Corp` tickers (AACI, AACO, AACP) against SEC's
+  `company_tickers.json` and each one's EDGAR submissions API: all three
+  carry SIC code 6770 ("Blank Checks") — pre-merger SPAC shells with no
+  operating business, filing only trust-account interest income and
+  formation/admin costs. **Skipped all three in the tracker** with that
+  reasoning rather than writing thin non-content, and re-ran
+  `next-batch` to backfill 3 replacement companies from `us-listed`
+  (AAL, AAOI, AAON) alongside ZTS and AACG. **AACG** (ATA Creativity
+  Global) was also skipped, but for a different, verified reason: it's a
+  foreign private issuer filing only an annual 20-F plus 6-Ks, its own
+  2026-07-02 6-K states no interim financials have been filed since
+  2025-12-31, and its core operating business was sold for a nominal RMB
+  1 in a shareholder-approved deal that closed mid-2026 — flagged to
+  re-check around its next 20-F, ~March 2027, when FY2026 results
+  (likely showing discontinued operations) would appear. The other 4 —
+  **ZTS**, **AAL**, **AAOI**, **AAON** — all succeeded and were checked
+  live (200, Takeaway + Source filing present): **ZTS** Q2 2026
+  (**the last S&P 500 company needing 2026 coverage — full 503/503 S&P
+  500 coverage reached tonight**; US companion-animal revenue -11% led by
+  dermatology -16%, while US livestock +23% on New World screwworm
+  outbreak demand; all EPS growth came from a 6.2% smaller share count
+  funded partly by a new $2B convertible bond; full-year guidance cut
+  materially, adjusted EPS to $6.15-6.25 from $6.85-7.00; Q3 date
+  confirmed via a 2026-09-24 company press release), **AAL** Q2 2026
+  (record revenue +16.3% but operating margin collapsed to 2.7% from
+  7.9% as the unhedged fuel bill rose 83% on fuel prices going from
+  $2.29 to $4.05/gallon; net interest expense alone ate 92% of operating
+  income; stockholders' equity negative $4.0B, noted factually), **AAOI**
+  Q2 2026 (revenue +86.4% on datacenter optical-transceiver demand,
+  +140.4% and now 56% of sales, but GAAP net loss widened to -$22.8M;
+  flagged that management's claimed non-GAAP profitability depends
+  entirely on a $14.3M non-GAAP tax add-back — without it the adjusted
+  result is still a loss; one customer (Digicomm) is 42.8% of H1 revenue
+  and 67.2% of receivables on extended payment terms, a concentration
+  risk called out explicitly), **AAON** Q2 2026 (sales +101.2% led by
+  BASX data-center-cooling brand +216.2%, now 55% of sales; gross margin
+  fell to 24.3% from 26.6% mostly on Memphis-plant ramp-up overhead;
+  effective tax rate fell to 9.8% from 20.6% on a stock-comp tax benefit
+  — without it EPS growth would have been meaningfully smaller, quantified
+  in the body; backlog $1.97B, +98% YoY but -7.4% from March, a
+  deceleration flagged for the outlook). No incomplete/failed runs.
+  **Night total: 44 report-periods published tonight (40 through batch 8,
+  plus ZTS/AAL/AAOI/AAON in batch 9), 4 more companies skipped with
+  reasons tonight (AACI, AACO, AACP, AACG) — 577 companies done / 6
+  skipped overall (tracker-wide, across all nights), 594 report-periods
+  total across all time. Stopping here for tonight: 44/~50 is close
+  enough to the cap that another full batch of 5 could push past it, and
+  reaching full S&P 500 completion is a natural checkpoint. From the next
+  firing onward, tier 1 is entirely the `us-listed` backlog (~5,060
+  companies, minus the 4 just resolved) — no more S&P 500 entries will
+  appear in `next-batch` output going forward.**

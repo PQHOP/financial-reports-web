@@ -14828,5 +14828,93 @@
     "status": "skipped",
     "skipReason": "Foreign private issuer, files annual 20-F + 6-Ks. Latest financials are the FY2025 20-F (filed 2026-03-31) and Q4/FY2025 earnings 6-K (2026-03-26); no 2026 interim results filed. Company's own 6-K (2026-07-02) confirms no interim statements filed since Dec 31 2025. Also: shareholders approved selling the core operating business (ATA Testing Authority + VIE + 69.04% Beijing Huanqiuyimeng stake) for a nominal RMB 1 on 2026-06-05, and a new investor took ~34.51% voting power via a PIPE that closed 2026-07-21 — FY2026 results will likely show discontinued operations. Re-check around ~March 2027 for the next 20-F.",
     "lastChecked": "2026-09-29"
+  },
+  "ZTS": {
+    "name": "Zoetis",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/zts/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings)",
+      "estimate": "2026-11-05",
+      "basis": "Zoetis press release 2026-09-24 confirmed Q3 webcast for Nov 5, 2026 8:30am ET",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "AAL": {
+    "name": "American Airlines Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/aal/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "8-K/10-Q filed same day, ~13 weeks apart (04-23, 07-23); third-party calendars disagree (10-15 vs 10-22), unconfirmed by company",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "AAOI": {
+    "name": "Applied Optoelectronics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/aaoi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 filed 05-07, Q2 filed 08-06, ~91 days apart; 8-K and 10-Q same day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "AAON": {
+    "name": "AAON, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/aaon/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "~90 days after Q2 filing (2026-08-10)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
