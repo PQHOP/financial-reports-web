@@ -299,12 +299,14 @@ export type RankedItem = { key: string; label: string; href: string; value: numb
 
 // A ranked list of horizontal bars growing left or right from zero. A lone
 // extreme value (+240% off a tiny base) would flatten every other bar, so any
-// of the top/bottom three that is more than twice the next one is cut at the
-// scale edge with a marker (the label keeps the true figure).
-function outlierEdge(desc: number[]): number {
+// of the top/bottom three that is more than 1.5x the next one is cut at the
+// scale edge with a marker (the label keeps the true figure). Short lists
+// (a handful of sectors) are never cut: every bar there is worth seeing whole.
+const MIN_ITEMS_TO_CUT = 10;
+function outlierEdge(desc: number[], cut: boolean): number {
   // `desc`: magnitudes on one side of zero, largest first.
   let i = 0;
-  while (i < 3 && i + 1 < desc.length && desc[i] > 2 * desc[i + 1]) i++;
+  while (cut && i < 3 && i + 1 < desc.length && desc[i] > 1.5 * desc[i + 1]) i++;
   return i === 0 ? desc[0] ?? 0 : desc[i] * 1.15;
 }
 
@@ -319,8 +321,9 @@ export function RankedBarChart({
 }) {
   if (items.length < 2) return null;
   const values = items.map((i) => i.value);
-  let hi = outlierEdge(values.filter((v) => v > 0).sort((a, b) => b - a));
-  let lo = -outlierEdge(values.filter((v) => v < 0).map((v) => -v).sort((a, b) => b - a));
+  const cut = items.length >= MIN_ITEMS_TO_CUT;
+  let hi = outlierEdge(values.filter((v) => v > 0).sort((a, b) => b - a), cut);
+  let lo = -outlierEdge(values.filter((v) => v < 0).map((v) => -v).sort((a, b) => b - a), cut);
   if (hi === lo) hi = lo + 1;
   const span = hi - lo;
   lo -= span * 0.02;
