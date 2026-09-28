@@ -5219,3 +5219,29 @@ the automated scheduled-task mechanism):
   firing onward, tier 1 is entirely the `us-listed` backlog (~5,060
   companies, minus the 4 just resolved) — no more S&P 500 entries will
   appear in `next-batch` output going forward.**
+- **Next hourly firing (~17:05 UTC / ~02:05 JST), same session.** This
+  firing's prompt was queued while the batch-9 turn above was still
+  finishing; by the time this turn actually started running, that prior
+  turn had already pushed its tracker/log update and stopped for the
+  night (a genuine near-simultaneous handoff within the same persistent
+  session, not two independent sessions racing — confirmed via
+  `list_triggers`: the routine `trig_01GNdUY59Na4x3JxMr6p7mxK` fires into
+  this one session). This turn's local checkout was still on the
+  pre-batch-9 tracker state when it ran `npm run next-batch -- --n 5`
+  (before pulling), so it got a stale list (ZTS, AAL, AAOI, AAON, AAPG)
+  and dispatched one Opus subagent for ZTS before noticing. That subagent
+  found `/companies/zts/2026/q2` already live (published 2026-09-28T17:04:13Z)
+  and correctly stood down without publishing a duplicate or touching the
+  tracker — no harm done, one research pass spent redundantly. After
+  `git reset --hard origin/master` picked up the batch-9 push, this
+  firing re-confirmed ZTS/AAL/AAOI/AAON are `"done"` and the night's total
+  is unchanged at **44 report-periods**. Per the prior turn's own
+  reasoning (44/~50 called close enough, full S&P 500 coverage just
+  reached as a natural checkpoint), this firing is standing down rather
+  than starting a new batch — respecting that stop decision rather than
+  re-litigating it an hour later. AAPG (next in line, `us-listed`
+  backlog) was not researched or touched; it's untouched for a future
+  firing. **Lesson for future firings: pull `origin/master` before
+  running `next-batch`, not just before publishing, to avoid acting on a
+  stale tracker snapshot when a prior turn in the same session may still
+  be finishing.**
