@@ -5123,3 +5123,44 @@ the automated scheduled-task mechanism):
   from $350-450M with no explanation given in the filing). No skips.
   **Night total: 35 report-periods, 35 companies done tonight — 15
   remaining to the ~50 cap, ~01:54 JST. Continuing with more batches.**
+- **Batch 8 — 5 more Opus subagents, one per company, run in parallel**
+  (each given its own scratchpad subfolder). `next-batch -- --n 5` gave
+  XEL, XYL, YUM, ZBRA, ZBH — all five had no prior tracker entry. All 5
+  succeeded and were checked live (200, Takeaway + Source filing
+  present): **XEL** Q2 2026 (utility; EPS +24% to $0.93; flagged four
+  factors inflating the headline beyond core operations — a one-quarter
+  nuclear-life-extension depreciation catch-up, a ~$0.13/share unrealized
+  gain on energy-tech fund investments, rising AFUDC-equity non-cash
+  earnings, and share count +6.6%; Smokehouse Creek wildfire exposure of
+  $503M estimated losses with only ~$80M of insurance left disclosed; no
+  consolidated rate base given in the filing, so used capex and net PP&E
+  as the industry metric instead and said so), **XYL** Q2 2026 (organic
+  revenue growth only 1.3% but orders +42% almost entirely from one large
+  Water Solutions & Services contract — the other three segments
+  collectively grew only ~2.5%, called out explicitly to avoid the
+  headline order number reading as broad-based demand; Measurement &
+  Control Solutions the weak segment with a sub-100% book-to-bill; a
+  first-publish duplicated one sentence, caught and fixed via `--edit`
+  before this check), **YUM** Q2 2026 (GAAP EPS +132% almost entirely
+  from a $449M one-time tax benefit tied to the Pizza Hut sale — EPS
+  excluding special items only +12.5%; Taco Bell same-store sales +7% and
+  operating profit +19% carried the quarter while KFC's same-store sales
+  grew only 2% despite +7% unit growth; flagged Yum's Pizza Hut divestiture
+  (closed Aug/Sep 2026, ~$2.7B total) for the tracker since Q3 onward the
+  brand mix is KFC/Taco Bell/Habit Burger only; also flagged a July 2026
+  multistate cyclospora lettuce recall at Taco Bell as a Q3 watch item),
+  **ZBRA** Q2 2026 (reported sales +20.4% but organic growth only 9.2%,
+  the rest from the Elo Touch acquisition; a one-time $73M IEEPA tariff
+  refund inflated both GAAP and non-GAAP margins — estimated underlying
+  adjusted EPS ~$5.10 excluding it, still above guidance; buybacks of
+  $568M in H1 exceeded free cash flow of $361M; filing gives no
+  end-market revenue breakdown, noted explicitly), **ZBH** Q2 2026 (GAAP
+  EPS +33.8% mostly from Paragon 28 deal costs rolling off and a lower
+  tax rate — adjusted EPS actually flat at $2.07, held up only by a 2.8%
+  lower share count while adjusted operating margin fell to 25.7% from
+  27.8%; knees flat at +0.1% organic, hips +5.1%, ROSA robotics/bone
+  cement +21%; flagged the 10-Q's own note that some sales reflect
+  quarter-end customer stocking that could pull forward future demand).
+  No skips.
+  **Night total: 40 report-periods, 40 companies done tonight — 10
+  remaining to the ~50 cap, ~02:00 JST. Continuing with more batches.**
