@@ -738,6 +738,12 @@ the user is tracked at its end. Things future sessions should know:
   well-established links (a chokepoint's cargo, Gulf storms and
   refineries, drought in grain exporters); never claim a specific
   company's exposure or add a rule you can't source.
+  "Less obvious signals" (`src/lib/riskSignals.ts`) are cards, not map
+  layers: NOAA space weather, USGS Mississippi flow at Memphis vs this
+  date's history, CISA's actively exploited flaws (vendor -> ticker map),
+  FDA Class I recalls (firm-name regex -> ticker) and NWS warning types.
+  Same rules: official sources, known channels, company links only when
+  the signal is live.
 - `www.` 308s to the bare domain in `src/proxy.ts`.
 - **Company names:** ~1,250 us-listed names carry a NASDAQ listing suffix
   ("- Class A", "- Ordinary Shares"). Public pages wrap names in

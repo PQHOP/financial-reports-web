@@ -16,6 +16,7 @@ import {
   type SourceStatus,
 } from "@/lib/worldRisks";
 import { allImpactTickers, impactFor, type ResolvedImpact } from "@/lib/riskImpacts";
+import { fetchSignals, type Signal, type SignalState } from "@/lib/riskSignals";
 import { prismaCached as prisma } from "@/lib/prisma";
 import { systemReports } from "@/lib/community";
 import mapJson from "@/data/world-map.json";
@@ -29,7 +30,7 @@ const map = mapJson as MapData;
 export const metadata: Metadata = {
   title: "World Risk Monitor: Disasters, Outbreaks and Shipping Chokepoints",
   description:
-    "Live map of severe natural disasters, significant earthquakes, WHO-reported disease outbreaks and ship traffic through the world's key maritime chokepoints (Suez, Panama, Hormuz, Malacca), from GDACS, USGS, WHO and IMF PortWatch.",
+    "Live map of severe natural disasters, earthquakes, disease outbreaks and ship traffic through key maritime chokepoints, plus less obvious signals (solar storms, Mississippi River levels, exploited software flaws, FDA recalls, severe US weather) and the companies each one reaches.",
   alternates: { canonical: "/world-risks" },
 };
 
@@ -162,6 +163,73 @@ function ImpactList({ items }: { items: { e: RiskEvent; impact: ResolvedImpact }
   );
 }
 
+const STATE_STYLE: Record<SignalState, { label: string; dot: string }> = {
+  alert: { label: "Alert", dot: "#d03b3b" },
+  watch: { label: "Watch", dot: "#ec835a" },
+  normal: { label: "Normal", dot: "#a3a29b" },
+  unavailable: { label: "Unavailable", dot: "#a3a29b" },
+};
+
+function SignalCard({ signal, hrefByTicker }: { signal: Signal; hrefByTicker: Map<string, string> }) {
+  const st = STATE_STYLE[signal.state];
+  const groups = signal.groups
+    .map((g) => ({
+      role: g.role,
+      companies: g.tickers.flatMap((t) => {
+        const href = hrefByTicker.get(t);
+        return href ? [{ ticker: t, href }] : [];
+      }),
+    }))
+    .filter((g) => g.companies.length > 0);
+  return (
+    <article className="flex flex-col gap-2 rounded-lg border border-zinc-200 bg-white p-4">
+      <div className="flex items-start justify-between gap-3">
+        <h3 className="font-medium text-zinc-900">{signal.title}</h3>
+        <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full border border-zinc-200 px-2 py-0.5 text-xs text-zinc-700">
+          <span className="inline-block h-2 w-2 rounded-full" style={{ background: st.dot }} aria-hidden />
+          {st.label}
+        </span>
+      </div>
+      <p className="text-sm font-medium text-zinc-800">{signal.headline}</p>
+      <p className="text-sm text-zinc-600">{signal.why}</p>
+      {signal.items.length > 0 && (
+        <ul className="flex flex-col gap-1 border-t border-zinc-100 pt-2 text-xs">
+          {signal.items.map((i, n) => (
+            <li key={`${i.label}-${n}`} className="flex flex-col">
+              <span className="text-zinc-800">
+                {i.url ? (
+                  <a href={i.url} target="_blank" rel="noopener noreferrer" className="hover:underline">
+                    {i.label}
+                  </a>
+                ) : (
+                  i.label
+                )}
+                {i.tickers?.map((t) => {
+                  const href = hrefByTicker.get(t);
+                  return href ? (
+                    <Link key={t} href={href} className="ml-1.5 font-medium text-blue-700 hover:underline">
+                      {t}
+                    </Link>
+                  ) : null;
+                })}
+              </span>
+              {i.sub && <span className="text-zinc-500">{i.sub}</span>}
+            </li>
+          ))}
+        </ul>
+      )}
+      {groups.length > 0 && <ImpactBody impact={{ why: "", groups }} />}
+      <p className="mt-auto pt-1 text-[11px] text-zinc-400">
+        <a href={signal.source.url} target="_blank" rel="noopener noreferrer" className="underline">
+          {signal.source.name}
+        </a>{" "}
+        · {signal.source.ok ? `checked ${signal.source.fetchedAt.slice(11, 16)} UTC` : "unavailable"} · delay{" "}
+        {signal.source.lag}
+      </p>
+    </article>
+  );
+}
+
 function Tile({ value, label, note }: { value: number | string; label: string; note: string }) {
   return (
     <div className="rounded-lg border border-zinc-200 bg-white px-4 py-3">
@@ -193,11 +261,12 @@ function Sources({ statuses }: { statuses: SourceStatus[] }) {
 }
 
 export default async function WorldRisksPage() {
-  const [disasters, quakes, outbreaks, chokepoints] = await Promise.all([
+  const [disasters, quakes, outbreaks, chokepoints, signals] = await Promise.all([
     fetchDisasters(),
     fetchEarthquakes(),
     fetchOutbreaks(),
     fetchChokepoints(),
+    fetchSignals(),
   ]);
 
   const serious = disasters.events.filter((e) => e.level === "red" || e.level === "orange").sort(bySeverity);
@@ -211,7 +280,15 @@ export default async function WorldRisksPage() {
   // A database hiccup only drops the company links, not the page.
   const covered = await prisma.company
     .findMany({
-      where: { ticker: { in: allImpactTickers() }, reports: { some: systemReports } },
+      where: {
+        ticker: {
+          in: [
+            ...allImpactTickers(),
+            ...signals.flatMap((s) => [...s.groups.flatMap((g) => g.tickers), ...s.items.flatMap((i) => i.tickers ?? [])]),
+          ],
+        },
+        reports: { some: systemReports },
+      },
       select: { ticker: true, slug: true },
     })
     .catch(() => []);
@@ -298,6 +375,22 @@ export default async function WorldRisksPage() {
             None of today&apos;s events has a direct link to the companies we cover.
           </p>
         )}
+      </section>
+
+      <section className="flex flex-col gap-2">
+        <h2 className="text-lg font-medium">Less obvious signals that reach company results</h2>
+        <p className="max-w-3xl text-sm text-zinc-600">
+          Events that don&apos;t look financial at first — a solar storm, a river running low, a software flaw
+          under attack, a product recall — but have a known route into revenue or costs. Each card says what
+          the route is and, when the signal is live, which companies we cover sit on it.
+        </p>
+        <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
+          {[...signals]
+            .sort((a, b) => ["alert", "watch", "normal", "unavailable"].indexOf(a.state) - ["alert", "watch", "normal", "unavailable"].indexOf(b.state))
+            .map((s) => (
+              <SignalCard key={s.id} signal={s} hrefByTicker={hrefByTicker} />
+            ))}
+        </div>
       </section>
 
       <section className="flex flex-col gap-2">

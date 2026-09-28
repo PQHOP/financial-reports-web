@@ -86,6 +86,12 @@ export function impactFor(e: RiskEvent): Impact | null {
           groups: [INSURERS],
         };
       }
+      if (e.kind === "Volcano") {
+        return {
+          why: "Volcanic ash damages jet engines, so airspace near an erupting volcano closes and flights are cancelled or rerouted until the ash clears.",
+          groups: [AIRLINES],
+        };
+      }
       if (e.kind === "Drought" && GRAIN_EXPORTERS.some((c) => e.place.includes(c))) {
         return {
           why: "Drought in a major grain-exporting country cuts harvests, which moves crop prices and the volumes grain traders handle.",

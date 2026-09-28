@@ -5,7 +5,7 @@ import type { ResolvedImpact } from "@/lib/riskImpacts";
 export function ImpactBody({ impact }: { impact: ResolvedImpact }) {
   return (
     <>
-      <p className="mt-1 text-sm text-zinc-700">{impact.why}</p>
+      {impact.why && <p className="mt-1 text-sm text-zinc-700">{impact.why}</p>}
       <dl className="mt-2 flex flex-col gap-1 text-sm">
         {impact.groups.map((g) => (
           <div key={g.role} className="flex flex-wrap items-baseline gap-x-2 gap-y-1">
