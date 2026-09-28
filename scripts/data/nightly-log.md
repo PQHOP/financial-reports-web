@@ -5360,3 +5360,19 @@ the automated scheduled-task mechanism):
   CLAUDE.md's "later firings that night should see the count and exit
   immediately." **Night total unchanged: 48 report-periods published,
   5 skipped.**
+- **Batch 14 (~22:06 UTC / ~07:06 JST), final hourly firing before the
+  window closes at 07:59 JST.** Network check passed (SEC 403 without
+  `User-Agent`, expected; 200 with it; both `financialreportinsights.com`
+  and the `.vercel.app` alias 200). Repo was already clean and in sync
+  with `origin/master` at `012bbca`. `npm install` postinstall (`prisma
+  generate`) failed on missing `DATABASE_URL` as expected; left
+  `package-lock.json` modified, reverted with `git checkout --`. Per this
+  entry's own running count, tonight already sits at 48/~50 — at the cap,
+  per batch 10's explicit stop decision and batches 11-13's
+  reconfirmation. Ran `scan-recent-filings` anyway to check for a tier-0
+  exception: **0 fresh candidates** (2026-09-22 through 2026-09-28
+  scanned, same window as batches 9-13 — nothing new since). No exception
+  applies, so this firing did not dispatch any research subagents or
+  publish anything — exiting immediately per CLAUDE.md's "later firings
+  that night should see the count and exit immediately." **Night total
+  unchanged: 48 report-periods published, 5 skipped.**
