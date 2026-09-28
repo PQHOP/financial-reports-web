@@ -14716,5 +14716,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
+  },
+  "XYL": {
+    "name": "Xylem Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/xyl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Earnings 8-K and 10-Q filed same day each quarter, 91 days apart (04-28, 07-28)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "YUM": {
+    "name": "Yum! Brands",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/yum/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90 days after Q2 10-Q filed 2026-08-05; note Yum! sold Pizza Hut (closed Aug/Sep 2026) so Q3 results will reflect KFC/Taco Bell/Habit Burger only plus sale gains",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
+  },
+  "ZBRA": {
+    "name": "Zebra Technologies",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-29",
+      "url": "/companies/zbra/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-04",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q1/Q2 filed ~84 days apart (May 12, Aug 4); third-party calendars list Nov 3 2026, unconfirmed by Zebra itself",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-29"
   }
 }
