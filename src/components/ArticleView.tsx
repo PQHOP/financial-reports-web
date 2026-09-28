@@ -4,7 +4,7 @@ import { ReportContent } from "@/components/ReportContent";
 import { ReportCard } from "@/components/ReportCard";
 import { systemReports } from "@/lib/community";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { EDITORIAL_AUTHOR, SITE_NAME, SITE_URL } from "@/lib/site";
 import { articleKindLabels, articlePath } from "@/lib/articles";
 import type { Article } from "@/generated/prisma/client";
 
@@ -39,7 +39,7 @@ export async function ArticleView({ article }: { article: Article }) {
                 : {}),
               datePublished: article.publishedAt.toISOString(),
               dateModified: article.updatedAt.toISOString(),
-              author: { "@type": "Person", name: "Claude" },
+              author: { "@type": "Person", name: EDITORIAL_AUTHOR },
               publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
               mainEntityOfPage: url,
             },
@@ -92,8 +92,7 @@ export async function ArticleView({ article }: { article: Article }) {
       )}
 
       <p className="text-xs text-zinc-500">
-        For information only; not investment advice.{" "}
-        <Link href="/methodology" className="underline">Methodology</Link>
+        For information only; not investment advice.
       </p>
     </article>
   );

@@ -330,7 +330,7 @@ export function assembleBrief(
     ...(watch.length > 0
       ? [`## What to watch next\n\n${watch.map((w) => `- ${w}`).join("\n")}`]
       : []),
-    `---\n\n*This brief is written automatically by an AI system from public feeds (official releases, SEC filings and financial press headlines). It paraphrases and links to each source and may miss context in the full articles, so check the linked sources before relying on it. For information only; not investment advice.*`,
+    `---\n\n*This brief is compiled from public feeds (official releases, SEC filings and financial press headlines). It paraphrases and links to each source and may miss context in the full articles, so check the linked sources before relying on it. For information only; not investment advice.*`,
   ].join("\n\n");
 
   const tickers = [...new Set(kept.flatMap((k) => k.tickers))];

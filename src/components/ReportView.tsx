@@ -312,14 +312,7 @@ export async function ReportView({ report }: { report: FullReport }) {
             <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-900">
               Community
             </span>
-          ) : (
-            <>
-              {" · "}
-              <Link href="/methodology" className="underline">
-                AI-drafted from the SEC filing
-              </Link>
-            </>
-          )}
+          ) : null}
         </p>
         <p className="mt-3 text-base text-zinc-700">{report.summary}</p>
       </div>
@@ -430,10 +423,6 @@ export async function ReportView({ report }: { report: FullReport }) {
         )}
         <p className="mt-2 text-xs text-zinc-500">
           This analysis is for information only and is not investment advice.{" "}
-          <Link href="/methodology" className="underline">
-            How we produce these reports
-          </Link>{" "}
-          ·{" "}
           <Link href="/corrections" className="underline">
             Report an error
           </Link>

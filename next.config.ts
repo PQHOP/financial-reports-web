@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // Don't advertise the framework to scanners/attackers.
   poweredByHeader: false,
+  async redirects() {
+    // /methodology was removed; keep old links and search results working.
+    return [{ source: "/methodology", destination: "/about", permanent: true }];
+  },
   async headers() {
     return [
       {

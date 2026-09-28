@@ -137,11 +137,7 @@ export default async function Home() {
         <p className="mt-2 max-w-2xl text-zinc-600">
           Each analysis is built from the company&apos;s own SEC filing: what
           the numbers were, what drove them, and what management expects next.
-          Sources are linked on every report.{" "}
-          <Link href="/methodology" className="underline">
-            How we work
-          </Link>
-          .
+          Sources are linked on every report.
         </p>
       </section>
 

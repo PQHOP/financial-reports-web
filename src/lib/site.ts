@@ -5,7 +5,7 @@ export const SITE_URL = (
 export const SITE_NAME = "Financial Report Insights";
 
 // Byline for our own analyses (Report.author still stores the drafting model
-// for the record). The methodology page explains how the reports are produced.
+// for the record).
 export const EDITORIAL_AUTHOR = "Pham Hop";
 
 export function reportByline(report: { origin: string; author: string }): string {

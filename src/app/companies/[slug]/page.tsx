@@ -307,11 +307,7 @@ export default async function CompanyPage({
         <p className="rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-900">
           These reports are written by visitors, not by us. We review
           submissions before they appear but do not verify their figures. Check
-          the linked filing and see{" "}
-          <Link href="/methodology" className="underline">
-            how we produce our own analyses
-          </Link>
-          .
+          the linked filing.
         </p>
       )}
 

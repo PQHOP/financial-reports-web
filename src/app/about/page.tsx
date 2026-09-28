@@ -59,14 +59,10 @@ export default function AboutPage() {
 
       <h2>Who writes it</h2>
       <p>
-        The analyses are written by Claude, an AI model made by Anthropic,
-        working from the company&apos;s own filings, and published by the
-        site operator, Pham Hop, who is named on each report. Every
-        report says it was drafted by an AI model, and every report links
-        to the filing it was built from so you can check any figure against
-        the original. The process is described in detail on the{" "}
-        <Link href="/methodology">methodology page</Link>. Because an AI
-        model can misread a filing, please use the{" "}
+        The analyses are published by the site operator, Pham Hop, who is
+        named on each report. Every report is built from the company&apos;s
+        own filings and links to the filing it used, so you can check any
+        figure against the original. If you spot an error, please use the{" "}
         <Link href="/corrections">corrections page</Link> if you spot an
         error; verified errors are fixed and noted.
       </p>

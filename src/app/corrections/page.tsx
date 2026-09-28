@@ -16,8 +16,8 @@ export default function CorrectionsPage() {
   return (
     <StaticPage title="Corrections policy" updated="September 20, 2026">
       <p>
-        Analyses on this site are written by an AI model from the company&apos;s
-        filings, so mistakes can happen. If a figure or a claim in a report
+        Analyses on this site are written from the company&apos;s filings,
+        and mistakes can happen. If a figure or a claim in a report
         does not match the filing it links to, we want to know.
       </p>
 

@@ -89,7 +89,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <footer className="border-t border-zinc-200 py-6">
           <nav className="mx-auto flex max-w-4xl flex-wrap justify-center gap-x-5 gap-y-2 px-4 text-xs text-zinc-500">
             <Link href="/about" className="hover:underline">About</Link>
-            <Link href="/methodology" className="hover:underline">Methodology</Link>
             <Link href="/corrections" className="hover:underline">Corrections</Link>
             <Link href="/privacy" className="hover:underline">Privacy</Link>
             <Link href="/contact" className="hover:underline">Contact</Link>

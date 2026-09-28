@@ -220,10 +220,7 @@ export default async function ScorecardPage({ params }: { params: Params }) {
         company whose fiscal year doesn&apos;t match the calendar may report a
         different span of months under the same label. Coverage grows as we
         publish more reports; companies we haven&apos;t analyzed yet aren&apos;t
-        included. For information only, not investment advice.{" "}
-        <Link href="/methodology" className="underline">
-          Methodology
-        </Link>
+        included. For information only, not investment advice.
       </aside>
     </article>
   );

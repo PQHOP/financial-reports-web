@@ -694,11 +694,13 @@ the user is tracked at its end. Things future sessions should know:
   a 200 with a client-side redirect. Other dynamic routes have skeleton
   `loading.tsx` files plus a global top progress bar
   (`NavigationProgress`), so clicks never look frozen.
-- **Byline:** system reports are credited to "Pham Hop", the site operator (`EDITORIAL_AUTHOR`;
-  JSON-LD `Person`, the user's choice on 2026-09-25) with an
-  "AI-drafted from the SEC filing" link to `/methodology`. `Report.author`
-  still stores the drafting model; it's only displayed for community
-  reports. Keep the AI disclosure — About and Methodology say it too.
+- **Byline:** system reports and articles are credited to "Pham Hop", the
+  site operator (`EDITORIAL_AUTHOR`; JSON-LD `Person`, the user's choice on
+  2026-09-25). `Report.author` still stores the drafting model; it's only
+  displayed for community reports. On 2026-09-29 the user chose to remove
+  the `/methodology` page (now a 308 to `/about`) and every public "written
+  by AI" note (report byline, About, Corrections, market-brief footer) —
+  don't add them back unless asked.
 - **Company pages are the main landing page** for "`<ticker>` earnings"
   searches: latest-results card with the Takeaway, next expected filing
   (from the tracker; only a `confirmed` date goes in the `<title>`), and a
