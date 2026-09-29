@@ -5845,3 +5845,23 @@ the automated scheduled-task mechanism):
   firings that night should see the count and exit immediately") —
   published nothing new this firing, tracker untouched. Exiting without
   further batches.
+- **Later firing this same night (checked in at 21:05 UTC / 06:05 JST
+  2026-09-30):** confirmed network access first — SEC returned 403
+  without a `User-Agent` header (expected, SEC's own response, not a
+  proxy denial) and 200 with the required header;
+  `financialreportinsights.com` and the `.vercel.app` alias both 200
+  directly. `node_modules` was missing (fresh container), so ran
+  `npm install`; hit the same expected `prisma generate`/`DATABASE_URL`
+  postinstall failure (no DB access needed for this pipeline) and it left
+  `package-lock.json` modified — reverted that diff before touching
+  anything else, confirming a clean tree matching `origin/master`. Re-ran
+  `npm run scan-recent-filings` fresh: **0 fresh candidates** (2026-09-29
+  still shows 0 filings; 2026-09-28's 227 remain fully cleared from this
+  night's earlier batches). Read this entry before starting: thirteen
+  prior batches already closed tonight out at 47/~50 report-periods, and
+  the three immediately-prior check-ins (18:06, 19:05, 20:07 UTC) already
+  found nothing new either. No tier-0 hot-list/S&P 500 item to justify
+  exceeding tonight's cap by even the permitted "few." Deferring to the
+  established stopping point per CLAUDE.md ("later firings that night
+  should see the count and exit immediately") — published nothing new
+  this firing, tracker untouched. Exiting without further batches.
