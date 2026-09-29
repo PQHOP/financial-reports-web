@@ -5497,7 +5497,33 @@ the automated scheduled-task mechanism):
   substantial doubt about the next 12 months; loss/share fell from $32.15
   to $2.96 mostly on a ~5x higher share count after a 1-for-50 reverse
   split and new share sales.
-  **Night total: 15 report-periods published tonight, 0 skipped — 596
+  **Night total so far: 15 report-periods published, 0 skipped — 596
   companies done / 7 skipped overall (tracker-wide, across all nights),
   613 report-periods total across all time.** Remaining tier-0 candidates
-  from tonight's scan: RVII, TRAK, ZONE. Continuing while the cap allows.
+  from tonight's scan: RVII, TRAK, ZONE.
+- **Batch 4 — 3 Opus subagents, one per company, run in parallel.** This
+  clears the rest of tonight's `scan-recent-filings` output (18/18 tier-0
+  candidates now done). All 3 succeeded and were verified live: **RVII**
+  (Robinhood Ventures Fund II, a Robinhood-sponsored NYSE-listed BDC
+  investing in Y Combinator-linked startup SAFEs) — first-ever 10-Q,
+  published as year 2026/Q1 (fiscal Q1 FY2027, quarter ended 2026-06-30,
+  before its August 2026 IPO); NAV/share fell 3.1% to $23.95 on
+  below-NAV share issuance; necessarily thin (pre-IPO seed period funded
+  entirely by Robinhood) — the report says so explicitly rather than
+  padding it out. **TRAK** (ReposiTrak) FY2026 ANNUAL — revenue +3%
+  to $23.3M, operating margin up to 33.7% from 27.5% on lower
+  depreciation and capitalized software costs; net income +8.5% held back
+  by a higher tax rate (20.5% vs 8.8%); new ~31% stake in SPAR Group
+  (effective July 1) flagged as a concentration to watch. **ZONE** (Zone
+  Frontier, formerly CleanCore Solutions, renamed 2026-08-31) FY2026
+  ANNUAL — cleaning-product revenue +64% to $3.4M but a $174.2M net loss,
+  $116.3M of which was the mark-to-market loss on a Dogecoin treasury
+  position since fully liquidated (sold ~2026-07-20 for ~$33.4M); pivoting
+  into AI data centers (a Minnesota campus leased to Cerebras, reportedly
+  >$800M contract value); going-concern warning; CFO retired 2026-09-11.
+  **Night total: 18 report-periods published tonight, 0 skipped — 599
+  companies done / 7 skipped overall (tracker-wide, across all nights),
+  616 report-periods total across all time.** All 18 of tonight's
+  `scan-recent-filings` tier-0 candidates are now done. Falling through to
+  tier 1 (`npm run next-batch`) for the rest of tonight while the cap
+  allows.

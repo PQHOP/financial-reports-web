@@ -15351,5 +15351,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ZONE": {
+    "name": "Zone Frontier Inc. Class B",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/zone/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~45-day cadence typical for the company post fiscal year end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "TRAK": {
+    "name": "ReposiTrak, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/trak/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "RVII": {
+    "name": "Robinhood Ventures Fund II Common Shares of Beneficial Interest",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/rvii/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2, quarter ending 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "standard 45-day 10-Q deadline from quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
