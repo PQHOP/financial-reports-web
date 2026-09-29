@@ -5736,8 +5736,17 @@ the automated scheduled-task mechanism):
   delinquency rate rose to 2.59% from 2.32% and a smaller reserve release
   lifted the loss ratio to 14% from 10%; capital-return guidance raised to
   $550-600M for 2026. **ACTG** (Acacia Research Corporation, diversified
-  holding company).
+  holding company — patent-licensing legacy plus Benchmark oil & gas and
+  Deflecto plastics segments) Q2 2026 (first coverage) — revenue more
+  than doubled to $114.6M on $60.9M of one-off paid-up patent licenses,
+  but inventor royalties ($18.4M), contingent legal fees ($25.5M) and a
+  $30.9M MalinJ1/Viamet write-down took most of it, leaving net income
+  attributable to Acacia at just $47K; Benchmark's oil segment income rose
+  to $8.0M on a $93.59 realized price while Deflecto's operating loss
+  widened as its revenue fell 7%.
   **Night total: 44 report-periods published tonight, 2 newly skipped
-  (ACAA, ACGC), 1 left pending (ABTS) — 625 companies done / 9 skipped
-  overall (tracker-wide, across all nights), 642 report-periods total
-  across all time.**
+  (ACAA, ACGC), 1 left pending (ABTS) — 626 companies done / 9 skipped
+  overall (tracker-wide, across all nights), 643 report-periods total
+  across all time. Stopping here for this firing: 44/~50 is close enough
+  to the cap that another 5-company batch would risk exceeding it, and
+  this is a natural batch boundary.**
