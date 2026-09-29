@@ -5632,7 +5632,44 @@ the automated scheduled-task mechanism):
   $1.69M trust interest less $0.60M admin costs); a Business Combination
   Agreement with May Mobility, Inc. was signed 2026-09-15 but hasn't
   closed — revisit after closing.
-  **Night total: 30 report-periods published tonight, 2 newly skipped
+  **Night total so far: 30 report-periods published, 2 newly skipped
   (ACAA, ACGC), 1 left pending (ABTS) — 611 companies done / 9 skipped
   overall (tracker-wide, across all nights), 628 report-periods total
+  across all time.**
+- **Batch 8 — tier 1, `npm run next-batch -- --n 7`: ACHC, ACHV, ACIC,
+  ACIU, ACIW** (`us-listed` backlog, in file order; ABTS skipped again,
+  ACLS deferred to next batch). 5 Opus subagents, one per company, run in
+  parallel. **ACHC** (Acadia Healthcare, behavioral-health hospitals —
+  distinct from ACADIA Pharmaceuticals/ACAD) Q2 2026 (first coverage) —
+  revenue flat at $865.8M; net income -63.7% to $10.9M on a $28.6M
+  malpractice-reserve top-up and a hard comp against a $48.7M Q2 2025
+  Tennessee catch-up payment; underlying same-facility admissions +6.4%,
+  guidance narrowed upward. **ACHV** (Achieve Life Sciences, cytisinicline
+  smoking-cessation biotech) Q2 2026 (first coverage) — FDA issued a
+  Complete Response Letter in June over a contract manufacturer's plant
+  (not efficacy/safety); plans to resubmit Q4 2026 via a new manufacturer,
+  targeting H1 2027 approval; $74.8M Q2 net loss is $57.5M non-cash
+  warrant charges; $187.3M cash after an April $168.2M raise. **ACIC**
+  (American Coastal Insurance, Florida P&C insurer) Q2 2026 (first
+  coverage, insurer metrics profile) — net income -17.2% to $21.9M as a
+  24% YoY Florida rate cut reduced net earned premium 11.1% and pushed the
+  combined ratio to 74.3% from 60.6%, even as underlying claims were flat
+  (loss ratio ~21.5% both years); book value/share +20.2% to $7.21; no
+  named storms in the quarter. **ACIW** (ACI Worldwide, payments software)
+  Q2 2026 (first coverage) — revenue +7.3% to $430.4M, net income more
+  than doubled to $31.8M on lower interest expense, no repeat of prior-year
+  FX/refinancing losses, and an 18% vs 32% tax rate — i.e. mostly
+  below-the-line, not operating; Biller segment profit -13% and new
+  recurring bookings -25% flagged as things to watch despite raised
+  full-year guidance. **ACIU** (AC Immune SA) 2026 H1 (first coverage,
+  furnished via 6-K in CHF — Swiss foreign private issuer, no 10-Qs) —
+  revenue rose to CHF 16.2M from CHF 2.3M and net loss shrank 68% to
+  CHF 12.9M, almost entirely on a one-off CHF 11.0M Eli Lilly
+  upfront/milestone payment plus ~1/3 lower R&D post the 2025
+  reorganization; excluding the Lilly payment the underlying burn is
+  still ~CHF 26.6M/half; CHF 75.4M cash funds into Q4 2027; Takeda's
+  pending decision on its ACI-24 option flagged as the key catalyst.
+  **Night total: 34 report-periods published tonight, 2 newly skipped
+  (ACAA, ACGC), 1 left pending (ABTS) — 615 companies done / 9 skipped
+  overall (tracker-wide, across all nights), 632 report-periods total
   across all time.**

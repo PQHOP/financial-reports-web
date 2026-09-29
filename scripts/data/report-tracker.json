@@ -15731,5 +15731,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ACHC": {
+    "name": "Acadia Healthcare Company, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/achc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "~90-day cadence (Q1 filed 04-29/04-30, Q2 filed 07-28)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACHV": {
+    "name": "Achieve Life Sciences, Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/achv/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "prior-year Q3 10-Q filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACIC": {
+    "name": "American Coastal Insurance Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acic/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90-day cadence (Q1 filed 05-08, Q2 filed 08-06)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACIW": {
+    "name": "ACI Worldwide, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/aciw/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "prior earnings releases May 7 and Aug 6, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACIU": {
+    "name": "AC Immune SA",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/aciu/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual)",
+      "estimate": "2027-03-15",
+      "basis": "half-yearly cadence, estimated",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
