@@ -5865,3 +5865,27 @@ the automated scheduled-task mechanism):
   established stopping point per CLAUDE.md ("later firings that night
   should see the count and exit immediately") — published nothing new
   this firing, tracker untouched. Exiting without further batches.
+- **Later firing this same night (checked in at 22:06 UTC / 07:06 JST
+  2026-09-30 — near the tail end of tonight's 01:00-07:59 JST window):**
+  confirmed network access first per this firing's own instructions — a
+  plain `curl https://www.sec.gov/` without a `User-Agent` returned 403
+  (SEC's own response to an undeclared user agent, expected, not a proxy
+  denial); retrying with the required `User-Agent` header returned 200.
+  `financialreportinsights.com` returned 200 directly. `node_modules` was
+  missing (fresh container), so ran `npm install`; hit the same expected
+  `prisma generate`/`DATABASE_URL` postinstall failure (no DB access
+  needed for this pipeline) and it left `package-lock.json` modified —
+  reverted that diff before touching anything else, confirming a clean
+  tree matching `origin/master`. Re-ran `npm run scan-recent-filings`
+  fresh: **0 fresh candidates** (2026-09-29 still shows 0 filings;
+  2026-09-28's 227 remain fully cleared from this night's earlier
+  batches). Read this entry before starting: thirteen prior batches
+  already closed tonight out at 47/~50 report-periods, and the four
+  immediately-prior check-ins (18:06, 19:05, 20:07, 21:05 UTC) already
+  found nothing new either. No tier-0 hot-list/S&P 500 item to justify
+  exceeding tonight's cap by even the permitted "few," and with only ~53
+  minutes left in tonight's window there is no case for starting a fresh
+  tier-1 batch this late. Deferring to the established stopping point per
+  CLAUDE.md ("later firings that night should see the count and exit
+  immediately") — published nothing new this firing, tracker untouched.
+  Exiting without further batches.
