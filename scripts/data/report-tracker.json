@@ -16061,5 +16061,88 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ACXP": {
+    "name": "Acurx Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "/companies/acxp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 filed 2026-05-11, Q2 filed 2026-08-13; ~44-day cadence after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ADAG": {
+    "name": "Adagene Inc. - ADS, each representing 1.25 ordinary shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "/companies/adag/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual)",
+      "estimate": "2027-04-01",
+      "basis": "foreign private issuer; FY2025 20-F filed 2026-04-01",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ADAM": {
+    "name": "Adamas Trust, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "/companies/adam/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q1 earnings release 04-29 -> 10-Q ~2 days later; Q2 earnings release 07-29 -> 10-Q 07-31; Q3 release likely late Oct",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ADAC": {
+    "name": "American Drive Acquisition Company - Class A Ordinary Shares",
+    "status": "skipped",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "IPO closed 2025-12-19 as American Dynamism Acquisition Co, renamed American Drive Acquisition Co 2025-09-30 (rename predates the current filing, not evidence of an announced merger); Q2 filed 2026-08-14, ~45-day cadence after quarter-end",
+      "confidence": "estimated"
+    },
+    "skipReason": "Pre-merger SPAC (blank-check company, SIC 6770): Q2 2026 10-Q reports no operations, only trust-account interest income (Trust Account $234.3M at 2026-06-30) offset by formation/admin costs, and no definitive Business Combination Agreement disclosed as of the filing or in subsequent 8-Ks checked through 2026-09-29. No operating business to analyze; revisit if an 8-K announcing a merger agreement / de-SPAC closing appears.",
+    "lastChecked": "2026-09-30"
   }
 }

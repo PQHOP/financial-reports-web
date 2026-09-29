@@ -5744,9 +5744,47 @@ the automated scheduled-task mechanism):
   attributable to Acacia at just $47K; Benchmark's oil segment income rose
   to $8.0M on a $93.59 realized price while Deflecto's operating loss
   widened as its revenue fell 7%.
-  **Night total: 44 report-periods published tonight, 2 newly skipped
+  **Night total so far: 44 report-periods published, 2 newly skipped
   (ACAA, ACGC), 1 left pending (ABTS) — 626 companies done / 9 skipped
   overall (tracker-wide, across all nights), 643 report-periods total
-  across all time. Stopping here for this firing: 44/~50 is close enough
-  to the cap that another 5-company batch would risk exceeding it, and
-  this is a natural batch boundary.**
+  across all time. Stopped this firing here: 44/~50 close enough to the
+  cap that another 5-company batch would risk exceeding it, and this was
+  a natural batch boundary.**
+- **Batch 11 — new firing, tier 1, `npm run scan-recent-filings` (0 tier-0
+  candidates) then `npm run next-batch -- --n 5`: ACXP, ADAG, ADAM**
+  (`us-listed` backlog, in file order; ABTS skipped again, no new filing —
+  already checked earlier tonight, next expected ~2026-10-15; ADAC
+  skipped without a subagent, confirmed via a quick EDGAR check as a
+  pre-merger blank-check SPAC with no Business Combination Agreement).
+  Kept this batch to 3 companies (not the usual 5) given tonight's count
+  was already at 44/~50. 3 Opus subagents, one per company, run in
+  parallel; all three succeeded and were sanity-checked live (full
+  content, not truncated) before being counted. **ACXP** (Acurx
+  Pharmaceuticals, C. difficile antibiotic developer) Q2 2026 (first
+  coverage) — no revenue; net loss flat at $2.25M as R&D roughly doubled
+  to $1.07M (new recurrent-C.-diff pilot trial costs) offset by lower
+  overhead; loss/share improved only because average shares outstanding
+  grew 3.6x via the Lincoln Park equity line; $10.66M cash, going-concern
+  warning stands, first pilot-trial patient expected Q4 2026. **ADAG**
+  (Adagene, China/US biotech — foreign private issuer, files 20-F/6-K not
+  10-Q) H1 2026 (first coverage) — revenue $1.62M (Sanofi + Exelixis
+  collaboration payments) against nil a year earlier; net loss +21.5% to
+  $16.4M, but the increase was almost entirely FX swings ($1.42M) and a
+  non-cash warrant revaluation ($0.97M), not the underlying business
+  (operating loss +5.7%); payables jumped mostly from a related-party
+  relabeling (WuXi stake fell below 5%), not new spend; cash $127.9M after
+  an April raise, runway into late 2028; muzastotug MSS-CRC Phase 2
+  readout due 1H 2027. **ADAM** (Adamas Trust, formerly New York Mortgage
+  Trust — a mortgage REIT, not a bank, so general metrics fields used
+  rather than bank fields) Q2 2026 (first coverage) — net interest income
+  +37.8% to $50.2M, GAAP net income $43.4M/$0.47 diluted EPS vs a $3.5M
+  loss a year ago, on portfolio growth (~$11.7B, +$1.5B purchases) and
+  higher leverage (5.0x to 5.5x) rather than wider spread (spread actually
+  narrowed slightly, 1.50%->1.48%); book value per share +11.5% to $10.16;
+  Q3 dividend raised to $0.30, using up all of Q2's recurring earnings
+  (EAD $0.30/share).
+  **Night total: 47 report-periods published tonight, 3 newly skipped
+  (ACAA, ACGC, ADAC), 1 left pending (ABTS) — 629 companies done / 10
+  skipped overall (tracker-wide, across all nights), 646 report-periods
+  total across all time. Stopping here: 47/~50 is at the cap with margin
+  too thin for another batch this firing.**
