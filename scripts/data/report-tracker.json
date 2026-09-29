@@ -15626,5 +15626,22 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ACGC": {
+    "name": "ACP Holdings Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 filed 2026-05-14, Q2 filed 2026-08-12; ~45-day cadence after quarter-end",
+      "confidence": "estimated"
+    },
+    "skipReason": "Pre-merger SPAC (blank check) with no operations: Q2 2026 10-Q states the Company has not commenced operations and will not generate operating revenues until completion of its initial Business Combination; Q2 net income of $1.17M was only trust interest ($1.69M) less formation/G&A costs ($0.60M), no prior-year comparison. A Business Combination Agreement with May Mobility, Inc. was signed 2026-09-15 (8-K filed 2026-09-16) but has not closed (Outside Date 2027-05-26); revisit after closing.",
+    "lastChecked": "2026-09-30"
   }
 }
