@@ -15417,5 +15417,109 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ABOS": {
+    "name": "Acumen Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/abos/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "~90-day cadence (Q1 filed 2026-05-12, Q2 filed 2026-08-12)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ABSI": {
+    "name": "Absci Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/absi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "~90-day cadence from Q2 2026 10-Q filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ABTS": {
+    "name": "Abits Group Inc - Ordinary Shares",
+    "status": "pending",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-29"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim results)",
+      "estimate": "2026-10-15",
+      "basis": "last year filed H1 2025 results 2025-08-13; H1 2026 is already ~6 weeks late, possibly due to an August 2026 change-of-control; Nasdaq foreign-issuer deadline is 6 months after period end (2026-12-31)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ABTC": {
+    "name": "American Bitcoin Corp. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/abtc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~90-day cadence from Q2 2026 10-Q filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ABUS": {
+    "name": "Arbutus Biopharma Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/abus/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "prior-year Q3 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }

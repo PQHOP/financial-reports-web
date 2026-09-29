@@ -5521,9 +5521,46 @@ the automated scheduled-task mechanism):
   position since fully liquidated (sold ~2026-07-20 for ~$33.4M); pivoting
   into AI data centers (a Minnesota campus leased to Cerebras, reportedly
   >$800M contract value); going-concern warning; CFO retired 2026-09-11.
-  **Night total: 18 report-periods published tonight, 0 skipped — 599
+  **Night total so far: 18 report-periods published, 0 skipped — 599
   companies done / 7 skipped overall (tracker-wide, across all nights),
   616 report-periods total across all time.** All 18 of tonight's
   `scan-recent-filings` tier-0 candidates are now done. Falling through to
   tier 1 (`npm run next-batch`) for the rest of tonight while the cap
   allows.
+- **Batch 5 — tier 1, `npm run next-batch -- --n 5`: ABOS, ABSI, ABTC,
+  ABTS, ABUS** (all `us-listed` backlog, in file order — no fresh tier-0
+  candidates on re-check, no pending entries past their estimate, hot list
+  and S&P 500 apparently already fully done/skipped). 5 Opus subagents,
+  one per company, run in parallel. **ABOS** (Acumen Pharmaceuticals)
+  Q2 2026 (first coverage) — pre-revenue Alzheimer's biotech; net loss
+  narrowed to $32.7M from $41.0M on lower trial costs; cash lasts "into
+  early 2027" against ALTITUDE-AD trial topline due late 2026,
+  going-concern warning. **ABSI** (Absci Corporation) Q2 2026 (first
+  coverage) — AI drug-discovery platform; net loss widened 8.6% to
+  $33.2M as ABS-201 R&D spend rose, but a $93.6M offering (incl. $40M from
+  Eli Lilly) pushed cash to $201.1M and extended runway guidance to 2H
+  2028; flagged that hitting that guidance needs either lower burn or more
+  cash given rising planned R&D. **ABTS** (Abits Group) — **left
+  pending, not published**: this Hong Kong/BVI foreign issuer files only
+  an annual 20-F plus an H1 6-K, and no 2026-period filing exists yet
+  (its H1 2026 6-K is already ~6 weeks later than last year's, possibly
+  tied to an August 2026 change-of-control); estimated 6-K around
+  2026-10-15, re-check then. Verified via the live site and its EDGAR
+  filing history.
+  **ABTC** (American Bitcoin Corp. - Class A) Q2 2026 (first coverage) —
+  Bitcoin miner majority-owned by Hut 8, reverse-merged into Gryphon
+  Digital Mining Sept. 2025; mining revenue +121% to $67.0M on ~932 BTC
+  mined, but a $71.2M markdown on its 8,002-BTC reserve as BTC fell
+  ~$68.2k→~$59.8k drove a $57.2M net loss vs a $3.4M profit a year
+  earlier; mining itself roughly breaks even (~$75k all-in cost per coin
+  vs ~$71.9k revenue per coin) once the price swing is excluded. **ABUS**
+  (Arbutus Biopharma) Q2 2026 (first coverage) — hepatitis B biotech with
+  mRNA/LNP patent-licensing revenue; Q2 revenue -91% to $1.0M (prior-year
+  quarter had a one-time $9.6M deferred-revenue release), swinging to a
+  $5.1M Q2 loss, but the $178.4M Moderna settlement (booked mostly in Q1,
+  cash received July 8) makes H1 net income $164.6M; a further $1.3B is
+  contingent on a pending §1498 appeal; management is evaluating a return
+  of capital to shareholders.
+  **Night total: 22 report-periods published tonight, 0 skipped, 1 left
+  pending (ABTS) — 603 companies done / 7 skipped overall (tracker-wide,
+  across all nights), 620 report-periods total across all time.**
