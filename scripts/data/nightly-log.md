@@ -5788,3 +5788,19 @@ the automated scheduled-task mechanism):
   skipped overall (tracker-wide, across all nights), 646 report-periods
   total across all time. Stopping here: 47/~50 is at the cap with margin
   too thin for another batch this firing.**
+- **Later firing this same night (checked in at 18:06 UTC / 03:06 JST
+  2026-09-30):** confirmed network access (SEC 403 without User-Agent as
+  expected, 200 with the required header; `financialreportinsights.com`
+  and the `.vercel.app` alias both 200). `npm install` hit the same
+  expected `prisma generate`/`DATABASE_URL` postinstall failure (no DB
+  access needed for this pipeline) and left `package-lock.json` modified;
+  reverted that diff. Re-ran `npm run scan-recent-filings` fresh: **0
+  fresh candidates** (2026-09-29 had 0 filings; 2026-09-28's 18 were all
+  cleared in this same night's batches 1-4) — no tier-0 hot-list/S&P 500
+  item to justify exceeding tonight's cap. Read this entry before
+  starting: eleven prior batches already closed tonight out at 47/~50
+  report-periods, the last explicitly declining to run another batch for
+  margin reasons. Deferring to that stopping point per CLAUDE.md ("later
+  firings that night should see the count and exit immediately") —
+  published nothing new this firing, tracker untouched. Exiting without
+  further batches.
