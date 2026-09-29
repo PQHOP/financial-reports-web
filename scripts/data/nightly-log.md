@@ -5463,8 +5463,41 @@ the automated scheduled-task mechanism):
   (pass revenue pre-sold); net income -47.3% to $147.5M; FY2027 pass units
   down 12%; activist board nominations pending (Schedule 13D filings in
   September).
-  **Night total: 10 report-periods published tonight, 0 skipped — 591
+  **Night total so far: 10 report-periods published, 0 skipped — 591
   companies done / 7 skipped overall (tracker-wide, across all nights),
   608 report-periods total across all time.** Continuing tonight with the
   remaining tier-0 candidates (NAII, NNVC, NTWK, POCI, PTN, RVII, TRAK,
   ZONE) while the cap allows.
+- **Batch 3 — 5 Opus subagents, one per company, run in parallel.** All 5
+  succeeded and were verified live by the orchestrator the same way:
+  **NAII** (Natural Alternatives International) FY2026 ANNUAL — sales
+  +9.7% to $142.5M but a $10.4M non-cash Carlsbad-factory write-down
+  widened the net loss to $20.7M; expects to breach a new loan covenant at
+  the 2026-09-30 test date, going-concern doubt from both management and
+  the auditor; a large customer cut its FY2027 order forecast in August.
+  **NNVC** (NanoViricides) FY2026 ANNUAL, pre-revenue biotech — net loss
+  narrowed to $8.2M from $9.5M on lower R&D/G&A spend, but cash is down to
+  $2.8M, going-concern doubt raised, and its Phase II mpox/Ebola trials in
+  the DRC haven't dosed a patient yet; revenue/operatingMarginPct omitted
+  (no revenue). **NTWK** (NETSOL Technologies) FY2026 ANNUAL — revenue
+  +12.5% to $74.4M and operating income nearly doubled, but net income was
+  flat at $2.95M once a one-time $4.66M license fee, newly-capitalized
+  software costs, reversed FX/interest gains and a bigger minority-interest
+  share are accounted for; operating cash flow jumped to $13.9M largely
+  from customer prepayments. **POCI** (Precision Optics) FY2026 ANNUAL —
+  revenue +65.2% to $31.5M on device manufacturing nearly tripling, net
+  loss narrowed to $3.6M; gross margin (17.2%) includes a net $547K of
+  one-off tariff-refund/grant credits; bank covenant missed for a third
+  straight year, waived 2026-09-25 in exchange for a new minimum-liquidity
+  covenant; two customers are 68% of sales. **PTN** (Palatin
+  Technologies) FY2026 ANNUAL — no product revenue since selling Vyleesi
+  in Dec 2023; FY2026 net loss roughly halved to $8.4M entirely on one-time
+  licensing income ($9.43M Boehringer Ingelheim, $3.75M Altamira/Altanispac
+  debt cancellation), while cash fell $7.5M and management flagged
+  substantial doubt about the next 12 months; loss/share fell from $32.15
+  to $2.96 mostly on a ~5x higher share count after a 1-for-50 reverse
+  split and new share sales.
+  **Night total: 15 report-periods published tonight, 0 skipped — 596
+  companies done / 7 skipped overall (tracker-wide, across all nights),
+  613 report-periods total across all time.** Remaining tier-0 candidates
+  from tonight's scan: RVII, TRAK, ZONE. Continuing while the cap allows.

@@ -15241,5 +15241,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "NAII": {
+    "name": "Natural Alternatives International, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/naii/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "NTWK": {
+    "name": "NETSOL Technologies Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/ntwk/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "NNVC": {
+    "name": "NanoViricides, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/nnvc/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "POCI": {
+    "name": "Precision Optics Corporation, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/poci/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "prior-year Q1 FY2026 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "PTN": {
+    "name": "Palatin Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/ptn/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
