@@ -5804,3 +5804,21 @@ the automated scheduled-task mechanism):
   firings that night should see the count and exit immediately") —
   published nothing new this firing, tracker untouched. Exiting without
   further batches.
+- **Later firing this same night (checked in at 19:05 UTC / 04:05 JST
+  2026-09-30):** confirmed network access again (SEC 403 without
+  `User-Agent` as expected, 200 with the required header;
+  `financialreportinsights.com` 200 directly). `npm install` hit the same
+  expected `prisma generate`/`DATABASE_URL` postinstall failure (no DB
+  access needed for this pipeline) and left `package-lock.json` modified;
+  reverted that diff, confirming clean working tree matching
+  `origin/master` before doing anything else. Re-ran
+  `npm run scan-recent-filings` fresh: **0 fresh candidates** again
+  (2026-09-29 still shows 0 filings; the 227 filings on 2026-09-28 were
+  already fully cleared in this night's batches 1-4) — no tier-0
+  hot-list/S&P 500 item to justify exceeding tonight's cap. Read this
+  entry before starting: eleven prior batches already closed tonight out
+  at 47/~50 report-periods, and the immediately-prior check-in an hour
+  earlier already found nothing new either. Deferring to that stopping
+  point per CLAUDE.md ("later firings that night should see the count and
+  exit immediately") — published nothing new this firing, tracker
+  untouched. Exiting without further batches.
