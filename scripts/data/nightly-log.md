@@ -5706,7 +5706,38 @@ the automated scheduled-task mechanism):
   cash fell to $41.4M partly on a one-time $5.9M Galantos royalty buyout;
   flagged a filing MD&A wording slip (283% product-sales growth cited as
   total-revenue growth, actually +268%).
-  **Night total: 39 report-periods published tonight, 2 newly skipped
+  **Night total so far: 39 report-periods published, 2 newly skipped
   (ACAA, ACGC), 1 left pending (ABTS) — 621 companies done / 9 skipped
   overall (tracker-wide, across all nights), 638 report-periods total
+  across all time.**
+- **Batch 10 — tier 1, `npm run next-batch -- --n 6`: ACON, ACRS, ACRV,
+  ACT, ACTG** (`us-listed` backlog, in file order; ABTS skipped again).
+  5 Opus subagents, one per company, run in parallel. **ACON** (Aclarion,
+  spinal-disc diagnostic imaging) Q2 2026 (first coverage) — tiny revenue
+  (+30.5% to $25,208) against a widened $2.75M net loss on opex +67%;
+  loss/share improved only because a Jan. 2026 raise grew shares 4.2x;
+  $16.3M cash guided into 2H 2027, no going-concern flag. **ACRS**
+  (Aclaris Therapeutics, dermatology/immunology biotech) Q2 2026 (first
+  coverage) — net loss +39.4% to $21.5M as R&D rose 57.8% on ATI-052/
+  ATI-9494; funded by $59.8M (March) and $40.2M (July, post-quarter)
+  raises; $170.6M cash; bosakitug Phase 2 topline due Q4 2026.
+  **ACRV** (Acrivon Therapeutics, proteomics-guided oncology biotech)
+  Q2 2026 (first coverage) — net loss narrowed to $18.0M from $21.0M
+  mostly on lower stock comp and no repeat of a prior-year milestone cost,
+  not a real burn improvement (H1 operating cash use was flat, $35.4M vs
+  $36.1M); $90.0M cash guided into Q4 2027; a serous-endometrial-cancer
+  readout due 2H 2026 and a planned 1H 2027 Phase 3 start will likely need
+  new funding. **ACT** (Enact Holdings, private mortgage insurer — not a
+  P&C insurer, uses only the insurer metrics fields that genuinely map:
+  netPremiumsWritten, lossRatioPct, bookValuePerShare; combinedRatioPct
+  and catastropheLosses correctly omitted as not applicable) Q2 2026
+  (first coverage) — net income +4.2% to $174.8M and EPS +12.6% on
+  investment income and buybacks, not core underwriting: primary
+  delinquency rate rose to 2.59% from 2.32% and a smaller reserve release
+  lifted the loss ratio to 14% from 10%; capital-return guidance raised to
+  $550-600M for 2026. **ACTG** (Acacia Research Corporation, diversified
+  holding company).
+  **Night total: 44 report-periods published tonight, 2 newly skipped
+  (ACAA, ACGC), 1 left pending (ABTS) — 625 companies done / 9 skipped
+  overall (tracker-wide, across all nights), 642 report-periods total
   across all time.**
