@@ -15841,5 +15841,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ACLS": {
+    "name": "Axcelis Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acls/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90-day cadence from Q2 2026 10-Q filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACMR": {
+    "name": "ACM Research, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acmr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "~90-day cadence from Q1 2026 10-Q filed 2026-05-08",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACNT": {
+    "name": "Ascent Industries Co.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acnt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "prior-year Q3 10-Q filed 2025-11-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACOG": {
+    "name": "Alpha Cognition Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acog/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "prior-year Q3 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACNB": {
+    "name": "ACNB Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acnb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1/Q2 earnings releases came 04-23 and 07-23; Q3 release likely late Oct, 10-Q early Nov",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }

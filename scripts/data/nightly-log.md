@@ -5669,7 +5669,44 @@ the automated scheduled-task mechanism):
   reorganization; excluding the Lilly payment the underlying burn is
   still ~CHF 26.6M/half; CHF 75.4M cash funds into Q4 2027; Takeda's
   pending decision on its ACI-24 option flagged as the key catalyst.
-  **Night total: 34 report-periods published tonight, 2 newly skipped
+  **Night total so far: 34 report-periods published, 2 newly skipped
   (ACAA, ACGC), 1 left pending (ABTS) — 615 companies done / 9 skipped
   overall (tracker-wide, across all nights), 632 report-periods total
+  across all time.**
+- **Batch 9 — tier 1, `npm run next-batch -- --n 7`: ACLS, ACMR, ACNB,
+  ACNT, ACOG** (`us-listed` backlog, in file order; ABTS skipped again).
+  5 Opus subagents, one per company, run in parallel. **ACLS** (Axcelis
+  Technologies, ion-implant semiconductor equipment) Q2 2026 (first
+  coverage) — revenue +10.6% to $215.2M (beat guidance) on +35% parts/
+  service revenue, but net income -25.8% to $23.3M on weaker mix, higher
+  selling costs and $4.8M of pending-Veeco-merger fees; Q3 guided to
+  ~$230M revenue; merger still awaiting China SAMR approval. **ACMR**
+  (ACM Research, semiconductor wafer-cleaning equipment, China exposure)
+  Q2 2026 (first coverage) — revenue +36.0% to $292.9M on strong
+  plating/furnace tool growth (+168%) offsetting a cleaning-tool decline
+  (-14%); about half of net income came from a $69.6M unrealized
+  mark-to-market gain on Shanghai-listed shares the company holds, not
+  operations — adjusted EPS growth was a much more modest +10.9%; FY
+  guidance raised. **ACNB** (ACNB Corporation, PA/MD community bank)
+  Q2 2026 (first coverage, bank metrics profile) — record $15.2M net
+  income (+30.6%), NIM widened to 4.56% (FTE) from 4.21%, efficiency
+  ratio improved to 51.6% from 56.2%; but loan growth outpaced deposits
+  and was funded with borrowings, and dividends (incl. a $0.50 special
+  dividend) plus buybacks trimmed CET1 to 14.49%. **ACNT** (Ascent
+  Industries, specialty chemicals — formerly Synalloy, corrected from the
+  task prompt's outdated "Continental Materials" reference; not a
+  tracker/nightly-log error) Q2 2026 (first coverage) — sales +37.6% to
+  $25.7M on higher prices/volume plus a May acquisition; the -89%
+  headline net-income/EPS drop is a hard comp against a one-time $8.7M
+  discontinued-operations gain a year ago — continuing-operations swung
+  from a $2.45M loss to a $0.67M profit. **ACOG** (Alpha Cognition,
+  ZUNVEYL Alzheimer's drug) Q2 2026 (first coverage) — product revenue
+  nearly quadrupled YoY to $6.04M (+72% vs Q1) at 93.6% gross margin; net
+  loss narrowed to $8.79M mostly on a smaller non-cash warrant charge;
+  cash fell to $41.4M partly on a one-time $5.9M Galantos royalty buyout;
+  flagged a filing MD&A wording slip (283% product-sales growth cited as
+  total-revenue growth, actually +268%).
+  **Night total: 39 report-periods published tonight, 2 newly skipped
+  (ACAA, ACGC), 1 left pending (ABTS) — 621 companies done / 9 skipped
+  overall (tracker-wide, across all nights), 638 report-periods total
   across all time.**
