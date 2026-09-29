@@ -37,3 +37,11 @@ export function reportPath(report: ReportPathInput): string {
 export function reportUrl(report: ReportPathInput): string {
   return `${SITE_URL}${reportPath(report)}`;
 }
+
+// /companies/<company>/<year> only lists that year's reports, all of which the
+// company page already shows. It's worth indexing only once the company has
+// more than one year of coverage and the year holds more than one report;
+// otherwise it's a thin duplicate (noindex on the page, left out of the sitemap).
+export function isIndexableYear(reportsThisYear: number, yearsCovered: number): boolean {
+  return yearsCovered >= 2 && reportsThisYear >= 2;
+}

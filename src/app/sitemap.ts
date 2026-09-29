@@ -3,7 +3,7 @@ import { prismaCached as prisma } from "@/lib/prisma";
 import { SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
-import { reportUrl } from "@/lib/reportPath";
+import { isIndexableYear, reportUrl } from "@/lib/reportPath";
 import { loadMacro } from "@/lib/macroStore";
 import { buildRates } from "@/lib/rates";
 import { availableScorecards } from "@/lib/scorecard";
@@ -54,7 +54,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const ratesUpdated = new Date(macro.live.updatedAt);
 
   const companyYearEntries = companies.flatMap((company) => {
-    const years = Array.from(new Set(company.reports.map((r) => r.year)));
+    const perYear = new Map<number, number>();
+    for (const r of company.reports) perYear.set(r.year, (perYear.get(r.year) ?? 0) + 1);
+    const years = [...perYear.keys()].filter((year) =>
+      isIndexableYear(perYear.get(year)!, perYear.size)
+    );
     return years.map((year) => ({
       url: `${SITE_URL}/companies/${company.slug}/${year}`,
       changeFrequency: "monthly" as const,

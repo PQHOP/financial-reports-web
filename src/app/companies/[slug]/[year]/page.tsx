@@ -8,6 +8,7 @@ import { parseSource, sourceWhere, systemReports } from "@/lib/community";
 import { reportPath } from "@/lib/reportPath";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { cleanCompanyName } from "@/lib/companyName";
+import { isIndexableYear } from "@/lib/reportPath";
 
 export const dynamic = "force-dynamic";
 
@@ -20,9 +21,16 @@ export async function generateMetadata({
 
   const company = await prisma.company.findUnique({ where: { slug } });
   if (!company) return {};
-  const reportCount = await prisma.report.count({
-    where: { companyId: company.id, year: Number(year) || 0, ...systemReports },
-  });
+  const [reportCount, years] = await Promise.all([
+    prisma.report.count({
+      where: { companyId: company.id, year: Number(year) || 0, ...systemReports },
+    }),
+    prisma.report.findMany({
+      where: { companyId: company.id, ...systemReports },
+      distinct: ["year"],
+      select: { year: true },
+    }),
+  ]);
 
   const title = `${cleanCompanyName(company.name)}${company.ticker ? ` (${company.ticker})` : ""} ${year} Earnings Reports`;
   const description = `Financial report analysis for ${cleanCompanyName(company.name)}${
@@ -36,7 +44,12 @@ export async function generateMetadata({
       canonical: `/companies/${company.slug}/${year}`,
     },
     openGraph: { title, description },
-    ...(reportCount === 0 ? { robots: { index: false, follow: true } } : {}),
+    // A year page only lists that year's reports, so until the company has
+    // a second year of coverage it duplicates the company page (Search
+    // Console flagged these as "Crawled - currently not indexed").
+    ...(!isIndexableYear(reportCount, years.length)
+      ? { robots: { index: false, follow: true } }
+      : {}),
   };
 }
 
