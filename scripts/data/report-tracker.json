@@ -15021,5 +15021,225 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-28"
+  },
+  "BMRA": {
+    "name": "Biomerica, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/bmra/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-08-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-10-14",
+      "basis": "prior-year Q1 FY2026 10-Q filed 2025-10-14, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "FKWL": {
+    "name": "Franklin Wireless Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/fkwl/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "INTG": {
+    "name": "The Intergroup Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/intg/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-13",
+      "basis": "prior-year equivalent 10-Q filed 2026-05-11 (unusually late); using ~90-day cadence as a conservative estimate",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "CAST": {
+    "name": "FreeCast, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/cast/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "prior-year Q3 10-Q filed 2026-05-15, ~45 days after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "KFFB": {
+    "name": "Kentucky First Federal Bancorp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/kffb/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "MITQ": {
+    "name": "Moving iMage Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/mitq/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "MLKN": {
+    "name": "MillerKnoll, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/mlkn/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027)",
+      "estimate": "2027-01-05",
+      "basis": "prior-year Q2 FY2026 10-Q filed 2026-01-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "LITS": {
+    "name": "Lite Strategy, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/lits/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "MKZR": {
+    "name": "MacKenzie Realty Capital, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/mkzr/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from FY2026 10-K filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "MTN": {
+    "name": "Vail Resorts, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/mtn/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-12-10",
+      "basis": "typical early-to-mid December filing for the fiscal Q1 (quarter ended Oct 31) 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }

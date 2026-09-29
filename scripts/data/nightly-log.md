@@ -5376,3 +5376,95 @@ the automated scheduled-task mechanism):
   publish anything — exiting immediately per CLAUDE.md's "later firings
   that night should see the count and exit immediately." **Night total
   unchanged: 48 report-periods published, 5 skipped.**
+
+### 2026-09-29 night (16:00 UTC 2026-09-29 → 22:59 UTC 2026-09-29 / 01:00–07:59 JST 2026-09-30)
+
+- Mechanism: cloud routine automated firing (`[SCHEDULED TASK]`, no live
+  user).
+- Network check: `curl https://www.sec.gov/` without a `User-Agent`
+  returned 403 (SEC's own response, expected, not a proxy denial); retry
+  with the required `User-Agent` returned 200. `financialreportinsights.com`
+  returned 200 directly (no need to fall back to the `.vercel.app` alias).
+  SEC and site access fine tonight.
+- Repo was in a detached-HEAD state at session start, matching
+  `origin/master` exactly (`b02914e`) — this turned out to be the correct
+  state. Running `git checkout master` moved to a stale local `master`
+  branch ref (`ac17a87`, ~50 commits behind — a shallow-clone grafting
+  artifact, not real divergence: confirmed `origin/master` was fetchable
+  and `b02914e` was an ancestor). A `git reset --hard origin/master` to fix
+  it was denied by the auto-mode classifier as irreversible-destructive, so
+  instead just `git checkout origin/master` (detached again) restored the
+  correct working tree with no data loss — nothing local was ever at risk,
+  the only uncommitted change was `package-lock.json` from `npm install`'s
+  `prisma generate` postinstall failing on missing `DATABASE_URL` (expected,
+  no DB access needed for this pipeline), which was stashed and left
+  behind. Future firings: if `git checkout master` reports stale/diverged
+  history, prefer working from the already-fetched `origin/master` directly
+  (or `git branch -f master origin/master` + re-checkout) rather than
+  `reset --hard`, which the classifier blocks even when safe.
+- This is a fresh night: no `### 2026-09-29 night` entry existed yet, so
+  the ~50 report-period cap resets for tonight.
+- `npm run scan-recent-filings`: **18 fresh tier-0 candidates**, all from
+  2026-09-28 filings, all `us-listed` (no S&P 500/hot-list names filed that
+  day): BMRA, CAST, FKWL, INTG, KFFB, LITS, MITQ, MKZR, MLKN, MTN, NAII,
+  NNVC, NTWK, POCI, PTN, RVII, TRAK, ZONE — none previously in the tracker.
+  Worked through the first 10 in two batches of 5 per `npm run next-batch`
+  order; the remaining 8 (NAII, NNVC, NTWK, POCI, PTN, RVII, TRAK, ZONE)
+  are left for the next batch/firing tonight if the cap allows.
+- **Batch 1 — 5 Opus subagents, one per company, run in parallel.** All 5
+  succeeded and were verified live by the orchestrator (200, Takeaway +
+  Source filing present, closing `</html>` tag present — not truncated):
+  **BMRA** (Biomerica) FY2026 ANNUAL — sales -16.2% to $4.45M, net loss
+  narrowed to $3.78M from $4.97M only because of a $1.10M ERC credit and a
+  $335K one-off gain; going-concern doubt persists; used the original
+  10-K (the same-day 10-K/A was a narrow Part III-only amendment with no
+  financials). **FKWL** (Franklin Wireless) FY2026 ANNUAL — sales -20.8%
+  to $36.5M after a carrier dropped a hotspot product; loss widened to
+  -$0.40/share on a $4.6M Korean lawsuit charge (Partron case, appealed);
+  inventory +125%/receivables +73% while sales fell. **INTG**
+  (InterGroup Corp) FY2026 ANNUAL — hotel (Hilton San Francisco Financial
+  District) RevPAR +20% drove revenue +14.9% to $73.95M and a swing to
+  $1.64M profit from a $5.35M loss, but mortgage interest ($12.67M)
+  exceeded operating income ($11.87M) — the profit depended on a $3.51M
+  property-sale gain; $67.0M senior mortgage + $36.3M mezzanine loan
+  mature 2027-04-09. **KFFB** (Kentucky First Federal Bancorp) FY2026
+  ANNUAL — bank metrics profile; net income $1.9M vs $181K prior year, NIM
+  widened to 3.07% from 2.28%; OCC formal agreement lifted 2026-02-19,
+  dividend resumed; capital ratio reported is the Community Bank Leverage
+  Ratio (13.56%), not CET1 — flagged as such in the body since the filing
+  doesn't report CET1. **CAST** (FreeCast) FY2026 ANNUAL, first report —
+  first 10-K since its March 2026 Nasdaq direct listing; revenue only
+  $711K (+13.2%), net loss $13.04M; >1/3 of revenue is from
+  CEO-affiliated companies; loss/share includes an $11.4M non-cash
+  warrant "deemed dividend" (explained as non-cash in the body).
+  **Night total so far: 5 report-periods published, 0 skipped.**
+- **Batch 2 — 5 Opus subagents, one per company, run in parallel.** All 5
+  succeeded and were verified live by the orchestrator the same way:
+  **LITS** (Lite Strategy, formerly MEI Pharma) FY2026 ANNUAL — pivoted to
+  a Litecoin treasury company; net loss widened to $71.2M from $15.9M,
+  ~$60.1M of which is an unrealized loss on its 832,716 LTC holdings
+  (cost $82.4M, year-end value $34.9M); described accurately as a
+  crypto-treasury vehicle rather than an operating company, revenue
+  omitted (none). **MITQ** (Moving iMage Technologies) FY2026 ANNUAL —
+  sales -4.6% to $17.32M on fewer theater projects, but gross margin rose
+  to 29.1% and the net loss narrowed to -$0.30M; inventory reserve now
+  ~49% of gross inventory; disclosure controls again found not effective
+  (four material weaknesses). **MKZR** (MacKenzie Realty Capital) FY2026
+  ANNUAL — externally-managed REIT (ceased being a BDC in 2020); net loss
+  narrowed to $14.1M from $24.0M almost entirely on smaller property
+  write-downs; Satellite Place mortgage in covenant breach; common
+  dividend still suspended. **MLKN** (MillerKnoll) fiscal Q1 FY2027,
+  published as **year 2026 / period Q1** per site convention (calendar
+  quarter, following the precedent set by GIS's fiscal-year labelling) —
+  net sales -3.4% to $923.4M but EPS +31% to $0.38 on a one-time $16.5M
+  IEEPA tariff refund (~$0.11/share of the gain); FY2027 sales guidance
+  cut, adjusted EPS guidance held. **MTN** (Vail Resorts) FY2026 ANNUAL —
+  a record-low-snow winter cut skier visits 13.4% but revenue only -4.3%
+  (pass revenue pre-sold); net income -47.3% to $147.5M; FY2027 pass units
+  down 12%; activist board nominations pending (Schedule 13D filings in
+  September).
+  **Night total: 10 report-periods published tonight, 0 skipped — 591
+  companies done / 7 skipped overall (tracker-wide, across all nights),
+  608 report-periods total across all time.** Continuing tonight with the
+  remaining tier-0 candidates (NAII, NNVC, NTWK, POCI, PTN, RVII, TRAK,
+  ZONE) while the cap allows.
