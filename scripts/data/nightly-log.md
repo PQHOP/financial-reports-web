@@ -5822,3 +5822,26 @@ the automated scheduled-task mechanism):
   point per CLAUDE.md ("later firings that night should see the count and
   exit immediately") — published nothing new this firing, tracker
   untouched. Exiting without further batches.
+- **Later firing this same night (checked in at 20:07 UTC / 05:07 JST
+  2026-09-30):** confirmed network access first per this firing's own
+  instructions — SEC 403 without a `User-Agent` header (expected, SEC's
+  own response, not a proxy denial), 200 with the required header;
+  `financialreportinsights.com` and the `.vercel.app` alias both 200
+  directly. `node_modules` was missing this time (fresh container), so
+  ran `npm install`; hit the same expected `prisma generate`/
+  `DATABASE_URL` postinstall failure (no DB access needed for this
+  pipeline) and it left `package-lock.json` modified — reverted that diff
+  before touching anything else, confirming a clean tree matching
+  `origin/master`. Re-ran `npm run scan-recent-filings` fresh: **0 fresh
+  candidates** (2026-09-29 still shows 0 filings; 2026-09-28's 227 were
+  already fully cleared in this night's earlier batches). Read this entry
+  before starting: twelve prior batches already closed tonight out at
+  47/~50 report-periods, and the two immediately-prior check-ins (18:06
+  and 19:05 UTC) already found nothing new either — this is right in the
+  20:05-21:00 UTC post-close 8-K window CLAUDE.md flags, but EDGAR's own
+  daily index still shows zero filings for today. No tier-0 hot-list/S&P
+  500 item to justify exceeding tonight's cap by even the permitted "few."
+  Deferring to the established stopping point per CLAUDE.md ("later
+  firings that night should see the count and exit immediately") —
+  published nothing new this firing, tracker untouched. Exiting without
+  further batches.
