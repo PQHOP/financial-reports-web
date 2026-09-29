@@ -5600,7 +5600,39 @@ the automated scheduled-task mechanism):
   filed 2026-08-05) already exists and is noted as a tier-2/freshness
   follow-up candidate, not needed to satisfy this tier's "one 2026 report"
   bar.
-  **Night total: 26 report-periods published tonight, 1 newly skipped
+  **Night total so far: 26 report-periods published, 1 newly skipped
   (ACAA), 1 left pending (ABTS) — 607 companies done / 8 skipped overall
   (tracker-wide, across all nights), 624 report-periods total across all
   time.**
+- **Batch 7 — tier 1, `npm run next-batch -- --n 6`: ACCL, ACDC, ACET,
+  ACFN, ACGC** (`us-listed` backlog, in file order; ABTS reappeared again
+  and was skipped again, still not due for re-check). 5 Opus subagents,
+  one per company, run in parallel. **ACCL** (Acco Group Holdings, HK
+  company-secretary/accounting services, Nasdaq-listed Oct 2025) 2026 H1
+  (first coverage, furnished via 6-K — foreign private issuer, FY2026
+  20-F not out yet) — revenue +1.0% to $2.64M but net income fell 83% to
+  $94,197 on IPO-related legal/audit/advisory costs more than doubling
+  G&A. **ACDC** (ProFrac Holding, oilfield fracturing services) Q2 2026
+  (first coverage) — revenue flat at $498.1M; net loss narrowed to $79.7M
+  from $108.0M almost entirely because one-off charges were ~$32M smaller
+  than a year ago; adjusted EBITDA actually fell 12% to $69.4M as frac
+  pricing/utilization softened; debt at $1.10B against $72.0M liquidity.
+  **ACET** (Adicet Bio, allogeneic gamma-delta T-cell biotech) Q2 2026
+  (first coverage) — net loss narrowed 32% to $21.4M mainly on lower
+  trial-contractor costs "due to no new enrollment" plus 2025 layoffs;
+  cash ($118.2M) guided to last into 2H 2027; systemic-sclerosis data
+  timeline slipped from 2H 2026 to 1H 2027; new lupus nephritis data
+  (Sept 28) showed 50% complete renal response at 12 months. **ACFN**
+  (Acorn Energy / OmniMetrix remote monitoring) Q2 2026 (first coverage)
+  — revenue -29.4% to $2.489M as a large cell-carrier hardware contract
+  faded; ex-that-customer revenue was flat and monitoring revenue grew
+  8.0%; new Gen-Tracker acquisition (Sept 9, $3.5M) noted. **ACGC** (ACP
+  Holdings Acquisition Corp.) — **skipped, not published**: another
+  pre-merger blank-check SPAC (no operations, Q2 net income was purely
+  $1.69M trust interest less $0.60M admin costs); a Business Combination
+  Agreement with May Mobility, Inc. was signed 2026-09-15 but hasn't
+  closed — revisit after closing.
+  **Night total: 30 report-periods published tonight, 2 newly skipped
+  (ACAA, ACGC), 1 left pending (ABTS) — 611 companies done / 9 skipped
+  overall (tracker-wide, across all nights), 628 report-periods total
+  across all time.**

@@ -15643,5 +15643,93 @@
     },
     "skipReason": "Pre-merger SPAC (blank check) with no operations: Q2 2026 10-Q states the Company has not commenced operations and will not generate operating revenues until completion of its initial Business Combination; Q2 net income of $1.17M was only trust interest ($1.69M) less formation/G&A costs ($0.60M), no prior-year comparison. A Business Combination Agreement with May Mobility, Inc. was signed 2026-09-15 (8-K filed 2026-09-16) but has not closed (Outside Date 2027-05-26); revisit after closing.",
     "lastChecked": "2026-09-30"
+  },
+  "ACCL": {
+    "name": "Acco Group Holdings Limited - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/accl/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 results)",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-06-30"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual)",
+      "estimate": "2026-10-31",
+      "basis": "statutory deadline for fiscal year ended 2026-06-30; company filed late last year too",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACDC": {
+    "name": "ProFrac Holding Corp. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acdc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "~90-day cadence from Q1 2026 10-Q filed 2026-05-08",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACET": {
+    "name": "Adicet Bio, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acet/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "prior-year Q3 10-Q filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACFN": {
+    "name": "Acorn Energy, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acfn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "prior-year Q3 10-Q filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
