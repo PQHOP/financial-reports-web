@@ -5561,6 +5561,46 @@ the automated scheduled-task mechanism):
   cash received July 8) makes H1 net income $164.6M; a further $1.3B is
   contingent on a pending §1498 appeal; management is evaluating a return
   of capital to shareholders.
-  **Night total: 22 report-periods published tonight, 0 skipped, 1 left
+  **Night total so far: 22 report-periods published, 0 skipped, 1 left
   pending (ABTS) — 603 companies done / 7 skipped overall (tracker-wide,
   across all nights), 620 report-periods total across all time.**
+- **Batch 6 — tier 1, `npm run next-batch -- --n 6`: ABVC, ABVX, ACAA,
+  ACAD, ACB** (`us-listed` backlog, in file order; ABTS reappeared but
+  was already checked this batch-5 and skipped again since its
+  `nextExpectedFiling.estimate` of 2026-10-15 hasn't passed). 5 Opus
+  subagents, one per company, run in parallel. **ABVC** (ABVC BioPharma)
+  Q2 2026 (first coverage) — pre-revenue botanical-drug biotech; net loss
+  narrowed 67% to $737K only because a prior-year one-time stock payout to
+  advisors didn't repeat; ended June with just $31,944 cash, a $5.28M
+  working-capital deficit and going-concern doubt; Vitargus Phase II on
+  hold after adverse events, ABV-2002 suspended for lack of funding.
+  **ABVX** (Abivax SA) H1 2026 (first coverage, furnished via 6-K, not a
+  10-Q — foreign private issuer) — obefazimod (ulcerative colitis)
+  biotech; net loss widened to €165.9M from €100.8M almost entirely on
+  two non-cash items (a €43.2M royalty-certificate buyback loss, €39.4M
+  higher share-based pay); a €767.1M July offering funds operations into
+  Q4 2029; US NDA filing for obefazimod on track for Q4 2026. **ACAA**
+  (Averin Capital Acquisition Corp.) — **skipped, not published**:
+  confirmed pre-merger blank-check SPAC (IPO Feb 2026, $287M trust, no
+  definitive merger target as of 2026-06-30); only income is trust
+  interest, no operating business to analyze; correctly judged not to
+  clear the site's quality bar rather than forcing a thin report — good
+  call by the subagent. **ACAD** (ACADIA Pharmaceuticals) Q2 2026 (first
+  coverage) — commercial biopharma; revenue +16.4% to $308.0M led by
+  DAYBUE +29.9% on its STIX launch; operating margin flat at 12.3% on
+  higher S&A; FY guidance raised to $1.24-1.30B; pipeline setback flagged
+  (remlifanserin narrowly missed its Sept. 24 Phase 2 primary endpoint,
+  p=0.0603). **ACB** (Aurora Cannabis) FY2026 ANNUAL (first coverage,
+  CAD, fiscal year ended March 31, 2026, filed via 40-F — Canadian MJDS
+  filer) — revenue +11% to C$320.6M on European medical sales, but swung
+  to a C$58.6M loss from continuing operations (C$136.0M including
+  discontinued ops) after a ~30% cut to Canadian medical reimbursement;
+  fighting a hostile Curaleaf takeover bid (capped at US$5.00/share,
+  open to 2026-12-01); a newer Q1 FY2027 6-K (quarter to 2026-06-30,
+  filed 2026-08-05) already exists and is noted as a tier-2/freshness
+  follow-up candidate, not needed to satisfy this tier's "one 2026 report"
+  bar.
+  **Night total: 26 report-periods published tonight, 1 newly skipped
+  (ACAA), 1 left pending (ABTS) — 607 companies done / 8 skipped overall
+  (tracker-wide, across all nights), 624 report-periods total across all
+  time.**

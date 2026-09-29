@@ -15521,5 +15521,110 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ACAA": {
+    "name": "Averin Capital Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 filed 05-14, Q2 filed 08-05; ~45-day cadence after quarter-end",
+      "confidence": "estimated"
+    },
+    "skipReason": "Pre-merger SPAC (blank-check company, IPO Feb 2026): Q2 2026 10-Q reports no operations or revenue, only trust-account interest income ($2.52M in Q2) offset by formation/admin costs ($0.16M), and no definitive business-combination agreement as of 2026-06-30. No operating business to analyze; revisit if an 8-K announcing a merger agreement / de-SPAC closing appears.",
+    "lastChecked": "2026-09-30"
+  },
+  "ABVX": {
+    "name": "Abivax SA - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/abvx/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 report)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-21"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual)",
+      "estimate": "2027-03-23",
+      "basis": "prior FY2025 20-F filed 2026-03-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACAD": {
+    "name": "ACADIA Pharmaceuticals Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acad/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "prior-year Q3 10-Q filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ABVC": {
+    "name": "ABVC BioPharma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/abvc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "~90-day cadence from Q2 2026 10-Q filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "ACB": {
+    "name": "Aurora Cannabis Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/companies/acb/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "40-F (FY2026 annual, fiscal year end March 31)",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-06-11"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q2 FY2027, quarter ending 2026-09-30)",
+      "estimate": "2026-11-10",
+      "basis": "filing cadence; a Q1 FY2027 6-K (period 2026-06-30) was already filed 2026-08-05, not yet covered — candidate for tier-2/freshness follow-up",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
