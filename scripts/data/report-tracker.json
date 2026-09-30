@@ -17413,5 +17413,35 @@
         "url": "https://financialreportinsights.com/reports/cmuocgmba000104l0sjokan9g"
       }
     ]
+  },
+  "AIAI": {
+    "name": "AIAI Holdings Corporation - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocloo8000304jsmt2246fu"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day non-accelerated-filer deadline, rolled to Monday",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocloo8000304jsmt2246fu"
+      }
+    ]
   }
 }
