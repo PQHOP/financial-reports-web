@@ -16500,5 +16500,35 @@
         "url": "https://financialreportinsights.com/reports/cmuobj1bi000104jmw1lipb0m"
       }
     ]
+  },
+  "ADUS": {
+    "name": "Addus HomeCare Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobjnbp000204jm5zystm5e"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q3 2025 10-Q filed 2025-11-04; earnings 8-K the day before 10-Q in 2026",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobjnbp000204jm5zystm5e"
+      }
+    ]
   }
 }
