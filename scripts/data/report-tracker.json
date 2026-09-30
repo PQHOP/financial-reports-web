@@ -17383,5 +17383,35 @@
         "url": "https://financialreportinsights.com/reports/cmuocg3iy000204jsk7zjyht4"
       }
     ]
+  },
+  "AHG": {
+    "name": "Akso Health Group - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocgmba000104l0sjokan9g"
+    },
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 FY2027 interim)",
+      "estimate": "2027-02-10",
+      "basis": "prior-year equivalent 6-K filed 2026-02-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocgmba000104l0sjokan9g"
+      }
+    ]
   }
 }
