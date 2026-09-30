@@ -17216,5 +17216,112 @@
         "url": "https://financialreportinsights.com/reports/cmuoc9k6h000704jmup7sqe38"
       }
     ]
+  },
+  "AGNC": {
+    "name": "AGNC Investment Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocdn58000004l06vsr060j"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "prior-year Q3 earnings 8-K 2025-10-20, 10-Q ~10 days later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocdn58000004l06vsr060j"
+      }
+    ]
+  },
+  "AGYS": {
+    "name": "Agilysys, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocehx0000604jy9v4xzq24"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (Q1 FY2027, newer than the annual used)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027)",
+      "estimate": "2026-10-27",
+      "basis": "prior-year Q2 10-Q and earnings 8-K both filed 2025-10-27",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocehx0000604jy9v4xzq24"
+      }
+    ]
+  },
+  "AHCO": {
+    "name": "AdaptHealth Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocfdnu000004jsotmvmuo0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q1 filed 2026-05-05, Q2 filed 2026-08-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocfdnu000004jsotmvmuo0"
+      }
+    ]
+  },
+  "AHMA": {
+    "name": "Ambitions Enterprise Management Co. L.L.C - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "no 2026-period financial filing yet; latest periodic filing is the FY2025 20-F (filed 2026-04-30); foreign private issuer with semiannual reporting, H1 2026 interim 6-K not yet filed as of 2026-09-30",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-30"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim)",
+      "estimate": "2026-12-31",
+      "basis": "Nasdaq 6-month deadline for foreign-issuer semiannual results; no filing history yet since this is its first year listed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
