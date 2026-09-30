@@ -16577,5 +16577,65 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ADXN": {
+    "name": "Addex Therapeutics Ltd - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobozzy000304jyp2zjll8y"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-28"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (FY2026 preliminary results)",
+      "estimate": "2027-04-30",
+      "basis": "prior-year FY2025 preliminary 6-K on 2026-04-30, 20-F on 2026-05-15; reports only twice a year",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobozzy000304jyp2zjll8y"
+      }
+    ]
+  },
+  "AEBI": {
+    "name": "Aebi Schmidt Holding AG",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobpf8s000404jy0hos4olv"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobpf8s000404jy0hos4olv"
+      }
+    ]
   }
 }
