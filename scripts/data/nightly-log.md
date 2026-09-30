@@ -6176,3 +6176,24 @@ report-periods**.
     (tier 0 outranks the cap, and hot-list/S&P 500 items may exceed the
     cap by a few if they reported that day) but should not start further
     plain tier-1 backlog research tonight.
+
+- **Next firing, checked in at 21:05 UTC / 06:05 JST 2026-10-01:**
+  confirmed via `list_triggers` that this firing's `last_run.session_id`
+  matches the current session (no duplicate-routine risk). Confirmed
+  network access: plain `curl https://www.sec.gov/` (no User-Agent)
+  returned 403 (SEC's own response, not a proxy denial); retrying with the
+  required `User-Agent` header returned 200. `financialreportinsights.com`
+  and the `.vercel.app` alias both returned 200 directly. Local git state
+  was a detached HEAD matching `origin/master`; checked out `master` and
+  fast-forwarded cleanly (28 commits, the prior two sub-batches' pushes).
+  `node_modules` was missing (fresh container); ran `npm install`, hit the
+  usual `prisma generate`/`DATABASE_URL` postinstall failure (expected, no
+  DB access needed for this pipeline) and reverted the resulting
+  `package-lock.json` diff before touching anything else. Re-ran
+  `npm run scan-recent-filings` fresh: **0 fresh candidates** again
+  (2026-09-30 still shows 0 filings so far as of this check — same as
+  every check tonight; 2026-09-29/28/25/24 already fully cleared). With
+  tier 0 still empty and tonight's total unchanged at 49/~50 — 1 of margin
+  remains, matching the prior firing's explicit note not to start further
+  tier-1 backlog research this close to the cap — publishing nothing new
+  this firing. Tracker untouched. Exiting without further batches.
