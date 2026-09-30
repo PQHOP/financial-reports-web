@@ -16847,5 +16847,129 @@
         "url": "https://financialreportinsights.com/reports/cmuobwx9g000804kzk5vjjb4b"
       }
     ]
+  },
+  "AENT": {
+    "name": "Alliance Entertainment Holding Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoc0sn6000404jmlfm5kmzt"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-12",
+      "basis": "prior-year Q1 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoc0sn6000404jmlfm5kmzt"
+      }
+    ]
+  },
+  "AERT": {
+    "name": "Aeries Technology, Inc. - Class A Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoc266x000904kzmb3zw7fv"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (Q1 FY2027, newer than the annual used)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027)",
+      "estimate": "2026-11-10",
+      "basis": "10-Qs filed 2026-02-09 and 2026-08-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoc266x000904kzmb3zw7fv"
+      }
+    ]
+  },
+  "AEVA": {
+    "name": "Aeva Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoc29ks000504jm39h3l7wh"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "prior-year Q3 10-Q filed 2025-11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoc29ks000504jm39h3l7wh"
+      }
+    ]
+  },
+  "AESP": {
+    "name": "Aeon Acquisition I Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-combination SPAC / blank-check company, no operating business to analyze (trust $144.1M at 2026-06-30; no definitive agreement; must complete a deal by 2027-06-04)",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-18"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-18",
+      "basis": "recheck only if an 8-K announces a definitive business combination agreement",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "AFRI": {
+    "name": "Forafric Global PLC - Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Foreign private issuer (20-F/6-K, calendar FY, USD); no 2026 financial statements filed as of 2026-09-30. Last filing with financials: FY2025 20-F filed 2026-05-15. Main operating subsidiary (Forafric Maroc) lost control to Cap Holding SA on 2026-08-05, so the eventual H1 2026 interim may show it as discontinued.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-05-15"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim)",
+      "estimate": "2026-12-29",
+      "basis": "prior-year H1 2025 interim 6-K filed 2025-12-29",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
