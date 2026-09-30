@@ -17443,5 +17443,65 @@
         "url": "https://financialreportinsights.com/reports/cmuocloo8000304jsmt2246fu"
       }
     ]
+  },
+  "AIFF": {
+    "name": "Firefly Neuroscience, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocmj2i000004l4l2ck2h5d"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "prior-year Q3 10-Q filed 2025-11-12; 2026 cadence 05-13, 08-11",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocmj2i000004l4l2ck2h5d"
+      }
+    ]
+  },
+  "AIFA": {
+    "name": "All In FutureTech Alliance, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocmkz4000104l454zormiz"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day deadline; prior-year Q3 10-Q was late (after NT 10-Q, filed 2025-11-19)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocmkz4000104l454zormiz"
+      }
+    ]
   }
 }
