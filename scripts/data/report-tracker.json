@@ -16637,5 +16637,35 @@
         "url": "https://financialreportinsights.com/reports/cmuobpf8s000404jy0hos4olv"
       }
     ]
+  },
+  "ADVB": {
+    "name": "Advanced Biomed Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobpuxq000404kzeat2gszr"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-05-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2026-10-13",
+      "basis": "NT 10-K late-filing notice filed 2026-09-28, 15-day extension",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobpuxq000404kzeat2gszr"
+      }
+    ]
   }
 }
