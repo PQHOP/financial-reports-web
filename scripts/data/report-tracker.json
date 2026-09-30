@@ -17156,5 +17156,65 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "AGEN": {
+    "name": "Agenus Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoc9hl2000704jm9j7dntrm"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "prior-year Q3 10-Q filed 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoc9hl2000704jm9j7dntrm"
+      }
+    ]
+  },
+  "AGMB": {
+    "name": "AgomAb Therapeutics NV - ADRs representing one common share.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoc9k6h000704jmup7sqe38"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 ANNUAL)",
+      "estimate": "2027-04-23",
+      "basis": "prior-year FY2025 20-F filed 2026-04-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoc9k6h000704jmup7sqe38"
+      }
+    ]
   }
 }
