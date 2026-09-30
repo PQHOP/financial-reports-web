@@ -16440,5 +16440,65 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
+  },
+  "ADUR": {
+    "name": "Aduro Clean Technologies Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobiy4u000204kzu8bjiz8h"
+    },
+    "lastFilingSeen": {
+      "type": "40-F",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-08-31"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q1 FY2027 interim, quarter ended 2026-08-31)",
+      "estimate": "2026-10-15",
+      "basis": "prior-year Q1 6-K filed 2025-10-16; later interims ~45 days after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobiy4u000204kzu8bjiz8h"
+      }
+    ]
+  },
+  "ADTN": {
+    "name": "ADTRAN Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobj1bi000104jmw1lipb0m"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 10-Q filed 2025-11-04; this year 8-K the evening before 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobj1bi000104jmw1lipb0m"
+      }
+    ]
   }
 }
