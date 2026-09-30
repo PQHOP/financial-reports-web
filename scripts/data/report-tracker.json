@@ -16530,5 +16530,52 @@
         "url": "https://financialreportinsights.com/reports/cmuobjnbp000204jm5zystm5e"
       }
     ]
+  },
+  "ADV": {
+    "name": "Advantage Solutions Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobny9l000304kz300od2sh"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q filed 2025-11-06; Q2 2026 filed 2026-08-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobny9l000304kz300od2sh"
+      }
+    ]
+  },
+  "AEAQ": {
+    "name": "Activate Energy Acquisition Corp. - Class A Ordinary Share",
+    "status": "skipped",
+    "skipReason": "pre-combination SPAC / blank-check company, no operating business to analyze (trust $234.6M at 2026-06-30; no definitive agreement; must complete a deal by 2027-12-05 or liquidate)",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "recheck only if an 8-K announces a definitive business combination agreement",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
