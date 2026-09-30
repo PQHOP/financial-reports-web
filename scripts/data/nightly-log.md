@@ -6020,3 +6020,27 @@ report-periods**.
   (40-F/6-K), and foreign private issuers reporting in CHF/CAD/EUR/BRL/CNY
   — currency and fiscal-year-end were verified per company rather than
   assumed calendar-year/USD.
+
+- **Next hourly firing, checked in at 17:07 UTC / 02:07 JST 2026-10-01
+  (this is `trig_01GNdUY59Na4x3JxMr6p7mxK`'s 17:04 UTC firing — confirmed
+  via `get_trigger` that `last_run.session_id` matches this session, so no
+  duplicate-routine risk):** confirmed network access first — plain `curl
+  https://www.sec.gov/` without a `User-Agent` returned 403 (SEC's own
+  response to an undeclared user agent, not a proxy denial); retrying with
+  the required `User-Agent` header returned 200.
+  `financialreportinsights.com` and the `.vercel.app` alias both returned
+  200 directly. `node_modules` was missing (fresh container); ran `npm
+  install`, hit the usual `prisma generate`/`DATABASE_URL` postinstall
+  failure (expected, no DB access needed for this pipeline) and it left
+  `package-lock.json` modified — reverted that diff before touching
+  anything else. Re-ran `npm run scan-recent-filings` fresh: **0 fresh
+  candidates** (2026-09-30 shows 0 filings so far; 2026-09-29's 247 and
+  2026-09-28's 227 are already fully cleared by this same night's earlier
+  batch above). Read the entry above before starting: this same night's
+  immediately-prior firing already closed out at 45/~50 report-periods and
+  explicitly left a note to confirm at/near cap and exit without starting
+  new tier-1 research. With tier 0 empty and no tier-0 hot-list/S&P 500
+  item to justify pushing further into tier-1 territory this close to the
+  cap, deferring to that stopping point per CLAUDE.md's pacing rule.
+  Published nothing new this firing, tracker untouched. Exiting without
+  further batches.
