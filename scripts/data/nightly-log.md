@@ -6089,3 +6089,69 @@ report-periods**.
   rather than starting new tier-1 research this close to the cap.
   Published nothing new this firing, tracker untouched. Exiting without
   further batches.
+
+- **Next firing, checked in at 20:05 UTC / 05:05 JST 2026-10-01:**
+  confirmed network access first — plain `curl https://www.sec.gov/` (no
+  User-Agent) returned 403 (SEC's own response to an undeclared user
+  agent, not a proxy denial); retrying with the required `User-Agent`
+  header returned 200. `financialreportinsights.com` and the `.vercel.app`
+  alias both returned 200 directly. Local git state was a detached HEAD
+  already matching the latest `origin/master`; checked out `master` and
+  fast-forwarded cleanly (no divergence). `node_modules` was present but
+  missing `tsx`; ran `npm install`, hit the usual `prisma generate`/
+  `DATABASE_URL` postinstall failure (expected, no DB access needed for
+  this pipeline) and reverted the resulting `package-lock.json` diff
+  before touching anything else. Re-ran `npm run scan-recent-filings`
+  fresh: **0 fresh candidates** again (2026-09-30 still shows 0 filings
+  so far). Ran `npm run next-batch -- --n 5`: hot list and S&P 500 are
+  both fully cleared — it's now serving pure `4-us-listed-backlog`
+  entries (ABTS, AIIO, AIIR, AIMD, AIOS). ABTS was skipped: it was
+  already checked earlier tonight and is `"pending"` with its next
+  expected filing (a 6-K for H1 2026) not due until 2026-10-15 — nothing
+  new to find there yet. With tonight's total at 45/~50 (5 of headroom
+  under the cap) and three fresh, never-checked tier-1 candidates
+  available, ran a 3-company batch (AIIO, AIIR, AIMD) rather than holding
+  at 45 with no tier-0 work and usable cap headroom remaining — brings
+  tonight to **48/~50**, still leaving 2 of margin.
+  - **AIIO** (Robo.ai Inc.) — first report, **H1 2026** (foreign private
+    issuer, 6-K filed 2026-08-24, period ended 2026-06-30):
+    https://financialreportinsights.com/companies/aiio/2026/h1 — revenue
+    jumped to $55.1M almost entirely from 16 days of a newly acquired
+    China delivery business (QC Capital) run through a VIE; net income of
+    $46.7M is almost all a one-off $89.3M non-cash gain from divesting
+    the legacy ICONIQ unit — continuing operations actually lost $41.1M.
+    Going-concern warning, $2.1M cash, $4.7M H1 operating cash burn.
+  - **AIIR** (Air Global PLC) — first report, **H1 2026** (foreign private
+    issuer, 6-K filed 2026-08-20, period ended 2026-06-30):
+    https://financialreportinsights.com/companies/aiir/2026/h1 — revenue
+    up 3.7% to $206.9M despite a 9.0% volume drop after the Strait of
+    Hormuz closure; net loss of $81.8M (vs. a $31.9M profit a year
+    earlier) driven almost entirely by ~$96M of SPAC-listing costs
+    (cash + non-cash sponsor-share charge); adjusted EBITDA flat at
+    $71.7M; net debt already at the company's 2.5x long-term leverage
+    target.
+  - **AIMD** (Ainos, Inc.) — first report, **Q2 2026** (10-Q filed
+    2026-08-03, period ended 2026-06-30):
+    https://financialreportinsights.com/companies/aimd/2026/q2 —
+    essentially pre-revenue ($152 in Q2); net loss widened 12.5% to
+    $4.59M on higher stock-based pay; going-concern warning; $11M of
+    convertible notes plus a ~$2.8M loan from ASE Test come due within 12
+    months; a September 2026 VELDONA license with BioPhoenix could bring
+    up to ~$10M if milestones are hit.
+  - All three subagents finished within budget and reported cleanly (no
+    incomplete/partial results); every publish was sanity-checked live
+    (cache-busted fetch of the canonical URL, confirmed not truncated —
+    Takeaway callout, quality-check section and closing paragraph all
+    present) before the tracker was updated. `operatingMarginPct` was
+    intentionally omitted for AIMD (revenue is negligible enough that the
+    ratio would be nonsensical and distort charts/peer tables); YoY
+    percentage fields were omitted wherever a metric crossed from a loss
+    to a profit or vice versa (not meaningful).
+  - Tonight's running total is now **48/~50 report-periods** (44→47
+    companies done: AIIO, AIIR, AIMD newly added). With only 2 of margin
+    left, the next firing should re-check `scan-recent-filings` first
+    (tier 0 always outranks the cap concern per CLAUDE.md, and hot-list/
+    S&P 500 items may exceed the cap by a few if they reported that day)
+    but should not start further plain tier-1 backlog research tonight
+    unless it is down to 1 company or clearly staying within the
+    permitted small overage.

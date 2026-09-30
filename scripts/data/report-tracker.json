@@ -17563,5 +17563,95 @@
         "url": "https://financialreportinsights.com/reports/cmuocn2zl000804jmcog2zt8l"
       }
     ]
+  },
+  "AIIO": {
+    "name": "Robo.ai Inc. - Class B Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuojl6o2000004l04h13eblt"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-24"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual)",
+      "estimate": "2027-04-30",
+      "basis": "FY2025 20-F was filed 2026-04-30; foreign private issuer, no Q3 filing expected",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuojl6o2000004l04h13eblt"
+      }
+    ]
+  },
+  "AIIR": {
+    "name": "Air Global PLC - Ordinary shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuojjsci000004ijb06h311m"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-20"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 shareholder letter)",
+      "estimate": "2026-11-20",
+      "basis": "company says it will publish a shareholder letter each quarter; not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuojjsci000004ijb06h311m"
+      }
+    ]
+  },
+  "AIMD": {
+    "name": "Ainos, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuojlp4j000104l08a5fu534"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day smaller-reporting-company deadline from period end (Nov 14 is a Saturday, so Nov 16); not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuojlp4j000104l08a5fu534"
+      }
+    ]
   }
 }
