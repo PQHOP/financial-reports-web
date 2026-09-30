@@ -6044,3 +6044,25 @@ report-periods**.
   cap, deferring to that stopping point per CLAUDE.md's pacing rule.
   Published nothing new this firing, tracker untouched. Exiting without
   further batches.
+
+- **Next hourly firing, checked in at 18:05 UTC / 03:05 JST 2026-10-01
+  (this is `trig_01GNdUY59Na4x3JxMr6p7mxK`'s 18:05 UTC firing, running in
+  this same session per `get_trigger`'s `last_run.session_id` — no
+  duplicate-routine risk):** confirmed network access first — plain `curl
+  https://www.sec.gov/` without a `User-Agent` returned 403 (SEC's own
+  response to an undeclared user agent, not a proxy denial); retrying with
+  the required `User-Agent` header returned 200, confirming this is not an
+  egress-policy block. Local git state on this fresh container was a
+  detached HEAD sitting on an older `origin/master` snapshot with an
+  uncommitted `package-lock.json` diff from `npm install`'s
+  `prisma generate`/`DATABASE_URL` postinstall failure (expected, no DB
+  access needed for this pipeline); reverted that diff, checked out
+  `master`, and fast-forwarded to `origin/master` (34a8e8c) before
+  touching anything. Re-ran `npm run scan-recent-filings` fresh: **0 fresh
+  candidates** (2026-09-30 still shows 0 filings so far this same as the
+  17:07 UTC check; 2026-09-29/28/25/24 already fully cleared). With tier 0
+  still empty and tonight's total unchanged at 45/~50 — the same stopping
+  point the 17:07 UTC firing already established — deferring again per
+  CLAUDE.md's pacing rule rather than starting new tier-1 research this
+  close to the cap. Published nothing new this firing, tracker untouched.
+  Exiting without further batches.
