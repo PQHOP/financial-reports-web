@@ -16423,5 +16423,22 @@
         "url": "https://financialreportinsights.com/reports/cmuobczw7000204jy55yq1os4"
       }
     ]
+  },
+  "ADSE": {
+    "name": "ADS-TEC ENERGY PLC - Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Foreign private issuer (20-F/6-K, EUR reporting); only FY2025 20-F on EDGAR (filed 2026-05-15) — no 2026-period financials filed/furnished as of 2026-09-30, and company does not appear to furnish interim (half-year) results via 6-K",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-05-15"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-30",
+      "basis": "FY2025 preliminary results 6-K on 2026-04-13, 20-F filed 2026-05-15 after an NT 20-F extension",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
