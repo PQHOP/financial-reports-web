@@ -17031,5 +17031,130 @@
         "url": "https://financialreportinsights.com/reports/cmuoc35rv000a04kzi4kr5un0"
       }
     ]
+  },
+  "AFRM": {
+    "name": "Affirm Holdings, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoc8gws000604jmxshbh4y7"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-05",
+      "basis": "prior-year Q1 10-Q filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoc8gws000604jmxshbh4y7"
+      }
+    ]
+  },
+  "AFYA": {
+    "name": "Afya Limited - Class A Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoc7rat000504jmldkpad29"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-12",
+      "basis": "prior-year Q3 2025 results 6-K filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoc7rat000504jmldkpad29"
+      }
+    ],
+    "note": "Binding merger agreement with Yduqs announced 2026-09-23; if it closes (targeted by 2028-03-31) AFYA would delist from Nasdaq and stop SEC filing."
+  },
+  "AGCC": {
+    "name": "Agencia Comercial Spirits Ltd - Class A Ordinary Share",
+    "status": "skipped",
+    "skipReason": "Foreign private issuer (20-F/6-K, FY Dec 31); no 2026-period financials filed yet. Latest is FY2025 20-F filed 2026-04-30. H1 2026 interim 6-K not yet filed as of 2026-09-30.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-30"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim)",
+      "estimate": "2026-12-22",
+      "basis": "prior-year H1 2025 interim 6-K filed 2025-12-22",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
+  },
+  "AGIO": {
+    "name": "Agios Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoc90qb000504jyd4sojqys"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "prior-year Q3 10-Q filed 2025-10-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoc90qb000504jyd4sojqys"
+      }
+    ]
+  },
+  "AGMH": {
+    "name": "AGM Group Holdings Inc. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Foreign private issuer (20-F/6-K, USD); only FY2025 20-F on EDGAR (filed 2026-08-07, late after NT 20-F and Nasdaq 5250(c)(1) notice); no 2026-period financials furnished as of 2026-09-30.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim)",
+      "estimate": "2026-10-31",
+      "basis": "prior H1 interim 6-Ks filed 2025-10-10 and 2024-11-19",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30"
   }
 }
