@@ -17503,5 +17503,65 @@
         "url": "https://financialreportinsights.com/reports/cmuocmkz4000104l454zormiz"
       }
     ]
+  },
+  "AIFU": {
+    "name": "AIFU Inc. - Class A Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocmxni000204l4k1bqd11w"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-29"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 ANNUAL)",
+      "estimate": "2027-04-28",
+      "basis": "prior-year FY2025 20-F filed 2026-04-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocmxni000204l4k1bqd11w"
+      }
+    ]
+  },
+  "AIBZ": {
+    "name": "Bitzero Holdings Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuocn2zl000804jmcog2zt8l"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (amended)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K/40-F (FY2026 annual, year ends 2026-09-30)",
+      "estimate": "2026-12-29",
+      "basis": "90-day annual deadline for non-venture issuers",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuocn2zl000804jmcog2zt8l"
+      }
+    ]
   }
 }
