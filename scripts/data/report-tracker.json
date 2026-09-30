@@ -16667,5 +16667,95 @@
         "url": "https://financialreportinsights.com/reports/cmuobpuxq000404kzeat2gszr"
       }
     ]
+  },
+  "AEIS": {
+    "name": "Advanced Energy Industries, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobu3sj000404jmv0qw3s4l"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q3 2025 10-Q filed 2025-11-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobu3sj000404jmv0qw3s4l"
+      }
+    ]
+  },
+  "AEHR": {
+    "name": "Aehr Test Systems",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobvdms000504kzywuhhowt"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-05-29",
+      "filedAt": "2026-07-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, new fiscal calendar)",
+      "estimate": "2026-11-04",
+      "basis": "fiscal year-end changed 2026-04-02 to Friday nearest June 30; Q1 FY2027 ends ~2026-09-25, 40-day accelerated-filer deadline",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobvdms000504kzywuhhowt"
+      }
+    ]
+  },
+  "AEMD": {
+    "name": "Aethlon Medical, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobveeg000604kzhgfw13kg"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-06-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2026-11-12",
+      "basis": "prior-year equivalent 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobveeg000604kzhgfw13kg"
+      }
+    ]
   }
 }
