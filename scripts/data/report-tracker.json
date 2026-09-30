@@ -16757,5 +16757,65 @@
         "url": "https://financialreportinsights.com/reports/cmuobveeg000604kzhgfw13kg"
       }
     ]
+  },
+  "AEI": {
+    "name": "Alset Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobvpzz000304jmqjljta87"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "prior-year Q3 10-Q filed 2025-11-14, which falls on a Saturday in 2026",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobvpzz000304jmqjljta87"
+      }
+    ]
+  },
+  "AEC": {
+    "name": "Anfield Energy Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobvw3o000704kzgfsr1ydj"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim)",
+      "estimate": "2026-11-14",
+      "basis": "~90 days after Q2 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobvw3o000704kzgfsr1ydj"
+      }
+    ]
   }
 }
