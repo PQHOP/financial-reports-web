@@ -5889,3 +5889,66 @@ the automated scheduled-task mechanism):
   CLAUDE.md ("later firings that night should see the count and exit
   immediately") — published nothing new this firing, tracker untouched.
   Exiting without further batches.
+
+### 2026-09-30 night (16:00 UTC 2026-09-30 → 22:59 UTC 2026-09-30 / 01:00–07:59 JST 2026-10-01)
+
+- Mechanism: cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`), first firing
+  at 16:04 UTC / 01:04 JST — confirmed via `list_triggers` that this
+  session's `last_run.session_id` matches the current session, so no
+  duplicate-routine risk.
+- Confirmed network access first: plain `curl https://www.sec.gov/` (no
+  User-Agent) returned 403 — SEC's own response to an undeclared user
+  agent, not a proxy denial; retrying with the required `User-Agent`
+  header returned 200. `financialreportinsights.com` and the `.vercel.app`
+  alias both returned 200 directly.
+- `node_modules` was missing (fresh container); ran `npm install`. Hit the
+  usual `prisma generate`/`DATABASE_URL` postinstall failure (expected, no
+  DB access needed for this pipeline) and it left `package-lock.json`
+  modified — reverted that diff before touching anything else.
+- Ran `npm run scan-recent-filings` (7-day window): **8 fresh candidates**,
+  all filed 2026-09-29 (today's index showed 0 filings so far):
+  CCL [hot, update], CPRT [sp500, update], WDAY [sp500, update], AIR
+  [us-listed, new], ANGO [us-listed, new], IDT [us-listed, new], SGLY
+  [us-listed, new], UEC [us-listed, new].
+- Published this batch (researched via 8 opus subagents across several
+  parallel sub-batches, run synchronously — every result sanity-checked
+  against the live canonical URL with a cache-buster before the tracker
+  was updated):
+  - **CCL** (Carnival Corporation) — new period, fiscal Q3 2026 (10-Q +
+    earnings 8-K): https://financialreportinsights.com/companies/ccl/2026/q3
+  - **AIR** (AAR Corp.) — first report, fiscal Q1 2027 10-Q:
+    https://financialreportinsights.com/companies/air/2027/q1
+  - **ANGO** (AngioDynamics) — first report, FY2026 annual (from the
+    original 10-K filed 2026-07-14; the two 10-K/A filings on 2026-09-29
+    turned out to be Part III-only, no financials, so not used as source):
+    https://financialreportinsights.com/companies/ango/2026/annual
+  - **IDT** (IDT Corporation Class B) — first report, FY2026 annual 10-K:
+    https://financialreportinsights.com/companies/idt/2026/annual
+  - **UEC** (Uranium Energy Corp.) — first report, FY2026 annual 10-K:
+    https://financialreportinsights.com/companies/uec/2026/annual
+  - **SGLY** (Singularity Future Technology, f/k/a Sino-Global Shipping
+    America — not the former SOS Limited as initially suspected) — first
+    report, FY2026 annual 10-K, written up with full going-concern/
+    dilution/related-party red flags the filing discloses:
+    https://financialreportinsights.com/companies/sgly/2026/annual
+  - **CPRT** (Copart) — same period already published (FY2026 annual, was
+    sourced from the earnings 8-K); the 10-K landed 2026-09-29 with no new
+    unit-volume/ASP detail but did update/confirm several full-year MD&A
+    points, so edited in place rather than left stale:
+    https://financialreportinsights.com/companies/cprt/2026/annual (not
+    counted as a new report-period).
+  - **WDAY** (Workday) — the 8-K was Item 2.02/2.05 guidance-update and
+    restructuring language, not an earnings release (fiscal Q3 FY2027
+    hadn't closed yet); no new report, `lastFilingSeen` updated so the
+    scan stops re-listing it.
+- Skipped: none (all 8 tier-0 candidates resolved to either a publish, an
+  edit, or a correctly-justified no-op).
+- Tier worked: 0 only so far this entry (tier-1 `next-batch` work to
+  follow later in the window if time/cap allow — will update this entry
+  rather than add a new one).
+- Report-periods published tonight: **6** (CCL, AIR, ANGO, IDT, UEC, SGLY;
+  CPRT edit and WDAY no-op not counted).
+- Running total after this batch: 634 companies done, 651 report-periods
+  published.
+- Notes: none unusual — all 8 candidates resolved cleanly this batch,
+  every subagent finished within budget.

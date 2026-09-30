@@ -5018,22 +5018,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-24",
-      "url": "https://financialreportinsights.com/reports/cmuf1lm8k000204kudtbemxbv"
+      "period": "Q3",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuoaxt84000004jmuiwjo7qp"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-06-26"
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 FY2026)",
-      "estimate": "2026-09-29",
-      "basis": "Q3 results call scheduled for 2026-09-29 per news/IR sources",
-      "confidence": "confirmed"
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-15",
+      "basis": "Carnival fiscal year ends Nov 30; annual 10-K typically filed mid-January",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-24"
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuoaxt84000004jmuiwjo7qp"
+      }
+    ]
   },
   "MAR": {
     "name": "Marriott International",
@@ -7465,21 +7473,21 @@
     "latestReport": {
       "year": 2026,
       "period": "ANNUAL",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cprt/2026/annual"
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmugicwb0000i04lcj1x6fvot"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, Q4/FY2026 earnings)",
+      "type": "10-K",
       "periodEnd": "2026-07-31",
-      "filedAt": "2026-09-10"
+      "filedAt": "2026-09-29"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026)",
-      "estimate": "2026-09-29",
-      "basis": "published from the earnings 8-K; 10-K usually late September (60-day deadline ~09-29). When it lands, consider --edit to add unit volumes/ASPs",
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-12-09",
+      "basis": "~90 day cadence from FY2026 close (2026-07-31)",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-09-30",
     "reports": [
       {
         "year": 2026,
@@ -7487,7 +7495,8 @@
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/cprt/2026/annual"
       }
-    ]
+    ],
+    "note": "Edited 2026-09-30 to use full 10-K (previously sourced from 8-K only); added At a glance / quality-check sections per 09-28 style rules. No unit volumes/ASPs disclosed in 10-K."
   },
   "GLW": {
     "name": "Corning Inc.",
@@ -14661,17 +14670,17 @@
       "url": "/companies/wday/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-07-31",
-      "filedAt": "2026-08-27"
+      "type": "8-K (Item 2.02/2.05, guidance update + restructuring, no results)",
+      "periodEnd": null,
+      "filedAt": "2026-09-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (fiscal Q3 2027)",
-      "estimate": "2026-11-24",
-      "basis": "Q3 FY2026 earnings 8-K filed 2025-11-25; ~90 day cadence from 2026-08-27",
+      "type": "8-K (Q3 FY2027 earnings)",
+      "estimate": "2026-11-25",
+      "basis": "Q3 FY2026 earnings 8-K filed 2025-11-25 (analogous prior-year date); fiscal Q3 FY2027 ends 2026-10-31",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-09-30"
   },
   "WYNN": {
     "name": "Wynn Resorts",
@@ -16144,5 +16153,155 @@
     },
     "skipReason": "Pre-merger SPAC (blank-check company, SIC 6770): Q2 2026 10-Q reports no operations, only trust-account interest income (Trust Account $234.3M at 2026-06-30) offset by formation/admin costs, and no definitive Business Combination Agreement disclosed as of the filing or in subsequent 8-Ks checked through 2026-09-29. No operating business to analyze; revisit if an 8-K announcing a merger agreement / de-SPAC closing appears.",
     "lastChecked": "2026-09-30"
+  },
+  "AIR": {
+    "name": "AAR Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuob0kg3000104jmrfn3e3rf"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2026-12-29",
+      "basis": "~90 day cadence from 2026-09-29 filing; fiscal Q2 ends 2026-11-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2027,
+        "period": "Q1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuob0kg3000104jmrfn3e3rf"
+      }
+    ]
+  },
+  "ANGO": {
+    "name": "AngioDynamics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuob16cq000204jmpt9f90sm"
+    },
+    "lastFilingSeen": {
+      "type": "10-K/A (Part III only, no financials; original 10-K filed 2026-07-14 used as source)",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-09-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-10-08",
+      "basis": "~90 day cadence from FY2026 annual close (2026-05-31)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuob16cq000204jmpt9f90sm"
+      }
+    ]
+  },
+  "IDT": {
+    "name": "IDT Corporation Class B",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuob46d3000304jmq0yqnper"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-12-09",
+      "basis": "~90 day cadence from FY2026 close (2026-07-31)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuob46d3000304jmq0yqnper"
+      }
+    ]
+  },
+  "UEC": {
+    "name": "Uranium Energy Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuob50mn000004kzrhlumpw0"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-12-09",
+      "basis": "~40 day cadence from FY2026 close (2026-07-31)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuob50mn000004kzrhlumpw0"
+      }
+    ]
+  },
+  "SGLY": {
+    "name": "Singularity Future Technology Ltd.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuob5rmi000104kza7zrljzv"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-14",
+      "basis": "45-day SRC deadline from quarter end 2026-09-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuob5rmi000104kza7zrljzv"
+      }
+    ]
   }
 }
