@@ -15482,7 +15482,7 @@
     "nextExpectedFiling": {
       "type": "6-K (H1 2026 interim results)",
       "estimate": "2026-10-15",
-      "basis": "last year filed H1 2025 results 2025-08-13; H1 2026 is already ~6 weeks late, possibly due to an August 2026 change-of-control; Nasdaq foreign-issuer deadline is 6 months after period end (2026-12-31)",
+      "basis": "Nasdaq foreign-issuer deadline 6 months after period end; recent change-of-control (2026-08-11) and new financing (2026-09-17) filings contain no financials and could delay this further",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
@@ -16301,6 +16301,126 @@
         "period": "ANNUAL",
         "publishedAt": "2026-09-30",
         "url": "https://financialreportinsights.com/reports/cmuob5rmi000104kza7zrljzv"
+      }
+    ]
+  },
+  "ADEA": {
+    "name": "Adeia Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobbzft000104jytz6gkhx9"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q filed 2025-11-06; Q2 2026 8-K/10-Q pattern (08-03/08-05)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobbzft000104jytz6gkhx9"
+      }
+    ]
+  },
+  "ADMA": {
+    "name": "ADMA Biologics Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobbnvh000004jyzj8tc8ce"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 10-Q filed 2025-11-05; 08-05 filing date pattern for Q2",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobbnvh000004jyzj8tc8ce"
+      }
+    ]
+  },
+  "ADPT": {
+    "name": "Adaptive Biotechnologies Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobcno8000004jm5r8v0wbm"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q filed 2025-11-05; this year 8-K about a week before 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobcno8000004jm5r8v0wbm"
+      }
+    ]
+  },
+  "ADBT": {
+    "name": "Advasa Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobczw7000204jy55yq1os4"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027)",
+      "estimate": "2026-11-16",
+      "basis": "45-day non-accelerated-filer deadline from quarter end 2026-09-30, rolled to Monday",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobczw7000204jy55yq1os4"
       }
     ]
   }
