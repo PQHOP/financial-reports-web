@@ -6197,3 +6197,20 @@ report-periods**.
   remains, matching the prior firing's explicit note not to start further
   tier-1 backlog research this close to the cap — publishing nothing new
   this firing. Tracker untouched. Exiting without further batches.
+
+- **Next firing, checked in at 22:05 UTC / 07:05 JST 2026-10-01:**
+  confirmed network access again (`curl https://www.sec.gov/` without a
+  User-Agent returned 403 — SEC's own response, not a proxy denial;
+  retrying with the required User-Agent returned 200); both
+  `financialreportinsights.com` and the `.vercel.app` alias returned 200
+  directly. Git tree was already clean and up to date with
+  `origin/master`. `npm install` hit the usual expected
+  `prisma generate`/`DATABASE_URL` postinstall failure (no DB access
+  needed for this pipeline) and the resulting `package-lock.json` diff
+  was reverted before anything else. Re-ran `npm run scan-recent-filings`
+  fresh: **0 fresh candidates** again. With tier 0 still empty and
+  tonight's total unchanged at 49/~50 — 1 of margin remains, same as the
+  last two check-ins — publishing nothing new this firing, consistent
+  with the standing note not to start further tier-1 backlog research
+  this close to the cap this late in the window (07:05 JST, window ends
+  07:59). Tracker untouched. Exiting without further batches.
