@@ -6066,3 +6066,26 @@ report-periods**.
   CLAUDE.md's pacing rule rather than starting new tier-1 research this
   close to the cap. Published nothing new this firing, tracker untouched.
   Exiting without further batches.
+
+- **Next hourly firing, checked in at 19:04 UTC / 04:04 JST 2026-10-01
+  (this is `trig_01GNdUY59Na4x3JxMr6p7mxK`'s 19:04 UTC firing — confirmed
+  via `get_trigger` that `last_run.session_id` matches this session, so no
+  duplicate-routine risk):** confirmed network access first — plain `curl
+  https://www.sec.gov/` without a `User-Agent` returned 403 (SEC's own
+  response to an undeclared user agent, not a proxy denial); retrying with
+  the required `User-Agent` header returned 200.
+  `financialreportinsights.com` and the `.vercel.app` alias both returned
+  200 directly. Local git state on this fresh container was a detached
+  HEAD one commit behind `origin/master`; fast-forwarded to `origin/master`
+  (8cf346f) before touching anything, reverting the usual uncommitted
+  `package-lock.json` diff from `npm install`'s `prisma generate`/
+  `DATABASE_URL` postinstall failure (expected, no DB access needed for
+  this pipeline). Re-ran `npm run scan-recent-filings` fresh: **0 fresh
+  candidates** (2026-09-30 still shows 0 filings so far — same as the
+  17:07 UTC and 18:05 UTC checks; 2026-09-29/28/25/24 already fully
+  cleared). With tier 0 still empty and tonight's total unchanged at
+  45/~50 — the same stopping point the two prior check-ins this night
+  already established — deferring again per CLAUDE.md's pacing rule
+  rather than starting new tier-1 research this close to the cap.
+  Published nothing new this firing, tracker untouched. Exiting without
+  further batches.
