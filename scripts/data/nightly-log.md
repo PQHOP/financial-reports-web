@@ -5952,3 +5952,71 @@ the automated scheduled-task mechanism):
   published.
 - Notes: none unusual — all 8 candidates resolved cleanly this batch,
   every subagent finished within budget.
+
+**Tier-1 work, same firing, continuing after tier 0 above** (all via
+`npm run next-batch`, us-listed backlog — the hot list and S&P 500 are
+already fully done/skipped per `next-batch`'s own ordering, so it went
+straight to `4-us-listed-backlog`). Eight sub-batches of 4-8 companies
+each, researched via opus subagents run synchronously in parallel groups,
+every result sanity-checked against its live canonical URL with a
+cache-buster before the tracker was updated, committed/pushed after each
+sub-batch:
+
+- **ADEA** Q2 2026, **ADMA** Q2 2026, **ADPT** Q2 2026, **ADBT** fiscal Q1
+  (first reports, 4 published). ABTS re-confirmed still pending (no new
+  filing beyond its existing 2026-10-15 estimate).
+- **ADUR** FY2026 annual, **ADTN** Q2 2026, **ADUS** Q2 2026 (first
+  reports, 3 published).
+- **ADV** Q2 2026, **ADXN** H1 2026, **AEBI** Q2 2026, **ADVB** fiscal Q3
+  (first reports, 4 published).
+- **AEC** Q2 2026, **AEHL** H1 2026, **AEHR** FY2026 annual, **AEI** Q2
+  2026, **AEIS** Q2 2026, **AEMD** FY2026 annual (first reports, 6
+  published).
+- **AENT** FY2026 annual, **AERT** FY2026 annual, **AEVA** Q2 2026, **AEYE**
+  Q2 2026, **AFCG** Q2 2026 (first reports, 5 published). **AESP** skipped
+  (pre-combination SPAC, trust $144.1M) and **AFRI** skipped (no 2026
+  filing; lost control of its main operating subsidiary 2026-08-05).
+- **AFRM** FY2026 annual, **AFYA** Q2 2026, **AGIO** Q2 2026 (first
+  reports, 3 published). **AGCC** and **AGMH** skipped (foreign private
+  issuers, no 2026-period financials filed yet).
+- **AGEN** Q2 2026, **AGMB** H1 2026 (first reports, 2 published).
+- **AGNC** Q2 2026, **AGYS** FY2026 annual, **AHCO** Q2 2026 (first
+  reports, 3 published). **AHMA** skipped (no 2026-period filing yet,
+  first year as a listed foreign private issuer).
+- **AGPU** Q2 2026, **AGNT** Q2 2026 (first reports, 2 published) — two
+  unusual renamed tickers: AGPU is the former Predictive Oncology (now an
+  AI/GPU-compute reseller), AGNT is the former eXp World Holdings.
+- **AHG** FY2026 annual (1 published) — near-total write-off of its
+  Tianjin Wangyi acquisition, going-concern auditor opinion.
+- **AIAI** Q2 2026 (1 published) — recent direct-listing roll-up with
+  heavy related-party (founder-controlled M42 entity) amortization load.
+- **AIFF** Q2 2026, **AIFA** Q2 2026 (2 published).
+- **AIFU** H1 2026, **AIBZ** fiscal Q3 2026 (2 published) — AIFU (former
+  Fanhua/CNinsure) has a large unexplained tea-inventory red flag; AIBZ
+  (Bitcoin miner) carries a going-concern warning and restated prior-year
+  figures.
+
+Tier-1 report-periods published this firing: **39** (across 34 tickers;
+6 tickers skipped: AESP, AFRI, AGCC, AGMH, AHMA — all either
+pre-combination SPACs or foreign private issuers with no 2026-period
+filing yet). Combined with tier 0's 6, **total published this firing: 45
+report-periods**.
+
+- Tier worked: 0 (fully cleared, 8/8 candidates resolved) then 1 (us-listed
+  backlog — hot list and S&P 500 already fully done/skipped).
+- Running total after tonight so far: **672 companies done, 689
+  report-periods published, 17 skipped** (skip count includes tonight's 6
+  new skips plus pre-existing ones from prior nights).
+- Report-periods published tonight (running total across this firing):
+  **45** — close to the ~50 cap, so stopping this firing here per
+  CLAUDE.md's pacing rule rather than starting another sub-batch. The next
+  hourly firing of the cloud routine should see this count, confirm it is
+  at/near cap, and exit quickly without starting new tier-1 research
+  (tier 0 should also be re-scanned first in case anything fresh landed).
+- Notes: every sub-batch's subagents finished within budget and reported
+  cleanly (no incomplete/partial runs this firing); every publish was
+  sanity-checked live before being counted. A wide variety of filer types
+  handled correctly this firing: US domestic (10-K/10-Q), Canadian MJDS
+  (40-F/6-K), and foreign private issuers reporting in CHF/CAD/EUR/BRL/CNY
+  — currency and fiscal-year-end were verified per company rather than
+  assumed calendar-year/USD.
