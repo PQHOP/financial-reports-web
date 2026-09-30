@@ -17653,5 +17653,35 @@
         "url": "https://financialreportinsights.com/reports/cmuojlp4j000104l08a5fu534"
       }
     ]
+  },
+  "AIOS": {
+    "name": "AIOS Tech Inc. - Class A Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuojsmtd000204l0ecvxmry2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-21"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual)",
+      "estimate": "2027-04-20",
+      "basis": "FY2025 20-F was filed 2026-04-20; foreign private issuer, no Q3 filing expected",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuojsmtd000204l0ecvxmry2"
+      }
+    ]
   }
 }

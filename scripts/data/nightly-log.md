@@ -6147,11 +6147,32 @@ report-periods**.
     ratio would be nonsensical and distort charts/peer tables); YoY
     percentage fields were omitted wherever a metric crossed from a loss
     to a profit or vice versa (not meaningful).
-  - Tonight's running total is now **48/~50 report-periods** (44→47
-    companies done: AIIO, AIIR, AIMD newly added). With only 2 of margin
-    left, the next firing should re-check `scan-recent-filings` first
-    (tier 0 always outranks the cap concern per CLAUDE.md, and hot-list/
-    S&P 500 items may exceed the cap by a few if they reported that day)
-    but should not start further plain tier-1 backlog research tonight
-    unless it is down to 1 company or clearly staying within the
-    permitted small overage.
+  - Tonight's running total after this sub-batch: **48/~50
+    report-periods** (44→47 companies done: AIIO, AIIR, AIMD newly
+    added).
+  - With 2 of headroom still left under the cap, ran one further
+    single-company sub-batch this same firing:
+    - **AIOS** (AIOS Tech Inc., formerly Nisun International) — first
+      report, **H1 2026** (foreign private issuer, 6-K filed 2026-09-21,
+      period ended 2026-06-30):
+      https://financialreportinsights.com/companies/aios/2026/h1 —
+      revenue of $1.10M (89% from a Hong Kong IT-services unit bought in
+      December 2025 for $50K) and net income of $0.60M, against a $70.0M
+      loss a year earlier from the since-sold China business. Flagged in
+      the quality-check: only $115.5K of pre-tax profit came from
+      operations (the rest was other income, including an unrealized
+      gain on held shares); $18.8M of a $24M March private placement was
+      still unpaid by investors at period end; $10.1M in unsecured loans
+      to two unnamed counterparties against just $0.28M cash, with the
+      filing's own two exhibits disagreeing on the loan terms (the report
+      notes the contradiction rather than picking one silently).
+    - Sanity-checked live (cache-busted fetch, full content present, not
+      truncated) before the tracker was updated. Subagent finished within
+      budget.
+  - **Tonight's final total: 49/~50 report-periods** (44→48 companies
+    done: AIIO, AIIR, AIMD, AIOS). Stopping here for the night — only 1
+    of margin remains, not enough to safely start another company. The
+    next firing should re-run `scan-recent-filings` first as always
+    (tier 0 outranks the cap, and hot-list/S&P 500 items may exceed the
+    cap by a few if they reported that day) but should not start further
+    plain tier-1 backlog research tonight.
