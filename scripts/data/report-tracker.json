@@ -16817,5 +16817,35 @@
         "url": "https://financialreportinsights.com/reports/cmuobvw3o000704kzgfsr1ydj"
       }
     ]
+  },
+  "AEHL": {
+    "name": "Antelope Enterprise Holdings Limited - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-09-30",
+      "url": "https://financialreportinsights.com/reports/cmuobwx9g000804kzk5vjjb4b"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim financials)",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-06-30"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY ended 2026-09-30)",
+      "estimate": "2027-01-29",
+      "basis": "prior-year transition-period 20-F filed 2026-01-29",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-09-30",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/reports/cmuobwx9g000804kzk5vjjb4b"
+      }
+    ]
   }
 }
