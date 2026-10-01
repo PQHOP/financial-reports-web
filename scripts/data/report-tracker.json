@@ -15493,19 +15493,20 @@
   },
   "ABTS": {
     "name": "Abits Group Inc - Ordinary Shares",
-    "status": "pending",
+    "status": "skipped",
+    "skipReason": "no 2026-period filing found on EDGAR as of 2026-10-01 (foreign private issuer; files 20-F annually + 6-Ks; latest results are the FY2025 20-F filed 2026-04-29; H1 2026 results not yet released via 6-K, last year's came 2025-08-13; two recent 6-Ks are a change-of-control and a convertible-note financing, no financial results)",
     "lastFilingSeen": {
-      "type": "20-F",
-      "periodEnd": "2025-12-31",
-      "filedAt": "2026-04-29"
+      "type": "6-K",
+      "periodEnd": null,
+      "filedAt": "2026-09-17"
     },
     "nextExpectedFiling": {
-      "type": "6-K (H1 2026 interim results)",
-      "estimate": "2026-10-15",
-      "basis": "Nasdaq foreign-issuer deadline 6 months after period end; recent change-of-control (2026-08-11) and new financing (2026-09-17) filings contain no financials and could delay this further",
+      "type": "6-K (H1 2026 results)",
+      "estimate": "2026-12-31",
+      "basis": "general half-year reporting deadline for Nasdaq-listed foreign private issuers; not confirmed by any company announcement",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-30"
+    "lastChecked": "2026-10-01"
   },
   "ABTC": {
     "name": "American Bitcoin Corp. - Class A",
