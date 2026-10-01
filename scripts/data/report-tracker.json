@@ -18079,5 +18079,49 @@
     },
     "lastChecked": "2026-10-01",
     "note": "Company renamed to FF EAI Robotics Ecosystem Inc. effective 2026-09-30, ticker changing from AIXC to FFR; site/sp500.json/us-listed.json still list it under AIXC as of this entry — may need a name/ticker update in the seed data"
+  },
+  "AKTS": {
+    "name": "Aktis Oncology, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/akts/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "filing cadence only (~90 days after Q2 10-Q)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "AKTX": {
+    "name": "Akari Therapeutics Plc - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/aktx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "filing cadence only; company funded only into December 2026 per its own 10-Q, so a financing/going-concern update is also plausible before then",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
