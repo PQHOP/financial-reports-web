@@ -6781,3 +6781,58 @@ report-periods**.
     should re-run `scan-recent-filings` first as always (tier 0 outranks
     the cap and can exceed it by a few), then continue the us-listed
     backlog via `next-batch` starting from ALTI.
+- **New firing within the same night (session started 18:04 UTC / 03:04
+  JST):** confirmed network access first (same SEC 403-without-UA /
+  200-with-UA check as every firing), `npm install` (dummy `DATABASE_URL`
+  for `prisma generate`, lockfile diff reverted), found a stale detached
+  HEAD from the previous firing matching `origin/master` exactly —
+  fast-forwarded local `master` to it, no divergence. Re-ran
+  `scan-recent-filings`: **0 fresh candidates**, confirming tier 0 stays
+  empty. Ran `next-batch -- --n 5`: ALTI, ALTO, ALVO, ALXO, AMAC (us-listed
+  backlog, continuing from where the last firing stopped). With only ~4 of
+  margin left tonight (46/~50), ran a small final sub-batch of 3 opus
+  subagents (ALTI, ALTO, ALVO) rather than the full 5.
+  - **ALTI** (AlTi Global) — Q2 2026 (10-Q filed 2026-08-10):
+    https://financialreportinsights.com/companies/alti/2026/q2 — revenue
+    $58.0M (+10.8%) on management fees helped by a full quarter of the
+    Kontora acquisition; operating loss narrowed to $10.9M (from $25.6M)
+    on an 11.6% expense cut (mostly professional fees); net loss to
+    common -$23.5M (vs -$24.4M) after an $18.5M unrealized loss on a
+    fund stake being wound down and a tax benefit that didn't repeat;
+    flagged that $5.4M of adjusted EBITDA is only half the $11.0M in
+    quarterly 9.75% preferred dividends owed to Allianz/Constellation
+    (paid mostly in new shares), so the preferred claim is growing
+    faster than the business earns.
+  - **ALTO** (Alto Ingredients) — Q2 2026 (10-Q filed 2026-08-07):
+    https://financialreportinsights.com/companies/alto/2026/q2 — first
+    report for this company; revenue $245.7M (+12.5%), swung to an
+    $11.7M profit ($0.15/share diluted) from an $11.0M loss a year
+    earlier, almost entirely because the ethanol crush margin tripled
+    ($0.11 → $0.33/gallon, ~$17M of the $18.6M gross-profit swing,
+    mostly at the Pekin plant); flagged the new 45Z clean-fuel credit
+    ($5.1M, ~44% of pre-tax income), no cash tax yet (prior losses still
+    offsetting), and H1 operating cash flow at roughly 2x net income.
+  - **ALVO** (Alvotech) — H1 2026 (6-K interim results filed 2026-08-19;
+    foreign private issuer, IFRS, reports H1/FY not quarterly):
+    https://financialreportinsights.com/companies/alvo/2026/h1 — first
+    report for this company; revenue fell 30.8% to $211.6M and the
+    company swung from a $141.7M profit to a $65.8M loss (diluted EPS
+    -$0.22) as post-FDA-inspection plant remediation roughly halved
+    product sales to $105.9M; flagged that the 54% headline gross margin
+    is propped up by $105.7M of milestone revenue (incl. $39.8M from one
+    related-party license) — on products alone gross margin was only
+    ~7.2% (from 32%); operating cash flow -$80.2M with $1.3B of debt at
+    ~9.4% interest; FY2026 guidance ($650-700M revenue, $180-220M
+    adjusted EBITDA) kept unchanged, which needs H2 more than double H1.
+  - All three subagents (ALTI, ALTO, ALVO) finished within budget and
+    reported cleanly; all three sanity-checked live by the orchestrator
+    (cache-busted fetch, Takeaway callout and closing paragraph confirmed
+    present, not truncated) before the tracker was updated.
+  - **Tonight's total: 49/~50 report-periods** (49 companies touched
+    tonight across both firings; done count 88→91). Stopping here —
+    1 of margin left under the cap, so no further batch this firing.
+    `next-batch` had printed ALTI, ALTO, ALVO, ALXO, AMAC for this
+    sub-batch; ALXO and AMAC were not attempted and remain next in line.
+    The next firing should re-run `scan-recent-filings` first as always
+    (tier 0 outranks the cap and can exceed it by a few), then continue
+    the us-listed backlog via `next-batch` starting from ALXO.

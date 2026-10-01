@@ -18699,5 +18699,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALTO": {
+    "name": "Alto Ingredients, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alto/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q1 2026 10-Q filed 2026-05-08, Q2 filed 2026-08-07, roughly 90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "ALTI": {
+    "name": "AlTi Global, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alti/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "Q1 2026 10-Q filed 2026-05-11, Q2 filed 2026-08-10, roughly 90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "ALVO": {
+    "name": "Alvotech - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alvo/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-11",
+      "basis": "company's own financial calendar in the H1 2026 results release; earnings call follows 2026-11-12",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
