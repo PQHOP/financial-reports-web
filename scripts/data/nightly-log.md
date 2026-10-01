@@ -6855,3 +6855,21 @@ report-periods**.
   even one more report-period would only restore 0 margin, and tier 0
   on the next natural firing can already exceed the cap by a few on its
   own. No report-tracker.json changes, no publishes, nothing to commit.
+- **Third no-op firing within the same night (session started 22:06 UTC /
+  07:06 JST, close to the end of the window):** confirmed network access
+  first — plain `curl https://www.sec.gov/` (no User-Agent) returned 403
+  (SEC's own fair-access block, confirmed by header/body, not a proxy
+  denial); the identical request with the required `User-Agent` header
+  returned 200. Both `financialreportinsights.com` and the `.vercel.app`
+  alias also returned 200 directly, and `git fetch origin master` showed
+  local `master` already matched `origin/master` (no new commits to
+  pull). Read tonight's entry before any other work, per the standing
+  pacing rule: still **49/~50 report-periods published tonight**, 1 of
+  margin left under the cap, unchanged since the previous firing. Exited
+  immediately without running `scan-recent-filings`/`next-batch` or
+  touching the tracker, for the same reason as the previous no-op firing
+  — publishing even one more report-period would spend the last of
+  tonight's margin, and the window is nearly over (07:06 of 01:00–07:59
+  JST) with the next firing due to start a fresh night's count anyway.
+  No report-tracker.json changes, no publishes, nothing to commit besides
+  this log note.
