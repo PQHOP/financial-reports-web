@@ -18145,5 +18145,66 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALAR": {
+    "name": "Alarum Technologies Ltd. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alar/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q1 2026 results)",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-05-28"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (delayed Q2/H1 2026 results)",
+      "estimate": "2026-11-15",
+      "basis": "company postponed Q2/H1 results in a 6-K on 2026-08-27 after an FBI domain seizure affecting its NetNut subsidiary; no new date announced, low confidence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "ALDF": {
+    "name": "Aldel Financial II Inc. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "blank-check SPAC, no operating business, no definitive merger agreement as of 2026-10-01 (Oct 5 2026 EGM is an extension vote only, not a business-combination vote) — nothing substantive to analyze; recheck if an 8-K Item 1.01 / S-4 for a business combination appears",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-21"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 1.01 (if a merger target is announced) or further extension filings",
+      "estimate": null,
+      "basis": "shareholders voting 2026-10-05 on extending the merger deadline to as late as 2028-01-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "ALCO": {
+    "name": "Alico, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alco/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual, FYE 2026-09-30)",
+      "estimate": "2026-11-24",
+      "basis": "last year's equivalent 10-K was filed 2025-11-24",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }

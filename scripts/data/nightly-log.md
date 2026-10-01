@@ -6502,3 +6502,34 @@ report-periods**.
     live before the tracker was updated.
   - Running total: **23/~50 report-periods** (23 companies touched
     tonight; done count 65→68, ABTS skipped).
+- **Sub-batch 9 (us-listed backlog):** ALAR, ALCO, ALDF.
+  - **ALAR** (Alarum Technologies) — Q1 2026 (6-K results, filed
+    2026-05-28; FPI, files 20-F/6-K not 10-K/10-Q):
+    https://financialreportinsights.com/companies/alar/2026/q1 — revenue
+    $11.7M (+64.2%), net income $0.59M (+45.3%), but the report leads
+    with what happened after the quarter: the FBI seized domains linked
+    to Alarum's NetNut proxy-network subsidiary on 2026-07-02, the
+    company paused affected traffic, is cutting/furloughing about a
+    third of its workforce, faces multiple lawsuits, delayed its Q2/H1
+    results (6-K, 2026-08-27, no new date given), and says it expects
+    "significant operating and net losses" going forward — so Q1 is
+    explicitly flagged as not a run-rate.
+  - **ALCO** (Alico) — Q3 2026 (fiscal Q3, FYE 2026-09-30, 10-Q filed
+    2026-08-10): https://financialreportinsights.com/companies/alco/2026/q3
+    — revenue $9.04M (+7.7%), net income $2.125M (vs an $18.3M loss a
+    year earlier dominated by citrus-tree write-downs); flagged that
+    ~$6.6M of revenue was a one-time insurance pass-through and regular
+    lease rent was only $0.46M, well below quarterly G&A (~$2.3M) — the
+    company currently funds itself by selling land (3,546 acres sold YTD
+    for a $24.8M gain), not by operating income; full-year adjusted
+    EBITDA guidance implies a roughly -$9M Q4, unexplained in the
+    release.
+  - **ALDF** (Aldel Financial II) — **skipped**. Blank-check SPAC, no
+    operating business, no definitive merger agreement as of 2026-10-01
+    (the Oct 5 shareholder vote is only an extension-deadline vote, not a
+    business-combination vote) — nothing substantive to analyze. Tracker
+    notes to recheck if an 8-K Item 1.01 / S-4 appears.
+  - All three subagents finished within budget; ALAR and ALCO
+    sanity-checked live before the tracker was updated.
+  - Running total: **25/~50 report-periods** (25 companies touched
+    tonight; done count 68→70, 2 skipped: ABTS, ALDF).
