@@ -6836,3 +6836,22 @@ report-periods**.
     The next firing should re-run `scan-recent-filings` first as always
     (tier 0 outranks the cap and can exceed it by a few), then continue
     the us-listed backlog via `next-batch` starting from ALXO.
+- **New firing within the same night (session started 19:04 UTC / 04:04
+  JST):** confirmed network access first (same SEC 403-without-UA /
+  200-with-UA check as every firing; both `financialreportinsights.com`
+  and the `.vercel.app` alias also returned 200). Confirmed this session
+  is itself the cloud routine's current firing (`list_triggers` on
+  `trig_01GNdUY59Na4x3JxMr6p7mxK` showed `last_run.session_id` matching
+  this session). `npm install` hit the usual expected `prisma
+  generate`/`DATABASE_URL` postinstall step (dummy `DATABASE_URL`, no DB
+  access needed for this pipeline); the resulting `package-lock.json`
+  diff was reverted before touching anything else. Read tonight's entry
+  before doing any other work, per the standing pacing rule: **49/~50
+  report-periods already published tonight** by the two earlier firings
+  above, 1 of margin left under the cap. Exited immediately without
+  running `scan-recent-filings`/`next-batch` or touching the tracker, per
+  CLAUDE.md ("once tonight's entry... reaches ~50, stop... later firings
+  that night should see the count and exit immediately") — publishing
+  even one more report-period would only restore 0 margin, and tier 0
+  on the next natural firing can already exceed the cap by a few on its
+  own. No report-tracker.json changes, no publishes, nothing to commit.
