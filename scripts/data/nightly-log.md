@@ -6321,5 +6321,32 @@ report-periods**.
   - Running total after sub-batch 3 so far: **7/~50 report-periods** (7
     companies touched tonight: MU, FDS, JBL updated; BSET, AVD, CAG, CALM
     newly added).
-  - Final sub-batch of tier 0 (KMX, PRGS) in progress — this entry will be
-    updated once it completes.
+  - **KMX** (CarMax) — first report, labeled Q2 2026 (fiscal Q2 FY2027,
+    June 1 - Aug 31, 2026; labeled by CarMax's own fiscal quarter number,
+    consistent with how GIS/DRI are labeled on the site), 10-Q filed
+    2026-09-30: https://financialreportinsights.com/companies/kmx/2026/q2
+    — revenue $7.878B (+19.5%), used units +13.8% (same-store +13.0%, vs.
+    -6.3% a year earlier), net earnings $165.3M (+73.3%); gross profit
+    per used car fell $111 as CarMax traded margin for volume; management
+    credits about half the volume gain to the FTC's fee-inclusive pricing
+    rule; CarMax Auto Finance income +32.1% on lower loss provisions
+    despite a shrinking loan book; full-year guidance implies a weaker H2.
+  - **PRGS** (Progress Software) — first report, labeled Q3 2026 (fiscal
+    Q3 2026, June-August 2026; two of three months fall in calendar Q3),
+    10-Q filed 2026-09-30:
+    https://financialreportinsights.com/companies/prgs/2026/q3 — revenue
+    $246.0M (-1.5%, maintenance -4.6% offsetting SaaS +1.6%), net income
+    $22.8M (+17.3%) and diluted EPS +25% almost entirely from a lower tax
+    rate and buybacks (operating income +6.1% only); ARR $873M (+1%), net
+    retention 99-100%; the ~$400M Domo acquisition closed 2026-09-22 on
+    the revolver, pushing debt to ~$1.6B and cutting FY2026 GAAP EPS
+    guidance to $1.18-1.28 (from $1.60-1.74) even as revenue guidance was
+    raised.
+  - Both subagents finished within budget and reported cleanly (PRGS's
+    first publish attempt timed out at the login page before submitting
+    anything; the retry succeeded with no duplicate); both sanity-checked
+    live before the tracker was updated.
+  - **Tier 0 cleared: all 9 fresh-filing candidates from tonight's
+    `scan-recent-filings` run are now published.** Running total:
+    **9/~50 report-periods** (9 companies touched: MU, FDS, JBL updated;
+    BSET, AVD, CAG, CALM, KMX, PRGS newly added — done count 48→54).
