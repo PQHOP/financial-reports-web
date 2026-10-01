@@ -17769,5 +17769,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "CALM": {
+    "name": "Cal-Maine Foods, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/calm/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-09-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2027-01-05",
+      "basis": "filing cadence only (~90 days after fiscal Q1 10-Q); fiscal year ends late May/early June",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "KMX": {
+    "name": "CarMax Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/kmx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2027)",
+      "estimate": "2026-12-18",
+      "basis": "filing cadence only (~90 days after fiscal Q2 10-Q); fiscal year ends late February",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }

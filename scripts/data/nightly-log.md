@@ -6294,5 +6294,32 @@ report-periods**.
   - Running total after sub-batch 2: **5/~50 report-periods** (5 companies
     touched tonight: MU, FDS, JBL updated; BSET, AVD newly added — 2 of 7
     "done" count increase since AVD/BSET are first reports).
-- Third sub-batch (CAG, and then CALM/KMX/PRGS) in progress — this entry
-  will be updated as each sub-batch completes.
+- **Sub-batch 3 (more new us-listed companies, first reports):**
+  - **CAG** (ConAgra Brands) — first report, labeled Q1 2026 (the 10-Q
+    covers fiscal Q1 2027, June 1 - Aug 30, 2026; labeled per the site's
+    existing June-May fiscal-year convention, same as GIS), 10-Q filed
+    2026-09-30: https://financialreportinsights.com/companies/cag/2026/q1
+    — revenue $2.596B (-1.4%), organic sales -1.1%; net income $174.3M
+    (+6.0%) despite pre-tax income falling 19.4% - the rise came from a
+    normal tax rate replacing last year's divestiture-inflated one plus a
+    $21M jump in Ardent Mills JV earnings; both big US retail segments
+    (Grocery & Snacks, Refrigerated & Frozen) saw adjusted operating
+    profit fall 7-13%; quarterly dividend halved to $0.175; FY2027
+    guidance reaffirmed.
+  - **CALM** (Cal-Maine Foods) — first report, labeled Q3 2026 (fiscal Q1
+    2027, June 1 - Aug 29, 2026; two of three months fall in calendar Q3),
+    10-Q filed 2026-09-30:
+    https://financialreportinsights.com/companies/calm/2026/q3 — revenue
+    $539.6M (-41.5%), net loss $58.6M vs. a $199.3M profit a year earlier
+    - conventional egg prices fell 59.3% as the US hen flock rebuilt past
+    its five-year average after bird-flu losses eased (19.2M hens culled
+    in 2026 so far vs. 45.2M in 2025); conventional-egg segment swung to a
+    $71.0M loss; no debt, $767.6M cash/investments.
+  - Both subagents finished within budget and reported cleanly; both
+    sanity-checked live (cache-busted fetch, Takeaway and closing content
+    confirmed present) before the tracker was updated.
+  - Running total after sub-batch 3 so far: **7/~50 report-periods** (7
+    companies touched tonight: MU, FDS, JBL updated; BSET, AVD, CAG, CALM
+    newly added).
+  - Final sub-batch of tier 0 (KMX, PRGS) in progress — this entry will be
+    updated once it completes.
