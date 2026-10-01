@@ -6624,3 +6624,34 @@ report-periods**.
     live before the tracker was updated.
   - Running total: **33/~50 report-periods** (33 companies touched
     tonight; done count 75→78, 3 skipped: ABTS, ALDF, ALF).
+- **Sub-batch 13 (us-listed backlog, first reports):** ALLO, ALLR, ALLT.
+  - **ALLO** (Allogene Therapeutics) — Q2 2026 (10-Q filed 2026-08-12):
+    https://financialreportinsights.com/companies/allo/2026/q2 — clinical-
+    stage allogeneic CAR-T biotech; net loss narrowed to $42.7M (from
+    $50.9M); cash $423.6M (up from $258.3M after an April raise at
+    $2.00/share, ~100M new shares) funding operations into Q1 2029;
+    ALPHA3 interim ctDNA-clearance data (58.3% vs 16.7%) cited as the
+    catalyst for raising at a moment of strength. Flagged a YoY
+    sign-convention inconsistency across tonight's reports for
+    loss-narrowing companies (ALLO/ALEC used positive=improvement,
+    AKTX used negative=improvement) — worth standardizing in a future
+    session, not a factual error.
+  - **ALLR** (Allarity Therapeutics) — Q2 2026 (10-Q filed 2026-08-14):
+    https://financialreportinsights.com/companies/allr/2026/q2 — no
+    revenue; net loss widened 46.8% to $3.405M; $26.98M cash but only
+    $17.0M freely usable (rest is loan collateral); $20.86M owed on two
+    Streeterville notes (one at 9% with a $1.97M monitoring fee) both
+    maturing 2027-09-02, just past the 12-month window management's
+    "sufficient cash" statement covers — flagged a likely future equity
+    raise.
+  - **ALLT** (Allot Ltd.) — Q2 2026 (6-K results, filed 2026-08-12; FPI,
+    files 20-F/6-K): https://financialreportinsights.com/companies/allt/2026/q2
+    — revenue $27.7M (+15.3%), swung to a $2.6M profit (from a $1.7M
+    loss) as Security-as-a-Service (SECaaS) revenue grew 47% to $9.4M
+    (34% of revenue, ARR $36.1M +44%) while opex rose only 5%; flagged
+    that SECaaS growth is decelerating (71%→47%) and that H2 guidance
+    requires $60.8-63.8M vs $27.7M in Q2 — a steep step-up.
+  - All three subagents finished within budget; all three sanity-checked
+    live before the tracker was updated.
+  - Running total: **36/~50 report-periods** (36 companies touched
+    tonight; done count 78→81, 3 skipped: ABTS, ALDF, ALF).

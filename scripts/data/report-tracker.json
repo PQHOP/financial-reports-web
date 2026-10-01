@@ -18399,5 +18399,72 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALLO": {
+    "name": "Allogene Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/allo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "filing cadence only (~90 days after Q2 10-Q)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01",
+    "note": "Metrics JSON used netIncomeYoyPct +16.2 / epsYoyPct +43.5 (positive = loss narrowed), same convention as ALEC; other reports this session (e.g. AKTX) used the opposite sign (negative = loss widened). No site-wide convention found — future cleanup could standardize the sign convention for loss-narrowing YoY fields across reports."
+  },
+  "ALLR": {
+    "name": "Allarity Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/allr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "filing cadence only; two Streeterville notes totaling ~$20.86M mature 2027-09-02, worth watching for a financing update before then",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "ALLT": {
+    "name": "Allot Ltd. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/allt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-12",
+      "basis": "filing cadence only, not confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
