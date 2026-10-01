@@ -6746,3 +6746,38 @@ report-periods**.
     sanity-checked live before the tracker was updated.
   - Running total: **44/~50 report-periods** (44 companies touched
     tonight; done count 86→88, 5 skipped: ABTS, ALDF, ALF, ALOV, ALPX).
+- **Sub-batch 17 (us-listed backlog, final batch of this firing):** ALRS, ALT.
+  - **ALRS** (Alerus Financial) — Q2 2026 (10-Q filed 2026-08-03,
+    earnings 8-K 2026-07-29): https://financialreportinsights.com/companies/alrs/2026/q2
+    — first bank-metrics report of the night (NIM, efficiency ratio,
+    CET1, ROTCE etc. per CLAUDE.md's bank fields); revenue $80.7M
+    (+7.8%), net income $20.9M (+3.0%); net interest income +10.9% on
+    cheaper deposits while loans stayed flat (NIM 3.97%, up from 3.51%);
+    expenses grew faster than revenue (+9.2%); the real story was credit
+    quality — nonperforming assets fell from $54.0M to $17.1M in one
+    quarter. Noted a transient "Login failed" error on the first publish
+    attempt that cleared on retry (same password had just worked for
+    `--list`) — not investigated further, no duplicate report created.
+  - **ALT** (Altimmune) — Q2 2026 (10-Q filed 2026-08-12):
+    https://financialreportinsights.com/companies/alt/2026/q2 — no
+    revenue; net loss $22.8M (+3% YoY), but loss per share fell 56%
+    purely because the share count more than doubled (81.5M → 185.4M);
+    cash $518.6M (from $273.5M at YE2025) after April/January raises;
+    Phase 3 MASH trial (PERFORMA) began enrolling 2026-08-03; Phase 2
+    alcohol-use-disorder trial (RECLAIM) reported positive topline
+    results 2026-07-28.
+  - Both subagents finished within budget; both sanity-checked live
+    before the tracker was updated.
+  - **Tonight's final total: 46/~50 report-periods** (46 companies
+    touched: MU, FDS, JBL updated with new FY2026 ANNUAL reports; 43
+    new companies first-reported — BSET, AVD, CAG, CALM, KMX, PRGS,
+    AIOT, AIP, AIRE, AIRG, AIRJ, AIXC, AKBA, AKTS, AKTX, ALAB, ALAR,
+    ALCO, ALDX, ALEC, ALGM, ALGS, ALGT, ALHC, ALKS, ALKT, ALLO, ALLR,
+    ALLT, ALM, ALMR, ALNT, ALMS, ALNY, ALOY, ALRM, ALRS, ALT, plus
+    ABTS/ALDF/ALF/ALOV/ALPX skipped with reasons; done count 44→88 this
+    firing, 5 skipped). Stopping here with 4 of margin remaining —
+    comfortably under the cap with time still left in the window
+    (17:11 UTC / 02:11 JST, window runs to 22:59 UTC). The next firing
+    should re-run `scan-recent-filings` first as always (tier 0 outranks
+    the cap and can exceed it by a few), then continue the us-listed
+    backlog via `next-batch` starting from ALTI.
