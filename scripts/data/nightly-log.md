@@ -6533,3 +6533,35 @@ report-periods**.
     sanity-checked live before the tracker was updated.
   - Running total: **25/~50 report-periods** (25 companies touched
     tonight; done count 68→70, 2 skipped: ABTS, ALDF).
+- **Sub-batch 10 (us-listed backlog, first reports):** ALDX, ALEC, ALGM.
+  - **ALDX** (Aldeyra Therapeutics) — Q2 2026 (10-Q filed 2026-08-06):
+    https://financialreportinsights.com/companies/aldx/2026/q2 — no
+    revenue; net loss narrowed 44.2% to $5.45M on much lower clinical
+    spend (down to 6 FTEs); $45.1M cash, no debt; FDA rejected reproxalap
+    a third time on 2026-03-16, company is appealing via a Formal Dispute
+    Resolution Request (Q4 2026); cash-runway guidance extended to "into
+    2029"; flagged that the AbbVie $100M-upfront deal is contractually
+    tied to FDA approval, so the long runway buys time rather than a
+    path forward on its own.
+  - **ALEC** (Alector) — Q2 2026 (10-Q filed 2026-08-06):
+    https://financialreportinsights.com/companies/alec/2026/q2 —
+    collaboration revenue $3.32M (-57.8%), net loss narrowed to $22.99M
+    (spending less, not performing better); both partnered programs have
+    now failed (latozinemab, and GSK terminating the nivisnebart
+    partnership effective 2027-01-02 after an April 2026 futility stop);
+    $172.8M cash (~$162M after an early-July loan payoff), guided to last
+    "at least through 2027"; pipeline now rests on a preclinical
+    candidate (AL137) targeting first human dosing April 2027.
+  - **ALGM** (Allegro MicroSystems) — FY2026 ANNUAL (52 weeks ended
+    2026-03-27, 10-K filed 2026-05-21):
+    https://financialreportinsights.com/companies/algm/2026/annual —
+    revenue $890.1M (+22.8%, automotive +17.4%/industrial +37.8%), GAAP
+    net loss narrowed to $14.9M (from $73.0M) but still negative; free
+    cash flow $124.9M (14.0% of sales, up from 3.0%) shows the cash
+    business is solidly profitable even though GAAP isn't yet, due to
+    stock comp, acquisition amortization, a Polar Semiconductor JV loss
+    and a Q4 tax charge.
+  - All three subagents finished within budget; all three sanity-checked
+    live before the tracker was updated.
+  - Running total: **28/~50 report-periods** (28 companies touched
+    tonight; done count 70→73, 2 skipped: ABTS, ALDF).
