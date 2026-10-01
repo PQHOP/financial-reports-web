@@ -6473,3 +6473,32 @@ report-periods**.
     live before the tracker was updated.
   - Running total: **20/~50 report-periods** (20 companies touched
     tonight; done count 62→65, ABTS skipped).
+- **Sub-batch 8 (us-listed backlog, first reports):** AKTS, AKTX, ALAB.
+  - **AKTS** (Aktis Oncology) — Q2 2026 (10-Q filed 2026-08-13):
+    https://financialreportinsights.com/companies/akts/2026/q2 — clinical-
+    stage biotech (IPO'd Jan 2026), collaboration revenue $3.4M from Eli
+    Lilly (+111%), net loss widened to $24.1M; R&D +35.7%, cash/
+    investments $517.3M funding operations "into 2029"; upcoming data
+    readouts for AKY-1189 (Q1 2027) and AKY-2519 (2027).
+  - **AKTX** (Akari Therapeutics) — Q2 2026 (10-Q filed 2026-08-13):
+    https://financialreportinsights.com/companies/aktx/2026/q2 — no
+    revenue; pivoted from complement inhibitors to an ADC cancer-drug
+    pipeline (lead candidate AKTX-101, still preclinical, first human
+    trials targeted mid-2027); net loss $4.81M in Q2 (+153.7%), H1 loss
+    $19.3M (incl. a $12.1M non-cash write-down); only $7.7M cash, funding
+    operations "into December 2026" only, going-concern doubt in the
+    filing, payables ($12.9M) exceed cash on hand.
+  - **ALAB** (Astera Labs) — Q2 2026 (10-Q filed 2026-08-05):
+    https://financialreportinsights.com/companies/alab/2026/q2 — revenue
+    $392.4M (+104.5%), GAAP net income $153.1M (+198.9%, about a third
+    from a stock-award tax benefit rather than operations), operating
+    margin 22.7%; gross margin fell to 73.3% on mix shift plus an
+    Amazon warrant agreement cutting revenue by $10.2M; four customers
+    (contract manufacturers buying for hyperscalers) were ~82% of
+    revenue; Q3 guidance of $540-560M implies ~$150M sequential growth
+    on the Scorpio X-Series switch ramp, with gross margin guided down
+    further to ~72%.
+  - All three subagents finished within budget; all three sanity-checked
+    live before the tracker was updated.
+  - Running total: **23/~50 report-periods** (23 companies touched
+    tonight; done count 65→68, ABTS skipped).

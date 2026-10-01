@@ -18123,5 +18123,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALAB": {
+    "name": "Astera Labs, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alab/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings) / 10-Q",
+      "estimate": "2026-11-04",
+      "basis": "filing cadence only (~90 days after Q2 results 8-K filed 2026-08-04)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
