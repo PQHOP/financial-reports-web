@@ -3764,22 +3764,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubjaoux000404l9phcbzmwt"
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/mu/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-05-28",
-      "filedAt": "2026-06-25"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-03",
+      "filedAt": "2026-09-30"
     },
     "nextExpectedFiling": {
       "type": "10-K (FY2026 annual)",
-      "estimate": "2026-10-02",
-      "basis": "Micron's fiscal year ends early September; prior FY2025 10-K was filed 2025-10-03",
+      "estimate": "2026-10-27",
+      "basis": "8-K earnings release filed 2026-09-30; prior FY2025 10-K filed 2025-10-03, about 4 weeks after the equivalent 8-K",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-01",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-01",
+        "url": "https://financialreportinsights.com/companies/mu/2026/annual"
+      }
+    ]
   },
   "PYPL": {
     "name": "PayPal Holdings, Inc.",
@@ -8973,28 +8981,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/fds/2026/q3"
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/fds/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-07-01"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-30"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q4/FY2026 results)",
-      "estimate": "2026-09-30",
-      "basis": "FactSet press release 2026-09-02 scheduled the Q4 FY2026 call for Sept 30, 2026 — publish a 2026 ANNUAL report then",
-      "confidence": "confirmed"
+      "type": "10-K (FY2026 annual); Q1 FY2027 earnings ~December",
+      "estimate": "2026-12-15",
+      "basis": "FactSet typically reports fiscal Q1 results mid-December; full 10-K due within ~60 days of FYE under accelerated filer rules",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-01",
     "reports": [
       {
         "year": 2026,
         "period": "Q3",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/fds/2026/q3"
+      },
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-01",
+        "url": "https://financialreportinsights.com/companies/fds/2026/annual"
       }
     ]
   },
@@ -10749,28 +10763,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/jbl/2026/q3"
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/jbl/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-06-30"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-09-30"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (FY2026 results); 10-K late Oct",
-      "estimate": "2026-09-25",
-      "basis": "FY2025 results ~2025-09-25; not on EDGAR as of 2026-09-25 08:03 UTC",
+      "type": "10-K (FY2026 annual)",
+      "estimate": "2026-10-27",
+      "basis": "8-K earnings release filed 2026-09-30; full 10-K typically follows ~4 weeks later",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-01",
     "reports": [
       {
         "year": 2026,
         "period": "Q3",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/jbl/2026/q3"
+      },
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-01",
+        "url": "https://financialreportinsights.com/companies/jbl/2026/annual"
       }
     ]
   },
@@ -17683,5 +17703,71 @@
         "url": "https://financialreportinsights.com/reports/cmuojsmtd000204l0ecvxmry2"
       }
     ]
+  },
+  "BSET": {
+    "name": "Bassett Furniture Industries, Incorporated",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/bset/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-09-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual, FYE ~2026-11-28)",
+      "estimate": "2027-02-10",
+      "basis": "prior FY2025 10-K covered year ended 2025-11-29; furniture-industry 10-Ks typically file ~10-11 weeks after fiscal year end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "AVD": {
+    "name": "American Vanguard Corporation Common Stock ($0.10 Par Value)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/avd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "filing cadence only (~90 days after Q2 10-Q); a 10-K/A to the FY2025 annual (auditor-report fix, no figures changed) was also filed 2026-09-30 and reviewed but does not change 2026 coverage",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "CAG": {
+    "name": "ConAgra Brands, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/cag/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-30",
+      "filedAt": "2026-09-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2027-01-05",
+      "basis": "filing cadence only (~90 days after Q1 10-Q); fiscal year ends late May",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }

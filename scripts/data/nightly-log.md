@@ -6214,3 +6214,85 @@ report-periods**.
   with the standing note not to start further tier-1 backlog research
   this close to the cap this late in the window (07:05 JST, window ends
   07:59). Tracker untouched. Exiting without further batches.
+
+### 2026-10-01 night (16:00 UTC 2026-10-01 → 22:59 UTC 2026-10-01 / 01:00–07:59 JST 2026-10-02)
+
+- Mechanism: scheduled firing (session started 16:04 UTC / 01:04 JST).
+  Confirmed network access first: plain `curl https://www.sec.gov/` (no
+  User-Agent) returned 403 (SEC's own response, not a proxy denial);
+  retrying with the required `User-Agent` header returned 200. Both
+  `financialreportinsights.com` and the `.vercel.app` alias returned 200
+  directly.
+- `npm install` hit the usual expected `prisma generate`/`DATABASE_URL`
+  postinstall failure (no DB access needed for this pipeline) after
+  setting a dummy `DATABASE_URL` just to let `prisma generate` run; the
+  resulting `package-lock.json` diff was reverted before touching
+  anything else. Git tree was already clean and up to date with
+  `origin/master`.
+- Ran `npm run scan-recent-filings` fresh: **9 fresh candidates** — MU,
+  FDS, JBL (hot-list/S&P 500, `kind: update`, all FY2026 Q4/annual
+  earnings 8-Ks filed 2026-09-30) plus AVD, BSET, CAG, CALM, KMX, PRGS
+  (us-listed, `kind: new`, 10-Qs/one 10-K/A filed 2026-09-29/30). Worked
+  through tier 0 in two sub-batches of 3 opus subagents each (synchronous,
+  one company per subagent), sanity-checking every live page before
+  updating the tracker.
+- **Sub-batch 1 (hot-list/S&P 500 updates, all new FY2026 ANNUAL periods
+  since each company's prior published report was Q3 2026):**
+  - **MU** (Micron Technology) — FY2026 ANNUAL (FYE 2026-09-03), from the
+    8-K Item 2.02 earnings release filed 2026-09-30:
+    https://financialreportinsights.com/companies/mu/2026/annual —
+    revenue $133.2B (+256% YoY, helped by a 53-week fiscal year), net
+    income $85.0B, GAAP diluted EPS $74.33, Q4 operating margin 74.6%;
+    flagged the unexplained Q4 opex jump (incl. a $500M patent-license
+    charge), inventory up 21% QoQ, and that FY2027 gross-margin guidance
+    sits below the Q4 print just reported (a possible price plateau).
+  - **FDS** (FactSet) — FY2026 ANNUAL (FYE 2026-08-31), from the 8-K Item
+    2.02 earnings release filed 2026-09-30:
+    https://financialreportinsights.com/companies/fds/2026/annual —
+    revenue $2.476B (+6.7%), organic ASV +7.0% (best on record), but GAAP
+    operating margin fell to 28.3% (from 32.2%) and GAAP EPS fell 6.3%;
+    adjusted EPS grew 6.1% almost entirely from buybacks (diluted shares
+    -4.6%); full-year GAAP figures missed the bottom of guidance despite
+    revenue/ASV beating the top.
+  - **JBL** (Jabil) — FY2026 ANNUAL (FYE 2026-08-31), from the 8-K Item
+    2.02 earnings release filed 2026-09-30:
+    https://financialreportinsights.com/companies/jbl/2026/annual —
+    revenue $35.95B (+20.6%), net income $1.042B (+58.6%, inflated by
+    FY2025 one-offs), core EPS $13.09 (+34.3%, the cleaner figure); flagged
+    that the $8.0B of operating cash from payables/accruals funded the
+    entire $7.8B receivables/inventory build, and FY2027 guidance implies
+    free cash flow growing far slower (~4%) than revenue (~24%).
+  - All three subagents finished within budget and reported cleanly; every
+    publish was sanity-checked live (cache-busted fetch, Takeaway and
+    closing content confirmed present, not truncated) before the tracker
+    was updated.
+  - Running total after sub-batch 1: **3/~50 report-periods** (3 companies
+    updated: MU, FDS, JBL — all previously "done", now carrying a new
+    FY2026 ANNUAL report in addition to their Q3 2026 one).
+- **Sub-batch 2 (new us-listed companies, first reports):**
+  - **BSET** (Bassett Furniture) — first report, Q3 FY2026 (period ended
+    2026-08-29, 10-Q filed 2026-09-30):
+    https://financialreportinsights.com/companies/bset/2026/q3 — revenue
+    $82.8M (+3.4%), net income $2.1M (+162%) boosted by a ~$1.0M tariff
+    refund and lower bonus accruals (~$1.75M of the $2.19M operating-income
+    rise); Wholesale segment income rose to $9.3M, Retail stayed
+    loss-making (-$253K) on 90bp of margin erosion from heavier
+    discounting.
+  - **AVD** (American Vanguard) — first report, Q2 2026 (period ended
+    2026-06-30, 10-Q filed 2026-08-10; a 10-K/A filed 2026-09-30 was
+    reviewed and found to only correct the FY2025 auditor's report, no
+    figures restated):
+    https://financialreportinsights.com/companies/avd/2026/q2 — revenue
+    $116.8M (-9.7%, International down 18% on dry weather in Central
+    America), net loss $9.9M vs. a $0.8M loss a year earlier; post-March
+    refinancing interest expense ($9.1M/quarter) now exceeds quarterly
+    adjusted EBITDA ($6.6M); full-year guidance of $530-550M sales /
+    $44-48M adjusted EBITDA kept unchanged, which requires H2 sales 7-15%
+    above H2 2025.
+  - Both subagents finished within budget and reported cleanly; both
+    sanity-checked live before the tracker was updated.
+  - Running total after sub-batch 2: **5/~50 report-periods** (5 companies
+    touched tonight: MU, FDS, JBL updated; BSET, AVD newly added — 2 of 7
+    "done" count increase since AVD/BSET are first reports).
+- Third sub-batch (CAG, and then CALM/KMX/PRGS) in progress — this entry
+  will be updated as each sub-batch completes.
