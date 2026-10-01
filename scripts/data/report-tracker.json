@@ -18056,5 +18056,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "AIXC": {
+    "name": "AIxCrypto Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/aixc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "smaller reporting company 45-day deadline from quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01",
+    "note": "Company renamed to FF EAI Robotics Ecosystem Inc. effective 2026-09-30, ticker changing from AIXC to FFR; site/sp500.json/us-listed.json still list it under AIXC as of this entry — may need a name/ticker update in the seed data"
   }
 }

@@ -6441,3 +6441,35 @@ report-periods**.
     live before the tracker was updated.
   - Running total: **17/~50 report-periods** (17 companies touched
     tonight; done count 59→62, ABTS skipped).
+- **Sub-batch 7 (us-listed backlog, first reports):** AISP, AIXC, AKBA.
+  - **AISP** (Airship AI Holdings) — Q2 2026 (10-Q filed 2026-08-06):
+    https://financialreportinsights.com/companies/aisp/2026/q2 — revenue
+    $4.12M (+92.1%) from commercial orders while federal (DHS-linked)
+    awards were delayed; net loss narrowed to $2.41M (from $23.76M, which
+    included one-offs); only $6.9M of firm backlog against a $206.1M
+    "validated pipeline"; two customers were 84% of Q2 revenue.
+  - **AIXC** (AIxCrypto Holdings) — Q2 2026 (10-Q filed 2026-08-07):
+    https://financialreportinsights.com/companies/aixc/2026/q2 — the
+    former Qualigen Therapeutics, now majority-controlled by Faraday
+    Future (FFAI) and pivoting to a "RoboShare" robot-rental platform plus
+    a crypto treasury; zero revenue, net loss $4.19M; of $19.3M cash at
+    the start of 2026, $12.0M went into FFAI's own shares (booked against
+    equity, not as an asset) and $7.9M into operating costs, leaving
+    $0.58M cash; going-concern warning in the filing. Flagged for the
+    tracker: the company renamed to FF EAI Robotics Ecosystem Inc. and
+    changed ticker to FFR effective 2026-09-30 — the seed data
+    (sp500.json/us-listed.json) still lists it as AIXC, may need updating
+    in a future session.
+  - **AKBA** (Akebia Therapeutics) — Q2 2026 (10-Q filed 2026-08-05):
+    https://financialreportinsights.com/companies/akba/2026/q2 — revenue
+    $49.1M (-21.4%): Vafseo +60% to $21.3M but Auryxia -46% to $25.5M
+    after a generic launched in March 2026; swung from a $14.1M operating
+    profit to a $6.3M operating loss; cash $155.5M; flagged that Vafseo's
+    temporary Medicare extra payment (TDAPA) ends 2026-12-31 and the
+    company's own 10-Q says Vafseo revenue will fall "significantly" in
+    2027, and that the 2-year cash runway depends on refinancing a
+    $52.4M BlackRock term loan (principal payments start Jan 2027).
+  - All three subagents finished within budget; all three sanity-checked
+    live before the tracker was updated.
+  - Running total: **20/~50 report-periods** (20 companies touched
+    tonight; done count 62→65, ABTS skipped).
