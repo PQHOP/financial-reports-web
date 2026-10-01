@@ -18593,5 +18593,45 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALOY": {
+    "name": "REalloys Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/aloy/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "filing cadence only (Q1 filed 2026-05-20, Q2 filed 2026-08-13)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01",
+    "note": "Formerly Blackboxstocks (retail trading-analytics app); reverse-merged with privately held REalloys (rare earths) 2026-02-24, ticker changed to ALOY 2026-02-25, old app business spun off 2026-05-05 — name/business are now entirely different from what seed data may still reflect."
+  },
+  "ALPX": {
+    "name": "Alpex Acquisition Corporation - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "SPAC (blank check company, SIC 6770). IPO closed 2026-06-26 ($115M gross). Q2 2026 10-Q (filed 2026-08-13) says no business combination target selected, no substantive talks, no operating revenue. No 425 filings or merger-agreement 8-K since IPO closing. Re-check when a business combination agreement is announced.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026) / 8-K Item 1.01 if a merger target is announced",
+      "estimate": "2026-11-13",
+      "basis": "filing cadence estimate",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
