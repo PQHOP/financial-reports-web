@@ -18532,5 +18532,44 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALOV": {
+    "name": "Aldabra 4 Liquidity Opportunity Vehicle, Inc. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "SPAC/blank check (SIC 6770), IPO Jan 2026, ~$304M in trust; Q2 2026 10-Q states no target selected and no operations/revenue — nothing to analyze until a definitive merger agreement is announced. Re-check only if a merger-agreement 8-K (Item 1.01) appears.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 1.01 (if a merger target is announced)",
+      "estimate": null,
+      "basis": "deadline to complete a merger is 2028-01-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "ALMS": {
+    "name": "Alumis Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alms/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "last year's equivalent 10-Q was filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
