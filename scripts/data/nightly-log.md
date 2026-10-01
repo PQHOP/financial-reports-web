@@ -6596,3 +6596,31 @@ report-periods**.
     sanity-checked live before the tracker was updated.
   - Running total: **30/~50 report-periods** (30 companies touched
     tonight; done count 73→75, 3 skipped: ABTS, ALDF, ALF).
+- **Sub-batch 12 (us-listed backlog, first reports):** ALHC, ALKS, ALKT.
+  - **ALHC** (Alignment Healthcare) — Q2 2026 (10-Q filed 2026-07-30):
+    https://financialreportinsights.com/companies/alhc/2026/q2 — Medicare
+    Advantage insurer; revenue $1,335.6M (+31.6%), members +31.5% to
+    ~294,100, medical benefits ratio improved slightly to 86.3% (from
+    86.7%); net income $36.6M (+133.6%); flagged how thin the margin
+    is — profit doubled on less than half a point of combined MBR/opex
+    ratio improvement, so a similarly small move the other way would
+    erase much of it; Q3 adjusted EBITDA guidance only $20-30M.
+  - **ALKS** (Alkermes) — Q2 2026 (10-Q filed 2026-07-28):
+    https://financialreportinsights.com/companies/alks/2026/q2 — revenue
+    $496.0M (+27.0%, almost entirely from the Avadel/LUMRYZ acquisition
+    closed 2026-02-12; organic growth ~2%), GAAP net income collapsed to
+    $0.5M (-99.4%) on acquisition accounting (inventory step-up,
+    amortization, a $26.4M CVR charge) plus ~$26M of new interest on
+    $1.525B of acquisition debt; operating cash flow -$20.6M in H1;
+    full-year guidance unchanged but GAAP net-loss range widened.
+  - **ALKT** (Alkami Technology) — Q2 2026 (10-Q filed 2026-07-30):
+    https://financialreportinsights.com/companies/alkt/2026/q2 — revenue
+    $129.8M (+15.9%), GAAP operating loss narrowed to $7.7M (from
+    $15.9M) entirely on flat opex, while gross margin fell to 56.8%
+    (from 58.6%) on higher third-party resale costs; ARR $511.7M
+    (+20.7%); first-half free cash flow turned positive (+$12.4M vs
+    -$8.6M); full-year guidance nudged up.
+  - All three subagents finished within budget; all three sanity-checked
+    live before the tracker was updated.
+  - Running total: **33/~50 report-periods** (33 companies touched
+    tonight; done count 75→78, 3 skipped: ABTS, ALDF, ALF).
