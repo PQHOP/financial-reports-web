@@ -6382,3 +6382,30 @@ report-periods**.
     confirmed present) before the tracker was updated.
   - Running total: **11/~50 report-periods** (11 companies touched
     tonight across tiers 0-1; done count 54→56, ABTS added as skipped).
+- **Sub-batch 5 (us-listed backlog, first reports):** AIRE, AIRG, AIRJ.
+  - **AIRE** (reAlpha Tech) — Q2 2026 (10-Q filed 2026-08-14):
+    https://financialreportinsights.com/companies/aire/2026/q2 — revenue
+    $1.11M (-11.3%, GTG Financial unwind), net loss narrowed to $3.05M
+    (from $4.82M) mostly on non-cash items, but operating cash burn
+    *rose* to $5.48M H1 (from $4.60M); $2.2M cash at quarter-end, ATM
+    program currently blocked, company's own 10-Q estimates ~3 months of
+    runway from the Aug 14 filing date — flagged heavy dilution as the
+    likely next step.
+  - **AIRG** (Airgain) — Q2 2026 (10-Q filed 2026-08-05):
+    https://financialreportinsights.com/companies/airg/2026/q2 — revenue
+    $13.7M (+0.6%), adjusted EBITDA turned positive (+$0.38M vs -$0.40M)
+    but GAAP net loss widened slightly to $1.71M (prior year had a
+    one-time $0.5M ERC refund); automotive sales +42%; Q3 guidance
+    $14.25-16.25M.
+  - **AIRJ** (AirJoule Technologies) — Q2 2026 (10-Q filed 2026-08-14):
+    https://financialreportinsights.com/companies/airj/2026/q2 — still
+    pre-revenue; net loss $8.53M in Q2 (swing from a $2.51M profit a year
+    earlier, driven by earnout/vesting-liability revaluation), H1 loss
+    $58.4M dominated by a JV goodwill/IPR&D write-down; cash $41.4M at
+    quarter-end but ~$21.5M spent within 10 weeks after (incl. the
+    $18M BitSink acquisition) and up to ~$61M still owed to the GE
+    Vernova JV — flagged likely further dilution.
+  - All three subagents finished within budget; all three sanity-checked
+    live before the tracker was updated.
+  - Running total: **14/~50 report-periods** (14 companies touched
+    tonight; done count 56→59, ABTS skipped).
