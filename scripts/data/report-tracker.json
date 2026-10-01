@@ -17836,5 +17836,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "AIOT": {
+    "name": "PowerFleet, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/aiot/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-06-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (FY2027 Q2, already filed 2026-08-10 for Q1 but not yet used)",
+      "estimate": "2026-11-10",
+      "basis": "a Q1 FY2027 10-Q (period end 2026-06-30) was filed 2026-08-10 but not used for this report; next periodic filing after that would be the Q2 FY2027 10-Q, ~90 days out",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "AIP": {
+    "name": "Arteris, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/aip/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "filing cadence only (~90 days after Q2 10-Q)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }

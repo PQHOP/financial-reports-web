@@ -6350,3 +6350,35 @@ report-periods**.
     `scan-recent-filings` run are now published.** Running total:
     **9/~50 report-periods** (9 companies touched: MU, FDS, JBL updated;
     BSET, AVD, CAG, CALM, KMX, PRGS newly added — done count 48→54).
+- **Tier 1 (2026 coverage backlog), sub-batch 4 — `npm run next-batch -- --n 5`**
+  output after re-running `scan-recent-filings` (0 fresh candidates,
+  confirming tier 0 fully drained): ABTS, AIOT, AIP, AIRE, AIRG, all
+  `4-us-listed-backlog` (hot list and S&P 500 are fully cleared for 2026 —
+  next-batch has moved on to the us-listed catch-all tier). Ran 3 opus
+  subagents (ABTS, AIOT, AIP):
+  - **ABTS** (Abits Group) — **skipped**. Foreign private issuer (Hong
+    Kong bitcoin miner), files 20-F/6-K not 10-K/10-Q. Latest results are
+    the FY2025 20-F (filed 2026-04-29); no 2026-period 6-K with financial
+    results exists yet (two recent 6-Ks were a change-of-control and a
+    convertible-note financing, no figures). Tracker set to `skipped`
+    with reason, `nextExpectedFiling` estimated ~2026-12-31 (H1 2026
+    results, unconfirmed).
+  - **AIOT** (PowerFleet) — first report, FY2026 ANNUAL (FYE 2026-03-31,
+    10-K filed 2026-06-15):
+    https://financialreportinsights.com/companies/aiot/2026/annual —
+    revenue $443.8M (+22.4%, ~7% organic ex-Fleet Complete), first
+    operating profit ($19.6M) since the MiX Telematics/Fleet
+    Complete/RTS roll-up, but $27.5M of interest expense still exceeds it
+    and free cash flow was negative (~-$9.6M); FY2027 guidance calls for
+    $30-35M free cash flow.
+  - **AIP** (Arteris) — first report, Q2 2026 (10-Q filed 2026-08-06):
+    https://financialreportinsights.com/companies/aip/2026/q2 — revenue
+    $24.1M (+46.3%), net loss widened 54.1% to $14.1M; ACV+royalties
+    +44%, RPO +36%, but gross margin fell to 85.1% (from 89.4%) on
+    lower-margin Cycuity government-services revenue; full-year adjusted
+    operating-loss guidance widened to $7-10M (from $4.5-8.5M).
+  - All three subagents finished within budget; AIOT and AIP
+    sanity-checked live (cache-busted fetch, Takeaway and closing content
+    confirmed present) before the tracker was updated.
+  - Running total: **11/~50 report-periods** (11 companies touched
+    tonight across tiers 0-1; done count 54→56, ABTS added as skipped).
