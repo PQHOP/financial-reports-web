@@ -18333,5 +18333,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALHC": {
+    "name": "Alignment Healthcare, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alhc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026) / earnings 8-K",
+      "estimate": "2026-10-29",
+      "basis": "filing cadence only (~90 days after Q2 10-Q)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
