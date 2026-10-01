@@ -18510,5 +18510,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALM": {
+    "name": "Almonty Industries Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-12",
+      "basis": "filing cadence only, not confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }

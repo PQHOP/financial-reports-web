@@ -6655,3 +6655,33 @@ report-periods**.
     live before the tracker was updated.
   - Running total: **36/~50 report-periods** (36 companies touched
     tonight; done count 78→81, 3 skipped: ABTS, ALDF, ALF).
+- **Sub-batch 14 (us-listed backlog, first reports):** ALM, ALMR, ALNT.
+  - **ALM** (Almonty Industries) — Q2 2026 (6-K results, filed 2026-08-12;
+    FPI, 40-F/6-K): https://financialreportinsights.com/companies/alm/2026/q2
+    — revenue C$43.0M (+497.7%), almost entirely from the tungsten price
+    (APT benchmark averaging US$3,075/MTU vs US$453 a year earlier) since
+    Panasqueira's only producing mine shipped 17.9% less; net income
+    C$181.8M, but C$173.1M of that is a non-cash gain from revaluing the
+    conversion option on US$800M convertible notes as the share price
+    fell — underlying profit is roughly C$9M; flagged that Sangdong
+    (Korea) brought in only C$0.1M of H1 revenue against C$44.8M of
+    capex there, though it received final operating certificates
+    2026-09-17.
+  - **ALMR** (Alamar Biosciences) — Q2 2026 (10-Q filed 2026-08-11):
+    https://financialreportinsights.com/companies/almr/2026/q2 —
+    proteomics-instrument company (NULISA platform), IPO'd 2026-04-20;
+    revenue $29.4M (+82.1%), consumables now 52.6% of revenue (from
+    38.8%) and growing 147% YoY; gross margin up to 60.2% (from 53.1%)
+    but operating expenses grew faster in dollar terms than gross
+    profit, so the path to breakeven didn't shorten this quarter; $256.3M
+    cash.
+  - **ALNT** (Allient) — Q2 2026 (10-Q filed 2026-08-05):
+    https://financialreportinsights.com/companies/alnt/2026/q2 — revenue
+    $153.77M (+10.2%, 9.3% organic), net income +85.0% to $10.391M
+    (adjusted EPS +40% is the cleaner figure); bookings +49%, book-to-bill
+    1.31, backlog $298.0M (~2 quarters of revenue) concentrated in
+    industrial and aerospace/defense, vehicle end-market -6.6%.
+  - All three subagents finished within budget; all three sanity-checked
+    live before the tracker was updated.
+  - Running total: **39/~50 report-periods** (39 companies touched
+    tonight; done count 81→84, 3 skipped: ABTS, ALDF, ALF).
