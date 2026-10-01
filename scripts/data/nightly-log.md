@@ -6409,3 +6409,35 @@ report-periods**.
     live before the tracker was updated.
   - Running total: **14/~50 report-periods** (14 companies touched
     tonight; done count 56→59, ABTS skipped).
+- **Sub-batch 6 (us-listed backlog, first reports):** AIRO, AIRS, AIRT.
+  - **AIRO** (AIRO Group Holdings) — Q2 2026 (10-Q filed 2026-08-13):
+    https://financialreportinsights.com/companies/airo/2026/q2 — revenue
+    $43.2M (+75.9%), almost entirely from the Drones segment (Sky-Watch,
+    Denmark, +87% YoY, 95% of revenue); operating income $1.7M (vs a
+    $19.7M loss a year earlier, mostly from IPO stock-award costs
+    falling away); first-half operating cash flow -$48.7M on a
+    receivables build, ~$43.2M of which was said to be collected in
+    July; FY2026 guidance unchanged (15-25% revenue growth, adjusted
+    EBITDA still negative) — still implies an H2 loss despite the strong
+    Q2.
+  - **AIRS** (AirSculpt Technologies) — Q2 2026 (10-Q filed 2026-08-10):
+    https://financialreportinsights.com/companies/airs/2026/q2 — revenue
+    $42.9M (-2.5%), net loss widened to $1.1M; same-center cases +1.0%
+    but customer-acquisition cost per case +19% while revenue per case
+    fell, so volume gains aren't reaching profit; full-year adjusted
+    EBITDA guidance cut to $12-14M (from $15-17M); flagged an Oct 31 2026
+    term-loan deadline (must refinance or hire banks to arrange new
+    financing) worth re-checking independent of the next 10-Q.
+  - **AIRT** (Air T) — FY2026 ANNUAL (FYE 2026-03-31, 10-K filed
+    2026-06-29): https://financialreportinsights.com/companies/airt/2026/annual
+    — revenue $327.1M (+12.1%), GAAP net income $78.0M (vs a $6.1M loss)
+    driven almost entirely by a $111.2M non-cash bargain-purchase gain
+    from acquiring Rex (Regional Express, Australia) out of
+    administration; excluding that gain the company had a ~$25.2M
+    pre-tax loss, operating cash flow was -$25.0M (vs +$23.5M) and debt
+    nearly doubled to ~$209M — flagged the EPS figure as not reflecting
+    earnings power.
+  - All three subagents finished within budget; all three sanity-checked
+    live before the tracker was updated.
+  - Running total: **17/~50 report-periods** (17 companies touched
+    tonight; done count 59→62, ABTS skipped).
