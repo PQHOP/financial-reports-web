@@ -6716,3 +6716,33 @@ report-periods**.
   - Approaching the nightly cap with 8 of margin left — will do at most
     one more small sub-batch tonight and stop with margin to spare, per
     the standing pacing note (never run the cap down to 0).
+- **Sub-batch 16 (us-listed backlog):** ALOY, ALPX, ALRM.
+  - **ALOY** (REalloys) — Q2 2026 (10-Q filed 2026-08-13):
+    https://financialreportinsights.com/companies/aloy/2026/q2 — formerly
+    Blackboxstocks (retail trading-analytics app); reverse-merged with
+    privately held REalloys (rare earths) 2026-02-24, ticker changed
+    2026-02-25, old app business spun off 2026-05-05 — now an early-stage
+    rare-earth company (Euclid OH metals plant supplying the Defense
+    Logistics Agency, Hoidas Lake exploration property, funded
+    Saskatchewan Research Council processing/metallization agreements).
+    Revenue $0.80M, net loss $36.8M (mostly $32.1M of stock-based pay);
+    cash $122.4M (from $50M public offering + $100M private placement)
+    against ~$58.3M committed SRC spending through 2028; no meaningful
+    revenue expected before Q3 2027. Flagged for future sessions: the
+    name/business is entirely different from what seed data may still
+    show.
+  - **ALPX** (Alpex Acquisition Corporation) — **skipped**. Blank-check
+    SPAC (SIC 6770), IPO closed 2026-06-26 ($115M gross); Q2 2026 10-Q
+    (filed 2026-08-13) states no target selected, no operations/revenue.
+  - **ALRM** (Alarm.com Holdings) — Q2 2026 (10-Q filed 2026-08-06):
+    https://financialreportinsights.com/companies/alrm/2026/q2 — revenue
+    $277.7M (+9.2%), recurring software revenue $188.8M (+11.1%, 68% of
+    revenue), renewal rate up to 95%; net income fell 29.8% to $24.2M
+    despite the operating improvement, due to $9.2M more IP-lawsuit legal
+    costs (SkyBell, EcoFactor), $7.3M less interest income after repaying
+    a $500M convertible bond, and a higher tax rate; full-year guidance
+    raised; new $150M buyback program.
+  - All three subagents finished within budget; ALOY and ALRM
+    sanity-checked live before the tracker was updated.
+  - Running total: **44/~50 report-periods** (44 companies touched
+    tonight; done count 86→88, 5 skipped: ABTS, ALDF, ALF, ALOV, ALPX).
