@@ -6565,3 +6565,34 @@ report-periods**.
     live before the tracker was updated.
   - Running total: **28/~50 report-periods** (28 companies touched
     tonight; done count 70→73, 2 skipped: ABTS, ALDF).
+- **Sub-batch 11 (us-listed backlog):** ALF, ALGS, ALGT.
+  - **ALF** (Centurion Acquisition Corp.) — **skipped**. Blank-check SPAC
+    (SIC "Blank Checks"), no definitive business combination agreement as
+    of the Q2 2026 10-Q (filed 2026-08-14); deadline extended to
+    2027-06-12, ~$54M left in trust after June 2026 redemptions of
+    ~$259.3M.
+  - **ALGS** (Aligos Therapeutics) — Q2 2026 (10-Q filed 2026-08-06):
+    https://financialreportinsights.com/companies/algs/2026/q2 — revenue
+    $27.8M (vs $0.965M a year ago, almost entirely a one-time $27.8M
+    upfront fee from licensing hepatitis-B drug pevifoscorvir's Greater
+    China rights to Amoytop in May 2026); net loss narrowed to $1.5M
+    (underlying loss ~$29M excluding the fee); R&D +72% to $24.1M on the
+    B-SUPREME Phase 2 trial; $30.4M cash at quarter-end (plus $25.0M
+    received from Amoytop in July) funds operations only into Q4 2026
+    per the company's own estimate, going-concern warning in the filing;
+    B-SUPREME topline data not due until late Q3 2027 — flagged a likely
+    financing need before then.
+  - **ALGT** (Allegiant Travel) — Q2 2026 (10-Q filed 2026-08-10):
+    https://financialreportinsights.com/companies/algt/2026/q2 — revenue
+    $943.5M (+36.9%, boosted by the Sun Country Airlines acquisition
+    closing 2026-05-13); GAAP net loss narrowed to $4.9M (from $65.2M);
+    adjusted EPS $2.19, well above April's -$1.00 to $0.00 guidance, on
+    core-Allegiant TRASM +24.6% outrunning a 73% jump in fuel cost;
+    Sun Country contributed $167.3M revenue in its 7 weeks owned but a
+    $9.0M operating loss after $26.4M of special/integration charges;
+    net debt rose to $1.71B (from $961M); Q3 guidance much weaker
+    (adjusted EPS -$1.00 to $0.00) as peak-season pricing power fades.
+  - All three subagents finished within budget; ALGS and ALGT
+    sanity-checked live before the tracker was updated.
+  - Running total: **30/~50 report-periods** (30 companies touched
+    tonight; done count 73→75, 3 skipped: ABTS, ALDF, ALF).
