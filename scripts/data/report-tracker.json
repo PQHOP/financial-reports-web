@@ -18272,5 +18272,44 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALF": {
+    "name": "Centurion Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "SPAC (blank check, SIC Blank Checks) with no definitive business combination agreement as of the Q2 2026 10-Q filed 2026-08-14; deadline extended to 2027-06-12, ~$54M left in trust after June 2026 redemptions. Re-check if an 8-K/S-4/F-4 announces a merger.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 1.01 (if a merger target is announced)",
+      "estimate": null,
+      "basis": "deadline extended to 2027-06-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
+  },
+  "ALGS": {
+    "name": "Aligos Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/algs/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "filing cadence only; company's own 10-Q says cash lasts only into Q4 2026, so a financing update is also plausible before the next 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
