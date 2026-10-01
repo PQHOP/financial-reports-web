@@ -6685,3 +6685,34 @@ report-periods**.
     live before the tracker was updated.
   - Running total: **39/~50 report-periods** (39 companies touched
     tonight; done count 81→84, 3 skipped: ABTS, ALDF, ALF).
+- **Sub-batch 15 (us-listed backlog):** ALMS, ALNY, ALOV.
+  - **ALMS** (Alumis) — Q2 2026 (10-Q filed 2026-08-13):
+    https://financialreportinsights.com/companies/alms/2026/q2 —
+    clinical-stage immunology biotech; revenue $1.7M (-37.7%), net loss
+    $142.2M (vs a $59.3M profit a year earlier that included a one-time
+    $187.9M ACELYRIN-merger gain); R&D -21.5% as pivotal psoriasis
+    trials ended; took a $41.8M write-down on lonigutamab (now to be
+    sold/partnered); cash $502.3M into Q4 2027; flagged that the Phase 2b
+    lupus trial (LUMUS) missed its primary endpoint on 2026-09-01, so the
+    company is increasingly a single-product (psoriasis) story ahead of
+    a planned Q4 2026 FDA filing.
+  - **ALNY** (Alnylam Pharmaceuticals) — Q2 2026 (10-Q filed 2026-07-30):
+    https://financialreportinsights.com/companies/alny/2026/q2 — revenue
+    $1,290.9M (+66.9%), GAAP net income $164.5M (second consecutive
+    profitable quarter); Amvuttra sales $1,011.8M (+106%, 78% of
+    revenue) — its $520M gain alone exceeded the whole revenue increase
+    since Onpattro and collaboration revenue shrank; flagged the
+    full-year TTR guidance cut ($4.4-4.7B → $4.2-4.5B, company attributes
+    it to a one-time backlog of patients switching from older drugs now
+    being worked through) as more important than the profit headline,
+    plus rising Amvuttra royalty costs compressing incremental margin.
+  - **ALOV** (Aldabra 4 Liquidity Opportunity Vehicle) — **skipped**.
+    Blank-check SPAC (SIC 6770), IPO Jan 2026, ~$304M in trust; Q2 2026
+    10-Q states no merger target selected and no operations/revenue.
+  - All three subagents finished within budget; ALMS and ALNY
+    sanity-checked live before the tracker was updated.
+  - Running total: **42/~50 report-periods** (42 companies touched
+    tonight; done count 84→86, 4 skipped: ABTS, ALDF, ALF, ALOV).
+  - Approaching the nightly cap with 8 of margin left — will do at most
+    one more small sub-batch tonight and stop with margin to spare, per
+    the standing pacing note (never run the cap down to 0).

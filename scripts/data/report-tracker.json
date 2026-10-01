@@ -18571,5 +18571,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01"
+  },
+  "ALNY": {
+    "name": "Alnylam Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-01",
+      "url": "https://financialreportinsights.com/companies/alny/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "filing cadence only (Q1 filed 2026-04-30, Q2 filed 2026-07-30)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-01"
   }
 }
