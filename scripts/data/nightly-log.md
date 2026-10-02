@@ -6926,3 +6926,17 @@ report-periods**.
   flagged twice tonight; nothing has changed since). No report-tracker.json
   changes, no publishes. Still needs a human to check the Vercel
   project's billing/account status.
+- **Fourth firing, same night (session started ~20:07 UTC):** re-checked
+  from scratch once more — SEC 403-without-UA / 200-with-UA as always;
+  both `https://financialreportinsights.com/` and the `.vercel.app`
+  alias still returned **HTTP 402, `x-vercel-error: DEPLOYMENT_DISABLED`**,
+  byte-for-byte identical to all three earlier firings tonight. (Local
+  checkout was also detached/stale at session start — `master` was 34
+  commits behind `origin/master`, apparently from a prior firing's clone
+  snapshot; fast-forwarded to `origin/master` before touching anything,
+  no divergence, nothing lost.) Exited immediately without running
+  `scan-recent-filings`/`next-batch` or touching the tracker. No
+  additional push notification (user already flagged earlier tonight;
+  nothing has changed since). No report-tracker.json changes, no
+  publishes. Still needs a human to check the Vercel project's
+  billing/account status and reinstate the deployment.
