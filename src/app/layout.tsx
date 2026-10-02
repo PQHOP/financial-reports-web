@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
+import Link from "@/components/Link";
 import Form from "next/form";
 import { Suspense } from "react";
 import { Analytics } from "@vercel/analytics/next";

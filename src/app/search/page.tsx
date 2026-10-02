@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/Link";
 import type { Metadata } from "next";
 import { prismaCached as prisma } from "@/lib/prisma";
 import { cleanCompanyName } from "@/lib/companyName";

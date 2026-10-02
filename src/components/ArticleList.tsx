@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/Link";
 import { articleKindLabels, articlePath } from "@/lib/articles";
 import type { ArticleKind } from "@/generated/prisma/client";
 

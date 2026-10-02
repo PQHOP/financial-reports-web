@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/Link";
 import type { Metadata } from "next";
 import { StaticPage } from "@/components/StaticPage";
 import { SITE_NAME } from "@/lib/site";

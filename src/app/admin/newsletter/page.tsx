@@ -1,5 +1,5 @@
 import { reportUrl } from "@/lib/reportPath";
-import Link from "next/link";
+import Link from "@/components/Link";
 import { redirect } from "next/navigation";
 import { prisma } from "@/lib/prisma";
 import { getIsAdmin } from "@/lib/adminAuth";

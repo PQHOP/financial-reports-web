@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/Link";
 import type { ResolvedImpact } from "@/lib/riskImpacts";
 
 // Shared by the /world-risks list (server) and the map's detail panel (client).

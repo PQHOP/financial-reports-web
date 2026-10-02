@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/Link";
 import { useActionState, useState } from "react";
 import { ReportContent } from "@/components/ReportContent";
 import { periodLabels } from "@/lib/period";
