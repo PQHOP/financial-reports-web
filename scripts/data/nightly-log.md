@@ -6873,3 +6873,37 @@ report-periods**.
   JST) with the next firing due to start a fresh night's count anyway.
   No report-tracker.json changes, no publishes, nothing to commit besides
   this log note.
+
+### 2026-10-02 night (16:00 UTC 2026-10-02 → 22:59 UTC 2026-10-02 / 01:00–07:59 JST 2026-10-03)
+
+- Mechanism: scheduled firing (session started 16:07 UTC / 01:07 JST —
+  the very start of the window, about 18h after the previous night's
+  last no-op firing confirmed the site was up at 200).
+- **Blocked before any research/publishing started — the live site
+  itself is down.** Network check: plain `curl https://www.sec.gov/`
+  (no User-Agent) returned 403 (SEC's own fair-access block, not a proxy
+  denial); the identical request with the required `User-Agent` header
+  returned 200 — SEC access is fine. But both
+  `https://financialreportinsights.com/` and
+  `https://financial-reports-web.vercel.app/` returned **HTTP 402
+  Payment Required**, with response headers `server: Vercel` and
+  `x-vercel-error: DEPLOYMENT_DISABLED` — a real upstream response from
+  Vercel (the CONNECT tunnel completed first; this isn't a sandbox
+  proxy/network-policy denial), meaning the Vercel deployment has been
+  disabled, most likely a billing/account issue on the Vercel project
+  itself (`hop22/financial-reports-web`). This is not something a
+  retry, a different SITE_URL alias, or a code change can fix — both
+  the custom domain and the `.vercel.app` alias are disabled identically,
+  and `admin-publish` cannot log in to a disabled deployment.
+- Since the site can't be reached at all, `admin-publish` would fail at
+  the login step for every company regardless of research quality, so
+  no `scan-recent-filings`/`next-batch`/subagent research was attempted
+  this firing — doing the research without being able to publish it
+  would just burn budget for nothing. No report-tracker.json changes
+  (nothing was touched), no publishes.
+- Flagged to the user directly (push notification) since this also means
+  the live site is down for ordinary visitors, not just blocking tonight's
+  job — needs a human to check the Vercel project's billing/account
+  status and redeploy or reinstate it. Next firing should re-check
+  `https://financialreportinsights.com/` before anything else; if it's
+  back to 200, resume normally from tier 0.
