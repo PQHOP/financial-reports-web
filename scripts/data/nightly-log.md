@@ -6907,3 +6907,11 @@ report-periods**.
   status and redeploy or reinstate it. Next firing should re-check
   `https://financialreportinsights.com/` before anything else; if it's
   back to 200, resume normally from tier 0.
+- **Follow-up firing, same night:** re-checked from scratch (SEC
+  403-without-UA / 200-with-UA as always; both
+  `https://financialreportinsights.com/` and the `.vercel.app` alias)
+  — still **HTTP 402, `x-vercel-error: DEPLOYMENT_DISABLED`**, byte-for-byte
+  the same response as the previous firing. No change, nothing new to
+  publish or fix from here, so no additional push notification (the user
+  was already flagged by the firing above) and no tracker/commit changes.
+  Still needs the human fix described above.
