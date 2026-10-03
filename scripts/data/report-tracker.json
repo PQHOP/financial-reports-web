@@ -19774,5 +19774,27 @@
     "status": "skipped",
     "skipReason": "Pre-merger SPAC (CIK 2101393). IPO closed 2026-06-04, ~$145.17M in trust at 6/30/26, no business combination target announced (no Form 425, no Item 1.01 merger-agreement 8-K). Deadline ~21 months from IPO close (~2028-03-04, extendable). Re-check if a deal is announced.",
     "lastChecked": "2026-10-03"
+  },
+  "APMD": {
+    "name": "Apnimed, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/apmd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-15",
+      "basis": "first periodic report after 2026-07-31 IPO; normal 10-Q deadline estimate",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }

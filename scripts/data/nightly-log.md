@@ -7451,7 +7451,18 @@ under the cap:**
 - **APMC** (AmperCap Acquisition Company) — skipped: pre-merger SPAC
   (CIK 2101393), ~$145.17M in trust at 6/30/26, no business combination
   target announced. Deadline ~2028-03-04 (extendable).
-- **Total tonight: 43 report-periods published across 43 companies**,
+- **APMD** (Apnimed) — Q2 2026 (first periodic report since its
+  2026-07-31 IPO), from the 10-Q filed 2026-09-08:
+  https://financialreportinsights.com/companies/apmd/2026/q2 — net
+  income $125.9M came entirely from one-time gains unwinding its
+  Shionogi joint-venture stake ($85.4M sale gain, $57.1M liability
+  reversal) — excluding them the quarter lost ~$16.6M. Revenue $12.1M
+  (−29.4%) is winding-down JV R&D reimbursement. Six-month operating
+  cash flow was −$37.9M despite $193.7M of six-month net income. Cash
+  $172.8M plus $200.4M of IPO proceeds against a Feb 28 2027 FDA
+  decision on Oxnimbi (AD109) for sleep apnea.
+- **Total tonight: 44 report-periods published across 44 companies**,
   1 edit (DRI), 7 skips (AMAC, AMAN, ANGH, APAC, APMC; TSLA, FCX
-  deferred), 1 pending-recheck (APLM) — 86% of the ~50 cap used.
-  Waiting on APMD/APOG/APPF.
+  deferred), 1 pending-recheck (APLM) — 88% of the ~50 cap used.
+  Waiting on APOG/APPF; this batch (9) will be the last tonight to stay
+  under the cap.
