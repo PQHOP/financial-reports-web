@@ -19111,5 +19111,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "AMPH": {
+    "name": "Amphastar Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amph/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1/Q2 10-Qs+earnings 8-Ks filed 05-07 and 08-06, ~91 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMPG": {
+    "name": "Amplitech Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/ampg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "last year's Q3 10-Q filed 2025-11-14; Q2 10-Qs filed 2025-08-14 and 2026-08-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMLX": {
+    "name": "Amylyx Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amlx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q/earnings 8-K filed 2025-11-06; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
