@@ -7371,10 +7371,47 @@ coverage, so `next-batch` moved straight into the us-listed backlog
   1 edit (DRI), 5 skips (AMAC, AMAN, ANGH; TSLA, FCX deferred) — 78% of
   the ~50 cap used, about 6.0 hours left in the window.
 
-**End of this firing (session ~17:01 UTC / 02:01 JST, ~1h into the
-window):** stopping here at 39/50 to leave headroom in the cap for
-later firings tonight. The cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`)
+**End of prior firing (session ~17:01 UTC / 02:01 JST, ~1h into the
+window):** stopped at 39/50 to leave headroom in the cap for later
+firings tonight. The cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`)
 fires hourly across the rest of the window and will pick up the next
 batch automatically via `npm run next-batch`. Deployment is confirmed
 healthy (no repeat of last night's `DEPLOYMENT_DISABLED` 402) — all 39
 sanity-checked live pages returned 200 with full, non-truncated content.
+
+**Next firing (cloud routine, session ~17:05 UTC / 02:05 JST):**
+re-confirmed network access (SEC 403 without UA, 200 with UA; both
+site domains 200) and re-trusted the `ccr-agent-proxy`/`-2` certs
+(wrong trust bits again, fresh container). Re-ran `scan-recent-filings`
+— 0 new tier-0 candidates since the last scan. Continued tier 1
+us-listed backlog, batch 8 (APAC, APC, APEI, API, APLD, APLM):
+
+- **APAC** (StoneBridge Acquisition II Corp) — skipped: pre-merger SPAC,
+  $59.1M in trust, no business combination announced yet (deadline
+  2027-04-01, extendable).
+- **APLM** (Apollomics) — skipped for now (tracker `pending`): foreign
+  private issuer, no 2026 interim financials filed yet as of 2026-10-03
+  (latest is the FY2025 20-F); H1 2026 6-K estimated ~2026-12-22 based
+  on last year's late filing.
+- **API** (Agora, Inc.) — Q2 2026, foreign private issuer, from the 6-K
+  earnings release filed 2026-08-14: https://financialreportinsights.com/companies/api/2026/q2
+  — revenue $40.4M (+18.0%), beating its own $39.0-40.0M guidance, net
+  retention improved to 104% from 94% though active customers grew only
+  0.4%. Net income $2.2M is the 7th straight profitable quarter, but
+  interest income ($3.4M) exceeds pre-tax income ($2.1M) — the profit
+  is not from operations. Gross margin fell to 63.7% from 66.8% on
+  bandwidth/AI-product costs. Q3 2026 guidance: $41-42M revenue.
+- **APEI** (American Public Education) — Q2 2026, from the 10-Q filed
+  2026-08-10: https://financialreportinsights.com/companies/apei/2026/q2
+  — revenue $171.7M (+5.5%), operating income nearly doubled to $13.5M
+  as Health+ swung from a $2.4M loss to a $0.3M profit. Net income
+  $9.8M (+117.4%) but the EPS jump mostly reflects last year's
+  preferred-stock dividends/redemption charges that are now gone, not
+  operating improvement; H1 operating cash flow included a one-off
+  $33.3M catch-up collection of delayed military tuition billings. Q3
+  guidance is below last year's Q3 (net income $3.4-5.4M vs $5.6M).
+- APC, APLD still researching as of this note (background subagents) —
+  will be added to this entry once they report back.
+- **Total tonight so far: 41 report-periods published across 41
+  companies**, 1 edit (DRI), 6 skips (AMAC, AMAN, ANGH, APAC; TSLA, FCX
+  deferred), 1 pending-recheck (APLM) — 82% of the ~50 cap used.

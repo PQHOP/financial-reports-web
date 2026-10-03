@@ -19657,5 +19657,72 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "APAC": {
+    "name": "StoneBridge Acquisition II Corporation",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (SIC 6770, CIK 2043630). IPO Oct 2025, ~$59.1M in trust at 6/30/2026, no business combination announced (no Form 425, no Item 1.01 8-K). Deadline to complete a deal April 1, 2027 (extendable). Re-check if a merger agreement 8-K or Form 425 appears.",
+    "lastChecked": "2026-10-03"
+  },
+  "APLM": {
+    "name": "Apollomics Inc. - Class A Ordinary Shares",
+    "status": "pending",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-24"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim, period ending 2026-06-30)",
+      "estimate": "2026-12-22",
+      "basis": "the H1 2025 interim 6-K was filed late on 2025-12-22; foreign private issuer, no 2026 interim financials filed yet as of 2026-10-03",
+      "confidence": "estimated"
+    },
+    "skipReason": "No 2026 financial results filed yet as of 2026-10-03 (FPI, 20-F/6-K filer); H1 2026 interim 6-K not yet filed.",
+    "lastChecked": "2026-10-03"
+  },
+  "API": {
+    "name": "Agora, Inc. - ADS",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/api/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-19",
+      "basis": "Q3 2025 earnings release 6-K was filed 2025-11-20",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "APEI": {
+    "name": "American Public Education, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/apei/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "Q1 filed 2026-05-11, Q2 filed 2026-08-10, both Mondays, ~90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
