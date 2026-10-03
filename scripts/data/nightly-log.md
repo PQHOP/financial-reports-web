@@ -7576,3 +7576,19 @@ same as the previous firing. Tonight's total is already 49/50 (98% of
 the ~50 cap) — per the cap rule, exiting immediately without starting
 a new batch rather than risking going over. No change to the tracker
 or published reports this firing.
+
+**Next firing (session ~22:05 UTC / 07:05 JST, near the end of the
+window):** confirmed network access (SEC 403 without UA / 200 with UA,
+both proxy and SEC's own gating as expected). `npm install` + `prisma
+generate` with a dummy `DATABASE_URL` (not needed for this pipeline,
+just to satisfy the postinstall hook). Local checkout was detached
+with a shallow clone whose cached `origin/master` ref was stale (last
+fetched before the prior two firings' pushes landed) — `git fetch
+origin master --unshallow` picked up the true current `origin/master`,
+which turned out to already equal local HEAD (`3252bdd`) exactly, so
+this was a stale-ref artifact, not a real divergence; no commits lost
+or discarded. Re-ran `scan-recent-filings`: **0 fresh tier-0
+candidates**, same as the last two firings. Tonight's total remains
+49/50 (98% of the ~50 cap) — per the cap rule, exiting immediately
+without starting a new batch rather than risking going over. No change
+to the tracker or published reports this firing.
