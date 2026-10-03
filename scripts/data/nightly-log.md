@@ -7245,3 +7245,41 @@ coverage, so `next-batch` moved straight into the us-listed backlog
   1 edit (DRI), 4 skips (AMAC, AMAN SPACs; TSLA, FCX deferred) — half
   of the ~50 cap used, about 6.2 hours left in the window. Continuing
   further into the us-listed backlog.
+
+**Tier 1 backlog (us-listed), batch 5 (ANDE, ANGH, ANGI, ANIK, ANIP):**
+
+- **ANDE** (The Andersons) — Q2 2026, from the 10-Q filed 2026-08-04:
+  https://financialreportinsights.com/companies/ande/2026/q2 — revenue
+  $3,097.7M (−1.2%), net income $56.6M (vs $7.9M a year ago, driven by
+  Renewables pretax income more than tripling to $65.0M on wider ethanol
+  margins and full ownership of the TAMH plants after a $425M buyout);
+  $24.2M of tax-free 45Z clean-fuel credits make up ~$0.71 of the $1.65
+  EPS. Skyland Grain (65%-owned) breached a loan covenant, got a waiver.
+- **ANGI** (Angi) — Q2 2026, from the 10-Q filed 2026-08-04:
+  https://financialreportinsights.com/companies/angi/2026/q2 — revenue
+  $248.0M (−10.9%), net loss $230.7M on a $225.6M goodwill write-down
+  plus a $9.6M trade-name write-down; average monthly active Pros fell
+  17% to 106K; CEO Jeff Kip departed 2026-09-22, replaced by Michael
+  Steib.
+- **ANIK** (Anika Therapeutics) — Q2 2026, from the 10-Q filed
+  2026-07-29: https://financialreportinsights.com/companies/anik/2026/q2
+  — revenue $32.61M (+15.6%), swung from a $3.97M loss to a $3.31M
+  profit mostly on J&J MedTech volume ($6.1M) and lower G&A. Cash fell
+  from $57.5M to $38.4M on buybacks (now finished) and a 52% inventory
+  build. FY26 guidance raised; 2027 Commercial Channel guidance cut
+  (Hyalofast dropped pending FDA approval).
+- **ANIP** (ANI Pharmaceuticals) — Q2 2026, from the 10-Q filed
+  2026-08-07: https://financialreportinsights.com/companies/anip/2026/q2
+  — revenue $266.0M (+25.9%, Cortrophin Gel +43.5%), net income $24.7M
+  (+189.1%). Full-year revenue guidance held at $1,080-1,140M but the
+  Cortrophin forecast was cut to $520-540M from $540-575M, implying a
+  step-up to $164-174M/quarter in H2 versus $117.1M in Q2.
+- **ANGH** (Anghami) — skipped: foreign private issuer reporting
+  semi-annually, no 2026-period results filed yet (latest is FY2025);
+  going-concern doubt in its FY2025 audit, and a non-binding $3.39/share
+  take-private proposal from its 67% holder OSN (2026-06-30) could lead
+  to delisting before any 2026 report is filed.
+- **Total tonight: 29 report-periods published across 29 companies**,
+  1 edit (DRI), 5 skips (AMAC, AMAN, ANGH; TSLA, FCX deferred) — 58% of
+  the ~50 cap used, about 6.1 hours left in the window. Continuing
+  further into the us-listed backlog.
