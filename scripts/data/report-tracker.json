@@ -19331,5 +19331,22 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "ANGH": {
+    "name": "Anghami Inc. - Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Foreign private issuer (20-F/6-K, semi-annual only); no 2026-period results filed on EDGAR as of 2026-10-03. Latest financials are FY2025 (20-F filed 2026-04-30). H1 2025 interim came only on 2025-12-30, so H1 2026 is likely ~late Dec 2026. FY2025 audit carries going-concern substantial doubt; OSN (~67% holder) made a non-binding $3.39/share take-private proposal on 2026-06-30, so a possible delisting could come first.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-30"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim)",
+      "estimate": "2026-12-30",
+      "basis": "H1 2025 interim 6-K filed 2025-12-30; FPI with semi-annual reporting only",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
