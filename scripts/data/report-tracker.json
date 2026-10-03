@@ -19023,5 +19023,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "AMCI": {
+    "name": "AMC Robotics Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amci/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "smaller reporting company 45-day deadline after 2026-09-30 (falls on Sat 11-14, moves to Mon 11-16); company has a history of late NT 10-K/10-Q filings so a further slip is plausible",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMCX": {
+    "name": "AMC Global Media Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amcx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "prior Q3 10-Qs filed 2025-11-07, 2024-11-08, 2023-11-03; earnings 8-K same day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMIX": {
+    "name": "Autonomix Medical, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amix/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027, quarter ending 2026-09-30)",
+      "estimate": "2026-11-12",
+      "basis": "last year matching 10-Q filed 2025-11-12; ~90 days after 2026-08-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
