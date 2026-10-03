@@ -7111,3 +7111,49 @@ coverage, so `next-batch` moved straight into the us-listed backlog
   (AMAC, AMAN as SPACs; TSLA, FCX deferred pending real earnings
   releases) — well under the ~50 cap. Continuing further into the
   us-listed backlog this firing.
+
+**Tier 1 backlog (us-listed), batch 2 (AMBR, AMCI, AMCX, AMIX, AMKR):**
+
+- **AMBR** (Amber International) — H1 2026 (period end 2026-06-30), foreign
+  private issuer (files 20-F/6-K, not 10-Q), from the 6-K interim
+  financials filed 2026-09-10: https://financialreportinsights.com/companies/ambr/2026/h1
+  — revenue $23.9M (−28.4%), net loss $2.2M (vs a year-ago profit).
+  Crypto-platform revenue fell 56% while "agentic"/market-making revenue
+  doubled; ~49% of revenue is from related parties, and related-party
+  receivables nearly doubled to $60.1M in six months. Management
+  withdrew guidance.
+- **AMCI** (AMC Robotics) — Q2 2026, de-SPAC'd Dec 2025 (merger target is
+  an e-commerce security-camera seller, not a robotics business — no
+  R&D spend to speak of), from the 10-Q filed 2026-08-14:
+  https://financialreportinsights.com/companies/amci/2026/q2 — revenue
+  $0.94M (−32.9%), net loss $0.18M. 83% of revenue is a 30% cut of a
+  CEO-affiliated company's (Kami Vision) subscription fees, which fell
+  ~25% YoY once a since-expired marketing subsidy is accounted for;
+  flagged a large prepayment to a CEO-affiliated supplier and heavy
+  dilution risk from a new $50M equity line.
+- **AMCX** — corrected a wrong assumption in the task brief: this is AMC
+  Networks' cable/streaming business under its 2026 renamed ticker (same
+  CIK, not a different/SPAC company). Q2 2026, from the 10-Q filed
+  2026-07-30: https://financialreportinsights.com/companies/amcx/2026/q2
+  — revenue $547.5M (−8.8%), net loss $21.9M (vs a year-ago profit),
+  operating margin 2.9%. Also covers a post-quarter $120M Walking Dead
+  profit-participation lawsuit settlement that cut 2026 FCF guidance
+  from ~$220M to ~$150M.
+- **AMIX** (Autonomix Medical) — fiscal Q1 FY2027 (period end
+  2026-06-30), pre-revenue medical device company, from the 10-Q filed
+  2026-08-13: https://financialreportinsights.com/companies/amix/2026/q1
+  — net loss $2.73M (narrowed from $3.34M), cash down to $3.46M from
+  $7.0M; going-concern warning, runway into but not past Q1 2027,
+  clinical enrollment paused, heavy warrant-driven dilution since
+  quarter-end.
+- **AMKR** (Amkor Technology) — Q2 2026, from the 10-Q filed 2026-07-28:
+  https://financialreportinsights.com/companies/amkr/2026/q2 — revenue
+  $1,898.0M (+25.6%), net income $173.8M (+219.3%), diluted EPS $0.70
+  (+218.2%), operating margin 10.5%. Tax rate fell to ~14% from ~34%;
+  H1 free cash flow was −$270M on Arizona-plant capex; a $1.5B customer
+  prepayment expected in 2027.
+- **Total tonight: 15 report-periods published across 15 companies**
+  (10 from tier 0 + ALXO/AMAL/AMBA + AMBR/AMCI/AMCX/AMIX/AMKR), 1 edit
+  (DRI), 4 skips (AMAC, AMAN SPACs; TSLA, FCX deferred) — well under the
+  ~50 cap, about 6.5 hours left in the window. Continuing further into
+  the us-listed backlog.

@@ -19089,5 +19089,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "AMBR": {
+    "name": "Amber International Holding Limited - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/ambr/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-26",
+      "basis": "Q3 2025 results 6-K filed 2025-11-26; files 6-K interims not 10-Qs; FY2026 20-F expected ~late Apr/mid-May 2027",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
