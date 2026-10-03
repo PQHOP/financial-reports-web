@@ -7370,3 +7370,11 @@ coverage, so `next-batch` moved straight into the us-listed backlog
 - **Total tonight: 39 report-periods published across 39 companies**,
   1 edit (DRI), 5 skips (AMAC, AMAN, ANGH; TSLA, FCX deferred) — 78% of
   the ~50 cap used, about 6.0 hours left in the window.
+
+**End of this firing (session ~17:01 UTC / 02:01 JST, ~1h into the
+window):** stopping here at 39/50 to leave headroom in the cap for
+later firings tonight. The cloud routine (`trig_01GNdUY59Na4x3JxMr6p7mxK`)
+fires hourly across the rest of the window and will pick up the next
+batch automatically via `npm run next-batch`. Deployment is confirmed
+healthy (no repeat of last night's `DEPLOYMENT_DISABLED` 402) — all 39
+sanity-checked live pages returned 200 with full, non-truncated content.
