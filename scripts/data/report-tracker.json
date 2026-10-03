@@ -19546,5 +19546,116 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "ANTX": {
+    "name": "AN2 Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/antx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "~90 days after Q2 10-Q filed 2026-08-11",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "ANTA": {
+    "name": "Antalpha Platform Holding Company - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/anta/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release, Ex. 99.1)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-20"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-17",
+      "basis": "Q3 2025 results via 6-K on 2025-11-10; Q2 2026 lagged Q2 2025 by about a week",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AOSL": {
+    "name": "Alpha and Omega Semiconductor Limited - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/aosl/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ending 2026-09-30)",
+      "estimate": "2026-11-05",
+      "basis": "earnings 8-K and 10-Q usually filed same day; Q3 FY26 both came 05-06 (~36 days after quarter end)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "ANY": {
+    "name": "Sphere 3D Corp. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/any/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 10-Q filed 2025-11-04; 45-day deadline ~2026-11-16",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03",
+    "note": "Company renamed DarkHorse Technologies Inc., ticker now DRK (as of 2026-09-16/17); SEC CIK unchanged (1591956). Site/tracker/seed data still list it as ANY/Sphere 3D — future scans may need to watch for filings under the new name."
+  },
+  "AOUT": {
+    "name": "American Outdoor Brands, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/aout/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027, quarter ending 2026-10-31)",
+      "estimate": "2026-12-08",
+      "basis": "prior Q2 10-Qs filed 2025-12-09 and 2024-12-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }

@@ -7325,3 +7325,48 @@ coverage, so `next-batch` moved straight into the us-listed backlog
 - **Total tonight: 34 report-periods published across 34 companies**,
   1 edit (DRI), 5 skips (AMAC, AMAN, ANGH; TSLA, FCX deferred) — 68% of
   the ~50 cap used, about 6.1 hours left in the window.
+
+**Tier 1 backlog (us-listed), batch 7 (ANTA, ANTX, ANY, AOSL, AOUT):**
+
+- **ANTA** (Antalpha Platform) — Q2 2026, foreign private issuer
+  (20-F/6-K), crypto-collateral lending platform (Bitmain-affiliated),
+  from the 6-K earnings release filed 2026-08-20:
+  https://financialreportinsights.com/companies/anta/2026/q2 — revenue
+  $12.2M (−28.2%, or −15% excluding a related-party Cango facility that
+  was mostly repaid), net loss $12.5M driven by a $22.3M fair-value
+  loss on tokenized gold; loan book shrank 34% to $1.353B. Flags
+  Bitcoin collateral rehypothecated to funding partner Northstar.
+- **ANTX** (AN2 Therapeutics) — Q2 2026, pre-revenue biotech (still
+  operating, not a shell — pivoted pipeline after a 2024 trial failure),
+  from the 10-Q filed 2026-08-11: https://financialreportinsights.com/companies/antx/2026/q2
+  — net loss $8.185M; loss per share narrowed only because share count
+  rose 48% after a March $40M placement; NIAID grant funding (which
+  offset R&D) ends September 2026.
+- **ANY** (Sphere 3D, now renamed **DarkHorse Technologies / DRK** as
+  of 2026-09-16/17 — SEC CIK unchanged) — Q2 2026, from the 10-Q filed
+  2026-08-14: https://financialreportinsights.com/companies/any/2026/q2
+  — Bitcoin miner; revenue $2.45M (−18.8%), net loss $13.8M (vs a
+  year-ago profit that came only from a one-off Core Scientific stake
+  gain) including a $7.6M impairment; going-concern warning, cash
+  $2.8M. Merged with Cathedra, signed a 30MW Bitdeer hosting deal, and
+  is exiting legacy mining for AI/HPC data centers.
+- **AOSL** (Alpha and Omega Semiconductor) — FY2026 ANNUAL (FYE
+  2026-06-30), from the 10-K filed 2026-08-27:
+  https://financialreportinsights.com/companies/aosl/2026/annual —
+  revenue $678.9M (−2.5%, half the drop from one-off prior-year
+  licensing revenue), operating loss widened to $43.2M from $28.4M; net
+  loss shrank to $42.3M from $97.0M only because FY25 had a $76.8M
+  JV write-down. AI-server products were the growth driver; cash rose
+  only because AOS sold 20.3% of its China JV for $150M.
+- **AOUT** (American Outdoor Brands) — FY2026 ANNUAL (FYE
+  2026-04-30), from the 10-K filed 2026-06-25:
+  https://financialreportinsights.com/companies/aout/2026/annual —
+  revenue $190.5M (−14.3%), net loss $9.2M. A $4.4M tariff refund
+  booked as lower COGS inflates gross margin (44.7% vs ~42.4%
+  without it); ~$14M of the reported inventory drop is accounting
+  (tariff write-down + held-for-sale reclass), not real destocking.
+  Report includes a "since the year closed" note on the newer Q1
+  FY2027 quarter already filed.
+- **Total tonight: 39 report-periods published across 39 companies**,
+  1 edit (DRI), 5 skips (AMAC, AMAN, ANGH; TSLA, FCX deferred) — 78% of
+  the ~50 cap used, about 6.0 hours left in the window.
