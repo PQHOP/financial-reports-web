@@ -2,7 +2,8 @@ import Link from "@/components/Link";
 import type { Metadata } from "next";
 import { StaticPage } from "@/components/StaticPage";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 21600;
 
 export const metadata: Metadata = {
   title: "Contact",

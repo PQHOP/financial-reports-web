@@ -10,7 +10,8 @@ import { availableScorecards } from "@/lib/scorecard";
 import { scorecardPath } from "@/lib/scorecardPath";
 
 // Sitemaps are built at request time, not baked into the build.
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 3600;
 
 const STATIC_PAGES = ["/economy", "/world-risks", "/about", "/corrections", "/privacy", "/contact"];
 

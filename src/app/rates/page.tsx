@@ -17,7 +17,8 @@ import {
 } from "@/lib/rates";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 3600;
 
 const RECENT_DAYS = 45;
 

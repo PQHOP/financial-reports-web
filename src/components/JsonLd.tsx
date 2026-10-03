@@ -1,15 +1,12 @@
-import { headers } from "next/headers";
-
-// One place for the hand-authored JSON-LD <script>: reads the per-request CSP
-// nonce that src/proxy.ts sets, and escapes "<" so content can't close the tag.
-export async function JsonLd({ data }: { data: Record<string, unknown> }) {
-  const nonce = (await headers()).get("x-nonce") ?? undefined;
+// One place for the hand-authored JSON-LD <script>. It's a data block, not
+// executable script, so the CSP doesn't apply to it; "<" is escaped so
+// content can't close the tag.
+export function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
     <script
       type="application/ld+json"
-      nonce={nonce}
       dangerouslySetInnerHTML={{
-        __html: JSON.stringify(data).replace(/</g, "\\u003c"),
+        __html: JSON.stringify(data).replace(/</g, "\u003c"),
       }}
     />
   );

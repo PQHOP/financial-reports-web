@@ -6,7 +6,8 @@ import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
 import { cleanCompanyName } from "@/lib/companyName";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 3600;
 
 function escapeXml(value: string): string {
   return value

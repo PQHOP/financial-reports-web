@@ -169,6 +169,26 @@ export function EconomyDashboard({
     if (sort.col !== "size" && sort.col !== "name") setSort({ col: "size", dir: -1 });
   }
 
+  // The page is served from the CDN cache, so the server never sees the query
+  // string: restore a shared view (?view=&indicator=&year=&country=) here.
+  // Declared before the effect below so it reads the URL before that one
+  // rewrites it.
+  useEffect(() => {
+    const sp = new URLSearchParams(window.location.search);
+    const v: View = sp.get("view") === "annual" ? "annual" : "latest";
+    const valid = v === "annual" ? INDICATORS : LIVE_INDICATORS;
+    const ind = sp.get("indicator");
+    const y = Number(sp.get("year"));
+    const c = sp.get("country")?.toUpperCase() ?? null;
+    /* eslint-disable react-hooks/set-state-in-effect -- one-off sync from the URL after hydration */
+    setView(v);
+    setIndCode(ind && valid.some((i) => i.code === ind) ? ind : valid[0].code);
+    if (years.slice(1).includes(y)) setYear(y);
+    setSelected(c && data.countries.some((x) => x.code === c) ? c : null);
+    /* eslint-enable react-hooks/set-state-in-effect */
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Keep the URL shareable without adding history entries.
   useEffect(() => {
     const p = new URLSearchParams();

@@ -7,7 +7,12 @@ export const alt = "Financial Report Insights";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 21600;
+
+export function generateStaticParams() {
+  return [];
+}
 
 export default async function OpengraphImage({
   params,

@@ -3,7 +3,12 @@ import type { Metadata } from "next";
 import { findSystemReport } from "@/lib/reportData";
 import { ReportView, reportMetadata } from "@/components/ReportView";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 21600;
+
+export function generateStaticParams() {
+  return [];
+}
 
 type Params = Promise<{ slug: string; year: string; period: string }>;
 

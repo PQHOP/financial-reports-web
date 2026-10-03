@@ -21,9 +21,9 @@ import { prismaCached as prisma } from "@/lib/prisma";
 import { systemReports } from "@/lib/community";
 import mapJson from "@/data/world-map.json";
 
-// Dynamic like every data page (per-request CSP nonce); the feeds themselves
-// are cached for 10-60 minutes in Next's data cache (src/lib/worldRisks.ts).
-export const dynamic = "force-dynamic";
+// Cached on the CDN for 15 minutes; the feeds themselves are cached for
+// 10-60 minutes in Next's data cache (src/lib/worldRisks.ts).
+export const revalidate = 900;
 
 const map = mapJson as MapData;
 

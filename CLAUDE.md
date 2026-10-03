@@ -744,7 +744,7 @@ the user is tracked at its end. Things future sessions should know:
   FDA Class I recalls (firm-name regex -> ticker) and NWS warning types.
   Same rules: official sources, known channels, company links only when
   the signal is live.
-- `www.` 308s to the bare domain in `src/proxy.ts`.
+- `www.` 308s to the bare domain via a `redirects()` rule in `next.config.ts`.
 - **Company names:** ~1,250 us-listed names carry a NASDAQ listing suffix
   ("- Class A", "- Ordinary Shares"). Public pages wrap names in
   `cleanCompanyName()` (`src/lib/companyName.ts`); the stored name stays
@@ -757,8 +757,8 @@ the user is tracked at its end. Things future sessions should know:
   `X_ACCESS_SECRET`. With none of the social ones set the cron is a no-op.
   `ADSENSE_CLIENT` (`pub-` + 16 digits) switches on Google AdSense: the
   loader tag in `<head>`, `/ads.txt`, and the ad/consent-banner hosts in
-  the CSP (`src/lib/adsense.ts`, `src/proxy.ts`). Unset = no ads, strict
-  CSP. Needs a redeploy after setting.
+  the CSP (`src/lib/adsense.ts`, `next.config.ts`). Unset = no ads, strict
+  CSP. Needs a redeploy after setting (the CSP is built at build time).
 - **Bluesky is live (2026-09-24):** account `@financialreportinsights.com`
   (domain handle via the `_atproto` TXT record in Vercel DNS; originally
   `finreportinsights.bsky.social`). `BLUESKY_HANDLE` holds the account's
@@ -782,9 +782,38 @@ the user is tracked at its end. Things future sessions should know:
   `proxy.ts` instead of `middleware.ts`, `params`/`searchParams` as
   Promises). Read `node_modules/next/dist/docs/` before assuming an older
   API surface.
-- Cache Components is **not** enabled; all data-reading pages use
-  `export const dynamic = "force-dynamic"` and query Prisma directly per
-  request. Keep new data pages consistent with that pattern.
+- **Public pages are ISR, served from Vercel's CDN cache (since
+  2026-10-03).** On 2026-10-02 Vercel disabled the whole site (402
+  `DEPLOYMENT_DISABLED`) for exceeding the Hobby plan's serverless CPU:
+  every page was `force-dynamic`, crawlers hit the same URLs over and over,
+  and `<Link>` viewport prefetch made one page view ~25 function runs. The
+  team is now on Pro with a **$1 on-demand Spend Management cap that pauses
+  the site** (the user wants ~no spend beyond the $20 plan), so a CPU
+  regression takes the site down again rather than costing money. Rules:
+  - Public pages export `revalidate` (plus `generateStaticParams() { return
+    [] }` on dynamic segments), never `force-dynamic`, and must not read
+    `headers()`, `cookies()` or `searchParams` — any of those makes the page
+    render per request. Still dynamic on purpose: `/search`,
+    `/reports?page=`, `/reports/[id]` (admin cookie), `/companies/*/write`,
+    `/admin`, `/api/*`.
+  - `?source=community` on company/year pages is a `beforeFiles` rewrite in
+    `next.config.ts` to `.../community` routes (bodies shared via
+    `CompanyView.tsx` / `CompanyYearView.tsx`); `/economy` reads its
+    shareable query state client-side in `EconomyDashboard`.
+  - `invalidateDbCache()` also calls `revalidatePath("/", "layout")`, so
+    every publish purges all cached pages and a new report is live at once.
+  - No per-request CSP nonce: the CSP is a static header in
+    `next.config.ts` (`script-src 'self' 'unsafe-inline'`). `src/proxy.ts`
+    only runs for `/admin`.
+  - Links go through `@/components/Link` (prefetch off by default); don't
+    import `next/link` directly.
+  - Vercel Firewall has custom rules denying heavy AI/SEO crawlers
+    (meta-externalagent, SemrushBot, PetalBot, Ahrefs, MJ12, Bytespider,
+    DotBot) and challenging Alibaba Cloud ASN 45102. Don't turn on
+    challenge-mode Bot Protection: it would hit the nightly routine's curl
+    and headless Chromium.
+  - A local `next build` fails at prerender because `.env` has no reachable
+    DB; verify builds with a preview deploy (`vercel`) instead.
 - **Public pages read through `prismaCached`** (`src/lib/prisma.ts`, a
   15-minute Next data cache), not `prisma`: uncached page views kept Neon
   awake around the clock and exhausted the Free plan's compute on

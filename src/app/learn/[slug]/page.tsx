@@ -3,7 +3,12 @@ import type { Metadata } from "next";
 import { prismaCached as prisma } from "@/lib/prisma";
 import { ArticleView } from "@/components/ArticleView";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 21600;
+
+export function generateStaticParams() {
+  return [];
+}
 
 async function getGuide(slug: string) {
   return prisma.article.findFirst({ where: { slug, kind: "GUIDE" } });

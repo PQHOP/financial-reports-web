@@ -8,7 +8,8 @@ import { SITE_NAME, SITE_URL } from "@/lib/site";
 import bundledWeo from "@/data/macro.json";
 import mapJson from "@/data/world-map.json";
 
-export const dynamic = "force-dynamic";
+// Served from the CDN cache; the daily macro cron calls invalidateDbCache().
+export const revalidate = 3600;
 
 const map = mapJson as MapData;
 // The WEO edition year is the first forecast year.
@@ -21,18 +22,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/economy" },
 };
 
-export default async function EconomyPage({ searchParams }: PageProps<"/economy">) {
-  const sp = await searchParams;
-  const pick = (v: string | string[] | undefined) => (Array.isArray(v) ? v[0] : v);
+export default async function EconomyPage() {
   const { weo, live } = await loadMacro();
-
-  const view = pick(sp.view) === "annual" ? "annual" : "latest";
-  const valid = view === "annual" ? INDICATORS : LIVE_INDICATORS;
-  const indicator = valid.some((i) => i.code === pick(sp.indicator)) ? pick(sp.indicator)! : valid[0].code;
-  const y = Number(pick(sp.year));
-  const year = weo.years.slice(1).includes(y) ? y : EDITION_YEAR;
-  const c = pick(sp.country)?.toUpperCase() ?? null;
-  const country = c && weo.countries.some((x) => x.code === c) ? c : null;
+  // The shareable ?view=&indicator=&year=&country= state is read client-side
+  // by EconomyDashboard, so this page doesn't depend on the query string.
+  const initial = { view: "latest" as const, indicator: LIVE_INDICATORS[0].code, year: EDITION_YEAR, country: null };
 
   return (
     // Wider than the site's reading column (the map and tables need the
@@ -73,7 +67,7 @@ export default async function EconomyPage({ searchParams }: PageProps<"/economy"
           Updated daily · last {new Date(live.updatedAt).toUTCString().slice(5, 16)}
         </p>
       </div>
-      <EconomyDashboard data={weo} live={live} map={map} initial={{ view, indicator, year, country }} />
+      <EconomyDashboard data={weo} live={live} map={map} initial={initial} />
       <div className="mt-8 flex flex-col gap-1 text-xs text-zinc-500">
         <p>
           Sources: International Monetary Fund ({weo.source}, retrieved {weo.fetchedAt}; consumer prices, national accounts, labor,

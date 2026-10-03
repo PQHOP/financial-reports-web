@@ -1,4 +1,4 @@
-import { revalidateTag, unstable_cache } from "next/cache";
+import { revalidatePath, revalidateTag, unstable_cache } from "next/cache";
 import { PrismaClient } from "@/generated/prisma/client";
 import { PrismaNeon } from "@prisma/adapter-neon";
 import { neonConfig } from "@neondatabase/serverless";
@@ -81,6 +81,10 @@ export const prismaCached = prisma.$extends({
   },
 });
 
+// Also purges every ISR page on the CDN: public pages are cached HTML now,
+// and a publish must show up on the company, industry, home and feed pages
+// straight away (the nightly routine checks the live report right after).
 export function invalidateDbCache() {
   revalidateTag(DB_CACHE_TAG, { expire: 0 });
+  revalidatePath("/", "layout");
 }

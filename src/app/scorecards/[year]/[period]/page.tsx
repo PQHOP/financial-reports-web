@@ -10,7 +10,12 @@ import { formatPct } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
 import { RankedBarChart } from "@/components/ReportCharts";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 21600;
+
+export function generateStaticParams() {
+  return [];
+}
 
 type Params = Promise<{ year: string; period: string }>;
 

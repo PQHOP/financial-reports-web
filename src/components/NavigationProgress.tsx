@@ -5,8 +5,9 @@ import { useEffect, useRef, useState } from "react";
 
 // Thin bar across the top of the page from the moment a same-site link is
 // clicked (or a GET form like search is submitted) until the new route has
-// rendered. Every page here is rendered per request, so without it a click
-// looks like nothing happened for half a second or more.
+// rendered. Links don't prefetch (src/components/Link.tsx) and a cache miss
+// renders on the server, so without it a click can look like nothing
+// happened for half a second or more.
 type Phase = "idle" | "start" | "loading" | "done";
 
 const SAFETY_TIMEOUT_MS = 15_000;

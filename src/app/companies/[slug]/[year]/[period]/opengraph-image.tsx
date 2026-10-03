@@ -5,6 +5,13 @@ export const alt = "Earnings report analysis";
 export const size = ogSize;
 export const contentType = "image/png";
 
+// Cached like the report page itself (ISR, purged on publish).
+export const revalidate = 21600;
+
+export function generateStaticParams() {
+  return [];
+}
+
 export default async function OpengraphImage({
   params,
 }: {

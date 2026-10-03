@@ -9,7 +9,8 @@ import { formatFilingDate, loadTracker } from "@/lib/tracker";
 import { reportPath } from "@/lib/reportPath";
 import { cleanCompanyName } from "@/lib/companyName";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 3600;
 
 const LOOKBACK_DAYS = 3;
 const LOOKAHEAD_DAYS = 28;

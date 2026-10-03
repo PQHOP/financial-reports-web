@@ -16,7 +16,8 @@ const POPULAR_LIMIT = 16;
 const UPCOMING_DAYS = 7;
 const UPCOMING_LIMIT = 12;
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   title: { absolute: "Financial Report Insights: Earnings Reports Explained in Plain English" },

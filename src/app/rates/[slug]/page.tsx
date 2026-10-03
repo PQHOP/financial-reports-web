@@ -21,7 +21,12 @@ import {
   type RateRow,
 } from "@/lib/rates";
 
-export const dynamic = "force-dynamic";
+// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
+export const revalidate = 3600;
+
+export function generateStaticParams() {
+  return [];
+}
 
 async function load(slug: string) {
   const { weo, live } = await loadMacro();
