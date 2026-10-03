@@ -19436,5 +19436,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "ANIX": {
+    "name": "Anixa Biosciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/anix/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-09"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE 2026-10-31)",
+      "estimate": "2027-01-12",
+      "basis": "prior 10-Ks filed 2026-01-12 and 2025-01-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
