@@ -15,7 +15,7 @@ export default function NotFound() {
         That page doesn&apos;t exist or has moved. Search for the company you
         were looking for:
       </p>
-      <Form action="/search" role="search" className="max-w-sm">
+      <Form action="/search" prefetch={false} role="search" className="max-w-sm">
         <input
           type="search"
           name="q"

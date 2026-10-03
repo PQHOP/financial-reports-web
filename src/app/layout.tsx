@@ -71,8 +71,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </div>
             {/* Client-side navigation (no full reload) via next/form. No
                 submit button: scripts/admin-publish.ts clicks the page's
-                only button[type=submit]. */}
-            <Form action="/search" role="search" className="order-2 min-w-0 flex-1 sm:order-3 sm:ml-auto sm:max-w-xs">
+                only button[type=submit]. prefetch off: /search is dynamic,
+                so prefetching it ran a function on every page view. */}
+            <Form action="/search" prefetch={false} role="search" className="order-2 min-w-0 flex-1 sm:order-3 sm:ml-auto sm:max-w-xs">
               <input
                 type="search"
                 name="q"
