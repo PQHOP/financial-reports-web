@@ -19199,5 +19199,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "AMRN": {
+    "name": "Amarin Corporation plc - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amrn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q3 2025 10-Q/earnings 8-K both filed 2025-10-29; Q1/Q2 2026 10-Qs filed on earnings day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }

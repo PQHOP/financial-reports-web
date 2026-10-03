@@ -7157,3 +7157,45 @@ coverage, so `next-batch` moved straight into the us-listed backlog
   (DRI), 4 skips (AMAC, AMAN SPACs; TSLA, FCX deferred) — well under the
   ~50 cap, about 6.5 hours left in the window. Continuing further into
   the us-listed backlog.
+
+**Tier 1 backlog (us-listed), batch 3 (AMLX, AMPG, AMPH, AMPL, AMRN):**
+
+- **AMLX** (Amylyx Pharmaceuticals) — Q2 2026, from the 10-Q filed
+  2026-08-06: https://financialreportinsights.com/companies/amlx/2026/q2
+  — no product revenue (RELYVRIO withdrawn 2024); net loss $43.4M,
+  R&D down 13% as the PSP program stopped. Post-quarter: avexitide hit
+  its Phase 3 LUCIDITY primary endpoint (Aug 18); a $471.7M stock sale;
+  manufacturing deals with Bachem/Polypeptide; NDA filing targeted by
+  end of 2026.
+- **AMPG** (Amplitech Group) — Q2 2026, from the 10-Q filed 2026-08-13:
+  https://financialreportinsights.com/companies/ampg/2026/q2 — revenue
+  $8.07M (−26.8%, mostly a comp effect from low-margin 5G sales in the
+  year-ago quarter), net loss widened to $3.09M. Distribution segment
+  +138%, manufacturing −57%; H1 operating cash flow −$8.7M against a
+  $4.6M net loss; Titan Crest earnout repriced down $8M→$7M in August
+  after late delivery.
+- **AMPH** (Amphastar Pharmaceuticals) — Q2 2026, from the 10-Q filed
+  2026-08-06: https://financialreportinsights.com/companies/amph/2026/q2
+  — revenue $183.9M (+5.4%, entirely from new launches offsetting price
+  erosion on BAQSIMI/glucagon), net income $30.3M (−2.2%), diluted EPS
+  $0.67 (+4.7%, all from an 8.1% lower share count). BAQSIMI's first
+  sales milestone triggers a $100M payment to Lilly in Q3; flagged a
+  July FDA warning letter at the South El Monte plant.
+- **AMPL** (Amplitude) — Q2 2026, from the 10-Q filed 2026-08-06:
+  https://financialreportinsights.com/companies/ampl/2026/q2 — revenue
+  $100.9M (+21.2%), but ~$6.5M of that came from Statsig customers
+  Amplitude took over May 1 (no cash paid) — organic growth was ~13%.
+  Net loss widened to $34.6M as gross margin fell to 68.5%; $89.5M of
+  H1 buybacks (~8x free cash flow) helped shrink cash from $252.5M to
+  $161.4M. FY2026 revenue guidance raised to $407.2-411.2M.
+- **AMRN** (Amarin) — Q2 2026, from the 10-Q filed 2026-07-29:
+  https://financialreportinsights.com/companies/amrn/2026/q2 — revenue
+  $42.2M (−42.0%, mostly a comp against a one-time $25M Recordati
+  upfront payment last year), net loss narrowed 45.9% to $7.65M. Gross
+  margin on product sales fell to 30% from 52% a year ago. Lost its
+  Supreme Court patent case against generic maker Hikma on 2026-06-04;
+  antitrust suits from four generic makers remain open.
+- **Total tonight: 20 report-periods published across 20 companies**,
+  1 edit (DRI), 4 skips (AMAC, AMAN SPACs; TSLA, FCX deferred) — 40% of
+  the ~50 cap used, about 6.3 hours left in the window. Continuing
+  further into the us-listed backlog.
