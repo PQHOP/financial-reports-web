@@ -19177,5 +19177,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "AMPL": {
+    "name": "Amplitude, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/ampl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "last year's Q3 10-Q filed 2025-11-06, day after earnings 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
