@@ -18957,5 +18957,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "AMBA": {
+    "name": "Ambarella, Inc. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amba/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027, quarter ending 2026-10-31)",
+      "estimate": "2026-12-02",
+      "basis": "~90 days after Q2 earnings 8-K (2026-09-03) and 10-Q (2026-09-04)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMAL": {
+    "name": "Amalgamated Financial Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amal/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q3 2025 10-Q filed 2025-11-04; Q1/Q2 2026 earnings 8-Ks on 04-23 and 07-23 suggest Q3 earnings release ~2026-10-22",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }

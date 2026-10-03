@@ -7074,3 +7074,40 @@ report-periods**.
   cap). Continuing into tier 1 (S&P 500 / hot-list 2026 coverage) for
   the rest of this firing since tier 0 is now exhausted and there's time
   left in the window.
+
+**Tier 1 backlog (us-listed), batch 1 (ALXO, AMAC, AMAL, AMAN, AMBA) —
+hot list and S&P 500 are both already fully "done"/"skipped" for 2026
+coverage, so `next-batch` moved straight into the us-listed backlog
+(alphabetical, continuing from where prior nights left off):**
+
+- **ALXO** (ALX Oncology) — Q2 2026 (period end 2026-06-30), from the 10-Q
+  filed 2026-08-06: https://financialreportinsights.com/companies/alxo/2026/q2
+  — pre-revenue clinical-stage biotech (CD47 blocker). Net loss narrowed
+  30.7% to $18.0M, mostly from a 27% R&D cut as trials wind down; $153.4M
+  cash funds operations through management's stated 1H 2028, though the
+  report flags the current burn rate would actually stretch further than
+  that, implying planned spending increases.
+- **AMAL** (Amalgamated Financial) — Q2 2026, from the 10-Q filed
+  2026-08-04 (bank holding company, full bank metrics set):
+  https://financialreportinsights.com/companies/amal/2026/q2 — net
+  interest income $86.1M (+18.0%), NIM 3.78%, net income $34.8M (+33.8%),
+  efficiency ratio 48.10%, CET1 14.20%. Nonaccrual loans tripled to
+  $102.1M (mostly one $78M D.C.-area multifamily loan) while reserve
+  coverage of nonaccruals fell from 170% to 67.5%; ~5pts of EPS growth
+  came from a lower share count/tax rate rather than operations.
+- **AMBA** (Ambarella) — fiscal Q2 FY2027 (period end 2026-07-31), from
+  the 10-Q filed 2026-09-04: https://financialreportinsights.com/companies/amba/2026/q2
+  — revenue $108.1M (+13.2%), GAAP net loss narrowed to $6.7M from $20.0M
+  but a one-time $9.0M R&D tax credit (a terminated customer project's
+  deposit release) drove most of the improvement — without it the loss
+  would have been ~$15.7M. H1 operating cash flow was −$25.9M (vs +$20.3M
+  a year ago) on a 47% inventory build.
+- **AMAC** and **AMAN** — both skipped as pre-merger SPACs holding only
+  trust-account cash with no announced business combination target;
+  nothing substantive to analyze. Tracker `skipReason` set for both;
+  will revisit only if either files an 8-K announcing a deal.
+- **Total tonight: 10 report-periods published across 10 companies**
+  (ALXO, AMAL, AMBA added to the 7 from tier 0), 1 edit (DRI), 4 skips
+  (AMAC, AMAN as SPACs; TSLA, FCX deferred pending real earnings
+  releases) — well under the ~50 cap. Continuing further into the
+  us-listed backlog this firing.
