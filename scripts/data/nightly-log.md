@@ -7410,8 +7410,17 @@ us-listed backlog, batch 8 (APAC, APC, APEI, API, APLD, APLM):
   operating improvement; H1 operating cash flow included a one-off
   $33.3M catch-up collection of delayed military tuition billings. Q3
   guidance is below last year's Q3 (net income $3.4-5.4M vs $5.6M).
-- APC, APLD still researching as of this note (background subagents) —
-  will be added to this entry once they report back.
-- **Total tonight so far: 41 report-periods published across 41
+- **APC** (ARKO Petroleum Corp.) — Q2 2026, from the 10-Q filed
+  2026-08-06: https://financialreportinsights.com/companies/apc/2026/q2
+  — revenue $1,838.6M (+27.4%, entirely higher fuel prices; gallons
+  sold fell ~8.9%), net income $12.2M (+22.0%) almost entirely from
+  ~$3.2M lower interest after repaying ~$206.7M of credit-line debt
+  with IPO proceeds; diluted EPS fell 10.3% to $0.26 as the IPO raised
+  share count from 35.0M to 47.6M. Flags the pending ~$205M USPP
+  acquisition (6.8-7.8x EBITDA) that would lift net leverage from 2.2x
+  to ~2.9x. FY2026 guidance reaffirmed (~$156M Adjusted EBITDA).
+- APLD still researching as of this note (background subagent) — will
+  be added to this entry once it reports back.
+- **Total tonight so far: 42 report-periods published across 42
   companies**, 1 edit (DRI), 6 skips (AMAC, AMAN, ANGH, APAC; TSLA, FCX
-  deferred), 1 pending-recheck (APLM) — 82% of the ~50 cap used.
+  deferred), 1 pending-recheck (APLM) — 84% of the ~50 cap used.
