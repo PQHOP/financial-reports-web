@@ -7441,3 +7441,17 @@ us-listed backlog, batch 8 (APAC, APC, APEI, API, APLD, APLM):
   a unique prefix, and used only their own company's data — no bad
   data published, but future batches should give each subagent its own
   scratchpad subfolder to avoid this.
+
+**Tier 1 backlog (us-listed), batch 9 (APMC, APMD, APOG, APPF) — each
+subagent given its own scratchpad subfolder this time to avoid the
+batch 8 collision; APLM skipped from this batch's pick since it's
+already `pending` with a Dec-2026 estimate, APPN held back to stay
+under the cap:**
+
+- **APMC** (AmperCap Acquisition Company) — skipped: pre-merger SPAC
+  (CIK 2101393), ~$145.17M in trust at 6/30/26, no business combination
+  target announced. Deadline ~2028-03-04 (extendable).
+- **Total tonight: 43 report-periods published across 43 companies**,
+  1 edit (DRI), 7 skips (AMAC, AMAN, ANGH, APAC, APMC; TSLA, FCX
+  deferred), 1 pending-recheck (APLM) — 86% of the ~50 cap used.
+  Waiting on APMD/APOG/APPF.

@@ -19768,5 +19768,11 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "APMC": {
+    "name": "AmperCap Acquisition Company - Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (CIK 2101393). IPO closed 2026-06-04, ~$145.17M in trust at 6/30/26, no business combination target announced (no Form 425, no Item 1.01 merger-agreement 8-K). Deadline ~21 months from IPO close (~2028-03-04, extendable). Re-check if a deal is announced.",
+    "lastChecked": "2026-10-03"
   }
 }
