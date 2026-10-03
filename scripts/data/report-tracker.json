@@ -19746,5 +19746,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "APLD": {
+    "name": "Applied Digital Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/apld/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ending 2026-08-31)",
+      "estimate": "2026-10-14",
+      "basis": "~45 days after quarter end, matching last year cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }

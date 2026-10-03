@@ -7419,8 +7419,25 @@ us-listed backlog, batch 8 (APAC, APC, APEI, API, APLD, APLM):
   share count from 35.0M to 47.6M. Flags the pending ~$205M USPP
   acquisition (6.8-7.8x EBITDA) that would lift net leverage from 2.2x
   to ~2.9x. FY2026 guidance reaffirmed (~$156M Adjusted EBITDA).
-- APLD still researching as of this note (background subagent) — will
-  be added to this entry once it reports back.
-- **Total tonight so far: 42 report-periods published across 42
-  companies**, 1 edit (DRI), 6 skips (AMAC, AMAN, ANGH, APAC; TSLA, FCX
-  deferred), 1 pending-recheck (APLM) — 84% of the ~50 cap used.
+- **APLD** (Applied Digital) — FY2026 ANNUAL (FYE 2026-05-31), from the
+  10-K filed 2026-07-29: https://financialreportinsights.com/companies/apld/2026/annual
+  — revenue $611.3M (+167.4%) as its first AI data center (HPC Hosting)
+  began earning rent; only $99.8M of the $385.3M HPC Hosting revenue is
+  base rent (at a 91% margin), the rest is lower-margin tenant fit-out
+  work. Net loss to common widened to $249.2M on $220.1M of stock
+  compensation (36% of revenue) and a ChronoScale-related write-down;
+  loss per share narrowed only because share count rose 37%. Operating
+  cash flow was positive ($89.7M) but receivables grew 8x against 2.7x
+  revenue growth. No financial guidance given; ~$36B of contracted
+  base-term revenue across planned Polaris/Delta Forge buildouts.
+- **Total tonight: 43 report-periods published across 43 companies**,
+  1 edit (DRI), 6 skips (AMAC, AMAN, ANGH, APAC; TSLA, FCX deferred),
+  1 pending-recheck (APLM) — 86% of the ~50 cap used. All 6 companies
+  in batch 8 (APAC, APC, APEI, API, APLD, APLM) sanity-checked live,
+  full non-truncated content.
+- Two subagents in this batch hit a shared-scratchpad collision (a
+  second agent's download overwrote a first agent's same-named temp
+  file mid-run); both caught it, re-downloaded their own filing under
+  a unique prefix, and used only their own company's data — no bad
+  data published, but future batches should give each subagent its own
+  scratchpad subfolder to avoid this.
