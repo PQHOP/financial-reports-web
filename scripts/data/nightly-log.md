@@ -7461,8 +7461,38 @@ under the cap:**
   cash flow was −$37.9M despite $193.7M of six-month net income. Cash
   $172.8M plus $200.4M of IPO proceeds against a Feb 28 2027 FDA
   decision on Oxnimbi (AD109) for sleep apnea.
-- **Total tonight: 44 report-periods published across 44 companies**,
+- **APPF** (AppFolio) — Q2 2026, from the 10-Q filed 2026-07-23:
+  https://financialreportinsights.com/companies/appf/2026/q2 — revenue
+  $281.1M (+19.3%), driven by Value Added Services (payments, tenant
+  screening, insurance-type products, 78% of revenue) growing faster
+  than units on platform (+8%). Operating margin rose to 18.8% from
+  17.2%, but a higher tax rate (23.7% vs 14.3%) held net income growth
+  to 15.5% versus ~30% at last year's rate; ~3pts of EPS growth came
+  from the Q1 buyback. FY2026 guidance raised to $1.117-1.127B revenue.
+- **APOG** (Apogee Enterprises) — FY2026 ANNUAL (FYE 2026-02-28), from
+  the 10-K filed 2026-04-24: https://financialreportinsights.com/companies/apog/2026/annual
+  — sales rose 3.2% to $1.40B entirely from the UW Solutions
+  acquisition ($65.3M); organic sales fell 1.6%. Diluted EPS fell 35.2%
+  to $2.52 on weaker Architectural Glass demand, higher aluminum costs,
+  restructuring charges that have now run three years straight
+  ($12.4M→$4.3M→$27.4M), interest expense more than doubling, and a
+  higher tax rate. Services backlog fell to $693.8M from $720.3M (a
+  later release cites $682.9M — flagged, not guessed at). FY2027
+  guidance: $1.38-1.43B sales, adjusted EPS $2.70-3.25 (down 6-22%).
+- **Total tonight: 46 report-periods published across 46 companies**,
   1 edit (DRI), 7 skips (AMAC, AMAN, ANGH, APAC, APMC; TSLA, FCX
-  deferred), 1 pending-recheck (APLM) — 88% of the ~50 cap used.
-  Waiting on APOG/APPF; this batch (9) will be the last tonight to stay
-  under the cap.
+  deferred), 1 pending-recheck (APLM) — 92% of the ~50 cap used. All 4
+  companies in batch 9 sanity-checked live, full non-truncated content;
+  the per-subagent scratchpad subfolders worked cleanly, no collision
+  this batch.
+
+**End of this firing (session ~17:05-17:40 UTC / 02:05-02:40 JST,
+~2.6h into the window):** stopping at 46/50 — close enough to the cap
+that another full batch (5-6 more) risks going over, and tier-0
+items may still need a few points of headroom later tonight if a
+hot-list company reports. The cloud routine fires hourly across the
+rest of the window and will pick up here via `npm run next-batch`
+(next pick after APOG is APPN, already surfaced in this firing's
+listing). Deployment confirmed healthy throughout; all 10 companies
+touched this firing (APAC, APC, APEI, API, APLD, APLM, APMC, APMD,
+APOG, APPF) sanity-checked live with full, non-truncated content.

@@ -19796,5 +19796,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "APPF": {
+    "name": "AppFolio, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/appf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q1 and Q2 both released on the 4th Thursday of the month after quarter-end (Apr 23, Jul 23)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "APOG": {
+    "name": "Apogee Enterprises, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/apog/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-02-28",
+      "filedAt": "2026-04-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027, quarter ending ~2026-08-29)",
+      "estimate": "2026-10-01",
+      "basis": "~90 days after the Q1 FY2027 10-Q filed 2026-06-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
