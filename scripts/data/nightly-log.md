@@ -6969,3 +6969,108 @@ report-periods**.
   publishes. Deployment has now been disabled for at least 6 consecutive
   firings spanning the whole window — still needs a human to check the
   Vercel project's billing/account status and reinstate the deployment.
+
+### 2026-10-03 night (16:00 UTC 2026-10-03 → 22:59 UTC 2026-10-03 / 01:00–07:59 JST 2026-10-04)
+
+- Mechanism: scheduled firing (session started ~16:05 UTC / 01:05 JST, start
+  of the window). Confirmed network access first: plain `curl
+  https://www.sec.gov/` (no User-Agent) returned 403 (SEC's own response, not
+  a proxy denial); retrying with the required `User-Agent` header returned
+  200. Both `financialreportinsights.com` and the `.vercel.app` alias
+  returned 200 directly — the `DEPLOYMENT_DISABLED` (402) outage that wiped
+  out the entire 2026-10-02 night (6 firings, 0 published) is resolved as of
+  this firing. `npm install`'s `prisma generate` postinstall step failed on
+  the usual missing `DATABASE_URL` (expected, not needed for this pipeline —
+  dependencies were already installed). Local checkout was detached at
+  session start; fast-forwarded cleanly to `origin/master`, nothing lost.
+- Ran `npm run scan-recent-filings`: **10 fresh candidates** — NKE, TSLA, ACN
+  (hot-list, `kind: update`), DRI, FCX (S&P 500, `kind: update`), IPW, NCRA,
+  TAYD, TMQ, SNX (us-listed, `kind: new`). Worked through all 10 in two
+  sub-batches of opus subagents (synchronous), sanity-checking every live
+  page before updating the tracker.
+- **Published (7 new report-periods):**
+  - **NKE** (Nike) — fiscal Q1 FY2027 (period end 2026-08-31), from the
+    10-Q filed 2026-10-02: https://financialreportinsights.com/companies/nke/2026/q1
+    — revenue $11,213M (−4.3%), net income $712M (−2.1%), diluted EPS $0.48
+    (−2.0%), EBIT margin 8.1%. Greater China fell 26% currency-neutral; the
+    EPS dip is entirely a higher tax rate (22.7% vs 21.1%) — pre-tax income
+    was flat. Operating cash flow ($135M) badly lagged net income ($712M) on
+    severance and tariff-refund tax payments. New "Pace" cost program
+    announced in October: ~$1.0B pre-tax charges, ~$2.5B cumulative savings
+    through FY2031.
+  - **ACN** (Accenture) — FY2026 ANNUAL (FYE 2026-08-31), from the 8-K Item
+    2.02 earnings release filed 2026-10-01 (full 10-K not yet filed):
+    https://financialreportinsights.com/companies/acn/2026/annual — revenue
+    $74,183M (+6.5%), net income $8,367M (+9.0%), diluted EPS $13.56
+    (+11.6%), GAAP operating margin 15.4%. Q4 beat its own guidance range;
+    the Q3 report's "slowdown" call was wrong (Q4 accelerated to 7% local
+    currency) while its FX-headwind call was right. FY2027 guidance:
+    revenue +3-6% local currency, GAAP EPS $14.39-14.81.
+  - **IPW** (iPower) — FY2026 ANNUAL (FYE 2026-06-30), new company, from the
+    10-K filed 2026-10-02: https://financialreportinsights.com/companies/ipw/2026/annual
+    — revenue $19.96M (−68.4%), net loss $11.62M. Company has largely wound
+    down its e-commerce business (sold its GPM subsidiary, zero inventory at
+    year-end, 2 full-time employees) and is pivoting to AI-infrastructure
+    financing/leasing with no revenue yet from that segment — flagged as
+    close to a shell in the report.
+  - **NCRA** (Nocera) — Q2 2026 (period end 2026-06-30), new company, from
+    the 10-Q/A (amendment) filed 2026-10-02, used in preference to the
+    original 10-Q because it restates 2025 comparatives and is the most
+    complete/accurate version: https://financialreportinsights.com/companies/ncra/2026/q2
+    — revenue $2.14M (−29.3%), net loss $1.54M. Mostly an eel-trading
+    business pivoting toward AI/data-center investment; going-concern doubt
+    disclosed, a post-quarter loan default, and material weaknesses in
+    controls.
+  - **TAYD** (Taylor Devices) — fiscal Q1 FY2027 (period end 2026-08-31),
+    new company, from the 10-Q filed 2026-10-02:
+    https://financialreportinsights.com/companies/tayd/2026/q1 — revenue
+    $7.30M (−26.4%), net income $0.46M (−79.1%), EPS $0.14 (−80.0%). Over
+    90% of pre-tax income was interest income on ~$49M cash (no debt); zero
+    tax provision with no stated reason. Backlog doubled YoY to $55.2M.
+  - **TMQ** (Trilogy Metals) — fiscal Q3 FY2026 (period end 2026-08-31,
+    FYE Nov 30), new company, from the 10-Q filed 2026-10-02:
+    https://financialreportinsights.com/companies/tmq/2026/q3 — pre-revenue
+    explorer; Q3 net income $0.244M vs a $1.747M loss a year ago, entirely
+    from an $11.6M non-cash gain on a Dept. of War derivative (excluding it,
+    the quarter lost ~$11.3M). Cash $31.2M at Aug 31, down from $51.6M at
+    Nov 30 2025.
+  - **SNX** (TD SYNNEX) — fiscal Q3 FY2026 (period end 2026-08-31, FYE
+    Nov 30), new company, from the 10-Q filed 2026-10-01:
+    https://financialreportinsights.com/companies/snx/2026/q3 — revenue
+    $21,558.4M (+37.7%), net income $416.2M (+83.5%), diluted EPS $5.18
+    (+89.1%), operating margin 2.98%. Operating cash flow was −$917M for
+    the quarter (−$2.1B nine-month) on a big Hyve-program inventory build
+    ($15.3B, +67% YoY) and rising borrowings ($5.5B).
+- **Edited (1, same period as an existing report, not counted toward the
+  report-period total):**
+  - **DRI** (Darden) — the Q1 FY2027 report (already published 2026-09-25
+    from the earnings 8-K) was revised using the full 10-Q filed 2026-10-02
+    per the "same period already published" rule: added a guest-count vs.
+    average-check split by segment (only LongHorn gained guests; Olive
+    Garden and the other two segments grew on price/mix, not traffic),
+    MD&A cost-driver detail for every line, and the full FY2027 outlook
+    (sales $13.60-13.75B, same-restaurant sales +2.5-3.5%). All previously
+    published headline figures were confirmed correct and unchanged.
+    https://financialreportinsights.com/companies/dri/2026/q1
+- **Correctly deferred, no report (2):**
+  - **TSLA** — the 2026-10-02 8-K (Item 2.02) was only Tesla's quarterly
+    production/deliveries release (no revenue/net income/EPS), not the
+    earnings release. Confirmed Q3 2026 earnings date from the filing
+    itself: after market close Wed 2026-10-21. Tracker's
+    `nextExpectedFiling` set to that date with `confidence: "confirmed"`.
+  - **FCX** — likewise, the 2026-10-02 8-K (Item 2.02) was only an
+    operational update (copper/gold production estimates), not an
+    earnings release. Confirmed Q3 2026 earnings date from the filing:
+    before market open Tue 2026-10-27, set as `confirmed` in the tracker.
+  - Noted for the scan: Tesla's and Freeport's quarterly operating-stats
+    press releases are tagged Item 2.02 like a real earnings release, so
+    `scan-recent-filings` will keep surfacing this type of non-financial
+    8-K as a `kind: update` candidate every quarter. Not fixed this
+    firing (out of scope for a nightly research batch); worth a small
+    script change later to check for actual financial statement tags/
+    keywords in Exhibit 99.1 before flagging as "update".
+- **Total tonight so far: 7 report-periods published across 7 companies**
+  (4 brand-new companies added: IPW, NCRA, TAYD, TMQ; well under the ~50
+  cap). Continuing into tier 1 (S&P 500 / hot-list 2026 coverage) for
+  the rest of this firing since tier 0 is now exhausted and there's time
+  left in the window.

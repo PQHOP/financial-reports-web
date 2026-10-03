@@ -236,9 +236,9 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-13",
-      "url": "https://financial-reports-web.vercel.app/reports/cmtz9u6iw000004iaxvqxadw9"
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/reports/cmuslb7qx000004jsfm1fc7sl"
     },
     "reports": [
       {
@@ -264,21 +264,29 @@
         "url": "https://financial-reports-web.vercel.app/reports/cmtz9u6iw000004iaxvqxadw9",
         "periodEnd": "2026-05-31",
         "filedAt": "2026-06-18"
+      },
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-03",
+        "url": "https://financialreportinsights.com/reports/cmuslb7qx000004jsfm1fc7sl",
+        "periodEnd": "2026-08-31",
+        "filedAt": "2026-10-01"
       }
     ],
     "allAvailable2026QuartersCovered": true,
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-06-18"
+      "type": "8-K (Item 2.02, FY2026 Q4/full-year earnings release)",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-01"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026 Annual)",
+      "type": "10-K (FY2026 Annual, full filing)",
       "estimate": "2026-10-09",
-      "basis": "fiscal year ends Aug 31; prior three 10-Ks filed 2025-10-10, 2024-10-10 and 2023-10-12; Q4/FY26 earnings release not yet scheduled publicly as of 2026-09-13",
+      "basis": "fiscal year ends Aug 31; prior three 10-Ks filed 2025-10-10, 2024-10-10 and 2023-10-12; FY2026 earnings already released via 8-K on 2026-10-01, full 10-K still to follow. After that, next NEW period is Q1 FY2027 (quarter ending 2026-11-30), earnings expected mid/late December 2026",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-13"
+    "lastChecked": "2026-10-03"
   },
   "ADBE": {
     "name": "Adobe Inc.",
@@ -2875,17 +2883,17 @@
       "url": "https://financial-reports-web.vercel.app/reports/cmu9x4dwu000104l3dnfj1om9"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02, Q3 2026 production/deliveries release)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-02"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-23",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 earnings release (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "Tesla's 2026-10-02 8-K Ex.99.1 (production/deliveries) states Q3 2026 financial results will be announced after market close Wed 2026-10-21",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-20"
+    "lastChecked": "2026-10-03"
   },
   "AVGO": {
     "name": "Broadcom",
@@ -3838,19 +3846,37 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubjik7y000304jpsu7mifjs"
+      "period": "Q1",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/reports/cmuslbwkj000104jsvo52o23e"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-21",
+        "url": "https://financial-reports-web.vercel.app/reports/cmubjik7y000304jpsu7mifjs",
+        "periodEnd": "2026-05-31",
+        "filedAt": "2026-07-15"
+      },
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-03",
+        "url": "https://financialreportinsights.com/reports/cmuslbwkj000104jsvo52o23e",
+        "periodEnd": "2026-08-31",
+        "filedAt": "2026-10-02"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-07-15"
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-02"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (fiscal Q1 FY2027, period end 2026-08-31)",
-      "estimate": "2026-10-01",
-      "basis": "prior-year filing cadence after fiscal year-end",
+      "type": "10-Q (fiscal Q2 FY2027, period end 2026-11-30)",
+      "estimate": "2026-12-28",
+      "basis": "~90 days after Q1 FY2027 10-Q filed 2026-10-02; earnings 8-K likely a week or two earlier in late December",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-21"
@@ -5325,14 +5351,14 @@
       "url": "https://financialreportinsights.com/companies/dri/2026/q1"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, Q1 FY2027 earnings release)",
+      "type": "10-Q",
       "periodEnd": "2026-08-30",
-      "filedAt": "2026-09-24"
+      "filedAt": "2026-10-02"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027)",
-      "estimate": "2026-10-02",
-      "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks; Q2 FY2027 earnings 8-K ~2026-12-17",
+      "type": "8-K earnings (Q2 FY2027)",
+      "estimate": "2026-12-17",
+      "basis": "Q2 FY2027 ends about 2026-11-29; Darden usually reports Q2 in the third week of December (Q1 was 8-K on 09-24, 10-Q on 10-02), with the Q2 10-Q following 1-3 weeks later, likely early January 2027",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25",
@@ -9478,17 +9504,17 @@
       "url": "https://financialreportinsights.com/companies/fcx/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02, Q3 operational update, no financials)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-02"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "earnings 8-Ks on Thursdays ~90 days apart (01-22, 04-23, 07-23)",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 (Q3 2026 earnings)",
+      "estimate": "2026-10-27",
+      "basis": "FCX's 2026-10-02 operational-update 8-K Ex.99.1 states Q3 2026 earnings release before market open Tue 2026-10-27",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-03",
     "reports": [
       {
         "year": 2026,
@@ -18765,5 +18791,115 @@
       "confidence": "confirmed"
     },
     "lastChecked": "2026-10-01"
+  },
+  "TAYD": {
+    "name": "Taylor Devices, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/reports/cmuslhmfq000204jsqrf027lf"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027, period end 2026-11-30)",
+      "estimate": "2027-01-06",
+      "basis": "last year Q2 FY2026 10-Q filed 2023-01-06 for the Nov quarter; filings land about 90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "TMQ": {
+    "name": "Trilogy Metals Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/tmq/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, year ending 2026-11-30)",
+      "estimate": "2027-02-16",
+      "basis": "prior FY2025 10-K filed 2026-02-17",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "NCRA": {
+    "name": "Nocera, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/reports/cmuslk33p000404jsrbwsgztn"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q/A",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day deadline for a smaller reporting company after quarter end 2026-09-30 (falls on Sat 2026-11-14)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "IPW": {
+    "name": "iPower Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/reports/cmuslk9ey000504jsvsz6bte8"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (quarter ending 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "typical 10-Q filing lag after fiscal quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "SNX": {
+    "name": "TD SYNNEX Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/reports/cmuslkbmb000604jsd8zolx52"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-01"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q4/FY2026)",
+      "estimate": "2027-01-05",
+      "basis": "fiscal year ends Nov 30; Q4/full-year earnings release typically early January, 10-K later that month",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
