@@ -18935,5 +18935,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "ALXO": {
+    "name": "ALX Oncology Holdings Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/alxo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2025 10-Q/8-K filed 2025-11-07; 2026 filings on 05-08 and 08-06 follow the same early-second-month pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
