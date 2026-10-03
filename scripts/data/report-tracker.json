@@ -19480,5 +19480,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "ANNX": {
+    "name": "Annexon, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/annx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q3 2025 10-Q filed 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "ANL": {
+    "name": "Adlai Nortye Group Ltd. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/anl/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 interim results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-10",
+      "basis": "FY2025 20-F filed 2026-04-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "ANPA": {
+    "name": "Rich Sparkle Holdings Limited - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/anpa/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-09-30"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY ending 2026-09-30)",
+      "estimate": "2027-01-31",
+      "basis": "20-F due 4 months after Sept FYE; last year slipped to early Feb",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }

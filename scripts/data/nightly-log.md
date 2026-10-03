@@ -7283,3 +7283,45 @@ coverage, so `next-batch` moved straight into the us-listed backlog
   1 edit (DRI), 5 skips (AMAC, AMAN, ANGH; TSLA, FCX deferred) — 58% of
   the ~50 cap used, about 6.1 hours left in the window. Continuing
   further into the us-listed backlog.
+
+**Tier 1 backlog (us-listed), batch 6 (ANIX, ANL, ANNA, ANNX, ANPA):**
+
+- **ANIX** (Anixa Biosciences) — fiscal Q3 2026 (period end 2026-07-31,
+  FYE Oct 31), pre-revenue biotech, from the 10-Q filed 2026-09-09:
+  https://financialreportinsights.com/companies/anix/2026/q3 — net loss
+  $2.61M (vs $2.26M a year ago) on 26% higher R&D for the breast cancer
+  vaccine's Phase 2 trial; cash $13.86M, ~20 months of runway, topped up
+  by $4.81M of ATM share sales this year (~$95M of capacity left).
+- **ANL** (Adlai Nortye) — H1 2026, foreign private issuer (20-F/6-K,
+  semi-annual only), from the 6-K interim results filed 2026-08-14:
+  https://financialreportinsights.com/companies/anl/2026/h1 — revenue
+  $13.1M (first-ever, from an ASK Pharm China license), net loss
+  narrowed to $5.3M from $18.3M. Cash jumped to $231.9M after two
+  private placements, though the report flags a ~$55M gap between what
+  the FY2025 20-F said had come in from the February raise and what the
+  June numbers imply.
+- **ANNA** (AleAnna) — Q2 2026, completed Swiftmerge SPAC merger
+  (Dec 2024) with real operations (33.5% of Italy's Longanesi gas field
+  plus two biogas plants), from the 10-Q filed 2026-08-13:
+  https://financialreportinsights.com/companies/anna/2026/q2 — revenue
+  $10.22M (+153.4%), net income (Class A) $2.36M (+575.6%), though
+  pre-tax income fell quarter-over-quarter ($3.84M→$2.06M) and a $1.7M
+  tax benefit was ~46% of Q2 net income.
+- **ANNX** (Annexon) — Q2 2026, from the 10-Q filed 2026-08-12:
+  https://financialreportinsights.com/companies/annx/2026/q2 — pre-
+  revenue; net loss widened to $55.3M from $49.2M, but loss per share
+  fell to $0.28 only because share count rose 35.5%. $50M drawn from a
+  new credit facility moved stated runway from "into 2H 2027" to "into
+  2028"; ARCHER II Month 15 readout and the tanruprubart BLA filing both
+  due Q4 2026.
+- **ANPA** (Rich Sparkle Holdings) — H1 2026 (fiscal H1 ended
+  2026-03-31, FYE Sept 30), foreign private issuer, Nasdaq-listed since
+  July 2025, from the 6-K earnings release filed 2026-09-30:
+  https://financialreportinsights.com/companies/anpa/2026/h1 — small
+  Hong Kong financial-printing/ESG-advisory business; revenue $2.12M
+  (+21.8%), net loss $39.46M almost entirely a non-cash $38.85M stock
+  award to staff. Covers a pending $975M all-share purchase of Khaby
+  Lame's live-streaming business.
+- **Total tonight: 34 report-periods published across 34 companies**,
+  1 edit (DRI), 5 skips (AMAC, AMAN, ANGH; TSLA, FCX deferred) — 68% of
+  the ~50 cap used, about 6.1 hours left in the window.
