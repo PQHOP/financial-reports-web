@@ -19458,5 +19458,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "ANNA": {
+    "name": "AleAnna, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/anna/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q and earnings 8-K filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
