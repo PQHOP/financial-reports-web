@@ -19221,5 +19221,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "AMRX": {
+    "name": "Amneal Pharmaceuticals, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amrx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~91 days after Q2 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMTX": {
+    "name": "Aemetis, Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amtx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 earnings 8-K filed 2025-11-06, 10-Q 2025-11-07; this years Q1/Q2 8-K+10-Q each filed same day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMSF": {
+    "name": "AMERISAFE, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amsf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "Q3 2026 earnings 8-K (Item 2.02), then 10-Q",
+      "estimate": "2026-10-21",
+      "basis": "Q2 2026 release 07-21 with 10-Q two days later; Q3 2025 10-Q filed 2025-10-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "ANAB": {
+    "name": "AnaptysBio, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/anab/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "10-KT (transition-period annual report, fiscal year-end moved Dec 31 -> Jun 30)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 FY2027, quarter ending 2026-09-30)",
+      "estimate": "2026-11-10",
+      "basis": "new June fiscal year-end; quarterly reporting begins with quarter ending 2026-09-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMSC": {
+    "name": "American Superconductor Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/amsc/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2026, period ending 2026-09-30)",
+      "estimate": "2026-11-04",
+      "basis": "last year's September-quarter 10-Q filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }

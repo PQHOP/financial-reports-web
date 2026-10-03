@@ -7199,3 +7199,49 @@ coverage, so `next-batch` moved straight into the us-listed backlog
   1 edit (DRI), 4 skips (AMAC, AMAN SPACs; TSLA, FCX deferred) — 40% of
   the ~50 cap used, about 6.3 hours left in the window. Continuing
   further into the us-listed backlog.
+
+**Tier 1 backlog (us-listed), batch 4 (AMRX, AMSC, AMSF, AMTX, ANAB):**
+
+- **AMRX** (Amneal Pharmaceuticals) — Q2 2026, from the 10-Q filed
+  2026-08-06: https://financialreportinsights.com/companies/amrx/2026/q2
+  — revenue $796.2M (+9.9%), net income $57.7M (+157.2%, mostly a 1.9%
+  effective tax rate vs 31.1% a year ago), adjusted EPS +20%. H1
+  operating cash flow was −$48M on growing receivables/inventory; the
+  Kashiv acquisition closed 2026-08-10 (~28.9M new shares, added debt).
+- **AMSC** (American Superconductor) — fiscal Q1 2026 (period end
+  2026-06-30), from the 10-Q filed 2026-08-05:
+  https://financialreportinsights.com/companies/amsc/2026/q1 — revenue
+  $94.1M (+30.0%, almost entirely the Comtrafo acquisition — organic
+  growth ~3%), net income $9.49M helped by an $8.1M non-cash earnout
+  revaluation gain (without it, operating income was $1.7M vs $5.6M a
+  year ago); gross margin fell to 26.3% from 33.8%; material weakness
+  in controls tied to Comtrafo accounting.
+- **AMSF** (AMERISAFE) — Q2 2026, workers'-comp insurer (full insurer
+  metrics set), from the 10-Q filed 2026-07-23:
+  https://financialreportinsights.com/companies/amsf/2026/q2 —
+  combined ratio worsened to 95.4% from 91.7% as reserve releases from
+  older claim years shrank ($8.6M→$7.3M) and the current-year loss
+  estimate rose; underwriting profit fell 37.9%; before reserve
+  releases, current-year business runs at ~104.8% (an underwriting
+  loss). GAAP EPS grew only on unrealized equity gains and buybacks.
+- **AMTX** (Aemetis) — Q2 2026, from the 10-Q filed 2026-08-06:
+  https://financialreportinsights.com/companies/amtx/2026/q2 — revenue
+  $62.7M (+20.0%), but $8.6M is Section 45Z tax-credit income now
+  booked quarterly (vs. all at once in Q4 2025) — excluding credits,
+  revenue grew 3.6% and operations lost $2.8M. Going-concern warning
+  stands; cash $973K against $415.9M debt, $269.6M of it callable on
+  demand.
+- **ANAB** (AnaptysBio) — H1 2026 (period end 2026-06-30), from a
+  Form 10-KT (transition-period annual report after moving its fiscal
+  year-end from Dec 31 to Jun 30), filed 2026-09-21:
+  https://financialreportinsights.com/companies/anab/2026/h1 — spun
+  off its biotech operations as First Tracks Biotherapeutics on
+  2026-04-20 and is now a pure royalty company (Jemperli/GSK) with no
+  employees. Revenue $53.0M (+6.0%); net income $131.0M was almost
+  entirely a one-off $181.5M tax-valuation-allowance release — pretax
+  continuing operations lost $5.1M. GSK litigation and two FDA
+  decisions (Quimilza Dec 2026, Jemperli rectal-cancer Feb 2027) ahead.
+- **Total tonight: 25 report-periods published across 25 companies**,
+  1 edit (DRI), 4 skips (AMAC, AMAN SPACs; TSLA, FCX deferred) — half
+  of the ~50 cap used, about 6.2 hours left in the window. Continuing
+  further into the us-listed backlog.
