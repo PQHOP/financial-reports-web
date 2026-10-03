@@ -7562,3 +7562,17 @@ APVO will be in the APW/APX/APY range). The cloud routine fires
 hourly across the rest of the window and will pick up here. Deployment
 confirmed healthy throughout; APPN, APPS, APVO sanity-checked live
 with full, non-truncated content.
+
+**Next firing (session ~21:05 UTC / 06:05 JST, ~5h into the window):**
+confirmed network access (SEC 403 without UA / 200 with UA; both
+`financialreportinsights.com` and the `.vercel.app` alias 200). Local
+`master` branch ref was a stale pointer from an old container snapshot
+(diverged 50/50 commits from `origin/master`, no uncommitted work) —
+reset to `origin/master` with `git checkout -B master origin/master`,
+nothing lost. `npm install` ran fine (the `prisma generate` postinstall
+failure on missing `DATABASE_URL` is expected and harmless for this
+pipeline). Re-ran `scan-recent-filings`: **0 fresh tier-0 candidates**,
+same as the previous firing. Tonight's total is already 49/50 (98% of
+the ~50 cap) — per the cap rule, exiting immediately without starting
+a new batch rather than risking going over. No change to the tracker
+or published reports this firing.
