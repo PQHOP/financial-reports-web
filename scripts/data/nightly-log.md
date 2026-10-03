@@ -7496,3 +7496,69 @@ rest of the window and will pick up here via `npm run next-batch`
 listing). Deployment confirmed healthy throughout; all 10 companies
 touched this firing (APAC, APC, APEI, API, APLD, APLM, APMC, APMD,
 APOG, APPF) sanity-checked live with full, non-truncated content.
+
+**New firing, batch 10 (tier 1 backlog, us-listed): checked network
+(SEC 200 with User-Agent, financialreportinsights.com 200), ran `npm
+install` (DATABASE_URL not needed for this pipeline — admin-publish
+only needs SITE_URL + ADMIN_PASSWORD), re-ran
+`scan-recent-filings`: 0 fresh tier-0 candidates (unchanged from the
+previous firing). `next-batch -- --n 5` continued the us-listed
+backlog alphabetically: APLM (already `pending`, Dec-2026 estimate,
+not yet due — skipped from the pick again), APPN, APPS, APUR, APVO.
+Two opus subagents (2 companies each, isolated scratchpad subfolders)
+ran synchronously:**
+
+- **APPN** (Appian Corporation) — Q2 2026, from the 10-Q filed
+  2026-08-06: https://financialreportinsights.com/companies/appn/2026/q2
+  — revenue $203.3M (+19.1%), beating the company's own May guidance
+  of $191-195M; cloud subscription revenue +23.2%, cloud net ARR
+  expansion 115%. GAAP operating loss narrowed to $(5.4)M from
+  $(11.0)M, but GAAP net loss widened to $(11.8)M (EPS $(0.16)) purely
+  on an FX swing (a $15.6M currency gain a year ago vs a $2.3M loss
+  now — $17.9M larger than the entire change in net loss). FY guidance
+  raised to $845-853M from $819-831M; Q3 guidance implies cloud growth
+  slowing to 17-19%. ~$6.3M/quarter in ongoing Pegasystems litigation
+  costs (trials Nov 2026 and Jan 2027).
+- **APPS** (Digital Turbine) — FY2026 ANNUAL (FYE 2026-03-31), from
+  the 10-K filed 2026-05-26: https://financialreportinsights.com/companies/apps/2026/annual
+  — revenue $565.3M (+15.2%); swung to a $34.0M operating profit from
+  a $(54.1)M loss (margin 6.0% vs -11.0%), roughly a third of the swing
+  from lower non-cash stock-comp/amortization charges. Net loss
+  narrowed to $(37.7)M from $(92.1)M. The August 2025 refinancing
+  pushed interest expense up 68% to $58.6M at an 11.3% weighted rate,
+  now exceeding operating profit. Flagged: receivables +38% against
+  +15% revenue, one customer at 20.6% of receivables, thin $11.8M free
+  cash flow against $391M debt, 8.8% share dilution. Guidance (Aug 4)
+  raised to $650-670M revenue.
+- **APUR** (Aperture AC) — skipped: pre-merger SPAC (blank check, SIC
+  "Blank Checks"), no operating business ($102.6M trust at 6/30/26, Q2
+  net income $56K entirely trust interest). Business Combination
+  Agreement with Atlantic HPC Group signed 2026-09-10, not yet closed;
+  IPO deadline ~2027-05. Revisit after the de-SPAC closes.
+- **APVO** (Aptevo Therapeutics) — Q2 2026, from the 10-Q filed
+  2026-08-14: https://financialreportinsights.com/companies/apvo/2026/q2
+  — pre-revenue clinical-stage biotech; net loss $6.36M (+2.4% wider)
+  on R&D up 11.1% (lead leukemia candidate mipletamig +31%) partly
+  offset by G&A -5.2%. Cash fell to $9.8M from $21.6M at the start of
+  the year ($13.4M H1 operating burn, ~$2.2M/month); going-concern
+  doubt disclosed. A 2026-08-12 private placement raised $4.5M gross
+  but barred Aptevo's equity lines/ATM facility until ~Sept 2027;
+  further funding now hinges mainly on $22.5M of warrant exercise
+  proceeds if fully exercised. Early TP53-mutated AML trial data (13 of
+  14 evaluable patients with clinical benefit, 79% CR/CRi) reported
+  2026-09-03; regulatory talks planned H1 2027.
+- **Total tonight: 49 report-periods published across 49 companies**
+  (3 new: APPN, APPS, APVO), 1 edit (DRI), 8 skips total (AMAC, AMAN,
+  ANGH, APAC, APMC, APUR; TSLA, FCX deferred), 1 pending-recheck
+  (APLM) — 98% of the ~50 cap used. All 3 new pages sanity-checked
+  live (figures + Takeaway present, no truncation).
+
+**End of this firing:** stopping at 49/50 — one more report-period
+would risk going over the ~50 cap, and the remaining headroom is
+better left for a tier-0 item if a hot-list company reports later
+tonight. Tier 0 and the hot list/S&P 500 are both fully clear;
+`next-batch` is now purely in the us-listed backlog (next pick after
+APVO will be in the APW/APX/APY range). The cloud routine fires
+hourly across the rest of the window and will pick up here. Deployment
+confirmed healthy throughout; APPN, APPS, APVO sanity-checked live
+with full, non-truncated content.

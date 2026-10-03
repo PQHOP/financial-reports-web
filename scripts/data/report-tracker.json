@@ -19840,5 +19840,82 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "APPN": {
+    "name": "Appian Corporation - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/appn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 and Q2 both released ~90 days apart (May 7, Aug 6)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "APPS": {
+    "name": "Digital Turbine, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/apps/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-05-26"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027, quarter ending ~2026-09-30)",
+      "estimate": "2026-11-04",
+      "basis": "FY2027 Q1 10-Q filed 2026-08-05 (~90 days after FY2026 Q4/annual); last year's Q2 filing landed early November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "APUR": {
+    "name": "Aperture AC - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank check), no operating business; $102.6M trust at 6/30/26; Business Combination Agreement with Atlantic HPC Group signed 2026-09-10 (8-K/425 filed 2026-09-16), not yet closed; IPO deadline ~2027-05 (12 months from IPO closing). Revisit after the de-SPAC closes.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "APVO": {
+    "name": "Aptevo Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-03",
+      "url": "https://financialreportinsights.com/companies/apvo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "~90 days after the Q2 2026 10-Q filed 2026-08-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
