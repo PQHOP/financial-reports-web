@@ -18901,5 +18901,39 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "AMAC": {
+    "name": "AMR Resources Acquisition Corp - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (IPO closed 2026-07-20, $260.0M trust), no operating business, no definitive business combination agreement announced as of its only 2026 10-Q (period end 2026-06-30, filed 2026-08-27) or since; nothing to analyze.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "typical 10-Q filing lag after fiscal quarter end; revisit only if an 8-K announces a business combination agreement",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
+  },
+  "AMAN": {
+    "name": "Amanat Acquisition Corp - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (IPO closed 2026-05-20, $75.0M trust), only trust interest income, no definitive business combination agreement as of 10-Q for period end 2026-06-30 (filed 2026-08-13) and no deal 8-K since; nothing to analyze.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "typical 10-Q filing lag after fiscal quarter end; revisit only if an 8-K announces a business combination agreement",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-03"
   }
 }
