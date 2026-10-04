@@ -7685,6 +7685,10 @@ to the tracker or published reports this firing.
     metrics schema fits it; subagent instructed to use only the general
     metrics fields and cover NAV/share, non-accrual rate, leverage in the
     body text instead.
+- **ARBK** (Argo Blockchain) and **ARQQ** (Arqit Quantum) later re-marked
+  `status: "skipped"` (were briefly `"pending"`) once confirmed both are
+  annual-only FPI reporters with nothing filed for FY2026 yet — avoids
+  `next-batch` resurfacing them every run before their next 20-F.
 - Dispatched 5 more opus subagents in parallel (AQST, ARBB, ARCB, ARCC,
   ARCT), each with a ticker-prefixed scratch filename this time.
   - **AQST** (Aquestive Therapeutics) — Q2 2026, new company, from the
@@ -7759,7 +7763,41 @@ to the tracker or published reports this firing.
     1.12x. Net commitments were -$323M (exits outpaced new commitments).
   - Sanity-checked live: Takeaway + Source filing present, no truncation.
 - **Total so far tonight: 9 report-periods published** (APWC, AQMS, APYX,
-  AQB, AQST, ARBB, ARCB, ARCT, ARCC), 4 skips (APLM, APXT, ARCI, ARCL), 1
-  pending-recheck (ARBK) — well under the ~35 cap. All 5 companies from
-  this wave used ticker-prefixed scratch filenames with no further
-  collisions. Continuing further into the us-listed backlog this firing.
+  AQB, AQST, ARBB, ARCB, ARCT, ARCC), 6 skips (APLM, APXT, ARCI, ARCL,
+  ARBK, ARQQ) — well under the ~35 cap. All 5 companies from this wave
+  used ticker-prefixed scratch filenames with no further collisions.
+  Continuing further into the us-listed backlog this firing.
+
+**Backlog batch 3 (ARDX, ARGX, ARHS, ARKO, AROW, ARQ, ARQT):** screened
+with quick EDGAR filing-type checks first — all 7 confirmed as real
+operating companies with 2026 filings (AROW flagged as a bank, needing
+the bank metrics schema; ARGX reports semi-annually as an FPI, so H1 not
+Q2). Dispatched 7 opus subagents in parallel, all with ticker-prefixed
+scratch filenames.
+- **ARGX** (argenx SE) — H1 2026 (period end 2026-06-30), new company,
+  large/well-known global immunology biotech (VYVGART), FPI reporting in
+  USD under IFRS, from the 6-K filed 2026-07-23:
+  https://financialreportinsights.com/companies/argx/2026/h1 — revenue
+  (total operating income) $2,854M (+60.8%): product net sales $2,813M
+  (+61.8%, Q2 alone $1,516M +59.7% YoY/+17% QoQ); US is ~85% of sales,
+  Japan +101% to $169M, China -48% to $17M. Operating margin 31.1% vs
+  19.2%. Net income (IFRS profit) $838M (+101.9%), EPS $13.00 (+105.7%)
+  — flagged that ~2.4x of the pre-tax profit growth is FX-adjusted (a
+  $95M currency swing) and a lower tax rate (12.4% vs 15.1%, helped by a
+  non-cash $110M deferred-tax benefit) both flatter the headline. $5.2B
+  cash. No numerical guidance; confirmed Q3 2026 results date 2026-10-22
+  from the company's own financial calendar (tracker set `confirmed`).
+- **ARDX** (Ardelyx) — Q2 2026, new company, from the 10-Q filed
+  2026-08-06: https://financialreportinsights.com/companies/ardx/2026/q2
+  — revenue $120.9M (+23.8%): IBSRELA $86.2M (+33%), XPHOZAH $31.9M
+  (+27%); gross-to-net deductions rose to 34.0% of gross sales from
+  31.3% on channel mix/Medicare-Medicaid rebate inflation. Net loss
+  narrowed to $16.7M from $19.1M, but only because a $3.8M AstraZeneca
+  royalty cap was reached in the year-ago quarter — ex that, the
+  underlying operating loss actually widened ~$1.8M on R&D up 67% for
+  the Phase 3 ACCEL trial (topline H2 2027). XPHOZAH's CMS lawsuit
+  appeal was lost (2026-06-26, not pursuing further litigation) on top
+  of adverse March 2026 CMS guidance. Cash $281.8M vs $250M term debt;
+  H1 operating cash burn improved to $38.6M from $63.8M. No guidance.
+- Both sanity-checked live: Takeaway + Source filing present, no
+  truncation. ARHS, ARKO, AROW, ARQ, ARQT still in progress.

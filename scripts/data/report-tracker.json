@@ -20182,5 +20182,49 @@
     },
     "skipReason": "No FY2026 or 2026-interim financial results filed yet as of 2026-10-04; files annually via 20-F only.",
     "lastChecked": "2026-10-04"
+  },
+  "ARGX": {
+    "name": "argenx SE - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/argx/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-10-22",
+      "basis": "confirmed by the company's own financial calendar in the H1 2026 press release",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARDX": {
+    "name": "Ardelyx, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/ardx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
   }
 }
