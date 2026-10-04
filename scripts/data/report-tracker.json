@@ -20677,5 +20677,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-04"
+  },
+  "ASBP": {
+    "name": "Aspire-Lakewood Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/asbp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "~90-day cadence from the Q2 2026 10-Q filed 2026-08-13; should be first filing to include the Dura Automotive DCS acquisition",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ASPI": {
+    "name": "ASP Isotopes Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/aspi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "Q2 2026 10-Q filed 2026-08-14; last year's Q3 10-Q was filed 2025-11-19",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ASPS": {
+    "name": "Altisource Portfolio Solutions S.A.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/asps/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "Q1 and Q2 2026 10-Qs both filed on the 23rd of the month after quarter-end; last year's Q3 10-Q filed 2025-10-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ASST": {
+    "name": "Strive, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/asst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q1 2026 10-Q filed 2026-05-14, Q2 filed 2026-08-10; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
   }
 }

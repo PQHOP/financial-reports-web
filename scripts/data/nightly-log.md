@@ -8111,10 +8111,87 @@ opus subagents in parallel, all ticker-prefixed scratch filenames.
   subagents were told explicitly to use ticker-prefixed scratch
   filenames, with no further collisions.
 
-**End of this firing:** stopping at 31/35 — close to the cap with buffer
-left in case a hot-list company reports later tonight (none currently
-pending per `scan-recent-filings`, which returned 0 candidates on every
-re-run this firing). Tier 0 and the hot list/S&P 500 remain fully clear;
-`next-batch` is purely in the us-listed backlog (next pick after ASRV
-will be around the ASST/ASTC/ASTE range). The cloud routine fires hourly
-across the rest of the window and will pick up here.
+**This firing (new session, started 02:09 JST):** found 13 commits sitting
+locally unpushed from earlier tonight's firings (detached HEAD at `cd8f524`,
+2 commits ahead of what `origin/master` looked like from a stale local ref)
+— checked out a proper `master` tracking branch, fast-forwarded to
+`cd8f524`, and confirmed via a fresh `git fetch` that `origin/master` was
+in fact already at `cd8f524`: nothing was actually lost, the earlier local
+ref had just gone stale. Re-verified network access (same SEC
+403-without-User-Agent / 200-with-it pattern as earlier tonight) and ran
+`npm install` + `scan-recent-filings` fresh: **0 tier-0 candidates**, same
+as every re-run tonight. `next-batch -- --n 5` continued the us-listed
+backlog right after ASRV: ASBP, ASPI, ASPS, ASST, ASTE. With only ~4
+report-periods of headroom left under the cap, dispatched 4 opus subagents
+in parallel (ASBP, ASPI, ASPS, ASST — held ASTE back rather than risk
+going over) with ticker-prefixed scratch filenames per the collision fix
+noted earlier tonight.
+
+- **ASBP** (Aspire-Lakewood Holdings, formerly Aspire Biopharma Holdings,
+  formerly the PowerUp Acquisition Corp. SPAC) — Q2 2026, new company,
+  from the 10-Q filed 2026-08-13: https://financialreportinsights.com/companies/asbp/2026/q2
+  — revenue just $63,104 (Buzz Bomb caffeine product, sales only began Q3
+  2025). Net loss narrowed to $1.27M (EPS -$1.22) from $1.98M, but that's
+  entirely a one-off $1.35M non-cash gain from writing off a liability
+  after the former SPAC sponsor's lawsuit was dismissed — ex that, the
+  loss widened to ~$2.62M as opex rose to $2.65M from $0.80M. Cash $12.17M
+  after a $17.95M Series A preferred raise (share count up ~11x). Flagged:
+  an August $30M debt-financed acquisition of Dura Automotive's Driver
+  Control Systems unit closed after quarter-end with zero numbers in any
+  filing yet. revenueYoyPct/netIncomeYoyPct/epsYoyPct/operatingMarginPct
+  all omitted as not meaningful (no prior-year revenue, distorting
+  percentages on tiny bases) — body marks them "n/m".
+- **ASPI** (ASP Isotopes) — Q2 2026, new company, from the 10-Q filed
+  2026-08-14: https://financialreportinsights.com/companies/aspi/2026/q2
+  — revenue $5.1M (+327.6%), but none yet from enriched isotopes: $3.9M
+  from radiopharmacy medical-scan doses (partly acquired businesses),
+  $0.7M LNG from Renergen (acquired January), $0.6M TerraPower. Net loss
+  $33.6M (EPS -$0.27) vs $75.1M a year ago, but that's mostly an
+  accounting artifact — last year included a $63.8M convertible-note
+  revaluation charge; ex revaluations, the loss widened to $30.1M from
+  $11.2M as opex rose to $35.7M from $12.5M. ~$53M of Renergen debt is
+  classified current (covenants breached / a loan past maturity);
+  disclosure controls still rated not effective; first isotope shipments
+  still targeted for H2 2026. netIncomeYoyPct/epsYoyPct omitted
+  (loss-to-loss, percentage would mislead).
+- **ASPS** (Altisource Portfolio Solutions) — Q2 2026, new company, US
+  domestic filer despite Luxembourg domicile, from the 10-Q filed
+  2026-07-23: https://financialreportinsights.com/companies/asps/2026/q2
+  — revenue $50.7M (+17.0%), mostly Lenders One (+83%). Gross margin on
+  service revenue fell to 26% from 32%; operating margin fell to 2.2%
+  from 7.5%. Swung to a $0.6M net loss (EPS -$0.05) from $16.6M profit
+  (EPS $1.48) — last year's profit included an $18.5M tax-reserve
+  reversal. Operating cash flow -$6.6M on a 50% receivables build since
+  December; $169.0M debt against $23.2M cash.
+- **ASST** (Strive, Inc. — Class A) — Q2 2026, new company, bitcoin-
+  treasury company (formerly Asset Entities, merged with Semler
+  Scientific's medical-device business 2026-01-16), from the 10-Q filed
+  2026-08-10: https://financialreportinsights.com/companies/asst/2026/q2
+  — net loss $257.6M, almost all a $228.0M unrealized loss as bitcoin
+  fell from $68,198 to $58,631/coin. Revenue $2.9M (+94.6%, entirely
+  Semler device sales; advisory fees flat at $1.5M). Diluted EPS $(3.77)
+  GAAP / $(3.65) adjusted. Holdings 19,864 BTC, cost basis $1.88B vs
+  $1.16B fair value, funded by $211.3M common stock + $345.7M of 13%
+  SATA preferred sold in the quarter; no debt, $145.5M cash. Year-ago
+  comparisons are to the pre-merger "Predecessor" private asset manager,
+  so most YoY fields are marked not meaningful — only revenue/revenueYoyPct
+  set alongside netIncome/epsDiluted; operatingMarginPct omitted (GAAP
+  operating loss includes the bitcoin markdown, ~-8,800%).
+- All 4 sanity-checked live via cache-busted fetch (Takeaway + Source
+  filing present, no truncation) before being marked done in the tracker.
+  No skips, no collisions this batch.
+
+- **Total tonight: 35 report-periods published across 35 companies** (26
+  brand-new companies added to the site this batch plus the 22 from
+  earlier: APWC, AQMS, APYX, AQB, AQST, ARBB, ARTL, ARTNA, ARTV, ARTW,
+  ARWR, ARXS, ASND, ASML, ASLE, ASO, ASMB, ASRV, ASBP, ASPI, ASPS, ASST,
+  plus ARDX, AROW, ARKO, ARQ, ARQT, ARHS, ARRY, ARVN, ARCC), 7 skips
+  (APLM, APXT, ARCI, ARCL, ARBK, ARQQ, ARTC), 1 edit-free night — **100%
+  of the ~35 cap, exactly at the limit.**
+
+**End of tonight:** stopping at 35/35 — at the cap, not going further
+tonight per the cap rule. Tier 0, the hot list and the S&P 500 remain
+fully clear; `next-batch` is purely in the us-listed backlog (next pick
+will start at ASTE, which was screened as a real candidate this firing
+but held back to stay at the cap). Later firings tonight should see this
+total and exit immediately without starting a new batch.
