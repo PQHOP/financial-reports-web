@@ -20479,5 +20479,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-04"
+  },
+  "ARWR": {
+    "name": "Arrowhead Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arwr/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (fiscal Q3 2026, FYE Sept 30)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual, FYE 2026-09-30)",
+      "estimate": "2026-11-20",
+      "basis": "90-day cadence from the Q3 2026 10-Q filed 2026-08-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARVN": {
+    "name": "Arvinas, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arvn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARXS": {
+    "name": "Arxis, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arxs/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
   }
 }

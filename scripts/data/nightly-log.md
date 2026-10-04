@@ -7957,3 +7957,52 @@ comparison basis isn't clean. Dispatched 9 opus subagents in parallel
   ARQT, ARHS, ARKR, ARRY, ARTL, ARTNA, ARTV, ARTW), 7 skips (APLM, APXT,
   ARCI, ARCL, ARBK, ARQQ, ARTC) — 63% of the ~35 cap. ARVN, ARWR, ARXS
   still in progress.
+
+- **ARVN** (Arvinas) — Q2 2026, new company, PROTAC biotech, from the
+  10-Q filed 2026-08-04: https://financialreportinsights.com/companies/arvn/2026/q2
+  — revenue $249.7M vs $22.4M, almost entirely one-time items tied to
+  the FDA approval of VEPPANU (vepdegestrant) and its license to Rigel:
+  a $126.4M net release of deferred Pfizer revenue, $62.5M from Rigel,
+  and a $50.0M approval milestone. Swung to $169.4M net income (EPS
+  $2.58) from a $61.2M loss — but the subagent calculated the underlying
+  operating loss, stripping those one-offs, was actually about flat
+  (-$65.8M vs -$71.5M a year ago). Deferred revenue is now zero, so this
+  recognition pattern won't repeat. Cash $567.9M, guided to last into
+  H2 2028. ARV-102 (PSP) trial is on FDA clinical hold.
+- **ARWR** (Arrowhead Pharmaceuticals) — fiscal Q3 2026 (FYE Sept 30),
+  new company, RNAi biotech, from the 10-Q filed 2026-08-04:
+  https://financialreportinsights.com/companies/arwr/2026/q3 — revenue
+  $75.3M vs $27.8M (+171%), 97% from partner payments (Sarepta $26.4M,
+  Madrigal $25.0M one-time ARO-PNPLA3 upfront, Novartis $20.2M,
+  Sanofi $1.2M); the approved product (REDEMPLO/plozasiran) isn't broken
+  out on its own revenue line. Net loss widened to $194.3M (EPS -$1.36)
+  from $175.2M as R&D rose 22.1% and SG&A rose 52.3% on the REDEMPLO
+  launch. Cash $1.60B against $700M of 0% converts, a $181.4M credit
+  facility and a $392.5M royalty-sale liability. Post-quarter: plozasiran
+  met its goals in Phase 3 SHASTA-3/4 (79-81% triglyceride reduction,
+  78% fewer pancreatitis events vs placebo) and holds FDA Breakthrough
+  Therapy designation for that use.
+- **ARXS** (Arxis) — Q2 2026, new company (IPO'd April 2026), aerospace/
+  defense/industrial components maker, from the 10-Q filed 2026-07-30:
+  https://financialreportinsights.com/companies/arxs/2026/q2 — revenue
+  $500.7M (+25.0%, 21.0% organic), both segments grew (Electronic
+  Components +20.6%, Mechanical Components +28.6%) and margins expanded
+  in both. Operating margin fell to 6.5% from 20.7% purely on $107.1M of
+  IPO-related share-based comp (incl. a $73.1M one-time equity-award
+  conversion charge); adjusted EBITDA margin actually rose to 42.2% from
+  ~34%. Net loss narrowed to $4.9M from $29.3M. $946M of debt repaid
+  from IPO proceeds, leaving $1.73B term-loan debt against $494.7M cash
+  (~1.6x annualized EBITDA). The subagent correctly flagged the company
+  is NOT an Up-C structure (no noncontrolling interest — dual-class
+  Class A/B shares instead) and has no separate medical-technology
+  segment, deviating from the dispatch brief's assumptions once it read
+  the filing.
+- All 3 sanity-checked live: Takeaway + Source filing present, no
+  truncation.
+- **Total so far tonight: 25 report-periods published** (APWC, AQMS,
+  APYX, AQB, AQST, ARBB, ARCB, ARCT, ARCC, ARGX, ARDX, AROW, ARKO, ARQ,
+  ARQT, ARHS, ARKR, ARRY, ARTL, ARTNA, ARTV, ARTW, ARVN, ARWR, ARXS), 7
+  skips (APLM, APXT, ARCI, ARCL, ARBK, ARQQ, ARTC) — 71% of the ~35 cap.
+  Per the cap rule (stop once reaching ~35 and don't risk going over),
+  there's room for roughly one more small batch before stopping for the
+  night.
