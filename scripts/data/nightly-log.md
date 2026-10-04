@@ -8006,3 +8006,23 @@ comparison basis isn't clean. Dispatched 9 opus subagents in parallel
   Per the cap rule (stop once reaching ~35 and don't risk going over),
   there's room for roughly one more small batch before stopping for the
   night.
+
+**Backlog batch 5 (ASML, ASND, ASO, ASRV, ASLE, ASMB) — final batch for
+tonight, sized to land close to but not over the ~35 cap (25+6=31):**
+screened via EDGAR filing-type checks first (ASML/ASND are FPIs reporting
+via 6-K, both confirmed as real Q2 2026 earnings releases). Dispatched 6
+opus subagents in parallel, all ticker-prefixed scratch filenames.
+- **ASND** (Ascendis Pharma) — Q2 2026, new company, Danish commercial
+  biopharma, reports in EUR, from the 6-K filed 2026-08-13:
+  https://financialreportinsights.com/companies/asnd/2026/q2 — revenue
+  €339.3M (+114.7%): YORVIPATH €252.1M (+144.9%), SKYTROFA €55.2M
+  (+8.9%), YUVIWEL €7.6M in its first partial quarter (220+ US patient
+  enrollments). Swung to a €207.0M IFRS net profit (EPS €2.83) from a
+  €38.9M loss — the subagent corrected the dispatch brief's assumption
+  that this company was still loss-making: it wasn't, mainly because of
+  a one-off €158.1M gain from selling a priority review voucher earned
+  with YUVIWEL's approval (adjusted/non-GAAP profit was a smaller €61.3M,
+  EPS €0.90). Cash €812M after the $575M converts converted to equity in
+  May. No numerical guidance; EMA decision on YUVIWEL expected Q4 2026.
+- Sanity-checked live: Takeaway + Source filing present, no truncation.
+  ASML, ASO, ASRV, ASLE, ASMB still in progress.

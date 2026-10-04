@@ -20545,5 +20545,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-04"
+  },
+  "ASND": {
+    "name": "Ascendis Pharma A/S - Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/asnd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-12",
+      "basis": "90-day cadence from the Q2 2026 6-K filed 2026-08-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
   }
 }
