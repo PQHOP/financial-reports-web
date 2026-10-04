@@ -8026,3 +8026,95 @@ opus subagents in parallel, all ticker-prefixed scratch filenames.
   May. No numerical guidance; EMA decision on YUVIWEL expected Q4 2026.
 - Sanity-checked live: Takeaway + Source filing present, no truncation.
   ASML, ASO, ASRV, ASLE, ASMB still in progress.
+- **ASML** (ASML Holding) — Q2 2026, new company, the world's sole maker
+  of EUV lithography machines (essential for advanced semiconductor
+  manufacturing), reports in EUR, from the 6-K filed 2026-07-15:
+  https://financialreportinsights.com/companies/asml/2026/q2 — total net
+  sales €9,326.5M (+21.3%: machine sales +17.3%, service/upgrade sales
+  +31.8%, beating ASML's own guidance), 91 systems sold vs 76. Operating
+  margin 37.1% vs 34.6%, net income €2,917.6M (+27.4%), diluted EPS
+  €7.58 (+28.5%). H1 detail: EUV machine sales +34.6% (now 61% of
+  machine sales, High-NA EUV units 1→3) while DUV fell 11.0%; South
+  Korea rose to 39% of sales (+60.5%) while China fell to 15.9% from
+  24.1% (-22.3%). Q3 guidance €11.0-12.0B sales/55-57% gross margin; FY
+  guidance raised to €43-45B/54-56% margin. Flagged: H1 operating cash
+  flow was -€482.5M (receivables roughly doubled to €7.25B) and ASML no
+  longer discloses a net-bookings figure each quarter — the subagent
+  confirmed across all 4 filing documents that this metric simply isn't
+  published anymore and said so explicitly rather than inventing one.
+- Sanity-checked live: Takeaway + Source filing present, no truncation.
+  ASO, ASRV, ASLE, ASMB still in progress.
+- **ASO** (Academy Sports and Outdoors) — Q2 2026 (period end 2026-08-01),
+  new company, from the 10-Q filed 2026-09-09 (guidance from the same-day
+  earnings 8-K): https://financialreportinsights.com/companies/aso/2026/q2
+  — net sales $1,647.3M (+3.0%), comparable sales -0.4% (transactions
+  -5.3%, ticket +4.9%); 21 net new stores added $61.5M, more than the
+  entire sales increase. Gross margin 40.4% vs 36.0% includes a one-time
+  $83.7M IEEPA tariff refund (+510bp) — ex that, margin was down ~70bp to
+  ~35.3%. Operating margin 15.0% vs 10.8% (ex-refund, operating income
+  was down ~5.6%). Net income $137.9M (+9.9%), diluted EPS $2.17 (+17.3%,
+  helped by a 6.1% lower share count after $180.5M of H1 buybacks). FY
+  guidance: sales/comp-sales/net-income ranges unchanged, EPS raised
+  only on a lower share-count assumption, gross-margin and FCF guidance
+  both raised.
+- **ASLE** (AerSale) — Q2 2026, new company, used-aircraft/engine
+  dealer + MRO, from the 10-Q filed 2026-08-07:
+  https://financialreportinsights.com/companies/asle/2026/q2 — revenue
+  $70.9M (-33.9%): Asset Management -51.3% (engine whole-equipment and
+  used-parts sales both down sharply on the PW4000/CF6-80 lines) partly
+  offset by leasing +50.2%; TechOps +8.7% on the reopened Millington, TN
+  hangar, but its gross margin fell to 10.9% from 26.9% on
+  hiring/training costs the filing calls non-recurring without a dollar
+  figure. Swung to a $5.6M net loss (EPS -$0.12) from an $8.6M profit.
+  H1 operating cash flow -$33.5M on a $52.1M inventory build; cash down
+  to $2.2M with $146.2M drawn on the credit line. No guidance.
+- **ASMB** (Assembly Biosciences) — Q2 2026, new company, HBV/HSV
+  antiviral biotech with a Gilead collaboration, from the 10-Q filed
+  2026-08-13: https://financialreportinsights.com/companies/asmb/2026/q2
+  — collaboration revenue $13.4M (+38.9%), including a one-time $5.1M
+  catch-up adjustment from revised cost estimates that the filing itself
+  says cut the loss per share by $0.27. Net loss narrowed to $3.857M
+  (EPS -$0.20) from $10.198M (-$1.33) — ex the catch-up, loss would have
+  been ~$9.0M. Cash $320.4M after a $115.0M May offering, guided to last
+  into late 2028 (2029 with a $75M Gilead extension fee due Q4 2026); no
+  going-concern warning. Gilead picked 1179 for Phase 2 in genital
+  herpes and dropped 5366.
+- **ASRV** (AmeriServ Financial) — Q2 2026, new company, bank, from the
+  10-Q filed 2026-08-14: https://financialreportinsights.com/companies/asrv/2026/q2
+  — net income $2.738M (EPS $0.16, called "record quarterly earnings" by
+  management) vs a $282K loss a year ago. Net interest income +9.1% to
+  $11.336M on NIM widening to 3.34% from 3.10% (mostly cheaper deposits,
+  -15bp). But the subagent calculated the bigger driver was a $294K
+  provision release vs a $3.133M charge a year ago (which included a
+  $2.8M charge-down on one Pittsburgh commercial property loan) — before
+  that swing, pre-tax profit rose only ~12%. Non-performing loans fell
+  to 0.76% of loans from 1.42%. No CET1/efficiency-ratio/ROTCE disclosed
+  this quarter (bank reports a 9.46% community bank leverage ratio
+  instead).
+- All 6 sanity-checked live: Takeaway + Source filing present, no
+  truncation.
+- **Total tonight: 31 report-periods published across 31 companies**
+  (22 brand-new companies added to the site: APWC, AQMS, APYX, AQB,
+  AQST, ARBB, ARTL, ARTNA, ARTV, ARTW, ARWR, ARXS, ASND, ASML, ASLE, ASO,
+  ASMB, ASRV, plus ARDX, AROW, ARKO, ARQ, ARQT, ARHS, ARRY, ARVN, ARCC —
+  most of tonight's batch was new us-listed-backlog companies with no
+  prior coverage), 7 skips (APLM, APXT, ARCI, ARCL, ARBK, ARQQ, ARTC —
+  all either pre-merger SPACs with trust-account-only balance sheets or
+  FPI annual-only reporters with no 2026 results filed yet), 1 edit-free
+  night (no existing reports needed revision) — 89% of the ~35 cap.
+  Deployment confirmed healthy throughout; every single published page
+  sanity-checked live via a cache-busted fetch (Takeaway callout +
+  Source filing link present, no truncation) before being marked done in
+  the tracker. One publishing collision happened early in the night
+  (APYX, see above) from two subagents sharing a generic scratch
+  filename; fixed immediately via `--edit` and all 30 subsequent
+  subagents were told explicitly to use ticker-prefixed scratch
+  filenames, with no further collisions.
+
+**End of this firing:** stopping at 31/35 — close to the cap with buffer
+left in case a hot-list company reports later tonight (none currently
+pending per `scan-recent-filings`, which returned 0 candidates on every
+re-run this firing). Tier 0 and the hot list/S&P 500 remain fully clear;
+`next-batch` is purely in the us-listed backlog (next pick after ASRV
+will be around the ASST/ASTC/ASTE range). The cloud routine fires hourly
+across the rest of the window and will pick up here.
