@@ -7799,5 +7799,78 @@ scratch filenames.
   appeal was lost (2026-06-26, not pursuing further litigation) on top
   of adverse March 2026 CMS guidance. Cash $281.8M vs $250M term debt;
   H1 operating cash burn improved to $38.6M from $63.8M. No guidance.
-- Both sanity-checked live: Takeaway + Source filing present, no
-  truncation. ARHS, ARKO, AROW, ARQ, ARQT still in progress.
+- **AROW** (Arrow Financial Corporation) — Q2 2026, new company, bank
+  (full bank metrics set), from the 10-Q filed 2026-08-06:
+  https://financialreportinsights.com/companies/arow/2026/q2 — net
+  interest income $35.9M (+10.4%), NIM 3.42% (GAAP, company's own
+  figure), net income $11.0M (+1.5%), EPS $0.66, efficiency ratio
+  62.02%, CET1 13.21%, ROTCE 10.46%, net charge-offs 0.08% (down sharply
+  from 0.49%). Pre-tax income was flat YoY ($13.9M both years) — all of
+  the EPS growth came from a lower tax rate (21.1% vs 22.2%, energy tax
+  credits), while the loan-loss provision rose to $2.8M from $0.6M
+  (including a $1.6M reserve for one bankrupt commercial borrower).
+  Adirondack Bancorp acquisition ($942M assets) closed 2026-07-01, so Q3
+  is the first quarter to consolidate it.
+- **ARKO** (ARKO Corp.) — Q2 2026, new company, convenience-store/fuel
+  retailer, from the 10-Q filed 2026-08-07 (guidance from the same-day
+  earnings 8-K): https://financialreportinsights.com/companies/arko/2026/q2
+  — revenue $2,346.5M (+17.4%, almost entirely higher pump prices; total
+  gallons fell 9.0%, same-store gallons -5.7%). Operating margin fell to
+  1.3% from 2.8%; net income attributable to ARKO fell 69.6% to $6.1M
+  (EPS -75.0% to $0.04) almost entirely because a $20.8M one-off
+  real-estate gain in the year-ago quarter didn't repeat — ex that,
+  pre-tax income was roughly flat (~$16.4M both years). Retail fuel
+  margin widened to 48.6c/gal from 44.9c on oil-price swings tied to the
+  Middle East conflict. FY2026 Adjusted EBITDA guidance ($245-265M)
+  reaffirmed; fuel-margin guidance raised to 45.5-47.5c/gal (implying a
+  narrower H2). Post-quarter: ARKO's majority-owned subsidiary APC
+  agreed to buy U.S. Petroleum Partners for ~$205M.
+- **ARQ** (Arq, Inc.) — Q2 2026, new company, activated-carbon/emissions
+  control, from the 10-Q filed 2026-08-10: https://financialreportinsights.com/companies/arq/2026/q2
+  — revenue $29.9M (+4.5%), net loss narrowed to $0.7M from $2.4M (EPS
+  -$0.02), Adjusted EBITDA $5.8M vs $3.7M — but flagged a mid-quarter
+  accounting policy change (capitalizing planned-maintenance-shutdown
+  costs instead of expensing from April 1, 2026) that the filing itself
+  says would otherwise have left the loss roughly flat YoY at $2.2M
+  (EPS -$0.05) and Adjusted EBITDA growth at ~11% rather than 59%. The
+  new GAC plant is paused (thermal oxidizer only supports ~15M lb/yr vs
+  25M+ lb design capacity); management expects no GAC production in 2026
+  or 2027. Unrestricted cash fell to $0.9M from $6.6M at year-end; the
+  MidCap revolver has been amended five times since May 2025 and a
+  separate term loan's covenants are waived/suspended through 2026.
+- **ARQT** (Arcutis Biotherapeutics) — Q2 2026, new company, dermatology
+  biopharma (ZORYVE), from the 10-Q filed 2026-08-05:
+  https://financialreportinsights.com/companies/arqt/2026/q2 — net
+  product revenue $129.9M (+59.3%), swung to a $15.0M net income (EPS
+  $0.11) from a $15.9M loss, operating margin 12.7% vs -17.9%. SG&A fell
+  from 85% to 63% of revenue after the Kowa co-promotion deal ended in
+  January. Flagged: Q2 stock-based comp ($13.1M) equals ~80% of the
+  quarter's operating profit, and a Q1 $10.0M ARQ-234 milestone was
+  settled mostly in promissory notes (only $0.8M cash), so it hasn't
+  actually gone out the door yet.
+- **ARHS** (Arhaus) — Q2 2026, new company, premium home-furnishings
+  retailer, from the 10-Q filed 2026-08-06 (guidance from the same-day
+  earnings 8-K): https://financialreportinsights.com/companies/arhs/2026/q2
+  — revenue $384.9M (+7.4%), net income $39.6M (+13.1%, EPS $0.28),
+  gross margin 44.7% vs 41.4%. The headline margin gain is a $23.8M
+  IEEPA tariff refund credited to cost of goods (+620bps to gross
+  margin) — ex that, the subagent estimated gross margin ~38.5% and net
+  income roughly 38% below last year. Written (order) comps swung to
+  +12.5% from -5.7% in Q1. FY2026 revenue guidance unchanged
+  ($1.43-1.47B); net income guidance raised to $71-80M, but Q3 net
+  income is guided to only $8-13M.
+- All 5 sanity-checked live: Takeaway + Source filing present, no
+  truncation.
+- **Environment note:** the ARHS subagent hit a Chromium/proxy-cert
+  trust failure not previously documented — a second cert nickname,
+  `ccr-agent-proxy-2`, also needed `certutil -M -n "ccr-agent-proxy-2"
+  -t "CT,C,C" -d sql:/root/.pki/nssdb` alongside the already-documented
+  `ccr-agent-proxy` fix. Worth adding to the Setup script if the user
+  wants one less thing to rediscover per firing (same caveat as the
+  existing proxy-cert note: optional, needs the user to edit the cloud
+  environment's Setup script).
+
+- **Total so far tonight: 16 report-periods published** (APWC, AQMS,
+  APYX, AQB, AQST, ARBB, ARCB, ARCT, ARCC, ARGX, ARDX, AROW, ARKO, ARQ,
+  ARQT, ARHS), 6 skips (APLM, APXT, ARCI, ARCL, ARBK, ARQQ) — 46% of the
+  ~35 cap. Continuing further into the us-listed backlog this firing.
