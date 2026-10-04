@@ -8,7 +8,7 @@ const TRACKER_URL =
 
 export type NextFiling = {
   type?: string;
-  estimate?: string;
+  estimate?: string | null;
   confidence?: string;
 };
 
@@ -25,7 +25,7 @@ export async function loadTracker(): Promise<Record<string, TrackerEntry>> {
   } catch {
     // fall through to the bundled copy
   }
-  return bundledTracker as Record<string, TrackerEntry>;
+  return bundledTracker as unknown as Record<string, TrackerEntry>;
 }
 
 // The next filing we expect for a covered company, only while it's still

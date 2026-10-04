@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import { ADSENSE_CSP, ADSENSE_PUBLISHER_ID } from "./src/lib/adsense";
+import { GA_CSP, GA_MEASUREMENT_ID } from "./src/lib/analytics";
 
 // One static CSP for every response. It used to carry a per-request nonce set
 // in src/proxy.ts, but a nonce forces every page to render per request; with
@@ -12,14 +13,18 @@ import { ADSENSE_CSP, ADSENSE_PUBLISHER_ID } from "./src/lib/adsense";
 // style attributes (next-route-announcer).
 const isDev = process.env.NODE_ENV === "development";
 const ads = ADSENSE_PUBLISHER_ID ? ADSENSE_CSP : null;
-const extra = (hosts: string[] | undefined) => (hosts ? " " + hosts.join(" ") : "");
+const ga = GA_MEASUREMENT_ID ? GA_CSP : null;
+const extra = (...lists: (string[] | undefined)[]) => {
+  const hosts = lists.flatMap((l) => l ?? []);
+  return hosts.length ? " " + hosts.join(" ") : "";
+};
 const csp = `
   default-src 'self';
-  script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}${extra(ads?.script)};
+  script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}${extra(ads?.script, ga?.script)};
   style-src 'self' 'unsafe-inline'${extra(ads?.style)};
   img-src 'self' https: data: blob:;
   font-src 'self'${extra(ads?.font)};
-  connect-src 'self'${extra(ads?.connect)};
+  connect-src 'self'${extra(ads?.connect, ga?.connect)};
   frame-src 'self'${extra(ads?.frame)};
   object-src 'none';
   base-uri 'self';

@@ -8,6 +8,7 @@ import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { NavigationProgress } from "@/components/NavigationProgress";
 import { SiteNav } from "@/components/SiteNav";
 import { AdSenseScript } from "@/components/AdSenseScript";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -98,6 +99,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         </footer>
         <Analytics />
         <AdSenseScript />
+        <GoogleAnalytics />
       </body>
     </html>
   );
