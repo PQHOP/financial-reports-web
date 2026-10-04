@@ -776,6 +776,79 @@ the user is tracked at its end. Things future sessions should know:
 - `/admin/newsletter` generates the weekly digest draft from the last 7
   days of publications.
 
+## Daily operations routine (site operator on autopilot)
+
+Since 2026-10-04 the user has delegated running the site itself, not just
+report coverage: deciding what to fix or build next, SEO, growth, new
+features and new finance areas, fixing breakage. A cloud routine ("Site
+Operations - Daily", 22:30 UTC = 07:30 JST, after the nightly report window)
+does one pass a day and leaves a morning report for the user. The nightly
+report cap was lowered from ~50 to ~35 the same day to pay for it.
+
+**Goals (set by the user, 2026-10-04, for the next 3 months, to
+~2027-01-04):** (1) get Google AdSense approved; (2) reach 10,000 visits per
+month. Pick each day's work by which of these it moves most. Context: as of
+2026-10-04 `ADSENSE_CLIENT` is unset (`/ads.txt` 404s) and the site had
+previously been flagged at risk of "low value content", which the report
+format rules under "What makes a report worth reading here" address.
+
+**Each run:**
+1. `npm run site-metrics` (`scripts/ops/site-metrics.ts`): live health
+   check of key pages, last Vercel production deployments, Search Console
+   (7-day vs previous 7-day clicks/impressions, top queries and pages,
+   position-5-to-20 "opportunity" queries, sitemap status) and GA4 (daily
+   users/sessions/views, 28-day totals, top pages, channels, countries).
+   Needs `GSC_SA_JSON_B64` (Google service-account key, base64) and
+   `VERCEL_TOKEN` in the routine's environment; a missing one leaves that
+   section as `{error}` — report it, don't stop. GA4 property `557281541`,
+   measurement id `G-RWJB3FNKDL` (`GA_MEASUREMENT_ID` env on Vercel).
+2. If the health check shows a 5xx/0 on a page, or the latest production
+   deployment isn't `READY`, fixing that is the whole run.
+3. Otherwise pick 1-3 concrete improvements toward the goals and do them
+   end to end: SEO fixes (titles/descriptions for opportunity queries,
+   internal links, structured data, indexing problems), AdSense-readiness
+   work (content depth, policy pages, navigation, thin pages), useful new
+   features or content sections, editorial articles. Read
+   `docs/GROWTH_PLAN.md` for what's already planned or done. Keep a running
+   backlog of ideas in `ops/backlog.md` (top = next).
+4. Deploy changes yourself: typecheck (`npx tsc --noEmit`), commit, push,
+   then `npx vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"`.
+   Production deploys come from the working tree, so first confirm the
+   current production deployment's commit (from `site-metrics`) is in
+   `git log`; if it isn't, don't deploy — say so in the report. After
+   deploying, re-run the health check. If it got worse, roll back by
+   promoting the previous deployment (`vercel promote <previous-id>`) and
+   report it. Every rule in "Stack notes" applies, especially the CPU ones:
+   a public page that becomes dynamic can pause the whole site.
+5. Write the morning report to `ops/reports/YYYY-MM-DD.md` (JST date) and
+   commit + push it. A local Windows scheduled task on the user's PC copies
+   it to `E:\FinancialReports\` at 08:00 JST
+   (`scripts/ops/fetch-morning-report.ps1`). **Write the report in
+   Vietnamese** (the user reads it; the site itself stays English). Sections:
+   tóm tắt 3 dòng; tiến độ mục tiêu (visits/month vs 10,000, AdSense
+   readiness); traffic & SEO (with numbers vs last week); báo cáo tài chính
+   đêm qua (from `scripts/data/nightly-log.md`: count, tickers, skips);
+   đã làm gì hôm nay (each change + why + commit); lỗi & sự cố; **cần anh/chị
+   quyết định**; kế hoạch tiếp theo. Short and concrete, numbers over
+   adjectives.
+
+**Autonomy rules (proposed 2026-10-04, accepted by the user by default):**
+- **Do without asking:** bug fixes; SEO changes; content and editorial
+  articles; small-to-medium features; deploys.
+- **Propose in the report's "cần anh/chị quyết định" section, don't do:**
+  large features, big layout/design changes, opening a new finance area
+  (crypto, ETFs, etc.), anything that changes what a returning visitor
+  recognises as the site.
+- **Never:** spend money or enable anything billed (plan upgrades, paid
+  APIs, raising the Vercel spend cap); change DNS/domains; delete data or
+  published reports; submit or change AdSense/Google account settings;
+  change legal pages' substance; add new social posting; touch
+  `scripts/data/report-tracker.json` (the nightly routine owns it).
+
+Budget: this routine shares the weekly usage limit with the nightly report
+routine. Keep a run to roughly one focused hour; don't run Opus subagents
+for site work unless the change is genuinely large.
+
 ## Stack notes
 
 - Next.js 16 (App Router, Turbopack) + Prisma 6 + Postgres (Neon). See
