@@ -13,7 +13,7 @@ import { scorecardPath } from "@/lib/scorecardPath";
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
 export const revalidate = 3600;
 
-const STATIC_PAGES = ["/economy", "/world-risks", "/about", "/corrections", "/privacy", "/contact"];
+const STATIC_PAGES = ["/economy", "/world-risks", "/about", "/corrections", "/privacy", "/terms", "/contact"];
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Only list what has real content: companies/industries with no published

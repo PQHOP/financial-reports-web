@@ -92,6 +92,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <Link href="/about" className="hover:underline">About</Link>
             <Link href="/corrections" className="hover:underline">Corrections</Link>
             <Link href="/privacy" className="hover:underline">Privacy</Link>
+            <Link href="/terms" className="hover:underline">Terms</Link>
             <Link href="/contact" className="hover:underline">Contact</Link>
             <a href="/feed.xml" className="hover:underline">RSS</a>
           </nav>
