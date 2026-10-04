@@ -20055,5 +20055,115 @@
     },
     "skipReason": "No FY2026 or 2026-interim results filed yet as of 2026-10-04. The two 2026 6-Ks found (2026-03-30, 2026-09-03) are a financing announcement and a CEO-departure press release, not financial statements. FY2025 20-F (filed 2026-04-30) does not qualify as a 2026 report.",
     "lastChecked": "2026-10-04"
+  },
+  "AQST": {
+    "name": "Aquestive Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/aqst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-11",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARBB": {
+    "name": "ARB IOT Group Limited - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arbb/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 FY2026 interim)",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-05-08"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual, FYE 2026-06-30)",
+      "estimate": "2026-10-31",
+      "basis": "last annual 20-F filed 2025-10-31 for FY2025",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARCB": {
+    "name": "ArcBest Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arcb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARCT": {
+    "name": "Arcturus Therapeutics Holdings Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arct/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-06; last year Q3 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARCC": {
+    "name": "Ares Capital Corporation - Closed End Fund",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arcc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-07-29",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
   }
 }

@@ -7686,5 +7686,80 @@ to the tracker or published reports this firing.
     metrics fields and cover NAV/share, non-accrual rate, leverage in the
     body text instead.
 - Dispatched 5 more opus subagents in parallel (AQST, ARBB, ARCB, ARCC,
-  ARCT) — in progress, results not yet in as of this log update. Will
-  update this entry again once they report back.
+  ARCT), each with a ticker-prefixed scratch filename this time.
+  - **AQST** (Aquestive Therapeutics) — Q2 2026, new company, from the
+    10-Q filed 2026-08-11: https://financialreportinsights.com/companies/aqst/2026/q2
+    — revenue $13.8M (+38.2%): manufacture & supply $11.9M (+24%, Suboxone
+    +$4.6M, Ondif -$2.2M), license & royalty $1.3M (+58%, H1 included a
+    one-off $5.0M Zevra/Azstarys payment). Manufacturing gross margin rose
+    to 66.3% from 52.4% on mix; operating margin -59.5% vs -113.6%. Net
+    loss widened to $22.9M (EPS -$0.18) from $13.5M (-$0.14) entirely on
+    an $11.7M early-repayment charge refinancing into a $55M Oaktree term
+    loan — ex-charge the loss would be ~$11.2M (~-$0.09/share, flagged as
+    the subagent's own calc). Indivior is 70% of H1 revenue. No guidance;
+    Anaphylm NDA resubmission expected Q3 2026, Valtoco exclusivity
+    blocking Libervant expires Jan 2027.
+  - **ARBB** (ARB IOT Group) — H1 FY2026 (period end 2025-12-31, FYE
+    June 30), new company, FPI, reports in MYR (not USD — corrected from
+    the task brief), from the 6-K filed 2026-05-08:
+    https://financialreportinsights.com/companies/arbb/2026/h1 — revenue
+    RM150.4M (+82.0%), entirely from AI server hardware resale (the Smart
+    Building and Smart Agriculture lines booked zero this half vs
+    RM69.0M/RM13.65M a year ago). Gross margin fell to 1.2% from 3.3%;
+    net loss narrowed 46.7% to RM14.68M, but only on lower
+    depreciation/amortisation and non-repeating prior-year one-offs, not
+    operating improvement — gross profit (RM1.9M) doesn't cover ~RM2.0M
+    of cash overheads. Flagged RM66.8M in supplier trade deposits (partly
+    funded by RM34.5M customer deposits) and ~RM117M of idle
+    equipment/intangibles at write-down risk. No guidance.
+  - Both sanity-checked live (cache-busted fetch): Takeaway + Source
+    filing present, no truncation.
+  - **ARCB** (ArcBest) — Q2 2026, from the 10-Q filed 2026-07-30:
+    https://financialreportinsights.com/companies/arcb/2026/q2 — revenue
+    $1,184.5M (+15.9%), but a swing to a $(20.6)M operating loss (margin
+    -1.7% vs +3.6%) and a $(13.8)M net loss (EPS -$0.62 vs +$1.12) on
+    $85.3M of noncash restructuring impairments ($2.86/share: shutting
+    down Vaux Freight Movement System, retiring the Panther trade name,
+    subleasing offices). Underlying business improved: adjusted EBITDA
+    +42.0% to $115.0M, ABF Freight operating income +45.5%, operating
+    ratio improved to 90.5% from 92.8% (tonnage/day +4.9%, but almost all
+    of the 4.2% revenue-per-hundredweight gain was fuel surcharges).
+    Asset-Light revenue +28.3%. H1 operating cash flow $138.3M; no EPS
+    guidance, ~$40M/yr savings expected from the restructuring, FY capex
+    guided $140-160M.
+  - **ARCT** (Arcturus Therapeutics) — Q2 2026, new company, from the
+    10-Q filed 2026-08-06: https://financialreportinsights.com/companies/arct/2026/q2
+    — revenue collapsed 89.5% to $2.96M as CSL Seqirus collaboration
+    revenue ran out ($0.87M vs $24.43M); R&D cut 41% to $17.5M across
+    programs. Net loss widened to $23.8M (-$0.84/share) from $9.2M
+    (-$0.34/share). Cash $191.5M, no debt; H1 burn $39.4M vs a $50.7M
+    net loss (gap mostly non-cash stock comp). Post-quarter (Aug 3):
+    ended the CSL Seqirus partnership for a $12.0M payment, release from
+    ~$16.0M of obligations, and got back KOSTAIVE and other vaccine
+    programs (owes CSL future royalties); also a new Thermo Fisher
+    manufacturing deal (up to $40M) signed in-quarter. No going-concern
+    language; management says cash covers 12+ months.
+  - Both sanity-checked live: Takeaway + Source filing present, no
+    truncation.
+  - **ARCC** (Ares Capital Corporation) — Q2 2026, new company, a BDC
+    (closed-end fund) — used only the general metrics fields, no
+    bank/insurer schema fits it. From the 10-Q filed 2026-07-29:
+    https://financialreportinsights.com/companies/arcc/2026/q2 — total
+    investment income $768M (+3.1%); the $29.7B average portfolio grew
+    9.1% but its average yield fell to 9.5% from 10.1%, and the $26M rise
+    in interest expense outpaced the $23M income gain. Net investment
+    income (the figure that funds the dividend) $359M (+5.0%, ~$0.50/
+    share), but $21M of that was a one-off capital-gains-incentive-fee
+    reversal — without it NII would be ~$0.47/share against a $0.48
+    dividend (98% coverage vs 104% as reported). GAAP net income fell
+    52.6% to $171M (EPS $0.24 vs $0.52) on $183M of unrealized losses
+    (Cornerstone OnDemand, Symplr) plus a $70M realized loss on Eagle
+    Football. NAV/share $19.35, down from $19.94 at year-end; non-accruals
+    rose to 2.4% of portfolio at cost from 1.8%; debt-to-equity 1.15x vs
+    1.12x. Net commitments were -$323M (exits outpaced new commitments).
+  - Sanity-checked live: Takeaway + Source filing present, no truncation.
+- **Total so far tonight: 9 report-periods published** (APWC, AQMS, APYX,
+  AQB, AQST, ARBB, ARCB, ARCT, ARCC), 4 skips (APLM, APXT, ARCI, ARCL), 1
+  pending-recheck (ARBK) — well under the ~35 cap. All 5 companies from
+  this wave used ticker-prefixed scratch filenames with no further
+  collisions. Continuing further into the us-listed backlog this firing.
