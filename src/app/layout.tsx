@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Link from "@/components/Link";
 import Form from "next/form";
 import { Suspense } from "react";
-import { Analytics } from "@vercel/analytics/next";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
 import { NavigationProgress } from "@/components/NavigationProgress";
 import { SiteNav } from "@/components/SiteNav";
@@ -97,7 +96,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <a href="/feed.xml" className="hover:underline">RSS</a>
           </nav>
         </footer>
-        <Analytics />
         <AdSenseScript />
         <GoogleAnalytics />
       </body>

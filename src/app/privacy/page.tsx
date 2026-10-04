@@ -15,19 +15,13 @@ export default function PrivacyPage() {
   return (
     <StaticPage title="Privacy policy" updated="October 4, 2026">
       <p>
-        This site is read-only for visitors: there are no accounts, comments,
-        or sign-up forms. This page describes the limited data that is
-        collected.
+        There are no accounts or sign-ups on this site. This page describes
+        the limited data that is collected.
       </p>
 
       <h2>Analytics</h2>
       <p>
-        We use Vercel Web Analytics to count page views and see which pages
-        and countries readers come from. It does not use cookies to track you
-        across sites and does not store your IP address in identifiable form.
-      </p>
-      <p>
-        We also use Google Analytics (GA4) for the same purpose: to see which
+        We use Google Analytics (GA4) to count page views and see which
         pages, countries, and traffic sources readers come from. Google
         Analytics sets cookies and may process your IP address and device
         information on Google&apos;s servers; see Google&apos;s{" "}
@@ -85,6 +79,18 @@ export default function PrivacyPage() {
           aboutads.info
         </a>
         .
+      </p>
+
+      <h2>Community reports</h2>
+      <p>
+        If you submit your own report through a company&apos;s &ldquo;write a
+        report&rdquo; form, we store the report, the public name you choose,
+        and your email address. Your email is never shown on the site; it is
+        visible only to the site administrator, who may use it to contact you
+        about your submission. To limit spam we also store a one-way hash of
+        your IP address, from which the address itself can&apos;t be read
+        back. To have a submission and its details deleted, use the{" "}
+        <Link href="/contact">contact page</Link>.
       </p>
 
       <h2>Email and feeds</h2>
