@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyPage() {
   return (
-    <StaticPage title="Privacy policy" updated="September 20, 2026">
+    <StaticPage title="Privacy policy" updated="October 4, 2026">
       <p>
         This site is read-only for visitors: there are no accounts, comments,
         or sign-up forms. This page describes the limited data that is
@@ -25,6 +25,28 @@ export default function PrivacyPage() {
         We use Vercel Web Analytics to count page views and see which pages
         and countries readers come from. It does not use cookies to track you
         across sites and does not store your IP address in identifiable form.
+      </p>
+      <p>
+        We also use Google Analytics (GA4) for the same purpose: to see which
+        pages, countries, and traffic sources readers come from. Google
+        Analytics sets cookies and may process your IP address and device
+        information on Google&apos;s servers; see Google&apos;s{" "}
+        <a
+          href="https://policies.google.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          privacy policy
+        </a>{" "}
+        for how it handles that data. You can opt out with the{" "}
+        <a
+          href="https://tools.google.com/dlpage/gaoptout"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Google Analytics Opt-out Browser Add-on
+        </a>
+        .
       </p>
 
       <h2>Search</h2>

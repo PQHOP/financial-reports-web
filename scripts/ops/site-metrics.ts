@@ -6,6 +6,13 @@
 //
 //   npm run site-metrics            # JSON to stdout
 //
+// Run via the npm script, not `tsx` directly: it sets NODE_USE_ENV_PROXY=1,
+// without which Node's built-in fetch ignores HTTPS_PROXY and hits
+// financialreportinsights.com directly from the sandbox's raw IP, which the
+// site's Vercel Firewall rejects with a false-positive 403 on every health
+// check path (Vercel's own API and Google's don't have that firewall, so
+// those calls succeed either way and the gap only shows up here).
+//
 // Credentials (env):
 //   GSC_SA_JSON_B64   base64 of the Google service-account key JSON
 //                     (or GSC_SA_KEY_FILE = path to the JSON file)

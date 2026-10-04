@@ -31,7 +31,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       where: { reports: { some: systemReports } },
       select: {
         slug: true,
-        reports: { where: systemReports, select: { year: true } },
+        industries: { select: { slug: true } },
+        reports: { where: systemReports, select: { year: true, publishedAt: true, updatedAt: true } },
       },
     }),
     prisma.report.findMany({
@@ -54,6 +55,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const rates = buildRates(macro.weo, macro.live, new Date().toISOString().slice(0, 10));
   const ratesUpdated = new Date(macro.live.updatedAt);
 
+  // lastmod for company/industry/year pages: the most recent report that
+  // feeds them, so Google has a real freshness signal instead of none.
+  const reportDate = (r: { updatedAt: Date | null; publishedAt: Date }) => new Date(r.updatedAt ?? r.publishedAt);
+  const maxDate = (dates: Date[]) => new Date(Math.max(...dates.map((d) => d.getTime())));
+
+  const companyLastMod = new Map<string, Date>();
+  const industryLastMod = new Map<string, Date>();
+  for (const company of companies) {
+    if (!company.reports.length) continue;
+    const lastMod = maxDate(company.reports.map(reportDate));
+    companyLastMod.set(company.slug, lastMod);
+    for (const industry of company.industries) {
+      const current = industryLastMod.get(industry.slug);
+      if (!current || lastMod > current) industryLastMod.set(industry.slug, lastMod);
+    }
+  }
+
   const companyYearEntries = companies.flatMap((company) => {
     const perYear = new Map<number, number>();
     for (const r of company.reports) perYear.set(r.year, (perYear.get(r.year) ?? 0) + 1);
@@ -62,24 +80,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     );
     return years.map((year) => ({
       url: `${SITE_URL}/companies/${company.slug}/${year}`,
+      lastModified: maxDate(company.reports.filter((r) => r.year === year).map(reportDate)),
       changeFrequency: "monthly" as const,
       priority: 0.6,
     }));
   });
 
+  const latestReportDate = reports.length ? maxDate(reports.map(reportDate)) : undefined;
+
   return [
     {
       url: SITE_URL,
+      lastModified: latestReportDate,
       changeFrequency: "daily",
       priority: 1,
     },
     {
       url: `${SITE_URL}/reports`,
+      lastModified: latestReportDate,
       changeFrequency: "daily",
       priority: 0.9,
     },
     {
       url: `${SITE_URL}/earnings`,
+      lastModified: latestReportDate,
       changeFrequency: "daily",
       priority: 0.8,
     },
@@ -122,11 +146,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     ...industries.map((industry) => ({
       url: `${SITE_URL}/industries/${industry.slug}`,
+      lastModified: industryLastMod.get(industry.slug),
       changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
     ...companies.map((company) => ({
       url: `${SITE_URL}/companies/${company.slug}`,
+      lastModified: companyLastMod.get(company.slug),
       changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
