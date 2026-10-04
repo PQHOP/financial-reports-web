@@ -20041,7 +20041,7 @@
   },
   "ARBK": {
     "name": "Argo Blockchain plc - American Depositary Shares",
-    "status": "pending",
+    "status": "skipped",
     "lastFilingSeen": {
       "type": "20-F",
       "periodEnd": "2025-12-31",
@@ -20164,6 +20164,23 @@
       "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-07-29",
       "confidence": "estimated"
     },
+    "lastChecked": "2026-10-04"
+  },
+  "ARQQ": {
+    "name": "Arqit Quantum Inc. - Ordinary Shares",
+    "status": "skipped",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-09-30",
+      "filedAt": "2025-12-09"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual)",
+      "estimate": "2026-12-09",
+      "basis": "FPI, annual-only reporter (no interim-financials 6-K found all year — the 2026 6-Ks are board/CFO transition, AGM notice, warrant expiration); last annual filed 2025-12-09",
+      "confidence": "estimated"
+    },
+    "skipReason": "No FY2026 or 2026-interim financial results filed yet as of 2026-10-04; files annually via 20-F only.",
     "lastChecked": "2026-10-04"
   }
 }
