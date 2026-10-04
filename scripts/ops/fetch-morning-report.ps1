@@ -4,6 +4,9 @@
 # hourly until noon; also when the PC wakes after a missed run. Reads straight
 # from origin/master with `git show`, so the local working tree is untouched.
 $ErrorActionPreference = "Stop"
+# git prints UTF-8; without this PowerShell decodes it with the console code
+# page (cp932 on this PC) and Vietnamese text turns into mojibake.
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 $repo = Split-Path -Parent (Split-Path -Parent $PSScriptRoot)
 $dest = "E:\FinancialReports"
 $log = Join-Path $dest "_fetch.log"

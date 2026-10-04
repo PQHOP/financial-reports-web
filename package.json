@@ -13,7 +13,7 @@
     "scan-recent-filings": "tsx scripts/scan-recent-filings.ts",
     "next-batch": "tsx scripts/next-batch.ts",
     "fetch-macro": "tsx scripts/fetch-macro.ts",
-    "site-metrics": "NODE_USE_ENV_PROXY=1 tsx scripts/ops/site-metrics.ts"
+    "site-metrics": "tsx scripts/ops/site-metrics.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.127.0",

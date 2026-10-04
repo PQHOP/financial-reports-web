@@ -812,7 +812,13 @@ format rules under "What makes a report worth reading here" address.
    `docs/GROWTH_PLAN.md` for what's already planned or done. Keep a running
    backlog of ideas in `ops/backlog.md` (top = next).
 4. Deploy changes yourself: typecheck (`npx tsc --noEmit`), commit, push,
-   then `npx vercel@latest deploy --prod --yes --token "$VERCEL_TOKEN"`.
+   then `VERCEL_ORG_ID=team_MfxRGuWiwCf3DqtVWElr3pRu
+   VERCEL_PROJECT_ID=prj_eGaw60toZxrsdlHPvzgJ76JqH0FU npx vercel@latest
+   deploy --prod --yes --token "$VERCEL_TOKEN"`. The two IDs are required:
+   `.vercel/` is gitignored, and the token is team-scoped, so without them
+   the CLI tries to link the project via `/v2/user` and fails with "User
+   not found" (`vercel whoami` always fails with this token — that's
+   expected, not a broken token).
    Production deploys come from the working tree, so first confirm the
    current production deployment's commit (from `site-metrics`) is in
    `git log`; if it isn't, don't deploy — say so in the report. After

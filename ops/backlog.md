@@ -6,19 +6,6 @@ date and commit.
 
 ## Next
 
-- **Blocked: `VERCEL_TOKEN` in this cloud environment can't deploy.** It
-  works for read-only team-scoped REST calls (what `site-metrics` uses —
-  `GET /v6/deployments`, `/v9/projects` with explicit `teamId` all return
-  real data), but `vercel whoami` / `vercel deploy` fail with "User not
-  found" (CLI 62.2.0, 39.3.0) or "The specified token is not valid" (CLI
-  28.20.0) regardless of CLI version or `--scope`. The project's own
-  `creator.via.type` is `"app"`, not a user session, which points to this
-  being an OAuth-integration access token rather than a personal Account
-  Settings → Tokens PAT — the CLI needs the latter. 2026-10-04's commit
-  (`4ced282`, see below) is pushed to `origin/master` but **not deployed**
-  — still waiting on `f540c32` in production. Needs a new token from the
-  user (vercel.com → Account Settings → Tokens, scoped to team `hop22`)
-  before the next run can ship anything.
 - Confirmed 2026-10-04: company/report pages are genuinely stuck at
   "Discovered - currently not indexed" in Search Console (checked AAPL's
   company page and its 2026 Q3 report directly via the URL Inspection API,
@@ -36,8 +23,11 @@ date and commit.
 
 ## Done
 
-- 2026-10-04 (`4ced282`, pushed, **not yet deployed** — see the token
-  blocker above): disclosed GA4 in the privacy policy; added `lastModified`
+- 2026-10-04: the "token can't deploy" blocker was a missing project link,
+  not a bad token — deploy with `VERCEL_ORG_ID`/`VERCEL_PROJECT_ID` set (see
+  CLAUDE.md step 4). `4ced282` deployed that way from a fresh clone
+  (dpl_7TsFDBUyGcd7Hi3ic89gQkZYRtFD, READY).
+- 2026-10-04 (`4ced282`): disclosed GA4 in the privacy policy; added `lastModified`
   to sitemap entries that lacked it; fixed `site-metrics`' health check
   reporting every public page as down (403) — Node's native `fetch` ignores
   `HTTPS_PROXY` in this sandbox by default, so the unproxied request hit

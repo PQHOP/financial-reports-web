@@ -6,12 +6,12 @@
 //
 //   npm run site-metrics            # JSON to stdout
 //
-// Run via the npm script, not `tsx` directly: it sets NODE_USE_ENV_PROXY=1,
-// without which Node's built-in fetch ignores HTTPS_PROXY and hits
-// financialreportinsights.com directly from the sandbox's raw IP, which the
-// site's Vercel Firewall rejects with a false-positive 403 on every health
-// check path (Vercel's own API and Google's don't have that firewall, so
-// those calls succeed either way and the gap only shows up here).
+// Behind an HTTPS proxy (the cloud routine's sandbox) the script re-runs
+// itself with NODE_USE_ENV_PROXY=1: without it Node's built-in fetch ignores
+// HTTPS_PROXY and hits financialreportinsights.com from the sandbox's raw IP,
+// which the site's Vercel Firewall answers with a false 403 on every health
+// check path. Done here rather than in the npm script so it also runs on
+// Windows, where `VAR=1 cmd` isn't valid.
 //
 // Credentials (env):
 //   GSC_SA_JSON_B64   base64 of the Google service-account key JSON
@@ -20,6 +20,15 @@
 // Optional: GA4_PROPERTY_ID (default below), SITE_URL.
 import { createSign } from "node:crypto";
 import { readFileSync } from "node:fs";
+import { spawnSync } from "node:child_process";
+
+if ((process.env.HTTPS_PROXY || process.env.https_proxy) && !process.env.NODE_USE_ENV_PROXY) {
+  const child = spawnSync(process.execPath, [...process.execArgv, ...process.argv.slice(1)], {
+    stdio: "inherit",
+    env: { ...process.env, NODE_USE_ENV_PROXY: "1", NODE_NO_WARNINGS: "1" },
+  });
+  process.exit(child.status ?? 1);
+}
 
 const SITE_URL = (process.env.SITE_URL || "https://financialreportinsights.com").replace(/\/$/, "");
 const GSC_SITE = "sc-domain:financialreportinsights.com";
