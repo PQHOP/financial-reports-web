@@ -20336,5 +20336,148 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-04"
+  },
+  "ARTC": {
+    "name": "Art Technology Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "skipReason": "Pre-merger SPAC (blank check company) — 10-Q balance sheet shows only marketable securities held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
+    "lastChecked": "2026-10-04"
+  },
+  "ARKR": {
+    "name": "Ark Restaurants Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arkr/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual, FYE 2026-10-03)",
+      "estimate": "2026-12-22",
+      "basis": "90-day cadence / typical annual filing timing for this filer",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARTNA": {
+    "name": "Artesian Resources Corporation - Class A Non-Voting",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/artna/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARTV": {
+    "name": "Artiva Biotherapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/artv/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARTW": {
+    "name": "Art's-Way Manufacturing Co., Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/artw/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-07-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026, period ending 2026-08-31)",
+      "estimate": "2026-10-15",
+      "basis": "typical filing timing ~45 days after quarter-end for this filer",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARTL": {
+    "name": "Artelo Biosciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/artl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q/A (amendment, added an omitted legal proceeding)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-15",
+      "basis": "90-day cadence from the original Q2 2026 10-Q filed 2026-08-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARRY": {
+    "name": "Array Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/arry/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
   }
 }

@@ -7874,3 +7874,86 @@ scratch filenames.
   APYX, AQB, AQST, ARBB, ARCB, ARCT, ARCC, ARGX, ARDX, AROW, ARKO, ARQ,
   ARQT, ARHS), 6 skips (APLM, APXT, ARCI, ARCL, ARBK, ARQQ) — 46% of the
   ~35 cap. Continuing further into the us-listed backlog this firing.
+
+**Backlog batch 4 (ARKR, ARRY, ARTC, ARTL, ARTNA, ARTV, ARTW, ARVN, ARWR,
+ARXS):** screened first — ARTC confirmed a pre-merger SPAC (trust-account
+balance sheet) and skipped; ARKR confirmed fiscal Q3 2026 (FYE ~Oct 3,
+not calendar Q2/Q3) from its cover page; ARTL used the 10-Q/A amendment
+filed 8 days after the original per our "most complete version" rule;
+ARTW confirmed fiscal Q2 2026 (FYE Nov 30); ARXS flagged as a complex
+recent-IPO filing (April 2026, Up-C reorg accounting, several bolt-on
+acquisitions) with explicit instruction to stop rather than guess if the
+comparison basis isn't clean. Dispatched 9 opus subagents in parallel
+(all ticker-prefixed scratch filenames).
+- **ARKR** (Ark Restaurants) — fiscal Q3 2026 (13 weeks ended 2026-06-27,
+  FYE 2026-10-03), new company, from the 10-Q filed 2026-08-11:
+  https://financialreportinsights.com/companies/arkr/2026/q3 — revenue
+  $40.881M (-6.5%), same-store sales -6.6% (Las Vegas -11.4% on a
+  property partly closed for renovation, Florida -10.2% on competition,
+  NY -2.5% on Bryant Park dispute publicity, partly offset by DC +4.6%).
+  Narrowed to a -$0.3M operating loss (-0.3% margin) from -$3.4M (-7.8%,
+  which included a $4.7M impairment last year) — on the company's own
+  adjusted basis, operating income actually went from +$1.1M to -$0.1M.
+  Net loss -$0.35M (EPS -$0.10) vs -$3.45M (-$0.96). Main risk flagged: a
+  court ordered Ark out of its three Bryant Park restaurants (14.5% of
+  YTD revenue); the stay expires ~2026-10-16 and Ark is appealing. No
+  guidance. Sanity-checked live.
+- ARRY, ARTL, ARTNA, ARTV, ARTW, ARVN, ARWR, ARXS still in progress.
+- **ARRY** (Array Technologies) — Q2 2026, new company, solar tracker
+  maker, from the 10-Q filed 2026-08-05 (guidance from the same-day
+  earnings 8-K): https://financialreportinsights.com/companies/arry/2026/q2
+  — revenue $342.1M (-5.6%): US Array Legacy segment (incl. APA) +10% to
+  $320.3M on ASP +25%/volume -12%, international STI segment -69% to
+  $21.8M. Operating margin fell to 10.2% from 12.8% on G&A up $9.4M
+  (including $5.8M acquisition costs). Net income fell 43.7% to $24.3M —
+  last year included a one-off $14.2M debt-buyback gain; after preferred
+  dividends, diluted EPS fell 73.7% to $0.05 (adjusted EPS roughly flat,
+  $0.24 vs $0.25). Record $2.5B order book (+37% YoY). FY guidance:
+  revenue held at $1.4-1.5B, adjusted EBITDA raised to $210-230M.
+- **ARTL** (Artelo Biosciences) — Q2 2026, new company, pre-revenue
+  cannabinoid-therapeutics biotech — used the original 10-Q (filed
+  2026-08-12) as sourceUrl, not the 10-Q/A: the subagent found the
+  amendment (filed 2026-08-20) contains no financials/MD&A, only an
+  added legal-proceedings disclosure (a FINRA arbitration claim
+  "inadvertently omitted" from the original) — correctly deviated from
+  the dispatch brief once it found this. https://financialreportinsights.com/companies/artl/2026/q2
+  — net loss narrowed 24.7% to $2.43M; R&D fell 53% as CAReS trial
+  professional fees dropped. $11.0M March private placement plus a 1-for-3
+  reverse split pushed cash to $4.2M from $0.6M, but going-concern doubt
+  remains. Post-quarter arbitration claim (~$1.76M combined) is ~40% of
+  cash; management says no material impact expected.
+- **ARTNA** (Artesian Resources) — Q2 2026, new company, regulated water
+  utility, from the 10-Q filed 2026-08-12: https://financialreportinsights.com/companies/artna/2026/q2
+  — revenue $30.664M (+7.4%) on two temporary rate increases (2.88% from
+  mid-2025, 6.82% from Nov 2025) plus customer growth; net income $6.575M
+  (+4.5%, EPS $0.64) lagged revenue because a construction-credit
+  (AFUDC) fell as a new wastewater plant finished. Pending DPSC rate case
+  (now requesting 10.2%/$9.0M, down from 12.41% originally) still
+  undecided; $2.2M of temporary-rate revenue held in a refund reserve.
+- **ARTV** (Artiva Biotherapeutics) — Q2 2026, new company, pre-revenue
+  allogeneic NK-cell biotech, from the 10-Q filed 2026-08-06:
+  https://financialreportinsights.com/companies/artv/2026/q2 — $0
+  revenue; net loss widened to $25.0M from $21.3M on R&D +22.8% (AlloNK
+  external spend +36.6% on expanding autoimmune trials). Cash jumped to
+  $349.4M from $108.0M after a $300M May offering; runway guided "into
+  2029". May data showed >50% ACR50 at 6 months in refractory RA with no
+  CRS/neurotoxicity; FDA agreed to a single Phase 3 trial, AlloNK got
+  RMAT designation in June.
+- **ARTW** (Art's-Way Manufacturing) — fiscal Q2 2026 (period ended
+  2026-05-31, FYE Nov 30), new company, from the 10-Q filed 2026-07-15:
+  https://financialreportinsights.com/companies/artw/2026/q2 — revenue
+  $7.854M (+23.9%: Agricultural Products +8.6% on grinder-mixer demand,
+  Modular Buildings +50.6% working through backlog). Gross margin fell
+  to 25.9% from 32.5% on steel costs (Ag segment) and a warranty
+  building sold at cost plus site-work overruns (Modular segment). Net
+  income fell 88.3% to $0.173M (EPS $0.03 vs $0.29) — the subagent
+  flagged most of the drop is because last year's quarter included a
+  ~$1.154M one-off COVID-era Employee Retention Credit tax refund;
+  ex that, income was down roughly half. Backlog down 37.7% to $2.744M.
+- All 5 sanity-checked live: Takeaway + Source filing present, no
+  truncation. ARVN, ARWR, ARXS still in progress.
+- **Total so far tonight: 22 report-periods published** (APWC, AQMS,
+  APYX, AQB, AQST, ARBB, ARCB, ARCT, ARCC, ARGX, ARDX, AROW, ARKO, ARQ,
+  ARQT, ARHS, ARKR, ARRY, ARTL, ARTNA, ARTV, ARTW), 7 skips (APLM, APXT,
+  ARCI, ARCL, ARBK, ARQQ, ARTC) — 63% of the ~35 cap. ARVN, ARWR, ARXS
+  still in progress.
