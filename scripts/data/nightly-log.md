@@ -7592,3 +7592,99 @@ candidates**, same as the last two firings. Tonight's total remains
 49/50 (98% of the ~50 cap) — per the cap rule, exiting immediately
 without starting a new batch rather than risking going over. No change
 to the tracker or published reports this firing.
+
+### 2026-10-04 night (16:00 UTC 2026-10-04 → 22:59 UTC 2026-10-04 / 01:00–07:59 JST 2026-10-05)
+
+- Mechanism: this is the cloud routine firing (`trig_01GNdUY59Na4x3JxMr6p7mxK`)
+  into this session directly (confirmed via `get_trigger` — its `last_run`
+  session id matches this session). Confirmed network access first: plain
+  `curl https://www.sec.gov/` (no User-Agent) returned 403 from Akamai
+  (SEC's own gating, not a proxy denial); retrying with the required
+  `User-Agent` header returned 200. Both `financialreportinsights.com`
+  and the `.vercel.app` alias returned 200 directly. `npm install` ran
+  clean (the `prisma generate` postinstall failure on missing
+  `DATABASE_URL` is expected/harmless). Local checkout was detached at a
+  commit that already equaled `origin/master` — reset to a proper
+  `master` branch tracking `origin/master`, nothing lost.
+- **Nightly cap is now ~35** (lowered from ~50 on 2026-10-04 per CLAUDE.md
+  to fund the new daily ops routine) — tracking against that for tonight.
+- Ran `npm run scan-recent-filings`: **0 fresh tier-0 candidates**. Moved
+  to tier 1 (`next-batch`), which is purely in the us-listed backlog now
+  (hot list and S&P 500 both fully done/skipped for 2026).
+- **Backlog batch 1 (APLM, APWC, APXT, APYX, AQB, AQMS):**
+  - **APLM** (Apollomics) — re-checked, still skipped: no 2026 financial
+    results filed yet (FPI/20-F+6-K filer). The 2026-08-12 6-K is a
+    private-placement/financing disclosure, not financials. H1 2026
+    interim 6-K still not filed.
+  - **APXT** (Apex Treasury Corporation) — skipped: pre-merger SPAC
+    (Cayman blank-check, IPO'd Oct 2025 raising $344.7M). 10-Q balance
+    sheet at 2026-06-30 shows only $353.1M in trust, no operating
+    business; targets blockchain/crypto-treasury/AI/B2B software/data
+    services/renewable energy/build-to-rent for a future deal, none
+    announced.
+  - **APWC** (Asia Pacific Wire & Cable) — Q2 2026, new company, FPI
+    (6-K filed 2026-08-14, IFRS): https://financialreportinsights.com/companies/apwc/2026/q2
+    — revenue $136.6M (+7.7%, on higher copper prices and Thai
+    public-sector orders despite tonnage down 7%), operating margin 2.5%
+    vs 2.0%, net income (parent) $0.78M (+35.1%, but 64% of total profit
+    belongs to minority shareholders), EPS $0.01 (-66.7%, diluted by a
+    Feb 2026 share issue that doubled the weighted share count). Operating
+    cash flow -$18.0M on a $20.7M inventory build. No guidance given.
+  - **AQMS** (Aqua Metals) — Q2 2026, new company, from the 10-Q filed
+    2026-07-30: https://financialreportinsights.com/companies/aqms/2026/q2
+    — pre-revenue (zero commercial operations both years). Net loss
+    narrowed 33.8% to $4.48M; both years include a one-off non-cash
+    charge ($2.06M provision this quarter for a defaulted $4.1M loan to
+    Lion Energy after a dropped acquisition, vs a $3.77M write-down last
+    year on selling its Nevada plant). Cash $4.74M, down from $10.81M at
+    year-start; going-concern doubt disclosed. Plan is "Project
+    Headwaters ARC" (phased LFP battery preprocessing).
+  - **APYX** (Apyx Medical) — Q2 2026, new company, from the 10-Q filed
+    2026-08-06: https://financialreportinsights.com/companies/apyx/2026/q2
+    — revenue $13.9M (+22.1%, Surgical Aesthetics +28.1% on the AYON
+    launch and more US handpiece volume), gross margin 63.9% vs 62.3%
+    (mix-driven), operating loss narrowed to $1.8M (-13.0% margin) from
+    $2.6M despite a $0.7M one-time exec stock grant. Net loss $3.2M
+    (EPS -$0.07) vs $3.8M (-$0.09). H1 operating cash burn widened to
+    $4.1M from $1.9M on inventory build. FY2026 guidance reaffirmed
+    ($59-60M revenue), implying H2 Surgical Aesthetics growth slows to
+    11-15% from 31.7% in H1; low end only clears the lender's covenant by
+    ~$1.6M. (Publishing hiccup: a concurrent subagent's scratch file got
+    read by another agent and briefly published a non-final draft under
+    this company/period; caught and corrected via `--edit` before this
+    log entry, final figures above are the corrected/live ones. Scratch
+    file collisions fixed going forward by having every subagent use a
+    ticker-prefixed filename.)
+  - **AQB** (AquaBounty Technologies) — Q2 2026, new company, from the
+    10-Q filed 2026-08-06: https://financialreportinsights.com/companies/aqb/2026/q2
+    — no longer farms fish (sold Indiana farm 2024, Canadian farms + IP
+    March 2025); only remaining asset is a half-built Ohio site held for
+    sale. Revenue $0. Net loss $1.63M vs $3.37M (-51.6%, mostly because
+    last year had a $1.53M write-down). EPS -$0.32 vs -$0.87. Cash $1.89M
+    at June 30 against ~$390K/month burn (~5 months runway). Going-concern
+    doubt disclosed; equity swung positive after an 18%-note-to-preferred
+    debt swap. Nasdaq listed value was under the $5M immediate-delisting
+    threshold as of Aug 4 (currently stayed).
+  - Sanity-checked all 4 new pages live (cache-busted fetch): Takeaway
+    present, no truncation.
+- **Total so far tonight: 4 report-periods published** (APWC, AQMS, APYX,
+  AQB), 2 skips (APLM, APXT) — well under the ~35 cap.
+- Ran `next-batch -- --n 10` for the next slice: AQST, ARBB, ARCT, ARCB,
+  ARCC real candidates; ARCI and ARCL screened out as pre-merger SPACs
+  (trust-account-only balance sheets, "SPAC"/"Acquisition" in the company
+  name confirmed the pattern); ARBK (Argo Blockchain) screened out — no
+  FY2026 or 2026-interim results filed yet, only a financing 6-K and a
+  CEO-departure 6-K in 2026; its FY2025 20-F (filed 2026-04-30) doesn't
+  qualify as a 2026 report. All three skips/pending written to the
+  tracker (ARCI, ARCL skipped as SPACs; ARBK left pending with
+  nextExpectedFiling ~2027-04-30).
+  - **ARBB** is an H1 FY2026 interim report (6-K, period ended
+    2025-12-31, FYE June 30) rather than a calendar-quarter filing — noted
+    for the subagent to use period "H1".
+  - **ARCC** (Ares Capital) is a BDC/closed-end fund — no bank/insurer
+    metrics schema fits it; subagent instructed to use only the general
+    metrics fields and cover NAV/share, non-accrual rate, leverage in the
+    body text instead.
+- Dispatched 5 more opus subagents in parallel (AQST, ARBB, ARCB, ARCC,
+  ARCT) — in progress, results not yet in as of this log update. Will
+  update this entry again once they report back.

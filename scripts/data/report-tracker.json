@@ -19666,7 +19666,7 @@
   },
   "APLM": {
     "name": "Apollomics Inc. - Class A Ordinary Shares",
-    "status": "pending",
+    "status": "skipped",
     "lastFilingSeen": {
       "type": "20-F",
       "periodEnd": "2025-12-31",
@@ -19678,8 +19678,8 @@
       "basis": "the H1 2025 interim 6-K was filed late on 2025-12-22; foreign private issuer, no 2026 interim financials filed yet as of 2026-10-03",
       "confidence": "estimated"
     },
-    "skipReason": "No 2026 financial results filed yet as of 2026-10-03 (FPI, 20-F/6-K filer); H1 2026 interim 6-K not yet filed.",
-    "lastChecked": "2026-10-03"
+    "skipReason": "No 2026 financial results filed yet as of 2026-10-04 (FPI, 20-F/6-K filer). Re-checked the 2026-08-12 6-K: it is a private-placement/financing disclosure (Subscription Agreements, Class A share issuance), not financial statements. H1 2026 interim 6-K still not filed; last cycle the H1 2025 interim 6-K was filed late on 2025-12-22.",
+    "lastChecked": "2026-10-04"
   },
   "API": {
     "name": "Agora, Inc. - ADS",
@@ -19917,5 +19917,143 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03"
+  },
+  "APXT": {
+    "name": "Apex Treasury Corporation - Class A Ordinary Share",
+    "status": "skipped",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "skipReason": "Pre-merger SPAC (blank check company incorporated in the Cayman Islands, IPO Oct 2025, $344.7M raised). No operating business as of 2026-06-30 10-Q — all activity is formation costs and non-operating interest income on $353.1M held in trust. Targets blockchain/crypto-treasury, AI, B2B software, data services, renewable energy, build-to-rent sectors for a future Business Combination; none announced yet. Revisit if/when a Business Combination is announced or closes.",
+    "lastChecked": "2026-10-04"
+  },
+  "APWC": {
+    "name": "Asia Pacific Wire & Cable Corporation Limited - Common shares, Par value .01 per share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/apwc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings)",
+      "estimate": "2026-11-14",
+      "basis": "90-day cadence from the Q2 2026 6-K filed 2026-08-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "AQMS": {
+    "name": "Aqua Metals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/aqms/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "APYX": {
+    "name": "Apyx Medical Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/apyx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "AQB": {
+    "name": "AquaBounty Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-04",
+      "url": "/companies/aqb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-04"
+  },
+  "ARCI": {
+    "name": "Archimedes Tech SPAC Partners III Co. - Ordinary Share",
+    "status": "skipped",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "skipReason": "Pre-merger SPAC (blank check company) — 10-Q balance sheet shows only a demand deposit held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
+    "lastChecked": "2026-10-04"
+  },
+  "ARCL": {
+    "name": "ARC Group Acquisition I Corp - Class A Ordinary Shares",
+    "status": "skipped",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "skipReason": "Pre-merger SPAC (blank check company) — 10-Q balance sheet shows only marketable securities held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
+    "lastChecked": "2026-10-04"
+  },
+  "ARBK": {
+    "name": "Argo Blockchain plc - American Depositary Shares",
+    "status": "pending",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-30"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual)",
+      "estimate": "2027-04-30",
+      "basis": "FPI, files results annually via 20-F only (no H1/interim results 6-K found in 2026); last annual filed 2026-04-30 for FY2025",
+      "confidence": "estimated"
+    },
+    "skipReason": "No FY2026 or 2026-interim results filed yet as of 2026-10-04. The two 2026 6-Ks found (2026-03-30, 2026-09-03) are a financing announcement and a CEO-departure press release, not financial statements. FY2025 20-F (filed 2026-04-30) does not qualify as a 2026 report.",
+    "lastChecked": "2026-10-04"
   }
 }
