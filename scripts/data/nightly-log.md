@@ -8539,3 +8539,86 @@ check):
   skipped without a subagent call. No collisions this batch.
 - **Total tonight so far: 18 report-periods published, 2 skipped** —
   18/~35 of tonight's cap. `next-batch` continues past ATLX next.
+
+**Fifth batch this firing** (`next-batch -- --n 5` after ATLX: ATNI,
+ATOM, ATOS, ATPC, ATRA — 5 opus subagents dispatched in parallel):
+
+- **ATNI** (ATN International) — Q2 2026, new company, rural wireless/
+  fiber telecom infrastructure, from the 10-Q filed 2026-08-10:
+  https://financialreportinsights.com/companies/atni/2026/q2 — net
+  income attributable $167.3M ($10.71/share) vs a $7.0M loss a year ago,
+  almost entirely a $229.9M gain on the first closing of the US tower
+  sale to Everest ($267.7M cash in); ex the gain, pre-tax was roughly a
+  $2.3M loss vs $13.0M a year ago. Revenue +1.8% to $184.5M; adjusted
+  EBITDA +9% to $49.7M (27.0% margin vs 25.3%), mostly cost cuts. Net
+  debt fell to 0.91x EBITDA from 2.36x. Broadband homes passed +21% but
+  customers +1% (down 2,300 from Q1); mobile churn rose to 3.48% from
+  3.09%; no buybacks this quarter. FY2026 guidance ($183-193M adjusted
+  EBITDA, cut from $190-200M on the tower sale; $105-115M capex)
+  reaffirmed, implying a weaker H2 and ~double the H1 capex pace.
+  operatingMarginPct/netIncomeYoyPct/epsYoyPct omitted as n/m (GAAP
+  operating margin ~130% from the gain; loss-to-profit).
+- **ATOM** (Atomera) — Q2 2026, new company, semiconductor materials
+  licensing (MST technology), from the 10-Q filed 2026-08-06:
+  https://financialreportinsights.com/companies/atom/2026/q2 — revenue
+  $158K (vs $0 a year ago, engineering-services only, no license fees/
+  royalties this quarter). Net loss widened 28% to $6.3M as opex rose
+  33% to $6.9M (higher bonus accruals, more stock comp, +$296K patent
+  legal costs, selling/marketing costs +210%). EPS flat at -$0.17 only
+  because weighted shares +27%. A February raise (5M shares at $5.00,
+  $23.6M net) lifted cash to $38.4M — ~2.25 years of runway at the H1
+  $8.5M burn rate. revenueYoyPct/netIncomeYoyPct/epsYoyPct/
+  operatingMarginPct all omitted as n/m (zero-revenue base, loss-to-
+  loss, ~-4,300% margin).
+- **ATOS** (Atossa Therapeutics) — Q2 2026, new company, clinical-stage
+  breast-cancer biotech, from the 10-Q filed 2026-08-07:
+  https://financialreportinsights.com/companies/atos/2026/q2 — no
+  revenue. Net loss ~flat at $8.5M vs $8.4M (EPS -$0.95 vs -$0.98, only
+  smaller per-share on more shares). R&D -11% to $4.9M as studies rolled
+  off; G&A +7% to $3.8M on legal fees from the Intas patent dispute
+  (settled 2026-04-13). Cash fell to $26.1M from $41.3M at 2025 year-end
+  (H1 burn $19.2M, ~$9.6M/quarter). Going-concern language newly present
+  (first appeared in the Q1 10-Q; the March 10-K had said resources were
+  sufficient for 12 months — that statement has now reversed). June
+  direct offering netted only $4.0M at $3.30/share (~16% dilution).
+  Karisma 24-month trial data pushed from "H1 2026" to "before end of Q3
+  2026," not yet reported as of 2026-10-05. revenue/netIncome/eps YoY
+  and operatingMarginPct all omitted as n/m (no revenue, loss-to-loss).
+- **ATPC** (Agape ATP) — Q2 2026, new company, Malaysia health/wellness
+  products, from the 10-Q filed 2026-08-14: https://financialreportinsights.com/companies/atpc/2026/q2
+  — figures in USD. Revenue collapsed 93.4% to $13,693 (green energy
+  $0 vs $135,434 a year ago — no new projects won; supplements -50.5%;
+  wellness/skincare -89.7%). Operating loss $550,975, but a $645,027
+  unrealized FX gain plus a $74,760 gain on selling a 60% stake in DSY
+  Wellness flipped it to net income attributable of $153,003 (EPS
+  $0.15) vs a $617,078 loss (EPS -$0.62) a year ago. The real story:
+  a $23M March-2025 RMB deposit with Bi Cheng Investment Management, now
+  marked at $24.53M (98% of total assets) on yuan appreciation alone —
+  no investment identified after 18+ months, returnable only with Bi
+  Cheng's agreement. Cash just $45,480; related-party payables (mostly
+  director advances) rose to $2.06M; going-concern warning present; a
+  June S-1 suggests a share offering is coming. netIncomeYoyPct/
+  epsYoyPct/operatingMarginPct all omitted as n/m (loss-to-profit,
+  margin ~-4,024% on a tiny revenue base).
+- **ATRA** (Atara Biotherapeutics) — Q2 2026, new company, T-cell
+  immunotherapy biotech (post-manufacturing-handoff to partner Pierre
+  Fabre), from the 10-Q filed 2026-08-12: https://financialreportinsights.com/companies/atra/2026/q2
+  — revenue -96.4% to $0.63M from $17.58M (prior year included one-time
+  deferred-revenue recognition from the Pierre Fabre manufacturing
+  handoff). Swung to a $4.83M net loss (-$0.32/share) from a $2.39M
+  profit ($0.19/share) — total costs fell 63% to $5.35M after a June
+  staff cut to ~10 employees. Cash $9.9M, operating cash use $3.3M this
+  quarter; going-concern ("substantial doubt") warning present despite
+  management saying cash lasts "into mid-2027"; shares outstanding +29%
+  in six months via the ATM program. A $9.0M HCRx payment is due
+  2028-01-01 if a partner milestone isn't met. Value now hinges on
+  Pierre Fabre resubmitting tab-cel's US application (would trigger a
+  $31M milestone) after two prior FDA rejection letters, the second
+  (Jan 2026) saying the main trial was no longer adequate.
+  netIncomeYoyPct/epsYoyPct/operatingMarginPct all omitted as n/m
+  (loss-to-profit comparison, ~-749% margin on tiny revenue).
+- All 5 companies this batch sanity-checked live via cache-busted fetch
+  (Takeaway + Source filing present, no truncation) before being marked
+  done in the tracker. No skips, no collisions this batch.
+- **Total tonight so far: 23 report-periods published, 2 skipped** —
+  23/~35 of tonight's cap. `next-batch` continues past ATRA next.
