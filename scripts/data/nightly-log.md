@@ -8692,3 +8692,41 @@ ATRO, ATTO, ATTT, ATXG — 5 opus subagents dispatched in parallel):
   +32% this quarter with ~1.07M more shares agreed post-quarter at
   $4.80 (roughly halving existing holders' stake). netIncomeYoyPct/
   epsYoyPct omitted as n/m (loss-to-profit).
+- **ATTT** (Atlas Trinity Tech, formerly Raytech Holding/RAY) — FY2026
+  ANNUAL (fiscal year ended 2026-03-31), new company, Hong Kong-based
+  BVI foreign private issuer — appliance sourcing plus a newly added
+  design/advisory unit (started 2025-10-01) and marketing agency Worry
+  free (bought 2025-12-29); began trading as ATTT on Nasdaq 2026-09-10.
+  From the 20-F filed 2026-07-31: https://financialreportinsights.com/companies/attt/2026/annual
+  — figures in HKD. Revenue +81.1% to HK$142.6M (~US$18.2M); HK$44.2M of
+  the increase is the new design unit and Worry free, original
+  appliance-sourcing business grew 25.0% on its own. Net income +101.9%
+  to HK$16.7M, operating margin 12.6% vs 9.7%. Diluted EPS fell 5.4% to
+  HK$7.19 despite the profit growth because weighted shares more than
+  doubled after a July 2025 raise. Operations used HK$14.5M of cash
+  despite the profit — receivables grew from HK$8.1M to HK$67.8M (the
+  design unit's year-end receivable equals its entire annual revenue;
+  management says since fully collected). ~95% of the Worry free
+  purchase price was booked as goodwill. Kept selling new shares at
+  falling prices since year-end (3.15M shares at $1.97 in June 2026,
+  then an agreed-not-yet-closed 11.75M shares at $1.27 on 2026-09-28).
+  CFO and audit-committee chair both resigned August 2026. No going-
+  concern warning, clean audit opinion.
+- All 5 companies this batch (ATRC, ATRO, ATTO, ATTT, ATXG) sanity-
+  checked live via cache-busted fetch (Takeaway + Source filing present,
+  no truncation) before being marked done in the tracker. No skips, no
+  collisions this batch.
+- **Total tonight: 28 report-periods published, 2 skipped** — 28/~35
+  of tonight's cap.
+
+**End of this firing:** stopping at 28/35 to leave headroom under the
+cap for any later firing tonight; `next-batch` continues at ATTU next
+(or whatever the backlog shows after ATTT) for whoever picks this up
+next. Tier 0 (fresh filings), the hot list and the full S&P 500 remain
+fully clear — this entire session worked the us-listed backlog only.
+No research subagent came back incomplete this firing; every company
+attempted was either published (23 new reports) or correctly skipped
+(2 pre-merger SPACs, screened directly via EDGAR without spending a
+subagent call). Deployment (financial-reports-web.vercel.app, used as
+SITE_URL since financialreportinsights.com timed out from this
+container) stayed healthy throughout.

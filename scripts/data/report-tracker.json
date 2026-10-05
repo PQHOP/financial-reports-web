@@ -21371,5 +21371,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-05"
+  },
+  "ATTT": {
+    "name": "Atlas Trinity Tech Limited - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/attt/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "20-F (FY2026 annual, formerly Raytech Holding/RAY)",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 FY2027 results, six months to 2026-09-30)",
+      "estimate": "2026-12-15",
+      "basis": "foreign private issuer, no 10-Q; estimate from typical reporting cycle, not a company-given date",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
   }
 }
