@@ -21393,5 +21393,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-05"
+  },
+  "AUBN": {
+    "name": "Auburn National Bancorporation, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/aubn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings release)",
+      "estimate": "2026-10-28",
+      "basis": "prior releases were 2026-04-28 and 2026-07-28; 10-Q usually follows ~2 weeks later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
   }
 }

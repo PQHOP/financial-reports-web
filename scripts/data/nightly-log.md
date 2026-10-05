@@ -8719,14 +8719,24 @@ ATRO, ATTO, ATTT, ATXG — 5 opus subagents dispatched in parallel):
 - **Total tonight: 28 report-periods published, 2 skipped** — 28/~35
   of tonight's cap.
 
-**End of this firing:** stopping at 28/35 to leave headroom under the
-cap for any later firing tonight; `next-batch` continues at ATTU next
-(or whatever the backlog shows after ATTT) for whoever picks this up
-next. Tier 0 (fresh filings), the hot list and the full S&P 500 remain
-fully clear — this entire session worked the us-listed backlog only.
-No research subagent came back incomplete this firing; every company
-attempted was either published (23 new reports) or correctly skipped
-(2 pre-merger SPACs, screened directly via EDGAR without spending a
-subagent call). Deployment (financial-reports-web.vercel.app, used as
-SITE_URL since financialreportinsights.com timed out from this
-container) stayed healthy throughout.
+**Seventh batch this firing** (`next-batch -- --n 5` after ATTT: AUBN,
+AUC, AUDC, AUGO, AUPH — 5 opus subagents dispatched in parallel; with
+28/35 used, this batch would reach 33/35 if all 5 land, still under
+the cap):
+
+- **AUBN** (Auburn National Bancorporation) — Q2 2026, new company,
+  Alabama community bank, from the 10-Q filed 2026-08-11:
+  https://financialreportinsights.com/companies/aubn/2026/q2 — net
+  income +25.4% to $2.30M, diluted EPS +26.9% to $0.66. Tax-equivalent
+  NIM widened to 3.33% from 3.18% (loan yields 5.70% vs 5.53%,
+  interest-bearing deposit costs down to 1.61% from 1.74%). Total
+  revenue +7.8% to $8.77M, net interest income +7.4% to $7.89M.
+  Efficiency ratio 68.80%, Bank-level CET1 16.26% (no year-ago
+  comparison disclosed; rotcePct not reported). Two roughly offsetting
+  one-offs: a $390K accrual for a mortgage-lien-release loss (insurance
+  claim filed, no recovery booked yet) vs a $248K reserve release
+  (against a $113K provision charge a year ago). Credit quality clean
+  (just $64K nonaccrual, a net recovery this quarter, charge-off ratio
+  -0.01% annualized); reserve down to 1.14% of loans. Most of the
+  deposit growth to $988.3M is reciprocal deposits brought back
+  on-balance-sheet ($82.3M), not new customer money.
