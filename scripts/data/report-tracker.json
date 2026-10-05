@@ -21095,5 +21095,83 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-05"
+  },
+  "ATII": {
+    "name": "Archimedes Tech SPAC Partners II Co. - Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger blank-check SPAC, trust-account-only balance sheet, no operations — 10-Q filed 2026-08-13 confirms 'had not commenced any operations'; a DEFM14A merger proxy is pending but the business combination hasn't closed",
+    "lastChecked": "2026-10-05"
+  },
+  "ATLQ": {
+    "name": "JAB Acquisition Corp I - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger blank-check SPAC, trust-account-only balance sheet, no operations — 10-Q filed 2026-08-14 confirms 'had not commenced any operations'",
+    "lastChecked": "2026-10-05"
+  },
+  "ATLO": {
+    "name": "Ames National Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/atlo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "past cadence: earnings 8-K ~3 weeks after quarter-end, 10-Q ~5 weeks after",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ATLC": {
+    "name": "Atlanticus Holdings Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/atlc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ATLX": {
+    "name": "Atlas Lithium Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/atlx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
   }
 }

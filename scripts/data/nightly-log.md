@@ -8468,3 +8468,74 @@ ATGL, ATHE, ATHR — 5 opus subagents dispatched in parallel):
   collisions this batch.
 - **Total tonight so far: 15 report-periods published** — 15/~35 of
   tonight's cap. `next-batch` continues past ATHR next.
+
+**Fourth batch this firing** (`next-batch -- --n 5` after ATHR: ATII,
+ATLC, ATLO, ATLQ, ATLX). Pre-screened ATII and ATLQ directly via EDGAR
+`data.sec.gov/submissions` + their latest 10-Qs before dispatching
+subagents (saves a full opus research pass on an uninteresting SPAC
+check):
+- **ATII** (Archimedes Tech SPAC Partners II) — skipped. 10-Q filed
+  2026-08-13 confirms "had not commenced any operations"; blank-check
+  Cayman SPAC, trust-account-only balance sheet. A DEFM14A merger proxy
+  is pending but the business combination hasn't closed yet.
+- **ATLQ** (JAB Acquisition Corp I) — skipped. 10-Q filed 2026-08-14,
+  same pattern: blank-check Cayman SPAC, "had not commenced any
+  operations," trust account only.
+- Dispatched 3 opus subagents for the remaining real operating companies:
+  ATLC, ATLO, ATLX.
+- **ATLO** (Ames National) — Q2 2026, new company, Iowa community bank
+  holding company, from the 10-Q filed 2026-08-07:
+  https://financialreportinsights.com/companies/atlo/2026/q2 — net
+  income +31.5% to $5.9M ($0.67/share, +31.4%). Net interest income
+  +21.7% to $16.4M, NIM widened to 3.18% (tax-adjusted) from 2.65% on
+  bond reinvestment at higher yields (2.19% -> 2.92%) and lower deposit
+  costs (1.94% -> 1.71%); net loans fell 2.2% to $1.25B. Efficiency
+  ratio improved to 58.52% from 64.34% despite costs +7.8% (includes
+  ~$300K/quarter of consultant fees expected to continue through 2026).
+  Credit quality is the flag: substandard loans more than doubled to
+  $50.7M from $23.5M, 30+ day delinquencies rose to $22.5M, problem
+  loans 1.55% of loans vs an Iowa peer average of 0.60% — reserve only
+  1.36% of loans against that. CET1 15.4% (vs 14.3% at 2025 year-end,
+  no year-ago comparison disclosed). netChargeOffRatioPct/rotcePct
+  omitted (not disclosed by the filing).
+- **ATLC** (Atlanticus Holdings) — Q2 2026, new company, consumer
+  credit/credit card issuer (bank-profile metrics), from the 10-Q filed
+  2026-08-06: https://financialreportinsights.com/companies/atlc/2026/q2
+  — total operating revenue +89.0% to $744.3M, net income attributable
+  +62.6% to $49.7M, diluted EPS +65.6% to $2.50. Managed receivables
+  +126% to $6,891.2M, but $3,054.3M of that is the Mercury card
+  portfolio bought September 2025 — ex that, receivables grew ~26%.
+  Atlanticus's own (after-charge-off) net interest margin fell to 9.3%
+  from 11.7% as Mercury's lower-yielding cards diluted loan yield by 4.9
+  points, only partly offset by a 2.3-point better charge-off rate
+  (17.7% vs 20.0%). EPS growth leaned on a $41.4M loan-revaluation gain
+  (vs $17.1M a year ago) plus a $5.5M gain from cutting an earnout
+  liability to Mercury's sellers — ex both, pre-tax income was ~$19M vs
+  ~$23M a year ago (subagent's own arithmetic, labelled as such).
+  Private-label 90+ day delinquencies rose to 4.7% from 3.8%. Completed
+  sale of the small CAR auto-finance business (8-K filed 2026-09-17).
+  operatingMarginPct omitted (bank-style profile used instead).
+- **ATLX** (Atlas Lithium) — Q2 2026, new company, Brazil lithium
+  mine developer (holds ~20.16% of, and consolidates, Atlas Critical
+  Minerals/ATCX, published earlier tonight), from the 10-Q filed
+  2026-08-14: https://financialreportinsights.com/companies/atlx/2026/q2
+  — no lithium revenue yet. Net loss widened to $10.2M from $5.6M; EPS
+  loss $0.35 vs $0.31 (grew less than net loss because average share
+  count +63%). G&A rose to $9.5M from $4.5M, mostly legal/consulting
+  costs for the Neves expansion permit, which was granted June 29 after
+  construction/assembly contractors were signed in April/May. H1
+  operating cash use more than doubled to $18.2M, funded by $11.3M of
+  new Atlas share sales plus $9.6M from ATCX's January IPO; mine capex
+  itself fell to $2.0M from $6.3M. Cash $36.1M at quarter-end, but $10.0M
+  of convertible notes due 2026-11-07 (conversion price $28.225 vs ~$5
+  recent share price — will almost certainly need repayment or
+  refinancing). No going-concern warning, though the 10-Q flags that
+  missing financing "could raise substantial doubt." revenue/netIncome/
+  eps YoY and operatingMarginPct all omitted as n/m (zero-revenue base,
+  loss-to-loss).
+- All 3 companies this batch (ATLC, ATLO, ATLX) sanity-checked live via
+  cache-busted fetch (Takeaway + Source filing present, no truncation)
+  before being marked done in the tracker. ATII and ATLQ correctly
+  skipped without a subagent call. No collisions this batch.
+- **Total tonight so far: 18 report-periods published, 2 skipped** —
+  18/~35 of tonight's cap. `next-batch` continues past ATLX next.
