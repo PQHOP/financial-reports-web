@@ -8290,3 +8290,87 @@ total and exit immediately without starting a new batch.
 - Running total after this batch: **5 report-periods published tonight**
   (ASTE, ASTH, ASTI, ASTS, ASTL) — 5/~35 of tonight's cap. `next-batch`
   continues at ASUR next.
+
+**Second batch this firing** (`next-batch -- --n 5` after ASTL: ASUR,
+ASYS, ATAI, ATAT, ATCX — 5 opus subagents dispatched in parallel):
+
+- **ASUR** (Asure Software) — Q2 2026, new company, HR/payroll SaaS, from
+  the 10-Q filed 2026-07-30: https://financialreportinsights.com/companies/asur/2026/q2
+  — revenue +23.2% to $37.1M (recurring revenue +18.8% to $34.0M), mostly
+  from the Lathem time-clock acquisition (closed 2025-07-01, contribution
+  not separately disclosed) — Q3 guidance of $38-40M implies only ~5-10%
+  growth once Lathem is in both years. Net loss narrowed to $4.4M
+  (-$0.15/share) from $6.1M; adjusted EBITDA +48% to $7.7M (20.9% margin).
+  FY guidance unchanged at $159-163M revenue, adjusted EBITDA margin floor
+  raised from 23% to 24%. H1 FCF roughly breakeven after $6.8M capitalized
+  software; corporate cash fell to $19.7M from $25.2M; interest on the
+  $60M MidCap loan more than doubled to $1.8M/quarter. netIncomeYoyPct/
+  epsYoyPct omitted (loss-to-loss, misleading).
+- **ASYS** (Amtech Systems) — Q2 2026 (Amtech's fiscal Q3; fiscal year
+  ends Sept 30), new company, semiconductor/AI-packaging equipment, from
+  the 10-Q filed 2026-08-05: https://financialreportinsights.com/companies/asys/2026/q2
+  — revenue +14.5% to $22.4M, near guidance top, almost all from Thermal
+  Processing Solutions (AI chip packaging/server reflow ovens, +24.9% to
+  $17.7M, orders 1.37x shipments); SFS (silicon-carbide) segment -13.3%
+  and swung to a small operating loss. Gross margin 50.0% vs 41.5%
+  (ex a one-time $1.0M payroll-tax refund last year). GAAP EPS $0.10 vs
+  $0.01 (netIncomeYoyPct/epsYoyPct omitted, tiny prior-year base). $60M
+  June share sale lifted cash to $83.1M but diluted share count +12%. Q3
+  guidance $22.5-24.0M, backlog $28.7M covers it; two customers hold 45%
+  of backlog. CEO change Aug 13 (Shechter replaced Daigle).
+- **ATAI** (AtaiBeckley) — Q2 2026, new company, clinical-stage
+  psychedelics/CNS biotech (renamed from ATAI Life Sciences N.V. after
+  buying Beckley Psytech, 2025-11-05; redomiciled to Delaware 2025-12-30),
+  from the 10-Q filed 2026-08-11: https://financialreportinsights.com/companies/atai/2026/q2
+  — R&D spend +153% to $28.1M ($10.1M from BPL-003, now in Phase 3,
+  acquired with Beckley); operating loss +75% to $44.1M. Net loss $32.5M
+  vs $27.7M, cushioned by a $27.2M paper gain on COMPASS Pathways shares
+  partly offset by an $18.8M warrant-liability loss — ex those, loss would
+  be ~$41.7M. EPS -$0.09 vs -$0.14, improvement entirely from 84% more
+  shares (would be ~-$0.17 on last year's share count). **This is the
+  company's last quarterly report**: Eli Lilly's acquisition closed
+  2026-09-11 ($6.75/share cash + up to $2.50 CVR tied to drug milestones),
+  stock delisted from Nasdaq, Form 15 deregistration intended — tracker
+  entry marks no further filing expected (confirmed from the 10-Q itself).
+  Cash runway language downgraded from "into 2029" (Q1 10-Q) to "at least
+  12 months" (Q2, pending-merger framing). revenue/netIncome/eps YoY and
+  operatingMarginPct omitted as n/m.
+- **ATAT** (Atour Lifestyle) — Q2 2026, new company, Chinese hotel chain,
+  foreign private issuer (no 10-Q), from the 6-K earnings release filed
+  2026-08-20: https://financialreportinsights.com/companies/atat/2026/q2
+  — figures in CNY millions (EPS is per ADS, 1 ADS = 3 ordinary shares).
+  Net revenue +41.4% to RMB3,490m (retail +63.2% to RMB1,575m, now 45% of
+  sales); hotel count +19.2% to 2,175; net income +29.0% to RMB548m,
+  diluted EPS RMB3.99/ADS (+31.7%). But same-hotel RevPAR (hotels open
+  >18mo) fell 3.0%, worse than Q1's -1.7% — growth is coming from new
+  openings, not existing hotels doing better. Operating margin fell to
+  22.2% from 24.2% as retail costs/marketing outpaced sales; a RMB41m
+  jump in government subsidies flattered operating profit (ex that,
+  profit grew ~23%, margin ~20.9%). Cash conversion strong (operating
+  cash flow 1.5x net income); dividends (RMB492m) + buybacks (RMB360m)
+  used the whole quarter's operating cash flow, buybacks adding ~2.6pp to
+  EPS growth. FY2026 revenue guidance raised across the year: 20-24%
+  (March) -> 24-28% (May) -> 30% now, implying only ~19% H2 growth vs 44%
+  in H1.
+
+- All 10 companies this firing (ASTE, ASTH, ASTI, ASTS, ASTL, ASUR, ASYS,
+  ATAI, ATAT, ATCX) sanity-checked live via cache-busted fetch (Takeaway +
+  Source filing present, no truncation) before being marked done in the
+  tracker. No skips, no collisions this firing.
+- **Total tonight so far: 10 report-periods published** — 10/~35 of
+  tonight's cap. `next-batch` continues at ATEC next (Alphatec Holdings).
+- **ATCX** (Atlas Critical Minerals) — H1 2026 (foreign private issuer,
+  20-F/6-K filer, no 10-Q), new company, iron-ore/graphite/lithium-rights
+  development, from the 6-K filed 2026-07-31:
+  https://financialreportinsights.com/companies/atcx/2026/h1 — net loss
+  nearly doubled to $5.37M from $2.80M (EPS -$1.08 vs -$0.94, up only 15%
+  because share count grew 66% after the January Nasdaq IPO). G&A rose to
+  $2.93M from $1.32M and stock comp to $2.37M from $1.36M while
+  exploration spend was only $0.245M — overhead outran exploration >20:1.
+  Revenue $74K (one iron-ore lessee); quartzite quarry restart slipped
+  from H2 2026 to Q1 2027. Cash $5.54M, no debt, ~10 months of runway at
+  current burn. FY2025 20-F's going-concern doubt not repeated in this
+  interim filing. BMR option (60 more mineral rights, $8M) status as of
+  2026-09-29 unclear — no filing says exercised/extended/lapsed.
+  revenue/netIncome/eps YoY and operatingMarginPct all omitted as n/m
+  (loss-to-loss, non-comparable revenue bases).
