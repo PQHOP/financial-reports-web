@@ -2,7 +2,7 @@ import Link from "@/components/Link";
 import { prismaCached as prisma } from "@/lib/prisma";
 import { ReportCard } from "@/components/ReportCard";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_NAME, SITE_SAME_AS, SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
 import type { Metadata } from "next";
@@ -123,6 +123,7 @@ export default async function Home() {
           "@type": "WebSite",
           name: SITE_NAME,
           url: SITE_URL,
+          publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, sameAs: SITE_SAME_AS },
           potentialAction: {
             "@type": "SearchAction",
             target: `${SITE_URL}/search?q={search_term_string}`,

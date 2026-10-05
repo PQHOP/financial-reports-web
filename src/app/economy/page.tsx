@@ -4,7 +4,7 @@ import { EconomyDashboard } from "@/components/economy/EconomyDashboard";
 import { JsonLd } from "@/components/JsonLd";
 import { INDICATORS, LIVE_INDICATORS, type MapData } from "@/lib/macro";
 import { loadMacro } from "@/lib/macroStore";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_NAME, SITE_SAME_AS, SITE_URL } from "@/lib/site";
 import bundledWeo from "@/data/macro.json";
 import mapJson from "@/data/world-map.json";
 
@@ -50,7 +50,7 @@ export default async function EconomyPage() {
             "https://data.bis.org/",
             "https://data-explorer.oecd.org/",
           ],
-          publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+          publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, sameAs: SITE_SAME_AS },
           dateModified: live.updatedAt,
         }}
       />

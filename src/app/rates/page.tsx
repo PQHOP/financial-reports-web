@@ -15,7 +15,7 @@ import {
   moveKind,
   rateLabel,
 } from "@/lib/rates";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_NAME, SITE_SAME_AS, SITE_URL } from "@/lib/site";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
 export const revalidate = 3600;
@@ -67,7 +67,7 @@ export default async function RatesPage() {
           spatialCoverage: "World",
           variableMeasured: ["Central bank policy rate", "Consumer price inflation", "10-year government bond yield"],
           isBasedOn: ["https://data.bis.org/", "https://data.imf.org/", "https://data-explorer.oecd.org/"],
-          publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+          publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, sameAs: SITE_SAME_AS },
           dateModified: live.updatedAt,
         }}
       />

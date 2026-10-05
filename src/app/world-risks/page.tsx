@@ -5,7 +5,7 @@ import { RiskMap } from "@/components/worldRisks/RiskMap";
 import { ImpactBody } from "@/components/worldRisks/ImpactBody";
 import { LEVEL_COLOR, LEVEL_LABEL, formatEventDate } from "@/components/worldRisks/riskStyle";
 import type { MapData } from "@/lib/macro";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_NAME, SITE_SAME_AS, SITE_URL } from "@/lib/site";
 import {
   bySeverity,
   fetchChokepoints,
@@ -335,7 +335,7 @@ export default async function WorldRisksPage() {
             "https://www.who.int/emergencies/disease-outbreak-news",
             "https://portwatch.imf.org/",
           ],
-          publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+          publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, sameAs: SITE_SAME_AS },
         }}
       />
       <div>

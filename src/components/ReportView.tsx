@@ -7,7 +7,7 @@ import { ReportContent } from "@/components/ReportContent";
 import { ReportCard } from "@/components/ReportCard";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
-import { EDITORIAL_AUTHOR, SITE_NAME, SITE_URL, reportByline } from "@/lib/site";
+import { EDITORIAL_AUTHOR, SITE_NAME, SITE_SAME_AS, SITE_URL, reportByline } from "@/lib/site";
 import { realCoverImage, reportSearchTitle } from "@/lib/reportMeta";
 import { reportPath, reportUrl } from "@/lib/reportPath";
 import { articleKindLabels, articlePath } from "@/lib/articles";
@@ -270,7 +270,7 @@ export async function ReportView({ report }: { report: FullReport }) {
       name: isCommunity ? report.author : EDITORIAL_AUTHOR,
       ...(isCommunity ? {} : { url: `${SITE_URL}/about` }),
     },
-    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
+    publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL, sameAs: SITE_SAME_AS },
     ...(cover ? { image: [cover] } : {}),
     about: {
       "@type": "Corporation",
