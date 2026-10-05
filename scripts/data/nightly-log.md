@@ -8816,22 +8816,68 @@ the cap):
   checked live via cache-busted fetch (Takeaway + Source filing
   present, no truncation) before being marked done in the tracker. No
   skips, no collisions this batch.
-- **Total tonight: 33 report-periods published, 2 skipped** — 33/~35
-  of tonight's cap.
+- **Total after 7th batch: 33 report-periods published, 2 skipped** —
+  33/~35 of tonight's cap.
 
-**End of this firing:** stopping at 33/35 — effectively at the cap,
-leaving only ~2 of headroom for a later firing tonight. `next-batch`
-continues in the us-listed backlog right after AUPH. Tier 0 (fresh
-filings), the hot list and the full S&P 500 remain fully clear — this
-entire firing worked the us-listed backlog only, across 7 batches of
-up to 5 companies each. No research subagent came back incomplete;
-every company attempted was either published (31 new reports across
-this firing) or correctly skipped (2 pre-merger SPACs, screened
-directly via EDGAR without spending a subagent call, saving budget).
-Deployment (financial-reports-web.vercel.app, used as SITE_URL since
-financialreportinsights.com timed out from this container) stayed
-healthy throughout — every single published page was sanity-checked
-live via a cache-busted fetch (Takeaway callout + Source filing link
-present, no truncation) before being marked done in the tracker. A
-later firing tonight should see this total and exit immediately, or
-do at most one or two more companies before the cap.
+**Eighth batch — new firing, fresh container** (separate session from the
+7 batches above; mechanism/setup notes already covered at the top of
+this entry). Network check passed (SEC 403-without-UA then 200-with-UA
+as expected; `financialreportinsights.com` reachable this time, used
+directly as `SITE_URL` with `financial-reports-web.vercel.app` as
+fallback). Repo was again in detached HEAD on this firing's new
+container — checked out a proper tracking `master` and fast-forward
+pulled (26 commits behind after the prior firing's pushes), no lost
+work. Re-ran `npm run scan-recent-filings` for tier 0: **0 fresh
+candidates** (EDGAR shows nothing filed 2026-10-03 through 10-05 yet —
+same as the prior firing's scan). With only 2 report-periods of
+headroom left before the ~35 cap, ran `next-batch -- --n 2` instead of
+the usual 5 to stay exactly within budget: AUR, AURA (both us-listed
+backlog, right after AUPH).
+
+- **AUR** (Aurora Innovation) — Q2 2026, new company, autonomous
+  trucking (Driver-as-a-Service), from the 10-Q filed 2026-07-29:
+  https://financialreportinsights.com/companies/aur/2026/q2 — net loss
+  widened to $270M from $201M on $2M revenue; cost of revenue ($7M) ran
+  3.5x revenue. $32M of the wider loss is a non-cash warrant/earnout
+  fair-value swing; the rest is higher R&D ($211M) and SG&A ($50M). Six-
+  month operating cash use rose to $384M, partly a $63M bonus paid in
+  cash (funded via at-the-market share sales) instead of stock. Cash +
+  investments $1.22B, roughly six quarters of runway at the guided
+  $190–220M/quarter burn; shares outstanding +10.7% YoY. FY2026 guidance
+  held: $14–16M revenue (more than half in Q4, vs only $3M H1 — back-
+  loaded), 200+ driverless trucks by year-end. Also covers the
+  2026-09-23 Investor Day 8-K (500k+ driverless miles, Hirschbach's
+  intent to run 500 trucks under DaaS, a 2030 target of 30,000+ trucks).
+  revenueYoyPct/netIncomeYoyPct/epsYoyPct/operatingMarginPct omitted as
+  n/m (tiny/zero revenue base, loss-to-loss, ~-13,000% margin).
+- **AURA** (Aura Biosciences) — Q2 2026, new company, clinical-stage
+  ophthalmic-oncology biotech (bel-sar for choroidal melanoma), from
+  the 10-Q filed 2026-08-11: https://financialreportinsights.com/companies/aura/2026/q2
+  — no product revenue. Net loss +68.9% to $45.6M (EPS -$0.48 vs -$0.47,
+  nearly flat per-share only because shares outstanding roughly
+  doubled, 63.6M to 103.5M). R&D +34% to $30.7M (CoMpass Phase 3 trial
+  and manufacturing); G&A tripled to $17.3M, mostly $10.3M non-cash
+  stock comp from new equity terms when founder de los Pinos handed the
+  CEO role to Natalie Holles (April 30). A $280.8M net raise (May 5,
+  $6.00/share) funded a $39.0M buyback of Matrix Capital's stake; cash +
+  securities $323.8M. August restructuring cut ~20% of staff (est.
+  $2.9–3.2M cost, mostly Q3) and scaled back the NMIBC bladder-cancer
+  program; CFO, Chief Legal Officer and CTO are all departing. Runway
+  guidance pushed from "into 2H 2028" to "into 1H 2029". CoMpass is
+  fully enrolled (108 patients, above target); topline data still
+  guided for 2H 2027. revenue/revenueYoyPct/netIncomeYoyPct/epsYoyPct/
+  operatingMarginPct omitted as n/m (zero revenue, loss-to-loss
+  comparison).
+- Both companies sanity-checked live via cache-busted fetch (Takeaway +
+  Source filing present, no truncation) before being marked done in
+  the tracker. No skips, no collisions this batch. No research subagent
+  came back incomplete.
+- **Total tonight: 35 report-periods published, 2 skipped — 35/~35,
+  at the cap.**
+
+**End of tonight:** stopping at 35/35, exactly at the cap. Tier 0
+(fresh filings), the hot list and the full S&P 500 remain fully clear;
+all 35 of tonight's reports came from the us-listed backlog. `next-batch`
+continues right after AURA for the next firing/night. Any further
+firing tonight should see this total and exit immediately without
+dispatching more subagents.
