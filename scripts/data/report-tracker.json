@@ -21415,5 +21415,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-05"
+  },
+  "AUDC": {
+    "name": "AudioCodes Ltd. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/audc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-04",
+      "basis": "foreign private issuer, no 10-Q; Q3 results normally come in early November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "AUGO": {
+    "name": "Aura Minerals Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/augo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-09",
+      "basis": "foreign private issuer, no 10-Q; Q2 release came ~5 weeks after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
   }
 }

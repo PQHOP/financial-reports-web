@@ -8740,3 +8740,35 @@ the cap):
   -0.01% annualized); reserve down to 1.14% of loans. Most of the
   deposit growth to $988.3M is reciprocal deposits brought back
   on-balance-sheet ($82.3M), not new customer money.
+- **AUDC** (AudioCodes) — Q2 2026, new company, Israeli VoIP/enterprise
+  communications (foreign private issuer, 6-K filer), from the 6-K
+  filed 2026-08-04: https://financialreportinsights.com/companies/audc/2026/q2
+  — revenue +3.1% to $63.0M, all from services (+6.2% to $34.6M, now
+  55% of revenue; products flat at $28.4M); recurring managed-
+  services/voice-AI revenue +20% to an $84M annual run-rate, voice-AI
+  itself +50%+. GAAP operating margin improved to 5.1% from 4.3%, but
+  FX losses and a 67% effective tax rate left net income at just $0.5M
+  ($0.02/share, +100% off a tiny base); H1 GAAP EPS fell to $0.09 from
+  $0.15. Non-GAAP net income -4.7% but non-GAAP EPS +7% to $0.15 purely
+  on 12% fewer shares after buybacks. H1 buybacks+dividends ($27.8M)
+  outspent free cash flow (~$16.6M), cash fell to $64.2M from $75.7M.
+  FY2026 guidance (revenue raised to $251-256M from $247-255M,
+  non-GAAP EPS $0.60-0.75 unchanged) is call-sourced, not in the
+  written release — labelled as such in the body, cross-checked across
+  two third-party call-transcript summaries after one source showed an
+  apparent transcription error.
+- **AUGO** (Aura Minerals) — Q2 2026, new company, Latin American gold/
+  copper miner (foreign private issuer, 6-K filer), from the 6-K filed
+  2026-08-05: https://financialreportinsights.com/companies/augo/2026/q2
+  — revenue +76% to $336.0M on a 35% higher realized gold price
+  ($4,304/oz) and 26% more ounces sold (78,414 GEO), mostly from mines
+  (Borborema, MSG) not in last year's comparable base. Record net
+  income $217.7M (diluted EPS $2.57, both up off a tiny $8.1M/$0.11
+  year-ago base — real but kept as reported, labelled as distorted by
+  the base), but $126.0M of that is a non-cash gain on gold hedges
+  capping Borborema's price at $2,400/oz; adjusted net income was
+  $97.4M (+164%). All-in sustaining cost +37% to $1,985/oz; H1 AISC
+  $1,906 already above the FY guidance range of $1,720-1,865. Settling
+  expiring hedges cost $37.2M cash this quarter with ~$301M of
+  derivative liabilities remaining. FY guidance of 340-390k ounces
+  needs ~91k ounces/quarter in H2 vs 75k in Q2.
