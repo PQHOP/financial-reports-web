@@ -20765,5 +20765,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-04"
+  },
+  "ASTE": {
+    "name": "Astec Industries, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/aste/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q1 2026 10-Q filed 2026-05-06, Q2 filed 2026-08-05; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ASTH": {
+    "name": "Astrana Health Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/asth/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-05",
+      "basis": "Q2 2026 earnings 8-K filed 2026-08-06, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ASTI": {
+    "name": "Ascent Solar Technologies, Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/asti/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "90-day cadence from the Q2 2026 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ASTL": {
+    "name": "Algoma Steel Group Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/astl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-10-29",
+      "basis": "Q3 2025 results 6-K was filed 2025-10-29; foreign private issuer, no 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ASTS": {
+    "name": "AST SpaceMobile, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/asts/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "Q1 2026 10-Q filed 2026-05-11, Q2 filed 2026-08-10; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
   }
 }

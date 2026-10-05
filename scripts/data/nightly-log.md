@@ -8195,3 +8195,98 @@ fully clear; `next-batch` is purely in the us-listed backlog (next pick
 will start at ASTE, which was screened as a real candidate this firing
 but held back to stay at the cap). Later firings tonight should see this
 total and exit immediately without starting a new batch.
+
+### 2026-10-05 night (16:00 UTC 2026-10-05 → 22:59 UTC 2026-10-05 / 01:00–07:59 JST 2026-10-06)
+
+- Mechanism: scheduled firing (automated `[SCHEDULED TASK]` prompt, no live
+  user), separate session/container from last night's. Network check
+  passed first thing (`curl https://www.sec.gov/` without a User-Agent
+  returned SEC's own 403 bot-block, not a proxy denial; retrying with the
+  required `User-Agent` header returned 200). `financialreportinsights.com`
+  timed out from this container but `https://financial-reports-web.vercel.app`
+  (same site) returned 200, so used that as `SITE_URL` for this firing.
+  `npm install` needed a dummy `DATABASE_URL` to get past the `prisma
+  generate` postinstall hook (no real DB access is needed for
+  `admin-publish`); reverted the resulting `package-lock.json` diff before
+  committing. Repo was in a detached-HEAD state matching `origin/master` —
+  checked out a proper tracking `master` branch, no lost work.
+- Ran tier 0 (`npm run scan-recent-filings`): **0 fresh candidates** (last
+  filings scanned were 2026-10-02; EDGAR has nothing newer yet this week).
+- `next-batch -- --n 5` continued the us-listed backlog right after ASST
+  (where last night's firing stopped at the cap): ASTE, ASTH, ASTI, ASTL,
+  ASTS. Dispatched 5 opus subagents in parallel, ticker-prefixed scratch
+  filenames.
+- Published (4 of 5 so far, all sanity-checked live via cache-busted fetch
+  — Takeaway + Source filing present, no truncation):
+  - **ASTE** (Astec Industries) — Q2 2026, new company, construction/mining
+    equipment, from the 10-Q filed 2026-08-05:
+    https://financialreportinsights.com/companies/aste/2026/q2 — net sales
+    $408.1M (+23.6%), but $48.6M of the $77.8M increase came from two
+    acquisitions (TerraSource, CWMF); organic growth ~8.8%. GAAP net
+    income fell 37.1% to $10.5M (EPS $0.45 vs $0.72) on acquisition-debt
+    interest expense ($7.1M vs $2.1M); adjusted EPS $0.94 (+4.4%).
+    Backlog +57.9% to $601.1M, driven by Materials Solutions (crushing/
+    screening, 142% book-to-bill, data-center demand) while Infrastructure
+    Solutions orders fell as asphalt-plant customers held back. FY2026
+    adjusted EBITDA guidance cut to $160–175M from $170–190M.
+  - **ASTH** (Astrana Health) — Q2 2026, new company, healthcare
+    management/IPA, from the 10-Q filed 2026-08-10:
+    https://financialreportinsights.com/companies/asth/2026/q2 — revenue
+    $972.5M (+48.5%), almost entirely the Prospect Medical acquisition
+    (closed 2025-07-01, contributed $281.5M of the $317.7M increase); pro
+    forma revenue was ~1% lower YoY. Net income attributable to Astrana
+    $19.7M (+109.5%), diluted EPS $0.40 (+110.5%), helped by a lower tax
+    rate and a fair-value gain; adjusted EPS $0.80. Care Partners segment
+    operating profit fell as cost of services rose to 89.3% of revenue;
+    receivables grew 24% in six months on flat sales. A cybersecurity
+    incident (8-K filed 2026-09-23, Item 1.05) is noted in the report.
+    FY2026 adjusted EBITDA guidance raised to $255–280M from $250–280M.
+  - **ASTI** (Ascent Solar Technologies) — Q2 2026, new company, thin-film
+    solar manufacturer, from the 10-Q filed 2026-08-06:
+    https://financialreportinsights.com/companies/asti/2026/q2 — revenue
+    $95,203 (small base, YoY omitted as n/m), still well below cost of
+    revenue ($160,795). Net loss narrowed to $1.83M from $2.07M only on
+    lower non-cash stock compensation; ex that, operating loss widened
+    ~10%. Cash rose to $14.5M (from $2.8M) on a $10.0M January placement
+    and $6.93M of warrant exercises — about 23 months of runway at the H1
+    burn rate. Share count more than doubled, which is most of why EPS
+    improved to -$0.19 from -$1.17. Going-concern doubt remains; no
+    guidance given.
+  - **ASTS** (AST SpaceMobile) — Q2 2026, new company, satellite
+    direct-to-cell communications, from the 10-Q filed 2026-08-10:
+    https://financialreportinsights.com/companies/asts/2026/q2 — revenue
+    $31.5M (up from $1.2M a year ago and $14.7M in Q1): $24.4M ground-
+    station equipment sales, $7.1M US government milestones. Net loss
+    attributable to shareholders widened to $230.9M (-$0.77/share) from
+    $99.4M, mostly a $125.9M write-off of the BlueBird 7 satellite (lost
+    after launch left it in too low an orbit). H1 capex $859M on
+    satellites/equipment; cash $2.72B at quarter-end (~$3.7B pro forma
+    after a July $1.15B convertible note). FY2026 revenue guidance
+    ($150–200M) unchanged, but the 10-Q quietly pushed the ~45-satellites-
+    in-orbit target from "by end of 2026" to "early 2027"; 12 BlueBirds in
+    orbit vs the 25 management says are needed for limited service.
+  - **ASTL** (Algoma Steel) — Q2 2026, new company, Canadian steel
+    producer (foreign private issuer, 40-F/6-K filer, no 10-Q), from the
+    6-K earnings release filed 2026-07-30:
+    https://financialreportinsights.com/companies/astl/2026/q2 — revenue
+    fell 54.6% to C$267.5M (currency is CAD, not USD) as shipments fell
+    61.6% to 181,473 tons after the 50% US tariff cut the US share of
+    shipments from 54% to 23%. Plate tons hit a record 125k (+21%) at a
+    20.2% higher price/ton (C$1,361), but cost/ton rose faster (+23.3% to
+    C$1,411). Net loss narrowed to C$96.0M from C$110.6M only on a C$45M
+    one-time insurance settlement and an FX gain — ex those, the pre-tax
+    loss widened to ~C$161M from ~C$116M. Adjusted EBITDA C$13.8M, inside
+    guidance but ~-C$31M without the insurance money. Q3 guidance (given
+    2026-10-01): ~145k tons, adjusted EBITDA -C$10M to -C$20M after an
+    August power-plant outage; the second electric furnace's first steel
+    slipped from Q3 to early Q4 and idle-plant costs stayed flat instead
+    of falling as earlier guided.
+- All 5 sanity-checked live via cache-busted fetch (Takeaway + Source
+  filing present, no truncation) before being marked done in the tracker.
+  No skips, no collisions this batch.
+- Skipped: none this batch.
+- Tier worked: 1 (2026 backlog, us-listed segment, S&P 500 and hot list
+  already fully clear).
+- Running total after this batch: **5 report-periods published tonight**
+  (ASTE, ASTH, ASTI, ASTS, ASTL) — 5/~35 of tonight's cap. `next-batch`
+  continues at ASUR next.
