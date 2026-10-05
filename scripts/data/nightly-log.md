@@ -8352,13 +8352,6 @@ ASYS, ATAI, ATAT, ATCX — 5 opus subagents dispatched in parallel):
   EPS growth. FY2026 revenue guidance raised across the year: 20-24%
   (March) -> 24-28% (May) -> 30% now, implying only ~19% H2 growth vs 44%
   in H1.
-
-- All 10 companies this firing (ASTE, ASTH, ASTI, ASTS, ASTL, ASUR, ASYS,
-  ATAI, ATAT, ATCX) sanity-checked live via cache-busted fetch (Takeaway +
-  Source filing present, no truncation) before being marked done in the
-  tracker. No skips, no collisions this firing.
-- **Total tonight so far: 10 report-periods published** — 10/~35 of
-  tonight's cap. `next-batch` continues at ATEC next (Alphatec Holdings).
 - **ATCX** (Atlas Critical Minerals) — H1 2026 (foreign private issuer,
   20-F/6-K filer, no 10-Q), new company, iron-ore/graphite/lithium-rights
   development, from the 6-K filed 2026-07-31:
@@ -8374,3 +8367,104 @@ ASYS, ATAI, ATAT, ATCX — 5 opus subagents dispatched in parallel):
   2026-09-29 unclear — no filing says exercised/extended/lapsed.
   revenue/netIncome/eps YoY and operatingMarginPct all omitted as n/m
   (loss-to-loss, non-comparable revenue bases).
+
+- All 10 companies this firing (ASTE, ASTH, ASTI, ASTS, ASTL, ASUR, ASYS,
+  ATAI, ATAT, ATCX) sanity-checked live via cache-busted fetch (Takeaway +
+  Source filing present, no truncation) before being marked done in the
+  tracker. No skips, no collisions this firing.
+- **Total tonight so far: 10 report-periods published** — 10/~35 of
+  tonight's cap. `next-batch` continues at ATEC next (Alphatec Holdings).
+
+**Third batch this firing** (`next-batch -- --n 5` after ATCX: ATEC, ATEX,
+ATGL, ATHE, ATHR — 5 opus subagents dispatched in parallel):
+
+- **ATEC** (Alphatec Holdings) — Q2 2026, new company, spine surgery
+  medical devices, from the 10-Q filed 2026-08-04: https://financialreportinsights.com/companies/atec/2026/q2
+  — revenue +15.1% to $213.5M (surgical ~$196M, +17%, on 20% case-volume
+  growth and 24% more net new surgeon users; EOS imaging ~flat at ~$18M
+  after May's guidance cut from $85M to $77M). Gross margin 72.2% vs
+  69.6%. Operating loss shrank to $1.9M from $13.1M; GAAP net loss $25.8M
+  (-$0.16/share) vs $41.1M (this quarter's $11.9M debt-extinguishment
+  loss replaced last year's $16.8M derivative loss — netIncomeYoyPct/
+  epsYoyPct omitted as n/m, loss-making both periods). Inventory ate
+  $34M of H1 cash; H1 free cash flow ~-$10M, needs $30M+ in H2 to hit the
+  ≥$20M FY target; cash falls to ~$55M after repaying $63.3M of 2026
+  convertible notes July 30. Management reaffirmed ~$882M FY revenue
+  guidance, raised adjusted EBITDA guidance to ~$140M from ~$134M.
+- **ATEX** (Anterix) — Q2 2026 (calendar quarter; fiscal Q1 FY2027,
+  fiscal year ends March 31), new company, 900 MHz spectrum
+  licensing to utilities, from the 10-Q filed 2026-08-11:
+  https://financialreportinsights.com/companies/atex/2026/q2 — revenue
+  +38% to $1.96M (slow lease-prepayment recognition); net income $0.24M
+  ($0.01 EPS) down from $25.2M ($1.35) — both quarters' profit is a
+  non-cash gain on narrowband-to-broadband license swaps ($10.7M on 6
+  counties this quarter vs $33.9M on 62 counties a year ago).
+  operatingMarginPct omitted as n/m (the -12.6% reported figure already
+  nets in the license gain; ex-gain, expenses run ~6.6x revenue).
+  Collected $15.7M of customer cash (mostly $13.8M from Ameren),
+  deferred revenue +36% to $174.9M; cash $116.0M, no debt ($20.3M of the
+  increase from option exercises). No guidance given; $33.1M of
+  contracted cash still to come, ~$9.6M by March 2027. First spectrum
+  sale ($13.0M of licenses held-for-sale) still pending close.
+- **ATGL** (Alpha Technology Group) — H1 FY2026 (six months to
+  2026-03-31; fiscal year ends Sept 30), new company, Hong Kong IT
+  services (BVI-incorporated foreign private issuer), from the 6-K filed
+  2026-09-30: https://financialreportinsights.com/companies/atgl/2026/h1
+  — figures in HKD. Revenue +48% to HK$4.53M (carpark-system/API
+  projects for Henderson Real Estate Agency); gross margin improved to
+  66.9% from 45.4% on cost cuts. Net loss nearly doubled to HK$10.05M —
+  donations/sponsorships + entertainment + travel together cost HK$6.66M
+  (~1.5x revenue) while other overheads fell (netIncomeYoyPct/epsYoyPct
+  omitted as n/m, loss-to-loss; epsDiluted is the subagent's own
+  calculation since the filing only says "less than HK$1", labelled as
+  such). Cash fell from HK$30.9M to HK$19.0M (~11 months of runway);
+  equity fell 41% to HK$14.5M. Pending: a non-binding March-2026 deal to
+  buy Rainbow Capital for US$68.85M in new shares (~25% dilution) from a
+  seller 60%-owned by ATGL's own CFO — flagged as a related-party
+  concern. Also flagged: a June 2026 "proprietary blockchain
+  infrastructure" claim contradicting the January 2026 20-F's statement
+  that the company doesn't develop or own blockchain technology.
+- **ATHE** (Alterity Therapeutics) — FY2026 ANNUAL (fiscal year ended
+  2026-06-30), new company, Australian clinical-stage biotech
+  (neurodegenerative disease, MSA focus), foreign private issuer, from
+  the 20-F filed 2026-08-28: https://financialreportinsights.com/companies/athe/2026/annual
+  — figures in AUD. Net loss nearly doubled to A$23.4M from A$12.1M (EPS
+  -A$0.1112 vs -A$0.095, or ~-A$1.33/ADS; ADS ratio changed to 1:12 after
+  a May 2026 1-for-50 share consolidation). R&D +22% to A$17.6M for Phase
+  3 prep; G&A +92% to A$10.5M mostly on share-based pay (A$4.49M vs
+  A$0.98M). FY2025 had included A$3.7M of one-off settlement income (ATO,
+  Catalent, an insurance claim) — ex that, the underlying loss rose ~47%
+  (~27% ex share-based pay too). Operating cash burn A$22.5M vs A$11.5M,
+  partly because no R&D tax refund landed this fiscal year (the FY2025
+  refund of A$3.94M arrived in July 2026, after year-end). Cash A$37.3M
+  (up from A$33.2M on a A$20.4M raise, but cash+deposits actually fell
+  from ~A$40.7M once a matured A$7.5M term deposit is counted). No going-
+  concern doubt stated; FDA agreed in June 2026 that one 200-patient,
+  12-month Phase 3 trial plus existing Phase 2 data could support
+  approval, trial activities due to start by year-end 2026 — current cash
+  doesn't cover that trial, so another dilutive raise looks likely before
+  any Phase 3 readout. revenue/revenueYoyPct/operatingMarginPct/
+  netIncomeYoyPct/epsYoyPct all omitted as n/m (no revenue, loss-to-loss).
+- **ATHR** (Aether Holdings) — Q3 2026 (fiscal quarter, calendar quarter
+  ended 2026-06-30; fiscal year ends Sept 30), new company, market-
+  sentiment research subscription site (SentimenTrader.com) plus
+  newsletter arm Alpha Edge Media, Nasdaq IPO April 2025 (not a SPAC),
+  from the 10-Q filed 2026-08-13: https://financialreportinsights.com/companies/athr/2026/q3
+  — revenue -4.0% to $0.329M as paid subscribers fell 11.7% to 2,076
+  (revenue/user +7.5% to $157); gross margin improved to 80.4% from
+  69.9% on analyst-salary cuts, but opex ran ~4.7x revenue, operating
+  margin -393.6%. Net loss widened to $1.34M (-$0.11/share) from $1.01M
+  (-$0.08) (netIncomeYoyPct/epsYoyPct omitted as n/m, loss-to-loss). Cash
+  fell to $2.41M from $4.42M despite a $3.24M May Streeterville secured
+  note; going-concern warning in the 10-Q; equity fell to $1.01M from
+  $4.52M. Streeterville can demand up to $375K/month in cash redemptions
+  starting 2026-11-13, plus a ~$572K monitoring fee if the May note is
+  still outstanding then. Pivoting into compute-hardware resale
+  (related-party Virtual Grid deal) and a $3.6M purchase of 60% of
+  Noviant. No guidance given.
+- All 5 companies this batch (ATEC, ATEX, ATGL, ATHE, ATHR) sanity-
+  checked live via cache-busted fetch (Takeaway + Source filing present,
+  no truncation) before being marked done in the tracker. No skips, no
+  collisions this batch.
+- **Total tonight so far: 15 report-periods published** — 15/~35 of
+  tonight's cap. `next-batch` continues past ATHR next.
