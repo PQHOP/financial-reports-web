@@ -8772,3 +8772,66 @@ the cap):
   expiring hedges cost $37.2M cash this quarter with ~$301M of
   derivative liabilities remaining. FY guidance of 340-390k ounces
   needs ~91k ounces/quarter in H2 vs 75k in Q2.
+- **AUC** (ATIF Holdings) — H1 2026 (fiscal H1, six months to
+  2026-01-31; fiscal year ends July 31), new company, now a China-
+  focused crypto/ICO-token investor (formerly a financial-consulting
+  advisory firm; foreign private issuer, 6-K/20-F filer), from the 6-K
+  filed 2026-06-05: https://financialreportinsights.com/companies/auc/2026/h1
+  — revenue $1.6M (up from $0.2M, four customers at $0.4M each), but
+  gross margin fell to 35% from 100% as $1.04M of fees now go to an
+  outside consulting firm doing the work. Net loss narrowed to $0.28M
+  from $2.27M; EPS -$0.04 vs -$3.36 (share count up >10x after an
+  October 2025 $29.3M raise). No cash collected from customers on a net
+  basis (receivables rose exactly as much as revenue). The real story:
+  by Jan 31 ATIF had prepaid $35.9M (89% of total assets) to an
+  unnamed third-party agent for an unnamed "ICO token" — cash fell from
+  $8.95M to $1.49M; in April 2026 it received 160M "AIAPP" tokens
+  valued at ~$23M (only part of the order, accounting treatment still
+  undecided). Going-concern language present (stronger in the MD&A
+  than the notes); a $600K advisory prepayment to the former CEO is
+  still on the balance sheet; a pending J.P. Morgan Securities lawsuit
+  for $5.06M has no provision booked; CFO resigned July 2026 (CEO now
+  interim CFO); post-period, paid $20M in shares for crypto startup
+  GoldCoin Labs (closed 2026-09-09). revenue/netIncome/eps YoY omitted
+  as n/m (tiny prior-year base, loss-to-loss, dilution distorts EPS).
+- **AUPH** (Aurinia Pharmaceuticals) — Q2 2026, new company, commercial-
+  stage biopharma (LUPKYNIS for lupus nephritis), from the 10-Q filed
+  2026-08-06: https://financialreportinsights.com/companies/auph/2026/q2
+  — total revenue +18.9% to $83.2M; LUPKYNIS net product sales +19.3%
+  to $79.4M (+8% on Q1), driven by more patients/cartons, not price.
+  Operating income +131% to $46.3M (55.7% margin vs 28.7%); net income
+  +73.9% to $37.4M, diluted EPS +75% to $0.28, despite the tax rate
+  rising to 23.3% from 2.9% (mostly non-cash, a deferred-tax-asset
+  drawdown). About half the operating-income jump is non-drug: "other
+  (income) expense" swung from a $9.2M cost to a $6.2M gain (mostly FX
+  on the Swiss-franc Monoplant lease plus one-time liability releases);
+  ex that swing, operating margin was ~48% vs ~42% — real improvement,
+  smaller than the headline. FY2026 guidance reiterated ($305-315M
+  product sales, $315-325M total revenue), implying ~$76-81M/quarter
+  in H2 — Q2's $79.4M is already near the top of that band. Covers the
+  Kezar acquisition (closed May 11, near cash-neutral) and the Teva
+  patent settlement (generic blocked until 2036-12-07 absent certain
+  contingencies; suits against six other generic makers still pending).
+- All 5 companies this batch (AUBN, AUC, AUDC, AUGO, AUPH) sanity-
+  checked live via cache-busted fetch (Takeaway + Source filing
+  present, no truncation) before being marked done in the tracker. No
+  skips, no collisions this batch.
+- **Total tonight: 33 report-periods published, 2 skipped** — 33/~35
+  of tonight's cap.
+
+**End of this firing:** stopping at 33/35 — effectively at the cap,
+leaving only ~2 of headroom for a later firing tonight. `next-batch`
+continues in the us-listed backlog right after AUPH. Tier 0 (fresh
+filings), the hot list and the full S&P 500 remain fully clear — this
+entire firing worked the us-listed backlog only, across 7 batches of
+up to 5 companies each. No research subagent came back incomplete;
+every company attempted was either published (31 new reports across
+this firing) or correctly skipped (2 pre-merger SPACs, screened
+directly via EDGAR without spending a subagent call, saving budget).
+Deployment (financial-reports-web.vercel.app, used as SITE_URL since
+financialreportinsights.com timed out from this container) stayed
+healthy throughout — every single published page was sanity-checked
+live via a cache-busted fetch (Takeaway callout + Source filing link
+present, no truncation) before being marked done in the tracker. A
+later firing tonight should see this total and exit immediately, or
+do at most one or two more companies before the cap.

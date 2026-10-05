@@ -21459,5 +21459,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-05"
+  },
+  "AUC": {
+    "name": "ATIF Holdings Limited - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/auc/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim, fiscal year ends July 31)",
+      "periodEnd": "2026-01-31",
+      "filedAt": "2026-06-05"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual, year ended 2026-07-31)",
+      "estimate": "2026-11-30",
+      "basis": "four-month deadline for foreign filers; may slip to December as it did in 2025",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "AUPH": {
+    "name": "Aurinia Pharmaceuticals Inc - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/auph/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 2026 10-Q filed 2026-05-07, Q2 filed 2026-08-06; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
   }
 }
