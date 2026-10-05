@@ -21283,5 +21283,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-05"
+  },
+  "ATRO": {
+    "name": "Astronics Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/atro/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-04",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "~90-day gap after the Q2 earnings release of 2026-08-11",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ATRC": {
+    "name": "AtriCure, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/atrc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "last year's Q3 10-Q was filed 2025-10-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ATTO": {
+    "name": "Attovia Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/atto/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (first periodic filing, post-IPO)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "estimated from normal post-IPO filing timing, not confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
+  },
+  "ATXG": {
+    "name": "Addentax Group Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-05",
+      "url": "/companies/atxg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (fiscal Q1 FY2027, calendar quarter ended 2026-06-30; fiscal year ends March 31)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (quarter ending 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "estimated from normal filing timing, not confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-05"
   }
 }

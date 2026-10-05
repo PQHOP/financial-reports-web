@@ -8622,3 +8622,73 @@ ATOM, ATOS, ATPC, ATRA — 5 opus subagents dispatched in parallel):
   done in the tracker. No skips, no collisions this batch.
 - **Total tonight so far: 23 report-periods published, 2 skipped** —
   23/~35 of tonight's cap. `next-batch` continues past ATRA next.
+
+**Sixth batch this firing** (`next-batch -- --n 5` after ATRA: ATRC,
+ATRO, ATTO, ATTT, ATXG — 5 opus subagents dispatched in parallel):
+
+- **ATRO** (Astronics) — Q2 2026, new company, aerospace/defense
+  electronics (cabin power, IFE&C, test systems), from the 10-Q filed
+  2026-08-12: https://financialreportinsights.com/companies/atro/2026/q2
+  — record sales +27.0% to $260.0M, led by Commercial Transport +21.6%
+  (seat motion sales more than doubled, IFE&C +19%; Oct-2025 Bühler
+  Motor Aviation acquisition added $5.9M). Operating margin 15.6% vs
+  2.3% a year ago (that quarter had ~$16.6M of one-off charges); diluted
+  EPS $0.75 vs $0.03. A $2.0M tariff refund and a 7.4% tax rate helped —
+  at a normal tax rate adjusted EPS would be $0.70, below the GAAP
+  figure; adjusted operating margin still roughly doubled to 16.6% from
+  8.9%. Record orders $306.2M (book-to-bill 1.18), backlog +20.9% to
+  $780.6M; Test Systems won a $44.7M Army radio test-set order but at
+  only 2.6% margin. H1 operating cash flow $40.7M vs $60.6M net income
+  (inventory building). FY2026 revenue guidance raised to $1.02-1.04B
+  from $970M-1B; Q3 guided $265-275M. netIncomeYoyPct/epsYoyPct are
+  real but very large (2568%/2400%) off a near-zero year-ago base —
+  kept, with the body explaining the distortion.
+- **ATRC** (AtriCure) — Q2 2026, new company, cardiac surgery/atrial
+  fibrillation medical devices, from the 10-Q filed 2026-07-27:
+  https://financialreportinsights.com/companies/atrc/2026/q2 — revenue
+  +12.8% to $153.6M (+12.4% ex-currency). Swung to $9.0M net income
+  from a $6.2M loss (EPS $0.18 vs -$0.13); operating margin 6.3% vs
+  -4.5%, gross margin +269bp to 77.2%. Pain management (cryoSPHERE MAX)
+  grew fastest, +26.9%; minimally-invasive "Hybrid" ablation fell 21% as
+  surgeons shift to pulsed field ablation catheters. About a third of
+  the $15.9M profit swing is just that last year's quarter carried a
+  one-off $5.0M PFA milestone payment. Receivables grew 20% since
+  year-end against 13.5% sales growth; share-based pay 8% of revenue.
+  FY guidance raised: adjusted EBITDA $85-89M (was $80-82M), GAAP EPS
+  $0.05-0.13 (was $0.00-0.04), revenue $602-610M — implies H2 adjusted
+  EBITDA roughly level with H1's $44.4M. netIncomeYoyPct/epsYoyPct
+  omitted as n/m (loss-to-profit).
+- **ATTO** (Attovia Therapeutics) — Q2 2026, new company, clinical-
+  stage biotech (itch/inflammatory disease), recently Nasdaq-IPO'd
+  (priced 2026-08-04), from the 10-Q filed 2026-09-02 (its first
+  periodic filing): https://financialreportinsights.com/companies/atto/2026/q2
+  — net loss widened 43% to $20.7M as R&D rose 39% to $18.9M (mostly
+  +$4.8M of outside trial/manufacturing costs for ATTO-1310/2306/1091).
+  First 2026 revenue, $0.45M, is research-services income (EndPath), not
+  drug sales. Cash $115.1M at June 30 (down from $152.3M at 2025
+  year-end) plus ~$305.4M net from the post-quarter IPO — management
+  says this funds operations "into 2030," no going-concern warning. EPS
+  of -$4.88 is distorted by the ~4.2M pre-IPO share count vs 45.7M
+  post-IPO shares; the $145.5M "stockholders' deficit" resolves now that
+  preferred stock has converted. Lead drug ATTO-1310's full Phase 1b
+  data expected Q4 2026. revenueYoyPct/netIncomeYoyPct/epsYoyPct/
+  operatingMarginPct all omitted as n/m (zero prior-year revenue base,
+  pre-IPO share count distorts EPS comparison).
+- **ATXG** (Addentax Group) — Q2 2026 (calendar quarter; fiscal Q1
+  FY2027, fiscal year ends March 31), new company, China-based
+  apparel/logistics plus a newly added Hong Kong consulting business,
+  from the 10-Q filed 2026-08-14: https://financialreportinsights.com/companies/atxg/2026/q2
+  — revenue +316% to $3.44M, almost entirely the new consulting line
+  (passes through 92% of its revenue to third parties; one customer is
+  60.8% of total company revenue). Logistics -10.6%; garment business
+  had zero revenue. Net profit $2.39M (EPS $2.93) is entirely a $3.02M
+  non-cash warrant-revaluation gain — ex that, pre-tax loss ~$0.64M and
+  operating loss widened to $0.68M from $0.35M (includes $451K of
+  immediately-vested share awards to the CEO/COO). Flagged heavily:
+  going-concern warning still in place (cash $0.76M vs $7.37M current
+  liabilities); ~$5.2M of related-party loans including $3.43M to CEO
+  Hong Zhida; a $12M note guaranteed by a CEO-controlled company; a
+  stake purchased from a COO-controlled business; shares outstanding
+  +32% this quarter with ~1.07M more shares agreed post-quarter at
+  $4.80 (roughly halving existing holders' stake). netIncomeYoyPct/
+  epsYoyPct omitted as n/m (loss-to-profit).
