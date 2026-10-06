@@ -9032,5 +9032,63 @@ dispatching more subagents.
     stock converted at the IPO. revenue/operatingMarginPct/YoY-percent
     fields omitted as not meaningful for a pre-revenue, post-IPO
     comparison.
-- **Total tonight: 9 report-periods published, 1 false-positive skip
-  (not counted against the cap) — 9/~35.**
+- `next-batch -- --n 5` continued right after AVLN: AVNW, AVO, AVPT, AVR,
+  AVT. Dispatched 5 opus subagents in parallel.
+- Published (5 of 5, all sanity-checked live via cache-busted fetch —
+  Takeaway + Source filing present, no truncation):
+  - **AVNW** (Aviat Networks) — FY2026 ANNUAL (fiscal year ends the
+    Friday nearest June 30; FY2026 was a 53-week year), new company,
+    wireless transport/microwave networking equipment, from the 10-K
+    filed 2026-08-27: https://financialreportinsights.com/companies/avnw/2026/annual
+    — revenue +1.2% to $439.7M (about flat on a 52-week basis); GAAP
+    operating income nearly doubled to $19.2M (4.4% margin vs 2.4%) on a
+    20.6% R&D cut, though gross margin slipped to 31.5%. An 80.8%
+    effective tax rate left GAAP EPS at $0.19 vs $1.66 non-GAAP. Backlog
+    +14% to $367M; FY2027 guidance $455-470M revenue / $50-55M adjusted
+    EBITDA (up from $36.7M).
+  - **AVO** (Mission Produce) — fiscal Q3 2026 (fiscal year runs
+    Nov-Oct), new company, avocado/mango grower-distributor, first
+    quarter including the Calavo Growers acquisition (closed 2026-05-28),
+    from the 10-Q filed 2026-09-08:
+    https://financialreportinsights.com/companies/avo/2026/q3 — revenue
+    +25.8% to $450.0M on 37.7% more avocado pounds sold, but average
+    price per pound fell 9.2%. Gross margin fell to 9.9% from 12.6%; with
+    $12.6M of deal/integration costs, net income swung to a $6.5M loss
+    (EPS -$0.08) from a $14.7M profit (EPS $0.21). On a pro forma basis
+    (both companies combined in both years) revenue actually fell 7%.
+    Debt rose to $400.4M from $95.8M. H2 FY26 adjusted EBITDA guidance of
+    $84-88M reaffirmed.
+  - **AVPT** (AvePoint) — Q2 2026, new company, Microsoft-365
+    data-governance SaaS, from the 10-Q filed 2026-08-06:
+    https://financialreportinsights.com/companies/avpt/2026/q2 — revenue
+    +22.0% to $124.5M (ahead of the company's own $120.3-122.3M
+    guidance), SaaS revenue +27.4% to $98.5M (79% of total). ARR $465.1M
+    (+27%), net retention 111%. GAAP operating margin rose to 8.2% from
+    7.0%, but non-GAAP margin fell to 16.3% from 18.4% on higher sales
+    spend. Net income $27.6M vs $2.9M — about $19.9M of that jump is a
+    one-time tax-reserve release, not operating improvement. Full-year
+    non-GAAP operating-income guidance cut to $86.4-88.4M from
+    $91.5-94.5M on higher planned H2 spending and FX.
+  - **AVR** (Anteris Technologies) — Q2 2026, new company, transcatheter
+    heart-valve device maker (DurAVR, pre-approval), from the 10-Q filed
+    2026-08-11: https://financialreportinsights.com/companies/avr/2026/q2
+    — only $1.0M revenue (+63%, legacy tissue products under a supply
+    deal that expired 2026-06-01). R&D +43% to $23.4M as the PARADIGM
+    pivotal trial scaled up (first US patients enrolled in May after
+    Medicare coverage in April). Net loss widened 40% to $29.1M; loss per
+    share narrowed to -$0.30 from -$0.58 only because share count roughly
+    tripled after a $320M January raise (incl. $90M from Medtronic, now
+    ~16% holder). Cash $260.9M, up from $12.6M at year-end; ~2.5 years of
+    runway at the H1 burn rate.
+  - **AVT** (Avnet) — FY2026 ANNUAL (fiscal year ends late June/early
+    July), new company, electronic-components distributor, from the
+    10-K filed 2026-08-14: https://financialreportinsights.com/companies/avt/2026/annual
+    — sales +24.5% to $27.63B (Q4 a record $8.30B, +47.7%); operating
+    margin rose to 2.6% from 2.3%; net income +39.2% to $334.4M, diluted
+    EPS +45.8% to $4.01 ($5.67 adjusted). The quality-check finding:
+    operating cash flow was -$280.9M against +$724.5M a year ago —
+    receivables grew 59%, well ahead of the 24.5% sales growth, and debt
+    rose to ~$3.21B. Q1 FY27 guidance: $9.00-9.30B sales, $2.80-2.90
+    adjusted EPS.
+- **Total tonight: 14 report-periods published, 1 false-positive skip
+  (not counted against the cap) — 14/~35.**

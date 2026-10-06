@@ -21839,5 +21839,168 @@
         "filedAt": "2026-08-12"
       }
     ]
+  },
+  "AVNW": {
+    "name": "Aviat Networks, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avnw/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-08-27",
+      "note": "fiscal year ends the Friday nearest June 30 (FY2026 was a 53-week year)"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ending ~2026-10-02)",
+      "estimate": "2026-11-04",
+      "basis": "past Q1 cadence plus FY26 pattern of earnings 8-K/10-Q same day",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avnw/2026/annual",
+        "periodEnd": "2026-07-03",
+        "filedAt": "2026-08-27"
+      }
+    ]
+  },
+  "AVO": {
+    "name": "Mission Produce, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avo/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-08",
+      "note": "fiscal year runs Nov 1-Oct 31; this is fiscal Q3 2026. First quarter including the Calavo Growers acquisition (closed 2026-05-28)"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, year ended 2026-10-31)",
+      "estimate": "2026-12-17",
+      "basis": "FY2025 10-K filed 2025-12-18",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avo/2026/q3",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-08"
+      }
+    ]
+  },
+  "AVPT": {
+    "name": "AvePoint, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avpt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025, Q1 2026 and Q2 2026 filings all landed the first Thursday of the second month after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avpt/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
+  "AVR": {
+    "name": "Anteris Technologies Global Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "Q3 2025 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avr/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-11"
+      }
+    ]
+  },
+  "AVT": {
+    "name": "Avnet, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avt/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-14",
+      "note": "fiscal year ends late June/early July; FY2026 was the 52 weeks ended 2026-06-27"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ending 2026-10-03)",
+      "estimate": "2026-10-28",
+      "basis": "earnings 8-K ~3.5 weeks after quarter end, 10-Q about a week after that",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avt/2026/annual",
+        "periodEnd": "2026-06-27",
+        "filedAt": "2026-08-14"
+      }
+    ]
   }
 }
