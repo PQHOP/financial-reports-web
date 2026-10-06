@@ -9148,5 +9148,65 @@ dispatching more subagents.
     $146K to $11.3M; auditors flagged a material weakness in internal
     controls; 3 customers are 63% of revenue, 1 supplier is 47% of
     costs.
-- **Total tonight: 19 report-periods published, 1 false-positive skip
-  (not counted against the cap) — 19/~35.**
+- `next-batch -- --n 5` continued right after AXG: AXGN, AXIN, AXSM,
+  AXTI, AYA. Dispatched 5 opus subagents in parallel.
+- **AXIN** (Axiom Intelligence Acquisition Corp 1) — skipped, not
+  published. Confirmed via its own 10-Q MD&A ("We have neither engaged
+  in any operations nor generated any revenues to date") that this is a
+  pre-merger SPAC (SIC 6770 Blank Checks) — Q2 2026 net income of
+  $747,721 is entirely trust-account interest minus SPAC overhead.
+  Pending business combination with Terra Quantum AG (BCA signed
+  2026-05-25) hadn't closed as of the latest Form 425 (2026-09-15). A
+  trust-interest-only report wouldn't be a meaningful financial-report
+  analysis, so left for after the de-SPAC closes.
+- Published (4 of 4, all sanity-checked live via cache-busted fetch —
+  Takeaway + Source filing present, no truncation):
+  - **AXGN** (Axogen) — Q2 2026, new company, peripheral-nerve-repair
+    devices/biologics, from the 10-Q filed 2026-07-29:
+    https://financialreportinsights.com/companies/axgn/2026/q2 —
+    revenue +23.1% to $69.7M (Breast product +50%+), but gross margin
+    fell to 72.7% from 74.2% on the costlier Avance biologics-licensed
+    product. Opex +30.9% flipped a $0.6M profit a year ago into a $1.5M
+    net loss (-$0.03/share); adjusted EPS flat at $0.12. FY guidance
+    raised to ≥24% growth (≥$279M) from ≥20%/$270M, alongside the $200M
+    BioCircuit/NerveTape acquisition (closed Oct 1, ~$6M Q4 impact,
+    outside guidance).
+  - **AXSM** (Axsome Therapeutics) — Q2 2026, new company, commercial
+    CNS/psychiatry biopharma (Auvelity, Sunosi, Symbravo), from the
+    10-Q filed 2026-08-10: https://financialreportinsights.com/companies/axsm/2026/q2
+    — revenue +45.5% to $218.4M (Auvelity +50.8% to $180.3M driving
+    most of it, newly launched for Alzheimer's-agitation in June). SG&A
+    +59.8% on a new national ad campaign and bigger sales force; net
+    loss widened slightly to $51.3M (-$0.99/share) from $48.0M (-$0.97)
+    — stripping out a Jazz-royalty revaluation gain, the underlying
+    operating loss actually widened more (~$6M). Cash $319.9M, debt
+    $188M; AXS-12 FDA decision due 2027-05-01.
+  - **AXTI** (AXT Inc) — Q2 2026, new company, semiconductor substrate
+    materials (GaAs/InP/germanium) with China exposure, from the 10-Q
+    filed 2026-08-13: https://financialreportinsights.com/companies/axti/2026/q2
+    — revenue +164.8% to $47.6M (vs $18.0M a year ago, $26.9M in Q1) on
+    InP wafer demand for data centers/PON as more Chinese export
+    permits came through (Europe +473%; US still ~$0.2M, no permits
+    yet). Gross margin jumped to 44.9% from 8.0%; net income $11.1M
+    ($0.17 EPS) vs a $7.0M loss a year ago — but H1 operating cash flow
+    was -$0.9M against $11.5M net income (receivables/inventory grew,
+    ~$14M of customer prepayments propped up reported cash), and ~31%
+    of pretax profit was interest on the $600M April share-sale
+    proceeds, not operations. Tongmei (JV) withdrew its STAR Market IPO
+    on 2026-07-08, creating a possible ~$49M repayment obligation to
+    outside investors.
+  - **AYA** (Aya Gold & Silver) — Q2 2026, new company, Canadian
+    silver/gold miner (Zgounder mine, Morocco; foreign private issuer,
+    IFRS, files 6-Ks not 10-Qs — flagging that scan-recent-filings'
+    10-K/10-Q/8-K scan won't catch its future quarters), from the 6-K
+    MD&A exhibit filed 2026-08-13: https://financialreportinsights.com/companies/aya/2026/q2
+    — revenue +150.7% to $96.8M on a 90% higher realized silver price
+    ($64.22/oz) and 32% more ounces sold; net income +305.5% to $35.0M
+    (EPS $0.23, +283%); operating margin 54.9%. Cash cost $17.69/oz vs
+    ~$21.50 guided. Sequentially (vs Q1) revenue fell 17% as the
+    realized price dropped 18%. No AISC disclosed, only cash cost — the
+    report explains the difference. Covers the Sept 9 Boumadine PEA
+    ($3.5B after-tax value, 93% IRR) with appropriate early-stage
+    caveats.
+- **Total tonight: 23 report-periods published, 1 false-positive skip +
+  1 pre-merger-SPAC skip (neither counted against the cap) — 23/~35.**

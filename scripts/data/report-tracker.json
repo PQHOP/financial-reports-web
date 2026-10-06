@@ -22165,5 +22165,140 @@
         "filedAt": "2026-08-03"
       }
     ]
+  },
+  "AXGN": {
+    "name": "Axogen, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/axgn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q1/Q2 2026 10-Qs filed alongside earnings 8-K; Q3 2025 10-Q filed 2025-10-29",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/axgn/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-29"
+      }
+    ]
+  },
+  "AXIN": {
+    "name": "Axiom Intelligence Acquisition Corp 1 - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (SIC 6770 Blank Checks), no operating business — Q2 2026 10-Q shows trust-account interest income only. Pending business combination with Terra Quantum AG (BCA signed 2026-05-25, not yet closed as of 2026-09-15 Form 425). Revisit after the de-SPAC closes and the combined company files real operating results.",
+    "lastChecked": "2026-10-06"
+  },
+  "AXSM": {
+    "name": "Axsome Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/axsm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "Q3 2025 10-Q filed 2025-11-03",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/axsm/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-10"
+      }
+    ]
+  },
+  "AXTI": {
+    "name": "AXT Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/axti/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 earnings 8-K 2025-10-30, 10-Q 2025-11-13; same pattern this year",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/axti/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
+  },
+  "AYA": {
+    "name": "Aya Gold & Silver Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/aya/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim financial statements/MD&A)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13",
+      "note": "Canadian foreign private issuer (IFRS, registered via 40-F), silver/gold miner in Morocco (Zgounder mine); files quarterlies as 6-Ks not 10-Qs, so scan-recent-filings' 10-K/10-Q/8-K scan may not flag its future quarters"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim financial statements/MD&A)",
+      "estimate": "2026-11-12",
+      "basis": "Q1 filed 2026-05-14, Q2 filed 2026-08-13 (~90 days apart)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/aya/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
   }
 }
