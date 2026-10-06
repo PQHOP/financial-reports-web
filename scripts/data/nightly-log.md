@@ -9208,5 +9208,66 @@ dispatching more subagents.
     report explains the difference. Covers the Sept 9 Boumadine PEA
     ($3.5B after-tax value, 93% IRR) with appropriate early-stage
     caveats.
-- **Total tonight: 23 report-periods published, 1 false-positive skip +
-  1 pre-merger-SPAC skip (neither counted against the cap) — 23/~35.**
+- `next-batch -- --n 5` continued right after AYA: AZ, AZI, AZTA, BACC,
+  BAER. Dispatched 5 opus subagents in parallel.
+- **BACC** (Blue Acquisition Corp.) — skipped, not published. Confirmed
+  via its 10-Q another pre-merger SPAC (SIC 6770): only income is
+  ~$209.3M trust-account interest. Pending merger with Blockfusion USA
+  (data centers) through new parent Blockfusion Digital Infrastructure,
+  Inc.; not closed as of the 2026-09-25 8-K. Will revisit under the new
+  parent's own ticker once it closes.
+- Published (4 of 4, all sanity-checked live via cache-busted fetch —
+  Takeaway + Source filing present, no truncation):
+  - **AZ** (A2Z Cust2Mate Solutions) — Q2 2026, new company, Israeli
+    smart-retail-cart/scanning tech (foreign private issuer, IFRS,
+    20-F + quarterly 6-Ks), from the 6-K filed 2026-08-12:
+    https://financialreportinsights.com/companies/az/2026/q2 — revenue
+    +409% to $5.90M (~950 smart carts delivered); gross margin 42.5%,
+    operating margin -128.6%. Net loss narrowed to $7.34M from $12.59M,
+    but mostly because last year's quarter had a $4.1M warrant loss and
+    discontinued-ops charges, not better underlying operations. Cash
+    fell to $43.4M from $69.2M on $21.8M of H1 operating cash burn;
+    receivables ($11.4M) now exceed H1 revenue ($9.2M), reflecting
+    present-valued multi-year cart contracts plus $2.2M of bill-and-hold
+    revenue in Q1. Hedia acquisition (closed 2026-10-06) will add to
+    revenue from Q4.
+  - **AZI** (Autozi Internet Technology) — H1 FY2026 (fiscal year ends
+    Sept 30), new company, Chinese auto-parts e-commerce (foreign
+    private issuer, no quarterly reports, half-year 6-K only), from the
+    6-K/A filed 2026-08-20: https://financialreportinsights.com/companies/azi/2026/h1
+    — revenue -63.0% to $29.5M as new-car sales went to zero (now 100%
+    auto parts/accessories); gross margin fell to 0.8%, operating margin
+    -83.4%. Net loss widened to $26.3M from $5.2M, mostly $18.8M of
+    share-based pay; loss per share -$5.86 but not YoY-comparable (share
+    count up 21x). Flags a going-concern warning in the financial
+    statements, cash of only $0.43M at quarter-end, the June auditor
+    dismissal (Marcum Asia) and April CFO resignation, and that the
+    company's own May "unreviewed" press release had understated the
+    loss ($13.8M vs the $26.3M the actual statements show).
+  - **AZTA** (Azenta) — fiscal Q3 2026 (fiscal year ends Sept 30), new
+    company, life-sciences sample management/genomics services, from
+    the 10-Q filed 2026-08-06: https://financialreportinsights.com/companies/azta/2026/q3
+    — continuing-ops revenue +12% (+9% organic) to $161.2M; gross margin
+    fell to 44.9% from 46.2%, operating loss -2.6% margin. Sample
+    Management's adjusted operating margin fell from 13.8% to 5.6% on
+    Automated Stores rework/inventory write-downs. GAAP net income $2.5M
+    ($0.05 EPS) including the B Medical divestiture (closed July 8,
+    $63M cash) as discontinued ops — but continuing-ops EPS alone was
+    -$0.03, and operating cash flow was only $1M; interest income is
+    what got the quarter to a profit. CEO resigned Aug 22.
+  - **BAER** (Bridger Aerospace) — Q2 2026, new company, aerial
+    wildfire-suppression services (highly seasonal, went public via
+    SPAC merger), from the 10-Q filed 2026-08-06:
+    https://financialreportinsights.com/companies/baer/2026/q2 —
+    revenue roughly flat (-0.8%) at $30.5M, but US revenue (ex the
+    ending Spanish refurbishment contract) +16%, with fire suppression
+    +19% and aerial surveillance +36% on more flight hours. Net loss
+    $0.5M vs a $0.3M profit a year ago; diluted EPS -$0.13 vs -$0.12,
+    worse than the net-loss comparison because $7.1M of preferred-stock
+    accretion is charged to common shareholders. Adjusted EBITDA -25%
+    to $8.1M (margin 27% vs 35%); interest expense $6.6M (22% of
+    revenue) against ~$245M debt plus $421.4M of Series A preferred.
+    H1 operating cash flow -$36.8M. FY guidance needs ~$96-106M of H2
+    revenue vs ~$76M in H2 2025.
+- **Total tonight: 27 report-periods published, 1 false-positive skip +
+  2 pre-merger-SPAC skips (none counted against the cap) — 27/~35.**

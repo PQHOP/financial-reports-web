@@ -22300,5 +22300,142 @@
         "filedAt": "2026-08-13"
       }
     ]
+  },
+  "AZ": {
+    "name": "A2Z Cust2Mate Solutions Corp. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/az/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim financials, Q2 2026)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12",
+      "note": "foreign private issuer (Israel), IFRS, files 20-F annual + quarterly 6-Ks; plans to switch to US GAAP for FY2026 annual report. Hedia acquisition closed 2026-10-06, included in revenue from Q4"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim financials)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 interim 6-K filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/az/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
+  },
+  "AZI": {
+    "name": "Autozi Internet Technology (Global) Ltd. - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/azi/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K/A (interim financials, H1 FY2026)",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-08-20",
+      "note": "foreign private issuer (China auto-parts e-commerce), fiscal year ends Sept 30, no quarterly reports (half-year 6-K only). Going-concern warning in the financials; auditor dismissed June 2026, CFO resigned April 2026"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026, year ended 2026-09-30)",
+      "estimate": "2027-01-31",
+      "basis": "20-F due 4 months after FYE; last year's NT 20-F filed 2026-01-30, 20-F filed 2026-02-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/azi/2026/h1",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-08-20"
+      }
+    ]
+  },
+  "AZTA": {
+    "name": "Azenta, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/azta/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06",
+      "note": "fiscal year ends Sept 30; B Medical divestiture closed 2026-07-08, reported as discontinued operations"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE 2026-09-30)",
+      "estimate": "2026-11-25",
+      "basis": "FY2025 10-K filed 2025-12-04 after an NT 10-K late-filing notice",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/azta/2026/q3",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
+  "BACC": {
+    "name": "Blue Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (SIC 6770 Blank Checks). No operating revenue; Q2 2026 10-Q shows only income on its ~$209.3M trust account. Pending merger with Blockfusion USA (data centers) through new parent Blockfusion Digital Infrastructure, Inc.; not closed as of the 2026-09-25 8-K. Revisit after closing: operating results will then be reported by the new parent under its own ticker.",
+    "lastChecked": "2026-10-06"
+  },
+  "BAER": {
+    "name": "Bridger Aerospace Group Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/baer/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 earnings 8-K filed 2025-11-06, 10-Q 2025-11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/baer/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
   }
 }
