@@ -132,18 +132,18 @@
     ],
     "allAvailable2026QuartersCovered": true,
     "lastFilingSeen": {
-      "type": "10-Q",
+      "type": "8-K (Item 2.02, IPR&D/milestones expense update, not earnings)",
       "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-03",
-      "note": "filedAt corrected 2026-09-13 — the previous 2026-07-31 date was the earnings-release 8-K, not the 10-Q itself"
+      "filedAt": "2026-10-05",
+      "note": "2026-10-05 8-K is not the Q3 earnings release — it's AbbVie's recurring quarter-end IPR&D/milestones-expense notice (~$216M pretax, trims Q3 adjusted EPS guidance to $3.73-3.77 and FY2026 to $13.76-13.96); filing itself states Q3 2026 results are not finalized. Recorded here so the scan stops re-flagging this filing. Last actual filed quarter remains Q2 (periodEnd above)."
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-30",
-      "basis": "quarterly cadence from Q2 filing date",
+      "type": "8-K earnings release / 10-Q (Q3 2026)",
+      "estimate": "2026-10-31",
+      "basis": "quarterly cadence from Q2 earnings date (2026-07-31); AbbVie's updated guidance range ($3.73-3.77 adjusted EPS) is what to check Q3 actuals against",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-13"
+    "lastChecked": "2026-10-06"
   },
   "ABNB": {
     "name": "Airbnb, Inc.",
@@ -8309,6 +8309,39 @@
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/ebay/2026/q2"
+      }
+    ]
+  },
+  "EBF": {
+    "name": "Ennis, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/ebf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-05",
+      "note": "Ennis's fiscal year ends Feb 28; this quarter (Jun-Aug 2026) is the company's own 'Q2 FY2027' but is labelled 2026/Q2 here and on the site since the quarter itself ran June-August 2026"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3, quarter ending 2026-11-30)",
+      "estimate": "2027-01-05",
+      "basis": "~90 days after this 10-Q's filing date",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/ebf/2026/q2",
+        "periodEnd": "2026-08-31",
+        "filedAt": "2026-10-05"
       }
     ]
   },

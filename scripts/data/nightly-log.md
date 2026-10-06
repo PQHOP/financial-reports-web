@@ -8881,3 +8881,46 @@ all 35 of tonight's reports came from the us-listed backlog. `next-batch`
 continues right after AURA for the next firing/night. Any further
 firing tonight should see this total and exit immediately without
 dispatching more subagents.
+
+### 2026-10-06 night (16:00 UTC 2026-10-06 → 22:59 UTC 2026-10-06 / 01:00–07:59 JST 2026-10-07)
+
+- Mechanism: scheduled firing (automated `[SCHEDULED TASK]` prompt, no live
+  user), fresh container. Network check passed first (SEC 403-without-UA
+  then 200-with-UA as expected; `financialreportinsights.com` reachable
+  directly, used as `SITE_URL`). `npm install` needed a dummy
+  `DATABASE_URL` to get past the `prisma generate` postinstall hook (no
+  real DB access needed for `admin-publish`); reverted the resulting
+  `package-lock.json` diff before committing anything. Repo was already on
+  a clean tracking `master`, up to date with origin — no detached HEAD
+  this time.
+- Ran tier 0 (`npm run scan-recent-filings`): **2 fresh candidates** — ABBV
+  (hot, update) and EBF (us-listed, new).
+  - **ABBV** — investigated and skipped, not published. The 2026-10-05
+    8-K (Item 2.02) the scan flagged is *not* the Q3 2026 earnings
+    release — it's AbbVie's recurring quarter-end IPR&D/milestones-expense
+    notice (~$216M pretax), which trims Q3 adjusted EPS guidance to
+    $3.73-3.77 and FY2026 to $13.76-13.96. The filing itself states Q3
+    2026 results are not finalized yet. A false positive in the scan's
+    Item 2.02 matching (not every Item-2.02 8-K is an earnings release).
+    Tracker's `lastFilingSeen` updated to this 8-K (with a note) so the
+    scan stops re-flagging it; `nextExpectedFiling` set to ~2026-10-31
+    for the real earnings release/10-Q, estimated.
+  - **EBF** (Ennis, Inc.) — published, new company, business
+    forms/apparel-decoration printer, from the 10-Q filed 2026-10-05 for
+    the quarter ended 2026-08-31 (Ennis's fiscal year ends Feb 28, so the
+    company itself calls this "Q2 FY2027"; labelled 2026/Q2 here and on
+    the site since the quarter ran June-August 2026):
+    https://financialreportinsights.com/companies/ebf/2026/q2 — net sales
+    +3.4% to $102.0M (most of the growth from fiscal-2026 acquisitions,
+    only ~$1.0M organic). Operating margin improved to 13.3% from 12.5%
+    (lower incentive-pay overhead offset a gross-margin dip from pricier
+    carbonless paper), but net earnings fell to $9.4M ($0.37 diluted EPS)
+    from $13.2M ($0.51) — almost entirely because last year's quarter
+    included a $5.3M litigation judgment *gain* versus a $0.7M litigation
+    *charge* this quarter. H1 operating cash flow $34.1M vs $19.3M net
+    earnings; $54.0M cash, no debt; dividend raised 5% to $0.2625/share.
+    Sanity-checked live via cache-busted fetch (Takeaway + Source filing
+    present, ends on a complete sentence, no truncation) before marking
+    done in the tracker.
+- **Total so far tonight: 1 report-period published, 1 false-positive
+  skip (not counted against the cap) — 1/~35.**
