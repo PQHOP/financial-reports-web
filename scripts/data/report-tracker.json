@@ -22672,5 +22672,38 @@
         "filedAt": "2026-08-05"
       }
     ]
+  },
+  "BBCP": {
+    "name": "Concrete Pumping Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/bbcp/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-03",
+      "note": "fiscal year ends Oct 31; this is the companys own fiscal Q3 2026. US concrete pumping + Eco-Pan + UK (Camfaud/Capital Concrete, incl. Templant bolt-on acquired Apr 2026)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, year ending 2026-10-31)",
+      "estimate": "2027-01-13",
+      "basis": "prior 10-K filed 2026-01-13 for FY ended 2025-10-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/bbcp/2026/q3",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-03"
+      }
+    ]
   }
 }

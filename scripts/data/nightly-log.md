@@ -9370,15 +9370,62 @@ dispatching more subagents.
   TV network while media revenue fell. H1 operating cash flow -$1.6M vs
   +$87.6M; receivables $33.6M→$86.8M; debt $793.1M ($333.2M due within a
   year). MLB's CBA expires 2026-12-01.
-- **Total tonight: 33 report-periods published, 1 false-positive skip +
+- **Total so far: 33 report-periods published, 1 false-positive skip +
   2 pre-merger-SPAC skip + 1 closed-end-fund skip + 1 off-tier (non-2026)
-  publish not counted toward the cap — 33/~35. Stopping here, at the
-  cap.**
+  publish not counted toward the cap — 33/~35.**
 
-**End of tonight:** stopping at 33/35. Tier 0 (fresh filings), the hot
+### Separate firing, same night: BBCP
+
+A later firing started this same night without realizing another firing
+was already at 33/~35 (session-local detached-HEAD checkout, no cloud
+routine run-log visible to it). It dispatched two subagents in parallel
+for BANX/BAOS/BATRA/BBCP candidates from `next-batch`, but by the time
+they finished, the other firing above had already published BATRA, BAOS
+and skipped BANX — the BATRA subagent's publish attempt was rejected as
+a duplicate (report already live) and is **not** counted. Only the BBCP
+subagent's publish is new:
+
+- **BBCP** (Concrete Pumping Holdings) — published, Q3 FY2026 (fiscal
+  year ends Oct 31; quarter ended 2026-07-31), new company,
+  sanity-checked live via cache-busted fetch (At a glance, metrics table,
+  Takeaway, Source filing all present, nothing truncated), from the 10-Q
+  filed 2026-09-03:
+  https://financialreportinsights.com/companies/bbcp/2026/q3 — revenue
+  +12.6% to $116.8M on US data-center/infrastructure demand (Eco-Pan
+  +13.5% at ~40% adjusted EBITDA margin) and a UK bolt-on (Templant,
+  acquired Apr 2026) contributing $3.1M of the UK's $3.6M increase while
+  UK adjusted EBITDA fell 16.2%. Net income +33.3% to $4.9M, diluted EPS
+  +28.6% to $0.09 — growth is operational (tax rate actually rose to
+  28.5% from 26.5%, interest flat), not buybacks or financial
+  engineering. FY26 guidance raised a second time (revenue $425-435M,
+  adjusted EBITDA $103-108M). New $0.13/quarter dividend, the company's
+  first. Net debt $382M, leverage 3.6x (down from 3.8x); free cash flow
+  after capex down YTD to $17.6M from $21.7M, with ~$17.1M of truck
+  purchases pulled into Q4 ahead of 2027 emissions rules.
+
+Also verified independently (no action needed): the duplicate-firing
+BATRA subagent flagged the published BATRA report's "five home games
+moved into March (Q1)" claim as possibly unsourced from the Q2 10-Q
+alone. Checked the live report's own numbers — Q1 2026: 5 home games vs
+0 in Q1 2025; Q2 2026: 34 vs 40; H1: 39 vs 40 — internally consistent
+(5+34=39, 0+40=40), so this reads as a legitimate cross-check against
+the Q1 filing's own game count, not a fabrication. No edit made.
+
+- **Total tonight: 34 report-periods published (33 + this firing's
+  BBCP), same skip counts as above — 34/~35. Stopping here, at the cap.**
+
+**End of tonight:** stopping at 34/35. Tier 0 (fresh filings), the hot
 list and the full S&P 500 remain fully clear — every company published
 tonight came from the us-listed backlog, continuing in `next-batch`
 order from AURE/AURA (where the 2026-10-05 night firing left off)
-through BATRA. `next-batch` continues right after BATRA for the next
+through BATRA/BBCP. `next-batch` continues right after BBCP for the next
 firing/night. Any further firing tonight should see this total and exit
 immediately without dispatching more subagents.
+
+**Note for next session:** two firings ran concurrently tonight without
+either one detecting the other (one via a plain git pull/detached HEAD,
+the other presumably the cloud routine or another session) — this wasted
+one subagent research pass (BATRA, done twice) though no bad data was
+published. Worth checking the cloud routine's run log
+(`trig_01GNdUY59Na4x3JxMr6p7mxK`) next session to understand why two
+sessions were active in the same window, so it doesn't recur.
