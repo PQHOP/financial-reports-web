@@ -21678,5 +21678,166 @@
         "filedAt": "2026-08-13"
       }
     ]
+  },
+  "AVAV": {
+    "name": "AeroVironment, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avav/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-10",
+      "note": "fiscal Q1 2027 (fiscal year runs May-Apr); labelled 2026/Q1 to match the site's convention for other May-Apr fiscal filers (NKE, MDT)"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027, quarter ending 2026-10-31)",
+      "estimate": "2026-12-10",
+      "basis": "prior year's fiscal Q2 2026 8-K/10-Q filed 2025-12-09/12-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avav/2026/q1",
+        "periodEnd": "2026-08-01",
+        "filedAt": "2026-09-10"
+      }
+    ]
+  },
+  "AVBH": {
+    "name": "Avidbank Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avbh/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release (Q3 2026), then 10-Q",
+      "estimate": "2026-10-22",
+      "basis": "Q3 2025 release 2025-10-23, Q2 2026 release 2026-07-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avbh/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
+  },
+  "AVBP": {
+    "name": "ArriVent BioPharma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avbp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q3 2025 10-Q and earnings 8-K both filed 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avbp/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
+  },
+  "AVIR": {
+    "name": "Atea Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avir/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "Q3 2025 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avir/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
+  },
+  "AVLN": {
+    "name": "Avalyn Pharma Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avln/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "non-accelerated filer 45-day deadline from quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avln/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
   }
 }

@@ -8969,5 +8969,68 @@ dispatching more subagents.
     disclosed Family First acquisition). Edited once post-publish to
     reword one sentence that read as management's view rather than the
     subagent's own inference.
-- **Total tonight: 4 report-periods published, 1 false-positive skip
-  (not counted against the cap) — 4/~35.**
+- Ran `npm run scan-recent-filings` again to confirm ABBV's fix took: 0
+  fresh candidates (confirms the tracker edit stopped the false-positive
+  re-flagging). `next-batch -- --n 5` continued the us-listed backlog
+  right after AVAH: AVAV, AVBH, AVBP, AVIR, AVLN. Dispatched 5 opus
+  subagents in parallel.
+- Published (5 of 5, all sanity-checked live via cache-busted fetch —
+  Takeaway + Source filing present, ends on a complete sentence, no
+  truncation):
+  - **AVAV** (AeroVironment) — fiscal Q1 2027 (quarter ended 2026-08-01;
+    fiscal year runs May-Apr), new company, military drones/uncrewed
+    systems, labelled 2026/Q1 to match the site's convention for other
+    May-Apr fiscal filers (NKE, MDT):
+    https://financialreportinsights.com/companies/avav/2026/q1 — revenue
+    +5.7% to a Q1-record $480.5M; GAAP net loss narrowed to $5.1M
+    (-$0.10/share) from $67.4M (-$1.44) a year ago, adjusted EPS $0.59 vs
+    $0.32. BlueHalo (closed May 2025) is in both periods so doesn't
+    distort the YoY comparison; the real distortion is ESAero (closed
+    March 2026, +$41.8M) — ex that, revenue actually fell ~3.5% as
+    Switchblade orders slipped $56.9M. Funded backlog record $1,457.8M
+    (+37% YoY). Two open material-weakness findings in accounting
+    controls and a June 2026 restatement (added $87.3M to the January
+    quarter's loss via a larger goodwill write-down) both disclosed in
+    the report.
+  - **AVBH** (Avidbank Holdings) — Q2 2026, new company, community bank,
+    bank-profile metrics, from the 10-Q filed 2026-08-12:
+    https://financialreportinsights.com/companies/avbh/2026/q2 — net
+    income +31.9% to $7.6M; EPS fell 5.3% to $0.71 purely on dilution
+    from the August 2025 IPO (share count 7.7M→10.8M). NIM rose to 4.26%
+    from 3.60%; loans/deposits both +16%. Credit quality the concern:
+    non-performing loans 0.65% of loans (vs 0.07% a year ago, all
+    construction loans), criticized loans up to 2.16% from 1.57%.
+  - **AVBP** (ArriVent BioPharma) — Q2 2026, new company, clinical-stage
+    oncology (firmonertinib for NSCLC), from the 10-Q filed 2026-08-12:
+    https://financialreportinsights.com/companies/avbp/2026/q2 — no
+    revenue; net loss widened to $49.9M (-$1.05/share) from $31.4M
+    (-$0.90) as R&D rose to $42.3M from $27.7M. Cash $373.1M (incl.
+    $140.0M raised via ATM), guided to last into 2028. Report leads with
+    the same-day (2026-10-06) 8-K: Phase 3 FURVENT trial **missed its
+    primary endpoint** (240mg dose: 11.0 vs 9.5 months PFS, HR 0.75,
+    p=0.0654) — not a results filing itself, flagged for the Q3 10-Q to
+    cover any runway/guidance fallout. netIncomeYoyPct/epsYoyPct omitted
+    as n/m (loss-to-loss).
+  - **AVIR** (Atea Pharmaceuticals) — Q2 2026, new company, antiviral
+    biotech (ruzasvir/bemnifosbuvir for hepatitis C — note: no longer
+    partnered with Roche, only a Merck licence), from the 10-Q filed
+    2026-08-12: https://financialreportinsights.com/companies/avir/2026/q2
+    — no revenue; net loss narrowed to $32.9M from $37.2M (EPS -$0.41 vs
+    -$0.44), but last year's R&D included a one-off $5.0M Merck milestone
+    — ex that, the loss didn't really improve. Cash $219.5M (down from
+    $301.8M at 2025-year-end); 6-month burn $83.5M vs $63.4M. C-BEYOND
+    Phase 3 met its primary endpoint in July (93.9% cure vs 94.8% for
+    12-week Epclusa, within the agreed margin); FDA filing targeted Q2
+    2027.
+  - **AVLN** (Avalyn Pharma) — Q2 2026, new company, inhaled therapies
+    for pulmonary fibrosis, recently IPO'd (May 2026), from the 10-Q
+    filed 2026-08-12: https://financialreportinsights.com/companies/avln/2026/q2
+    — no revenue; net loss widened 43% to $28.9M as R&D rose 38% to
+    $24.7M (AP02/AURA Phase 2 ramping). IPO raised $316.6M net, cash
+    $413.5M, guided into 2029. EPS -$0.98 vs -$17.63 flagged as not
+    comparable — share count went from 1.1M to 29.7M when preferred
+    stock converted at the IPO. revenue/operatingMarginPct/YoY-percent
+    fields omitted as not meaningful for a pre-revenue, post-IPO
+    comparison.
+- **Total tonight: 9 report-periods published, 1 false-positive skip
+  (not counted against the cap) — 9/~35.**
