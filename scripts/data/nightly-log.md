@@ -9269,5 +9269,63 @@ dispatching more subagents.
     revenue) against ~$245M debt plus $421.4M of Series A preferred.
     H1 operating cash flow -$36.8M. FY guidance needs ~$96-106M of H2
     revenue vs ~$76M in H2 2025.
-- **Total tonight: 27 report-periods published, 1 false-positive skip +
-  2 pre-merger-SPAC skips (none counted against the cap) — 27/~35.**
+- `next-batch -- --n 5` continued right after BAER: BAFN, BAND, BANF,
+  BANL, BANR (3 of 5 are banks — BAFN, BANF, BANR). Dispatched 5 opus
+  subagents in parallel.
+- Published (5 of 5, all sanity-checked live via cache-busted fetch —
+  Takeaway + Source filing present, no truncation):
+  - **BAFN** (BayFirst Financial) — Q2 2026, new company, Florida
+    community bank with an SBA 7(a) lending exit, bank-profile metrics,
+    from the 10-Q filed 2026-08-14: https://financialreportinsights.com/companies/bafn/2026/q2
+    — net loss widened to $32.7M (-$8.05/share) from a restated $1.9M
+    loss, driven by $41.5M of charges clearing the SBA loan book left
+    after exiting that business in Q4 2025 (actual net charge-offs were
+    only $4.5M; the rest is provisioning). Revenue -88.5% to $2.6M on a
+    $6.5M fair-value loss and zero SBA gain-on-sale. FY2024/FY2025/Q1
+    2026 were restated (10-K/A, 10-Q/A filed 2026-08-12) with a material
+    weakness disclosed. An $80M preferred raise lifted CET1 to 11.47%
+    from 8.22%; book value per common share fell to $4.83 from $14.22.
+    Q3 earnings date already confirmed via a company 8-K (Oct 29).
+  - **BAND** (Bandwidth Inc.) — Q2 2026, new company, CPaaS/programmable
+    voice-messaging APIs, from the 10-Q filed 2026-07-29:
+    https://financialreportinsights.com/companies/band/2026/q2 —
+    revenue +22.2% to $219.9M, but only $151.9M (+12%) is Bandwidth's
+    own cloud revenue; the rest is carrier messaging fees passed through
+    near cost (+54%), which is why GAAP gross margin fell to 35.7% from
+    39.8%. GAAP net income $2.4M vs a $4.9M loss, but that swing is a
+    $5.2M bond-buyback gain plus a $2.8M tax benefit — the business
+    itself lost money before tax (operating margin -2.1%). Adjusted
+    EBITDA +27% to $27.8M; FY revenue/EBITDA guidance raised again, but
+    non-GAAP EPS guidance cut on higher assumed dilution. Net retention
+    fell to 107% from 112%.
+  - **BANF** (BancFirst Corporation) — Q2 2026, new company, Oklahoma
+    regional bank, bank-profile metrics, from the 10-Q filed 2026-08-07:
+    https://financialreportinsights.com/companies/banf/2026/q2 —
+    record net income $66.7M (+7.0%), EPS $1.96 (+5.9%); NIM rose to
+    3.84% from 3.75% on cheaper funding costs. Credit the concern:
+    nonaccrual loans +63% YoY to $81.4M (0.94% of loans vs 0.61%),
+    reserve coverage of them down to 1.32x from 1.94x. Loans/deposits
+    both +~6.5%, about half from the November 2025 ABOK acquisition.
+    Pending SpiritBank acquisition expected to close Q4 2026.
+  - **BANL** (CBL International) — H1 2026, new company, Kuala
+    Lumpur-based marine/bunker fuel trader (foreign private issuer,
+    20-F + 6-K, twice-yearly reporter, completed a 1-for-13 reverse
+    split in July), from the 6-K filed 2026-08-18:
+    https://financialreportinsights.com/companies/banl/2026/h1 —
+    revenue +49.2% to $395.6M mostly on higher fuel prices (Iran/Hormuz
+    disruption), volume +10.9%. Thin trading-business margin widened to
+    1.65% from 1.02%, gross profit +140.5% to $6.53M (already net of a
+    $2.13M unrealized hedging loss). Net income $1.50M vs a $0.99M loss;
+    EPS $0.05 vs -$0.04.
+  - **BANR** (Banner Corporation) — Q2 2026, new company, Pacific
+    Northwest regional bank, bank-profile metrics, from the 10-Q filed
+    2026-08-04: https://financialreportinsights.com/companies/banr/2026/q2
+    — net income +7.5% to $48.9M, EPS +9.2% to $1.43; NIM rose to 4.13%
+    from 3.92%, almost entirely from cheaper deposits/borrowings rather
+    than higher loan yields. Loans +$287M in the quarter, funded partly
+    by $320M of FHLB advances as deposits slipped. Efficiency ratio
+    62.80%, ROTCE 12.27%, CET1 12.83%. All-stock Pacific Financial
+    (Bank of the Pacific, ~$1.26B assets) acquisition closed Sept 1 —
+    Q3 figures will include it.
+- **Total tonight: 32 report-periods published, 1 false-positive skip +
+  2 pre-merger-SPAC skips (none counted against the cap) — 32/~35.**

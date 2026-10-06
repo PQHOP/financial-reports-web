@@ -22437,5 +22437,168 @@
         "filedAt": "2026-08-06"
       }
     ]
+  },
+  "BAFN": {
+    "name": "BayFirst Financial Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/bafn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "note": "FY2024/FY2025/Q1 2026 restated (10-K/A, 10-Q/A filed 2026-08-12); $41.5M of SBA 7(a) asset-resolution charges after exiting that business in Q4 2025; material weakness disclosed"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "company's own 8-K (filed 2026-09-30) states Q3 results after close Oct 29, call Oct 30",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/bafn/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
+  },
+  "BAND": {
+    "name": "Bandwidth Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/band/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q1 filed 2026-04-30, Q2 filed 2026-07-29, ~90 days apart",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/band/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-29"
+      }
+    ]
+  },
+  "BANF": {
+    "name": "BancFirst Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/banf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release (Q3 2026)",
+      "estimate": "2026-10-16",
+      "basis": "Q3 2025 release 2025-10-17, Q2 2026 release 2026-07-23; 10-Q should follow ~2026-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/banf/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
+    ]
+  },
+  "BANL": {
+    "name": "CBL International Limited - Class B Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/banl/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-18",
+      "note": "foreign private issuer (Cayman-incorporated, Kuala Lumpur-based marine/bunker fuel trading), reports in USD, twice-yearly reporter (20-F annual + 6-K interim, no quarterlies). Completed a 1-for-13 reverse split in July 2026"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-16",
+      "basis": "FY2025 20-F filed 2026-04-17",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/banl/2026/h1",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-18"
+      }
+    ]
+  },
+  "BANR": {
+    "name": "Banner Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/banr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04",
+      "note": "Pacific Financial (Bank of the Pacific) acquisition closed 2026-09-01, ~$1.26B assets; will show up in Q3 figures"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026), then 10-Q",
+      "estimate": "2026-10-21",
+      "basis": "Q1/Q2 2026 earnings 8-Ks filed ~3 weeks after quarter-end (04-22, 07-22)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/banr/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-04"
+      }
+    ]
   }
 }
