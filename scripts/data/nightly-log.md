@@ -9458,3 +9458,13 @@ no new commits from another concurrent firing. Ran `scan-recent-filings`:
 0 fresh tier-0 candidates, same as the two prior firings tonight. Exited
 immediately without dispatching any research subagents or publishing, per
 the stop-at-cap note above.
+
+**07:06 JST firing (same night):** confirmed network access again (403
+without a User-Agent on sec.gov, 200 with the required User-Agent;
+financialreportinsights.com and the vercel.app alias both 200). `npm
+install` again needed the placeholder local `DATABASE_URL` workaround.
+Pulled latest `origin/master`: still at the 06:06 firing's commit, 34/35,
+no new commits from another concurrent firing. Ran `scan-recent-filings`:
+0 fresh tier-0 candidates, same as the three prior firings tonight.
+Exited immediately without dispatching any research subagents or
+publishing, per the stop-at-cap note above.
