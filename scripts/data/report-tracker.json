@@ -22600,5 +22600,77 @@
         "filedAt": "2026-08-04"
       }
     ]
+  },
+  "BANX": {
+    "name": "ArrowMark Financial Corp. - Closed End Fund",
+    "status": "skipped",
+    "skipReason": "Closed-end fund, not an operating company: non-diversified closed-end management investment company under the 1940 Act (formerly StoneCastle Financial Corp.). Invests in bank-related preferred equity/sub debt/regulatory capital securities and CLO tranches backed by community-bank loans. Files N-CSR/N-CSRS/NPORT-P, never 10-K/10-Q. Results are NAV and investment income only, which doesn't fit this site's operating-company report format.",
+    "lastChecked": "2026-10-06"
+  },
+  "BAOS": {
+    "name": "Baosheng Media Group Holdings Limited",
+    "status": "pending",
+    "latestReport": {
+      "year": 2025,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/baos/2025/annual"
+    },
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-30",
+      "note": "foreign private issuer (China ad-tech/media), files 20-F annual + half-year 6-K interim (no quarterlies). FY2025 report published (counts for tier-2 backfill) but does NOT satisfy 2026 coverage — no 2026 period exists yet. 2026 6-Ks so far are all press releases/transaction notices (Nasdaq bid-price notice, receivables sale, AI MOUs), none with interim financials. Going-concern warning in the FY2025 statements; equity fell 78% to $3.3M"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim financials)",
+      "estimate": "2026-11-27",
+      "basis": "H1 2025 interim 6-K filed 2025-11-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2025,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/baos/2025/annual",
+        "periodEnd": "2025-12-31",
+        "filedAt": "2026-04-30"
+      }
+    ]
+  },
+  "BATRA": {
+    "name": "Atlanta Braves Holdings, Inc. - Series A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/batra/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05",
+      "note": "MLB team (Atlanta Braves) + Battery Atlanta mixed-use real estate; revenue highly seasonal (baseball season). MLB CBA expires 2026-12-01"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q/earnings 8-K both filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/batra/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      }
+    ]
   }
 }

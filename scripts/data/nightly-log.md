@@ -9327,5 +9327,58 @@ dispatching more subagents.
     62.80%, ROTCE 12.27%, CET1 12.83%. All-stock Pacific Financial
     (Bank of the Pacific, ~$1.26B assets) acquisition closed Sept 1 —
     Q3 figures will include it.
-- **Total tonight: 32 report-periods published, 1 false-positive skip +
-  2 pre-merger-SPAC skips (none counted against the cap) — 32/~35.**
+- With 3 report-periods of headroom left before the ~35 cap, ran
+  `next-batch -- --n 3` instead of the usual 5: BANX, BAOS, BATRA.
+  Dispatched 3 opus subagents in parallel (one dispatch hit a transient
+  classifier timeout and had to be relaunched once — no duplicate work
+  resulted).
+- **BANX** (ArrowMark Financial Corp.) — skipped, not published.
+  Confirmed via its N-CSRS filing that this is a closed-end fund (1940
+  Act investment company, formerly StoneCastle Financial Corp.), not an
+  operating business — invests in bank-related preferred/sub-debt/CLO
+  securities, files N-CSR/N-CSRS/NPORT-P, never 10-K/10-Q. Its
+  "financials" are just NAV and investment income, a poor fit for this
+  site's operating-company report format.
+- **BAOS** (Baosheng Media Group) — published a report, but it's FY2025
+  ANNUAL, not a qualifying 2026 period (no 2026 interim financials exist
+  yet for this China ad-tech 20-F/6-K filer — its 2026 6-Ks so far are
+  all press releases/transaction notices). Left `status: "pending"` in
+  the tracker rather than `"done"` since 2026 coverage isn't actually
+  met; the FY2025 report itself is live and counts toward future
+  multi-year backfill: https://financialreportinsights.com/companies/baos/2025/annual
+  — revenue -8.8% to $0.569M even as gross ad billing placed through the
+  platform rose 51.9% to $18.35M (the company kept only 3.1% of that
+  spend vs 5.2% a year earlier); net loss narrowed to $12.0M from $26.9M
+  only because 2024's one-off $23.0M bad-debt charge didn't recur — the
+  core operating loss actually widened to ~$4.2M from ~$3.7M. Going-
+  concern warning in the audited statements; equity fell 78% to $3.3M.
+  Not counted toward tonight's published total since it doesn't satisfy
+  the 2026-coverage tier.
+- **BATRA** (Atlanta Braves Holdings) — published, Q2 2026, new company,
+  owns/operates the Atlanta Braves MLB team plus the Battery Atlanta
+  real-estate development (highly seasonal revenue), sanity-checked live
+  via cache-busted fetch (Takeaway + Source filing present, no
+  truncation), from the 10-Q filed 2026-08-05:
+  https://financialreportinsights.com/companies/batra/2026/q2 — revenue
+  -2.3% to $305.1M (baseball revenue -3.8% on 34 home games vs 40, five
+  shifted into Q1; Battery Atlanta real estate +14.2%). Operating income
+  swung from +$41.8M to -$18.5M; net loss -$12.2M (-$0.19/share) vs
+  +$29.5M (+$0.46) a year ago. Report's key finding: this isn't just a
+  scheduling effect — H1 Adjusted OIBDA (where the game-count shift
+  cancels out) fell from +$37.2M to -$5.8M, on $28.9M more player
+  salaries YTD and ~$14.3M of costs from the newly self-run BravesVision
+  TV network while media revenue fell. H1 operating cash flow -$1.6M vs
+  +$87.6M; receivables $33.6M→$86.8M; debt $793.1M ($333.2M due within a
+  year). MLB's CBA expires 2026-12-01.
+- **Total tonight: 33 report-periods published, 1 false-positive skip +
+  2 pre-merger-SPAC skip + 1 closed-end-fund skip + 1 off-tier (non-2026)
+  publish not counted toward the cap — 33/~35. Stopping here, at the
+  cap.**
+
+**End of tonight:** stopping at 33/35. Tier 0 (fresh filings), the hot
+list and the full S&P 500 remain fully clear — every company published
+tonight came from the us-listed backlog, continuing in `next-batch`
+order from AURE/AURA (where the 2026-10-05 night firing left off)
+through BATRA. `next-batch` continues right after BATRA for the next
+firing/night. Any further firing tonight should see this total and exit
+immediately without dispatching more subagents.
