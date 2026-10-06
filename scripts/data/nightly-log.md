@@ -9429,3 +9429,11 @@ one subagent research pass (BATRA, done twice) though no bad data was
 published. Worth checking the cloud routine's run log
 (`trig_01GNdUY59Na4x3JxMr6p7mxK`) next session to understand why two
 sessions were active in the same window, so it doesn't recur.
+
+**03:05 JST firing (same night):** confirmed network access to EDGAR
+works (200 with the required User-Agent). Pulled latest `origin/master`
+(already at the BBCP commit above, 34/35 — no newer commits from another
+concurrent firing this time). Ran `scan-recent-filings`: 0 fresh tier-0
+candidates. Per the log above, exited immediately without dispatching
+any research subagents or publishing — correctly picked up the
+stop-at-cap note this time.
