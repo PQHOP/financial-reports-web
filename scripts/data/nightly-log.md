@@ -9090,5 +9090,63 @@ dispatching more subagents.
     receivables grew 59%, well ahead of the 24.5% sales growth, and debt
     rose to ~$3.21B. Q1 FY27 guidance: $9.00-9.30B sales, $2.80-2.90
     adjusted EPS.
-- **Total tonight: 14 report-periods published, 1 false-positive skip
-  (not counted against the cap) — 14/~35.**
+- `next-batch -- --n 5` continued right after AVT: AVTX, AVX, AVXL, AWRE,
+  AXG. Dispatched 5 opus subagents in parallel.
+- Published (5 of 5, all sanity-checked live via cache-busted fetch —
+  Takeaway + Source filing present, no truncation):
+  - **AVTX** (Avalo Therapeutics) — Q2 2026, new company, immunology
+    biotech (abdakibart/AVTX-009 for hidradenitis suppurativa), from the
+    10-Q filed 2026-08-06: https://financialreportinsights.com/companies/avtx/2026/q2
+    — no revenue; net loss widened to $36.4M from $20.8M, though >$16M
+    was two milestone-related charges (a $10.0M Lilly milestone accrual,
+    a $6.6M AlmataBio buyout) — ex those, ~$19.8M. Loss per share
+    actually fell ($0.83 vs $1.92) purely on a 4x larger share count.
+    Raised $404.9M net in May after positive Phase 2 LOTUS data; cash
+    $472.2M, guided into 2029.
+  - **AVX** (Avax One Technology, formerly AgriFORCE Growing Systems) —
+    Q2 2026, new company, now mainly an AVAX token treasury plus a small
+    bitcoin-mining business, from the 10-Q filed 2026-08-13:
+    https://financialreportinsights.com/companies/avx/2026/q2 — revenue
+    +523% to $2.82M (mostly new AVAX staking revenue). AVAX's price fell
+    ~47% in H1, causing a $29.8M unrealized loss and $2.6M impairment;
+    net loss $35.1M (-$4.41 EPS), operating margin -1,185%. Shareholders'
+    equity fell from $187.0M to $108.3M; cash fell to $11.4M from $22.1M.
+    Figures are extreme but filing-accurate — flagged as a thin-industry
+    (crypto-treasury) outlier for anyone reviewing peer tables later.
+  - **AVXL** (Anavex Life Sciences) — fiscal Q3 2026 (fiscal year ends
+    Sept 30), new company, CNS/neurology biotech (blarcamesine for
+    Alzheimer's/Rett syndrome), from the 10-Q filed 2026-08-28 (filed
+    late alongside the also-late Q2 10-Q, a 10-K/A and a 10-Q/A adding a
+    material-weakness disclosure, no figures restated):
+    https://financialreportinsights.com/companies/avxl/2026/q3 — net
+    income $7.8M ($0.08 EPS) vs a $13.2M loss a year ago, but almost
+    entirely a $17.1M non-cash stock-option reversal after the CEO was
+    fired for cause April 30, 2026 — ex that, still roughly a $9.3M
+    loss, in line with last year. Cash $118.3M, guided into "mid-to-late
+    fiscal 2028". CHMP found the Alzheimer's AD-004 trial formally
+    negative; program now depends on an FDA-agreed Phase 3 design. Will
+    lose Form S-3/ATM eligibility after the next 10-K due to the late
+    filings.
+  - **AWRE** (Aware, Inc.) — Q2 2026, new company, biometrics/identity
+    verification software, from the 10-Q filed 2026-07-31:
+    https://financialreportinsights.com/companies/awre/2026/q2 —
+    revenue -16.5% to $3.25M (license revenue -33%, maintenance -7% on
+    non-renewals); operating margin -84.2% vs -50.3%. Net loss $2.57M
+    (-$0.12/share) vs $1.77M (-$0.08). Cash down to $16.8M from $22.3M
+    (~18 months runway). Weakest signal: Q2 billings -44% YoY and
+    deferred revenue down $1.5M.
+  - **AXG** (Solowin Holdings) — FY2026 ANNUAL (fiscal year ends March
+    31), new company, Hong Kong fintech/brokerage holding (foreign
+    private issuer, files 20-F/6-K, reports in USD), from the 20-F filed
+    2026-08-03 (late, via an NT 20-F notice):
+    https://financialreportinsights.com/companies/axg/2026/annual —
+    revenue +895% to $28.05M, almost all from $22.2M of resold AI cloud
+    services added via the AlloyX acquisition (bought from Solowin's own
+    CEO for ~130M new shares at book value) — that AI line kept only
+    ~4% margin after $21.3M of cloud-supplier costs. Operating margin
+    -46.4%; net loss widened 56% to $13.3M. Receivables jumped from
+    $146K to $11.3M; auditors flagged a material weakness in internal
+    controls; 3 customers are 63% of revenue, 1 supplier is 47% of
+    costs.
+- **Total tonight: 19 report-periods published, 1 false-positive skip
+  (not counted against the cap) — 19/~35.**

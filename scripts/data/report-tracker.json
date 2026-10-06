@@ -22002,5 +22002,168 @@
         "filedAt": "2026-08-14"
       }
     ]
+  },
+  "AVTX": {
+    "name": "Avalo Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avtx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q/earnings 8-K filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avtx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
+  "AVX": {
+    "name": "Avax One Technology Ltd. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13",
+      "note": "formerly AgriFORCE Growing Systems, renamed Nov 2025; now mainly an AVAX token treasury plus small bitcoin-mining business"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "Q1/Q2 2026 10-Qs filed ~45 days after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
+  },
+  "AVXL": {
+    "name": "Anavex Life Sciences Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/avxl/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-28",
+      "note": "fiscal year ends Sept 30; this quarter and the Q2 10-Q were both filed late (2026-08-28) alongside a 10-K/A and 10-Q/A adding a material-weakness disclosure (no figures restated). Net income driven by a $17.1M non-cash stock-option reversal after CEO was fired for cause April 30, 2026 — ex that, still a loss."
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, year ending 2026-09-30)",
+      "estimate": "2026-11-25",
+      "basis": "FY2025 10-K filed 2025-11-25",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/avxl/2026/q3",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-28"
+      }
+    ]
+  },
+  "AWRE": {
+    "name": "Aware, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/awre/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q3 2025 earnings 8-K 2025-10-29, 10-Q 2025-10-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/awre/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-31"
+      }
+    ]
+  },
+  "AXG": {
+    "name": "Solowin Holdings - Class A Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-06",
+      "url": "https://financialreportinsights.com/companies/axg/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-08-03",
+      "note": "foreign private issuer (HK fintech/brokerage), fiscal year ends March 31, reports in USD; filed late via NT 20-F notice"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (interim results, six months to 2026-09-30)",
+      "estimate": "2027-01-08",
+      "basis": "last year's equivalent interim 6-K filed 2026-01-09",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-06",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-06",
+        "url": "https://financialreportinsights.com/companies/axg/2026/annual",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-08-03"
+      }
+    ]
   }
 }
