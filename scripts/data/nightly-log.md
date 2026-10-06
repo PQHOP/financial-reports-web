@@ -8922,5 +8922,52 @@ dispatching more subagents.
     Sanity-checked live via cache-busted fetch (Takeaway + Source filing
     present, ends on a complete sentence, no truncation) before marking
     done in the tracker.
-- **Total so far tonight: 1 report-period published, 1 false-positive
-  skip (not counted against the cap) — 1/~35.**
+- Tier 0 exhausted (2 candidates, 1 published, 1 false-positive skip).
+  Ran `next-batch -- --n 5`, which picked up the us-listed backlog right
+  after AURA (where the 2026-10-05 night firing stopped at the cap): AURE,
+  AUTL, AVAH. Dispatched 3 opus subagents in parallel.
+- Published (3 of 3, all sanity-checked live via cache-busted fetch —
+  Takeaway + Source filing present, ends on a complete sentence, no
+  truncation):
+  - **AURE** (Aurelion Inc., formerly Prestige Wealth) — fiscal Q3 2026
+    (quarter ended 2026-06-30; fiscal year ends Sept 30), new company,
+    foreign private issuer holding tokenized gold (XAUt) as its balance
+    sheet, from the 6-K furnished 2026-07-27 (Exhibit 99.1 earnings
+    release — this filer is 20-F/6-K, not 10-K/10-Q):
+    https://financialreportinsights.com/companies/aure/2026/q3 — no
+    revenue this quarter (vs $2.98M a year earlier); net loss $25.06M
+    (-$0.72 diluted EPS) vs -$1.51M/-$0.22, with $22.29M of the loss from
+    marking down its 33,318 XAUt gold tokens as gold fell ~14% in the
+    quarter. NAV $91.9M ($2.44/share): $134.7M gold tokens+cash minus a
+    $42.8M related-party loan, against only $1.6M actual cash. Report
+    flags an unexplained discrepancy between the press release's prior-
+    year-quarter revenue ($2.98M) and the FY2025 20-F's full-year revenue
+    ($1.79M) — neither filing explains the gap.
+  - **AUTL** (Autolus Therapeutics) — Q2 2026, new company, CAR T-cell
+    biotech (AUCATZYL for leukemia), from the 10-Q filed 2026-08-11 (the
+    company has switched from 20-F/6-K to standard 10-Q/10-K, USD/US
+    GAAP): https://financialreportinsights.com/companies/autl/2026/q2 —
+    revenue +118.4% to $45.7M (all AUCATZYL), product gross margin
+    improved to ~55% from ~6% in Q1. Net loss narrowed to $39.1M from
+    $47.9M (EPS -$0.15 vs -$0.18), though $2.7M of that improvement is a
+    royalty-liability re-estimate, not operations. Cash+securities
+    $201.6M; borrowed $75M from Perceptive in July at ≥10.75% interest.
+    FY2026 revenue guidance raised to $140-150M, implying only $34-39M/
+    quarter in H2 — below Q2's run rate. Cash guided to last into Q2 2028.
+    netIncomeYoyPct/epsYoyPct omitted as n/m (loss-to-loss).
+  - **AVAH** (Aveanna Healthcare) — Q2 2026, new company, home health/
+    pediatric nursing services, from the 10-Q filed 2026-08-13:
+    https://financialreportinsights.com/companies/avah/2026/q2 — revenue
+    +13.7% to $670.5M, net income +49.1% to $40.3M, diluted EPS $0.18
+    (+38.5%). Operating margin actually fell to 11.9% from 13.6% (nursing
+    segment's gross profit per caregiver-hour down 11.1% as caregiver pay
+    costs rose 7.8% against only 1.7% higher billing rates) — all of the
+    EPS growth came from below the operating line: a lower borrowing rate
+    (9.0%→6.6%), hedge gains and a lower tax rate (28.7% vs 38.8%), not
+    from operations. FY2026 guidance raised to >$2.68B revenue / >$365M
+    adjusted EBITDA from the existing business (on top of the already-
+    disclosed Family First acquisition). Edited once post-publish to
+    reword one sentence that read as management's view rather than the
+    subagent's own inference.
+- **Total tonight: 4 report-periods published, 1 false-positive skip
+  (not counted against the cap) — 4/~35.**
