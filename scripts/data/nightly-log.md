@@ -9437,3 +9437,12 @@ concurrent firing this time). Ran `scan-recent-filings`: 0 fresh tier-0
 candidates. Per the log above, exited immediately without dispatching
 any research subagents or publishing — correctly picked up the
 stop-at-cap note this time.
+
+**05:05 JST firing (same night):** verified network access again (403
+without a User-Agent on a bare request to sec.gov, 200 with the required
+User-Agent — SEC's own policy, not a proxy block; financialreportinsights.com
+and the vercel.app alias both 200). Pulled latest `origin/master` (still
+at the BBCP commit, 34/35, no new commits from another concurrent firing).
+Ran `scan-recent-filings`: 0 fresh tier-0 candidates, same as the 03:05
+firing. Exited immediately without dispatching any research subagents or
+publishing, per the stop-at-cap note above.
