@@ -6,6 +6,39 @@ date and commit.
 
 ## Next
 
+- **Re-check Google indexing around 2026-10-11 through 10-18.** Sitemap
+  still 0/1818 indexed as of 2026-10-06; still consistent with "new
+  low-authority domain rationing crawl budget," not a bug — 2026-10-06
+  re-checked the obvious suspects (robots.txt clean/unchanged, no stray
+  noindex on real content pages, RSS autodiscovery present via
+  `metadata.alternates`, query-string URLs on public pages don't bypass
+  the ISR cache or force dynamic rendering) and found nothing. If still
+  0 indexed by ~10-18, that's worth escalating past "just wait" — e.g.
+  checking Manual Actions/Security Issues in the GSC UI directly (not
+  exposed via the API this routine uses).
+- Once Search Console shows real (non-bot) query volume: rewrite
+  titles/descriptions for position-5-to-20 opportunity queries. As of
+  2026-10-06 every `opportunities`/`topQueries`/per-page query we checked
+  (including the GICS industry pages, not just `/industries/uncategorized`)
+  is automated-pattern noise with 0 clicks — templated "`<company>`
+  bullish and bearish analyst opinions" phrasing, and literal Boolean
+  search-operator strings like `intitle:(acquire or acquires or ...)
+  -site:youtube.com ...` that only an SEO/M&A-monitoring bot would type.
+  Not a rewrite target; re-assess once real queries show up.
+- FTSE 100 / TSX / ASX expansion (`docs/GROWTH_PLAN.md` giai đoạn 5) is
+  still a large, new-finance-area feature — propose to the user, don't
+  just build it.
+
+## Done
+
+- 2026-10-06: ops run found no new safe code change worth making this
+  cycle. Verified (not just assumed) that recent audits still hold:
+  robots.txt/meta-robots/RSS autodiscovery all correct, `?utm_*`-style
+  query strings on public pages still hit the ISR cache (`x-vercel-cache:
+  HIT`) rather than forcing per-request rendering, latest production
+  deployment (`78aaba2`) matches a commit in `git log` and is READY,
+  health check all green except the expected `/ads.txt` 404
+  (`ADSENSE_CLIENT` unset). No deploy needed — nothing changed.
 - 2026-10-05: full page-by-page thin-content sweep done (was the last open
   item in the AdSense readiness audit) — spot-checked industry pages (11
   GICS sectors, each 19-79 reports / 120KB-357KB rendered), `/learn` guide
@@ -29,14 +62,14 @@ date and commit.
   not an obvious bug — added `lastModified` to sitemap entries that lacked
   it (company/industry/year pages, homepage, listings) as a cheap freshness
   signal, but expect this needs weeks of patience + continued link/content
-  signals more than another code fix. Re-check indexed count in a week.
+  signals more than another code fix.
 - 2026-10-05: GA4 confirmed receiving hits (`analytics` section of `npm run site-metrics` now returns real rows for 10-03 and 10-04 — 4-6 users/day, 9-19 over the trailing 28 days). Volume is still tiny; that's the 10k-visits/month goal to work on, not a tracking bug.
-- Once Search Console data is available: rewrite titles/descriptions for the position-5-to-20 opportunity queries. Note: most current `opportunities`/`topQueries` rows are odd templated phrases ("X bullish and bearish analyst opinions", "X forecast and analysis") against obscure/SPAC tickers with 0 clicks — looks like bot/scraper probing rather than real demand (same pattern as the 09-20 "breach/ransomware" probing of Uncategorized), not a rewrite target.
-- AdSense readiness audit: list which pages a reviewer would see as thin or templated (company pages without reports are already noindex), check About/Contact/Privacy/Terms are complete, navigation reaches every content section, and propose what's missing. Applying for AdSense itself is the user's action (Never list). Partial pass done 2026-10-04: About/Contact/Privacy/Corrections are all substantial (10k+ chars) and current; found and fixed one real gap — Privacy didn't disclose GA4 (added earlier today, undisclosed) alongside Vercel Web Analytics. 2026-10-05: found and fixed a second real gap — `/terms` 404'd, no Terms of use page existed and nothing linked to it. Added one (same style/voice as About/Privacy/Corrections: not-investment-advice, content reuse, community-report submission terms, third-party links/ads, no-warranty), linked from the footer, listed in the sitemap. Also checked header nav (`SiteNav.tsx`) against every content section (reports/earnings/scorecards/economy/rates/world-risks/insights/learn) — complete, no gap. Still need: a fuller page-by-page thin-content sweep of the dynamic page types (industry pages, individual guide/insight articles) rather than just the static legal pages.
-- Check Search Console coverage: how many report pages are indexed vs submitted in the sitemap; investigate "Discovered – currently not indexed". See the indexing note above — now have a concrete, API-confirmed answer (AAPL's own pages aren't indexed yet either), not just the sitemap report's 0.
-
-## Done
-
+- AdSense readiness audit (full): About/Contact/Privacy/Corrections/Terms all
+  substantial and current, GA4 disclosed in Privacy, `/terms` added and
+  linked from the footer, header nav (`SiteNav.tsx`) covers every content
+  section, full thin-content sweep done 2026-10-05. Complete — only thing
+  left is the user submitting AdSense itself (Never list).
+- Check Search Console coverage: how many report pages are indexed vs submitted in the sitemap; investigate "Discovered – currently not indexed" — confirmed via URL Inspection API (AAPL's own pages aren't indexed yet either), not just the sitemap report's 0.
 - 2026-10-04: the "token can't deploy" blocker was a missing project link,
   not a bad token — deploy with `VERCEL_ORG_ID`/`VERCEL_PROJECT_ID` set (see
   CLAUDE.md step 4). `4ced282` deployed that way from a fresh clone
