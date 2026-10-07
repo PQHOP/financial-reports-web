@@ -6204,6 +6204,39 @@
       }
     ]
   },
+  "BBOT": {
+    "name": "BridgeBio Oncology Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bbot/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11",
+      "note": "Clinical-stage oncology (3 KRAS-targeted drugs incl. BBO-8520), separate company from BridgeBio Pharma (BBIO) despite shared branding/affiliation. Net loss nearly doubled to -$56.5M on R&D +79% to $49.2M; cash fell from $425.5M (YE) to $344.1M, guided to last into 2028. EPS -$0.71 vs -$0.57 (dampened by ~59% more shares after the Aug 2025 SPAC merger/$260.9M raise). Filing itself misprints EPS as \"$(705.20)\" (a units error against a 80,054 weighted-share count printed in thousands) — report uses the correct -$0.71 ($56.45M / 80.05M shares) and says so."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "Q2 10-Q filed 2026-08-11, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bbot/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-11"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",

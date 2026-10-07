@@ -9630,3 +9630,15 @@ were updated) so `next-batch` wouldn't re-list them.
   publish attempt before anything was submitted; retry succeeded, only
   one report exists. Sanity-checked live: content complete. **9/35
   report-periods tonight.**
+- **BBOT:** published — BridgeBio Oncology Therapeutics (a separate
+  public company from BridgeBio Pharma/BBIO despite shared branding),
+  Q2 2026 (quarter ended 2026-06-30).
+  https://financialreportinsights.com/companies/bbot/2026/q2 —
+  clinical-stage oncology (3 KRAS-targeted drugs incl. BBO-8520); net
+  loss nearly doubled to -$56.5M on R&D +79% to $49.2M; cash fell from
+  $425.5M (year-end) to $344.1M, guided to last into 2028; EPS -$0.71
+  vs -$0.57 (dampened by ~59% more shares after the Aug 2025 SPAC
+  merger/$260.9M raise). Caught and corrected a units error in the
+  filing itself, which misprinted EPS as "$(705.20)" — the report uses
+  the arithmetically correct -$0.71 and says so explicitly. Sanity-
+  checked live: content complete. **10/35 report-periods tonight.**
