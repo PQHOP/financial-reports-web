@@ -9694,3 +9694,30 @@ assuming a local/repo problem.
   ($81.7M) looks lighter than the P&L loss partly because payables to
   trial contractor IQVIA rose from $8.6M to $20.0M. Sanity-checked
   live: content complete. **13/35 report-periods tonight.**
+
+**Concurrent-firing collision detected (BCBP):** a research subagent
+dispatched for BCB Bancorp (BCBP) finished its own full, sourced
+analysis and then found `admin-publish` rejecting it — a report for
+2026/Q2 already existed, published 2026-10-07T17:13:38Z. Checked the
+cloud routine `trig_01GNdUY59Na4x3JxMr6p7mxK` directly
+(`get_trigger`): it fired again at 17:05:59 UTC (this session started
+earlier, ~16:07 UTC) in a separate session (`cse_01NvP34bVVgjLb6VHiTDRPRw`),
+finished at 17:11:40 UTC, and had evidently published BCBP — the exact
+"two firings ran concurrently" issue flagged in the 2026-10-06 night
+entry, now confirmed at the trigger level: the Routine's
+`persist_session` is `false`, so every hourly firing spawns a brand
+new session rather than resuming one, and if a prior firing's session
+(like this one) is still running past the top of the next hour, both
+run at once against the same tracker/site. `git fetch` showed the
+other session had *not yet pushed* its own tracker update despite
+finishing — so I reconstructed a BCBP tracker entry myself from the
+live page plus the (unused, unpublished) research subagent's matching
+figures, to stop a third firing from redoing this same research. Did
+**not** count BCBP toward this session's own published-tonight tally
+since this session didn't publish it. **This is worth the user's
+attention: either set `persist_session: true` on the trigger, or space
+firings so one reliably finishes before the next starts** — repeated
+collisions waste a full research pass each time and risk a tracker
+race if two sessions write to it at the same moment (no corruption
+this time, just a wasted pass, because the other session hadn't
+pushed yet when this one checked).

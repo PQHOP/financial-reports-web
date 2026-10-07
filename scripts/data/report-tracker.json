@@ -6336,6 +6336,39 @@
       }
     ]
   },
+  "BCBP": {
+    "name": "BCB Bancorp, Inc. (NJ)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcbp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10",
+      "note": "Published by a concurrent firing of the cloud routine (trig_01GNdUY59Na4x3JxMr6p7mxK), not this session — this entry is reconstructed from the live page plus an independent research subagent's matching figures, since the other session had not pushed its own tracker update. Bank, NJ. Q2 2026 net LOSS of $14.8M (-$0.85/sh) vs a $3.6M profit a year ago, driven by a $19.0M loan-loss provision, a $5.3M goodwill write-off and a $2.6M loss on a loan moved to held-for-sale. NIM 3.03% (2.80% a year ago); efficiency ratio 96.75%. Material post-quarter events to fold into the Q3 report: Q3 guidance (given 2026-09-16) of a $126-136M net loss including a ~$50M DTA valuation allowance; a ~$92.4M net equity raise (12.65M sh @ $7.75); a $205.3M problem-loan sale at an estimated $43.3M pre-tax loss; auditor changed to Deloitte. Two unverified items flagged by the independent subagent, worth a spot-check next time this report is touched: sub-debt shown as $43.3M in the live report may be conflated with the loan-sale-loss figure (10-Q describes a $40M sub-debt issue); headline revenue ~$23M is NII + non-interest income, which is fine."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release / 10-Q (Q3 2026) — a major event per management's own guidance",
+      "estimate": "2026-11-05",
+      "basis": "Q2 10-Q filed 2026-08-10; Q3 guidance already given 2026-09-16, actual results expected early November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcbp/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-10"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",
