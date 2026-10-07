@@ -9769,15 +9769,47 @@ writing.
   NII barely covers the already-cut base distribution; non-accruals
   improved to 5.7% from 6.2%. Sanity-checked live: content complete.
   **16/35 report-periods tonight.**
-- **BCML:** another concurrent automated session had already
-  published this one (BayCom Corp, Q2 2026) before this session's
-  dispatched subagent finished its own independent research — the
-  same overlap pattern as BCBP earlier tonight. Did not publish or
-  edit; recorded the tracker entry from the live page plus the
-  independent subagent's matching figures so a third pass doesn't
-  redo this research. https://financialreportinsights.com/companies/bcml/2026/q2
-  — net loss -$7.0M (-$0.64/sh) vs +$0.58/sh a year ago on $10.5M of
-  one-time executive-departure costs (CEO/COO/CFO dismissed without
-  cause 2026-04-07); NIM 3.95% YoY but down from 4.11% in Q1 2026;
-  CET1 13.76%, ROTCE -9.10%. Not counted toward this session's own
-  published tally (not this session's publish).
+**Third overlap this hour (BCAL/BCAX, then BCG/BCIC, then BCML) —
+too frequent to be a one-off hourly-boundary race.** This firing's
+`next-batch` call returned BCCQ/BCG/BCIC/BCML as a slice; another
+automated session was working the exact same slice at the same time
+and published BCG and BCIC while this firing's subagent was still
+researching them (both correctly skipped once found live — see entries
+above), then — after this firing went on to research and genuinely
+publish BCML itself — that other session reconstructed and pushed its
+own BCML tracker entry before this firing could, from the live page
+plus its own independent subagent's matching figures (no duplicate
+*report* resulted either time, just duplicate *research/tracker-write*
+effort). Three near-simultaneous collisions inside roughly one hour
+(this firing started ~17:06 UTC) is well beyond what a slow-finishing
+hourly firing bleeding into the next hour's start would produce —
+`trig_01GNdUY59Na4x3JxMr6p7mxK` only fires once an hour and this
+firing is its sole run for 17:xx (confirmed via `get_trigger`/
+`get_session`). The likely explanation is a leftover session-local
+`/loop` (the manual fallback CLAUDE.md describes for when the cloud
+routine isn't reliable, on a ~20-30 min cadence) that was started
+during an earlier troubleshooting night and never stopped once the
+cloud routine started working reliably again — that would explain
+collisions roughly every 20-30 minutes rather than only at the hour
+mark. **Flagging this prominently for the user:** check for and stop
+any stray session-local loop still running against this repo, and/or
+set `persist_session: true` on the trigger (or widen its interval) —
+continuing to run both in parallel wastes a research pass almost every
+batch.
+
+- **BCML:** published — BayCom Corp (a bank), Q2 2026 (quarter ended
+  2026-06-30). https://financialreportinsights.com/companies/bcml/2026/q2
+  — net loss $7.0M (-$0.64/sh diluted) vs a $6.4M profit a year ago
+  ($0.58/sh), almost entirely from $10.5M of severance/accelerated-
+  vesting/benefit costs after the board dismissed the CEO, COO and CFO
+  without cause on 2026-04-07. Underneath that, net interest income
+  rose 2.5% to $23.7M and NIM rose to 3.95% from 3.77% YoY (though down
+  from 4.11% in Q1 2026 — sequential softening to flag in the Q3
+  report). Credit improved (NPLs to 0.47% from 0.83% after selling
+  $7.7M of problem loans) alongside a $2.8M charge-off, a $5.2M
+  loan-loss provision, and deposits down $95.5M for the quarter. CET1
+  fell to 13.76% from 17.35% a year ago; ROTCE -9.10%; efficiency ratio
+  107.71% (inflated by the severance charges). Net charge-off ratio
+  (~0.56% annualized) was calculated, not filing-stated — flagged as
+  such in the report. Sanity-checked live: content complete. **17/35
+  report-periods tonight.**
