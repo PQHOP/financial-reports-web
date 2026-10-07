@@ -6270,6 +6270,39 @@
       }
     ]
   },
+  "BCAL": {
+    "name": "California BanCorp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcal/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07",
+      "note": "Bank. Net income $14.3M ($0.44 diluted EPS) vs $14.1M ($0.43) a year ago. NII +4.7% to $43.4M, NIM 4.71% (ex-merger-accretion ~4.39% vs ~4.10% a year ago). Pre-tax income actually fell 1.1% — EPS gain came from a lower tax rate and buybacks. Credit improved sharply: NPLs fell 71% to 0.29% of loans after 3 problem CRE loans resolved; but allowance thinned to 1.13% from 1.37% and substandard loans rose to 2.07%. Total loans $3,110.6M, total deposits $3,359.1M, efficiency ratio 54.22%, net charge-off ratio 0.03%, CET1 13.02%, ROTCE 12.62%."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release / 10-Q (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "Q2 earnings 8-K released 2026-07-27, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcal/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",

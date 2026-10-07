@@ -9668,4 +9668,17 @@ Git Operations incident dated today. Re-ran `git push` once that
 cleared and it succeeded immediately, landing the BBOT, BBSI and this
 note's commits together — no GitHub-API fallback was actually needed
 in the end. If this recurs, check githubstatus.com first before
-assuming a local/repo problem. **11/35 report-periods tonight.**
+assuming a local/repo problem.
+
+- **BCAL:** published — California BanCorp (a bank, so bank-specific
+  metrics), Q2 2026 (quarter ended 2026-06-30).
+  https://financialreportinsights.com/companies/bcal/2026/q2 — net
+  income $14.3M ($0.44 diluted EPS) vs $14.1M ($0.43); NII +4.7% to
+  $43.4M, NIM 4.71% (ex-merger-accretion ~4.39% vs ~4.10% a year ago).
+  Pre-tax income actually fell 1.1% — the EPS gain came from a lower
+  tax rate and buybacks, not operations. Credit quality improved
+  sharply (NPLs -71% to 0.29% of loans after 3 problem CRE loans
+  resolved) but the allowance thinned to 1.13% from 1.37% and
+  substandard loans rose to 2.07% — flagged in the quality check.
+  CET1 13.02%, ROTCE 12.62%. Sanity-checked live: content complete.
+  **12/35 report-periods tonight.**
