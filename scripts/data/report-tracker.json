@@ -6336,6 +6336,23 @@
       }
     ]
   },
+  "BCCQ": {
+    "name": "Bleichroeder Acquisition Corp. III - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (blank-check, SIC 6770), only one 10-Q filed so far (2026-08-14, recent IPO). However it signed a Business Combination Agreement with Ursa Major Technologies, Inc. (a rocket-propulsion company) via an 8-K filed 2026-08-25 (Mach X/Merger Sub/Ursa Major structure, post-Domestication to Delaware) — not yet closed, Outside Date 2027-08-24. No operating business/financials to report on until closing; revisit after the merger closes (likely a notable de-SPAC worth an editorial mention once it does).",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "Business Combination closing (or 10-Q, Q3 2026)",
+      "estimate": "2027-08-24",
+      "basis": "Outside Date in the Business Combination Agreement with Ursa Major Technologies; could close well before then",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07"
+  },
   "BCBP": {
     "name": "BCB Bancorp, Inc. (NJ)",
     "status": "done",
