@@ -9560,3 +9560,24 @@ Ran `scan-recent-filings`: 6 fresh tier-0 candidates — REGN, STZ (S&P 500,
 `scan-recent-filings` handled: REGN (no report, not an earnings
 release), STZ, APOG, AXIL, LW, RPM published. **5 report-periods
 published so far tonight, 5/35.**
+
+**Moving into tier 1 (2026 coverage, us-listed backlog)** — the hot
+list and full S&P 500 are already clear (per the 2026-10-06 night
+entry), so `next-batch` continues through `us-listed`. Re-ran
+`scan-recent-filings` first (0 fresh candidates now that REGN/STZ/APOG
+were updated) so `next-batch` wouldn't re-list them.
+
+- **BAOS:** checked, no action — still `pending` for 2026 coverage
+  (foreign private issuer, files 20-F annual + half-yearly 6-K only, no
+  quarterlies; next 2026 interim 6-K not expected until ~2026-11-27,
+  confirmed via EDGAR that the latest 6-K is still 2026-09-18 with no
+  financials). `lastChecked` bumped to 2026-10-07, no subagent spent.
+- **BATRK:** published — Atlanta Braves Holdings Series C, Q2 2026
+  (quarter ended 2026-06-30). https://financialreportinsights.com/companies/batrk/2026/q2
+  — same underlying filing/figures as BATRA (Series A, published
+  2026-10-06): net loss $12.2M vs +$29.5M a year ago (6 fewer home
+  games, +$25.2M player salaries, new BravesVision channel launch
+  costs outpacing the media-revenue it added); Battery Atlanta real
+  estate segment +14.2% revenue was the only segment with positive
+  adjusted operating profit. YoY % fields omitted for net income/EPS
+  since it swung profit-to-loss. Sanity-checked live: content complete.

@@ -22759,6 +22759,39 @@
       }
     ]
   },
+  "BATRK": {
+    "name": "Atlanta Braves Holdings, Inc. - Series C",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/batrk/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05",
+      "note": "Series C tracking stock for the same underlying business as BATRA (Series A) — MLB team + Battery Atlanta real estate, same filing/figures. Q2 2026: net loss $12.2M (vs +$29.5M a year ago) on 6 fewer home games, +$25.2M player salaries, BravesVision launch costs; Battery Atlanta real estate +14.2% revenue was the only segment with positive adjusted operating profit. netIncomeYoyPct/epsYoyPct omitted (swung profit-to-loss, not a meaningful percentage)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q/earnings 8-K both filed 2025-11-05; same filing covers both BATRA and BATRK",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/batrk/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      }
+    ]
+  },
   "BBCP": {
     "name": "Concrete Pumping Holdings, Inc.",
     "status": "done",
