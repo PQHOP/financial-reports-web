@@ -9813,3 +9813,14 @@ batch.
   (~0.56% annualized) was calculated, not filing-stated — flagged as
   such in the report. Sanity-checked live: content complete. **17/35
   report-periods tonight.**
+- **BCPC:** published — Balchem Corporation (specialty ingredients/
+  performance chemicals), Q2 2026 (quarter ended 2026-06-30).
+  https://financialreportinsights.com/companies/bcpc/2026/q2 — record
+  sales $284.0M (+11.2%, mostly volume/mix); net earnings +16.6% to
+  $44.6M, diluted EPS +18.8% to $1.39, operating margin 20.9% vs
+  20.1%. Animal Nutrition & Health segment profit +48.7% off a low
+  ~8% margin base; the overall margin gain came from overhead growing
+  slower than sales, not gross margin (essentially flat at ~36.5%).
+  Flagged: inventory +22.9% since December vs ~10% sales growth; FCF
+  fell to $36.2M from $40.7M on higher capex. Sanity-checked live:
+  content complete. **18/35 report-periods tonight.**

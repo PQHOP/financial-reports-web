@@ -6485,6 +6485,39 @@
       }
     ]
   },
+  "BCPC": {
+    "name": "Balchem Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcpc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31",
+      "note": "Specialty ingredients/performance chemicals (Human Nutrition & Health, Animal Nutrition & Health, Specialty Products segments). Record sales $284.0M (+11.2%, mostly volume/mix +7.0pts plus price +2.7pts). Net earnings +16.6% to $44.6M, diluted EPS +18.8% to $1.39, operating margin 20.9% vs 20.1%. Animal Nutrition & Health segment profit +48.7% but off a low ~8% margin base. Margin gain came from overhead growing slower than sales, not gross margin (36.4%->36.5%, barely moved). Flagged: inventory +22.9% since December vs ~10% sales growth; buybacks added ~2pts of EPS growth; FCF fell to $36.2M from $40.7M on higher capex."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q1 10-Q/earnings filed 2026-04-30, Q2 filed 2026-07-31, same-day pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcpc/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-31"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",
