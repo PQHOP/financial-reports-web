@@ -6138,6 +6138,39 @@
       }
     ]
   },
+  "BBLG": {
+    "name": "Bone Biologics Corp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bblg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "note": "Pre-revenue, clinical-stage (NB1 spinal-fusion pilot study in Australia). Net loss widened 4.5% to $0.774M but loss per share narrowed to -$0.43 from -$1.33 purely on share-count dilution (tripled after a June 2025 offering). $4.0M cash at quarter-end; management says runway lasts only into Q2 2027 against a planned $6.2M annual spend. Going-concern warning. July 2026 private placement added ~$2.7M net with heavy warrant dilution. Nasdaq $5M market-value rule non-compliance (currently stayed)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "Q3 2025 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bblg/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",

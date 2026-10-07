@@ -9604,4 +9604,16 @@ were updated) so `next-batch` wouldn't re-list them.
   buybacks even as share count rose 2.8%, and $933.9M of 7% preferred
   stock that closed July 1. Upcoming catalysts: BBP-418 FDA decision
   2026-11-27, encaleret decision 2027-05-08. Sanity-checked live:
-  content complete. **7/35 report-periods tonight.**
+  content complete.
+- **BBLG:** published — Bone Biologics Corp, Q2 2026 (quarter ended
+  2026-06-30). https://financialreportinsights.com/companies/bblg/2026/q2
+  — pre-revenue clinical-stage (NB1 spinal-fusion pilot study in
+  Australia). Net loss widened 4.5% to $0.774M but loss per share
+  narrowed to -$0.43 from -$1.33 purely from share-count dilution
+  (tripled after a June 2025 offering). $4.0M cash at quarter-end;
+  management says runway lasts only into Q2 2027 against a planned
+  $6.2M next-12-month spend (~double H1 pace). Going-concern warning
+  still in place; a July 2026 private placement added ~$2.7M net with
+  heavy warrant dilution; currently non-compliant (stayed) with
+  Nasdaq's $5M market-value rule. Sanity-checked live: content
+  complete. **8/35 report-periods tonight.**
