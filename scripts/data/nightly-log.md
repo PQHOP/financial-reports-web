@@ -9739,3 +9739,21 @@ writing.
   pre-tax loss, and an auditor change to Deloitte. Sanity-checked live
   (cache-busted fetch): content complete, Takeaway and Source filing
   present. **14/35 report-periods tonight.**
+- **BCCQ:** skipped, no subagent spent — pre-merger SPAC (blank-check,
+  SIC 6770), only one 10-Q filed (2026-08-14, recent IPO). Verified via
+  EDGAR it has since signed a Business Combination Agreement with
+  Ursa Major Technologies, Inc. (rocket propulsion) via an 8-K filed
+  2026-08-25 — not yet closed, Outside Date 2027-08-24. Revisit after
+  closing.
+- **BCG:** published — Binah Capital Group (independent broker-dealer
+  network, PCS/Cabot Lodge etc.), Q2 2026 (quarter ended 2026-06-30).
+  https://financialreportinsights.com/companies/bcg/2026/q2 — revenue
+  +12.1% to $46.5M; GAAP net income $0.34M vs a $0.65M loss a year
+  ago, but preferred dividends left common shareholders at a small
+  loss (diluted EPS $(0.00)). Client assets +13.4% to $31.6B almost
+  entirely from market gains while clients withdrew a net $2.2B —
+  flagged as the real story behind the AUM headline. Most of the GAAP
+  improvement was lower share-based pay; adjusted EBITDA rose only
+  $0.3M. Flagged a real liquidity question: Series A preferred must be
+  redeemed March 2028 (~$26.6M) against only $10.5M cash. Sanity-
+  checked live: content complete. **15/35 report-periods tonight.**

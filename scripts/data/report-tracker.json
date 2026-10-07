@@ -6386,6 +6386,39 @@
       }
     ]
   },
+  "BCG": {
+    "name": "Binah Capital Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13",
+      "note": "Independent broker-dealer network (PCS/Cabot Lodge etc.). Revenue +12.1% to $46.5M; GAAP net income $0.34M vs a $0.65M loss a year ago, but $0.40M of preferred dividends left common shareholders at a small loss, so diluted EPS was $(0.00). Client assets +13.4% to $31.6B almost entirely from market gains ($4.8B) while clients withdrew a net $2.2B — flagged as the real story behind the AUM headline. Most of the GAAP improvement was $0.6M lower share-based pay; adjusted EBITDA rose only $0.3M to $1.2M. ~$22.6M of debt/affiliate notes outstanding ($5.3M due 2027); Series A preferred must be redeemed March 2028 (~$26.6M) against only $10.5M cash — a real liquidity question flagged for next report. netIncomeYoyPct/epsYoyPct omitted (both swung loss-to-profit)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcg/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",
