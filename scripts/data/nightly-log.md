@@ -9769,3 +9769,15 @@ writing.
   NII barely covers the already-cut base distribution; non-accruals
   improved to 5.7% from 6.2%. Sanity-checked live: content complete.
   **16/35 report-periods tonight.**
+- **BCML:** another concurrent automated session had already
+  published this one (BayCom Corp, Q2 2026) before this session's
+  dispatched subagent finished its own independent research — the
+  same overlap pattern as BCBP earlier tonight. Did not publish or
+  edit; recorded the tracker entry from the live page plus the
+  independent subagent's matching figures so a third pass doesn't
+  redo this research. https://financialreportinsights.com/companies/bcml/2026/q2
+  — net loss -$7.0M (-$0.64/sh) vs +$0.58/sh a year ago on $10.5M of
+  one-time executive-departure costs (CEO/COO/CFO dismissed without
+  cause 2026-04-07); NIM 3.95% YoY but down from 4.11% in Q1 2026;
+  CET1 13.76%, ROTCE -9.10%. Not counted toward this session's own
+  published tally (not this session's publish).

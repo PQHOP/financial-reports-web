@@ -6452,6 +6452,39 @@
       }
     ]
   },
+  "BCML": {
+    "name": "BayCom Corp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcml/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10",
+      "note": "Published by a concurrent automated session, not this one — reconstructed from the live page plus an independent research subagent's matching figures (both read the underlying filings directly). Bank (United Business Bank). Q2 2026 net LOSS -$7.0M (-$0.64/sh) vs +$0.58/sh a year ago, driven by $10.5M of one-time executive-departure costs after the board dismissed the CEO, COO and CFO without cause on 2026-04-07. NII $23.7M (+2.5%); NIM 3.95% (up vs 3.77% a year ago, but down from 4.11% in Q1 2026 — the live report's 'widened' framing only holds YoY, not sequentially). Efficiency ratio 107.71% (inflated by the one-time charge). CET1 13.76%, ROTCE -9.10%. Loans $2,075.2M, deposits $2,169.9M. NPLs 0.47% of loans (improved)."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release / 10-Q (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "Q1 release 2026-04-23, Q2 release 2026-07-23 — roughly quarterly on the 23rd",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcml/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-10"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",
