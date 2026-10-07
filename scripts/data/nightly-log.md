@@ -9468,3 +9468,41 @@ no new commits from another concurrent firing. Ran `scan-recent-filings`:
 0 fresh tier-0 candidates, same as the three prior firings tonight.
 Exited immediately without dispatching any research subagents or
 publishing, per the stop-at-cap note above.
+
+### 2026-10-07 night (16:00 UTC 2026-10-07 → 22:59 UTC 2026-10-07 / 01:00–07:59 JST 2026-10-08)
+
+**01:07 JST firing:** fresh night window, cap resets to 0/35. Confirmed
+network access (403 without a User-Agent on sec.gov, 200 with the required
+User-Agent; financialreportinsights.com 200). `npm install` ran clean
+(no DB env var needed this time — `prisma generate`'s `postinstall` failed
+on missing `DATABASE_URL` but that's fine, no Prisma dependency in
+`admin-publish`/`scan-recent-filings`). Pulled latest `origin/master`.
+
+Ran `scan-recent-filings`: 6 fresh tier-0 candidates — REGN, STZ (S&P 500,
+`update`), APOG, AXIL, LW, RPM (us-listed; APOG `update`, AXIL/LW/RPM
+`new`), all from filings dated 2026-10-06.
+
+- **REGN:** INCOMPLETE — not a report. The 8-K (filed 2026-10-06) is a
+  Sanofi antibody-collaboration amendment (Regeneron gets $1.0B upfront +
+  up to $7.0B in milestones for 4 new antibody programs) plus an Item 2.02
+  pre-announcement of a one-time ~$22M pre-tax / ~$0.18-per-share
+  acquired-IPR&D charge expected in Q3 2026 results — not the Q3 earnings
+  release itself (no Exhibit 99.1, no revenue/EPS/segment figures). Did
+  not publish. Updated tracker: `lastFilingSeen` set to this 8-K so the
+  scan stops re-flagging it; `nextExpectedFiling` moved to the real Q3
+  2026 earnings release/10-Q, estimated 2026-11-03.
+- **STZ:** published — Q2 FY2027 (quarter ended 2026-08-31), labeled
+  year 2026 / period Q2 to match the calendar-year-of-period-end
+  convention (same as WMT FY2027 Q2 → `/2026/q2`, NKE FY2027 Q1 →
+  `/2026/q1`). https://financialreportinsights.com/companies/stz/2026/q2
+  — net sales +6.1% to $2,633.0M; GAAP diluted EPS +25.3% to $3.32, but
+  almost all of that jump is a lower tax rate (20.2% vs 37.9% a year ago)
+  — comparable EPS +3% to $3.74 with comparable net income flat, so the
+  real driver was ~3% fewer shares from buybacks. Beer shipments to
+  distributors (+5.5%) are running ahead of depletions/sell-through
+  (-0.6%) — a restocking effect flagged as a thing to watch. Wine &
+  Spirits turned profitable (3.8% margin) but below the 5-6% full-year
+  guide. Comparable EPS guidance unchanged at $11.20-$11.90. Sanity-
+  checked live (cache-busted fetch): content complete, Takeaway and
+  Source filing present.
+- APOG, AXIL, LW, RPM: in progress.

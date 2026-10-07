@@ -7416,28 +7416,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/stz/2026/annual"
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/stz/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q (Q1 FY2027)",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-07-01"
+      "type": "8-K (Item 2.02, Ex. 99.1 earnings release, \"Q2 FY2027\")",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-06"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q2 FY2027)",
-      "estimate": "2026-10-07",
-      "basis": "Q2 FY2026 10-Q filed 2025-10-07; release on or just before",
+      "type": "10-Q (Q2 FY2027, same period as above)",
+      "estimate": "2026-10-09",
+      "basis": "10-Q typically follows the 8-K earnings release within days; same period already published from the earnings release, so this will likely come back as a same-period update (lastFilingSeen refresh only, no new report) unless it adds material detail",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-07",
     "reports": [
       {
         "year": 2026,
         "period": "ANNUAL",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/stz/2026/annual"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/stz/2026/q2"
       }
     ]
   },
@@ -13055,17 +13061,17 @@
       "url": "https://financialreportinsights.com/reports/cmuk0t5jh000004jf2nbtu1xa"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
+      "type": "8-K (Item 1.01/2.02/8.01, not an earnings release)",
       "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "filedAt": "2026-10-06"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Q1 filed 2026-04-29, Q2 filed 2026-07-30, ~90-day cadence",
+      "type": "Q3 2026 earnings release (8-K Ex. 99.1) / 10-Q",
+      "estimate": "2026-11-03",
+      "basis": "Q1 filed 2026-04-29, Q2 filed 2026-07-30, ~90-day cadence; the 2026-10-06 8-K was a Sanofi collaboration amendment + one-time charge pre-announcement ($22M pre-tax IPR&D, ~$0.18/sh), not the earnings release",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-07"
   },
   "RF": {
     "name": "Regions Financial Corporation",
