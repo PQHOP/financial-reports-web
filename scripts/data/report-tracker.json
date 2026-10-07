@@ -6531,7 +6531,7 @@
       "type": "10-Q (+8-K Ex. 99.1 earnings release)",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-05",
-      "note": "Published by a concurrent automated session (same overlap pattern as BCBP/BCML tonight) — reconstructed from the live page plus an independent research subagent's matching figures. Commercial-stage biopharma (ORLADEYO, hereditary angioedema prevention). Revenue +33.6% to $218.3M, net income $78.4M, but $55.7M of that revenue was a one-time license fee for navenibart (an HAE drug in late-stage trials) — underlying ORLADEYO growth only ~10% excluding the divested European business. Full-year guidance: ORLADEYO $625-645M, total revenue $690-715M."
+      "note": "Published by this session's own subagent (ground truth) — a concurrent firing independently reconstructed a matching entry around the same time; merged the two. Commercial-stage biopharma (ORLADEYO, hereditary angioedema prevention). Revenue +33.6% to $218.3M, net income $78.4M, but $55.7M of that revenue was a one-time license fee for navenibart (an HAE drug in late-stage trials) — underlying ORLADEYO growth only ~10% excluding the divested European business; ex. the fee, Q2 operating margin is ~26% vs the reported 45.1%. Full-year guidance raised: ORLADEYO $625-645M, total revenue $690-715M. H1 shows a $643.4M GAAP loss from a $697.8M write-off of navenibart drug rights acquired with Astria; ~$822M of loans/royalty financing outstanding and shareholders' equity is negative — flag for next report."
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -6548,6 +6548,72 @@
         "url": "https://financialreportinsights.com/companies/bcrx/2026/q2",
         "periodEnd": "2026-06-30",
         "filedAt": "2026-08-05"
+      }
+    ]
+  },
+  "BCTX": {
+    "name": "BriaCell Therapeutics Corp. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bctx/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-04-30",
+      "filedAt": "2026-06-09",
+      "note": "Fiscal Q3 2026 (fiscal year ends July 31), labeled calendar year 2026 / period Q3. Clinical-stage, no revenue. Net loss attributable to BriaCell +16.9% to $7.16M on Phase 3 Bria-IMT trial costs ($10.8M over nine months) plus the Bria-OTS program. Loss per share fell to $0.99 from $16.42 purely from ~19x more shares outstanding after offerings and two reverse splits (EPS YoY omitted as meaningless). $22.8M cash+short-term investments against ~$7.6M/quarter burn, plus a $4.7M offering at $3.25/sh on June 2. Going-concern doubt remains. Dec 2025 guidance expected Phase 3 topline data in H1 2026; not yet reported as of this 10-Q, treated as unconfirmed in the report."
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, year ended 2026-07-31)",
+      "estimate": "2026-10-29",
+      "basis": "fiscal year end 2026-07-31, ~90 days to file a 10-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bctx/2026/q3",
+        "periodEnd": "2026-04-30",
+        "filedAt": "2026-06-09"
+      }
+    ]
+  },
+  "BCYC": {
+    "name": "Bicycle Therapeutics plc - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcyc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30",
+      "note": "Clinical-stage biotech (bicyclic peptide drugs). Net loss narrowed 36.2% to $50.3M ($0.72/sh) as R&D fell 42% to $41.2M after stepping back (March 2026) from solo-developing lead candidate zelenectide and cutting ~30% of staff. Collaboration revenue fell 78.5% to $0.6M as the Genentech and Novartis partnerships ended. Cash $510.1M, guided to last into 2030. Pipeline focus shifted to nuzefatide (Phase 2 pancreatic cancer trial started April 2026) and a BT1702 trial planned for 2027. operatingMarginPct omitted as meaningless (near-zero revenue)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q2 earnings released 2026-07-30, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcyc/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-30"
       }
     ]
   },

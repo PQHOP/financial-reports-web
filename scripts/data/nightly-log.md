@@ -9861,3 +9861,47 @@ every duplicate was caught by `admin-publish`'s own uniqueness check
 or by the dispatched subagent's own live-page check before writing
 anything, and reconciled into the tracker from verified live figures
 either way.
+
+**This session (the ~17:00 UTC firing) agrees with the analysis
+above** — overlapping long-running hourly firings, not necessarily a
+separate stray loop, is sufficient to explain tonight's collisions;
+flagged a push notification to the user mid-session recommending
+`persist_session: true` (or widening the interval) before this
+clearer picture emerged, still worth doing either way. BCPC and BCRX
+above were this session's own `next-batch` picks too; BCPC was
+already live by the time this session got to it (not re-published,
+not counted), and BCRX's tracker note has been filled in with this
+session's own subagent's ground-truth figures (the write-off/negative
+-equity detail the reconstruction above didn't have). This session
+also published two more tickers the other session didn't reach:
+
+- **BCTX:** published — BriaCell Therapeutics Corp., fiscal Q3 2026
+  (quarter ended 2026-04-30, fiscal year ends July 31), labeled
+  calendar year 2026 / period Q3.
+  https://financialreportinsights.com/companies/bctx/2026/q3 —
+  clinical-stage, no revenue. Net loss attributable to BriaCell +16.9%
+  to $7.16M on Phase 3 Bria-IMT trial costs ($10.8M over nine months)
+  plus the Bria-OTS program. Loss per share fell to $0.99 from $16.42
+  purely from ~19x more shares after offerings and two reverse splits
+  (EPS YoY omitted as meaningless). $22.8M cash+short-term investments
+  against ~$7.6M/quarter burn, plus a $4.7M offering at $3.25/sh on
+  June 2. Going-concern doubt remains; Dec 2025 guidance for H1 2026
+  Phase 3 topline data not yet reported, flagged as unconfirmed.
+  Sanity-checked live: content complete.
+- **BCYC:** published — Bicycle Therapeutics plc (ADS), Q2 2026
+  (quarter ended 2026-06-30).
+  https://financialreportinsights.com/companies/bcyc/2026/q2 — net
+  loss narrowed 36.2% to $50.3M ($0.72/sh) as R&D fell 42% to $41.2M
+  after stepping back (March 2026) from solo-developing lead candidate
+  zelenectide and cutting ~30% of staff. Collaboration revenue fell
+  78.5% to $0.6M as the Genentech and Novartis partnerships ended.
+  Cash $510.1M, guided to last into 2030; pipeline focus shifted to
+  nuzefatide (Phase 2 pancreatic cancer trial started April 2026) and
+  a BT1702 trial planned for 2027. Sanity-checked live: content
+  complete. **20/35 report-periods tonight** (18 + BCTX + BCYC; BCPC
+  and BCRX already counted by the other firing).
+
+**Stopping this batch here, ahead of the next hourly firing due
+18:04 UTC**, for the same reason the previous entry gave — continuing
+risks another collision rather than more progress. 20/35 is well
+under the ~35 cap, leaving room for later firings tonight.
