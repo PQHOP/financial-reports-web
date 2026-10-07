@@ -9591,4 +9591,17 @@ were updated) so `next-batch` wouldn't re-list them.
   maturity with a noteholder option to convert into 95% of the stock; a
   post-quarter $4.3M equity raise diluted existing holders ~19%. YoY %
   omitted for net income/EPS (prior-year quarter was a loss). Sanity-
-  checked live: content complete. **7/35 report-periods tonight.**
+  checked live: content complete.
+- **BBIO:** published — BridgeBio Pharma, Q2 2026 (quarter ended
+  2026-06-30). https://financialreportinsights.com/companies/bbio/2026/q2
+  — U.S. Attruby (acoramidis, for ATTR-CM) sales $222.4M, up from
+  $71.5M a year ago and $180.6M in Q1; total revenue $243.7M (+120.4%,
+  prior-year quarter included a one-off $30M milestone). Operating loss
+  narrowed to -$107.1M (-43.9% margin); net loss to common -$152.2M
+  (-$0.78/sh) vs -$0.95/sh. Flagged in the quality check: ~$41M non-cash
+  interest on royalty obligations, ~$3.4B combined convertible notes +
+  royalty obligations, receivables +82.5% since December, $210M of
+  buybacks even as share count rose 2.8%, and $933.9M of 7% preferred
+  stock that closed July 1. Upcoming catalysts: BBP-418 FDA decision
+  2026-11-27, encaleret decision 2027-05-08. Sanity-checked live:
+  content complete. **7/35 report-periods tonight.**

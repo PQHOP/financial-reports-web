@@ -6105,6 +6105,39 @@
       }
     ]
   },
+  "BBIO": {
+    "name": "BridgeBio Pharma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bbio/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10",
+      "note": "U.S. Attruby (acoramidis, ATTR-CM) sales $222.4M vs $71.5M a year ago; total revenue $243.7M (+120.4%, prior year included a one-off $30M milestone). Net loss narrowed to -$152.2M (-$0.78/sh) from -$0.95/sh. Upcoming catalysts: BBP-418 FDA decision 2026-11-27, encaleret decision 2027-05-08, infigratinib US launch mid-2027. Commercial Day 2026-10-08."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "Q2 10-Q filed 2026-08-10, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bbio/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-10"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",
