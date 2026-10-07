@@ -6419,6 +6419,39 @@
       }
     ]
   },
+  "BCIC": {
+    "name": "BCP Investment Corporation - Closed End Fund",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcic/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06",
+      "note": "BDC (files 10-Q, unlike a '40-Act closed-end fund that files N-CSR — same precedent as ARCC). Total investment income +20.1% to $15.2M, NII +21.1% to $5.5M, almost entirely from the July 2025 Logan Ridge (LRFC) merger (core investment income ex-accretion only +2.4%; merger also added ~34% more shares, so NII/share fell to $0.45 from $0.50). Realized losses $10.5M + unrealized losses $4.7M produced a GAAP net decrease in net assets of -$9.9M (-$0.80/sh). NAV/share fell to $14.49 from $15.60 (March) / $17.89 (year-ago, -19%). Core NII (~$0.27/sh) barely covers the already-cut $0.27 base distribution; tax-basis distributable income $0.29/sh vs $0.30 declared (incl. supplemental). Non-accruals at cost improved to 5.7% from 6.2%; KeyBank facility upsized, replaced JPMorgan facility. netIncomeYoyPct/epsYoyPct omitted (both years were losses); operatingMarginPct omitted (doesn't apply to a BDC)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2025 results released 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcic/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",

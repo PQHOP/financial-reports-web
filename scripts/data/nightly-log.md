@@ -9757,3 +9757,15 @@ writing.
   $0.3M. Flagged a real liquidity question: Series A preferred must be
   redeemed March 2028 (~$26.6M) against only $10.5M cash. Sanity-
   checked live: content complete. **15/35 report-periods tonight.**
+- **BCIC:** published — BCP Investment Corporation (a BDC, files
+  10-Q like ARCC rather than N-CSR), Q2 2026 (quarter ended
+  2026-06-30). https://financialreportinsights.com/companies/bcic/2026/q2
+  — total investment income +20.1% to $15.2M, NII +21.1% to $5.5M,
+  almost entirely from the July 2025 Logan Ridge (LRFC) merger (core
+  income ex-accretion only +2.4%; merger also added ~34% more shares,
+  so NII/share fell to $0.45 from $0.50). Realized + unrealized losses
+  produced a GAAP net decrease in net assets of -$9.9M (-$0.80/sh).
+  NAV/share fell to $14.49 from $17.89 a year ago (-19%). Flagged: core
+  NII barely covers the already-cut base distribution; non-accruals
+  improved to 5.7% from 6.2%. Sanity-checked live: content complete.
+  **16/35 report-periods tonight.**
