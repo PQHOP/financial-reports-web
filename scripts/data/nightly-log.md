@@ -10264,3 +10264,20 @@ headroom for a tier-1/2 backlog company, exiting immediately without
 dispatching any research subagent or touching the tracker. No
 report-periods published this firing; tonight's total stays **34
 report-periods** across 14 new companies.
+
+**~22:05 UTC firing.** Confirmed network access (SEC 403 without UA /
+200 with required UA; financialreportinsights.com 200). `npm install`
+clean (DB-less `prisma generate` postinstall failure is expected, no
+Prisma dependency in `admin-publish`/`scan-recent-filings`;
+`package-lock.json` churn reverted, not committed). Local HEAD and
+`origin/master` in sync at `91447f8`. Read tonight's entry first per
+policy: still **34/35**, unchanged since the 21:05 UTC firing. Ran
+`scan-recent-filings` anyway to check for a tier-0 hot-list/S&P 500 item
+(the one case allowed to exceed the cap slightly): 0 fresh candidates,
+same as every scan tonight. With tier 0 clear, no safe headroom for a
+tier-1/2 backlog company, and the operating window closing at 22:59 UTC
+(07:59 JST), exiting immediately without dispatching any research
+subagent or touching the tracker. No report-periods published this
+firing; tonight's total stays **34 report-periods** across 14 new
+companies. Window closes shortly — expect the next useful firing
+01:00 JST tomorrow (16:00 UTC) with a fresh cap.
