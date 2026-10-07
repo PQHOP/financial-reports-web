@@ -10000,4 +10000,45 @@ BEAM, BEEM.** `scan-recent-filings` still 0 fresh candidates. Dispatched
   interim PFS readout expected H1 2028. Sanity-checked live
   (cache-busted fetch): content complete, Takeaway and Source filing
   present. **24/35 report-periods tonight.**
-- BEAM, BEEM: still researching, results pending.
+- **BEAM:** published — Beam Therapeutics Inc. (clinical-stage gene
+  editing/base editing biotech), Q2 2026 (quarter ended 2026-06-30).
+  First-ever report for this company.
+  https://financialreportinsights.com/companies/beam/2026/q2 —
+  license/collaboration revenue fell 94.2% to $0.490M (H1 revenue
+  $32.2M, but $25.0M of that is a one-time Eli Lilly milestone booked
+  in Q1); net loss widened 20.1% to -$122.678M ($-1.18/sh) as G&A rose
+  18.9% even though R&D fell 6.5%. Cash+investments fell to $1,152.9M
+  from $1,245.2M at year-end after drawing $100M of a Sixth Street loan
+  (10.5% effective rate) in February; guided, with an expected further
+  $200M from that facility, to fund operations into mid-2029.
+  Pipeline: risto-cel (sickle cell) may file for FDA approval as early
+  as year-end 2026; BEAM-302 (AATD) dosed its first pivotal-cohort
+  patient July 2026; BEAM-304 cleared for human trials June 2026.
+  `operatingMarginPct` omitted (meaningless at ~-25,800% on $0.5M
+  revenue, explained in the body). Sanity-checked live (cache-busted
+  fetch): content complete, Takeaway and Source filing present.
+  **25/35 report-periods tonight.**
+- **BEEM:** published — Beam Global (solar-powered EV charging
+  infrastructure, EV ARC products; not to be confused with Beam
+  Therapeutics/BEAM just above), Q2 2026 (quarter ended 2026-06-30).
+  First-ever report for this company. 10-Q filed late (2026-08-19,
+  after an 08-14 NT 10-Q blaming an HQ/factory move).
+  https://financialreportinsights.com/companies/beem/2026/q2 — revenue
+  +21.0% to $8.562M but H1 revenue -13% to $11.69M (Q1 alone was
+  $3.13M with negative gross margin); gross margin fell to 17.8% from
+  20.3%. Net loss narrowed to -$3.080M from -$4.278M (-$0.14/sh vs
+  -$0.28/sh). Only $1.025M cash at quarter-end; H1 operating cash flow
+  -$4.76M, covered by $5.23M of ATM share sales (weighted shares +41%
+  YoY). Flagged: $2.78M bad-debt reserve (29% of gross receivables,
+  mostly one customer), backlog down to $5.4M from $9.0M, federal
+  revenue under 1% while international rose to 48% of H1 revenue, five
+  open material weaknesses. Post-quarter: 2026-10-06 agreement to buy
+  Norwegian drone company ScoutDI for $24M (90% cash), terminable if
+  not closed by 2026-11-04 — funding flagged as a risk in the 8-K
+  itself. `netIncomeYoyPct`/`epsYoyPct` omitted (loss-to-loss
+  comparison, spelled out in words in the body instead). Sanity-checked
+  live (cache-busted fetch): content complete, Takeaway and Source
+  filing present. **26/35 report-periods tonight.**
+
+Second slice (BDTX/BEAG/BEAM/BEEM) cleared — 3 published, 1 skipped
+(BEAG, pre-merger SPAC). Continuing to the next slice.

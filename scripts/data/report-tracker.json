@@ -23531,5 +23531,70 @@
         "filedAt": "2026-08-05"
       }
     ]
+  },
+  "BEAM": {
+    "name": "Beam Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/beam/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q1 2026 10-Q filed 2026-05-07, Q2 2026 10-Q filed 2026-08-04, each same day as earnings 8-K",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/beam/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-04"
+      }
+    ]
+  },
+  "BEEM": {
+    "name": "Beam Global",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/beem/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19",
+      "note": "filed late (NT 10-Q filed 2026-08-14, HQ/factory move cited)"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "Q3 2025 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/beem/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-19"
+      }
+    ]
   }
 }
