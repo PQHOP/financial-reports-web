@@ -23482,5 +23482,22 @@
         "filedAt": "2026-08-05"
       }
     ]
+  },
+  "BEAG": {
+    "name": "Bold Eagle Acquisition Corp.",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (CIK 1852207, SIC 6770): 2026 10-Qs show only trust-account interest income ($274.1M in trust at 2026-06-30); merger with REDLattice signed 2026-09-25, definitive proxy filed 2026-10-05, shareholder vote ~2026-10-20, deal not yet closed",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "post-merger 10-Q/10-K (if REDLattice merger closes)",
+      "estimate": "2027-01-15",
+      "basis": "merger vote ~2026-10-20; first combined-company filing likely Q4 2026 or FY2026 10-K in early 2027 if the deal closes",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07"
   }
 }

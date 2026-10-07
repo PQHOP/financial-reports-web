@@ -9972,3 +9972,16 @@ Tier-1 batch (BAOS/BDCI/BDMD/BDRX/BDSX) cleared — 3 published (BDMD,
 BDRX, BDSX), 1 skipped (BDCI, pre-merger SPAC), 1 no-action (BAOS,
 already checked today, still pending). Re-running `scan-recent-filings`
 and `next-batch` for the next slice.
+
+**Next slice: BAOS (no action, already checked today), BDTX, BEAG,
+BEAM, BEEM.** `scan-recent-filings` still 0 fresh candidates. Dispatched
+4 parallel Opus subagents.
+
+- **BEAG:** skipped, no report — Bold Eagle Acquisition Corp., another
+  pre-merger blank-check SPAC (CIK 1852207, SIC 6770). 2026 10-Qs show
+  only trust-account interest income ($274.1M in trust at 2026-06-30).
+  Signed a merger agreement with REDLattice on 2026-09-25; definitive
+  proxy filed 2026-10-05, shareholder vote ~2026-10-20, not yet closed.
+  Tracker updated, `nextExpectedFiling` ~2027-01-15 (first post-merger
+  filing, if the deal closes).
+- BDTX, BEAM, BEEM: still researching, results pending.
