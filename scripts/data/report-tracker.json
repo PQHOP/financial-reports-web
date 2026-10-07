@@ -23386,5 +23386,101 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-07"
+  },
+  "BDRX": {
+    "name": "Biodexa Pharmaceuticals plc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bdrx/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 Annual)",
+      "estimate": "2027-03-31",
+      "basis": "foreign private issuer, annual 20-F cadence (fiscal year ends December 31); no quarterlies, only 6-K interims",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bdrx/2026/h1",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-11"
+      }
+    ]
+  },
+  "BDMD": {
+    "name": "Baird Medical Investment Holdings Ltd",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bdmd/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-30"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 Annual)",
+      "estimate": "2027-04-24",
+      "basis": "FY2025 20-F filed 2026-04-24; foreign private issuer, files 20-F only, no quarterlies",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bdmd/2026/h1",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-30"
+      }
+    ]
+  },
+  "BDSX": {
+    "name": "Biodesix, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bdsx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q1 2026 10-Q filed 2026-05-04, Q2 2026 10-Q filed 2026-08-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bdsx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      }
+    ]
   }
 }

@@ -9920,4 +9920,55 @@ Dispatched 4 parallel Opus subagents (one per new ticker).
   formation/admin costs, no operating business; no Business Combination
   signed yet (24-month deadline ~Oct 2027). Tracker updated,
   `nextExpectedFiling` ~2026-11-10 (next 10-Q).
-- BDMD, BDRX, BDSX: still researching, results pending.
+- **BDRX:** published — Biodexa Pharmaceuticals plc (UK clinical-stage
+  biotech, ADS), H1 2026 (six months to 2026-06-30). First-ever report
+  for this company. https://financialreportinsights.com/companies/bdrx/2026/h1
+  — foreign private issuer, no revenue. Net loss narrowed to £1.84M from
+  £3.81M, but that's almost entirely a £2.38M non-cash derivative-
+  liability gain from the falling share price — operating loss actually
+  widened slightly (£4.21M vs £4.02M) as R&D rose 75% to £2.92M. Cash
+  fell to £3.23M from £8.53M at year-end; going-concern doubt flagged,
+  needs more financing in Q4 2026 (raised ~$3.5M gross July 1 and ~$2.3M
+  mid-September via a warrant repricing, both after period-end).
+  `epsDiluted`/`netIncomeYoyPct`/`operatingMarginPct` omitted as
+  misleading at these magnitudes (explained in the report body instead).
+  Sanity-checked live (cache-busted fetch): content complete, Takeaway
+  and Source filing present. **21/35 report-periods tonight.**
+- **BDMD:** published — Baird Medical Investment Holdings Ltd (China
+  medical device company, ADS), H1 2026 (six months to 2026-06-30).
+  First-ever report for this company.
+  https://financialreportinsights.com/companies/bdmd/2026/h1 —
+  foreign private issuer, revenue +24.6% to $9.92M but all of the
+  growth (and more) came from a new $4.80M one-time technology-
+  licensing fee booked on credit terms up to 365 days; core device
+  sales actually fell 37.8% to $4.95M. Swung from an $11.36M operating
+  loss to $0.85M operating income, but net income to shareholders was
+  only $35,405 — essentially breakeven. Flagged hard in the quality
+  check: $44.4M net receivables (of $50.2M gross, $31.8M is over a year
+  overdue), only $0.14M cash against $14.1M of loans due within a year,
+  and a September $4.35M convertible note with a falling conversion
+  price that could add ~17-19% dilution at the current stock price.
+  `netIncomeYoyPct`/`epsYoyPct` omitted (loss-to-profit swing, not a
+  meaningful percentage). Sanity-checked live (cache-busted fetch):
+  content complete, Takeaway and Source filing present. **22/35
+  report-periods tonight.**
+- **BDSX:** published — Biodesix, Inc. (molecular diagnostics,
+  lung-disease tests), Q2 2026 (quarter ended 2026-06-30). First-ever
+  report for this company. https://financialreportinsights.com/companies/bdsx/2026/q2
+  — revenue +34.2% to $26.861M (Diagnostic Tests +42% to $25.349M on
+  ~38% more tests delivered; Development Services -29%); gross margin
+  82.1% vs 79.9%. Net loss narrowed 36.6% to -$7.273M, operating loss
+  narrowed to -$5.388M (-20.1% margin) from -$9.719M. Cash rose to
+  $29.996M (from $18.987M at year-end) on $23.1M of first-half ATM
+  share sales, but H1 operating cash flow was still -$11.73M; the $50M
+  Perceptive term loan (~12.65% interest, matures 2028) was in
+  compliance. FY2026 revenue guidance held at $108-114M. Note on EPS:
+  diluted shares reflect a September 2025 1-for-20 reverse split,
+  already adjusted in both periods' figures. Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **23/35 report-periods tonight.**
+
+Tier-1 batch (BAOS/BDCI/BDMD/BDRX/BDSX) cleared — 3 published (BDMD,
+BDRX, BDSX), 1 skipped (BDCI, pre-merger SPAC), 1 no-action (BAOS,
+already checked today, still pending). Re-running `scan-recent-filings`
+and `next-batch` for the next slice.
