@@ -6346,15 +6346,15 @@
       "url": "https://financialreportinsights.com/companies/bcbp/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "type": "8-K Ex. 99.1 earnings release",
       "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-10",
-      "note": "Published by a concurrent firing of the cloud routine (trig_01GNdUY59Na4x3JxMr6p7mxK), not this session — this entry is reconstructed from the live page plus an independent research subagent's matching figures, since the other session had not pushed its own tracker update. Bank, NJ. Q2 2026 net LOSS of $14.8M (-$0.85/sh) vs a $3.6M profit a year ago, driven by a $19.0M loan-loss provision, a $5.3M goodwill write-off and a $2.6M loss on a loan moved to held-for-sale. NIM 3.03% (2.80% a year ago); efficiency ratio 96.75%. Material post-quarter events to fold into the Q3 report: Q3 guidance (given 2026-09-16) of a $126-136M net loss including a ~$50M DTA valuation allowance; a ~$92.4M net equity raise (12.65M sh @ $7.75); a $205.3M problem-loan sale at an estimated $43.3M pre-tax loss; auditor changed to Deloitte. Two unverified items flagged by the independent subagent, worth a spot-check next time this report is touched: sub-debt shown as $43.3M in the live report may be conflated with the loan-sale-loss figure (10-Q describes a $40M sub-debt issue); headline revenue ~$23M is NII + non-interest income, which is fine."
+      "filedAt": "2026-09-16",
+      "note": "Bank, NJ. Published and actually researched by this firing's subagent (not reconstructed) — an earlier version of this entry, written by the concurrent prior-hour firing before it saw this session's push, mis-dated the source filing 2026-08-10 (that's the 10-Q date; the report was sourced from the 2026-09-16 8-K Ex. 99.1 earnings release, confirmed via EDGAR's filing index) and flagged a false conflation concern — the live report correctly describes two separate, coincidentally-identical $43.3M figures: the holding company's 9.25% subordinated debt balance, and the estimated pre-tax loss on the $205.3M problem-loan sale (both independently verified in the 10-Q text, not a units error). Q2 2026 net LOSS $14.8M (-$0.85/sh) vs a $3.6M profit a year ago, driven by a $19.0M loan-loss provision ($16.7M for business loans), a $5.3M full goodwill write-off, and a $2.6M loss on a loan moved to held-for-sale. Underlying lending improved: NIM 3.03% (2.80% a year ago), NII +1.1%. Switched to the Community Bank Leverage Ratio framework as of June 30 (no CET1; leverage ratio 10.38%, holding company 9.18%). Charge-offs $6.6M, ratio not stated; ROTCE not reported. Material post-quarter events folded into the report: Q3 2026 net-loss forecast $126-136M (incl. ~$50M tax-asset write-down, given 2026-09-16); ~$92.4M net equity raise (12.65M sh @ $7.75, well below June tangible book value $14.73/sh); the $205.3M problem-loan sale noted above; auditor changed to Deloitte."
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings release / 10-Q (Q3 2026) — a major event per management's own guidance",
-      "estimate": "2026-11-05",
-      "basis": "Q2 10-Q filed 2026-08-10; Q3 guidance already given 2026-09-16, actual results expected early November",
+      "type": "10-Q (Q3 2026) — pre-announced as a large loss",
+      "estimate": "2026-11-14",
+      "basis": "Q2 10-Q filed 2026-08-14, ~90-day cadence; Sept 16 8-K already guides to a $126-136M Q3 net loss, so this will be a major update",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-07",
@@ -6365,7 +6365,7 @@
         "publishedAt": "2026-10-07",
         "url": "https://financialreportinsights.com/companies/bcbp/2026/q2",
         "periodEnd": "2026-06-30",
-        "filedAt": "2026-08-10"
+        "filedAt": "2026-09-16"
       }
     ]
   },

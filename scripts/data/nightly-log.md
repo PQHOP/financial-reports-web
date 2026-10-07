@@ -9695,29 +9695,47 @@ assuming a local/repo problem.
   trial contractor IQVIA rose from $8.6M to $20.0M. Sanity-checked
   live: content complete. **13/35 report-periods tonight.**
 
-**Concurrent-firing collision detected (BCBP):** a research subagent
-dispatched for BCB Bancorp (BCBP) finished its own full, sourced
-analysis and then found `admin-publish` rejecting it — a report for
-2026/Q2 already existed, published 2026-10-07T17:13:38Z. Checked the
-cloud routine `trig_01GNdUY59Na4x3JxMr6p7mxK` directly
-(`get_trigger`): it fired again at 17:05:59 UTC (this session started
-earlier, ~16:07 UTC) in a separate session (`cse_01NvP34bVVgjLb6VHiTDRPRw`),
-finished at 17:11:40 UTC, and had evidently published BCBP — the exact
-"two firings ran concurrently" issue flagged in the 2026-10-06 night
-entry, now confirmed at the trigger level: the Routine's
-`persist_session` is `false`, so every hourly firing spawns a brand
-new session rather than resuming one, and if a prior firing's session
-(like this one) is still running past the top of the next hour, both
-run at once against the same tracker/site. `git fetch` showed the
-other session had *not yet pushed* its own tracker update despite
-finishing — so I reconstructed a BCBP tracker entry myself from the
-live page plus the (unused, unpublished) research subagent's matching
-figures, to stop a third firing from redoing this same research. Did
-**not** count BCBP toward this session's own published-tonight tally
-since this session didn't publish it. **This is worth the user's
+**Concurrent-firing collision (BCBP) — reconciled.** Two firings of
+`trig_01GNdUY59Na4x3JxMr6p7mxK` overlapped: the prior hour's session
+(`cse_01NvP34bVVgjLb6VHiTDRPRw`) was still finishing its own batch
+(publishing BCAL and BCAX, just above) when the next hourly firing
+started and was independently assigned BCAL/BCAX/BCBP by its own
+`next-batch` run. That firing's subagent correctly found BCAL/BCAX
+already live and skipped them, and published BCBP itself — its
+`admin-publish` call succeeded (the report shown below is that
+session's own research, not a reconstruction), so an *earlier* version
+of this note (written by yet another firing that saw BCBP live but not
+yet the owning session's push, and guessed at the tracker entry before
+that push landed) understated things: it said BCBP wasn't counted
+toward any tally and flagged a possible sub-debt/loss-estimate
+conflation. Both are resolved now that the owning session's actual
+tracker write has landed — see the BCBP entry in
+`report-tracker.json` for the correct `filedAt` (2026-09-16, the 8-K
+earnings release the report was actually sourced from, not the 10-Q
+date the earlier guess used) and the conflation non-issue (two
+genuinely separate $43.3M figures). **This is still worth the user's
 attention: either set `persist_session: true` on the trigger, or space
-firings so one reliably finishes before the next starts** — repeated
-collisions waste a full research pass each time and risk a tracker
-race if two sessions write to it at the same moment (no corruption
-this time, just a wasted pass, because the other session hadn't
-pushed yet when this one checked).
+firings so one reliably finishes before the next starts** — overlaps
+like this waste a research pass (one BAOS/BCAL/BCAX/BCBP batch effectively
+got checked twice) and can race on the tracker file; this time no data
+was lost or corrupted, but only because each session pulled before
+writing.
+
+- **BCBP:** published — BCB Bancorp, Inc. (NJ) (a bank), Q2 2026
+  (quarter ended 2026-06-30). https://financialreportinsights.com/companies/bcbp/2026/q2
+  — net loss $14.8M (-$0.85/sh) vs a $3.6M profit a year ago, driven by
+  a $19.0M loan-loss provision ($16.7M for business loans), a $5.3M
+  full goodwill write-off, and a $2.6M loss on a loan moved to
+  held-for-sale. The underlying lending business actually improved: NIM
+  rose to 3.03% from 2.80%, NII +1.1%. Switched to the Community Bank
+  Leverage Ratio framework as of June 30 (no CET1 reported; leverage
+  ratio 10.38%); charge-offs $6.6M but no ratio stated; ROTCE not
+  reported. Sourced from the Q2 8-K earnings release (Exhibit 99.1)
+  plus three post-quarter 8-Ks already folded into the forward-looking
+  section: a pre-announced Q3 2026 net-loss forecast of $126-136M
+  (incl. a ~$50M tax-asset write-down), a 12.65M-share raise at $7.75
+  (~$92.4M net, well below June tangible book value $14.73/sh),
+  agreements to sell $205.3M of problem loans at an estimated $43.3M
+  pre-tax loss, and an auditor change to Deloitte. Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **14/35 report-periods tonight.**
