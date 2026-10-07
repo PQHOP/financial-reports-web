@@ -9824,3 +9824,40 @@ batch.
   Flagged: inventory +22.9% since December vs ~10% sales growth; FCF
   fell to $36.2M from $40.7M on higher capex. Sanity-checked live:
   content complete. **18/35 report-periods tonight.**
+- **BCRX:** another concurrent automated session had already
+  published this one (BioCryst Pharmaceuticals, Q2 2026) before this
+  session's dispatched subagent finished — third collision this hour
+  (after BCBP, BCML). Did not publish or edit; recorded the tracker
+  entry from the live page plus the independent subagent's matching
+  figures. https://financialreportinsights.com/companies/bcrx/2026/q2
+  — revenue +33.6% to $218.3M, net income $78.4M, but $55.7M of that
+  was a one-time navenibart license fee — underlying ORLADEYO growth
+  only ~10% ex. the divested European business. Not counted toward
+  this session's own published tally.
+
+**This session stopping here (18/35 self-published, 3 reconciled
+duplicates from an overlapping session) rather than continuing to
+race the next hourly firing.** Timing analysis, adding to the other
+session's note above: this session appears to be the legitimate
+~16:00 UTC hourly firing (started ~16:07 UTC after container boot);
+the colliding session (`cse_01NvP34bVVgjLb6VHiTDRPRw`) lines up with
+the ~17:00 UTC firing (`last_fired_at` 17:05:59 UTC per
+`get_trigger`). Both are long *individual* firings of the same
+hourly-cron Routine (`persist_session: false`, so each hour spawns a
+fresh session) rather than necessarily a stray extra `/loop` — a
+firing that runs past the next hour's mark will always collide with
+that next firing under the current config, no second process
+required to explain it, though a stray loop could still be an
+additional contributor and is still worth the user checking directly.
+With another firing due at 18:04 UTC in under 25 minutes as this is
+written, continuing this session's own dispatches would almost
+certainly waste further research passes on companies it will also
+pick up. **Recommend to the user: either set `persist_session: true`
+on `trig_01GNdUY59Na4x3JxMr6p7mxK` (so one continuous session works
+through a night instead of a new one spawning every hour), or widen
+the firing interval so one batch reliably finishes before the next
+starts.** No bad data resulted from any of tonight's collisions —
+every duplicate was caught by `admin-publish`'s own uniqueness check
+or by the dispatched subagent's own live-page check before writing
+anything, and reconciled into the tracker from verified live figures
+either way.

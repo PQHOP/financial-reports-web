@@ -6518,6 +6518,39 @@
       }
     ]
   },
+  "BCRX": {
+    "name": "BioCryst Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcrx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05",
+      "note": "Published by a concurrent automated session (same overlap pattern as BCBP/BCML tonight) — reconstructed from the live page plus an independent research subagent's matching figures. Commercial-stage biopharma (ORLADEYO, hereditary angioedema prevention). Revenue +33.6% to $218.3M, net income $78.4M, but $55.7M of that revenue was a one-time license fee for navenibart (an HAE drug in late-stage trials) — underlying ORLADEYO growth only ~10% excluding the divested European business. Full-year guidance: ORLADEYO $625-645M, total revenue $690-715M."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q1 and Q2 both filed in the first week of their month, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcrx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",
