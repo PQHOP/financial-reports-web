@@ -23731,5 +23731,101 @@
         "filedAt": "2026-08-11"
       }
     ]
+  },
+  "BFC": {
+    "name": "Bank First Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bfc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings release)",
+      "estimate": "2026-10-20",
+      "basis": "Q1 2026 release 2026-04-16, Q2 2026 release 2026-07-21 (~96 day cadence)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bfc/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
+    ]
+  },
+  "BFST": {
+    "name": "Business First Bancshares, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bfst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings release)",
+      "estimate": "2026-10-25",
+      "basis": "Q1 2026 release 2026-04-27, Q2 2026 release 2026-07-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bfst/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-31"
+      }
+    ]
+  },
+  "BFRI": {
+    "name": "Biofrontera Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bfri/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bfri/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
   }
 }

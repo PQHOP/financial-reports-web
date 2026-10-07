@@ -10142,3 +10142,65 @@ filings found in every scan). Every published report was sanity-checked
 live with a cache-busted fetch before being counted. No tracker-write
 collisions this session — origin was re-checked before every commit
 and matched cleanly each time.
+
+**19:04 UTC firing (this is that firing — same session as the "2026
+Report Coverage - Nightly" routine, confirmed via `get_trigger`'s
+`last_run.session_id`).** Pulled latest `origin/master` (already
+up to date, HEAD was detached at the right commit — reset to a
+tracking `master` branch). `npm install` needed `DATABASE_URL` set to
+a dummy value to get past `prisma generate`'s config loader (not an
+issue for `admin-publish`/`scan-recent-filings`, which need no DB).
+Re-confirmed network access (SEC 403 without UA / 200 with UA;
+financialreportinsights.com 200). `scan-recent-filings`: 0 fresh tier-0
+candidates (same filings already handled by the first firing tonight).
+`next-batch -- --n 6`: BAOS (already checked today, skip re-check),
+BFC, BFRI, BFST, BGC, BGDE — all `4-us-listed-backlog`, confirming
+S&P 500 tier 1 is fully done/skipped. 30/35 going in, so ~5 headroom.
+
+- **BFC:** published — Bank First Corporation (Wisconsin bank holding
+  co.), Q2 2026 (quarter ended 2026-06-30). First-ever report for this
+  company. https://financialreportinsights.com/companies/bfc/2026/q2 —
+  net income +46.3% to $24.7M ($2.21/sh diluted, +29.2%, trailing net
+  income growth because the Centre 1 Bancorp acquisition (closed
+  2026-01-01, +$1.48B assets) was paid partly in stock, +12.6% share
+  count). NIM rose to 4.13% from 3.72%, but ~0.27pts of that is
+  deal-accounting accretion that will fade (underlying NIM ~3.86% vs
+  3.65%). Flagged: loans would have shrunk ~1.4% ex-deal; no loan-loss
+  provision taken either quarter while nonaccruals rose to 0.47% of
+  assets from 0.31%; H1 operating cash flow $12.8M vs $44.7M net
+  income; CET1 fell to 11.2% from 12.3%. All-stock PSB Holdings deal
+  expected to close 2026-12-04 (~$7.5B combined assets). Sanity-checked
+  live (cache-busted fetch): content complete, Takeaway and Source
+  filing present. **31/35 report-periods tonight.**
+- **BFST:** published — Business First Bancshares, Inc. (Louisiana
+  bank holding co.), Q2 2026 (quarter ended 2026-06-30). First-ever
+  report for this company.
+  https://financialreportinsights.com/companies/bfst/2026/q2 — net
+  income +9.4% to $24.2M on the Progressive Bancorp acquisition
+  (closed 2026-01-01), but diluted EPS flat at $0.70 (3.19M new shares
+  issued for the deal, plus a one-off $3.4M branch-sale gain in last
+  year's quarter; core EPS $0.71 vs $0.66). NIM 3.73% vs 3.68% (3.68%
+  ex acquisition accounting). Efficiency ratio rose to 64.8% (expenses
+  +16.2% vs revenue +12.7%). Nonperforming loans 1.26% of loans (vs
+  0.97% a year ago), foreclosed property jumped to $25.1M from $1.5M.
+  Deposits fell $229M in the quarter, backfilled with FHLB borrowing.
+  ROE fell to 9.8% from 10.9%. Sanity-checked live (cache-busted
+  fetch): content complete, Takeaway and Source filing present.
+  **32/35 report-periods tonight.**
+- **BFRI:** published — Biofrontera Inc. (dermatology pharma, Ameluz/
+  photodynamic therapy), Q2 2026 (quarter ended 2026-06-30). First-ever
+  report for this company.
+  https://financialreportinsights.com/companies/bfri/2026/q2 — revenue
+  +32.9% to $12.0M, operating loss narrowed to $0.5M from $5.1M
+  (margin -4.4% vs -56.2%) on an October 2025 supply-deal repricing
+  with former parent Biofrontera AG (cost-plus-12% vs the old 25%-of-
+  revenue royalty). ~$1.9M of the revenue gain was customers
+  front-loading orders of the RhodoLED XL lamp ahead of a July 7 ITC
+  import ban (Sun Pharma patent ruling) — ex that pull-forward, revenue
+  growth is closer to +12%. Net loss $0.6M vs $5.3M. Going-concern
+  doubt stated in the filing (cash $4.7M); H1 operating cash burn fell
+  to $1.7M. Share count +38% from preferred-stock conversions.
+  FDA approved Ameluz for superficial basal cell carcinoma in
+  September (post-quarter), launch planned late Q4 2026/Q1 2027.
+  Sanity-checked live (cache-busted fetch): content complete, Takeaway
+  and Source filing present. **33/35 report-periods tonight.**
