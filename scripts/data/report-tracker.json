@@ -22792,6 +22792,39 @@
       }
     ]
   },
+  "BBGI": {
+    "name": "Beasley Broadcast Group, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bbgi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "note": "Net income $84.3M almost entirely from a $91.8M debt-restructuring gain (2nd-lien notes swapped for PIK notes, May 2026); revenue fell 16.7% to $44.1M. Going-concern note; PIK notes have a springing maturity 2027-09-30. netIncomeYoyPct/epsYoyPct omitted (prior-year quarter was a loss)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q2 10-Q filed 2026-08-14, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bbgi/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
+  },
   "BBCP": {
     "name": "Concrete Pumping Holdings, Inc.",
     "status": "done",

@@ -9581,3 +9581,14 @@ were updated) so `next-batch` wouldn't re-list them.
   estate segment +14.2% revenue was the only segment with positive
   adjusted operating profit. YoY % fields omitted for net income/EPS
   since it swung profit-to-loss. Sanity-checked live: content complete.
+- **BBGI:** published — Beasley Broadcast Group, Q2 2026 (quarter ended
+  2026-06-30). https://financialreportinsights.com/companies/bbgi/2026/q2
+  — net income $84.3M almost entirely from a $91.8M gain on a May 2026
+  debt restructuring ($184.1M second-lien notes swapped for $98.5M of
+  10% PIK notes); without it the company lost money pre-tax. Revenue
+  fell 16.7% to $44.1M (radio -18.5%, digital -11.6%), H1 operating cash
+  flow -$15.2M. Going-concern note; PIK notes have a Sept 2027 springing
+  maturity with a noteholder option to convert into 95% of the stock; a
+  post-quarter $4.3M equity raise diluted existing holders ~19%. YoY %
+  omitted for net income/EPS (prior-year quarter was a loss). Sanity-
+  checked live: content complete. **7/35 report-periods tonight.**
