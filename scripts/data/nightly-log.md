@@ -9541,4 +9541,22 @@ Ran `scan-recent-filings`: 6 fresh tier-0 candidates — REGN, STZ (S&P 500,
   timeout on the first publish attempt before anything was submitted;
   the retry succeeded cleanly, only one report exists. Sanity-checked
   live: content complete.
-- RPM: in progress.
+- **RPM:** first-ever report for this new-to-the-site company — fiscal
+  Q1 2027 (quarter ended 2026-08-31), labeled year 2026 / period Q1.
+  https://financialreportinsights.com/companies/rpm/2026/q1 — record
+  sales +4.8% to $2.22B (3.1% organic, 1.6% acquisitions); GAAP diluted
+  EPS +13.6% to $2.01, but adjusted EPS only +5.3% to $1.98 — the GAAP
+  beat includes a $10.8M facility-sale gain, a $4.9M earn-out gain, and
+  restructuring costs dropping to $1.4M from $16.7M. Performance
+  Coatings grew 7.9% organically with adjusted EBITDA +18.2%;
+  Construction Products shrank 1.7% organically on a bad-debt charge
+  and a warranty charge. Full-year guidance narrowed from a 3-7%
+  sales-growth range to "mid-single-digit", removing the top end. Note:
+  RPM doesn't report an operating-income line, so operatingMarginPct was
+  calculated (gross profit − SG&A − restructuring) ÷ sales, flagged in
+  the report body. Sanity-checked live: content complete.
+
+**Tier 0 cleared** — all 6 fresh candidates from tonight's
+`scan-recent-filings` handled: REGN (no report, not an earnings
+release), STZ, APOG, AXIL, LW, RPM published. **5 report-periods
+published so far tonight, 5/35.**

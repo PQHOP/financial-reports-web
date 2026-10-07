@@ -13139,6 +13139,28 @@
     },
     "lastChecked": "2026-09-27"
   },
+  "RPM": {
+    "name": "RPM International Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/rpm/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release, fiscal Q1 2027)",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027, quarter ending ~2026-11-30)",
+      "estimate": "2027-01-06",
+      "basis": "~90 days after the fiscal Q1 2027 10-Q/earnings release filed 2026-10-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07"
+  },
   "RSG": {
     "name": "Republic Services",
     "status": "done",
