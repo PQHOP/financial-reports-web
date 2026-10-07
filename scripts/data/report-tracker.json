@@ -19863,22 +19863,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-10-03",
-      "url": "https://financialreportinsights.com/companies/apog/2026/annual"
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/apog/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-02-28",
-      "filedAt": "2026-04-24"
+      "type": "10-Q (+8-K Ex. 99.1 earnings release, Q2 FY2027)",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-10-06"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q2 FY2027, quarter ending ~2026-08-29)",
-      "estimate": "2026-10-01",
-      "basis": "~90 days after the Q1 FY2027 10-Q filed 2026-06-30",
+      "type": "10-Q (Q3 FY2027, quarter ending ~2026-11-28)",
+      "estimate": "2027-01-05",
+      "basis": "~90 days after the Q2 FY2027 10-Q filed 2026-10-06",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-03"
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-03",
+        "url": "https://financialreportinsights.com/companies/apog/2026/annual"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/apog/2026/q2"
+      }
+    ]
   },
   "APPN": {
     "name": "Appian Corporation - Class A",

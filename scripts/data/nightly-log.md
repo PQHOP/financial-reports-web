@@ -9505,4 +9505,16 @@ Ran `scan-recent-filings`: 6 fresh tier-0 candidates — REGN, STZ (S&P 500,
   guide. Comparable EPS guidance unchanged at $11.20-$11.90. Sanity-
   checked live (cache-busted fetch): content complete, Takeaway and
   Source filing present.
-- APOG, AXIL, LW, RPM: in progress.
+- **APOG:** published — Q2 FY2027 (quarter ended 2026-08-29), labeled
+  year 2026 / period Q2 (same calendar-year-of-period-end convention).
+  https://financialreportinsights.com/companies/apog/2026/q2 — sales
+  +9.2% to $391.1M (organic +4.6%, rest from the July 1 Kalwall
+  acquisition); operating margin rose 7.5%→8.6% on pricing/productivity/
+  cost-savings even as volumes fell; GAAP diluted EPS still fell to
+  $1.07 from $1.10 because last year had a one-time tax-credit gain
+  (15.4% tax rate vs 26.4% now) — adjusted EPS +19.4% to $1.17.
+  Full-year guidance raised to $1.46-1.50B sales / $3.00-3.40 adjusted
+  EPS, which the report notes implies a weaker H2 than last year's.
+  Sanity-checked live: content complete, Takeaway and Source filing
+  present.
+- AXIL, LW, RPM: in progress.
