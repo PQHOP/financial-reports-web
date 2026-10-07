@@ -10204,3 +10204,34 @@ S&P 500 tier 1 is fully done/skipped. 30/35 going in, so ~5 headroom.
   September (post-quarter), launch planned late Q4 2026/Q1 2027.
   Sanity-checked live (cache-busted fetch): content complete, Takeaway
   and Source filing present. **33/35 report-periods tonight.**
+- **BGC:** published — BGC Group, Inc. - Class A (inter-dealer broker/
+  financial markets infrastructure), Q2 2026 (quarter ended
+  2026-06-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/bgc/2026/q2 — record
+  revenue +7.8% to $845.5M (first like-for-like comparison since the
+  OTC Global acquisition closed 2025-04-01), all five asset classes
+  grew (Rates +10.6%, FX +9.4%, ECS only +5.3% on lower oil volumes
+  tied to the Strait of Hormuz closure). GAAP net income +26% to
+  $72.5M (EPS $0.15 vs $0.11) — a $20M kACE contingent-payment gain
+  roughly offset a $24.5M UK tax reserve from a July 2026 UK Supreme
+  Court ruling (total accrual now $40.6M, more possible). Non-GAAP
+  Adjusted Earnings ($192.9M pre-tax, +11.1%) kept separate from GAAP
+  in the body/metrics; $93.9M GAAP-vs-adjusted gap is mostly $75.6M
+  stock comp. Q3 guidance $775-835M revenue / $172-190M pre-tax
+  Adjusted Earnings. Sanity-checked live (cache-busted fetch): content
+  complete, Takeaway and Source filing present. **34/35
+  report-periods tonight.**
+
+**Stopping this batch here — 34/35 leaves only 1 report-period of
+headroom, not enough to safely start another company.** This firing
+(19:04 UTC, same session as the "2026 Report Coverage - Nightly"
+routine) published 5 report-periods across 5 new companies
+(BFC/BFST/BFRI/BGC, plus the earlier-tonight total): BFC, BFST, BFRI,
+BGC — all first-ever reports, all bank/us-listed-backlog tier 1, all
+sanity-checked live via cache-busted fetch before being counted. Tier
+0 (`scan-recent-filings`) was clear (0 fresh candidates) both times it
+was run tonight. Tonight's running total across all firings: **34
+report-periods published** (14 new companies: BDMD/BDRX/BDSX/BDTX/
+BEAM/BEEM/BEEP/BELFB/BENF/BETR/BFC/BFST/BFRI/BGC), plus the earlier
+skips (BDCI, BEAG, BELFA) and no-action re-check (BAOS). No
+tracker-write collisions.

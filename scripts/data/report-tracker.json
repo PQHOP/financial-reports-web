@@ -23827,5 +23827,37 @@
         "filedAt": "2026-08-13"
       }
     ]
+  },
+  "BGC": {
+    "name": "BGC Group, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bgc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings release)",
+      "estimate": "2026-10-28",
+      "basis": "Q1 2026 release 2026-04-30ish, Q2 2026 release filed 2026-07-30 (~90 day cadence)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bgc/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-10"
+      }
+    ]
   }
 }
