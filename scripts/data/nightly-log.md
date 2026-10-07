@@ -9517,4 +9517,13 @@ Ran `scan-recent-filings`: 6 fresh tier-0 candidates — REGN, STZ (S&P 500,
   EPS, which the report notes implies a weaker H2 than last year's.
   Sanity-checked live: content complete, Takeaway and Source filing
   present.
-- AXIL, LW, RPM: in progress.
+- **AXIL:** first-ever report for this new-to-the-site company —
+  fiscal Q1 2027 (quarter ended 2026-08-31), labeled year 2026 / period
+  Q1. https://financialreportinsights.com/companies/axil/2026/q1 —
+  revenue fell 11.2% to $6.09M (a year-ago big-box order didn't repeat;
+  retailers paused first-gen XCOR orders ahead of the XCOR II launch),
+  but net income rose 26% to $0.42M entirely on a one-time $907K IEEPA
+  tariff refund — without it the quarter was roughly breakeven/a small
+  operating loss. $7.93M cash, no debt. XCOR II orders already above
+  $3.6M by quarter-end. Sanity-checked live: content complete.
+- LW, RPM: in progress.
