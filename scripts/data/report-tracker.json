@@ -6171,6 +6171,39 @@
       }
     ]
   },
+  "BBNX": {
+    "name": "Beta Bionics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bbnx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29",
+      "note": "Net sales +37.8% to $32.0M (single-use supplies +99% to $19.1M, pump revenue -5.5% as more sales shift to pharmacy-channel recognition). Gross margin 59.0% vs 53.8%. Net loss widened to -$23.4M (-$0.53/sh) on +58% sales/marketing spend. Post-quarter: FDA cleared the Mint patch pump (full launch pulled forward to Q1 2027); FY2026 revenue guidance cut to $121-126M from $131-136M; ~$150M gross stock sale (~19% dilution); an open FDA Warning Letter."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q2 10-Q filed 2026-07-29, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bbnx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-29"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",

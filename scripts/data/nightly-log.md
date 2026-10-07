@@ -9616,4 +9616,17 @@ were updated) so `next-batch` wouldn't re-list them.
   still in place; a July 2026 private placement added ~$2.7M net with
   heavy warrant dilution; currently non-compliant (stayed) with
   Nasdaq's $5M market-value rule. Sanity-checked live: content
-  complete. **8/35 report-periods tonight.**
+  complete.
+- **BBNX:** published — Beta Bionics, Q2 2026 (quarter ended
+  2026-06-30). https://financialreportinsights.com/companies/bbnx/2026/q2
+  — net sales +37.8% to $32.0M (single-use supplies +99% to $19.1M,
+  pump revenue -5.5% on a pharmacy-channel sales-recognition shift);
+  gross margin 59.0% vs 53.8%. Net loss widened to -$23.4M (-$0.53/sh)
+  on +58% sales/marketing spend. Post-quarter: FDA cleared the Mint
+  patch pump (full launch pulled forward to Q1 2027), FY2026 revenue
+  guidance cut to $121-126M from $131-136M, a ~$150M stock sale
+  (~19% dilution), and an open FDA Warning Letter — all covered in the
+  forward-looking section. One Playwright login timeout on the first
+  publish attempt before anything was submitted; retry succeeded, only
+  one report exists. Sanity-checked live: content complete. **9/35
+  report-periods tonight.**
