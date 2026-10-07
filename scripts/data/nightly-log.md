@@ -9984,4 +9984,20 @@ BEAM, BEEM.** `scan-recent-filings` still 0 fresh candidates. Dispatched
   proxy filed 2026-10-05, shareholder vote ~2026-10-20, not yet closed.
   Tracker updated, `nextExpectedFiling` ~2027-01-15 (first post-merger
   filing, if the deal closes).
-- BDTX, BEAM, BEEM: still researching, results pending.
+- **BDTX:** published — Black Diamond Therapeutics (clinical-stage
+  precision oncology biotech), Q2 2026 (quarter ended 2026-06-30).
+  First-ever report for this company.
+  https://financialreportinsights.com/companies/bdtx/2026/q2 —
+  pre-revenue; H1 2025 showed net income only because of a one-off
+  $70.0M Servier upfront payment (H1 2026 net loss $18.9M vs that
+  comp). Q2 net loss narrowed 6.2% to -$9.905M as R&D fell 20.7% to
+  $7.393M (NSCLC trial spend down, partly offset by new glioblastoma
+  trial start-up costs); G&A rose 13.7% on patent/IP costs. Cash fell
+  to $110.5M from $128.7M at year-end, guided to last into H2 2028, no
+  debt. Frontline NSCLC data at ASCO (15.2-month preliminary PFS, 60%
+  ORR, 86% brain response) led to a 150mg once-daily pivotal dose;
+  glioblastoma Phase 2 (~150 patients) dosed its first patient May 2026,
+  interim PFS readout expected H1 2028. Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **24/35 report-periods tonight.**
+- BEAM, BEEM: still researching, results pending.
