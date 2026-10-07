@@ -4299,6 +4299,28 @@
     },
     "lastChecked": "2026-09-22"
   },
+  "LW": {
+    "name": "Lamb Weston Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/lw/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release, Q1 FY2027)",
+      "periodEnd": "2026-08-30",
+      "filedAt": "2026-10-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027, quarter ending ~late Nov 2026)",
+      "estimate": "2027-01-06",
+      "basis": "~90 days after the Q1 FY2027 10-Q/earnings release filed 2026-10-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07"
+  },
   "LULU": {
     "name": "lululemon athletica inc.",
     "status": "done",

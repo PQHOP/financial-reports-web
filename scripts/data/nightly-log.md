@@ -9526,4 +9526,19 @@ Ran `scan-recent-filings`: 6 fresh tier-0 candidates — REGN, STZ (S&P 500,
   tariff refund — without it the quarter was roughly breakeven/a small
   operating loss. $7.93M cash, no debt. XCOR II orders already above
   $3.6M by quarter-end. Sanity-checked live: content complete.
-- LW, RPM: in progress.
+- **LW:** first-ever report for this new-to-the-site company — fiscal
+  Q1 2027 (quarter ended 2026-08-30), labeled year 2026 / period Q1.
+  https://financialreportinsights.com/companies/lw/2026/q1 — net sales
+  +0.7% to $1.67B; North America volume +7% with segment adjusted
+  EBITDA +11% to $287.3M, but International adjusted EBITDA fell 54% to
+  $26.5M on expensive carryover European potato costs and
+  under-utilized plants (leading to the Broekhuizenvorst, Netherlands
+  plant closure). Reported EPS fell to $0.21 from $0.46 on $34.2M
+  restructuring charges plus a new $33.0M legal accrual (incl. the
+  Oregon groundwater case); adjusted EPS held roughly flat ($0.75 vs
+  $0.74) on a lower tax rate, JV earnings and fewer shares. Full-year
+  adjusted EPS guidance raised to $3.05-3.35. One Playwright login
+  timeout on the first publish attempt before anything was submitted;
+  the retry succeeded cleanly, only one report exists. Sanity-checked
+  live: content complete.
+- RPM: in progress.
