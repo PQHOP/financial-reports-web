@@ -9655,17 +9655,17 @@ were updated) so `next-batch` wouldn't re-list them.
   (~31% of equity, no reserve booked) and H1 operating cash flow of
   -$78.0M. Sanity-checked live: content complete.
 
-**Note on this batch: GitHub push failing with a persistent 500
-(`remote: Internal Server Error`)** on every attempt since the BBOT
+**Note on this batch: `git push` failed with a persistent 500
+(`remote: Internal Server Error`)** for about 3 minutes after the BBOT
 commit — not a network/proxy issue (TLS handshake and HTTP response
-headers are clean 200 OK; the receive-pack body itself contains the
-error). Retried 4x with exponential backoff per policy, then 6 more
-times over ~2 minutes in the background — all failed identically.
-`git fetch`/read access works fine; only `git push` (git-receive-pack)
-fails. Falling back to the GitHub REST API (`push_files` via the
-GitHub MCP tool) to land this batch's tracker/log state instead of the
-git CLI, since `get_me` confirms API access works. If this note is
-still here next firing, the git-CLI push path may need the user's
-attention (possibly a GitHub-side incident or a misbehaving webhook/
-pre-receive hook on this repo) — the API fallback worked around it
-tonight but isn't a long-term fix. **11/35 report-periods tonight.**
+headers were clean 200 OK; the receive-pack body itself carried the
+error). `git fetch`/read access worked fine throughout; only
+`git push` (git-receive-pack) failed. Retried 4x with exponential
+backoff per policy, then 6 more times over ~2 minutes in the
+background — all failed identically, so I checked
+githubstatus.com and found GitHub reporting an active (now-resolved)
+Git Operations incident dated today. Re-ran `git push` once that
+cleared and it succeeded immediately, landing the BBOT, BBSI and this
+note's commits together — no GitHub-API fallback was actually needed
+in the end. If this recurs, check githubstatus.com first before
+assuming a local/repo problem. **11/35 report-periods tonight.**
