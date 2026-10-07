@@ -18,6 +18,7 @@ import {
   metricsProfile,
   PROFILE_LAYOUT,
   readMetrics,
+  relatedGuides,
   type ReportMetrics,
 } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
@@ -437,6 +438,20 @@ export async function ReportView({ report }: { report: FullReport }) {
           </Link>
         </p>
       </aside>
+
+      {metrics && (
+        <aside className="rounded-lg border border-zinc-200 bg-white p-4 text-sm">
+          <span className="font-medium text-zinc-800">New to these terms? </span>
+          {relatedGuides(metrics, report.period).map((guide, i) => (
+            <span key={guide.slug}>
+              {i > 0 && " · "}
+              <Link href={articlePath("GUIDE", guide.slug)} className="text-blue-700 underline">
+                {guide.title}
+              </Link>
+            </span>
+          ))}
+        </aside>
+      )}
 
       {related.length > 0 && (
         <section className="flex flex-col gap-2">

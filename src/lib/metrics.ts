@@ -297,6 +297,36 @@ export const PROFILE_LAYOUT: Record<
   },
 };
 
+// A few /learn glossary guides relevant to this report's own figures, so a
+// reader who doesn't know what "operating margin" or "YoY" means can look it
+// up without leaving the site. Picked deterministically from what's actually
+// in `m` and the report's period, not shown identically on every report.
+export function relatedGuides(
+  m: ReportMetrics,
+  period: string
+): { slug: string; title: string }[] {
+  const guides: { slug: string; title: string }[] = [
+    { slug: "revenue-vs-net-income", title: "Revenue vs Net Income: From Sales to Profit" },
+  ];
+  if (m.operatingMarginPct !== undefined) {
+    guides.push({
+      slug: "what-is-operating-margin",
+      title: "What Is Operating Margin, and Why Do Investors Watch It?",
+    });
+  } else {
+    guides.push({
+      slug: "gaap-vs-adjusted-eps",
+      title: "GAAP vs Adjusted EPS: Why Two Earnings Numbers?",
+    });
+  }
+  guides.push(
+    period === "ANNUAL"
+      ? { slug: "10-k-vs-10-q", title: "10-K vs 10-Q: What Is the Difference?" }
+      : { slug: "yoy-vs-qoq-growth", title: "YoY vs QoQ Growth: Which Comparison Should You Use?" }
+  );
+  return guides;
+}
+
 // One-line "Revenue $94.9B (+6.0%) · EPS $1.65" style string for cards/social.
 // Banks lead with net interest income and margin, insurers with premiums and
 // the combined ratio, since those are what their results are judged on.
