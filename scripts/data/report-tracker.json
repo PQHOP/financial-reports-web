@@ -6303,6 +6303,39 @@
       }
     ]
   },
+  "BCAX": {
+    "name": "Bicara Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/bcax/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11",
+      "note": "Clinical-stage biotech (ficerafusp alfa, head and neck cancer; 650-patient FORTIFI-HN01 pivotal trial). Net loss roughly doubled to -$55.4M (-$0.82/sh) from -$27.4M (-$0.50/sh); opex +87% to $60.0M on trial costs doubling. Cash+securities $497.3M after a Feb 2026 $161.8M offering; guided to last into H1 2029, past the mid-2027 interim analysis targeted for accelerated approval / 2028 US launch. H1 operating cash burn ($81.7M) is lighter than the P&L loss partly because payables to trial contractor IQVIA rose from $8.6M to $20.0M (bills going unpaid)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "Q2 10-Q filed 2026-08-11, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/bcax/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-11"
+      }
+    ]
+  },
   "BBY": {
     "name": "Best Buy",
     "status": "done",

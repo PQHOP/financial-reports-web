@@ -9682,3 +9682,15 @@ assuming a local/repo problem.
   substandard loans rose to 2.07% — flagged in the quality check.
   CET1 13.02%, ROTCE 12.62%. Sanity-checked live: content complete.
   **12/35 report-periods tonight.**
+- **BCAX:** published — Bicara Therapeutics, Q2 2026 (quarter ended
+  2026-06-30). https://financialreportinsights.com/companies/bcax/2026/q2
+  — clinical-stage biotech (ficerafusp alfa, head and neck cancer;
+  650-patient FORTIFI-HN01 pivotal trial). Net loss roughly doubled to
+  -$55.4M (-$0.82/sh) from -$27.4M (-$0.50/sh) as opex rose 87% to
+  $60.0M on trial costs doubling. Cash+securities $497.3M after a
+  Feb 2026 $161.8M offering, guided to last into H1 2029 (past the
+  mid-2027 interim analysis targeted for accelerated approval / 2028
+  US launch). Flagged in the quality check: H1 operating cash burn
+  ($81.7M) looks lighter than the P&L loss partly because payables to
+  trial contractor IQVIA rose from $8.6M to $20.0M. Sanity-checked
+  live: content complete. **13/35 report-periods tonight.**
