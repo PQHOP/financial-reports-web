@@ -23666,5 +23666,38 @@
     "status": "skipped",
     "skipReason": "Same issuer as BELFB (Class B) — one report per issuer; Q2 2026 covered under BELFB to avoid duplicate content",
     "lastChecked": "2026-10-07"
+  },
+  "BENF": {
+    "name": "Beneficient",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/benf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "note": "fiscal year ends March 31 (fiscal Q1 FY2027); labeled calendar year 2026 / period Q2 per the period-end convention"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027, period end 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "prior 10-Q filed ~45 days after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/benf/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
   }
 }

@@ -10086,3 +10086,26 @@ BELFB).
 - **BELFA:** skipped, no subagent spent — same issuer as BELFB (Class
   A vs Class B of Bel Fuse Inc.); covered under BELFB per the existing
   one-report-per-issuer convention (see FOX/FOXA, NWS/NWSA).
+
+**Fourth slice: BAOS (no action), BENF, BETR.** `scan-recent-filings`
+still 0 fresh candidates. Dispatched 2 parallel Opus subagents.
+
+- **BENF:** published — Beneficient (alternative-asset liquidity
+  provider; fiscal year ends March 31, this is fiscal Q1 FY2027),
+  labeled calendar year 2026 / period Q2 per the period-end convention.
+  First-ever report for this company.
+  https://financialreportinsights.com/companies/benf/2026/q2 — revenue
+  swung to +$12.165M from -$12.623M a year ago (both are fund-
+  revaluation driven, not cash); net loss narrowed sharply to -$0.377M
+  from -$92.6M, though last year's figure included a one-off $62.8M
+  arbitration charge. Net loss attributable to common shareholders
+  -$6.783M ($-0.47/sh, not comparable to last year's -$57.55/sh given a
+  share-conversion/forfeiture complication explained in the body).
+  Flagged hard: going-concern doubt stated in the filing,
+  shareholders' equity of -$184.1M, a disputed $127M related-party loan
+  in default following the former CEO's May 2026 fraud conviction, and
+  a $69.7M arbitration award under appeal to the Texas Supreme Court.
+  All YoY % fields omitted (loss-to-income or non-comparable-base
+  swings). Sanity-checked live (cache-busted fetch): content complete,
+  Takeaway and Source filing present. **29/35 report-periods tonight.**
+- BETR: still researching, result pending.
