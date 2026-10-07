@@ -10108,4 +10108,37 @@ still 0 fresh candidates. Dispatched 2 parallel Opus subagents.
   All YoY % fields omitted (loss-to-income or non-comparable-base
   swings). Sanity-checked live (cache-busted fetch): content complete,
   Takeaway and Source filing present. **29/35 report-periods tonight.**
-- BETR: still researching, result pending.
+- **BETR:** published — Better Home & Finance Holding Company
+  (Better.com, digital mortgage lender), Q2 2026 (quarter ended
+  2026-06-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/betr/2026/q2 — net
+  revenue +28.2% to $54.7M on loan volume +38% to $1.667B (refinance
+  volume more than tripled to $549M; gain-on-sale margin roughly flat
+  at 3.09%). Net loss narrowed 15.7% to -$30.6M (-$1.64/sh, narrowed
+  31.4%); most of the improvement came from the UK bank (Birmingham
+  Bank, held for sale) moving to discontinued operations rather than
+  the core mortgage business. Adjusted EBITDA -$14.0M vs -$22.9M,
+  though $6.5M of that is a one-off TRID reserve release (~-$20.5M
+  without it). Stock-based comp more than tripled to $14.6M; excluding
+  it, expenses grew just 1.2%. Cash $102.3M after a ~$66M equity
+  raise; shareholders' equity rose to $57.9M from $8.6M at Q1-end.
+  CEO Vishal Garg stepped down 2026-08-03 (interim CEO Daniel Lewis);
+  board adopted a rights plan 2026-08-20. Q3 guidance: loan volume
+  $1.375-1.525B, adjusted EBITDA -$18M to -$15M. Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **30/35 report-periods tonight.**
+
+**Stopping this batch here, ahead of the next hourly firing due
+~19:04-19:06 UTC** (pattern observed earlier tonight), and because
+30/35 leaves only ~5 report-periods of headroom under the cap — better
+to leave that margin for tier-0 hot-list items a later firing might
+find, rather than risk overshooting. Tonight's total: 30 report-periods
+published across 4 slices (BDMD/BDRX/BDSX/BDTX/BEAM/BEEM/BEEP/BELFB/
+BENF/BETR, 10 new companies), plus 3 skips (BDCI, BEAG — both
+pre-merger SPACs; BELFA — same issuer as BELFB) and 1 no-action
+re-check (BAOS, still pending, no new 2026 filing). All tier-0
+(`scan-recent-filings`) candidates were clear all night (0 fresh
+filings found in every scan). Every published report was sanity-checked
+live with a cache-busted fetch before being counted. No tracker-write
+collisions this session — origin was re-checked before every commit
+and matched cleanly each time.
