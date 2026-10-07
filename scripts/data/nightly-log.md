@@ -9641,4 +9641,31 @@ were updated) so `next-batch` wouldn't re-list them.
   merger/$260.9M raise). Caught and corrected a units error in the
   filing itself, which misprinted EPS as "$(705.20)" — the report uses
   the arithmetically correct -$0.71 and says so explicitly. Sanity-
-  checked live: content complete. **10/35 report-periods tonight.**
+  checked live: content complete.
+- **BBSI:** published — Barrett Business Services (a PEO/staffing
+  company), Q2 2026 (quarter ended 2026-06-30).
+  https://financialreportinsights.com/companies/bbsi/2026/q2 — revenue
+  +3.8% to $319.3M, gross billings +2.6% to $2.29B; net income -30.3%
+  to $12.9M (EPS $0.52 vs $0.70) mostly because favorable prior-year
+  workers'-comp-reserve releases shrank from $8.8M to $2.0M (underlying
+  margin only -2.5% ex. that one-off). Client employee count +0.5%.
+  2026 targets lowered across the board. Q1 carried an $11.6M Tax Court
+  charge (H1 GAAP net loss); flagged a new IRS proposal to disallow up
+  to $63.0M of Employee Retention Credits paid to clients through BBSI
+  (~31% of equity, no reserve booked) and H1 operating cash flow of
+  -$78.0M. Sanity-checked live: content complete.
+
+**Note on this batch: GitHub push failing with a persistent 500
+(`remote: Internal Server Error`)** on every attempt since the BBOT
+commit — not a network/proxy issue (TLS handshake and HTTP response
+headers are clean 200 OK; the receive-pack body itself contains the
+error). Retried 4x with exponential backoff per policy, then 6 more
+times over ~2 minutes in the background — all failed identically.
+`git fetch`/read access works fine; only `git push` (git-receive-pack)
+fails. Falling back to the GitHub REST API (`push_files` via the
+GitHub MCP tool) to land this batch's tracker/log state instead of the
+git CLI, since `get_me` confirms API access works. If this note is
+still here next firing, the git-CLI push path may need the user's
+attention (possibly a GitHub-side incident or a misbehaving webhook/
+pre-receive hook on this repo) — the API fallback worked around it
+tonight but isn't a long-term fix. **11/35 report-periods tonight.**
