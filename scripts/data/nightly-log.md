@@ -10042,3 +10042,47 @@ BEAM, BEEM.** `scan-recent-filings` still 0 fresh candidates. Dispatched
 
 Second slice (BDTX/BEAG/BEAM/BEEM) cleared — 3 published, 1 skipped
 (BEAG, pre-merger SPAC). Continuing to the next slice.
+
+**Third slice: BAOS (no action), BEEP, BELFA, BELFB.** `scan-recent-
+filings` still 0 fresh candidates. BELFA/BELFB are the two share
+classes of one issuer (Bel Fuse Inc.) — publishing once under BELFB
+and skipping BELFA per the existing FOX/FOXA, NWS/NWSA convention
+(one report per issuer). Dispatched 2 parallel Opus subagents (BEEP,
+BELFB).
+
+- **BEEP:** published — Mobile Infrastructure Corporation (parking-
+  facility owner/operator), Q2 2026 (quarter ended 2026-06-30).
+  First-ever report for this company.
+  https://financialreportinsights.com/companies/beep/2026/q2 —
+  headline revenue -1.1% to $8.893M (asset sales), but same-location
+  revenue +5.6% and same-location NOI +12.0% to $5.853M (~40% of that
+  gain from a 15% drop in property taxes). Net loss narrowed 30.5% to
+  -$3.239M. Flagged hard: going-concern language in the 10-Q ($28.7M
+  of debt due within 12 months plus $6.3M accrued interest), a 15%
+  credit line from funds tied to co-chair Jeffrey Osher (maturity just
+  extended to Dec 31, 2026), only $10.9M cash against $197.1M total
+  debt, and adjusted EBITDA covering interest just ~0.85x. $33M of
+  asset sales so far at ~2% cap rates. FY2026 guidance reiterated
+  (revenue $35-38M, NOI $21.5-23.0M). Sanity-checked live (cache-busted
+  fetch): content complete, Takeaway and Source filing present.
+  **27/35 report-periods tonight.**
+- **BELFB:** published — Bel Fuse Inc. (electronic components:
+  connectors, magnetics, power solutions; Class B shares), Q2 2026
+  (quarter ended 2026-06-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/belfb/2026/q2 —
+  revenue +25.2% to $210.7M, operating income +28.7% to $38.4M (18.2%
+  margin), but net earnings attributable to shareholders fell 5.1% to
+  $25.5M (diluted EPS -11.7% to $1.89) — mostly a $6.7M revaluation
+  charge on the 20% of Enercon Bel doesn't yet own, a swing from a
+  $7.6M FX gain to a $1.4M FX loss, and last year's one-off $4.1M
+  property-sale gain, partly offset by a lower 10.0% tax rate (vs
+  20.5%). Adjusted EBITDA +38.9% to $48.9M; backlog +35.4% to $594.7M
+  since December. Segments recast in 2026 (Aerospace/Defense/Rugged
+  +20.3%, Industrial Tech/Data +31.1%). Cash $306.1M, credit line fully
+  repaid after a May offering raised $441.6M net (+17% Class B shares
+  outstanding). Q3 2026 guidance: sales $205-225M. Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **28/35 report-periods tonight.**
+- **BELFA:** skipped, no subagent spent — same issuer as BELFB (Class
+  A vs Class B of Bel Fuse Inc.); covered under BELFB per the existing
+  one-report-per-issuer convention (see FOX/FOXA, NWS/NWSA).

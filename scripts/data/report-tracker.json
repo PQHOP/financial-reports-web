@@ -23596,5 +23596,75 @@
         "filedAt": "2026-08-19"
       }
     ]
+  },
+  "BEEP": {
+    "name": "Mobile Infrastructure Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/beep/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q3 2025 10-Q and earnings 8-K both filed 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/beep/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-11"
+      }
+    ]
+  },
+  "BELFB": {
+    "name": "Bel Fuse Inc. - Class B",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-07",
+      "url": "https://financialreportinsights.com/companies/belfb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2026 earnings guidance given for sales $205-225M; prior quarterly cadence (Q2 10-Q filed 2026-08-04)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-07",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-07",
+        "url": "https://financialreportinsights.com/companies/belfb/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-04"
+      }
+    ]
+  },
+  "BELFA": {
+    "name": "Bel Fuse Inc. - Class A",
+    "status": "skipped",
+    "skipReason": "Same issuer as BELFB (Class B) — one report per issuer; Q2 2026 covered under BELFB to avoid duplicate content",
+    "lastChecked": "2026-10-07"
   }
 }
