@@ -9905,3 +9905,19 @@ also published two more tickers the other session didn't reach:
 18:04 UTC**, for the same reason the previous entry gave — continuing
 risks another collision rather than more progress. 20/35 is well
 under the ~35 cap, leaving room for later firings tonight.
+
+**~18:06 UTC firing.** Confirmed network access (SEC 200 with required
+User-Agent) and site reachability, `npm install` clean, tree already at
+latest `origin/master` (5279abe). `scan-recent-filings` found 0 fresh
+tier-0 candidates (REGN/STZ/APOG already folded into the tracker by the
+prior firing). Moved to tier 1 (`next-batch -- --n 5`): BAOS (already
+checked today, still pending — no action), BDCI, BDMD, BDRX, BDSX.
+Dispatched 4 parallel Opus subagents (one per new ticker).
+
+- **BDCI:** skipped, no report — BTC Development Corp., a pre-merger
+  blank-check SPAC (SIC 6770). Q2 2026 10-Q (filed 2026-08-10) shows
+  only trust-account interest income ($259.5M trust balance) and
+  formation/admin costs, no operating business; no Business Combination
+  signed yet (24-month deadline ~Oct 2027). Tracker updated,
+  `nextExpectedFiling` ~2026-11-10 (next 10-Q).
+- BDMD, BDRX, BDSX: still researching, results pending.
