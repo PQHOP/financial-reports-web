@@ -6,6 +6,11 @@ date and commit.
 
 ## Next
 
+- Consider extending the new report-page -> /learn guide links (see Done,
+  2026-10-07) to the company page's results-by-period table and the
+  industry peer table — same jargon (operating margin, YoY) appears there
+  too, just not yet linked. Report pages were picked first since there are
+  far more of them; this is a smaller follow-up, not urgent.
 - **Re-check Google indexing around 2026-10-11 through 10-18.** Sitemap
   still 0/1818 indexed as of 2026-10-06; still consistent with "new
   low-authority domain rationing crawl budget," not a bug — 2026-10-06
@@ -31,6 +36,20 @@ date and commit.
 
 ## Done
 
+- 2026-10-07 (`4516e68`): found that no report, company, or industry page
+  linked to any of the 9 published `/learn` glossary guides anywhere
+  outside `/learn` itself — a real internal-linking gap (helps both crawl
+  budget into that content and lay readers who hit a term like "operating
+  margin"). Added `relatedGuides()` (`src/lib/metrics.ts`) and a "New to
+  these terms?" block on every report page, picking 2-3 guides from that
+  report's own metrics/period. Verified live on a freshly-rendered page
+  (BGC Q2 2026) post-deploy — links render correctly. Deployed
+  (`dpl_6WzJk3ewtYoNw6oRbaLXd9mtYsvR`, READY); health check all green
+  after. Also re-verified (independently, not just trusting the prior
+  day's note): latest production deployment before this one (`78aaba2`)
+  really is an ancestor of `origin/master` (local clone was shallow;
+  `git fetch --unshallow` + `merge-base --is-ancestor` confirmed it) and
+  sitemap/robots/JSON-LD/guide-sitemap-inclusion all still fine.
 - 2026-10-06: ops run found no new safe code change worth making this
   cycle. Verified (not just assumed) that recent audits still hold:
   robots.txt/meta-robots/RSS autodiscovery all correct, `?utm_*`-style
