@@ -6,13 +6,9 @@ date and commit.
 
 ## Next
 
-- Consider extending the new report-page -> /learn guide links (see Done,
-  2026-10-07) to the company page's results-by-period table and the
-  industry peer table — same jargon (operating margin, YoY) appears there
-  too, just not yet linked. Report pages were picked first since there are
-  far more of them; this is a smaller follow-up, not urgent.
 - **Re-check Google indexing around 2026-10-11 through 10-18.** Sitemap
-  still 0/1818 indexed as of 2026-10-06; still consistent with "new
+  still 0/1818 indexed as of 2026-10-06 (re-checked 2026-10-08: still
+  0, now 0/1960 as submitted count grew); still consistent with "new
   low-authority domain rationing crawl budget," not a bug — 2026-10-06
   re-checked the obvious suspects (robots.txt clean/unchanged, no stray
   noindex on real content pages, RSS autodiscovery present via
@@ -36,6 +32,17 @@ date and commit.
 
 ## Done
 
+- 2026-10-08 (`dd1f194`): extended the `/learn` guide-link block (see
+  2026-10-07 below) to the company page's results-by-period table and the
+  industry peer tables, reusing the same `relatedGuides()` helper — same
+  jargon (operating margin, YoY) shows up there too. Typecheck + lint
+  clean, verified with a preview build before promoting. Deployed
+  (`dpl_7gNRiRGXADH6SktdNduWisUqfmQG`, READY); verified live on AAPL's
+  company page and the Information Technology industry page — links
+  render with working `/learn/...` hrefs. Health check all green after
+  (same expected `/ads.txt` 404). Also: sitemap still 0/1960 indexed as
+  of today — within the 2026-10-11–10-18 re-check window set on 10-06, no
+  action yet.
 - 2026-10-07 (`4516e68`): found that no report, company, or industry page
   linked to any of the 9 published `/learn` glossary guides anywhere
   outside `/learn` itself — a real internal-linking gap (helps both crawl
