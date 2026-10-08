@@ -973,17 +973,17 @@
       "url": "https://financial-reports-web.vercel.app/reports/cmu8jloyl000004jts5e8vtpk"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (2.02, Q3 supplemental guidance, not an earnings release)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-07"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
+      "type": "10-Q / earnings 8-K (Q3 2026)",
       "estimate": "2026-11-04",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
-      "confidence": "estimated"
+      "basis": "8-K/Ex.99.1 filed 2026-10-07 schedules Q3 2026 results call for Nov 5 10am CT; results expected after close Nov 4",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-19"
+    "lastChecked": "2026-10-08"
   },
   "APD": {
     "name": "Air Products and Chemicals, Inc.",
