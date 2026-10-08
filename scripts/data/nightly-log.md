@@ -10470,3 +10470,20 @@ backlog.
   in text instead). Sanity-checked live (cache-busted fetch): content
   complete, Takeaway and Source filing present. **7/35 report-periods
   tonight.**
+- **BGLC:** published — BioNexus Gene Lab Corp (Wyoming co., Kuala
+  Lumpur-based, formerly had an industrial-chemicals unit), Q2 2026
+  (quarter ended 2026-06-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/bglc/2026/q2 —
+  revenue collapsed 96.6% to $76,156 after the Chemrex industrial-
+  chemicals unit fell apart, which the 10-Q blames on "actions of
+  former management"; in May 2026 the company sent letters of demand
+  to 5 former Chemrex officers over ~$2.94M allegedly mispaid (no
+  lawsuit filed). Net loss narrowed 53.5% to -$286,451 purely on cost
+  cuts — gross profit was only $12,982, and a $91K bad-debt reversal
+  flatters the operating loss. Flagged: $800K of post-quarter insider
+  stock awards (+21% share count), a pending CogniAI share-paid
+  licence deal that would add ~16% more dilution if it closes, both
+  disclosure controls and ICFR rated not effective. Cash + fixed
+  deposits $3.52M. Sanity-checked live (cache-busted fetch): content
+  complete, Takeaway and Source filing present. **8/35 report-periods
+  tonight.**
