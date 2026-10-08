@@ -24082,6 +24082,23 @@
       }
     ]
   },
+  "BHAV": {
+    "name": "BHAV Acquisition Corp - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (IPO 2026-03-20, $100.0M trust, ~$101.0M at 6/30/26); no business combination target selected per Q2 2026 10-Q filed 2026-08-14; deadline ~2027-06-20 (15 months). Only trust interest income, nothing substantive to report. Revisit if an 8-K/425 announces a target.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "15-day deadline for a non-accelerated filer; Q1/Q2 10-Qs both filed ~day 45",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08"
+  },
   "BGC": {
     "name": "BGC Group, Inc. - Class A",
     "status": "done",

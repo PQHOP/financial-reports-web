@@ -10504,3 +10504,12 @@ backlog.
   company; must close by 2026-12-31 or either side can walk.
   Sanity-checked live (cache-busted fetch): content complete, Takeaway
   and Source filing present. **9/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** BAOS (pending, already re-checked above,
+no new filing), then BHAV, BHF, BHRB, BHST from the us-listed backlog.
+
+- **BHAV:** skipped, no report — pre-merger SPAC (IPO 2026-03-20,
+  $100.0M trust, ~$101.0M at 6/30/26). Q2 2026 10-Q (filed 2026-08-14)
+  confirms no business combination target has been selected and no
+  substantive discussions; deadline ~2027-06-20. Only trust interest
+  income, nothing to report. Tracker marked `skipped`.
