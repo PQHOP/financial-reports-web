@@ -10698,3 +10698,28 @@ seconds of each other.
 
 **Next `next-batch -- --n 5`:** BAOS (pending, no new filing, checked
 3x tonight), then continuing the us-listed backlog past BIOA.
+
+**Decision by the 02:09 JST firing: standing down from picking further
+new companies for the rest of this firing.** Three collisions with the
+concurrent 01:07 JST firing inside this one hourly window
+(BHF/BHRB/BHST, BID, BIDU) — every single `next-batch` batch this
+firing has pulled has overlapped with the other session's. Each round
+has been resolved safely so far (no duplicate reports: the admin form's
+own uniqueness check plus a pre-publish live-site check caught every
+collision before a second write), but it is costing a merge-conflict
+resolution and a wasted opus research pass every round, which eats
+into the same shared weekly usage budget CLAUDE.md flags as the real
+constraint. The other firing appears to have started well before this
+one and is still actively working through the identical backlog order,
+so there's nothing this firing can do to pick different companies —
+`next-batch` has no way to coordinate between sessions. Ending this
+firing's new-company work at 16/35 rather than continuing to double up
+with the other session. **Flagging clearly for the user:** the hourly
+"0 16-22 * * *" cron can and did fire a new session before the previous
+firing finished, for at least the second night running structurally
+(the 09-16 night's log already shows multiple same-night sub-batches
+needing to "stop ahead of the next hourly firing" to avoid this very
+problem) — worth either lengthening the interval, or adding an explicit
+mutual-exclusion check (e.g. a lock file/marker in the repo checked at
+the top of each firing) so a slow firing doesn't bleed into the next
+hour's.
