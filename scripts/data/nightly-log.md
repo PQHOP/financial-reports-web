@@ -10487,3 +10487,20 @@ backlog.
   deposits $3.52M. Sanity-checked live (cache-busted fetch): content
   complete, Takeaway and Source filing present. **8/35 report-periods
   tonight.**
+- **BGMS:** published — Bio Green Med Solution, Inc. (formerly
+  Cyclacel Pharmaceuticals; since Sept 2025 a Malaysian fire-safety
+  equipment distributor via Fitters Sdn. Bhd.), Q2 2026 (quarter ended
+  2026-06-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/bgms/2026/q2 —
+  revenue $336K, down 57% from Q1's $778K, 23.5% gross margin;
+  operating loss -$418K (-124% margin), net loss -$405K (-$0.08/sh).
+  YoY comparisons omitted throughout (prior-year quarter was a
+  pre-reverse-merger shell with $0 revenue). Flagged: gross
+  receivables ($1.61M) exceed all of H1 revenue, a third already
+  reserved as bad debt; going-concern warning, cash ($3.79M) said to
+  last only into Q1 2027; a June share sale added 20% more shares.
+  Pending all-stock Future NRG (Malaysian clinical-waste co.) share
+  exchange would leave today's holders with <1% of the combined
+  company; must close by 2026-12-31 or either side can walk.
+  Sanity-checked live (cache-busted fetch): content complete, Takeaway
+  and Source filing present. **9/35 report-periods tonight.**
