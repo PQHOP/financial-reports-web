@@ -10969,5 +10969,74 @@ due until 2026-11-27), then BJDX, BKHA, BKYI, BL, BLBD.
   Q4 sales. Sanity-checked live (cache-busted fetch): title, Takeaway
   and Source filing all present. **24/35 report-periods tonight.**
 
-**Next `next-batch -- --n 5`:** continuing the us-listed backlog past
-BLBD.
+**Next `next-batch -- --n 6`:** skipped BAOS again (still not due),
+then BLDP, BLFS, BLIN (BLKB/BLIV queued next).
+
+- **BLFS:** published — BioLife Solutions, Inc. (biopreservation media
+  for cell/gene therapy), Q2 2026 (quarter ended 2026-06-30, 10-Q
+  filed 2026-08-06). First-ever and **last standalone** report for this
+  company — Repligen's acquisition closed 2026-10-06 ($11.25 cash +
+  0.1442 RGEN shares/share, ~$1.5B enterprise value); BLFS delisted
+  from Nasdaq, no further filings expected.
+  https://financialreportinsights.com/companies/blfs/2026/q2 — revenue
+  +21.5% to $28.5M (CryoStor 84% of revenue vs 80%; EMEA grew from 7%
+  to 13% of revenue); gross margin slipped to 64.2% from 65.0% on
+  product mix; operating income $1.7M (6.0% margin) vs a $16.1M loss a
+  year ago that included a $15.5M PanTHERA IPR&D write-off (ex that,
+  prior-year loss was ~$0.6M); GAAP net income $45.1M / diluted EPS
+  $0.91 includes a $42.4M non-cash tax-valuation-allowance release
+  ($0.87/share); adjusted EBITDA $7.4M (26% margin) vs $5.6M. Flagged:
+  H1 operating cash flow fell to $5.9M from $9.1M as inventory (+18%)
+  and receivables (+34%) outgrew sales; one customer is 21% of revenue
+  and 36% of receivables; G&A 38% of revenue; cash fell to $113.1M from
+  $120.2M after paying off its term loan and employee tax withholding.
+  No guidance/call given the pending merger. Sanity-checked live
+  (cache-busted fetch): title, Takeaway and Source filing all present.
+  **25/35 report-periods tonight.**
+- **BLDP:** published — Ballard Power Systems, Inc. (Canadian hydrogen
+  fuel-cell maker, foreign private issuer filing 6-K/40-F, reports in
+  USD under IFRS), Q2 2026 (quarter ended 2026-06-30, 6-K filed
+  2026-07-31). First-ever report for this company.
+  https://financialreportinsights.com/companies/bldp/2026/q2 — revenue
+  +15% to $20.6M (North America +111%, Europe -54%, China zero;
+  stationary +230%, other/forklift +290%, rail -43%); gross margin
+  19.8% vs -8.4% a year ago, a fourth straight positive quarter, though
+  ~$1.8M of the $4.1M gross profit was a one-off warranty/inventory
+  reserve release (recurring margin ~11% vs ~-9% a year ago on the same
+  basis); opex -34% to $20.9M (R&D -43% post-restructuring), halving
+  the operating loss to -$16.8M (-81.8% margin vs -186.1%); net loss
+  narrowed only to -$20.3M from -$24.3M because hydrogen-fund
+  investment stakes swung from a $3.3M gain to a $7.8M loss plus $3.9M
+  of GeoPura deal costs. Adjusted EBITDA -$9.8M vs -$30.6M; operating
+  cash burn $11.4M vs $20.3M; order backlog +38.8% to $156.6M; cash
+  $502.1M with no bank debt (before the GeoPura acquisition's £82.5M
+  cash payment at its 2026-08-28 close). Flagged a discrepancy between
+  the earnings release's "profitability by end of 2027" and the MD&A's
+  "positive operating cash flow by end-2027, profitability by 2028."
+  Sanity-checked live (cache-busted fetch): title, Takeaway and Source
+  filing all present. **26/35 report-periods tonight.**
+- **BLIN:** published — Bridgeline Digital, Inc. (web/digital-
+  experience software, HawkSearch), fiscal Q3 2026 (quarter ended
+  2026-06-30, 10-Q filed 2026-08-13; FY ends Sep 30). First-ever report
+  for this company. https://financialreportinsights.com/companies/blin/2026/q3
+  — revenue +2.0% to $3.92M as Core products (HawkSearch-led) grew to
+  ~62% of revenue (vs 57%, 106% net revenue retention) while legacy
+  products shrank; US +9.5%, international -36.6%; gross margin 64.5%
+  vs 66.2% on higher server/services-staff cost; opex -7% (sales &
+  marketing -20%) improved operating margin to -12.0% from -17.9%; net
+  loss narrowed to $0.47M from $0.79M (EPS -$0.04 vs -$0.07), though
+  $132K of the $321K improvement came from a non-operating
+  interest/other-income swing. Adjusted EBITDA -$0.10M this quarter,
+  essentially breakeven (-$23K) for the nine months against a $986K
+  GAAP nine-month net loss; 9-month operating cash flow of +$76K relied
+  on a $563K rise in deferred revenue (customer prepayments); cash fell
+  to ~$1.0M by fiscal year-end from $1.47M at June 30; a July ATM
+  facility (WestPark) had sold no shares as of the 10-Q; a January
+  Nasdaq bid-price deficiency was cured June 10. A 2026-10-06 bookings-
+  only 8-K (12 new Q4 customers, 38 for the year) feeds the outlook but
+  has no financials, so didn't change the period chosen. Sanity-checked
+  live (cache-busted fetch): title, Takeaway and Source filing all
+  present. **27/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** BLIV, BLKB next, then continuing the
+us-listed backlog.
