@@ -10513,3 +10513,22 @@ no new filing), then BHAV, BHF, BHRB, BHST from the us-listed backlog.
   confirms no business combination target has been selected and no
   substantive discussions; deadline ~2027-06-20. Only trust interest
   income, nothing to report. Tracker marked `skipped`.
+- **BHF:** published — Brighthouse Financial, Inc. (life insurance/
+  annuities), Q2 2026 (quarter ended 2026-06-30). First-ever report
+  for this company. https://financialreportinsights.com/companies/bhf/2026/q2
+  — GAAP profit $956M ($16.53/sh) vs $60M ($1.02) a year ago, almost
+  entirely a $906M pre-tax mark-to-market gain on annuity guarantees/
+  hedges as markets rose (vs a $792M loss from the same accounting in
+  Q1 2026 — flagged as swinging, non-operating). Adjusted earnings
+  (the steadier measure) +29.7% to $258M ($4.45/sh), on lower claims,
+  not buybacks or tax. Adjusted net investment income -4.1% on weaker
+  alternatives returns; annuity sales -7.1% to $2.4B despite record
+  Shield annuity sales ($2.1B). H1 operating cash flow -$652M; book
+  value/share +21.2% to $84.35. Pending $70.00/share Aquarian
+  all-cash acquisition awaiting state insurance-regulator approval
+  (deadline extends to 2026-12-06) — noted in the outlook, with the
+  tracker flagged that a close would end future 10-Q filings.
+  operatingMarginPct omitted (insurers don't report a comparable
+  operating-income line). Sanity-checked live (cache-busted fetch):
+  content complete, Takeaway and Source filing present. **10/35
+  report-periods tonight.**

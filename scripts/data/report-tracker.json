@@ -24099,6 +24099,36 @@
     },
     "lastChecked": "2026-10-08"
   },
+  "BHF": {
+    "name": "Brighthouse Financial, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bhf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "prior-year pattern: Q3 2025 8-K 11-06, 10-Q 11-07; 2026 quarters ~90 days apart. Caveat: pending $70.00/share Aquarian cash acquisition (awaiting state insurance-regulator approvals, deadline extends to 2026-12-06) may close first, which would end 10-Q filings",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bhf/2026/q2"
+      }
+    ]
+  },
   "BGC": {
     "name": "BGC Group, Inc. - Class A",
     "status": "done",
