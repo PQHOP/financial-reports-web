@@ -24913,6 +24913,38 @@
       }
     ]
   },
+  "BLTE": {
+    "name": "Belite Bio, Inc - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/blte/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 2026 results 6-K filed 2026-05-14, Q2 filed 2026-08-13 (~91 days apart)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/blte/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
+  },
   "BLUW": {
     "name": "Blue Water Acquisition Corp. III - Class A Ordinary Shares",
     "status": "skipped",

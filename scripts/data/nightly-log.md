@@ -11216,3 +11216,24 @@ then BLTE, BLUW, BLZE from the us-listed backlog.
   Agreement found (unlike BLRK above). Checked directly (EDGAR filing
   index + downloaded 10-Q), no subagent. Not counted toward tonight's
   total (still 32/35).
+- **BLTE:** published — Belite Bio, Inc. (clinical-stage biopharma,
+  lead candidate tinlarebant for Stargardt disease/geographic
+  atrophy), Q2 2026 (quarter ended 2026-06-30, 6-K/press release filed
+  2026-08-13). First-ever report for this company.
+  https://financialreportinsights.com/companies/blte/2026/q2 — no
+  revenue; net loss widened to $28.4M from $16.3M (loss/ADS $0.70 vs
+  $0.50, share count +23%), mainly SG&A-excluding-stock-comp rising to
+  $10.9M from $1.3M as the company builds a commercial-launch team,
+  plus an undisclosed-size Columbia University milestone payment in
+  R&D. Cash + Treasuries $780.0M (-$18.6M in the quarter); ~$41.5M of
+  new equity raised in H1 from an undisclosed source (balance-sheet
+  derived); stock comp ~36% of the H1 loss; no going-concern warning
+  (20-F states funds cover 12+ months). Catalysts: FDA Priority Review
+  decision on tinlarebant due 2027-02-12; Japan filing submitted
+  2026-09-08; geographic-atrophy Phase 3 interim look planned, no date
+  yet. Last quarter's promise (FDA submission complete in Q2) held up.
+  netIncomeYoyPct/epsYoyPct omitted (loss-to-loss, explained in text as
+  "74%/40% larger" instead); revenue/operatingMarginPct omitted
+  (pre-revenue). Sanity-checked live (cache-busted fetch): At a glance,
+  What the headline numbers hide, Takeaway and Source filing all
+  present. **33/35 report-periods tonight.**
