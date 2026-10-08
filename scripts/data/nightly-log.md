@@ -10347,3 +10347,19 @@ new).
   genuinely strong (9-month FCF $427.3M vs $92.5M). Sanity-checked
   live (cache-busted fetch): content complete, Takeaway and Source
   filing present. **3/35 report-periods tonight.**
+- **NEOG:** published — Neogen Corporation (food/animal safety
+  testing), fiscal Q1 FY2027 (quarter ended 2026-08-31), labeled year
+  2026 / period Q1. First-ever report for this company.
+  https://financialreportinsights.com/companies/neog/2026/q1 —
+  revenue +6.5% to $222.8M (core growth 8.1%, ~3 points of which is
+  order-timing, so underlying growth closer to 5%). Operating loss
+  narrowed to -$1.8M from -$16.1M on margin expansion, but GAAP net
+  loss was -$11.9M vs +$36.3M a year ago because last year included a
+  one-time $76.4M gain on selling the Cleaners & Disinfectants
+  business. Adjusted net income $17.5M vs the GAAP loss — add-backs
+  include recurring "transformation" costs and Petrifilm duplicate-
+  manufacturing costs. Net debt ~3.3x guided EBITDA; pending $160M
+  Genomics sale to Zoetis awaiting ANZ regulatory approval. FY27
+  guidance raised slightly. Sanity-checked live (cache-busted fetch):
+  content complete, Takeaway and Source filing present. **4/35
+  report-periods tonight.**
