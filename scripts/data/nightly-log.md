@@ -10316,3 +10316,19 @@ new).
   Sanity-checked live (cache-busted fetch): content complete, ends on
   a full outlook paragraph, Takeaway and Source filing present.
   **1/35 report-periods tonight.**
+- **CNXC:** published — Concentrix Corporation (BPO/customer
+  experience outsourcing), fiscal Q3 2026 (quarter ended 2026-08-31).
+  First-ever report for this company.
+  https://financialreportinsights.com/companies/cnxc/2026/q3 —
+  revenue -1.2% to $2,453.7M, below the company's own guidance.
+  GAAP net loss $988.1M (EPS -$16.24) entirely from a $1,050.0M
+  non-cash goodwill impairment triggered by the share-price decline;
+  excluding it, operating income fell 5% to $139.7M. Non-GAAP EPS
+  +5.0% to $2.92 beat guidance, but non-GAAP net income only grew
+  1.8% — the EPS gap is a ~3% lower share count plus lower interest
+  expense. Restructuring costs YTD more than doubled ($142.9M vs
+  $53.5M). Full-year revenue guidance cut ~$123M at the midpoint.
+  netIncomeYoyPct/epsYoyPct deliberately omitted (company calls them
+  "NM", swinging profit to loss). Sanity-checked live (cache-busted
+  fetch): content complete, Takeaway and Source filing present.
+  **2/35 report-periods tonight.**

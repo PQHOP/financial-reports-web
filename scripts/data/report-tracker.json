@@ -7427,6 +7427,36 @@
       }
     ]
   },
+  "CNXC": {
+    "name": "Concentrix Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/cnxc/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q4/FY2026 earnings)",
+      "estimate": "2027-01-12",
+      "basis": "FY2025 Q4 earnings 8-K filed 2026-01-13, 10-K filed 2026-01-28; FY ends Nov 30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/cnxc/2026/q3"
+      }
+    ]
+  },
   "CNP": {
     "name": "CenterPoint Energy",
     "status": "done",
