@@ -10332,3 +10332,18 @@ new).
   "NM", swinging profit to loss). Sanity-checked live (cache-busted
   fetch): content complete, Takeaway and Source filing present.
   **2/35 report-periods tonight.**
+- **LEVI:** published — Levi Strauss & Co Class A, fiscal Q3 2026
+  (quarter ended 2026-08-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/levi/2026/q3 —
+  revenue +4.3% to $1,609.7M; diluted EPS (continuing ops) +38.7% to
+  $0.43. Quality check: a $78.6M IEEPA tariff refund booked as lower
+  COGS added 4.9 margin points and $0.16 of EPS; net of ~$25M spent
+  back on promotions, the net benefit (3.3 margin points, $0.11 EPS)
+  is larger than the whole reported margin/EPS gain — underlying EPS
+  was roughly flat ($0.32 vs $0.31). SG&A grew faster than revenue
+  (7.8% vs 4.3%); a $200M buyback cut share count ~2.2%. Full-year
+  adjusted EPS guidance raised to $1.54-1.56, a raise roughly the size
+  of the refund rather than a stronger underlying business. Cash flow
+  genuinely strong (9-month FCF $427.3M vs $92.5M). Sanity-checked
+  live (cache-busted fetch): content complete, Takeaway and Source
+  filing present. **3/35 report-periods tonight.**

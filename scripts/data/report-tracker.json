@@ -11871,6 +11871,36 @@
     },
     "lastChecked": "2026-09-25"
   },
+  "LEVI": {
+    "name": "Levi Strauss & Co Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/levi/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-30",
+      "filedAt": "2026-10-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 ANNUAL, fiscal year ending 2026-11-29)",
+      "estimate": "2027-01-27",
+      "basis": "FY2025 10-K filed 2026-01-28, same-day earnings 8-K pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/levi/2026/q3"
+      }
+    ]
+  },
   "LEN": {
     "name": "Lennar",
     "status": "done",
