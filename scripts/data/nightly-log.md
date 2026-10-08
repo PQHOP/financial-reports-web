@@ -10652,3 +10652,16 @@ check. Continuing from BID per this firing's own `next-batch` ordering.
   Source filing present. Recorded in the tracker by this firing since
   neither session had pushed a BIDU entry yet. **14/35 report-periods
   tonight.**
+- **BILI:** published (by the concurrent firing, found already live
+  before dispatching a subagent, avoiding a wasted research pass this
+  time) — Bilibili Inc. (Chinese video/gaming platform), Q2 2026
+  (quarter ended 2026-06-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/bili/2026/q2 —
+  revenue CNY7.9B (+8.2%) as advertising grew 28%, offsetting a 14%
+  fall in mobile games; GAAP net profit +55% to RMB339m, operating
+  margin 4.7%; EPS CNY0.78 (+52.9%). Pre-publish check (curl to
+  /companies/bili) caught the existing report before any subagent was
+  dispatched. Sanity-checked live (cache-busted fetch): content
+  complete, Takeaway and Source filing present. Recorded in the
+  tracker by this firing since neither session had pushed a BILI
+  entry yet. **15/35 report-periods tonight.**
