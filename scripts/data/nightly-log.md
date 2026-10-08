@@ -11237,3 +11237,35 @@ then BLTE, BLUW, BLZE from the us-listed backlog.
   (pre-revenue). Sanity-checked live (cache-busted fetch): At a glance,
   What the headline numbers hide, Takeaway and Source filing all
   present. **33/35 report-periods tonight.**
+- **BLZE:** published — Backblaze, Inc. (cloud storage/backup, B2
+  Cloud Storage and Computer Backup products), Q2 2026 (quarter ended
+  2026-06-30, 10-Q filed 2026-08-03). First-ever report for this
+  company. https://financialreportinsights.com/companies/blze/2026/q2
+  — revenue +17.7% to $42.7M (B2 Cloud Storage +34% to $26.6M, though
+  ~$1.5M of that is the May 1 price increase — underlying B2 growth
+  ~26%, underlying total growth ~13.5%; Computer Backup -2% to $16.1M).
+  Net loss narrowed to $5.1M (-$0.08/sh) from $7.1M (-$0.13); adjusted
+  EBITDA $12.8M (30% margin); stock comp 20.5% of revenue. H1 cash flow
+  after capex/finance-lease payments was roughly -$1.3M — the
+  company's own "adjusted FCF" of $1.4M is positive only because it
+  excludes restructuring payments. CoreWeave contract ($335.1M, with
+  $21.7M of warrants to be booked as a revenue reduction) pushed RPO to
+  $396M but hadn't started billing as of June 30. Post-quarter: $201.25M
+  of 0% convertible notes due 2031 issued Aug 24 ($21.94 conversion
+  price, capped call to $33.76). FY2026 guidance raised to
+  $172-174M revenue / 27-29% adjusted EBITDA margin; Q3 guided to
+  $44.4-44.8M. netIncomeYoyPct/epsYoyPct omitted (loss-to-loss,
+  explained in text as dollar improvement instead). Sanity-checked live
+  (cache-busted fetch): At a glance, What the headline numbers hide,
+  Takeaway and Source filing all present. **34/35 report-periods
+  tonight.**
+
+**Decision by the 04:xx JST firing: standing down at 34/35,** leaving 1
+in reserve per prior nights' pacing (never fully exhausting the cap in
+case a hot-list filing lands later tonight). This firing published 4
+report-periods (BLNE, BLRX, BLTE, BLZE) and skipped 2 (BLRK, BLUW, both
+pre-merger SPACs), plus re-confirmed BLIV/BAOS still not due without
+spending a research pass on either. All tracker/nightly-log commits
+pushed cleanly (no concurrent-firing collisions this time — `git fetch`
+showed no divergence at any commit). Next `next-batch -- --n 5`
+continuation point: past BLZE in the us-listed backlog.
