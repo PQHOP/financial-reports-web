@@ -11306,3 +11306,14 @@ same call as the 05:06 JST firing. **No report-periods published this
 firing; still 34/35 tonight.** This is close enough to the window's end
 (07:59 JST) and the cap that later firings tonight should just confirm
 no fresh hot-list filing landed and exit immediately if not.
+
+**07:05 JST firing:** confirmed network access (403 without a
+User-Agent / 200 with it on sec.gov, 200 on financialreportinsights.com).
+`scan-recent-filings` found **0 fresh tier-0 candidates** again (same
+10-02/05/06/07 filing days; 10-08's own index still empty). Tonight's
+log unchanged at 34/35 with the last slot still reserved for a same-day
+hot-list filing only — none landed across three straight checks (05:06,
+06:05, 07:05), so standing down immediately without touching the
+tracker or backlog, same call as the two prior firings. This is the
+window's last hour (ends 07:59 JST); no further action taken. **No
+report-periods published this firing; still 34/35 tonight.**
