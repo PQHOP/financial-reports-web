@@ -10532,3 +10532,21 @@ no new filing), then BHAV, BHF, BHRB, BHST from the us-listed backlog.
   operating-income line). Sanity-checked live (cache-busted fetch):
   content complete, Takeaway and Source filing present. **10/35
   report-periods tonight.**
+- **BHRB:** published — Burke & Herbert Financial Services Corp.
+  (bank holding co.), Q2 2026 (quarter ended 2026-06-30). First-ever
+  report for this company. https://financialreportinsights.com/companies/bhrb/2026/q2
+  — first quarter including LINKBANCORP (merged 2026-05-01, $329.7M
+  in stock, $82.1M goodwill). GAAP diluted EPS fell 74.6% to $0.50 on
+  $32.4M of pre-tax merger costs (pushing the efficiency ratio to
+  87.48%); adjusted EPS (ex merger costs) +3% to $2.03. Net interest
+  income +25.3% to $93.0M, NIM held at 4.15% (~34bps of it purchase-
+  accounting accretion). On the 10-Q's own pro forma basis, combined-
+  bank NII growth was only 3.3% and net income flat — underlying
+  growth is thin. CET1 fell to 11.78% from 13.78% in March; loans
+  30+ days past due stayed elevated ($84.6M vs $29.1M a year ago,
+  flagged as the item to watch). Post-quarter: priced a $100M 7.00%
+  Tier 2 note (closed 2026-09-30). Bank-specific metrics used per
+  CLAUDE.md's bank schema; operatingMarginPct omitted (not
+  applicable). Sanity-checked live (cache-busted fetch): content
+  complete, Takeaway and Source filing present. **11/35
+  report-periods tonight.**

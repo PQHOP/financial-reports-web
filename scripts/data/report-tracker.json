@@ -24129,6 +24129,36 @@
       }
     ]
   },
+  "BHRB": {
+    "name": "Burke & Herbert Financial Services Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bhrb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "past earnings 8-Ks all filed on a Thursday (2025-10-23, 2026-01-22, 2026-04-23, 2026-07-23); matching Thursday is 2026-10-22; 10-Q typically follows ~2 weeks later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bhrb/2026/q2"
+      }
+    ]
+  },
   "BGC": {
     "name": "BGC Group, Inc. - Class A",
     "status": "done",
