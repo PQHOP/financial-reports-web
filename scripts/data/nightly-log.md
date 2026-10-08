@@ -10806,5 +10806,30 @@ as the prior firing suggested.
   live (cache-busted fetch): title, Takeaway and Source filing all
   present. **18/35 report-periods tonight.**
 
-**Next `next-batch -- --n 5`:** BIVI, BIXI, BIYA (dispatched/in progress
-as of this note), then continuing the us-listed backlog.
+- **BIVI:** published — BioVie Inc. (clinical-stage neurology biotech,
+  pre-revenue), FY2026 annual (fiscal year ended 2026-06-30, 10-K filed
+  2026-08-13). First-ever report for this company.
+  https://financialreportinsights.com/companies/bivi/2026/annual — net
+  loss widened 25.8% to $22.1M (FY2025: $17.5M) as R&D rose 50.7% to
+  $14.0M (net of grant income) on two concurrent trials: SUNRISE-PD
+  Parkinson's ($7.3M, up from $3.3M) and the long-COVID trial ($8.5M
+  gross, $7.6M reimbursed by a military medical-research grant). G&A
+  flat at $8.5M. Diluted loss/share improved to -$3.05 from -$12.12
+  only because weighted shares rose from 1.48M to 7.25M after an
+  August 2025 $10.5M-net offering. Cash fell from $17.5M to $9.0M on
+  $19.0M of operating cash burn (same in both years) — roughly 5-6
+  months of runway from 2026-06-30; going-concern warning still
+  present. SUNRISE-PD hit its primary endpoint (inflammation biomarker,
+  nominal p=0.0018, 57 patients) but the filing's own caveats note no
+  multiple-testing correction and no FDA validation of the biomarker.
+  Flagged: a September 2026 ATM facility for up to $6.46M more stock,
+  8.28M warrant + 2.79M option shares outstanding against 7.54M shares
+  issued, unpaid bills up $1.5M, and an unedited drafting placeholder
+  ("[TO BE UPDATED FOR SUBSEQUENT CLOSE OF CAP RAISE]") still in the
+  filed 10-K. The long-COVID (ADDRESS-LC) topline promised for "late
+  summer 2026" hadn't been announced on EDGAR as of 2026-10-08 — flagged
+  as late. Sanity-checked live (cache-busted fetch): title, Takeaway and
+  Source filing all present. **19/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** BIXI, BIYA (dispatched/in progress as of
+this note), then continuing the us-listed backlog.
