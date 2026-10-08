@@ -24913,6 +24913,17 @@
       }
     ]
   },
+  "BLUW": {
+    "name": "Blue Water Acquisition Corp. III - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (Cayman Islands blank-check co., SIC 'Blank Checks'). Q2 2026 10-Q (filed 2026-08-12, period ended 2026-06-30) shows only trust-account interest income ($2.10M Q2 / $4.02M H1 on a $263.4M trust), no operations, no signed Business Combination Agreement found.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "lastChecked": "2026-10-08"
+  },
   "BLRX": {
     "name": "BioLineRx Ltd. - American Depositary Shares",
     "status": "done",

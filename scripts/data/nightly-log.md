@@ -11204,3 +11204,15 @@ BLRK, BLRX from the us-listed backlog.
   costs for a margin to mean anything). Sanity-checked live
   (cache-busted fetch): Takeaway and Source filing both present, page
   loads clean. **32/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** BLIV/BAOS skipped again (already
+re-checked twice earlier this same firing, no new filings, see above),
+then BLTE, BLUW, BLZE from the us-listed backlog.
+
+- **BLUW:** skipped — Blue Water Acquisition Corp. III (Cayman Islands
+  pre-merger SPAC, SIC "Blank Checks"). Q2 2026 10-Q (filed 2026-08-12)
+  shows only trust-account interest income ($2.10M Q2 / $4.02M H1 on a
+  $263.4M trust), no operations, no signed Business Combination
+  Agreement found (unlike BLRK above). Checked directly (EDGAR filing
+  index + downloaded 10-Q), no subagent. Not counted toward tonight's
+  total (still 32/35).
