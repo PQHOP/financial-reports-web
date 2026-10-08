@@ -10665,3 +10665,18 @@ check. Continuing from BID per this firing's own `next-batch` ordering.
   complete, Takeaway and Source filing present. Recorded in the
   tracker by this firing since neither session had pushed a BILI
   entry yet. **15/35 report-periods tonight.**
+- **BJRI:** published — BJ's Restaurants, Inc. (casual-dining chain),
+  Q2 2026 (13 weeks ended 2026-06-30). First-ever report for this
+  company; pre-publish check confirmed no existing report before
+  dispatching. https://financialreportinsights.com/companies/bjri/2026/q2
+  — revenue +6.4% to $388.9M on 6.5% comparable sales (traffic +8.3%,
+  average check -1.8% as diners traded down); restaurant-level margin
+  edged up to 17.2% from 17.0%. GAAP EPS fell 11.3% to $0.86 despite
+  that (adjusted EPS $0.94 vs $0.97) on G&A +21% (legal/leadership-
+  transition costs), higher depreciation, and a prior-year payroll
+  tax credit that didn't repeat; a lower tax rate and 4.7% fewer
+  shares partly offset. Full-year guidance raised (comparable sales
+  +3-4% from +1-3%), which the report notes implies H2 comps slowing
+  to ~+1.5-3.5%. Debt fell from $85M to $44M in H1. Sanity-checked
+  live (cache-busted fetch): content complete, Takeaway and Source
+  filing present. **16/35 report-periods tonight.**

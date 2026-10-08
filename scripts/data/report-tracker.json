@@ -24327,5 +24327,35 @@
         "url": "https://financialreportinsights.com/companies/bili/2026/q2"
       }
     ]
+  },
+  "BJRI": {
+    "name": "BJ's Restaurants, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bjri/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K Item 2.02 (Q3 2026 earnings)",
+      "estimate": "2026-10-29",
+      "basis": "Q2 release 07-30, 10-Q 07-31; last year's Q3 10-Q filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bjri/2026/q2"
+      }
+    ]
   }
 }
