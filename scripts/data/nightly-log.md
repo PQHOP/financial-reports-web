@@ -10926,5 +10926,48 @@ due until 2026-11-27), then BJDX, BKHA, BKYI, BL, BLBD.
   Takeaway and Source filing all present. **22/35 report-periods
   tonight.**
 
-**Next `next-batch -- --n 5`:** BL, BLBD, then continuing the
-us-listed backlog.
+- **BL:** published — BlackLine, Inc. (financial close/accounting
+  automation SaaS), Q2 2026 (quarter ended 2026-06-30, 10-Q filed
+  2026-08-05). First-ever report for this company.
+  https://financialreportinsights.com/companies/bl/2026/q2 — revenue
+  +9.2% to $187.8M (top of its own $186-188M guided range; US +6.0%,
+  international +16.4%); GAAP operating margin 5.9% (vs 4.4%),
+  non-GAAP margin 23.3% (vs 22.1%, above the 21.5-22.5% guided); GAAP
+  diluted EPS $0.27 (vs $0.13), non-GAAP EPS $0.61 (vs $0.51); FCF
+  $36.5M (vs $25.4M). Flagged: ~$0.12 of the $0.27 GAAP EPS is a
+  non-cash $8.15M revaluation gain on the Japan subsidiary stake plus
+  a one-time tax benefit; pre-tax income actually fell 5.9% as interest
+  income halved after repaying $230M of converts; billings growth
+  slowed to 5.9% from Q1's 9.2%; net revenue retention fell to 102%
+  from 105% (company cites FX); customer count fell to 4,260 from
+  4,451, a fourth straight quarterly decline; stock comp 15.2% of
+  revenue; ~6 of the 19.6% non-GAAP EPS growth came from a 5.4% lower
+  share count. FY guidance revenue range held at $765-769M (margin/EPS
+  nudged up) — implies Q4 growth accelerating to ~9-12% against the
+  slowing-billings backdrop. Sanity-checked live (cache-busted fetch):
+  title, Takeaway and Source filing all present. **23/35
+  report-periods tonight.**
+- **BLBD:** published — Blue Bird Corporation (school bus
+  manufacturer), fiscal Q3 2026 (quarter ended 2026-06-27, 10-Q filed
+  2026-08-05; fiscal year ends ~Oct 3). First-ever report for this
+  company. https://financialreportinsights.com/companies/blbd/2026/q3
+  — net sales +29.9% to $517.2M; GAAP net income $185.3M (vs $36.5M)
+  and diluted EPS $5.27 (vs $1.12), but $160.5M of that is a non-cash
+  revaluation gain from buying the remaining 50% of Micro Bird on
+  2026-04-01, against a $19.6M pension-settlement loss and ~$4.9M of
+  deal costs; adjusted EPS $1.28 (vs $1.19, +7.6%), adjusted EBITDA
+  $71.4M (+22.1%) though margin fell to 13.8% from 14.7%. Micro Bird
+  added $122.9M sales/$11.4M operating profit; legacy Blue Bird sales
+  -1.0% as unit volume fell 7.2% (2,290 vs 2,467 buses) at 6.7% higher
+  average price — management attributes the volume miss to Q4 delivery
+  timing, and finished-goods inventory rising to $43.8M from $15.4M
+  supports that. Diluted shares +7.9% from Micro Bird's exchangeable
+  shares (why adjusted EPS grew slower than adjusted net income); FCF
+  $21.7M (down from $52.3M); Type C/D backlog ~3,570 buses (down from
+  ~3,900), ~780 EV units in backlog. FY26 guidance held at ~$1.75B
+  revenue / raised slightly to ~$247M adjusted EBITDA, implying ~$547M
+  Q4 sales. Sanity-checked live (cache-busted fetch): title, Takeaway
+  and Source filing all present. **24/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** continuing the us-listed backlog past
+BLBD.

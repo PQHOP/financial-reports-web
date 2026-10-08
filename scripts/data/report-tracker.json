@@ -24599,5 +24599,69 @@
         "filedAt": "2026-08-13"
       }
     ]
+  },
+  "BL": {
+    "name": "BlackLine, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90-day filing cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bl/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      }
+    ]
+  },
+  "BLBD": {
+    "name": "Blue Bird Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/blbd/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 annual)",
+      "estimate": "2026-11-30",
+      "basis": "fiscal year ends 2026-10-03; cadence estimate",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/blbd/2026/q3",
+        "periodEnd": "2026-06-27",
+        "filedAt": "2026-08-05"
+      }
+    ]
   }
 }
