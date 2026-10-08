@@ -20369,22 +20369,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-10-03",
-      "url": "https://financialreportinsights.com/companies/apld/2026/annual"
+      "period": "Q1",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/apld/2026/q1"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-07-29"
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-07"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027, quarter ending 2026-08-31)",
-      "estimate": "2026-10-14",
-      "basis": "~45 days after quarter end, matching last year cadence",
+      "type": "10-Q (Q2 FY2027, quarter ending 2026-11-30)",
+      "estimate": "2027-01-08",
+      "basis": "last year's Q2 FY2027-equivalent 10-Q (for quarter ending 2025-11-30) was filed 2026-01-08",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-03"
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-03",
+        "url": "https://financialreportinsights.com/companies/apld/2026/annual"
+      },
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/apld/2026/q1"
+      }
+    ]
   },
   "APMC": {
     "name": "AmperCap Acquisition Company - Ordinary Shares",

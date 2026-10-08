@@ -10281,3 +10281,38 @@ subagent or touching the tracker. No report-periods published this
 firing; tonight's total stays **34 report-periods** across 14 new
 companies. Window closes shortly — expect the next useful firing
 01:00 JST tomorrow (16:00 UTC) with a fresh cap.
+
+### 2026-10-08 night (16:00 UTC 2026-10-08 → 22:59 UTC 2026-10-08 / 01:00–07:59 JST 2026-10-09)
+
+**01:07 JST firing:** fresh night window, cap resets to 0/35. Confirmed
+network access (403 without a User-Agent on sec.gov, 200 with the
+required User-Agent; financialreportinsights.com 200). `npm install`
+needed `DATABASE_URL` set to a dummy value for the `prisma generate`
+postinstall step to succeed (no Prisma dependency in
+`admin-publish`/`scan-recent-filings`, so this is cosmetic). Repo was in
+a detached-HEAD state at session start with an unrelated
+`package-lock.json` diff; reverted the diff and reset `master` to
+`origin/master` (1aaceeb) before starting.
+
+Ran `scan-recent-filings`: 9 fresh tier-0 candidates, all from filings
+dated 2026-10-07 — COST (hot, 10-K, update), APA (S&P 500, 8-K 2.02,
+update), CTAS (S&P 500, 10-Q, update), STZ (S&P 500, 10-Q, update),
+APLD (us-listed, 10-Q, update), CNXC/LEVI/NEOG/RGP (us-listed, 10-Q,
+new).
+
+- **APLD:** published — Applied Digital Corporation, fiscal Q1 FY2027
+  (quarter ended 2026-08-31), labeled year 2026 / period Q1 (new
+  period; prior report was the FY2026 ANNUAL). New report, not an
+  edit. https://financialreportinsights.com/companies/apld/2026/q1 —
+  revenue +322% to $341.9M (data-center rent $65.8M as Building 2 came
+  online; most of the rest is low-margin tenant-fitout billing).
+  Operating loss -$62.4M; loss to common -$221.0M (-$0.76/sh) driven by
+  $69.2M stock comp, $60.9M of paper losses on the Babcock & Wilcox
+  warrant/shares, and $51.5M of in-kind preferred dividends to
+  Macquarie. Adjusted EBITDA $64.4M, adjusted net loss -$4.1M.
+  Flagged: net interest expense this quarter ($41.6M) already exceeds
+  all of FY2026; receivables doubled on the quarter for the second
+  quarter running; one customer is 56% of revenue. No guidance given.
+  Sanity-checked live (cache-busted fetch): content complete, ends on
+  a full outlook paragraph, Takeaway and Source filing present.
+  **1/35 report-periods tonight.**
