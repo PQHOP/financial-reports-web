@@ -11269,3 +11269,18 @@ spending a research pass on either. All tracker/nightly-log commits
 pushed cleanly (no concurrent-firing collisions this time — `git fetch`
 showed no divergence at any commit). Next `next-batch -- --n 5`
 continuation point: past BLZE in the us-listed backlog.
+
+**05:06 JST firing:** confirmed network access (403 without a
+User-Agent / 200 with it on sec.gov, 200 on financialreportinsights.com
+and the vercel.app alias). Repo was at a detached HEAD matching
+`origin/master` exactly (97819ca) with the same cosmetic
+`package-lock.json` libc-field diff as prior firings — reverted rather
+than committed; checked out `master` and confirmed it tracks
+`origin/master` with a clean tree. `scan-recent-filings` found **0
+fresh tier-0 candidates** (same 10-02/05/06/07 filing days already
+worked through tonight). Per CLAUDE.md's cap guidance, tonight's log
+already stood at 34/35 with the prior firing's explicit decision to
+reserve the last slot for a hot-list filing only — with no fresh
+candidates and no reason to spend the reserved slot on backlog,
+standing down immediately without touching the tracker or backlog.
+**No report-periods published this firing; still 34/35 tonight.**
