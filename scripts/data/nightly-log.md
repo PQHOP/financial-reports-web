@@ -10831,5 +10831,14 @@ as the prior firing suggested.
   as late. Sanity-checked live (cache-busted fetch): title, Takeaway and
   Source filing all present. **19/35 report-periods tonight.**
 
-**Next `next-batch -- --n 5`:** BIXI, BIYA (dispatched/in progress as of
-this note), then continuing the us-listed backlog.
+- **BIXI:** skipped — Bitcoin Infrastructure Acquisition Corp Ltd.
+  (Cayman Islands, formerly Meteora Venture Partners Acquisition Corp
+  IV), pre-merger SPAC, IPO closed December 2025 ($220M trust). Q2 2026
+  10-Q (filed 2026-08-13) states no business combination target
+  selected, no operations commenced; the only income is trust-account
+  interest ($1.70M Q2 / $3.32M YTD on $224.49M trust, up from $220.65M
+  at 2025-12-31). Same pattern as BHAV/BID. Not counted toward tonight's
+  total (still 19/35).
+
+**Next `next-batch -- --n 5`:** BIYA (dispatched/in progress as of this
+note), then continuing the us-listed backlog.

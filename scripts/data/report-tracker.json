@@ -24469,5 +24469,22 @@
         "filedAt": "2026-08-13"
       }
     ]
+  },
+  "BIXI": {
+    "name": "Bitcoin Infrastructure Acquisition Corp Ltd. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (Cayman Islands, formerly Meteora Venture Partners Acquisition Corp IV; IPO Dec 2025, $220M trust). Q2 2026 10-Q states no business combination target selected, no operations commenced; income is only trust-account interest ($1.70M Q2 / $3.32M YTD on $224.49M trust).",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "~90 days after last 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08"
   }
 }
