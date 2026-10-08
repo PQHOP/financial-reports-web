@@ -11048,5 +11048,28 @@ then BLDP, BLFS, BLIN (BLKB/BLIV queued next).
   as of today — flagged to re-check soon rather than on the normal
   cadence. Not counted toward tonight's total (still 27/35).
 
-**Next `next-batch -- --n 5`:** BLKB (in progress as of this note),
-then continuing the us-listed backlog.
+- **BLKB:** published — Blackbaud, Inc. (nonprofit/social-good SaaS),
+  Q2 2026 (quarter ended 2026-06-30, 10-Q filed 2026-07-29). First-ever
+  report for this company. https://financialreportinsights.com/companies/blkb/2026/q2
+  — revenue +3.0% to $290.6M (slower than Q1's ~4.2%; recurring revenue
+  98.2% of total; subscription +3.5% mostly from price increases,
+  payment-fee revenue +2.9%); GAAP operating margin 21.3% (vs 20.3%),
+  net income $35.4M (+33.6%), GAAP EPS $0.79 (+43.6%) — but most of the
+  EPS jump is a lower tax rate (23.8% vs 33.9%, after a 2025 US tax-law
+  reserve reduction) and a 7.0% smaller share count from buybacks; at
+  last year's tax rate EPS would have been ~$0.68. Adjusted figures
+  barely moved (adjusted net income +1.7%, adjusted operating margin
+  down 1.1pts to 32.6%, adjusted EBITDA margin down 0.7pts to 38.0%).
+  FCF $75.3M (vs $51.5M), helped by lower cash taxes. Flagged: gross
+  dollar retention fell to ~91% heading into a renewal cohort ~40%
+  larger than 2025's (management expects recovery by end-2027); H1
+  buybacks plus tax-withholding share purchases ($135.4M) exceeded H1
+  FCF ($112.3M), funded partly by $28.6M more net borrowing (debt
+  ~$1.15B vs only $67M of equity). Full-year guidance reaffirmed (not
+  raised): revenue $1.173-1.179B, adjusted EPS $5.15-5.25, FCF
+  $280-290M, with management now expecting the upper half. Sanity-
+  checked live (cache-busted fetch): title, Takeaway and Source filing
+  all present. **28/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** continuing the us-listed backlog past
+BLKB.
