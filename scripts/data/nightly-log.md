@@ -10453,3 +10453,20 @@ backlog.
   floating-price Series D conversion. Sanity-checked live
   (cache-busted fetch): content complete, Takeaway and Source filing
   present. **6/35 report-periods tonight.**
+- **BGIN:** published — Bgin Blockchain Limited (Singapore/Cayman
+  crypto-mining hardware and hosting, Kaspa-focused), H1 2026 (six
+  months ended 2026-06-30), labeled year 2026 / period H1 (foreign
+  private issuer, 20-F + H1-only 6-K, no quarterlies). First-ever
+  report for this company. https://financialreportinsights.com/companies/bgin/2026/h1
+  — revenue -84.5% to $7.38M as Kaspa's price drop made mining
+  unprofitable (only 6.2% of machines running at end-2025). Loss
+  narrowed to -$25.6M from -$60.4M (EPS -$0.23 vs -$0.56) purely from
+  smaller write-downs/crypto losses and cost cuts — gross loss
+  actually widened to -$9.9M on the much smaller revenue base. Cash +
+  crypto fell $11.8M to $36.9M, close to $34.1M of taxes payable with
+  no stated due date. New custom Bitcoin-mining chip (BT1) business
+  launched May 2026; 8% dilutive equity plan registered Sept 2026.
+  netIncomeYoyPct/epsYoyPct omitted (both periods are losses, narrated
+  in text instead). Sanity-checked live (cache-busted fetch): content
+  complete, Takeaway and Source filing present. **7/35 report-periods
+  tonight.**

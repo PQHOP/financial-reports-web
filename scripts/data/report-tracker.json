@@ -23992,6 +23992,36 @@
       }
     ]
   },
+  "BGIN": {
+    "name": "Bgin Blockchain Limited - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bgin/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-28",
+      "basis": "FY2025 20-F filed 2026-04-28; foreign private issuer, files 20-F annual + H1-only 6-K interim, no quarterlies",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bgin/2026/h1"
+      }
+    ]
+  },
   "BGC": {
     "name": "BGC Group, Inc. - Class A",
     "status": "done",
