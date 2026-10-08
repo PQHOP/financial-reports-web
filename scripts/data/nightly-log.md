@@ -10613,3 +10613,20 @@ considering a longer interval or an explicit mutual-exclusion check
 
 **Next `next-batch -- --n 5`:** BAOS (pending, no new filing, already
 re-checked twice tonight), then from the us-listed backlog.
+
+**Note from the 01:07 JST firing:** confirmed the concurrent-session
+overlap above independently — `git fetch` showed the other firing's
+push (BHF/BHRB/BHST re-recorded + BIAF, 13/35) arriving mid-batch, right
+as this firing was about to research BID next. Merged cleanly
+(fast-forward, no conflict) before continuing. Agree with the other
+firing's flag: worth a mutual-exclusion mechanism if this keeps
+happening, since a same-second double-publish of the same ticker isn't
+ruled out by timing alone, only by the admin form's own uniqueness
+check. Continuing from BID per this firing's own `next-batch` ordering.
+
+- **BID:** skipped, no report — Tribeca Strategic Acquisition Corp.,
+  another pre-merger SPAC (SIC 6770), IPO closed 2026-06-01 ($140.0M
+  trust). Q2 2026 10-Q confirms no business combination target
+  selected; deadline ~2028-03-01 (21 months). Only trust interest
+  ($408K) and $243K Q2 net income. Tracker marked `skipped`. Not
+  counted toward tonight's total (still 13/35).
