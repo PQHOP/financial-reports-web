@@ -24159,6 +24159,36 @@
       }
     ]
   },
+  "BHST": {
+    "name": "BioHarvest Sciences Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bhst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim financial statements)",
+      "estimate": "2026-11-12",
+      "basis": "Q1 filed 44 days after quarter end, Q2 42 days; foreign private issuer (British Columbia), 40-F annual + quarterly 6-K interim",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bhst/2026/q2"
+      }
+    ]
+  },
   "BGC": {
     "name": "BGC Group, Inc. - Class A",
     "status": "done",

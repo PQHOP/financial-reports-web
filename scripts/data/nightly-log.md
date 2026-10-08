@@ -10550,3 +10550,19 @@ no new filing), then BHAV, BHF, BHRB, BHST from the us-listed backlog.
   applicable). Sanity-checked live (cache-busted fetch): content
   complete, Takeaway and Source filing present. **11/35
   report-periods tonight.**
+- **BHST:** published — BioHarvest Sciences Inc. (biotech/plant-cell
+  fermentation, VINIA grape-cell wellness supplement brand; British
+  Columbia FPI, 40-F + 6-K), Q2 2026 (quarter ended 2026-06-30).
+  First-ever report for this company. https://financialreportinsights.com/companies/bhst/2026/q2
+  — revenue +3.8% to $8.84M (slowing from Q1's +8.2%, as VINIA growth
+  cooled to ~3% on reduced Meta ad spend). Operating loss widened 38%
+  to -$2.51M, gross margin fell to 57.5% from 59.7%; net loss
+  narrowed to -$3.72M from -$4.08M only on ~$1.0M lower non-cash
+  finance expense, and ~70% of the EPS improvement (-$0.17 vs -$0.24)
+  came from a 31% higher share count's effect on the comparison, not
+  operations. Management cut FY2026 revenue guidance to $33-35M VINIA
+  + $4-5M contract manufacturing (from $42-48M reaffirmed in May) and
+  swung the VINIA EBITDA outlook from profit to loss. Cash fell $3.9M
+  to $16.2M; going-concern doubt remains. Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **12/35 report-periods tonight.**
