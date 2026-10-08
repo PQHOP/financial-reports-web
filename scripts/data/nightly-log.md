@@ -10566,3 +10566,50 @@ no new filing), then BHAV, BHF, BHRB, BHST from the us-listed backlog.
   to $16.2M; going-concern doubt remains. Sanity-checked live
   (cache-busted fetch): content complete, Takeaway and Source filing
   present. **12/35 report-periods tonight.**
+
+**02:09 JST firing (concurrent hourly session, cse_01R5Tnnh8EzZ2Q7nncD4ueUo):**
+this firing started at 17:04:58 UTC while the 01:07 JST firing above was
+still running — the two sessions overlapped for roughly the next 20-30
+minutes before this session noticed. Confirmed via `list_triggers` that
+there is only one "2026 Report Coverage - Nightly" trigger (no duplicate
+schedule); the overlap is simply a long-running firing bleeding past the
+next hourly slot. This session independently dispatched its own opus
+subagents for BHF/BHRB/BHST/BIAF (the same `next-batch -- --n 5` output,
+since the two sessions don't coordinate), then discovered mid-batch —
+first via a rejected duplicate-uniqueness error from `admin-publish` on
+BHRB, then by checking the other two live — that **the 01:07 JST firing
+had already published BHF, BHRB and BHST** moments earlier. Live
+sanity-checked all three from this session too (content complete,
+Takeaway + Source filing present); this session's own BHF/BHRB/BHST
+subagent research was redundant (its figures matched the live reports,
+which at least cross-confirms they're sound) and was discarded rather
+than written to the tracker a second time. On `git push`, the other
+session's commits for BHF(10/35)/BHRB(11/35)/BHST(12/35) were already on
+`origin/master`; rebased this session's commit onto them and dropped its
+duplicate tracker entries for those three tickers, keeping only this
+session's BIAF addition. **Flagging for the user:** this overlap pattern
+(an hourly trigger firing into a new session before the previous one
+finishes) could cause real duplicate-publish attempts on a future night
+if both sessions reach `admin-publish` for the same ticker within the
+same few seconds, not just a wasted research pass like tonight — worth
+considering a longer interval or an explicit mutual-exclusion check
+(e.g. a lock file or a "last firing still running" marker) if it recurs.
+
+- **BIAF:** published — bioAffinity Technologies (clinical-stage lung-
+  cancer diagnostics, CyPath Lung test), Q2 2026 (quarter ended
+  2026-06-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/biaf/2026/q2 —
+  CyPath Lung tests delivered +216% to 622, CyPath revenue +210% to
+  ~$474K, but total revenue only +19% to $1.51M as the rest of the lab
+  shrank ~7% after cutting unprofitable services; operating loss
+  widened 32.6% to $3.33M; net loss narrowed to $3.37M from $4.06M only
+  on one-off warrant/offering charges not repeating; going-concern
+  warning explicit, cash $1.0M by Aug 3 (vs $2.4M at quarter-end); two
+  reverse splits in 11 months (1-for-30 then 1-for-15) alongside heavy
+  warrant dilution. netIncomeYoyPct/epsYoyPct omitted (loss-to-loss
+  with a 6.5x share-count jump, narrated in text instead).
+  Sanity-checked live (cache-busted fetch): content complete, Takeaway
+  and Source filing present. **13/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** BAOS (pending, no new filing, already
+re-checked twice tonight), then from the us-listed backlog.
