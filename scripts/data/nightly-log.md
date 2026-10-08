@@ -10840,5 +10840,30 @@ as the prior firing suggested.
   at 2025-12-31). Same pattern as BHAV/BID. Not counted toward tonight's
   total (still 19/35).
 
-**Next `next-batch -- --n 5`:** BIYA (dispatched/in progress as of this
-note), then continuing the us-listed backlog.
+- **BIYA:** published — Baiya International Group Inc. (Cayman Islands
+  holding company, China operations; sold its old recruitment-
+  outsourcing subsidiary Juxing on 2026-06-25 and pivoted to a freelance-
+  talent matching platform), H1 2026 (six months ended 2026-06-30, Form
+  6-K filed 2026-09-29). First-ever report for this company.
+  https://financialreportinsights.com/companies/biya/2026/h1 —
+  continuing-operations revenue $756,805 (vs $0 a year earlier, before
+  the pivot); gross margin 10.2% (6.4% on the platform itself); opex
+  -31.6% to $3.52M (lower professional fees and telecom costs); net
+  loss attributable to shareholders narrowed to $2.43M from $4.76M
+  (includes an $884K one-off gain on the Juxing sale; continuing-ops
+  loss alone was $3.34M vs $5.14M); diluted EPS -$0.54 vs -$96.15, the
+  swing coming almost entirely from a ~92x increase in weighted shares
+  after two reverse splits, not the business. Flagged: $18.8M of $29.7M
+  total assets is loans to third parties (two interest-free loans
+  totaling $16.8M due 2026-12-16 with no credit-loss allowance, plus a
+  2M-USDT loan at 8%); cash is only $1.18M; $3.71M held in crypto
+  (BNB/USDT); going-concern warning present; $4.81M subscription
+  receivable outstanding; the Starfish acquisition share issue is under
+  legal review after Starfish was resold to another buyer in July. No
+  numeric guidance. YoY fields omitted/marked n/m where a prior-year
+  zero or share-count-driven swing would mislead (noted in the body).
+  Sanity-checked live (cache-busted fetch): title, Takeaway and Source
+  filing all present. **20/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** continuing the us-listed backlog past
+BIYA.
