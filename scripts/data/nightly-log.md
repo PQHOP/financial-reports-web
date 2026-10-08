@@ -10431,3 +10431,25 @@ new).
 published (APLD, CNXC, LEVI, NEOG, RGP), 3 same-period edits with no new
 report-period (COST, CTAS, STZ), 1 no-action (APA, pre-earnings
 guidance only, not a results release). 5/35 report-periods tonight.**
+
+**Moving into tier 1 (2026 coverage, us-listed backlog)** — ran
+`next-batch -- --n 5`: BAOS (pending, re-checked only, no new interim
+filing yet, see above), then BGDE, BGIN, BGLC, BGMS from the us-listed
+backlog.
+
+- **BGDE:** published — Big Digital Energy, Inc. (bitcoin-mining/grid
+  curtailment, formerly Mawson Infrastructure Group, renamed
+  2026-04-24), Q2 2026 (quarter ended 2026-06-30). First-ever report
+  for this company. https://financialreportinsights.com/companies/bgde/2026/q2
+  — revenue -35.5% to $6.15M as grid-curtailment revenue halved (miners
+  no longer meet the program's new 2026 equipment rules). Net loss
+  narrowed to -$7.38M from -$8.02M only because a power-contract
+  derivative charge shrank; ex that, operating loss widened to -$6.19M
+  from -$4.44M and Adjusted EBITDA loss rose to -$4.42M from -$1.99M.
+  H1 cash burn $20.5M; $27.5M of $30.1M debt overdue; going-concern
+  doubt stated. Equity turned positive (+$12.4M from -$3.1M) funded
+  largely by new executives' own entities (Series D preferred, a
+  revolver, a joint-mining deal) — flagged dilution risk from the
+  floating-price Series D conversion. Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **6/35 report-periods tonight.**

@@ -23962,6 +23962,36 @@
       }
     ]
   },
+  "BGDE": {
+    "name": "Big Digital Energy, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bgde/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day deadline from quarter end (Nov 14 is a Saturday)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bgde/2026/q2"
+      }
+    ]
+  },
   "BGC": {
     "name": "BGC Group, Inc. - Class A",
     "status": "done",
