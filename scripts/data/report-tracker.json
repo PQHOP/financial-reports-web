@@ -24870,6 +24870,17 @@
       }
     ]
   },
+  "BLRK": {
+    "name": "Bluerock Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (Cayman Islands blank-check co., SIC 'Blank Checks'). Q2 2026 10-Q (filed 2026-08-11, period ended 2026-06-30) shows only trust-account interest income ($1.37M Q2 / $2.63M H1 on a $175.8M trust) and no operations. Has a signed Business Combination Agreement (2026-07-31) to merge with Bitonic Technology Labs Inc. d/b/a Yellow.ai, domesticating as Delaware 'Yellow.ai' (Pubco) post-close — worth revisiting as Yellow.ai once that closes, same pattern as BHAV/BID/BIXI/BKHA tonight.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "lastChecked": "2026-10-08"
+  },
   "BLNE": {
     "name": "Beeline Holdings, Inc.",
     "status": "done",

@@ -11174,3 +11174,13 @@ BLRK, BLRX from the us-listed backlog.
   CEO's own $0.5M convertible note. operatingMarginPct -171.0%.
   Sanity-checked live (cache-busted fetch): Takeaway and Source filing
   both present, page loads clean. **31/35 report-periods tonight.**
+- **BLRK:** skipped — Bluerock Acquisition Corp. (Cayman Islands
+  pre-merger SPAC, SIC "Blank Checks"). Q2 2026 10-Q (filed 2026-08-11)
+  shows only trust-account interest income ($1.37M Q2 / $2.63M H1 on a
+  $175.8M trust), no operations. Signed Business Combination Agreement
+  (2026-07-31) to merge with Bitonic Technology Labs Inc. d/b/a
+  Yellow.ai, domesticating as Delaware "Yellow.ai" post-close — same
+  trust-only pattern as BHAV/BID/BIXI/BKHA; flagged for a revisit as
+  Yellow.ai once that closes. Checked directly (EDGAR filing index +
+  downloaded 10-Q) rather than a subagent, to save budget on an obvious
+  SPAC skip. Not counted toward tonight's total (still 31/35).
