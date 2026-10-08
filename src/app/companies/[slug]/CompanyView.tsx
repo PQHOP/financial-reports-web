@@ -17,7 +17,9 @@ import {
   metricsProfile,
   PROFILE_LAYOUT,
   readMetrics,
+  relatedGuides,
 } from "@/lib/metrics";
+import { articlePath } from "@/lib/articles";
 import type { ReportPeriod } from "@/generated/prisma/client";
 import { cleanCompanyName } from "@/lib/companyName";
 import { PeriodTrendChart } from "@/components/ReportCharts";
@@ -266,6 +268,17 @@ export async function CompanyView({
             Figures as reported in each period&apos;s filing; YoY compares with
             the same period a year earlier. Money in the reporting currency.
             {historyLayout.glossary ? ` ${historyLayout.glossary}` : ""}
+          </p>
+          <p className="text-sm text-zinc-600">
+            <span className="font-medium text-zinc-800">New to these terms? </span>
+            {relatedGuides(history[0].metrics!, history[0].report.period).map((guide, i) => (
+              <span key={guide.slug}>
+                {i > 0 && " · "}
+                <Link href={articlePath("GUIDE", guide.slug)} className="text-blue-700 underline">
+                  {guide.title}
+                </Link>
+              </span>
+            ))}
           </p>
         </section>
       )}

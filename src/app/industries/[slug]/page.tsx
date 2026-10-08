@@ -12,8 +12,10 @@ import {
   metricsProfile,
   PROFILE_LAYOUT,
   readMetrics,
+  relatedGuides,
   type MetricsProfile,
 } from "@/lib/metrics";
+import { articlePath } from "@/lib/articles";
 import { cleanCompanyName } from "@/lib/companyName";
 import { RankedBarChart } from "@/components/ReportCharts";
 
@@ -261,6 +263,17 @@ export default async function IndustryPage({
             {layout.peerSortNote}. Periods differ between companies, so compare
             growth rates and ratios rather than absolute amounts.
             {layout.glossary ? ` ${layout.glossary}` : ""}
+          </p>
+          <p className="text-sm text-zinc-600">
+            <span className="font-medium text-zinc-800">New to these terms? </span>
+            {relatedGuides(rows[0].m, rows[0].report.period).map((guide, i) => (
+              <span key={guide.slug}>
+                {i > 0 && " · "}
+                <Link href={articlePath("GUIDE", guide.slug)} className="text-blue-700 underline">
+                  {guide.title}
+                </Link>
+              </span>
+            ))}
           </p>
         </section>
       ))}
