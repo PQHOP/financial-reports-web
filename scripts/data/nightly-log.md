@@ -11071,5 +11071,69 @@ then BLDP, BLFS, BLIN (BLKB/BLIV queued next).
   checked live (cache-busted fetch): title, Takeaway and Source filing
   all present. **28/35 report-periods tonight.**
 
-**Next `next-batch -- --n 5`:** continuing the us-listed backlog past
-BLKB.
+**Next `next-batch -- --n 6`:** BLIV re-listed as pending-due (checked
+again this same firing, no new filing — see above), BAOS skipped again
+(still not due), then BLLN, BLMN from the us-listed backlog.
+
+- **BLLN:** published — BillionToOne, Inc. (prenatal/oncology genetic
+  testing, UNITY and Northstar), Q2 2026 (quarter ended 2026-06-30,
+  10-Q filed 2026-08-05). First-ever report for this company.
+  https://financialreportinsights.com/companies/blln/2026/q2 — revenue
+  +64.4% to $109.4M (prenatal UNITY $94.2M, +55%; oncology Northstar
+  $13.7M, +176%; 35% more tests at 21% higher average revenue/test on
+  more insurer contracts and a higher-paying billing code); gross
+  margin 70.4% (vs 65.3%); operating income $5.5M (5.0% margin) vs a
+  $1.6M loss a year ago; net income $8.1M, diluted EPS $0.15. FY2026
+  revenue guidance held at $450-465M after two earlier raises. Flagged:
+  Q1's $17.8M operating income was inflated by $9.2M of catch-up
+  billing for prior-period tests (only $2.8M of that fell in Q2) —
+  excluding it, revenue grew only ~7.5% quarter over quarter, and the
+  sequential profit drop also reflects $7.7M more sales cost and 139
+  more average sales/admin staff than a year ago; receivables +80% in
+  six months to 68% of a quarter's revenue (from 43% in December);
+  interest income ($4.7M) is over half of net income; adjusted EBITDA
+  ($16.1M) is ~3x operating profit mostly by excluding $8.2M of stock
+  comp; a possible tax-valuation-allowance reversal could inflate a
+  future quarter's profit without an operating change. YoY net-income/
+  EPS fields omitted (loss-to-profit and IPO-driven share-count change,
+  explained in the body). Sanity-checked live (cache-busted fetch):
+  title, Takeaway and Source filing all present. **29/35
+  report-periods tonight.**
+- **BLMN:** published — Bloomin' Brands, Inc. (Outback Steakhouse,
+  Carrabba's, Bonefish Grill, Fleming's), Q2 2026 (13 weeks ended
+  2026-06-28, 10-Q filed 2026-08-06). First-ever report for this
+  company. https://financialreportinsights.com/companies/blmn/2026/q2
+  — revenue +1.3% to $1,015.8M; net income attributable to Bloomin'
+  +23.3% to $31.3M, diluted EPS (continuing ops) $0.37 vs $0.29
+  (adjusted $0.39 vs $0.32); GAAP operating margin 3.8% (vs 3.0%),
+  restaurant-level margin 12.4% (vs 12.0%). US comparable sales +2.3%
+  entirely from a 4.2% higher average check — guest traffic fell 1.9%
+  overall and 2.8% at Outback specifically, worse than a year ago.
+  Productivity savings and higher checks outweighed 1.6 points of
+  commodity inflation; G&A fell mainly because last year's
+  restructuring/hedge costs didn't repeat. FY diluted EPS guidance
+  raised to $0.85-0.95 (from $0.70-0.85, adjusted $0.90-1.00) while the
+  top of the full-year comps range came down to 2.0% from 2.5%; Q3
+  guided to a per-share loss of $0.23-0.28. Flagged: H1 tax benefit
+  from FICA tip credits more than doubled to $17.0M from $7.8M (smaller
+  in Q2 alone, so the quarter's gain reads as operational); H1
+  operating cash flow $166.4M vs $89.7M net income, FCF ~$97M (vs
+  ~$36M); capex back-loaded ($69M spent of a $185-195M full-year plan);
+  no dividend and no Q2 buybacks (share count +1.3%); debt down to
+  $702.8M from $787.4M; revolver extended to Sep 2031. Takeaway: the
+  EPS gain rests on price/cost cuts while Outback, the brand the
+  turnaround targets, keeps losing guests. Sanity-checked live
+  (cache-busted fetch): title, Takeaway and Source filing all present.
+  **30/35 report-periods tonight.**
+
+**Decision by the 03:xx JST firing: standing down at 30/35.** This
+firing published 11 report-periods (BIRD, BIVI, BIYA, BJDX, BKYI, BL,
+BLBD, BLFS, BLDP, BLIN, BLKB, BLLN, BLMN — 13 total across 7
+sub-batches) and skipped 4 (BIOT, BIXI, BKHA, BLIV) without any
+tracker/log merge conflicts (git fetch+merge clean at every commit,
+no concurrent firing detected this time). Leaving 5/35 of tonight's
+cap in reserve for later hourly firings or any hot-list filings that
+land later tonight, consistent with prior nights' pacing. Next
+`next-batch -- --n 5` continuation point: past BLMN in the us-listed
+backlog (BLRK and beyond), with BLIV worth a re-check once its
+pending 6-K actually lands.
