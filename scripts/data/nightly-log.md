@@ -10363,3 +10363,19 @@ new).
   guidance raised slightly. Sanity-checked live (cache-busted fetch):
   content complete, Takeaway and Source filing present. **4/35
   report-periods tonight.**
+- **RGP:** published — Resources Connection, Inc. (consulting/
+  professional-services staffing), fiscal Q1 FY2027 (13 weeks ended
+  2026-08-29), labeled year 2026 / period Q1. First-ever report for
+  this company. https://financialreportinsights.com/companies/rgp/2026/q1
+  — revenue -18.4% to $98.1M (-16.9% ex the Sitrick sale), billable
+  hours -13.2%; Consulting segment -25.8% on delayed project starts.
+  Gross margin 37.4% vs 39.5%; operating loss -$7.3M, net loss -$8.0M
+  (EPS -$0.23 vs -$0.07), adjusted EBITDA -$3.6M vs +$3.1M. Flagged:
+  operating cash flow -$18.9M (partly an annual July bonus payout);
+  cash fell to $61.2M; a $0.07/share dividend continues while the
+  company loses money; material weakness in IT controls still open;
+  CFO resigned Oct 2; 10-Q and earnings release disagree on the
+  pay/bill ratio direction (used the 10-Q figure, flagged the
+  conflict). No numeric guidance given. Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **5/35 report-periods tonight.**

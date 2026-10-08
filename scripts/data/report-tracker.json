@@ -5077,6 +5077,36 @@
     },
     "lastChecked": "2026-09-24"
   },
+  "RGP": {
+    "name": "Resources Connection, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/rgp/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-10-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027, quarter ending ~2026-11-28)",
+      "estimate": "2027-01-07",
+      "basis": "last year's Q2 10-Q filed 2026-01-08",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/rgp/2026/q1"
+      }
+    ]
+  },
   "RCL": {
     "name": "Royal Caribbean Group",
     "status": "done",
