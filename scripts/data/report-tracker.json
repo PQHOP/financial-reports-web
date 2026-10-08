@@ -24869,5 +24869,37 @@
         "filedAt": "2026-08-06"
       }
     ]
+  },
+  "BLNE": {
+    "name": "Beeline Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/blne/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 10-Q filed 2026-05-15, Q2 10-Q filed 2026-08-14 (~91 days apart)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/blne/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
   }
 }

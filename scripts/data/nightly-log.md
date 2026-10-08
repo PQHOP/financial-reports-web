@@ -11137,3 +11137,40 @@ land later tonight, consistent with prior nights' pacing. Next
 `next-batch -- --n 5` continuation point: past BLMN in the us-listed
 backlog (BLRK and beyond), with BLIV worth a re-check once its
 pending 6-K actually lands.
+
+**04:06 JST firing:** confirmed network access again (403-without-UA /
+200-with-UA on sec.gov, 200 on financialreportinsights.com). Repo was
+at a detached HEAD matching `origin/master` exactly (4e59eb2, the prior
+firing's last commit) with a cosmetic `package-lock.json` libc-field
+diff from `npm install` — same as prior firings, reverted rather than
+committed. Re-trusted the proxy CA (`certutil -M ... CT,C,C` on both
+`ccr-agent-proxy` certs, which had come up with only `C,,` trust bits
+this container). `scan-recent-filings` found 0 fresh tier-0 candidates
+(same 10-02/05/06/07 filing days already worked). `next-batch -- --n 5`
+returned BLIV (pending-due) and BAOS (us-listed-backlog) first, both
+already re-checked twice earlier tonight with no new filing — confirmed
+BLIV again directly via EDGAR submissions JSON (CIK 1982448): still no
+filing after the 2026-07-20 6-K, so skipped without spending a research
+pass; BAOS not due until 2026-11-27, left as-is. Continued to BLNE,
+BLRK, BLRX from the us-listed backlog.
+
+- **BLNE:** published — Beeline Holdings, Inc. (online mortgage
+  originator), Q2 2026 (quarter ended 2026-06-30, 10-Q filed
+  2026-08-14). First-ever report for this company.
+  https://financialreportinsights.com/companies/blne/2026/q2 —
+  revenue +56.6% to $2.625M (loans closed 187→240, +28%; gain on sale
+  per loan ~$5,950→~$7,300), though down ~3% sequentially from Q1's
+  288 loans. Net loss $4.034M vs $4.141M a year ago — the narrower
+  loss includes a $0.48M one-off MagicBlocks stake revaluation gain;
+  without it the loss would have been larger YoY. Diluted loss/share
+  improved 79.7% (-$0.13 vs -$0.64), but mostly because weighted
+  shares more than tripled (31.4M vs 9.8M) and a $2.2M prior-year
+  "deemed dividend" charge didn't recur. Flagged: going-concern
+  doubt remains explicit; cash $1.4M at June 30 against a stated $6M+
+  need; H1 operating cash flow -$1.5M was propped up by a $7.8M
+  inflow from selling down mortgages held for sale (ex that, operating
+  cash use was ~$9.3M); a July 28 non-binding plan to merge with TYTL
+  (same CEO as Beeline — related-party deal), a 60-day 9% note and the
+  CEO's own $0.5M convertible note. operatingMarginPct -171.0%.
+  Sanity-checked live (cache-busted fetch): Takeaway and Source filing
+  both present, page loads clean. **31/35 report-periods tonight.**
