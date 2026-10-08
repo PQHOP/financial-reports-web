@@ -24912,5 +24912,37 @@
         "filedAt": "2026-08-14"
       }
     ]
+  },
+  "BLRX": {
+    "name": "BioLineRx Ltd. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/blrx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-31"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-24",
+      "basis": "last year's Q3 2025 results 6-K filed 2025-11-24; foreign private issuer but reports quarterly",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/blrx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-31"
+      }
+    ]
   }
 }

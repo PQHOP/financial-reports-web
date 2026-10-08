@@ -11184,3 +11184,23 @@ BLRK, BLRX from the us-listed backlog.
   Yellow.ai once that closes. Checked directly (EDGAR filing index +
   downloaded 10-Q) rather than a subagent, to save budget on an obvious
   SPAC skip. Not counted toward tonight's total (still 31/35).
+- **BLRX:** published — BioLineRx Ltd. (Israeli clinical-stage biopharma,
+  ADS on Nasdaq), Q2 2026 (quarter ended 2026-06-30, 6-K filed
+  2026-08-31). First-ever report for this company.
+  https://financialreportinsights.com/companies/blrx/2026/q2 — royalty
+  revenue flat at $0.294M (-3.3%); R&D +26.5% to $2.94M on the GLIX1
+  oral-glioblastoma program (via the Tetragon subsidiary); operating
+  loss widened 55% to $3.57M. Loss per ADS improved slightly ($0.98 vs
+  $1.00) only because $1.31M of the quarter's loss was allocated to
+  partner Hemispherian's 60% stake in Tetragon — BioLineRx itself still
+  funds Tetragon in cash ($5.2M through August). Cash + deposits fell
+  to $13.1M from $20.9M in December; a BlackRock loan ($6.7M, 9.5%)
+  carries a $4M minimum-cash covenant; going-concern warning from both
+  management and the auditor. Post-quarter: a $3.75M raise at $2.78/ADS
+  (~31% dilution) plus 2.02M warrants; runway guidance unchanged ("into
+  H1 2027"). Market cap (~$11.7M at 2026-09-29) is below June's cash
+  balance. netIncomeYoyPct/epsYoyPct omitted (loss-to-loss, explained in
+  text); operatingMarginPct omitted (royalty revenue too small next to
+  costs for a margin to mean anything). Sanity-checked live
+  (cache-busted fetch): Takeaway and Source filing both present, page
+  loads clean. **32/35 report-periods tonight.**
