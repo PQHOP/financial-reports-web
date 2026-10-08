@@ -10624,6 +10624,19 @@ happening, since a same-second double-publish of the same ticker isn't
 ruled out by timing alone, only by the admin form's own uniqueness
 check. Continuing from BID per this firing's own `next-batch` ordering.
 
+**Note from the 02:09 JST firing:** independently hit the same BID
+collision from the other side — researched it in parallel, concluded
+the same skip, and lost the push race by a few minutes (the 01:07 JST
+firing's skip commit landed first). Dropped the duplicate tracker entry
+on rebase and kept the 01:07 JST firing's (more detailed) skipReason.
+No ticker-level double-publish resulted either way, same as the
+BHF/BHRB/BHST round — the admin form's uniqueness check plus a
+pre-publish live-site check have been enough so far, but this is the
+second collision inside one hourly window, which raises the odds of a
+true same-second double-publish attempt on some future night if both
+sessions ever reach `admin-publish` for the same new ticker within
+seconds of each other.
+
 - **BID:** skipped, no report — Tribeca Strategic Acquisition Corp.,
   another pre-merger SPAC (SIC 6770), IPO closed 2026-06-01 ($140.0M
   trust). Q2 2026 10-Q confirms no business combination target
@@ -10665,3 +10678,23 @@ check. Continuing from BID per this firing's own `next-batch` ordering.
   complete, Takeaway and Source filing present. Recorded in the
   tracker by this firing since neither session had pushed a BILI
   entry yet. **15/35 report-periods tonight.**
+- **BIOA:** published — BioAge Labs, Inc. (clinical-stage metabolic/
+  longevity biotech, pre-revenue), Q2 2026 (quarter ended 2026-06-30).
+  First-ever report for this company.
+  https://financialreportinsights.com/companies/bioa/2026/q2 — net
+  loss widened 21% to $26.1M as R&D grew 23% on an 11.0M vs 3.0M
+  increase in lead candidate BGE-102 spending; only revenue is $2.5M of
+  Novartis collaboration reimbursement, no product revenue. Cash/
+  investments $381.3M, guided runway "through 2029," no debt (term
+  loan repaid April 2026); cash came from a $123.6M January equity
+  raise plus $15.6M of ATM sales, with shares outstanding +22% in six
+  months (why loss/share improved to -$0.58 from -$0.60 despite the
+  larger dollar loss). Catalysts: QUELL-CV Phase 2 readout H2 2026;
+  QUELL-DME redesigned and its topline pushed from "mid-2027" to H2
+  2027 (flagged). netIncomeYoyPct/epsYoyPct/operatingMarginPct omitted
+  (loss-to-loss/pre-revenue, narrated in text). Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **16/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** BAOS (pending, no new filing, checked
+3x tonight), then continuing the us-listed backlog past BIOA.
