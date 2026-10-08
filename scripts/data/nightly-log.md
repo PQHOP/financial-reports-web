@@ -10865,5 +10865,17 @@ as the prior firing suggested.
   Sanity-checked live (cache-busted fetch): title, Takeaway and Source
   filing all present. **20/35 report-periods tonight.**
 
-**Next `next-batch -- --n 5`:** continuing the us-listed backlog past
-BIYA.
+**Next `next-batch -- --n 6`:** skipped BAOS again (no new filing, not
+due until 2026-11-27), then BJDX, BKHA, BKYI, BL, BLBD.
+
+- **BKHA:** skipped — Black Hawk Acquisition Corporation (Cayman
+  Islands SPAC, listed 2024-03-22). Q3 FY2026 10-Q (period 2026-08-31,
+  filed 2026-10-06) shows no revenue; net income of $1.07M is almost
+  entirely a one-time $1,015,988 debt-forgiveness gain (merger target
+  Vesicor forgave an advance) plus $230,184 of trust interest. Business
+  Combination with Vesicor Therapeutics (early-stage p53-based cancer
+  biotech, $70M pre-money) is pending — S-4 effective 2026-09-17, 424B4
+  filed 2026-09-22, shareholder vote scheduled **2026-10-13**. Same
+  trust-account-only pattern as BHAV/BID/BIXI. Flagged for a possible
+  revisit as "Vesicor" post-merger (also pre-revenue). Not counted
+  toward tonight's total (still 20/35).

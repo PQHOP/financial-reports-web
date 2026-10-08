@@ -24518,5 +24518,22 @@
         "filedAt": "2026-09-29"
       }
     ]
+  },
+  "BKHA": {
+    "name": "Black Hawk Acquisition Corporation - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (Cayman Islands, listed 2024-03-22). Q3 FY2026 10-Q (period 2026-08-31, filed 2026-10-06) shows no revenue; net income is trust interest ($230,184) plus a one-time $1,015,988 debt-forgiveness gain only. Business Combination with Vesicor Therapeutics (p53-based cancer therapy biotech) pending; S-4 effective 2026-09-17, shareholder vote scheduled 2026-10-13.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-06"
+    },
+    "nextExpectedFiling": {
+      "type": "Merger vote 2026-10-13; post-merger entity (Vesicor Therapeutics) would need fresh tracking",
+      "estimate": "2026-10-13",
+      "basis": "scheduled shareholder vote per 424B4",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-08"
   }
 }
