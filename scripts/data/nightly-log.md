@@ -11038,5 +11038,15 @@ then BLDP, BLFS, BLIN (BLKB/BLIV queued next).
   live (cache-busted fetch): title, Takeaway and Source filing all
   present. **27/35 report-periods tonight.**
 
-**Next `next-batch -- --n 5`:** BLIV, BLKB next, then continuing the
-us-listed backlog.
+- **BLIV:** skipped (pending) — BeLive Holdings (Singapore livestream
+  e-commerce, Cayman Islands foreign private issuer, IPO'd April 2025,
+  not a SPAC; 20-F/6-K filer). Latest results are the FY2025 20-F filed
+  2026-05-15; the only filing since is a 2026-07-20 6-K on a CEO/
+  Chairman resignation (image-only exhibit, no financials). No 2026
+  period filed yet. `nextExpectedFiling` estimate (H1 2026 interim
+  6-K, based on last year's 2025-10-01 filing date) has already passed
+  as of today — flagged to re-check soon rather than on the normal
+  cadence. Not counted toward tonight's total (still 27/35).
+
+**Next `next-batch -- --n 5`:** BLKB (in progress as of this note),
+then continuing the us-listed backlog.
