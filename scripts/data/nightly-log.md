@@ -10759,3 +10759,52 @@ collision was caught by a pre-publish live-site check first). Ending
 this firing here; the next hourly firing (or this one resuming) can
 pick up the backlog past BIOA/BJRI once the other session's firing has
 also wound down.
+
+**03:06 JST firing:** confirmed network access again (same 403-without-
+UA / 200-with-UA pattern on sec.gov, 200 on financialreportinsights.com).
+Repo was again in a detached-HEAD state with a stray `package-lock.json`
+diff at session start (same cosmetic `glibc` libc-field churn as the
+01:07 JST firing's note) — checked out `master` and reset to
+`origin/master` (90f4107, already up to date) before starting.
+`scan-recent-filings` found **0 fresh tier-0 candidates** this time (the
+2026-10-07/06/05/02 filing days it scanned are the same ones the earlier
+firing already worked through). Fell through to `next-batch -- --n 6`:
+BAOS (pending, skipped again — no new filing since the two checks noted
+above, `nextExpectedFiling` not due until 2026-11-27), then BIOT, BIRD,
+BIVI, BIXI, BIYA from the us-listed backlog, continuing past BIOA/BJRI
+as the prior firing suggested.
+
+- **BIOT:** skipped — Instinct Bio Technical Company Holdings Inc.
+  (Cayman Islands foreign private issuer, Tokyo-based aesthetic-clinic/
+  cosmetics operator that reverse-merged into the Relativity Acquisition
+  Corp SPAC shell, merger closed 2026-07-23, Nasdaq listing started
+  07-24). Fiscal year ends Nov 30; the only 20-F on file (2026-07-29) is
+  a post-merger Shell Company Report carrying FY2025 (year ended
+  2025-11-30) audited statements, not a 2026 period. The 7 6-Ks since
+  07-28 are all press releases (Chardan equity facility term sheet,
+  Indonesia clinic launch, Invitrx/PT Parva Candela deals, Nasdaq
+  deficiency notices) with no financials. No 2026 results exist yet.
+  Not counted toward tonight's total (still 17/35).
+- **BIRD:** published — Smartbird, Inc. (formerly Allbirds; sold its
+  footwear business 2026-06-09 for $40.7M cash, renamed and pivoted to
+  AI infrastructure 06-15), Q2 2026 (quarter ended 2026-06-30, 10-Q filed
+  2026-08-19 after an NT 10-Q late notice). First-ever report for this
+  company. https://financialreportinsights.com/companies/bird/2026/q2 —
+  continuing-operations revenue is $2.758M, all from a single 36-month
+  NVIDIA GPU server lease to one customer, booked as a sales-type lease
+  so gross profit is ~zero; SG&A $10.7M (vs $5.1M) drove a continuing
+  net loss of $12.8M (vs $5.1M). Total net loss $16.4M (vs $15.5M)
+  includes a $21.6M gain on the footwear sale against a $25.1M final
+  footwear-segment loss; discontinued footwear revenue -51.7% to $19.2M
+  for the stub quarter. Flagged: loss/share improved only because
+  weighted shares rose 13.3% (2.59M ATM shares sold for $15.4M); cash
+  flattered by working-capital swings; expensive new secured converts
+  (12% cash interest, 5% OID); going-concern doubt from Q1 lifted; filing
+  has a couple of internal inconsistencies between Note 3 and the income
+  statement/MD&A, filed late, auditor changed (Item 4.01). No guidance;
+  report's own outlook estimates roughly a year of runway. Sanity-checked
+  live (cache-busted fetch): title, Takeaway and Source filing all
+  present. **18/35 report-periods tonight.**
+
+**Next `next-batch -- --n 5`:** BIVI, BIXI, BIYA (dispatched/in progress
+as of this note), then continuing the us-listed backlog.

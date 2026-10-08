@@ -24387,5 +24387,55 @@
         "url": "https://financialreportinsights.com/companies/bjri/2026/q2"
       }
     ]
+  },
+  "BIOT": {
+    "name": "Instinct Bio Technical Company Holdings Inc.",
+    "status": "skipped",
+    "skipReason": "no 2026 results filed: FY ends Nov 30; latest audited FY2025 is in the 2026-07-29 shell company 20-F (post-SPAC-merger, merger closed 2026-07-23); first semi-annual 6-K (H1 FY2026, six months to May 31 2026) not yet filed as of 2026-10-08. The 7 6-Ks since 07-28 are press releases/Nasdaq deficiency notices, no financials.",
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": null,
+      "filedAt": "2026-10-01",
+      "note": "press release, not a results filing"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 FY2026 interim results)",
+      "estimate": "2026-11-30",
+      "basis": "20-F states semi-annual 6-K results; Nasdaq ~6-month deadline after half-year end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08"
+  },
+  "BIRD": {
+    "name": "Smartbird, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bird/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "~45 days after quarter end; filed Q2 10-Q late last quarter so some slack assumed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bird/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-19"
+      }
+    ]
   }
 }
