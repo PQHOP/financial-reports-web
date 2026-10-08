@@ -10624,6 +10624,19 @@ happening, since a same-second double-publish of the same ticker isn't
 ruled out by timing alone, only by the admin form's own uniqueness
 check. Continuing from BID per this firing's own `next-batch` ordering.
 
+**Note from the 02:09 JST firing:** independently hit the same BID
+collision from the other side — researched it in parallel, concluded
+the same skip, and lost the push race by a few minutes (the 01:07 JST
+firing's skip commit landed first). Dropped the duplicate tracker entry
+on rebase and kept the 01:07 JST firing's (more detailed) skipReason.
+No ticker-level double-publish resulted either way, same as the
+BHF/BHRB/BHST round — the admin form's uniqueness check plus a
+pre-publish live-site check have been enough so far, but this is the
+second collision inside one hourly window, which raises the odds of a
+true same-second double-publish attempt on some future night if both
+sessions ever reach `admin-publish` for the same new ticker within
+seconds of each other.
+
 - **BID:** skipped, no report — Tribeca Strategic Acquisition Corp.,
   another pre-merger SPAC (SIC 6770), IPO closed 2026-06-01 ($140.0M
   trust). Q2 2026 10-Q confirms no business combination target
@@ -10665,11 +10678,30 @@ check. Continuing from BID per this firing's own `next-batch` ordering.
   complete, Takeaway and Source filing present. Recorded in the
   tracker by this firing since neither session had pushed a BILI
   entry yet. **15/35 report-periods tonight.**
-- **BJRI:** published — BJ's Restaurants, Inc. (casual-dining chain),
-  Q2 2026 (13 weeks ended 2026-06-30). First-ever report for this
-  company; pre-publish check confirmed no existing report before
-  dispatching. https://financialreportinsights.com/companies/bjri/2026/q2
-  — revenue +6.4% to $388.9M on 6.5% comparable sales (traffic +8.3%,
+- **BIOA:** published (by the concurrent firing) — BioAge Labs, Inc.
+  (clinical-stage metabolic/longevity biotech, pre-revenue), Q2 2026
+  (quarter ended 2026-06-30). First-ever report for this company.
+  https://financialreportinsights.com/companies/bioa/2026/q2 — net
+  loss widened 21% to $26.1M as R&D grew 23% on an 11.0M vs 3.0M
+  increase in lead candidate BGE-102 spending; only revenue is $2.5M of
+  Novartis collaboration reimbursement, no product revenue. Cash/
+  investments $381.3M, guided runway "through 2029," no debt (term
+  loan repaid April 2026); cash came from a $123.6M January equity
+  raise plus $15.6M of ATM sales, with shares outstanding +22% in six
+  months (why loss/share improved to -$0.58 from -$0.60 despite the
+  larger dollar loss). Catalysts: QUELL-CV Phase 2 readout H2 2026;
+  QUELL-DME redesigned and its topline pushed from "mid-2027" to H2
+  2027 (flagged). netIncomeYoyPct/epsYoyPct/operatingMarginPct omitted
+  (loss-to-loss/pre-revenue, narrated in text). Sanity-checked live
+  (cache-busted fetch): content complete, Takeaway and Source filing
+  present. **16/35 report-periods tonight.**
+- **BJRI:** published (by the 01:07 JST firing, concurrently with
+  BIOA above — no overlap between these two) — BJ's Restaurants, Inc.
+  (casual-dining chain), Q2 2026 (13 weeks ended 2026-06-30).
+  First-ever report for this company; pre-publish check confirmed no
+  existing report before dispatching.
+  https://financialreportinsights.com/companies/bjri/2026/q2 —
+  revenue +6.4% to $388.9M on 6.5% comparable sales (traffic +8.3%,
   average check -1.8% as diners traded down); restaurant-level margin
   edged up to 17.2% from 17.0%. GAAP EPS fell 11.3% to $0.86 despite
   that (adjusted EPS $0.94 vs $0.97) on G&A +21% (legal/leadership-
@@ -10679,4 +10711,41 @@ check. Continuing from BID per this firing's own `next-batch` ordering.
   +3-4% from +1-3%), which the report notes implies H2 comps slowing
   to ~+1.5-3.5%. Debt fell from $85M to $44M in H1. Sanity-checked
   live (cache-busted fetch): content complete, Takeaway and Source
-  filing present. **16/35 report-periods tonight.**
+  filing present. **17/35 report-periods tonight (both BIOA and BJRI
+  counted — two distinct companies published concurrently by the two
+  firings without colliding with each other).**
+
+**Next `next-batch -- --n 5`:** BAOS (pending, no new filing, checked
+3x tonight), then continuing the us-listed backlog past BIOA/BJRI.
+
+**Decision by the 02:09 JST firing: standing down from picking further
+new companies for the rest of this firing.** Three collisions with the
+concurrent 01:07 JST firing inside this one hourly window
+(BHF/BHRB/BHST, BID, BIDU) — every single `next-batch` batch this
+firing has pulled has overlapped with the other session's. Each round
+has been resolved safely so far (no duplicate reports: the admin form's
+own uniqueness check plus a pre-publish live-site check caught every
+collision before a second write), but it is costing a merge-conflict
+resolution and a wasted opus research pass every round, which eats
+into the same shared weekly usage budget CLAUDE.md flags as the real
+constraint. The other firing appears to have started well before this
+one and is still actively working through the identical backlog order,
+so there's nothing this firing can do to pick different companies —
+`next-batch` has no way to coordinate between sessions. Ending this
+firing's new-company work at 17/35 rather than continuing to double up
+with the other session. **Flagging clearly for the user:** the hourly
+"0 16-22 * * *" cron can and did fire a new session before the previous
+firing finished, for at least the second night running structurally
+(the 09-16 night's log already shows multiple same-night sub-batches
+needing to "stop ahead of the next hourly firing" to avoid this very
+problem) — worth either lengthening the interval, or adding an explicit
+mutual-exclusion check (e.g. a lock file/marker in the repo checked at
+the top of each firing) so a slow firing doesn't bleed into the next
+hour's.
+
+**Note from the 01:07 JST firing (this one):** agree with the above.
+Independently hit the same pattern from this side (BHF/BHRB/BHST,
+BIDU, BILI all found already live on checks before or during
+dispatch). Will also stand down from picking further new companies
+this firing once the current in-flight work is recorded, to let
+things settle — same reasoning, same shared budget concern.
