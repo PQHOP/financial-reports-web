@@ -10879,3 +10879,52 @@ due until 2026-11-27), then BJDX, BKHA, BKYI, BL, BLBD.
   trust-account-only pattern as BHAV/BID/BIXI. Flagged for a possible
   revisit as "Vesicor" post-merger (also pre-revenue). Not counted
   toward tonight's total (still 20/35).
+- **BJDX:** published — Bluejay Diagnostics, Inc. (pre-revenue sepsis
+  diagnostics, the Symphony IL-6 test), Q2 2026 (quarter ended
+  2026-06-30, 10-Q filed 2026-08-12). First-ever report for this
+  company. https://financialreportinsights.com/companies/bjdx/2026/q2
+  — no revenue; net loss widened 18.8% to $2.32M (R&D +61.6% to $1.44M
+  on SYMON-II clinical-trial spend, partly offset by lower G&A). Loss
+  per share narrowed to -$1.12 from -$5.64 only because weighted shares
+  rose ~6x after a January 2026 1-for-4 reverse split and a June
+  private placement. That placement raised ~$8.5M gross, lifting cash
+  to $9.6M from $5.2M at year-end and pushing management's stated
+  runway from "through Q3 2026" (per the Q1 10-Q) to "through Q2 2027";
+  510(k) FDA filing still targeted H1 2027, with another $10-14M needed
+  by end of 2027 — going-concern warning remains. Flagged: H1 operating
+  cash burn of $3.09M was flattered by $977K of payables/accrual
+  growth (underlying burn ~$4.1M); 7.3M Series G/H warrants struck at
+  $2.075 against an $1.07 stock price; market value (~$4.8M) close to
+  a proposed (SEC-stayed) $5M Nasdaq minimum, no bid-price grace period
+  until January 2027. SYMON-II has 777 evaluable patients, no IL-6
+  performance data released yet. Sanity-checked live (cache-busted
+  fetch): title, Takeaway and Source filing all present. **21/35
+  report-periods tonight.**
+- **BKYI:** published — BIO-key International, Inc. (biometric
+  authentication software/hardware), Q2 2026 (quarter ended
+  2026-06-30, 10-Q filed 2026-08-13). First-ever report for this
+  company. https://financialreportinsights.com/companies/bkyi/2026/q2
+  — revenue +13.1% to $1.92M (license +52.5% to $1.23M, now 64% of
+  total; hardware -19% on a ~$0.8M order delayed into H2; services
+  -28%). Net loss narrowed 50.6% to $577K and EPS improved from -$2.01
+  to -$0.56, but most of the margin gain was a $703K reversal of an
+  earlier inventory write-down tied to delayed Nigeria projects —
+  without it, gross margin fell to 50.6% from 56.3% and the operating
+  loss improved only ~9%; underlying gross profit was flat (+1.6%).
+  EPS also benefited from averaging against a smaller year-ago loss,
+  separate from the ~78% rise in average shares. Flagged: going-concern
+  disclosure, ~$750K/month cash need, cash down to $1.38M from $2.69M
+  at December with $1.20M of H1 operating cash burn; receivables +42%
+  with two customers holding 74%; Nasdaq trading suspension May 13-
+  July 8; post-quarter $2.5M warrant inducement (shareholder vote on
+  new warrants adjourned to Oct 30); 2025 Streeterville note fully
+  paid off in shares by Sep 29, more than 50% dilution (1.09M to ~1.68M
+  shares). MD&A's own "+186%" H1 hardware figure doesn't match the
+  income statement's +23% — report uses the income-statement number
+  and flags the discrepancy. Management targets H2 revenue growth and
+  profitability. Sanity-checked live (cache-busted fetch): title,
+  Takeaway and Source filing all present. **22/35 report-periods
+  tonight.**
+
+**Next `next-batch -- --n 5`:** BL, BLBD, then continuing the
+us-listed backlog.

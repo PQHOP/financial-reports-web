@@ -24535,5 +24535,69 @@
       "confidence": "confirmed"
     },
     "lastChecked": "2026-10-08"
+  },
+  "BJDX": {
+    "name": "Bluejay Diagnostics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bjdx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "last year's Q3 10-Q filed 2025-11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bjdx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
+  },
+  "BKYI": {
+    "name": "BIO-key International, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bkyi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day smaller-reporting-company deadline; history of late filings (NT 10-Q for Q1, June 10-K), so Q3 could slip",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bkyi/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
   }
 }
