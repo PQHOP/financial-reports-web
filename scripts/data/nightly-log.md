@@ -11284,3 +11284,25 @@ reserve the last slot for a hot-list filing only — with no fresh
 candidates and no reason to spend the reserved slot on backlog,
 standing down immediately without touching the tracker or backlog.
 **No report-periods published this firing; still 34/35 tonight.**
+
+**06:05 JST firing:** confirmed network access (403 without a
+User-Agent / 200 with it on sec.gov). Repo's local `master` branch ref
+was stale (pointing at the original shallow-clone commit, 635e1ce) while
+the actual work had landed on `origin/master` via a detached-HEAD push
+in an earlier firing — `git checkout master` surfaced a bogus "diverged
+50/52 commits" state purely from that stale local ref, not real
+diverged history (`origin/master`'s tip was identical to the detached
+HEAD this session started at). Fixed with `git reset --hard
+origin/master`; worth the next firing checking out `master` explicitly
+rather than trusting a detached HEAD, to avoid re-hitting this. `npm
+install` hit one transient `ECONNRESET`, succeeded on retry (cosmetic
+`package-lock.json` diff reverted, not committed). `scan-recent-filings`
+found **0 fresh tier-0 candidates** (same 10-02/05/06/07 filing days;
+2026-10-08's own EDGAR daily index is still empty this early in the US
+business day). Tonight's log already stood at 34/35 with the last slot
+explicitly reserved for a same-day hot-list filing only — none landed,
+so standing down immediately without touching the tracker or backlog,
+same call as the 05:06 JST firing. **No report-periods published this
+firing; still 34/35 tonight.** This is close enough to the window's end
+(07:59 JST) and the cap that later firings tonight should just confirm
+no fresh hot-list filing landed and exit immediately if not.
