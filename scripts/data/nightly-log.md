@@ -10379,3 +10379,55 @@ new).
   conflict). No numeric guidance given. Sanity-checked live
   (cache-busted fetch): content complete, Takeaway and Source filing
   present. **5/35 report-periods tonight.**
+- **APA:** checked, no action — the flagged 8-K (filed 2026-10-07) was
+  routine pre-earnings supplemental guidance (realized-price ranges,
+  share count, G&A estimate), not a Q3 2026 earnings release. Did not
+  publish. Confirmed Q3 results call is Nov 5 10am CT; `lastFilingSeen`
+  updated so the scan stops re-flagging it, `nextExpectedFiling`
+  confidence raised to `confirmed` (results expected after close
+  ~2026-11-04). Not counted toward tonight's total.
+- **COST:** edited (not a new report-period) — the actual FY2026 10-K
+  (filed 2026-10-07) replaced the earnings-8-K-sourced annual report's
+  `sourceUrl` and added segment detail (US/Canada/Other International
+  operating margins), the membership-fee-increase slowdown explanation,
+  tariff-refund detail ($155M more arrived post-year-end, to be mostly
+  passed through as lower prices), FY2027 capex plans ($7.5B, up from
+  $6.4B), and a "What the headline numbers hide" section. One figure
+  corrected: operating cash flow $15,817M (was $15,825M from the
+  release), FCF $9,382M (was $9,390M) — not in the `metrics` object, so
+  no metrics change. All other published figures confirmed against the
+  10-K. `lastFilingSeen`/`nextExpectedFiling` updated in the tracker.
+  Sanity-checked live (cache-busted fetch): edit present, content
+  complete. Not counted toward tonight's total (no new report-period).
+- **CTAS:** edited (not a new report-period) — the full Q1 FY2027 10-Q
+  (filed 2026-10-07) added the margin-driver MD&A the earnings-release-
+  only report was missing (efficiency/sourcing/mix explanations,
+  segment organic-growth breakdown, Fire Protection/Uniform Direct
+  Sales split), a "What the headline numbers hide" section (FCF jump
+  partly working-capital timing), UniFirst deal-cost and FTC
+  timing-agreement detail (can't close before 2026-12-11), buyback and
+  debt detail. One small correction: acquisitions/currency split out
+  as +0.4/-0.1 points (was a combined +0.3). `sourceUrl` switched to
+  the 10-Q. All headline figures confirmed unchanged. Tracker updated.
+  Sanity-checked live (cache-busted fetch): edit present, content
+  complete. Not counted toward tonight's total (no new report-period).
+- **STZ:** edited (not a new report-period) — the full Q2 FY2027 10-Q
+  (filed 2026-10-07, period already published same-day from the
+  earnings release) added a beer sales bridge confirming the
+  distributor-restocking read (+$130.2M volume, "sought to rebuild
+  inventory days-on-hand"), corrected the SG&A-rise cause from
+  marketing investment to "unfavorable short-term incentive accruals"
+  (a real correction to the driver, not the figure), new Wine &
+  Spirits guidance of a second-half shipment decline under agreed
+  distributor inventory reductions, a $100-150M tax valuation-
+  allowance release expected next quarter (FY27 rate now 11-13%), and
+  debt/commercial-paper detail. All headline figures (net sales,
+  EPS, tax rate, buybacks) confirmed unchanged against the 10-Q.
+  `sourceUrl` switched to the 10-Q. Tracker updated. Sanity-checked
+  live (cache-busted fetch): edit present, content complete. Not
+  counted toward tonight's total (no new report-period).
+
+**Tier 0 cleared — all 9 fresh candidates handled: 5 new report-periods
+published (APLD, CNXC, LEVI, NEOG, RGP), 3 same-period edits with no new
+report-period (COST, CTAS, STZ), 1 no-action (APA, pre-earnings
+guidance only, not a results release). 5/35 report-periods tonight.**

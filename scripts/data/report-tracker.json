@@ -3433,17 +3433,17 @@
       "url": "https://financialreportinsights.com/companies/cost/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, FY2026 earnings release)",
+      "type": "10-K",
       "periodEnd": "2026-08-30",
-      "filedAt": "2026-09-24"
+      "filedAt": "2026-10-07"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026)",
-      "estimate": "2026-10-08",
-      "basis": "FY2025 10-K filed ~5-6 weeks after FYE; release gives no 10-K date. Next quarterly after that: Q1 FY2027 10-Q ~mid-Dec 2026",
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-12-15",
+      "basis": "earnings 8-K a few days before; FY2025 Q1 pattern",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-08",
     "reports": [
       {
         "year": 2026,
@@ -5493,17 +5493,17 @@
       "url": "https://financialreportinsights.com/companies/ctas/2026/q1"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, Q1 FY2027 earnings release)",
+      "type": "10-Q",
       "periodEnd": "2026-08-31",
-      "filedAt": "2026-09-23"
+      "filedAt": "2026-10-07"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027)",
-      "estimate": "2026-10-08",
-      "basis": "10-Q usually 2-3 weeks after the release; Q2 FY2027 earnings 8-K ~2026-12-18. When the 10-Q lands, consider --edit to add MD&A margin drivers",
+      "type": "8-K Item 2.02 (Q2 FY2027 earnings release)",
+      "estimate": "2026-12-18",
+      "basis": "prior-year cadence",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-08",
     "reports": [
       {
         "year": 2026,
@@ -8067,17 +8067,17 @@
       "url": "https://financialreportinsights.com/companies/stz/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, Ex. 99.1 earnings release, \"Q2 FY2027\")",
+      "type": "10-Q",
       "periodEnd": "2026-08-31",
-      "filedAt": "2026-10-06"
+      "filedAt": "2026-10-07"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q2 FY2027, same period as above)",
-      "estimate": "2026-10-09",
-      "basis": "10-Q typically follows the 8-K earnings release within days; same period already published from the earnings release, so this will likely come back as a same-period update (lastFilingSeen refresh only, no new report) unless it adds material detail",
+      "type": "8-K Item 2.02 (Q3 FY2027 earnings release)",
+      "estimate": "2027-01-07",
+      "basis": "~90-day cadence from lastFilingSeen.filedAt",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-07",
+    "lastChecked": "2026-10-08",
     "reports": [
       {
         "year": 2026,
