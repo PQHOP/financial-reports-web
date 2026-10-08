@@ -10630,3 +10630,25 @@ check. Continuing from BID per this firing's own `next-batch` ordering.
   selected; deadline ~2028-03-01 (21 months). Only trust interest
   ($408K) and $243K Q2 net income. Tracker marked `skipped`. Not
   counted toward tonight's total (still 13/35).
+- **BIDU:** published (by the concurrent 02:09 JST firing, cse_01R5-
+  prefixed session) — Baidu, Inc. (Chinese search/AI/autonomous-
+  driving conglomerate), Q2 2026 (quarter ended 2026-06-30). First-
+  ever report for this company. https://financialreportinsights.com/companies/bidu/2026/q2
+  — revenue RMB31.3B, -4.2% (online marketing -19%, but the Core
+  AI-powered Business +25% to RMB12.5bn, now 50% of General Business
+  revenue; AI Cloud Infra +50% YoY though down 17% q/q). Gross margin
+  fell to 39.0% from 43.9% on AI Cloud build-out costs. Net income
+  -68.3% to RMB2.3B (EPS/ADS RMB5.74, -71.8%) — most of the drop is
+  below the operating line: last year's RMB3.3bn investment
+  fair-value gain didn't repeat, FX loss widened, tax rate rose to
+  ~31% from ~11%. Non-GAAP net income -46% to RMB2.6bn. Free cash
+  flow -RMB7.95bn on RMB11.4bn capex (AI infrastructure). This
+  firing's own subagent independently researched and cross-confirmed
+  the same figures before discovering the other firing had already
+  published moments earlier (admin-publish's uniqueness check
+  rejected the duplicate attempt) — no second report created, no
+  wasted live data, only a wasted research pass. Sanity-checked live
+  independently (cache-busted fetch): content complete, Takeaway and
+  Source filing present. Recorded in the tracker by this firing since
+  neither session had pushed a BIDU entry yet. **14/35 report-periods
+  tonight.**

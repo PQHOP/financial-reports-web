@@ -24267,5 +24267,35 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-08"
+  },
+  "BIDU": {
+    "name": "Baidu, Inc. - American Depositary Shares, each representing 8 ordinary share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-08",
+      "url": "https://financialreportinsights.com/companies/bidu/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-18"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-18",
+      "basis": "~90-day cadence from the Q2 2026 release filed 2026-08-18. Note: Baidu also files near-daily routine 6-Ks (HK exchange notices) that are not earnings releases",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-08",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-08",
+        "url": "https://financialreportinsights.com/companies/bidu/2026/q2"
+      }
+    ]
   }
 }
