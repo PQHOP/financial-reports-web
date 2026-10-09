@@ -25281,5 +25281,51 @@
     },
     "lastChecked": "2026-10-09",
     "note": "Pre-revenue clinical-stage biotech (diabetes/obesity, lead candidate icovamenib); no revenue/operatingMarginPct metrics. Going-concern warning; cash runway stated into Q2 2027."
+  },
+  "BMR": {
+    "name": "Beamr Imaging Ltd. - Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bmr/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (fiscal year 2026)",
+      "estimate": "2027-02-26",
+      "basis": "prior FY2025 20-F filed 2026-02-26",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Israeli foreign private issuer; reports half-yearly (H1/annual), not quarterly. USD reporting currency."
+  },
+  "BMM": {
+    "name": "Blue Moon Metals Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bmm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim financials)",
+      "estimate": "2026-11-13",
+      "basis": "~90 days after Q2 2026 6-K filed 2026-08-13; TSXV requires filing within 60 days of quarter-end (by ~2026-11-29)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Pre-revenue Canadian copper/critical-metals developer (Nussir mine, Norway, under construction; TSXV: MOON, Nasdaq: BMM); no revenue/operatingMarginPct metrics. Foreign private issuer filing quarterly financials as 6-K exhibits, not 20-F/40-F. Currency CAD."
   }
 }
