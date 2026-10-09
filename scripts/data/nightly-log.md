@@ -11382,3 +11382,25 @@ as the tier-0 batch:
 
 **12/35 report-periods tonight.** Continuing into the next tier-1 batch
 this firing — window and cap both have plenty of room left.
+
+`next-batch -- --n 6` printed BAOS/BLIV again (unchanged, already
+checked this firing) plus four new us-listed tickers: BMGL, BMHL, BMM,
+BMR — all foreign private issuers (20-F/6-K filers, not 10-Q/10-K).
+Pre-checked each on EDGAR directly before dispatching a subagent, to
+make sure a qualifying 2026-relevant filing with real financial
+statements existed (several foreign filers only post press-release
+6-Ks for months at a time) — all four had one. Published all four
+(first reports), live-checked the same way as prior batches:
+- **BMR** (Beamr Imaging, Israel) H1 2026 — https://financialreportinsights.com/companies/bmr/2026/h1
+- **BMM** (Blue Moon Metals, Canada/Norway copper developer, pre-revenue) Q2 2026 — https://financialreportinsights.com/companies/bmm/2026/q2
+- **BMHL** (Bluemount Holdings, Hong Kong) FY2026 ANNUAL (FYE Mar 31) — https://financialreportinsights.com/companies/bmhl/2026/annual
+- **BMGL** (Basel Medical Group, Singapore) H1 FY2026 (FYE Jun 30) — https://financialreportinsights.com/companies/bmgl/2026/h1
+
+One subagent (BMGL) hit the known Chromium/TLS-proxy cert-trust rough
+edge mid-run (`ccr-agent-proxy` certs had wrong trust bits) and fixed
+it itself with the documented `certutil -M` command before retrying
+successfully — noting here in case a later batch hits it again, though
+it shouldn't need re-fixing within the same container.
+
+**16/35 report-periods tonight.** Still well under cap with the window
+mostly ahead — continuing into another tier-1 batch.

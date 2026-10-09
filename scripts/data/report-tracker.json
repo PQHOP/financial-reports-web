@@ -25327,5 +25327,51 @@
     },
     "lastChecked": "2026-10-09",
     "note": "Pre-revenue Canadian copper/critical-metals developer (Nussir mine, Norway, under construction; TSXV: MOON, Nasdaq: BMM); no revenue/operatingMarginPct metrics. Foreign private issuer filing quarterly financials as 6-K exhibits, not 20-F/40-F. Currency CAD."
+  },
+  "BMHL": {
+    "name": "Bluemount Holdings Limited - Class B Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bmhl/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-06-29"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (fiscal year 2027)",
+      "estimate": "2027-06-29",
+      "basis": "annual cadence from FY2026 20-F filed 2026-06-29",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Hong Kong foreign private issuer, Nasdaq IPO July 2025; now mostly a luxury-watch reseller. Fiscal year ends March 31. Currency HKD. Management disclosed ineffective controls/material weaknesses."
+  },
+  "BMGL": {
+    "name": "Basel Medical Group Ltd - ordinary shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bmgl/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 FY2026 interim financials)",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-06-26"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (fiscal year 2026, FYE Jun 30)",
+      "estimate": "2026-10-31",
+      "basis": "20-F due ~4 months after FYE; prior-year 20-F was late, filed 2025-11-18",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Singapore clinic/medical-services group, foreign private issuer. Fiscal year ends June 30; this H1 covers Jul-Dec 2025. Currency SGD. 1-for-12 reverse split occurred after the period; EPS as filed is pre-split."
   }
 }
