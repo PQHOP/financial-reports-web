@@ -25817,6 +25817,38 @@
       }
     ]
   },
+  "BOXL": {
+    "name": "Boxlight Corporation - Class A (BOXL)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/boxl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "prior-year Q3 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-09",
+        "url": "https://financialreportinsights.com/companies/boxl/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
+  },
   "BPAC": {
     "name": "Blueport Acquisition Ltd - Class A Ordinary Shares",
     "status": "skipped",

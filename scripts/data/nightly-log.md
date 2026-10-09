@@ -11540,3 +11540,15 @@ headline numbers hide" sections present, not truncated):
   nonperforming) — https://financialreportinsights.com/companies/botj/2026/q2
 
 **33/35 report-periods tonight.**
+
+Dispatched one more opus subagent for **BOXL** (Boxlight Corporation,
+edtech hardware), succeeded and passed the live-page sanity check:
+- **BOXL** Q2 2026 (first report; revenue -16.0% on soft audio-product
+  demand, swung to a thin $0.5M net profit only because of a one-time
+  $2.8M struck-down-tariff refund booked against COGS — underlying
+  op margin was actually negative; going-concern warning, covenant
+  waivers Jan–Jul, CFO resigned post-quarter) — https://financialreportinsights.com/companies/boxl/2026/q2
+
+**34/35 report-periods tonight.** One slot left before the cap — taking
+it now (BPOP, a well-known bank) and then standing down for the rest of
+this firing.
