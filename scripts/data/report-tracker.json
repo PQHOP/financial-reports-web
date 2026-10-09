@@ -2966,22 +2966,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubc7t47000004jma7cw5thn"
+      "period": "Q3",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/pep/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-13",
-      "filedAt": "2026-07-09"
+      "periodEnd": "2026-09-05",
+      "filedAt": "2026-10-08"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-08",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-09; PEP typically reports Q3 in early October",
+      "type": "10-K / Q4 2026 earnings 8-K",
+      "estimate": "2027-02-10",
+      "basis": "PepsiCo typically reports Q4/FY results in early February",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-09",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-21",
+        "url": "https://financial-reports-web.vercel.app/reports/cmubc7t47000004jma7cw5thn"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-09",
+        "url": "https://financialreportinsights.com/companies/pep/2026/q3"
+      }
+    ]
   },
   "CVX": {
     "name": "Chevron Corporation",
@@ -8614,17 +8628,18 @@
       "url": "https://financialreportinsights.com/companies/fang/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02, no Exhibit 99.1 — realized prices/derivatives/share count only, not earnings)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-08"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
+      "type": "8-K earnings release (Q3 2026)",
       "estimate": "2026-11-02",
-      "basis": "Q3 2025 10-Q 2025-11-05; Q2 10-Q 2 days after 8-K",
-      "confidence": "estimated"
+      "basis": "Company's own 2026-09-30 press release confirms Q3 2026 results after market close 2026-11-02, call 2026-11-03",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25",
+    "note": "2026-10-08 8-K (accession 0001539838-26-000177) is Diamondback's recurring pre-results notice — oil/gas/NGL realized prices before and after hedging, derivative gain/loss estimate, weighted avg share count — no revenue/net income/EPS/margins, no Exhibit 99.1. Not an earnings release; recorded here so the scan stops re-flagging it. Real Q3 2026 results land 2026-11-02 after market close.",
+    "lastChecked": "2026-10-09",
     "reports": [
       {
         "year": 2026,
@@ -9247,9 +9262,9 @@
       "url": "https://financialreportinsights.com/companies/eog/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02, no Exhibit 99.1 — tax-guidance update only, not earnings)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-08"
     },
     "nextExpectedFiling": {
       "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
@@ -9257,7 +9272,8 @@
       "basis": "Q3 10-Qs 2024-11-07, 2025-11-06",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "note": "2026-10-08 8-K (accession 0000821189-26-000202) is EOG's recurring quarter-end tax-guidance update — raised Q3 2026 current tax expense guidance to $835-935M (from $545-645M on 2026-08-04) due to higher realized crude prices amid the Middle East conflict, plus $40M net hedge settlement cash and benchmark WTI/Henry Hub averages. No revenue/net income/EPS/production figures, no Exhibit 99.1. Not an earnings release; recorded here so the scan stops re-flagging it. The raised tax range implies Q3 pre-tax profit well above EOG's August expectations — worth checking when real results land ~2026-11-05.",
+    "lastChecked": "2026-10-09",
     "reports": [
       {
         "year": 2026,
@@ -16972,29 +16988,35 @@
     "name": "AngioDynamics, Inc.",
     "status": "done",
     "latestReport": {
-      "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-30",
-      "url": "https://financialreportinsights.com/reports/cmuob16cq000204jmpt9f90sm"
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/ango/2027/q1"
     },
     "lastFilingSeen": {
-      "type": "10-K/A (Part III only, no financials; original 10-K filed 2026-07-14 used as source)",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-09-29"
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-08"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (fiscal Q1 2027)",
-      "estimate": "2026-10-08",
-      "basis": "~90 day cadence from FY2026 annual close (2026-05-31)",
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2027-01-07",
+      "basis": "~90 day cadence from fiscal Q1 2027 10-Q filed 2026-10-08",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-30",
+    "lastChecked": "2026-10-09",
     "reports": [
       {
         "year": 2026,
         "period": "ANNUAL",
         "publishedAt": "2026-09-30",
         "url": "https://financialreportinsights.com/reports/cmuob16cq000204jmpt9f90sm"
+      },
+      {
+        "year": 2027,
+        "period": "Q1",
+        "publishedAt": "2026-10-09",
+        "url": "https://financialreportinsights.com/companies/ango/2027/q1"
       }
     ]
   },
@@ -25019,5 +25041,189 @@
         "filedAt": "2026-08-31"
       }
     ]
+  },
+  "BYRN": {
+    "name": "Byrna Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/byrn/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (fiscal year 2026, FYE Nov 30)",
+      "estimate": "2027-02-05",
+      "basis": "prior fiscal-2025 10-K filed 2026-02-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Fiscal year ends Nov 30; this 10-Q is fiscal Q3 (quarter ended Aug 31, 2026), labeled calendar Q3 2026."
+  },
+  "HELE": {
+    "name": "Helen of Troy Limited",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/hele/2027/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2027, FYE late Feb)",
+      "estimate": "2027-01-08",
+      "basis": "~90 days after fiscal Q2 2027 10-Q filed 2026-10-08",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Fiscal year ends late February; company's own label is fiscal Q2 2027 for the quarter ended Aug 31, 2026 (falls within calendar 2026, so counts for 2026 coverage)."
+  },
+  "KBH": {
+    "name": "KB Home",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/kbh/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (fiscal year 2026, FYE late Nov)",
+      "estimate": "2027-01-20",
+      "basis": "fiscal year ends late November; prior-year 10-K timing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Fiscal year ends late November but company numbers quarters to match the calendar quarter; this is fiscal/calendar Q3 2026 (quarter ended Aug 31, 2026)."
+  },
+  "ODC": {
+    "name": "Oil-Dri Corporation Of America",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/odc/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-10-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027, quarter ending Oct 31, 2026)",
+      "estimate": "2026-12-05",
+      "basis": "prior fiscal-Q1 10-Q cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Fiscal year ends July 31; FY2026 10-K filed 2026-10-08 qualifies as the 2026 annual report."
+  },
+  "NG": {
+    "name": "Novagold Resources Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/ng/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (fiscal year 2026, FYE Nov 30)",
+      "estimate": "2027-01-22",
+      "basis": "prior fiscal-2025 10-K filed 2026-01-22",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Pre-revenue gold exploration company (Donlin Gold JV); no revenue/operatingMarginPct metrics — net loss and EPS only. Fiscal year ends Nov 30; this is fiscal Q3 2026 (quarter ended Aug 31, 2026)."
+  },
+  "VLGEA": {
+    "name": "Village Super Market, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/vlgea/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-07-25",
+      "filedAt": "2026-10-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-12-04",
+      "basis": "prior Q3 10-Q filed ~39 days after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Fiscal year ends last Saturday of July; FY2026 (52 weeks ended 2026-07-25) qualifies as the 2026 annual report."
+  },
+  "RELL": {
+    "name": "Richardson Electronics, Ltd.",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/rell/2027/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-10-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2027-01-07",
+      "basis": "prior fiscal Q2 10-Q filed 2026-01-08",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Fiscal year ends Saturday nearest end of May; this 10-Q is fiscal Q1 2027 (quarter ended Aug 29, 2026)."
+  },
+  "TLRY": {
+    "name": "Tilray Brands, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/tlry/2027/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027)",
+      "estimate": "2027-01-08",
+      "basis": "~90 day cadence from fiscal Q1 2027 10-Q filed 2026-10-08",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Fiscal year ends May 31; this 10-Q is fiscal Q1 2027 (quarter ended Aug 31, 2026)."
   }
 }

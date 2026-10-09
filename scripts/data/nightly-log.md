@@ -11317,3 +11317,45 @@ hot-list filing only — none landed across three straight checks (05:06,
 tracker or backlog, same call as the two prior firings. This is the
 window's last hour (ends 07:59 JST); no further action taken. **No
 report-periods published this firing; still 34/35 tonight.**
+
+### 2026-10-09 night (16:00 UTC 2026-10-09 → 22:59 UTC 2026-10-09 / 01:00–07:59 JST 2026-10-10)
+
+**01:06 JST firing:** fresh night window, cap resets to 0/35. Confirmed
+network access (403 without a User-Agent / 200 with the required
+User-Agent on sec.gov; 200 on financialreportinsights.com and the
+vercel.app alias). Repo was at a stale detached HEAD matching an old
+local `master` ref (same issue as the 06:05 JST firing two nights ago)
+— fixed with `git fetch` + `git reset --hard origin/master`. `npm
+install` needed a dummy `DATABASE_URL` env var for the `prisma generate`
+postinstall step to succeed (this environment has no real DB
+credentials, which is fine — admin-publish never needs one).
+
+`scan-recent-filings` found **12 fresh tier-0 candidates**, all from
+2026-10-08's EDGAR index: PEP (hot, update), EOG + FANG (S&P 500,
+update), ANGO (us-listed, update), and 8 brand-new us-listed tickers
+(BYRN, HELE, KBH, NG, ODC, RELL, TLRY, VLGEA). Worked through the full
+list across several opus research subagents (one company per subagent,
+run synchronously), with a live-page sanity check (cache-busted `curl
+-L`, confirmed Takeaway + "headline numbers hide" sections present) on
+every reported success before trusting it:
+
+- **Published (10 report-periods):**
+  - **PEP** Q3 2026 — https://financialreportinsights.com/companies/pep/2026/q3
+  - **BYRN** (Byrna Technologies) fiscal Q3 2026 (first report) — https://financialreportinsights.com/companies/byrn/2026/q3
+  - **HELE** (Helen of Troy) fiscal Q2 2027 (first report; FYE late Feb) — https://financialreportinsights.com/companies/hele/2027/q2
+  - **KBH** (KB Home) Q3 2026 (first report; FYE late Nov) — https://financialreportinsights.com/companies/kbh/2026/q3
+  - **ODC** (Oil-Dri) FY2026 ANNUAL (first report; FYE Jul 31) — https://financialreportinsights.com/companies/odc/2026/annual
+  - **NG** (Novagold Resources) fiscal Q3 2026 (first report; pre-revenue gold explorer, no revenue metric) — https://financialreportinsights.com/companies/ng/2026/q3
+  - **ANGO** (AngioDynamics) fiscal Q1 2027 (new quarter after the FY2026 annual published 2026-09-30) — https://financialreportinsights.com/companies/ango/2027/q1
+  - **VLGEA** (Village Super Market) FY2026 ANNUAL (first report; FYE last Sat of July) — https://financialreportinsights.com/companies/vlgea/2026/annual
+  - **RELL** (Richardson Electronics) fiscal Q1 2027 (first report; FYE late May) — https://financialreportinsights.com/companies/rell/2027/q1
+  - **TLRY** (Tilray Brands) fiscal Q1 2027 (first report; FYE May 31) — https://financialreportinsights.com/companies/tlry/2027/q1
+- **Skipped, no report (scan false positives, tracker updated with notes so they stop re-flagging):**
+  - **EOG** — the 2026-10-08 8-K (Item 2.02) was a routine quarter-end tax-guidance update (raised Q3 tax expense guidance on higher crude prices), not an earnings release — no Exhibit 99.1, no revenue/EPS. Real Q3 results expected ~2026-11-05 (estimated).
+  - **FANG** — same pattern: the 2026-10-08 8-K only gave realized prices, derivatives and share count, no Exhibit 99.1. Diamondback's own 2026-09-30 press release confirms real Q3 2026 results land 2026-11-02 after market close (confidence: confirmed).
+  - Worth flagging for a future session: `scan-recent-filings` treats every Item 2.02 8-K as an earnings release; several energy companies file this kind of pre-results notice every quarter. A cheap filter (require an EX-99 exhibit) would cut this false-positive rate — not fixed tonight, out of scope for a content-publishing run.
+
+**10/35 report-periods tonight** after this one (large) batch. Plenty
+of cap remaining — continuing into the regular tier-1 backlog
+(`next-batch`) in a subsequent batch this firing if time/budget allow,
+else next firing within the window will pick up from here.
