@@ -11404,3 +11404,22 @@ it shouldn't need re-fixing within the same container.
 
 **16/35 report-periods tonight.** Still well under cap with the window
 mostly ahead — continuing into another tier-1 batch.
+
+`next-batch -- --n 6` printed BAOS/BLIV again (unchanged) plus four new
+us-listed tickers: BMRC, BMRN, BNAI, BNC. Published all four (first
+reports), live-checked the same way as prior batches:
+- **BMRC** (Bank of Marin, bank — full bank-metrics schema used) Q2 2026 — https://financialreportinsights.com/companies/bmrc/2026/q2
+- **BMRN** (BioMarin Pharmaceutical) Q2 2026 (first quarter including the Amicus Therapeutics acquisition) — https://financialreportinsights.com/companies/bmrn/2026/q2
+- **BNAI** (Brand Engagement Network) Q2 2026 (early-revenue AI software, going-concern warning) — https://financialreportinsights.com/companies/bnai/2026/q2
+- **BNC** (CEA Industries, pivoted to a BNB digital-asset-treasury strategy, renamed BNB Standard Corp but still tickers BNC) fiscal Q1 2027, labeled 2026/Q1 — https://financialreportinsights.com/companies/bnc/2026/q1
+
+One subagent (BNC) made a units mistake (entered figures in thousands
+instead of millions, so the page briefly showed "$7.2B" revenue instead
+of "$7.2M"), caught it itself, and fixed it via `--edit` before handing
+back — confirmed the correction live before trusting the result. Worth
+noting as a sanity-check miss worth watching for: the post-publish
+live-page check this routine already does would have caught it too had
+the subagent not caught it first.
+
+**20/35 report-periods tonight.** Comfortably under cap. Window still
+has hours left (checked ~01:4x JST) — continuing into another batch.

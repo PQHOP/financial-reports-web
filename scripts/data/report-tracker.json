@@ -25442,5 +25442,28 @@
     },
     "lastChecked": "2026-10-09",
     "note": "Q2 2026 is the first quarter including the Amicus Therapeutics acquisition (closed Apr 27, 2026). Oct 6 8-K flags an incremental ~$1.55 FY2026 EPS hit from the Alesta acquisition, mostly in Q3, not yet reflected in Aug guidance — worth checking when Q3 is published."
+  },
+  "BNC": {
+    "name": "CEA Industries Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bnc/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027, quarter ending Oct 31, 2026)",
+      "estimate": "2026-12-10",
+      "basis": "~90 day cadence from fiscal Q1 2027 10-Q filed 2026-09-11",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Pivoted to a BNB digital-asset-treasury strategy (renamed BNB Standard Corporation 2026-09-29, still tickers as BNC); legacy Fat Panda vape-store + climate-control equipment revenue remains. Fiscal year ends April 30; this 10-Q is fiscal Q1 2027, labeled 2026/Q1 by calendar convention (matches existing site practice for other non-calendar-FYE companies). Net loss mostly non-cash (unrealized BNB write-down vs warrant gain)."
   }
 }
