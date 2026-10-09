@@ -25849,6 +25849,38 @@
       }
     ]
   },
+  "BPOP": {
+    "name": "Popular, Inc. (BPOP)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bpop/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q2 2026 earnings announced 2026-07-23; estimating ~90 days later for Q3 earnings/10-Q, not yet searched/confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-09",
+        "url": "https://financialreportinsights.com/companies/bpop/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
+    ]
+  },
   "BPAC": {
     "name": "Blueport Acquisition Ltd - Class A Ordinary Shares",
     "status": "skipped",

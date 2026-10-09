@@ -11552,3 +11552,21 @@ edtech hardware), succeeded and passed the live-page sanity check:
 **34/35 report-periods tonight.** One slot left before the cap — taking
 it now (BPOP, a well-known bank) and then standing down for the rest of
 this firing.
+
+Dispatched the last opus subagent of the night for **BPOP** (Popular,
+Inc., Puerto Rico/US mainland bank — full bank-metrics schema), succeeded
+and passed the live-page sanity check (after one transient TLS retry on
+the curl itself, unrelated to the page):
+- **BPOP** Q2 2026 (first report; net income +32.2% to $278M, NIM
+  widened to 3.66%, but a single $155M commercial loan's $71M charge-off
+  pushed the charge-off ratio to 1.05% (0.33% without it); CEO
+  transitioned Sept 1) — https://financialreportinsights.com/companies/bpop/2026/q2
+
+**35/35 report-periods tonight — cap reached.** Standing down for the
+rest of the night. Total published tonight: 35 report-periods across 35
+companies (BOTJ, BOXL, BPOP this firing; 32 from earlier firings).
+Tier-1 backlog continuation point for the next firing: past BPOP in the
+us-listed file (BAOS/BLIV still pending-due with future-dated estimates,
+BPAC skipped as a pre-merger SPAC — none need re-checking tonight).
+Commits pushed cleanly to `master` throughout this firing (3 commits:
+BOTJ, BOXL, BPOP).
