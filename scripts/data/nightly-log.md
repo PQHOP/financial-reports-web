@@ -11443,3 +11443,24 @@ publish failure):
 pacing toward a reserve rather than running the cap all the way down in
 this one firing — one more smaller batch, then likely standing down for
 this firing per the usual "leave a few in reserve" pattern.
+
+`next-batch -- --n 5` printed BAOS/BLIV again plus three new us-listed
+tickers: BOF, BOKF, BOLD. Published all three (first reports),
+live-checked the same way as prior batches:
+- **BOF** (BranchOut Food) Q2 2026 (going-concern warning, record revenue but gross margin collapsed on rushed sourcing) — https://financialreportinsights.com/companies/bof/2026/q2
+- **BOKF** (BOK Financial, bank — full bank-metrics schema used) Q2 2026 — https://financialreportinsights.com/companies/bokf/2026/q2
+- **BOLD** (Boundless Bio) Q2 2026 (lead drug candidate dropped, agreed reverse merger with Serapha Bio, ~75% staff cut — effectively a shell heading into the deal) — https://financialreportinsights.com/companies/bold/2026/q2
+
+**28/35 report-periods tonight.** Standing down for this firing here,
+leaving 7 in reserve for the rest of the window (01:06–07:59 JST) in
+case a hot-list filing lands later tonight, same pacing pattern as
+prior nights. Tier 0 (fresh EDGAR filings) was fully exhausted at the
+start of this firing; tier-1 backlog continuation point for the next
+firing: past BOLD in the us-listed file (BAOS/BLIV still pending-due,
+re-check only if their estimate dates make that worthwhile). All
+commits pushed cleanly to `master` throughout this firing, no
+concurrent-firing collisions. Total published across the night so far:
+28 report-periods across 28 companies (18 first reports + PEP update +
+ANGO new-period update, since EOG/FANG were correctly identified as
+non-earnings 8-Ks and BLZR as a pre-merger SPAC, all three skipped with
+tracker notes rather than published).

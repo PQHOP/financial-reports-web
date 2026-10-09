@@ -25580,5 +25580,74 @@
     },
     "lastChecked": "2026-10-09",
     "note": "Going-concern warning, possible bankruptcy/sale process disclosed, interim CEO. Revenue growing but funding/dilution is the dominant story."
+  },
+  "BOLD": {
+    "name": "Boundless Bio, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bold/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "~90 day cadence from Q2 2026 10-Q filed 2026-08-07; note merger may close Q4 2026, possibly making Q3 the last standalone-company report",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Last drug candidate (BBI-940) dropped June 2026 after disappointing Phase 1 PK data; agreed reverse merger with private Serapha Bio (base-editing therapy) announced 2026-06-22, ~75% staff cut, closing expected Q4 2026. Q2 loss mostly wind-down costs (lease termination, severance, accelerated vesting). No revenue/operatingMarginPct."
+  },
+  "BOF": {
+    "name": "BranchOut Food Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bof/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "~90 day cadence (Q1 filed 05-14, Q2 filed 08-13)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Dried fruit/vegetable snacks (Peru plant). Going-concern warning, $212K cash at quarter-end; record revenue but gross margin collapsed to 2.2% on rushed strawberry sourcing for the Sam's Club launch. Heavy customer concentration (4 customers = 95.9% of revenue)."
+  },
+  "BOKF": {
+    "name": "BOK Financial Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bokf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release (Q3 2026)",
+      "estimate": "2026-10-20",
+      "basis": "prior earnings releases Apr 20 and Jul 20, 2026",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Bank; full bank-metrics schema used. EPS growth partly a one-time Visa Class B share-exchange gain; core NIM excluding trading book roughly flat YoY."
   }
 }
