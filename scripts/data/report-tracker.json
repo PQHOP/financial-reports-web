@@ -25465,5 +25465,120 @@
     },
     "lastChecked": "2026-10-09",
     "note": "Pivoted to a BNB digital-asset-treasury strategy (renamed BNB Standard Corporation 2026-09-29, still tickers as BNC); legacy Fat Panda vape-store + climate-control equipment revenue remains. Fiscal year ends April 30; this 10-Q is fiscal Q1 2027, labeled 2026/Q1 by calendar convention (matches existing site practice for other non-calendar-FYE companies). Net loss mostly non-cash (unrealized BNB write-down vs warrant gain)."
+  },
+  "BNR": {
+    "name": "Burning Rock Biotech Limited - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bnr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 results with financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-12-10",
+      "basis": "~90 day cadence from Q2 2026 6-K filed 2026-09-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Chinese foreign private issuer, cancer genomic profiling. Reports quarterly via 6-K with real financial statements. Currency CNY."
+  },
+  "BNTX": {
+    "name": "BioNTech SE - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bntx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 quarterly report)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 quarterly report)",
+      "estimate": "2026-11-03",
+      "basis": "company-confirmed Q3 2026 results date",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "German foreign private issuer; reports quarterly via 6-K. Currency EUR. FY2026 revenue guidance cut on weaker COVID vaccine demand; oncology pipeline (pumitamig, gotistobart, trastuzumab pamirtecan) is the forward story."
+  },
+  "BODI": {
+    "name": "The Beachbody Company, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bodi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "prior Q3 2025 10-Q filed 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Returned to GAAP profit this quarter mainly from cutting MLM commissions after the 2024 affiliate-model switch; subscriber base still shrinking. No going-concern warning; loan covenants met at quarter-end, amended twice in 2026."
+  },
+  "BNKK": {
+    "name": "Bonk, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bnkk/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "45-day filing deadline for smaller reporting companies",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Formerly Jupiter Wellness/Safety Shot; now beverages (Yerbaé energy drinks, Sure Shot) plus a digital-assets segment holding BONK meme-coin tokens and a revenue-share deal with LetsBonk.fun. Going-concern warning, $214K cash at quarter-end."
+  },
+  "BNGO": {
+    "name": "Bionano Genomics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bngo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "prior Q3 2025 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Going-concern warning, possible bankruptcy/sale process disclosed, interim CEO. Revenue growing but funding/dilution is the dominant story."
   }
 }

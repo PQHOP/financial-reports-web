@@ -11423,3 +11423,23 @@ the subagent not caught it first.
 
 **20/35 report-periods tonight.** Comfortably under cap. Window still
 has hours left (checked ~01:4x JST) — continuing into another batch.
+
+`next-batch -- --n 7` printed BAOS/BLIV again plus five new us-listed
+tickers: BNGO, BNKK, BNR, BNTX, BODI. Pre-checked BNKK on EDGAR first
+since "Bonk, Inc." looked crypto-adjacent at a glance — turned out to
+be a real operating company (formerly Jupiter Wellness/Safety Shot,
+beverages + a BONK-token digital-assets segment), not a dormant shell,
+so it went to a full research pass rather than a skip. Published all
+five (first reports), live-checked the same way as prior batches (one
+transient TLS error on the BNR check, resolved on retry — not a
+publish failure):
+- **BNGO** (Bionano Genomics) Q2 2026 (going-concern warning, possible sale/bankruptcy process disclosed) — https://financialreportinsights.com/companies/bngo/2026/q2
+- **BNKK** (Bonk, Inc.) Q2 2026 (beverages + BONK meme-coin treasury segment, going-concern warning) — https://financialreportinsights.com/companies/bnkk/2026/q2
+- **BNR** (Burning Rock Biotech, China) Q2 2026 — https://financialreportinsights.com/companies/bnr/2026/q2
+- **BNTX** (BioNTech) Q2 2026 (FY2026 revenue guidance cut on weaker COVID vaccine demand) — https://financialreportinsights.com/companies/bntx/2026/q2
+- **BODI** (The Beachbody Company) Q2 2026 (back to GAAP profit post-MLM-exit; subscriber base still shrinking) — https://financialreportinsights.com/companies/bodi/2026/q2
+
+**25/35 report-periods tonight.** Approaching the point to start
+pacing toward a reserve rather than running the cap all the way down in
+this one firing — one more smaller batch, then likely standing down for
+this firing per the usual "leave a few in reserve" pattern.
