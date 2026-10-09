@@ -6,6 +6,23 @@ date and commit.
 
 ## Next
 
+- **Write 2 bank/insurer `/learn` guides and wire them into `relatedGuides()`.**
+  Found 2026-10-09: `relatedGuides()` (`src/lib/metrics.ts:304`) links
+  `gaap-vs-adjusted-eps` for every report without `operatingMarginPct` —
+  that's every bank and insurer report (BOTJ, BPOP, and more in the
+  backlog), none of which get a NIM or combined-ratio explainer even
+  though those are exactly the unfamiliar terms on their report pages.
+  Needs: `content/guides/what-is-net-interest-margin.md` and
+  `content/guides/what-is-combined-ratio.md` (same frontmatter style as
+  the existing 9), plus a `metricsProfile(m)` branch in `relatedGuides()`
+  to pick them for bank/insurer reports instead of the GAAP-vs-adjusted
+  fallback. **This routine can write the code/content but cannot publish
+  it** — no `ADMIN_PASSWORD`/`SITE_URL` in this environment, so
+  `admin-publish --articles-dir content/guides` has to run from a session
+  that has the nightly routine's credential. Whoever picks this up: write
+  the two files + the code change, commit/push/deploy the code, then
+  either run the publish step yourself (if you have the credential) or
+  flag it in the report for the nightly routine's next firing.
 - **Re-check Google indexing around 2026-10-11 through 10-18.** Sitemap
   still 0/1818 indexed as of 2026-10-06 (re-checked 2026-10-08: still
   0, now 0/1960 as submitted count grew); still consistent with "new
@@ -32,6 +49,38 @@ date and commit.
 
 ## Done
 
+- 2026-10-09: no new safe code change found worth making this cycle —
+  broader audit than usual since the top 3 backlog items are all gated
+  (indexing re-check not due until 10-11, opportunity queries still bot
+  noise, FTSE/TSX/ASX is propose-only). Verified: health check all green
+  (`/ads.txt` 404 expected), latest production deployment (`dd1f194`)
+  READY and confirmed an ancestor of current `master`; `npx tsc --noEmit`
+  clean (after `next typegen`, same one-time route-types gap as always);
+  no new `contains:` Prisma filter missing `mode: "insensitive"`; fonts
+  still self-hosted via `next/font`; `/industries/uncategorized` still
+  correctly `noindex, follow`. Spot-checked a freshly-published bank report
+  (BPOP) live — "At a glance", Takeaway, and "What the headline numbers
+  hide" all present, not truncated (no "did last time's read hold up?"
+  section, correctly, since it's BPOP's first report). GSC last 7d
+  (9-30→10-6) impressions collapsed to 1,981 from 22,727 the week before —
+  not a regression, this is the predicted continuation of the
+  `/industries/uncategorized` noindex (9-24) finally dropping the bot-noise
+  queries out of the index; clicks still ~0, consistent with the 0-indexed
+  sitemap. GA4 28-day: 42 users/48 sessions/54 pageviews, up from 34/40/46
+  yesterday — still single digits/day, nothing to react to yet. Sitemap:
+  0/2,028 indexed (still short of the 10-11 re-check date set 10-06). No
+  deploy this cycle (nothing changed).
+- Considered writing 1-2 new `/learn` guides to cover bank/insurer-specific
+  terms (net interest margin, combined ratio) — `relatedGuides()`
+  (`src/lib/metrics.ts:304`) currently falls back to `gaap-vs-adjusted-eps`
+  for any report without `operatingMarginPct` (i.e. every bank and
+  insurer), which is a real internal-linking gap given how many bank
+  reports are in the backlog. Didn't execute: this routine's environment
+  has no `ADMIN_PASSWORD`/`SITE_URL`, so it can't run `admin-publish
+  --articles-dir` to actually publish new articles — that needs the
+  nightly routine's credential. Left as a concrete next step (see below)
+  rather than half-finishing it (writing the guide content + code without
+  a way to publish it).
 - 2026-10-08 (`dd1f194`): extended the `/learn` guide-link block (see
   2026-10-07 below) to the company page's results-by-period table and the
   industry peer tables, reusing the same `relatedGuides()` helper — same
