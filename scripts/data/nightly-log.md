@@ -11359,3 +11359,26 @@ every reported success before trusting it:
 of cap remaining — continuing into the regular tier-1 backlog
 (`next-batch`) in a subsequent batch this firing if time/budget allow,
 else next firing within the window will pick up from here.
+
+Re-ran `scan-recent-filings` after the tier-0 batch to refresh the
+candidates cache against the updated tracker — confirmed 0 remaining
+fresh candidates, so moved to `next-batch -- --n 5` for tier-1 backlog.
+It printed BLIV (pending-due) and BAOS, BLZR, BMBL, BMEA (us-listed
+backlog). Checked BLIV and BAOS directly on EDGAR before spending a
+research pass on either — both still have no new filing with real
+financials since their last tracker check (BLIV: nothing since the
+2026-07-20 resignation 6-K; BAOS: Sept filings are all press releases),
+so just bumped `lastChecked`/pushed BLIV's estimate out ~2 weeks without
+touching either's status. Confirmed BLZR ("Trailblazer Acquisition
+Corp.") is a pre-merger blank-check SPAC (Cayman Islands, $275M trust
+from a Sept 2025 IPO, no Business Combination target selected) by
+reading its Q2 2026 10-Q directly — skipped, same pattern as BLRK/BLUW
+earlier this week.
+
+Published BMBL and BMEA (both first reports), live-checked the same way
+as the tier-0 batch:
+- **BMBL** (Bumble) Q2 2026 — https://financialreportinsights.com/companies/bmbl/2026/q2
+- **BMEA** (Biomea Fusion) Q2 2026 (pre-revenue clinical-stage biotech, going-concern warning) — https://financialreportinsights.com/companies/bmea/2026/q2
+
+**12/35 report-periods tonight.** Continuing into the next tier-1 batch
+this firing — window and cap both have plenty of room left.

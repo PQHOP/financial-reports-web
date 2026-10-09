@@ -23382,7 +23382,7 @@
       "basis": "H1 2025 interim 6-K filed 2025-11-28",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-08",
+    "lastChecked": "2026-10-09",
     "reports": [
       {
         "year": 2025,
@@ -24790,11 +24790,11 @@
     },
     "nextExpectedFiling": {
       "type": "6-K (H1 2026 interim results)",
-      "estimate": "2026-10-01",
-      "basis": "last year's H1 2025 interim 6-K (period 2025-06-30) filed 2025-10-01; estimate already passed as of 2026-10-08, re-check soon",
+      "estimate": "2026-10-20",
+      "basis": "last year's H1 2025 interim 6-K (period 2025-06-30) filed 2025-10-01; past that estimate with still no filing as of 2026-10-09 (checked EDGAR directly, nothing since the 2026-07-20 resignation 6-K), pushing the estimate out ~2 weeks rather than re-checking nightly",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-08"
+    "lastChecked": "2026-10-09"
   },
   "BLKB": {
     "name": "Blackbaud, Inc.",
@@ -25225,5 +25225,61 @@
     },
     "lastChecked": "2026-10-09",
     "note": "Fiscal year ends May 31; this 10-Q is fiscal Q1 2027 (quarter ended Aug 31, 2026)."
+  },
+  "BLZR": {
+    "name": "Trailblazer Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (Cayman Islands blank-check co., SIC 'Blank Checks'). Q2 2026 10-Q (filed 2026-08-13, period ended 2026-06-30) confirms: $275M trust account from Sept 2025 IPO, $10.30/share trust value as of 2026-06-30, no target business selected, no signed Business Combination Agreement. Only revenue-like item is trust interest income; no operating business to analyze.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "lastChecked": "2026-10-09"
+  },
+  "BMBL": {
+    "name": "Bumble Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bmbl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release / 10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q2 earnings 8-K filed 2026-08-05, 10-Q next day; cadence suggests early November for Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09"
+  },
+  "BMEA": {
+    "name": "Biomea Fusion, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bmea/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "prior Q3 2025 10-Q filed 2025-11-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Pre-revenue clinical-stage biotech (diabetes/obesity, lead candidate icovamenib); no revenue/operatingMarginPct metrics. Going-concern warning; cash runway stated into Q2 2027."
   }
 }
