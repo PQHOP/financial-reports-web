@@ -11512,3 +11512,31 @@ point for the next firing: past BOT in the us-listed file (BAOS/BLIV
 still pending-due with future estimate dates, no need to re-check
 again tonight). Commits pushed cleanly to `master`. Total published
 across the night so far: 32 report-periods across 32 companies.
+
+**03:05 JST firing (new session):** network check passed (403 without
+User-Agent / 200 with it on sec.gov, 200 on financialreportinsights.com).
+Repo was again at a stale detached HEAD — `git fetch origin master` then
+`git checkout -B master origin/master` (origin/master was actually
+already at the previous firing's last commit, so nothing was lost, local
+ref was just stale). `npm install` needed a dummy `DATABASE_URL`.
+
+`scan-recent-filings` found 0 fresh tier-0 candidates (2026-10-09's EDGAR
+index not populated yet; most recent indexed day 2026-10-08 already
+fully worked). With only 3 report-periods left in reserve before the
+~35 cap, took a conservative final batch for the night rather than
+spending the whole reserve on a full `next-batch` pull. `next-batch --
+--n 8` printed BAOS/BLIV again (unchanged, left alone per their
+future-dated estimates) plus BOTJ, BOXL, BPAC, BPOP, BPRN, BRAG.
+Pre-checked BPAC directly on EDGAR: SIC 6770 "BLANK CHECKS", pre-merger
+SPAC with only trust-account interest income on its 10-Q — skipped
+(same pattern as BLZR earlier this week), tracker updated with reason.
+
+Dispatched one opus subagent for **BOTJ** (Bank of the James Financial
+Group, community bank — full bank-metrics schema), succeeded and passed
+the live-page sanity check (cache-busted fetch, Takeaway + "what the
+headline numbers hide" sections present, not truncated):
+- **BOTJ** Q2 2026 (first report; NIM widened to 3.71% from 3.45% on
+  falling deposit costs, net income +19.8%, clean credit at 0.16%
+  nonperforming) — https://financialreportinsights.com/companies/botj/2026/q2
+
+**33/35 report-periods tonight.**
