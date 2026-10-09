@@ -25373,5 +25373,74 @@
     },
     "lastChecked": "2026-10-09",
     "note": "Singapore clinic/medical-services group, foreign private issuer. Fiscal year ends June 30; this H1 covers Jul-Dec 2025. Currency SGD. 1-for-12 reverse split occurred after the period; EPS as filed is pre-split."
+  },
+  "BMRC": {
+    "name": "Bank of Marin Bancorp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bmrc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release (Q3 2026)",
+      "estimate": "2026-10-26",
+      "basis": "company's own 8-K confirms Q3 2026 results 2026-10-26",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Bank; bank-specific metrics published (NIM, loans, deposits, efficiency ratio, CET1, ROTCE). YoY vs Q2 2025 skewed by a bond-portfolio repositioning loss in the prior-year quarter."
+  },
+  "BNAI": {
+    "name": "Brand Engagement Network Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bnai/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "~90 day cadence (Q1 filed 05-15, Q2 filed 08-14)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Early-revenue AI software company (2024 de-SPAC); going-concern warning, $0.7M cash at Q2 end. Closed the Cataneo acquisition 2026-06-30 (not yet consolidated in Q2 figures)."
+  },
+  "BMRN": {
+    "name": "BioMarin Pharmaceutical Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-09",
+      "url": "https://financialreportinsights.com/companies/bmrn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90 day cadence from Q2 2026 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-09",
+    "note": "Q2 2026 is the first quarter including the Amicus Therapeutics acquisition (closed Apr 27, 2026). Oct 6 8-K flags an incremental ~$1.55 FY2026 EPS hit from the Alesta acquisition, mostly in Q3, not yet reflected in Aug guidance — worth checking when Q3 is published."
   }
 }
