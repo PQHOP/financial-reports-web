@@ -11960,8 +11960,21 @@ opus subagents in parallel.
   bottled-water write-down) but no going-concern language.
   https://financialreportinsights.com/companies/btbd/2026/q2
   Succeeded, passed the live-page sanity check.
-- **BSY** (Bentley Systems) — still researching; see next entry for
-  the outcome.
+- **BSY** (Bentley Systems) Q2 2026 (first report; infrastructure
+  engineering software) — revenue +12.8% to $410.7M, ARR +12% constant
+  currency, net revenue retention steady at 109%; operating income up
+  only 4.9% as G&A rose 30.8% on hiring and a new finance system;
+  net-income growth (+11.5%) was flattered by a one-off $14.0M
+  investment remeasurement gain — without it pre-tax income would have
+  risen only ~2.3% instead of 19.9%; EPS growth also boosted by a 4.2%
+  smaller diluted share count from buybacks/convertible-note
+  repayment; company redefined its adjusted-profit measure this year
+  to exclude more costs; FY guidance unchanged but the report's own
+  math flags H2 needs a 28.4% margin to hit the full-year midpoint vs
+  H1 running 1.2 points below the prior year against a full-year
+  1-point-improvement target. https://financialreportinsights.com/companies/bsy/2026/q2
+  Succeeded, passed the live-page sanity check.
 
-**1 more new report-period — 23 report-periods total tonight so far.**
-report-tracker.json updated for BTBD. Commit pending.
+**2 more new report-periods — 24 report-periods total tonight.**
+report-tracker.json updated for BTBD and BSY. 11 slots left before
+the ~35 cap; continuing cautiously. Commit pending.

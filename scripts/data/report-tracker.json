@@ -26417,5 +26417,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BSY": {
+    "name": "Bentley Systems, Incorporated - Class B",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2nakda000306lcqw5vm57e"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "prior-year Q3 10-Q filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
