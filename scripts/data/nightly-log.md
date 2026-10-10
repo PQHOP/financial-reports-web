@@ -11721,4 +11721,32 @@ passed the live-page sanity check:
 
 **1 more new report-period — 9 report-periods total tonight.**
 report-tracker.json updated for BRID and BRKH. Still well under the
-~35 cap; continuing with further batches. Commit pending.
+~35 cap; continuing with further batches. Committed as `8700850`,
+pushed cleanly.
+
+Fourth tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
+(still future-dated pending) plus BRKR and BRLT. Dispatched two opus
+subagents in parallel, both succeeded and passed the live-page sanity
+check:
+
+- **BRKR** (Bruker Corporation) Q2 2026 (first report; scientific
+  instruments) — revenue +5.2% to $838.5M but a GAAP net loss of $62.9M
+  on a $134.9M goodwill write-down (Chemspeed lab automation, Spatial
+  Biology); adjusted EPS actually rose to $0.49 from $0.32, partly
+  helped by an unquantified one-off tariff refund; operating cash flow
+  was negative (-$77.4M this quarter); China revenue -8.5% but order
+  backlog grew to $2.78B from $2.57B at year-end. FY2026 guidance
+  maintained. https://financialreportinsights.com/companies/brkr/2026/q2
+- **BRLT** (Brilliant Earth Group) Q2 2026 (first report; online
+  jewelry retailer) — revenue +5.7% to $115.1M, swung to a thin $0.8M
+  net profit from a prior-year loss, but over half the improvement was
+  lower stock-based comp rather than operations, and a $1.8M IT
+  write-off masked otherwise-healthier operating income (~$2.2M
+  without it); orders fell 2.1% even as average order value rose 7.9%;
+  full-year Adjusted EBITDA guidance raised to $13-15M from "slightly
+  lower than 2025" ($12.0M last year).
+  https://financialreportinsights.com/companies/brlt/2026/q2
+
+**2 more new report-periods — 11 report-periods total tonight.**
+report-tracker.json updated for BRKR and BRLT. Still well under the
+~35 cap; continuing. Commit pending.
