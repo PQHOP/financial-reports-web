@@ -26013,5 +26013,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BRBI": {
+    "name": "BRBI BR Partners S.A. - ADSs",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2lrzd8000106l5rpr1uq18"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim financials)",
+      "estimate": "2026-11-06",
+      "basis": "prior-year Q3 6-K filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "BRCB": {
+    "name": "Black Rock Coffee Bar, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2lrrsi000006jtk1251dfz"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "prior-year Q3 10-Q and earnings 8-K both filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

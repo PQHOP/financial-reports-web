@@ -11669,4 +11669,32 @@ new us-listed companies: BPRN, BRAG, BRAI.
 total tonight so far.** report-tracker.json updated for all 7 companies
 touched (DAL, MU, CCEL, JEF, WOR, BPRN, BRAG, BRAI — 8 entries, 6 new
 report-periods + 1 edit + 1 pending). Well under the ~35 cap; continuing
-with further tier-1 batches this firing. Commit pending.
+with further tier-1 batches this firing. Committed as `5dc173c`, pushed
+cleanly.
+
+Second tier-1 batch this firing: `next-batch -- --n 5` printed
+BAOS/BLIV/BRAI again (all still future-dated pending, left alone) plus
+two new us-listed companies: BRBI, BRCB.
+
+- **BRBI** (BR Partners, Brazilian investment bank) Q2 2026 (first
+  report; FPI, reports in BRL — kept as BRL, not converted) — revenue
+  down 6.6% as proprietary-capital returns and Treasury Sales fell, but
+  fee/advisory revenue +9.8-10.5%; net income down 22.4% to R$35.1M,
+  cushioned by the effective tax rate falling to 16.0% from 29.2%;
+  ex-impairment pre-tax profit (last year carried a one-off R$10.9M
+  impairment) was down 42.3%. No bank-style metrics used (pure
+  investment bank, no NIM). https://financialreportinsights.com/companies/brbi/2026/q2
+- **BRCB** (Black Rock Coffee Bar) Q2 2026 (first report; recently
+  IPO'd drive-thru coffee chain) — revenue +25.0% to $63.0M on 42 net
+  new stores (200 vs 158) with same-store sales growth slowing to 4.2%
+  from 10.9%; swung to $3.2M net income from a $1.1M loss, but most of
+  the improvement was lower post-IPO interest expense and the absence
+  of last year's restructuring costs, not operations; adjusted EBITDA
+  margin actually fell (15.0% vs 16.0%) as public-company overhead
+  outgrew revenue; first-half free cash flow roughly -$14.0M.
+  https://financialreportinsights.com/companies/brcb/2026/q2
+
+**2 more new report-periods — 8 report-periods total tonight.**
+report-tracker.json updated for BRBI and BRCB (10 tracker entries
+touched tonight in total). Still well under the ~35 cap; continuing.
+Commit pending.
