@@ -11749,4 +11749,26 @@ check:
 
 **2 more new report-periods — 11 report-periods total tonight.**
 report-tracker.json updated for BRKR and BRLT. Still well under the
-~35 cap; continuing. Commit pending.
+~35 cap; continuing. Committed as `0d3d390`, pushed cleanly.
+
+Fifth tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
+(still future-dated pending) plus BRNX and BRR. Dispatched two opus
+subagents in parallel.
+
+- **BRNX** (BrenX Ltd., formerly Brenmiller Energy — Israeli thermal-
+  energy-storage company, FPI 20-F/6-K filer) H1 2026 (first report) —
+  revenue $0 (vs $387K a year earlier), going-concern warning, cash
+  $5.69M after burning $5.50M in the half; ordinary shares outstanding
+  went from 23,862 to ~1.95M post-period even after three 2026 reverse
+  splits; an $8.58M non-cash "deemed dividend" from preferred-share
+  price-reset clauses pushed the loss attributable to ordinary holders
+  to $14.81M; subsequent EIB settlement expected to bring a ~$3.6M
+  one-off gain. https://financialreportinsights.com/companies/brnx/2026/h1
+  Succeeded and passed the live-page sanity check.
+- **BRR** (ProCap Financial, Inc.) — still researching; see next entry
+  for the outcome. (Not to be confused with the separate dropdown entry
+  "ProCap Acquisition Corp (PCAP)" — the subagent was briefed to
+  publish only under the BRR/ProCap Financial, Inc. listing.)
+
+**1 more new report-period — 12 report-periods total tonight so far.**
+report-tracker.json updated for BRNX. Commit pending.

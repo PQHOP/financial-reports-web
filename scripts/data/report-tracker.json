@@ -26134,5 +26134,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BRNX": {
+    "name": "BrenX Ltd. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2m8ntn000006l9ubu8no48"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-09"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 Annual)",
+      "estimate": "2027-03-25",
+      "basis": "FY2025 20-F filed 2026-03-25",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
