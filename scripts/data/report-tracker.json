@@ -26057,5 +26057,16 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BRKH": {
+    "name": "Burtech Acquisition Corp II - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (EDGAR SIC 6770 BLANK CHECKS); 10-Q only reports trust-account interest income, no operating business to analyze (same pattern as BPAC, BLZR)",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

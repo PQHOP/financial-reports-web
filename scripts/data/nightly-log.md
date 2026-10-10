@@ -11697,4 +11697,12 @@ two new us-listed companies: BRBI, BRCB.
 **2 more new report-periods — 8 report-periods total tonight.**
 report-tracker.json updated for BRBI and BRCB (10 tracker entries
 touched tonight in total). Still well under the ~35 cap; continuing.
-Commit pending.
+Committed as `eef9d4f`, pushed cleanly.
+
+Third tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
+(still future-dated pending) plus BRID and BRKH. Pre-checked BRKH
+(Burtech Acquisition Corp II) directly on EDGAR before spending a
+subagent on it: SIC 6770 "BLANK CHECKS", pre-merger SPAC, 10-Q only has
+trust-account interest income — skipped with that reason (same pattern
+as BPAC/BLZR). Dispatched one opus subagent for BRID (Bridgford Foods);
+still running — see next entry for the outcome.
