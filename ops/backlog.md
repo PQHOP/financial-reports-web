@@ -22,47 +22,6 @@ date and commit.
   command once — it upserts by slug, so it's safe to run even if one of
   the two somehow already exists. Until then the two new guide links on
   bank/insurer report pages 404 (well, soft-404 — see next item).
-- **Fixed 2026-10-10: several dynamic routes were soft-404ing (HTTP 200)
-  instead of returning a real 404 for content that doesn't exist** — found
-  while checking the new guide links above, confirmed with deliberately-
-  nonsense slugs/ids against production with fresh (cache-MISS) requests
-  to rule out a caching artifact:
-  - Soft-404 (200, rendered the not-found UI but with status 200):
-    `/learn/[slug]`, `/companies/[slug]`, `/companies/[slug]/[year]/
-    [period]` (and therefore `/companies/[slug]/[year]` and
-    `/companies/[slug]/write`, which inherit the same boundary),
-    `/industries/[slug]`, `/insights/[slug]`, `/scorecards/[year]/
-    [period]`.
-  - Correctly 404ing already: `/reports/[id]`, `/rates/[slug]`, and any
-    path matching no route at all.
-  Root cause: every broken route had a sibling `loading.tsx` (a
-  `PageSkeleton` for instant-feeling navigation); the working ones
-  didn't. A `loading.tsx` makes the route a streamed Suspense boundary —
-  Next sends the shell with a 200 status before the suspended page
-  resolves, so by the time the page body calls `notFound()`, the 200 is
-  already on the wire and can't be changed. CLAUDE.md's "Stack notes"
-  already documented this exact trade-off for `/rates/` and
-  `/app/reports/`/`/app/` root ("No loading.tsx under src/app/rates/:
-  streaming would turn those 308s/404s into 200s") — it just hadn't been
-  checked for the other dynamic routes that also call `notFound()`. Every
-  affected page does call `notFound()` correctly (verified in each
-  page/view component before touching anything), so this was purely the
-  `loading.tsx` boundary, not a missing check. Fix: deleted the 6 offending
-  `loading.tsx` files (`companies/[slug]`, `companies/[slug]/[year]/
-  [period]`, `industries/[slug]`, `insights/[slug]`, `learn/[slug]`,
-  `scorecards/[year]/[period]`) — none of their listing/non-dynamic
-  siblings (`insights/loading.tsx`, `learn/loading.tsx`, etc.) were
-  touched, so those still get the skeleton; `PageSkeleton` itself is still
-  used elsewhere, confirmed not dead code. Doesn't change `revalidate` or
-  make anything dynamic, so the $1 spend-cap risk in "Stack notes" doesn't
-  apply — this only changes how the Suspense boundary is drawn around
-  already-ISR pages. Typechecked clean, deployed with the guide-link
-  commit (see nightly log / commit `<fill in after push>`), re-verified
-  with fresh random slugs in production: all 6 now return real 404s.
-  Worth watching Search Console over the next couple of weeks for whether
-  this helps the indexing stall below — soft 404s are one of Google's own
-  named reasons for a site's pages staying stuck at "Discovered/Crawled –
-  not indexed."
 - **Re-check Google indexing around 2026-10-11 through 10-18.** Sitemap
   still 0/1818 indexed as of 2026-10-06 (re-checked 2026-10-08: still
   0, now 0/1960 as submitted count grew); still consistent with "new
@@ -89,6 +48,49 @@ date and commit.
 
 ## Done
 
+- 2026-10-10 (`e56154d`, `64d1003`, `de8478c`): wrote the 2 bank/insurer
+  `/learn` guides from the top of the list above
+  (`what-is-net-interest-margin.md`, `what-is-combined-ratio.md`) and
+  added a `metricsProfile(m)` branch to `relatedGuides()`
+  (`src/lib/metrics.ts:304`) so bank/insurer reports link them instead of
+  falling back to `gaap-vs-adjusted-eps`. Verified live on BPOP's company
+  page. **The articles themselves still need publishing** — this ops
+  environment has no `ADMIN_PASSWORD`/`SITE_URL`, so it can't run
+  `npm run admin-publish -- --articles-dir content/guides`; flagging for
+  whichever session runs the nightly report routine next (it has the
+  credential) to run that command once (safe to re-run, upserts by slug).
+  While verifying those links, found and fixed a real bug: six dynamic
+  routes were soft-404ing (HTTP 200 instead of a real 404) for content
+  that doesn't exist — `/companies/[slug]`, `/companies/[slug]/[year]/
+  [period]` (and `/write`, which shares the boundary), `/industries/
+  [slug]`, `/insights/[slug]`, `/learn/[slug]`, `/scorecards/[year]/
+  [period]`. Confirmed with fresh random slugs against production
+  (cache-MISS, so not a caching artifact) before and after. Every one of
+  these pages does call `notFound()` correctly — the actual cause was a
+  `loading.tsx` (skeleton) on the route itself *or* on a listing-level
+  ancestor (`insights/`, `learn/`, `scorecards/` each had one), which
+  turns the route into a streamed Suspense boundary: Next sends a 200
+  shell before the suspended page resolves to `notFound()`, so the status
+  can't change afterward. CLAUDE.md's "Stack notes" already called out
+  this exact trade-off for `/rates/` and `/app/reports/` ("No loading.tsx
+  under src/app/rates/: streaming would turn those 308s/404s into 200s")
+  — it just hadn't been checked for the rest. Fix: deleted the 9 offending
+  `loading.tsx` files (6 at the dynamic-segment level, plus 3 ancestor
+  ones at `insights/`, `learn/`, `scorecards/` root that still wrapped
+  their children even after the first round). Left every other
+  `loading.tsx` alone (`search/`, `earnings/`, the company-level ones that
+  have no ancestor boundary problem, etc.); `PageSkeleton` is still used
+  elsewhere, confirmed not dead code. Doesn't touch `revalidate` or make
+  anything dynamic, so the $1 spend-cap risk doesn't apply. Typechecked
+  clean both rounds, two preview-then-promote deploys
+  (`dpl_FvG6zbJcAus4QkDRd4WoZiWocVs8` then `dpl_C63yNaYPzW4Ue7EhATxsLKgFNCea`,
+  both READY), re-verified with fresh random slugs after each: all 6
+  routes now return real 404s, all spot-checked valid pages (including the
+  `/insights`, `/learn`, `/scorecards` listings themselves) still render
+  normally. Full health check clean after. Worth watching Search Console
+  over the next couple of weeks for whether this helps the indexing stall
+  below — soft 404s are one of Google's own named reasons for pages
+  staying stuck at "Discovered/Crawled – not indexed."
 - 2026-10-09: no new safe code change found worth making this cycle —
   broader audit than usual since the top 3 backlog items are all gated
   (indexing re-check not due until 10-11, opportunity queries still bot
