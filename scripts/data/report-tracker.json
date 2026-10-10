@@ -26571,5 +26571,51 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-10"
+  },
+  "BTSG": {
+    "name": "BrightSpring Health Services, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-10",
+      "url": "https://financialreportinsights.com/reports/cmv2od4c2000906lcj1gufifu"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31",
+      "note": "home health/specialty pharmacy. Growth mostly mix + Amedisys/LHC branch acquisitions (Provider Services +30.3%, $77.9M from acquired branches); script volume flat. FY guidance raised again."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "prior-year Q3 10-Q filed 2025-10-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-10"
+  },
+  "BULL": {
+    "name": "Webull Corporation - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-10",
+      "url": "https://financialreportinsights.com/reports/cmv2oc0g7000806lc9c98rmgg"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (earnings release, Exhibit 99.1)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19",
+      "note": "Cayman FPI retail brokerage, went public via SPAC 2025. Record revenue on trading-fee surge after June 4 end of Pattern Day Trader rule; swung to GAAP profit vs a $513M one-off-charge-distorted year-ago loss."
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-20",
+      "basis": "Q2 released ~7 weeks after quarter-end (Jun 30 -> Aug 19)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-10"
   }
 }

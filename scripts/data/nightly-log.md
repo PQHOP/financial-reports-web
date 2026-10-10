@@ -12121,3 +12121,45 @@ sanity check:
 
 **1 more new report-period — 29 report-periods total tonight.**
 report-tracker.json updated for BTQ. 6 slots left before the ~35 cap.
+
+Next `next-batch -- --n 6` printed BAOS/BLIV/BRAI/BTCT again (all
+still future-dated pending, left alone) plus BTSG and BULL. Dispatched
+two opus subagents in parallel, both succeeded and passed the
+live-page sanity check:
+
+- **BTSG** (BrightSpring Health Services) Q2 2026 (first report; home
+  health/specialty pharmacy) — revenue +23.0% to $3,873.1M, net income
+  from continuing ops $86.6M vs $8.5M; script volume flat (-0.1%) —
+  growth is mix (revenue/script +22.2%, Specialty & Infusion +30.1%)
+  plus the Amedisys/LHC acquired branches ($77.9M of Provider
+  Services' +30.3%, at ~8.7% margin vs ~15% for the rest of the
+  segment); lower deal/restructuring costs explain ~22% of the
+  operating-income jump, lower tax rate added ~$0.02 EPS; $300M debt
+  paydown took leverage to 2.15x; FY guidance raised again to
+  $15.10-15.43B revenue / $820-845M adj. EBITDA.
+  https://financialreportinsights.com/companies/btsg/2026/q2
+- **BULL** (Webull Corporation) Q2 2026 (first report; Cayman FPI
+  retail brokerage, SPAC-listed 2025) — record revenue $198.8M
+  (+51.2%) as trading revenue +66% on the June 4 end of the Pattern
+  Day Trader rule; net income swung to $24.4M from a $28.3M loss
+  (that prior-year loss inflated by $513M of one-off listing charges);
+  operating margin 22.9% vs -2.8%; but H1 net income only $2.6M (Q1
+  was still a $21.7M loss); adjusted net income $43.2M vs $24.4M GAAP,
+  gap mostly stock comp add-back; margin loans to customers +43% in
+  six months; no cash flow statement in the release.
+  https://financialreportinsights.com/companies/bull/2026/q2
+
+**2 more new report-periods — 31 report-periods total tonight.**
+report-tracker.json updated for BTSG and BULL. 4 slots left before
+the ~35 cap.
+
+**Standing down for this firing here, leaving 4 in reserve for later
+firings this window.** This firing (02:04-03:03 JST) picked up at
+26/35 (two subagents dispatched for BTBT/BTCS both independently
+confirmed as duplicates of the previous firing's work, no new
+report-periods from that), then published 5 new report-periods
+(BTDR, BTMD, BTQ, BTSG, BULL) and marked BTCT `"pending"` (FPI timing
+gap). Every report sanity-checked live before being marked done.
+Commits pushed cleanly to `master` throughout. Tier-1 backlog
+continuation point for the next firing: past BULL in the us-listed
+file. No blockers hit.
