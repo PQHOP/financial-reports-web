@@ -12231,5 +12231,39 @@ out, so dispatched two opus subagents in parallel for those instead:
 
 **1 more new report-period — 34 report-periods total tonight.**
 report-tracker.json updated for BVS. 1 slot left before the ~35 cap.
-BWB subagent still running; will update this entry on completion and
-stand down for the night once it resolves (cap reached either way).
+
+- **BWB** (Bridgewater Bancshares, Inc.) Q2 2026 (first report; bank
+  holding company, Minnesota) — net income +21.6% to $14.0M, EPS
+  +18.4% to $0.45, mainly from net interest income +18.8% to $38.6M
+  as NIM widened to 3.07% (loans repriced up, deposit costs fell) -
+  but a smaller loan-loss provision ($0.55M vs $2.0M) also did about
+  44% of the pre-tax profit increase. Nonaccrual loans rose from
+  $10.1M to $21.6M with no explanation given in the filing, though
+  charge-offs stayed tiny. Loans grew faster than deposits
+  (loan-to-deposit 101.8%, brokered deposits $891.5M). CET1 9.61%,
+  ROTCE 11.15%. No guidance given.
+  https://financialreportinsights.com/companies/bwb/2026/q2
+
+**1 more new report-period — 35/35 report-periods tonight — cap
+reached.** Standing down for the rest of the night.
+report-tracker.json updated for BWB.
+
+**Tonight's summary:** published 10 new report-periods across 10
+companies this firing (03:05-03:35 JST): BUSE, BVFL, BVS, BWB —
+alongside the earlier firing's BTDR, BTMD, BTQ, BTSG, BULL, and the
+BTCT pending-mark. All ten of this firing's reports were tier-1
+us-listed backlog (past BULL, alphabetical: BUSE/BVFL/BVS/BWB), no
+tier-0 fresh filings (scan-recent-filings returned 0 candidates) and
+no pending entries with a passed nextExpectedFiling estimate.
+BAOS/BLIV/BRAI/BTCT checked directly against the tracker and
+confirmed still genuinely future-dated — left alone again. BUUU
+Group Limited and BitVentures Limited (BVC) are FPI 6-K filers whose
+filings weren't checked closely enough to resolve tonight — flagged
+above, no tracker entry yet, left for a future firing. Every
+published report sanity-checked live (full content through the
+Takeaway, nothing truncated) before being marked done. Commits
+pushed cleanly to `master` throughout (one push needed a fetch/rebase
+after a detached-HEAD state, resolved without data loss). Tier-1
+backlog continuation point for the next firing: past BWB in the
+us-listed file (next up per `next-batch`: BUUU, BVC, BWEN, BWFG,
+BWIN, BWMN, BXBL, BYAH, BYFC, BYND, BYSI, ...).

@@ -26686,5 +26686,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BWB": {
+    "name": "Bridgewater Bancshares, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2pubvv000906l2qvx113v0"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30",
+      "note": "bank holding company (Minnesota). Net income +21.6% to $14.0M, EPS +18.4% to $0.45, mainly from net interest income +18.8% to $38.6M as NIM widened to 3.07% (loans repriced up, deposit costs fell) - but a smaller loan-loss provision ($0.55M vs $2.0M) also did about 44% of the pre-tax profit increase. Nonaccrual loans rose from $10.1M to $21.6M with no explanation given in the filing, though charge-offs stayed tiny. Loans grew faster than deposits (loan-to-deposit 101.8%, brokered deposits $891.5M). CET1 9.61%, ROTCE 11.15%. No guidance given."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q2 10-Q filed 9 days after the 2026-07-21 earnings release; Q3 earnings 8-K likely first, ~2026-10-20/21 (not confirmed)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
