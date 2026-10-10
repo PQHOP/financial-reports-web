@@ -26439,5 +26439,51 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BTCS": {
+    "name": "BTCS Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2ngnbo000506l27f5v9fb6"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19",
+      "note": "crypto fair-value accounting dominates the loss; cash position very thin ($262K at quarter-end, though company cites $113.4M cash+liquid-assets as of 8/17); Aave borrowing ~$53M post-quarter"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-17",
+      "basis": "estimated ~90 days from Q2 10-Q filed 2026-08-19",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "BTBT": {
+    "name": "Bit Digital, Inc. - Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2ngs38000406lcsmr03i11"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13",
+      "note": "crypto fair-value accounting (ETH/BTC/LsETH marks) dominates the GAAP loss; consolidates 69.6%-owned WhiteFiber (WYFI)"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "prior-year Q3 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

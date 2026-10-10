@@ -11977,4 +11977,55 @@ opus subagents in parallel.
 
 **2 more new report-periods — 24 report-periods total tonight.**
 report-tracker.json updated for BTBD and BSY. 11 slots left before
-the ~35 cap; continuing cautiously. Commit pending.
+the ~35 cap; continuing cautiously. Committed as `92b38e7`, pushed
+cleanly.
+
+Twelfth tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI
+again (still future-dated pending) plus two crypto-treasury
+companies: BTBT and BTCS. Both subagents were briefed explicitly to
+separate crypto fair-value accounting swings from the actual operating
+business. Dispatched in parallel, both succeeded and passed the
+live-page sanity check:
+
+- **BTBT** (Bit Digital) Q2 2026 (first report; crypto mining pivoting
+  to ETH staking + AI/HPC infra via 69.6%-owned WhiteFiber/WYFI) —
+  revenue +25.2% to $32.1M, but that depends on a one-off $12.3M
+  customer-termination fee the company's own press release doesn't
+  mention; ex-that-fee revenue fell ~23% and gross margin was ~32% vs
+  the reported 57.9%. Net loss $107.2M (-$111.7M incl. minority
+  interest) almost entirely crypto fair-value marks (~$71.6M of ETH/
+  BTC/LsETH price moves); ex-crypto-and-other-one-offs pre-tax loss
+  was ~$22.7M. $50M Galaxy loan callable on 7 days' notice, secured by
+  LsETH. https://financialreportinsights.com/companies/btbt/2026/q2
+- **BTCS** (BTCS Inc.) Q2 2026 (first report; small-cap ETH validator/
+  DeFi company) — revenue -11.9% to $2.45M as validator/block-building
+  revenue fell 66%; net loss $34.9M almost entirely ETH price moves
+  (~$31.55M of the loss), with ~$3.35M of underlying operating loss;
+  realized losses included selling ETH below cost to pay down Aave
+  loans; cash was just $262K at quarter-end (company cites $113.4M
+  cash+liquid-assets as of Aug 17, which the report notes separately);
+  Aave borrowing rose to ~$53M post-quarter with an estimated ETH
+  liquidation trigger around $1,420; $17.9M of convertible notes due
+  2027 unlikely to convert given the ~$1.05 recent share price vs
+  $5.85/$13.00 strike prices.
+  https://financialreportinsights.com/companies/btcs/2026/q2
+
+**2 more new report-periods — 26 report-periods total tonight.**
+report-tracker.json updated for BTBT and BTCS. 9 slots left before the
+~35 cap.
+
+**Standing down for this firing here, leaving 9 in reserve for later
+firings this window (02:xx–07:59 JST).** This firing cleared tier 0
+completely (5 fresh-filing candidates: DAL/MU/CCEL/JEF/WOR) and worked
+12 further tier-1 batches straight through BAOS/BLIV/BRAI (all three
+still future-dated pending, skipped consistently) to BTBT/BTCS in the
+us-listed file, publishing 26 report-periods across 24 companies plus
+1 edit (MU) and 2 skips (BRKH, BRTM — both pre-merger SPACs caught by
+a direct EDGAR SIC check before spending a subagent cycle). Every
+report was sanity-checked live on financialreportinsights.com after
+publish (Takeaway + "what the headline numbers hide" present, no
+truncation) before being marked done in the tracker. Tier-1 backlog
+continuation point for the next firing: past BTCS in the us-listed
+file. Commits pushed cleanly to `master` throughout (14 commits this
+firing). No blockers hit — network, git, admin-publish and Playwright
+all worked cleanly all firing, no cert/trust issues this time.
