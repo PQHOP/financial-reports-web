@@ -26617,5 +26617,51 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-10"
+  },
+  "BUSE": {
+    "name": "First Busey Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2plo1u000a06lc5pvixy4s"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06",
+      "note": "bank holding company. GAAP net income +33.3% to $63.2M, mostly because Q2 2025 carried $16.6M of CrossFirst-acquisition costs; adjusted EPS +9.5% with most of that from buybacks (shares down 6.0%). Revenue flat, loans/deposits down ~4% as brokered deposits ran off; NIM widened to 3.72% but acquisition-accounting accretion keeps shrinking. Non-performing loans rose from $46.6M to $67.4M (one commercial credit) while the provision ($2.2M) ran below charge-offs ($6.4M), cutting reserve coverage. CET1 12.53%, ROTCE 14.49%. No numeric guidance given."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings release)",
+      "estimate": "2026-10-28",
+      "basis": "Q2 2026 earnings released 2026-07-28, ~28 days after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "BVFL": {
+    "name": "BV Financial, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2pn215000b06lcl0698x2o"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12",
+      "note": "bank holding company (BayVanguard Bank, Baltimore). Net income +21.0% to $3.46M, EPS +44.8% to $0.42 - most of that gain from a 16.8% lower diluted share count (buybacks), a small loan-loss reserve release vs a charge a year ago, and a ~$0.3M one-off gain on early FHLB debt repayment. Management's own pre-provision earnings measure fell 2.9%. Loans down 5.9% in six months; non-accrual loans up from $2.3M to $3.4M while reserves fell from 1.22% to 0.87% of loans. Very high capital (CET1 22.40%), which keeps ROE low (7.56%) despite ROA 1.54%. No guidance given."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings release)",
+      "estimate": "2026-10-23",
+      "basis": "Q2 released 2026-07-24, Q1 released 2026-04-24 - roughly 23 days after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

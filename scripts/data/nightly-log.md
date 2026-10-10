@@ -12163,3 +12163,46 @@ gap). Every report sanity-checked live before being marked done.
 Commits pushed cleanly to `master` throughout. Tier-1 backlog
 continuation point for the next firing: past BULL in the us-listed
 file. No blockers hit.
+
+This firing (03:05 JST) ran `scan-recent-filings` (0 fresh candidates
+— tier 0 empty) then `next-batch`, which still printed
+BAOS/BLIV/BRAI/BTCT first — all three genuinely still future-dated
+pending (checked each tracker entry directly: BAOS next expected
+2026-11-27, BLIV 2026-10-20, BRAI 2026-10-28, BTCT 2026-11-12), so
+left alone again. Widened to `--n 20` to get past them: next
+candidates in file order are BUSE, BUUU, BVC, BVFL, BVS, BWAY, BWB,
+BWEN, BWFG, BWIN, BWMN, BXBL, BYAH, BYFC, BYND, BYSI. Dispatched two
+opus subagents in parallel for BUSE and BVFL (the two established
+bank names in that set):
+
+- **BUSE** (First Busey Corporation) Q2 2026 (first report; bank
+  holding company) — GAAP net income +33.3% to $63.2M, mostly because
+  Q2 2025 carried $16.6M of CrossFirst-acquisition costs; adjusted
+  EPS +9.5% with most of that from buybacks (diluted share count
+  -6.0%, $128.8M bought back YTD). Revenue flat ($196.7M, -0.7%),
+  loans -4.4% to $13.195B and deposits -4.3% to $15.129B as brokered
+  deposits were deliberately run off; NIM widened to 3.72% (3.62%
+  ex-accretion) but the acquisition-accounting boost keeps shrinking
+  ($7.1M -> $5.4M -> $4.2M over the last three quarters). Efficiency
+  ratio improved to 53.96%. Credit quality weakened while reserves
+  were cut: non-performing loans rose from $46.6M to $67.4M (one
+  commercial credit) and the $2.2M provision ran below $6.4M of
+  charge-offs, so reserve coverage of NPLs fell from 3.63x to 2.44x.
+  CET1 12.53%, ROTCE 14.49%. No numeric guidance given.
+  https://financialreportinsights.com/companies/buse/2026/q2
+
+- **BVFL** (BV Financial, Inc.) Q2 2026 (first report; BayVanguard
+  Bank holding company, Baltimore) — net income +21.0% to $3.46M,
+  EPS +44.8% to $0.42, but most of that EPS gain came from a 16.8%
+  lower diluted share count (buybacks), a small loan-loss reserve
+  release vs a charge a year ago, and a ~$0.3M one-off gain on early
+  FHLB debt repayment; management's own pre-provision earnings
+  measure fell 2.9%. Loans down 5.9% in six months; non-accrual loans
+  up from $2.3M to $3.4M while reserves fell from 1.22% to 0.87% of
+  loans. Very high capital (CET1 22.40%) keeps ROE low (7.56%)
+  despite ROA 1.54%. No guidance given.
+  https://financialreportinsights.com/companies/bvfl/2026/q2
+
+**2 more new report-periods — 33 report-periods total tonight.**
+report-tracker.json updated for BUSE and BVFL. 2 slots left before
+the ~35 cap.
