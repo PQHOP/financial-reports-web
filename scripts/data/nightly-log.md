@@ -11809,4 +11809,24 @@ live-page sanity check:
 
 **1 more new report-period — 14 report-periods total tonight.**
 report-tracker.json updated for BRUN. Still well under the ~35 cap.
-Commit pending.
+Committed as `5f8e4b2`, pushed cleanly.
+
+Seventh tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI
+again (still future-dated pending) plus BRVE and BRZE. Dispatched two
+opus subagents in parallel.
+
+- **BRVE** (Braveheart Bio) Q2 2026 (first report; clinical-stage
+  biotech, IPO'd Aug 2026 — this is its first periodic filing) — no
+  revenue, net loss $14.99M ($2.51/share), R&D $11.1M mostly for the
+  LIONHEART-HCM Phase 3 trial; $122.8M cash at quarter-end ($527.3M pro
+  forma with IPO proceeds), management says this funds operations into
+  2029 — the subagent's own math flags that implies spending 3-4x the
+  current quarterly pace to actually last that long. Licensed its lead
+  drug from Hengrui (China) with up to $1B in sales milestones + 5-10%
+  royalties. https://financialreportinsights.com/companies/brve/2026/q2
+  Succeeded, passed the live-page sanity check.
+- **BRZE** (Braze, Inc.) — still researching (fiscal year ends Jan 31,
+  so quarter labeling needs care); see next entry for the outcome.
+
+**1 more new report-period — 15 report-periods total tonight so far.**
+report-tracker.json updated for BRVE. Commit pending.
