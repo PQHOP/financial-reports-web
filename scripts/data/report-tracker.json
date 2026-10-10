@@ -26371,5 +26371,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BSVN": {
+    "name": "Bank7 Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2n3pt3000106lc9f4ahr7q"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10",
+      "note": "pending acquisition of Century Financial Services (Century Bank, Santa Fe NM, $1.36B assets) agreed 2026-09-16, expected to close ~2026-11-01"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "earnings 8-Ks filed 2026-04-14 and 2026-07-16; Q3 earnings release estimated mid-October, 10-Q ~90 days after Q2's 2026-08-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

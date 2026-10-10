@@ -11925,8 +11925,19 @@ two opus subagents in parallel.
   no CET1/ROTCE reported (uses community bank leverage ratio
   framework instead). https://financialreportinsights.com/companies/bsrr/2026/q2
   Succeeded, passed the live-page sanity check.
-- **BSVN** (Bank7 Corp.) — still researching; see next entry for the
-  outcome.
+- **BSVN** (Bank7 Corp.) Q2 2026 (first report; full bank-metrics
+  schema) — EPS fell 25%, mostly from a $2.1M pre-tax loss selling
+  oil & gas assets taken over from a bad 2023 energy loan (over the
+  full holding period the assets still returned $3.7M net); ex-that
+  item pre-tax profit was ~11% lower YoY; NIM fell to 4.81% from 4.96%
+  as loan yields dropped faster than deposit costs; credit quality
+  clean (0.39% nonaccrual, 3.1x reserve coverage); notable
+  concentration (hotel loans 18.2% of book, CRE 60.7% total); agreed
+  Sept 16 to buy Century Financial Services/Century Bank ($1.36B
+  assets) for ~$137.3M cash+stock, expected to close ~Nov 1 2026.
+  https://financialreportinsights.com/companies/bsvn/2026/q2
+  Succeeded, passed the live-page sanity check.
 
-**1 more new report-period — 21 report-periods total tonight so far.**
-report-tracker.json updated for BSRR. Commit pending.
+**2 more new report-periods — 22 report-periods total tonight.**
+report-tracker.json updated for BSRR and BSVN. Nearing two-thirds of
+the ~35 cap; continuing cautiously. Commit pending.
