@@ -26349,5 +26349,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BSRR": {
+    "name": "Sierra Bancorp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2n21ft000006lc7gpfdjh5"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "Q1 pattern: earnings 8-K 2026-04-27, 10-Q 2026-05-01; Q2 earnings 8-K 2026-07-27, 10-Q 2026-07-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

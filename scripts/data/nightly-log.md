@@ -11910,4 +11910,23 @@ the live-page sanity check:
 
 **2 more new report-periods — 20 report-periods total tonight.**
 report-tracker.json updated for BSIN and BSP. Just over half the ~35
-cap; continuing. Commit pending.
+cap; continuing. Committed as `8480659`, pushed cleanly.
+
+Tenth tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
+(still future-dated pending) plus two banks: BSRR and BSVN. Dispatched
+two opus subagents in parallel.
+
+- **BSRR** (Sierra Bancorp) Q2 2026 (first report; community bank,
+  full bank-metrics schema) — net income $9.9M vs $10.6M a year
+  earlier, mainly a $2.5M specific reserve on one agricultural/lumber-
+  industry loan; NIM actually widened to 3.74% from 3.68% on falling
+  deposit costs; 5% buyback-driven share count cut partly offset the
+  EPS hit; first-half operating cash flow $16.5M vs $22.4M net income;
+  no CET1/ROTCE reported (uses community bank leverage ratio
+  framework instead). https://financialreportinsights.com/companies/bsrr/2026/q2
+  Succeeded, passed the live-page sanity check.
+- **BSVN** (Bank7 Corp.) — still researching; see next entry for the
+  outcome.
+
+**1 more new report-period — 21 report-periods total tonight so far.**
+report-tracker.json updated for BSRR. Commit pending.
