@@ -11570,3 +11570,103 @@ us-listed file (BAOS/BLIV still pending-due with future-dated estimates,
 BPAC skipped as a pre-merger SPAC — none need re-checking tonight).
 Commits pushed cleanly to `master` throughout this firing (3 commits:
 BOTJ, BOXL, BPOP).
+
+### 2026-10-10 night (16:00 UTC 2026-10-10 → 22:59 UTC 2026-10-10 / 01:00–07:59 JST 2026-10-11)
+
+**01:13 JST firing (new session).** Network check passed cleanly this
+time: `curl` to sec.gov without a User-Agent returned 403 (Akamai, SEC's
+own response, not a proxy denial); with the required User-Agent it
+returned 200. Proxy status showed no recent relay failures. Repo was in
+detached HEAD again (stale local ref) — `git fetch origin master` +
+`git checkout -B master origin/master` fixed it, no work lost.
+`npm install` hit one transient `ECONNRESET`; a bare retry succeeded.
+`npx prisma generate` needed a dummy `DATABASE_URL` as before.
+
+**Tier 0 (`scan-recent-filings`, last 7 days):** 5 fresh candidates —
+DAL and MU as `"update"` (both already `"done"`, newer filings landed),
+plus three new us-listed companies (CCEL, JEF, WOR) with no report yet.
+Dispatched 5 opus subagents in parallel (one per company), all
+succeeded and passed the live-page sanity check (cache-busted fetch,
+Takeaway + "what the headline numbers hide" present, not truncated):
+
+- **DAL** (Delta Air Lines) Q3 2026 — new period (last published was
+  Q2). Revenue a record $20.19B (+21.1%, refinery sales included), but
+  operating margin fell to 7.2% from 10.1% and net income dropped 46.6%
+  to $756M on jet fuel averaging $3.80/gal (GAAP) — about $527M more
+  than the $3.15 Delta had guided to in July. Full-year adjusted-EPS
+  guidance cut to $5.10–5.60 from $6.50–7.50.
+  https://financialreportinsights.com/companies/dal/2026/q3
+- **MU** (Micron) — `"update"` resolved as an **edit**, not a new
+  report-period: the actual 10-K (filed 2026-10-09) landed three weeks
+  after the 8-K earnings release our existing FY2026 ANNUAL report
+  (published 2026-10-01) was written from. The subagent checked and
+  found materially new content the old report had flagged as pending
+  (DRAM/NAND price-vs-volume split, full business-unit margins, Pillar
+  Two tax liability, Netlist/YMTC litigation items, raised buyback
+  authorization) — all figures matched the original release, nothing
+  contradicted. Edited in place via `--edit`, sourceUrl updated to the
+  10-K itself. https://financialreportinsights.com/companies/mu/2026/annual
+- **CCEL** (Cryo-Cell International) Q3 FY2026 (first report; fiscal
+  year ends Nov 30) — revenue flat at $7.82M but net income +70% to
+  $1.27M, about 41% of the profit gain from a swing in marketable-
+  securities gains rather than operations; NYSE American listing-
+  compliance notice outstanding, $100M+ Duke arbitration ruling pending.
+  https://financialreportinsights.com/companies/ccel/2026/q3
+- **JEF** (Jefferies Financial Group) fiscal Q3 2026 (first report;
+  FYE Nov 30) — net revenues $2,221.9M (+8.5%), records in advisory and
+  equities trading offset by weak bond trading/underwriting/asset
+  management; pre-tax margin basically flat (15.8% vs 16.2%) but net
+  earnings +26.7% to $283.9M helped by a lower tax rate and the SMBC
+  preferred-to-common conversion. No bank-style metrics used (not a
+  deposit-taking bank). https://financialreportinsights.com/companies/jef/2026/q3
+- **WOR** (Worthington Enterprises) Q1 FY2027 (Jun–Aug 2026, labelled
+  year 2026/period Q1 on the site per existing May/August-FYE
+  convention; first report) — sales +13.2% to $343.9M but operating
+  margin only 3.8%; ~73% of pre-tax profit came from JV equity income
+  (WAVE, ClarkDietrich); adjusted EPS $0.82 includes a tariff-refund
+  benefit the company does not exclude (~$0.76 without it, per the
+  subagent's own calculation, labelled as such in the report).
+  https://financialreportinsights.com/companies/wor/2026/q1
+
+Tier 0 cleared: re-ran `scan-recent-filings` afterward and it came back
+with 0 fresh candidates, confirming all 5 are resolved.
+
+**4 new report-periods tonight** (DAL, CCEL, JEF, WOR — the MU edit
+doesn't count as a new report-period per CLAUDE.md's "same period
+already published" rule).
+
+**Tier 1 (`next-batch -- --n 5`):** printed BAOS/BLIV again (both
+`"pending"` with future-dated `nextExpectedFiling` estimates — Nov 27
+and Oct 20 respectively — left alone, same as prior nights) plus three
+new us-listed companies: BPRN, BRAG, BRAI.
+
+- **BPRN** (Princeton Bancorp) Q2 2026 (first report; community bank,
+  full bank-metrics schema) — EPS $1.04 vs $0.10 a year ago, but the
+  prior year was depressed by a one-off $7.0M CRE credit-loss provision;
+  NIM improved to 3.86% from 3.54% on falling deposit costs; CRE is
+  71.8% of loans (47.5% of that in NY), non-performing loans flat for
+  five quarters. https://financialreportinsights.com/companies/bprn/2026/q2
+- **BRAG** (Bragg Gaming Group) Q2 2026 (first report; Canadian 40-F
+  filer, reports in EUR — currency kept as EUR, not converted) —
+  revenue down 12.2% to EUR22.9M on lost Dutch platform contracts and
+  operators moving to direct supplier deals; Adjusted EBITDA flat at
+  EUR3.5M only because of a EUR1.7M favorable bad-debt swing; full-year
+  guidance withdrawn; post-quarter Drayton acquisition paid entirely in
+  stock (+21% share count) and a further ~19% workforce cut announced.
+  YoY percentage fields omitted for net income/EPS since both periods
+  were losses (a raw % would misleadingly read as improvement) — body
+  states the euro change instead.
+  https://financialreportinsights.com/companies/brag/2026/q2
+- **BRAI** (Braiin Limited) — **no report published.** IPO'd on Nasdaq
+  Feb 2026 (Australian FPI, FYE June 30); EDGAR has only the F-1/424B4
+  and press-release 6-Ks (stock split, Home.cc term sheet, partnerships)
+  — no 20-F or results 6-K for any period yet as of 2026-10-10. Marked
+  `"pending"` with `nextExpectedFiling` estimated 2026-10-28 (first 20-F,
+  ~4 months after FYE) rather than skipped, since this is a timing gap
+  not a permanent exclusion.
+
+**2 more new report-periods this batch (BPRN, BRAG) — 6 report-periods
+total tonight so far.** report-tracker.json updated for all 7 companies
+touched (DAL, MU, CCEL, JEF, WOR, BPRN, BRAG, BRAI — 8 entries, 6 new
+report-periods + 1 edit + 1 pending). Well under the ~35 cap; continuing
+with further tier-1 batches this firing. Commit pending.
