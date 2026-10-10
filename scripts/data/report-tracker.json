@@ -26525,5 +26525,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-10"
+  },
+  "BTMD": {
+    "name": "Biote Corp. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-10",
+      "url": "https://financialreportinsights.com/reports/cmv2o0dd8000706l2ghmsqqh7"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07",
+      "note": "hormone-optimization/BHRT pellet therapy company. Revenue hit by Jan 2026 Asteria Health pellet recall (~$3.3M cost); $5.1M legal settlements + CEO resignation (June 8); FY guidance cut Aug 5."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "Q1 2026 pattern was 8-K May 6 then 10-Q May 11; prior-year Q3 10-Q filed 2025-11-07/2024-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-10"
   }
 }

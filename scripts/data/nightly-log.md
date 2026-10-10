@@ -12078,3 +12078,26 @@ crypto-miner-adjacent us-listed companies: BTCT and BTDR.
 **1 more new report-period — 27 report-periods total tonight.**
 report-tracker.json updated for BTCT (pending) and BTDR (done). 8
 slots left before the ~35 cap; continuing.
+
+Next `next-batch -- --n 5` printed BAOS/BLIV/BRAI/BTCT again (all
+still future-dated pending, left alone) plus BTMD. Dispatched one
+opus subagent; succeeded and passed the live-page sanity check:
+
+- **BTMD** (biote Corp.) Q2 2026 (first report; hormone-optimization/
+  BHRT pellet-therapy company) — revenue -9.5% to $44.2M, procedure
+  (pellet) revenue -13.9% after the January 2026 Asteria Health pellet
+  recall (~$3.3M cost this quarter); gross margin fell to 65.4% from
+  71.6% on higher-cost outside-supplier replacement pellets; $5.1M of
+  legal settlements plus higher legal fees flipped last year's $10.8M
+  operating profit into a $3.5M operating loss; adjusted EBITDA $5.6M
+  vs $15.2M; FY guidance cut Aug 5 (above $190M/above $38M adj.
+  EBITDA → above $175M/above $25M), dropping the promised H2 return to
+  procedure growth. CEO resigned June 8 (interim CEO in place); net
+  debt ~$114M (~4.5x new EBITDA floor) after a new $125M Truist term
+  loan, against a 3.75x covenant (company says in compliance); $5.9M
+  of buybacks went ahead while cash fell from $24.1M to $11.2M.
+  https://financialreportinsights.com/companies/btmd/2026/q2
+
+**1 more new report-period — 28 report-periods total tonight.**
+report-tracker.json updated for BTMD. 7 slots left before the ~35
+cap.
