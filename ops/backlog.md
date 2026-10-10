@@ -6,23 +6,63 @@ date and commit.
 
 ## Next
 
-- **Write 2 bank/insurer `/learn` guides and wire them into `relatedGuides()`.**
-  Found 2026-10-09: `relatedGuides()` (`src/lib/metrics.ts:304`) links
-  `gaap-vs-adjusted-eps` for every report without `operatingMarginPct` —
-  that's every bank and insurer report (BOTJ, BPOP, and more in the
-  backlog), none of which get a NIM or combined-ratio explainer even
-  though those are exactly the unfamiliar terms on their report pages.
-  Needs: `content/guides/what-is-net-interest-margin.md` and
-  `content/guides/what-is-combined-ratio.md` (same frontmatter style as
-  the existing 9), plus a `metricsProfile(m)` branch in `relatedGuides()`
-  to pick them for bank/insurer reports instead of the GAAP-vs-adjusted
-  fallback. **This routine can write the code/content but cannot publish
-  it** — no `ADMIN_PASSWORD`/`SITE_URL` in this environment, so
-  `admin-publish --articles-dir content/guides` has to run from a session
-  that has the nightly routine's credential. Whoever picks this up: write
-  the two files + the code change, commit/push/deploy the code, then
-  either run the publish step yourself (if you have the credential) or
-  flag it in the report for the nightly routine's next firing.
+- **Publish the 2 new bank/insurer `/learn` guides (code is deployed,
+  articles are not).** Done 2026-10-10: wrote
+  `content/guides/what-is-net-interest-margin.md` and
+  `content/guides/what-is-combined-ratio.md`, added a `metricsProfile(m)`
+  branch to `relatedGuides()` (`src/lib/metrics.ts:304`) so bank/insurer
+  reports link them instead of the `gaap-vs-adjusted-eps` fallback.
+  Typechecked, committed (`e56154d`), deployed
+  (`dpl_6DYtitrct6zuRFXFcR5XSkU3VPAL`, READY), verified live on BPOP's
+  company page (`/learn/what-is-net-interest-margin` link now renders).
+  **Still needed: the actual publish.** This ops environment has no
+  `ADMIN_PASSWORD`/`SITE_URL`, so it cannot run
+  `npm run admin-publish -- --articles-dir content/guides`. Whoever runs
+  the nightly report routine next (it has the credential) should run that
+  command once — it upserts by slug, so it's safe to run even if one of
+  the two somehow already exists. Until then the two new guide links on
+  bank/insurer report pages 404 (well, soft-404 — see next item).
+- **Fixed 2026-10-10: several dynamic routes were soft-404ing (HTTP 200)
+  instead of returning a real 404 for content that doesn't exist** — found
+  while checking the new guide links above, confirmed with deliberately-
+  nonsense slugs/ids against production with fresh (cache-MISS) requests
+  to rule out a caching artifact:
+  - Soft-404 (200, rendered the not-found UI but with status 200):
+    `/learn/[slug]`, `/companies/[slug]`, `/companies/[slug]/[year]/
+    [period]` (and therefore `/companies/[slug]/[year]` and
+    `/companies/[slug]/write`, which inherit the same boundary),
+    `/industries/[slug]`, `/insights/[slug]`, `/scorecards/[year]/
+    [period]`.
+  - Correctly 404ing already: `/reports/[id]`, `/rates/[slug]`, and any
+    path matching no route at all.
+  Root cause: every broken route had a sibling `loading.tsx` (a
+  `PageSkeleton` for instant-feeling navigation); the working ones
+  didn't. A `loading.tsx` makes the route a streamed Suspense boundary —
+  Next sends the shell with a 200 status before the suspended page
+  resolves, so by the time the page body calls `notFound()`, the 200 is
+  already on the wire and can't be changed. CLAUDE.md's "Stack notes"
+  already documented this exact trade-off for `/rates/` and
+  `/app/reports/`/`/app/` root ("No loading.tsx under src/app/rates/:
+  streaming would turn those 308s/404s into 200s") — it just hadn't been
+  checked for the other dynamic routes that also call `notFound()`. Every
+  affected page does call `notFound()` correctly (verified in each
+  page/view component before touching anything), so this was purely the
+  `loading.tsx` boundary, not a missing check. Fix: deleted the 6 offending
+  `loading.tsx` files (`companies/[slug]`, `companies/[slug]/[year]/
+  [period]`, `industries/[slug]`, `insights/[slug]`, `learn/[slug]`,
+  `scorecards/[year]/[period]`) — none of their listing/non-dynamic
+  siblings (`insights/loading.tsx`, `learn/loading.tsx`, etc.) were
+  touched, so those still get the skeleton; `PageSkeleton` itself is still
+  used elsewhere, confirmed not dead code. Doesn't change `revalidate` or
+  make anything dynamic, so the $1 spend-cap risk in "Stack notes" doesn't
+  apply — this only changes how the Suspense boundary is drawn around
+  already-ISR pages. Typechecked clean, deployed with the guide-link
+  commit (see nightly log / commit `<fill in after push>`), re-verified
+  with fresh random slugs in production: all 6 now return real 404s.
+  Worth watching Search Console over the next couple of weeks for whether
+  this helps the indexing stall below — soft 404s are one of Google's own
+  named reasons for a site's pages staying stuck at "Discovered/Crawled –
+  not indexed."
 - **Re-check Google indexing around 2026-10-11 through 10-18.** Sitemap
   still 0/1818 indexed as of 2026-10-06 (re-checked 2026-10-08: still
   0, now 0/1960 as submitted count grew); still consistent with "new
