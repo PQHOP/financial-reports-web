@@ -12029,3 +12029,34 @@ continuation point for the next firing: past BTCS in the us-listed
 file. Commits pushed cleanly to `master` throughout (14 commits this
 firing). No blockers hit — network, git, admin-publish and Playwright
 all worked cleanly all firing, no cert/trust issues this time.
+
+**02:04 JST firing (new session, overlapped ~1 min with the previous
+firing's final push).** Picked up at 26/35. `next-batch -- --n 5`
+printed BAOS/BLIV/BRAI again (still future-dated pending) plus BTBT
+and BTCS — both already published moments earlier by the previous
+firing. Dispatched two opus subagents for them anyway (ran
+concurrently with that firing's own dispatch, before its push was
+visible here); both independently read the same 10-Qs and reached the
+same figures, then hit admin-publish's uniqueness check and correctly
+declined to publish or edit. No new report-periods from this —
+confirms the existing BTBT/BTCS reports are sound (both subagents'
+independent reads matched the live content). One correction from the
+BTCS subagent: the orchestrator had briefed it with the wrong CIK for
+BTCS Inc. (gave it CIK 0002089189 "BTCS Labs Inc.", an unrelated shell
+registered Oct 2025; the real ticker BTCS is CIK 1436229) — moot since
+a duplicate was hit first, and the already-published report used the
+correct CIK 1436229 filing (10-Q filed 2026-08-19 after an NT 10-Q
+late notice), so no tracker correction needed.
+
+Next `next-batch -- --n 5` printed BAOS/BLIV/BRAI again plus two more
+crypto-miner-adjacent us-listed companies: BTCT and BTDR.
+- **BTCT** (BTC Digital Ltd.) — **no report published.** Cayman FPI,
+  20-F annual + 6-K interim only, no quarterlies. FY2025 20-F (filed
+  2026-05-11) doesn't count for 2026. Last year's H1 2025 financial-
+  statements 6-K didn't land until 2025-11-12, ~4.5 months after
+  period end; EDGAR full-text search found no H1 2026 equivalent yet
+  as of 2026-10-10. Marked `"pending"`, `nextExpectedFiling` estimated
+  2026-11-12 (same cadence), not skipped — timing gap, not permanent.
+- **BTDR** (Bitdeer Technologies Group) — in progress; one opus
+  subagent dispatched for its Q2 2026 earnings 6-K (filed 2026-08-10,
+  Exhibit 99.1). Outcome in the next entry.

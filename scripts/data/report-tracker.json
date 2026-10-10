@@ -26485,5 +26485,22 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BTCT": {
+    "name": "BTC Digital Ltd. - Ordinary Shares",
+    "status": "pending",
+    "skipReason": "foreign private issuer (Cayman), files 20-F annual + 6-K interim only, no 10-Q; FY2025 20-F filed 2026-05-11 does not count for 2026 coverage. Last year's H1 2025 unaudited financial statements 6-K (period ended 2025-06-30) was not filed until 2025-11-12 — about 4.5 months after period end. No equivalent H1 2026 financial-statements 6-K found on EDGAR as of 2026-10-10 (checked EDGAR full-text search for \"UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS\" on this CIK in 2026 — zero hits); this is a timing gap, not a permanent exclusion.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-05-11"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 unaudited financial statements)",
+      "estimate": "2026-11-12",
+      "basis": "H1 2025 financial-statements 6-K filed 2025-11-12 (same cadence pattern)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-10"
   }
 }
