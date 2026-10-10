@@ -11704,5 +11704,21 @@ Third tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
 (Burtech Acquisition Corp II) directly on EDGAR before spending a
 subagent on it: SIC 6770 "BLANK CHECKS", pre-merger SPAC, 10-Q only has
 trust-account interest income — skipped with that reason (same pattern
-as BPAC/BLZR). Dispatched one opus subagent for BRID (Bridgford Foods);
-still running — see next entry for the outcome.
+as BPAC/BLZR). Dispatched one opus subagent for BRID (Bridgford Foods); succeeded and
+passed the live-page sanity check:
+
+- **BRID** (Bridgford Foods) fiscal Q3 FY2026 (12 weeks ended
+  2026-07-10; first report — fiscal year runs Nov–Oct, offset clearly
+  explained in the report body) — sales down 9.5% to $47.0M as volume
+  fell 17.2% despite a 10.3% price increase; gross margin actually
+  improved (23.1% vs 20.5%) despite rising meat costs, but the net loss
+  widened to $2.0M from $1.6M on a smaller one-off life-insurance gain,
+  not the operating business. Flagged financing risk: Wells Fargo has
+  said it will not renew the credit line (currently extended to
+  2026-11-13), covenant breaches already waived twice, cash down to
+  $333K at quarter-end, no replacement lender announced yet.
+  https://financialreportinsights.com/companies/brid/2026/q3
+
+**1 more new report-period — 9 report-periods total tonight.**
+report-tracker.json updated for BRID and BRKH. Still well under the
+~35 cap; continuing with further batches. Commit pending.

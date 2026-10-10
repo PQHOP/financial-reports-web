@@ -26068,5 +26068,27 @@
       "filedAt": "2026-08-14"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BRID": {
+    "name": "Bridgford Foods Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2lxzld000106jto5huxtru"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-10",
+      "filedAt": "2026-08-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2027-01-28",
+      "basis": "fiscal year ends 2026-10-30; prior-year 10-K filed 2026-01-28",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
