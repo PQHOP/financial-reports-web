@@ -11875,4 +11875,39 @@ subagents in parallel.
 
 **2 more new report-periods — 18 report-periods total tonight.**
 report-tracker.json updated for BSBK and BSEM. Still well under the
-~35 cap; continuing. Commit pending.
+~35 cap; continuing. Committed as `642441a`, pushed cleanly.
+
+Ninth tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
+(still future-dated pending) plus BSIN and BSP. Pre-checked BSIN on
+EDGAR before dispatching: SIC 1311 (oil & gas), real operating company.
+Dispatched two opus subagents in parallel, both succeeded and passed
+the live-page sanity check:
+
+- **BSIN** (Big Sky Industrial Inc., formerly U.S. Energy Corp/USEG,
+  renamed 2026-06-08) Q2 2026 — revenue $2.13M (+5.2%) as a 41% higher
+  realized oil price ($77.73/bbl) offset a 31% production drop to 371
+  BOE/d after selling its Wyoming/West Texas wells; net loss narrowed
+  to $2.28M from $6.06M, but $3.18M of that improvement is simply last
+  year's one-off impairment/asset-sale charges not recurring. Main
+  story is funding risk for its helium plant: $20-25M of spend remains
+  against $16.4M of liquidity; share count up 53% since December.
+  First helium revenue still pushed to Q1 2027 (10-Q vs earnings
+  release disagree on commissioning target: Q3 2026 vs late 2026).
+  https://financialreportinsights.com/companies/bsin/2026/q2
+- **BSP** (Bending Spoons S.p.A.) Q2 2026 (first report; Italian
+  app-portfolio holding company, Nasdaq IPO July 2026, reports in USD
+  under US GAAP) — revenue +126% to $704.2M but organic growth only
+  3% (Remini and Splice declined) — nearly all the growth is
+  acquisitions: AOL alone added $294M revenue/$156M pre-tax profit,
+  Eventbrite added $91M revenue but a $51M pre-tax loss, Tractive
+  similarly loss-making. Adjusted operating income $381.1M vs $240.3M
+  GAAP (gap mostly acquired-asset amortization + restructuring, stock
+  comp NOT excluded). Net debt $4.09B, interest expense $109M against
+  $240M GAAP operating income; leverage ratio counts not-yet-realized
+  cost savings. Since quarter-end: closed Airtable, agreed to buy Miro
+  ($1.355B enterprise value). FY guidance $2.78-2.82B excludes both.
+  https://financialreportinsights.com/companies/bsp/2026/q2
+
+**2 more new report-periods — 20 report-periods total tonight.**
+report-tracker.json updated for BSIN and BSP. Just over half the ~35
+cap; continuing. Commit pending.

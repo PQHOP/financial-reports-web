@@ -26303,5 +26303,51 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BSP": {
+    "name": "Bending Spoons S.p.A. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2mwtxo000006l28f5molre"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13",
+      "note": "Nasdaq IPO 2026-07-01; reports in USD under US GAAP despite being an Italian FPI"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-12",
+      "basis": "~90 day cadence from Q2 6-K filed 2026-08-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "BSIN": {
+    "name": "Big Sky Industrial Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2mwzy5000106l2oriy5b4a"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11",
+      "note": "formerly U.S. Energy Corp (USEG), renamed Big Sky Industrial Inc. 2026-06-08"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "~90 day cadence from Q2 10-Q filed 2026-08-11",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
