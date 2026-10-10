@@ -26663,5 +26663,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BVS": {
+    "name": "Bioventus Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2pti79000806l2xkqkzn28"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-05",
+      "note": "medtech (Durolane, EXOGEN, Ultrasonics). Sales +3.8% to $153.2M, all from Pain Treatments (+11.5%, Durolane volume + favorable rebate revisions); Surgical Solutions and Restorative Therapies both down. GAAP EPS jumped to $0.47 from $0.11 almost entirely on a one-time $24.6M non-cash tax valuation-allowance release; adjusted EPS only +5% to $0.22, helped by lower interest expense after debt paydown, while adjusted operating margin fell to 19.6%. Guidance reaffirmed (sales $600-610M, adj. EPS $0.75-0.79). Received an unsolicited takeover proposal; board started a strategic-alternatives review with Evercore advising - watch for an 8-K on its outcome."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 10-Q filed 2025-11-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

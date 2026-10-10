@@ -12206,3 +12206,30 @@ bank names in that set):
 **2 more new report-periods — 33 report-periods total tonight.**
 report-tracker.json updated for BUSE and BVFL. 2 slots left before
 the ~35 cap.
+
+Quick EDGAR check before spending the last 2 subagents: BUUU Group
+Limited and BitVentures Limited (BVC), the next two in file order,
+are both FPIs (20-F/6-K filers, no 10-Q) — skipped researching them
+tonight without a tracker entry since confirming whether any of
+their 6-Ks carry 2026 financial statements needs more digging than
+the 2 remaining slots justified; left for a future firing to check
+properly. Confirmed BVS (Bioventus) and BWB (Bridgewater Bancshares)
+are both plain US domestic 10-Q filers with a Q2 2026 filing already
+out, so dispatched two opus subagents in parallel for those instead:
+
+- **BVS** (Bioventus Inc. - Class A) Q2 2026 (first report; medtech —
+  Durolane, EXOGEN, Ultrasonics) — sales +3.8% to $153.2M, all from
+  Pain Treatments (+11.5%, Durolane volume plus favorable rebate
+  revisions); Surgical Solutions and Restorative Therapies both
+  declined. GAAP EPS jumped to $0.47 from $0.11 almost entirely on a
+  one-time $24.6M non-cash tax valuation-allowance release — adjusted
+  EPS only +5% to $0.22, and adjusted operating margin actually fell
+  to 19.6% from 20.8%. Guidance reaffirmed (sales $600-610M, adj. EPS
+  $0.75-0.79). Received an unsolicited takeover proposal; board
+  started a strategic-alternatives review with Evercore advising.
+  https://financialreportinsights.com/companies/bvs/2026/q2
+
+**1 more new report-period — 34 report-periods total tonight.**
+report-tracker.json updated for BVS. 1 slot left before the ~35 cap.
+BWB subagent still running; will update this entry on completion and
+stand down for the night once it resolves (cap reached either way).
