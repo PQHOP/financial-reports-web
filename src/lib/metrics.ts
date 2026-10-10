@@ -308,7 +308,18 @@ export function relatedGuides(
   const guides: { slug: string; title: string }[] = [
     { slug: "revenue-vs-net-income", title: "Revenue vs Net Income: From Sales to Profit" },
   ];
-  if (m.operatingMarginPct !== undefined) {
+  const profile = metricsProfile(m);
+  if (profile === "bank") {
+    guides.push({
+      slug: "what-is-net-interest-margin",
+      title: "What Is Net Interest Margin (NIM), and Why Banks Live or Die by It",
+    });
+  } else if (profile === "insurer") {
+    guides.push({
+      slug: "what-is-combined-ratio",
+      title: "What Is the Combined Ratio, and How Insurers Grade Their Own Underwriting",
+    });
+  } else if (m.operatingMarginPct !== undefined) {
     guides.push({
       slug: "what-is-operating-margin",
       title: "What Is Operating Margin, and Why Do Investors Watch It?",
