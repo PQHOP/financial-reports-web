@@ -11825,8 +11825,19 @@ opus subagents in parallel.
   drug from Hengrui (China) with up to $1B in sales milestones + 5-10%
   royalties. https://financialreportinsights.com/companies/brve/2026/q2
   Succeeded, passed the live-page sanity check.
-- **BRZE** (Braze, Inc.) — still researching (fiscal year ends Jan 31,
-  so quarter labeling needs care); see next entry for the outcome.
+- **BRZE** (Braze, Inc.) fiscal Q2 FY2027 (May-Jul 2026; FYE Jan 31,
+  labeled 2026/Q2 on the site matching other Jan-FYE companies'
+  precedent, e.g. WMT) — revenue +26.2% to $227.2M, beating May
+  guidance, though professional-services revenue more than doubled
+  with no filing explanation; GAAP operating margin improved to -8.0%
+  from -21.5% entirely from slower opex growth (gross margin actually
+  fell on rising messaging fees); non-GAAP operating income $22.0M vs
+  a GAAP loss, the ~$40M gap mostly stock-based comp; dollar-based net
+  retention 110% (up from 108%), RPO +26.7%; FY guidance raised on both
+  revenue and non-GAAP operating income.
+  https://financialreportinsights.com/companies/brze/2026/q2
+  Succeeded, passed the live-page sanity check.
 
-**1 more new report-period — 15 report-periods total tonight so far.**
-report-tracker.json updated for BRVE. Commit pending.
+**2 more new report-periods — 16 report-periods total tonight.**
+report-tracker.json updated for BRVE and BRZE. Still well under the
+~35 cap; continuing. Commit pending.

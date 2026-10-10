@@ -26235,5 +26235,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BRZE": {
+    "name": "Braze, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2mly6u000206l2rx3xsvqw"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-09",
+      "note": "fiscal Q2 FY2027 (FYE Jan 31); labeled 2026/Q2 on site matching precedent for other Jan-FYE companies"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027, period ending 2026-10-31)",
+      "estimate": "2026-12-09",
+      "basis": "~90 day cadence from Q2 10-Q filed 2026-09-09",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
