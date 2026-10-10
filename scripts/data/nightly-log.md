@@ -11940,4 +11940,28 @@ two opus subagents in parallel.
 
 **2 more new report-periods — 22 report-periods total tonight.**
 report-tracker.json updated for BSRR and BSVN. Nearing two-thirds of
-the ~35 cap; continuing cautiously. Commit pending.
+the ~35 cap; continuing cautiously. Committed as `7eb7519`, pushed
+cleanly.
+
+Eleventh tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI
+again (still future-dated pending) plus BSY and BTBD. Dispatched two
+opus subagents in parallel.
+
+- **BTBD** (BT Brands, Inc.) Q2 2026 (first report; small-cap QSR
+  holding company — Burger Time/Keegan's/Pie in the Sky/Schnitzel
+  Haus plus a 40.7% stake in Bagger Dave's) — sales -6.1% to $3.55M
+  but operating income flipped to +$117K from a $75K loss, almost
+  entirely from a $197K G&A cut; net income of $576K was mostly an
+  $830K unrealized gain on the company's own stock portfolio —
+  ex-investment-gains pre-tax loss was ~$189K, worse than last year's
+  ~$106K; disclosure controls not effective after the CFO resigned in
+  May 2026; several unresolved legal/related-party items (Aero
+  Velocity's ~$1.5M claim, Village Bier Garten lease suit, NGI
+  bottled-water write-down) but no going-concern language.
+  https://financialreportinsights.com/companies/btbd/2026/q2
+  Succeeded, passed the live-page sanity check.
+- **BSY** (Bentley Systems) — still researching; see next entry for
+  the outcome.
+
+**1 more new report-period — 23 report-periods total tonight so far.**
+report-tracker.json updated for BTBD. Commit pending.

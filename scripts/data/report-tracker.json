@@ -26394,5 +26394,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BTBD": {
+    "name": "BT Brands, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2n8io1000206lckgrzt4lg"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-08-17",
+      "note": "history of late filing (NT 10-Q notices before both Q1 and Q2 2026)"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-17",
+      "basis": "prior-year Q3 10-Q filed 2025-11-17",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
