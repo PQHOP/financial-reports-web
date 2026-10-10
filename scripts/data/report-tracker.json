@@ -26548,5 +26548,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-10"
+  },
+  "BTQ": {
+    "name": "BTQ Technologies Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-10",
+      "url": "https://financialreportinsights.com/reports/cmv2o68lw000706lcspatrfo7"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "note": "Alberta-incorporated FPI, reports in CAD. Post-quantum cryptography R&D company, nil revenue this quarter. Going-concern warning; cash fell to C$9.73M from C$20.94M at Dec 31. Post-quarter: raised C$12.63M, acquired QPerfect."
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim)",
+      "estimate": "2026-11-14",
+      "basis": "Q2 filed 45 days after quarter-end (June 30 -> Aug 14)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-10"
   }
 }

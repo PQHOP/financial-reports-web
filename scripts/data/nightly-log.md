@@ -12101,3 +12101,23 @@ opus subagent; succeeded and passed the live-page sanity check:
 **1 more new report-period — 28 report-periods total tonight.**
 report-tracker.json updated for BTMD. 7 slots left before the ~35
 cap.
+
+Next `next-batch -- --n 5` printed BAOS/BLIV/BRAI/BTCT again (all
+still future-dated pending, left alone) plus BTQ Technologies Corp.
+Dispatched one opus subagent; succeeded and passed the live-page
+sanity check:
+
+- **BTQ** (BTQ Technologies Corp.) Q2 2026 (first report; Alberta FPI,
+  reports in CAD; post-quantum-cryptography R&D company) — nil
+  revenue (vs C$65,497 a year earlier, a now-ended related-party
+  licence); net loss C$16.75M vs C$1.95M a year earlier (though
+  better than Q1's C$19.93M, mostly from lower share-based pay and a
+  C$1.78M paper gain on locked-up ICTK shares); professional fees
+  (C$4.41M, including litigation against a former director/officer)
+  plus marketing (C$2.11M) exceeded R&D (C$2.94M); going-concern
+  warning, cash down to C$9.73M from C$20.94M at Dec 31. Post-quarter:
+  raised C$12.63M net, acquired QPerfect for C$3.31M cash + ~2.2M
+  shares. https://financialreportinsights.com/companies/btq/2026/q2
+
+**1 more new report-period — 29 report-periods total tonight.**
+report-tracker.json updated for BTQ. 6 slots left before the ~35 cap.
