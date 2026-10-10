@@ -26190,5 +26190,28 @@
       "filedAt": "2026-09-02"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BRUN": {
+    "name": "Boost Run Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2mg3em000006l2qk0m8wyk"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-18",
+      "note": "correct CIK is 2090646 (Boost Run Inc.), not CIK 2096120 (Boost Run Holdings, LLC, the pre-merger private predecessor with no periodic reports). Went public 2026-05-08 via merger with Willow Lane Acquisition Corp. Has filed late (NT 10-Q notices) both prior quarters, so cadence may slip."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day smaller-reporting-company deadline from fiscal quarter end; history of late filing noted",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

@@ -11790,4 +11790,23 @@ Sixth tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
 CHECKS" — skipped with that reason (same pattern as BPAC/BLZR/BRKH).
 Checked BRUN (Boost Run Inc.) too before dispatching: SIC 7374
 (computer processing/data prep), a real operating company, not a SPAC
-— dispatched one opus subagent for it; still running, see next entry.
+— dispatched one opus subagent for it; succeeded and passed the
+live-page sanity check:
+
+- **BRUN** (Boost Run Inc.) Q2 2026 (first report; GPU-cloud/AI-compute
+  rental, went public May 2026 via SPAC merger with Willow Lane
+  Acquisition Corp — subagent correctly found the live CIK 2090646
+  rather than the dormant pre-merger entity) — revenue $31.1M, up 270%
+  YoY and 184% sequentially, but swung to a $75.0M net loss from a
+  $2.5M profit, $55.7M of which is a one-off non-cash tax charge from
+  converting from a partnership to a corporation; even adding that
+  back, pre-tax loss was still ~$10.9M; the company's own "94.5% gross
+  margin" excludes depreciation and data-center rent — counting those,
+  the quarter barely covered direct costs (~$0.7M); $642M liabilities
+  against $100M equity, $1.44B hardware purchase commitment, material
+  weaknesses disclosed, both Q1 and Q2 10-Qs filed late.
+  https://financialreportinsights.com/companies/brun/2026/q2
+
+**1 more new report-period — 14 report-periods total tonight.**
+report-tracker.json updated for BRUN. Still well under the ~35 cap.
+Commit pending.
