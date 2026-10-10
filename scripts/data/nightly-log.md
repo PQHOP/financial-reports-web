@@ -12057,6 +12057,24 @@ crypto-miner-adjacent us-listed companies: BTCT and BTDR.
   period end; EDGAR full-text search found no H1 2026 equivalent yet
   as of 2026-10-10. Marked `"pending"`, `nextExpectedFiling` estimated
   2026-11-12 (same cadence), not skipped — timing gap, not permanent.
-- **BTDR** (Bitdeer Technologies Group) — in progress; one opus
-  subagent dispatched for its Q2 2026 earnings 6-K (filed 2026-08-10,
-  Exhibit 99.1). Outcome in the next entry.
+- **BTDR** (Bitdeer Technologies Group) Q2 2026 (first report;
+  Singapore-incorporated bitcoin miner pivoting into AI/HPC cloud
+  compute — one of the few FPIs that publishes quarterly results via
+  6-K rather than just annual) — revenue +47.1% to $228.8M as the
+  self-mining fleet grew from 16.5 to 73.0 EH/s (BTC mined 565→2,694),
+  but gross margin flipped negative (-3.7% vs +7.7%) and net loss
+  widened to $92.3M from $62.9M; each BTC cost ~$74.2k all-in
+  (electricity + depreciation) against ~$71.8k revenue per coin.
+  Operating cash flow + BTC sale proceeds (~$37M) covered only a
+  fraction of $266M capex — funded by ~$464M of new ATM shares +
+  related-party loans; $491M of related-party debt due within 12
+  months against $456.8M unrestricted cash. AI Cloud only 6% of
+  revenue so far (at a gross loss); pivot's payoff hinges on the
+  $4.7B/16-year Tydal (Norway) lease, phase 1 due Q4 2026. Sequential
+  trend improved vs Q1 2026 (loss narrowed from $159.5M).
+  https://financialreportinsights.com/companies/btdr/2026/q2
+  Succeeded, passed the live-page sanity check.
+
+**1 more new report-period — 27 report-periods total tonight.**
+report-tracker.json updated for BTCT (pending) and BTDR (done). 8
+slots left before the ~35 cap; continuing.

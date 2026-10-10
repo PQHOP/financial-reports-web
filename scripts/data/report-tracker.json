@@ -26502,5 +26502,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-10"
+  },
+  "BTDR": {
+    "name": "Bitdeer Technologies Group - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-10",
+      "url": "https://financialreportinsights.com/reports/cmv2nu3vu000606lc26z51vio"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (earnings release, Exhibit 99.1)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10",
+      "note": "Singapore-incorporated FPI (Cayman inc_state), files 20-F annual but publishes quarterly unaudited financial-results press releases via 6-K, unlike most other FPIs. H1 interim financial-statements 6-K (same period) filed later, 2026-09-29 — not a newer period."
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-10",
+      "basis": "~90-day cadence from Q2 release filed 2026-08-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-10"
   }
 }
