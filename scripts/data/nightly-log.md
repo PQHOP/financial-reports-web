@@ -11840,4 +11840,39 @@ opus subagents in parallel.
 
 **2 more new report-periods — 16 report-periods total tonight.**
 report-tracker.json updated for BRVE and BRZE. Still well under the
+~35 cap; continuing. Committed as `084c0b6`, pushed cleanly.
+
+Eighth tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
+(still future-dated pending) plus BSBK and BSEM. Dispatched two opus
+subagents in parallel.
+
+- **BSBK** (Bogota Financial Corp.) Q2 2026 (first report; mutual
+  holding company-owned community bank, full bank-metrics schema) —
+  net income rose to $748K from $224K, but $300K of this quarter's
+  pre-tax income was a one-time insurance recovery on an old fraud
+  loss; NIM actually fell to 1.94% from ~2.2% in Q1; nonaccrual loans
+  more than doubled to $27.8M (4.34% of loans) with reserve coverage of
+  only 9.3%; deposits down 12% in six months, backfilled with FHLB
+  borrowings rising from $20M to $101M; pending merger with GSL Savings
+  Bank ($151.2M assets) expected to close H2 2026. Report flags a
+  discrepancy between the company's own earnings-release and 10-Q
+  non-performing-asset figures. https://financialreportinsights.com/companies/bsbk/2026/q2
+  Succeeded, passed the live-page sanity check.
+- **BSEM** (BioStem Technologies) Q2 2026 (first 10-Q; placental-tissue
+  regenerative-medicine company, just registered via Form 10, moved to
+  Nasdaq Aug 2026) — the standout finding: CMS replaced physician-
+  office Medicare reimbursement (ASP+6%) with a flat $127.14/cm² rate
+  from Jan 1, 2026, cutting that channel's revenue by up to 95% —
+  physician-office revenue fell 90% to $1.10M and the former sole
+  distributor's revenue share collapsed from 100% to 14%. Total
+  revenue still fell 27.9% to $7.90M despite newly acquired hospital
+  product lines (Neox/Clarix, $6.71M) because of the reimbursement
+  hit; gross margin fell to 61% from 94%; net loss $8.97M; going-
+  concern warning, cash down to $6.96M from $29.55M at year-start, and
+  a disputed $10M payment owed to the seller of the acquired product
+  lines. https://financialreportinsights.com/companies/bsem/2026/q2
+  Succeeded, passed the live-page sanity check.
+
+**2 more new report-periods — 18 report-periods total tonight.**
+report-tracker.json updated for BSBK and BSEM. Still well under the
 ~35 cap; continuing. Commit pending.

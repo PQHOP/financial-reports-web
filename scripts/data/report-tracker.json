@@ -26258,5 +26258,50 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BSBK": {
+    "name": "Bogota Financial Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2mr4a7000306l2ypq6fsyt"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "prior-year Q3 10-Q filed 2025-11-12, earnings 8-K 2025-11-03",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "BSEM": {
+    "name": "BioStem Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2mrn0w000406l2p5ukmjxv"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12",
+      "note": "first 10-Q (registered via Form 10 filed 2026-07-10, moved to Nasdaq 2026-08-07). Going-concern warning; CMS Medicare reimbursement change cut physician-office revenue 90%."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "smaller reporting company, 45-day deadline from quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
