@@ -26179,5 +26179,16 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BRTM": {
+    "name": "B&R Technology Merger Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (EDGAR SIC 6770 BLANK CHECKS); 10-Q only reports trust-account interest income, no operating business to analyze (same pattern as BPAC, BLZR, BRKH)",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-09-02"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

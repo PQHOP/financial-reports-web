@@ -11782,4 +11782,12 @@ subagents in parallel.
 
 **1 more new report-period — 13 report-periods total tonight.**
 report-tracker.json updated for BRR. Still well under the ~35 cap.
-Commit pending.
+Committed as `d18151a`, pushed cleanly.
+
+Sixth tier-1 batch: `next-batch -- --n 5` printed BAOS/BLIV/BRAI again
+(still future-dated pending) plus BRTM and BRUN. Pre-checked BRTM
+(B&R Technology Merger Corp.) directly on EDGAR: SIC 6770 "BLANK
+CHECKS" — skipped with that reason (same pattern as BPAC/BLZR/BRKH).
+Checked BRUN (Boost Run Inc.) too before dispatching: SIC 7374
+(computer processing/data prep), a real operating company, not a SPAC
+— dispatched one opus subagent for it; still running, see next entry.
