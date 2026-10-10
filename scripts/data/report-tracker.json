@@ -26156,5 +26156,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BRR": {
+    "name": "ProCap Financial, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/reports/cmv2m9zdu000106l9b5t20mvg"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13",
+      "note": "company renamed to Silvia, Inc. effective 2026-09-22; ticker changed BRR to SVIA (8-K filed 2026-09-22). This was the last periodic filing under the ProCap/BRR name. Future filings will appear under ticker SVIA, not BRR -- scan-recent-filings and admin dropdown may need checking under the new name/ticker going forward, since SEC's ticker map no longer lists BRR."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026, likely filed as Silvia Inc./SVIA)",
+      "estimate": "2026-11-13",
+      "basis": "prior cadence: Q1 filed 2026-05-14, Q2 filed 2026-08-13 (~90 days)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

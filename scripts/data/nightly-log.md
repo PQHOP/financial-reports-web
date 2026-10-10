@@ -11765,10 +11765,21 @@ subagents in parallel.
   to $14.81M; subsequent EIB settlement expected to bring a ~$3.6M
   one-off gain. https://financialreportinsights.com/companies/brnx/2026/h1
   Succeeded and passed the live-page sanity check.
-- **BRR** (ProCap Financial, Inc.) — still researching; see next entry
-  for the outcome. (Not to be confused with the separate dropdown entry
-  "ProCap Acquisition Corp (PCAP)" — the subagent was briefed to
-  publish only under the BRR/ProCap Financial, Inc. listing.)
+- **BRR** (ProCap Financial, Inc.) Q2 2026 (first report; bitcoin-
+  treasury company, correctly distinguished from the separate SPAC
+  "ProCap Acquisition Corp (PCAP)") — net loss $65.0M ($0.73/share)
+  almost entirely from fair-value bitcoin accounting ($49.4M unrealized
+  + $2.7M realized loss on 5,355 BTC held, worth $313.4M at quarter-end
+  against $493.3M cost); ex-bitcoin operating loss about $13.0M
+  including a one-time $5.0M signing bonus; $99.6M of convertible notes
+  puttable June 2027 against only $15.3M cash; disclosed a material
+  weakness in disclosure controls. **Important for future scans: the
+  company renamed itself Silvia, Inc. (ticker SVIA) effective
+  2026-09-22 — this was its last periodic filing under the BRR/ProCap
+  name, SEC's ticker map no longer lists BRR, and future filings will
+  need to be found under SVIA.** Noted in the tracker entry.
+  https://financialreportinsights.com/companies/brr/2026/q2
 
-**1 more new report-period — 12 report-periods total tonight so far.**
-report-tracker.json updated for BRNX. Commit pending.
+**1 more new report-period — 13 report-periods total tonight.**
+report-tracker.json updated for BRR. Still well under the ~35 cap.
+Commit pending.
