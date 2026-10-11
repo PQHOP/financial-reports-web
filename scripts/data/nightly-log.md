@@ -12616,3 +12616,42 @@ Dispatched 4 more opus subagents in parallel:
 **2 more new report-periods, 2 skips — 26 report-periods total tonight.**
 report-tracker.json updated for CAES (skip), CAII (skip), CAMP, CAMT.
 Well under the ~35 cap; continuing.
+
+Continued the us-listed backlog past CAMT: CAPR, CAQ, CAR, CARE.
+Dispatched 4 more opus subagents in parallel:
+
+- **CAQ** (Cambridge Acquisition Corp.) — **skipped**, pre-merger
+  blank-check SPAC (SIC 6770); IPO effective 2026-01-30; no business
+  combination on EDGAR as of today; latest 10-Q for period ended
+  2026-06-30, filed 2026-08-11. Re-check if a merger proxy, S-4 or Super
+  8-K appears.
+- **CAPR** (Capricor Therapeutics) Q2 2026 (first report; clinical-stage
+  biotech, cell therapy, zero revenue) — net loss widened to $40.7M from
+  $25.9M as opex rose 55% spending ahead of a possible launch
+  (administrative costs +148%); cash and investments fell to $237.9M from
+  $318.1M at year-end. New 171k sq ft lease ($91M liability) is
+  cancellable by either side if the drug isn't approved by 2026-12-31.
+  FDA decision on Deramiocel pushed to 2026-11-22 after an FDA expert
+  panel voted 9-3 against its heart-disease claim.
+  https://financialreportinsights.com/companies/capr/2026/q2
+- **CAR** (Avis Budget Group) Q2 2026 (first report) — revenue -1.3% to
+  $3.0B on 2% fewer rental days, but a 5% smaller fleet pushed utilization
+  to a record 72.6% and cut fleet cost per car 4%, lifting diluted EPS to
+  $0.98 from $0.10. Most of that EPS jump is a $59M year-ago restructuring
+  charge not recurring plus a lower tax rate — underlying Adjusted EBITDA
+  (company's own measure) rose only 3% to $286M, and $28M of the $63M net
+  income went to outside tax-credit investors. Vehicle purchase
+  commitments fell $4.2B to $2.6B.
+  https://financialreportinsights.com/companies/car/2026/q2
+- **CARE** (Carter Bankshares, Virginia bank) Q2 2026 (first report) —
+  GAAP EPS $1.31 vs $0.37 a year ago, almost entirely a one-off: a $35.9M
+  pre-tax gain selling its Bearing Insurance Group stake, partly offset
+  by a $12.5M loss selling low-yielding bonds. Adjusted EPS (company's
+  own measure) rose a more modest 29% to $0.53 as NIM widened to 3.38%
+  from 2.80% after selling $209.5M of non-earning Justice loans in Q1 and
+  repaying all FHLB borrowings.
+  https://financialreportinsights.com/companies/care/2026/q2
+
+**3 more new report-periods, 1 skip — 29 report-periods total tonight.**
+report-tracker.json updated for CAQ (skip), CAPR, CAR, CARE. Still under
+the ~35 cap; continuing carefully.

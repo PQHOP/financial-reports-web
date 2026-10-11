@@ -27433,5 +27433,82 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "CAQ": {
+    "name": "Cambridge Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger blank-check SPAC (SIC 6770 Blank Checks; IPO effective 2026-01-30; no business combination on EDGAR as of 2026-10-11; latest 10-Q for period ended 2026-06-30, filed 2026-08-11)",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAPR": {
+    "name": "Capricor Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/capr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "90-day cadence from 2026-08-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAR": {
+    "name": "Avis Budget Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/car/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "90-day cadence from 2026-07-29, earnings 8-K typically a day earlier",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CARE": {
+    "name": "Carter Bankshares, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/care/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings release)",
+      "estimate": "2026-10-23",
+      "basis": "Q2 earnings release filed 2026-07-23, roughly 90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
