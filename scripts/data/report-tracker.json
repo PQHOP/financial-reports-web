@@ -27510,5 +27510,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "CARG": {
+    "name": "CarGurus, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/carg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "90-day cadence from 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CARL": {
+    "name": "Carlsmed, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/carl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 filed 2025-11-06, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

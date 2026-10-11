@@ -12655,3 +12655,32 @@ Dispatched 4 more opus subagents in parallel:
 **3 more new report-periods, 1 skip — 29 report-periods total tonight.**
 report-tracker.json updated for CAQ (skip), CAPR, CAR, CARE. Still under
 the ~35 cap; continuing carefully.
+
+Final smaller batch for this firing, to stay safely under the cap: CARG,
+CARL. Dispatched 2 opus subagents in parallel, both succeeded and passed
+the live-page sanity check:
+
+- **CARG** (CarGurus) Q2 2026 (first report) — revenue +13.1% to $251.0M
+  on higher dealer pricing (revenue per subscribing dealer +7%, paying
+  dealers +5%); continuing-ops net income flat at $49.2M as sales and
+  marketing spend rose 18%, but diluted EPS still rose 10.2% to $0.54
+  because diluted share count fell 9% after $204M of H1 buybacks, which
+  cut cash to $122M. https://financialreportinsights.com/companies/carg/2026/q2
+- **CARL** (Carlsmed, 2025-IPO personalized spine-implant maker) Q2 2026
+  (first report) — revenue +56.7% to $18.9M, all from more procedures
+  (price per procedure flat), gross margin up to 76.8% from 73.4%; but
+  opex rose 66% so the net loss widened to $10.5M from $6.8M. Allowance
+  for unpaid bills rose from ~13% to 17% of receivables — a
+  cash-conversion flag. FY guidance raised to $74-78M; Medicare's new
+  aprevo payment codes take effect 2026-10-01.
+  https://financialreportinsights.com/companies/carl/2026/q2
+
+**2 more new report-periods — 31 report-periods total tonight.**
+report-tracker.json updated for CARG, CARL. Standing down for this
+firing at 31/35 to leave headroom under the nightly cap; the next
+firing or batch picks up the backlog at CARM (next alphabetically after
+CARL in the us-listed list, per `next-batch`).
+
+**Tonight's running total across all firings: 31 report-periods
+published (BUUU through CARL, plus skips BAOS/BLIV/BRAI/BTCT carried
+over as still-pending-future, CAES/CAII/CAQ as pre-merger SPACs).**
