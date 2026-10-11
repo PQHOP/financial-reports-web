@@ -12539,3 +12539,42 @@ the live-page sanity check:
 **4 more new report-periods — 20 report-periods total tonight.**
 report-tracker.json updated for CAAS, CABA, CAC, CACC. Well under the ~35
 cap; continuing.
+
+Continued the us-listed backlog past CACC: CADL, CAE, CAI, CAKE.
+Dispatched 4 more opus subagents in parallel, all succeeded and passed
+the live-page sanity check:
+
+- **CADL** (Candel Therapeutics) Q2 2026 (first report; clinical-stage
+  biotech, pre-revenue) — net loss widened to $38.9M from $4.8M. Operating
+  costs more than doubled to $26.7M on aglatimagene trial/manufacturing/
+  launch-prep spend, plus a $12.3M non-cash warrant charge. Cash $201.6M,
+  guided to last into Q1 2028, ahead of a planned Q4 2026 FDA filing in
+  prostate cancer. https://financialreportinsights.com/companies/cadl/2026/q2
+- **CAE** (CAE Inc, Canadian aviation/defense simulation) FY2026 ANNUAL
+  (first report; FPI, fiscal year ends March 31, files 6-K/40-F not
+  10-Q/10-K, figures in CAD) — revenue +4.4% to C$4.91B but diluted EPS
+  -23.6% to C$0.97 as weaker civil pilot-training bookings (training
+  centres 70% full vs 74% a year ago) and C$84M of restructuring charges
+  offset a 33% rise in defence profit; adjusted EPS flat at C$1.20. Moved
+  its US listing from NYSE to Nasdaq in July 2026. A newer FY2027 Q1 6-K
+  (quarter ended 2026-06-30, filed 2026-08-12) exists but wasn't analyzed
+  this pass — flagged in the tracker for the next scan to pick up as an
+  update. https://financialreportinsights.com/companies/cae/2026/annual
+- **CAI** (Caris Life Sciences) Q2 2026 (first report; 2025 IPO,
+  molecular diagnostics) — revenue +45.4% to $263.7M, swinging to a
+  $26.9M operating profit as revenue-per-case rose ~31% (better
+  commercial-payer contracts) while case volume rose ~18%. The $0.6M net
+  loss is almost entirely a one-time $25.2M debt-refinancing charge.
+  Raised FY26 guidance of $1.03-1.04B implies only ~8-10% H2 growth.
+  https://financialreportinsights.com/companies/cai/2026/q2
+- **CAKE** (The Cheesecake Factory) Q2 2026 (first report) — revenue
+  +7.7% to $1.03B, diluted EPS +23.7% to $1.41; flagship comparable sales
+  +5.8% (traffic +2.7%) and lower labor costs per sales dollar lifted
+  operating margin to 7.6%. North Italia comparable sales fell ~3% on 5%
+  lower traffic, with segment operating income down 20% — flagged as the
+  thing to watch next quarter.
+  https://financialreportinsights.com/companies/cake/2026/q2
+
+**4 more new report-periods — 24 report-periods total tonight.**
+report-tracker.json updated for CADL, CAE, CAI, CAKE. Well under the ~35
+cap; continuing.

@@ -27279,5 +27279,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "CADL": {
+    "name": "Candel Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/cadl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-13, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAE": {
+    "name": "CAE Inc - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/cae/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (FY2026 Q4/annual earnings release)",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-05-21"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (FY2027 Q2, quarter ended 2026-09-30)",
+      "estimate": "2026-11-11",
+      "basis": "FPI, fiscal year ends March 31; a newer 6-K for FY2027 Q1 (quarter ended 2026-06-30) was already filed 2026-08-12 but not yet analyzed - next scan may surface it as an update",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAI": {
+    "name": "Caris Life Sciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/cai/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 10-Q filed 2025-11-05, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAKE": {
+    "name": "The Cheesecake Factory Incorporated",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/cake/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 earnings 8-K expected late October (Q2's came 2026-07-28), 10-Q usually follows about a week later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
