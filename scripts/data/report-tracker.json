@@ -27069,5 +27069,39 @@
         "filedAt": "2026-08-06"
       }
     ]
+  },
+  "BYSI": {
+    "name": "BeyondSpring, Inc. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bysi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14",
+      "note": "Going-concern warning; clinical-stage, zero revenue. Post-period (Sept-Oct 2026): China subsidiary sold for no cash (buyer funds DUBLIN-4 Phase 3 China arm), FDA Fast Track designation, new ATM dilution program, two Nasdaq deficiency notices."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 10-Q filed 2025-11-12; Q1/Q2 2026 10-Qs landed ~43-45 days after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bysi/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ],
+    "note": "Q3 10-Q should reflect the China-subsidiary sale gain and SEED divestiture progress (second SEED closing due by 2026-12-15) — worth checking for a --edit or new report."
   }
 }

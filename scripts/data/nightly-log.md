@@ -12412,3 +12412,20 @@ Dispatched 4 more opus subagents in parallel:
   notes due March 2027; no going-concern warning. Q3 revenue guided
   $60-65M (same range as Q2's guidance, which Q2 beat).
   https://financialreportinsights.com/companies/bynd/2026/q2
+- **BYSI** (BeyondSpring) Q2 2026 (first report; clinical-stage biotech,
+  zero revenue) — continuing-operations loss narrowed slightly to $1.75M
+  from $1.88M, but the reported per-share loss halved mostly because more
+  of the loss is now allocated to SEED's minority owners (discontinued
+  operations) — and the company's own Oct 6 pro forma admits a $754K
+  error in that split, so the corrected loss is $0.09/share, not $0.08.
+  Cash fell from $12.6M to $6.5M with a going-concern warning; after the
+  quarter the China subsidiary was sold for no cash (buyer instead funds
+  the China arm of the DUBLIN-4 Phase 3 trial, removing a $29.5M Hengrui
+  liability and booking a ~$53.7M paper gain), plus an FDA Fast Track
+  designation, a new dilutive share-sale program (~22% dilution), and two
+  Nasdaq deficiency notices (bid price, market value of listed securities).
+  https://financialreportinsights.com/companies/bysi/2026/q2
+
+**4 more new report-periods — 12 report-periods total tonight.**
+report-tracker.json updated for BYAH, BYFC, BYND, BYSI. Well under the
+~35 cap; continuing.
