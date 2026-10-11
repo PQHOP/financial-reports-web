@@ -12379,3 +12379,36 @@ live-page sanity check:
 **4 more new report-periods — 8 report-periods total tonight.**
 report-tracker.json updated for BWFG, BWIN, BWMN, BXBL. Well under the
 ~35 cap; continuing.
+
+Continued the us-listed backlog past BXBL: BYAH, BYFC, BYND, BYSI.
+Dispatched 4 more opus subagents in parallel:
+
+- **BYAH** (Park Ha Biological Technology) H1 FY2026 (first report; FPI,
+  FYE Oct 31) — revenue flat at $1.258M (+1.5%); net loss narrowed 95% to
+  -$0.918M only because last year's $19.95M stock award didn't recur —
+  without it, the company swung from a $0.23M operating profit to a
+  $0.96M operating loss. Franchisee count fell from 39 to 21, 59% of
+  franchisee loans past due, share count up 7.3x from cashless warrant
+  exercises. Post-period: June/August/September private placements, a
+  1-for-8 reverse split, and a September auditor change.
+  https://financialreportinsights.com/companies/byah/2026/h1
+- **BYFC** (Broadway Financial) Q2 2026 (first report; LA-based minority
+  depository/CDFI bank holding company) — net income to common +28.7% to
+  $968K (EPS $0.02 after the $750K ECIP preferred dividend); net interest
+  income +22.4% to $9.49M, NIM up to 2.65% from 2.58% on a larger
+  securities book and paying off expensive FHLB borrowings. Provision
+  swung from a $454K release to a $1.48M charge as construction-loan
+  delinquencies 90+ days rose to $11.1M from $3.0M; deposits +39.5% mostly
+  via the Raisin online platform at higher cost; capital ratio fell to
+  13.20% from 15.34%. Two material weaknesses in internal controls still
+  disclosed. https://financialreportinsights.com/companies/byfc/2026/q2
+- **BYND** (Beyond Meat) Q2 2026 (first report) — net income $16.4M, but
+  only from a $57.7M non-cash gain on bondholders converting 2030 notes
+  into shares; revenue fell 8.2% to $68.8M, gross margin fell to 8.5% from
+  10.6%, and the company's own adjusted operating loss widened to $39.9M.
+  Share count ~6.6x a year ago from debt-for-equity dilution; report
+  explains the 2026-08-13 1-for-30 reverse split and uses a labelled
+  post-split EPS restatement. $323.8M debt stack including $29.5M of 2027
+  notes due March 2027; no going-concern warning. Q3 revenue guided
+  $60-65M (same range as Q2's guidance, which Q2 beat).
+  https://financialreportinsights.com/companies/bynd/2026/q2

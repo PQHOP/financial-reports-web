@@ -26971,5 +26971,103 @@
         "filedAt": "2026-08-21"
       }
     ]
+  },
+  "BYAH": {
+    "name": "Park Ha Biological Technology Co., Ltd. - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/byah/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 FY2026 interim results)",
+      "periodEnd": "2026-04-30",
+      "filedAt": "2026-07-24",
+      "note": "FPI, fiscal year ends Oct 31. Post-period 6-Ks: June offering, August private placement, 1-for-8 reverse split, Sept 1 auditor change (WWC -> HTL International), Sept private placement."
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026, fiscal year ending 2026-10-31)",
+      "estimate": "2027-02-26",
+      "basis": "FY2025 20-F filed 2026-03-02, FY2024 filed 2025-02-24; new auditor appointed 2026-09-01 could delay it further",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/byah/2026/h1",
+        "periodEnd": "2026-04-30",
+        "filedAt": "2026-07-24"
+      }
+    ]
+  },
+  "BYFC": {
+    "name": "Broadway Financial Corporation - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/byfc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "45-day smaller-reporting-company deadline after 2026-09-30 period end; Q2 10-Q came 44 days after quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/byfc/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
+  },
+  "BYND": {
+    "name": "Beyond Meat, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bynd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-06",
+      "note": "1-for-30 reverse split 2026-08-13, after the 10-Q was filed; report uses a post-split EPS restatement, labelled as such."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90 days after Q2 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bynd/2026/q2",
+        "periodEnd": "2026-06-27",
+        "filedAt": "2026-08-06"
+      }
+    ]
   }
 }
