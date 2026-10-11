@@ -12329,3 +12329,53 @@ Takeaway callout present, not truncated):
 **4 new report-periods tonight.** report-tracker.json updated for BUUU,
 BVC, BWAY, BWEN (all `"done"`, each with an estimated `nextExpectedFiling`
 for its next 20-F/6-K/10-Q). Well under the ~35 cap; continuing.
+
+Continued the us-listed tier-1 backlog past BWEN: BWFG, BWIN, BWMN, BXBL.
+Dispatched 4 more opus subagents in parallel, all succeeded and passed the
+live-page sanity check:
+
+- **BWFG** (Bankwell Financial) Q2 2026 (first report; Connecticut bank
+  holding company) — diluted EPS +33% to $1.52 on net interest income
+  +23.3% to $29.5M as NIM widened to 3.58% from 3.10%, almost entirely from
+  cheaper funding (interest-bearing deposit cost down to 3.46% from 3.90%)
+  rather than loan yields; credit was a headwind this quarter ($1.6M
+  provision vs a reserve release a year ago). Nonaccruals fell to $15.9M
+  from $23.9M, CET1 down to 11.66% from 12.20%, loan-to-deposit 98.6%. NII
+  guidance raised to $115-117M for the year (from $111-112M in January).
+  https://financialreportinsights.com/companies/bwfg/2026/q2
+- **BWIN** (The Baldwin Insurance Group) Q2 2026 (first report; insurance
+  brokerage) — revenue +30% to $492.9M but $106.8M of the $112.5M increase
+  in commissions/fees came from the CAC Group acquisition (organic growth
+  ~2%); adjusted EBITDA +37% to $116.7M vs a widening GAAP net loss
+  (-$56.0M), with $33.6M of costs labelled non-recurring (vs $11.5M a year
+  earlier) flattering the adjusted number. Net debt ~$2.3B, interest at 39%
+  of adjusted EBITDA. Subject to a 2026-09-14 take-private agreement
+  (Sequence Holdings/Dell Family Office, $32.50/share, ~88% premium,
+  expected close Q1 2027) — flagged in the tracker to re-check filer status
+  once that closes. https://financialreportinsights.com/companies/bwin/2026/q2
+- **BWMN** (Bowman Consulting) Q2 2026 (first report; engineering
+  consulting) — gross revenue +19.7% to $146.1M, organic net-service-
+  billing growth accelerating to 12.7%; backlog +50% to $658.7M. GAAP net
+  income fell 58.5% to $2.5M despite adjusted EPS rising, because the
+  adjusted-EPS gain came entirely from a lower adjusted tax rate (adjusted
+  pre-tax income itself fell). Operating cash outflow $7.9M in the
+  quarter, credit line up to $136.2M. Subject to an August 2026 Bernhard
+  Capital take-private agreement ($43/share, ~$1.0B EV, go-shop ended with
+  no rival bid, expected close Q4 2026) — flagged in the tracker as likely
+  to delist before a Q3 10-Q or FY2026 10-K.
+  https://financialreportinsights.com/companies/bwmn/2026/q2
+- **BXBL** (BOXABL) Q2 2026 (first report; post-de-SPAC merger, closed
+  2026-07-17 after the quarter — the 10-Q's own statements are the SPAC
+  shell's, so the report is built on "Legacy BOXABL" MD&A exhibits) —
+  revenue $495K (+77.4%) from 7 Casitas; net loss narrowed to $9.6M from
+  $30.8M, almost entirely because two 2025 one-offs (retail-investor
+  advertising, an $8.3M inventory write-off) didn't recur. Leads with a
+  going-concern warning: cash fell from $29.0M to $14.7M over the half
+  against ~$2.6M/month burn, plus a new $100M at-the-market share program
+  and material weaknesses in financial controls. EPS and operating margin
+  omitted as not meaningful (pre-merger share count / near-zero revenue).
+  https://financialreportinsights.com/companies/bxbl/2026/q2
+
+**4 more new report-periods — 8 report-periods total tonight.**
+report-tracker.json updated for BWFG, BWIN, BWMN, BXBL. Well under the
+~35 cap; continuing.

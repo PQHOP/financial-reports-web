@@ -26840,5 +26840,136 @@
         "filedAt": "2026-08-11"
       }
     ]
+  },
+  "BWFG": {
+    "name": "Bankwell Financial Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bwfg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "earnings 8-Ks filed 2025-10-23, 2026-04-22, 2026-07-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bwfg/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      }
+    ]
+  },
+  "BWIN": {
+    "name": "The Baldwin Insurance Group, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bwin/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q1 10-Q filed 2026-05-04, Q2 filed 2026-07-30, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bwin/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-30"
+      }
+    ],
+    "note": "2026-09-14 take-private agreement (Sequence Holdings / Dell Family Office, $32.50/share, expected close Q1 2027) — may delist/deregister after close; re-check filer status in Phase 2."
+  },
+  "BWMN": {
+    "name": "Bowman Consulting Group Ltd.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bwmn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "~90 days after Q2 10-Q filed 2026-08-10; may not be filed if the pending Bernhard Capital take-private closes first",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bwmn/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-10"
+      }
+    ],
+    "note": "2026-08-10 take-private agreement (Bernhard Capital, $43/share, ~$1.0B EV, go-shop ended 2026-09-13 with no rival bid) — expected to close Q4 2026; may delist before a Q3 10-Q or FY2026 10-K is filed."
+  },
+  "BXBL": {
+    "name": "BOXABL, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bxbl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-21",
+      "note": "post-de-SPAC merger (closed 2026-07-17); the 10-Q's own statements are the SPAC shell's, analysis built on 'Legacy BOXABL' Exhibits 99.1/99.2. Going-concern warning, cash $14.7M vs ~$2.6M/month burn."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "smaller-reporting-company 45-day deadline after Sep 30; Q2 10-Q was itself filed late after an NT 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bxbl/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-21"
+      }
+    ]
   }
 }
