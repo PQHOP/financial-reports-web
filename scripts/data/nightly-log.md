@@ -12578,3 +12578,41 @@ the live-page sanity check:
 **4 more new report-periods — 24 report-periods total tonight.**
 report-tracker.json updated for CADL, CAE, CAI, CAKE. Well under the ~35
 cap; continuing.
+
+Continued the us-listed backlog past CAKE: CAES, CAII, CAMP, CAMT.
+Dispatched 4 more opus subagents in parallel:
+
+- **CAES** (Cantor Equity Partners VII) — **skipped**, pre-merger
+  blank-check SPAC (SIC 6770); IPO 2026-06-18 raised $250M into trust; no
+  revenue, no operating business, no business combination announced;
+  18-month-type deadline 2028-06-18. Re-check only if an 8-K with Item
+  1.01 announces a definitive merger agreement.
+- **CAII** (Collective Acquisition Corp. II) — **skipped**, pre-merger
+  blank-check SPAC; IPO closed 2026-04-30, over-allotment closed
+  2026-06-12, $254.3M in trust; Q2 10-Q explicitly states no target
+  selected; deadline around late October 2027. (Note: a related earlier
+  SPAC from the same sponsor, Collective Acquisition Corp./CCAQ, CIK
+  2041047, has 8-Ks from July/August 2026 that may be deal- or
+  extension-related — worth checking separately if/when it comes up in
+  the backlog.)
+- **CAMP** (CAMP4 Therapeutics) Q2 2026 (first report; clinical-stage
+  biotech) — net loss widened to $33.5M from $12.6M, but $20.9M of that
+  is a non-cash charge from re-valuing an investor commitment to buy more
+  shares at $1.53; underlying opex was flat ($15.2M vs $14.5M). Revenue
+  $1.8M, all from GSK. Trial clearances in Australia/Argentina triggered
+  a $50.1M second closing in August, extending runway to end-2028; first
+  SYNGAP1 (ASCEND trial) patient expected by year-end, data H1 2028.
+  https://financialreportinsights.com/companies/camp/2026/q2
+- **CAMT** (Camtek, Israeli semiconductor-equipment maker; FPI, files
+  6-K not 10-Q) Q2 2026 (first report) — record revenue $133.2M (+8.0%),
+  above its own $129-131M guidance; GAAP diluted EPS fell 33.3% to $0.46
+  on R&D up 45%, a $7.7M one-time tax charge, and Visual Layer
+  acquisition costs. Guided Q3 to $158-160M and raised its H2-vs-H1
+  growth outlook from "over 25%" to "more than 30%," backed by $600M+ of
+  2026 orders. Receivables up 69% since December — a cash-conversion
+  flag despite the strong guidance.
+  https://financialreportinsights.com/companies/camt/2026/q2
+
+**2 more new report-periods, 2 skips — 26 report-periods total tonight.**
+report-tracker.json updated for CAES (skip), CAII (skip), CAMP, CAMT.
+Well under the ~35 cap; continuing.

@@ -27367,5 +27367,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "CAES": {
+    "name": "Cantor Equity Partners VII, Inc. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger blank-check SPAC (SIC 6770); IPO 2026-06-18 ($250M trust); no revenue or operating business; no business combination announced; deadline 2028-06-18",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAII": {
+    "name": "Collective Acquisition Corp. II - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "pre-merger blank-check SPAC (IPO closed 2026-04-30, over-allotment closed 2026-06-12, $254.3M trust; no target selected as of Q2 2026 10-Q; 18-month deadline around late October 2027) - no operating business to analyze",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAMP": {
+    "name": "CAMP4 Therapeutics Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/camp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-06, roughly 90-day cadence from 2026-08-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAMT": {
+    "name": "Camtek Ltd. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/camt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-10",
+      "basis": "Q3 2025 results furnished 2025-11-10, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }
