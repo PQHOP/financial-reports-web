@@ -27191,5 +27191,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "CAAS": {
+    "name": "China Automotive Systems, Inc. - Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/caas/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 or FY2026 20-F)",
+      "estimate": "2026-11-15",
+      "basis": "re-registered as Cayman FPI on 2025-09-11, new CIK 2037400, now files 6-K/20-F not 10-Q/10-K; unclear if a Q3 release follows last years pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CABA": {
+    "name": "Cabaletta Bio, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/caba/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-10, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CAC": {
+    "name": "Camden National Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/cac/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 earnings 8-K expected late October, 10-Q usually follows about 1 week later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CACC": {
+    "name": "Credit Acceptance Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/cacc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "90-day cadence from 2026-08-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

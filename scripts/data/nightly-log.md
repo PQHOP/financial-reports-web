@@ -12489,3 +12489,53 @@ sections present, page ends cleanly, not truncated):
 **4 more new report-periods — 16 report-periods total tonight.**
 report-tracker.json updated for BZ, BZUN, BZFD, BZAI. Well under the ~35
 cap; continuing.
+
+Continued the us-listed backlog past BZAI: CAAS, CABA, CAC, CACC.
+Dispatched 4 more opus subagents in parallel, all succeeded and passed
+the live-page sanity check:
+
+- **CAAS** (China Automotive Systems) H1 2026 (first report; re-registered
+  as a Cayman Islands FPI on 2025-09-11 under new CIK 2037400 — now files
+  6-K/20-F, not 10-Q/10-K, a change worth flagging since the old CIK
+  1157762 has had no filings since) — sales +20.1% to $412.5M, net income
+  attributable to shareholders +98.8% to $29.3M, diluted EPS $0.49→$0.97.
+  Electric power steering sales +32.2% (now 46.8% of sales) plus a
+  stronger yuan drove gross margin from 17.2% to 21.5%; Chinese vehicle
+  sales themselves fell 4.1%. FY2026 sales guidance raised modestly ($810M
+  →$850M, implying only ~3.6% H2 growth); free cash flow fell to $14.3M as
+  capex rose to $30.4M; tax rate 21.3% vs 25.7% added to EPS.
+  https://financialreportinsights.com/companies/caas/2026/h1
+- **CABA** (Cabaletta Bio) Q2 2026 (first report; clinical-stage biotech,
+  pre-revenue) — net loss widened 13% to $51.0M as R&D rose 18% to $44.4M
+  (including $3.0M of license milestones triggered by first pivotal-trial
+  dosing); loss per share halved to $0.34 only because the diluted share
+  count rose ~144% after a $140.2M May share sale. Cash $225.1M but
+  runway guidance still only "into mid-2027" with a standing going-concern
+  warning — the same window as the 17-patient registrational myositis
+  data, with a BLA filing planned for 2H27. Post-quarter: ~$115.0M more
+  raised via warrant exercises, not yet reflected in the runway guidance.
+  https://financialreportinsights.com/companies/caba/2026/q2
+- **CAC** (Camden National, Maine bank) Q2 2026 (first report) — record
+  net income $23.0M (diluted EPS $1.35), +63.5%, but mostly because last
+  year's quarter carried a $6.0M reserve for a bankrupt syndicated loan
+  plus $1.4M of merger costs that didn't recur; pre-provision pre-tax
+  profit grew a more modest 15% on an adjusted basis. NIM widened to
+  3.26% from 3.06% as brokered deposits were cut 57%. Credit quality
+  slipping: non-performing loans rose from 0.14% to 0.24% of the book,
+  and non-accrual CRE loans rose from $0.6M to $6.1M.
+  https://financialreportinsights.com/companies/cac/2026/q2
+- **CACC** (Credit Acceptance) Q2 2026 (first report; consumer auto
+  lender, no bank-style NIM disclosure so general fields used) — diluted
+  EPS +70.6% to $12.66 on flat revenue ($587.4M, +0.6%); GAAP net income
+  +55.5% to $135.9M, but driven by a $23.4M legal charge from a year ago
+  not recurring, interest expense -9.1%, a lower 19.4% tax rate (vs
+  25.8%), and an 8.8% smaller share count from buybacks. Adjusted EPS
+  (company's own measure, stripping those items) rose a more modest
+  20.6% to $12.12. Unit volume -1.0% for the quarter but turned positive
+  in June and +28.0% in July; a $75.5M NY AG/multi-state settlement is
+  being finalized.
+  https://financialreportinsights.com/companies/cacc/2026/q2
+
+**4 more new report-periods — 20 report-periods total tonight.**
+report-tracker.json updated for CAAS, CABA, CAC, CACC. Well under the ~35
+cap; continuing.
