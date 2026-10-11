@@ -26709,5 +26709,136 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "BUUU": {
+    "name": "BUUU Group Limited - Class A Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/buuu/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-05-08",
+      "note": "6-K filed 2026-05-08 carried unaudited H1 FY2026 (six months to 2025-12-31) interim financials and MD&A; a later 2026-09-25 6-K is a press release with no financials. FPI, fiscal year ends June 30."
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026, year ended 2026-06-30)",
+      "estimate": "2026-10-31",
+      "basis": "FY2025 20-F was filed 2025-10-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/buuu/2026/h1",
+        "periodEnd": "2025-12-31",
+        "filedAt": "2026-05-08"
+      }
+    ]
+  },
+  "BVC": {
+    "name": "BitVentures Limited - Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bvc/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-06-16",
+      "note": "FPI (formerly Santech Holdings), fiscal year ends June 30, no 10-Q."
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026, year ended 2026-06-30)",
+      "estimate": "2026-10-31",
+      "basis": "FY2025 20-F was filed 2025-10-17; FPI 20-F deadline is 4 months after fiscal year-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bvc/2026/h1",
+        "periodEnd": "2025-12-31",
+        "filedAt": "2026-06-16"
+      }
+    ]
+  },
+  "BWAY": {
+    "name": "BrainsWay Ltd. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bway/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-29",
+      "note": "FPI, Q2 earnings 6-K filed 2026-08-12; H1 interim financial-statements 6-K filed 2026-09-29."
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-11",
+      "basis": "~90 days after Q2 2026 earnings 6-K filed 2026-08-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bway/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
+  },
+  "BWEN": {
+    "name": "Broadwind, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bwen/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-13; ~90-day cadence from 2026-08-11",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-11",
+        "url": "https://financialreportinsights.com/companies/bwen/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-11"
+      }
+    ]
   }
 }

@@ -12267,3 +12267,65 @@ after a detached-HEAD state, resolved without data loss). Tier-1
 backlog continuation point for the next firing: past BWB in the
 us-listed file (next up per `next-batch`: BUUU, BVC, BWEN, BWFG,
 BWIN, BWMN, BXBL, BYAH, BYFC, BYND, BYSI, ...).
+
+### 2026-10-11 night (16:00 UTC 2026-10-11 → 22:59 UTC 2026-10-11 / 01:00–07:59 JST 2026-10-12)
+
+**01:05 JST firing.** Network check passed: `curl` to sec.gov without a
+User-Agent returned 403 (SEC's own Akamai response, not a proxy denial);
+with the required User-Agent it returned 200. `npm install` hit the usual
+`DATABASE_URL`-less `prisma generate` postinstall failure; worked around
+with a dummy `DATABASE_URL` for `prisma generate` only (no real DB access
+needed for publishing).
+
+**Tier 0 (`scan-recent-filings`, last 7 days):** 0 fresh candidates.
+
+**Tier 1 (`next-batch -- --n 20`):** printed BAOS/BLIV/BRAI/BTCT again, all
+`"pending"` with `nextExpectedFiling` estimates still in the future
+(2026-10-20 through 2026-11-27, checked directly against the tracker) —
+left alone again, no re-research. Picked up the real backlog continuation
+point from last night: BUUU, BVC, BWAY, BWEN (BWAY wasn't flagged before
+but came up in this wider batch). Dispatched 4 opus subagents in parallel,
+all succeeded and passed the live-page sanity check (cache-busted fetch,
+Takeaway callout present, not truncated):
+
+- **BUUU** (BUUU Group Limited) H1 FY2026 (first report; FPI, FYE June 30,
+  no 10-Q) — from the 6-K filed 2026-05-08 (six months to 2025-12-31).
+  Revenue +12.3% to $3.22M but gross margin collapsed from 26.1% to 10.9%
+  as labor costs rose 88% and purchase costs 42% with no pass-through to
+  customers; a $0.16M profit became a $0.90M loss (EPS -$0.06), partly on
+  $591K of post-IPO stock-based admin costs. One customer is 51.4% of
+  revenue. Post-period: a 60%-of-Brightray acquisition (modular data
+  centers) paid mostly in shares, a $10/unit private placement, and a
+  non-binding 40MW Macao AI-data-center framework agreement.
+  https://financialreportinsights.com/companies/buuu/2026/h1
+- **BVC** (BitVentures Limited, formerly Santech Holdings) H1 FY2026
+  (first report; FPI, FYE June 30) — swung to a $4.7M net profit (from a
+  $2.3M loss) almost entirely because of a $5.3M recovery of previously
+  written-off bank balances; excluding that, operations lost ~$0.6M on
+  just $0.3M of revenue. EPS move is distorted by the share count tripling
+  after a March 2025 Carmel Holdings share issue plus a later 1-for-20
+  consolidation. $14.25M cash/short-term investments (~$1.70/share); a
+  crypto-mining pivot starts in H2 FY2026, not yet in these numbers.
+  https://financialreportinsights.com/companies/bvc/2026/h1
+- **BWAY** (BrainsWay) Q2 2026 (first report; FPI, Israeli neurostimulation
+  devices, no 10-Q) — record revenue +35.4% to $17.1M as systems shifted
+  from leased to sold outright (sale revenue +49% vs lease +15% in H1) and
+  non-US revenue +119%; operating margin roughly tripled to 14.0% as
+  opex grew only 16%. Receivables grew 71% vs 35% sales growth with rising
+  bad-debt provisions; ~$10M invested into minority stakes in clinic
+  operators that are also customers. FY2026 guidance raised to $68-70M
+  revenue / 13.5-14% operating margin / $13-14M adjusted EBITDA.
+  https://financialreportinsights.com/companies/bway/2026/q2
+- **BWEN** (Broadwind) Q2 2026 (first report; sold its Abilene wind-tower
+  plant 2026-04-30, now a discontinued operation) — continuing-business
+  revenue +67.4% to $24.3M on gas-turbine demand (Industrial Solutions
+  +79% at 17.8% operating margin, Gearing orders +138%); backlog +93% to
+  $85.1M. Still a GAAP net loss (-$0.64M, EPS -$0.03): corporate costs
+  (~$2.4M/quarter) outweigh segment operating income, receivables grew 52%
+  in six months (-$5.8M cash), and March's FY guidance ($140-150M revenue)
+  still includes the now-discontinued wind business, unrestated.
+  https://financialreportinsights.com/companies/bwen/2026/q2
+
+**4 new report-periods tonight.** report-tracker.json updated for BUUU,
+BVC, BWAY, BWEN (all `"done"`, each with an estimated `nextExpectedFiling`
+for its next 20-F/6-K/10-Q). Well under the ~35 cap; continuing.
