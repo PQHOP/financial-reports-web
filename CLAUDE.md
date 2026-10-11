@@ -653,6 +653,17 @@ the user is tracked at its end. Things future sessions should know:
   script header; upserts by `slug`). Guides render at `/learn/<slug>`,
   everything else at `/insights/<slug>`. Guide sources live in
   `content/guides/*.json`.
+  - **Pending one-time task (added 2026-10-11 by the ops routine, do once
+    then delete this bullet):** two new guides —
+    `content/guides/what-is-net-interest-margin.md` and
+    `content/guides/what-is-combined-ratio.md` — were written and wired
+    into `relatedGuides()` on 2026-10-10 but never published (the ops
+    routine that wrote them has no `ADMIN_PASSWORD`/`SITE_URL`). On the
+    nightly report routine's first firing, before the report batch, run
+    `npm run admin-publish -- --articles-dir content/guides` (safe to
+    re-run on all 11 — upserts by slug), confirm both render at
+    `/learn/what-is-net-interest-margin` and `/learn/what-is-combined-ratio`,
+    then remove this bullet.
 - **Editorial content piggybacks on the nightly firing** (no separate
   routine: a second routine would need its own copy of the admin
   credential and would compete for the same usage budget). Do these

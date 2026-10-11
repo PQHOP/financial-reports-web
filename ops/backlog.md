@@ -17,11 +17,19 @@ date and commit.
   company page (`/learn/what-is-net-interest-margin` link now renders).
   **Still needed: the actual publish.** This ops environment has no
   `ADMIN_PASSWORD`/`SITE_URL`, so it cannot run
-  `npm run admin-publish -- --articles-dir content/guides`. Whoever runs
-  the nightly report routine next (it has the credential) should run that
-  command once — it upserts by slug, so it's safe to run even if one of
-  the two somehow already exists. Until then the two new guide links on
-  bank/insurer report pages 404 (well, soft-404 — see next item).
+  `npm run admin-publish -- --articles-dir content/guides`.
+  **2026-10-11: confirmed still 404 live (both guides), and found why it
+  never happened** — the backlog note above only existed here, which the
+  nightly report routine never reads; the one-time task that got the
+  original 9 guides published on 2026-09-20 worked because it was a
+  bullet in CLAUDE.md itself, in the section the nightly routine's prompt
+  points at. Added that same kind of bullet to CLAUDE.md's "Growth work"
+  section (self-deleting instruction, do-once) so tonight's nightly
+  firing runs `npm run admin-publish -- --articles-dir content/guides`
+  before its report batch. Did not touch `report-tracker.json`. No
+  redeploy needed (CLAUDE.md isn't code). Re-check tomorrow that both
+  guides are live and the CLAUDE.md bullet was removed as instructed; if
+  not, the nightly routine skipped it and this needs a more forceful nudge.
 - **Re-check Google indexing around 2026-10-11 through 10-18.** Sitemap
   still 0/1818 indexed as of 2026-10-06 (re-checked 2026-10-08: still
   0, now 0/1960 as submitted count grew); still consistent with "new
@@ -33,6 +41,13 @@ date and commit.
   0 indexed by ~10-18, that's worth escalating past "just wait" — e.g.
   checking Manual Actions/Security Issues in the GSC UI directly (not
   exposed via the API this routine uses).
+  **2026-10-11 (window start): still 0/2166 indexed.** Not yet the
+  10-18 trigger date — no action taken, just the data point. GSC 7-day
+  impressions this window: 1,446 (down hard from 14,298 the week
+  before) — consistent with the predicted continued drop-off of
+  `/industries/uncategorized` bot-noise queries leaving the index (same
+  trend noted 2026-10-09), not a new problem. Clicks still 0 for the
+  week, 7 over 28 days.
 - Once Search Console shows real (non-bot) query volume: rewrite
   titles/descriptions for position-5-to-20 opportunity queries. As of
   2026-10-06 every `opportunities`/`topQueries`/per-page query we checked
