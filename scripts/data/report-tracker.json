@@ -27554,5 +27554,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-11"
+  },
+  "CART": {
+    "name": "Maplebear Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/cart/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2025 earnings 8-K filed 2025-11-06 and 10-Q 2025-11-07, same cadence as this year's Q2 (8-K 2026-08-06, 10-Q 2026-08-07)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "CASH": {
+    "name": "Pathward Financial, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/cash/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026 Annual)",
+      "estimate": "2026-11-25",
+      "basis": "fiscal year ends September 30; earnings 8-K expected ~late October 2026, 10-K ~late November 2026 based on last year's cadence (estimated, not confirmed)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

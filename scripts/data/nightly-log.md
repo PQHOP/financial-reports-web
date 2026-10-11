@@ -12681,6 +12681,56 @@ firing at 31/35 to leave headroom under the nightly cap; the next
 firing or batch picks up the backlog at CARM (next alphabetically after
 CARL in the us-listed list, per `next-batch`).
 
-**Tonight's running total across all firings: 31 report-periods
-published (BUUU through CARL, plus skips BAOS/BLIV/BRAI/BTCT carried
+### Separate firing, same night: CART, CASH
+
+Fresh firing (started 18:06 UTC). Network check passed (403 without
+User-Agent on sec.gov is SEC's own policy, not a proxy denial; 200 with
+the required header); `financialreportinsights.com` reachable. `npm
+install` needed a dummy `DATABASE_URL` for the `prisma generate`
+postinstall step (no real DB access used for publishing). Tier 0
+(`scan-recent-filings`, last 7 days): 0 fresh candidates. Tier 1
+(`next-batch -- --n 6`): printed BAOS/BLIV/BRAI/BTCT again (all
+`"pending"` with `nextExpectedFiling` estimates still in the future,
+2026-10-20 through 2026-11-27) — left alone again, no re-research — then
+CART and CASH as the real next backlog items (CARM/CARN/CARS aren't
+us-listed tickers in our data; CARR was already done separately). With
+tonight's total already at 31/35, capped this batch at 2 report-periods
+to stay safely under the ~35 nightly cap. Dispatched 2 opus subagents in
+parallel, both succeeded and passed the live-page sanity check
+(cache-busted fetch, Takeaway/At-a-glance sections present, page ends
+cleanly, not truncated):
+
+- **CART** (Maplebear / Instacart) Q2 2026 (first report) — GTV +14% to
+  $10.351B on 9% order growth; revenue +14% to $1,043M; Adjusted EBITDA
+  $313M (+19%), both above the top of May's own guidance range. GAAP net
+  income fell 4% to $111M as gross margin slipped from 74% to 72%
+  (card-processing/software-amortization/publisher costs outpacing
+  revenue) and stock-based pay jumped (annual vesting date moved from
+  August to May); without a $13M legal-reserve release, operating income
+  was flat. Diluted EPS still rose 10% to $0.45, entirely from an 11.5%
+  smaller share count after $327M of Q2 buybacks ($728M in H1). Q3
+  guidance: GTV $10.30-10.55B, Adjusted EBITDA $320-340M.
+  https://financialreportinsights.com/companies/cart/2026/q2
+- **CASH** (Pathward Financial, bank holding company, fiscal year ends
+  September 30) fiscal Q3 2026 (first report) — EPS fell 24% to $1.37 and
+  net income fell 31% to $29.0M, entirely a credit story: provision
+  tripled to $28.3M and nonperforming loans more than doubled in one
+  quarter to $275.1M (5.28% of loans), tied to renewable-energy
+  construction loans with a common developer; commercial loans 60-89
+  days late jumped to $87.2M from $9.8M in March. Core lending margin
+  actually held steady (adjusted 5.27% vs 5.33%; reported NIM fell to
+  6.59% only because of an October 2025 loan-portfolio sale) and earnings
+  before credit costs rose 7%. Buybacks (diluted shares -8.5%) softened
+  the EPS decline. FY2026 EPS guidance cut to $7.80-8.20 from $8.55-9.05;
+  FY2027 guided to $9.50-10.00. An 8-K filed 2026-09-17 discloses the
+  president's resignation effective 2026-10-23.
+  https://financialreportinsights.com/companies/cash/2026/q3
+
+**2 more new report-periods — 33 report-periods total tonight.**
+report-tracker.json updated for CART, CASH. Standing down at 33/35 to
+stay safely under the nightly cap; the next firing or batch picks up the
+backlog after CASH (CAST per `next-batch`'s file order, once re-run).
+
+**Tonight's running total across all firings: 33 report-periods
+published (BUUU through CASH, plus skips BAOS/BLIV/BRAI/BTCT carried
 over as still-pending-future, CAES/CAII/CAQ as pre-merger SPACs).**
