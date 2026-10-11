@@ -12734,3 +12734,51 @@ backlog after CASH (CAST per `next-batch`'s file order, once re-run).
 **Tonight's running total across all firings: 33 report-periods
 published (BUUU through CASH, plus skips BAOS/BLIV/BRAI/BTCT carried
 over as still-pending-future, CAES/CAII/CAQ as pre-merger SPACs).**
+
+### Separate firing, same night: CASS
+
+Fresh firing (started 19:04 UTC, this session = the nightly cloud
+routine's own cron trigger). Network check passed (403 without
+User-Agent on sec.gov confirmed as SEC's own policy, not a proxy denial;
+200 with the required header). `npm install` needed a dummy
+`DATABASE_URL` for the `prisma generate` postinstall step (no real DB
+access used for publishing). Tier 0 (`scan-recent-filings`, last 7 days):
+0 fresh candidates. Tier 1 (`next-batch -- --n 5`): printed
+BAOS/BLIV/BRAI/BTCT again (all `"pending"` with `nextExpectedFiling`
+estimates still in the future, 2026-10-20 through 2026-11-27 — left alone,
+no re-research) then **CASS** (Cass Information Systems) as the real next
+backlog item after CASH. With tonight's total already at 33/35, capped
+this batch at 1 report-period to stay safely under the ~35 nightly cap.
+Dispatched 1 opus subagent, which succeeded and passed the live-page
+sanity check (cache-busted fetch, Takeaway/outlook/source-note all
+present, page ends cleanly, not truncated):
+
+- **CASS** (Cass Information Systems, freight/utility invoice-payment
+  processor with its own bank) Q2 2026 (first report) — record GAAP
+  diluted EPS $0.81 vs $0.66, but distorted both ways: this quarter
+  includes a $1.76M bad-debt litigation recovery, last year's quarter
+  took a $3.6M bond-sale loss. Excluding both, adjusted EPS still rose
+  22.4% to $0.71 (about 4 points from a 3.6% smaller share count after
+  buybacks). Net interest margin widened to 4.00% from 3.78% as fixed-rate
+  loans reprice and deposit costs fell, lifting net interest income
+  10.6%; larger freight bills (transportation dollar volume +7.4%) grew
+  the interest-free client cash Cass holds and lifted early-payment fees
+  7.8%, while processing fees fell 3.7% on fewer invoices. $80M drawn on
+  credit lines to fund early payments; no charge-offs; CET1 14.68%.
+  Guidance: margin should keep widening if 3-5yr Treasury yields hold or
+  rise, loan growth targeted at 6-8% for FY2026 (3.9% so far), and
+  facility invoice volumes guided to turn positive year-over-year from Q4
+  2026 — the item to watch, since it's the first sign of the processing
+  business growing again rather than just riding rates and freight
+  prices.
+  https://financialreportinsights.com/companies/cass/2026/q2
+
+**1 more new report-period — 34 report-periods total tonight.**
+report-tracker.json updated for CASS. Standing down at 34/35 to stay
+under the nightly cap — only 1 more report-period of headroom remains
+tonight, not enough to safely start another full research pass this
+firing; the next firing picks up the us-listed backlog after CASS.
+
+**Tonight's running total across all firings: 34 report-periods
+published (BUUU through CASS, plus skips BAOS/BLIV/BRAI/BTCT carried
+over as still-pending-future, CAES/CAII/CAQ as pre-merger SPACs).**
