@@ -27103,5 +27103,93 @@
       }
     ],
     "note": "Q3 10-Q should reflect the China-subsidiary sale gain and SEED divestiture progress (second SEED closing due by 2026-12-15) — worth checking for a --edit or new report."
+  },
+  "BZ": {
+    "name": "KANZHUN LIMITED",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bz/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-25"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-20",
+      "basis": "90-day cadence from 2026-08-25; Q3 revenue guidance RMB2.41-2.50bn given in the Q2 release",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "BZUN": {
+    "name": "Baozun Inc. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bzun/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-25",
+      "basis": "90-day cadence from 2026-08-27",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "BZFD": {
+    "name": "BuzzFeed, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bzfd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "90-day cadence from 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
+  },
+  "BZAI": {
+    "name": "Blaize Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-11",
+      "url": "https://financialreportinsights.com/companies/bzai/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "8-K (Item 2.02, preliminary Q3 revenue only)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 10-Q filed 2025-11-13, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-11"
   }
 }

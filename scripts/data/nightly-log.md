@@ -12429,3 +12429,63 @@ Dispatched 4 more opus subagents in parallel:
 **4 more new report-periods — 12 report-periods total tonight.**
 report-tracker.json updated for BYAH, BYFC, BYND, BYSI. Well under the
 ~35 cap; continuing.
+
+### Separate firing, same night: BZ, BZUN, BZFD, BZAI
+
+Fresh firing. Network check passed (403 without User-Agent on sec.gov is
+SEC's own policy, not a proxy denial; 200 with the required header).
+`npm install` run clean (with a dummy `DATABASE_URL` for `prisma generate`
+only). Tier 0 (`scan-recent-filings`, last 7 days): 0 fresh candidates.
+Tier 1 (`next-batch -- --n 20`): printed BAOS/BLIV/BRAI/BTCT again, all
+`"pending"` with `nextExpectedFiling` estimates still in the future
+(2026-10-20 through 2026-11-27) — left alone again, no re-research. Took
+the next four from the us-listed backlog: BZ, BZAI, BZFD, BZUN. Dispatched
+4 opus subagents in parallel, all succeeded and passed the live-page
+sanity check (cache-busted fetch, Takeaway/At-a-glance/headline-numbers
+sections present, page ends cleanly, not truncated):
+
+- **BZ** (KANZHUN / BOSS Zhipin) Q2 2026 (first report; foreign private
+  issuer, files 6-K not 10-Q) — revenue +14.1% to RMB2,398.6M, inside
+  guidance, as operating margin rose to 36.0% from 31.0% on a 29.7% cut to
+  G&A outpacing a 38.3% rise in marketing (FIFA World Cup sponsorship).
+  GAAP net income +173.1% to RMB1,942.3M, but RMB1,099.6M of that is a
+  one-off paper gain on a stake in a company that IPO'd in January;
+  adjusted net income grew only 9.4% and adjusted diluted EPS only 6.7%
+  (held back by a higher tax rate and ~2% more diluted shares). Q3
+  guidance: revenue RMB2.41-2.50bn (+11.4-15.6%).
+  https://financialreportinsights.com/companies/bz/2026/q2
+- **BZUN** (Baozun) Q2 2026 (first report; foreign private issuer, files
+  6-K) — revenue +7.5% to RMB2,743.0M; operating income swung to
+  RMB63.4M from a RMB9.4M loss a year earlier, driven by e-commerce
+  adjusted profit rising from RMB41.1M to RMB107.1M and a 5-point gross
+  margin gain. Only RMB17.0M (RMB0.29/ADS) reached Baozun shareholders —
+  about 61% of net income went to minority owners of subsidiaries, plus a
+  ~37.5% tax rate; the year-ago loss had included a one-off RMB53.3M
+  bad-debt write-down. Gap China revenue +21.9% but still lost RMB33.0M.
+  2028 adjusted operating income target raised to ≥RMB700M from RMB550M.
+  https://financialreportinsights.com/companies/bzun/2026/q2
+- **BZFD** (BuzzFeed) Q2 2026 (first report) — revenue -21.8% to $36.3M
+  (advertising -23%, shopping commissions -31%, Time Spent -10.8%);
+  operating loss tripled to $10.3M and Adjusted EBITDA swung to -$1.7M
+  from +$2.0M. Byron Allen's $120M takeover cleared the going-concern
+  warning but only $20M came in as cash (the other $100M is a 5% note due
+  2031); July layoffs (35% of staff) are the turnaround bet, targeting
+  $29-32M annualized savings against $6.5-8.5M of Q3-heavy charges.
+  https://financialreportinsights.com/companies/bzfd/2026/q2
+- **BZAI** (Blaize Holdings) Q2 2026 (first report; AI-chip company,
+  de-SPAC 2025) — revenue +504.7% to $11.99M, but 99.6% from one Chinese
+  customer (NeoTensr) reselling third-party servers, crushing gross
+  margin to 7.7% from 59.4%; net loss ~flat at $28.8M. Going-concern
+  warning, $36.8M cash (a third in China) after $41.3M of H1 operating
+  cash outflow. Published on the Q2 10-Q rather than waiting for Q3
+  because the only newer filing is an Oct 6 8-K with a preliminary Q3
+  revenue figure of ~$0.5M and no income statement. Since quarter-end:
+  FY guidance cut from ~$130M (May) to $40-43M (Aug) to $32-36M (Oct 5);
+  NeoTensr's $13.3M payment due 2026-09-24 extended into Q4 after it paid
+  only $0.2M; ~26% staff cut; Nasdaq below-$1 notice; DOJ subpoenas, SEC
+  information requests, two shareholder class actions.
+  https://financialreportinsights.com/companies/bzai/2026/q2
+
+**4 more new report-periods — 16 report-periods total tonight.**
+report-tracker.json updated for BZ, BZUN, BZFD, BZAI. Well under the ~35
+cap; continuing.
