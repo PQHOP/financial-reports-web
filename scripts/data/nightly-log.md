@@ -12782,3 +12782,54 @@ firing; the next firing picks up the us-listed backlog after CASS.
 **Tonight's running total across all firings: 34 report-periods
 published (BUUU through CASS, plus skips BAOS/BLIV/BRAI/BTCT carried
 over as still-pending-future, CAES/CAII/CAQ as pre-merger SPACs).**
+
+### Separate firing, same night: CATY
+
+Fresh firing (started ~20:05 UTC, this session = the nightly cloud
+routine's own cron trigger). Network check passed (403 without
+User-Agent on sec.gov confirmed as SEC's own policy, not a proxy denial;
+200 with the required header). `npm install` needed a dummy
+`DATABASE_URL` for the `prisma generate` postinstall step again (fresh
+container, no real DB access used for publishing). Tier 0
+(`scan-recent-filings`, last 7 days): 0 fresh candidates. Tier 1
+(`next-batch -- --n 5`): printed BAOS/BLIV/BRAI/BTCT again (checked the
+tracker directly — all still `"pending"` with `nextExpectedFiling`
+estimates in the future, 2026-10-20 through 2026-11-27 — left alone, no
+re-research) then **CATY** (Cathay General Bancorp) as the real next
+backlog item after CASS. With tonight's total already at 34/35, capped
+this batch at exactly 1 report-period (reaches the ~35 cap exactly, not
+over it). Dispatched 1 opus subagent, which succeeded and passed the
+live-page sanity check (cache-busted fetch, Takeaway/outlook/source-note
+all present, page ends cleanly, not truncated):
+
+- **CATY** (Cathay General Bancorp, LA-based bank holding company
+  serving the Chinese-American community in CA/NY and other states plus
+  Hong Kong) Q2 2026 (first report) — net income rose 19.0% to $92.2M
+  and diluted EPS rose 24.5% to $1.37 (about 5.5 points of that from a
+  4.1% smaller diluted share count after buybacks). Net interest margin
+  widened to 3.48% from 3.27% because the cost of interest-bearing
+  deposits fell 49bp (3.35%→2.86%) while loan yields fell only 14bp; net
+  interest income rose 10.9% to $200.9M. Credit quality improved broadly:
+  non-performing assets fell 27% to $145.4M, non-accrual loans fell 36%
+  to $111.7M, net charge-offs fell to $1.8M from $12.7M, and the
+  allowance rose to 1.06% of loans from 0.88% — but foreclosed property
+  (OREO) rose 77% to $33.7M and there's a specific reserve tied to one
+  damaged multifamily property. A higher tax rate (22.4% vs 19.6%) cost
+  about $3.3M of net income; a $10.6M bond-sale loss was roughly offset
+  by an $11.7M equity-securities gain. CET1 13.7% (about 20bp of the
+  increase is a risk-weighting methodology change, not new capital).
+  Buyback authorization raised to $200M on July 16, pending regulatory
+  approval. No ROTCE (not stated in the filing) or year-ago
+  deposits/CET1 (10-Q doesn't give June 30, 2025 figures for either).
+  https://financialreportinsights.com/companies/caty/2026/q2
+
+**1 more new report-period — 35 report-periods total tonight, at the
+~35 nightly cap.** report-tracker.json updated for CATY. Standing down
+at 35/35 — cap reached exactly. The next firing should start a fresh
+night's entry and pick up the us-listed backlog after CATY (per
+`next-batch`'s file order, once re-run).
+
+**Tonight's running total across all firings: 35 report-periods
+published (BUUU through CATY, plus skips BAOS/BLIV/BRAI/BTCT carried
+over as still-pending-future, CAES/CAII/CAQ as pre-merger SPACs). Cap
+reached — no further publishing tonight.**
