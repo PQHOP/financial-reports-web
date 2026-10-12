@@ -13300,3 +13300,66 @@ and passed the live-page sanity check:
 
 **3 more report-periods — 24 report-periods total tonight.**
 report-tracker.json updated for CDIO, CDNA, CDXS.
+
+**Batch 9** — 3 more opus subagents dispatched in parallel, all succeeded
+and passed the live-page sanity check:
+
+- **CDZI** (Cadiz, Inc. — California water-resources/land company, the
+  Mojave Desert water-banking/conveyance project) Q2 2026 (first
+  report) — revenue fell 76.3% to $0.98M as ATEC filter-sales dropped to
+  $0.76M from $3.70M (a large Utah job inflated the year-ago quarter);
+  ATEC gross margin fell to 23.7% from 44.5%. Operating loss widened to
+  $8.8M from $5.8M, net loss to $11.4M from $7.7M (loss per share
+  -$0.15 vs -$0.11) on higher interest on the 8% Lytton loan and more
+  stock comp. Cash $5.3M; shareholders' equity fell to $4.7M from
+  $23.3M at year-end; long-term debt rose to $87.0M. H1 operating cash
+  burn $12.2M, covered by a $15M Lytton draw in March (a further $10M
+  drawn in August, $11M still undrawn). Post-quarter: BLM granted a
+  45-year right-of-way for the Northern Pipeline (two conservation-group
+  lawsuits followed July 28); construction contracts now support a
+  ~$400M cost estimate for that pipeline (total project cost still
+  $1.25-1.5B, unchanged); signed a non-binding Arizona water-district
+  agreement for up to 10,000 acre-feet/year; Heerema loan maturities
+  extended to June 2028. CDZIP (depositary shares, same company) marked
+  skipped — mirrors CDZI, no separate report needed.
+  https://financialreportinsights.com/companies/cdzi/2026/q2
+- **CECO** (CECO Environmental Corp. — industrial environmental
+  technology: emissions control, fluid handling, now natural-gas power
+  infrastructure) Q2 2026 (first report) — orders nearly tripled to
+  $798.5M (+192%) on emissions/exhaust systems for gas power plants;
+  backlog reached $1,819.1M. Revenue rose 53.7% to $285.0M, but $49.6M
+  came from one month of Thermon (acquired June 1 for $2.26B) — ex.
+  Thermon, growth was ~27%. GAAP swung to a $34.8M net loss (-$0.80/
+  share) from a $9.5M profit on $45.5M of acquisition/integration costs
+  plus a $9.5M one-time Thermon inventory charge; on an adjusted basis
+  EPS rose to $0.47 from $0.24 and adjusted EBITDA +73% to $40.2M. Gross
+  margin fell to 30.3% (33.7% ex. the inventory charge) from 36.2%.
+  Operating cash flow was -$19.4M in Q2/-$32.4M for H1; debt rose to
+  $727.7M from $212.4M and shares outstanding rose 64% to 58.4M funding
+  the deal. Two internal-control material weaknesses remain open.
+  Moving its primary listing from Nasdaq to the Texas Stock Exchange
+  from 2026-10-19. FY2026 guidance: only the low ends raised (revenue
+  $1.300-1.375B, adjusted EBITDA $200-225M).
+  https://financialreportinsights.com/companies/ceco/2026/q2
+- **CELH** (Celsius Holdings, Inc. — energy-drink/functional-beverage
+  maker, PepsiCo is a large strategic investor/distributor) Q2 2026
+  (first report) — revenue rose 10.6% to $817.9M, but Rockstar Energy
+  (bought from PepsiCo Aug 2025) added $66.5M — ex. Rockstar, growth was
+  only ~1.6%. The core CELSIUS brand fell 11.7% to $387.0M on heavier
+  promotions, distributor destocking (store sales fell only 2%, so most
+  of the gap is channel inventory), weak club-store sales (Costco down
+  to 8.7% of revenue from 11.7%) and fewer new launches; Alani Nu grew
+  21% (store sales +55.7%). GAAP EPS fell to $0.14 from $0.33 mainly on
+  an $80.9M termination fee to end former Alani Nu distributor
+  contracts (PepsiCo separately repaid Celsius $81.1M, booked as
+  revenue spread over ~16 years rather than offsetting the fee).
+  Adjusted EPS still fell 23% to $0.36 and adjusted EBITDA margin fell
+  to 22.5% from 28.4% on promotions, mix, and aluminum costs. PepsiCo is
+  now 60.2% of revenue (vs 33.3%); its preferred-share dividends mean
+  only 66% of net income reaches common shareholders. $124M of buybacks
+  in H1; no numeric guidance given, just intent to return CELSIUS to
+  growth.
+  https://financialreportinsights.com/companies/celh/2026/q2
+
+**3 more report-periods — 27 report-periods total tonight.**
+report-tracker.json updated for CDZI, CDZIP (skip), CECO, CELH.
