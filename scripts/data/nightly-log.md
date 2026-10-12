@@ -13121,3 +13121,60 @@ and passed the live-page sanity check:
 
 **3 more report-periods — 15 report-periods total tonight.**
 report-tracker.json updated for CCCC, CCLD, CCNE.
+
+**Batch 6** — 3 more opus subagents dispatched in parallel, all succeeded
+and passed the live-page sanity check:
+
+- **CCOI** (Cogent Communications Holdings, Inc. — internet/network
+  services, owns the acquired Sprint wireline business) Q2 2026 (first
+  report) — net income $66.6M ($1.38/share) vs. a $57.8M loss a year
+  ago, but the swing is entirely a $130.7M gain on selling ten former
+  Sprint data centers for $224.2M on June 29; excluding asset-sale/debt
+  gains the pre-tax loss was ~$50.5M. Service revenue fell 4.3% to
+  $235.6M as Cogent deliberately sheds low-margin Sprint-era customers
+  (off-net -17.3%, enterprise -26%) while on-net (+2.3%) and wavelength
+  (+63.8%) grow. Non-GAAP gross margin improved to 47.0% from 44.4% on
+  leased-circuit cost cuts. Adjusted EBITDA $71.1M includes $25M of
+  T-Mobile's contractual payments, which run out late 2027. Dividend
+  already cut to $0.02/share from $1.01 in Q4 2025; bought back $138.8M
+  of 2032 notes near 90 cents on the dollar; $750M of 7% notes due June
+  2027 still needs refinancing (10-Q says Q3 2026, no deal on EDGAR
+  yet). Net leverage ~6.23x. Reported 50.5% operating margin is
+  gain-distorted; report flags the underlying figure as roughly -5.6%.
+  https://financialreportinsights.com/companies/ccoi/2026/q2
+- **CCSI** (Consensus Cloud Solutions, Inc. — cloud fax/document
+  exchange, spun off from J2/Ziff Davis) Q2 2026 (first report) —
+  revenue rose 4.1% to $91.4M: Corporate grew 9.3% (fastest since Q4
+  2022) on more accounts (61K→67K) at flat revenue/account, while SoHo
+  fell 4.7% as its account base shrank (682K→637K); monthly churn rose
+  in both units. GAAP net income rose 31.7% to $27.4M and EPS rose
+  33.6% to $1.43, but operating income actually fell 5.7% (margin
+  40.3% vs 44.5%) — the gain came from a $5.3M unrealized stake
+  markup, a lower tax rate, and buybacks. On the company's own adjusted
+  basis, EPS rose only 2.1% and adjusted EBITDA was flat. Free cash
+  flow +25% to $25.5M; net debt ~$460M (~2.5x FY EBITDA guidance
+  midpoint). Post-quarter (9/30) signed a $225M revolver + $300M
+  delayed-draw term loan (both due 2031) to refinance $348.2M of 6.5%
+  2028 notes. FY2026 guidance reaffirmed; buyback authorization raised
+  to $200M.
+  https://financialreportinsights.com/companies/ccsi/2026/q2
+- **CDLX** (Cardlytics, Inc. — card-linked advertising platform
+  partnering with banks) Q2 2026 (first report) — revenue fell 36.5% to
+  $36.9M as a U.S. bank partner left the platform (billings -33.8%,
+  monthly users -17.4% to 185.4M); cash-back rewards also rose to 43.7%
+  of billings from 41.3%, making revenue fall faster than billings.
+  Despite the revenue collapse, cost cuts (~36% lower opex, mostly
+  staff) improved operating margin to -14.8% from -16.5% and kept
+  adjusted EBITDA positive at $1.7M. Net loss widened to $14.9M from
+  $9.3M, but about $6.2M of that is a one-off legal-indemnity charge
+  from the discontinued Bridg business (settled for ~$6.44M after
+  quarter-end) and the prior year benefited from a one-off $5.4M FX
+  gain — excluding both, the continuing-operations pre-tax loss actually
+  improved. Cash fell to $28.0M from $48.7M against a $20M minimum-cash
+  covenant; equity is a $16.0M deficit; top three bank partners are now
+  over 85% of partner-share payments. Q3 guidance (~flat to slightly
+  below Q2) reaffirms the pressure continues.
+  https://financialreportinsights.com/companies/cdlx/2026/q2
+
+**3 more report-periods — 18 report-periods total tonight.**
+report-tracker.json updated for CCOI, CCSI, CDLX.

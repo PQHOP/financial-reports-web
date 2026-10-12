@@ -28166,5 +28166,101 @@
         "filedAt": "2026-08-05"
       }
     ]
+  },
+  "CCOI": {
+    "name": "Cogent Communications Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/ccoi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q1 10-Q filed 2026-05-04, Q2 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/ccoi/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
+  "CCSI": {
+    "name": "Consensus Cloud Solutions, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/ccsi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q2 release 2026-08-06, 10-Q 2026-08-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/ccsi/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
+    ]
+  },
+  "CDLX": {
+    "name": "Cardlytics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cdlx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "last year Q3 10-Q filed 2025-11-05, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cdlx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      }
+    ]
   }
 }
