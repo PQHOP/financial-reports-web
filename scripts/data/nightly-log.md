@@ -13637,3 +13637,18 @@ per the entries above. Re-ran `scan-recent-filings` directly: **0 fresh
 candidates** (same result as the prior two check-ins, now through
 2026-10-12). No justification to dispatch any batches. Published
 nothing, skipped nothing, did not touch report-tracker.json. Exiting.
+
+**Next firing this same night (checked in at 21:06 UTC / 06:06 JST
+2026-10-13):** network check passed first (403 without `User-Agent` on
+`sec.gov` as expected — SEC's own policy, not a proxy denial; 200 with
+the required header; `financialreportinsights.com` and the `.vercel.app`
+alias both 200). Local `master` was detached again with the same stale
+ref pointing at a now-superseded commit; left it detached and will push
+via `HEAD:master` rather than force-moving the local branch pointer.
+Working tree clean aside from a harmless `npm install` Prisma-postinstall
+warning (`DATABASE_URL` unset — expected, this task never touches the
+DB). Tonight already stands at 36/35 report-periods, 1 over the ~35 cap,
+per the entries above. Re-ran `scan-recent-filings` directly: **0 fresh
+candidates** (same result as the prior three check-ins, now through
+2026-10-12). No justification to dispatch any batches. Published
+nothing, skipped nothing, did not touch report-tracker.json. Exiting.
