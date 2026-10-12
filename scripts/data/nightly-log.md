@@ -12908,3 +12908,51 @@ passed the live-page sanity check (cache-busted fetch, Takeaway + outlook
 
 **3 report-periods published — 3 report-periods total tonight.**
 report-tracker.json updated for CBC, CBFV, CBIO.
+
+**Batch 2** — 3 more opus subagents dispatched in parallel, all succeeded
+and passed the live-page sanity check:
+
+- **CBK** (Commercial Bancgroup, Inc. — October 2025 IPO bank holding
+  company) Q2 2026 (first report) — net income rose 14.8% to $10.2M,
+  diluted EPS $0.74 (+1.4%, held back by ~12% more diluted shares from
+  the IPO). The gain came entirely from cheaper funding: interest
+  expense fell 20.0% after repaying a holding-company loan with IPO
+  proceeds and lowering deposit rates, even as interest income itself
+  fell 2.3% on softer loan yields. NIM rose to 4.06% from 3.84%,
+  efficiency ratio improved to 44.99% from 48.13%. Loan-to-deposit ratio
+  reached 102.6% as loans grew $48.4M while deposits fell $19.0M;
+  short-term borrowings more than doubled to $102.6M. CET1 14.55%, no
+  buyback usage yet, dividend raised 20% to $0.12 in July.
+  https://financialreportinsights.com/companies/cbk/2026/q2
+- **CBLL** (Ceribell, Inc. — point-of-care EEG/seizure-detection device
+  maker) Q2 2026 (first report) — revenue rose 32.5% to $28.1M (product
+  +33%, subscriptions +30%, active accounts 680→712). Reported gross
+  margin 92.3% includes a one-off $1.0M tariff refund; underlying margin
+  ~88.8% vs 88.1% a year ago. Opex rose 37% on sales headcount and legal
+  costs from a patent suit against Natus, widening the net loss to
+  $19.3M (-$0.51/share) from $13.6M (-$0.38). Adjusted EBITDA -$9.8M vs
+  -$10.0M only improves after excluding $6.0M stock comp and $3.9M
+  litigation costs. H1 operating cash burn rose to $32.2M from $18.9M;
+  cash and investments $129.3M, down from $159.3M at year-end. New
+  MidCap credit facility in August (net debt unchanged). FY2026 revenue
+  guidance raised to $114-117M from $112-116M.
+  https://financialreportinsights.com/companies/cbll/2026/q2
+- **CBNK** (Capital Bancorp, Inc. — Maryland bank holding company incl.
+  OpenSky secured credit cards and Windsor government-loan servicing) Q2
+  2026 (first report) — net income $14.3M (+8.5%), diluted EPS $0.87.
+  Core EPS was nearly flat ($0.87 vs $0.85) once a year-ago $1.4M merger
+  charge is excluded; a 2.6% smaller share count accounts for about a
+  quarter of the headline EPS growth. NIM narrowed to 5.64% from 6.04%
+  (core NIM ex-credit-cards 4.04% vs 4.42%) as expenses grew faster than
+  revenue (efficiency ratio 66.1% vs 65.1%, professional fees nearly
+  doubled). Nonperforming assets rose to 1.56% of assets from 1.07% on
+  one new $9.7M nonaccrual relationship; reserve coverage of NPLs fell to
+  95.5% from 131%. By segment: Windsor nearly doubled pre-tax income,
+  OpenSky's fell from $2.8M to $1.0M, mortgage still loses money. Main
+  forward item: on 2026-09-30 CBNK agreed to an all-stock acquisition by
+  Peoples Bancorp (PEBO) at ~$43.75/share (~$728.1M total), closing
+  expected H1 2027.
+  https://financialreportinsights.com/companies/cbnk/2026/q2
+
+**3 more report-periods — 6 report-periods total tonight.**
+report-tracker.json updated for CBK, CBLL, CBNK.
