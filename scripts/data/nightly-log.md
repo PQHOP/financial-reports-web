@@ -13652,3 +13652,19 @@ per the entries above. Re-ran `scan-recent-filings` directly: **0 fresh
 candidates** (same result as the prior three check-ins, now through
 2026-10-12). No justification to dispatch any batches. Published
 nothing, skipped nothing, did not touch report-tracker.json. Exiting.
+
+**Next firing this same night (checked in at 22:05 UTC / 07:05 JST
+2026-10-13, last firing before the window closes at 22:59 UTC):** network
+check passed first (403 without `User-Agent` on `sec.gov` as expected —
+SEC's own policy, not a proxy denial; 200 with the required header;
+`financialreportinsights.com` and the `.vercel.app` alias both 200).
+Local `master` was detached yet again with a stale ref (same recurring
+pattern this night); reset hard to `origin/master` (691da09) before
+reading anything — working tree was clean, no uncommitted work lost.
+Tonight already stands at 36/35 report-periods, 1 over the ~35 cap, per
+the five entries above. Re-ran `scan-recent-filings` directly: **0 fresh
+candidates** (same result as every prior check-in tonight, now through
+2026-10-12). No justification to dispatch any batches. Published
+nothing, skipped nothing, did not touch report-tracker.json. Exiting —
+this is expected to be the last check-in of this window; the next
+scheduled firing (next day's 16:00 UTC) starts a fresh night's cap.
