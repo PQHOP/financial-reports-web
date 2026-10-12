@@ -13016,3 +13016,55 @@ schema), CCAQ (Collective Acquisition Corp. — pre-merger SPAC), CCCT
 (Columbus Circle Capital Corp III — pre-merger SPAC), CCD (Calamos
 Dynamic Convertible & Income Fund — NAV-based closed-end fund, not an
 operating company). report-tracker.json updated for all four.
+
+**Batch 4** — 3 more opus subagents dispatched in parallel, all succeeded
+and passed the live-page sanity check:
+
+- **CCB** (Coastal Financial Corporation — Everett, WA community bank
+  plus the CCBX banking-as-a-service platform for fintech partners) Q2
+  2026 (first report) — net loss of $42.1M (-$2.76/share) vs. an $11.0M
+  profit a year ago, driven entirely by $68.8M of charges tied to one
+  unnamed CCBX partner: a $46.0M write-down of that partner's
+  loss-guarantee obligation (the first such write-down taken) plus a
+  $22.8M specific loan-loss provision. The underlying business grew:
+  record net interest income $89.4M (+16.4%), NIM 7.27% gross (3.98%
+  after the revenue share paid to partners), community-bank segment
+  pre-tax income +66% to $14.5M, BaaS fee income +57% to $12.0M. Ex. the
+  one-off charges, pre-tax income was roughly flat YoY. CET1 fell to
+  10.86% from 12.08% (still well-capitalized); charge-offs actually
+  improved to 4.90% annualized from 5.54%. Post-quarter: Bluevine
+  (~9% of CCB's deposits) agreed to be acquired by Valley National;
+  Coastal says no material liquidity impact expected.
+  https://financialreportinsights.com/companies/ccb/2026/q2
+- **CCBG** (Capital City Bank Group, Inc. — Florida/Georgia/Alabama
+  community bank) Q2 2026 (first report) — net income $16.3M (+8.2%),
+  diluted EPS $0.95 (+8.0%). NIM (FTE) widened to 4.35% from 4.30% as
+  securities yields rose (2.65%→3.52%) and deposit costs fell
+  (81bp→76bp), even as average loans shrank 5.5%. About a quarter of
+  EPS growth came from a lower tax rate (24.9%→23.4%, helped by a solar
+  tax-equity investment); buybacks didn't help, since diluted share
+  count rose slightly. First-half EPS was flat at $1.87 because H1 2025
+  included a building-sale gain. Weak spots: classified loans rose
+  $15.3M to $29.8M on four CRE downgrades, nonperforming assets roughly
+  doubled YoY to $13.4M, and deposit fees are guided lower from Q3.
+  CET1 19.80%.
+  https://financialreportinsights.com/companies/ccbg/2026/q2
+- **CCC** (CCC Intelligent Solutions Holdings Inc. — SaaS platform for
+  auto-insurance claims and collision repair) Q2 2026 (first report) —
+  revenue rose 9.8% to $285.9M (growth slowing from 12% in Q1); software
+  net dollar retention held at 107% while gross dollar retention slipped
+  to 98% from 99%. GAAP operating income nearly doubled to $47.6M
+  (16.7% margin vs 9.4%), but about two-thirds of that came from stock
+  comp falling ($46.3M→$30.5M), not faster growth — adjusted EBITDA
+  grew just 6.8% and its margin fell to 40.4% from 41.5% as cloud/IT
+  costs outpaced revenue. Adjusted EPS rose 11% on an 11.5% smaller
+  diluted share count (a debt-funded $300M accelerated buyback in Dec
+  2025 plus a further $100M in Mar 2026), while adjusted net income rose
+  only 4.1% and interest expense rose 14%. Free cash flow tripled to
+  $82.4M, though ~$25M of the H1 improvement was non-recurring lower tax
+  payments. FY2026 guidance raised slightly: revenue $1.158-1.164B,
+  adjusted EBITDA $485-491M.
+  https://financialreportinsights.com/companies/ccc/2026/q2
+
+**3 more report-periods — 12 report-periods total tonight.**
+report-tracker.json updated for CCB, CCBG, CCC.
