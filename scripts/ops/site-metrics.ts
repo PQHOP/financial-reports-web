@@ -133,6 +133,29 @@ async function searchConsole() {
   return { window: { last7: [day(-9), day(-3)], prev7: [day(-16), day(-10)] }, last7, prev7, last28, topQueries, topPages, opportunities, sitemaps };
 }
 
+// The sitemaps report's `indexed` count lags badly (saw 0/2166 for 3+ weeks
+// while real pages were indexed) — the URL Inspection API gives the true,
+// per-page verdict instead. A small fixed sample across page types, checked
+// daily, so a real indexing regression shows up without re-discovering this
+// lag by hand each time.
+const INDEX_SAMPLE_PATHS = ["/", "/companies/aapl", "/industries/information-technology", "/insights", "/learn"];
+async function indexSample() {
+  return Promise.all(
+    INDEX_SAMPLE_PATHS.map(async (path) => {
+      try {
+        const data = await google("https://searchconsole.googleapis.com/v1/urlInspection/index:inspect", {
+          inspectionUrl: SITE_URL + path,
+          siteUrl: GSC_SITE,
+        });
+        const r = data.inspectionResult?.indexStatusResult ?? {};
+        return { path, verdict: r.verdict, coverageState: r.coverageState, lastCrawlTime: r.lastCrawlTime ?? null };
+      } catch (e) {
+        return { path, error: e instanceof Error ? e.message : String(e) };
+      }
+    })
+  );
+}
+
 // --- GA4 ----------------------------------------------------------------------
 async function analytics() {
   const run = (body: object) =>
@@ -192,14 +215,19 @@ async function health() {
 }
 
 async function main() {
-  const [searchConsoleData, analyticsData, deployments, healthData] = await Promise.all([
+  const [searchConsoleData, indexSampleData, analyticsData, deployments, healthData] = await Promise.all([
     safe(searchConsole),
+    safe(indexSample),
     safe(analytics),
     safe(vercel),
     health(),
   ]);
   console.log(
-    JSON.stringify({ generatedAt: new Date().toISOString(), site: SITE_URL, health: healthData, deployments, searchConsole: searchConsoleData, analytics: analyticsData }, null, 1)
+    JSON.stringify(
+      { generatedAt: new Date().toISOString(), site: SITE_URL, health: healthData, deployments, searchConsole: searchConsoleData, indexSample: indexSampleData, analytics: analyticsData },
+      null,
+      1
+    )
   );
 }
 

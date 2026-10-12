@@ -6,48 +6,44 @@ date and commit.
 
 ## Next
 
-- **Publish the 2 new bank/insurer `/learn` guides (code is deployed,
-  articles are not).** Done 2026-10-10: wrote
-  `content/guides/what-is-net-interest-margin.md` and
-  `content/guides/what-is-combined-ratio.md`, added a `metricsProfile(m)`
-  branch to `relatedGuides()` (`src/lib/metrics.ts:304`) so bank/insurer
-  reports link them instead of the `gaap-vs-adjusted-eps` fallback.
-  Typechecked, committed (`e56154d`), deployed
-  (`dpl_6DYtitrct6zuRFXFcR5XSkU3VPAL`, READY), verified live on BPOP's
-  company page (`/learn/what-is-net-interest-margin` link now renders).
-  **Still needed: the actual publish.** This ops environment has no
-  `ADMIN_PASSWORD`/`SITE_URL`, so it cannot run
-  `npm run admin-publish -- --articles-dir content/guides`.
-  **2026-10-11: confirmed still 404 live (both guides), and found why it
-  never happened** — the backlog note above only existed here, which the
-  nightly report routine never reads; the one-time task that got the
-  original 9 guides published on 2026-09-20 worked because it was a
-  bullet in CLAUDE.md itself, in the section the nightly routine's prompt
-  points at. Added that same kind of bullet to CLAUDE.md's "Growth work"
-  section (self-deleting instruction, do-once) so tonight's nightly
-  firing runs `npm run admin-publish -- --articles-dir content/guides`
-  before its report batch. Did not touch `report-tracker.json`. No
-  redeploy needed (CLAUDE.md isn't code). Re-check tomorrow that both
-  guides are live and the CLAUDE.md bullet was removed as instructed; if
-  not, the nightly routine skipped it and this needs a more forceful nudge.
-- **Re-check Google indexing around 2026-10-11 through 10-18.** Sitemap
-  still 0/1818 indexed as of 2026-10-06 (re-checked 2026-10-08: still
-  0, now 0/1960 as submitted count grew); still consistent with "new
-  low-authority domain rationing crawl budget," not a bug — 2026-10-06
-  re-checked the obvious suspects (robots.txt clean/unchanged, no stray
-  noindex on real content pages, RSS autodiscovery present via
-  `metadata.alternates`, query-string URLs on public pages don't bypass
-  the ISR cache or force dynamic rendering) and found nothing. If still
-  0 indexed by ~10-18, that's worth escalating past "just wait" — e.g.
-  checking Manual Actions/Security Issues in the GSC UI directly (not
-  exposed via the API this routine uses).
-  **2026-10-11 (window start): still 0/2166 indexed.** Not yet the
-  10-18 trigger date — no action taken, just the data point. GSC 7-day
-  impressions this window: 1,446 (down hard from 14,298 the week
-  before) — consistent with the predicted continued drop-off of
-  `/industries/uncategorized` bot-noise queries leaving the index (same
-  trend noted 2026-10-09), not a new problem. Clicks still 0 for the
-  week, 7 over 28 days.
+- **Google indexing: sitemap-report "0 indexed" was misleading — corrected
+  2026-10-12.** The sitemap report had shown 0/N indexed for weeks (0/2166
+  as of 2026-10-11), read by every prior entry below as "nothing is
+  indexed yet." Checked directly today with the URL Inspection API
+  (`searchConsole.googleapis.com/v1/urlInspection/index:inspect`, same
+  service-account auth as the rest of `site-metrics`) against a sample of
+  real page types — result: `/industries/information-technology`,
+  `/insights`, a specific company page (`/companies/mrsh`), a company/
+  year/period page (`/companies/bny/2026/q2`) and a report page all come
+  back `verdict: PASS, coverageState: "Submitted and indexed"`. So a real
+  chunk of the site **is** indexed; the sitemap report's count is just
+  stale/unreliable (a documented GSC quirk), not evidence of zero
+  progress. The more useful and more concerning signal from the same
+  check: **every one of those indexed pages was last crawled between
+  2026-09-20 and 09-26** — nothing sampled has been recrawled in the ~2.5
+  weeks since, including the homepage itself (last crawl 09-22, and its
+  cached `googleCanonical` still points at `www.financialreportinsights.com`
+  from before the www→bare 308 redirect/canonical-tag fix shipped — the
+  live site is configured correctly, Google just hasn't revisited to see
+  it). `/companies/aapl` (AAPL's own company page) and `/learn` (the guide
+  hub, linked from the homepage nav, so not an orphan) have never been
+  crawled at all. Read together: initial crawl happened in one burst the
+  first week after launch, then crawl frequency collapsed — consistent
+  with "low-authority new domain, budget now rationed hard," same theory
+  as before, but with real evidence instead of an all-zeros number that
+  looked like total failure. Nothing to fix in code (internal linking,
+  robots.txt, canonical tags all confirmed correct again). **Added this
+  check permanently to `npm run site-metrics`** (`indexSample` section,
+  `scripts/ops/site-metrics.ts`) — 5 fixed representative URLs (home,
+  one company, one industry, `/insights`, `/learn`) inspected every run,
+  so a stall or a real regression (e.g. a crawled page suddenly losing
+  its PASS verdict) shows up day over day instead of being re-discovered
+  by hand. Typechecked clean, no site code touched, no deploy needed.
+  **For the user, 2-minute check (not exposed via this API):** GSC's
+  Manual Actions / Security Issues page — worth a quick look given crawl
+  has stalled this hard, even though nothing else here points to a
+  penalty. Not re-escalating the original 10-18 date otherwise; the
+  picture is "slow," not "stuck at zero" as previously read.
 - Once Search Console shows real (non-bot) query volume: rewrite
   titles/descriptions for position-5-to-20 opportunity queries. As of
   2026-10-06 every `opportunities`/`topQueries`/per-page query we checked
@@ -63,6 +59,13 @@ date and commit.
 
 ## Done
 
+- 2026-10-12: confirmed both bank/insurer `/learn` guides are now live
+  (`/learn/what-is-net-interest-margin` and `/learn/what-is-combined-ratio`
+  both return 200 with real rendered content, not a stub) — the nightly
+  routine ran the `--articles-dir content/guides` publish per the
+  self-deleting CLAUDE.md bullet, but left the bullet in place. Removed it
+  from CLAUDE.md's "Growth work" section as its own instructions said to.
+  Closes out the item that had been open since 2026-10-10.
 - 2026-10-10 (`e56154d`, `64d1003`, `de8478c`): wrote the 2 bank/insurer
   `/learn` guides from the top of the list above
   (`what-is-net-interest-margin.md`, `what-is-combined-ratio.md`) and
