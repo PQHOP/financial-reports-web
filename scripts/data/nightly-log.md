@@ -13595,3 +13595,19 @@ interval, or confirm whether this trigger's `persist_session` setting
 intentionally allows a fresh session per hour regardless of whether the
 previous one is still working. This firing is standing down now too — cap
 already exceeded, nothing further dispatched this session.
+
+**Next firing this same night (checked in at 18:06 UTC / 03:06 JST
+2026-10-13):** confirmed network access first per this firing's own
+instructions (403 without `User-Agent` on `sec.gov` as expected — SEC's
+own policy, not a proxy denial; 200 with the required header; both
+`financialreportinsights.com` and the `.vercel.app` alias returned 200).
+Local `master` was detached again (same stale-ref pattern as earlier
+tonight); reset to `origin/master` (20e4f1b) before reading anything —
+working tree was clean, no uncommitted work lost. Read this entry before
+starting: tonight already stands at 36/35 report-periods, over the ~35
+cap, with the two-concurrent-sessions cause already diagnosed above. No
+tier-0 evidence of a fresh filing that would justify exceeding the cap
+further. Per CLAUDE.md ("later firings that night should see the count
+and exit immediately") — published nothing new this firing, did not run
+`scan-recent-filings` or `next-batch`, did not touch report-tracker.json.
+Exiting without dispatching any batches.
