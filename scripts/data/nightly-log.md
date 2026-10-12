@@ -13492,3 +13492,71 @@ succeeded and passed the live-page sanity check:
 
 **3 more report-periods — 33 report-periods total tonight.**
 report-tracker.json updated for CELZ, CENX, CDRO.
+
+**Batch 12 (final batch tonight)** — 2 more opus subagents dispatched in
+parallel, both succeeded and passed the live-page sanity check, bringing
+tonight's total to exactly 35/35 — the nightly cap:
+
+- **CERS** (Cerus Corporation — blood-safety technology, the INTERCEPT
+  Blood System for pathogen-inactivating donated blood products) Q2
+  2026 (first report) — total revenue rose 5.3% to $63.3M; product
+  revenue +9.5% to $57.4M on platelet/plasma kits and US sales of the
+  IFC bleeding-control product ($6.7M vs $5.6M), though core platelet
+  kit volume grew only 1% worldwide (-3% internationally). Government
+  contract revenue fell 24% to $5.9M. Product gross margin fell to
+  51.4% from 55.2% on unhedged euro kit purchasing, tariffs and
+  freight. Net loss narrowed to $2.9M (-$0.01/share) from $5.7M
+  (-$0.03), but the improvement came mostly from a $4.5M R&D cut (after
+  the INT200 illuminator's FDA filing was submitted) and lower
+  currency/interest costs, not product profit (gross profit rose only
+  $0.6M). H1 operating cash use ($5.7M) exceeded the H1 net loss as
+  inventory rose 17%. Paid down $30M of term loan in June, leaving
+  $64.9M debt against $56.3M cash (~$8.6M net debt); management says
+  ≥12 months of cash. Red-blood-cell program delayed — US filing no
+  longer expected in H2 2026 pending more FDA-required trial data.
+  FY2026 guidance: product revenue narrowed to $229-231M, IFC raised to
+  $23-25M.
+  https://financialreportinsights.com/companies/cers/2026/q2
+- **CEPL** (Capstone Energy Plus, Inc. — formerly Capstone Green
+  Energy/Capstone Turbine; makes microturbines for on-site power
+  generation) FY2026 ANNUAL (fiscal year ended 2026-03-31, first
+  report) — revenue rose 23.9% to $106.0M as product sales rose 41% on
+  37.2 MW shipped (vs 26.7 MW), partly pulled forward by buyers rushing
+  to lock in a federal ITC tax credit before expiry. Gross margin rose
+  to 32% from 27% across all three revenue lines; operating margin
+  turned positive (3.2% vs -6.5%); net income was $2.8M vs a $7.2M
+  loss. EPS was still -$3.21 because an $83.5M buyout of the operating
+  subsidiary's preferred holder created a $69.6M non-cash charge to
+  common shareholders. Caveats: operating profit ($3.4M) was less than
+  interest expense ($4.1M), covered mainly by $3.3M of other income
+  (a retained customer deposit); operating cash flow was -$2.5M as
+  receivables jumped 83%; heavy dilution (~50M shares counting warrants
+  and convertible preferred vs ~19M a year earlier); $25.3M of secured
+  exit notes mature 2026-12-07 with no refinancing secured yet per the
+  10-K. Report also covers the subsequent June-2026-quarter 10-Q
+  (revenue -11% to $24.9M, margin up to 35%, near-breakeven) and
+  post-quarter events: Nasdaq uplisting as CEPL (2026-07-08), a $500M
+  shelf registration, and a CARB notice of violation over 27 units.
+  https://financialreportinsights.com/companies/cepl/2026/annual
+
+**Skips (no subagent needed):** CEPF, CEPO, CEPS, CEPV — all "Cantor
+Equity Partners" pre-merger SPACs. report-tracker.json updated for all
+four.
+
+**2 more report-periods — 35 report-periods total tonight, at the ~35
+nightly cap.** report-tracker.json updated for CERS, CEPL, CEPF, CEPO,
+CEPS, CEPV. Standing down for the night — cap reached exactly. Tonight's
+work (across all firings): tier 0 scan was empty (no fresh EDGAR
+candidates in the last 7 days); worked entirely in tier 1 (2026 S&P
+500/us-listed backlog), us-listed tier, picking up right after last
+night's CATY. Published 32 new report-periods across 32 companies
+(CBC through CEPL) plus 6 tracker-only skips (CCAP/CCAQ/CCCT/CCD,
+CCII/CCXI, CEPF/CEPO/CEPS/CEPV, CDZIP, CENTA — various SPACs, a BDC, a
+closed-end fund, and two duplicate share classes already covered under
+their common-stock ticker) and published the 11 editorial guide articles
+flagged as a pending one-time task in CLAUDE.md. The next firing should
+start a fresh night's entry and resume the us-listed backlog after CEPL
+(CCG, CCHH, CDNL, CDT, CDTG remain unresolved/unchecked from tonight —
+worth a closer look next time: CCG and CDRO-adjacent entities may be
+foreign private issuers needing the 6-K path, CDNL appeared to have no
+10-Q yet as of tonight's check).

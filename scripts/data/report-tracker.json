@@ -28766,5 +28766,94 @@
         "filedAt": "2026-09-30"
       }
     ]
+  },
+  "CERS": {
+    "name": "Cerus Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cers/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q1 10-Q filed 2026-04-30, Q2 10-Q filed 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cers/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-30"
+      }
+    ]
+  },
+  "CEPL": {
+    "name": "Capstone Energy Plus, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cepl/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12",
+      "note": "report was written from the FY2026 10-K (fiscal year ended 2026-03-31, filed 2026-06-25); the newer Q1 FY2027 10-Q (period ended 2026-06-30) was also read and summarized in the report body but FY2026 ANNUAL is what satisfies 2026 coverage"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (quarter ended Sept 2026)",
+      "estimate": "2026-11-12",
+      "basis": "~90 days after the Aug 2026 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cepl/2026/annual",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-06-25"
+      }
+    ]
+  },
+  "CEPF": {
+    "name": "Cantor Equity Partners IV, Inc.",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank-check company), no operating business or financial results to report on.",
+    "lastChecked": "2026-10-12"
+  },
+  "CEPO": {
+    "name": "Cantor Equity Partners I, Inc.",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank-check company), no operating business or financial results to report on.",
+    "lastChecked": "2026-10-12"
+  },
+  "CEPS": {
+    "name": "Cantor Equity Partners VI, Inc.",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank-check company), no operating business or financial results to report on.",
+    "lastChecked": "2026-10-12"
+  },
+  "CEPV": {
+    "name": "Cantor Equity Partners V, Inc.",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank-check company), no operating business or financial results to report on.",
+    "lastChecked": "2026-10-12"
   }
 }
