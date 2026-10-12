@@ -28670,5 +28670,101 @@
     "status": "skipped",
     "skipReason": "same underlying company as CENT (Central Garden & Pet Company) — just the nonvoting Class A share class, not a separate operating business. CENT covers this company's 2026 reporting.",
     "lastChecked": "2026-10-12"
+  },
+  "CELZ": {
+    "name": "Creative Medical Technology Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/celz/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q1 10-Q filed 2026-05-08, Q2 10-Q filed 2026-08-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/celz/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
+    ]
+  },
+  "CENX": {
+    "name": "Century Aluminum Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cenx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 10-Q filed 2026-05-07, Q2 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cenx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
+  "CDRO": {
+    "name": "Codere Online Luxembourg, S.A.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cdro/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-30"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-10-30",
+      "basis": "cadence estimate",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cdro/2026/h1",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-09-30"
+      }
+    ]
   }
 }

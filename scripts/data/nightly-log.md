@@ -13425,3 +13425,70 @@ succeeded and passed the live-page sanity check:
 
 **3 more report-periods — 30 report-periods total tonight.**
 report-tracker.json updated for CELC, CENN, CENT, CENTA (skip).
+
+**Batch 11** — 3 more opus subagents dispatched in parallel, all
+succeeded and passed the live-page sanity check:
+
+- **CELZ** (Creative Medical Technology Holdings, Inc. — small-cap
+  regenerative-medicine/cell-therapy biopharma) Q2 2026 (first report)
+  — no revenue (also none a year ago). Net loss widened 22.6% to
+  $1.512M as SG&A rose 48% to $1.080M (incl. a $206,642 marketing
+  campaign) while R&D fell 8% to $0.459M as the CELZ-201/Olastrocel
+  ADAPT back-pain trial moved from dosing to follow-up. Loss per share
+  improved to -$0.41 from -$0.48 purely on a 43% larger weighted share
+  count. On June 30 repriced 2.79M warrants down to $1.60 from $2.86
+  (raising ~$4.5M) while issuing 5.58M new $1.60 warrants — the third
+  such repricing in 16 months at successively lower strikes ($4.42→
+  $3.75→$2.86→$1.60); shares outstanding went from 3.70M to 6.49M
+  overnight, 8.89M warrants remain outstanding. Cash $8.71M; no
+  going-concern warning, though the subagent estimates ~17 months of
+  runway at the H1 burn rate. Report also covers related-party dealings
+  (an undocumented $125k advance to a CEO-controlled SPAC sponsor, a
+  Bionance subsidiary paying 30% of distributions to a manager owned by
+  the CEO/CFO/a consultant, a $100k CEO bonus tied to the warrant deal,
+  and a post-quarter purchase of BioDefense shares from the CEO's
+  company). Pipeline: ADAPT Phase 1/2 has FDA Fast Track status and an
+  opioid-patient expansion cohort cleared June 2026; also CREATE-1
+  (Type 1 diabetes), Ultrasome (knee OA) and a burn-pit registry.
+  https://financialreportinsights.com/companies/celz/2026/q2
+- **CENX** (Century Aluminum Company — primary aluminum smelters in
+  the US and Iceland) Q2 2026 (first report) — net sales rose 19.7% to
+  $752.1M and net income swung to $249.3M ($2.39/share) from a $4.6M
+  loss (restated) a year ago, operating margin jumping to 28.1% from
+  2.9% — almost entirely the 50% Section 232 import tariff pushing the
+  Midwest premium to an H1 average of $2,406/t from $855, lifting the
+  US realized price to ~$6,021/t vs ~$3,407/t for Iceland-sourced
+  metal. This happened despite shipments falling 25.7%: a Grundartangi
+  (Iceland) transformer failure idled one of two potlines until late
+  April, cutting Iceland shipments 56% (partly offset by a $40.1M Q2
+  insurance gain). Adjusted net income $257.3M; a 45X tax credit cut
+  COGS by $26.3M; effective tax rate just 4.7%. Century has already
+  hedged 109,300 tonnes of Midwest premium through 2028, capping how
+  much of any further tariff-driven premium increase it keeps. Cash
+  conversion ~83% of net income excluding a $287.9M Hawesville
+  sale gain. A Jamalco-related restatement and expected material
+  weakness are disclosed. Q3 guidance: adjusted EBITDA attributable to
+  Century of $325-345M.
+  https://financialreportinsights.com/companies/cenx/2026/q2
+- **CDRO** (Codere Online Luxembourg, S.A. — online gambling/betting,
+  Spain and Latin America; foreign private issuer, 20-F/6-K filer,
+  reports in EUR) H1 2026 (first report, via 6-K interim financial
+  statements) — IFRS revenue rose 18.4% to €124.7M (Spain +20.7%,
+  Mexico +15.6%; online casino now 61% of revenue, +20%). Swung to
+  €5.6M net income from a €3.1M loss, but most of the ~€6.5M
+  finance-result improvement was non-cash (€2.7M from Argentina
+  hyperinflation accounting, €3.2M smaller FX losses) — Q2 alone was
+  actually a €1.4M net loss, largely on a €3.9M executive share-award
+  charge and a €1.7M warrant charge. Mexico's segment EBITDA loss
+  widened to -€1.8M from -€0.9M; Spain's EBITDA fell to €6.8M from
+  €7.4M as its costs (+26%) outpaced revenue (+21%). Operating cash
+  flow €16.7M, but €11M of that came from higher payables. Cash €62.5M,
+  no debt (€4.6M reserved for customer wallets). Guidance raised
+  2026-07-30 to €255-265M net gaming revenue and €20-25M adjusted
+  EBITDA, implying a flat-to-softer H2 vs H1. Post-period: announced an
+  NFL Mexico sponsorship (Sept 10) and exited Argentina's Mendoza
+  province (Aug 10).
+  https://financialreportinsights.com/companies/cdro/2026/h1
+
+**3 more report-periods — 33 report-periods total tonight.**
+report-tracker.json updated for CELZ, CENX, CDRO.
