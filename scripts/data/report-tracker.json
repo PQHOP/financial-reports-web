@@ -27662,5 +27662,101 @@
         "filedAt": "2026-08-07"
       }
     ]
+  },
+  "CBC": {
+    "name": "Central Bancompany, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cbc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings)",
+      "estimate": "2026-10-27",
+      "basis": "Q2 earnings 8-K filed 2026-08-04, Q1 8-K 2026-04-28, quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cbc/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
+  },
+  "CBFV": {
+    "name": "CB Financial Services, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cbfv/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Q3 2026 earnings)",
+      "estimate": "2026-10-27",
+      "basis": "Q1 results 2026-04-22, Q2 results 2026-07-27, roughly quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cbfv/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
+    ]
+  },
+  "CBIO": {
+    "name": "Crescent Biopharma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cbio/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q1 10-Q filed 2026-04-29, Q2 10-Q filed 2026-07-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cbio/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-30"
+      }
+    ]
   }
 }

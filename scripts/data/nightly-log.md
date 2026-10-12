@@ -12833,3 +12833,78 @@ night's entry and pick up the us-listed backlog after CATY (per
 published (BUUU through CATY, plus skips BAOS/BLIV/BRAI/BTCT carried
 over as still-pending-future, CAES/CAII/CAQ as pre-merger SPACs). Cap
 reached — no further publishing tonight.**
+
+### 2026-10-12 night (16:00 UTC 2026-10-12 → 22:59 UTC 2026-10-12 / 01:00–07:59 JST 2026-10-13)
+
+New night, cap resets to ~35. Before the report batch: published the two
+pending guides from `content/guides/` (`what-is-net-interest-margin`,
+`what-is-combined-ratio`) via `npm run admin-publish -- --articles-dir
+content/guides` (upserted all 11, safe/idempotent) — both confirmed
+rendering at `/learn/what-is-net-interest-margin` and
+`/learn/what-is-combined-ratio`. Left the CLAUDE.md "pending one-time
+task" bullet in place rather than editing CLAUDE.md in this firing, since
+this firing's instructions scoped commits to report-tracker.json/
+nightly-log.md only — the daily ops routine can remove that bullet.
+
+Network check passed (403 without User-Agent on sec.gov confirmed as
+SEC's own policy, not a proxy denial; 200 with the required header). Git
+housekeeping: the container's local `master` branch ref was stale
+(pointing at the 2026-10-06 ops-report commit) while `HEAD` had been
+checked out detached at the current tip; reset local `master` to match
+`origin/master` (348a708) before starting — no uncommitted work was lost,
+working tree was clean throughout.
+
+Tier 0 (`scan-recent-filings`, last 7 days): 0 fresh candidates (Mon
+2026-10-12 not yet indexed by EDGAR; weekend had none; Fri 2026-10-09 and
+earlier already covered by the window). Tier 1 (`next-batch -- --n 12`):
+BAOS/BLIV/BRAI/BTCT printed again but all have `nextExpectedFiling`
+estimates still in the future (2026-10-20 through 2026-11-27, confirmed
+by re-reading the tracker directly) — left alone, no re-research. Real
+next backlog items (us-listed tier): CBC, CBFV, CBIO, CBK, CBLL, CBNK,
+CBRS, CBSH, ...
+
+**Batch 1** — 3 opus subagents dispatched in parallel, all succeeded and
+passed the live-page sanity check (cache-busted fetch, Takeaway + outlook
++ source note all present, pages end cleanly):
+
+- **CBC** (Central Bancompany, Inc. — Missouri bank holding company,
+  November 2025 IPO) Q2 2026 (first report) — net income rose 24.5% to
+  $113.8M and diluted EPS rose 14.9% to $0.47, but most of the YoY jump
+  is the comparison: Q2 2025 took a $13.6M loss on selling a consumer
+  lease portfolio. Adjusted EPS grew only 6.7% because the IPO added
+  8.9% more diluted shares. Net interest margin widened to 4.40% from
+  4.26% as cash moved into higher-yielding securities and deposit costs
+  fell (1.19%→1.10%); 44% of earning assets are funded by non-interest
+  deposits. The real story is capital: CET1 is 28.6% against a 13.5%
+  target — about $1.9B of surplus — holding ROTCE to 13.1% despite a
+  high 2.24% ROA; the new $100M buyback covers only ~5% of that surplus.
+  https://financialreportinsights.com/companies/cbc/2026/q2
+- **CBFV** (CB Financial Services, Inc. — Pennsylvania/Ohio/West
+  Virginia community bank) Q2 2026 (first report) — net income $4.30M
+  (+8.9%), diluted EPS $0.80 (+8.1%). Net interest income rose 15.9% on a
+  Q3 2025 bond swap (sold $129.6M of securities yielding 2.87%, took a
+  $9.3M after-tax loss, reinvested near 5.43%); NIM rose to 3.68% from
+  3.54% YoY but fell from 3.83% in Q1 as new "Specialty Treasury"
+  deposits ($84.1M since year-end) sit in cash. Noninterest expense rose
+  faster (+18.8%) on treasury/commercial hires and data-processing costs,
+  pushing the efficiency ratio to 67.01% from 64.94%. Credit stayed clean
+  (NPLs 0.29%, down from 0.46%) though delinquent+nonaccrual rose to
+  0.69%. Also discloses a May 2026 cybersecurity incident (an employee's
+  unauthorized use of an AI tool on customer SSNs/DOBs); no material
+  financial impact expected.
+  https://financialreportinsights.com/companies/cbfv/2026/q2
+- **CBIO** (Crescent Biopharma, Inc. — clinical-stage biopharma, the
+  former GlycoMimetics after a June 2025 reverse merger) Q2 2026 (first
+  report) — net loss widened 14.0% to $24.8M as R&D rose 60.5% to $19.4M
+  on manufacturing/trial costs for CR-001 and CR-002. A $1.8M gain on
+  selling legacy IP and $1.5M of interest income softened the reported
+  loss (ex-gain, loss would be ~$26.6M). Cash was $171.6M at quarter-end;
+  a July offering added $133.5M net, taking pro forma cash to $305.1M and
+  pushing runway guidance from "into 2028" to "into 2H 2028" — though
+  that guidance implies ~$30-35M/quarter spending against ~$23M now.
+  Shares outstanding rose ~30% pro forma. First human data for CR-001
+  (ASCEND trial) expected Q1 2027.
+  https://financialreportinsights.com/companies/cbio/2026/q2
+
+**3 report-periods published — 3 report-periods total tonight.**
+report-tracker.json updated for CBC, CBFV, CBIO.
