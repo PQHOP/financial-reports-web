@@ -13363,3 +13363,65 @@ and passed the live-page sanity check:
 
 **3 more report-periods — 27 report-periods total tonight.**
 report-tracker.json updated for CDZI, CDZIP (skip), CECO, CELH.
+
+**Batch 10** — 3 more opus subagents dispatched in parallel, all
+succeeded and passed the live-page sanity check:
+
+- **CELC** (Celcuity Inc. — clinical-stage biopharma, gedatolisib for
+  HR+/HER2- breast cancer) Q2 2026 (first report) — no revenue yet; net
+  loss widened to $78.9M ($1.44/share) from $45.3M ($1.04) as SG&A rose
+  361% to $35.0M on commercial hiring/launch prep ahead of approval,
+  partly offset by lower R&D (trial costs easing) and a one-time
+  $11.5M loss from early-repaying the $137.4M Oxford/Innovatus term
+  loan with proceeds of June's $575M 0.25% convertible notes due 2032.
+  Cash and investments rose to $754.0M from $441.5M (falls to ~$704M
+  after a $50M Pfizer milestone payable in Q3); cash guidance of
+  lasting "at least into 2029" unchanged. Convertible notes total
+  $776.25M face value; stockholders' equity is slightly negative; full
+  conversion would add ~17% more shares. FDA approved REVTORPYK
+  (gedatolisib) 2026-07-14 for PIK3CA wild-type patients; a supplemental
+  application for PIK3CA-mutant patients was submitted 2026-08-26 (no
+  decision date yet); the drug became commercially available 2026-09-30.
+  https://financialreportinsights.com/companies/celc/2026/q2
+- **CENN** (Cenntro Inc. — small electric commercial-vehicle maker,
+  Nevada-incorporated, manufacturing mainly in Changxing, China) Q2 2026
+  (first report) — revenue fell 2.9% to $6.22M (506 vehicles sold vs
+  430, but mix shifted to cheaper models/spare parts; Europe roughly
+  halved after moving to independent distributors, North America rose
+  to $1.8M). Gross margin turned positive (6.6% vs -0.3%); operating
+  loss $7.50M. Net loss widened to $10.57M from $9.89M, ~$4.8M of it
+  one-offs (a $2.9M supplier-prepayment impairment, a $1.9M loss from
+  deconsolidating insolvent German subsidiaries). EPS "improved" to
+  -$5.97 from -$16.30 only because of a 1-for-60 reverse split
+  (2026-04-13) that roughly tripled the share count on a split-adjusted
+  basis. Cash $4.3M against $5.5M of H1 operating burn; no going-concern
+  warning in the 10-Q itself. Post-quarter: a $57.0M private placement
+  closed 2026-09-15 (15.12M shares at $3.773), taking shares outstanding
+  from 2.47M to 17.59M — new non-US investors ended up with ~86% of the
+  company; a 2026-10-07 majority-holder written consent (no shareholder
+  vote) authorized a further reverse split of up to 1-for-2,000.
+  https://financialreportinsights.com/companies/cenn/2026/q2
+- **CENT** (Central Garden & Pet Company — Pet and Garden consumer
+  products, fiscal year ends late September) Q3 FY2026 (quarter ended
+  2026-06-27, first report) — net sales fell 8.2% to $882.4M, almost
+  entirely from exiting the low-margin pet-distribution business into a
+  Phillips partnership (Central kept 20%; that business had $474M of
+  FY2025 sales) — excluding portfolio changes, organic sales rose 2.4%.
+  Gross margin rose 130bp to 35.9%; Pet segment sales fell 18.7% but its
+  adjusted operating margin jumped to 19.0% from 15.8%, while Garden
+  sales rose 2.9% with margin up to 18.7%. Corporate costs rose $7.0M
+  (M&A and AI/data payroll), accounting for most of the $9.3M drop in
+  operating income. GAAP net income fell 5.4% to $89.9M, diluted EPS
+  fell 4.6% to $1.45; adjusted EPS $1.54 vs $1.56 — the GAAP/adjusted
+  gap is $13.8M of (recurring) facility-closure charges partly offset by
+  a $3.6M tariff refund and a $2.5M gain on the distribution deal. FY
+  adjusted-EPS guidance raised to "$2.85 or better" from "$2.70 or
+  better" (nine-month adjusted EPS already $3.04, implying a seasonal
+  Q4 loss as usual). Post-quarter: agreed 2026-07-27 to buy 80% of
+  German pet-supplies company TRIXIE for €340M plus up to €60M earn-out,
+  closing expected H1 FY2027. CENTA (nonvoting Class A, same company)
+  marked skipped.
+  https://financialreportinsights.com/companies/cent/2026/q3
+
+**3 more report-periods — 30 report-periods total tonight.**
+report-tracker.json updated for CELC, CENN, CENT, CENTA (skip).

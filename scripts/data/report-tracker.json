@@ -28568,5 +28568,107 @@
         "filedAt": "2026-08-06"
       }
     ]
+  },
+  "CELC": {
+    "name": "Celcuity Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/celc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "~90 days after Q2 10-Q (same day as Q2 earnings 8-K, Aug 13)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/celc/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-13"
+      }
+    ]
+  },
+  "CENN": {
+    "name": "Cenntro Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cenn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "last year Q3 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cenn/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
+  },
+  "CENT": {
+    "name": "Central Garden & Pet Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cent/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2026-11-24",
+      "basis": "fiscal year ends ~2026-09-26 plus usual 10-K gap",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cent/2026/q3",
+        "periodEnd": "2026-06-27",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
+  "CENTA": {
+    "name": "Central Garden & Pet Company - Class A Common Stock Nonvoting",
+    "status": "skipped",
+    "skipReason": "same underlying company as CENT (Central Garden & Pet Company) — just the nonvoting Class A share class, not a separate operating business. CENT covers this company's 2026 reporting.",
+    "lastChecked": "2026-10-12"
   }
 }
