@@ -27950,5 +27950,29 @@
         "filedAt": "2026-08-13"
       }
     ]
+  },
+  "CCAP": {
+    "name": "Crescent Capital BDC, Inc.",
+    "status": "skipped",
+    "skipReason": "business development company (closed-end fund structure) — reports NAV per share and net investment income, not a fit for the site's revenue/earnings metrics schema (no BDC fields defined in src/lib/metrics.ts). Revisit if BDC-specific metrics fields are added.",
+    "lastChecked": "2026-10-12"
+  },
+  "CCAQ": {
+    "name": "Collective Acquisition Corp.",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank-check company), no operating business or financial results to report on.",
+    "lastChecked": "2026-10-12"
+  },
+  "CCCT": {
+    "name": "Columbus Circle Capital Corp III",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank-check company), no operating business or financial results to report on.",
+    "lastChecked": "2026-10-12"
+  },
+  "CCD": {
+    "name": "Calamos Dynamic Convertible & Income Fund",
+    "status": "skipped",
+    "skipReason": "closed-end fund (NAV-based, not an operating company) — not a fit for the site's revenue/earnings-driven report format.",
+    "lastChecked": "2026-10-12"
   }
 }

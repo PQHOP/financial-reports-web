@@ -13008,3 +13008,11 @@ and passed the live-page sanity check:
 
 **3 more report-periods — 9 report-periods total tonight.**
 report-tracker.json updated for CBRS, CBSH, CBUS.
+
+**Skips (no subagent needed, judged directly from the admin dropdown
+name/SEC entity type):** CCAP (Crescent Capital BDC — closed-end-fund-
+structured BDC, reports NAV/net investment income, no fitting metrics
+schema), CCAQ (Collective Acquisition Corp. — pre-merger SPAC), CCCT
+(Columbus Circle Capital Corp III — pre-merger SPAC), CCD (Calamos
+Dynamic Convertible & Income Fund — NAV-based closed-end fund, not an
+operating company). report-tracker.json updated for all four.
