@@ -13178,3 +13178,66 @@ and passed the live-page sanity check:
 
 **3 more report-periods — 18 report-periods total tonight.**
 report-tracker.json updated for CCOI, CCSI, CDLX.
+
+**Batch 7** — 3 more opus subagents dispatched in parallel, all succeeded
+and passed the live-page sanity check. Two of these required looking past
+the plain 10-Q pipeline: CCEC and CCEP are foreign private issuers that
+file 6-K/20-F instead of 10-Q/10-K, so the subagents located the 6-K
+exhibit carrying real interim financial statements instead:
+
+- **CCEC** (Capital Clean Energy Carriers Corp. — LNG/LPG/product tanker
+  shipping, Marshall Islands) Q2 2026 (first report, via 6-K Q2 earnings
+  release) — revenue rose 8.5% to $104.9M entirely on fleet growth
+  (13.0→15.5 average vessels after five June deliveries); vessel opex
+  rose 32% to $20.8M on five-year special surveys and the bigger fleet,
+  pulling operating margin down to 50.6% from 55.2%. Net income from
+  continuing operations fell 2.2% to $29.0M; diluted EPS fell 5.9% to
+  $0.48 as the dividend-reinvestment plan added ~3% more shares. H1 net
+  income from continuing ops fell 24% to $47.3M. $751.5M spent on
+  newbuilds in H1, funded by $837M of new borrowing; total debt now
+  $2.96B with $1.70B of shipyard payments still due (incl. $640.8M in Q1
+  2027). $0.15 quarterly dividend is covered; backlog ~$2.9B.
+  https://financialreportinsights.com/companies/ccec/2026/q2
+- **CCEP** (Coca-Cola Europacific Partners plc — Coca-Cola bottler
+  across Western Europe, Australia/Pacific, Indonesia) H1 2026 (first
+  report, via 6-K half-year results) — revenue rose 4.4% to €10,724M
+  (6.1% at constant currency); comparable operating profit grew 8.1%
+  constant-currency to €1.48bn. Six extra selling days this half
+  flatter both figures (they reverse in Q4) — per selling day, volume
+  rose only 2.2% and price/mix 0.4%. Margin gain came mostly from opex
+  falling to 21.9% of revenue from 22.4%, not gross margin (flat
+  ~35.3%). About a third of the 9.1% diluted-EPS growth (to €2.17) came
+  from buybacks shrinking the share count (459m→446m). Free cash flow
+  was only €435M (+2.4%) against €868M returned via buybacks/dividends,
+  so net debt rose to €10.28bn from €9.82bn. Restructuring charges and a
+  German property gain in both years distort the regional segment
+  comparison (Europe +3.7% reported vs +7.6% comparable). FY2026
+  guidance reaffirmed (revenue +3-4%, operating profit ~+7%, FCF ≥€1.7bn,
+  €1bn buyback).
+  https://financialreportinsights.com/companies/ccep/2026/h1
+- **CD** (Chaince Digital Holdings Inc. — formerly Mercurity Fintech;
+  now a small NY broker-dealer (Chaince Securities) plus a Hong
+  Kong/Shenzhen consulting arm, having wound down its Filecoin mining
+  business in Dec 2025) Q2 2026 (first report) — revenue doubled to
+  $463K (industry consulting $355K vs $76K; IPO advisory fell to $60K
+  from $158K); heavy customer concentration (one customer 53% of
+  revenue, five customers ~98%). Operating loss from continuing
+  operations widened to $1.40M from $0.87M as professional fees nearly
+  quadrupled to $839K. Net loss narrowed to $1.105M from $1.546M only
+  because losses from the now-closed mining business shrank $0.71M —
+  the continuing business actually lost 34% more YoY. $31.0M cash plus
+  $12.8M short-term investments, no debt; H1 operating cash flow was
+  slightly positive but driven by collecting receivables, not
+  profitability. Heavily diluted: shares outstanding rose from 72.9M at
+  December to 110.0M by August 11 after two stock sales (incl. a
+  $16.2M raise earmarked partly for a "digital asset reserve"). Also
+  restated a Q2 2025 tax-benefit error via an amended 2025 10-K filed
+  2026-08-10.
+  https://financialreportinsights.com/companies/cd/2026/q2
+
+**Skips (no subagent needed):** CCII (Cohen Circle Acquisition Corp.
+II) and CCXI (Churchill Capital Corp XI) — both pre-merger SPACs.
+report-tracker.json updated for both.
+
+**3 more report-periods — 21 report-periods total tonight.**
+report-tracker.json updated for CCEC, CCEP, CD, CCII, CCXI.

@@ -28262,5 +28262,113 @@
         "filedAt": "2026-08-05"
       }
     ]
+  },
+  "CCEC": {
+    "name": "Capital Clean Energy Carriers Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/ccec/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-03",
+      "basis": "Q3 2025 results 6-K filed 2025-11-04, Q2 2026 filed 2026-08-04",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/ccec/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-04"
+      }
+    ]
+  },
+  "CCEP": {
+    "name": "Coca-Cola Europacific Partners plc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/ccep/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 results)",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 trading update)",
+      "estimate": "2026-10-30",
+      "basis": "Q1 2026 trading update 6-K filed 2026-04-28, quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/ccep/2026/h1",
+        "periodEnd": "2026-07-03",
+        "filedAt": "2026-08-04"
+      }
+    ]
+  },
+  "CD": {
+    "name": "Chaince Digital Holdings Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-12",
+      "url": "https://financialreportinsights.com/companies/cd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "Q1 10-Q filed 2026-05-14, Q2 10-Q filed 2026-08-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-12",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-12",
+        "url": "https://financialreportinsights.com/companies/cd/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
+  },
+  "CCII": {
+    "name": "Cohen Circle Acquisition Corp. II",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank-check company), no operating business or financial results to report on.",
+    "lastChecked": "2026-10-12"
+  },
+  "CCXI": {
+    "name": "Churchill Capital Corp XI",
+    "status": "skipped",
+    "skipReason": "pre-merger SPAC (blank-check company), no operating business or financial results to report on.",
+    "lastChecked": "2026-10-12"
   }
 }
