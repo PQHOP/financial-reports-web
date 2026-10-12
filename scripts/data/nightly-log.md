@@ -13624,3 +13624,16 @@ earlier check) to confirm no hot-list filing landed since: **0 fresh
 candidates** (same result as earlier tonight, now through 2026-10-12).
 No justification to dispatch any batches. Published nothing, skipped
 nothing, did not touch report-tracker.json. Exiting.
+
+**Next firing this same night (checked in at 20:06 UTC / 05:06 JST
+2026-10-13):** network check passed first (403 without `User-Agent` on
+`sec.gov` as expected — SEC's own policy, not a proxy denial; 200 with
+the required header; `financialreportinsights.com` and the `.vercel.app`
+alias both 200). Local `master` was detached yet again with a stale ref
+(same recurring pattern this night); reset to `origin/master` (ab0f470)
+before reading anything — working tree was clean, no uncommitted work
+lost. Tonight already stands at 36/35 report-periods, 1 over the ~35 cap,
+per the entries above. Re-ran `scan-recent-filings` directly: **0 fresh
+candidates** (same result as the prior two check-ins, now through
+2026-10-12). No justification to dispatch any batches. Published
+nothing, skipped nothing, did not touch report-tracker.json. Exiting.
