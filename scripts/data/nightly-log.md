@@ -13068,3 +13068,56 @@ and passed the live-page sanity check:
 
 **3 more report-periods — 12 report-periods total tonight.**
 report-tracker.json updated for CCB, CCBG, CCC.
+
+**Batch 5** — 3 more opus subagents dispatched in parallel, all succeeded
+and passed the live-page sanity check:
+
+- **CCCC** (C4 Therapeutics, Inc. — clinical-stage targeted
+  protein-degradation biopharma) Q2 2026 (first report) — collaboration
+  revenue $6.64M (+2.8%) as a new Roche degrader-antibody deal ($2.7M)
+  offset a narrowed Merck KGaA program and the end of a separate Merck
+  deal. Net loss narrowed 9.2% to $23.6M, but almost all of the $1.9M
+  opex decline is non-cash (lower stock comp) — cash costs were flat.
+  Loss per share improved more (-$0.37 to -$0.18) mostly from an 84%
+  larger share count after an October 2025 offering, not operating
+  improvement. Cash rose to $300.4M on a $20M Roche upfront plus $33.5M
+  of at-the-market sales; underlying cash burn was ~$21-26M/quarter.
+  Runway guidance held at "to the end of 2028" despite the new cash,
+  earmarked for an added Phase 1b trial and Phase 3 planning. 101.2M
+  warrants at $2.22 strike remain an overhang (~75% more shares if
+  exercised). Elranatamab Phase 1b dose-escalation update expected 2H
+  2026 (an interim 8-K on 2026-09-25 already cleared the 75µg dose).
+  https://financialreportinsights.com/companies/cccc/2026/q2
+- **CCLD** (CareCloud, Inc. — healthcare revenue-cycle-management/
+  practice-management software) Q2 2026 (first report) — revenue rose
+  16.4% to $31.88M entirely on the Medsphere acquisition (Aug 2025,
+  +$6.8M); organic revenue was down ~8% on falling project-based medSR
+  work. GAAP operating margin fell to 5.8% from 10.9% and net income
+  fell 61% to $1.12M (EPS $0.00 vs $0.04) on higher R&D (capitalizing
+  less), higher acquisition-intangible amortization, and sharply higher
+  interest expense. Adjusted EBITDA fell 9% to $5.95M (margin 18.7% vs
+  23.8%). In April, took on a $50M Citizens/Provident debt facility
+  (SOFR+2.5-3.5%) and used ~$41.6M to redeem all Series B preferred
+  stock in May — equity fell to $17.4M from $59.5M, net debt ~$35M, $10M
+  due within 12 months. Operating cash flow stayed strong ($10.7M H1 vs
+  $2.0M net income). FY2026 guidance reaffirmed (revenue $128-132M,
+  adj. EBITDA $29-31M, EPS $0.20-0.23) but the report notes that implies
+  a tough step-up in H2 profitability versus H1's run rate.
+  https://financialreportinsights.com/companies/ccld/2026/q2
+- **CCNE** (CNB Financial Corporation — Pennsylvania bank holding
+  company incl. BankOnBuffalo) Q2 2026 (first report) — net income more
+  than doubled to $28.3M (+102.8%), diluted EPS $0.91 (+49.2%, far below
+  the net-income growth because diluted shares rose 41% after the
+  stock-funded ESSA Bancorp acquisition in July 2025). NIM rose to 3.88%
+  from 3.60%, but $4.8M of that is purchase-accounting accretion on the
+  acquired ESSA loans — excluding it, the tax-equivalent margin actually
+  fell to 3.65% from 3.68% in Q1. Efficiency ratio improved to 57.86%
+  from 64.73%. Credit quality is drifting worse: nonperforming assets
+  0.69% of assets (vs 0.48% a year ago), reserve coverage of nonaccruals
+  down to 123% from 170%. Also redeemed a $50M subordinated note and
+  classified an $81M branch-deposit sale as held for sale; no buybacks
+  this quarter. CET1 12.02%.
+  https://financialreportinsights.com/companies/ccne/2026/q2
+
+**3 more report-periods — 15 report-periods total tonight.**
+report-tracker.json updated for CCCC, CCLD, CCNE.
