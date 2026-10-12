@@ -12956,3 +12956,55 @@ and passed the live-page sanity check:
 
 **3 more report-periods — 6 report-periods total tonight.**
 report-tracker.json updated for CBK, CBLL, CBNK.
+
+**Batch 3** — 3 more opus subagents dispatched in parallel, all succeeded
+and passed the live-page sanity check:
+
+- **CBRS** (Cerebras Systems Inc. — AI chip/systems maker, IPO'd May 14
+  2026) Q2 2026 (first report) — revenue rose 74% to $180.1M as cloud
+  revenue (now 70% of the mix) jumped 281% to $126.0M on the OpenAI
+  750MW deal ramp ($56.8M from OpenAI alone). Reported gross margin fell
+  to 14.2% from 31.1%, but the company's own "core" non-GAAP gross
+  margin was 40.6% — the gap is $44.3M of customer-warrant amortization
+  booked against revenue, stock comp, and $14.5M of low-margin
+  pass-through data-center costs billed to OpenAI. Swung to a $450.5M
+  net loss (vs. +$309.5M a year ago) almost entirely on ~$384M of
+  IPO-triggered stock comp/payroll tax and the absence of last year's
+  one-time $363.3M gain. $25.4B contracted backlog. Customer
+  concentration is heavy and related-party-heavy: MBZUAI 34%, OpenAI
+  ~32%, G42 9%. H1 operating cash flow -$47.5M, capex $548.9M (FCF
+  ~-$596M), but $8.6B liquidity. Core results beat the company's own
+  June guidance; FY2026 core revenue guidance raised to $880-890M.
+  https://financialreportinsights.com/companies/cbrs/2026/q2
+- **CBSH** (Commerce Bancshares, Inc.) Q2 2026 (first report) — first
+  half-year including FineMark (private bank acquired 2026-01-01 for
+  ~9.9M shares). Revenue rose 11.9% to $498.9M, net income rose 4.8% to
+  $159.8M, but diluted EPS was nearly flat ($1.10 vs $1.09) as expenses
+  rose 21.5% on FineMark staff, a $12.0M litigation charge and $5.4M
+  more intangible amortization — efficiency ratio worsened to 58.40%
+  from 54.77%, ROE fell to 14.70% from 17.40%. NIM (FTE) rose to 3.77%
+  from 3.70%, helped by $6.2M of purchase-accounting accretion. A $114M
+  Visa equity gain roughly offset a $97.7M bond-repositioning loss
+  (sold $904.7M of ~2.6%-yielding bonds, reinvested $613.7M in ~4.3%
+  Treasuries). Substandard loans rose 19.5% in six months to $316.6M
+  even as charge-offs stayed low (0.19%). CET1 16.85%. By H1 segment:
+  Wealth pre-tax +46%, Commercial -15.1%, Retail -9.9%.
+  https://financialreportinsights.com/companies/cbsh/2026/q2
+- **CBUS** (Cibus, Inc. — agricultural gene-editing company) Q2 2026
+  (first report) — revenue $0.99M (+6.5%, mostly P&G research funding);
+  net loss narrowed 13% to $22.1M (loss per share improved to -$0.29
+  from -$0.61, largely because share count rose 84% after ~$33.4M of
+  stock sales in Jan/Mar 2026, not from operating improvement). R&D fell
+  30% and SG&A fell 19% after cost cuts; about $9.5M of the loss is
+  non-cash interest on a $253.5M royalty obligation to early investors.
+  Cash was $20.4M at quarter-end, down $9.9M; the 10-Q restates
+  "substantial doubt" about the company's ability to continue
+  operating. Guidance moved worse since Q1: cash runway pulled in to
+  "early Q1 2027" from "late Q1 2027", spending guidance raised to a
+  ~$35M/year run-rate by end of 2026, and the first Latin American rice
+  launch slipped a year to 2028. $232.5M of goodwill sits against only
+  $14.8M of equity. New CEO started June 8, 2026.
+  https://financialreportinsights.com/companies/cbus/2026/q2
+
+**3 more report-periods — 9 report-periods total tonight.**
+report-tracker.json updated for CBRS, CBSH, CBUS.
