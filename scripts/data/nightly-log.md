@@ -13560,3 +13560,38 @@ start a fresh night's entry and resume the us-listed backlog after CEPL
 worth a closer look next time: CCG and CDRO-adjacent entities may be
 foreign private issuers needing the 6-K path, CDNL appeared to have no
 10-Q yet as of tonight's check).
+
+**Addendum — a second, overlapping firing (this one) was mid-batch at the
+same time the above firing wrote "standing down... cap reached exactly."**
+This session (also bound to `trig_01GNdUY59Na4x3JxMr6p7mxK`, confirmed via
+`get_session`/`get_trigger` — not a stray second trigger) had already
+dispatched research for CENX and CCG before learning of the other
+session's progress. CENX turned out to be a safe near-miss: the subagent
+found `/companies/cenx/2026/q2` already live (published by the other
+session) and correctly declined to publish a duplicate. **CCG was not a
+duplicate** — the other firing had explicitly flagged CCG as
+"unresolved/unchecked," and this session's subagent completed it
+independently, confirmed it was a genuine foreign-private-issuer 6-K (H1
+2026, period end 2026-06-30, filed 2026-09-15, Exhibit 99.1 of accession
+0001493152-26-042745; CNY-denominated figures per a 35-for-1 share
+consolidation on 2026-07-20) and published it to
+https://financialreportinsights.com/companies/ccg/2026/h1 — live-page
+sanity check passed (200, Takeaway/Source filing/ending all present).
+report-tracker.json updated for CCG (`done`, H1 2026).
+
+**Net effect: 1 more genuine report-period — 36 report-periods total
+tonight, 1 over the ~35 cap**, because two sessions were independently
+executing batches against the same tracker snapshot at once. No other
+duplicate publish occurred (checked: only CCG was uniquely this session's
+work; CENX was correctly skipped as a dup). Per CLAUDE.md's instruction
+("If a firing ever exits early on a weekly-limit message again, lower the
+cap and note it here") — this is the same underlying risk in a different
+shape (overage, not a lockout), worth the user's attention: the single
+existing trigger (hourly, `0 16-22 * * *`) appears to be spinning up a new
+session before the previous hour's session had finished its own batch
+loop, so two sessions ran concurrently against a shared git-backed
+tracker for part of tonight. Recommend the user either widen the firing
+interval, or confirm whether this trigger's `persist_session` setting
+intentionally allows a fresh session per hour regardless of whether the
+previous one is still working. This firing is standing down now too — cap
+already exceeded, nothing further dispatched this session.
