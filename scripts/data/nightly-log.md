@@ -13611,3 +13611,16 @@ further. Per CLAUDE.md ("later firings that night should see the count
 and exit immediately") — published nothing new this firing, did not run
 `scan-recent-filings` or `next-batch`, did not touch report-tracker.json.
 Exiting without dispatching any batches.
+
+**Next firing this same night (checked in at 19:06 UTC / 04:06 JST
+2026-10-13):** network check passed (403 without `User-Agent` on
+`sec.gov` as expected, 200 with it). Local `master` was detached again
+with a stale ref; reset to `origin/master` (ef0769e) before reading
+anything -- working tree was clean except an `npm install`-regenerated
+`package-lock.json` diff (discarded, not real work). Tonight already
+stands at 36/35 report-periods, 1 over the ~35 cap, per the two entries
+above. Re-ran `scan-recent-filings` directly (rather than relying on the
+earlier check) to confirm no hot-list filing landed since: **0 fresh
+candidates** (same result as earlier tonight, now through 2026-10-12).
+No justification to dispatch any batches. Published nothing, skipped
+nothing, did not touch report-tracker.json. Exiting.
