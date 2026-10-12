@@ -13241,3 +13241,62 @@ report-tracker.json updated for both.
 
 **3 more report-periods — 21 report-periods total tonight.**
 report-tracker.json updated for CCEC, CCEP, CD, CCII, CCXI.
+
+**Batch 8** — 3 more opus subagents dispatched in parallel, all succeeded
+and passed the live-page sanity check:
+
+- **CDIO** (Cardio Diagnostics Holdings Inc. — AI-based cardiovascular
+  blood-test diagnostics, micro-cap) Q2 2026 (first report) — revenue
+  fell 28.3% YoY to $5,360 as one physician-practice testing programme
+  ended, though it doubled sequentially from Q1's ~$2,680. Net loss
+  narrowed 10.8% to $1.501M on lower legal/consulting/insurance costs.
+  Loss per share improved more ($0.97→$0.51), but about three-quarters
+  of that is dilution (shares outstanding 1.83M→2.96M in six months via
+  $3.69M of at-the-market sales). Cash $5.59M against ~$1.45M/quarter
+  burn (~4 quarters runway); no going-concern warning. Market cap
+  (~$4.9M) sits below a new $5M Nasdaq-listing floor currently stayed by
+  the SEC. Business progress: first payer coverage (Atlas Healthcare
+  Physicians, May 2026), company's own lab now processing samples (NY
+  license still pending), first reagent shipments to India partners.
+  https://financialreportinsights.com/companies/cdio/2026/q2
+- **CDNA** (CareDx, Inc. — transplant-rejection molecular diagnostics)
+  Q2 2026 (first report) — revenue rose 52.2% to $131.9M; testing
+  services revenue (+61%, ~58,000 tests, +17% volume) included $18.0M of
+  catch-up collections on older tests, against a $3.8M catch-up cut a
+  year ago, so the comparison is stretched at both ends — management's
+  own underlying growth estimate is ~28%. GAAP net income swung to
+  $110.6M ($2.07/share) from a $8.6M loss almost entirely on a $113.0M
+  gain from selling the lab-products business to Eurobio (closed June
+  30, $171.7M); excluding it, operating income was only ~$0.3M. Gross
+  margin rose to 73.5% from 66.9%; adjusted EBITDA $24.8M vs $5.3M
+  (~$9M ex. the catch-up revenue, per the subagent's estimate). Bought
+  Naveris (head/neck cancer testing) for $161.8M cash plus up to $100M
+  earn-outs, closed July 1. Medicare now 30% of revenue (vs 34%); a
+  Medicare Advantage payer dispute continues; a whistleblower False
+  Claims Act suit was dismissed 2026-04-23; Medicare's final coverage
+  policy (LCD L40060, effective 2026-08-30) confirmed kidney/heart/lung
+  test coverage. FY2026 guidance raised: revenue $490-500M (was
+  $447-465M), adjusted EBITDA $66-78M (was $43-57M). Reported 85.8%
+  operating margin is gain-distorted; report flags ~0.2% underlying.
+  https://financialreportinsights.com/companies/cdna/2026/q2
+- **CDXS** (Codexis, Inc. — enzyme-engineering biotech, CodeEvolver
+  platform) Q2 2026 (first report) — total revenue fell 2.7% to $14.9M
+  as product (enzyme) revenue rose 79% to $13.2M (more clinical-stage
+  and commercial manufacturing demand) but R&D/licensing revenue fell
+  79% to $1.7M on the absence of a $4.7M milestone and $2.5M license
+  payment that landed in Q2 2025. Product gross margin ticked up to 73%
+  from 72%. Net loss narrowed to $12.0M ($0.13/share) from $13.3M
+  ($0.16) on lower R&D and SG&A after a Q4 2025 headcount reduction. H1
+  operating cash burn ($22.8M) exceeded the H1 net loss, partly because
+  ~$6.3M of Q1 revenue was a non-cash deferred-license-revenue release.
+  Cash and short-term investments fell to $54.9M from $78.2M; a July
+  offering (18.0M shares at $1.50) raised ~$23.1M net, taking shares
+  outstanding to 109.5M and pro forma cash to ~$80M. $40M Innovatus loan
+  remains outstanding, covenants met. FY2026 revenue guidance reiterated
+  at $72-76M; cash-runway guidance extended to "through end of 2028"
+  from "through end of 2027" on the raise, but that still requires
+  $42-46M of H2 revenue — the thing the report flags to watch.
+  https://financialreportinsights.com/companies/cdxs/2026/q2
+
+**3 more report-periods — 24 report-periods total tonight.**
+report-tracker.json updated for CDIO, CDNA, CDXS.
