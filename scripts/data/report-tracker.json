@@ -29726,5 +29726,34 @@
         "filedAt": "2026-09-03"
       }
     ]
+  },
+  "CHNR": {
+    "name": "China Natural Resources, Inc. - Common Shares",
+    "status": "pending",
+    "skipReason": "FPI (gold mining, tiny shell-like filer with history of late NT 20-F filings), only FY2025 20-F on file (filed 2026-05-15, period 2025-12-31); no 2026 interim financials, all 2026 6-Ks are press releases/info statements.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-05-15"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-05-15",
+      "basis": "same annual cadence, no interim reporting pattern observed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CHPG": {
+    "name": "ChampionsGate Acquisition Corporation - Class A Ordinary Share",
+    "status": "skipped",
+    "skipReason": "Pre-merger blank-check SPAC (SIC: Blank Checks), no operating business.",
+    "lastChecked": "2026-10-13"
+  },
+  "CHW": {
+    "name": "Calamos Global Dynamic Income Fund - Closed End Fund",
+    "status": "skipped",
+    "skipReason": "Closed-end fund, not an operating company.",
+    "lastChecked": "2026-10-13"
   }
 }
