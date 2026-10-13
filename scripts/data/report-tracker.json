@@ -28933,5 +28933,69 @@
     "status": "skipped",
     "skipReason": "Pre-merger blank-check SPAC (SIC: Blank Checks), no operating business or revenue to report on.",
     "lastChecked": "2026-10-13"
+  },
+  "CDNL": {
+    "name": "Cardinal Infrastructure Group Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cdnl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "earnings 8-K/10-Q pattern: filed the day after each prior quarter (05-12 8-K -> 05-13 10-Q skipped Q1 slight gap, 08-11 8-K -> 08-12 10-Q); recent IPO (Dec 2025), limited history",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cdnl/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
+  },
+  "CDT": {
+    "name": "CDT Equity Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cdt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-20",
+      "basis": "company files late often (NT 10-K/NT 10-Q notices in 2026; Q1 2026 10-Q itself came in late on 2026-07-15), so expect Q3 around mid-to-late November rather than the standard 45-day deadline",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cdt/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-12"
+      }
+    ]
   }
 }

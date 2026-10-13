@@ -13668,3 +13668,52 @@ candidates** (same result as every prior check-in tonight, now through
 nothing, skipped nothing, did not touch report-tracker.json. Exiting —
 this is expected to be the last check-in of this window; the next
 scheduled firing (next day's 16:00 UTC) starts a fresh night's cap.
+
+### 2026-10-13 night (16:00 UTC 2026-10-13 → 22:59 UTC 2026-10-13 / 01:00–07:59 JST 2026-10-14)
+
+Fresh night, cap resets to 0/35. Network check passed first (403 without
+`User-Agent` on `sec.gov` as expected — SEC's own policy, not a proxy
+denial; 200 with the required header; both `financialreportinsights.com`
+and the `.vercel.app` alias returned 200). `master` was detached again on
+session start (same recurring pattern); reset to `origin/master`
+(3230d1a) before reading anything — working tree was clean. `npm install`
+regenerated `package-lock.json`; discarded (not real work), consistent
+with the harmless Prisma-postinstall `DATABASE_URL`-unset warning noted on
+prior nights.
+
+Ran `scan-recent-filings`: **0 fresh tier-0 candidates** (scanned through
+2026-10-13, hit filings on 10-07 through 10-09, nothing newer). Fell
+through to tier 1 (us-listed 2026 backlog) via `next-batch`.
+
+**Batch 1:** rechecked the 4 pending FPI tickers whose
+`nextExpectedFiling.estimate` had passed — **BAOS, BLIV, BRAI, BTCT** —
+via each company's EDGAR submissions feed. None has filed anything new;
+all stay `pending` with refreshed estimates (BLIV's pushed from 10-20 to
+10-31 since nothing landed by 10-13). Added **CCHH** (too-new FPI IPO,
+F-1 just went effective 09-29, no periodic financials yet) and **CDTG**
+(FPI, only press-release 6-Ks since its FY2025 20-F) as `pending` with
+reasons. Marked **CGBD** (Carlyle Secured Lending, BDC/closed-end fund)
+and **CGCF** (Cartesian Growth Corp IV, pre-merger SPAC) `skipped` — same
+categories as earlier skips. 0 report-periods published this step.
+
+**Batch 2:** published 2 report-periods via an opus research subagent,
+both Q2 2026 (period end 2026-06-30), each sanity-checked live after
+publish (content present, not truncated):
+- **CDNL** (Cardinal Infrastructure Group) —
+  https://financialreportinsights.com/companies/cdnl/2026/q2 — revenue
+  +114% to $226.9M (organic + Allied Paving-type acquisitions), operating
+  margin fell to 6.8% from 11.1% on subcontractor/rented-equipment costs
+  and mix shift; management raised FY2026 revenue guidance to $880–900M
+  on Aug 11 while cutting the adjusted EBITDA margin target to 16–18%.
+  Recent IPO (Dec 2025) — no YoY EPS comparison available.
+- **CDT** (CDT Equity Inc., formerly Conduit Pharmaceuticals) —
+  https://financialreportinsights.com/companies/cdt/2026/q2 — pre-revenue
+  drug developer, net loss narrowed to $4.64M from $6.03M mostly on an
+  84% R&D cut; a $122.8M equity-method stake in Sarborg (related-party
+  transaction) is now 97% of total assets with a going-concern warning
+  and only $0.75M cash on hand. Omitted YoY metrics where a reverse split
+  (1-for-25, effective Sept 28) or a negative base would make the
+  percentage misleading; said so in the report body instead.
+
+**2/35 report-periods tonight so far.** Continuing with more batches
+this firing.
