@@ -29259,5 +29259,102 @@
         "filedAt": "2026-08-07"
       }
     ]
+  },
+  "CGNX": {
+    "name": "Cognex Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cgnx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-05",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "May 6/7 and Aug 5/6 earnings/10-Q cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cgnx/2026/q2",
+        "periodEnd": "2026-07-05",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
+  "CGEM": {
+    "name": "Cullinan Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cgem/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "May 7 and Aug 6 filing cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cgem/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
+  },
+  "CGC": {
+    "name": "Canopy Growth Corporation - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cgc/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07",
+      "note": "fiscal 2027 Q1 10-Q, filed after the FY2026 annual we published; not used for this round per the ANNUAL-already-out rule"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal 2027 Q2, period 2026-09-30)",
+      "estimate": "2026-11-06",
+      "basis": "~90 days after the fiscal 2027 Q1 10-Q filed 2026-08-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cgc/2026/annual",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-06-15"
+      }
+    ]
   }
 }

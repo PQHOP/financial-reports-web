@@ -13785,5 +13785,31 @@ after publish:
   to 52.1%. Two Sept 8-Ks were executive-change notices only (new
   President, new principal accounting officer), noted in one line each.
 
-**10/35 report-periods tonight so far.** Continuing with more batches
+**Batch 6:** published 3 more report-periods via an opus research
+subagent, each sanity-checked live after publish:
+- **CGNX** (Cognex Corporation) —
+  https://financialreportinsights.com/companies/cgnx/2026/q2 — revenue
+  +17% to a record $291.3M, operating margin to 29.4% from 17.4% (nearly
+  all the extra revenue dropped to profit), EPS $0.43 vs $0.24. Beat its
+  own May guidance; raised FY guidance (implies only ~7% Q4 growth at the
+  midpoint). Flagged the Sept 22 ~$500M cash deal to buy RealSense
+  (~2/3 of cash on hand) as a watch item.
+- **CGEM** (Cullinan Therapeutics) —
+  https://financialreportinsights.com/companies/cgem/2026/q2 —
+  pre-revenue biotech; net loss narrowed to $53.7M from $70.1M only
+  because Q2 2025 included a one-off $20M licensing upfront (R&D itself
+  rose 8.6%). $356.0M cash said to last "into 2029" — report notes that
+  needs Taiho milestones or the ATM; REZILIENT3 Phase 3 succeeded
+  post-quarter with an FDA decision dated Feb 27, 2027.
+- **CGC** (Canopy Growth) — FY2026 **ANNUAL** (FYE 2026-03-31, per the
+  "ANNUAL if FY already out" rule, not the newer FY2027 Q1 quarter) —
+  https://financialreportinsights.com/companies/cgc/2026/annual —
+  revenue +6% to C$284.6M but gross margin fell to 24% from 30% and
+  operating loss widened to C$161.7M (incl. a C$47.5M Storz & Bickel
+  goodwill write-down); net-loss narrowing and the EPS improvement both
+  traced to non-operating items (fair-value gains, a 177% larger share
+  count) rather than the operating business. Flagged a warrant-related
+  restatement of FY2024/2025 and a material weakness in controls.
+
+**13/35 report-periods tonight so far.** Continuing with more batches
 this firing.
