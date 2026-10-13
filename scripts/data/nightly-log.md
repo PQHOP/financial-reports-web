@@ -13762,5 +13762,28 @@ subagent, both sanity-checked live after publish:
   contradictions in the filing (e.g. claims to be exiting China gas
   trading while that's now nearly all its revenue) flagged in the report.
 
-**7/35 report-periods tonight so far.** Continuing with more batches
+**Batch 5:** published 3 bank reports via an opus research subagent
+(bank-specific metrics fields used throughout), each sanity-checked live
+after publish:
+- **CFBK** (CF Bankshares) —
+  https://financialreportinsights.com/companies/cfbk/2026/q2 — net
+  income +17.4% to $5.9M ($0.90/share), but underlying pre-provision
+  earnings only +4.9% — the rest came from a smaller loan-loss provision
+  and a lower tax rate. Flagged credit risk: criticized/classified loans
+  up 123% in H1, reserves cover only 93% of nonperforming loans.
+- **CFFI** (C&F Financial) —
+  https://financialreportinsights.com/companies/cffi/2026/q2 — reported
+  EPS +11% to $2.63, but an $8.3M gain (Bearing Insurance stake sale) and
+  a $7.1M bond-portfolio repositioning loss roughly cancel out; adjusted
+  EPS +1% to $2.40. NIM rose to 4.41%, community-bank loans +8.2%.
+- **CFFN** (Capitol Federal Financial) — fiscal **Q3 2026** (FYE Sept
+  30, confirmed via XBRL fp tag and filing text) —
+  https://financialreportinsights.com/companies/cffn/2026/q3 — net
+  income +28.2% to $23.6M as the bank rotated from 3.7%-yielding home
+  loans into 5.9%-yielding commercial loans and paid down $408M of
+  borrowings; NIM widened to 2.31% from 1.98%, efficiency ratio improved
+  to 52.1%. Two Sept 8-Ks were executive-change notices only (new
+  President, new principal accounting officer), noted in one line each.
+
+**10/35 report-periods tonight so far.** Continuing with more batches
 this firing.
