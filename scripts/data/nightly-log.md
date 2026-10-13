@@ -14011,3 +14011,32 @@ for the next hourly tick to start a second session before the first
 pushes, a future session that sees this file at exactly the cap should
 still re-pull immediately before trusting the count, in case a third
 overlapping session is also mid-flight.
+
+**Addendum from the overlapping session (fired ~16:06 UTC, the hour
+before the above):** this is that third overlapping session the note
+above anticipated. Working independently through the same priority
+order, this session published batches 1–10 tonight (BAOS/BLIV/BRAI/BTCT
+rechecks, CCHH/CDTG/CGO/CGBD/CGCF/CHNR/CHPG/CHW pending-or-skipped, and
+24 report-periods: CDNL, CDT, CEVA, CERT, CG, CETX, CETY, CFBK, CFFI,
+CFFN, CGNX, CGEM, CGC, CGEN, CGNT, CHKP, CHDN, CGON, CHCO, CHEF, CHCI,
+CGTX, CHA, CGTL — see each batch's own notes above in this same entry,
+interleaved chronologically before this addendum since both sessions
+were writing to the same file). Dispatched a batch-11 subagent for
+CHRD/CHMG/CHRS; by the time it ran, the other (hourly) session had
+already published CHRD and CHMG live, so only **CHRS** (Coherus
+Oncology, Q2 2026, https://financialreportinsights.com/companies/chrs/2026/q2)
+was new from this session — LOQTORZI sales +37% to $13.6M, continuing-ops
+loss narrowed to $33.3M, but total GAAP net loss ($20.6M) was propped up
+by $12.7M of one-off true-ups from the sold biosimilar business; cash
+fell to $105.3M with $22.7M owed to that sale's buyer. Added to the
+tracker (the other session's tracker commit didn't have it yet).
+
+**Reconciled true total: 36/35 report-periods tonight** (the other
+session's 35 plus this session's CHRS) — one over cap, the same small
+overshoot pattern as 2026-10-12 night, caused by the same root issue:
+`persist_session: false` lets a new hourly firing start before the
+previous one finishes and pushes. This session is standing down now
+too — cap exceeded, nothing further to dispatch. Repeating the earlier
+recommendation: widen the firing interval below hourly, or enable
+`persist_session` so a new tick resumes the in-progress session instead
+of duplicating it.
