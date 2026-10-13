@@ -6,6 +6,31 @@ date and commit.
 
 ## Next
 
+- **Comparison ready to publish: JPM vs BAC, Q2 2026.** Both are same
+  industry (banks), both already have a Q2 2026 report with full metrics
+  (`/companies/jpm/2026/q2`, `/companies/bac/2026/q2`), no JPM/BAC
+  comparison exists yet (checked `/insights` 2026-10-13 — only
+  GS/MS, HD/LOW, KO/PEP, MAR/HLT, TJX/ROST, V/MA so far). This ops
+  session can't write/publish it itself (no `ADMIN_PASSWORD`/`SITE_URL`
+  in this environment, same gap noted 2026-10-10) — for the nightly
+  routine to pick up per its own Comparison rule (CLAUDE.md, "Growth
+  work"), or a future ops session once it has the credential.
+- **Weekly earnings preview never fired.** CLAUDE.md says the nightly
+  routine should publish one `PREVIEW` article on the first Sunday firing
+  of each week from 2026-10-11 through earnings season — checked
+  `scripts/data/nightly-log.md` (no mention of "preview", ever) and
+  `/insights` (no `earnings-preview-*` slug exists). Likely cause: the
+  nightly routine has hit its 35/night report cap every single night
+  recently (see nightly-log), so editorial content never gets a turn.
+  This week's window (Oct 12–16) is now moot — JPM/WFC/C/BAC/GS/JNJ/UNH
+  already reported before this was checked (2026-10-13), and MS/BLK were
+  due the next day — so publishing a preview for this week now would be
+  stale. Flagging so the next Sunday (2026-10-18) isn't missed too; if it
+  keeps getting skipped, the cap-vs-editorial tradeoff needs a decision
+  (raise the cap, or carve out a fixed reserve for editorial before the
+  report batch starts, as CLAUDE.md already says to do "before" the
+  report batch — the rule exists, it's just not winning the time/cap
+  race in practice).
 - **Google indexing: sitemap-report "0 indexed" was misleading — corrected
   2026-10-12.** The sitemap report had shown 0/N indexed for weeks (0/2166
   as of 2026-10-11), read by every prior entry below as "nothing is
@@ -58,6 +83,26 @@ date and commit.
   just build it.
 
 ## Done
+
+- 2026-10-13 ops run: health check all green, latest production deployment
+  (`de8478c`/`dpl_C63yNaYPzW4Ue7EhATxsLKgFNCea`) confirmed READY and a
+  real ancestor of current `master` (local clone was shallow again;
+  `git fetch --unshallow` before trusting `merge-base`). `npx tsc --noEmit`
+  clean after `next typegen` (same one-time route-types gap as every
+  prior run). Re-verified the `indexSample` "Duplicate without
+  user-selected canonical" reading on the homepage isn't a new
+  regression: inspected both the bare and trailing-slash homepage URL
+  directly — both still show `googleCanonical:
+  "https://www.financialreportinsights.com/"`, same stale 2026-09-22
+  crawl as the 2026-10-12 entry below found, just a different `verdict`
+  label surfacing from the same unrefreshed data. Spot-checked 3 of last
+  night's freshly-published company pages (CHRS, CLSK, CMTL) — all 200,
+  not broken. No code change shipped this cycle (nothing unsafe found,
+  nothing new to fix); found two concrete items for the backlog above
+  (JPM/BAC comparison ready to publish; weekly earnings-preview rule
+  never fired) instead.
+
+
 
 - 2026-10-12: confirmed both bank/insurer `/learn` guides are now live
   (`/learn/what-is-net-interest-margin` and `/learn/what-is-combined-ratio`
