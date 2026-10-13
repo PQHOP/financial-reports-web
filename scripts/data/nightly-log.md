@@ -13715,5 +13715,30 @@ publish (content present, not truncated):
   (1-for-25, effective Sept 28) or a negative base would make the
   percentage misleading; said so in the report body instead.
 
-**2/35 report-periods tonight so far.** Continuing with more batches
+**Batch 3:** published 3 more report-periods via an opus research
+subagent, all Q2 2026 (period end 2026-06-30), each sanity-checked live
+after publish:
+- **CEVA** (CEVA, Inc.) —
+  https://financialreportinsights.com/companies/ceva/2026/q2 — revenue
+  +13% to $29.0M on licensing (+21%, including a NeuPro-M AI deal), but
+  royalties grew only 1.5% despite a 16% rise in Ceva-powered chip
+  shipments — royalty per chip fell ~12%. GAAP net loss narrowed to
+  $2.9M. No numeric guidance given.
+- **CERT** (Certara, Inc.) —
+  https://financialreportinsights.com/companies/cert/2026/q2 — revenue
+  from continuing operations +1% to $93.3M; swung to a $6.1M loss from
+  continuing ops mostly because a $5.7M one-off gain a year ago didn't
+  repeat; total net loss $55.3M including a $48.6M after-tax loss on
+  selling its Regulatory/Medical Writing unit to Veristat. FY26 revenue
+  guidance held, adjusted EPS guidance trimmed.
+- **CG** (The Carlyle Group Inc.) —
+  https://financialreportinsights.com/companies/cg/2026/q2 — GAAP profit
+  to shareholders fell 57% to $137.1M as paper carried-interest gains
+  collapsed (CP VII reversal); fee-related earnings hit a record $357.7M
+  (+10.6%) and distributable earnings rose to $472.3M, though ~$68M of
+  fee revenue was one-off capital-markets/catch-up fees per the filing's
+  own breakdown. Flags a $222M infrastructure-fund loss to be realized
+  later in 2026.
+
+**5/35 report-periods tonight so far.** Continuing with more batches
 this firing.
