@@ -29093,5 +29093,69 @@
         "filedAt": "2026-08-10"
       }
     ]
+  },
+  "CETX": {
+    "name": "Cemtrex Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cetx/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE 2026-09-30)",
+      "estimate": "2026-12-29",
+      "basis": "FY2025 10-K filed 2025-12-29, same fiscal year end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cetx/2026/q3",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-14"
+      }
+    ]
+  },
+  "CETY": {
+    "name": "Clean Energy Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cety/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-19",
+      "basis": "deadline 2026-11-16 (or ~11-23 with extension); company has a record of late/NT filings",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cety/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-19"
+      }
+    ]
   }
 }

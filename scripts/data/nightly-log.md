@@ -13740,5 +13740,27 @@ after publish:
   own breakdown. Flags a $222M infrastructure-fund loss to be realized
   later in 2026.
 
-**5/35 report-periods tonight so far.** Continuing with more batches
+**Batch 4:** published 2 more report-periods via an opus research
+subagent, both sanity-checked live after publish:
+- **CETX** (Cemtrex Inc.) —
+  https://financialreportinsights.com/companies/cetx/2026/q3 — fiscal
+  Q3 2026 (FYE Sept 30, confirmed from the filing's own cover page).
+  Revenue +8.7% to $18.4M but only from the Invocon/Richland
+  acquisitions — both legacy segments (Security, Industrial Services)
+  lost money and Security revenue fell 18%. $4.5M net loss driven by a
+  warrant revaluation and debt-for-stock settlements; explicit
+  going-concern doubt in the filing; flagged the Nasdaq $5M
+  market-value-rule risk (company was ~$5.25M on Aug 12, has filed a
+  stay petition).
+- **CETY** (Clean Energy Technologies, Inc.) —
+  https://financialreportinsights.com/companies/cety/2026/q2 — not
+  actually a gas utility despite its SIC code: heat-recovery generators
+  plus, in H1 2026, 98.5% of revenue from low-margin China gas trading.
+  Revenue +57% to $372K but gross margin collapsed to 4.7% from 94.7%;
+  net loss $1.07M against only $19,735 cash at quarter-end; going-concern
+  language, restated FY2024/2025 financials, and several internal
+  contradictions in the filing (e.g. claims to be exiting China gas
+  trading while that's now nearly all its revenue) flagged in the report.
+
+**7/35 report-periods tonight so far.** Continuing with more batches
 this firing.
