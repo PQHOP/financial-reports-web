@@ -13873,5 +13873,31 @@ subagent, each sanity-checked live after publish:
   the real trend, grew a steadier 37.8%. Flagged that 89% of revenue is
   from related parties tied to the CEO's affiliate.
 
-**21/35 report-periods tonight so far.** Continuing with more batches
+**Batch 10:** published 3 more report-periods via an opus research
+subagent, each sanity-checked live after publish:
+- **CGTX** (Cognition Therapeutics) —
+  https://financialreportinsights.com/companies/cgtx/2026/q2 —
+  pre-revenue biotech; net loss narrowed to $3.9M from $6.7M as R&D fell
+  56% now that its 545-patient START Phase 2 finished enrolling (NIA
+  grant income fell in step). $34.8M cash said to last into Q4 2027
+  assuming no further ATM sales; neither its Phase 3 nor its DLB-psychosis
+  study is funded yet.
+- **CHA** (Chagee Holdings, Chinese tea chain) —
+  https://financialreportinsights.com/companies/cha/2026/q2 — reported
+  net income up 6x is almost entirely a comp effect (Q2 2025 carried a
+  large IPO-related stock-pay charge); excluding stock pay, net income
+  actually fell 22.4% as same-store sales dropped 16.1% and chain-wide
+  GMV fell 9% — revenue only grew because company-owned stores roughly
+  quadrupled (239 to 883).
+- **CGTL** (Creative Global Technology Holdings, HK used-electronics
+  wholesaler) — H1 FY2026 (Oct 2025-Mar 2026, 6-K interim financials) —
+  https://financialreportinsights.com/companies/cgtl/2026/h1 — revenue
+  +50% to $18.4M from clearing old stock below cost; gross margin went
+  negative (-20.5% vs +12.6%); only $0.49M cash against $6.4M of
+  unexplained prepayments/receivables (44% of assets); flagged a
+  post-period 1-for-15 reverse split plus board authorization for up to
+  five more reverse splits (to 1-for-1,500) and the founder's voting
+  power rising to ~98%.
+
+**24/35 report-periods tonight so far.** Continuing with more batches
 this firing.

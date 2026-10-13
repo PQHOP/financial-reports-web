@@ -29630,5 +29630,101 @@
         "filedAt": "2026-08-13"
       }
     ]
+  },
+  "CGTX": {
+    "name": "Cognition Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cgtx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "~90 days after 2026-08-07 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cgtx/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-07"
+      }
+    ]
+  },
+  "CHA": {
+    "name": "Chagee Holdings Limited - American Depositary Shares, each representing 1 Class A ordinary share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cha/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-28"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-27",
+      "basis": "~90 days after 2026-08-28 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cha/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-28"
+      }
+    ]
+  },
+  "CGTL": {
+    "name": "Creative Global Technology Holdings Limited - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cgtl/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 FY2026 interim financial statements)",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-09-03"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY ending 2026-09-30)",
+      "estimate": "2027-01-29",
+      "basis": "4-month 20-F deadline 2027-01-31; company files late historically",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "H1",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cgtl/2026/h1",
+        "periodEnd": "2026-03-31",
+        "filedAt": "2026-09-03"
+      }
+    ]
   }
 }
