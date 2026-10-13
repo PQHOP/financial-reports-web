@@ -13828,5 +13828,29 @@ than 10-Qs), each sanity-checked live after publish:
   tax benefit (H1 net income only $1.1M at a 57% effective tax rate) and
   that H1 operating cash flow was negative despite the revenue growth.
 
-**15/35 report-periods tonight so far.** Continuing with more batches
+**Batch 8:** published 3 more report-periods via an opus research
+subagent, each sanity-checked live after publish:
+- **CHKP** (Check Point Software) —
+  https://financialreportinsights.com/companies/chkp/2026/q2 — revenue
+  +1.3% to $673.6M (subscriptions +11.6%, products/licenses -14%); GAAP
+  operating income actually fell 9.1% once you note it already includes
+  a $28M Israeli R&D tax credit (without it, margin ~23.3% not 27.5%);
+  EPS growth came entirely from a 6.3% smaller share count, not higher
+  profit. Confirmed Q3 report date 2026-11-02 via the company's own
+  announcement.
+- **CHDN** (Churchill Downs) —
+  https://financialreportinsights.com/companies/chdn/2026/q2 — revenue
+  +4.9% to $980M, EPS +14.4% to $3.42; ~$30M of the $46M revenue gain
+  came from a record Derby Week, ex-Derby growth was low single digits.
+  Flagged a "strategic alternative review process" newly mentioned in
+  the filing's forward-looking statements, without speculating further.
+  Confirmed Q3 earnings date 2026-10-28.
+- **CGON** (CG Oncology) —
+  https://financialreportinsights.com/companies/cgon/2026/q2 —
+  effectively pre-revenue (contract-manufacturing revenue runs at a
+  loss); net loss widened to $79.1M from $41.4M as R&D rose 74% ahead of
+  an expected Q4 2026 FDA BLA filing. $1,028.3M cash gives ~5 years of
+  runway at the current burn rate.
+
+**18/35 report-periods tonight so far.** Continuing with more batches
 this firing.

@@ -29438,5 +29438,101 @@
     "status": "skipped",
     "skipReason": "Pre-merger blank-check SPAC (SIC: Blank Checks), no operating business.",
     "lastChecked": "2026-10-13"
+  },
+  "CHKP": {
+    "name": "Check Point Software Technologies Ltd. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/chkp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-02",
+      "basis": "company-confirmed date per its 2026-10-01 announcement",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/chkp/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-30"
+      }
+    ]
+  },
+  "CHDN": {
+    "name": "Churchill Downs, Incorporated",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/chdn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "earnings release confirmed for 2026-10-28 after close (company 2026-09-21 announcement), 10-Q typically ~1 week after (Q2 release 07-22, 10-Q 07-29)",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/chdn/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-29"
+      }
+    ]
+  },
+  "CGON": {
+    "name": "CG Oncology, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cgon/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90-day cadence, not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cgon/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      }
+    ]
   }
 }
