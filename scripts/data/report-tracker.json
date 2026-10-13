@@ -29420,5 +29420,23 @@
         "filedAt": "2026-09-09"
       }
     ]
+  },
+  "CHI": {
+    "name": "Calamos Convertible Opportunities and Income Fund - Closed End Fund",
+    "status": "skipped",
+    "skipReason": "Closed-end fund, not an operating company.",
+    "lastChecked": "2026-10-13"
+  },
+  "CHAR": {
+    "name": "Charlton Aria Acquisition Corporation - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger blank-check SPAC (SIC: Blank Checks), no operating business.",
+    "lastChecked": "2026-10-13"
+  },
+  "CHEC": {
+    "name": "Chenghe Acquisition III Co. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger blank-check SPAC (SIC: Blank Checks), no operating business.",
+    "lastChecked": "2026-10-13"
   }
 }
