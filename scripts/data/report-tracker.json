@@ -29157,5 +29157,11 @@
         "filedAt": "2026-08-19"
       }
     ]
+  },
+  "CGO": {
+    "name": "Calamos Global Total Return Fund - Closed End Fund",
+    "status": "skipped",
+    "skipReason": "Closed-end fund, same category as CGBD/CCAP/CCAQ/CCCT/CCD skipped earlier -- not an operating company.",
+    "lastChecked": "2026-10-13"
   }
 }
