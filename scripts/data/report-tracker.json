@@ -29356,5 +29356,69 @@
         "filedAt": "2026-06-15"
       }
     ]
+  },
+  "CGEN": {
+    "name": "Compugen Ltd. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cgen/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 interim financial statements, Exhibit 99.1-99.3)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-10",
+      "basis": "~90 days after 2026-08-03 filing, normal quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cgen/2026/q2",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-03"
+      }
+    ]
+  },
+  "CGNT": {
+    "name": "Cognyte Software Ltd. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cgnt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (fiscal Q2 FY2027 earnings release)",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-09"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (fiscal Q3 FY2027 results, period ending 2026-10-31)",
+      "estimate": "2026-12-09",
+      "basis": "~90 days after 2026-09-09 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cgnt/2026/q2",
+        "periodEnd": "2026-07-31",
+        "filedAt": "2026-09-09"
+      }
+    ]
   }
 }

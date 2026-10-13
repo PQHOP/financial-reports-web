@@ -13811,5 +13811,22 @@ subagent, each sanity-checked live after publish:
   count) rather than the operating business. Flagged a warrant-related
   restatement of FY2024/2025 and a material weakness in controls.
 
-**13/35 report-periods tonight so far.** Continuing with more batches
+**Batch 7:** published 2 more report-periods via an opus research
+subagent (both FPIs, sourced from 6-K interim-financial exhibits rather
+than 10-Qs), each sanity-checked live after publish:
+- **CGEN** (Compugen Ltd.) —
+  https://financialreportinsights.com/companies/cgen/2026/q2 — Q2 2026
+  net loss narrowed to $7.0M only on higher interest/FX gains; operating
+  loss actually widened to $8.8M as the COM701 ovarian trial ramps up.
+  $125.3M cash funds operations into 2029. MAIA-ovarian interim PFS data
+  expected by Q1 2027.
+- **CGNT** (Cognyte Software Ltd.) — labeled 2026/Q2 by calendar
+  period-end (company's own fiscal Q2 FY2027, FYE Jan 31) —
+  https://financialreportinsights.com/companies/cgnt/2026/q2 — revenue
+  +12% to $109.2M as software licenses grew 35% while low-margin
+  services fell 40%; flagged that GAAP net income was inflated by a
+  tax benefit (H1 net income only $1.1M at a 57% effective tax rate) and
+  that H1 operating cash flow was negative despite the revenue growth.
+
+**15/35 report-periods tonight so far.** Continuing with more batches
 this firing.
