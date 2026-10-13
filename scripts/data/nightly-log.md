@@ -13852,5 +13852,26 @@ subagent, each sanity-checked live after publish:
   an expected Q4 2026 FDA BLA filing. $1,028.3M cash gives ~5 years of
   runway at the current burn rate.
 
-**18/35 report-periods tonight so far.** Continuing with more batches
+**Batch 9:** published 3 more report-periods via an opus research
+subagent, each sanity-checked live after publish:
+- **CHCO** (City Holding Company, bank) —
+  https://financialreportinsights.com/companies/chco/2026/q2 — net
+  income flat (-0.3%) at $33.3M as provisioning swung $2.3M year on
+  year; pre-provision profit actually rose ~6%. NIM 3.97%, efficiency
+  ratio 48.1%, non-performing assets fell to 0.24% of loans from 0.33%.
+- **CHEF** (The Chefs' Warehouse) —
+  https://financialreportinsights.com/companies/chef/2026/q2 — sales
+  +12.9% to $1.169B (12.2% organic), margin expansion lifted net income
+  +59% to $33.8M; flagged Middle East softness (94% of prior year in
+  May/June per the CEO). Raised full-year guidance (adjusted EBITDA to
+  $305-315M from $276-286M).
+- **CHCI** (Comstock Holding Companies) —
+  https://financialreportinsights.com/companies/chci/2026/q2 — revenue
+  +74% to $22.6M but much of the jump is one-off: lumpy point-in-time
+  leasing/acquisition fees plus a $4.3M unrealized mark-to-market gain on
+  Jericho Energy Ventures shares (38% of pre-tax income); recurring fees,
+  the real trend, grew a steadier 37.8%. Flagged that 89% of revenue is
+  from related parties tied to the CEO's affiliate.
+
+**21/35 report-periods tonight so far.** Continuing with more batches
 this firing.
