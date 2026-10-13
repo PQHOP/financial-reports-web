@@ -13901,3 +13901,113 @@ subagent, each sanity-checked live after publish:
 
 **24/35 report-periods tonight so far.** Continuing with more batches
 this firing.
+
+**Concurrency note:** this entry was continued by a second, overlapping
+firing of the same hourly trigger (the first firing's session ran long
+enough that the next hourly tick started a separate session before the
+first had pushed). Both sessions read the tracker at 18/35 and worked
+independently; this section (Batch 11 onward) is the second session's
+work, merged in afterward once the push conflict surfaced. No ticker was
+researched by both sessions, so nothing here duplicates Batches 1-10
+above, but the running total below is the true combined count, not just
+this session's own.
+
+**Batch 11:** published 6 more report-periods via opus research
+subagents (one company each), each sanity-checked live after publish:
+- **CHRD** (Chord Energy) — Q2 2026 —
+  https://financialreportinsights.com/companies/chrd/2026/q2 — revenue
+  +84% to $2,172.7M, but $678.4M of that is oil/gas bought and resold;
+  Chord's own production sales were +57.2% to $1,494.3M. Swung from a
+  $389.9M net loss (mostly a goodwill impairment) to $525.2M net income.
+  Oil realized at a $1.27/bbl premium to WTI vs a $2.15 discount a year
+  ago. FY26 guidance: ~$3.0B adjusted EBITDA, 75% of free cash flow
+  returned to shareholders in Q3.
+- **CHMG** (Chemung Financial) — Q2 2026 —
+  https://financialreportinsights.com/companies/chmg/2026/q2 — swung
+  from a $6.45M net loss (Q2 2025 had a $17.5M securities-sale loss) to
+  $8.81M net income; on an adjusted basis net income +39.4%, EPS +38.9%
+  to $1.82. NIM rose to 3.67% from 3.05% but is now flat vs the prior two
+  quarters (3.60–3.61%) — further growth needs loan volume, and loans
+  already exceed deposits.
+- **CLFD** (Clearfield) — fiscal **Q3 2026** (FYE Sept 30) —
+  https://financialreportinsights.com/companies/clfd/2026/q3 — revenue
+  +13.2%, EPS +37.5% to $0.22, but gross margin fell to 31.8% from 35.3%
+  on a $2.6M inventory write-down from a now-cancelled order; SG&A was
+  flattered by a $1.7M bonus-accrual reversal. Backlog down 34%
+  sequentially to $21.0M. FY2026 guidance cut to $151–155M
+  sales/$0.14–0.21 EPS. Flagged a post-quarter $22M hyperscale
+  data-center order (first shipments early FY2027).
+- **CLDX** (Celldex Therapeutics) — Q2 2026 —
+  https://financialreportinsights.com/companies/cldx/2026/q2 —
+  pre-revenue biotech; net loss widened to $73.5M from $56.6M as R&D rose
+  25%. $717.6M cash (boosted by a $323.8M April offering) said to last
+  "through 2028". Prurigo nodularis Phase 2 failed and is being
+  discontinued; atopic dermatitis Phase 2 data due late 2026.
+- **CIVB** (Civista Bancshares) — Q2 2026 —
+  https://financialreportinsights.com/companies/civb/2026/q2 — net
+  income +30% to $14.3M, but diluted EPS fell 2.8% to $0.69 on ~34% more
+  shares outstanding (July 2025 offering); NIM rose to 3.89% from 3.64%
+  mostly from paying down expensive FHLB borrowings after the FSB
+  acquisition closed. Confirmed Q3 earnings date 2026-10-22 via the
+  company's own 8-K.
+- **CLNE** (Clean Energy Fuels) — Q2 2026 —
+  https://financialreportinsights.com/companies/clne/2026/q2 — GAAP net
+  loss narrowed to $14.9M from $20.2M, but that's entirely a $7.8M
+  smaller non-cash Amazon-warrant charge; adjusted EBITDA actually fell
+  8.6% to $16.0M. RIN+LCFS credit revenue was 13.4% of revenue (up from
+  11.6%) — flagged as a bigger swing factor than fuel-volume growth
+  (+7.2% gallons). FY26 guidance unchanged but needs ~$18.7M+ adjusted
+  EBITDA/quarter in H2 vs ~$16M run rate so far. Noted the Oct 6 CFO
+  change.
+
+**30/35 report-periods tonight so far** (24 + 6 this batch).
+
+**Batch 12:** published 5 more report-periods via opus research
+subagents (one company each), each sanity-checked live after publish:
+- **CLAR** (Clarus Corporation) — Q2 2026 —
+  https://financialreportinsights.com/companies/clar/2026/q2 — swung from
+  a $8.4M net loss to $4.7M net income, but $6.1M of that is an IEEPA
+  tariff refund booked as a COGS reduction and $1.3M is a legal-accrual
+  reversal; without them the quarter was roughly a $2.9M operating loss.
+  Outdoor (Black Diamond) segment +8.5%, Adventure (Rhino-Rack) -11.9%.
+  Board reviewing strategic alternatives with Jefferies, no timetable.
+- **CLBK** (Columbia Financial) — Q2 2026 —
+  https://financialreportinsights.com/companies/clbk/2026/q2 — net income
+  +17.7% to $14.5M, NIM up to 2.44% from 2.19% entirely on lower funding
+  costs. **Flagged for future lookups: the company re-registered under a
+  new CIK (2115119) after its July 20 second-step conversion + Northfield
+  Bancorp acquisition — the old CIK (1723596) deregistered.** Q3 will be
+  the first quarter including Northfield ($580.3M deal, ~$18.0B pro forma
+  assets).
+- **CMCO** (Columbus McKinnon) — fiscal **Q1 2026** (FYE March 31,
+  quarter ended 2026-06-30) —
+  https://financialreportinsights.com/companies/cmco/2026/q1 — revenue
+  +125% almost entirely from the Kito Crosby acquisition (organic +12.7%);
+  net loss of $88.7M driven by a $55.2M inventory step-up charge, $47.6M
+  of interest expense (vs $8.7M a year ago) and a $21.0M tax charge on a
+  valuation allowance. Net leverage 4.9x on lender-defined EBITDA. FY27
+  guidance raised.
+- **CLSK** (CleanSpark) — fiscal **Q3 2026** (FYE Sept 30, quarter ended
+  2026-06-30) — https://financialreportinsights.com/companies/clsk/2026/q3
+  — swung to a $239.8M net loss, ~55% of it ($132.8M) from marking held
+  Bitcoin down to market price, not operations; all-in cost to mine a
+  coin ($96,277) now exceeds mining revenue per coin ($71,692). Hashrate
+  fell to 42.6 EH/s from 45.3. Flagged a possible Sandersville impairment
+  coming in the FY2026 10-K and a post-quarter $2.276B 7.875% note
+  issuance (~$179M/yr estimated interest).
+- **CMTL** (Comtech Telecommunications) — fiscal **Q3 2026** (FYE July
+  31, quarter ended 2026-04-30) —
+  https://financialreportinsights.com/companies/cmtl/2026/q3 — revenue
+  -16.4%, net loss narrowed slightly to $14.3M from $14.5M; quarterly
+  interest ($11.5M) is more than twice adjusted operating income ($5.1M).
+  Pending sale of most of the satellite (S&S) segment to a Gilat
+  affiliate for $157.5M (HSR/CFIUS clearance pending) would use proceeds
+  to pay down debt. Covenant testing suspended through July 2027.
+
+**35/35 report-periods tonight — cap reached.** Stopping here for the
+night: no further batches this firing or any later firing tonight. Since
+the overlapping-session issue above shows a firing can run long enough
+for the next hourly tick to start a second session before the first
+pushes, a future session that sees this file at exactly the cap should
+still re-pull immediately before trusting the count, in case a third
+overlapping session is also mid-flight.

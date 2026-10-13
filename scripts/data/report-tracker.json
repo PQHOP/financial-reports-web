@@ -29755,5 +29755,251 @@
     "status": "skipped",
     "skipReason": "Closed-end fund, not an operating company.",
     "lastChecked": "2026-10-13"
+  },
+  "CHRD": {
+    "name": "Chord Energy Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/chrd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 earnings release 2026-05-05, Q2 2026-08-05; ~90-day cadence assumed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CHMG": {
+    "name": "Chemung Financial Corp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/chmg/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q1 2026-04-17, Q2 2026-07-22 earnings releases; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CLFD": {
+    "name": "Clearfield, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/clfd/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE Sept 30)",
+      "estimate": "2026-11-25",
+      "basis": "FY2025 10-K filed 2025-11-25; same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CLDX": {
+    "name": "Celldex Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cldx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 filed 2026-05-07, Q2 2026-08-06; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CIVB": {
+    "name": "Civista Bancshares, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/civb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "company 8-K (2026-09-15) confirms Q3 2026 results before market open 2026-10-22",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CLNE": {
+    "name": "Clean Energy Fuels Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/clne/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 filed 2026-05-07, Q2 2026-08-06; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CLAR": {
+    "name": "Clarus Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/clar/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "FY2025 Q3 10-Q filed 2025-11-06; same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CLBK": {
+    "name": "Columbia Financial, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/clbk/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07",
+      "note": "Filed under NEW CIK 2115119 (\"Columbia Financial, Inc./MD/\") after the 2026-07-20 second-step conversion + Northfield Bancorp acquisition. Old CIK 1723596 deregistered (Form 15-12G, 2026-07-21) with its last 10-Q covering Q1 2026 only. Any future lookup must use CIK 2115119."
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026, first quarter including Northfield)",
+      "estimate": "2026-10-30",
+      "basis": "Q2 2026 earnings 8-K filed 2026-07-30; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CMCO": {
+    "name": "Columbus McKinnon Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cmco/2026/q1",
+      "note": "Fiscal Q1 FY2027 (FYE March 31); quarter ended 2026-06-30, labeled by calendar year per site convention (cf. WMT)."
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027, quarter ending 2026-09-30)",
+      "estimate": "2026-10-30",
+      "basis": "FY2026 equivalent 10-Q filed 2025-10-30; same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CLSK": {
+    "name": "CleanSpark, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/clsk/2026/q3",
+      "note": "Fiscal Q3 2026 (FYE Sept 30); quarter ended 2026-06-30."
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE Sept 30)",
+      "estimate": "2026-11-25",
+      "basis": "FY2025 10-K filed 2025-11-25; same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CMTL": {
+    "name": "Comtech Telecommunications Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-13",
+      "url": "https://financialreportinsights.com/companies/cmtl/2026/q3",
+      "note": "Fiscal Q3 2026 (FYE July 31); quarter ended 2026-04-30."
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-04-30",
+      "filedAt": "2026-06-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE July 31)",
+      "estimate": "2026-11-10",
+      "basis": "FY2025 10-K filed 2025-11-10; same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
   }
 }
