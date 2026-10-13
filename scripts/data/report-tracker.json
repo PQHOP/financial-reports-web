@@ -23377,12 +23377,12 @@
       "note": "foreign private issuer (China ad-tech/media), files 20-F annual + half-year 6-K interim (no quarterlies). FY2025 report published (counts for tier-2 backfill) but does NOT satisfy 2026 coverage — no 2026 period exists yet. 2026 6-Ks so far are all press releases/transaction notices (Nasdaq bid-price notice, receivables sale, AI MOUs), none with interim financials. Going-concern warning in the FY2025 statements; equity fell 78% to $3.3M"
     },
     "nextExpectedFiling": {
-      "type": "6-K (H1 2026 interim financials)",
+      "type": "6-K (H1 2026 interim financial statements)",
       "estimate": "2026-11-27",
-      "basis": "H1 2025 interim 6-K filed 2025-11-28",
+      "basis": "H1 2025 interim 6-K filed 2025-11-28; same timing assumed; rechecked 2026-10-13, nothing new (only F-3/424B5/S-8/Form3 since May)",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-09",
+    "lastChecked": "2026-10-13",
     "reports": [
       {
         "year": 2025,
@@ -24789,12 +24789,12 @@
       "filedAt": "2026-05-15"
     },
     "nextExpectedFiling": {
-      "type": "6-K (H1 2026 interim results)",
-      "estimate": "2026-10-20",
-      "basis": "last year's H1 2025 interim 6-K (period 2025-06-30) filed 2025-10-01; past that estimate with still no filing as of 2026-10-09 (checked EDGAR directly, nothing since the 2026-07-20 resignation 6-K), pushing the estimate out ~2 weeks rather than re-checking nightly",
+      "type": "6-K (H1 2026 interim financial statements)",
+      "estimate": "2026-10-31",
+      "basis": "original 10-20 estimate slipped; only two filings since May (FY2025 20-F, and a 2026-07-20 resignation 6-K with no financials) as of 2026-10-13",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-09"
+    "lastChecked": "2026-10-13"
   },
   "BLKB": {
     "name": "Blackbaud, Inc.",
@@ -25963,12 +25963,12 @@
       "filedAt": "2026-06-17"
     },
     "nextExpectedFiling": {
-      "type": "20-F (FY2026 Annual)",
+      "type": "20-F (FY2026, FYE 2026-06-30)",
       "estimate": "2026-10-28",
-      "basis": "fiscal year ended 2026-06-30; first annual report for a recent FPI IPO typically lands ~4 months after fiscal year end",
+      "basis": "foreign-issuer 20-F deadline ~4 months after FYE 2026-06-30; first annual report since Feb 2026 IPO; rechecked 2026-10-13, latest filing still the 2026-06-17 press-release 6-K",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-11"
+    "lastChecked": "2026-10-13"
   },
   "BPRN": {
     "name": "Princeton Bancorp, Inc.",
@@ -26489,7 +26489,7 @@
   "BTCT": {
     "name": "BTC Digital Ltd. - Ordinary Shares",
     "status": "pending",
-    "skipReason": "foreign private issuer (Cayman), files 20-F annual + 6-K interim only, no 10-Q; FY2025 20-F filed 2026-05-11 does not count for 2026 coverage. Last year's H1 2025 unaudited financial statements 6-K (period ended 2025-06-30) was not filed until 2025-11-12 — about 4.5 months after period end. No equivalent H1 2026 financial-statements 6-K found on EDGAR as of 2026-10-10 (checked EDGAR full-text search for \"UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS\" on this CIK in 2026 — zero hits); this is a timing gap, not a permanent exclusion.",
+    "skipReason": "foreign private issuer (Cayman), files 20-F annual + 6-K interim only, no 10-Q; FY2025 20-F filed 2026-05-11 does not count for 2026 coverage. Last year's H1 2025 unaudited financial statements 6-K (period ended 2025-06-30) was not filed until 2025-11-12 — about 4.5 months after period end. No equivalent H1 2026 financial-statements 6-K found on EDGAR as of 2026-10-10 (checked EDGAR full-text search for \"UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS\" on this CIK in 2026 — zero hits); this is a timing gap, not a permanent exclusion. Rechecked 2026-10-13: latest EDGAR filings are a 424B3 prospectus (2026-09-18) and F-1 EFFECT notice (09-17) — the prospectus mentions June 30 2026 only in narrative text (no revenue in that period), not usable as a report source.",
     "lastFilingSeen": {
       "type": "20-F",
       "periodEnd": "2025-12-31",
@@ -26498,10 +26498,10 @@
     "nextExpectedFiling": {
       "type": "6-K (H1 2026 unaudited financial statements)",
       "estimate": "2026-11-12",
-      "basis": "H1 2025 financial-statements 6-K filed 2025-11-12 (same cadence pattern)",
+      "basis": "H1 2025 financial-statements 6-K filed 2025-11-12 (same cadence pattern); nothing filed as of 2026-10-13",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-10"
+    "lastChecked": "2026-10-13"
   },
   "BTDR": {
     "name": "Bitdeer Technologies Group - Ordinary Shares",
@@ -28887,5 +28887,51 @@
         "filedAt": "2026-09-15"
       }
     ]
+  },
+  "CCHH": {
+    "name": "CCH Holdings Ltd - Class A Ordinary Shares",
+    "status": "pending",
+    "skipReason": "Very recent FPI IPO (F-1/A amendment No.3 filed 2026-09-21, EFFECT notice 2026-09-29); no 20-F or financial-statements 6-K on EDGAR yet as of 2026-10-13 -- all 6-Ks since Dec 2025 are press releases/IPO process filings, no periodic financials. First 20-F not expected for months.",
+    "lastFilingSeen": {
+      "type": "6-K (press release, no financials)",
+      "periodEnd": null,
+      "filedAt": "2026-09-30"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (first annual report)",
+      "estimate": "2027-04-30",
+      "basis": "recent IPO (effective 2026-09-29); first FPI annual report typically ~4 months after first fiscal year end, likely FYE 2026-12-31",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CDTG": {
+    "name": "CDT Environmental Technology Investment Holdings Limited - ordinary shares",
+    "status": "pending",
+    "skipReason": "FPI (Shenzhen, China), files 20-F annual + 6-K only, no 10-Q. FY2025 20-F filed 2026-05-15 (period 2025-12-31) counts for tier-2 backfill but not 2026 coverage. All 6-Ks since (05-28, 07-06, 07-07, 07-28) are press releases (EGM results, etc.), no interim financial statements.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-05-15"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim financial statements, if filed at all) or next 20-F",
+      "estimate": "2027-05-15",
+      "basis": "no H1 interim-financials 6-K pattern seen in 2025 either (only press-release 6-Ks); next annual 20-F expected ~May 2027 on the same cadence as 2026",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-13"
+  },
+  "CGBD": {
+    "name": "Carlyle Secured Lending, Inc. - Closed End Fund",
+    "status": "skipped",
+    "skipReason": "BDC / closed-end fund (Carlyle Secured Lending), same category as CCAP/CCAQ/CCCT/CCD skipped earlier -- not an operating company with a standard revenue/earnings report, out of scope for this report format.",
+    "lastChecked": "2026-10-13"
+  },
+  "CGCF": {
+    "name": "Cartesian Growth Corp IV - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger blank-check SPAC (SIC: Blank Checks), no operating business or revenue to report on.",
+    "lastChecked": "2026-10-13"
   }
 }
