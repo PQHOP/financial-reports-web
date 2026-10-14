@@ -877,9 +877,27 @@ format rules under "What makes a report worth reading here" address.
    tóm tắt 3 dòng; tiến độ mục tiêu (visits/month vs 10,000, AdSense
    readiness); traffic & SEO (with numbers vs last week); báo cáo tài chính
    đêm qua (from `scripts/data/nightly-log.md`: count, tickers, skips);
-   đã làm gì hôm nay (each change + why + commit); lỗi & sự cố; **cần anh/chị
-   quyết định**; kế hoạch tiếp theo. Short and concrete, numbers over
-   adjectives.
+   đã làm gì hôm nay (each change + why + commit); lỗi & sự cố; **đánh giá
+   & hướng đi** (below); **cần anh/chị quyết định**; kế hoạch tiếp theo.
+   Short and concrete, numbers over adjectives.
+6. **Evaluation and direction (the main reason this routine runs on
+   Fable, the user's request 2026-10-14).** Don't just do maintenance and
+   report it: judge the site and say where it should go next.
+   - **Daily** (`đánh giá & hướng đi`, a short section): one honest
+     observation about the site from today's data or from looking at
+     pages as a visitor or an AdSense reviewer would (what is weak, what
+     is working, what changed), and whether the current direction still
+     looks right.
+   - **Mondays (JST), a deeper review** (same section, longer): read a
+     sample of recent reports and key pages as a skeptical reader; compare
+     with 2-3 sites that rank for the same searches ("`<ticker>`
+     earnings", "`<ticker>` Q3 results"); check the numbers against the
+     two goals and ask whether we will hit them on the current path. Then
+     propose **3-5 directions ranked by expected impact on the goals**,
+     each with why (evidence, not adjectives), rough cost in usage budget,
+     and what we would stop doing to pay for it. Say plainly when
+     something we're doing isn't working. Small ones go in the backlog;
+     large ones go in "cần anh/chị quyết định".
 
 **Autonomy rules (proposed 2026-10-04, accepted by the user by default):**
 - **Do without asking:** bug fixes; SEO changes; content and editorial
