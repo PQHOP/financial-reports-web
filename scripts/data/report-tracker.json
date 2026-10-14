@@ -45,6 +45,52 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CMND": {
+    "name": "Clearmind Medicine Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/cmnd/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q3 FY2026 interim financials)",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026, year ending Oct 31, 2026)",
+      "estimate": "2027-01-20",
+      "basis": "prior 20-Fs filed 2026-01-20 and 2025-01-22",
+      "confidence": "estimated"
+    },
+    "note": "FPI (Israeli/Canadian clinical-stage biotech, psychedelic-derived therapeutics, IFRS/USD), 20-F/6-K filer, FYE Oct 31. Fiscal Q3 2026 (to 2026-07-31): cash $12.04M (up from $3.92M at Oct 2025) mostly from $8.90M of discounted convertible notes converting to shares; ~1 year runway after a Sept 2026 $2.5M purchase of 51% of an unrelated EV-charging startup. Massive dilution: shares 15,883→2,145,211 in nine months plus three reverse splits (1-for-40 Dec 2025, 1-for-10 May 2026, 1-for-8 Oct 2026). Net loss narrowed to $0.907M only from $1.28M of mostly paper finance gains; operating expenses actually rose 55%. Going-concern warning in the statements despite MD&A claiming 12+ months of cash. Below a proposed (SEC-approved then stayed) Nasdaq $5M market-value minimum. CMND-100 (MEAI) Phase I/IIa for alcohol use disorder: Part A safety endpoint met, Parts B/C approved Aug 2026, first patients dosed Sept 2026.",
+    "lastChecked": "2026-10-14"
+  },
+  "CMCT": {
+    "name": "Creative Media",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/cmct/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day deadline falls on Sat 2026-11-14, next business day Mon 11-16; Q3 2025 was filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "note": "Distressed REIT (externally managed by CIM Group). Revenue flat at $29.7M; loss to common stockholders narrowed to $11.0M from $14.3M only because preferred dividends fell $4.3M as most preferred stock was redeemed into common (shares outstanding went from 26,997 to 2,947,493, ~340x, two reverse splits in the base) — before preferred dividends the loss actually widened. H1 operating cash flow -$22.5M, mostly a $21.2M catch-up payment to CIM-linked entities, covered by a non-repeatable $45.6M sale of the lending business. The $97.1M Oakland office mortgage went into maturity default 2026-07-01 (rents now go to the lender, default rate up to 9.14%); two more Oakland apartment mortgages (~$145M) due Jan/Jun 2027. No going-concern language yet, but worth close tracking.",
+    "lastChecked": "2026-10-14"
+  },
   "CMMB": {
     "name": "Chemomab Therapeutics Ltd. - American Depositary Shares",
     "status": "done",
