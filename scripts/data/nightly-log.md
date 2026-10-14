@@ -14405,3 +14405,12 @@ allotment is already used up (10/10). No cap room left for tier 1/2
 work. Did nothing further and exiting per "later firings that night
 should see the count and exit immediately." No tracker or report
 changes this firing.
+
+**Later firing, same night (06:05 JST):** network check passed again
+(SEC 403 without `User-Agent`, 200 with it; site 200). `npm install`
+needed a placeholder `DATABASE_URL` to get past `prisma generate`
+(no `.env` in this container; not needed for the browser-driven
+publish path). Re-ran `scan-recent-filings` fresh: **0 candidates**,
+tier 0 still clear. Count unchanged at 38/40 report-periods and 10/10
+rewrites — still effectively at cap. Did nothing further and exiting
+immediately per policy. No tracker or report changes this firing.
