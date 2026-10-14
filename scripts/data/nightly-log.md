@@ -14248,3 +14248,23 @@ AZZ, LNAI, NRIX, PKE, TGL, WS, CHR, CHSN, CHYM, CIFR, CIGI, CING, CISS,
 CLBT — 20 unique companies, 20 periods). **Rewrites: 10 tonight, 10/121
 total.** Continuing tier 1 backlog, cap allows room for ~20 more
 companies tonight.
+
+**Batch 4 (tier 1, us-listed backlog), 7 more parallel opus subagents
+dispatched (CHRN, CIIT, CLIK, CLIR, CLLS, CLMB, CLMT) — results so far:**
+- **CIIT** (Tianci International) fiscal Q3 FY2026 —
+  https://financialreportinsights.com/companies/ciit/2026/q3 — Hong
+  Kong micro-cap (logistics + ore trading + consulting); revenue +121.3%
+  to $4.31M but swung to only a tiny $48.7K profit because a high-margin
+  consulting line masked losses in the other two segments; post-quarter
+  pivot into Bitcoin mining.
+- **CLLS** (Cellectis) Q2 2026 —
+  https://financialreportinsights.com/companies/clls/2026/q2 — French
+  gene-editing biotech; collaboration revenue -69%, operating loss more
+  than doubled to $23.5M; net loss "narrowed" only from FX/warrant
+  revaluation swings, not operations; cash $169M, runway guidance
+  unchanged at "into Q4 2027".
+- **CLMB** (Climb Global Solutions) Q2 2026 —
+  https://financialreportinsights.com/companies/clmb/2026/q2 — IT
+  distributor; gross billings +17.3%, net sales +9.4%, but operating
+  income -7.1% and net income -7.5% as SG&A rose 26%; dividend suspended
+  starting Q1 2026.

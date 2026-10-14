@@ -45,6 +45,75 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CLMB": {
+    "name": "Climb Global Solutions, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clmb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q1/Q2 10-Qs filed the 30th of the month after quarter-end, a day after the earnings 8-K",
+      "confidence": "estimated"
+    },
+    "note": "IT products/software distributor. Gross billings +17.3% to $587.3M, net sales +9.4% to $174.2M, gross profit +14.6% (~11% excluding the Feb 2026 Interworks acquisition). But operating income fell 7.1% (margin 5.0%→4.2%) as SG&A rose 26%; net income -7.5%, EPS -9.1%. Adjusted EBITDA flat; effective margin fell to 37.5% from 43.3%. Dividend suspended starting Q1 2026. Customer concentration: top 3 = 21%/14%/13% of net sales. Management goal (July 2026 Investor Day): more than double FY2025 adjusted EBITDA by 2030.",
+    "lastChecked": "2026-10-14"
+  },
+  "CLLS": {
+    "name": "Cellectis S.A. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clls/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-05",
+      "basis": "~90 days after the 2026-08-06 Q2 6-K; Q1 came 2026-05-11",
+      "confidence": "estimated"
+    },
+    "note": "FPI (French gene-editing/CAR-T clinical-stage biotech, reports quarterly by 6-K under IFRS, USD). Q2 2026: AstraZeneca collaboration revenue -69% to $5.2M; operating loss more than doubled to $23.5M as BALLI-01/NATHALI-01 trials ramped R&D. Net loss 'narrowed' to $21.8M from $23.7M only because of financial-item swings ($22.8M lower FX losses, $8.7M warrant revaluation gain), not operations. Cash $169M, down from $211M at Dec 2025; runway guidance unchanged at 'into Q4 2027'. Legal risk: Thermo Fisher subsidiary trying to terminate 2014 patent licenses (arbitration started April 2026) and a Factor Bioscience patent suit. Catalysts in Q4 2026: BALLI-01 interim analysis and full eti-cel Phase 1 data.",
+    "lastChecked": "2026-10-14"
+  },
+  "CIIT": {
+    "name": "Tianci International, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/ciit/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-04-30",
+      "filedAt": "2026-06-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY ended 2026-07-31)",
+      "estimate": "2026-10-29",
+      "basis": "90-day deadline after FYE; FY2025 10-K filed 2025-10-03; company has filed NT extensions before (watch for one)",
+      "confidence": "estimated"
+    },
+    "note": "Fiscal Q3 FY2026 (quarter ended 2026-04-30). Hong Kong-based micro-cap: ship-cargo logistics (resells rented cargo space) + chrome/manganese ore trading (new Aug 2025) + consulting. Revenue +121.3% to $4.31M but swung to a tiny $48.7K profit only because a high-margin consulting line (98.2% gross margin, 87% of gross profit) offset low-margin ore trading (0.2% margin) and logistics (3.7% margin) — without consulting, operating loss would've been ~$494K. Cash fell to $718K; two reverse splits in 2026 (1-for-7 March, 1-for-10 July). Post-quarter pivot into Bitcoin mining (Bitmain S21 XP purchase, BTC Digital hosting deal) and new Zimbabwe/Singapore ore-trading subsidiaries — worth watching for how real this gets.",
+    "lastChecked": "2026-10-14"
+  },
   "CLBT": {
     "name": "Cellebrite DI Ltd. - Ordinary Shares",
     "status": "done",
