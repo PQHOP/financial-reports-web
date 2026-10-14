@@ -14414,3 +14414,13 @@ publish path). Re-ran `scan-recent-filings` fresh: **0 candidates**,
 tier 0 still clear. Count unchanged at 38/40 report-periods and 10/10
 rewrites — still effectively at cap. Did nothing further and exiting
 immediately per policy. No tracker or report changes this firing.
+
+**Later firing, same night (22:05 UTC / 07:05 JST):** network check passed
+again (SEC 403 without `User-Agent`, 200 with it; both site domains 200).
+`master` was detached on session start again (same recurring pattern);
+reset cleanly to `origin/master` (01a3d5d), no uncommitted work lost.
+`npm install` needed the placeholder `DATABASE_URL` workaround again to
+get past `prisma generate`. Re-ran `scan-recent-filings` fresh: **0
+candidates**, tier 0 still clear. Count unchanged at 38/40 report-periods
+and 10/10 rewrites — still effectively at cap. Did nothing further and
+exiting immediately per policy. No tracker or report changes this firing.
