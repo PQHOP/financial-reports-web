@@ -45,6 +45,52 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CLPS": {
+    "name": "CLPS Incorporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clps/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 FY2026 results, Ex. 99.1)",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-03-06"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026, year ended 2026-06-30)",
+      "estimate": "2026-10-17",
+      "basis": "FY2025 20-F filed 2025-10-17; 20-F due within 4 months of fiscal year-end",
+      "confidence": "estimated"
+    },
+    "note": "FPI (China IT/fintech services), 20-F/6-K filer, FYE June 30. FY2026 H1 (Jul-Dec 2025): revenue +2.8% to $85.1M; non-China revenue +63.1% but mostly replacing lost China business as banking revenue fell 22.0% on a key client shrinking its China Solution Centers. Swung to $83K profit attributable to shareholders from a $0.39M loss, but stock comp ($1.75M) is 5x+ net income and 74% of total net income went to minority partners. FY2026 20-F due very soon (~2026-10-17/31) — check for a new ANNUAL period shortly.",
+    "lastChecked": "2026-10-14"
+  },
+  "CLOV": {
+    "name": "Clover Health Investments, Corp. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clov/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Company announced Oct 7, 2026: Q3 results after market close Nov 4, 2026",
+      "confidence": "confirmed"
+    },
+    "note": "Medicare Advantage insurer. Revenue +55.6% to $743.2M on ~48% membership growth; swung to $28.0M net income ($0.05 EPS) from a $10.6M loss; benefits expense ratio improved to 87.6% from 88.4%. ~44% of the operating-income improvement came from stock comp dropping $17.1M as founder awards finished vesting. H1 operating cash flow $133.1M vs $55.3M net income, helped by $97.6M of slower claims payment; accrued CMS retrospective premiums doubled to $129.6M (exposed to CMS risk-adjustment audits). Full-year guidance raised but implies a ~$20-35M H2 loss given H1 already made $55.3M. CMS raised PPO Star rating to 4.5 (PY2027, after winning a court case CMS is appealing) and 5.0 (PY2028).",
+    "lastChecked": "2026-10-14"
+  },
   "CLWT": {
     "name": "Euro Tech Holdings Company Limited - Ordinary Shares",
     "status": "pending",
