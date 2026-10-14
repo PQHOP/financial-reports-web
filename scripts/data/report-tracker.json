@@ -45,6 +45,190 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CLBT": {
+    "name": "Cellebrite DI Ltd. - Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clbt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release and interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 results released 2025-11-12 (date announced 2025-10-17); no 2026 date announced yet",
+      "confidence": "estimated"
+    },
+    "note": "FPI (Israeli digital forensics software), 20-F/6-K filer. Revenue +15.8% to $131.1M (inside guidance), but ARR $507.8M (+21%) missed guidance on longer sales cycles/slower Inseyets upgrades; CEO changed same day (Shiven Ramji replaced Thomas Hogan). Full-year guidance cut on ARR (-$15M) and revenue (-$10M) but adjusted EBITDA raised (+$4M). GAAP net income -67.3% to $6.4M mostly from accounting items (acquisition amortization, stock comp +73%, tax rate 6%→43%) — non-GAAP net income roughly flat. Free cash flow halved to $14.5M on a $38.1M receivables build.",
+    "lastChecked": "2026-10-14"
+  },
+  "CIFR": {
+    "name": "Cipher Digital Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/cifr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "cadence: Q3 2025 10-Q filed 2025-11-03, Q1 2026 filed 2026-05-05, Q2 2026 filed 2026-08-04",
+      "confidence": "estimated"
+    },
+    "note": "Bitcoin miner (formerly Cipher Mining). Mining revenue -43% to $24.8M on a lower BTC price; mining margin before depreciation fell to 39.4% from 64.8%. Net loss $267.5M ($0.65 EPS) vs $45.8M a year ago, mostly non-cash: $150.5M revaluation of a Google warrant (tied to Cipher's own share price), stock comp, buildout-debt interest, $23.5M loss on BTC sold below book value. Adjusted EBITDA -$30.0M vs +$32.3M a year ago. ~$6.0B debt funding data-center buildout (Black Pearl delivered early; Barber Lake slipped to Q4 2026-Q1 2027 phased delivery); priced another $850M 0% convertible notes due 2032 on 2026-10-14. Google warrant has a $430M value floor Cipher may owe the gap on in cash or shares.",
+    "lastChecked": "2026-10-14"
+  },
+  "CING": {
+    "name": "Cingulate Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/cing/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-13; Q2 2026 filed 2026-08-13; ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "note": "Pre-revenue pharma. CTx-1301 (once-daily ADHD tablet) got an FDA Complete Response Letter 2026-06-01 (manufacturing/CMC issues only, no safety/efficacy concerns, no resubmission date yet). Q2 net loss widened 17.8% to $5.87M; cash $28.4M, runway guidance pushed from 'early 2027' to 'mid 2027' but only because of ~$9.4M of stock sold in the quarter, not lower spending. Going-concern warning remains; lost a debt-deferral right because of the CRL, making $5.07M of an Avondale note due within a year. revenue/operatingMarginPct omitted (no revenue).",
+    "lastChecked": "2026-10-14"
+  },
+  "CISS": {
+    "name": "C3is Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/ciss/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-29"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-24",
+      "basis": "semi-annual filer; prior 20-Fs filed 2024-04-30, 2025-04-28, 2026-04-22; no quarterly reports",
+      "confidence": "estimated"
+    },
+    "note": "FPI (Greek shipping, 6 vessels), 20-F/6-K filer, no quarterlies. H1 2026: revenue +83.5% to $35.62M almost entirely on higher TCE rates ($36,769/day vs $16,335, working days only +3%); net income +409.3% to $13.18M. Common shareholders received only $7.7M of that — a $5.1M non-cash deemed dividend went to preferred shares held by former parent Imperial Petroleum. $39.8M owed Jan 2027 for two tankers bought from chairman-family-linked companies; two ships carried above market value with no write-down. Massive share dilution/reverse splits make EPS YoY meaningless (epsYoyPct omitted).",
+    "lastChecked": "2026-10-14"
+  },
+  "CHYM": {
+    "name": "Chime Financial, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/chym/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 earnings 8-K was 2025-11-05 (10-Q 2025-11-10)",
+      "confidence": "estimated"
+    },
+    "note": "Fintech/neobank, not a chartered bank (no NIM/bank fields). Revenue +26.8% to $669.8M (above own guidance of $633-643M); net income $27.9M / $0.07 EPS, second straight GAAP profit. Year-ago loss was almost entirely a one-time $928.1M IPO stock-comp charge, so netIncomeYoyPct/epsYoyPct omitted as not meaningful. Growth from credit-card interchange (+62%) and lending-like products (+48%). Full-year guidance raised. Post-quarter: ~10% layoff, CFO departed, and a $590M cash deal to buy Stride Bank announced 2026-09-08 (closing H1 2027, pending OCC/Fed approval) — worth following up.",
+    "lastChecked": "2026-10-14"
+  },
+  "CHSN": {
+    "name": "Chanson International Holding - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/chsn/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 interim)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-18"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-20",
+      "basis": "FY2025 20-F filed 2026-04-20; semiannual filer (H1 only, no Q3)",
+      "confidence": "estimated"
+    },
+    "note": "FPI (China bakery chain), 20-F/6-K filer. Revenue -4.5% to $8.30M; swung to $0.85M net income from a $1.05M loss, but entirely from $1.80M of interest on $54.9M lent to three outside parties (56% of total assets) — only $0.50M of that interest was received in cash, operating cash flow -$3.19M. Like-for-like bakery business actually lost slightly more than a year ago (~-$0.93M vs -$0.85M pre-tax). Heavy dilution (389,789→7.4M shares); Oct 26 2026 vote proposes another 1-for-100 reverse split.",
+    "lastChecked": "2026-10-14"
+  },
+  "CHR": {
+    "name": "Cheer Holding, Inc. - Class A Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/chr/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 interim)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-03-20",
+      "basis": "FY2025 20-F filed 2026-03-20",
+      "confidence": "estimated"
+    },
+    "note": "FPI (China ad/media app), no 10-Q/10-K, H1 2026 6-K is the qualifying 2026 period. Revenue -14.7% to $60.5M (6 customers = 100% of it); operating income reported +26.1% but that's purely a prior-year share-based pay charge not recurring (company's own segment table shows operating income actually fell 10.7%). Net income +4.0% only because tax rate rose from ~0% to ~25.6% while pre-tax profit rose 39.7%. Operating cash flow -$30.2M vs $8.1M profit (receivables +$24M, AI-app prepayments +$21M). EPS fell 95% purely from huge share dilution (77,222→1,639,946 weighted shares), not operations. Change of control 2026-09-16: CEO sold all Class B voting shares (96.44% of voting power) to a Hong Kong entity for $500 total, stays on as Chairman/CEO/interim CFO — worth watching.",
+    "lastChecked": "2026-10-14"
+  },
+  "CIGI": {
+    "name": "Colliers International Group Inc. - Subordinate Voting Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/cigi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Company announcement: Q3 results release ~7:00am ET and call 11:00am ET on 2026-11-04; interim FS/MD&A 6-K typically follows ~6 days later",
+      "confidence": "confirmed"
+    },
+    "note": "Canadian MJDS filer (40-F annual + 6-K interim, reports in USD). Q2 2026: revenue +16.7% to $1.57B (Leasing/Capital Markets fees +23%, Engineering +30% helped by the $690M Ayesa acquisition); GAAP operating earnings flat at $98.4M as interest expense and tax rate rose; adjusted EPS +6% to $1.83, adjusted EBITDA +14%. Net debt 2.8x adjusted EBITDA (2.0x at Dec). Full-year guidance (mid-teens growth) kept, implying ~19-23% H2 adjusted EPS growth.",
+    "lastChecked": "2026-10-14"
+  },
   "WS": {
     "name": "Worthington Steel, Inc. Common Shares",
     "status": "done",
@@ -3014,22 +3198,37 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-20",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu9xfw7m000104l1a8s492w7"
+      "period": "Q3",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/jpm/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02, earnings release)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-04",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-08-06",
+      "basis": "Q2 10-Q filed 2026-08-06, ~23 days after the 2026-07-14 earnings release; same lag applied to the 2026-10-13 release",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-20"
+    "note": "2026-10-13 8-K Item 2.02 missed by scan-recent-filings despite JPM being hot-list (caught via direct evidence from the same-night hot-list-rewrite subagent) — worth checking the scan's hot-list/S&P-500 8-K matching logic. Q3: net income $15.3B ($5.57 EPS, +10%), or $15.8B ex a $658M discretionary securities loss; CET1 slipped to 13.9% from 14.8%; buybacks cut to $1.06B from $6.7B in Q2.",
+    "lastChecked": "2026-10-14",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-20",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu9xfw7m000104l1a8s492w7"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-14",
+        "url": "https://financialreportinsights.com/companies/jpm/2026/q3"
+      }
+    ]
   },
   "KO": {
     "name": "Coca-Cola Company (The)",

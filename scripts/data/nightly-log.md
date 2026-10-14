@@ -14181,9 +14181,70 @@ session). Dispatched a 9th opus subagent on direct evidence per CLAUDE.md
 ("if you have direct evidence... that outranks the batch order") — result
 pending as of this write.
 
-**11/40 report-periods tonight so far** (JNJ, UNH, DPZ, ADVB, ARTW, AZZ,
-LNAI, NRIX, PKE, TGL, WS — 11 unique companies, 11 periods; EMR/EQT were
-correctly not-published non-earnings filings, not counted). **Rewrites:
-10 tonight, 10/121 total.** JPM Q3 pending (will add a 12th period if it
-publishes). Continuing with tier 1 (S&P 500 / us-listed 2026 backlog) once
-JPM resolves, cap allows room for several more companies tonight.
+**JPM** Q3 2026 — https://financialreportinsights.com/companies/jpm/2026/q3
+— net income $15.3B ($5.57 EPS, +10% YoY), or $15.8B ex a $658M
+discretionary securities loss, on 8% revenue growth; CET1 slipped to
+13.9% from 14.8% as loans grew 10%, gross buybacks cut to $1.06B from
+$6.7B in Q2. Published as a new report from the 8-K (10-Q not filed yet).
+
+**Tier 0 fully worked, 12/40 report-periods.** Moved to tier 1 (us-listed
+2026 backlog) via `next-batch`. Rechecked the FPI pending tickers
+(BAOS/BLIV/BRAI/BTCT/CCHH/CDTG/CHNR) already covered last night — none
+have an estimate due yet, skipped re-checking them. Re-ran
+`scan-recent-filings` first to confirm tier 0 was fully cleared (0 fresh
+candidates) before moving on.
+
+**Batch 3 (tier 1, us-listed backlog), 8 parallel opus subagents — all
+published, all first-time companies:**
+- **CHR** (Cheer Holding) H1 2026 —
+  https://financialreportinsights.com/companies/chr/2026/h1 — FPI, no
+  10-Q/10-K; revenue -14.7% to $60.5M; operating income reported +26.1%
+  but that's purely a non-recurring prior-year charge (company's own
+  segment table shows it actually fell 10.7%); EPS fell 95% purely from
+  share dilution. Change of control 2026-09-16: CEO sold 96.44% of
+  voting power for $500 total, stays as Chairman/CEO/interim CFO.
+- **CHSN** (Chanson International) H1 2026 —
+  https://financialreportinsights.com/companies/chsn/2026/h1 — FPI
+  bakery chain; swung to $0.85M profit from a $1.05M loss, but entirely
+  from interest income on $54.9M lent to three outside parties (56% of
+  assets, mostly uncollected in cash) — like-for-like the bakery business
+  lost slightly more than a year ago.
+- **CHYM** (Chime Financial) Q2 2026 —
+  https://financialreportinsights.com/companies/chym/2026/q2 — revenue
+  +26.8% to $669.8M (above own guidance), second straight GAAP profit
+  ($27.9M); post-quarter $590M cash deal to buy Stride Bank announced,
+  plus a ~10% layoff and CFO departure.
+- **CIFR** (Cipher Digital, formerly Cipher Mining) Q2 2026 —
+  https://financialreportinsights.com/companies/cifr/2026/q2 — mining
+  revenue -43% on lower BTC price; $267.5M net loss, $150.5M of it a
+  non-cash Google-warrant revaluation; ~$6.0B debt funding data-center
+  buildout, priced another $850M 0% convertible notes 2026-10-14.
+- **CIGI** (Colliers International) Q2 2026 —
+  https://financialreportinsights.com/companies/cigi/2026/q2 — revenue
+  +16.7% to $1.57B (Ayesa acquisition helped); adjusted EPS +6% as
+  interest expense and tax rate rose faster than operating earnings;
+  full-year guidance kept. Next filing date confirmed (2026-11-04).
+- **CING** (Cingulate) Q2 2026 —
+  https://financialreportinsights.com/companies/cing/2026/q2 — pre-
+  revenue pharma; CTx-1301 got an FDA Complete Response Letter
+  2026-06-01 (manufacturing issues only); cash runway pushed to "mid
+  2027" funded by new stock sales, not lower spending; going-concern
+  warning remains.
+- **CISS** (C3is) H1 2026 —
+  https://financialreportinsights.com/companies/ciss/2026/h1 — Greek
+  shipping FPI; revenue +83.5% almost entirely on higher charter rates;
+  common shareholders got only $7.7M of the $13.18M net income, the rest
+  a non-cash deemed dividend to preferred shares held by the former
+  parent; two ships carried above market value with no write-down.
+- **CLBT** (Cellebrite DI) Q2 2026 —
+  https://financialreportinsights.com/companies/clbt/2026/q2 — revenue
+  +15.8% inside guidance but ARR missed guidance and full-year ARR/
+  revenue guidance cut; CEO changed same day; GAAP profit fall mostly
+  accounting (acquisition amortization, stock comp, tax rate), non-GAAP
+  profit roughly flat.
+
+**20/40 report-periods tonight so far** (JNJ, UNH, DPZ, JPM, ADVB, ARTW,
+AZZ, LNAI, NRIX, PKE, TGL, WS, CHR, CHSN, CHYM, CIFR, CIGI, CING, CISS,
+CLBT — 20 unique companies, 20 periods). **Rewrites: 10 tonight, 10/121
+total.** Continuing tier 1 backlog, cap allows room for ~20 more
+companies tonight.
