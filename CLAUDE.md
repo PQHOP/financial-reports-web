@@ -198,16 +198,17 @@ report after the close file their earnings 8-K around 20:05–21:00 UTC,
 which the old window missed by a full day; pre-market reporters (~11:00–
 12:30 UTC) are still picked up by the first firing.
 
-**Nightly cap: at most ~35 report-periods per night.** The account's
+**Nightly cap: at most ~40 report-periods per night.** The account's
 *weekly* usage limit is shared with everything else. On the old Pro plan
 the cap was ~20: on 09-21 and 09-22 the routine published ~35 per night
 and was then locked out from 09-24 00:17 JST until 09-26 03:00 UTC — two
 and a half dark days. The account moved to Max 5x on 2026-09-25 (~5x the
 usage budget), so the cap was raised to ~50, then lowered to ~35 on
 2026-10-04 by the user's choice to free budget for a daily site-operations
-routine (SEO/analytics review, fixes, morning report). During earnings season a
+routine (SEO/analytics review, fixes, morning report), and raised to ~40 on
+2026-10-14 by the user's choice. During earnings season a
 dark day is the worst possible outcome, so still pace the week: once
-tonight's entry in the nightly log reaches ~35, stop and end the firing
+tonight's entry in the nightly log reaches ~40, stop and end the firing
 with a short summary (later firings that night should see the count and
 exit immediately). Tier 0 hot-list/S&P 500 items may exceed the cap by a
 few if they reported that day. If a firing ever exits early on a
@@ -783,7 +784,8 @@ report coverage: deciding what to fix or build next, SEO, growth, new
 features and new finance areas, fixing breakage. A cloud routine ("Site
 Operations - Daily", 22:30 UTC = 07:30 JST, after the nightly report window)
 does one pass a day and leaves a morning report for the user. The nightly
-report cap was lowered from ~50 to ~35 the same day to pay for it.
+report cap was lowered from ~50 to ~35 the same day to pay for it (raised
+to ~40 on 2026-10-14).
 
 **Goals (set by the user, 2026-10-04, for the next 3 months, to
 ~2027-01-04):** (1) get Google AdSense approved; (2) reach 10,000 visits per
