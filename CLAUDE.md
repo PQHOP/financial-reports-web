@@ -148,6 +148,9 @@ yet.
    it has already dropped `"skipped"` tickers and `"done"` ones with
    nothing newer, so anything it lists is fair game (see the `"update"`
    rules under tier 0 above).
+   While `scripts/data/hotlist-rewrite.json` still has `pending` items,
+   do tonight's hot-list rewrites next (see "Hot-list rewrite" under
+   Operating window).
 2. **Then run `npm run next-batch -- --n 5` and take its output in the
    order it prints — do not re-derive the ordering by hand.** It encodes:
    fresh-filing candidates (tier 0), then `"pending"` entries whose
@@ -213,6 +216,42 @@ with a short summary (later firings that night should see the count and
 exit immediately). Tier 0 hot-list/S&P 500 items may exceed the cap by a
 few if they reported that day. If a firing ever exits early on a
 weekly-limit message again, lower the cap and note it here.
+
+**Hot-list rewrite (temporary, from 2026-10-14 night): +10 per night on
+top of the ~40 cap, until the queue is empty.** For AdSense ("low value
+content"), the latest report of each hot-list company that predates the
+2026-09-28 format rules (no "At a glance", no quality-check section) is
+being rewritten in the current format. Queue:
+`scripts/data/hotlist-rewrite.json` (121 items, search-demand order; the
+orchestrator is its only writer, same as the tracker). Each night:
+
+- Do up to **10 rewrites** as their own allotment, separate from the ~40
+  new report-periods (so a full night is ~50). Do them in the night's
+  first firing, right after any tier 0 hot-list/S&P 500 fresh filings and
+  before the rest of the batch, so they don't lose the race to the cap.
+  Later firings check tonight's rewrite count in the nightly log and only
+  do the remainder.
+- Take `pending` items in file order, but **skip for now** an item whose
+  `nextExpectedFiling` falls within the next 10 days: that company will
+  get a new-format report through tier 0 anyway. Once a newer report in
+  the current format is live for that company, set the item to
+  `superseded` instead of rewriting it.
+- Same research-subagent rules as a new report (Opus, read the filing
+  yourself, stop rather than publish partial work, never touch the
+  tracker/nightly log). The subagent re-reads the source filing (the
+  report's existing "Source filing" link), fetches the live report as a
+  starting point, re-checks every figure, and rewrites to every rule in
+  "Analyze comprehensively" (At a glance, quality check, "did last time's
+  read hold up" if an earlier period is on the site). Publish with
+  `npm run admin-publish -- --edit <reportId> file.json`, same year and
+  period, with `sourceUrl` and complete `metrics` (an edit replaces
+  them).
+- Post-check: the canonical URL shows "At a glance" and isn't truncated.
+  Then set the item `done` with `rewrittenAt`. Log rewrites in the
+  nightly log as their own line ("Rewrites: N tonight, M/121 total"), not
+  in the report-period count.
+- When no `pending` items are left, the nightly total goes back to ~40:
+  delete this paragraph and note the finish date in the nightly log.
 
 **A cloud routine already exists for this — check it before creating
 another one.** `trig_01GNdUY59Na4x3JxMr6p7mxK` ("2026 Report Coverage -
