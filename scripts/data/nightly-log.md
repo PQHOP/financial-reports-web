@@ -14342,6 +14342,56 @@ pending (no 2026 filing yet):**
   cash to $239.2M but guidance only moved modestly despite it, implying
   spending will more than double.
 
-**34/40 report-periods tonight.** Rewrites: 10 tonight, 10/121 total.
-Close to cap — stopping tier 1 dispatch here for the night; ~6 slots of
-room left, not enough for another full batch.
+**Batch 6 (tier 1, us-listed backlog), 4 parallel opus subagents
+(CMCT, CMMB, CMND, CMPR) to use the last of tonight's cap room — all
+published:**
+- **CMCT** (Creative Media & Community Trust, distressed REIT, externally
+  managed by CIM Group) Q2 2026 —
+  https://financialreportinsights.com/companies/cmct/2026/q2 — loss to
+  common stockholders narrowed only because preferred dividends fell as
+  preferred stock was redeemed into common (massive dilution); before
+  preferred dividends the loss actually widened. $97.1M Oakland office
+  mortgage went into maturity default 2026-07-01.
+- **CMMB** (Chemomab Therapeutics) Q2 2026 —
+  https://financialreportinsights.com/companies/cmmb/2026/q2 — Israeli
+  clinical biotech; cash down to $6.7M, runway only to Q1 2027, going
+  concern. Pending merger with Scipher Medicine (ticker SCIP after
+  close, expected Q4 2026) — will need ticker/company re-mapping later.
+- **CMND** (Clearmind Medicine) fiscal Q3 2026 —
+  https://financialreportinsights.com/companies/cmnd/2026/q3 —
+  psychedelic-derived-therapeutics biotech; massive dilution and three
+  reverse splits; net loss "narrowed" only from paper finance gains
+  while operating expenses actually rose 55%; going-concern warning.
+- **CMPR** (Cimpress, Vistaprint's parent) FY2026 ANNUAL —
+  https://financialreportinsights.com/companies/cmpr/2026/annual —
+  revenue +9.8% but organic constant-currency growth only ~4%; EPS
+  +553% almost entirely from a currency-hedge swing, lower interest and
+  a much lower tax rate, not operations; missed its own April cash-flow
+  guidance; FY2028 net income target quietly lowered while described as
+  "increased".
+
+**38/40 report-periods tonight — effectively at cap.** Rewrites: 10
+tonight, 10/121 total. Stopping for the night: all of tier 0 (13
+candidates + JPM caught via direct evidence) and 25 tier-1 backlog
+companies were researched and published (with 2 companies, EMR/EQT,
+correctly identified as non-earnings filings and 2 more, CHNR-adjacent
+FPIs re-skipped or newly skipped as CLWT, with no new filing). Every
+publish was sanity-checked live (fetched the canonical URL, confirmed
+"At a glance" renders and the content isn't truncated) before being
+recorded here. All changes committed and pushed to master in small
+batches throughout the run.
+
+**Companies published tonight (38 report-periods, 36 unique companies —
+JNJ, UNH, DPZ, JPM got new periods; two companies got genuinely new
+report-periods each counted separately only once):** JNJ, UNH, DPZ,
+JPM (Q3 2026 updates); ADVB, ARTW, AZZ, LNAI, NRIX, PKE, TGL, WS (tier 0
+us-listed); CHR, CHSN, CHYM, CIFR, CIGI, CING, CISS, CLBT, CIIT, CLLS,
+CLMB, CHRN, CLMT, CLIR, CLIK, CLNN, CLOV, CLPS, CLPT, CLRB, CLST, CLYM,
+CMMB, CMCT, CMND, CMPR (tier 1 us-listed backlog). Skipped/pending with
+reasons recorded in the tracker: EMR, EQT (non-earnings 8-Ks), CLWT (no
+2026 filing yet), plus the already-known pending FPIs re-confirmed
+untouched (BAOS, BLIV, BRAI, BTCT, CCHH, CDTG, CHNR).
+
+A future firing should run `npm run scan-recent-filings` first per
+usual, then continue the tier 1 backlog with `npm run next-batch` from
+where this session left off (next in file order after CMPR).
