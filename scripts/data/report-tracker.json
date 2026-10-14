@@ -45,6 +45,23 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CLWT": {
+    "name": "Euro Tech Holdings Company Limited - Ordinary Shares",
+    "status": "pending",
+    "skipReason": "FPI (20-F/6-K); only interim filing is H1 via 6-K each late Dec (H1 2025 filed 2025-12-30); no 2026-period financials on EDGAR as of 2026-10-14. Latest is FY2025 20-F filed 2026-04-30.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-30"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim results)",
+      "estimate": "2026-12-28",
+      "basis": "H1 interim 6-K filed 2024-12-19 and 2025-12-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-14"
+  },
   "CLIR": {
     "name": "ClearSign Technologies Corporation",
     "status": "done",
