@@ -6,6 +6,16 @@ date and commit.
 
 ## Next
 
+- **Verify tomorrow: `/sitemap.xml` actually revalidates now.** Fixed
+  2026-10-14 (`e49183b`, see Done): the sitemap was a fully static build
+  artifact (ignored `revalidate`), 4 days stale. After the fix the live
+  sitemap regenerates hourly and is purged on every publish. Check on the
+  next run: `curl -sI https://financialreportinsights.com/sitemap.xml`
+  should show `age` well under 3600 and the newest `<lastmod>` should
+  match last night's latest publish, and reports published that night
+  should be in it (`grep companies/<ticker>`). If it is stale again, the
+  cause is something else (e.g. generation erroring in the background and
+  the CDN serving the last good copy) and needs Vercel runtime logs.
 - **Comparison ready to publish: JPM vs BAC, Q2 2026.** Both are same
   industry (banks), both already have a Q2 2026 report with full metrics
   (`/companies/jpm/2026/q2`, `/companies/bac/2026/q2`), no JPM/BAC
@@ -84,6 +94,36 @@ date and commit.
 
 ## Done
 
+- 2026-10-14 ops run (`e49183b`, deployed `dpl_CRYwjQKYb9Bb8ygujtiKDvfS4hP1`,
+  READY): **found and fixed a real SEO bug — the production sitemap was
+  stale by 4 days.** `site-metrics` flagged `/sitemap.xml` as status 0
+  ("fetch failed"); a direct curl showed it was up (200, 390KB), but the
+  response headers gave it away: `x-vercel-cache: HIT` with `age: 344652`
+  (4 days) and `Last-Modified` equal to the 10-10 deploy time, so its
+  `export const revalidate = 3600` was never honoured — the
+  `app/sitemap.ts` metadata-file route was baked into the build as a
+  fully static file (same age as `robots.txt`), while `/feed.xml` (a
+  plain route handler with the identical export) revalidated normally
+  (`STALE` after ~1h). Consequence: every report published after a deploy
+  was missing from the sitemap Google downloads daily (it did download it
+  2026-10-14 12:53) until the next deploy — 290 URLs missing as of today
+  (2,166 vs 2,456 after the fix), including JPM/JNJ/UNH Q3 and all of
+  the last 4 nights' us-listed reports — and every `<lastmod>` was frozen
+  at the last deploy, undermining the freshness signal added 10-04.
+  Fix: moved the entry builder to `src/lib/sitemapEntries.ts` and serve
+  it from `src/app/sitemap.xml/route.ts` as a plain route handler (same
+  mechanism as `/feed.xml`); `invalidateDbCache()` now also calls
+  `revalidatePath` on `/sitemap.xml` and `/feed.xml` (route handlers are
+  not covered by the root-layout purge, so until now a publish only
+  reached the feeds when the hourly timer elapsed). Verified on a preview
+  first (bypass header — `vercel curl` can't be used with this team token,
+  "User not found"; **don't `vercel promote` a preview: previews have no
+  `SITE_URL` and emit `http://localhost:3000` URLs**), then a fresh
+  `--prod` deploy: live sitemap 200, valid XML, 2,456 URLs, newest
+  lastmod = tonight's last publish, JPM Q3/JNJ Q3/CMPR/CLSK present, no
+  localhost. Health check all green after. Also: `site-metrics` health
+  check now retries a fetch once on a network error (the status-0 that
+  started this was a one-off proxy drop, not an outage).
 - 2026-10-13 ops run: health check all green, latest production deployment
   (`de8478c`/`dpl_C63yNaYPzW4Ue7EhATxsLKgFNCea`) confirmed READY and a
   real ancestor of current `master` (local clone was shallow again;
