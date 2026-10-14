@@ -14298,5 +14298,50 @@ companies tonight.
   a reserve bigger than H1's entire revenue; funding via share sales at
   falling prices.
 
-**27/40 report-periods tonight so far.** Rewrites: 10 tonight, 10/121
-total. Cap allows room for ~13 more companies tonight.
+**Batch 5 (tier 1, us-listed backlog), 8 parallel opus subagents
+(CLNN, CLOV, CLPS, CLPT, CLRB, CLST, CLWT, CLYM) — 7 published, 1
+pending (no 2026 filing yet):**
+- **CLNN** (Clene) Q2 2026 —
+  https://financialreportinsights.com/companies/clnn/2026/q2 — ALS/MS
+  biotech; underlying operating loss narrowed but net loss nearly
+  doubled purely from a non-cash warrant/note revaluation; cash tight
+  ($9.7M), going-concern warning, runway only to late Q4 2026; plans an
+  accelerated-approval NDA filing in early Q4 2026 resting on
+  exploratory biomarker analyses.
+- **CLOV** (Clover Health) Q2 2026 —
+  https://financialreportinsights.com/companies/clov/2026/q2 — Medicare
+  Advantage insurer; revenue +55.6% on ~48% membership growth, swung to
+  $28.0M profit; full-year guidance raised but implies a H2 loss given
+  H1 already made more than the full-year midpoint.
+- **CLPS** (CLPS Incorporation) H1 FY2026 —
+  https://financialreportinsights.com/companies/clps/2026/h1 — China
+  IT/fintech services FPI; revenue +2.8%, non-China growth mostly
+  replacing lost China business; tiny $83K profit vs a loss, but stock
+  comp alone is 5x+ that profit. FY2026 20-F due within days.
+- **CLPT** (ClearPoint Neuro) Q2 2026 —
+  https://financialreportinsights.com/companies/clpt/2026/q2 — medical
+  device; revenue growth mostly from the Nov 2025 IRRAS acquisition,
+  down sequentially from Q1; net loss nearly doubled; 2026 guidance cut.
+- **CLRB** (Cellectar Biosciences) Q2 2026 —
+  https://financialreportinsights.com/companies/clrb/2026/q2 — clinical
+  radiotherapeutics biotech; net loss widened as R&D ramped ahead of a
+  Phase 3 confirmatory trial; a May 2026 raise lifted cash to $34.0M but
+  going-concern doubt remains.
+- **CLST** (Catalyst Bancorp) Q2 2026 —
+  https://financialreportinsights.com/companies/clst/2026/q2 — small
+  thrift holding co; net income flat, NIM and efficiency ratio both
+  worsened slightly; main story is the $41.1M Lakeside Bancshares
+  acquisition that closed July 14, 2026 (worth a new report once Q3
+  includes it).
+- **CLWT** (Euro Tech Holdings) — SKIP/pending: FPI files only
+  annual 20-F + a late-December H1 6-K; no 2026-period financials on
+  EDGAR yet.
+- **CLYM** (Climb Bio, formerly Eliem Therapeutics) Q2 2026 —
+  https://financialreportinsights.com/companies/clym/2026/q2 — clinical
+  biotech; net loss widened as R&D ramped; an April 2026 raise lifted
+  cash to $239.2M but guidance only moved modestly despite it, implying
+  spending will more than double.
+
+**34/40 report-periods tonight.** Rewrites: 10 tonight, 10/121 total.
+Close to cap — stopping tier 1 dispatch here for the night; ~6 slots of
+room left, not enough for another full batch.

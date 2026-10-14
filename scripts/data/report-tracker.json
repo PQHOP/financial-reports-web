@@ -45,6 +45,75 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CLYM": {
+    "name": "Climb Bio, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clym/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q filed 2025-11-06; Q2 2026 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "note": "Clinical-stage biotech, formerly Eliem Therapeutics (name changed 2024-09-20 after acquiring Tenet Medicines/budoprutug in June 2024) — financials are continuous history of the same legal entity, so Q2 2025 comparisons already include budoprutug. Q2 net loss widened to $13.5M from $8.7M as R&D rose 47.7% (CLYM116's first trial began). April 2026 raise ($103.4M net) lifted cash to $239.2M, no debt; but guidance only moved from 'into 2028' to 'into 2H 2028' despite the raise, implying spending will more than double from Q2's ~$10.5M burn. Four Q4 2026 data readouts pending (pMN, ITP, lupus B-cell, CLYM116 Phase 1).",
+    "lastChecked": "2026-10-14"
+  },
+  "CLST": {
+    "name": "Catalyst Bancorp, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "2025 Q3 10-Q filed 2025-11-13; 2026 10-Qs filed 05-15 and 08-14",
+      "confidence": "estimated"
+    },
+    "note": "Small thrift/bank holding company. Q2 net income flat at $524K ($0.14 EPS); NIM fell to 3.86% from 3.98%; efficiency ratio worsened to 80.6% from 77.5% (incl. $87K merger costs, offset by a $104K reserve release). ROE only 2.55% (equity is 28.5% of assets). Credit quality still fine (net charge-offs 0.05% annualized) though non-performing loans rose to 1.43% of loans from 1.00%. Main story: $41.1M all-cash acquisition of Lakeside Bancshares closed 2026-07-14, taking the bank to ~$632M assets / ~12.5% equity ratio — Q3 2026 (first quarter including Lakeside) is worth a new-period report when it comes up.",
+    "lastChecked": "2026-10-14"
+  },
+  "CLPT": {
+    "name": "ClearPoint Neuro Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clpt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q + earnings 8-K filed 2025-11-06, Q3 2024 on 2024-11-07",
+      "confidence": "estimated"
+    },
+    "note": "Medical device (MRI-guided neurosurgery navigation). Revenue +18% YoY to $10.88M mainly from the Nov 2025 IRRAS acquisition, but down 10% sequentially from Q1; biologics/drug delivery fell 15% on a non-repeating prior-year order. Net loss nearly doubled to $11.34M as opex rose 51% and interest expense rose to $1.41M on $50M notes at 11.3%. 2026 revenue guidance cut from $52-56M to $48-56M... [cut to $48-52M], shifting spend toward 2027 partner drug-therapy readiness. Cash fell to $29.4M from $45.9M at Dec; shareholders' equity fell from $28.0M to $10.8M.",
+    "lastChecked": "2026-10-14"
+  },
   "CLRB": {
     "name": "Cellectar Biosciences, Inc.",
     "status": "done",
