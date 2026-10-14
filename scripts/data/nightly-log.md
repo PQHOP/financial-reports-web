@@ -14040,3 +14040,150 @@ too — cap exceeded, nothing further to dispatch. Repeating the earlier
 recommendation: widen the firing interval below hourly, or enable
 `persist_session` so a new tick resumes the in-progress session instead
 of duplicating it.
+
+### 2026-10-14 night (16:00 UTC 2026-10-14 → 22:59 UTC 2026-10-14 / 01:00–07:59 JST 2026-10-15)
+
+Fresh night, cap resets to 0/40 (raised from ~35 on 2026-10-14). Network
+check passed first (403 without `User-Agent` on `sec.gov` as expected —
+SEC's own policy, not a proxy denial; 200 with the required header; both
+`financialreportinsights.com` and the `.vercel.app` alias returned 200).
+`npm install` hit one `ECONNRESET` on the first attempt; retry succeeded.
+`master` was detached on session start (same recurring pattern as prior
+nights); reset to `origin/master` (741ea7e) before reading anything —
+only a regenerated `package-lock.json` was discarded, no real work lost.
+
+Ran `scan-recent-filings`: **13 fresh tier-0 candidates** (hot-list: JNJ,
+UNH; S&P 500: DPZ, EMR, EQT; us-listed: ADVB, ARTW, AZZ, LNAI, NRIX, PKE,
+TGL, WS). Worked hot-list/S&P 500 first via 5 parallel opus subagents,
+then the 10 hot-list-rewrite allotment, then the remaining 8 us-listed
+candidates.
+
+**Batch 1 (hot-list/S&P 500 tier 0), 5 parallel opus subagents:**
+- **JNJ** Q3 2026 — https://financialreportinsights.com/companies/jnj/2026/q3
+  — sales +5.9% to $25,399M; reported net income cratered 95.9% to $210M
+  (EPS $0.09) on a $5,519M pre-tax charge for the proposed $5.5B talc
+  settlement; adjusted EPS fell 7.5% to $2.59 on the Firefly/Sail deal
+  charges. TREMFYA ($972M) now more than offsets STELARA's loss ($854M).
+  2026 adjusted EPS guidance raised $0.06 to $11.10 midpoint.
+- **UNH** Q3 2026 — https://financialreportinsights.com/companies/unh/2026/q3
+  — revenue -0.4% to $112.7B but operating earnings +52% to $6.6B and
+  GAAP EPS +76% to $4.56 as the medical care ratio fell to 88.4% from
+  89.9% (partly a $610M release of reserves set aside earlier in 2026).
+  Full-year guidance raised to $19.50+ GAAP / $20.50+ adjusted EPS.
+- **DPZ** Q3 2026 — https://financialreportinsights.com/companies/dpz/2026/q3
+  — revenue +3.4%, operating income +8.3%, EPS +12.7% to $4.60, but
+  same-store sales barely grew (US franchise +0.3%, international +0.2%);
+  first quarter under new CEO Joe Jordan; $1.33B of notes due July 2027
+  now classed as current debt, expects to refinance at higher rates.
+- **EMR** — NOT published. 2026-10-13 8-K is a pension mark-to-market
+  accounting change with restated prior-period figures, not FY2026
+  Q4/full-year results. Immaterial restatement (Q3 net earnings $718M→
+  $720M); live Q3 report left as-is. FY2026 results now estimated
+  ~2026-11-03 (no date announced).
+- **EQT** — NOT published. 2026-10-13 8-K is a preliminary Item-2.02-only
+  hedging update (~$100M derivative gain, $70M cash settlements, no
+  revenue/EPS) — same pattern as the Q2 cycle. Real Q3 earnings confirmed
+  for after close 2026-10-27 (press release found via search).
+
+**Hot-list rewrite allotment: 10/10 done tonight** (AdSense-format
+rewrites, separate from the report-period cap — see CLAUDE.md "Hot-list
+rewrite"). All re-read their source filing fresh, fixed several factual
+errors/unsupported claims in the old copy, and passed the live post-check
+("At a glance" present, not truncated):
+- **AAPL** Q3 2026 — corrected margin claims (gross margin boosted ~2pts
+  by tariff refunds per the earnings release, EPS growth ex-refunds ~22%
+  not 29%); fixed a wrong capex-rose claim (capex actually -28% YTD);
+  removed 2 placehold.co images.
+- **NVDA** FY2026 ANNUAL — added the Dec 2025 Groq license ($13.0B cash +
+  $4B due within a year, $14.4B goodwill) the old version omitted;
+  removed an unsupported geographic-reporting claim not in the 10-K.
+- **MSFT** FY2026 ANNUAL — corrected "$52.5B returned to shareholders"
+  (that's total financing cash use; actual buybacks+dividends $48.7B);
+  added free cash flow fell 6.5% to $67.0B, second straight annual decline.
+- **AMZN** Q2 2026 — added first sourceUrl (old version had none, only an
+  EDGAR search link); dropped 3 unverifiable earnings-release-only claims
+  (employee count, chip run-rate, growth-streak framing).
+- **GOOGL** Q2 2026 — corrected a wrong "ad business accelerating" claim
+  (Search growth actually slowed 19%→16.8%); added SpaceX stake now
+  marked to market ($94.1B, most sale-restricted).
+- **META** Q2 2026 — added CAMT minimum tax explanation for the tax-rate
+  jump (16% vs 11%, ~5pts of the net income decline); quantified a
+  one-off $8.03B Q1 tax benefit flattering H1 profit.
+- **AVGO** Q3 FY2026 — added new "AI XPV platform" disclosure (first
+  $35bn tranche, Broadcom guaranteeing up to ~$29bn of a customer's lease
+  payments) the old version missed entirely.
+- **JPM** Q2 2026 — corrected 2 unsupported claims (an "auto lease +39%"
+  figure and IB-fee-share claims not in the filing); added bank metrics
+  (NIM, CET1, ROTCE) to the metrics table.
+- **LLY** Q2 2026 — added guidance-implied 2H26 margin compression (2H
+  performance margin ~45-48.5% vs 1H's ~52.6%) and quantified $680M of
+  non-repeating Q2 items (rebate true-up + Jardiance milestones).
+- **V** Q3 FY2026 — corrected prior-year tax rate (16.7% not 17%); added
+  an EPS bridge showing buybacks added ~3pts while interest/tax took some
+  away.
+
+**JNJ and UNH's older (Q2) hot-list-rewrite queue entries marked
+`superseded`** — fresh Q3 reports in the current format are already live
+for both from batch 1 above, making the Q2 rewrite moot.
+
+**Batch 2 (remaining 8 us-listed tier-0 candidates), 8 parallel opus
+subagents — all published, all new or first-time companies except
+ADVB/ARTW:**
+- **ADVB** (Advanced Biomed) FY2026 ANNUAL —
+  https://financialreportinsights.com/companies/advb/2026/annual — net
+  income $6.68M (EPS $5.33) almost entirely a $14.0M non-cash gain from
+  disposing of its HK/China and Taiwan subsidiaries; excluding it, loss
+  was -$7.34M. Cash only $385K; a $607K shareholder loan matures
+  ~mid-Oct 2026 with no disclosed repayment plan.
+- **ARTW** (Art's-Way Manufacturing) fiscal Q3 2026 —
+  https://financialreportinsights.com/companies/artw/2026/q3 — sales
+  -12.7%, swung to a $140K loss; Modular Buildings backlog jumped
+  430.6% to $19.1M on two new contracts, reversing the risk our Q2
+  report had flagged.
+- **AZZ** (new) fiscal Q2 FY2027, filed as 2026/Q2 —
+  https://financialreportinsights.com/companies/azz/2026/q2 — sales
+  +16.7%, operating income +22.4%; reported EPS fell 34.2% only because
+  last year included a one-off $61.6M AVAIL joint-venture gain (adjusted
+  EPS +29.0%). $57.5M Seattle Galvanizing acquisition closed 2026-07-30.
+- **LNAI** (new, Lunai Bioworks, formerly Renovaro/Enochian) FY2026
+  ANNUAL — https://financialreportinsights.com/companies/lnai/2026/annual
+  — going-concern qualification, management says <1 month of cash as of
+  filing date; asked Nasdaq to suspend trading in its own stock amid a
+  short-seller lawsuit. Published without several YoY% fields (zero/
+  near-zero prior-year base).
+- **NRIX** (new, Nurix Therapeutics) fiscal Q3 2026 —
+  https://financialreportinsights.com/companies/nrix/2026/q3 — swung to
+  $549.8M net income on a $700M Roche upfront license payment for
+  bexobrutideg; excluding it, operating loss was $93.7M vs $91.4M a year
+  ago. Cash+securities $1,063.1M.
+- **PKE** (new, Park Aerospace) fiscal Q2 FY2027, filed as 2026/Q2 —
+  https://financialreportinsights.com/companies/pke/2026/q2 — sales
+  +26.9%, net income +88.6%; $114.7M cash, no debt, planned ~$65M new
+  Tulsa plant.
+- **TGL** (new, Treasure Global) FY2026 ANNUAL —
+  https://financialreportinsights.com/companies/tgl/2026/annual — going
+  concern; revenue +121.8% but gross margin only 0.2% (vouchers sold at
+  cost); active users -37.5%.
+- **WS** (new, Worthington Steel) fiscal Q1 FY2027, filed as 2026/Q1 —
+  https://financialreportinsights.com/companies/ws/2026/q1 — first
+  quarter including Kloeckner (~62.11% owned since 2026-06-03); sales
+  ~tripled to $2,726.6M; swung to a $(10.0)M net loss on deal costs,
+  revaluation loss and a jump in interest expense. Kloeckner DPLTA
+  shareholder vote 2026-10-23.
+
+**Scan gap found and worked around:** while rewriting JPM's Q2 report, that
+subagent found JPM had filed its own Q3 2026 earnings 8-K on 2026-10-13 —
+`scan-recent-filings` missed it even though JPM is hot-list (JPM's
+`nextExpectedFiling` estimate of 2026-11-04 was too far out to trip the
+10-day skip, but the scan itself should still have caught an actual new
+filing; worth checking the scan's hot-list/S&P-500 8-K matching logic next
+session). Dispatched a 9th opus subagent on direct evidence per CLAUDE.md
+("if you have direct evidence... that outranks the batch order") — result
+pending as of this write.
+
+**11/40 report-periods tonight so far** (JNJ, UNH, DPZ, ADVB, ARTW, AZZ,
+LNAI, NRIX, PKE, TGL, WS — 11 unique companies, 11 periods; EMR/EQT were
+correctly not-published non-earnings filings, not counted). **Rewrites:
+10 tonight, 10/121 total.** JPM Q3 pending (will add a 12th period if it
+publishes). Continuing with tier 1 (S&P 500 / us-listed 2026 backlog) once
+JPM resolves, cap allows room for several more companies tonight.

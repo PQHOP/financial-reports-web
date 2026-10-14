@@ -9,7 +9,8 @@
       "reportId": "cmty7862c000004jp68yqj1pi",
       "url": "https://financialreportinsights.com/companies/aapl/2026/q3",
       "nextExpectedFiling": "2026-10-30",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14"
     },
     {
       "ticker": "NVDA",
@@ -19,7 +20,8 @@
       "reportId": "cmu9wsm6x000004l3ugm32o56",
       "url": "https://financialreportinsights.com/companies/nvda/2026/annual",
       "nextExpectedFiling": "2026-11-18",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14"
     },
     {
       "ticker": "MSFT",
@@ -29,7 +31,8 @@
       "reportId": "cmty7bh91000004l3r0wxrx4l",
       "url": "https://financialreportinsights.com/companies/msft/2026/annual",
       "nextExpectedFiling": "2026-10-29",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14"
     },
     {
       "ticker": "AMZN",
@@ -39,7 +42,8 @@
       "reportId": "cmu73nxp3000004l7qmx98ypj",
       "url": "https://financialreportinsights.com/companies/amzn/2026/q2",
       "nextExpectedFiling": "2026-10-29",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14"
     },
     {
       "ticker": "GOOGL",
@@ -49,7 +53,8 @@
       "reportId": "cmu71rfto000104jp8b3edoqp",
       "url": "https://financialreportinsights.com/companies/googl/2026/q2",
       "nextExpectedFiling": "2026-10-29",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14"
     },
     {
       "ticker": "META",
@@ -79,7 +84,8 @@
       "reportId": "cmu9xam3z000004il1v8f2ao1",
       "url": "https://financialreportinsights.com/companies/avgo/2026/q3",
       "nextExpectedFiling": "2026-12-11",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14"
     },
     {
       "ticker": "JPM",
@@ -89,7 +95,9 @@
       "reportId": "cmu9xfw7m000104l1a8s492w7",
       "url": "https://financialreportinsights.com/companies/jpm/2026/q2",
       "nextExpectedFiling": "2026-11-04",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14",
+      "note": "JPM filed its Q3 2026 earnings 8-K on 2026-10-13 (missed by nextExpectedFiling's 10-day skip window) — picked up separately via tier 0 same night; this Q2 rewrite is superseded once the Q3 report is live."
     },
     {
       "ticker": "LLY",
@@ -99,7 +107,8 @@
       "reportId": "cmu9xlopa000004l3wdmj8ojv",
       "url": "https://financialreportinsights.com/companies/lly/2026/q2",
       "nextExpectedFiling": "2026-11-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14"
     },
     {
       "ticker": "V",
@@ -109,7 +118,8 @@
       "reportId": "cmu9xqpun000204l30z6rt7wj",
       "url": "https://financialreportinsights.com/companies/v/2026/q3",
       "nextExpectedFiling": "2026-11-12",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-14"
     },
     {
       "ticker": "MA",
@@ -179,7 +189,8 @@
       "reportId": "cmu9yv6t8000304l19r6azkxb",
       "url": "https://financialreportinsights.com/companies/unh/2026/q2",
       "nextExpectedFiling": "2026-11-10",
-      "status": "pending"
+      "status": "superseded",
+      "note": "Q3 2026 report published 2026-10-14 already in current format: https://financialreportinsights.com/companies/unh/2026/q3"
     },
     {
       "ticker": "HD",
@@ -209,7 +220,8 @@
       "reportId": "cmua7hepg000104l9ugfbv5zo",
       "url": "https://financialreportinsights.com/companies/jnj/2026/q2",
       "nextExpectedFiling": "2026-10-21",
-      "status": "pending"
+      "status": "superseded",
+      "note": "Q3 2026 report published 2026-10-14 already in current format: https://financialreportinsights.com/companies/jnj/2026/q3"
     },
     {
       "ticker": "BAC",

@@ -1,4 +1,96 @@
 {
+  "PKE": {
+    "name": "Park Aerospace Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/pke/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-30",
+      "filedAt": "2026-10-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2027, quarter ending ~2026-11-29)",
+      "estimate": "2027-01-13",
+      "basis": "prior Q3 10-Qs filed 2026-01-13 and 2025-01-15",
+      "confidence": "estimated"
+    },
+    "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-30), filed under calendar 2026/Q2 per site convention for off-calendar fiscal years. Sales +26.9% to $20.8M (military/commercial demand, general aviation declined), net income +88.6% to $4.5M, diluted EPS $0.21 vs $0.12. ~$0.9M tariff refund netted into both sales and COGS inflates the margin a bit (ex it: sales +~32%, operating margin ~21.8% vs 17.4% a year ago). $114.7M cash, no debt; planned ~$65M new Tulsa plant.",
+    "lastChecked": "2026-10-14"
+  },
+  "AZZ": {
+    "name": "AZZ Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/azz/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2027, quarter ending 2026-11-30)",
+      "estimate": "2027-01-07",
+      "basis": "10-Qs filed 2025-10-08, 2026-01-07, 2026-07-08, 2026-10-13",
+      "confidence": "estimated"
+    },
+    "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
+    "lastChecked": "2026-10-14"
+  },
+  "WS": {
+    "name": "Worthington Steel, Inc. Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/ws/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027, quarter ending 2026-11-30)",
+      "estimate": "2027-01-08",
+      "basis": "prior-year Q2 10-Q filed 2026-01-08; Q1 cadence 2025-10-10 → 2026-10-13",
+      "confidence": "estimated"
+    },
+    "note": "Fiscal year ends May 31, so this is fiscal Q1 FY2027 but filed under calendar 2026/Q1 to match site convention (e.g. GIS). First quarter including Kloeckner (German metals distributor, ~62.11% owned since 2026-06-03): sales ~tripled to $2,726.6M ($1,772.7M from Kloeckner); GAAP net loss $(10.0)M / $(0.20) EPS vs $36.8M/$0.73 a year ago, driven by $22.6M deal costs, $15.5M revaluation loss, interest expense up to $38.8M, 100.7% tax rate. Adjusted EBIT +41% to $78.5M but entirely from Kloeckner (legacy adjusted EBIT fell). Kloeckner DPLTA shareholder vote 2026-10-23; up to ~$483M possible minority buyout.",
+    "lastChecked": "2026-10-14"
+  },
+  "TGL": {
+    "name": "Treasure Global Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/tgl/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, period ending 2026-09-30)",
+      "estimate": "2026-11-16",
+      "basis": "45-day smaller-reporting-company deadline (~Nov 14, a Saturday); TGL has filed NT 10-Q extensions recently (May 2026, Feb 2026) so could slip to ~Nov 19-20",
+      "confidence": "estimated"
+    },
+    "note": "FY2026 10-K (Malaysia-based ZCITY rewards app, going-concern paragraph from auditor). Revenue $5.17M (+121.8%) but gross profit only $8,742 (0.2% margin, down from 71.6%) — nearly all revenue is e-vouchers sold at cost. Active users down 37.5% to 3,054. Net loss narrowed to $11.09M from $23.38M, mostly accounting (prior year had $19.5M impairment; this year has $5.38M warrant-liability gain from its own falling stock price). Cash $1.59M vs $6.88M operating cash burn. Heavy dilution: cumulative 1-for-70,000 reverse splits since Feb 2024, shares outstanding 2.03M→3.63M by Sept 2026. revenueYoyPct/netIncomeYoyPct/epsYoyPct partly omitted where a loss-to-loss % wouldn't be meaningful.",
+    "lastChecked": "2026-10-14"
+  },
   "A": {
     "name": "Agilent Technologies, Inc.",
     "status": "done",
@@ -3522,22 +3614,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu9yv6t8000304l19r6azkxb"
+      "period": "Q3",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/unh/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-10"
+      "type": "8-K",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-10",
-      "basis": "~90 days after Q2 10-Q filed 2026-08-10, consistent with UNH quarterly cadence",
+      "estimate": "2026-11-03",
+      "basis": "Q3 10-Qs filed 2025-10-28 and 2024-11-04 in prior years",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-14",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-21",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu9yv6t8000304l19r6azkxb"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-14",
+        "url": "https://financialreportinsights.com/companies/unh/2026/q3"
+      }
+    ]
   },
   "HD": {
     "name": "Home Depot (The)",
@@ -3588,22 +3694,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-20",
-      "url": "https://financial-reports-web.vercel.app/reports/cmua7hepg000104l9ugfbv5zo"
+      "period": "Q3",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/jnj/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-28",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-27",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-21",
-      "basis": "JNJ Q3 10-Qs have historically landed mid-to-late October, ~90 days after the Q2 filing",
+      "basis": "Q1 and Q2 10-Qs filed 8 days after their earnings 8-Ks (04-14→04-22, 07-15→07-23)",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-20"
+    "lastChecked": "2026-10-14",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-20",
+        "url": "https://financial-reports-web.vercel.app/reports/cmua7hepg000104l9ugfbv5zo"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-14",
+        "url": "https://financialreportinsights.com/companies/jnj/2026/q3"
+      }
+    ]
   },
   "BAC": {
     "name": "Bank of America",
@@ -8744,28 +8864,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/dpz/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/dpz/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-14",
-      "filedAt": "2026-07-20"
+      "periodEnd": "2026-09-06",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-12",
-      "basis": "Q3 ends ~09-06; 10-Q same day as earnings ~5 weeks after quarter end",
+      "type": "10-K (FY2026) + Q4 earnings 8-K",
+      "estimate": "2027-02-22",
+      "basis": "FY2025 10-K and earnings 8-K both filed 2026-02-23; FY2024's filed 2025-02-24",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-14",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/dpz/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-14",
+        "url": "https://financialreportinsights.com/companies/dpz/2026/q3"
       }
     ]
   },
@@ -9202,17 +9328,18 @@
       "url": "https://financialreportinsights.com/companies/emr/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
+      "type": "8-K (Item 2.02/9.01, pension mark-to-market accounting change — restates FY2024/FY2025/Q1-Q3 FY2026, not an earnings release)",
       "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (FY2026 results); 10-K ~2026-11-10",
-      "estimate": "2026-11-04",
-      "basis": "last year Q4 8-K 2025-11-05, 10-K 2025-11-10",
+      "type": "8-K earnings release (Q4/full-year FY2026), then 10-K",
+      "estimate": "2026-11-03",
+      "basis": "FY2025 Q4 8-K was 2025-11-05; no FY2026 Q4 date announced yet as of 2026-10-13",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "note": "2026-10-13 8-K (accession 0000032604-26-000047) is a pension-accounting change (mark-to-market in Q4 each year going forward) with restated prior figures, not FY2026 Q4/full-year results — no new report published. Restated Q3 FY2026 net earnings $720M (was $718M) and Q3 FY2025 $588M (was $586M); EPS unchanged. Immaterial, live Q3 report left as-is.",
+    "lastChecked": "2026-10-14",
     "reports": [
       {
         "year": 2026,
@@ -9293,16 +9420,17 @@
       "url": "https://financialreportinsights.com/companies/eqt/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-22"
+      "type": "8-K (Item 2.02, preliminary hedging/derivatives update only — no revenue/EPS, not an earnings release)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-20",
-      "basis": "8-K a day before the 10-Q (Q1 10-Q 04-22, Q2 07-22)",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 earnings release (Q3 2026)",
+      "estimate": "2026-10-27",
+      "basis": "EQT press release 2026-10-07: Q3 results after market close Tue 2026-10-27, call Wed 2026-10-28 10:00 ET",
+      "confidence": "confirmed"
     },
+    "note": "2026-10-13 8-K (accession 0000033213-26-000046) is a preliminary Item-2.02-only hedging update for Q3 2026 (~$100M derivative gain, $70M net cash settlements, all marked preliminary) — no revenue/net income/EPS/production, not earnings. Same pattern as the Q2 cycle (hedging 8-K 2026-07-14, real earnings 8-K 2026-07-21). Real Q3 earnings confirmed for after close 2026-10-27.",
     "lastChecked": "2026-09-25",
     "reports": [
       {
@@ -17449,28 +17577,35 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-30",
-      "url": "https://financialreportinsights.com/reports/cmuobpuxq000404kzeat2gszr"
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/advb/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-03-31",
-      "filedAt": "2026-05-15"
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026)",
-      "estimate": "2026-10-13",
-      "basis": "NT 10-K late-filing notice filed 2026-09-28, 15-day extension",
-      "confidence": "confirmed"
+      "type": "10-Q (Q1 FY2027, quarter ended 2026-09-30)",
+      "estimate": "2026-11-16",
+      "basis": "45-day smaller-reporting-company deadline; prior 10-Qs filed on day 44-45 (2026-02-13, 2026-05-15)",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-30",
+    "note": "FY2026 10-K: net income $6.68M (EPS $5.33) almost entirely a $14.0M non-cash gain disposing of HK/China and Taiwan subsidiaries (net liabilities leaving the books); excluding it, loss was -$7.34M. Continuing-ops loss -$6.26M includes $2.92M credit-loss provision and $1.73M stock comp. Cash only $385K; a 10% shareholder loan ($607K) matures ~mid-Oct 2026 with no disclosed repayment/extension plan — worth checking next time.",
+    "lastChecked": "2026-10-14",
     "reports": [
       {
         "year": 2026,
         "period": "Q3",
         "publishedAt": "2026-09-30",
         "url": "https://financialreportinsights.com/reports/cmuobpuxq000404kzeat2gszr"
+      },
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-14",
+        "url": "https://financialreportinsights.com/companies/advb/2026/annual"
       }
     ]
   },
@@ -21206,22 +21341,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-10-04",
-      "url": "/companies/artw/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/artw/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-07-15"
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 FY2026, period ending 2026-08-31)",
-      "estimate": "2026-10-15",
-      "basis": "typical filing timing ~45 days after quarter-end for this filer",
+      "type": "10-K (FY2026, FYE 2026-11-30)",
+      "estimate": "2027-02-15",
+      "basis": "prior 10-Ks filed 2026-02-12, 2025-02-18, 2024-02-28, 2023-02-16",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-04"
+    "lastChecked": "2026-10-14",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-04",
+        "url": "/companies/artw/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-14",
+        "url": "https://financialreportinsights.com/companies/artw/2026/q3"
+      }
+    ]
   },
   "ARTL": {
     "name": "Artelo Biosciences, Inc.",
@@ -30033,5 +30182,51 @@
         "filedAt": "2026-08-05"
       }
     ]
+  },
+  "NRIX": {
+    "name": "Nurix Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/nrix/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE 2026-11-30)",
+      "estimate": "2027-01-27",
+      "basis": "FY2025 10-K filed 2026-01-28; prior Q3 10-Q filed 2025-10-09",
+      "confidence": "estimated"
+    },
+    "note": "Fiscal Q3 2026 (clinical-stage biotech): swung to $549.8M net income / $4.73 diluted EPS on a $700M Roche upfront license payment for bexobrutideg (NX-5948), $653.2M booked as revenue this quarter. Excluding it, operating loss was $93.7M vs $91.4M a year ago; cash burn ~$84M/quarter excluding the upfront. Cash+securities $1,063.1M. Published revenueYoyPct/netIncomeYoyPct/epsYoyPct omitted (loss-to-profit swing, not meaningful); operatingMarginPct (83.1%) kept since it's the real GAAP figure but will look like an outlier in peer/sector tables — the one-off is explained in the body.",
+    "lastChecked": "2026-10-14"
+  },
+  "LNAI": {
+    "name": "Lunai Bioworks Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/lnai/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ending 2026-09-30)",
+      "estimate": "2026-11-14",
+      "basis": "prior-year equivalent 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "note": "FY2026 10-K (fiscal year ended 2026-06-30), formerly Renovaro/Enochian Biosciences. Net loss $3.56M (EPS -$1.06) vs $178.0M a year ago (which included a $170.4M goodwill impairment). Going concern: auditor flagged it, management says <1 month of cash as of 2026-10-13 (cash $1.71M, AP $12.39M, stockholders' deficit $9.02M, below Nasdaq's $2.5M minimum). An Oct 9 2026 8-K asked Nasdaq to suspend trading in its own stock amid an alleged-short-selling lawsuit. Published without revenueYoyPct/netIncomeYoyPct/epsYoyPct/operatingMarginPct (zero/near-zero prior-year base and a loss-narrowing % would mislead). Worth rechecking solvency at next filing.",
+    "lastChecked": "2026-10-14"
   }
 }
