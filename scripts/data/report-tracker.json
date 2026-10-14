@@ -45,6 +45,29 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CMMB": {
+    "name": "Chemomab Therapeutics Ltd. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/cmmb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-19"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026)",
+      "estimate": "2026-11-18",
+      "basis": "Q2 results 6-K came ~50 days after quarter end",
+      "confidence": "estimated"
+    },
+    "note": "FPI (Israeli clinical-stage biotech, nebokitug for PSC), 20-F/6-K filer. Q2 2026: no revenue; net loss widened slightly to $2.165M; H1 R&D fell 45% as the Phase 2 SPRING liver-disease trial finished. Cash only $6.687M, down from $10.366M at Dec 2025; runway guided 'through Q1 2027' with a going-concern warning. PENDING MERGER: announced 2026-07-08 (amended 09-23, S-4 filed 09-25) with Scipher Medicine — Chemomab holders get ~32% of combined co (ticker SCIP), closing expected Q4 2026. After closing, filings will likely come from the new Delaware parent on 10-Q/10-K, not CMMB on 6-K — ticker/company mapping will need updating then.",
+    "lastChecked": "2026-10-14"
+  },
   "CLYM": {
     "name": "Climb Bio, Inc.",
     "status": "done",
