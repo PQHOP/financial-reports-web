@@ -824,7 +824,9 @@ features and new finance areas, fixing breakage. A cloud routine ("Site
 Operations - Daily", 22:30 UTC = 07:30 JST, after the nightly report window)
 does one pass a day and leaves a morning report for the user. The nightly
 report cap was lowered from ~50 to ~35 the same day to pay for it (raised
-to ~40 on 2026-10-14).
+to ~40 on 2026-10-14). The routine (`trig_01NVjnTDJRERUM7UVfjW8iyZ`) runs on
+Fable 5.1 (`claude-fable-5-1`) since 2026-10-14, the user's choice; the
+nightly report routine stays on Sonnet with Opus research subagents.
 
 **Goals (set by the user, 2026-10-04, for the next 3 months, to
 ~2027-01-04):** (1) get Google AdSense approved; (2) reach 10,000 visits per
