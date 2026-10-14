@@ -14395,3 +14395,13 @@ untouched (BAOS, BLIV, BRAI, BTCT, CCHH, CDTG, CHNR).
 A future firing should run `npm run scan-recent-filings` first per
 usual, then continue the tier 1 backlog with `npm run next-batch` from
 where this session left off (next in file order after CMPR).
+
+**Later firing, same night:** network check passed (SEC 403 without
+`User-Agent` as expected, 200 with it; site 200). Re-ran
+`scan-recent-filings` fresh: **0 candidates** — tier 0 still fully
+clear. Tonight's report-period count is already 38/40 (effectively at
+cap per the previous firing's note) and the +10 hot-list-rewrite
+allotment is already used up (10/10). No cap room left for tier 1/2
+work. Did nothing further and exiting per "later firings that night
+should see the count and exit immediately." No tracker or report
+changes this firing.
