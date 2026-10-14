@@ -45,6 +45,52 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CLRB": {
+    "name": "Cellectar Biosciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clrb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-13; ~90 days after the 2026-08-13 Q2 filing",
+      "confidence": "estimated"
+    },
+    "note": "Clinical-stage radiotherapeutics biotech (iopofosine I 131 / CLR 131 for Waldenstrom macroglobulinemia, Breakthrough Therapy Designation, 61.8% major response rate in CLOVER WaM). Q2 net loss widened 27% to $6.93M as R&D rose 91% ahead of the Phase 3 confirmatory trial (first patient not yet enrolled as of the 10-Q). A May 2026 financing ($31.7M net, management among the buyers) lifted cash to $34.0M at June 30 (~$29M by Aug 13), but management still flags possible inability to fund operations beyond Q2 2027 and a going-concern doubt remains. EPS improvement from $3.39 to $0.57 loss is purely share-count dilution, not operational — 1-for-30 reverse split in June 2025.",
+    "lastChecked": "2026-10-14"
+  },
+  "CLNN": {
+    "name": "Clene Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clnn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 10-Q filed 2025-11-13; Q2 2026 filed 2026-08-14",
+      "confidence": "estimated"
+    },
+    "note": "Clinical-stage biotech (CNM-Au8 for ALS/MS). Operating loss narrowed to $5.35M from $5.86M (underlying), but net loss nearly doubled to $13.4M ($1.08 EPS) purely from a $7.47M non-cash revaluation of warrants/convertible-note features. Cash only $9.7M vs $7.1M H1 operating cash burn; going-concern warning, runway guided only to late Q4 2026. Raised ~$4.0M on 2026-09-15 at $3.28/share (less than half May's $7.00 offering price). Plans an accelerated-approval NDA filing for CNM-Au8 in ALS in early Q4 2026, but resting on post-hoc/exploratory NfL biomarker analyses that the 10-Q itself calls exploratory — worth watching for an actual NDA-submission 8-K.",
+    "lastChecked": "2026-10-14"
+  },
   "CLPS": {
     "name": "CLPS Incorporation",
     "status": "done",
