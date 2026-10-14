@@ -9,13 +9,19 @@ import { buildRates } from "@/lib/rates";
 import { availableScorecards } from "@/lib/scorecard";
 import { scorecardPath } from "@/lib/scorecardPath";
 
-// Sitemaps are built at request time, not baked into the build.
-// Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 3600;
+// Served by src/app/sitemap.xml/route.ts (a plain Route Handler with
+// `revalidate`). This used to be src/app/sitemap.ts, the metadata-file
+// convention, but on Next 16 that route ignored its `revalidate` export and
+// was baked into the build as a fully static file: production served a
+// sitemap whose newest <lastmod> was the last deploy's timestamp, and every
+// report published after a deploy was missing from it until the next deploy
+// (4 days of reports missing as of 2026-10-14). /feed.xml, a plain route
+// handler with the same export, revalidated fine, so the sitemap now uses
+// the same mechanism.
 
 const STATIC_PAGES = ["/economy", "/world-risks", "/about", "/corrections", "/privacy", "/terms", "/contact"];
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
   // Only list what has real content: companies/industries with no published
   // analysis are near-empty directory pages (also `noindex`ed on the page).
   const [industries, companies, reports, articles, macro, scorecards] = await Promise.all([

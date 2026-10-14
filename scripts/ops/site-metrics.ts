@@ -204,12 +204,19 @@ async function health() {
   return Promise.all(
     HEALTH_PATHS.map(async (path) => {
       const started = Date.now();
-      try {
-        const res = await fetch(SITE_URL + path, { redirect: "manual", headers: { "User-Agent": "FinancialReportInsights ops-check" } });
-        return { path, status: res.status, ms: Date.now() - started, cache: res.headers.get("x-vercel-cache") };
-      } catch (e) {
-        return { path, status: 0, ms: Date.now() - started, error: e instanceof Error ? e.message : String(e) };
+      let lastError: unknown;
+      // One retry: the sandbox's egress proxy occasionally drops a single
+      // request ("fetch failed" on a page that is fine), which read as an
+      // outage on 2026-10-14. A second identical failure is reported.
+      for (let attempt = 0; attempt < 2; attempt++) {
+        try {
+          const res = await fetch(SITE_URL + path, { redirect: "manual", headers: { "User-Agent": "FinancialReportInsights ops-check" } });
+          return { path, status: res.status, ms: Date.now() - started, cache: res.headers.get("x-vercel-cache"), retried: attempt > 0 || undefined };
+        } catch (e) {
+          lastError = e;
+        }
       }
+      return { path, status: 0, ms: Date.now() - started, error: lastError instanceof Error ? lastError.message : String(lastError) };
     })
   );
 }
