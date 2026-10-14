@@ -14250,7 +14250,7 @@ total.** Continuing tier 1 backlog, cap allows room for ~20 more
 companies tonight.
 
 **Batch 4 (tier 1, us-listed backlog), 7 more parallel opus subagents
-dispatched (CHRN, CIIT, CLIK, CLIR, CLLS, CLMB, CLMT) — results so far:**
+(CHRN, CIIT, CLIK, CLIR, CLLS, CLMB, CLMT) — all published:**
 - **CIIT** (Tianci International) fiscal Q3 FY2026 —
   https://financialreportinsights.com/companies/ciit/2026/q3 — Hong
   Kong micro-cap (logistics + ore trading + consulting); revenue +121.3%
@@ -14268,3 +14268,35 @@ dispatched (CHRN, CIIT, CLIK, CLIR, CLLS, CLMB, CLMT) — results so far:**
   distributor; gross billings +17.3%, net sales +9.4%, but operating
   income -7.1% and net income -7.5% as SG&A rose 26%; dividend suspended
   starting Q1 2026.
+- **CIIT** (Tianci International) fiscal Q3 FY2026 —
+  https://financialreportinsights.com/companies/ciit/2026/q3 — Hong
+  Kong micro-cap (logistics + ore trading + consulting); revenue +121.3%
+  but a high-margin consulting line masked losses elsewhere; post-quarter
+  pivot into Bitcoin mining.
+- **CLIK** (Click Holdings) H1 FY2026 —
+  https://financialreportinsights.com/companies/clik/2026/h1 — Hong Kong
+  FPI; revenue +57.2% almost entirely from two 2025 acquisitions, not
+  organic growth; G&A +138.5% dragged operating margin down; EPS -80%
+  mostly from acquisition-related share dilution.
+- **CLMT** (Calumet) Q2 2026 —
+  https://financialreportinsights.com/companies/clmt/2026/q2 —
+  specialty hydrocarbons/renewables; sales +40.8%, adjusted EBITDA +129%
+  on Middle-East-driven product shortages; GAAP loss narrowed but still
+  driven by a $163.6M non-cash RINs expense (liability now $480.2M,
+  becomes real cash if a pending small-refinery exemption is denied).
+- **CHRN** (ChronoScale Holdings, formerly Ekso Bionics) FY2026 ANNUAL —
+  https://financialreportinsights.com/companies/chrn/2026/annual —
+  Applied Digital reverse-merged its GPU cloud unit in 2026-05-05 (~97%
+  owner); revenue -15.1%, net loss narrowed 30.8% but almost entirely
+  from renegotiated leases + a non-recurring bad-debt charge, more than
+  the whole improvement. FY2027 Q1 10-Q due tomorrow (2026-10-15) — check
+  tier 0.
+- **CLIR** (ClearSign Technologies) Q2 2026 —
+  https://financialreportinsights.com/companies/clir/2026/q2 — micro-cap
+  industrial combustion tech; revenue +321% off a tiny base; net loss
+  narrowed mostly on non-recurring legal fees; a Q1 warranty charge left
+  a reserve bigger than H1's entire revenue; funding via share sales at
+  falling prices.
+
+**27/40 report-periods tonight so far.** Rewrites: 10 tonight, 10/121
+total. Cap allows room for ~13 more companies tonight.

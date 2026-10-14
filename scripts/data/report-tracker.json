@@ -45,6 +45,98 @@
     "note": "Fiscal Q2 FY2027 (quarter ended 2026-08-31), filed under calendar 2026/Q2 per site convention (matches WMT). Sales +16.7% to $486.9M, operating income +22.4% ($83.8M, margin 17.2% vs 16.4%); Metal Coatings +22.9%, Precoat Metals +11.5% (first volume growth this fiscal year). Reported EPS fell 34.2% to $1.94 only because last year included a $61.6M AVAIL joint-venture gain; adjusted EPS +29.0% to $2.00. $57.5M Seattle Galvanizing acquisition closed 2026-07-30. Net leverage 1.3x.",
     "lastChecked": "2026-10-14"
   },
+  "CLIR": {
+    "name": "ClearSign Technologies Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clir/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 10-Q filed 2025-11-14; Q2 2026 10-Q filed 2026-08-14",
+      "confidence": "estimated"
+    },
+    "note": "Micro-cap industrial combustion/sensing tech. Revenue $560K (+321% YoY off a tiny base); net loss narrowed to $1.307M from $1.680M mostly because ~$300K of prior-year legal fees didn't recur. A $410K Q1 warranty charge (burners missing emissions guarantee) left a $1.114M warranty reserve bigger than H1's entire revenue. DOE hydrogen-burner grant that offset R&D completed 2026-05-27 (that income stops going forward). Cash ~$11.6M incl. a July raise, ~2 years of runway at current burn, no debt, but funding via share sales at falling prices ($4.33 June → $3.54 July), shares outstanding +28% since year-end.",
+    "lastChecked": "2026-10-14"
+  },
+  "CHRN": {
+    "name": "ChronoScale Holdings Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/chrn/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-05-31",
+      "filedAt": "2026-08-19"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ended 2026-08-31)",
+      "estimate": "2026-10-15",
+      "basis": "non-accelerated filer, 45-day 10-Q deadline after the 2026-08-31 quarter end",
+      "confidence": "estimated"
+    },
+    "note": "Formerly Ekso Bionics (exoskeletons); on 2026-05-05 Applied Digital (APLD) reverse-merged its GPU cloud unit in (APLD ~97% owner), fiscal year end changed to May 31, Ekso business classified held-for-sale and sold 2026-09-30. FY2026 10-K reflects the cloud business's accounting history (it's treated as the acquirer): revenue -15.1% to $71.6M (lost a customer Dec 2024); net loss narrowed 30.8% to $50.3M, but ~$32.1M of the improvement is renegotiated equipment leases plus a non-recurring prior-year bad-debt charge, more than the entire $17.8M improvement. Operating cash flow +$39.1M but capex-heavy (-$77.3M free cash flow), covered by $75.4M of Applied Digital capital contributions. $100M demand loan from Applied Digital ($7M drawn). FY2027 Q1 10-Q due ~2026-10-15 (tomorrow) — check tier 0 for it.",
+    "lastChecked": "2026-10-14"
+  },
+  "CLMT": {
+    "name": "Calumet, Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clmt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2025 earnings 8-K filed 2025-11-07, 10-Q 2025-11-10; Q2 2026 8-K and 10-Q both filed 2026-08-07",
+      "confidence": "estimated"
+    },
+    "note": "Specialty hydrocarbons/renewables/refining (former MLP, now a corp). Sales +40.8% to $1,445.1M; net loss narrowed to $(95.9)M from $(147.9)M; adjusted EBITDA w/ tax attributes +129% to $175.2M, almost all from Specialty Products & Solutions on Middle-East-driven product shortages lifting avg price/barrel 45.5%. Montana/Renewables grew despite a 48-day MaxSAF 150 shutdown; Performance Brands fell on cost pressure + a $7.3M LIFO charge. GAAP loss driven by $163.6M non-cash RINs expense (liability rose to $480.2M from $169.3M, becomes real cash if the pending 2025 small-refinery exemption petition is denied) and a $26.0M derivative loss. H1 operating cash flow only $6.1M (receivables +$185.5M); total debt $2,258.7M vs negative equity $(1,137.1)M. Post-quarter: $115M debt repaid, DOE loan max cut, revolver raised to $600M.",
+    "lastChecked": "2026-10-14"
+  },
+  "CLIK": {
+    "name": "Click Holdings Limited - Ordinary Share",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-14",
+      "url": "https://financialreportinsights.com/companies/clik/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim results, H1 FY2026)",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-05-11"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026, year ended 2026-06-30)",
+      "estimate": "2026-10-28",
+      "basis": "FY2025 20-F filed 2025-10-24; 20-F due within 4 months of June 30 FYE",
+      "confidence": "estimated"
+    },
+    "note": "FPI (Hong Kong, reports in HKD), 20-F/6-K filer, fiscal year ends June 30. H1 FY2026 (to 2025-12-31): revenue +57.2% to HK$59.0M almost entirely from two 2025 acquisitions (nursing provider, professional services firm) rather than organic growth; G&A costs +138.5% (legal/audit/directors' pay) pushed operating margin down to 4.5% from 8.8%. Net income -28.1% (flattered a bit by tax rate falling to 2.4% from 13.8%); EPS -80% almost entirely from share dilution for the acquisitions. Goodwill+intangibles are 79% of total assets; cash only HK$10.2M. FY2026 20-F (due ~2026-10-28) will be the first audited figures including the acquisitions — check for new-period ANNUAL report then.",
+    "lastChecked": "2026-10-14"
+  },
   "CLMB": {
     "name": "Climb Global Solutions, Inc.",
     "status": "done",
