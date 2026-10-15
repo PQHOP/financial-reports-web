@@ -5156,22 +5156,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucsbikq000604jvx3t4mbd3"
+      "period": "Q3",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/blk/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-14"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-05",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-06",
+      "basis": "10-Q typically ~3 weeks after the 8-K earnings release",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucsbikq000604jvx3t4mbd3"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/blk/2026/q3"
+      }
+    ]
   },
   "SCHW": {
     "name": "Charles Schwab Corporation",
@@ -10532,28 +10546,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/fast/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/fast/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-16"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-14"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-14",
-      "basis": "Fastenal IR events page lists Q3 2026 release for 2026-10-14; 10-Q ~2 days later",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026) then Q4/FY2026 earnings ~mid-Jan 2027",
+      "estimate": "2027-01-15",
+      "basis": "10-Q expected within days; next earnings cycle per usual mid-Jan cadence",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-15",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/fast/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/fast/2026/q3"
       }
     ]
   },

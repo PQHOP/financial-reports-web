@@ -14424,3 +14424,59 @@ get past `prisma generate`. Re-ran `scan-recent-filings` fresh: **0
 candidates**, tier 0 still clear. Count unchanged at 38/40 report-periods
 and 10/10 rewrites — still effectively at cap. Did nothing further and
 exiting immediately per policy. No tracker or report changes this firing.
+
+### 2026-10-15 night (16:00 UTC 2026-10-15 → 22:59 UTC 2026-10-15 / 01:00–07:59 JST 2026-10-16)
+
+Fresh night, cap resets to 0/40 + 0/10 rewrites. Network check passed first
+(403 without `User-Agent` on `sec.gov` as expected — SEC's own policy, not
+a proxy denial; 200 with the required header; both
+`financialreportinsights.com` and the `.vercel.app` alias returned 200).
+`master` was detached on session start again (same recurring pattern as
+prior nights) and pointing at a stale local ref — fetched and fast-forwarded
+cleanly to `origin/master` (35bfe0f), no uncommitted work lost. `npm install`
+needed the placeholder `DATABASE_URL` workaround again to get past `prisma
+generate` (not needed for the browser-driven publish path).
+
+Also fixed a data bug found while preparing tonight's hot-list rewrites:
+three `hotlist-rewrite.json` entries (COST, PEP, MU) had their `reportId`
+field holding the report's own canonical URL instead of a real report id
+(breaks `--edit`) — looked up the real ids via the admin dashboard and
+corrected all three.
+
+Ran `scan-recent-filings`: **9 fresh candidates** — hot-list/S&P 500:
+BLK, FAST, PGR (all 8-K Item 2.02 Q3 earnings, filed 2026-10-14); us-listed
+updates: CHRN (new 10-Q, FY2027 Q1), CMTL (new 10-K, FY2026 annual); new
+us-listed: EDUC, ETS, SOTK, WINA. Rechecked the FPI pending tickers
+(BAOS/BLIV/BRAI/BTCT/CCHH/CDTG/CHNR) — none have an estimate due yet,
+skipped re-checking them.
+
+**Batch 1 (hot-list/S&P 500 tier 0), 3 parallel opus subagents:**
+- **BLK** (BlackRock) Q3 2026 —
+  https://financialreportinsights.com/companies/blk/2026/q3 — revenue
+  +19.1% to $7.75B on $205B of net inflows and 11% annualized organic
+  base-fee growth; adjusted EPS +38% to $15.93 but GAAP EPS only +25% to
+  $10.57 — the $962M GAAP/adjusted gap is mostly a $564M pre-tax
+  contingent-consideration charge (GIP/HPS earnout tied to BLK's own share
+  price, not tax-deductible, pushed the GAAP tax rate to 29.4% from 25.2%).
+  ~$1.07 of the $4.38 adjusted EPS increase was investment gains (incl.
+  Securitize/Circle stakes). Private-markets base fees grew only 2% despite
+  $15B of inflows — flagged as the thing to watch. Published from the 8-K
+  Exhibit 99.1 (10-Q not filed yet).
+- **FAST** (Fastenal) Q3 2026 —
+  https://financialreportinsights.com/companies/fast/2026/q3 — sales
+  +15.5% to $2,463.3M (accelerated from Q2's +14.7%), big-contract
+  customers +18.8% (76.5% of sales); gross margin fell to 44.8% from
+  45.3% on customer mix, but operating margin still rose to 21.5% from
+  20.7% as SG&A fell to 23.3% of sales; net income +19.7% to $401.6M. ~20
+  bps of the gross-margin figure was favorable timing/tariff refunds the
+  company itself calls out; receivables grew faster than sales (DSO ~58→
+  60 days) on longer payment terms for big customers. EPS growth almost
+  entirely operational (shares -0.1%, tax rate actually rose). Published
+  from the 8-K Exhibit 99.1 (10-Q not filed yet).
+
+Both sanity-checked live (fetched canonical URL, confirmed "At a glance"
+renders, content not truncated) before recording here.
+
+**2/40 report-periods tonight so far.** PGR (tier 0), the 10 hot-list
+rewrites, and the remaining tier-0 us-listed candidates (CHRN, CMTL, EDUC,
+ETS, SOTK, WINA) are running in parallel opus subagents; results pending.
