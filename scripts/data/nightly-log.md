@@ -14731,3 +14731,62 @@ published, all first-time companies, all sanity-checked live:**
 **33/40 report-periods + 10/10 rewrites tonight.** Cap allows room for
 ~7 more report-periods — one more smaller batch, then stop for the
 night per policy.
+
+**Batch 6 (tier 1, us-listed backlog), 7 parallel opus subagents — all
+published, all first-time companies, all sanity-checked live:**
+- **COLB** (Columbia Banking System) Q2 2026 — bank; net income +37%
+  mostly the Pacific Premier acquisition anniversary, but diluted EPS
+  flat as deal share issuance raised the count 36%; problem assets
+  rising (one agricultural borrower); Q3 2026 earnings confirmed for
+  2026-10-22.
+- **COLL** (Collegium Pharmaceutical) Q2 2026 — product revenue +6.3%
+  but flat ex the newly acquired Azstarys; swung to a GAAP loss on deal
+  costs; cut full-year guidance on Nucynta generic pricing; net debt
+  roughly doubled funding the acquisition, floating-rate and unhedged.
+- **COLM** (Columbia Sportswear) Q2 2026 — swung to a profit, but ~$0.93
+  of the $0.52 EPS came from a court-ordered tariff refund — ex that the
+  underlying business was actually slightly worse YoY; raised guidance
+  mostly reflects the refund, not an improved outlook.
+- **CORT** (Corcept Therapeutics) Q2 2026 — revenue +31.7% as newly
+  approved Lifyorli (ovarian cancer) added 18.6% of revenue at
+  near-zero cost; raised FY guidance; H1 operating cash flow weak;
+  FDA decision on relacorilant for Cushing's due Dec 17, 2026.
+- **CORZ** (Core Scientific) Q2 2026 — Bitcoin miner pivoting to AI/HPC
+  hosting; revenue +108.8% on CoreWeave colocation growth while mining
+  revenue collapsed; headline $1.16B net loss is ~90% a non-cash warrant
+  charge (underlying loss ~$110M); post-quarter AMD signed ~530MW of
+  15-year leases.
+- **COYA** (Coya Therapeutics) Q2 2026 — ALS biotech, no real revenue;
+  net loss +8.9% on rising trial costs; loss-per-share "improvement" is
+  purely share-count dilution; ALSTARS trial fully enrolled Oct 5,
+  topline data expected early Q2 2027.
+- **CPBI** (Central Plains Bancshares) Q2 2026 — small bank; net income
+  +51% on NIM widening, but ROE still only ~6.7% — the basis of an
+  activist investor's (Stilwell, 9.7% owner) campaign that won a board
+  seat and a 10% buyback approved Sept 9.
+
+**40/40 report-periods + 10/10 rewrites tonight — nightly cap reached.**
+Stopping for the night. All 40 report-periods and 10 rewrites were
+researched via opus subagents, each sanity-checked live (fetched the
+canonical URL, confirmed "At a glance" renders and content isn't
+truncated) before being recorded here. All changes committed and pushed
+to master in small batches throughout the run.
+
+**Companies published tonight (40 report-periods, 38 unique companies —
+BLK and FAST got new periods; every other company below is a genuinely
+new first-time report):** BLK, FAST (Q3 2026 updates); PGR, CHRN, CMTL,
+EDUC, ETS, SOTK, WINA (tier 0); CMPS, CMPX, CMRC, CMTV, CNCK, CNDT, CNET,
+CNL, CNOB, CNSP, CNSY, CNTB, CNTN, CNTY, CNVS, CNXN, COAG, COCO, COCP,
+CODX, COFS, COGT, COHU, COKE, COLB, COLL, COLM, CORT, CORZ, COYA, CPBI
+(tier 1 us-listed backlog). Rewrites (10, 21/121 total): META, MA, ORCL,
+COST, WMT, XOM, HD, BAC, ABBV, CRM. Only one skip tonight: CHY (Calamos
+Convertible and High Income Fund, closed-end fund — same pattern as CHI).
+CHY needed no subagent. The usual already-known pending FPIs (BAOS,
+BLIV, BRAI, BTCT, CCHH, CDTG, CHNR, CLWT) were re-confirmed untouched —
+none have an estimate due yet.
+
+A future firing should run `npm run scan-recent-filings` first per usual
+(tier 0 was fully clear all night), then continue the tier 1 backlog
+with `npm run next-batch` from where this session left off (next in file
+order after CPBI: CPHC, CPIX, CPSH, CPSS, then CPZ which is a closed-end
+fund to skip).

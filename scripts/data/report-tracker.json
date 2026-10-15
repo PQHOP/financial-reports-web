@@ -31796,5 +31796,222 @@
         "url": "https://financialreportinsights.com/companies/coke/2026/q2"
       }
     ]
+  },
+  "COLB": {
+    "name": "Columbia Banking System, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/colb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "confirmed via the company's own 8-K filed 2026-09-30",
+      "confidence": "confirmed"
+    },
+    "note": "Pacific NW bank; net income +37% mostly from the Pacific Premier acquisition (closed Aug 2025), but diluted EPS flat at $0.73 as deal share issuance raised the diluted count 36%. NIM improved to 3.93%. Problem assets rose to 0.42% of assets from 0.30% (one agricultural borrower cited); half of net charge-offs came from the small FinPac leasing unit. Loans/deposits intentionally shrinking (less brokered/public money) while borrowings rose to $4.3B from $3.4B. Q3 2026 earnings confirmed for 2026-10-22 after close.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/colb/2026/q2"
+      }
+    ]
+  },
+  "COLL": {
+    "name": "Collegium Pharmaceutical, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/coll/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 filed 05-07, Q2 filed 08-06",
+      "confidence": "estimated"
+    },
+    "note": "Specialty pharma; product revenue +6.3% but flat (-0.5%) ex the newly acquired Azstarys (ADHD drug, added May 12). Swung to a GAAP net loss on $24.1M of deal costs + a $5.4M inventory charge. Nucynta -24% as generics arrived. Cut full-year guidance, blaming lower Nucynta-generic pricing. Adjusted EPS +14% mostly from a lower non-GAAP tax rate, not operations. Net debt roughly doubled to ~$962M (~2.1x adjusted EBITDA) funding the acquisition, floating-rate and unhedged; a $50M accelerated buyback started Aug 12.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/coll/2026/q2"
+      }
+    ]
+  },
+  "COLM": {
+    "name": "Columbia Sportswear Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/colm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "confirmed via the company's own July 30 2026 release",
+      "confidence": "confirmed"
+    },
+    "note": "Outdoor apparel; swung to a $26.6M profit from a $10.2M loss, but ~$0.93 of the $0.52 EPS came from a court-ordered IEEPA-tariff refund (~$78M received, $60M booked to cost of sales) — ex that, operating margin was actually slightly worse YoY (-4.7% vs -3.9%). US sales -4.5% (weak wholesale spring orders, store closures) while Asia/Latin America +12% and Europe +10%. Raised EPS guidance mostly reflecting the refund, not an improved outlook; cut operating-cash-flow guidance without explanation. Q3 2026 earnings confirmed for 2026-10-29.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/colm/2026/q2"
+      }
+    ]
+  },
+  "CORT": {
+    "name": "Corcept Therapeutics Incorporated",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cort/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "last year's Q3 10-Q/earnings filed 2025-11-04",
+      "confidence": "estimated"
+    },
+    "note": "Pharma; revenue +31.7% as newly-approved Lifyorli (relacorilant, ovarian cancer, approved March) added $47.6M (18.6% of revenue) in its first quarter, almost cost-free since pre-approval inventory was already expensed as R&D; Korlym itself +7.3%. Raised FY2026 revenue guidance to $1.1-1.2B. H1 operating cash flow weak ($16.8M vs $49.1M a year ago); receivables +29%; lost the Korlym-patent case against Teva (rehearing denied). FDA decision on relacorilant for Cushing's due Dec 17, 2026 after a prior rejection and June resubmission.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cort/2026/q2"
+      }
+    ]
+  },
+  "CORZ": {
+    "name": "Core Scientific, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/corz/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~90-day cadence only, not confirmed",
+      "confidence": "estimated"
+    },
+    "note": "Bitcoin mining pivoting to AI/HPC hosting. Revenue +108.8% as colocation (mostly CoreWeave) grew to 83% of revenue; Bitcoin self-mining revenue -65.5% and now loses money at the gross level. Net loss $1,155.3M is ~$1,045.5M a non-cash warrant fair-value charge — underlying loss ~$110M, still including a $41.9M contract-termination charge. Debt $4.4B face value after a $3.3B May note issuance; 96.4M warrants expiring Jan 2027 are a ~30% dilution risk. Post-quarter (July 27): AMD + a 'Neocloud' signed ~530MW of 15-year leases, AMD got a warrant for up to 30M shares.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/corz/2026/q2"
+      }
+    ]
+  },
+  "COYA": {
+    "name": "Coya Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/coya/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "last year's Q3 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "note": "ALS/neurodegenerative biotech, no real revenue (collaboration revenue is just a prior Dr. Reddy's payment being recognized). Net loss +8.9% as R&D rose 37% on ALSTARS trial enrollment of COYA 302. Loss per share improved only via ~40% share-count growth from two raises. Cash $43.2M, no debt, no going-concern flag, runway guided into H2 2027. Post-quarter: ALSTARS fully enrolled its 120 patients Oct 5 (topline data expected early Q2 2027); an extension lets patients keep taking the drug from Nov 2026; FTD trial pushed to 2027.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/coya/2026/q2"
+      }
+    ]
+  },
+  "CPBI": {
+    "name": "Central Plains Bancshares, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cpbi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "last year's filing 2025-11-13",
+      "confidence": "estimated"
+    },
+    "note": "Small bank (FYE March 31; this calendar Q2 is fiscal Q1 FY2027). Net income +51% to $1.49M as NIM widened to 3.95% from 3.75% (loan yields rose much faster than deposit costs); opex +1.4% only, helped by a renegotiated data-processing contract. Credit clean (small net recovery); CET1 16.38% but ROE only ~6.7%. Activist investor Stilwell (9.7% owner) won a board seat and a shareholder buyback vote; board approved a 10% buyback Sept 9. Brokered deposits rose from $7.3M to $27.6M, ~$20M of the $65M YoY deposit growth.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cpbi/2026/q2"
+      }
+    ]
   }
 }
