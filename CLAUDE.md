@@ -880,6 +880,13 @@ format rules under "What makes a report worth reading here" address.
    đã làm gì hôm nay (each change + why + commit); lỗi & sự cố; **đánh giá
    & hướng đi** (below); **cần anh/chị quyết định**; kế hoạch tiếp theo.
    Short and concrete, numbers over adjectives.
+   **Crawl stats (since 2026-10-15):** the Search Console API has no
+   crawl stats, so each week Hop sends a screenshot of Settings -> Crawl
+   stats. In the traffic & SEO section, track total Googlebot crawl
+   requests/day and the "Other file type" share (target < 20%; it was 80%
+   on 2026-10-15, almost all `?_rsc=` payloads, before `/*?_rsc=` and
+   `/companies/*/write` were disallowed in robots.txt). If no screenshot
+   came in that week, say so in one line rather than guessing.
 6. **Evaluation and direction (the main reason this routine runs on
    Fable, the user's request 2026-10-14).** Don't just do maintenance and
    report it: judge the site and say where it should go next.

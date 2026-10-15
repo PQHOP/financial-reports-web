@@ -6,6 +6,19 @@ date and commit.
 
 ## Next
 
+- **Watch Googlebot crawl recovery (weekly, from Hop's Crawl stats
+  screenshot).** Before 2026-10-15: ~15 crawls/day since 10-01 (was
+  1,000-3,800), 80% "Other file type" (RSC `?_rsc=` payloads), 94%
+  Refresh. Fix deployed 2026-10-15 (`8ac8a8f`, see Done). Expect the
+  `_rsc` share to fall below 20% and HTML/Discovery to rise over 1-3
+  weeks as Google re-reads robots.txt. If total crawls/day stay ~15 after
+  2-3 weeks, the drop has another cause (sitemap staleness until
+  `e49183b`, low site authority) and needs a separate look.
+- **Possible follow-up: `/companies/*/write` is force-dynamic.** Now
+  disallowed and nofollowed, so crawler CPU is gone; real visitors still
+  trigger one function run per view, which is fine at current traffic.
+  No change needed unless function CPU climbs.
+
 - **Verify tomorrow: `/sitemap.xml` actually revalidates now.** Fixed
   2026-10-14 (`e49183b`, see Done): the sitemap was a fully static build
   artifact (ignored `revalidate`), 4 days stale. After the fix the live
@@ -93,6 +106,23 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-15 — robots.txt: stop crawl waste on `?_rsc=` and `/write`**
+  (`8ac8a8f`, prod `dpl_2X7bVkWJsVXULw7nwNyxAUNj2JKG`). Hop's Search
+  Console Crawl stats (not in the API): ~15 crawls/day since 10-01, 80%
+  "Other file type" = RSC payload URLs Googlebot learned while `<Link>`
+  still prefetched (before 10-03) and now only refreshes. Added
+  `Disallow: /*?_rsc=`, `/*&_rsc=`, `/companies/*/write`. `/write` is the
+  public community-submission form (not admin; already `noindex`, not in
+  the sitemap); kept open for visitors, its two buttons now
+  `rel="nofollow"`. Prefetch needs no change: `@/components/Link` already
+  defaults to `prefetch={false}` (no viewport or hover prefetch in Next
+  16) and nothing imports `next/link` directly. Audit of other internal
+  routes: `/admin/*` 307 to login and every page/action checks the
+  signed cookie; `/api/cron/*` 401 without the secret; PENDING
+  `/reports/<id>` admin-only. Verified on prod: robots has the new lines
+  + Sitemap; sitemap 200, 2,457 URLs, no `/write`, no localhost;
+  site-metrics all 200.
 
 - 2026-10-14 ops run (`e49183b`, deployed `dpl_CRYwjQKYb9Bb8ygujtiKDvfS4hP1`,
   READY): **found and fixed a real SEO bug — the production sitemap was
