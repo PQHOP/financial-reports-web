@@ -19,16 +19,6 @@ date and commit.
   trigger one function run per view, which is fine at current traffic.
   No change needed unless function CPU climbs.
 
-- **Verify tomorrow: `/sitemap.xml` actually revalidates now.** Fixed
-  2026-10-14 (`e49183b`, see Done): the sitemap was a fully static build
-  artifact (ignored `revalidate`), 4 days stale. After the fix the live
-  sitemap regenerates hourly and is purged on every publish. Check on the
-  next run: `curl -sI https://financialreportinsights.com/sitemap.xml`
-  should show `age` well under 3600 and the newest `<lastmod>` should
-  match last night's latest publish, and reports published that night
-  should be in it (`grep companies/<ticker>`). If it is stale again, the
-  cause is something else (e.g. generation erroring in the background and
-  the CDN serving the last good copy) and needs Vercel runtime logs.
 - **Comparison ready to publish: JPM vs BAC, Q2 2026.** Both are same
   industry (banks), both already have a Q2 2026 report with full metrics
   (`/companies/jpm/2026/q2`, `/companies/bac/2026/q2`), no JPM/BAC
@@ -106,6 +96,32 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-16 — sitemap: render per request behind a 10-minute CDN cache**
+  (`a434830`, prod `dpl_CVJEH7ZKzYcWmczCYzzfXDDHZe5P`) **+ social cron no
+  longer bumps `updatedAt`** (`ffe9d1e`, prod `dpl_9ChfwjuPFSvw1VRWpkMisD7ebvL9`).
+  The "verify tomorrow" check from 10-15 failed in an instructive way: the
+  route-handler sitemap did regenerate (`age` 32 s) but its content was
+  the build-time copy from the 11:38 UTC deploy — none of the 40 reports
+  published 16:19–16:52 UTC, while `/feed.xml` (same mechanism, same
+  purge) had them. Cause: ISR stale-while-revalidate. The sitemap is only
+  visited ~twice a day (Googlebot 00:32 UTC, the ops health check ~22:40),
+  so the first visit after expiry/purge is served the previous copy while
+  the new one generates in the background, and Google always got the copy
+  from the visit before. Fix: `export const dynamic = "force-dynamic"` +
+  `Cache-Control: s-maxage=600` (Vercel's CDN caches it, HIT on repeat;
+  ≤ ~6 function runs/hour/region), entries read through plain `prisma`.
+  Documented as a deliberate exception in CLAUDE.md "Stack notes".
+  `site-metrics` now has an `xml` section (age, `x-sitemap-generated`,
+  URL count, newest lastmod/pubDate for sitemap + feed). Also found that
+  `/api/cron/social` set `socialPostedAt` through Prisma `@updatedAt`, so
+  every announced report's `updatedAt` (→ `<lastmod>`, JSON-LD
+  `dateModified`) moved to the cron time; it now keeps the old value.
+  Verified on prod: sitemap 2,532 URLs (was 2,457), newest lastmod =
+  last night's last publish 16:51 UTC, CPBI/BLK Q3 present, valid XML,
+  no localhost; health check all 200 after both deploys. The 63 entries
+  sharing lastmod 06:15 UTC are the `/rates/*` pages (macro cron at 06:15)
+  — expected.
 
 - **2026-10-15 — robots.txt: stop crawl waste on `?_rsc=` and `/write`**
   (`8ac8a8f`, prod `dpl_2X7bVkWJsVXULw7nwNyxAUNj2JKG`). Hop's Search
