@@ -31300,5 +31300,253 @@
         "url": "https://financialreportinsights.com/companies/cnl/2026/q2"
       }
     ]
+  },
+  "CNOB": {
+    "name": "ConnectOne Bancorp, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnob/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "confirmed via 8-K filed 2026-10-08 (before market open)",
+      "confidence": "confirmed"
+    },
+    "note": "Bank, EPS swing to $0.80 from a $0.52 loss is mostly the First of Long Island (FLIC) acquisition anniversary (year-ago quarter had $27.4M of day-one credit provisions + $30.7M merger charges) — Q1 2026's $0.72 EPS is the cleaner comparison. NIM rose to 3.42% (7th straight quarterly rise), efficiency ratio improved to 42.7%, ROTCE 13.79%. Weak spot: NYC rent-stabilized multifamily loans drove a $13.8M charge-off and nonaccruals up to $79.7M from $41.6M; allowance fell to 1.18% of loans as $9.2M of reserves was released. Q3 2026 earnings confirmed for 2026-10-22 before market open.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnob/2026/q2"
+      }
+    ]
+  },
+  "CNSP": {
+    "name": "CNS Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnsp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "last year's Q3 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "note": "Oncology biotech; raised $20.7M net in a May 2026 private placement at ~$2.30/share (85% below the prior May 2025 deal, split-adjusted) — going-concern doubt from Q1 is now gone, cash $20.0M. New investors hold ~92% of shares post-raise. Berubicin's Phase 2 missed its overall-survival goal (reported FY2025 10-K); company announced a March 2026 strategic pivot away from glioblastoma, trying to license out Berubicin/TPI 287 and find new candidates — no new asset named yet in this 10-Q.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnsp/2026/q2"
+      }
+    ]
+  },
+  "CNSY": {
+    "name": "Cerenome, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnsy/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 filed 05-15, Q2 filed 08-14",
+      "confidence": "estimated"
+    },
+    "note": "Formerly Plus Therapeutics (PSTV), renamed/re-ticked CNSY 2026-08-03 (same legal entity, not a merger). CNSide diagnostics business still pre-commercial-scale (232 tests run in H1 vs a >1,250/year goal); grant revenue (CPRIT, its only reported revenue) -70% to $0.41M. Net loss $9.0M vs a $5.2M profit a year ago that was itself a one-off $6.5M warrant gain. Cash $8.6M vs $13.4M used by operations in H1; going-concern warning. Post-quarter: an expensive Sept 2026 secured convertible note (up to $21.3M face, 8% interest, 6% discount, 2.5% CNSide royalty).",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnsy/2026/q2"
+      }
+    ]
+  },
+  "CNTB": {
+    "name": "Connect Biopharma Holdings Limited",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cntb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q1 filed 05-12, Q2 filed 08-12",
+      "confidence": "estimated"
+    },
+    "note": "Immunology biotech (rademikibart), FPI filing US domestic forms. Net loss widened to $17.3M from $12.9M as R&D +85% on Phase 2 trial costs. The $2.8M of Q2 revenue is a one-off Simcere milestone, not recurring. Cash+ST investments $31.5M (~2 quarters runway at current burn), no going-concern flag. Post-quarter 8-Ks: Sept 30 COPD Phase 2 hit its primary endpoint (81% fewer treatment failures vs placebo); Sept 15 asthma Phase 2 missed its primary endpoint but hit the key FEV1 secondary.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cntb/2026/q2"
+      }
+    ]
+  },
+  "CNTN": {
+    "name": "Canton Strategic Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cntn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "filing cadence only, not confirmed",
+      "confidence": "estimated"
+    },
+    "note": "Formerly Tharimmune/Hillstream BioPharma, a clinical biotech that raised ~$537M net in Nov 2025 (mostly paid in Canton Coin) and became a 'digital asset treasury' company; renamed/re-ticked CNTN 2026-02-18. Q2 2026 is its first revenue quarter ($1.50M, mostly CC-locking fees). Net loss $19.25M almost entirely a $23.7M paper loss on its 3.71B CC holdings (worth $523.4M vs $584.1M cost). Old biotech subsidiary (Gravitas) sold July 17 to an entity tied to three former directors for a $3.5M note — now discontinued operations.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cntn/2026/q2"
+      }
+    ]
+  },
+  "CNTY": {
+    "name": "Century Casinos, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnty/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "last year's Q3 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "note": "Multi-jurisdiction casino operator (US, Canada, Poland). Revenue +0.8% (+4.7% ex-Poland) as Poland fell 19.4% after its Warsaw Hilton casino license wasn't renewed. Net loss narrowed to $10.9M from $12.3M only on lower tax/minority allocations — pre-tax loss actually worsened slightly. Interest on bank debt + the VICI Master Lease ($25.9M) exceeds operating profit ($17.2M); shareholders' equity is negative $125.7M. Ongoing strategic review (could include selling Poland or the whole company); Polish bank loans in covenant breach; debt investor Brigade has a discounted buyback option tied to a possible auction.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnty/2026/q2"
+      }
+    ]
+  },
+  "CNVS": {
+    "name": "Cineverse Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnvs/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027, quarter ending 2026-09-30)",
+      "estimate": "2026-11-13",
+      "basis": "filing cadence only, not confirmed",
+      "confidence": "estimated"
+    },
+    "note": "Streaming/digital media (fiscal year ends March 31; this is fiscal Q1 FY2027, labeled 2026/Q1). Revenue +175% almost entirely from two Q1-2026 acquisitions (IndiCue ad-tech, Giant Worldwide media services) — organic revenue flat at ~$11.2M. Gross margin fell to 35% from 57% as IndiCue pays out 79% of its gross revenue to publishers. Net loss widened to $5.7M despite adjusted EBITDA turning positive ($0.5M); balance sheet stretched (cash $4.3M, current liabilities $18.9M above current assets). Kept FY2027 guidance of $115-120M revenue / $10-20M adjusted EBITDA, which implies most of the profit target still has to come in H2.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnvs/2026/q1"
+      }
+    ]
+  },
+  "CNXN": {
+    "name": "PC Connection, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnxn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q1 filed 04-29, Q2 filed 07-29",
+      "confidence": "estimated"
+    },
+    "note": "IT products/services reseller. Net sales +12.4% to $854.0M, notebooks/mobility driving most of the gain (34%→40% of sales); operating margin rose to 5.0% from 4.1% mostly on SG&A growing slower than sales, not gross margin. EPS growth (+35.1%) came from operations, not buybacks/tax. Public Sector flat (federal sales -57.4% YTD on non-repeating prior orders). Caveat: H1 operating cash flow was -$49.5M against $50.4M net income, as inventory rose 43% since December (partly to secure supply during a memory shortage) and the cash conversion cycle lengthened. Oct 14 8-K: new President/COO hired.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnxn/2026/q2"
+      }
+    ]
   }
 }

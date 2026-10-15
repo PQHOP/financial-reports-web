@@ -14645,3 +14645,48 @@ Worth a closer look if it recurs.
 
 **17/40 report-periods + 10/10 rewrites tonight.** Continuing tier 1
 backlog — cap allows room for ~23 more report-periods.
+
+**Batch 4 (tier 1, us-listed backlog), 8 parallel opus subagents — all
+published, all first-time companies, all sanity-checked live:**
+- **CNOB** (ConnectOne Bancorp) Q2 2026 — bank; EPS swing to $0.80 from a
+  $0.52 loss is mostly the FLIC-acquisition anniversary (year-ago quarter
+  absorbed day-one credit provisions + merger charges) — Q1 2026's $0.72
+  is the cleaner comparison. NIM 3.42% (7th straight rise), but NYC
+  rent-stabilized multifamily loans drove a $13.8M charge-off and rising
+  nonaccruals; Q3 2026 earnings confirmed for 2026-10-22.
+- **CNSP** (CNS Pharmaceuticals) Q2 2026 — raised $20.7M net in May at a
+  price 85% below the prior raise (92% dilution to new investors);
+  going-concern doubt now cleared. Berubicin's Phase 2 missed its
+  survival goal; company pivoting away from glioblastoma, no new asset
+  named yet.
+- **CNSY** (Cerenome, formerly Plus Therapeutics) Q2 2026 — CNSide
+  diagnostics still pre-commercial-scale (232 tests vs a >1,250/yr goal);
+  net loss $9.0M vs a one-off warrant-gain "profit" a year ago; going
+  concern warning; post-quarter took on an expensive convertible note.
+- **CNTB** (Connect Biopharma) Q2 2026 — net loss widened on rising
+  Phase 2 costs; the $2.8M of revenue is a one-off Simcere milestone.
+  Post-quarter Phase 2 split result: COPD hit its primary endpoint,
+  asthma missed its primary but hit a key secondary.
+- **CNTN** (Canton Strategic Holdings, formerly Tharimmune) Q2 2026 —
+  former clinical biotech that became a "digital asset treasury" holding
+  Canton Coin after a ~$537M Nov 2025 raise; first revenue quarter
+  ($1.50M) but net loss $19.25M almost entirely a paper mark-to-market
+  loss on its CC holdings; old biotech subsidiary sold to insiders, now
+  discontinued ops.
+- **CNTY** (Century Casinos) Q2 2026 — revenue +0.8% (+4.7% ex-Poland,
+  whose Warsaw casino lost its license); narrower net loss was purely
+  tax/minority-allocation driven (pre-tax loss actually worsened);
+  interest + VICI lease payments exceed operating profit; equity
+  negative; ongoing strategic review that could include a sale.
+- **CNVS** (Cineverse) fiscal Q1 FY2027, labeled 2026/Q1 — revenue +175%
+  almost entirely two Q1-2026 acquisitions (ad-tech, media services);
+  organic business flat; gross margin fell sharply on the new
+  lower-margin ad-tech mix; net loss widened despite adjusted EBITDA
+  turning positive; stretched balance sheet (cash $4.3M).
+- **CNXN** (PC Connection) Q2 2026 — net sales +12.4%, operating margin
+  improved mostly on SG&A discipline not gross margin; EPS growth was
+  operational, not buybacks/tax; Public Sector weak (federal -57.4% YTD);
+  caveat flagged on negative H1 operating cash flow vs rising inventory.
+
+**25/40 report-periods + 10/10 rewrites tonight.** Continuing tier 1
+backlog — cap allows room for ~15 more report-periods.
