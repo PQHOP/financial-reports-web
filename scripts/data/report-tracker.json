@@ -31052,5 +31052,253 @@
     "status": "skipped",
     "skipReason": "Closed-end fund, not an operating company.",
     "lastChecked": "2026-10-15"
+  },
+  "CMPS": {
+    "name": "COMPASS Pathways Plc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cmps/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 filed 05-13, Q2 filed 08-05, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "note": "Clinical-stage biotech (COMP360 psilocybin therapy), US domestic 10-Q filer, no revenue. Q2 net loss $253.8M ($1.88/share) vs $38.4M a year ago, but $205.6M is a non-cash pre-funded-warrant revaluation charge that swings with the share price (gave a ~$130.9M gain in Q1). Operating loss +22% to $52.4M as G&A +84% for launch prep. Cash $433.3M after ~$370M of H1 financing at the cost of 41% share dilution. Runway guidance unchanged at 'into 2028'; final filing expected Q4 2026, launch H1 2027.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cmps/2026/q2"
+      }
+    ]
+  },
+  "CMPX": {
+    "name": "Compass Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cmpx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "last year's Q3 10-Q filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "note": "Clinical-stage oncology biotech, no revenue. Q2 net loss +26.5% to $25.2M as opex +28.1% (tovecimig R&D spend up, G&A +59% on pre-commercialization costs). EPS loss narrowed only on a ~35% larger share count after an Aug 2025 offering. Cash $179.9M, runway guided into 2028, no debt, no going-concern flag. Post-quarter: FDA recommended a survival-benefit trial before a BLA for tovecimig in biliary tract cancer (Sept 22 8-K); company disagrees and is still preparing a filing.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cmpx/2026/q2"
+      }
+    ]
+  },
+  "CMRC": {
+    "name": "Commerce.com, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cmrc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q1 released 05-07, Q2 released 08-06, ~90-day cadence",
+      "confidence": "estimated"
+    },
+    "note": "Formerly BigCommerce (BIGC); real SaaS operating company (not a shell/SPAC). Q2 revenue +0.1% to $84.5M; swung to a $1.1M GAAP profit from a $6.8M loss almost entirely via a 17% opex cut, as gross margin fell to 75.2% on higher hosting costs. Subscription ARR below its December level; quarterly free cash flow fell to $0.05M from $11.9M. Cut full-year revenue and non-GAAP operating-income guidance on Sept 9, alongside an announced $8.5-26.3M restructuring and a new $50M buyback.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cmrc/2026/q2"
+      }
+    ]
+  },
+  "CMTV": {
+    "name": "Community Bancorp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cmtv/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "last year's Q3 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "note": "Small Vermont bank holding company. Net income +15.5% to $4.69M as NIM widened to 3.95% (tax-equivalent) from 3.64%; loan-loss provisions +77% (one commercial workout) but net charge-offs were zero (small net recovery). Deposits fell 8.3% since December (management calls it seasonal, Vermont municipal spend-down); cash fell from $128.1M to $25.6M after repaying $25M of FHLB borrowings. CET1 13.46%, ROA 1.53%, ROE 15.83%.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cmtv/2026/q2"
+      }
+    ]
+  },
+  "CNCK": {
+    "name": "Coincheck Group N.V.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnck/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q2 FY2027 results, Jul-Sep 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q1 earnings release 08-06, financial statements 08-14",
+      "confidence": "estimated"
+    },
+    "note": "Japanese crypto exchange (SPAC-merged 2025), foreign private issuer, reports JPY/IFRS. Labeled 2026/Q1 = fiscal Q1 FY2027 (Apr-Jun 2026). Headline revenue +36% to ¥114.3bn is mostly gross crypto trade volume; Adjusted Revenue (what it actually keeps) +19% to ¥2,920m, only +3% organic ex the 3iQ fund-manager acquisition. Operating loss widened to ¥1,373m from ¥870m; net loss narrowed to ¥1,176m only on FX gains, a smaller warrant charge and a tax benefit. Monthly Jul-Sep volume ~30% below Apr-Jun, suggesting another weak quarter.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnck/2026/q1"
+      }
+    ]
+  },
+  "CNDT": {
+    "name": "Conduent Incorporated",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cndt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "last year's Q3 10-Q filed 2025-11-07",
+      "confidence": "estimated"
+    },
+    "note": "BPO company, continuing-ops revenue -11.9% to $531M (decline accelerating from ~-5% in Q1) after losing its largest Commercial customer. Adjusted EBITDA fell to $16M (3.0% margin) from $23M; total net loss widened to $116M incl. a $31M Tolling-sale write-down. Transportation now discontinued ops: Transit sold to Modaxo for $164M (closed Oct 1, ~$125M to repay the revolver); Tolling sale to Quarterhill pending. Debt $722M vs $228M cash; drew another $183M on the revolver in July; an Oct 15 8-K extended revolver commitments to Oct 30 pending a refinancing. FY2026 guidance rebased to continuing ops needs $74-104M of H2 adjusted EBITDA vs $16M in Q2.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cndt/2026/q2"
+      }
+    ]
+  },
+  "CNET": {
+    "name": "ZW Data Action Technologies Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnet/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "last year's Q3 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "note": "Small Chinese ad-services company (VIE structure), 10-Q filer (not FPI). Revenue +19% to $652K, gross margin 7.2%; net loss narrowed to $350K from $637K almost entirely on $0.29M less bad-debt expense, not better trading (gross profit flat at $47K). Going-concern doubt in the filing; cash only $611K vs $5.38M current liabilities. One customer is 83% of Q2 revenue; $4.70M prepaid to ad suppliers (~5x six-month cost of revenue); two related-party loans extended again. Regained Nasdaq $1.00 bid-price compliance Aug 17, 2026.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnet/2026/q2"
+      }
+    ]
+  },
+  "CNL": {
+    "name": "Collective Mining Ltd.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cnl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim financials)",
+      "estimate": "2026-11-12",
+      "basis": "Q2 filing landed ~6 weeks after quarter-end",
+      "confidence": "estimated"
+    },
+    "note": "Canadian gold/copper exploration company, foreign private issuer (40-F/6-K), pre-revenue. Q2 net loss widened to $20.1M from $8.5M as exploration spend doubled to $14.8M (31% more drilling metres, higher contract rates). Cash fell to $93.7M from $129.6M; ~$40M of land purchases around Apollo/San Antonio created $37.8M of instalment obligations ($11.6M due within a year) plus related non-cash interest. Going-concern basis depends on further financing (C$500M shelf in place, no shares sold yet in 2026). Post-quarter: Sept 8 maiden Apollo resource (2.58 Moz Au-eq Indicated, 2.83 Moz Inferred).",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cnl/2026/q2"
+      }
+    ]
   }
 }

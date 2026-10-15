@@ -14597,3 +14597,51 @@ claims in the old copy:
 
 **9/40 report-periods + 10/10 rewrites tonight.** Moving to tier 1
 (us-listed backlog) next via `next-batch`.
+
+**Batch 3 (tier 1, us-listed backlog), 8 parallel opus subagents — all
+published, all first-time companies, all sanity-checked live:**
+- **CMPS** (COMPASS Pathways) Q2 2026 — no-revenue psilocybin-therapy
+  biotech; net loss $253.8M almost entirely a non-cash pre-funded-warrant
+  revaluation charge (gave a ~$130.9M gain in Q1 instead); cash $433.3M
+  after ~$370M of H1 financing at 41% dilution; runway into 2028.
+- **CMPX** (Compass Therapeutics) Q2 2026 — oncology biotech, no revenue;
+  net loss +26.5% to $25.2M on rising tovecimig R&D and pre-commercial
+  G&A; cash $179.9M, runway into 2028. Post-quarter: FDA wants a
+  survival-benefit trial before a BLA — company disagrees, still
+  preparing a filing.
+- **CMRC** (Commerce.com, formerly BigCommerce) Q2 2026 — revenue flat
+  (+0.1%) but swung to a $1.1M GAAP profit from a $6.8M loss almost
+  entirely via a 17% opex cut as gross margin fell; cut full-year
+  guidance Sept 9 alongside an $8.5-26.3M restructuring and a new $50M
+  buyback.
+- **CMTV** (Community Bancorp.) Q2 2026 — small Vermont bank; net income
+  +15.5% on NIM widening to 3.95%; deposits -8.3% since December
+  (management calls it seasonal).
+- **CNCK** (Coincheck Group) fiscal Q1 FY2027, labeled 2026/Q1 — Japanese
+  crypto exchange, JPY/IFRS FPI; headline revenue +36% is mostly gross
+  trade volume, Adjusted Revenue (what it keeps) +19% but only +3%
+  organic ex the 3iQ acquisition; operating loss widened; Jul-Sep monthly
+  volume ~30% below the quarter, flagging a weaker Q2 ahead.
+- **CNDT** (Conduent) Q2 2026 — BPO company; continuing-ops revenue -11.9%
+  (accelerating decline) after losing its largest Commercial customer;
+  adjusted EBITDA margin fell to 3.0%; Transit sold (closed Oct 1,
+  Transportation now discontinued ops), Tolling sale pending; an Oct 15
+  8-K extended revolver commitments to Oct 30 pending a refinancing.
+- **CNET** (ZW Data Action Technologies) Q2 2026 — small Chinese
+  ad-services company with going-concern doubt; revenue +19% but net-loss
+  narrowing came almost entirely from lower bad-debt expense, not better
+  trading; one customer is 83% of revenue; cash only $611K.
+- **CNL** (Collective Mining) Q2 2026 — pre-revenue Canadian gold/copper
+  explorer (FPI, 40-F/6-K); net loss widened as exploration spend
+  doubled; ~$40M of land purchases created new instalment debt; Sept 8
+  post-quarter maiden Apollo resource estimate (2.58 Moz Au-eq Indicated).
+
+One transient issue during this batch: a cache-busted fetch of
+`/companies/cmrc/2026/q2` briefly served CNCK's report content instead
+(cross-contamination, not just staleness) — resolved on a follow-up fetch
+seconds later, matching the known-but-unfixed CDN quirk noted earlier in
+this log, now seen serving the *wrong* report rather than a stale one.
+Worth a closer look if it recurs.
+
+**17/40 report-periods + 10/10 rewrites tonight.** Continuing tier 1
+backlog — cap allows room for ~23 more report-periods.
