@@ -510,6 +510,7 @@ export async function ReportView({ report }: { report: FullReport }) {
         )}
         <Link
           href={`${companyHref}/write`}
+          rel="nofollow"
           className="rounded-md bg-zinc-900 px-3 py-1.5 font-medium text-white"
         >
           Write a report
