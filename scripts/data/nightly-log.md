@@ -14790,3 +14790,17 @@ A future firing should run `npm run scan-recent-filings` first per usual
 with `npm run next-batch` from where this session left off (next in file
 order after CPBI: CPHC, CPIX, CPSH, CPSS, then CPZ which is a closed-end
 fund to skip).
+
+**Next firing this same night (checked in at 20:05 UTC / 05:05 JST
+2026-10-16):** network check passed first (403 without `User-Agent` on
+`sec.gov` as expected — SEC's own policy, not a proxy denial; 200 with
+the required header). `master` was detached from a stale local ref again
+(same recurring pattern); fetched and fast-forwarded cleanly to
+`origin/master` (91dbc78), working tree already clean, no uncommitted
+work lost. Read this entry before starting: tonight already stands at
+40/40 report-periods and 10/10 hot-list rewrites — both caps reached by
+the prior firing, with tier 0 confirmed fully clear all night. Per
+CLAUDE.md ("later firings that night should see the count and exit
+immediately") — did not run `scan-recent-filings` or `next-batch`,
+dispatched no subagents, published nothing, and did not otherwise touch
+`report-tracker.json`. Exiting immediately.
