@@ -64,7 +64,8 @@
       "reportId": "cmu9wzh5k000004l1ffgy1u1i",
       "url": "https://financialreportinsights.com/companies/meta/2026/q2",
       "nextExpectedFiling": "2026-10-29",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "TSLA",
@@ -129,7 +130,8 @@
       "reportId": "cmu9xx84h000104il36y0l3v9",
       "url": "https://financialreportinsights.com/companies/ma/2026/q2",
       "nextExpectedFiling": "2026-10-28",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "NFLX",
@@ -149,7 +151,8 @@
       "reportId": "cmu9y9hk6000204l1b32eqyyu",
       "url": "https://financialreportinsights.com/companies/orcl/2026/annual",
       "nextExpectedFiling": "2026-12-10",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "COST",
@@ -159,7 +162,8 @@
       "reportId": "cmugfea6x000004l8ay2omraz",
       "url": "https://financialreportinsights.com/companies/cost/2026/annual",
       "nextExpectedFiling": "2026-12-15",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "WMT",
@@ -169,7 +173,8 @@
       "reportId": "cmu9yngb9000404l3g8lymvqz",
       "url": "https://financialreportinsights.com/companies/wmt/2026/q2",
       "nextExpectedFiling": "2026-11-26",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "XOM",
@@ -179,7 +184,8 @@
       "reportId": "cmu9ytk7n000104l3pmac5jnk",
       "url": "https://financialreportinsights.com/companies/xom/2026/q2",
       "nextExpectedFiling": "2026-11-01",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "UNH",
@@ -200,7 +206,8 @@
       "reportId": "cmua7ft45000004l93maafynk",
       "url": "https://financialreportinsights.com/companies/hd/2026/q2",
       "nextExpectedFiling": "2026-11-24",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "PG",
@@ -231,7 +238,8 @@
       "reportId": "cmua7oc1s000104l5db1s5qpn",
       "url": "https://financialreportinsights.com/companies/bac/2026/q2",
       "nextExpectedFiling": "2026-10-30",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "ABBV",
@@ -241,7 +249,8 @@
       "reportId": "cmtybfew2000104l7jmzbg0m1",
       "url": "https://financialreportinsights.com/companies/abbv/2026/q2",
       "nextExpectedFiling": "2026-10-31",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "CRM",
@@ -251,7 +260,8 @@
       "reportId": "cmua7pf3b000004jl0ychumrr",
       "url": "https://financialreportinsights.com/companies/crm/2026/annual",
       "nextExpectedFiling": "2026-12-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-15"
     },
     {
       "ticker": "AMD",

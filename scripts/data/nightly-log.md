@@ -14541,3 +14541,59 @@ hot-list-rewrite allotment is running in parallel opus subagents; results
 pending. Moving to tier 1 (us-listed backlog) next via `next-batch` once
 the rewrites are in. CHY (Calamos Convertible and High Income Fund)
 confirmed a closed-end fund like CHI — marked skipped without a subagent.
+
+**Hot-list rewrite allotment: 10/10 done tonight (21/121 total).** All
+re-read their source filing fresh and passed the live post-check ("At a
+glance" present, not truncated). Several fixed factual errors/unsupported
+claims in the old copy:
+- **META** Q2 2026 — corrected an equity-investments mischaracterization
+  (that line actually improved) and the El Paso data-center venture's
+  status (still just an exclusivity agreement, not a co-development deal);
+  separated the two New Mexico lawsuits that were run together; added
+  constant-currency revenue growth (27% vs 28% reported).
+- **MA** Q2 2026 — corrected "a third of the gain came from services" (it
+  was actually more than half); fixed shareholder-returns figure ($10.4B
+  not $8.9B); removed an unverifiable CEO quote sourced only to the press
+  release, not the 10-Q; added H1 cash-conversion decline (82% vs 100%).
+- **ORCL** FY2026 ANNUAL — corrected a wrong tax-rate explanation for the
+  EPS beat (rates were flat YoY; the real driver was the $2.7B Ampere
+  gain); fixed a cloud-revenue-share rounding error (50% not 51%); added
+  that $5.3B of capex was unpaid at year-end.
+- **COST** FY2026 ANNUAL — corrected tariff-refunds-still-owed figure
+  (~$170M not ~$160M, a double-count error); added that comps ex-gas/FX
+  slowed to 6.6% from ~8% even as reported comps rose — rewrote the
+  Takeaway around this; added the "did last time's read hold up" check
+  (new since the Oct 8 10-K update).
+- **WMT** Q2 2026 — corrected a guidance comparison (top-end growth was
+  actually ~10% not ~4%); fixed a pharmacy-headwind figure mixup (125bps
+  US comp vs 80bps health-and-wellness category); removed three invented/
+  unsupported claims (marketplace-category attribution, International
+  import-basis claim, Sam's Club fee "about a quarter" phase-in).
+- **XOM** Q2 2026 — corrected a mischaracterization of H1 timing/
+  identified items (they pulled H1 down, not flattered it); fixed an
+  add-back that only covered one segment when group-level timing and
+  identified effects roughly cancel; corrected a "prices may normalize"
+  framing the filing doesn't support (only refining margins were
+  above-range, not crude prices).
+- **HD** Q2 2026 — corrected diluted-vs-basic EPS mixup that threw off
+  the 2H guidance math; fixed an SRS-margin causation error (amortization
+  share actually fell); added the previously-omitted CEO medical-leave
+  8-K; corrected GMS acquisition comp-boost timing.
+- **BAC** Q2 2026 — corrected the stress-capital-buffer date and added
+  the G-SIB surcharge increase (+50bps Jan 2027) the old version omitted
+  entirely; fixed an unsupported NII-driver claim. Flagged for next tier-0
+  scan: BAC's Q3 earnings may already be out or due within days — check
+  EDGAR.
+- **ABBV** Q2 2026 — added a sourceUrl (old version had none); corrected
+  the GAAP-EPS-jump explanation (amortization wasn't a driver; the real
+  causes were a smaller contingent-consideration charge, lower IPR&D, and
+  a much lower tax rate); fixed an unsupported "generic pressure" guess on
+  Imbruvica (filing states the actual cause).
+- **CRM** FY2026 ANNUAL — corrected organic cRPO growth (backlog growth is
+  only ~1-2pts ahead of revenue once Informatica/FX are stripped out, not
+  "well ahead"); fixed a buyback-guidance claim (FY2027 guidance share
+  count excludes future buybacks); added that restructuring charges are
+  expected to shrink, which the old version omitted.
+
+**9/40 report-periods + 10/10 rewrites tonight.** Moving to tier 1
+(us-listed backlog) next via `next-batch`.
