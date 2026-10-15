@@ -14690,3 +14690,44 @@ published, all first-time companies, all sanity-checked live:**
 
 **25/40 report-periods + 10/10 rewrites tonight.** Continuing tier 1
 backlog — cap allows room for ~15 more report-periods.
+
+**Batch 5 (tier 1, us-listed backlog), 8 parallel opus subagents — all
+published, all first-time companies, all sanity-checked live:**
+- **COAG** (Hemab Therapeutics) Q2 2026 — no-revenue bleeding-disorder
+  biotech, first 10-Q since its May 2026 IPO ($317.2M net); net loss
+  doubled mostly from an FX swing, not core costs; cash $457.5M, runway
+  into 2029 implying H2 spend roughly doubles for the sutacimig Phase 3.
+- **COCO** (Vita Coco) Q2 2026 — net sales +28.1%, but ~$15.6M of the
+  more-than-doubled net income is a one-time tariff refund — underlying
+  EPS growth closer to +60% not +116%; bought a Thai coconut-water maker
+  (its first owned factory) for $175M+earnout on July 22.
+- **COCP** (Cocrystal Pharma) Q2 2026 — antiviral biotech, going-concern
+  warning; net loss +54%, cash down to $2.17M; a July related-party
+  placement (OPKO Health, tied to a COCP co-founder) raised $5.0M at a
+  steep discount; in arbitration with a UK CRO over a failed flu trial.
+- **CODX** (Co-Diagnostics) Q2 2026 — revenue collapsed from a $97.9M
+  COVID-era peak to ~$166K this quarter; going-concern warning, cash down
+  to $3.65M; 1-for-30 reverse split plus near-tripled share count since
+  December; agreed a $6.5M securities class-action settlement in July.
+- **COFS** (ChoiceOne Financial) Q2 2026 — bank; net income fell mostly
+  on a planned bond-portfolio repositioning loss; GAAP NIM dipped on
+  fading merger-related loan accretion but core margin actually
+  improved; company's own efficiency-ratio/ROTCE figures exclude items
+  most banks include — GAAP-comparable versions given alongside.
+- **COGT** (Cogent Biosciences) Q2 2026 — pre-approval biopharma with
+  FDA decision dates in Nov/Dec 2026 for bezuclastinib; net loss +31% as
+  G&A +138% building a sales organization ahead of a likely launch; cash
+  $792.3M guided to last into late 2028.
+- **COHU** (Cohu) Q2 2026 — semiconductor test/handling equipment; sales
+  +38.4% on AI/data-center chip-test demand, swung to near-breakeven from
+  a sizeable net loss; a tax charge bigger than pre-tax profit flipped a
+  small profit into a small loss; convertible-note conversion window is
+  a near-term dilution risk.
+- **COKE** (Coca-Cola Consolidated) Q2 2026 — net sales +10.6% but rising
+  aluminum costs outpaced pricing, compressing gross margin; net income
+  -15.2% on interest expense funding the Nov 2025 buyback of Coca-Cola
+  Company's stake; EPS still rose only on the smaller share count.
+
+**33/40 report-periods + 10/10 rewrites tonight.** Cap allows room for
+~7 more report-periods — one more smaller batch, then stop for the
+night per policy.

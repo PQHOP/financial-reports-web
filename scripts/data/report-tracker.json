@@ -31548,5 +31548,253 @@
         "url": "https://financialreportinsights.com/companies/cnxn/2026/q2"
       }
     ]
+  },
+  "COAG": {
+    "name": "Hemab Therapeutics Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/coag/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q2 filed 08-11 plus ~90 days",
+      "confidence": "estimated"
+    },
+    "note": "Rare bleeding/vascular-disorder biotech, no revenue. First 10-Q since May 2026 IPO ($317.2M net raised). Net loss doubled to $24.2M mostly from an FX swing in other income, not core costs; R&D +58%, G&A +80%. Cash+securities $457.5M, no debt, runway guided 'into 2029' (implies H2 spend roughly doubles as sutacimig Phase 3 starts). Main risk flagged: blood clots at high sutacimig exposure in Phase 1/2 — Phase 3 dose chosen to avoid this, FDA-endorsed per the filing.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/coag/2026/q2"
+      }
+    ]
+  },
+  "COCO": {
+    "name": "The Vita Coco Company, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/coco/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "~90-day cadence; next filing likely within 10 days of 2026-10-15",
+      "confidence": "estimated"
+    },
+    "note": "Coconut water/beverage company. Net sales +28.1% (volume +15%, private label +78.1%); net income more than doubled but ~$15.6M of that is a one-time tariff refund (Supreme Court struck the tariff down Feb 2026) — underlying EPS growth closer to +60%, not +116%. Raised full-year guidance; implied H2 gross margin ~35% (vs 1H) on rising costs and a bigger private-label mix. July 22: bought Thai coconut-water maker Copra for $175M + earnout, its first owned factory, adding direct coconut-price exposure.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/coco/2026/q2"
+      }
+    ]
+  },
+  "COCP": {
+    "name": "Cocrystal Pharma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cocp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 filed 05-15, Q2 filed 08-13",
+      "confidence": "estimated"
+    },
+    "note": "Antiviral biotech, going-concern warning. Net loss +54% to $3.164M; cash fell to $2.169M from $7.025M. July 31: a related-party placement (OPKO Health, whose CEO is a COCP co-founder) raised $5.0M gross at $0.9134/share, +39.7% dilution. In arbitration with a UK CRO over a failed flu trial ($6.3M sought vs ~$600K counter-claim). Sept 2026 8-K: last CDI-988 norovirus-challenge trial subject dosed; preliminary efficacy expected late 2026/early 2027.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cocp/2026/q2"
+      }
+    ]
+  },
+  "CODX": {
+    "name": "Co-Diagnostics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/codx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "last year's Q3 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "note": "Molecular diagnostics; revenue collapsed from a $97.9M COVID-era peak (FY2021) to ~$0.6M (FY2025). Q2 revenue just $166K; going-concern warning, cash fell to $3.65M from $11.9M, burning ~$2.5M/month. 1-for-30 reverse split Jan 1; share count nearly tripled since Dec 31 via ATM sales, a May placement and a July warrant deal. July: agreed a $6.5M securities class-action settlement (split with insurance unclear). Whole business case now rests on the Flu A/RSV FDA application submitted Aug 2026.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/codx/2026/q2"
+      }
+    ]
+  },
+  "COFS": {
+    "name": "ChoiceOne Financial Services, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cofs/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-24",
+      "basis": "last year's Q3 release 2025-10-24",
+      "confidence": "estimated"
+    },
+    "note": "Michigan bank. Net income $12.5M ($0.83 EPS) vs $13.5M ($0.90) a year ago, mostly a planned $1.9M bond-sale loss to fund higher-yielding ARMs (~$0.10/share cost). GAAP NIM fell to 3.59% as Fentura-acquisition loan accretion faded, but core (ex-accretion) margin actually improved to ~3.35%. Core loans +11.9% annualized; nonperforming loans rose to 1.07% from 0.66% while the allowance ratio slipped slightly. Company's own efficiency-ratio (55.9%) and ROTCE (14.1%) figures exclude items most banks include — GAAP-comparable figures (~62.6% and ~17%) given alongside in the report.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cofs/2026/q2"
+      }
+    ]
+  },
+  "COGT": {
+    "name": "Cogent Biosciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cogt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "last year's Q3 10-Q filed 2025-11-07",
+      "confidence": "estimated"
+    },
+    "note": "Biopharma (bezuclastinib), still pre-revenue/pre-approval. FDA target decision dates: Nov 30 2026 (GIST, Priority Review) and Dec 30 2026 (NonAdvSM); AdvSM application filed June 2026. Net loss +31% to $96.4M as G&A +138% building a sales organization ahead of launch; R&D +14%. Cash+securities $792.3M plus $71.4M raised post-quarter, guided to last into late 2028.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cogt/2026/q2"
+      }
+    ]
+  },
+  "COHU": {
+    "name": "Cohu, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cohu/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-07-31"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "filing cadence only (Q2 filed 07-31), not confirmed",
+      "confidence": "estimated"
+    },
+    "note": "Semiconductor test/handling equipment. Net sales +38.4% to $149.0M on AI/data-center chip test-handler demand (equipment sales +78%); swung to near-breakeven from a $16.9M net loss. Raised FY2026 HPC revenue estimate to $100-110M; Q3 guidance $170M ±$7M. A tax charge larger than pre-tax profit flipped a small profit into a small net loss; inventory write-downs doubled; H1 operating cash flow leaned on a $21.3M rise in unpaid supplier bills. Convertible notes become convertible July 28-Sept 8 — a dilution risk if the stock stays high. Company doesn't disclose bookings/backlog.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cohu/2026/q2"
+      }
+    ]
+  },
+  "COKE": {
+    "name": "Coca-Cola Consolidated, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/coke/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-03",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "last year's Q3 10-Q filed 2025-10-29 (earnings 8-K same day)",
+      "confidence": "estimated"
+    },
+    "note": "Largest independent Coca-Cola bottler. Net sales +10.6% to $2,052.4M (case volume +7.6%, ~1pt from July 4th timing); ~$45M of extra aluminum cost outpaced pricing, so gross margin fell to 37.9% from 40.0% and operating income was flat. Net income -15.2% as net interest expense jumped to $30.5M from $5.9M funding the Nov 2025 $2.40B buyback of Coca-Cola Company's 18.8M COKE shares; diluted EPS still +10.7% purely on the 23.5% smaller share count. No new territory acquisitions this quarter.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/coke/2026/q2"
+      }
+    ]
   }
 }
