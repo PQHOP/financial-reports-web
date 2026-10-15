@@ -343,23 +343,37 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-10-14",
-      "url": "https://financialreportinsights.com/companies/chrn/2026/annual"
+      "period": "Q1",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/chrn/2026/q1"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-08-19"
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-14"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027, quarter ended 2026-08-31)",
-      "estimate": "2026-10-15",
-      "basis": "non-accelerated filer, 45-day 10-Q deadline after the 2026-08-31 quarter end",
+      "type": "10-Q (fiscal Q2, quarter ending 2026-11-30)",
+      "estimate": "2027-01-14",
+      "basis": "45-day non-accelerated filer deadline after fiscal Q2 ends 2026-11-30",
       "confidence": "estimated"
     },
-    "note": "Formerly Ekso Bionics (exoskeletons); on 2026-05-05 Applied Digital (APLD) reverse-merged its GPU cloud unit in (APLD ~97% owner), fiscal year end changed to May 31, Ekso business classified held-for-sale and sold 2026-09-30. FY2026 10-K reflects the cloud business's accounting history (it's treated as the acquirer): revenue -15.1% to $71.6M (lost a customer Dec 2024); net loss narrowed 30.8% to $50.3M, but ~$32.1M of the improvement is renegotiated equipment leases plus a non-recurring prior-year bad-debt charge, more than the entire $17.8M improvement. Operating cash flow +$39.1M but capex-heavy (-$77.3M free cash flow), covered by $75.4M of Applied Digital capital contributions. $100M demand loan from Applied Digital ($7M drawn). FY2027 Q1 10-Q due ~2026-10-15 (tomorrow) — check tier 0 for it.",
-    "lastChecked": "2026-10-14"
+    "note": "Fiscal Q1 FY2027 (quarter ended 2026-08-31), labeled 2026/Q1 per calendar-year convention. Revenue +148% to $41.5M almost entirely a one-time AI-hardware resale at near-zero margin; underlying GPU rental revenue only +~9%. Continuing-operations loss widened to $26.4M (SG&A +$20.3M, incl. $10.1M stock awards); net loss $42.5M after a $14.1M Ekso-business write-down (sold 2026-09-30). Signed $2.7B of 3-year Microsoft GB300 contracts; $2.3B of near-term spending commitments against $15.2M cash and a $70.5M working-capital deficit, though $328.2M of post-quarter customer prepayments + management's 'alleviated' going-concern language are the counterweight.",
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-14",
+        "url": "https://financialreportinsights.com/companies/chrn/2026/annual"
+      },
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/chrn/2026/q1"
+      }
+    ]
   },
   "CLMT": {
     "name": "Calumet, Inc",
@@ -14196,22 +14210,37 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj7fzk7000004le1oaj7bdj"
+      "period": "Q3",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/pgr/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-03"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-14"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings (Q3 2026), 10-Q ~2026-11-02",
-      "estimate": "2026-10-14",
-      "basis": "Q3 2025 release 2025-10-15; third-party calendar lists 10/14/2026",
-      "confidence": "estimated"
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "company's own announced 10-Q filing date 2026-11-02; earnings call 11-03; October monthly results 11-18",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-27",
+        "url": "https://financialreportinsights.com/reports/cmuj7fzk7000004le1oaj7bdj"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/pgr/2026/q3"
+      }
+    ],
+    "note": "Combined ratio 88.7 vs 89.5 looks better YoY but Q3 2025 included a one-time $950M Florida policyholder credit (~4.6pts); ex that, combined ratio actually worsened (~84.9→88.7) as the accident-year loss ratio rose. NPW growth slowed to 4.3% (2% in Sept). Reserve releases ~2.4pts flattered the ratio. Book value per share -1.6% on unrealized bond losses. 10-Q not filed yet as of publish."
   },
   "PLD": {
     "name": "Prologis",
@@ -30783,23 +30812,38 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-10-13",
-      "url": "https://financialreportinsights.com/companies/cmtl/2026/q3",
-      "note": "Fiscal Q3 2026 (FYE July 31); quarter ended 2026-04-30."
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/cmtl/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-04-30",
-      "filedAt": "2026-06-15"
+      "type": "10-K",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-10-14"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026, FYE July 31)",
-      "estimate": "2026-11-10",
-      "basis": "FY2025 10-K filed 2025-11-10; same cadence",
+      "type": "10-Q (Q1 FY2027, quarter ending 2026-10-31)",
+      "estimate": "2026-12-11",
+      "basis": "last year's Q1 FY2026 10-Q filing date pattern",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-13"
+    "lastChecked": "2026-10-15",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-13",
+        "url": "https://financialreportinsights.com/companies/cmtl/2026/q3",
+        "note": "Fiscal Q3 2026 (FYE July 31); quarter ended 2026-04-30."
+      },
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/cmtl/2026/annual"
+      }
+    ],
+    "note": "FY2026 10-K recast with the satellite business (being sold to Gilat, still pending CFIUS as of filing) as discontinued operations, so not directly comparable to the Q3 report (included satellite). Continuing-ops revenue -17.0% to $249.6M (~flat ex Army VSAT contract runoff); gross margin improved to 38.9% from 31.6% but GAAP continuing EPS still -$1.71. A $22.1M non-cash warrant/derivative gain props up the bottom line; only $18.3M of $48.3M total interest was paid in cash. Q4 book-to-bill only 0.48x — orders have not recovered. Cash down to $24.0M by Oct 13."
   },
   "CHRS": {
     "name": "Coherus Oncology, Inc.",
@@ -30878,5 +30922,129 @@
     },
     "note": "FY2026 10-K (fiscal year ended 2026-06-30), formerly Renovaro/Enochian Biosciences. Net loss $3.56M (EPS -$1.06) vs $178.0M a year ago (which included a $170.4M goodwill impairment). Going concern: auditor flagged it, management says <1 month of cash as of 2026-10-13 (cash $1.71M, AP $12.39M, stockholders' deficit $9.02M, below Nasdaq's $2.5M minimum). An Oct 9 2026 8-K asked Nasdaq to suspend trading in its own stock amid an alleged-short-selling lawsuit. Published without revenueYoyPct/netIncomeYoyPct/epsYoyPct/operatingMarginPct (zero/near-zero prior-year base and a loss-narrowing % would mislead). Worth rechecking solvency at next filing.",
     "lastChecked": "2026-10-14"
+  },
+  "EDUC": {
+    "name": "Educational Development Corporation",
+    "status": "done",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/educ/2026/q2"
+      }
+    ],
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/educ/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027, quarter ending 2026-11-30)",
+      "estimate": "2027-01-13",
+      "basis": "last year's equivalent Q3 10-Q filed 2026-01-13",
+      "confidence": "estimated"
+    },
+    "note": "First report. Fiscal year ends last day of Feb; this 10-Q is fiscal Q2 FY2027 (quarter ended 2026-08-31), labeled 2026/Q2 per calendar-year convention. Net revenue -11.9% to $4.07M as active Brand Partners fell to 5,100 from 5,800; gross margin improved to 59.7% but net loss widened to $1.58M (prior year had a $0.46M tax benefit now gone). Risks flagged: 6-month operating cash flow of only $0.05M came from a $2.67M inventory drawdown (inventory still 69% of assets); Usborne distribution agreement at risk (missed minimum purchases, no required letter of credit, Usborne withholding a $1.0M rebate); cash only $1.06M.",
+    "lastChecked": "2026-10-15"
+  },
+  "ETS": {
+    "name": "Elite Express Holding Inc. - Class A",
+    "status": "done",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/ets/2026/q3"
+      }
+    ],
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/ets/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE 2026-11-30)",
+      "estimate": "2027-02-27",
+      "basis": "last year's 10-K filed 2026-02-27",
+      "confidence": "estimated"
+    },
+    "note": "First report. Tiny trucking company (single subsidiary JAR Transportation, ~22 trucks, FedEx delivery contract = 100% of revenue), fiscal Q3 2026 (quarter ended 2026-08-31). Revenue +20.9% to $766K on a Feb 2026 FedEx contract rate increase; swung to a $760K net loss (G&A +571%) despite improved gross margin. Major flags: $11.55M of $18.17M total assets is short-term loans to unrelated third parties maturing ~2026-11-30 (company says liquidity depends on repayment); June Reg-S share sale at $0.25 vs $4.00 IPO price; $2.9M of $3.0M cash sits in Hong Kong; material weakness in internal controls; FedEx contract expires 2027-01-01.",
+    "lastChecked": "2026-10-15"
+  },
+  "SOTK": {
+    "name": "Sono-Tek Corporation",
+    "status": "done",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/sotk/2026/q2"
+      }
+    ],
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/sotk/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY2027, quarter ending 2026-11-30)",
+      "estimate": "2027-01-13",
+      "basis": "last year's equivalent Q3 10-Q filed 2026-01-13",
+      "confidence": "estimated"
+    },
+    "note": "First report. Fiscal year ends Feb 28; this is fiscal Q2 FY2027 (quarter ended 2026-08-31), labeled 2026/Q2. Sales flat (+1.3%) to $5.23M as medical-device sales tripled (59% of sales) offsetting a 78% clean-energy decline; gross margin rose to 52.9% on an 'unusually favorable' mix management says won't repeat. Net income -13.5% to $366K (tax rate rose to 26.5%). Backlog $9.51M (+23% QoQ, -15% YoY); post-quarter $7.19M clean-energy order announced, shipping mostly FY2028. No debt, $17.76M cash+securities.",
+    "lastChecked": "2026-10-15"
+  },
+  "WINA": {
+    "name": "Winmark Corporation",
+    "status": "done",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-15",
+        "url": "https://financialreportinsights.com/companies/wina/2026/q3"
+      }
+    ],
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-15",
+      "url": "https://financialreportinsights.com/companies/wina/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-26",
+      "filedAt": "2026-10-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-24",
+      "basis": "52/53-week fiscal year ends last Saturday of December (~2026-12-26); estimate not yet confirmed by search",
+      "confidence": "estimated"
+    },
+    "note": "First report. Royalties +3.8% to $21.7M, diluted EPS +6.3% to $3.21 (underlying growth slowed from ~8% in H1, no stated reason). Reported revenue +23.2% driven mostly by a new pass-through 2% Plato's Closet ad fund (adds equal revenue and expense, no margin impact) — ex that, revenue +6.3% and margin flat. New fees layered on franchisees: $295/month software fee from Sept 1 (~$4.9M/yr), plus new ad funds for two more brands from 2027-01-31 (~$17.9M/yr) announced in an Oct 14 8-K — filing itself now flags franchisee-relationship risk from these fees. Equity is negative (-$37.4M) with $60M debt; $1.02 quarterly + $4.00 special dividend payable Dec 1.",
+    "lastChecked": "2026-10-15"
   }
 }

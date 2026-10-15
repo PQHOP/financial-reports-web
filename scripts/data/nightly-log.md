@@ -14480,3 +14480,64 @@ renders, content not truncated) before recording here.
 **2/40 report-periods tonight so far.** PGR (tier 0), the 10 hot-list
 rewrites, and the remaining tier-0 us-listed candidates (CHRN, CMTL, EDUC,
 ETS, SOTK, WINA) are running in parallel opus subagents; results pending.
+
+**Batch 2 (remaining tier-0: 1 S&P 500 fresh filing + 5 us-listed), 6
+parallel opus subagents — all published, all sanity-checked live:**
+- **PGR** (Progressive) Q3 2026 —
+  https://financialreportinsights.com/companies/pgr/2026/q3 — combined
+  ratio 88.7 looks better than last year's 89.5, but Q3 2025 included a
+  one-time $950M Florida policyholder credit (~4.6pts); ex that, the
+  combined ratio actually worsened as the accident-year loss ratio rose.
+  NPW growth slowed to 4.3% (2% in September alone); ~2.4pts of reserve
+  releases also flattered the ratio. 10-Q not filed yet (own announced
+  date 2026-11-02), published from the 8-K earnings release.
+- **CHRN** (ChronoScale Holdings) fiscal Q1 FY2027, labeled 2026/Q1 —
+  https://financialreportinsights.com/companies/chrn/2026/q1 — revenue
+  +148% almost entirely a one-time, near-zero-margin AI-hardware resale;
+  underlying GPU rental revenue only +~9%. Net loss $42.5M incl. a $14.1M
+  write-down of the now-sold Ekso business. Signed $2.7B of 3-year
+  Microsoft GB300 contracts against only $15.2M cash and a $70.5M
+  working-capital deficit, offset partly by $328.2M of post-quarter
+  customer prepayments.
+- **CMTL** (Comtech) FY2026 ANNUAL —
+  https://financialreportinsights.com/companies/cmtl/2026/annual — 10-K
+  now recasts the satellite business (being sold to Gilat) as
+  discontinued operations, so not directly comparable to the Q3 report.
+  Continuing-ops revenue -17.0% (~flat ex Army VSAT runoff); a $22.1M
+  non-cash warrant/derivative gain props up the bottom line; Q4
+  book-to-bill only 0.48x — orders haven't recovered; cash down to $24.0M
+  by Oct 13.
+- **EDUC** (Educational Development, new) fiscal Q2 FY2027, labeled
+  2026/Q2 — https://financialreportinsights.com/companies/educ/2026/q2 —
+  revenue -11.9% as active Brand Partners shrank to 5,100 from 5,800; net
+  loss widened to $1.58M (prior year had a tax benefit now gone). 6-month
+  operating cash flow of only $0.05M came entirely from a $2.67M
+  inventory drawdown; Usborne distribution deal at risk (missed minimum
+  purchases, no required letter of credit); cash only $1.06M.
+- **ETS** (Elite Express Holding, new) fiscal Q3 2026 —
+  https://financialreportinsights.com/companies/ets/2026/q3 — tiny
+  trucking company, single FedEx delivery contract = 100% of revenue;
+  revenue +20.9% on a Feb 2026 rate increase but swung to a $760K net
+  loss on G&A +571%. Flagged: $11.55M of $18.17M total assets is
+  short-term loans to unrelated third parties maturing ~Nov 30; a June
+  Reg-S share sale at $0.25 vs the $4.00 IPO price; $2.9M of $3.0M cash
+  sits in Hong Kong; material weakness in internal controls.
+- **SOTK** (Sono-Tek, new) fiscal Q2 FY2027, labeled 2026/Q2 —
+  https://financialreportinsights.com/companies/sotk/2026/q2 — sales
+  flat (+1.3%) as medical-device sales tripled offsetting a 78%
+  clean-energy decline; gross margin rose on a mix management itself
+  calls "unusually favorable" and doesn't expect to repeat. No debt,
+  $17.76M cash+securities, backlog +23% QoQ.
+- **WINA** (Winmark, new) fiscal Q3 2026 —
+  https://financialreportinsights.com/companies/wina/2026/q3 — royalties
+  +3.8%, EPS +6.3%, but underlying growth slowed from H1; headline
+  revenue +23.2% mostly a new pass-through ad-fund (no margin impact).
+  New fees layered onto franchisees (a $295/month software fee plus two
+  more brands' ad funds starting 2027) — the filing itself now flags
+  franchisee-relationship risk from these fees.
+
+**Tier 0 fully cleared — 9/40 report-periods tonight.** All of the 10
+hot-list-rewrite allotment is running in parallel opus subagents; results
+pending. Moving to tier 1 (us-listed backlog) next via `next-batch` once
+the rewrites are in. CHY (Calamos Convertible and High Income Fund)
+confirmed a closed-end fund like CHI — marked skipped without a subagent.
