@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { prismaCached as prisma } from "@/lib/prisma";
+import { prisma } from "@/lib/prisma";
 import { SITE_URL } from "@/lib/site";
 import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
@@ -9,15 +9,15 @@ import { buildRates } from "@/lib/rates";
 import { availableScorecards } from "@/lib/scorecard";
 import { scorecardPath } from "@/lib/scorecardPath";
 
-// Served by src/app/sitemap.xml/route.ts (a plain Route Handler with
-// `revalidate`). This used to be src/app/sitemap.ts, the metadata-file
-// convention, but on Next 16 that route ignored its `revalidate` export and
-// was baked into the build as a fully static file: production served a
-// sitemap whose newest <lastmod> was the last deploy's timestamp, and every
-// report published after a deploy was missing from it until the next deploy
-// (4 days of reports missing as of 2026-10-14). /feed.xml, a plain route
-// handler with the same export, revalidated fine, so the sitemap now uses
-// the same mechanism.
+// Served by src/app/sitemap.xml/route.ts, a force-dynamic Route Handler
+// cached on the CDN for 10 minutes (see the note there for why not ISR).
+// It reads through the plain `prisma` client on purpose: the sitemap is
+// generated a handful of times an hour at most, and going through
+// `prismaCached` meant the entries could lag the 15-minute data cache on
+// top of the route cache. History: this was src/app/sitemap.ts (the
+// metadata-file convention) until 2026-10-14, which on Next 16 ignored its
+// `revalidate` export and was baked into the build as a static file, so
+// every report published after a deploy was missing until the next deploy.
 
 const STATIC_PAGES = ["/economy", "/world-risks", "/about", "/corrections", "/privacy", "/terms", "/contact"];
 

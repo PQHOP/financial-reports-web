@@ -221,17 +221,46 @@ async function health() {
   );
 }
 
+// --- Sitemap / feed freshness ------------------------------------------------------
+// A 200 is not enough for the XML crawlers depend on: on 2026-10-14 the
+// sitemap was 4 days stale (static build artifact) and on 2026-10-15 it was
+// a day stale (ISR stale-while-revalidate) while returning 200 both times.
+// Report the cache age and the newest <lastmod>/<pubDate> so the morning
+// report can compare it with last night's latest publish.
+async function xmlFreshness(path: string) {
+  const started = Date.now();
+  const res = await fetch(SITE_URL + path, { headers: { "User-Agent": "FinancialReportInsights ops-check" } });
+  const text = await res.text();
+  const dates = [...text.matchAll(/<(?:lastmod|pubDate)>([^<]+)</g)]
+    .map((m) => new Date(m[1]).getTime())
+    .filter((t) => Number.isFinite(t));
+  return {
+    path,
+    status: res.status,
+    ms: Date.now() - started,
+    cache: res.headers.get("x-vercel-cache"),
+    ageSeconds: res.headers.get("age") ? Number(res.headers.get("age")) : null,
+    generatedAt: res.headers.get("x-sitemap-generated"),
+    urls: (text.match(/<(?:loc|item)>/g) ?? []).length,
+    newestDate: dates.length ? new Date(Math.max(...dates)).toISOString() : null,
+  };
+}
+async function xmlFeeds() {
+  return Promise.all(["/sitemap.xml", "/feed.xml"].map(xmlFreshness));
+}
+
 async function main() {
-  const [searchConsoleData, indexSampleData, analyticsData, deployments, healthData] = await Promise.all([
+  const [searchConsoleData, indexSampleData, analyticsData, deployments, healthData, xmlData] = await Promise.all([
     safe(searchConsole),
     safe(indexSample),
     safe(analytics),
     safe(vercel),
     health(),
+    safe(xmlFeeds),
   ]);
   console.log(
     JSON.stringify(
-      { generatedAt: new Date().toISOString(), site: SITE_URL, health: healthData, deployments, searchConsole: searchConsoleData, indexSample: indexSampleData, analytics: analyticsData },
+      { generatedAt: new Date().toISOString(), site: SITE_URL, health: healthData, xml: xmlData, deployments, searchConsole: searchConsoleData, indexSample: indexSampleData, analytics: analyticsData },
       null,
       1
     )

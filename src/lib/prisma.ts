@@ -87,9 +87,9 @@ export const prismaCached = prisma.$extends({
 export function invalidateDbCache() {
   revalidateTag(DB_CACHE_TAG, { expire: 0 });
   revalidatePath("/", "layout");
-  // Route handlers aren't under the root layout, so purge the XML feeds
-  // explicitly; otherwise a new report only reaches crawlers once their
-  // hourly `revalidate` elapses.
-  revalidatePath("/sitemap.xml");
+  // Route handlers aren't under the root layout, so purge /feed.xml
+  // explicitly; otherwise a new report only reaches feed readers once its
+  // hourly `revalidate` elapses. (/sitemap.xml is force-dynamic with a
+  // 10-minute CDN cache, so it needs no purge.)
   revalidatePath("/feed.xml");
 }

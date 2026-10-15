@@ -1,10 +1,18 @@
 import { buildSitemapEntries } from "@/lib/sitemapEntries";
 
-// Cached on the CDN (ISR) and regenerated at most hourly; publishes purge it
-// via invalidateDbCache(). A plain Route Handler rather than the
-// `app/sitemap.ts` metadata convention: see the note in
-// src/lib/sitemapEntries.ts for why.
-export const revalidate = 3600;
+// Rendered per request (bounded by the CDN cache below), NOT ISR. With ISR
+// the sitemap is only ever visited a couple of times a day (Googlebot once,
+// the ops health check once), and the first visit after the entry expired
+// or was purged by invalidateDbCache() is served the *previous* copy while
+// a new one is generated in the background (stale-while-revalidate). Every
+// visit therefore got the copy made at the visit before it: on 2026-10-15
+// Google's daily download was the build-time copy, missing all 40 reports
+// published that night. `s-maxage` without stale-while-revalidate makes the
+// CDN refetch synchronously once it expires, so a sitemap is never older
+// than 10 minutes and generation costs at most ~6 function runs per hour
+// per region. The exception to the "no force-dynamic" rule in CLAUDE.md is
+// deliberate and documented there.
+export const dynamic = "force-dynamic";
 
 function escapeXml(value: string): string {
   return value
@@ -35,7 +43,8 @@ export async function GET() {
   return new Response(xml, {
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
-      "Cache-Control": "public, s-maxage=600, stale-while-revalidate=3600",
+      "Cache-Control": "public, max-age=0, s-maxage=600, must-revalidate",
+      "X-Sitemap-Generated": new Date().toISOString(),
     },
   });
 }

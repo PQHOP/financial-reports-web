@@ -944,7 +944,10 @@ for site work unless the change is genuinely large.
     `headers()`, `cookies()` or `searchParams` — any of those makes the page
     render per request. Still dynamic on purpose: `/search`,
     `/reports?page=`, `/reports/[id]` (admin cookie), `/companies/*/write`,
-    `/admin`, `/api/*`.
+    `/admin`, `/api/*`, and `/sitemap.xml` (since 2026-10-16: CDN-cached
+    with `s-maxage=600`, so at most ~6 runs/hour/region; as ISR it was
+    visited so rarely that stale-while-revalidate handed Google the
+    previous visit's copy every time — see the note in its route file).
   - `?source=community` on company/year pages is a `beforeFiles` rewrite in
     `next.config.ts` to `.../community` routes (bodies shared via
     `CompanyView.tsx` / `CompanyYearView.tsx`); `/economy` reads its
