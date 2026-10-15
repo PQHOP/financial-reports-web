@@ -59,7 +59,10 @@ export async function GET(request: Request) {
     if (outcome.some((r) => r.ok)) {
       await prisma.report.update({
         where: { id: report.id },
-        data: { socialPostedAt: new Date() },
+        // Keep updatedAt as it was: it feeds the sitemap <lastmod> and the
+        // page's dateModified, and announcing a report is not a content
+        // change (Prisma's @updatedAt would otherwise bump it here).
+        data: { socialPostedAt: new Date(), updatedAt: report.updatedAt },
       });
     }
   }
