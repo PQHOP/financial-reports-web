@@ -31046,5 +31046,11 @@
     },
     "note": "First report. Royalties +3.8% to $21.7M, diluted EPS +6.3% to $3.21 (underlying growth slowed from ~8% in H1, no stated reason). Reported revenue +23.2% driven mostly by a new pass-through 2% Plato's Closet ad fund (adds equal revenue and expense, no margin impact) — ex that, revenue +6.3% and margin flat. New fees layered on franchisees: $295/month software fee from Sept 1 (~$4.9M/yr), plus new ad funds for two more brands from 2027-01-31 (~$17.9M/yr) announced in an Oct 14 8-K — filing itself now flags franchisee-relationship risk from these fees. Equity is negative (-$37.4M) with $60M debt; $1.02 quarterly + $4.00 special dividend payable Dec 1.",
     "lastChecked": "2026-10-15"
+  },
+  "CHY": {
+    "name": "Calamos Convertible and High Income Fund",
+    "status": "skipped",
+    "skipReason": "Closed-end fund, not an operating company.",
+    "lastChecked": "2026-10-15"
   }
 }
