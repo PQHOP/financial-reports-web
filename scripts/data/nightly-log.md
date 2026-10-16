@@ -15035,3 +15035,54 @@ published (all first-time companies), all sanity-checked live:**
 
 **29/40 report-periods tonight.** Tracker pushed (commit `d991b40`).
 Cap allows room for ~11 more report-periods.
+
+**Batch 6 (tier 1, us-listed backlog), 8 parallel opus subagents — all
+published (all first-time companies), all sanity-checked live:**
+- **CRON** (Cronos Group) Q2 2026 — revenue +58% on tax-free flower
+  exports to Israel (+60%) and Germany/other (+88%); gross margin
+  43%→54%; most of the $35.7M pre-tax profit was a $20.2M FX gain +
+  $8.8M interest, not the $7.4M of actual operating income; new Israeli
+  anti-dumping probe opened Aug 5 (Israel = 28% of revenue); closed the
+  CanAdelaar acquisition post-quarter.
+- **CROX** (Crocs) Q2 2026 — record revenue +2.6%, beat and raised
+  full-year guidance again; gross margin fell on tariffs (1.7 pts);
+  adjusted EPS +7.6% but adjusted net income -5.0% — all the per-share
+  growth was buybacks (shares -11.6%); debt-funded buybacks (+$77M LT
+  debt).
+- **CRSP** (CRISPR Therapeutics) Q2 2026 — loss narrowed to $91.2M from
+  $208.5M almost entirely because last year had a one-off $96.3M
+  in-process R&D charge that didn't recur; Casgevy sales (Vertex-booked)
+  +151% YoY but CRISPR's 40% collaboration-expense share is still a
+  cost, not revenue; $221.8M of deferred Casgevy costs must be repaid
+  from future profits first; $600M convertible bond raised in March.
+- **CRSR** (Corsair Gaming) Q2 2026 — a one-time $15.6M tariff refund
+  (Supreme Court ruling) drove the GAAP profit; without it, a $5.7M net
+  loss per the company's own figures; components segment -8.7% on high
+  memory prices holding back DIY PC builds; $40M Trak Racer acquisition
+  post-quarter.
+- **CRTO** (Criteo) Q2 2026 — revenue -11.3%, missed its own guidance;
+  cut full-year guidance for the second time this year (contribution
+  ex-TAC now -10% to -12%, was low-single-digit decline); Retail Media
+  -21% on two large clients' reduced business; moved incorporation
+  France→Luxembourg, planning a further move to a Delaware entity in
+  2027.
+- **CRUS** (Cirrus Logic) fiscal Q1 FY2027, labeled 2026/Q1 — record
+  June-quarter revenue +12.9%, Apple now ~90% of sales (up from 86%);
+  about a third of EPS growth came from a lower tax rate (OBBBA R&D
+  expensing); lowered FY27 PC-revenue expectations; confirmed it was the
+  "Party A" Synaptics bidder and has dropped that pursuit.
+- **CRVL** (CorVel) fiscal Q1 FY2027, labeled 2026/Q1 — revenue +10.7%,
+  gross margin improved; tax rate rose on fewer options exercised,
+  costing ~$0.03/share; flagged an internal filing inconsistency
+  (overhead stated as ~11% of revenue vs. ~9.4% in its own table); new
+  CEO (Sarah Scott) took over July 1.
+- **CRVO** (CervoMed) Q2 2026 — CNS biotech; zero revenue (NIA grant
+  ended); going-concern warning from Q1 lifted after ~$20.5M of June
+  raises; cash now guided to last through Q3 2027; heavy dilution
+  (shares +63% since Dec 31); watching Phase 3 partnering, Nov CTAD data
+  and H2 2026 stroke-trial topline.
+
+**37/40 report-periods tonight.** Tracker pushed (commit `e2174e2`).
+Stopping for the night — one more small batch would risk the ~40 cap,
+and per CLAUDE.md policy the firing should stop once the count is close
+rather than overshoot it.
