@@ -5272,22 +5272,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucsj1qu000404lafehpe9lu"
+      "period": "Q3",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/reports/cmvb61rhb000008ju9scizzve"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-03",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-05",
+      "basis": "carried over from Q2 report, unconfirmed; the 10-Q will cover the same period already published from the 8-K, so only lastFilingSeen needs updating when it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-16",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucsj1qu000404lafehpe9lu"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-16",
+        "url": "https://financialreportinsights.com/reports/cmvb61rhb000008ju9scizzve"
+      }
+    ]
   },
   "TMUS": {
     "name": "T-Mobile US, Inc.",
@@ -6176,22 +6190,37 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-24",
-      "url": "https://financialreportinsights.com/reports/cmuf1mqqd000504jqxdyjs2ms"
+      "period": "Q3",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/reports/cmvb60zur000007l7b6q6duu5"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02, preliminary estimates)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-02",
-      "basis": "~90 days after last 10-Q",
-      "confidence": "estimated"
+      "type": "10-Q (final Q3 2026 results)",
+      "estimate": "2026-11-05",
+      "basis": "8-K states final Q3 2026 results and 10-Q due Nov 5, 2026",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-24"
+    "lastChecked": "2026-10-16",
+    "notes": "Q3 2026 report published from preliminary unaudited 8-K estimates (Deloitte has not reviewed them); edit this report (do not create a new one) once the final release/10-Q lands ~2026-11-05.",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-24",
+        "url": "https://financialreportinsights.com/reports/cmuf1mqqd000504jqxdyjs2ms"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-16",
+        "url": "https://financialreportinsights.com/reports/cmvb60zur000007l7b6q6duu5"
+      }
+    ]
   },
   "GIS": {
     "name": "General Mills",
@@ -12012,28 +12041,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/ibkr/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/ibkr/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~11-05",
-      "estimate": "2026-10-15",
-      "basis": "IBKR press release 2026-09-24: Q3 call Oct 15 after close",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "10-Q will cover the same period already published from the 8-K, so only lastFilingSeen needs updating when it lands",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-16",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/ibkr/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-16",
+        "url": "https://financialreportinsights.com/companies/ibkr/2026/q3"
       }
     ]
   },
@@ -12252,28 +12287,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/jbht/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/jbht/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~10-23",
-      "estimate": "2026-10-15",
-      "basis": "2026 releases Apr 15, Jul 15; 10-Q 9 days later",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "10-Q will cover the same period already published from the 8-K, so only lastFilingSeen needs updating when it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-16",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/jbht/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-16",
+        "url": "https://financialreportinsights.com/companies/jbht/2026/q3"
       }
     ]
   },
@@ -12950,22 +12991,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/mrsh/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/mrsh/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-21"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-20",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "8-K Item 2.02 (Q4/FY2026 results)",
+      "estimate": "2027-01-13",
+      "basis": "~90 day cadence from last 10-Q filed 2026-10-15",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-16",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-25",
+        "url": "https://financialreportinsights.com/companies/mrsh/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-16",
+        "url": "https://financialreportinsights.com/companies/mrsh/2026/q3"
+      }
+    ]
   },
   "MLM": {
     "name": "Martin Marietta Materials",
