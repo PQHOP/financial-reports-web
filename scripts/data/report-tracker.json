@@ -32112,5 +32112,11 @@
         "url": "https://financialreportinsights.com/companies/ntrp/2026/q2"
       }
     ]
+  },
+  "CPZ": {
+    "name": "Calamos Long/Short Equity & Dynamic Income Trust",
+    "status": "skipped",
+    "skipReason": "closed-end fund (Calamos Long/Short Equity & Dynamic Income Trust), same pattern as CHI/CHY already skipped — files N-CSR/N-CSRS, not a 10-Q/10-K with normal revenue/net income/EPS metrics; not a fit for this site report format.",
+    "lastChecked": "2026-10-16"
   }
 }
