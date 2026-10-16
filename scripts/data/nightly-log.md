@@ -14992,3 +14992,46 @@ sanity-checked live:**
 
 **21/40 report-periods tonight.** Tracker pushed (commit `a753468`).
 Cap allows room for ~19 more report-periods.
+
+**Batch 5 (tier 1, us-listed backlog), 8 parallel opus subagents — all
+published (all first-time companies), all sanity-checked live:**
+- **CREX** (Creative Realities) Q2 2026 — revenue +65% almost entirely
+  the Cineplex Digital Media acquisition (organic ~+8%); legacy managed
+  services -29%; going-concern doubt formally removed after a ~$12.2M
+  equity raise (37% dilution) used mostly to repay debt.
+- **CRIS** (Curis) Q2 2026 — oncology biotech, zero revenue since
+  selling its Erivedge royalty rights; loss flat YoY only via a $1.3M
+  non-cash warrant gain (ex that, ~15% wider); cash $5.1M, runway only
+  into Q4 2026, going-concern warning; 1-for-20 reverse split July 2026.
+- **CRGO** (Freightos) Q2 2026 — FPI (20-F/6-K, IFRS); revenue +3.4% to
+  a record; loss narrowed mostly (~80%) from a non-cash warrant
+  revaluation gain, not operations; narrowed full-year guidance;
+  software line (62% of revenue) declining while the marketplace grows.
+- **CRMD** (CorMedix) Q2 2026 — now profitable; revenue +156.5% on
+  DefenCath + the acquired Melinta portfolio; net income +31% but EPS
+  only +3.6% as the company now pays full tax and shares are up 29%
+  from 2025 convertible notes; DefenCath's Medicare TDAPA add-on payment
+  ended July 1, 2026 — guidance implies a much weaker H2.
+- **CRML** (Critical Metals) FY2026 ANNUAL (FYE June 30) — pre-revenue
+  BVI critical-minerals developer; loss widened to $228.2M, ~77% of it
+  non-cash (warrant revaluation + stock comp); cash rose to $102.5M on a
+  $163.2M raise; Tanbreez stake increased to 92.5%; BMW ended its
+  Wolfsberg offtake agreement post-quarter; going-concern doubt.
+- **CRMT** (America's Car-Mart) fiscal Q1 FY2027, labeled 2026/Q1 —
+  subprime auto dealer; retail units -81.9% (no funding to buy
+  inventory), revenue -57.3%, net loss $69.0M; going-concern warning,
+  breached two loan covenants, lender waiver runs only to 2026-10-22
+  with a "transaction" reportedly in progress — may need an edit before
+  the next scheduled report.
+- **CRNC** (Cerence) fiscal Q3 FY2026, labeled 2026/Q3 — swung to a
+  $1.5M GAAP profit almost entirely on a one-off $12.5M fixed-license
+  deal (ex that, revenue -8% on lower car production); Q4 guidance
+  implies an operating loss covered only by a projected tax benefit.
+- **CRNT** (Ceragon Networks) Q2 2026 — FPI (20-F/6-K); revenue +14.2%
+  almost entirely India (now 48% of sales, up from ~34%) while North
+  America -24%; GAAP margins compressed; cut full-year margin guidance
+  (kept revenue guidance); cash flow depended on supplier payment
+  timing.
+
+**29/40 report-periods tonight.** Tracker pushed (commit `d991b40`).
+Cap allows room for ~11 more report-periods.
