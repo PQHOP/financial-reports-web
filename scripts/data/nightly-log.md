@@ -14948,3 +14948,47 @@ published (all first-time companies), 1 skip, all sanity-checked live:**
   enrollment has actually started.
 
 **14/40 report-periods tonight.** Tracker pushed (commit `dc3622b`).
+
+**Batch 4 (tier 1, us-listed backlog), 8 parallel opus subagents — 7
+published (all first-time companies), 1 no-filing skip, all
+sanity-checked live:**
+- **CRE** (Cre8 Enterprise Limited) — not published, no subagent-caused
+  loss: recent Nasdaq IPO (Jul 2025), FPI (20-F/6-K); only FY2025 20-F on
+  file, the one 2026 6-K since is an operating-metrics-only update with
+  no financial statements. Left `pending` (not `skipped`) since a 2026
+  filing should land eventually (est. 2026-12-01).
+- **CRAN** (Crane Harbor Acquisition Corp. II) Q2 2026 — pre-merger
+  blank-check SPAC, $351.6M trust, no business-combination target
+  announced; correctly distinguished from the similarly-named but
+  separate "Crane Harbor Acquisition Corp." (different CIK).
+- **CRBU** (Caribou Biosciences) Q2 2026 — clinical-stage CAR-T biotech;
+  written around a material post-quarter event: Oct 2 board decision to
+  halt both CAR-T programs, start a strategic-alternatives review
+  (Wedbush advising) and lay off most staff — the August "cash into
+  2027" guidance no longer holds.
+- **CRCT** (Cricut) Q2 2026 — revenue -9.2% but net income +59.5% almost
+  entirely from a $20.3M IEEPA tariff refund + a $6.4M royalty-dispute
+  reserve release; underlying (ex one-offs, subagent's own calc) net
+  income was down ~20%; product-sales discounting hit gross margin hard,
+  subscriptions still growing.
+- **CRDF** (Cardiff Oncology) Q2 2026 — clinical-stage oncology biotech;
+  loss narrowed 34% on lower trial R&D as a Phase 2 winds down; cash
+  runway extended to Q3 2027 after a July raise; Sept 14 settlement with
+  licensor Nerviano preserves rights to its only drug candidate.
+- **CRDL** (Cardiol Therapeutics) Q2 2026 — Canadian 40-F/6-K filer
+  (IFRS, CAD), not a 10-Q filer; cardiovascular biotech; loss narrowed
+  mostly on a non-cash warrant gain while actual spending rose; trial
+  enrollment hit target but topline data pushed to mid-2027.
+- **CRDO** (Credo Technology) fiscal Q1 FY2027, labeled 2026/Q1 —
+  AI data-center cable demand drove revenue +114.7%, beating guidance;
+  GAAP operating margin fell on stock comp + DustPhotonics acquisition
+  costs even as adjusted margin rose; 4 customers are 84% of revenue.
+- **CRESY** (Cresud) FY2026 ANNUAL (FYE June 30) — Argentine FPI, ARS
+  reporting under IAS 29 hyperinflation accounting; profit to
+  shareholders +38% almost entirely a non-cash IRSA property revaluation
+  gain while the farming business swung to a loss and Adjusted EBITDA
+  fell 23%; sourced from the company's own IR-site earnings release PDF
+  since the FY2026 20-F isn't on EDGAR yet.
+
+**21/40 report-periods tonight.** Tracker pushed (commit `a753468`).
+Cap allows room for ~19 more report-periods.
