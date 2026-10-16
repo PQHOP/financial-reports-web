@@ -6,6 +6,22 @@ date and commit.
 
 ## Next
 
+- **Add a figure-format check to `npm run site-metrics` (next run).** The
+  `$-1.14` bug (fixed 2026-10-17, see Done) sat on every loss-making
+  company's pages for about a month and was found by a report-writing
+  subagent, not by ops: the health check measures status/freshness, not
+  whether rendered figures look right. Add a small content check over 3-4
+  fixed sample reports (one loss-making company, one bank, one insurer,
+  one general) that flags `$-`, `NaN`, `undefined`, `%%`, an empty `<dd>`
+  in the figures strip, and a figures strip with fewer than 3 items.
+  Cheap (4 cached fetches), reports a `figureIssues` array.
+- **For the nightly routine (owner of `hotlist-rewrite.json`):** a
+  read-only scan of all 90 `pending` items on 2026-10-17 found exactly one
+  already in the current format — **MU 2026/ANNUAL** (has "At a glance"
+  and the quality-check section) — so it can be set `superseded` instead
+  of rewritten. **C** (Citigroup) has the quality-check section but no
+  "At a glance"; rewrite stands. No other item meets the format; the queue
+  is sound.
 - **Watch Googlebot crawl recovery (weekly, from Hop's Crawl stats
   screenshot).** Before 2026-10-15: ~15 crawls/day since 10-01 (was
   1,000-3,800), 80% "Other file type" (RSC `?_rsc=` payloads), 94%
@@ -96,6 +112,21 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-17 — negative per-share figures rendered `$-1.14`** (`be0806f`,
+  prod `dpl_CPHZmNDXfs5EhfkmgxwaUHscQvu4`). `formatPerShare` in
+  `src/lib/metrics.ts` put the currency symbol before the sign, unlike
+  `formatMoneyMillions` (`-$626M`), so every loss-making company's figures
+  strip, company results table, industry peer table, scorecard and OG card
+  showed `$-x.xx` (flagged by the nightly routine on CRWV Q2 2026). Sign
+  now goes first; the weekly digest and `ReportCharts` had private copies
+  of the formatter (digest wrong, charts right) and both now import the
+  shared one. Verified live on `/companies/crwv/2026/q2` and
+  `/companies/crwv` (`-$1.14`), OG image 200, health check 9/9 after the
+  deploy. Also confirmed yesterday's sitemap fix held: live sitemap 2,609
+  URLs, newest lastmod 17:04 UTC = last night's final publish; GSC
+  `lastDownloaded` still 10-15 00:32 (Google skipped the 10-16 fetch or
+  GSC lags) — watch.
 
 - **2026-10-16 — sitemap: render per request behind a 10-minute CDN cache**
   (`a434830`, prod `dpl_CVJEH7ZKzYcWmczCYzzfXDDHZe5P`) **+ social cron no
