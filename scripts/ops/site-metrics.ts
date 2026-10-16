@@ -249,18 +249,61 @@ async function xmlFeeds() {
   return Promise.all(["/sitemap.xml", "/feed.xml"].map(xmlFreshness));
 }
 
+// --- Rendered-figure sanity check --------------------------------------------------
+// The health check only sees status and freshness. On 2026-10-17 a formatter
+// bug ("$-1.14" for a negative EPS) had been live on every loss-making
+// company's pages for about a month, found by a report-writing subagent,
+// not by ops. Fetch a few fixed reports of different metric profiles and
+// flag figure strings that no correct render produces.
+const FIGURE_SAMPLE_PATHS = [
+  "/companies/crwv/2026/q2", // loss-making (negative EPS and net income)
+  "/companies/pnc/2026/q3", // bank profile
+  "/companies/pgr/2026/q3", // insurer profile
+  "/companies/jbht/2026/q3", // general profile
+];
+const FIGURE_BAD_PATTERNS: [string, RegExp][] = [
+  ["currency-after-sign", /[$]-\d/],
+  ["NaN", /\bNaN\b/],
+  ["undefined", /\bundefined\b/],
+  ["double-percent", /%%/],
+  ["double-currency", /\$\$/],
+  ["double-sign", /--\$|\+\+/],
+];
+async function figureSample() {
+  return Promise.all(
+    FIGURE_SAMPLE_PATHS.map(async (path) => {
+      const res = await fetch(SITE_URL + path, { headers: { "User-Agent": "FinancialReportInsights ops-check" } });
+      const html = await res.text();
+      // Visible markup only: the RSC payload in <script> escapes "$" as "$$",
+      // and React's Suspense markers are "<!--$-->" comments.
+      const visible = html.replace(/<script[^>]*>[\s\S]*?<\/script>/g, "").replace(/<!--[\s\S]*?-->/g, "");
+      const strip = [...visible.matchAll(/<dd class="mt-0\.5 text-lg font-semibold">([^<]*)<\/dd>/g)].map((m) => m[1]);
+      const text = visible.replace(/<[^>]+>/g, " ");
+      const issues: string[] = [];
+      for (const [name, re] of FIGURE_BAD_PATTERNS) {
+        const hit = text.match(re);
+        if (hit) issues.push(`${name}: ${text.slice(Math.max(0, hit.index! - 20), hit.index! + 20).replace(/\s+/g, " ")}`);
+      }
+      if (strip.length < 3) issues.push(`figures strip has ${strip.length} items`);
+      if (strip.some((v) => v.trim() === "" || v.trim() === "—")) issues.push("empty figure in strip");
+      return { path, status: res.status, strip, issues };
+    })
+  );
+}
+
 async function main() {
-  const [searchConsoleData, indexSampleData, analyticsData, deployments, healthData, xmlData] = await Promise.all([
+  const [searchConsoleData, indexSampleData, analyticsData, deployments, healthData, xmlData, figureData] = await Promise.all([
     safe(searchConsole),
     safe(indexSample),
     safe(analytics),
     safe(vercel),
     health(),
     safe(xmlFeeds),
+    safe(figureSample),
   ]);
   console.log(
     JSON.stringify(
-      { generatedAt: new Date().toISOString(), site: SITE_URL, health: healthData, xml: xmlData, deployments, searchConsole: searchConsoleData, indexSample: indexSampleData, analytics: analyticsData },
+      { generatedAt: new Date().toISOString(), site: SITE_URL, health: healthData, xml: xmlData, figures: figureData, deployments, searchConsole: searchConsoleData, indexSample: indexSampleData, analytics: analyticsData },
       null,
       1
     )

@@ -6,15 +6,6 @@ date and commit.
 
 ## Next
 
-- **Add a figure-format check to `npm run site-metrics` (next run).** The
-  `$-1.14` bug (fixed 2026-10-17, see Done) sat on every loss-making
-  company's pages for about a month and was found by a report-writing
-  subagent, not by ops: the health check measures status/freshness, not
-  whether rendered figures look right. Add a small content check over 3-4
-  fixed sample reports (one loss-making company, one bank, one insurer,
-  one general) that flags `$-`, `NaN`, `undefined`, `%%`, an empty `<dd>`
-  in the figures strip, and a figures strip with fewer than 3 items.
-  Cheap (4 cached fetches), reports a `figureIssues` array.
 - **For the nightly routine (owner of `hotlist-rewrite.json`):** a
   read-only scan of all 90 `pending` items on 2026-10-17 found exactly one
   already in the current format — **MU 2026/ANNUAL** (has "At a glance"
@@ -112,6 +103,16 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-17 — `site-metrics` now checks rendered figures** (`figures`
+  section, `scripts/ops/site-metrics.ts`, no site code). Four fixed sample
+  reports (CRWV Q2 loss-maker, PNC Q3 bank, PGR Q3 insurer, JBHT Q3
+  general) are fetched; the visible HTML (scripts and `<!--$-->` Suspense
+  comments stripped, then tags) is searched for `$-<digit>`, `NaN`,
+  `undefined`, `%%`, `$$`, `--$`/`++`, and the figures strip must have ≥3
+  non-empty items. Each entry lists the strip's values and an `issues`
+  array; all four are clean after the fix below. Would have flagged the
+  `$-1.14` bug on day one.
 
 - **2026-10-17 — negative per-share figures rendered `$-1.14`** (`be0806f`,
   prod `dpl_CPHZmNDXfs5EhfkmgxwaUHscQvu4`). `formatPerShare` in
