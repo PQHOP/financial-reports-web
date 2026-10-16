@@ -32471,5 +32471,184 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-16"
+  },
+  "CREX": {
+    "name": "Creative Realities, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crex/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1/Q2 filed 2026-05-15/2026-08-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRIS": {
+    "name": "Curis, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/cris/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1/Q2 filed 2026-05-13/2026-08-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Going-concern, cash runway only into Q4 2026 per the Q2 10-Q; watch for a financing/strategic-alternatives 8-K before the Q3 10-Q."
+  },
+  "CRGO": {
+    "name": "Freightos Limited",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crgo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-10"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-23",
+      "basis": "company-announced date in its 2026-10-15 6-K",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRMD": {
+    "name": "CorMedix Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crmd/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRML": {
+    "name": "Critical Metals Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crml/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-25"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2027)",
+      "estimate": "2027-09-25",
+      "basis": "yearly cadence; a half-year 6-K is also likely ~mid-March 2027",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Pre-revenue critical-minerals developer (BVI FPI). Going-concern doubt. European Lithium shareholder vote 2026-10-22; Tanbreez feasibility study expected mid-2027."
+  },
+  "CRMT": {
+    "name": "America's Car-Mart, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crmt/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-09"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027)",
+      "estimate": "2026-12-05",
+      "basis": "~90-day cadence, unconfirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Going-concern warning; broke two loan covenants, lender waiver runs through 2026-10-22 with a restructuring/transaction reportedly in progress — watch for an 8-K before the next 10-Q."
+  },
+  "CRNC": {
+    "name": "Cerence Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crnc/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (fiscal Q3 FY2026)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026) + Q4 earnings 8-K",
+      "estimate": "2026-11-19",
+      "basis": "last year 8-K/10-K filed 2025-11-19/20",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRNT": {
+    "name": "Ceragon Networks Ltd.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crnt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-11",
+      "basis": "~90-day cadence from 2026-08-11",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
   }
 }
