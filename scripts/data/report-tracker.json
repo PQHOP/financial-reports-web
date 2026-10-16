@@ -32827,5 +32827,73 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-16"
+  },
+  "CRVS": {
+    "name": "Corvus Pharmaceuticals, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crvs/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1/Q2 filed 05-07/08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRWS": {
+    "name": "Crown Crafts, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crws/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "periodEnd": "2026-06-28",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027)",
+      "estimate": "2026-11-12",
+      "basis": "last year 10-Q/8-K both filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Replaced auditor KPMG with Grant Thornton (8-K 2026-08-31). Most of Q1 profit was a one-off .7M tariff refund."
+  },
+  "CRWV": {
+    "name": "CoreWeave, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crwv/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "last year Q3 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Large/heavily-watched AI infrastructure company; debt load (5.6B), customer concentration (top 3 = 36%/26%/10% of revenue) and GAAP-vs-adjusted gap are all material. Guidance sourced from MarketBeat earnings-call writeup, not a filing (cited inline)."
   }
 }
