@@ -15083,6 +15083,53 @@ published (all first-time companies), all sanity-checked live:**
   and H2 2026 stroke-trial topline.
 
 **37/40 report-periods tonight.** Tracker pushed (commit `e2174e2`).
-Stopping for the night — one more small batch would risk the ~40 cap,
-and per CLAUDE.md policy the firing should stop once the count is close
-rather than overshoot it.
+
+**Batch 7 (final, tier 1 us-listed backlog), 3 parallel opus subagents —
+all published, all sanity-checked live:**
+- **CRVS** (Corvus Pharmaceuticals) Q2 2026 — oncology biotech, no
+  revenue; loss widened to $18.0M from $8.0M (last year's quarter had a
+  $2.0M warrant gain; ex that, ~$10.0M→$18.0M); soquelitinib R&D spend
+  more than doubled; cash $215.2M after a January raise, runway still
+  guided into Q2 2028.
+- **CRWS** (Crown Crafts) fiscal Q1 FY2027, labeled 2026/Q1 — swung to a
+  $2.06M profit from a $1.1M loss almost entirely on a $3.7M tariff
+  refund booked against COGS; flagged that the CEO's "positive income
+  even adjusting for the refund" claim couldn't be reproduced from the
+  company's own disclosed figures; dividend cut $0.08→$0.03; changed
+  auditor to Grant Thornton.
+- **CRWV** (CoreWeave) Q2 2026 — AI cloud/GPU infrastructure; revenue
+  +112.5% but GAAP net loss widened to $626M; debt $35.6B (up from
+  $21.6B) plus $16.3B of lease liabilities and $35.5B of signed-not-
+  started leases; top 3 customers are 36%/26%/10% of revenue; $104B
+  backlog. Guidance only given on the earnings call (not in a filing) —
+  sourced from a MarketBeat call writeup and cited inline as such.
+  **Site bug flagged by the subagent, not fixed here** (out of scope for
+  this routine): the figures strip renders negative diluted EPS with a
+  doubled dollar sign ("$$-1.14"), likely a `formatPerShare`/money-prefix
+  formatting bug affecting any loss-making company's report — worth a
+  look by the daily site-operations routine.
+
+**40/40 report-periods tonight — nightly cap reached.** Stopping for
+the night. All 40 were researched via opus subagents, each sanity-
+checked live (fetched the canonical URL, confirmed "At a glance" renders
+and content isn't truncated) before being recorded here. Tracker pushed
+(commit `442a20d`); all changes committed and pushed to master in small
+batches throughout the run.
+
+**Companies published tonight (40 report-periods, 40 unique companies):**
+KMB, PNC, IBKR, JBHT, MRSH, BMRA, NTRP (tier 0); CPHC, CPIX, CPSH, CPSS,
+CRAC, CRAI, CRAQ, CRBP, CRAN, CRBU, CRCT, CRDF, CRDL, CRDO, CRESY, CREX,
+CRIS, CRGO, CRMD, CRML, CRMT, CRNC, CRNT, CRON, CROX, CRSP, CRSR, CRTO,
+CRUS, CRVL, CRVO, CRVS, CRWS, CRWV (tier 1 us-listed backlog). Also 10
+hot-list rewrites (29/121 total): AMD, KO, PEP, CVX, MRK, ADBE, CSCO,
+MCD, TMO, QCOM. One no-subagent skip: CPZ (closed-end fund). One left
+`pending` (not skipped, recent IPO with no 2026 filing yet): CRE. The
+usual already-known pending FPIs (BAOS, BLIV, BRAI, BTCT, CCHH, CDTG,
+CHNR, CLWT) were re-confirmed untouched each time next-batch was run —
+none have an estimate due yet.
+
+A future firing should run `npm run scan-recent-filings` first per
+usual, then continue the tier 1 backlog with `npm run next-batch` from
+where this session left off (next in file order after CRWV: CSAI, CSHR,
+CSIQ, CSPI, then CSQ which is a closed-end fund to skip, then CSTE,
+CSTL, CSWC...).
