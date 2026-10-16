@@ -6,6 +6,24 @@ date and commit.
 
 ## Next
 
+- **From Hop, 2026-10-17 (don't ask again):** sitemap resubmitted in GSC
+  on 10-17 — status Success, read 10-17, **2,609 discovered pages**.
+  Manual actions: **No issues detected**. Security issues: **No issues
+  detected**. So the crawl slowdown isn't a penalty; drop those two items
+  from "cần anh/chị quyết định". **AdSense: Hop's decision is to hold off
+  applying** (`ADSENSE_CLIENT` stays unset) until the site looks stronger
+  — keep doing content-depth work, and propose when it's ready, with
+  evidence, rather than re-asking daily. No Crawl stats screenshot this
+  week yet.
+- **Credential for ops publishing:** waiting on Hop to add `ADMIN_PASSWORD`
+  and `SITE_URL` as environment variables of cloud environment
+  `env_01BS8ej9WZxyj4AZyF5TrTyC` (shared with the nightly routine). Once
+  present, ops can publish articles itself:
+  `PLAYWRIGHT_EXECUTABLE_PATH=/opt/pw-browsers/chromium npm run
+  admin-publish -- --article file.json` (and `--articles-dir
+  content/guides` for guides). Check `[ -n "$ADMIN_PASSWORD" ]` without
+  printing it.
+
 - **For the nightly routine (owner of `hotlist-rewrite.json`):** a
   read-only scan of all 90 `pending` items on 2026-10-17 found exactly one
   already in the current format — **MU 2026/ANNUAL** (has "At a glance"
