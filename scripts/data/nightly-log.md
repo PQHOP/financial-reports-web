@@ -14854,3 +14854,34 @@ queued next, after the hot-list rewrite allotment per CLAUDE.md's
 ordering (rewrites come right after tier 0 hot-list/S&P 500 items, before
 the rest of the batch). Tracker updated and pushed for all 5 (commit
 `8ce2f18`).
+
+**Hot-list rewrites, 10 parallel opus subagents (AMD, KO, PEP, CVX, MRK,
+ADBE, CSCO, MCD, TMO, QCOM) — all published as edits (no duplicates),
+all sanity-checked live:**
+- Picked in file order from `hotlist-rewrite.json`, skipping items whose
+  `nextExpectedFiling` falls within the next 10 days (TSLA 10-21, NFLX
+  10-16, PG 10-22, WFC 10-26, IBM 10-22, NOW 10-22, GE 10-15 already
+  passed) — those will get a new-format report through tier 0 instead.
+- Each subagent re-read the original source filing (+ the relevant
+  earnings-release exhibit) itself, verified every old figure against it,
+  and found/fixed several factual errors in the old bodies along the way
+  (notably: AMD's cash-conversion framing, KO's tax-rate attribution for
+  the EPS beat, CVX's "timing effects" and buyback-guidance claims, CSCO's
+  GAAP-vs-adjusted explanation, MRK's two unsourced Keytruda-biosimilar
+  claims removed, TMO's "guidance looks conservative" claim, QCOM's
+  adjusted-EPS framing around stock comp). All now have "At a glance",
+  "What the headline numbers hide", a single Takeaway, and "did last
+  time's read hold up" where an earlier period exists on the site.
+- **PEP's queue item turned out to already meet the current format**
+  (published 2026-10-09, after the format rules) — the subagent treated
+  it as a verify-and-correct pass instead of a full rewrite and fixed a
+  few factual nits (North America beverage volume wording, EMEA pricing
+  attribution, a GAAP/after-tax restructuring figure mislabel). Worth
+  noting for whoever curates the rewrite queue next: items published
+  after 2026-09-28 don't need to be in it at all.
+
+**10/10 rewrites tonight (29/121 total).** Tracker/hotlist-rewrite.json
+pushed (commit `46307d7`).
+
+Moving on to the remaining tier 0 us-listed items (BMRA, NTRP), then the
+tier 1 backlog via `next-batch` up to the ~40 cap.
