@@ -32650,5 +32650,182 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-16"
+  },
+  "CRON": {
+    "name": "Cronos Group Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/cron/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "last year Q3 10-Q filed 2025-11-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CROX": {
+    "name": "Crocs, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crox/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Item 2.02) + 10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "last year Q3 release ~Oct 30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRSP": {
+    "name": "CRISPR Therapeutics AG",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crsp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "May 4 / Aug 3 filing cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRSR": {
+    "name": "Corsair Gaming, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crsr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "May 7 / Aug 6 filing cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRTO": {
+    "name": "Criteo S.A.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crto/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Moved incorporation from France to Luxembourg 2026-07-29; plans to merge into a Delaware subsidiary 2027-01-01 pending shareholder vote."
+  },
+  "CRUS": {
+    "name": "Cirrus Logic, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crus/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027)",
+      "estimate": "2026-11-04",
+      "basis": "last year timing, unconfirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRVL": {
+    "name": "CorVel Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crvl/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027)",
+      "estimate": "2026-11-05",
+      "basis": "last year 8-K/10-Q filed 2025-11-04/06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRVO": {
+    "name": "CervoMed Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crvo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q2 10-Q filed 08-07, earnings 8-K 08-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
   }
 }
