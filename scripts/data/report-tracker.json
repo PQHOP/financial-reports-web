@@ -16697,22 +16697,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-30",
-      "url": "https://financialreportinsights.com/companies/bmra/2026/annual"
+      "period": "Q1",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/bmra/2026/q1"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-08-31"
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027)",
-      "estimate": "2026-10-14",
-      "basis": "prior-year Q1 FY2026 10-Q filed 2025-10-14, ~90-day cadence",
+      "type": "10-Q (Q2 FY2027)",
+      "estimate": "2027-01-14",
+      "basis": "~90-day cadence from Q1 FY2027 10-Q filed 2026-10-15",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-30"
+    "lastChecked": "2026-10-16",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-30",
+        "url": "https://financialreportinsights.com/companies/bmra/2026/annual"
+      },
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-16",
+        "url": "https://financialreportinsights.com/companies/bmra/2026/q1"
+      }
+    ]
   },
   "FKWL": {
     "name": "Franklin Wireless Corp.",
@@ -32066,6 +32080,36 @@
         "period": "Q2",
         "publishedAt": "2026-10-15",
         "url": "https://financialreportinsights.com/companies/cpbi/2026/q2"
+      }
+    ]
+  },
+  "NTRP": {
+    "name": "NextTrip, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/ntrp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-15"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2027, period end 2026-11-30)",
+      "estimate": "2027-01-14",
+      "basis": "~45 days after quarter-end per this filing's own cadence, unconfirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-16",
+        "url": "https://financialreportinsights.com/companies/ntrp/2026/q2"
       }
     ]
   }
