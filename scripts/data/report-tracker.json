@@ -32118,5 +32118,183 @@
     "status": "skipped",
     "skipReason": "closed-end fund (Calamos Long/Short Equity & Dynamic Income Trust), same pattern as CHI/CHY already skipped — files N-CSR/N-CSRS, not a 10-Q/10-K with normal revenue/net income/EPS metrics; not a fit for this site report format.",
     "lastChecked": "2026-10-16"
+  },
+  "CPHC": {
+    "name": "Canterbury Park Holding Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/cphc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "last year Q3 10-Q filed 2025-11-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CPIX": {
+    "name": "Cumberland Pharmaceuticals Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/cpix/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "~90-day cadence; Apotex brand-sale deal closed 2026-07-01 so Q3 should show the sale gain",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CPSH": {
+    "name": "CPS Technologies Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/cpsh/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CPSS": {
+    "name": "Consumer Portfolio Services, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/cpss/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Item 2.02) + 10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "last year Q3 10-Q filed 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRAC": {
+    "name": "Crown Reserve Acquisition Corp. I",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crac/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "last year Q3 10-Q filed 2025-11-14; also watch for Carvix S-4/merger progress (walk-away date now tied to 2027-02-10 SPAC deadline)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Blank-check SPAC. Pending all-stock merger with Carvix, Inc. (automotive services), agreement signed 2026-03-30, amended twice; no S-4 filed yet as of mid-Oct 2026."
+  },
+  "CRAI": {
+    "name": "CRA International,Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crai/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-07-04",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90-day cadence from 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRAQ": {
+    "name": "Cal Redwood Acquisition Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/craq/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-17"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45 days after quarter-end per this filer's pattern",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Blank-check SPAC, no business combination announced yet as of this filing. Merger deadline 2027-05-27."
+  },
+  "CRBP": {
+    "name": "Corbus Pharmaceuticals Holdings, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crbp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-08",
+      "basis": "~90-day cadence from 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
   }
 }
