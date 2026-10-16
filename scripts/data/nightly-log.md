@@ -14804,3 +14804,53 @@ CLAUDE.md ("later firings that night should see the count and exit
 immediately") — did not run `scan-recent-filings` or `next-batch`,
 dispatched no subagents, published nothing, and did not otherwise touch
 `report-tracker.json`. Exiting immediately.
+
+### 2026-10-16 night (16:00 UTC 2026-10-16 → 22:59 UTC 2026-10-16 / 01:00–07:59 JST 2026-10-17)
+
+- Mechanism: this firing (network check passed: 403 without `User-Agent`
+  on sec.gov as expected, 200 with it; `master` was detached again on
+  checkout — fetched/reset cleanly to `origin/master`, no work lost).
+  `npm install` needed a dummy local `DATABASE_URL` in `.env` just to let
+  `prisma generate` succeed in postinstall (admin-publish/scan-recent-filings
+  never touch Prisma, so this is cosmetic only, not committed).
+
+**Batch 1 (tier 0, hot-list/S&P 500 fresh filings), 5 parallel opus
+subagents — all published, all updates to already-`"done"` companies
+reporting their next period (Q3 2026), all sanity-checked live:**
+- **KMB** (Kimberly-Clark) Q3 2026 — published from the 8-K's own
+  *preliminary* unaudited estimates (Deloitte hasn't reviewed them yet);
+  final results + 10-Q confirmed due 2026-11-05, flag set in tracker to
+  edit (not duplicate) this report then. Organic sales -1.3% vs ~1.7%
+  market growth; adjusted EPS from continuing ops +17.2% to $1.70, about
+  half from a lower adjusted tax rate (19.5% vs 26.5%); GAAP operating
+  profit -17% on $106M Kenvue acquisition costs; full-year outlook held.
+- **PNC** (PNC Financial Services) Q3 2026 — bank; profit +15.1% on cost
+  discipline (efficiency ratio improved to 57%) not one-offs, but NII
+  growth (+2.4% QoQ) missed PNC's own July guidance on rising deposit
+  costs; commercial problem loans +8%; reserve coverage dipped; AOCI hit
+  pushed tangible book value per share down 3.1% QoQ. 10-Q (full
+  cash-flow detail) still to come.
+- **IBKR** (Interactive Brokers) Q3 2026 — revenue growth slowed to +16%
+  from +28% in Q2; NII +19% as margin loans +47% but NIM compressed to
+  1.99% from 2.16%; commissions +12% YoY but down from Q2 as trading per
+  account cooled; dividend +71%. Q2's three watch items (accounts, margin
+  credit, rates) all held up fine.
+- **JBHT** (J.B. Hunt) Q3 2026 — revenue +20.4% but operating margin fell
+  to 6.7% from 7.9% (8.2% vs 9.1% ex fuel surcharge); Intermodal income
+  +18% on volume, Dedicated -22% on driver pay/insurance/onboarding
+  costs; EPS +3.4% vs net income +0.9% on buybacks; YTD operating cash
+  flow -14% while receivables +39% since December — flagged as a thing to
+  watch.
+- **MRSH** (Marsh McLennan) Q3 2026 — revenue +8.1% (5% underlying);
+  GAAP EPS +11.9% but includes a $126M Deasterra buyout gain and another
+  $144M Greensill charge (now said to be concluded, $569M YTD total);
+  adjusted operating margin flat at 22.7%; Thrive program cost estimate
+  raised to ~$750M (from $500M) with expected savings raised to ~$600M;
+  9-month operating cash flow only ~70% of net income, down from 92%.
+
+**5/40 report-periods tonight.** Tier 0 scan (`scan-recent-filings`)
+found 2 more candidates in the us-listed tier (BMRA update, NTRP new) —
+queued next, after the hot-list rewrite allotment per CLAUDE.md's
+ordering (rewrites come right after tier 0 hot-list/S&P 500 items, before
+the rest of the batch). Tracker updated and pushed for all 5 (commit
+`8ce2f18`).
