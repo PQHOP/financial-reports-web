@@ -14883,5 +14883,20 @@ all sanity-checked live:**
 **10/10 rewrites tonight (29/121 total).** Tracker/hotlist-rewrite.json
 pushed (commit `46307d7`).
 
-Moving on to the remaining tier 0 us-listed items (BMRA, NTRP), then the
-tier 1 backlog via `next-batch` up to the ~40 cap.
+**Batch 2 (tier 0, us-listed fresh filings), 2 parallel opus subagents —
+both published, both sanity-checked live:**
+- **BMRA** (Biomerica) fiscal Q1 FY2027, labeled 2026/Q1 — sales -8% on
+  weak clinical-lab/Asia demand (one customer still 36% of sales); swung
+  to a $1.23M net loss (year-ago quarter had a one-off $1.1M payroll-tax
+  refund); going-concern doubt stated in the filing; a $2.23M private
+  placement funded Q1's cash burn.
+- **NTRP** (NextTrip) Q2 FY2027, labeled 2026/Q2 — first-ever report for
+  this ticker. Revenue -28% (Travel -36%, Media grew from a small base);
+  net loss widened to $3.72M; going-concern doubt; a $4.6M Lind
+  convertible note with full-ratchet/toxic terms and monthly share-payable
+  installments starting Nov 2026; chairman converted $3.5M of loans to
+  preferred stock and lent more post-quarter.
+
+**7/40 report-periods tonight.** Tracker pushed (commit `94ac620`). Tier
+0 now fully clear. Moving to the tier 1 backlog via `next-batch` up to
+the ~40 cap.
