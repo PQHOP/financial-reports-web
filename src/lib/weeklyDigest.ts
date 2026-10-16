@@ -4,6 +4,7 @@ import { systemReports } from "@/lib/community";
 import { periodLabels } from "@/lib/period";
 import {
   formatMoneyMillions,
+  formatPerShare,
   formatPct,
   metricsHeadline,
   readMetrics,
@@ -71,9 +72,7 @@ function money(metrics: ReportMetrics | null): string | undefined {
 
 function eps(metrics: ReportMetrics | null): string | undefined {
   if (metrics?.epsDiluted === undefined) return undefined;
-  const prefix =
-    metrics.currency && metrics.currency !== "USD" ? `${metrics.currency} ` : "$";
-  return `${prefix}${metrics.epsDiluted.toFixed(2)}`;
+  return formatPerShare(metrics.epsDiluted, metrics.currency);
 }
 
 function pct(value: number | undefined): string | undefined {

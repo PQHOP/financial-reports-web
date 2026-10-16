@@ -6,6 +6,7 @@ import type { ReportPeriod } from "@/generated/prisma/client";
 import { periodLabels, periodOrder } from "@/lib/period";
 import {
   formatMoneyMillions,
+  formatPerShare,
   metricsProfile,
   type ReportMetrics,
 } from "@/lib/metrics";
@@ -14,11 +15,6 @@ import { formatPeerValue, type PeerPosition } from "@/lib/peers";
 // This company / this period (categorical slot 1) vs context marks (neutral).
 const ACCENT = "#2a78d6";
 const CONTEXT = "#a3a29b";
-
-function formatPerShare(value: number, currency?: string): string {
-  const prefix = currency && currency !== "USD" ? `${currency} ` : "$";
-  return `${value < 0 ? "-" : ""}${prefix}${Math.abs(value).toFixed(2)}`;
-}
 
 type Figure = {
   label: string;

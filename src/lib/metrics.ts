@@ -147,9 +147,12 @@ export function metricsProfile(m: ReportMetrics): MetricsProfile {
   return "general";
 }
 
-function formatPerShare(value: number, currency?: string): string {
+// Per-share figure (EPS, book value per share). The sign goes before the
+// currency symbol, matching formatMoneyMillions: a loss is "-$1.14", not
+// "$-1.14" (seen live on CRWV Q2 2026 until 2026-10-17).
+export function formatPerShare(value: number, currency?: string): string {
   const prefix = currency && currency !== "USD" ? `${currency} ` : "$";
-  return `${prefix}${value.toFixed(2)}`;
+  return `${value < 0 ? "-" : ""}${prefix}${Math.abs(value).toFixed(2)}`;
 }
 
 // One figure as rendered in tables and the figures strip; `change` is its
