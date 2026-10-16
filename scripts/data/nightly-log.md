@@ -14900,3 +14900,51 @@ both published, both sanity-checked live:**
 **7/40 report-periods tonight.** Tracker pushed (commit `94ac620`). Tier
 0 now fully clear. Moving to the tier 1 backlog via `next-batch` up to
 the ~40 cap.
+
+**Batch 3 (tier 1, us-listed backlog), 8 parallel opus subagents — 7
+published (all first-time companies), 1 skip, all sanity-checked live:**
+- **CPZ** (Calamos Long/Short Equity & Dynamic Income Trust) — skipped,
+  no subagent needed. Closed-end fund, same pattern as CHI/CHY already
+  skipped (files N-CSR, not a 10-Q with normal revenue/EPS).
+- **CPHC** (Canterbury Park) Q2 2026 — racing/card-room/real-estate
+  company; revenue +3.2%, net loss narrowed to $148K from $327K, but
+  that includes a one-off $419K purse-receivable write-down (Minnesota
+  still hasn't passed sports betting); without it operating income would
+  have been up ~63%; apartment JV losses narrowed too.
+- **CPIX** (Cumberland Pharmaceuticals) Q2 2026 — sold its FDA-approved
+  drug portfolio to Apotex for $100M cash (closed July 1) plus a $1.50/
+  share special dividend; now a clinical-stage company on one candidate
+  (ifetroban); reported revenue includes the since-sold brands per Note
+  3, continuing-ops revenue is only ~$0.17M; flagged a release-vs-10-Q
+  figure discrepancy, used the 10-Q's.
+- **CPSH** (CPS Technologies) Q2 2026 — revenue +2.9% but gross margin
+  fell on gold costs passed through without markup; swung to a small
+  operating loss, net income only positive on a tax benefit + interest
+  income; large inventory build ahead of a plant relocation to Attleboro
+  (new rent ~6x current); flagged the earnings-release vs 10-Q operating
+  loss discrepancy.
+- **CPSS** (Consumer Portfolio Services) Q2 2026 — subprime auto lender;
+  record $757.7M of new loan originations (+75%), net income +30% to
+  $6.2M but last year's quarter had a one-off $3.0M gain this year
+  didn't; charge-offs and delinquencies both improved slightly YoY;
+  liquidity thin (~$7.5M unrestricted cash) against ~12.6x debt/equity.
+- **CRAC** (Crown Reserve Acquisition Corp. I) Q2 2026 — pre-merger
+  blank-check SPAC; $176.5M in trust; pending all-stock merger with
+  Carvix (automotive services, ~$1.0B implied EV), signed March 2026,
+  twice amended, no S-4 filed yet; no revenue (trust dividends shown
+  separately, not as fake "revenue").
+- **CRAI** (CRA International) Q2 2026 — consulting firm; revenue +12.8%
+  to a record, margin improved to 11.2%; raised full-year guidance;
+  first-half operating cash flow deeply negative on $80.4M of new
+  forgivable staff loans; buybacks debt-funded (credit line now $219M).
+- **CRAQ** (Cal Redwood Acquisition Corp.) Q2 2026 — pre-merger
+  blank-check SPAC, no business combination announced yet; $239.8M in
+  trust; filed an NT 10-Q (minor admin delay) before the 10-Q itself.
+- **CRBP** (Corbus Pharmaceuticals) Q2 2026 — clinical-stage oncology/
+  obesity biotech; net loss widened to $35.0M (~$10M of it a one-time
+  CSPC milestone payment); cash $117.9M; heavy dilution (weighted shares
+  +59%); CANYON-1 obesity Phase 2 data and TEMPO-1 cancer trial FDA
+  clearance both post-quarter positives, but couldn't confirm TEMPO-1
+  enrollment has actually started.
+
+**14/40 report-periods tonight.** Tracker pushed (commit `dc3622b`).
