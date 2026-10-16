@@ -15159,3 +15159,12 @@ hot-list rewrites, cap reached by an earlier firing. Did not run
 `scan-recent-filings` or `next-batch`, dispatched no subagents,
 published nothing, did not touch `report-tracker.json`. Exiting
 immediately.
+
+**Next firing this same night (checked in at 22:03 UTC / 07:03 JST
+2026-10-17, near the end of the 16:00-22:59 UTC window):** network
+check passed first (403 without `User-Agent` on `sec.gov` as expected —
+SEC's own policy, not a proxy denial). Tonight's entry still stands at
+40/40 report-periods and 10/10 hot-list rewrites, cap reached earlier
+this window. Did not run `scan-recent-filings` or `next-batch`,
+dispatched no subagents, published nothing, did not touch
+`report-tracker.json`. Exiting immediately.
