@@ -32296,5 +32296,180 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-16"
+  },
+  "CRAN": {
+    "name": "Crane Harbor Acquisition Corp. II",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/cran/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q1/Q2 10-Qs filed 2026-05-12/2026-08-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Blank-check SPAC, no business combination announced yet. Merger deadline 2027-12-17."
+  },
+  "CRBU": {
+    "name": "Caribou Biosciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crbu/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "last year Q3 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Oct 2, 2026: board stopped both CAR-T programs, started strategic-alternatives review (Wedbush advising), most staff being laid off. Could merge/delist before next filing."
+  },
+  "CRCT": {
+    "name": "Cricut, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crct/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90-day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRDF": {
+    "name": "Cardiff Oncology, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crdf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "~90-day cadence; also watch 2026-10-22 special shareholder meeting (share-authorization increase)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRDL": {
+    "name": "Cardiol Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crdl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (interim results, IFRS/CAD)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim)",
+      "estimate": "2026-11-12",
+      "basis": "~90-day cadence from 2026-08-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Canadian MJDS filer (40-F annual + 6-K interim), reports in CAD under IFRS, not a 10-Q filer."
+  },
+  "CRDO": {
+    "name": "Credo Technology Group Holding Ltd",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/crdo/2026/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-02"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027)",
+      "estimate": "2026-12-02",
+      "basis": "last year matching 10-Q filed 2025-12-02",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
+  },
+  "CRESY": {
+    "name": "Cresud S.A.C.I.F. y A.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-16",
+      "url": "https://financialreportinsights.com/companies/cresy/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (FY2026 Art. 62 summary)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-08"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual report)",
+      "estimate": "2026-10-29",
+      "basis": "usual FPI 20-F deadline ~4 months after FYE 2026-06-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16",
+    "notes": "Foreign private issuer, Argentina (ARS, IAS 29 hyperinflation accounting). FYE June 30. Report sourced from the company IR site earnings release PDF + Spanish audited statements since the FY2026 20-F is not yet on EDGAR."
+  },
+  "CRE": {
+    "name": "Cre8 Enterprise Limited",
+    "status": "pending",
+    "skipReason": "No 2026-period financial filing yet: foreign private issuer (20-F/6-K), FYE Dec 31. Latest financials are the FY2025 20-F (filed 2026-04-24). The 2026-08-26 6-K was an H1 2026 operating update only (customer count), with no financial statements.",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-24"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim results)",
+      "estimate": "2026-12-01",
+      "basis": "H1 2025 interim results 6-K was filed 2025-12-01",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-16"
   }
 }
