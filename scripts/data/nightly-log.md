@@ -15482,3 +15482,42 @@ subagents dispatched.**
 CTNM). Running tonight total: 17 new report-periods + 1 edit (ACN) +
 9 hot-list rewrites. 17/40 of the nightly cap used.**
 
+**Tier 1 backlog batch 3: CTNT, CTRM, CTRN, CTW, CUE, CUPR, CURI.
+Skipped directly: CUB (Lionheart Holdings, SPAC blank-check).**
+
+- **CTNT** (Cheetah Net Supply Chain Service) Q2 2026 — new company.
+  Revenue +145.4% to $868,909 (new trading business, 2.2% gross
+  margin), swung to a $71,045 profit from a $512,528 loss — but the
+  profit came almost entirely from $994K of other income (mostly FX
+  gains), covering an $882K operating loss. 86% of its $82.5M in
+  assets is money owed by three counterparties (a $41.1M China-fund
+  wind-down receivable, $30.0M of unsecured loans). Raised ~$71M in H1
+  via placement + ATM; cash only $2.1M at quarter-end. Disclosure
+  controls rated ineffective. Published:
+  https://financialreportinsights.com/companies/ctnt/2026/q2.
+- **CTRM** (Castor Maritime) Q2 2026 — new company, dry-bulk shipper,
+  foreign private issuer. Revenue +42.5% to $25.57M; net income
+  attributable to Castor +250.9% to $18.48M, but a $23.1M fair-value
+  gain on its MPC Container Ships stake is booked inside GAAP operating
+  income (ex that, operating margin is ~6%, not the reported 96.1%).
+  Adjusted net income $11.6M vs $2.0M. Daily TCE rate $16,700 vs
+  $11,516 (+45%). Published: https://financialreportinsights.com/companies/ctrm/2026/q2.
+- **CTRN** (Citi Trends) fiscal Q2 2026 (13 weeks to Aug 1) — new
+  company, value retailer. Revenue +10.9% to $211.6M, comps +10.5%
+  (+19.7% over two years), but swung to a -$0.9M net loss from +$3.8M
+  because last year had an $11.0M building-sale gain (ex that,
+  operating margin -3.9% vs the reported -0.8%). Raised FY guidance
+  (comps 9-11% from 8-10%, adjusted EBITDA $38-42M from $35-40M); CFO
+  departure announced Sept 10. Published:
+  https://financialreportinsights.com/companies/ctrn/2026/q2.
+- **CTW** (G123.jp browser-game platform, Tokyo) fiscal 2026 ANNUAL
+  (FYE July 31) — new company, foreign private issuer, second-ever
+  20-F. Revenue -8.7% to $82.5M as average monthly users fell 33.2% to
+  2.26M; swung to a -$4.1M net loss from +$3.8M. FY2025's profit
+  included a one-off $4.7M crypto-investment recovery (post-Mt.Gox);
+  this year's narrower-looking loss is helped by a $1.7M mostly
+  non-cash tax benefit and an accounting change that moved $4.1M of
+  dev pay off the income statement. Cash $14.4M, boosted entirely by
+  now-spent IPO proceeds. Published:
+  https://financialreportinsights.com/companies/ctw/2026/annual.
+

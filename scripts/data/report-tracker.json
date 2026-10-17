@@ -33220,5 +33220,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CTRM": {
+    "name": "Castor Maritime Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/ctrm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2/H1 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-12-03",
+      "basis": "Q3 2025 results 6-K filed 2025-12-03",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CTW": {
+    "name": "CTW",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/ctw/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-10-16"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 FY2027 interim, six months to 2027-01-31)",
+      "estimate": "2027-05-13",
+      "basis": "H1 FY2026 6-K filed 2026-05-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CTRN": {
+    "name": "Citi Trends, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/ctrn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-01",
+      "filedAt": "2026-09-09"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 FY2026)",
+      "estimate": "2026-12-09",
+      "basis": "Q2 earnings 8-K landed 24 days after quarter end, 10-Q 2 weeks later",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CTNT": {
+    "name": "Cheetah Net Supply Chain Service Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/ctnt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "45-day smaller-reporting-company deadline",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
