@@ -15168,3 +15168,46 @@ SEC's own policy, not a proxy denial). Tonight's entry still stands at
 this window. Did not run `scan-recent-filings` or `next-batch`,
 dispatched no subagents, published nothing, did not touch
 `report-tracker.json`. Exiting immediately.
+
+### 2026-10-17 night (16:00 UTC 2026-10-17 → 22:59 UTC 2026-10-17 / 01:00–07:59 JST 2026-10-18)
+
+- Mechanism: network check passed first (403 without `User-Agent` on
+  `sec.gov` as expected — SEC's own policy, not a proxy denial; 200 with
+  the required header; financialreportinsights.com and the vercel.app
+  alias both 200). Local `master` was detached again on checkout (same
+  recurring container-checkout quirk) — moved to `origin/master`
+  (fa8a3bf) cleanly, no work lost. `npm install` ran; `prisma generate`
+  postinstall step failed for lack of `DATABASE_URL`, but
+  admin-publish/scan-recent-filings never touch Prisma so this is
+  cosmetic only.
+
+**Tier 0 (`npm run scan-recent-filings`): 4 candidates — ACN, TRV
+[update], CMC, ROLR [new]. Dispatched 4 opus subagents in parallel.**
+
+- **CMC** (Commercial Metals Company) — brand-new company, FY2026
+  ANNUAL (10-K, fiscal year ended 2026-08-31, filed 2026-10-16).
+  Revenue +20.5% to $9,393.9M, net income +674.7% to $655.8M
+  (EPS $5.86 vs $0.74) — mostly base effects: FY25 carried a $362.3M
+  litigation charge (Pacific Steel Group, still under appeal), and FY26
+  got a one-time $145.4M Section 48C tax credit (~$1.30/share; ex that,
+  adjusted EPS $5.52 vs $3.13, +76%). North America steel metal margin
+  $627/ton vs $509. The $2.52B Foley/CP&P precast acquisitions (funded
+  with $2.0B new notes) added $511.1M sales but nearly tripled interest
+  expense ($45.5M→$143.3M); Q4 precast came in below plan per the
+  earnings release. Operating cash flow $1.059B (1.6x net income).
+  Published: https://financialreportinsights.com/companies/cmc/2026/annual
+  — sanity-checked live (At a glance renders, not truncated).
+- **ROLR** (High Roller Technologies) — brand-new company, Q2 2026.
+  Judgment call: the only two amendments on EDGAR (both filed
+  2026-10-16) restate Q1 and six-month 2026 figures after an Item 4.02
+  non-reliance 8-K — a placement-agent warrant grant from the January
+  2026 raise was wrongly booked as G&A instead of reducing paid-in
+  capital. Non-cash, doesn't touch revenue/cash/assets/equity; Q2's own
+  three-month figures and adjusted EBITDA are unchanged. Reason was
+  clearly disclosed and reconciled, so published from the restated
+  filing rather than skipping: revenue -51.6% to $2.809M, net loss
+  widened to $2.370M ($0.22/share) vs a prior-year loss that included a
+  discontinued-ops gain. An additional internal-control material
+  weakness was also disclosed. Published:
+  https://financialreportinsights.com/companies/rolr/2026/q2 —
+  sanity-checked live.

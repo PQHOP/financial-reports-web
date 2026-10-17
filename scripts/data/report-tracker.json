@@ -32895,5 +32895,49 @@
     },
     "lastChecked": "2026-10-16",
     "notes": "Large/heavily-watched AI infrastructure company; debt load (5.6B), customer concentration (top 3 = 36%/26%/10% of revenue) and GAAP-vs-adjusted gap are all material. Guidance sourced from MarketBeat earnings-call writeup, not a filing (cited inline)."
+  },
+  "CMC": {
+    "name": "Commercial Metals Company",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/reports/cmvclkp6d000108iat84ud4w9"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, period ending 2026-11-30)",
+      "estimate": "2027-01-05",
+      "basis": "cadence from FY2026 filings; not yet confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "ROLR": {
+    "name": "High Roller Technologies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/reports/cmvclkk06000008ia2ovl7sbf"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q/A (restated six-month figures; non-cash warrant-expense reclass, not revenue/cash/assets)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 results reported 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
