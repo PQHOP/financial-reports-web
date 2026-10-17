@@ -33352,5 +33352,22 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CURR": {
+    "name": "Currenc Group Inc.",
+    "status": "pending",
+    "skipReason": "no 2026-period financials on EDGAR as of 2026-10-17; FPI, files only annual 20-F plus semiannual 6-K; H1 2026 not yet furnished; also under financial strain (bridge/related-party loans, court charging order on Tranglo stake)",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-29"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim results)",
+      "estimate": "2026-12-01",
+      "basis": "H1 2025 interim 6-K filed 2025-12-01",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
