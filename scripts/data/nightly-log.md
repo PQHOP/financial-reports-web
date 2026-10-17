@@ -15610,3 +15610,17 @@ CVGI, CUVL), 1 left pending (CURR, no 2026 filing yet). Running
 tonight total: 30 new report-periods + 1 edit (ACN) + 9 hot-list
 rewrites. 30/40 of the nightly cap used.**
 
+**Tier 1 backlog batch 5 (final batch tonight): CVKD, CVLT, CVRX, CVV,
+CWBC, CWCO.**
+
+- **CVKD** (Cadrenal Therapeutics) Q2 2026 — new company, pre-revenue
+  biotech. Net loss narrowed 9% to -$3.32M (R&D -35% as drug-batch
+  manufacturing/testing spend fell $0.7M; G&A roughly flat including
+  former-CFO severance). Loss/share improved more (-39%) mostly from
+  49% more shares outstanding, not the smaller loss. Cash $2.39M at
+  quarter-end (down from $4.01M); H1 operating cash burn $5.24M.
+  Management now says cash (incl. a post-quarter $3.0M placement)
+  lasts only through Q1 2027; going-concern warning. Company no
+  longer plans to run its own Phase 3 trials, now seeking partners.
+  Published: https://financialreportinsights.com/companies/cvkd/2026/q2.
+
