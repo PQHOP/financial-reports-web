@@ -33197,5 +33197,11 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CUB": {
+    "name": "Lionheart Holdings",
+    "status": "skipped",
+    "skipReason": "SPAC (SIC: blank checks), pre-merger shell with no operating financials",
+    "lastChecked": "2026-10-17"
   }
 }
