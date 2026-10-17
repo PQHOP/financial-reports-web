@@ -15,6 +15,20 @@ date and commit.
   — keep doing content-depth work, and propose when it's ready, with
   evidence, rather than re-asking daily. No Crawl stats screenshot this
   week yet.
+- **GA4 traffic is mostly bots — measure people, not sessions (since
+  2026-10-18).** 28 days to 10-16: 248 sessions, **26 engaged**; last 7
+  days Germany 100 sessions / 1 engaged / 5 s average, China 27 / 0,
+  Singapore 16 / 0, versus United States 24 / 6 / 51 s. `site-metrics`
+  now carries `engagedSessions` on every GA4 breakdown; report
+  engaged sessions (and Organic Search sessions) against the 10,000
+  goal, never raw users. If the Germany/China direct traffic keeps
+  growing, it is a candidate for a Vercel Firewall challenge rule by
+  ASN (user's call; find the ASN in the Vercel Firewall traffic view —
+  not in the API this routine has).
+- **Monday 2026-10-19 (JST) is the weekly deeper review** (CLAUDE.md
+  step 6): read a sample of reports as a skeptical reader, compare with
+  2-3 ranking sites, rank 3-5 directions. Last one would have been
+  2026-10-12; none was written, so do it.
 - **Credential for ops publishing:** waiting on Hop to add `ADMIN_PASSWORD`
   and `SITE_URL` as environment variables of cloud environment
   `env_01BS8ej9WZxyj4AZyF5TrTyC` (shared with the nightly routine). Once
@@ -121,6 +135,22 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-18 — `/earnings` slimmed from 1.49 MB to 0.89 MB** (`79ae24a`,
+  `784edbe`; prod `dpl_A2dxTg8A2w9QVWm7RKJohsFrs7ci`). In earnings season
+  the calendar rendered ~950 companies as full cards (28-day window, 605 KB
+  markup + 880 KB RSC payload), 96% with a cadence-estimated date. Now
+  hot-list, S&P 500 and company-confirmed dates keep the card with last
+  quarter's headline (446 today); the other ~520 share one compact line
+  of ticker links per day (company name in `title`), so every company
+  page stays linked. Still ISR (`revalidate = 3600`), no new reads.
+  Verified live: 200, HIT, no "smaller company" wording (first version
+  called ASML that — fixed in the second commit), health 8/8.
+- **2026-10-18 — GA4 engaged sessions in `site-metrics`** (same commit):
+  `engagedSessions` on daily / 28-day / channel / country rows and
+  `averageSessionDuration` per country. First reading: see the Next
+  item above — the week's "growth" to 46 users/day is a bot wave.
+
 
 - **2026-10-17 — `site-metrics` now checks rendered figures** (`figures`
   section, `scripts/ops/site-metrics.ts`, no site code). Four fixed sample
