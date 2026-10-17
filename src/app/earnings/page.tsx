@@ -166,8 +166,8 @@ export default async function EarningsCalendarPage() {
             {others.length > 0 && (
               <p className="text-sm leading-relaxed text-zinc-600">
                 <span className="text-zinc-500">
-                  Also expected around this date (estimated from each company&apos;s past filings,{" "}
-                  {others.length} smaller {others.length === 1 ? "company" : "companies"}):
+                  Also expected around this date ({others.length} more, dates estimated from each
+                  company&apos;s past filings):
                 </span>{" "}
                 {others.map((item, i) => {
                   const company = byTicker.get(item.ticker)!;
