@@ -15548,3 +15548,19 @@ CUE, CURI), 1 left pending (CUPR, no filing yet). Running tonight
 total: 23 new report-periods + 1 edit (ACN) + 9 hot-list rewrites.
 23/40 of the nightly cap used.**
 
+**Tier 1 backlog batch 4: CURR, CURX, CUVL, CV, CVBF, CVCO, CVGI.**
+
+- **CURR** (Currenc Group) — checked, no 2026-period filing exists yet
+  (FPI, FY2025 20-F is latest; no H1 2026 interim 6-K found across
+  every 6-K since April). Also flagged as financially strained (bridge/
+  related-party loans, a court charging order on its Tranglo stake).
+  Left `pending`, next check ~2026-12-01.
+- **CURX** (Curanex Pharmaceuticals) Q2 2026 — new company, pre-revenue
+  biotech. Net loss $3.29M (Q1 2026 was $3.15M); cash fell to $2.94M
+  from $4.97M at year-start, but H1 cash burn was only $2.03M against
+  a $6.44M net loss because $4.35M of R&D was prepaid in 2025. Going-
+  concern warning, no committed financing. Did a 1-for-20 reverse split
+  Aug 20; Nasdaq confirmed the $1 bid-price issue resolved Sept 3. FDA
+  pre-IND meeting planned for October 2026. Published:
+  https://financialreportinsights.com/companies/curx/2026/q2.
+
