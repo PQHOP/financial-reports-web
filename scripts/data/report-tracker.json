@@ -32939,5 +32939,17 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CSQ": {
+    "name": "Calamos Strategic Total Return Fund",
+    "status": "skipped",
+    "skipReason": "closed-end fund, not an operating company",
+    "lastChecked": "2026-10-17"
+  },
+  "CTAA": {
+    "name": "ClearThink 1 Acquisition Corp.",
+    "status": "skipped",
+    "skipReason": "SPAC, pre-merger shell with no operating financials",
+    "lastChecked": "2026-10-17"
   }
 }
