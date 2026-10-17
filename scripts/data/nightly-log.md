@@ -15623,4 +15623,38 @@ CWBC, CWCO.**
   lasts only through Q1 2027; going-concern warning. Company no
   longer plans to run its own Phase 3 trials, now seeking partners.
   Published: https://financialreportinsights.com/companies/cvkd/2026/q2.
+- **CVV** (CVD Equipment) Q2 2026 — new company. Revenue -42.6% to
+  $1.953M; operating loss widened to -$1.559M, but GAAP net income was
+  +$12.565M because of a $13.9M after-tax gain on selling the SDC
+  division (closed Apr 1 for $17.4M). Continuing-ops net loss -$1.372M
+  vs -$1.292M a year ago. Backlog fell to $3.9M from $4.6M. Cash
+  $23.5M, no debt. After quarter-end, the customer behind a $0.8M
+  order filed Chapter 11. Published: https://financialreportinsights.com/companies/cvv/2026/q2.
+- **CVRX** (CVRx) Q2 2026 — new company, medical device. Revenue
+  +15.6% to $15.705M (US implants +21% to 466 units, Europe -31%);
+  net loss narrowed to -$14.044M from -$14.7M. Cut FY2026 revenue
+  guidance to $58-60M from $63-67M and opex guidance down too, citing
+  fewer sales territories than planned, lower rep productivity, and a
+  long-running issue with one large insurer. Corrected an overstated
+  "best quarter on record" claim via `--edit` (Q4 2025 revenue was
+  actually higher). Published: https://financialreportinsights.com/companies/cvrx/2026/q2.
+- **CVLT** (Commvault Systems) FY2026 ANNUAL (fiscal year ended March
+  31, 2026) — new company. Revenue +18.9% to $1,183.7M (SaaS revenue
+  +52% to $333.0M, total ARR +21% to $1,121.6M), but net income -7.2%
+  to $70.7M and EPS -6.0% to $1.58 — operating income was flat as
+  restructuring charges tripled to $32.2M and S&M spend rose $85.6M,
+  while the effective tax rate jumped from ~6% to ~23%. Receivables
+  +31% vs revenue +19%. $446M of buybacks cut stockholders' equity to
+  $7.5M. The newer Q1 FY2027 10-Q (filed 2026-07-29) was not written up
+  as it belongs to fiscal 2027. Published:
+  https://financialreportinsights.com/companies/cvlt/2026/annual.
+- **CWCO** (Consolidated Water) Q2 2026 — new company, Caribbean/US
+  desalination utility. Revenue -2.1% to $32.87M; net income -22.8% to
+  $3.93M mostly on expired O&M contracts at its US services business
+  and Aerex manufacturing revenue -48.6% (partly offset by bulk-water
+  revenue +20% from an energy pass-through and new Cat Island plants).
+  A new 25-year Cayman license (effective Aug 1) is estimated to have
+  cut 2025 revenue/operating income by ~$1.9M had it applied, and H1
+  2026 by ~$1.1M. $18.8M Bahamas receivable, 64% overdue. Published:
+  https://financialreportinsights.com/companies/cwco/2026/q2.
 
