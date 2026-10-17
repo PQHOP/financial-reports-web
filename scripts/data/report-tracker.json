@@ -33203,5 +33203,22 @@
     "status": "skipped",
     "skipReason": "SPAC (SIC: blank checks), pre-merger shell with no operating financials",
     "lastChecked": "2026-10-17"
+  },
+  "CUPR": {
+    "name": "Cuprina Holdings (Cayman) Limited",
+    "status": "pending",
+    "skipReason": "no 2026-period filing on EDGAR as of 2026-10-17; latest financials are FY2025 20-F (filed 2026-04-21); Sept 2026 prospectus has no H1 2026 interim",
+    "lastFilingSeen": {
+      "type": "20-F",
+      "periodEnd": "2025-12-31",
+      "filedAt": "2026-04-21"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (H1 2026 interim results)",
+      "estimate": "2026-12-31",
+      "basis": "Nasdaq FPI semiannual interim reporting due within 6 months of June 30 half-year end; no H1 6-K seen yet",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
