@@ -15468,4 +15468,17 @@ subagents dispatched.**
   benefit). A jury awarded Beckman Coulter $56M in a patent case after
   quarter-end (Aug 21); cash $262.0M. FY2026 revenue guidance edged up
   to $207-212M. Published: https://financialreportinsights.com/companies/ctkb/2026/q2.
+- **CTNM** (Contineum Therapeutics, clinical-stage biotech) Q2 2026 —
+  new company, pre-revenue. Net loss narrowed 5.5% to -$15.154M as R&D
+  fell 9.7% (finished trials stopped costing money) while G&A rose
+  23.1% on stock-based pay; loss/share -$0.40 vs -$0.62, mostly from
+  ~45% more shares outstanding. Cash+investments $236.6M vs $175.5M a
+  year ago; runway guidance extended to mid-2029 from "through 2027".
+  Noted for next quarter: J&J's MOONLIGHT-1 Phase 2 trial of PIPE-307
+  missed its primary endpoint (announced Sept 14, after this quarter).
+  Published: https://financialreportinsights.com/companies/ctnm/2026/q2.
+
+**Tier 1 backlog batch 2 total: 5/5 published (CSWC, CTBI, CTKB, CTMX,
+CTNM). Running tonight total: 17 new report-periods + 1 edit (ACN) +
+9 hot-list rewrites. 17/40 of the nightly cap used.**
 
