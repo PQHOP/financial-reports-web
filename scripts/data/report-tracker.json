@@ -24260,26 +24260,25 @@
   },
   "BAOS": {
     "name": "Baosheng Media Group Holdings Limited",
-    "status": "pending",
+    "status": "done",
     "latestReport": {
-      "year": 2025,
-      "period": "ANNUAL",
-      "publishedAt": "2026-10-06",
-      "url": "https://financialreportinsights.com/companies/baos/2025/annual"
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/baos/2026/h1"
     },
     "lastFilingSeen": {
-      "type": "20-F",
-      "periodEnd": "2025-12-31",
-      "filedAt": "2026-04-30",
-      "note": "foreign private issuer (China ad-tech/media), files 20-F annual + half-year 6-K interim (no quarterlies). FY2025 report published (counts for tier-2 backfill) but does NOT satisfy 2026 coverage — no 2026 period exists yet. 2026 6-Ks so far are all press releases/transaction notices (Nasdaq bid-price notice, receivables sale, AI MOUs), none with interim financials. Going-concern warning in the FY2025 statements; equity fell 78% to $3.3M"
+      "type": "6-K (H1 2026 interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-16"
     },
     "nextExpectedFiling": {
-      "type": "6-K (H1 2026 interim financial statements)",
-      "estimate": "2026-11-27",
-      "basis": "H1 2025 interim 6-K filed 2025-11-28; same timing assumed; rechecked 2026-10-13, nothing new (only F-3/424B5/S-8/Form3 since May)",
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-30",
+      "basis": "FY2025 20-F filed 2026-04-30; files only 20-F annuals plus one H1 interim 6-K, no quarterlies",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-13",
+    "lastChecked": "2026-10-17",
     "reports": [
       {
         "year": 2025,
@@ -25677,21 +25676,26 @@
     ]
   },
   "BLIV": {
-    "name": "BeLive Holdings - ordinary shares",
-    "status": "pending",
-    "skipReason": "no 2026 filing on EDGAR yet; foreign private issuer (Cayman Islands, Singapore HQ, 20-F/6-K filer, IPO April 2025, not a SPAC); latest results are the FY2025 20-F filed 2026-05-15. Only filing since is a 2026-07-20 6-K on a CEO/Chairman resignation (image-only exhibit, no financials).",
+    "name": "BeLive Holdings",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/bliv/2026/h1"
+    },
     "lastFilingSeen": {
-      "type": "20-F",
-      "periodEnd": "2025-12-31",
-      "filedAt": "2026-05-15"
+      "type": "6-K",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-14"
     },
     "nextExpectedFiling": {
-      "type": "6-K (H1 2026 interim financial statements)",
-      "estimate": "2026-10-31",
-      "basis": "original 10-20 estimate slipped; only two filings since May (FY2025 20-F, and a 2026-07-20 resignation 6-K with no financials) as of 2026-10-13",
+      "type": "20-F (FY2026)",
+      "estimate": "2027-05-15",
+      "basis": "FY2025 20-F filed 2026-05-15; files interims as 6-K",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-13"
+    "lastChecked": "2026-10-17"
   },
   "BLKB": {
     "name": "Blackbaud, Inc.",

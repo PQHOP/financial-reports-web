@@ -15338,5 +15338,41 @@ rewrite allotment used (one needed no rewrite).**
 A note for a later firing: the MS and GS rewrite subagents both flagged
 that Q3 2026 big-bank earnings (reported ~Oct 14-15) may already be out
 and not yet caught by `scan-recent-filings` — worth a rescan before
-moving further into the tier-1 backlog.
+moving further into the tier-1 backlog. A rescan right after was 0
+candidates, so this wasn't borne out this time; still worth keeping an
+eye on, since `scan-recent-filings` only covers 10-K/10-Q/S&P500
+earnings-8-Ks, not every path a bank's Q3 release could take.
+
+**Manually found two long-pending FPI backlog entries finally have real
+2026 filings** (`scan-recent-filings` only covers 10-K/10-Q/S&P500
+8-Ks, so it never sees foreign-issuer 6-Ks — checked the 8 pending FPI
+tickers' EDGAR pages directly instead; BRAI/CCHH/CHNR/CDTG/BTCT/CLWT
+still have nothing new, `lastChecked` bumped to tonight):
+- **BAOS** (Baosheng Media Group) — first 2026-period filing ever (a
+  6-K filed 2026-10-16 with H1 2026 unaudited financials, after months
+  of only press-release 6-Ks). Revenue fell 77.8% to $62,701; net loss
+  widened to $19.22M from $4.18M, driven mostly by a $14.68M non-cash
+  share payment to consultants valued well above the price of a private
+  placement ten days earlier. $12.4M of the $12.5M raised in that
+  placement was then lent to an unnamed third party for 6 months at 6%
+  — about 70% of total assets, due back ~late December. Going-concern
+  language persists; extreme customer/publisher concentration (one
+  publisher = 92% of purchases). Published:
+  https://financialreportinsights.com/companies/baos/2026/h1.
+- **BLIV** (BeLive Holdings) — brand-new company, first report. H1 2026
+  (SGD, IFRS): revenue +88.4% to S$659,389; net loss narrowed 72.8% to
+  S$1.42M mainly because last year's H1 carried a S$2.79M IPO-related
+  share payment that didn't recur. Flagged a filing inconsistency: the
+  6-K's own summary table states loss/share as S$(0.26) but the
+  financial statements and XBRL both say S$(0.13) — used the latter and
+  noted the discrepancy in the report. Also: a going-concern warning,
+  99.5% of receivables past due, and the CFO stepping in as interim
+  CEO/Chairman from Oct 4. Published:
+  https://financialreportinsights.com/companies/bliv/2026/h1.
+
+**Tier 1 backlog (us-listed, S&P-500-first ordering already
+exhausted): next 6 untouched tickers after the FPI cluster — CSAI,
+CSHR, CSIQ, CSPI, CSTE, CSTL. Skipped directly without a subagent:
+CSQ (closed-end fund), CTAA (SPAC shell). Dispatched 6 opus subagents
+in parallel for the research candidates.**
 
