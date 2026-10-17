@@ -997,17 +997,17 @@
     ],
     "allAvailable2026QuartersCovered": true,
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, FY2026 Q4/full-year earnings release)",
+      "type": "10-K",
       "periodEnd": "2026-08-31",
-      "filedAt": "2026-10-01"
+      "filedAt": "2026-10-16"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026 Annual, full filing)",
-      "estimate": "2026-10-09",
-      "basis": "fiscal year ends Aug 31; prior three 10-Ks filed 2025-10-10, 2024-10-10 and 2023-10-12; FY2026 earnings already released via 8-K on 2026-10-01, full 10-K still to follow. After that, next NEW period is Q1 FY2027 (quarter ending 2026-11-30), earnings expected mid/late December 2026",
+      "type": "8-K/10-Q (Q1 FY2027, period ending 2026-11-30)",
+      "estimate": "2026-12-18",
+      "basis": "Q1 FY2026 10-Q filed 2025-12-18; annual cadence",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-03"
+    "lastChecked": "2026-10-17"
   },
   "ADBE": {
     "name": "Adobe Inc.",
@@ -15556,22 +15556,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmukako2c000204leceq0wdbb"
+      "period": "Q3",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/reports/cmvclmavj000008jn6eqoo4x8"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-17"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-16"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K + 10-Q (Q3 2026)",
-      "estimate": "2026-10-16",
-      "basis": "Travelers press release scheduling Q3 2026 results call for 2026-10-16",
-      "confidence": "confirmed"
+      "type": "10-K (FY2026 Annual) / earnings 8-K",
+      "estimate": "2027-01-20",
+      "basis": "Travelers typically releases full-year results via 8-K in mid-to-late January, cadence-based",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-17"
   },
   "TRMB": {
     "name": "Trimble Inc.",

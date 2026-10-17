@@ -15211,3 +15211,132 @@ dispatched no subagents, published nothing, did not touch
   weakness was also disclosed. Published:
   https://financialreportinsights.com/companies/rolr/2026/q2 —
   sanity-checked live.
+- **TRV** (Travelers Companies) Q3 2026 — new quarter after the
+  published Q2. Revenue roughly flat (−0.5%), net income +1.5% but EPS
+  +9.7% almost entirely on buybacks (diluted shares −7.4%). Reserve
+  releases ($234M) and higher catastrophe losses ($538M, wind/hail not
+  hurricanes) roughly offset; underlying combined ratio ticked up 0.2pt
+  to 84.1%. Book value per share fell to $141.48 from $158.81 at Q2 on
+  larger after-tax unrealized bond losses ($6.35B vs $1.96B) as rates
+  rose. $1.50B bought back this quarter. Published:
+  https://financialreportinsights.com/companies/trv/2026/q3 —
+  sanity-checked live.
+- **ACN** (Accenture) — materiality check on the full FY2026 10-K
+  (filed 2026-10-16) against the already-published ANNUAL report
+  (written from the 10-01 earnings 8-K). Judged material: edited in
+  place (same report id, no duplicate) to add non-payroll cost growth
+  (+12.3% vs +4.7% payroll growth), new MD&A language on softer Q4
+  pricing, the Asia Pacific margin driver, headcount/utilization/
+  attrition detail, the federal (AFS) revenue decline and open DOJ
+  subpoena, and a bookings-by-type split. Metrics unchanged (already
+  accurate from the 8-K). Live:
+  https://financialreportinsights.com/companies/acn/2026/annual —
+  sanity-checked.
+
+**Hot-list rewrite queue (90 pending at start of tonight). Skip filter
+applied first** (an item whose `nextExpectedFiling.estimate` falls
+within the next 10 days, i.e. on/before 2026-10-27, is left for tier 0
+to catch naturally): skipped TSLA, NFLX, PG, WFC, IBM, NOW, GE, AXP, T,
+INTC, MU, PYPL, BA for being due within that window. **10 picked in file
+order: INTU, DIS, CAT, GS, MS, VZ, UBER, PLTR, COIN, NKE.** Dispatched 10
+opus subagents in parallel.
+
+- **INTU** (Intuit) FY2026 ANNUAL rewrite — added FY2026's near-zero US
+  federal cash tax (OBBBA R&D expensing effect: without it, operating
+  cash flow growth would read ~24% instead of the reported ~42%),
+  doubled small-business loan charge-offs ($88M→$185M) against growing
+  originations, the TurboTax Live cost allocation (sits in unallocated
+  corporate costs, not in the 73% Consumer segment margin), and a full
+  EPS bridge (restructuring charge, investment-gain swing, stock-comp
+  tax swing, lower share count). Corrected a misreading of FY2027
+  non-GAAP EPS guidance (reads as +23-24% growth off a restated base,
+  not a decline, as the old version had said). Live:
+  https://financialreportinsights.com/companies/intu/2026/annual.
+- **NKE** — checked, not rewritten. The live report (published 2026-10-
+  03/04) is already in the current format (At a glance, quality-check
+  section, Did-last-time's-read-hold-up, Takeaway) and every spot-
+  checked figure matched the 10-K. The rewrite-queue entry predated
+  this report's own publish and was stale. Marked `superseded` in
+  `hotlist-rewrite.json` rather than forced into a no-op rewrite.
+- **CAT** (Caterpillar) Q2 2026 rewrite — corrected an unsupported
+  $1.5B buyback figure in the old version (10-Q actually shows $1.2B
+  of Q2 repurchases, $6.522B YTD) and clarified that the $392M tariff
+  refund mostly landed in corporate items, not the segments, so segment
+  margin gains are largely operational (ex-refund operating margin
+  ~19.0%, adjusted EPS ~$7.52, still +59%). New: other income/affiliate
+  profit explain part of the pre-tax profit rise; cash flow only
+  matched profit because customer deposits rose $2.576B (ex that,
+  ~0.6x profit, with receivables +21%/inventories +14% YTD); guidance
+  raised from "low double digits" to "mid-to-high teens" sales growth.
+  Live: https://financialreportinsights.com/companies/cat/2026/q2.
+- **GS** (Goldman Sachs) Q2 2026 rewrite — dropped `operatingMarginPct`
+  (was really pre-tax margin) and deliberately kept the general metrics
+  layout rather than bank fields (GS reports no NIM, so netInterestIncome
+  would mislead); added efficiencyRatioPct/cet1RatioPct/rotcePct. New:
+  a smaller credit provision (~6pts) and lower tax rate (~5pts) explain
+  roughly 11 of the 78% profit growth, buybacks (~8pts) explain more of
+  the 92% EPS growth; of $230B client inflows, $139B went to low-fee
+  liquidity products and the figure includes a $31B acquisition/$15B
+  sale, not organic. Dropped an unsupported "24 months" Apple Card claim.
+  Live: https://financialreportinsights.com/companies/gs/2026/q2.
+- **MS** (Morgan Stanley) Q2 2026 rewrite — kept the general layout
+  (no NIM reported); added efficiencyRatioPct/cet1RatioPct/rotcePct.
+  New: a DCP accounting change makes reported revenue growth (27%)
+  read lower than the adjusted-base growth (30%), with no profit effect;
+  Institutional Securities drove 78% of the profit increase; CET1 is
+  ~$18B above the required minimum; a $20B buyback reauthorization
+  starts Q3. Flagged by the subagent: MS Q3 2026 results appear to
+  already be out (referenced in the 10-15 market brief) — worth a
+  rescan. Live: https://financialreportinsights.com/companies/ms/2026/q2.
+- **VZ** (Verizon) Q2 2026 rewrite — all old figures checked out; added
+  that the BT impairment write-down isn't tax-deductible (after-tax cost
+  $775M vs $746M pre-tax), $152M of debt-repurchase gains sit inside
+  adjusted EPS, and a $3.1B AWS-3 spectrum payment falls in Q3 (so Q3
+  free cash flow won't carry it — the old version missed this); leverage
+  rose to 2.5x from 2.2x; guidance raised on EPS, service revenue and
+  free-cash-flow growth. Live: https://financialreportinsights.com/companies/vz/2026/q2.
+- **DIS** (Walt Disney) Q3 FY2026 rewrite — corrected a $1.56/share
+  (not $1.55) prior-year Hulu-item figure; added that ~4pts of
+  Experiences' 20% profit growth was a one-time tariff refund (~16% ex
+  that), Sports operating income fell more than guided (-17% vs ~-14%
+  guided), and a cash-flow/buyback/receivables stress-test section
+  (9-month cash flow -8% on deferred-tax timing; receivables +10% vs
+  +6% revenue). Flags a Q1 FY2027 segment-reporting change (Consumer
+  Products moving out of Experiences). Live:
+  https://financialreportinsights.com/companies/dis/2026/q3.
+- **COIN** (Coinbase) Q2 2026 rewrite — corrected the old report's
+  underlying-operating-loss figure (it used a $5.9M data-theft-recovery
+  number; the 10-Q's own reconciliation shows $33.9M, moving the
+  underlying loss from ~-$55M to ~-$95M); added Coinbase's own
+  crypto-holdings mark ($1.47M fair value vs $1.82B cost, $734M
+  sensitivity to a 50% price move) and that Coinbase no longer reports
+  trading volume (so take rate can't be calculated anymore). Live:
+  https://financialreportinsights.com/companies/coin/2026/q2.
+- **PLTR** (Palantir) Q2 2026 rewrite — all old figures checked out;
+  split revenue government vs commercial ($990.0M/+79% vs $945.4M/
+  +110%); added that interest/other income (incl. a $92M gain on
+  Palantir's own investments) was ~16% of pre-tax profit (down from
+  ~19%), buybacks were negligible so EPS growth wasn't buyback-driven,
+  receivables +43% since December, and a guidance-then-vs-now table
+  (Q2 beat its own prior forecast by $134M; FY guidance raised ~$498M
+  at the midpoint). Live: https://financialreportinsights.com/companies/pltr/2026/q2.
+- **UBER** (Uber) Q2 2026 rewrite — all old figures checked out; added
+  that a UK accounting change (driver pay now nets against revenue
+  instead of booked as a cost) takes ~8pts off reported revenue growth;
+  a $1.6B pre-tax gain on equity stakes (Delivery Hero/Aurora/Didi)
+  reverses Q1's $1.5B loss so H1 net income is still down YoY; tax rate
+  rose 9%→26%; adjusted EBITDA sits $929M above GAAP operating income
+  (~$549M of it stock-based pay). Live: https://financialreportinsights.com/companies/uber/2026/q2.
+
+**Batch total so far tonight: 3 new report-periods published (TRV,
+CMC, ROLR) + 1 fresh-filing edit (ACN, materiality-checked) + 9
+hot-list rewrites done (INTU, CAT, GS, MS, VZ, DIS, COIN, PLTR, UBER)
++ 1 rewrite-queue item corrected to `superseded` with no change needed
+(NKE, already current format). Tier 0 fully cleared. 9/10 of tonight's
+rewrite allotment used (one needed no rewrite).**
+
+A note for a later firing: the MS and GS rewrite subagents both flagged
+that Q3 2026 big-bank earnings (reported ~Oct 14-15) may already be out
+and not yet caught by `scan-recent-filings` — worth a rescan before
+moving further into the tier-1 backlog.
+
