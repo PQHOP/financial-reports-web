@@ -15520,4 +15520,31 @@ Skipped directly: CUB (Lionheart Holdings, SPAC blank-check).**
   dev pay off the income statement. Cash $14.4M, boosted entirely by
   now-spent IPO proceeds. Published:
   https://financialreportinsights.com/companies/ctw/2026/annual.
+- **CUE** (Cue Biopharma) Q2 2026 — new company, clinical-stage biotech.
+  Collaboration revenue +166.7% to $7.877M; net loss widened to
+  -$153.067M from -$8.482M, but most of it is one-time: a $90.0M
+  non-cash warrant-issuance loss, $35.1M of CUE-221 license cost
+  ($15M cash + $20.1M warrants/share obligations), and ~$42M tied to
+  executive stock awards. H1 operating cash burn $39.9M (~$28M of it
+  one-time, tied to the Ascendant deal). A $49.8M private placement
+  closed in July; cash now guided to cover at least 12 months from the
+  filing date. Published: https://financialreportinsights.com/companies/cue/2026/q2.
+- **CUPR** (Cuprina Holdings) — checked, no 2026-period filing exists
+  yet (latest is a FY2025 20-F; a Sept 2026 offering prospectus still
+  carries only FY2025 figures). Left `pending`, next check ~2026-12-31
+  when an H1 2026 6-K would be due.
+- **CURI** (CuriosityStream) Q2 2026 — new company. Revenue +22.3% to
+  $23.245M, net income +1032.9% to $8.882M — but $8.5M of revenue is a
+  non-cash licence from the Curiosity Brands sale (paid in instalments
+  from 2027) and $5.3M is content-for-content barter; cash licensing to
+  outside buyers was only ~$0.3M vs ~$7.6M a year ago. Operating cash
+  flow -$3.0M for H1; cash fell from $27.3M to $10.9M partly on $9.9M
+  of dividends paid. FY adjusted EBITDA guidance raised only $2M to
+  $18-22M, implying a lower second-half run rate than May's guidance
+  implied. Published: https://financialreportinsights.com/companies/curi/2026/q2.
+
+**Tier 1 backlog batch 3 total: 6/7 published (CTNT, CTRM, CTRN, CTW,
+CUE, CURI), 1 left pending (CUPR, no filing yet). Running tonight
+total: 23 new report-periods + 1 edit (ACN) + 9 hot-list rewrites.
+23/40 of the nightly cap used.**
 

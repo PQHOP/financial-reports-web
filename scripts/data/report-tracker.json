@@ -33308,5 +33308,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CUE": {
+    "name": "Cue Biopharma, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cue/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CURI": {
+    "name": "CuriosityStream Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/curi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-13/14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
