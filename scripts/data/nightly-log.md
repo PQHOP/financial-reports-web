@@ -15657,4 +15657,28 @@ CWBC, CWCO.**
   cut 2025 revenue/operating income by ~$1.9M had it applied, and H1
   2026 by ~$1.1M. $18.8M Bahamas receivable, 64% overdue. Published:
   https://financialreportinsights.com/companies/cwco/2026/q2.
+- **CWBC** (Community West Bancshares) Q2 2026 — new company, bank.
+  First full quarter after the United Security Bancshares merger
+  closed Apr 1. Revenue +37.2% to $48.942M, NII +52.9% to $50.912M,
+  NIM 4.56% — but net income fell 65.6% to $2.695M (EPS -75.6% to
+  $0.10) on $7.7M of merger costs, a $5.9M securities-repositioning
+  loss and a $5.6M credit-loss provision; the company's own
+  "comparable" EPS excluding those was $0.45 vs $0.41 a year ago.
+  CET1 11.41%, net charge-off ratio 0.63%. Published:
+  https://financialreportinsights.com/companies/cwbc/2026/q2.
+
+**Tier 1 backlog batch 5 total: 6/6 published (CVKD, CVV, CVRX, CVLT,
+CWCO, CWBC). Running tonight total: 36 new report-periods + 1 edit
+(ACN) + 9 hot-list rewrites. 36/40 of the nightly cap used — stopping
+tier-1 work for tonight, leaving a small buffer for any tier-0
+overflow on a later firing this window.**
+
+A future firing should run `npm run scan-recent-filings` first per
+usual, then continue the tier 1 backlog with `npm run next-batch`
+from where this session left off: the ticker right after CWBC in
+`us-listed.json` file order is next (the 8 pending FPIs BRAI/BTCT/
+CCHH/CDTG/CHNR/CLWT plus CRE/CUPR/CURR, all re-confirmed untouched
+tonight with no estimate due yet, will keep surfacing first in
+`next-batch` output — skip past them unless their
+`nextExpectedFiling` has passed).
 

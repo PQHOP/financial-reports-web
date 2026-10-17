@@ -33611,5 +33611,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CWBC": {
+    "name": "Community West Bancshares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cwbc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-22",
+      "basis": "Q2 earnings 8-K landed 2026-07-23",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
