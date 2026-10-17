@@ -162,16 +162,26 @@ async function analytics() {
     google(`https://analyticsdata.googleapis.com/v1beta/properties/${GA4_PROPERTY}:runReport`, body);
   const rows = (r: { rows?: { dimensionValues?: { value: string }[]; metricValues: { value: string }[] }[] }) =>
     (r.rows ?? []).map((x) => [...(x.dimensionValues ?? []).map((d) => d.value), ...x.metricValues.map((m) => Number(m.value))]);
-  const metrics = [{ name: "activeUsers" }, { name: "sessions" }, { name: "screenPageViews" }];
+  // `engagedSessions` (GA4: >10 s, a conversion, or 2+ views) is the cheap
+  // bot filter: a headless crawler that runs the GA tag counts as a user and
+  // a session but almost never as an engaged one. The 10,000-visits goal is
+  // about people, so every breakdown carries both.
+  const metrics = [{ name: "activeUsers" }, { name: "sessions" }, { name: "screenPageViews" }, { name: "engagedSessions" }];
   const [daily, last28, pages, channels, countries] = await Promise.all([
     run({ dateRanges: [{ startDate: "14daysAgo", endDate: "yesterday" }], dimensions: [{ name: "date" }], metrics, orderBys: [{ dimension: { dimensionName: "date" } }] }),
     run({ dateRanges: [{ startDate: "28daysAgo", endDate: "yesterday" }], metrics }),
     run({ dateRanges: [{ startDate: "7daysAgo", endDate: "yesterday" }], dimensions: [{ name: "pagePath" }], metrics: [{ name: "screenPageViews" }, { name: "averageSessionDuration" }], limit: 25, orderBys: [{ metric: { metricName: "screenPageViews" }, desc: true }] }),
-    run({ dateRanges: [{ startDate: "7daysAgo", endDate: "yesterday" }], dimensions: [{ name: "sessionDefaultChannelGroup" }], metrics: [{ name: "sessions" }] }),
-    run({ dateRanges: [{ startDate: "7daysAgo", endDate: "yesterday" }], dimensions: [{ name: "country" }], metrics: [{ name: "activeUsers" }], limit: 10, orderBys: [{ metric: { metricName: "activeUsers" }, desc: true }] }),
+    run({ dateRanges: [{ startDate: "7daysAgo", endDate: "yesterday" }], dimensions: [{ name: "sessionDefaultChannelGroup" }], metrics: [{ name: "sessions" }, { name: "engagedSessions" }] }),
+    run({ dateRanges: [{ startDate: "7daysAgo", endDate: "yesterday" }], dimensions: [{ name: "country" }], metrics: [{ name: "activeUsers" }, { name: "sessions" }, { name: "engagedSessions" }, { name: "averageSessionDuration" }], limit: 10, orderBys: [{ metric: { metricName: "activeUsers" }, desc: true }] }),
   ]);
   return {
-    columns: { daily: ["date", "activeUsers", "sessions", "pageViews"], pages: ["path", "pageViews", "avgSessionSec"] },
+    columns: {
+      daily: ["date", "activeUsers", "sessions", "pageViews", "engagedSessions"],
+      last28: ["activeUsers", "sessions", "pageViews", "engagedSessions"],
+      pages: ["path", "pageViews", "avgSessionSec"],
+      channels: ["channel", "sessions", "engagedSessions"],
+      countries: ["country", "activeUsers", "sessions", "engagedSessions", "avgSessionSec"],
+    },
     daily: rows(daily),
     last28: rows(last28)[0] ?? null,
     topPages: rows(pages),

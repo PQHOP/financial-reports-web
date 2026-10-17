@@ -5,6 +5,7 @@ import { systemReports } from "@/lib/community";
 import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import { periodLabels } from "@/lib/period";
 import hotList from "../../../scripts/data/priority-tickers.json";
+import sp500 from "../../../scripts/data/sp500.json";
 import { formatFilingDate, loadTracker } from "@/lib/tracker";
 import { reportPath } from "@/lib/reportPath";
 import { cleanCompanyName } from "@/lib/companyName";
@@ -14,6 +15,15 @@ export const revalidate = 3600;
 
 const LOOKBACK_DAYS = 3;
 const LOOKAHEAD_DAYS = 28;
+
+// Well-known names (hot list, S&P 500) and every company-confirmed date get
+// a full card with last quarter's headline. The rest of the ~5,000 US-listed
+// companies only have a cadence estimate and most readers have never heard
+// of them, so they share one compact line per day: during earnings season
+// the full-card version of this page reached 1.5 MB of HTML for ~950
+// companies (2026-10-17), which is slow for visitors and a poor page for
+// Google to crawl from the header nav every visit.
+const WELL_KNOWN = new Set<string>([...hotList.tickers, ...sp500.map((c) => c.ticker)]);
 
 function isoDay(offsetDays: number): string {
   const d = new Date();
@@ -69,7 +79,7 @@ export default async function EarningsCalendarPage() {
   const byTicker = new Map(companies.map((c) => [c.ticker, c]));
 
   // Group by expected date; well-known names first within a day.
-  const days = new Map<string, typeof upcoming>();
+  const days = new Map<string, { featured: typeof upcoming; others: typeof upcoming }>();
   for (const item of upcoming.sort(
     (a, b) =>
       a.estimate!.localeCompare(b.estimate!) ||
@@ -77,9 +87,10 @@ export default async function EarningsCalendarPage() {
       a.ticker.localeCompare(b.ticker)
   )) {
     if (!byTicker.get(item.ticker)?.reports[0]) continue;
-    const list = days.get(item.estimate!) ?? [];
-    list.push(item);
-    days.set(item.estimate!, list);
+    const day = days.get(item.estimate!) ?? { featured: [], others: [] };
+    const featured = WELL_KNOWN.has(item.ticker) || item.confidence === "confirmed";
+    (featured ? day.featured : day.others).push(item);
+    days.set(item.estimate!, day);
   }
 
   return (
@@ -100,7 +111,7 @@ export default async function EarningsCalendarPage() {
       {days.size === 0 ? (
         <p className="text-zinc-500">No expected filings in the next four weeks.</p>
       ) : (
-        [...days.entries()].map(([day, items]) => (
+        [...days.entries()].map(([day, { featured, others }]) => (
           <section key={day} className="flex flex-col gap-2">
             <h2 className="text-lg font-medium">
               {formatDay(day)}
@@ -111,7 +122,7 @@ export default async function EarningsCalendarPage() {
               )}
             </h2>
             <ul className="flex flex-col gap-2">
-              {items.map((item) => {
+              {featured.map((item) => {
                 const company = byTicker.get(item.ticker)!;
                 const last = company.reports[0];
                 const metrics = readMetrics(last.metrics);
@@ -152,6 +163,29 @@ export default async function EarningsCalendarPage() {
                 );
               })}
             </ul>
+            {others.length > 0 && (
+              <p className="text-sm leading-relaxed text-zinc-600">
+                <span className="text-zinc-500">
+                  Also expected around this date (estimated from each company&apos;s past filings,{" "}
+                  {others.length} smaller {others.length === 1 ? "company" : "companies"}):
+                </span>{" "}
+                {others.map((item, i) => {
+                  const company = byTicker.get(item.ticker)!;
+                  return (
+                    <span key={item.ticker}>
+                      {i > 0 && ", "}
+                      <Link
+                        href={`/companies/${company.slug}`}
+                        title={cleanCompanyName(company.name)}
+                        className="hover:underline"
+                      >
+                        {item.ticker}
+                      </Link>
+                    </span>
+                  );
+                })}
+              </p>
+            )}
           </section>
         ))
       )}
