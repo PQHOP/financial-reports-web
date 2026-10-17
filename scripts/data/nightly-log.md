@@ -15563,4 +15563,35 @@ total: 23 new report-periods + 1 edit (ACN) + 9 hot-list rewrites.
   Aug 20; Nasdaq confirmed the $1 bid-price issue resolved Sept 3. FDA
   pre-IND meeting planned for October 2026. Published:
   https://financialreportinsights.com/companies/curx/2026/q2.
+- **CV** (CapsoVision) Q2 2026 — new company, medical device (capsule
+  endoscopy), recent IPO. Revenue +9.9% to $3.643M (capsules sold +13%,
+  average price ~-3%); net loss widened 61.8%. Cash $9.1M with a
+  going-concern warning; H1 operating cash burn $14.5M. Inventory +57%
+  since December against revenue +6%. Two internal-control material
+  weaknesses still unresolved. After quarter-end: a $100M ATM program,
+  an $18M share sale to existing holders, FDA clearance of AI
+  Highlights. Published: https://financialreportinsights.com/companies/cv/2026/q2.
+- **CVBF** (CVB Financial) Q2 2026 — new company, bank. Revenue +42.0%
+  to $179.4M, NII +45.5% to $162.4M, mostly from completing the
+  Heritage Commerce acquisition (74 days included, closed Apr 17);
+  diluted EPS fell 21.6% to $0.29 on $31.4M of acquisition expense, a
+  $4.25M Heritage loan-commitment provision, and ~22% more shares
+  issued to fund the deal. NIM 3.72%, CET1 14.7%, net charge-off ratio
+  0.001%. Published: https://financialreportinsights.com/companies/cvbf/2026/q2.
+- **CVCO** (Cavco Industries) FY2026 ANNUAL (fiscal year ended March
+  28, 2026) — new company, manufactured housing. Revenue +11.4% to
+  $2,244.5M, net income +11.4%, EPS +15.8% to $23.98 on 20,842 homes
+  sold (+5.5%). Core home-building pre-tax profit was roughly flat
+  once FY2025's $10.0M trade-name write-down is added back; EPS growth
+  came mostly from the American Homestar acquisition, financial-
+  services income rising to $23.3M from $1.5M (fewer storm claims),
+  and $159.9M of buybacks (-3.8% diluted shares). Published:
+  https://financialreportinsights.com/companies/cvco/2026/annual.
+- **CVGI** (Commercial Vehicle Group) Q2 2026 — new company. Revenue
+  +13.5% to $195.2M (all three segments grew) but net loss widened to
+  -$8.7M from -$4.1M on a $3.4M non-cash lender-warrant charge, a
+  $1.0M early-debt-repayment loss and higher interest. H1 operating
+  cash flow only $0.1M vs $34.0M a year ago; receivables +34% since
+  December. Raised FY revenue guidance to $725-755M from $660-700M.
+  Published: https://financialreportinsights.com/companies/cvgi/2026/q2.
 

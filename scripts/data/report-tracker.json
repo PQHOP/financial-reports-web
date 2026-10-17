@@ -33391,5 +33391,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CV": {
+    "name": "CapsoVision, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cv/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q1 10-Q filed 2026-05-14, Q2 filed 2026-08-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CVCO": {
+    "name": "Cavco Industries, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cvco/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-03-28",
+      "filedAt": "2026-05-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 FY2027, period ending ~2026-09-26)",
+      "estimate": "2026-10-30",
+      "basis": "prior-year Q2 release came out 2025-10-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CVGI": {
+    "name": "Commercial Vehicle Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cvgi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "Q3 2025 10-Q filed 2025-11-10",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CVBF": {
+    "name": "CVB Financial Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cvbf/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "third-party earnings calendars project Oct 21-22; no company press release confirming",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
