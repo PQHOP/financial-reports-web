@@ -33087,5 +33087,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CTMX": {
+    "name": "CytomX Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/ctmx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "~90 days after Q2 10-Q filed 2026-08-06",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CSWC": {
+    "name": "Capital Southwest Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cswc/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q (Q1 FY2027, not published - fiscal year labelling)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings release + 10-Q (Q2 FY2027, quarter ended 2026-09-30)",
+      "estimate": "2026-11-02",
+      "basis": "8-K filed 2026-10-15 states final results release Nov 2, 2026",
+      "confidence": "confirmed"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CTBI": {
+    "name": "Community Trust Bancorp, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/ctbi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-21",
+      "basis": "past Q3 earnings 8-Ks came out mid-October; not on EDGAR yet as of 2026-10-17, running late",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CTKB": {
+    "name": "Cytek Biosciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/ctkb/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 10-Q filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }

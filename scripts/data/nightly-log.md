@@ -15429,9 +15429,43 @@ in parallel for the research candidates.**
   Q2. Raised FY2026 revenue guidance to $365-375M from $345-355M.
   Published: https://financialreportinsights.com/companies/cstl/2026/q2.
 
-**Tier 1 batch total: 6/6 published (CSAI, CSHR, CSIQ, CSPI, CSTE,
-CSTL), plus 2 skipped without a subagent (CSQ, CTAA). Combined with
-tier 0 (3 new + 1 edit) and tonight's hot-list rewrite allotment (9),
-and 2 more from the manual FPI check (BAOS, BLIV): 11 new report-
-periods published tonight so far, 11/40 of the nightly cap used.**
+**Tier 1 batch 1 total: 6/6 published (CSAI, CSHR, CSIQ, CSPI, CSTE,
+CSTL), plus 2 skipped without a subagent (CSQ, CTAA).**
+
+**Tier 1 backlog batch 2: CSWC, CTBI, CTKB, CTMX, CTNM — 5 opus
+subagents dispatched.**
+
+- **CSWC** (Capital Southwest, a BDC) FY2026 ANNUAL (fiscal year ended
+  2026-03-31) — new company. Total investment income +13.5% to
+  $232.1M, net investment income +14.6% to $135.5M. NII per share
+  ($2.37) no longer fully covers the $2.56/share dividend paid (covers
+  the regular $2.32 but not regular+supplemental, ~93%); NAV per share
+  held flat only because new shares were sold ~30% above NAV, adding
+  $0.57/share. Non-accruals fell to 1.1% of fair value from 1.7%, but
+  the share of debt rated 3-5 on CSWC's own risk scale rose to 12.3%
+  from 10.5%. Published: https://financialreportinsights.com/companies/cswc/2026/annual.
+- **CTMX** (CytomX Therapeutics, clinical-stage biotech) Q2 2026 — new
+  company. Revenue -92.4% to $1.4M as partner deals (BMS, Amgen,
+  Astellas) wound down; net loss widened to -$20.7M from -$0.2M. Cash
+  and investments $330.3M at quarter-end (excludes a $37.0M Regeneron
+  payment received in July); runway guided into at least 2H 2028.
+  Published: https://financialreportinsights.com/companies/ctmx/2026/q2.
+- **CTBI** (Community Trust Bancorp) Q2 2026 — new company, bank.
+  Revenue +11.8% to $78.5M, net income +19.0% to $29.6M; underlying
+  growth is closer to 16-17% after excluding a ~$0.9M one-off Visa
+  Class B share-conversion gain. NIM 3.80% (funding costs fell from
+  3.00% to 2.64%). Nonperforming loans rose to $29.7M from $20.7M
+  ($8.7M of the rise is one "well secured" commercial relationship);
+  reserve coverage of NPLs fell to 211.8% from 314.0% at year-end.
+  Dividend raised 22.6% to $0.65 plus a one-time $0.06. Q3 earnings 8-K
+  is running late (past years came mid-October); flagged for a tier 0
+  rescan soon. Published: https://financialreportinsights.com/companies/ctbi/2026/q2.
+- **CTKB** (Cytek Biosciences) Q2 2026 — new company. Revenue +5.6% to
+  $48.1M (US +18%, EMEA -8%); gross margin 59% but mostly a one-time
+  $2.8M tariff refund (ex that, ~53%). Net loss widened to -$12.2M from
+  -$5.6M, mostly below the operating line (an FX loss instead of a
+  gain, a $1.6M investment write-off, a tax charge instead of a
+  benefit). A jury awarded Beckman Coulter $56M in a patent case after
+  quarter-end (Aug 21); cash $262.0M. FY2026 revenue guidance edged up
+  to $207-212M. Published: https://financialreportinsights.com/companies/ctkb/2026/q2.
 
