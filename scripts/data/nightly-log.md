@@ -15594,4 +15594,19 @@ total: 23 new report-periods + 1 edit (ACN) + 9 hot-list rewrites.
   cash flow only $0.1M vs $34.0M a year ago; receivables +34% since
   December. Raised FY revenue guidance to $725-755M from $660-700M.
   Published: https://financialreportinsights.com/companies/cvgi/2026/q2.
+- **CUVL** (Clinuvel Pharmaceuticals) FY2026 ANNUAL (fiscal year ended
+  30 June 2026) — new company, Australian pharma (afamelanotide/
+  SCENESSE), foreign private issuer, AUD. Revenue -1.0% to A$94.0M
+  (US -15.0% to A$40.7M, Irish/European hub +13.6% to A$52.5M); net
+  income -6.2% to A$33.9M, almost entirely explained by a A$4.0M
+  unrealized FX loss on USD term deposits (ex-FX, pre-tax profit was
+  +1.9%). Cash+term deposits A$252.1M, no debt. Board considering a
+  Nasdaq listing/ASX delisting and a 2027 HQ move to the US. CUV105
+  Phase III vitiligo topline results due H2 2026. Published:
+  https://financialreportinsights.com/companies/cuvl/2026/annual.
+
+**Tier 1 backlog batch 4 total: 6/7 published (CURX, CV, CVBF, CVCO,
+CVGI, CUVL), 1 left pending (CURR, no 2026 filing yet). Running
+tonight total: 30 new report-periods + 1 edit (ACN) + 9 hot-list
+rewrites. 30/40 of the nightly cap used.**
 

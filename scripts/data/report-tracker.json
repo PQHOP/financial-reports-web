@@ -33479,5 +33479,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CUVL": {
+    "name": "Clinuvel Pharmaceuticals Limited",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cuvl/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Annual Report FY2026, ASX Appendix 4E)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2026-10-31",
+      "basis": "20-F due 4 months after June 30 fiscal year-end; covers same period, update lastFilingSeen only",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
