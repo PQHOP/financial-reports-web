@@ -15376,3 +15376,62 @@ CSHR, CSIQ, CSPI, CSTE, CSTL. Skipped directly without a subagent:
 CSQ (closed-end fund), CTAA (SPAC shell). Dispatched 6 opus subagents
 in parallel for the research candidates.**
 
+- **CSAI** (Cloudastructure) Q2 2026 — new company. Revenue +13.5% to
+  $1.233M as subscription (cloud video/remote guarding) revenue +164%
+  to $764K, now 62% of the mix; gross margin 36.8%→49.5%. Operating
+  loss widened 9.3% to $2.10M; the narrower net loss (-$1.731M vs
+  -$2.186M) came from a non-cash derivative swing ($319K gain vs $334K
+  loss), not better operations. ~5 months of cash runway ($3.81M cash,
+  $4.46M burned in H1); going-concern warning; did a 1-for-30 reverse
+  split and a $1.30M Streeterville note. Published:
+  https://financialreportinsights.com/companies/csai/2026/q2.
+- **CSIQ** (Canadian Solar) Q2 2026 — new company, foreign private
+  issuer (6-K earnings releases, no 10-Q). Revenue -28.7% to $1,207.7M;
+  swung from +$7.2M net income to a $76.9M loss (module shipments -60%
+  to 3.1GW; storage shipments +73% to 3.7GWh). $54.9M investment income
+  + $14.6M derivative gain cut what would have been a ~$137M pre-tax
+  loss down to ~$67M. Operating cash flow -$389M for H1; inventory +46%
+  since December against revenue -21%; $7.1B total debt. Corrected two
+  unsupported sentences in the first draft via `--edit` before this was
+  reported done (arithmetic on the Q3 guidance, an unsupported tax-charge
+  reason). Published: https://financialreportinsights.com/companies/csiq/2026/q2.
+- **CSHR** (CoinShares) H1 2026 — new company, foreign private issuer,
+  semiannual reporter. Revenue -35.7% to $51.4M; swung from +$77.6M to
+  a -$23.9M net loss. $32.0M of the loss came from unrealized marks
+  ($16.6M XBT pricing-differential loss + $15.4M loss on the firm's
+  own crypto holdings), plus ~$11M of listing-related one-offs (old
+  option-plan settlement + listing fees). Client AUM fell to $5.52B
+  from $7.40B despite +$27.6M of net inflows. Published:
+  https://financialreportinsights.com/companies/cshr/2026/h1.
+- **CSPI** (CSP Inc.) fiscal Q3 2026 (period ended 2026-06-30, FYE
+  Sept 30) — new company. Revenue -6.8% to $14.398M; net loss widened
+  to -$0.846M from -$0.264M mostly because the tax benefit shrank
+  ($0.751M→$0.366M) rather than the pre-tax loss widening much
+  ($0.197M). TS segment operating income fell to $0.136M from $0.606M;
+  HPP segment loss narrowed slightly. Corrected an unsupported "Cisco"
+  vendor-name claim via `--edit`. Published:
+  https://financialreportinsights.com/companies/cspi/2026/q3.
+- **CSTE** (Caesarstone) Q2 2026 — new company, foreign private issuer.
+  Revenue -4.5% to $96.6M (-7.7% constant currency) but the net loss
+  narrowed to -$15.6M from -$18.6M on margin gains from closing the
+  Bar-Lev plant and an undisclosed one-time refund of earlier US IEEPA
+  tariffs. US/Canada sales fell 14.1%/17.4%. Guidance moved backward:
+  previously "on track" for positive Q3 adjusted EBITDA, now
+  "reassessing the timing" after a new US quartz import quota/tariff
+  effective 2026-08-15. Published:
+  https://financialreportinsights.com/companies/cste/2026/q2.
+- **CSTL** (Castle Biosciences) Q2 2026 — new company. Revenue +20.1%
+  to $103.5M but swung from +$4.5M net income to a -$2.1M loss; last
+  year's profit came from a one-time $4.7M tax benefit. $3.7M of this
+  quarter's revenue was catch-up from tests delivered in earlier
+  quarters (ex that, growth was 15.9%). TissueCypher volume +63%.
+  H1 operating cash flow was -$6.9M (bonus payments) despite a +$15.2M
+  Q2. Raised FY2026 revenue guidance to $365-375M from $345-355M.
+  Published: https://financialreportinsights.com/companies/cstl/2026/q2.
+
+**Tier 1 batch total: 6/6 published (CSAI, CSHR, CSIQ, CSPI, CSTE,
+CSTL), plus 2 skipped without a subagent (CSQ, CTAA). Combined with
+tier 0 (3 new + 1 edit) and tonight's hot-list rewrite allotment (9),
+and 2 more from the manual FPI check (BAOS, BLIV): 11 new report-
+periods published tonight so far, 11/40 of the nightly cap used.**
+

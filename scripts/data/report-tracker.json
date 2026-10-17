@@ -32955,5 +32955,137 @@
     "status": "skipped",
     "skipReason": "SPAC, pre-merger shell with no operating financials",
     "lastChecked": "2026-10-17"
+  },
+  "CSAI": {
+    "name": "Cloudastructure, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/csai/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-18"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "45-day smaller-reporting-company deadline after 2026-09-30 quarter-end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CSIQ": {
+    "name": "Canadian Solar Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/csiq/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-27"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-20",
+      "basis": "~85-90 days after the Q2 release",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CSHR": {
+    "name": "CoinShares PLC",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cshr/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 2026 interim results)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-14"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K/20-F (FY2026 results)",
+      "estimate": "2027-04-30",
+      "basis": "semiannual reporter; FY2025 results 6-K came 2026-05-01",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CSTL": {
+    "name": "Castle Biosciences, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cstl/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-30"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-02",
+      "basis": "Q3 2025 10-Q filed 2025-11-03",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CSTE": {
+    "name": "Caesarstone Ltd.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cste/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-11",
+      "basis": "Q3 2025 results 6-K filed 2025-11-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CSPI": {
+    "name": "CSP Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cspi/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, year ending 2026-09-30)",
+      "estimate": "2026-12-16",
+      "basis": "last two 10-Ks filed 2025-12-16 and 2024-12-20",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
