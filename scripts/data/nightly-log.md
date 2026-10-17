@@ -15682,3 +15682,82 @@ tonight with no estimate due yet, will keep surfacing first in
 `next-batch` output — skip past them unless their
 `nextExpectedFiling` has passed).
 
+**Later firing, same night: rescanned tier 0 (0 candidates — network
+check passed again, 200 on both sec.gov with the required User-Agent
+and financialreportinsights.com), confirmed the hot-list rewrite
+allotment was already used up (9/10 done, 1 superseded). With tier 0
+empty, used part of the ~4-report buffer the previous firing left for
+tier-0 overflow on 4 tier-1 backlog companies instead — continuing
+`next-batch` from where batch 5 left off (next ticker after CWBC in
+`us-listed.json` file order, skipping the 9 confirmed-pending FPIs per
+the note above and CWCO, already done).**
+
+- **CWST** (Casella Waste Systems) Q2 2026 — new company. Revenue
+  +16.9% to $543.7M (~$46.2M of the $78.4M increase from
+  acquisitions; organic solid-waste pricing +5.5%, landfill volumes
+  +8.5%). Operating income +3.6% only (acquisition-related D&A);
+  net interest expense +34% on revolver borrowing. Net income fell
+  to $3.8M ($0.06) from $5.2M ($0.08); adjusted EPS $0.40 vs $0.38
+  (gap is mostly intangible amortization/acquisition costs). Adjusted
+  EBITDA +12.5% but margin fell to 22.7% from 23.5%. H1 operating
+  cash flow $161.0M (73% of adjusted EBITDA) despite a $1.8M net
+  loss; receivables +23.8% vs revenue +16.9%; $400.8M spent on
+  acquisitions, net leverage 2.70x vs a 4.00x covenant. Cut FY net
+  income guidance to $0-6M from $4-10M (second cut this year) while
+  keeping EBITDA/cash-flow guidance. Published:
+  https://financialreportinsights.com/companies/cwst/2026/q2.
+- **CXAI** (CXApp) Q2 2026 — new company, small-cap. Revenue +38.5%
+  to $1.694M, entirely from a newly-acquired Australian marketing
+  agency (EngineRoom, $526K in its first four weeks); organic revenue
+  was down ~4.5%. Gross margin fell to 63.2% from 86.0% on the
+  lower-margin agency mix. Operating loss flat at -$4.12M but net
+  loss widened to -$8.62M from -$3.14M on a $5.0M non-cash
+  fair-value charge on convertible notes/warrants (vs an $880K gain
+  a year ago). Loss/share improved only because share count
+  quadrupled pre-split; post the 2026-08-18 1-for-50 reverse split,
+  loss/share is roughly -$5.15. Going-concern language persists
+  (cash $11.7M vs $10.1M convertible debt); Nasdaq confirmed
+  bid-price compliance 2026-09-02. No numeric guidance given.
+  Published: https://financialreportinsights.com/companies/cxai/2026/q2.
+- **CXDO** (Crexendo) Q2 2026 — new company. Revenue +48.9% to
+  $24.6M, mostly the ESI (Estech Systems) acquisition ($6.96M of the
+  $8.09M increase; organic growth ~6.8%). ESI was margin-dilutive —
+  its cost contribution ($7.38M) exceeded the revenue it added, so
+  ex-ESI operating income would have been up roughly a third. GAAP
+  net income fell 14.7% to $1.05M ($0.03/share) on higher intangible
+  amortization ($1.83M vs $0.80M) and deal costs, while non-GAAP EPS
+  rose to $0.12 from $0.09 and adjusted EBITDA +48%. H1 operating
+  cash flow $4.79M vs $1.63M net income. Underlying software segment
+  weaker: net dollar retention slipped to 99% from 101%, segment
+  operating income -41% on higher hosting/staff costs. Took a new
+  $5M Wells Fargo term loan; cash fell to $18.3M from $31.4M.
+  Published: https://financialreportinsights.com/companies/cxdo/2026/q2.
+- **CYN** (Cyngn) Q2 2026 — new company, pre-revenue-scale AV
+  software. Revenue +328% to $144,459 (more tugger deployments) but
+  operating loss widened 22.8% to -$6.75M, net loss -16.6% to
+  -$6.35M; gross margin fell to 38.4% from 49.8%. R&D rose partly
+  because software spend that used to be capitalized is now expensed
+  (since Q3 2025). Loss/share improved to -$0.45 from -$2.70 only
+  because weighted share count rose ~7x; at last year's share count
+  the loss would be ~-$3.15/share. Cash+T-bills $39.7M, no debt, no
+  going-concern warning; H1 burn $13.8M implies runway to roughly
+  late 2027. Nasdaq sent a below-$1 bid-price notice 2026-10-14
+  (deadline 2027-04-12); a reverse-split proposal (1-for-5 to
+  1-for-150) is on the Nov 3 shareholder-meeting agenda. No guidance
+  given; VP of Sales terminated July 24. Published:
+  https://financialreportinsights.com/companies/cyn/2026/q2.
+
+Skipped without a subagent: **CXII** (Churchill Capital Corp XII — a
+SPAC blank-check company between CXDO and CYN in file order, no
+operating business to report on).
+
+**This firing total: 4 new report-periods (CWST, CXAI, CXDO, CYN) + 1
+skip (CXII). Running tonight total: 40 new report-periods + 1 edit
+(ACN) + 9 hot-list rewrites. 40/40 of the nightly cap used — stopping
+for the rest of tonight.**
+
+A future firing should run `npm run scan-recent-filings` first per
+usual, then continue the tier 1 backlog with `npm run next-batch`
+from where this firing left off: the ticker right after CYN in
+`us-listed.json` file order (CYPH) is next.
+

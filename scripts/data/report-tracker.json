@@ -33633,5 +33633,99 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
+  },
+  "CWST": {
+    "name": "Casella Waste Systems, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cwst/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-01",
+      "basis": "quarterly cadence from Q2 10-Q filed 2026-08-07",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CXAI": {
+    "name": "CXApp Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cxai/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 10-Q filed 2026-05-13, Q2 filed 2026-08-14 — ~90 day cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CXDO": {
+    "name": "Crexendo, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cxdo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 10-Q filed 2025-11-04, Q2 2026 filed 2026-08-04 — same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
+  },
+  "CXII": {
+    "name": "Churchill Capital Corp XII - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "SPAC blank-check company, no operating business/financial report to analyze",
+    "lastChecked": "2026-10-17"
+  },
+  "CYN": {
+    "name": "Cyngn Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-17",
+      "url": "https://financialreportinsights.com/companies/cyn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "Q3 2025 10-Q filed 2025-11-19 after a late-filing notice; similar timing expected",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-17"
   }
 }
