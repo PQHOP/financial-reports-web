@@ -16509,3 +16509,41 @@ a further batch risks pushing the combined total (across any other
 concurrent firings of the hourly cloud routine) over it. Next in file
 order after DLHC: DLO (then DLPN, DLTH, DMAA — likely a SPAC by name,
 verify before dispatching — DMAC).**
+
+**Seventh batch, this firing — re-pulled first, no new commits from
+other firings since DLHC.** Re-confirmed the 9 FPI skips at the front
+of `next-batch` (BRAI, BTCT, CCHH, CDTG, CHNR, CLWT, CRE, CUPR, CURR)
+are all still correctly `pending`/skipped — none of their
+`nextExpectedFiling` estimates have passed yet (earliest is BRAI
+2026-10-28). No tracker changes needed for them. First real pick: DLO.
+- **DLO** (DLocal) Q2 2026 — new company, cross-border payments
+  processor for emerging markets (Uruguay HQ), foreign private issuer
+  (20-F/6-K). Payment volume +92% to $17.7B, revenue +55.8% to $399.7M,
+  but gross profit grew only +29% to $127.2M — take rate (gross profit
+  per dollar processed) fell to 0.72% from 1.07% on more same-country
+  payments, merchant volume discounts (especially Mexico), and less
+  high-spread volume from Mozambique/Vietnam. Opex +46%, so operating
+  profit +15% to $64.2M and operating margin fell to 16.1% from 21.7%.
+  Net income +28% to $54.8M (diluted EPS +28.6% to $0.18) — grew faster
+  than operating profit only because last year had an FX loss on an
+  intra-group Argentina-Malta loan since repaid; buybacks cut diluted
+  shares only 1.7%. Adjusted free cash flow $68.5M (125% of net income)
+  but H1 FCF was down 6% YoY; two merchants are each >10% of revenue,
+  top 10 = 61%. New $150M credit facility signed post-quarter. Guidance
+  raised for volume (+60-70%, from +50-60%) and gross profit (+25-30%,
+  from +22.5-27.5%); operating-profit guidance held at +27.5-32.5%
+  despite only +15% in H1, so H2 depends on cost discipline. No
+  collision (company page was a clean 404 before publishing). Published:
+  https://financialreportinsights.com/companies/dlo/2026/q2.
+
+**This firing's contribution: DLO, published cleanly with no collision.
+Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS, CZNC, DAIO, CZWI,
+DAKT, DAVE, DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX, DDI, DERM, DETX,
+DFDV, DFSC, DFTX, DGICA, DGII, DGNX, DGXX, DHC, DIBS, DIOD, DJCO, DJT,
+DKI, DKNG, DLHC, DLO = 36 new report-periods + 10/10 hot-list rewrites
++ 1 live-data bug fix, at 36/40 of the ~40 cap. Given at least 3-4
+overlapping firings were observed earlier tonight and the margin to
+the cap is now thin, this session is doing at most one more small
+pick (re-pulling first) and then stopping for the night regardless of
+the exact count reached, to leave headroom for any other concurrent
+firing's commits. Next in file order after DLO: DLPN.**

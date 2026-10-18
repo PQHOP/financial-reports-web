@@ -65,7 +65,7 @@
       "basis": "prior-year cadence: Q1 earnings 8-K 2025-10-29 / 10-Q 2025-10-30",
       "confidence": "estimated"
     },
-    "note": "Vistaprint's parent (Irish-domiciled, FYE June 30). FY2026: revenue +9.8% to $3,736.6M but organic constant-currency growth only ~4%; net income jumped 541.2% to $95.9M and EPS +553.4% to $3.79 almost entirely from a currency-hedge swing, lower interest expense and tax rate falling from 86.7% to 36.5% \u2014 operating income rose only 11%. Missed April's own guidance on adjusted EBITDA, operating cash flow and adjusted free cash flow (down 17% YoY) on higher cash taxes, inventory +21% and factory build-out. FY2028 net income target quietly lowered (from 'at least $200M' to 'at least $192M') while being described as 'increased' alongside a higher EBITDA target \u2014 worth flagging again next time.",
+    "note": "Vistaprint's parent (Irish-domiciled, FYE June 30). FY2026: revenue +9.8% to $3,736.6M but organic constant-currency growth only ~4%; net income jumped 541.2% to $95.9M and EPS +553.4% to $3.79 almost entirely from a currency-hedge swing, lower interest expense and tax rate falling from 86.7% to 36.5% — operating income rose only 11%. Missed April's own guidance on adjusted EBITDA, operating cash flow and adjusted free cash flow (down 17% YoY) on higher cash taxes, inventory +21% and factory build-out. FY2028 net income target quietly lowered (from 'at least $200M' to 'at least $192M') while being described as 'increased' alongside a higher EBITDA target — worth flagging again next time.",
     "lastChecked": "2026-10-14"
   },
   "CMND": {
@@ -88,7 +88,7 @@
       "basis": "prior 20-Fs filed 2026-01-20 and 2025-01-22",
       "confidence": "estimated"
     },
-    "note": "FPI (Israeli/Canadian clinical-stage biotech, psychedelic-derived therapeutics, IFRS/USD), 20-F/6-K filer, FYE Oct 31. Fiscal Q3 2026 (to 2026-07-31): cash $12.04M (up from $3.92M at Oct 2025) mostly from $8.90M of discounted convertible notes converting to shares; ~1 year runway after a Sept 2026 $2.5M purchase of 51% of an unrelated EV-charging startup. Massive dilution: shares 15,883\u21922,145,211 in nine months plus three reverse splits (1-for-40 Dec 2025, 1-for-10 May 2026, 1-for-8 Oct 2026). Net loss narrowed to $0.907M only from $1.28M of mostly paper finance gains; operating expenses actually rose 55%. Going-concern warning in the statements despite MD&A claiming 12+ months of cash. Below a proposed (SEC-approved then stayed) Nasdaq $5M market-value minimum. CMND-100 (MEAI) Phase I/IIa for alcohol use disorder: Part A safety endpoint met, Parts B/C approved Aug 2026, first patients dosed Sept 2026.",
+    "note": "FPI (Israeli/Canadian clinical-stage biotech, psychedelic-derived therapeutics, IFRS/USD), 20-F/6-K filer, FYE Oct 31. Fiscal Q3 2026 (to 2026-07-31): cash $12.04M (up from $3.92M at Oct 2025) mostly from $8.90M of discounted convertible notes converting to shares; ~1 year runway after a Sept 2026 $2.5M purchase of 51% of an unrelated EV-charging startup. Massive dilution: shares 15,883→2,145,211 in nine months plus three reverse splits (1-for-40 Dec 2025, 1-for-10 May 2026, 1-for-8 Oct 2026). Net loss narrowed to $0.907M only from $1.28M of mostly paper finance gains; operating expenses actually rose 55%. Going-concern warning in the statements despite MD&A claiming 12+ months of cash. Below a proposed (SEC-approved then stayed) Nasdaq $5M market-value minimum. CMND-100 (MEAI) Phase I/IIa for alcohol use disorder: Part A safety endpoint met, Parts B/C approved Aug 2026, first patients dosed Sept 2026.",
     "lastChecked": "2026-10-14"
   },
   "CMCT": {
@@ -111,7 +111,7 @@
       "basis": "45-day deadline falls on Sat 2026-11-14, next business day Mon 11-16; Q3 2025 was filed 2025-11-14",
       "confidence": "estimated"
     },
-    "note": "Distressed REIT (externally managed by CIM Group). Revenue flat at $29.7M; loss to common stockholders narrowed to $11.0M from $14.3M only because preferred dividends fell $4.3M as most preferred stock was redeemed into common (shares outstanding went from 26,997 to 2,947,493, ~340x, two reverse splits in the base) \u2014 before preferred dividends the loss actually widened. H1 operating cash flow -$22.5M, mostly a $21.2M catch-up payment to CIM-linked entities, covered by a non-repeatable $45.6M sale of the lending business. The $97.1M Oakland office mortgage went into maturity default 2026-07-01 (rents now go to the lender, default rate up to 9.14%); two more Oakland apartment mortgages (~$145M) due Jan/Jun 2027. No going-concern language yet, but worth close tracking.",
+    "note": "Distressed REIT (externally managed by CIM Group). Revenue flat at $29.7M; loss to common stockholders narrowed to $11.0M from $14.3M only because preferred dividends fell $4.3M as most preferred stock was redeemed into common (shares outstanding went from 26,997 to 2,947,493, ~340x, two reverse splits in the base) — before preferred dividends the loss actually widened. H1 operating cash flow -$22.5M, mostly a $21.2M catch-up payment to CIM-linked entities, covered by a non-repeatable $45.6M sale of the lending business. The $97.1M Oakland office mortgage went into maturity default 2026-07-01 (rents now go to the lender, default rate up to 9.14%); two more Oakland apartment mortgages (~$145M) due Jan/Jun 2027. No going-concern language yet, but worth close tracking.",
     "lastChecked": "2026-10-14"
   },
   "CMMB": {
@@ -134,7 +134,7 @@
       "basis": "Q2 results 6-K came ~50 days after quarter end",
       "confidence": "estimated"
     },
-    "note": "FPI (Israeli clinical-stage biotech, nebokitug for PSC), 20-F/6-K filer. Q2 2026: no revenue; net loss widened slightly to $2.165M; H1 R&D fell 45% as the Phase 2 SPRING liver-disease trial finished. Cash only $6.687M, down from $10.366M at Dec 2025; runway guided 'through Q1 2027' with a going-concern warning. PENDING MERGER: announced 2026-07-08 (amended 09-23, S-4 filed 09-25) with Scipher Medicine \u2014 Chemomab holders get ~32% of combined co (ticker SCIP), closing expected Q4 2026. After closing, filings will likely come from the new Delaware parent on 10-Q/10-K, not CMMB on 6-K \u2014 ticker/company mapping will need updating then.",
+    "note": "FPI (Israeli clinical-stage biotech, nebokitug for PSC), 20-F/6-K filer. Q2 2026: no revenue; net loss widened slightly to $2.165M; H1 R&D fell 45% as the Phase 2 SPRING liver-disease trial finished. Cash only $6.687M, down from $10.366M at Dec 2025; runway guided 'through Q1 2027' with a going-concern warning. PENDING MERGER: announced 2026-07-08 (amended 09-23, S-4 filed 09-25) with Scipher Medicine — Chemomab holders get ~32% of combined co (ticker SCIP), closing expected Q4 2026. After closing, filings will likely come from the new Delaware parent on 10-Q/10-K, not CMMB on 6-K — ticker/company mapping will need updating then.",
     "lastChecked": "2026-10-14"
   },
   "CLYM": {
@@ -157,7 +157,7 @@
       "basis": "Q3 2025 10-Q filed 2025-11-06; Q2 2026 10-Q filed 2026-08-06",
       "confidence": "estimated"
     },
-    "note": "Clinical-stage biotech, formerly Eliem Therapeutics (name changed 2024-09-20 after acquiring Tenet Medicines/budoprutug in June 2024) \u2014 financials are continuous history of the same legal entity, so Q2 2025 comparisons already include budoprutug. Q2 net loss widened to $13.5M from $8.7M as R&D rose 47.7% (CLYM116's first trial began). April 2026 raise ($103.4M net) lifted cash to $239.2M, no debt; but guidance only moved from 'into 2028' to 'into 2H 2028' despite the raise, implying spending will more than double from Q2's ~$10.5M burn. Four Q4 2026 data readouts pending (pMN, ITP, lupus B-cell, CLYM116 Phase 1).",
+    "note": "Clinical-stage biotech, formerly Eliem Therapeutics (name changed 2024-09-20 after acquiring Tenet Medicines/budoprutug in June 2024) — financials are continuous history of the same legal entity, so Q2 2025 comparisons already include budoprutug. Q2 net loss widened to $13.5M from $8.7M as R&D rose 47.7% (CLYM116's first trial began). April 2026 raise ($103.4M net) lifted cash to $239.2M, no debt; but guidance only moved from 'into 2028' to 'into 2H 2028' despite the raise, implying spending will more than double from Q2's ~$10.5M burn. Four Q4 2026 data readouts pending (pMN, ITP, lupus B-cell, CLYM116 Phase 1).",
     "lastChecked": "2026-10-14"
   },
   "CLST": {
@@ -180,7 +180,7 @@
       "basis": "2025 Q3 10-Q filed 2025-11-13; 2026 10-Qs filed 05-15 and 08-14",
       "confidence": "estimated"
     },
-    "note": "Small thrift/bank holding company. Q2 net income flat at $524K ($0.14 EPS); NIM fell to 3.86% from 3.98%; efficiency ratio worsened to 80.6% from 77.5% (incl. $87K merger costs, offset by a $104K reserve release). ROE only 2.55% (equity is 28.5% of assets). Credit quality still fine (net charge-offs 0.05% annualized) though non-performing loans rose to 1.43% of loans from 1.00%. Main story: $41.1M all-cash acquisition of Lakeside Bancshares closed 2026-07-14, taking the bank to ~$632M assets / ~12.5% equity ratio \u2014 Q3 2026 (first quarter including Lakeside) is worth a new-period report when it comes up.",
+    "note": "Small thrift/bank holding company. Q2 net income flat at $524K ($0.14 EPS); NIM fell to 3.86% from 3.98%; efficiency ratio worsened to 80.6% from 77.5% (incl. $87K merger costs, offset by a $104K reserve release). ROE only 2.55% (equity is 28.5% of assets). Credit quality still fine (net charge-offs 0.05% annualized) though non-performing loans rose to 1.43% of loans from 1.00%. Main story: $41.1M all-cash acquisition of Lakeside Bancshares closed 2026-07-14, taking the bank to ~$632M assets / ~12.5% equity ratio — Q3 2026 (first quarter including Lakeside) is worth a new-period report when it comes up.",
     "lastChecked": "2026-10-14"
   },
   "CLPT": {
@@ -226,7 +226,7 @@
       "basis": "Q3 2025 10-Q filed 2025-11-13; ~90 days after the 2026-08-13 Q2 filing",
       "confidence": "estimated"
     },
-    "note": "Clinical-stage radiotherapeutics biotech (iopofosine I 131 / CLR 131 for Waldenstrom macroglobulinemia, Breakthrough Therapy Designation, 61.8% major response rate in CLOVER WaM). Q2 net loss widened 27% to $6.93M as R&D rose 91% ahead of the Phase 3 confirmatory trial (first patient not yet enrolled as of the 10-Q). A May 2026 financing ($31.7M net, management among the buyers) lifted cash to $34.0M at June 30 (~$29M by Aug 13), but management still flags possible inability to fund operations beyond Q2 2027 and a going-concern doubt remains. EPS improvement from $3.39 to $0.57 loss is purely share-count dilution, not operational \u2014 1-for-30 reverse split in June 2025.",
+    "note": "Clinical-stage radiotherapeutics biotech (iopofosine I 131 / CLR 131 for Waldenstrom macroglobulinemia, Breakthrough Therapy Designation, 61.8% major response rate in CLOVER WaM). Q2 net loss widened 27% to $6.93M as R&D rose 91% ahead of the Phase 3 confirmatory trial (first patient not yet enrolled as of the 10-Q). A May 2026 financing ($31.7M net, management among the buyers) lifted cash to $34.0M at June 30 (~$29M by Aug 13), but management still flags possible inability to fund operations beyond Q2 2027 and a going-concern doubt remains. EPS improvement from $3.39 to $0.57 loss is purely share-count dilution, not operational — 1-for-30 reverse split in June 2025.",
     "lastChecked": "2026-10-14"
   },
   "CLNN": {
@@ -249,7 +249,7 @@
       "basis": "Q3 2025 10-Q filed 2025-11-13; Q2 2026 filed 2026-08-14",
       "confidence": "estimated"
     },
-    "note": "Clinical-stage biotech (CNM-Au8 for ALS/MS). Operating loss narrowed to $5.35M from $5.86M (underlying), but net loss nearly doubled to $13.4M ($1.08 EPS) purely from a $7.47M non-cash revaluation of warrants/convertible-note features. Cash only $9.7M vs $7.1M H1 operating cash burn; going-concern warning, runway guided only to late Q4 2026. Raised ~$4.0M on 2026-09-15 at $3.28/share (less than half May's $7.00 offering price). Plans an accelerated-approval NDA filing for CNM-Au8 in ALS in early Q4 2026, but resting on post-hoc/exploratory NfL biomarker analyses that the 10-Q itself calls exploratory \u2014 worth watching for an actual NDA-submission 8-K.",
+    "note": "Clinical-stage biotech (CNM-Au8 for ALS/MS). Operating loss narrowed to $5.35M from $5.86M (underlying), but net loss nearly doubled to $13.4M ($1.08 EPS) purely from a $7.47M non-cash revaluation of warrants/convertible-note features. Cash only $9.7M vs $7.1M H1 operating cash burn; going-concern warning, runway guided only to late Q4 2026. Raised ~$4.0M on 2026-09-15 at $3.28/share (less than half May's $7.00 offering price). Plans an accelerated-approval NDA filing for CNM-Au8 in ALS in early Q4 2026, but resting on post-hoc/exploratory NfL biomarker analyses that the 10-Q itself calls exploratory — worth watching for an actual NDA-submission 8-K.",
     "lastChecked": "2026-10-14"
   },
   "CLPS": {
@@ -272,7 +272,7 @@
       "basis": "FY2025 20-F filed 2025-10-17; 20-F due within 4 months of fiscal year-end",
       "confidence": "estimated"
     },
-    "note": "FPI (China IT/fintech services), 20-F/6-K filer, FYE June 30. FY2026 H1 (Jul-Dec 2025): revenue +2.8% to $85.1M; non-China revenue +63.1% but mostly replacing lost China business as banking revenue fell 22.0% on a key client shrinking its China Solution Centers. Swung to $83K profit attributable to shareholders from a $0.39M loss, but stock comp ($1.75M) is 5x+ net income and 74% of total net income went to minority partners. FY2026 20-F due very soon (~2026-10-17/31) \u2014 check for a new ANNUAL period shortly.",
+    "note": "FPI (China IT/fintech services), 20-F/6-K filer, FYE June 30. FY2026 H1 (Jul-Dec 2025): revenue +2.8% to $85.1M; non-China revenue +63.1% but mostly replacing lost China business as banking revenue fell 22.0% on a key client shrinking its China Solution Centers. Swung to $83K profit attributable to shareholders from a $0.39M loss, but stock comp ($1.75M) is 5x+ net income and 74% of total net income went to minority partners. FY2026 20-F due very soon (~2026-10-17/31) — check for a new ANNUAL period shortly.",
     "lastChecked": "2026-10-14"
   },
   "CLOV": {
@@ -335,7 +335,7 @@
       "basis": "Q3 2025 10-Q filed 2025-11-14; Q2 2026 10-Q filed 2026-08-14",
       "confidence": "estimated"
     },
-    "note": "Micro-cap industrial combustion/sensing tech. Revenue $560K (+321% YoY off a tiny base); net loss narrowed to $1.307M from $1.680M mostly because ~$300K of prior-year legal fees didn't recur. A $410K Q1 warranty charge (burners missing emissions guarantee) left a $1.114M warranty reserve bigger than H1's entire revenue. DOE hydrogen-burner grant that offset R&D completed 2026-05-27 (that income stops going forward). Cash ~$11.6M incl. a July raise, ~2 years of runway at current burn, no debt, but funding via share sales at falling prices ($4.33 June \u2192 $3.54 July), shares outstanding +28% since year-end.",
+    "note": "Micro-cap industrial combustion/sensing tech. Revenue $560K (+321% YoY off a tiny base); net loss narrowed to $1.307M from $1.680M mostly because ~$300K of prior-year legal fees didn't recur. A $410K Q1 warranty charge (burners missing emissions guarantee) left a $1.114M warranty reserve bigger than H1's entire revenue. DOE hydrogen-burner grant that offset R&D completed 2026-05-27 (that income stops going forward). Cash ~$11.6M incl. a July raise, ~2 years of runway at current burn, no debt, but funding via share sales at falling prices ($4.33 June → $3.54 July), shares outstanding +28% since year-end.",
     "lastChecked": "2026-10-14"
   },
   "CHRN": {
@@ -418,7 +418,7 @@
       "basis": "FY2025 20-F filed 2025-10-24; 20-F due within 4 months of June 30 FYE",
       "confidence": "estimated"
     },
-    "note": "FPI (Hong Kong, reports in HKD), 20-F/6-K filer, fiscal year ends June 30. H1 FY2026 (to 2025-12-31): revenue +57.2% to HK$59.0M almost entirely from two 2025 acquisitions (nursing provider, professional services firm) rather than organic growth; G&A costs +138.5% (legal/audit/directors' pay) pushed operating margin down to 4.5% from 8.8%. Net income -28.1% (flattered a bit by tax rate falling to 2.4% from 13.8%); EPS -80% almost entirely from share dilution for the acquisitions. Goodwill+intangibles are 79% of total assets; cash only HK$10.2M. FY2026 20-F (due ~2026-10-28) will be the first audited figures including the acquisitions \u2014 check for new-period ANNUAL report then.",
+    "note": "FPI (Hong Kong, reports in HKD), 20-F/6-K filer, fiscal year ends June 30. H1 FY2026 (to 2025-12-31): revenue +57.2% to HK$59.0M almost entirely from two 2025 acquisitions (nursing provider, professional services firm) rather than organic growth; G&A costs +138.5% (legal/audit/directors' pay) pushed operating margin down to 4.5% from 8.8%. Net income -28.1% (flattered a bit by tax rate falling to 2.4% from 13.8%); EPS -80% almost entirely from share dilution for the acquisitions. Goodwill+intangibles are 79% of total assets; cash only HK$10.2M. FY2026 20-F (due ~2026-10-28) will be the first audited figures including the acquisitions — check for new-period ANNUAL report then.",
     "lastChecked": "2026-10-14"
   },
   "CLMB": {
@@ -441,7 +441,7 @@
       "basis": "Q1/Q2 10-Qs filed the 30th of the month after quarter-end, a day after the earnings 8-K",
       "confidence": "estimated"
     },
-    "note": "IT products/software distributor. Gross billings +17.3% to $587.3M, net sales +9.4% to $174.2M, gross profit +14.6% (~11% excluding the Feb 2026 Interworks acquisition). But operating income fell 7.1% (margin 5.0%\u21924.2%) as SG&A rose 26%; net income -7.5%, EPS -9.1%. Adjusted EBITDA flat; effective margin fell to 37.5% from 43.3%. Dividend suspended starting Q1 2026. Customer concentration: top 3 = 21%/14%/13% of net sales. Management goal (July 2026 Investor Day): more than double FY2025 adjusted EBITDA by 2030.",
+    "note": "IT products/software distributor. Gross billings +17.3% to $587.3M, net sales +9.4% to $174.2M, gross profit +14.6% (~11% excluding the Feb 2026 Interworks acquisition). But operating income fell 7.1% (margin 5.0%→4.2%) as SG&A rose 26%; net income -7.5%, EPS -9.1%. Adjusted EBITDA flat; effective margin fell to 37.5% from 43.3%. Dividend suspended starting Q1 2026. Customer concentration: top 3 = 21%/14%/13% of net sales. Management goal (July 2026 Investor Day): more than double FY2025 adjusted EBITDA by 2030.",
     "lastChecked": "2026-10-14"
   },
   "CLLS": {
@@ -487,7 +487,7 @@
       "basis": "90-day deadline after FYE; FY2025 10-K filed 2025-10-03; company has filed NT extensions before (watch for one)",
       "confidence": "estimated"
     },
-    "note": "Fiscal Q3 FY2026 (quarter ended 2026-04-30). Hong Kong-based micro-cap: ship-cargo logistics (resells rented cargo space) + chrome/manganese ore trading (new Aug 2025) + consulting. Revenue +121.3% to $4.31M but swung to a tiny $48.7K profit only because a high-margin consulting line (98.2% gross margin, 87% of gross profit) offset low-margin ore trading (0.2% margin) and logistics (3.7% margin) \u2014 without consulting, operating loss would've been ~$494K. Cash fell to $718K; two reverse splits in 2026 (1-for-7 March, 1-for-10 July). Post-quarter pivot into Bitcoin mining (Bitmain S21 XP purchase, BTC Digital hosting deal) and new Zimbabwe/Singapore ore-trading subsidiaries \u2014 worth watching for how real this gets.",
+    "note": "Fiscal Q3 FY2026 (quarter ended 2026-04-30). Hong Kong-based micro-cap: ship-cargo logistics (resells rented cargo space) + chrome/manganese ore trading (new Aug 2025) + consulting. Revenue +121.3% to $4.31M but swung to a tiny $48.7K profit only because a high-margin consulting line (98.2% gross margin, 87% of gross profit) offset low-margin ore trading (0.2% margin) and logistics (3.7% margin) — without consulting, operating loss would've been ~$494K. Cash fell to $718K; two reverse splits in 2026 (1-for-7 March, 1-for-10 July). Post-quarter pivot into Bitcoin mining (Bitmain S21 XP purchase, BTC Digital hosting deal) and new Zimbabwe/Singapore ore-trading subsidiaries — worth watching for how real this gets.",
     "lastChecked": "2026-10-14"
   },
   "CLBT": {
@@ -510,7 +510,7 @@
       "basis": "Q3 2025 results released 2025-11-12 (date announced 2025-10-17); no 2026 date announced yet",
       "confidence": "estimated"
     },
-    "note": "FPI (Israeli digital forensics software), 20-F/6-K filer. Revenue +15.8% to $131.1M (inside guidance), but ARR $507.8M (+21%) missed guidance on longer sales cycles/slower Inseyets upgrades; CEO changed same day (Shiven Ramji replaced Thomas Hogan). Full-year guidance cut on ARR (-$15M) and revenue (-$10M) but adjusted EBITDA raised (+$4M). GAAP net income -67.3% to $6.4M mostly from accounting items (acquisition amortization, stock comp +73%, tax rate 6%\u219243%) \u2014 non-GAAP net income roughly flat. Free cash flow halved to $14.5M on a $38.1M receivables build.",
+    "note": "FPI (Israeli digital forensics software), 20-F/6-K filer. Revenue +15.8% to $131.1M (inside guidance), but ARR $507.8M (+21%) missed guidance on longer sales cycles/slower Inseyets upgrades; CEO changed same day (Shiven Ramji replaced Thomas Hogan). Full-year guidance cut on ARR (-$15M) and revenue (-$10M) but adjusted EBITDA raised (+$4M). GAAP net income -67.3% to $6.4M mostly from accounting items (acquisition amortization, stock comp +73%, tax rate 6%→43%) — non-GAAP net income roughly flat. Free cash flow halved to $14.5M on a $38.1M receivables build.",
     "lastChecked": "2026-10-14"
   },
   "CIFR": {
@@ -579,7 +579,7 @@
       "basis": "semi-annual filer; prior 20-Fs filed 2024-04-30, 2025-04-28, 2026-04-22; no quarterly reports",
       "confidence": "estimated"
     },
-    "note": "FPI (Greek shipping, 6 vessels), 20-F/6-K filer, no quarterlies. H1 2026: revenue +83.5% to $35.62M almost entirely on higher TCE rates ($36,769/day vs $16,335, working days only +3%); net income +409.3% to $13.18M. Common shareholders received only $7.7M of that \u2014 a $5.1M non-cash deemed dividend went to preferred shares held by former parent Imperial Petroleum. $39.8M owed Jan 2027 for two tankers bought from chairman-family-linked companies; two ships carried above market value with no write-down. Massive share dilution/reverse splits make EPS YoY meaningless (epsYoyPct omitted).",
+    "note": "FPI (Greek shipping, 6 vessels), 20-F/6-K filer, no quarterlies. H1 2026: revenue +83.5% to $35.62M almost entirely on higher TCE rates ($36,769/day vs $16,335, working days only +3%); net income +409.3% to $13.18M. Common shareholders received only $7.7M of that — a $5.1M non-cash deemed dividend went to preferred shares held by former parent Imperial Petroleum. $39.8M owed Jan 2027 for two tankers bought from chairman-family-linked companies; two ships carried above market value with no write-down. Massive share dilution/reverse splits make EPS YoY meaningless (epsYoyPct omitted).",
     "lastChecked": "2026-10-14"
   },
   "CHYM": {
@@ -602,7 +602,7 @@
       "basis": "Q3 2025 earnings 8-K was 2025-11-05 (10-Q 2025-11-10)",
       "confidence": "estimated"
     },
-    "note": "Fintech/neobank, not a chartered bank (no NIM/bank fields). Revenue +26.8% to $669.8M (above own guidance of $633-643M); net income $27.9M / $0.07 EPS, second straight GAAP profit. Year-ago loss was almost entirely a one-time $928.1M IPO stock-comp charge, so netIncomeYoyPct/epsYoyPct omitted as not meaningful. Growth from credit-card interchange (+62%) and lending-like products (+48%). Full-year guidance raised. Post-quarter: ~10% layoff, CFO departed, and a $590M cash deal to buy Stride Bank announced 2026-09-08 (closing H1 2027, pending OCC/Fed approval) \u2014 worth following up.",
+    "note": "Fintech/neobank, not a chartered bank (no NIM/bank fields). Revenue +26.8% to $669.8M (above own guidance of $633-643M); net income $27.9M / $0.07 EPS, second straight GAAP profit. Year-ago loss was almost entirely a one-time $928.1M IPO stock-comp charge, so netIncomeYoyPct/epsYoyPct omitted as not meaningful. Growth from credit-card interchange (+62%) and lending-like products (+48%). Full-year guidance raised. Post-quarter: ~10% layoff, CFO departed, and a $590M cash deal to buy Stride Bank announced 2026-09-08 (closing H1 2027, pending OCC/Fed approval) — worth following up.",
     "lastChecked": "2026-10-14"
   },
   "CHSN": {
@@ -625,7 +625,7 @@
       "basis": "FY2025 20-F filed 2026-04-20; semiannual filer (H1 only, no Q3)",
       "confidence": "estimated"
     },
-    "note": "FPI (China bakery chain), 20-F/6-K filer. Revenue -4.5% to $8.30M; swung to $0.85M net income from a $1.05M loss, but entirely from $1.80M of interest on $54.9M lent to three outside parties (56% of total assets) \u2014 only $0.50M of that interest was received in cash, operating cash flow -$3.19M. Like-for-like bakery business actually lost slightly more than a year ago (~-$0.93M vs -$0.85M pre-tax). Heavy dilution (389,789\u21927.4M shares); Oct 26 2026 vote proposes another 1-for-100 reverse split.",
+    "note": "FPI (China bakery chain), 20-F/6-K filer. Revenue -4.5% to $8.30M; swung to $0.85M net income from a $1.05M loss, but entirely from $1.80M of interest on $54.9M lent to three outside parties (56% of total assets) — only $0.50M of that interest was received in cash, operating cash flow -$3.19M. Like-for-like bakery business actually lost slightly more than a year ago (~-$0.93M vs -$0.85M pre-tax). Heavy dilution (389,789→7.4M shares); Oct 26 2026 vote proposes another 1-for-100 reverse split.",
     "lastChecked": "2026-10-14"
   },
   "CHR": {
@@ -648,7 +648,7 @@
       "basis": "FY2025 20-F filed 2026-03-20",
       "confidence": "estimated"
     },
-    "note": "FPI (China ad/media app), no 10-Q/10-K, H1 2026 6-K is the qualifying 2026 period. Revenue -14.7% to $60.5M (6 customers = 100% of it); operating income reported +26.1% but that's purely a prior-year share-based pay charge not recurring (company's own segment table shows operating income actually fell 10.7%). Net income +4.0% only because tax rate rose from ~0% to ~25.6% while pre-tax profit rose 39.7%. Operating cash flow -$30.2M vs $8.1M profit (receivables +$24M, AI-app prepayments +$21M). EPS fell 95% purely from huge share dilution (77,222\u21921,639,946 weighted shares), not operations. Change of control 2026-09-16: CEO sold all Class B voting shares (96.44% of voting power) to a Hong Kong entity for $500 total, stays on as Chairman/CEO/interim CFO \u2014 worth watching.",
+    "note": "FPI (China ad/media app), no 10-Q/10-K, H1 2026 6-K is the qualifying 2026 period. Revenue -14.7% to $60.5M (6 customers = 100% of it); operating income reported +26.1% but that's purely a prior-year share-based pay charge not recurring (company's own segment table shows operating income actually fell 10.7%). Net income +4.0% only because tax rate rose from ~0% to ~25.6% while pre-tax profit rose 39.7%. Operating cash flow -$30.2M vs $8.1M profit (receivables +$24M, AI-app prepayments +$21M). EPS fell 95% purely from huge share dilution (77,222→1,639,946 weighted shares), not operations. Change of control 2026-09-16: CEO sold all Class B voting shares (96.44% of voting power) to a Hong Kong entity for $500 total, stays on as Chairman/CEO/interim CFO — worth watching.",
     "lastChecked": "2026-10-14"
   },
   "CIGI": {
@@ -691,7 +691,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q2 FY2027, quarter ending 2026-11-30)",
       "estimate": "2027-01-08",
-      "basis": "prior-year Q2 10-Q filed 2026-01-08; Q1 cadence 2025-10-10 \u2192 2026-10-13",
+      "basis": "prior-year Q2 10-Q filed 2026-01-08; Q1 cadence 2025-10-10 → 2026-10-13",
       "confidence": "estimated"
     },
     "note": "Fiscal year ends May 31, so this is fiscal Q1 FY2027 but filed under calendar 2026/Q1 to match site convention (e.g. GIS). First quarter including Kloeckner (German metals distributor, ~62.11% owned since 2026-06-03): sales ~tripled to $2,726.6M ($1,772.7M from Kloeckner); GAAP net loss $(10.0)M / $(0.20) EPS vs $36.8M/$0.73 a year ago, driven by $22.6M deal costs, $15.5M revaluation loss, interest expense up to $38.8M, 100.7% tax rate. Adjusted EBIT +41% to $78.5M but entirely from Kloeckner (legacy adjusted EBIT fell). Kloeckner DPLTA shareholder vote 2026-10-23; up to ~$483M possible minority buyout.",
@@ -717,7 +717,7 @@
       "basis": "45-day smaller-reporting-company deadline (~Nov 14, a Saturday); TGL has filed NT 10-Q extensions recently (May 2026, Feb 2026) so could slip to ~Nov 19-20",
       "confidence": "estimated"
     },
-    "note": "FY2026 10-K (Malaysia-based ZCITY rewards app, going-concern paragraph from auditor). Revenue $5.17M (+121.8%) but gross profit only $8,742 (0.2% margin, down from 71.6%) \u2014 nearly all revenue is e-vouchers sold at cost. Active users down 37.5% to 3,054. Net loss narrowed to $11.09M from $23.38M, mostly accounting (prior year had $19.5M impairment; this year has $5.38M warrant-liability gain from its own falling stock price). Cash $1.59M vs $6.88M operating cash burn. Heavy dilution: cumulative 1-for-70,000 reverse splits since Feb 2024, shares outstanding 2.03M\u21923.63M by Sept 2026. revenueYoyPct/netIncomeYoyPct/epsYoyPct partly omitted where a loss-to-loss % wouldn't be meaningful.",
+    "note": "FY2026 10-K (Malaysia-based ZCITY rewards app, going-concern paragraph from auditor). Revenue $5.17M (+121.8%) but gross profit only $8,742 (0.2% margin, down from 71.6%) — nearly all revenue is e-vouchers sold at cost. Active users down 37.5% to 3,054. Net loss narrowed to $11.09M from $23.38M, mostly accounting (prior year had $19.5M impairment; this year has $5.38M warrant-liability gain from its own falling stock price). Cash $1.59M vs $6.88M operating cash burn. Heavy dilution: cumulative 1-for-70,000 reverse splits since Feb 2024, shares outstanding 2.03M→3.63M by Sept 2026. revenueYoyPct/netIncomeYoyPct/epsYoyPct partly omitted where a loss-to-loss % wouldn't be meaningful.",
     "lastChecked": "2026-10-14"
   },
   "A": {
@@ -737,7 +737,7 @@
     "nextExpectedFiling": {
       "type": "10-K (FY2026 Annual)",
       "estimate": "2026-12-21",
-      "basis": "fiscal year ends October 31 (EDGAR fiscalYearEnd 1031), so FY2026 Q3 (period end 2026-07-31) is the last quarter before the annual report. Prior 10-Ks filed 2025-12-22, 2024-12-20, 2023-12-20, 2022-12-21 \u2014 consistently the third week of December. The Q4/FY2026 earnings-release 8-K should land ~2026-11-30 (FY2025 release was 2025-11-24), several weeks ahead of the 10-K itself; a web search surfaced a third-party estimate of 2026-11-30 for the earnings date but no Agilent confirmation, so this stays estimated",
+      "basis": "fiscal year ends October 31 (EDGAR fiscalYearEnd 1031), so FY2026 Q3 (period end 2026-07-31) is the last quarter before the annual report. Prior 10-Ks filed 2025-12-22, 2024-12-20, 2023-12-20, 2022-12-21 — consistently the third week of December. The Q4/FY2026 earnings-release 8-K should land ~2026-11-30 (FY2025 release was 2025-11-24), several weeks ahead of the 10-K itself; a web search surfaced a third-party estimate of 2026-11-30 for the earnings date but no Agilent confirmation, so this stays estimated",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-13"
@@ -856,7 +856,7 @@
       "type": "8-K (Item 2.02, IPR&D/milestones expense update, not earnings)",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-10-05",
-      "note": "2026-10-05 8-K is not the Q3 earnings release \u2014 it's AbbVie's recurring quarter-end IPR&D/milestones-expense notice (~$216M pretax, trims Q3 adjusted EPS guidance to $3.73-3.77 and FY2026 to $13.76-13.96); filing itself states Q3 2026 results are not finalized. Recorded here so the scan stops re-flagging this filing. Last actual filed quarter remains Q2 (periodEnd above)."
+      "note": "2026-10-05 8-K is not the Q3 earnings release — it's AbbVie's recurring quarter-end IPR&D/milestones-expense notice (~$216M pretax, trims Q3 adjusted EPS guidance to $3.73-3.77 and FY2026 to $13.76-13.96); filing itself states Q3 2026 results are not finalized. Recorded here so the scan stops re-flagging this filing. Last actual filed quarter remains Q2 (periodEnd above)."
     },
     "nextExpectedFiling": {
       "type": "8-K earnings release / 10-Q (Q3 2026)",
@@ -920,7 +920,7 @@
       "type": "10-Q",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-07-28",
-      "note": "filedAt corrected 2026-09-13 \u2014 the previous 2026-07-16 date was the earnings-release 8-K, not the 10-Q itself"
+      "note": "filedAt corrected 2026-09-13 — the previous 2026-07-16 date was the earnings-release 8-K, not the 10-Q itself"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -1226,7 +1226,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-03",
-      "basis": "calendar fiscal year (FYE 12/31); prior Q3 10-Qs filed 2025-11-04 and 2024-10-31, and 2026 quarterlies filed 2026-05-05 (Q1) and 2026-08-04 (Q2). NOTE: AES is under a signed take-private ($15.00/share cash, Horizon Parent L.P. \u2014 GIP + EQT Infrastructure VI; stockholder approval 2026-06-26, HSR expired 2026-06-22, CFIUS cleared 2026-08-27, still pending PUCO/NY PSC/FERC/foreign approvals, outside date 2027-06-01). It has filed NO earnings-release 8-K (Item 2.02) since 2025-11-04 and gives no guidance, so no earnings date will be announced; the 10-Q is the only disclosure. If the merger closes before then, equity may deregister and filing cadence could change",
+      "basis": "calendar fiscal year (FYE 12/31); prior Q3 10-Qs filed 2025-11-04 and 2024-10-31, and 2026 quarterlies filed 2026-05-05 (Q1) and 2026-08-04 (Q2). NOTE: AES is under a signed take-private ($15.00/share cash, Horizon Parent L.P. — GIP + EQT Infrastructure VI; stockholder approval 2026-06-26, HSR expired 2026-06-22, CFIUS cleared 2026-08-27, still pending PUCO/NY PSC/FERC/foreign approvals, outside date 2027-06-01). It has filed NO earnings-release 8-K (Item 2.02) since 2025-11-04 and gives no guidance, so no earnings date will be announced; the 10-Q is the only disclosure. If the merger closes before then, equity may deregister and filing cadence could change",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-13"
@@ -2296,7 +2296,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q1 FY2027, period end 2026-09-30)",
       "estimate": "2026-11-14",
-      "basis": "June 30 fiscal year end; FY2026 10-K filed 2026-09-15 (about 77 days after fiscal year end); estimating the next 10-Q roughly 45 days after its Sept 30, 2026 quarter end per typical smaller-reporting-company cadence \u2014 no prior-year quarterly filing history yet (recent IPO) to anchor a tighter estimate",
+      "basis": "June 30 fiscal year end; FY2026 10-K filed 2026-09-15 (about 77 days after fiscal year end); estimating the next 10-Q roughly 45 days after its Sept 30, 2026 quarter end per typical smaller-reporting-company cadence — no prior-year quarterly filing history yet (recent IPO) to anchor a tighter estimate",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-16"
@@ -2374,7 +2374,7 @@
       "basis": "quarter ends 2026-09-30; ~45-day filing deadline typical for a smaller reporting company",
       "confidence": "estimated"
     },
-    "note": "10-Q/A filed 2026-09-18 was a non-financial amendment (SEC-comment-driven goodwill disclosure rewrite in Notes 3/7 + expanded Critical Accounting Policies) \u2014 no figures changed vs. the original 10-Q (accession 0001104659-26-099751, filed 2026-08-21); verified by diffing both. Analyzed the unchanged Q2 figures as authoritative. Net loss $13.04M incl. $10.07M non-cash goodwill impairment (45% of Grid AI Corp. acquisition goodwill, written off within 3 quarters) on revenue of just $85,876. Going-concern doubt not alleviated per management. Also drew on the 2026-09-11 8-K for a post-quarter fact (Pronghorn Resources loan increased to $2.964M total).",
+    "note": "10-Q/A filed 2026-09-18 was a non-financial amendment (SEC-comment-driven goodwill disclosure rewrite in Notes 3/7 + expanded Critical Accounting Policies) — no figures changed vs. the original 10-Q (accession 0001104659-26-099751, filed 2026-08-21); verified by diffing both. Analyzed the unchanged Q2 figures as authoritative. Net loss $13.04M incl. $10.07M non-cash goodwill impairment (45% of Grid AI Corp. acquisition goodwill, written off within 3 quarters) on revenue of just $85,876. Going-concern doubt not alleviated per management. Also drew on the 2026-09-11 8-K for a post-quarter fact (Pronghorn Resources loan increased to $2.964M total).",
     "lastChecked": "2026-09-19"
   },
   "GWRE": {
@@ -2860,7 +2860,7 @@
       "filedAt": "2026-07-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027 \u2014 out of 2026-coverage scope)",
+      "type": "10-Q (Q1 FY2027 — out of 2026-coverage scope)",
       "estimate": "2026-10-29",
       "basis": "prior Q1 FY10-Qs filed ~Oct 29",
       "confidence": "estimated"
@@ -2923,12 +2923,12 @@
       "accession": "0001193125-26-395536"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027) \u2014 but see note",
+      "type": "10-Q (Q1 FY2027) — but see note",
       "estimate": "2026-11-14",
       "basis": "fiscal year ends 2026-06-30; ~45-day smaller-reporting-company deadline",
       "confidence": "estimated"
     },
-    "note": "Clinical-stage biotech (fiscal year ends June 30). Phase 3 AFFIRM-1 (BNC210, social anxiety) missed its primary endpoint 2025-10-20; company terminated leases and nearly all staff (now 1 FTE), PTSD program on hold. Revenue -92.5% to $1.17M (FY2025 had a one-off $15.0M Merck milestone); net loss widened to $13.45M, mostly a $5.36M non-cash goodwill impairment after Merck ended the MK-1167 Alzheimer's Phase 2 for futility, plus $1.28M restructuring \u2014 underlying R&D+G&A spend actually fell 34.5%. Cash rose to $19.87M via ATM share sales (+173.5% share count). Agreed 2026-07-23 to be acquired by Scancell Holdings plc at ~$4.55/share (~$24.6M), below the ATM average price and below Lynx1's earlier withdrawn indications; holders get ~11.1% of combined co. + 1 CVR. Merger targeted to close late 2026 \u2014 NEUP may stop filing standalone, worth checking before assuming another quarterly is coming.",
+    "note": "Clinical-stage biotech (fiscal year ends June 30). Phase 3 AFFIRM-1 (BNC210, social anxiety) missed its primary endpoint 2025-10-20; company terminated leases and nearly all staff (now 1 FTE), PTSD program on hold. Revenue -92.5% to $1.17M (FY2025 had a one-off $15.0M Merck milestone); net loss widened to $13.45M, mostly a $5.36M non-cash goodwill impairment after Merck ended the MK-1167 Alzheimer's Phase 2 for futility, plus $1.28M restructuring — underlying R&D+G&A spend actually fell 34.5%. Cash rose to $19.87M via ATM share sales (+173.5% share count). Agreed 2026-07-23 to be acquired by Scancell Holdings plc at ~$4.55/share (~$24.6M), below the ATM average price and below Lynx1's earlier withdrawn indications; holders get ~11.1% of combined co. + 1 CVR. Merger targeted to close late 2026 — NEUP may stop filing standalone, worth checking before assuming another quarterly is coming.",
     "lastChecked": "2026-09-19"
   },
   "NTNX": {
@@ -2960,7 +2960,7 @@
       "basis": "fiscal year ends 2026-07-31, quarters end Oct/Jan/Apr/Jul 31; ~40-day post-quarter filing cadence observed historically",
       "confidence": "estimated"
     },
-    "note": "Fiscal year ends July 31. Revenue +12% to $2,853.5M, non-GAAP operating margin +260bps to 23.7%. GAAP net income's 8x jump to $1,506.8M ($5.17 diluted EPS) is almost entirely a $1,208.2M non-cash release of the US deferred-tax valuation allowance \u2014 pre-tax income only rose $211.6M->$327.1M; GAAP EPS ($5.17) now exceeds non-GAAP EPS ($2.04), flagged as backwards vs the usual direction. FY2027 guidance ($3.180-3.230B revenue, 24-25% non-GAAP op margin, $850-950M FCF) implies no growth acceleration. Aug 2026 5% headcount cut booked $27.6M severance with zero cash paid, flattering FY2026's $840.7M FCF. ARR +16%, RPO +28%, both ahead of revenue growth. Repurchased 9.4M shares at avg $51.24 while separately selling 4.14M shares to AMD at $36.26 (May 2026 private placement). Stockholders' equity flipped from -$694.5M to +$702.6M.",
+    "note": "Fiscal year ends July 31. Revenue +12% to $2,853.5M, non-GAAP operating margin +260bps to 23.7%. GAAP net income's 8x jump to $1,506.8M ($5.17 diluted EPS) is almost entirely a $1,208.2M non-cash release of the US deferred-tax valuation allowance — pre-tax income only rose $211.6M->$327.1M; GAAP EPS ($5.17) now exceeds non-GAAP EPS ($2.04), flagged as backwards vs the usual direction. FY2027 guidance ($3.180-3.230B revenue, 24-25% non-GAAP op margin, $850-950M FCF) implies no growth acceleration. Aug 2026 5% headcount cut booked $27.6M severance with zero cash paid, flattering FY2026's $840.7M FCF. ARR +16%, RPO +28%, both ahead of revenue growth. Repurchased 9.4M shares at avg $51.24 while separately selling 4.14M shares to AMD at $36.26 (May 2026 private placement). Stockholders' equity flipped from -$694.5M to +$702.6M.",
     "lastChecked": "2026-09-19"
   },
   "OPTT": {
@@ -3546,8 +3546,8 @@
     "lastChecked": "2026-09-17"
   },
   "_meta": {
-    "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop \u2014 see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
-    "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published \u2014 this is the tier-1 finish line, see CLAUDE.md 'Standing priority'. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, once tier 1 is fully done/skipped) \u2014 not a blocker during tier-1 backlog processing. 'reports' (added 2026-09-13, backfilled retroactively where known) lists every period already published for that company, across all fiscal years \u2014 originally scoped to fiscal-2026 only, now also the record for tier-2 multi-year backfill (2026-09-15+: once a company is 'done', additional entries for other years get appended here as tier 2 adds them). 'allAvailable2026QuartersCovered: true' means no further *2026* backfill is owed as of lastChecked \u2014 it says nothing about other years' coverage.",
+    "description": "Tracks 2026 report coverage progress per company, plus an inferred/searched calendar of each company's next expected filing. Read and updated by the standing '2026 report coverage' loop — see CLAUDE.md 'Standing priority' section for how this drives what to work on next. Keyed by ticker (uppercase, matching scripts/data/sp500.json / scripts/data/us-listed.json).",
+    "schemaNote": "status: 'done' once a qualifying 2026 report (ANNUAL if FY2026 is out, else latest reported 2026 quarter) is published — this is the tier-1 finish line, see CLAUDE.md 'Standing priority'. nextExpectedFiling is an estimate for Phase 2 (freshness maintenance, once tier 1 is fully done/skipped) — not a blocker during tier-1 backlog processing. 'reports' (added 2026-09-13, backfilled retroactively where known) lists every period already published for that company, across all fiscal years — originally scoped to fiscal-2026 only, now also the record for tier-2 multi-year backfill (2026-09-15+: once a company is 'done', additional entries for other years get appended here as tier 2 adds them). 'allAvailable2026QuartersCovered: true' means no further *2026* backfill is owed as of lastChecked — it says nothing about other years' coverage.",
     "lastUpdated": "2026-09-19"
   },
   "NVDA": {
@@ -3658,7 +3658,7 @@
       "basis": "Q2 10-Q filed 2026-08-06, ~23 days after the 2026-07-14 earnings release; same lag applied to the 2026-10-13 release",
       "confidence": "estimated"
     },
-    "note": "2026-10-13 8-K Item 2.02 missed by scan-recent-filings despite JPM being hot-list (caught via direct evidence from the same-night hot-list-rewrite subagent) \u2014 worth checking the scan's hot-list/S&P-500 8-K matching logic. Q3: net income $15.3B ($5.57 EPS, +10%), or $15.8B ex a $658M discretionary securities loss; CET1 slipped to 13.9% from 14.8%; buybacks cut to $1.06B from $6.7B in Q2.",
+    "note": "2026-10-13 8-K Item 2.02 missed by scan-recent-filings despite JPM being hot-list (caught via direct evidence from the same-night hot-list-rewrite subagent) — worth checking the scan's hot-list/S&P-500 8-K matching logic. Q3: net income $15.3B ($5.57 EPS, +10%), or $15.8B ex a $658M discretionary securities loss; CET1 slipped to 13.9% from 14.8%; buybacks cut to $1.06B from $6.7B in Q2.",
     "lastChecked": "2026-10-14",
     "reports": [
       {
@@ -4350,7 +4350,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-21",
-      "basis": "Q1 and Q2 10-Qs filed 8 days after their earnings 8-Ks (04-14\u219204-22, 07-15\u219207-23)",
+      "basis": "Q1 and Q2 10-Qs filed 8 days after their earnings 8-Ks (04-14→04-22, 07-15→07-23)",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-14",
@@ -6142,7 +6142,7 @@
     "lastChecked": "2026-09-24"
   },
   "EL": {
-    "name": "Est\u00e9e Lauder",
+    "name": "Estée Lauder",
     "status": "done",
     "latestReport": {
       "year": 2026,
@@ -7098,7 +7098,7 @@
       "type": "10-Q",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-11",
-      "note": "Clinical-stage oncology (3 KRAS-targeted drugs incl. BBO-8520), separate company from BridgeBio Pharma (BBIO) despite shared branding/affiliation. Net loss nearly doubled to -$56.5M on R&D +79% to $49.2M; cash fell from $425.5M (YE) to $344.1M, guided to last into 2028. EPS -$0.71 vs -$0.57 (dampened by ~59% more shares after the Aug 2025 SPAC merger/$260.9M raise). Filing itself misprints EPS as \"$(705.20)\" (a units error against a 80,054 weighted-share count printed in thousands) \u2014 report uses the correct -$0.71 ($56.45M / 80.05M shares) and says so."
+      "note": "Clinical-stage oncology (3 KRAS-targeted drugs incl. BBO-8520), separate company from BridgeBio Pharma (BBIO) despite shared branding/affiliation. Net loss nearly doubled to -$56.5M on R&D +79% to $49.2M; cash fell from $425.5M (YE) to $344.1M, guided to last into 2028. EPS -$0.71 vs -$0.57 (dampened by ~59% more shares after the Aug 2025 SPAC merger/$260.9M raise). Filing itself misprints EPS as \"$(705.20)\" (a units error against a 80,054 weighted-share count printed in thousands) — report uses the correct -$0.71 ($56.45M / 80.05M shares) and says so."
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -7164,7 +7164,7 @@
       "type": "10-Q (+8-K Ex. 99.1 earnings release)",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-07",
-      "note": "Bank. Net income $14.3M ($0.44 diluted EPS) vs $14.1M ($0.43) a year ago. NII +4.7% to $43.4M, NIM 4.71% (ex-merger-accretion ~4.39% vs ~4.10% a year ago). Pre-tax income actually fell 1.1% \u2014 EPS gain came from a lower tax rate and buybacks. Credit improved sharply: NPLs fell 71% to 0.29% of loans after 3 problem CRE loans resolved; but allowance thinned to 1.13% from 1.37% and substandard loans rose to 2.07%. Total loans $3,110.6M, total deposits $3,359.1M, efficiency ratio 54.22%, net charge-off ratio 0.03%, CET1 13.02%, ROTCE 12.62%."
+      "note": "Bank. Net income $14.3M ($0.44 diluted EPS) vs $14.1M ($0.43) a year ago. NII +4.7% to $43.4M, NIM 4.71% (ex-merger-accretion ~4.39% vs ~4.10% a year ago). Pre-tax income actually fell 1.1% — EPS gain came from a lower tax rate and buybacks. Credit improved sharply: NPLs fell 71% to 0.29% of loans after 3 problem CRE loans resolved; but allowance thinned to 1.13% from 1.37% and substandard loans rose to 2.07%. Total loans $3,110.6M, total deposits $3,359.1M, efficiency ratio 54.22%, net charge-off ratio 0.03%, CET1 13.02%, ROTCE 12.62%."
     },
     "nextExpectedFiling": {
       "type": "8-K earnings release / 10-Q (Q3 2026)",
@@ -7220,7 +7220,7 @@
   "BCCQ": {
     "name": "Bleichroeder Acquisition Corp. III - Class A Ordinary Shares",
     "status": "skipped",
-    "skipReason": "Pre-merger SPAC (blank-check, SIC 6770), only one 10-Q filed so far (2026-08-14, recent IPO). However it signed a Business Combination Agreement with Ursa Major Technologies, Inc. (a rocket-propulsion company) via an 8-K filed 2026-08-25 (Mach X/Merger Sub/Ursa Major structure, post-Domestication to Delaware) \u2014 not yet closed, Outside Date 2027-08-24. No operating business/financials to report on until closing; revisit after the merger closes (likely a notable de-SPAC worth an editorial mention once it does).",
+    "skipReason": "Pre-merger SPAC (blank-check, SIC 6770), only one 10-Q filed so far (2026-08-14, recent IPO). However it signed a Business Combination Agreement with Ursa Major Technologies, Inc. (a rocket-propulsion company) via an 8-K filed 2026-08-25 (Mach X/Merger Sub/Ursa Major structure, post-Domestication to Delaware) — not yet closed, Outside Date 2027-08-24. No operating business/financials to report on until closing; revisit after the merger closes (likely a notable de-SPAC worth an editorial mention once it does).",
     "lastFilingSeen": {
       "type": "10-Q",
       "periodEnd": "2026-06-30",
@@ -7247,10 +7247,10 @@
       "type": "8-K Ex. 99.1 earnings release",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-09-16",
-      "note": "Bank, NJ. Published and actually researched by this firing's subagent (not reconstructed) \u2014 an earlier version of this entry, written by the concurrent prior-hour firing before it saw this session's push, mis-dated the source filing 2026-08-10 (that's the 10-Q date; the report was sourced from the 2026-09-16 8-K Ex. 99.1 earnings release, confirmed via EDGAR's filing index) and flagged a false conflation concern \u2014 the live report correctly describes two separate, coincidentally-identical $43.3M figures: the holding company's 9.25% subordinated debt balance, and the estimated pre-tax loss on the $205.3M problem-loan sale (both independently verified in the 10-Q text, not a units error). Q2 2026 net LOSS $14.8M (-$0.85/sh) vs a $3.6M profit a year ago, driven by a $19.0M loan-loss provision ($16.7M for business loans), a $5.3M full goodwill write-off, and a $2.6M loss on a loan moved to held-for-sale. Underlying lending improved: NIM 3.03% (2.80% a year ago), NII +1.1%. Switched to the Community Bank Leverage Ratio framework as of June 30 (no CET1; leverage ratio 10.38%, holding company 9.18%). Charge-offs $6.6M, ratio not stated; ROTCE not reported. Material post-quarter events folded into the report: Q3 2026 net-loss forecast $126-136M (incl. ~$50M tax-asset write-down, given 2026-09-16); ~$92.4M net equity raise (12.65M sh @ $7.75, well below June tangible book value $14.73/sh); the $205.3M problem-loan sale noted above; auditor changed to Deloitte."
+      "note": "Bank, NJ. Published and actually researched by this firing's subagent (not reconstructed) — an earlier version of this entry, written by the concurrent prior-hour firing before it saw this session's push, mis-dated the source filing 2026-08-10 (that's the 10-Q date; the report was sourced from the 2026-09-16 8-K Ex. 99.1 earnings release, confirmed via EDGAR's filing index) and flagged a false conflation concern — the live report correctly describes two separate, coincidentally-identical $43.3M figures: the holding company's 9.25% subordinated debt balance, and the estimated pre-tax loss on the $205.3M problem-loan sale (both independently verified in the 10-Q text, not a units error). Q2 2026 net LOSS $14.8M (-$0.85/sh) vs a $3.6M profit a year ago, driven by a $19.0M loan-loss provision ($16.7M for business loans), a $5.3M full goodwill write-off, and a $2.6M loss on a loan moved to held-for-sale. Underlying lending improved: NIM 3.03% (2.80% a year ago), NII +1.1%. Switched to the Community Bank Leverage Ratio framework as of June 30 (no CET1; leverage ratio 10.38%, holding company 9.18%). Charge-offs $6.6M, ratio not stated; ROTCE not reported. Material post-quarter events folded into the report: Q3 2026 net-loss forecast $126-136M (incl. ~$50M tax-asset write-down, given 2026-09-16); ~$92.4M net equity raise (12.65M sh @ $7.75, well below June tangible book value $14.73/sh); the $205.3M problem-loan sale noted above; auditor changed to Deloitte."
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026) \u2014 pre-announced as a large loss",
+      "type": "10-Q (Q3 2026) — pre-announced as a large loss",
       "estimate": "2026-11-14",
       "basis": "Q2 10-Q filed 2026-08-14, ~90-day cadence; Sept 16 8-K already guides to a $126-136M Q3 net loss, so this will be a major update",
       "confidence": "estimated"
@@ -7280,7 +7280,7 @@
       "type": "10-Q (+8-K Ex. 99.1 earnings release)",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-13",
-      "note": "Independent broker-dealer network (PCS/Cabot Lodge etc.). Revenue +12.1% to $46.5M; GAAP net income $0.34M vs a $0.65M loss a year ago, but $0.40M of preferred dividends left common shareholders at a small loss, so diluted EPS was $(0.00). Client assets +13.4% to $31.6B almost entirely from market gains ($4.8B) while clients withdrew a net $2.2B \u2014 flagged as the real story behind the AUM headline. Most of the GAAP improvement was $0.6M lower share-based pay; adjusted EBITDA rose only $0.3M to $1.2M. ~$22.6M of debt/affiliate notes outstanding ($5.3M due 2027); Series A preferred must be redeemed March 2028 (~$26.6M) against only $10.5M cash \u2014 a real liquidity question flagged for next report. netIncomeYoyPct/epsYoyPct omitted (both swung loss-to-profit)."
+      "note": "Independent broker-dealer network (PCS/Cabot Lodge etc.). Revenue +12.1% to $46.5M; GAAP net income $0.34M vs a $0.65M loss a year ago, but $0.40M of preferred dividends left common shareholders at a small loss, so diluted EPS was $(0.00). Client assets +13.4% to $31.6B almost entirely from market gains ($4.8B) while clients withdrew a net $2.2B — flagged as the real story behind the AUM headline. Most of the GAAP improvement was $0.6M lower share-based pay; adjusted EBITDA rose only $0.3M to $1.2M. ~$22.6M of debt/affiliate notes outstanding ($5.3M due 2027); Series A preferred must be redeemed March 2028 (~$26.6M) against only $10.5M cash — a real liquidity question flagged for next report. netIncomeYoyPct/epsYoyPct omitted (both swung loss-to-profit)."
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -7313,7 +7313,7 @@
       "type": "10-Q (+8-K Ex. 99.1 earnings release)",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-06",
-      "note": "BDC (files 10-Q, unlike a '40-Act closed-end fund that files N-CSR \u2014 same precedent as ARCC). Total investment income +20.1% to $15.2M, NII +21.1% to $5.5M, almost entirely from the July 2025 Logan Ridge (LRFC) merger (core investment income ex-accretion only +2.4%; merger also added ~34% more shares, so NII/share fell to $0.45 from $0.50). Realized losses $10.5M + unrealized losses $4.7M produced a GAAP net decrease in net assets of -$9.9M (-$0.80/sh). NAV/share fell to $14.49 from $15.60 (March) / $17.89 (year-ago, -19%). Core NII (~$0.27/sh) barely covers the already-cut $0.27 base distribution; tax-basis distributable income $0.29/sh vs $0.30 declared (incl. supplemental). Non-accruals at cost improved to 5.7% from 6.2%; KeyBank facility upsized, replaced JPMorgan facility. netIncomeYoyPct/epsYoyPct omitted (both years were losses); operatingMarginPct omitted (doesn't apply to a BDC)."
+      "note": "BDC (files 10-Q, unlike a '40-Act closed-end fund that files N-CSR — same precedent as ARCC). Total investment income +20.1% to $15.2M, NII +21.1% to $5.5M, almost entirely from the July 2025 Logan Ridge (LRFC) merger (core investment income ex-accretion only +2.4%; merger also added ~34% more shares, so NII/share fell to $0.45 from $0.50). Realized losses $10.5M + unrealized losses $4.7M produced a GAAP net decrease in net assets of -$9.9M (-$0.80/sh). NAV/share fell to $14.49 from $15.60 (March) / $17.89 (year-ago, -19%). Core NII (~$0.27/sh) barely covers the already-cut $0.27 base distribution; tax-basis distributable income $0.29/sh vs $0.30 declared (incl. supplemental). Non-accruals at cost improved to 5.7% from 6.2%; KeyBank facility upsized, replaced JPMorgan facility. netIncomeYoyPct/epsYoyPct omitted (both years were losses); operatingMarginPct omitted (doesn't apply to a BDC)."
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -7346,12 +7346,12 @@
       "type": "8-K Ex. 99.1 earnings release",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-07-23",
-      "note": "Published by this session's own subagent (ground truth) \u2014 a separate concurrent firing independently reconstructed a matching entry around the same time; merged the two. Bank (United Business Bank). Q2 2026 net LOSS -$7.0M (-$0.64/sh) vs +$0.58/sh a year ago, driven by $10.5M of one-time executive-departure costs after the board dismissed the CEO, COO and CFO without cause on 2026-04-07. NII $23.7M (+2.5%); NIM 3.95%, up YoY from 3.77% but down sequentially from 4.11% in Q1 2026 \u2014 note for the next report that 'widened' only holds YoY. Efficiency ratio 107.71% (inflated by the one-time charge). CET1 13.76% (vs 17.35% a year ago), ROTCE -9.10%. Loans $2,075.2M, deposits $2,169.9M (-$95.5M q/q). NPLs improved to 0.47% from 0.83% after selling $7.7M of problem loans; $2.8M charge-off, $5.2M provision. Net charge-off ratio (~0.56% annualized) was calculated, not filing-stated."
+      "note": "Published by this session's own subagent (ground truth) — a separate concurrent firing independently reconstructed a matching entry around the same time; merged the two. Bank (United Business Bank). Q2 2026 net LOSS -$7.0M (-$0.64/sh) vs +$0.58/sh a year ago, driven by $10.5M of one-time executive-departure costs after the board dismissed the CEO, COO and CFO without cause on 2026-04-07. NII $23.7M (+2.5%); NIM 3.95%, up YoY from 3.77% but down sequentially from 4.11% in Q1 2026 — note for the next report that 'widened' only holds YoY. Efficiency ratio 107.71% (inflated by the one-time charge). CET1 13.76% (vs 17.35% a year ago), ROTCE -9.10%. Loans $2,075.2M, deposits $2,169.9M (-$95.5M q/q). NPLs improved to 0.47% from 0.83% after selling $7.7M of problem loans; $2.8M charge-off, $5.2M provision. Net charge-off ratio (~0.56% annualized) was calculated, not filing-stated."
     },
     "nextExpectedFiling": {
       "type": "8-K earnings release / 10-Q (Q3 2026)",
       "estimate": "2026-10-23",
-      "basis": "Q1 release 2026-04-23, Q2 release 2026-07-23 \u2014 roughly quarterly on the 23rd",
+      "basis": "Q1 release 2026-04-23, Q2 release 2026-07-23 — roughly quarterly on the 23rd",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-07",
@@ -7412,7 +7412,7 @@
       "type": "10-Q (+8-K Ex. 99.1 earnings release)",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-05",
-      "note": "Published by this session's own subagent (ground truth) \u2014 a concurrent firing independently reconstructed a matching entry around the same time; merged the two. Commercial-stage biopharma (ORLADEYO, hereditary angioedema prevention). Revenue +33.6% to $218.3M, net income $78.4M, but $55.7M of that revenue was a one-time license fee for navenibart (an HAE drug in late-stage trials) \u2014 underlying ORLADEYO growth only ~10% excluding the divested European business; ex. the fee, Q2 operating margin is ~26% vs the reported 45.1%. Full-year guidance raised: ORLADEYO $625-645M, total revenue $690-715M. H1 shows a $643.4M GAAP loss from a $697.8M write-off of navenibart drug rights acquired with Astria; ~$822M of loans/royalty financing outstanding and shareholders' equity is negative \u2014 flag for next report."
+      "note": "Published by this session's own subagent (ground truth) — a concurrent firing independently reconstructed a matching entry around the same time; merged the two. Commercial-stage biopharma (ORLADEYO, hereditary angioedema prevention). Revenue +33.6% to $218.3M, net income $78.4M, but $55.7M of that revenue was a one-time license fee for navenibart (an HAE drug in late-stage trials) — underlying ORLADEYO growth only ~10% excluding the divested European business; ex. the fee, Q2 operating margin is ~26% vs the reported 45.1%. Full-year guidance raised: ORLADEYO $625-645M, total revenue $690-715M. H1 shows a $643.4M GAAP loss from a $697.8M write-off of navenibart drug rights acquired with Astria; ~$822M of loans/royalty financing outstanding and shareholders' equity is negative — flag for next report."
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -7545,7 +7545,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q1 FY2027)",
       "estimate": "2026-11-04",
-      "basis": "Q1 10-Qs filed 2025-11-05, 2024-11-05. Merck KGaA acquisition at $73/share approved by shareholders 2026-09-23, closing late 2026/early 2027 \u2014 the company may stop filing",
+      "basis": "Q1 10-Qs filed 2025-11-05, 2024-11-05. Merck KGaA acquisition at $73/share approved by shareholders 2026-09-23, closing late 2026/early 2027 — the company may stop filing",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25",
@@ -7799,7 +7799,7 @@
     ]
   },
   "BF.B": {
-    "name": "Brown\u2013Forman",
+    "name": "Brown–Forman",
     "status": "done",
     "latestReport": {
       "year": 2026,
@@ -8445,7 +8445,7 @@
     "nextExpectedFiling": {
       "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
       "estimate": "2026-10-30",
-      "basis": "quarterly cadence; Q3 results historically late October. Cox/Liberty Broadband closed 2026-08-19 \u2014 Q3 includes Cox from that date and may file later",
+      "basis": "quarterly cadence; Q3 results historically late October. Cox/Liberty Broadband closed 2026-08-19 — Q3 includes Cox from that date and may file later",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25",
@@ -9082,7 +9082,7 @@
     "nextExpectedFiling": {
       "type": "8-K Item 2.02 (Q3 2026)",
       "estimate": "2026-11-04",
-      "basis": "Q3 2025 8-K 11-04, 10-Q 11-05. Seed spin-off (Vylor Inc.) distribution due 2026-10-01 \u2014 Q3 will show Seed as discontinued",
+      "basis": "Q3 2025 8-K 11-04, 10-Q 11-05. Seed spin-off (Vylor Inc.) distribution due 2026-10-01 — Q3 will show Seed as discontinued",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25",
@@ -9382,7 +9382,7 @@
     "nextExpectedFiling": {
       "type": "8-K Item 2.02 (Q3 2026)",
       "estimate": "2026-11-03",
-      "basis": "Q2 8-K 08-04, 10-Q 08-05; ~90-day cadence. Coterra merger closed 2026-05-07 \u2014 Q3 is first full quarter combined",
+      "basis": "Q2 8-K 08-04, 10-Q 08-05; ~90-day cadence. Coterra merger closed 2026-05-07 — Q3 is first full quarter combined",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25",
@@ -9435,7 +9435,7 @@
       "url": "https://financialreportinsights.com/companies/fang/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, no Exhibit 99.1 \u2014 realized prices/derivatives/share count only, not earnings)",
+      "type": "8-K (Item 2.02, no Exhibit 99.1 — realized prices/derivatives/share count only, not earnings)",
       "periodEnd": "2026-09-30",
       "filedAt": "2026-10-08"
     },
@@ -9445,7 +9445,7 @@
       "basis": "Company's own 2026-09-30 press release confirms Q3 2026 results after market close 2026-11-02, call 2026-11-03",
       "confidence": "confirmed"
     },
-    "note": "2026-10-08 8-K (accession 0001539838-26-000177) is Diamondback's recurring pre-results notice \u2014 oil/gas/NGL realized prices before and after hedging, derivative gain/loss estimate, weighted avg share count \u2014 no revenue/net income/EPS/margins, no Exhibit 99.1. Not an earnings release; recorded here so the scan stops re-flagging it. Real Q3 2026 results land 2026-11-02 after market close.",
+    "note": "2026-10-08 8-K (accession 0001539838-26-000177) is Diamondback's recurring pre-results notice — oil/gas/NGL realized prices before and after hedging, derivative gain/loss estimate, weighted avg share count — no revenue/net income/EPS/margins, no Exhibit 99.1. Not an earnings release; recorded here so the scan stops re-flagging it. Real Q3 2026 results land 2026-11-02 after market close.",
     "lastChecked": "2026-10-09",
     "reports": [
       {
@@ -9842,7 +9842,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-06",
-      "basis": "Q3 2025 10-Q 2025-11-06. No earnings 8-K issued. DISH DBS/DISH Wireless deconsolidated after 2026-06-30 prepackaged Chapter 11; Hughes filed Chapter 11 2026-08-02 \u2014 Q3 basis will differ",
+      "basis": "Q3 2025 10-Q 2025-11-06. No earnings 8-K issued. DISH DBS/DISH Wireless deconsolidated after 2026-06-30 prepackaged Chapter 11; Hughes filed Chapter 11 2026-08-02 — Q3 basis will differ",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25",
@@ -10015,7 +10015,7 @@
       "url": "https://financialreportinsights.com/companies/emr/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02/9.01, pension mark-to-market accounting change \u2014 restates FY2024/FY2025/Q1-Q3 FY2026, not an earnings release)",
+      "type": "8-K (Item 2.02/9.01, pension mark-to-market accounting change — restates FY2024/FY2025/Q1-Q3 FY2026, not an earnings release)",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-10-13"
     },
@@ -10025,7 +10025,7 @@
       "basis": "FY2025 Q4 8-K was 2025-11-05; no FY2026 Q4 date announced yet as of 2026-10-13",
       "confidence": "estimated"
     },
-    "note": "2026-10-13 8-K (accession 0000032604-26-000047) is a pension-accounting change (mark-to-market in Q4 each year going forward) with restated prior figures, not FY2026 Q4/full-year results \u2014 no new report published. Restated Q3 FY2026 net earnings $720M (was $718M) and Q3 FY2025 $588M (was $586M); EPS unchanged. Immaterial, live Q3 report left as-is.",
+    "note": "2026-10-13 8-K (accession 0000032604-26-000047) is a pension-accounting change (mark-to-market in Q4 each year going forward) with restated prior figures, not FY2026 Q4/full-year results — no new report published. Restated Q3 FY2026 net earnings $720M (was $718M) and Q3 FY2025 $588M (was $586M); EPS unchanged. Immaterial, live Q3 report left as-is.",
     "lastChecked": "2026-10-14",
     "reports": [
       {
@@ -10076,7 +10076,7 @@
       "url": "https://financialreportinsights.com/companies/eog/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, no Exhibit 99.1 \u2014 tax-guidance update only, not earnings)",
+      "type": "8-K (Item 2.02, no Exhibit 99.1 — tax-guidance update only, not earnings)",
       "periodEnd": "2026-09-30",
       "filedAt": "2026-10-08"
     },
@@ -10086,7 +10086,7 @@
       "basis": "Q3 10-Qs 2024-11-07, 2025-11-06",
       "confidence": "estimated"
     },
-    "note": "2026-10-08 8-K (accession 0000821189-26-000202) is EOG's recurring quarter-end tax-guidance update \u2014 raised Q3 2026 current tax expense guidance to $835-935M (from $545-645M on 2026-08-04) due to higher realized crude prices amid the Middle East conflict, plus $40M net hedge settlement cash and benchmark WTI/Henry Hub averages. No revenue/net income/EPS/production figures, no Exhibit 99.1. Not an earnings release; recorded here so the scan stops re-flagging it. The raised tax range implies Q3 pre-tax profit well above EOG's August expectations \u2014 worth checking when real results land ~2026-11-05.",
+    "note": "2026-10-08 8-K (accession 0000821189-26-000202) is EOG's recurring quarter-end tax-guidance update — raised Q3 2026 current tax expense guidance to $835-935M (from $545-645M on 2026-08-04) due to higher realized crude prices amid the Middle East conflict, plus $40M net hedge settlement cash and benchmark WTI/Henry Hub averages. No revenue/net income/EPS/production figures, no Exhibit 99.1. Not an earnings release; recorded here so the scan stops re-flagging it. The raised tax range implies Q3 pre-tax profit well above EOG's August expectations — worth checking when real results land ~2026-11-05.",
     "lastChecked": "2026-10-09",
     "reports": [
       {
@@ -10107,7 +10107,7 @@
       "url": "https://financialreportinsights.com/companies/eqt/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, preliminary hedging/derivatives update only \u2014 no revenue/EPS, not an earnings release)",
+      "type": "8-K (Item 2.02, preliminary hedging/derivatives update only — no revenue/EPS, not an earnings release)",
       "periodEnd": "2026-09-30",
       "filedAt": "2026-10-13"
     },
@@ -10117,7 +10117,7 @@
       "basis": "EQT press release 2026-10-07: Q3 results after market close Tue 2026-10-27, call Wed 2026-10-28 10:00 ET",
       "confidence": "confirmed"
     },
-    "note": "2026-10-13 8-K (accession 0000033213-26-000046) is a preliminary Item-2.02-only hedging update for Q3 2026 (~$100M derivative gain, $70M net cash settlements, all marked preliminary) \u2014 no revenue/net income/EPS/production, not earnings. Same pattern as the Q2 cycle (hedging 8-K 2026-07-14, real earnings 8-K 2026-07-21). Real Q3 earnings confirmed for after close 2026-10-27.",
+    "note": "2026-10-13 8-K (accession 0000033213-26-000046) is a preliminary Item-2.02-only hedging update for Q3 2026 (~$100M derivative gain, $70M net cash settlements, all marked preliminary) — no revenue/net income/EPS/production, not earnings. Same pattern as the Q2 cycle (hedging 8-K 2026-07-14, real earnings 8-K 2026-07-21). Real Q3 earnings confirmed for after close 2026-10-27.",
     "lastChecked": "2026-09-25",
     "reports": [
       {
@@ -10667,7 +10667,7 @@
     "nextExpectedFiling": {
       "type": "8-K Item 2.02 / 10-Q (quarter ending 2026-09-30)",
       "estimate": "2026-11-06",
-      "basis": "spun off from FedEx 2026-06-01; FYE moved to Dec 31 \u2014 next is a Jul-Sep 10-Q (45-day deadline ~11-16), then a Jun-Dec 10-KT",
+      "basis": "spun off from FedEx 2026-06-01; FYE moved to Dec 31 — next is a Jul-Sep 10-Q (45-day deadline ~11-16), then a Jun-Dec 10-KT",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-25",
@@ -10893,7 +10893,7 @@
   "FOX": {
     "name": "Fox Corporation (Class B)",
     "status": "skipped",
-    "skipReason": "Same issuer as FOXA (Class A); the FOXA page carries Fox Corporation's report \u2014 a duplicate here would be duplicate content",
+    "skipReason": "Same issuer as FOXA (Class A); the FOXA page carries Fox Corporation's report — a duplicate here would be duplicate content",
     "lastChecked": "2026-09-25"
   },
   "FTNT": {
@@ -12459,7 +12459,7 @@
       "filedAt": "2026-08-06"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026) \u2014 may not be filed if Kimberly-Clark deal closes first (expected Q4 2026)",
+      "type": "10-Q (Q3 2026) — may not be filed if Kimberly-Clark deal closes first (expected Q4 2026)",
       "estimate": "2026-11-05",
       "basis": "39 days after quarter-end (~09-27) per Q1/Q2 cadence",
       "confidence": "estimated"
@@ -13509,7 +13509,7 @@
   "NWS": {
     "name": "News Corp (Class B)",
     "status": "skipped",
-    "skipReason": "Same issuer as NWSA (News Corp Class A) \u2014 one report per issuer, covered by NWSA FY2026 ANNUAL",
+    "skipReason": "Same issuer as NWSA (News Corp Class A) — one report per issuer, covered by NWSA FY2026 ANNUAL",
     "lastChecked": "2026-09-25"
   },
   "NI": {
@@ -14295,7 +14295,7 @@
         "url": "https://financialreportinsights.com/companies/pgr/2026/q3"
       }
     ],
-    "note": "Combined ratio 88.7 vs 89.5 looks better YoY but Q3 2025 included a one-time $950M Florida policyholder credit (~4.6pts); ex that, combined ratio actually worsened (~84.9\u219288.7) as the accident-year loss ratio rose. NPW growth slowed to 4.3% (2% in Sept). Reserve releases ~2.4pts flattered the ratio. Book value per share -1.6% on unrealized bond losses. 10-Q not filed yet as of publish."
+    "note": "Combined ratio 88.7 vs 89.5 looks better YoY but Q3 2025 included a one-time $950M Florida policyholder credit (~4.6pts); ex that, combined ratio actually worsened (~84.9→88.7) as the accident-year loss ratio rose. NPW growth slowed to 4.3% (2% in Sept). Reserve releases ~2.4pts flattered the ratio. Book value per share -1.6% on unrealized bond losses. 10-Q not filed yet as of publish."
   },
   "PLD": {
     "name": "Prologis",
@@ -15678,7 +15678,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-22",
-      "basis": "2026 filings landed Jan 27, Apr 23, Jul 23 \u2014 about 90 days apart",
+      "basis": "2026 filings landed Jan 27, Apr 23, Jul 23 — about 90 days apart",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
@@ -16008,7 +16008,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-30",
-      "basis": "92 days after Q2 10-Q (07-30) and usual late-Oct earnings date; note this ticker is the renamed Equity Residential post its 2026-08-17 all-stock merger of equals with AvalonBay (AVB accounting acquirer) \u2014 Q3 figures will compare against AVB historicals, not EQR, and timing could move as the first combined-company report",
+      "basis": "92 days after Q2 10-Q (07-30) and usual late-Oct earnings date; note this ticker is the renamed Equity Residential post its 2026-08-17 all-stock merger of equals with AvalonBay (AVB accounting acquirer) — Q3 figures will compare against AVB historicals, not EQR, and timing could move as the first combined-company report",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-29"
@@ -16478,25 +16478,25 @@
   "AACI": {
     "name": "Armada Acquisition Corp. III",
     "status": "skipped",
-    "skipReason": "Blank-check SPAC (SEC SIC 6770), pre-merger shell company with no operating business \u2014 filings show only trust-account interest income and formation/administrative costs, not the kind of financial analysis this site covers. Re-check if/when it completes a merger with an operating company.",
+    "skipReason": "Blank-check SPAC (SEC SIC 6770), pre-merger shell company with no operating business — filings show only trust-account interest income and formation/administrative costs, not the kind of financial analysis this site covers. Re-check if/when it completes a merger with an operating company.",
     "lastChecked": "2026-09-29"
   },
   "AACO": {
     "name": "Abony Acquisition Corp. I",
     "status": "skipped",
-    "skipReason": "Blank-check SPAC (SEC SIC 6770), pre-merger shell company with no operating business \u2014 filings show only trust-account interest income and formation/administrative costs, not the kind of financial analysis this site covers. Re-check if/when it completes a merger with an operating company.",
+    "skipReason": "Blank-check SPAC (SEC SIC 6770), pre-merger shell company with no operating business — filings show only trust-account interest income and formation/administrative costs, not the kind of financial analysis this site covers. Re-check if/when it completes a merger with an operating company.",
     "lastChecked": "2026-09-29"
   },
   "AACP": {
     "name": "Apogee Acquisition Corp",
     "status": "skipped",
-    "skipReason": "Blank-check SPAC (SEC SIC 6770), pre-merger shell company with no operating business \u2014 filings show only trust-account interest income and formation/administrative costs, not the kind of financial analysis this site covers. Re-check if/when it completes a merger with an operating company.",
+    "skipReason": "Blank-check SPAC (SEC SIC 6770), pre-merger shell company with no operating business — filings show only trust-account interest income and formation/administrative costs, not the kind of financial analysis this site covers. Re-check if/when it completes a merger with an operating company.",
     "lastChecked": "2026-09-29"
   },
   "AACG": {
     "name": "ATA Creativity Global",
     "status": "skipped",
-    "skipReason": "Foreign private issuer, files annual 20-F + 6-Ks. Latest financials are the FY2025 20-F (filed 2026-03-31) and Q4/FY2025 earnings 6-K (2026-03-26); no 2026 interim results filed. Company's own 6-K (2026-07-02) confirms no interim statements filed since Dec 31 2025. Also: shareholders approved selling the core operating business (ATA Testing Authority + VIE + 69.04% Beijing Huanqiuyimeng stake) for a nominal RMB 1 on 2026-06-05, and a new investor took ~34.51% voting power via a PIPE that closed 2026-07-21 \u2014 FY2026 results will likely show discontinued operations. Re-check around ~March 2027 for the next 20-F.",
+    "skipReason": "Foreign private issuer, files annual 20-F + 6-Ks. Latest financials are the FY2025 20-F (filed 2026-03-31) and Q4/FY2025 earnings 6-K (2026-03-26); no 2026 interim results filed. Company's own 6-K (2026-07-02) confirms no interim statements filed since Dec 31 2025. Also: shareholders approved selling the core operating business (ATA Testing Authority + VIE + 69.04% Beijing Huanqiuyimeng stake) for a nominal RMB 1 on 2026-06-05, and a new investor took ~34.51% voting power via a PIPE that closed 2026-07-21 — FY2026 results will likely show discontinued operations. Re-check around ~March 2027 for the next 20-F.",
     "lastChecked": "2026-09-29"
   },
   "ZTS": {
@@ -17307,7 +17307,7 @@
     "nextExpectedFiling": {
       "type": "6-K (Q2 FY2027, quarter ending 2026-09-30)",
       "estimate": "2026-11-10",
-      "basis": "filing cadence; a Q1 FY2027 6-K (period 2026-06-30) was already filed 2026-08-05, not yet covered \u2014 candidate for tier-2/freshness follow-up",
+      "basis": "filing cadence; a Q1 FY2027 6-K (period 2026-06-30) was already filed 2026-08-05, not yet covered — candidate for tier-2/freshness follow-up",
       "confidence": "estimated"
     },
     "lastChecked": "2026-09-30"
@@ -18109,7 +18109,7 @@
   "ADSE": {
     "name": "ADS-TEC ENERGY PLC - Ordinary Shares",
     "status": "skipped",
-    "skipReason": "Foreign private issuer (20-F/6-K, EUR reporting); only FY2025 20-F on EDGAR (filed 2026-05-15) \u2014 no 2026-period financials filed/furnished as of 2026-09-30, and company does not appear to furnish interim (half-year) results via 6-K",
+    "skipReason": "Foreign private issuer (20-F/6-K, EUR reporting); only FY2025 20-F on EDGAR (filed 2026-05-15) — no 2026-period financials filed/furnished as of 2026-09-30, and company does not appear to furnish interim (half-year) results via 6-K",
     "lastFilingSeen": {
       "type": "20-F",
       "periodEnd": "2025-12-31",
@@ -18340,7 +18340,7 @@
       "basis": "45-day smaller-reporting-company deadline; prior 10-Qs filed on day 44-45 (2026-02-13, 2026-05-15)",
       "confidence": "estimated"
     },
-    "note": "FY2026 10-K: net income $6.68M (EPS $5.33) almost entirely a $14.0M non-cash gain disposing of HK/China and Taiwan subsidiaries (net liabilities leaving the books); excluding it, loss was -$7.34M. Continuing-ops loss -$6.26M includes $2.92M credit-loss provision and $1.73M stock comp. Cash only $385K; a 10% shareholder loan ($607K) matures ~mid-Oct 2026 with no disclosed repayment/extension plan \u2014 worth checking next time.",
+    "note": "FY2026 10-K: net income $6.68M (EPS $5.33) almost entirely a $14.0M non-cash gain disposing of HK/China and Taiwan subsidiaries (net liabilities leaving the books); excluding it, loss was -$7.34M. Continuing-ops loss -$6.26M includes $2.92M credit-loss provision and $1.73M stock comp. Cash only $385K; a 10% shareholder loan ($607K) matures ~mid-Oct 2026 with no disclosed repayment/extension plan — worth checking next time.",
     "lastChecked": "2026-10-14",
     "reports": [
       {
@@ -19746,7 +19746,7 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01",
-    "note": "Company renamed to FF EAI Robotics Ecosystem Inc. effective 2026-09-30, ticker changing from AIXC to FFR; site/sp500.json/us-listed.json still list it under AIXC as of this entry \u2014 may need a name/ticker update in the seed data"
+    "note": "Company renamed to FF EAI Robotics Ecosystem Inc. effective 2026-09-30, ticker changing from AIXC to FFR; site/sp500.json/us-listed.json still list it under AIXC as of this entry — may need a name/ticker update in the seed data"
   },
   "AKTS": {
     "name": "Aktis Oncology, Inc.",
@@ -19839,7 +19839,7 @@
   "ALDF": {
     "name": "Aldel Financial II Inc. - Class A Ordinary Shares",
     "status": "skipped",
-    "skipReason": "blank-check SPAC, no operating business, no definitive merger agreement as of 2026-10-01 (Oct 5 2026 EGM is an extension vote only, not a business-combination vote) \u2014 nothing substantive to analyze; recheck if an 8-K Item 1.01 / S-4 for a business combination appears",
+    "skipReason": "blank-check SPAC, no operating business, no definitive merger agreement as of 2026-10-01 (Oct 5 2026 EGM is an extension vote only, not a business-combination vote) — nothing substantive to analyze; recheck if an 8-K Item 1.01 / S-4 for a business combination appears",
     "lastFilingSeen": {
       "type": "10-Q",
       "periodEnd": "2026-06-30",
@@ -20089,7 +20089,7 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01",
-    "note": "Metrics JSON used netIncomeYoyPct +16.2 / epsYoyPct +43.5 (positive = loss narrowed), same convention as ALEC; other reports this session (e.g. AKTX) used the opposite sign (negative = loss widened). No site-wide convention found \u2014 future cleanup could standardize the sign convention for loss-narrowing YoY fields across reports."
+    "note": "Metrics JSON used netIncomeYoyPct +16.2 / epsYoyPct +43.5 (positive = loss narrowed), same convention as ALEC; other reports this session (e.g. AKTX) used the opposite sign (negative = loss widened). No site-wide convention found — future cleanup could standardize the sign convention for loss-narrowing YoY fields across reports."
   },
   "ALLR": {
     "name": "Allarity Therapeutics, Inc.",
@@ -20204,7 +20204,7 @@
   "ALOV": {
     "name": "Aldabra 4 Liquidity Opportunity Vehicle, Inc. - Class A Ordinary Shares",
     "status": "skipped",
-    "skipReason": "SPAC/blank check (SIC 6770), IPO Jan 2026, ~$304M in trust; Q2 2026 10-Q states no target selected and no operations/revenue \u2014 nothing to analyze until a definitive merger agreement is announced. Re-check only if a merger-agreement 8-K (Item 1.01) appears.",
+    "skipReason": "SPAC/blank check (SIC 6770), IPO Jan 2026, ~$304M in trust; Q2 2026 10-Q states no target selected and no operations/revenue — nothing to analyze until a definitive merger agreement is announced. Re-check only if a merger-agreement 8-K (Item 1.01) appears.",
     "lastFilingSeen": {
       "type": "10-Q",
       "periodEnd": "2026-06-30",
@@ -20283,7 +20283,7 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-01",
-    "note": "Formerly Blackboxstocks (retail trading-analytics app); reverse-merged with privately held REalloys (rare earths) 2026-02-24, ticker changed to ALOY 2026-02-25, old app business spun off 2026-05-05 \u2014 name/business are now entirely different from what seed data may still reflect."
+    "note": "Formerly Blackboxstocks (retail trading-analytics app); reverse-merged with privately held REalloys (rare earths) 2026-02-24, ticker changed to ALOY 2026-02-25, old app business spun off 2026-05-05 — name/business are now entirely different from what seed data may still reflect."
   },
   "ALPX": {
     "name": "Alpex Acquisition Corporation - Class A Ordinary Shares",
@@ -21276,7 +21276,7 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-03",
-    "note": "Company renamed DarkHorse Technologies Inc., ticker now DRK (as of 2026-09-16/17); SEC CIK unchanged (1591956). Site/tracker/seed data still list it as ANY/Sphere 3D \u2014 future scans may need to watch for filings under the new name."
+    "note": "Company renamed DarkHorse Technologies Inc., ticker now DRK (as of 2026-09-16/17); SEC CIK unchanged (1591956). Site/tracker/seed data still list it as ANY/Sphere 3D — future scans may need to watch for filings under the new name."
   },
   "AOUT": {
     "name": "American Outdoor Brands, Inc.",
@@ -21596,7 +21596,7 @@
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-11"
     },
-    "skipReason": "Pre-merger SPAC (blank check company incorporated in the Cayman Islands, IPO Oct 2025, $344.7M raised). No operating business as of 2026-06-30 10-Q \u2014 all activity is formation costs and non-operating interest income on $353.1M held in trust. Targets blockchain/crypto-treasury, AI, B2B software, data services, renewable energy, build-to-rent sectors for a future Business Combination; none announced yet. Revisit if/when a Business Combination is announced or closes.",
+    "skipReason": "Pre-merger SPAC (blank check company incorporated in the Cayman Islands, IPO Oct 2025, $344.7M raised). No operating business as of 2026-06-30 10-Q — all activity is formation costs and non-operating interest income on $353.1M held in trust. Targets blockchain/crypto-treasury, AI, B2B software, data services, renewable energy, build-to-rent sectors for a future Business Combination; none announced yet. Revisit if/when a Business Combination is announced or closes.",
     "lastChecked": "2026-10-04"
   },
   "APWC": {
@@ -21695,7 +21695,7 @@
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-13"
     },
-    "skipReason": "Pre-merger SPAC (blank check company) \u2014 10-Q balance sheet shows only a demand deposit held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
+    "skipReason": "Pre-merger SPAC (blank check company) — 10-Q balance sheet shows only a demand deposit held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
     "lastChecked": "2026-10-04"
   },
   "ARCL": {
@@ -21706,7 +21706,7 @@
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-11"
     },
-    "skipReason": "Pre-merger SPAC (blank check company) \u2014 10-Q balance sheet shows only marketable securities held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
+    "skipReason": "Pre-merger SPAC (blank check company) — 10-Q balance sheet shows only marketable securities held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
     "lastChecked": "2026-10-04"
   },
   "ARBK": {
@@ -21847,7 +21847,7 @@
     "nextExpectedFiling": {
       "type": "20-F (FY2026 annual)",
       "estimate": "2026-12-09",
-      "basis": "FPI, annual-only reporter (no interim-financials 6-K found all year \u2014 the 2026 6-Ks are board/CFO transition, AGM notice, warrant expiration); last annual filed 2025-12-09",
+      "basis": "FPI, annual-only reporter (no interim-financials 6-K found all year — the 2026 6-Ks are board/CFO transition, AGM notice, warrant expiration); last annual filed 2025-12-09",
       "confidence": "estimated"
     },
     "skipReason": "No FY2026 or 2026-interim financial results filed yet as of 2026-10-04; files annually via 20-F only.",
@@ -22015,7 +22015,7 @@
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-07"
     },
-    "skipReason": "Pre-merger SPAC (blank check company) \u2014 10-Q balance sheet shows only marketable securities held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
+    "skipReason": "Pre-merger SPAC (blank check company) — 10-Q balance sheet shows only marketable securities held in trust account, no operating business. No announced Business Combination target. Revisit if a deal is announced.",
     "lastChecked": "2026-10-04"
   },
   "ARKR": {
@@ -22641,7 +22641,7 @@
       "filedAt": "2026-08-11"
     },
     "nextExpectedFiling": {
-      "type": "none expected \u2014 acquired by Eli Lilly, merger closed 2026-09-11, delisted from Nasdaq, Form 15 deregistration intended",
+      "type": "none expected — acquired by Eli Lilly, merger closed 2026-09-11, delisted from Nasdaq, Form 15 deregistration intended",
       "estimate": null,
       "basis": "Q2 2026 10-Q itself discloses the closed merger and delisting",
       "confidence": "confirmed"
@@ -22783,13 +22783,13 @@
   "ATII": {
     "name": "Archimedes Tech SPAC Partners II Co. - Ordinary Shares",
     "status": "skipped",
-    "skipReason": "pre-merger blank-check SPAC, trust-account-only balance sheet, no operations \u2014 10-Q filed 2026-08-13 confirms 'had not commenced any operations'; a DEFM14A merger proxy is pending but the business combination hasn't closed",
+    "skipReason": "pre-merger blank-check SPAC, trust-account-only balance sheet, no operations — 10-Q filed 2026-08-13 confirms 'had not commenced any operations'; a DEFM14A merger proxy is pending but the business combination hasn't closed",
     "lastChecked": "2026-10-05"
   },
   "ATLQ": {
     "name": "JAB Acquisition Corp I - Class A Ordinary Shares",
     "status": "skipped",
-    "skipReason": "pre-merger blank-check SPAC, trust-account-only balance sheet, no operations \u2014 10-Q filed 2026-08-14 confirms 'had not commenced any operations'",
+    "skipReason": "pre-merger blank-check SPAC, trust-account-only balance sheet, no operations — 10-Q filed 2026-08-14 confirms 'had not commenced any operations'",
     "lastChecked": "2026-10-05"
   },
   "ATLO": {
@@ -23732,7 +23732,7 @@
       "type": "10-Q",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-28",
-      "note": "fiscal year ends Sept 30; this quarter and the Q2 10-Q were both filed late (2026-08-28) alongside a 10-K/A and 10-Q/A adding a material-weakness disclosure (no figures restated). Net income driven by a $17.1M non-cash stock-option reversal after CEO was fired for cause April 30, 2026 \u2014 ex that, still a loss."
+      "note": "fiscal year ends Sept 30; this quarter and the Q2 10-Q were both filed late (2026-08-28) alongside a 10-K/A and 10-Q/A adding a material-weakness disclosure (no figures restated). Net income driven by a $17.1M non-cash stock-option reversal after CEO was fired for cause April 30, 2026 — ex that, still a loss."
     },
     "nextExpectedFiling": {
       "type": "10-K (FY2026, year ending 2026-09-30)",
@@ -23852,7 +23852,7 @@
   "AXIN": {
     "name": "Axiom Intelligence Acquisition Corp 1 - Class A Ordinary Shares",
     "status": "skipped",
-    "skipReason": "pre-merger SPAC (SIC 6770 Blank Checks), no operating business \u2014 Q2 2026 10-Q shows trust-account interest income only. Pending business combination with Terra Quantum AG (BCA signed 2026-05-25, not yet closed as of 2026-09-15 Form 425). Revisit after the de-SPAC closes and the combined company files real operating results.",
+    "skipReason": "pre-merger SPAC (SIC 6770 Blank Checks), no operating business — Q2 2026 10-Q shows trust-account interest income only. Pending business combination with Terra Quantum AG (BCA signed 2026-05-25, not yet closed as of 2026-09-15 Form 425). Revisit after the de-SPAC closes and the combined company files real operating results.",
     "lastChecked": "2026-10-06"
   },
   "AXSM": {
@@ -24336,7 +24336,7 @@
       "type": "10-Q",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-05",
-      "note": "Series C tracking stock for the same underlying business as BATRA (Series A) \u2014 MLB team + Battery Atlanta real estate, same filing/figures. Q2 2026: net loss $12.2M (vs +$29.5M a year ago) on 6 fewer home games, +$25.2M player salaries, BravesVision launch costs; Battery Atlanta real estate +14.2% revenue was the only segment with positive adjusted operating profit. netIncomeYoyPct/epsYoyPct omitted (swung profit-to-loss, not a meaningful percentage)."
+      "note": "Series C tracking stock for the same underlying business as BATRA (Series A) — MLB team + Battery Atlanta real estate, same filing/figures. Q2 2026: net loss $12.2M (vs +$29.5M a year ago) on 6 fewer home games, +$25.2M player salaries, BravesVision launch costs; Battery Atlanta real estate +14.2% revenue was the only segment with positive adjusted operating profit. netIncomeYoyPct/epsYoyPct omitted (swung profit-to-loss, not a meaningful percentage)."
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -24716,7 +24716,7 @@
   "BELFA": {
     "name": "Bel Fuse Inc. - Class A",
     "status": "skipped",
-    "skipReason": "Same issuer as BELFB (Class B) \u2014 one report per issuer; Q2 2026 covered under BELFB to avoid duplicate content",
+    "skipReason": "Same issuer as BELFB (Class B) — one report per issuer; Q2 2026 covered under BELFB to avoid duplicate content",
     "lastChecked": "2026-10-07"
   },
   "BENF": {
@@ -25796,7 +25796,7 @@
   "BLRK": {
     "name": "Bluerock Acquisition Corp. - Class A Ordinary Shares",
     "status": "skipped",
-    "skipReason": "pre-merger SPAC (Cayman Islands blank-check co., SIC 'Blank Checks'). Q2 2026 10-Q (filed 2026-08-11, period ended 2026-06-30) shows only trust-account interest income ($1.37M Q2 / $2.63M H1 on a $175.8M trust) and no operations. Has a signed Business Combination Agreement (2026-07-31) to merge with Bitonic Technology Labs Inc. d/b/a Yellow.ai, domesticating as Delaware 'Yellow.ai' (Pubco) post-close \u2014 worth revisiting as Yellow.ai once that closes, same pattern as BHAV/BID/BIXI/BKHA tonight.",
+    "skipReason": "pre-merger SPAC (Cayman Islands blank-check co., SIC 'Blank Checks'). Q2 2026 10-Q (filed 2026-08-11, period ended 2026-06-30) shows only trust-account interest income ($1.37M Q2 / $2.63M H1 on a $175.8M trust) and no operations. Has a signed Business Combination Agreement (2026-07-31) to merge with Bitonic Technology Labs Inc. d/b/a Yellow.ai, domesticating as Delaware 'Yellow.ai' (Pubco) post-close — worth revisiting as Yellow.ai once that closes, same pattern as BHAV/BID/BIXI/BKHA tonight.",
     "lastFilingSeen": {
       "type": "10-Q",
       "periodEnd": "2026-06-30",
@@ -26056,7 +26056,7 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-09",
-    "note": "Pre-revenue gold exploration company (Donlin Gold JV); no revenue/operatingMarginPct metrics \u2014 net loss and EPS only. Fiscal year ends Nov 30; this is fiscal Q3 2026 (quarter ended Aug 31, 2026)."
+    "note": "Pre-revenue gold exploration company (Donlin Gold JV); no revenue/operatingMarginPct metrics — net loss and EPS only. Fiscal year ends Nov 30; this is fiscal Q3 2026 (quarter ended Aug 31, 2026)."
   },
   "VLGEA": {
     "name": "Village Super Market, Inc. - Class A",
@@ -26342,7 +26342,7 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-09",
-    "note": "Q2 2026 is the first quarter including the Amicus Therapeutics acquisition (closed Apr 27, 2026). Oct 6 8-K flags an incremental ~$1.55 FY2026 EPS hit from the Alesta acquisition, mostly in Q3, not yet reflected in Aug guidance \u2014 worth checking when Q3 is published."
+    "note": "Q2 2026 is the first quarter including the Amicus Therapeutics acquisition (closed Apr 27, 2026). Oct 6 8-K flags an incremental ~$1.55 FY2026 EPS hit from the Alesta acquisition, mostly in Q3, not yet reflected in Aug guidance — worth checking when Q3 is published."
   },
   "BNC": {
     "name": "CEA Industries Inc.",
@@ -26457,7 +26457,7 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-09",
-    "note": "Formerly Jupiter Wellness/Safety Shot; now beverages (Yerba\u00e9 energy drinks, Sure Shot) plus a digital-assets segment holding BONK meme-coin tokens and a revenue-share deal with LetsBonk.fun. Going-concern warning, $214K cash at quarter-end."
+    "note": "Formerly Jupiter Wellness/Safety Shot; now beverages (Yerbaé energy drinks, Sure Shot) plus a digital-assets segment holding BONK meme-coin tokens and a revenue-share deal with LetsBonk.fun. Going-concern warning, $214K cash at quarter-end."
   },
   "BNGO": {
     "name": "Bionano Genomics, Inc.",
@@ -26554,7 +26554,7 @@
   "BOT": {
     "name": "RoboStrategy, Inc.",
     "status": "skipped",
-    "skipReason": "Registered closed-end fund / investment company (CIK 2081119), not an operating company \u2014 filings are N-2 (closed-end fund registration), 497AD (fund sales material), 40-17G (fidelity bond), N-PX (proxy voting record), repeated 424B3 prospectuses. Never filed a 10-K/10-Q and reports NAV, not revenue/earnings, so it does not fit this site's report format.",
+    "skipReason": "Registered closed-end fund / investment company (CIK 2081119), not an operating company — filings are N-2 (closed-end fund registration), 497AD (fund sales material), 40-17G (fidelity bond), N-PX (proxy voting record), repeated 424B3 prospectuses. Never filed a 10-K/10-Q and reports NAV, not revenue/earnings, so it does not fit this site's report format.",
     "lastChecked": "2026-10-09"
   },
   "BOLT": {
@@ -26857,7 +26857,7 @@
   "BRAI": {
     "name": "Braiin Limited",
     "status": "pending",
-    "skipReason": "IPO on Nasdaq Feb 2026 (424B4 2026-02-02); foreign private issuer (Australia, FYE June 30), no periodic financial report on EDGAR yet as of 2026-10-10 \u2014 only F-1/424B4 plus press-release 6-Ks (stock split, Home.cc M&A term sheet, partnerships), no 20-F or results 6-K for any period. First 20-F (FY2026, period end 2026-06-30) due ~4 months after fiscal year end.",
+    "skipReason": "IPO on Nasdaq Feb 2026 (424B4 2026-02-02); foreign private issuer (Australia, FYE June 30), no periodic financial report on EDGAR yet as of 2026-10-10 — only F-1/424B4 plus press-release 6-Ks (stock split, Home.cc M&A term sheet, partnerships), no 20-F or results 6-K for any period. First 20-F (FY2026, period end 2026-06-30) due ~4 months after fiscal year end.",
     "lastFilingSeen": {
       "type": "6-K (press release, no financials)",
       "periodEnd": null,
@@ -27390,7 +27390,7 @@
   "BTCT": {
     "name": "BTC Digital Ltd. - Ordinary Shares",
     "status": "pending",
-    "skipReason": "foreign private issuer (Cayman), files 20-F annual + 6-K interim only, no 10-Q; FY2025 20-F filed 2026-05-11 does not count for 2026 coverage. Last year's H1 2025 unaudited financial statements 6-K (period ended 2025-06-30) was not filed until 2025-11-12 \u2014 about 4.5 months after period end. No equivalent H1 2026 financial-statements 6-K found on EDGAR as of 2026-10-10 (checked EDGAR full-text search for \"UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS\" on this CIK in 2026 \u2014 zero hits); this is a timing gap, not a permanent exclusion. Rechecked 2026-10-13: latest EDGAR filings are a 424B3 prospectus (2026-09-18) and F-1 EFFECT notice (09-17) \u2014 the prospectus mentions June 30 2026 only in narrative text (no revenue in that period), not usable as a report source.",
+    "skipReason": "foreign private issuer (Cayman), files 20-F annual + 6-K interim only, no 10-Q; FY2025 20-F filed 2026-05-11 does not count for 2026 coverage. Last year's H1 2025 unaudited financial statements 6-K (period ended 2025-06-30) was not filed until 2025-11-12 — about 4.5 months after period end. No equivalent H1 2026 financial-statements 6-K found on EDGAR as of 2026-10-10 (checked EDGAR full-text search for \"UNAUDITED CONSOLIDATED FINANCIAL STATEMENTS\" on this CIK in 2026 — zero hits); this is a timing gap, not a permanent exclusion. Rechecked 2026-10-13: latest EDGAR filings are a 424B3 prospectus (2026-09-18) and F-1 EFFECT notice (09-17) — the prospectus mentions June 30 2026 only in narrative text (no revenue in that period), not usable as a report source.",
     "lastFilingSeen": {
       "type": "20-F",
       "periodEnd": "2025-12-31",
@@ -27417,7 +27417,7 @@
       "type": "6-K (earnings release, Exhibit 99.1)",
       "periodEnd": "2026-06-30",
       "filedAt": "2026-08-10",
-      "note": "Singapore-incorporated FPI (Cayman inc_state), files 20-F annual but publishes quarterly unaudited financial-results press releases via 6-K, unlike most other FPIs. H1 interim financial-statements 6-K (same period) filed later, 2026-09-29 \u2014 not a newer period."
+      "note": "Singapore-incorporated FPI (Cayman inc_state), files 20-F annual but publishes quarterly unaudited financial-results press releases via 6-K, unlike most other FPIs. H1 interim financial-statements 6-K (same period) filed later, 2026-09-29 — not a newer period."
     },
     "nextExpectedFiling": {
       "type": "6-K (Q3 2026 earnings release)",
@@ -27805,7 +27805,7 @@
         "filedAt": "2026-07-30"
       }
     ],
-    "note": "2026-09-14 take-private agreement (Sequence Holdings / Dell Family Office, $32.50/share, expected close Q1 2027) \u2014 may delist/deregister after close; re-check filer status in Phase 2."
+    "note": "2026-09-14 take-private agreement (Sequence Holdings / Dell Family Office, $32.50/share, expected close Q1 2027) — may delist/deregister after close; re-check filer status in Phase 2."
   },
   "BWMN": {
     "name": "Bowman Consulting Group Ltd.",
@@ -27838,7 +27838,7 @@
         "filedAt": "2026-08-10"
       }
     ],
-    "note": "2026-08-10 take-private agreement (Bernhard Capital, $43/share, ~$1.0B EV, go-shop ended 2026-09-13 with no rival bid) \u2014 expected to close Q4 2026; may delist before a Q3 10-Q or FY2026 10-K is filed."
+    "note": "2026-08-10 take-private agreement (Bernhard Capital, $43/share, ~$1.0B EV, go-shop ended 2026-09-13 with no rival bid) — expected to close Q4 2026; may delist before a Q3 10-Q or FY2026 10-K is filed."
   },
   "BXBL": {
     "name": "BOXABL, Inc.",
@@ -28003,7 +28003,7 @@
         "filedAt": "2026-08-14"
       }
     ],
-    "note": "Q3 10-Q should reflect the China-subsidiary sale gain and SEED divestiture progress (second SEED closing due by 2026-12-15) \u2014 worth checking for a --edit or new report."
+    "note": "Q3 10-Q should reflect the China-subsidiary sale gain and SEED divestiture progress (second SEED closing due by 2026-12-15) — worth checking for a --edit or new report."
   },
   "BZ": {
     "name": "KANZHUN LIMITED",
@@ -28855,7 +28855,7 @@
   "CCAP": {
     "name": "Crescent Capital BDC, Inc.",
     "status": "skipped",
-    "skipReason": "business development company (closed-end fund structure) \u2014 reports NAV per share and net investment income, not a fit for the site's revenue/earnings metrics schema (no BDC fields defined in src/lib/metrics.ts). Revisit if BDC-specific metrics fields are added.",
+    "skipReason": "business development company (closed-end fund structure) — reports NAV per share and net investment income, not a fit for the site's revenue/earnings metrics schema (no BDC fields defined in src/lib/metrics.ts). Revisit if BDC-specific metrics fields are added.",
     "lastChecked": "2026-10-12"
   },
   "CCAQ": {
@@ -28873,7 +28873,7 @@
   "CCD": {
     "name": "Calamos Dynamic Convertible & Income Fund",
     "status": "skipped",
-    "skipReason": "closed-end fund (NAV-based, not an operating company) \u2014 not a fit for the site's revenue/earnings-driven report format.",
+    "skipReason": "closed-end fund (NAV-based, not an operating company) — not a fit for the site's revenue/earnings-driven report format.",
     "lastChecked": "2026-10-12"
   },
   "CCB": {
@@ -29403,7 +29403,7 @@
   "CDZIP": {
     "name": "Cadiz, Inc. - Depositary Shares",
     "status": "skipped",
-    "skipReason": "same underlying company as CDZI (Cadiz, Inc.) \u2014 just its preferred-stock depositary shares, not a separate operating business. CDZI (common stock) covers this company's 2026 reporting.",
+    "skipReason": "same underlying company as CDZI (Cadiz, Inc.) — just its preferred-stock depositary shares, not a separate operating business. CDZI (common stock) covers this company's 2026 reporting.",
     "lastChecked": "2026-10-12"
   },
   "CECO": {
@@ -29569,7 +29569,7 @@
   "CENTA": {
     "name": "Central Garden & Pet Company - Class A Common Stock Nonvoting",
     "status": "skipped",
-    "skipReason": "same underlying company as CENT (Central Garden & Pet Company) \u2014 just the nonvoting Class A share class, not a separate operating business. CENT covers this company's 2026 reporting.",
+    "skipReason": "same underlying company as CENT (Central Garden & Pet Company) — just the nonvoting Class A share class, not a separate operating business. CENT covers this company's 2026 reporting.",
     "lastChecked": "2026-10-12"
   },
   "CELZ": {
@@ -30916,7 +30916,7 @@
         "url": "https://financialreportinsights.com/companies/cmtl/2026/annual"
       }
     ],
-    "note": "FY2026 10-K recast with the satellite business (being sold to Gilat, still pending CFIUS as of filing) as discontinued operations, so not directly comparable to the Q3 report (included satellite). Continuing-ops revenue -17.0% to $249.6M (~flat ex Army VSAT contract runoff); gross margin improved to 38.9% from 31.6% but GAAP continuing EPS still -$1.71. A $22.1M non-cash warrant/derivative gain props up the bottom line; only $18.3M of $48.3M total interest was paid in cash. Q4 book-to-bill only 0.48x \u2014 orders have not recovered. Cash down to $24.0M by Oct 13."
+    "note": "FY2026 10-K recast with the satellite business (being sold to Gilat, still pending CFIUS as of filing) as discontinued operations, so not directly comparable to the Q3 report (included satellite). Continuing-ops revenue -17.0% to $249.6M (~flat ex Army VSAT contract runoff); gross margin improved to 38.9% from 31.6% but GAAP continuing EPS still -$1.71. A $22.1M non-cash warrant/derivative gain props up the bottom line; only $18.3M of $48.3M total interest was paid in cash. Q4 book-to-bill only 0.48x — orders have not recovered. Cash down to $24.0M by Oct 13."
   },
   "CHRS": {
     "name": "Coherus Oncology, Inc.",
@@ -30970,7 +30970,7 @@
       "basis": "FY2025 10-K filed 2026-01-28; prior Q3 10-Q filed 2025-10-09",
       "confidence": "estimated"
     },
-    "note": "Fiscal Q3 2026 (clinical-stage biotech): swung to $549.8M net income / $4.73 diluted EPS on a $700M Roche upfront license payment for bexobrutideg (NX-5948), $653.2M booked as revenue this quarter. Excluding it, operating loss was $93.7M vs $91.4M a year ago; cash burn ~$84M/quarter excluding the upfront. Cash+securities $1,063.1M. Published revenueYoyPct/netIncomeYoyPct/epsYoyPct omitted (loss-to-profit swing, not meaningful); operatingMarginPct (83.1%) kept since it's the real GAAP figure but will look like an outlier in peer/sector tables \u2014 the one-off is explained in the body.",
+    "note": "Fiscal Q3 2026 (clinical-stage biotech): swung to $549.8M net income / $4.73 diluted EPS on a $700M Roche upfront license payment for bexobrutideg (NX-5948), $653.2M booked as revenue this quarter. Excluding it, operating loss was $93.7M vs $91.4M a year ago; cash burn ~$84M/quarter excluding the upfront. Cash+securities $1,063.1M. Published revenueYoyPct/netIncomeYoyPct/epsYoyPct omitted (loss-to-profit swing, not meaningful); operatingMarginPct (83.1%) kept since it's the real GAAP figure but will look like an outlier in peer/sector tables — the one-off is explained in the body.",
     "lastChecked": "2026-10-14"
   },
   "LNAI": {
@@ -31117,7 +31117,7 @@
       "basis": "52/53-week fiscal year ends last Saturday of December (~2026-12-26); estimate not yet confirmed by search",
       "confidence": "estimated"
     },
-    "note": "First report. Royalties +3.8% to $21.7M, diluted EPS +6.3% to $3.21 (underlying growth slowed from ~8% in H1, no stated reason). Reported revenue +23.2% driven mostly by a new pass-through 2% Plato's Closet ad fund (adds equal revenue and expense, no margin impact) \u2014 ex that, revenue +6.3% and margin flat. New fees layered on franchisees: $295/month software fee from Sept 1 (~$4.9M/yr), plus new ad funds for two more brands from 2027-01-31 (~$17.9M/yr) announced in an Oct 14 8-K \u2014 filing itself now flags franchisee-relationship risk from these fees. Equity is negative (-$37.4M) with $60M debt; $1.02 quarterly + $4.00 special dividend payable Dec 1.",
+    "note": "First report. Royalties +3.8% to $21.7M, diluted EPS +6.3% to $3.21 (underlying growth slowed from ~8% in H1, no stated reason). Reported revenue +23.2% driven mostly by a new pass-through 2% Plato's Closet ad fund (adds equal revenue and expense, no margin impact) — ex that, revenue +6.3% and margin flat. New fees layered on franchisees: $295/month software fee from Sept 1 (~$4.9M/yr), plus new ad funds for two more brands from 2027-01-31 (~$17.9M/yr) announced in an Oct 14 8-K — filing itself now flags franchisee-relationship risk from these fees. Equity is negative (-$37.4M) with $60M debt; $1.02 quarterly + $4.00 special dividend payable Dec 1.",
     "lastChecked": "2026-10-15"
   },
   "CHY": {
@@ -31270,7 +31270,7 @@
       "basis": "Q1 earnings release 08-06, financial statements 08-14",
       "confidence": "estimated"
     },
-    "note": "Japanese crypto exchange (SPAC-merged 2025), foreign private issuer, reports JPY/IFRS. Labeled 2026/Q1 = fiscal Q1 FY2027 (Apr-Jun 2026). Headline revenue +36% to \u00a5114.3bn is mostly gross crypto trade volume; Adjusted Revenue (what it actually keeps) +19% to \u00a52,920m, only +3% organic ex the 3iQ fund-manager acquisition. Operating loss widened to \u00a51,373m from \u00a5870m; net loss narrowed to \u00a51,176m only on FX gains, a smaller warrant charge and a tax benefit. Monthly Jul-Sep volume ~30% below Apr-Jun, suggesting another weak quarter.",
+    "note": "Japanese crypto exchange (SPAC-merged 2025), foreign private issuer, reports JPY/IFRS. Labeled 2026/Q1 = fiscal Q1 FY2027 (Apr-Jun 2026). Headline revenue +36% to ¥114.3bn is mostly gross crypto trade volume; Adjusted Revenue (what it actually keeps) +19% to ¥2,920m, only +3% organic ex the 3iQ fund-manager acquisition. Operating loss widened to ¥1,373m from ¥870m; net loss narrowed to ¥1,176m only on FX gains, a smaller warrant charge and a tax benefit. Monthly Jul-Sep volume ~30% below Apr-Jun, suggesting another weak quarter.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31394,7 +31394,7 @@
       "basis": "confirmed via 8-K filed 2026-10-08 (before market open)",
       "confidence": "confirmed"
     },
-    "note": "Bank, EPS swing to $0.80 from a $0.52 loss is mostly the First of Long Island (FLIC) acquisition anniversary (year-ago quarter had $27.4M of day-one credit provisions + $30.7M merger charges) \u2014 Q1 2026's $0.72 EPS is the cleaner comparison. NIM rose to 3.42% (7th straight quarterly rise), efficiency ratio improved to 42.7%, ROTCE 13.79%. Weak spot: NYC rent-stabilized multifamily loans drove a $13.8M charge-off and nonaccruals up to $79.7M from $41.6M; allowance fell to 1.18% of loans as $9.2M of reserves was released. Q3 2026 earnings confirmed for 2026-10-22 before market open.",
+    "note": "Bank, EPS swing to $0.80 from a $0.52 loss is mostly the First of Long Island (FLIC) acquisition anniversary (year-ago quarter had $27.4M of day-one credit provisions + $30.7M merger charges) — Q1 2026's $0.72 EPS is the cleaner comparison. NIM rose to 3.42% (7th straight quarterly rise), efficiency ratio improved to 42.7%, ROTCE 13.79%. Weak spot: NYC rent-stabilized multifamily loans drove a $13.8M charge-off and nonaccruals up to $79.7M from $41.6M; allowance fell to 1.18% of loans as $9.2M of reserves was released. Q3 2026 earnings confirmed for 2026-10-22 before market open.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31425,7 +31425,7 @@
       "basis": "last year's Q3 10-Q filed 2025-11-14",
       "confidence": "estimated"
     },
-    "note": "Oncology biotech; raised $20.7M net in a May 2026 private placement at ~$2.30/share (85% below the prior May 2025 deal, split-adjusted) \u2014 going-concern doubt from Q1 is now gone, cash $20.0M. New investors hold ~92% of shares post-raise. Berubicin's Phase 2 missed its overall-survival goal (reported FY2025 10-K); company announced a March 2026 strategic pivot away from glioblastoma, trying to license out Berubicin/TPI 287 and find new candidates \u2014 no new asset named yet in this 10-Q.",
+    "note": "Oncology biotech; raised $20.7M net in a May 2026 private placement at ~$2.30/share (85% below the prior May 2025 deal, split-adjusted) — going-concern doubt from Q1 is now gone, cash $20.0M. New investors hold ~92% of shares post-raise. Berubicin's Phase 2 missed its overall-survival goal (reported FY2025 10-K); company announced a March 2026 strategic pivot away from glioblastoma, trying to license out Berubicin/TPI 287 and find new candidates — no new asset named yet in this 10-Q.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31518,7 +31518,7 @@
       "basis": "filing cadence only, not confirmed",
       "confidence": "estimated"
     },
-    "note": "Formerly Tharimmune/Hillstream BioPharma, a clinical biotech that raised ~$537M net in Nov 2025 (mostly paid in Canton Coin) and became a 'digital asset treasury' company; renamed/re-ticked CNTN 2026-02-18. Q2 2026 is its first revenue quarter ($1.50M, mostly CC-locking fees). Net loss $19.25M almost entirely a $23.7M paper loss on its 3.71B CC holdings (worth $523.4M vs $584.1M cost). Old biotech subsidiary (Gravitas) sold July 17 to an entity tied to three former directors for a $3.5M note \u2014 now discontinued operations.",
+    "note": "Formerly Tharimmune/Hillstream BioPharma, a clinical biotech that raised ~$537M net in Nov 2025 (mostly paid in Canton Coin) and became a 'digital asset treasury' company; renamed/re-ticked CNTN 2026-02-18. Q2 2026 is its first revenue quarter ($1.50M, mostly CC-locking fees). Net loss $19.25M almost entirely a $23.7M paper loss on its 3.71B CC holdings (worth $523.4M vs $584.1M cost). Old biotech subsidiary (Gravitas) sold July 17 to an entity tied to three former directors for a $3.5M note — now discontinued operations.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31549,7 +31549,7 @@
       "basis": "last year's Q3 10-Q filed 2025-11-14",
       "confidence": "estimated"
     },
-    "note": "Multi-jurisdiction casino operator (US, Canada, Poland). Revenue +0.8% (+4.7% ex-Poland) as Poland fell 19.4% after its Warsaw Hilton casino license wasn't renewed. Net loss narrowed to $10.9M from $12.3M only on lower tax/minority allocations \u2014 pre-tax loss actually worsened slightly. Interest on bank debt + the VICI Master Lease ($25.9M) exceeds operating profit ($17.2M); shareholders' equity is negative $125.7M. Ongoing strategic review (could include selling Poland or the whole company); Polish bank loans in covenant breach; debt investor Brigade has a discounted buyback option tied to a possible auction.",
+    "note": "Multi-jurisdiction casino operator (US, Canada, Poland). Revenue +0.8% (+4.7% ex-Poland) as Poland fell 19.4% after its Warsaw Hilton casino license wasn't renewed. Net loss narrowed to $10.9M from $12.3M only on lower tax/minority allocations — pre-tax loss actually worsened slightly. Interest on bank debt + the VICI Master Lease ($25.9M) exceeds operating profit ($17.2M); shareholders' equity is negative $125.7M. Ongoing strategic review (could include selling Poland or the whole company); Polish bank loans in covenant breach; debt investor Brigade has a discounted buyback option tied to a possible auction.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31580,7 +31580,7 @@
       "basis": "filing cadence only, not confirmed",
       "confidence": "estimated"
     },
-    "note": "Streaming/digital media (fiscal year ends March 31; this is fiscal Q1 FY2027, labeled 2026/Q1). Revenue +175% almost entirely from two Q1-2026 acquisitions (IndiCue ad-tech, Giant Worldwide media services) \u2014 organic revenue flat at ~$11.2M. Gross margin fell to 35% from 57% as IndiCue pays out 79% of its gross revenue to publishers. Net loss widened to $5.7M despite adjusted EBITDA turning positive ($0.5M); balance sheet stretched (cash $4.3M, current liabilities $18.9M above current assets). Kept FY2027 guidance of $115-120M revenue / $10-20M adjusted EBITDA, which implies most of the profit target still has to come in H2.",
+    "note": "Streaming/digital media (fiscal year ends March 31; this is fiscal Q1 FY2027, labeled 2026/Q1). Revenue +175% almost entirely from two Q1-2026 acquisitions (IndiCue ad-tech, Giant Worldwide media services) — organic revenue flat at ~$11.2M. Gross margin fell to 35% from 57% as IndiCue pays out 79% of its gross revenue to publishers. Net loss widened to $5.7M despite adjusted EBITDA turning positive ($0.5M); balance sheet stretched (cash $4.3M, current liabilities $18.9M above current assets). Kept FY2027 guidance of $115-120M revenue / $10-20M adjusted EBITDA, which implies most of the profit target still has to come in H2.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31611,7 +31611,7 @@
       "basis": "Q1 filed 04-29, Q2 filed 07-29",
       "confidence": "estimated"
     },
-    "note": "IT products/services reseller. Net sales +12.4% to $854.0M, notebooks/mobility driving most of the gain (34%\u219240% of sales); operating margin rose to 5.0% from 4.1% mostly on SG&A growing slower than sales, not gross margin. EPS growth (+35.1%) came from operations, not buybacks/tax. Public Sector flat (federal sales -57.4% YTD on non-repeating prior orders). Caveat: H1 operating cash flow was -$49.5M against $50.4M net income, as inventory rose 43% since December (partly to secure supply during a memory shortage) and the cash conversion cycle lengthened. Oct 14 8-K: new President/COO hired.",
+    "note": "IT products/services reseller. Net sales +12.4% to $854.0M, notebooks/mobility driving most of the gain (34%→40% of sales); operating margin rose to 5.0% from 4.1% mostly on SG&A growing slower than sales, not gross margin. EPS growth (+35.1%) came from operations, not buybacks/tax. Public Sector flat (federal sales -57.4% YTD on non-repeating prior orders). Caveat: H1 operating cash flow was -$49.5M against $50.4M net income, as inventory rose 43% since December (partly to secure supply during a memory shortage) and the cash conversion cycle lengthened. Oct 14 8-K: new President/COO hired.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31642,7 +31642,7 @@
       "basis": "Q2 filed 08-11 plus ~90 days",
       "confidence": "estimated"
     },
-    "note": "Rare bleeding/vascular-disorder biotech, no revenue. First 10-Q since May 2026 IPO ($317.2M net raised). Net loss doubled to $24.2M mostly from an FX swing in other income, not core costs; R&D +58%, G&A +80%. Cash+securities $457.5M, no debt, runway guided 'into 2029' (implies H2 spend roughly doubles as sutacimig Phase 3 starts). Main risk flagged: blood clots at high sutacimig exposure in Phase 1/2 \u2014 Phase 3 dose chosen to avoid this, FDA-endorsed per the filing.",
+    "note": "Rare bleeding/vascular-disorder biotech, no revenue. First 10-Q since May 2026 IPO ($317.2M net raised). Net loss doubled to $24.2M mostly from an FX swing in other income, not core costs; R&D +58%, G&A +80%. Cash+securities $457.5M, no debt, runway guided 'into 2029' (implies H2 spend roughly doubles as sutacimig Phase 3 starts). Main risk flagged: blood clots at high sutacimig exposure in Phase 1/2 — Phase 3 dose chosen to avoid this, FDA-endorsed per the filing.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31673,7 +31673,7 @@
       "basis": "~90-day cadence; next filing likely within 10 days of 2026-10-15",
       "confidence": "estimated"
     },
-    "note": "Coconut water/beverage company. Net sales +28.1% (volume +15%, private label +78.1%); net income more than doubled but ~$15.6M of that is a one-time tariff refund (Supreme Court struck the tariff down Feb 2026) \u2014 underlying EPS growth closer to +60%, not +116%. Raised full-year guidance; implied H2 gross margin ~35% (vs 1H) on rising costs and a bigger private-label mix. July 22: bought Thai coconut-water maker Copra for $175M + earnout, its first owned factory, adding direct coconut-price exposure.",
+    "note": "Coconut water/beverage company. Net sales +28.1% (volume +15%, private label +78.1%); net income more than doubled but ~$15.6M of that is a one-time tariff refund (Supreme Court struck the tariff down Feb 2026) — underlying EPS growth closer to +60%, not +116%. Raised full-year guidance; implied H2 gross margin ~35% (vs 1H) on rising costs and a bigger private-label mix. July 22: bought Thai coconut-water maker Copra for $175M + earnout, its first owned factory, adding direct coconut-price exposure.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31766,7 +31766,7 @@
       "basis": "last year's Q3 release 2025-10-24",
       "confidence": "estimated"
     },
-    "note": "Michigan bank. Net income $12.5M ($0.83 EPS) vs $13.5M ($0.90) a year ago, mostly a planned $1.9M bond-sale loss to fund higher-yielding ARMs (~$0.10/share cost). GAAP NIM fell to 3.59% as Fentura-acquisition loan accretion faded, but core (ex-accretion) margin actually improved to ~3.35%. Core loans +11.9% annualized; nonperforming loans rose to 1.07% from 0.66% while the allowance ratio slipped slightly. Company's own efficiency-ratio (55.9%) and ROTCE (14.1%) figures exclude items most banks include \u2014 GAAP-comparable figures (~62.6% and ~17%) given alongside in the report.",
+    "note": "Michigan bank. Net income $12.5M ($0.83 EPS) vs $13.5M ($0.90) a year ago, mostly a planned $1.9M bond-sale loss to fund higher-yielding ARMs (~$0.10/share cost). GAAP NIM fell to 3.59% as Fentura-acquisition loan accretion faded, but core (ex-accretion) margin actually improved to ~3.35%. Core loans +11.9% annualized; nonperforming loans rose to 1.07% from 0.66% while the allowance ratio slipped slightly. Company's own efficiency-ratio (55.9%) and ROTCE (14.1%) figures exclude items most banks include — GAAP-comparable figures (~62.6% and ~17%) given alongside in the report.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31828,7 +31828,7 @@
       "basis": "filing cadence only (Q2 filed 07-31), not confirmed",
       "confidence": "estimated"
     },
-    "note": "Semiconductor test/handling equipment. Net sales +38.4% to $149.0M on AI/data-center chip test-handler demand (equipment sales +78%); swung to near-breakeven from a $16.9M net loss. Raised FY2026 HPC revenue estimate to $100-110M; Q3 guidance $170M \u00b1$7M. A tax charge larger than pre-tax profit flipped a small profit into a small net loss; inventory write-downs doubled; H1 operating cash flow leaned on a $21.3M rise in unpaid supplier bills. Convertible notes become convertible July 28-Sept 8 \u2014 a dilution risk if the stock stays high. Company doesn't disclose bookings/backlog.",
+    "note": "Semiconductor test/handling equipment. Net sales +38.4% to $149.0M on AI/data-center chip test-handler demand (equipment sales +78%); swung to near-breakeven from a $16.9M net loss. Raised FY2026 HPC revenue estimate to $100-110M; Q3 guidance $170M ±$7M. A tax charge larger than pre-tax profit flipped a small profit into a small net loss; inventory write-downs doubled; H1 operating cash flow leaned on a $21.3M rise in unpaid supplier bills. Convertible notes become convertible July 28-Sept 8 — a dilution risk if the stock stays high. Company doesn't disclose bookings/backlog.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -31952,7 +31952,7 @@
       "basis": "confirmed via the company's own July 30 2026 release",
       "confidence": "confirmed"
     },
-    "note": "Outdoor apparel; swung to a $26.6M profit from a $10.2M loss, but ~$0.93 of the $0.52 EPS came from a court-ordered IEEPA-tariff refund (~$78M received, $60M booked to cost of sales) \u2014 ex that, operating margin was actually slightly worse YoY (-4.7% vs -3.9%). US sales -4.5% (weak wholesale spring orders, store closures) while Asia/Latin America +12% and Europe +10%. Raised EPS guidance mostly reflecting the refund, not an improved outlook; cut operating-cash-flow guidance without explanation. Q3 2026 earnings confirmed for 2026-10-29.",
+    "note": "Outdoor apparel; swung to a $26.6M profit from a $10.2M loss, but ~$0.93 of the $0.52 EPS came from a court-ordered IEEPA-tariff refund (~$78M received, $60M booked to cost of sales) — ex that, operating margin was actually slightly worse YoY (-4.7% vs -3.9%). US sales -4.5% (weak wholesale spring orders, store closures) while Asia/Latin America +12% and Europe +10%. Raised EPS guidance mostly reflecting the refund, not an improved outlook; cut operating-cash-flow guidance without explanation. Q3 2026 earnings confirmed for 2026-10-29.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -32014,7 +32014,7 @@
       "basis": "~90-day cadence only, not confirmed",
       "confidence": "estimated"
     },
-    "note": "Bitcoin mining pivoting to AI/HPC hosting. Revenue +108.8% as colocation (mostly CoreWeave) grew to 83% of revenue; Bitcoin self-mining revenue -65.5% and now loses money at the gross level. Net loss $1,155.3M is ~$1,045.5M a non-cash warrant fair-value charge \u2014 underlying loss ~$110M, still including a $41.9M contract-termination charge. Debt $4.4B face value after a $3.3B May note issuance; 96.4M warrants expiring Jan 2027 are a ~30% dilution risk. Post-quarter (July 27): AMD + a 'Neocloud' signed ~530MW of 15-year leases, AMD got a warrant for up to 30M shares.",
+    "note": "Bitcoin mining pivoting to AI/HPC hosting. Revenue +108.8% as colocation (mostly CoreWeave) grew to 83% of revenue; Bitcoin self-mining revenue -65.5% and now loses money at the gross level. Net loss $1,155.3M is ~$1,045.5M a non-cash warrant fair-value charge — underlying loss ~$110M, still including a $41.9M contract-termination charge. Debt $4.4B face value after a $3.3B May note issuance; 96.4M warrants expiring Jan 2027 are a ~30% dilution risk. Post-quarter (July 27): AMD + a 'Neocloud' signed ~530MW of 15-year leases, AMD got a warrant for up to 30M shares.",
     "lastChecked": "2026-10-15",
     "reports": [
       {
@@ -32120,7 +32120,7 @@
   "CPZ": {
     "name": "Calamos Long/Short Equity & Dynamic Income Trust",
     "status": "skipped",
-    "skipReason": "closed-end fund (Calamos Long/Short Equity & Dynamic Income Trust), same pattern as CHI/CHY already skipped \u2014 files N-CSR/N-CSRS, not a 10-Q/10-K with normal revenue/net income/EPS metrics; not a fit for this site report format.",
+    "skipReason": "closed-end fund (Calamos Long/Short Equity & Dynamic Income Trust), same pattern as CHI/CHY already skipped — files N-CSR/N-CSRS, not a 10-Q/10-K with normal revenue/net income/EPS metrics; not a fit for this site report format.",
     "lastChecked": "2026-10-16"
   },
   "CPHC": {
@@ -32609,7 +32609,7 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-16",
-    "notes": "Going-concern warning; broke two loan covenants, lender waiver runs through 2026-10-22 with a restructuring/transaction reportedly in progress \u2014 watch for an 8-K before the next 10-Q."
+    "notes": "Going-concern warning; broke two loan covenants, lender waiver runs through 2026-10-22 with a restructuring/transaction reportedly in progress — watch for an 8-K before the next 10-Q."
   },
   "CRNC": {
     "name": "Cerence Inc.",
@@ -33673,7 +33673,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-13",
-      "basis": "Q1 10-Q filed 2026-05-13, Q2 filed 2026-08-14 \u2014 ~90 day cadence",
+      "basis": "Q1 10-Q filed 2026-05-13, Q2 filed 2026-08-14 — ~90 day cadence",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
@@ -33695,7 +33695,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-04",
-      "basis": "Q3 2025 10-Q filed 2025-11-04, Q2 2026 filed 2026-08-04 \u2014 same cadence",
+      "basis": "Q3 2025 10-Q filed 2025-11-04, Q2 2026 filed 2026-08-04 — same cadence",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-17"
@@ -33867,7 +33867,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-28",
-      "basis": "Q1 filed 2026-04-28, Q2 filed 2026-07-28, roughly 90-day cadence; also pending Fertitta Gaming take-private (signed 2026-05-27, shareholders approved 2026-09-22, FTC Second Request issued 2026-09-14) \u2014 watch for delisting after close, unlikely before 2027",
+      "basis": "Q1 filed 2026-04-28, Q2 filed 2026-07-28, roughly 90-day cadence; also pending Fertitta Gaming take-private (signed 2026-05-27, shareholders approved 2026-09-22, FTC Second Request issued 2026-09-14) — watch for delisting after close, unlikely before 2027",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
@@ -33933,7 +33933,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (fiscal Q2 2027, quarter ending ~2026-10-31)",
       "estimate": "2026-12-05",
-      "basis": "unusual fiscal year ending early May; a newer 10-Q for fiscal Q1 2027 (period end 2026-08-01, filed 2026-09-02) already exists but was not yet written up as of this check \u2014 worth a tier-0-style follow-up next firing",
+      "basis": "unusual fiscal year ending early May; a newer 10-Q for fiscal Q1 2027 (period end 2026-08-01, filed 2026-09-02) already exists but was not yet written up as of this check — worth a tier-0-style follow-up next firing",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
@@ -33999,7 +33999,7 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-18",
-      "basis": "company filed late (NT 10-Q) for both Q1 and Q2 2026, so Q3 likely late too; going-concern doubt, working-capital deficit 2.85M, multiple debts in default/restructured \u2014 watch closely",
+      "basis": "company filed late (NT 10-Q) for both Q1 and Q2 2026, so Q3 likely late too; going-concern doubt, working-capital deficit 2.85M, multiple debts in default/restructured — watch closely",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
@@ -34271,7 +34271,7 @@
   "DGICB": {
     "name": "Donegal Group, Inc. - Class B",
     "status": "skipped",
-    "skipReason": "Class B share class of Donegal Group, Inc. \u2014 the same company already covered under DGICA (Class A); see that ticker's entry",
+    "skipReason": "Class B share class of Donegal Group, Inc. — the same company already covered under DGICA (Class A); see that ticker's entry",
     "lastChecked": "2026-10-18"
   },
   "DGII": {
@@ -34515,5 +34515,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-19"
+  },
+  "DLO": {
+    "name": "DLocal Limited - Class A Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dlo/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (earnings release + interim financials)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-13",
+      "basis": "Q1 filed 2026-05-14, Q2 filed 2026-08-13 — roughly 90-day quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
   }
 }
