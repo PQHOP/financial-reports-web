@@ -217,6 +217,20 @@ exit immediately). Tier 0 hot-list/S&P 500 items may exceed the cap by a
 few if they reported that day. If a firing ever exits early on a
 weekly-limit message again, lower the cap and note it here.
 
+**Per-firing cap (since 2026-10-19): a firing publishes at most ~8 new
+report-periods from tier 1 and then commits, pushes and exits.** The
+routine fires hourly, but on 2026-10-18 night single firings kept going
+for 3-4 hours (14 sub-batches in one session), so three or four firings
+ran the same `next-batch` queue at once: CYRX, CYTK and CZWI were each
+researched by two Opus subagents and the second one was rejected at
+publish ("already exists") — a wasted research pass each, plus merge
+commits to reconcile the tracker. Seven firings × ~8 fills the ~40
+nightly cap without overlap. Tier 0 items and the first firing's 10
+hot-list rewrites don't count toward the 8. Before every publish, `git
+pull --rebase` and check that `/companies/<slug>/<year>/<period>` is
+still a 404; treat "already exists" as a collision to record from the
+live page, not an error to retry.
+
 **Hot-list rewrite (temporary, from 2026-10-14 night): +10 per night on
 top of the ~40 cap, until the queue is empty.** For AdSense ("low value
 content"), the latest report of each hot-list company that predates the
@@ -713,6 +727,15 @@ the user is tracked at its end. Things future sessions should know:
     company's latest report (`/reports/<id>`). Slug
     `earnings-preview-<YYYY-MM-DD>` (the Monday), kind `PREVIEW`, `tickers`
     set. Publish with `--article`. Same research-subagent rules as reports.
+    **This was missed on 2026-10-11 and 2026-10-18** (no preview exists on
+    `/insights`, no mention in the nightly log either Sunday): it is the
+    Sunday first firing's first job, before the hot-list rewrites and
+    before any tier 1 pick, and it counts as 2 of that firing's
+    report-periods. Searches for "`<ticker>` earnings preview" / "what to
+    watch" peak in the days *before* results and are answered by small
+    sites (Hudson Labs, days.to, Barchart previews ranked for TSLA on
+    2026-10-18), so this is the cheapest page we publish that can rank
+    this season.
   - **Comparison** — at most one per firing, at most two per week: when
     two companies in the same industry both have a current-period report
     with `metrics` and no comparison of that pair exists, publish a

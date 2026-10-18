@@ -173,6 +173,12 @@ export async function ReportView({ report }: { report: FullReport }) {
     .filter((i) => i.slug !== "uncategorized")
     .map((i) => i.id);
   const isCommunity = report.origin === "COMMUNITY";
+  // Show the revision date when a report was materially re-edited after
+  // publishing (hot-list rewrites, corrections); same-day touch-ups stay silent.
+  const showUpdated =
+    new Date(report.updatedAt).getTime() -
+      new Date(report.publishedAt).getTime() >
+    24 * 60 * 60 * 1000;
   const ticker = report.company.ticker;
   const [companyReports, industryReports, communityCount, related, nextFiling, peerReports] =
     await Promise.all([
@@ -314,7 +320,21 @@ export async function ReportView({ report }: { report: FullReport }) {
               day: "numeric",
               timeZone: "UTC",
             })}
-          </time>{" "}
+          </time>
+          {showUpdated ? (
+            <>
+              {" "}
+              · Updated{" "}
+              <time dateTime={new Date(report.updatedAt).toISOString()}>
+                {new Date(report.updatedAt).toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                  timeZone: "UTC",
+                })}
+              </time>
+            </>
+          ) : null}{" "}
           by {reportByline(report)}
           {isCommunity ? (
             <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-900">
