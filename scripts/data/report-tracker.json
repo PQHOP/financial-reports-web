@@ -34201,5 +34201,77 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
+  },
+  "DFSC": {
+    "name": "DEFSEC Technologies Inc. - common stock, no R/S concurrent with offering",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dfsc/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (fiscal Q3 FY2026 interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026 annual, FYE 2026-09-30)",
+      "estimate": "2026-12-29",
+      "basis": "FY2025 20-F filed 2025-12-29, same cadence; fiscal year ends Sept 30 so this is already their fiscal Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DFTX": {
+    "name": "Definium Therapeutics, Inc. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dftx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q1 filed 2026-05-07, Q2 filed 2026-08-06, roughly 90-day cadence; renamed from Mind Medicine (MindMed) Inc. on 2026-01-09, ticker changed from MNMD to DFTX 2026-01-15; pre-NDA meeting set Q4 2026, NDA filing expected H1 2027 for depression",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DGICA": {
+    "name": "Donegal Group, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dgica/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "~90-day filing cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DGICB": {
+    "name": "Donegal Group, Inc. - Class B",
+    "status": "skipped",
+    "skipReason": "Class B share class of Donegal Group, Inc. — the same company already covered under DGICA (Class A); see that ticker's entry",
+    "lastChecked": "2026-10-18"
   }
 }

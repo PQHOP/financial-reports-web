@@ -16224,3 +16224,61 @@ CYRX, CYTK, CZR, CZFS, CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO,
 DCTH, DBVT, DCOY, DCX, DDI, DERM, DETX, DFDV = 21 new report-periods +
 10/10 hot-list rewrites + 1 live-data bug fix, over halfway to the ~40
 cap. Next in file order after DFDV: DFSC.**
+
+**Ninth batch (this session) — no collisions, all three clean.**
+- **DFSC** (DEFSEC Technologies) fiscal Q3 FY2026 (quarter ended
+  2026-06-30; FYE Sept 30) — new company, CAD-reporting, TSXV/Nasdaq-
+  listed defense/digitization services provider. Revenue +92% to
+  C$2.72M, nearly all from Canadian Army software/digitization staffing
+  (C$2.36M, +121%); Less-Lethal segment C$0.36M. Gross margin 33.1% vs
+  28.2%. Opex grew faster than gross profit (G&A +60%, R&D +55%, plus a
+  C$0.48M stock-option charge), so net loss widened 12% to C$(2.59)M.
+  Loss per share fell 65% to C$(1.28) only because weighted shares rose
+  3.2x. Nine-month operating cash burn C$6.45M vs C$6.69M net loss; two
+  customers were 87% of revenue; going-concern warning. Cash C$3.48M
+  at June 30; an Aug 18 private placement raised C$5.54M (~73% more
+  shares). No numeric guidance. Published:
+  https://financialreportinsights.com/companies/dfsc/2026/q3.
+- **DFTX** (Definium Therapeutics, renamed from Mind Medicine/MindMed
+  2026-01-09, ticker MNMD->DFTX 2026-01-15) Q2 2026 — new company,
+  clinical-stage psychedelic/CNS biopharma, no revenue. Net loss grew
+  to -$159.0M from -$42.7M (-$1.44/sh vs -$0.50), but $86.2M of that is
+  a non-cash warrant-revaluation charge as the stock rose from $18.90
+  to $47.04 in the quarter. Operating loss -$75.1M (+84%): R&D +63% to
+  $48.7M (mostly DT120), G&A +138% to $26.4M (stock pay, launch prep).
+  H1 operating cash burn $95.4M (~$48M/quarter). After Phase 3 Emerge
+  (depression) succeeded, raised $805M gross ($757.9M net) at $34/sh;
+  cash+investments now $1,083.9M, said to last into 2030. Post-quarter:
+  Phase 3 Voyage (anxiety) succeeded Aug 12, FDA Breakthrough Therapy
+  designation for depression Sep 8, Phase 3 Panorama (anxiety)
+  succeeded Sep 14; pre-NDA meeting Q4 2026, NDA expected H1 2027.
+  Published: https://financialreportinsights.com/companies/dftx/2026/q2.
+- **DGICA** (Donegal Group, Class A — Class B/DGICB is the same
+  company, marked skipped) Q2 2026 — new company, Pennsylvania P&C
+  insurer. Net income +32.3% to $22.3M ($0.60/sh vs $0.46) despite
+  revenue -2.4% and net premiums written -3.2%. Combined ratio improved
+  to 95.6% from 97.7%, but almost entirely from two things that vary
+  year to year: weather losses fell to $11.9M from $25.8M (below the
+  company's own 5-year Q2 average of $20.3M), and prior-year reserve
+  releases grew to $7.8M from $3.0M. Underlying picture weaker: core
+  loss ratio worsened slightly to 51.0% from 50.1%, expense ratio
+  jumped to 35.8% from 32.2%, personal-lines premiums -9.7%, commercial
+  multi-peril combined ratio 108.7% with adverse reserve development.
+  Ex-investment-gains operating income $19.7M (+25.9%); H1 operating
+  cash flow $26.1M below $33.8M net income. Book value per share +8.2%
+  to $17.98. Published:
+  https://financialreportinsights.com/companies/dgica/2026/q2.
+
+**This firing's running contribution tonight: CZR, DAIO, DAKT, DAVE,
+DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX, DDI, DERM, DETX, DFDV, DFSC,
+DFTX, DGICA = 18 new report-periods with zero collisions across the
+last 16 picks, plus 2 SPAC skips (DAAQ, DBCA), 1 same-company skip
+(DGICB) and the CZNC units-bug fix. Running tonight total across all
+firings: CYPH, CYRX, CYTK, CZR, CZFS, CZNC, DAIO, CZWI, DAKT, DAVE,
+DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX, DDI, DERM, DETX, DFDV, DFSC,
+DFTX, DGICA = 24 new report-periods + 10/10 hot-list rewrites + 1
+live-data bug fix, at 24/40 of the ~40 cap. This session is stopping
+here for now — a good stopping point given the length of this run —
+and will resume or hand off to the next firing. Next in file order
+after DGICA/DGICB: DGII (DLT Resolution / DG-II — verify exact next
+ticker with next-batch).**
