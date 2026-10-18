@@ -15895,3 +15895,22 @@ collisions with other firings, already recorded by them). Running
 tonight total so far: CYPH, CYRX, CYTK, CZR, CZFS = 5 new report-periods
 + 10/10 hot-list rewrites, well under the ~40 cap. Next in file order
 after CZFS: CZNC.**
+
+**Yet another firing's contribution (this session, after re-pulling and
+merging the above):** CZNC published cleanly (no collision at the time).
+CZWI was a collision — already published by another firing moments
+before this session's subagent checked. At least three overlapping
+firings of the hourly cloud routine have now been observed tonight; see
+the collision note above this entry. Running tonight total: CYPH, CYRX,
+CYTK, CZFS, CZNC, CZR, CZWI = 7 new report-periods + 10/10 hot-list
+rewrites.
+- **CZNC** (Citizens & Northern) — see entry above (published by this
+  session before the CZR merge).
+- **CZWI** (Citizens Community Bancorp) Q2 2026 — collision, recorded
+  from the live page: net income -66.3% to $1.10M, diluted EPS -66.7% to
+  $0.11, on a $4.33M credit-loss provision (vs $1.35M) for three problem
+  loan relationships; net interest income +1.5% to $13.50M, NIM 3.22%
+  (up from 3.18% in Q1). Nonperforming assets nearly doubled quarter over
+  quarter to $32.4M (1.79% of assets). Bank-level CET1 12.9%, ROTCE 3.03%
+  vs 9.18% a year ago. Published (by another firing):
+  https://financialreportinsights.com/companies/czwi/2026/q2.

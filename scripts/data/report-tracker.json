@@ -33871,5 +33871,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
+  },
+  "CZWI": {
+    "name": "Citizens Community Bancorp, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/czwi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2026 earnings release expected late October, 10-Q about early November",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
   }
 }
