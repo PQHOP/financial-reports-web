@@ -667,7 +667,8 @@
       "reportId": "cmtzbl3vt000004i7ei5mxwzc",
       "url": "https://financialreportinsights.com/companies/abnb/2026/q2",
       "nextExpectedFiling": "2026-11-05",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-18"
     },
     {
       "ticker": "DASH",
