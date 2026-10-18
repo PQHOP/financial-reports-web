@@ -16464,3 +16464,48 @@ DIOD, DJCO, DJT, DKI = 33 new report-periods + 10/10 hot-list rewrites
 + 1 live-data bug fix, at 33/40 of the ~40 cap. Continuing with a
 smaller remaining batch given the cap is close. Next in file order
 after DKI: DKNG.**
+
+**Thirteenth batch — no collisions, both clean.**
+- **DKNG** (DraftKings) Q2 2026 — new company, online sports betting/
+  iGaming. Handle +14.5% to $13.1B but revenue -4.6% to $1,443.2M: sports
+  net revenue margin fell to 6.8% from 8.7% on bettor-friendly results
+  and bigger new-customer promos (Sportsbook, Predictions). MUPs +9.1%
+  to 3.6M, revenue/payer -12.6% to $132. iGaming +7.5% to $461.9M. S&M
+  +38% to $322.5M (World Cup, NBA Playoffs, Super App, Predictions
+  launch); state gaming taxes rose to 36.0% of revenue from 33.2% —
+  together turned a $150.6M operating profit into a $68.2M operating
+  loss. Net loss -$67.6M (-$0.14/sh) vs +$157.9M (+$0.30). Adjusted
+  EBITDA -62% to $114.6M, excluding $19.9M of "non-recurring" advocacy
+  spend that also showed up in Q1. FY guidance held at $6.5-6.9B
+  revenue, $700-900M adj. EBITDA, implying $418-618M of H2 adj. EBITDA
+  vs $282M in H1. Three lawsuits (Jul 28-Aug 3) claim DraftKings
+  Predictions is unlawful sports wagering. Published:
+  https://financialreportinsights.com/companies/dkng/2026/q2.
+- **DLHC** (DLH Holdings) fiscal Q3 2026 (quarter ended 2026-06-30) —
+  new company, federal government-services contractor. Revenue -46.9%
+  to $44.2M as contracts shifted to small-business set-asides — VA
+  pharmacy (CMOP) revenue fell to $6.3M from $27.0M as both remaining
+  sites moved to new contractors this quarter, ending that work.
+  Operating loss -$3.9M (margin -8.9% vs +4.5%); a $10.4M non-cash
+  deferred-tax-asset write-down turned it into a -$16.8M net loss
+  (-$1.16/sh vs +$0.02). Adjusted EBITDA $3.4M (7.6% margin) excludes
+  $3.3M of cost-cutting charges. Debt $128.7M at ~7.8% floating vs
+  $0.2M cash and only $5.0M unused credit; covenants amended June 11,
+  debt matures Dec 2027; goodwill ($138.2M) exceeds shareholders'
+  equity ($93.3M). Backlog fell to $408.5M (funded $66.7M) from $514.3M
+  ($114.1M) at FY2025-end. New CEO and CFO took over at quarter-end; no
+  numeric guidance, management expects roughly the Q3 adjusted-EBITDA
+  margin to hold in Q4. Published:
+  https://financialreportinsights.com/companies/dlhc/2026/q3.
+
+**This firing's contribution: DKNG, DLHC, both published cleanly with
+no collisions. Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS,
+CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX,
+DDI, DERM, DETX, DFDV, DFSC, DFTX, DGICA, DGII, DGNX, DGXX, DHC, DIBS,
+DIOD, DJCO, DJT, DKI, DKNG, DLHC = 35 new report-periods + 10/10
+hot-list rewrites + 1 live-data bug fix, at 35/40 of the ~40 cap. This
+session is stopping here for the night — close enough to the cap that
+a further batch risks pushing the combined total (across any other
+concurrent firings of the hourly cloud routine) over it. Next in file
+order after DLHC: DLO (then DLPN, DLTH, DMAA — likely a SPAC by name,
+verify before dispatching — DMAC).**

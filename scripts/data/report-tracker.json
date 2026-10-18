@@ -34471,5 +34471,49 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-19"
+  },
+  "DKNG": {
+    "name": "DraftKings Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/companies/dkng/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q3 2025 10-Q filed 2025-11-07, same quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DLHC": {
+    "name": "DLH Holdings Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/companies/dlhc/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-29"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE 2026-09-30)",
+      "estimate": "2026-12-05",
+      "basis": "fiscal year ended Sept 30; 10-K typically late Nov to early Dec",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
   }
 }
