@@ -15952,3 +15952,56 @@ concurrently all hour — see collision notes above. Worth the user
 checking whether that trigger's firings are meant to overlap, since each
 collision wastes one subagent's full research pass. Next in file order
 after CZWI: DAKT.**
+
+**Fifth batch, no collisions this round** (re-pulled first — nothing new
+from other firings since the last write).
+- **DAKT** (Daktronics) fiscal 2026 ANNUAL (FY ended 2026-05-02, 53
+  weeks) — new company. Record sales $838.7M (+10.9%, ~9% ex the extra
+  week). Operating margin 7.3% vs 4.4%; operating income +84% to $60.8M.
+  Net income swung to +$45.4M from -$10.1M, mostly because two FY2025
+  one-offs didn't repeat ($22.5M convertible-note charge, $15.5M
+  affiliate-loan provision). Adjusted EPS +25% to $1.05 (GAAP diluted
+  $0.92). Record orders $860.8M (+10.2%), backlog $356.2M (+4.3%). Free
+  cash flow fell to $34.9M from $78.5M (receivables +27.8%, contract
+  assets +61.7%). Transportation segment margin hit by tariffs;
+  International barely profitable. Report also covers fiscal Q1 2027
+  (filed 09-02: sales +7.1%, EPS $0.40, orders down to $191.8M) and the
+  Oct 2026 exit of the Ireland plant / international transportation
+  business (~$13.5M charges). **Note: a newer 10-Q (fiscal Q1 2027)
+  already exists and hasn't been written up — flagged in the tracker as
+  a near-term follow-up, not a full tier-0 item since ANNUAL still
+  qualifies this company for 2026 coverage.** Published:
+  https://financialreportinsights.com/companies/dakt/2026/annual.
+- **DAVE** (Dave Inc.) Q2 2026 — new company, fintech cash-advance app.
+  Revenue +29.7% to $170.8M on 17% more monthly transacting members
+  (3.08M), ExtraCash advances +27% to ~$2.3B, subscriptions +87%. Credit
+  improved (28-day past-due 2.12% vs 2.26%). GAAP net income fell 26.4%
+  to $6.7M purely on $36.9M non-cash warrant/earnout charges from the
+  rising share price (adjusted net income is $49.7M higher than GAAP).
+  EPS fell only 21% to $0.49 because diluted shares fell 6% on $205.9M
+  of H1 buybacks, part-funded by a new $200M 0% convert due 2031; equity
+  dropped from $352.7M to $207.9M. New June 1 bank-partner arrangement
+  moves $93M of advances off-balance-sheet while Dave still guarantees
+  them. FY2026 guidance raised (revenue $725-735M, adj. EBITDA
+  $315-325M, adj. diluted EPS $17.00-17.50). Open DOJ suit naming the
+  CEO (motion to dismiss denied Sep 2025). Published:
+  https://financialreportinsights.com/companies/dave/2026/q2.
+- **DBX** (Dropbox) Q2 2026 — new company. Revenue +0.9% to $631.5M,
+  but only +0.1% constant-currency ex the FormSwift product being wound
+  down — currency and Simple-plan growth did the lifting. Paying users
+  18.19M vs 18.13M; ARPU +1.0% to $139.68. GAAP net income -23.7% to
+  $95.8M as net interest expense rose to $50.0M from $18.6M (term loan
+  now fully drawn at $2.67B vs $1.49B at year-end). Diluted EPS fell
+  only 6.7% to $0.42 because diluted shares are 18% lower on $318M of
+  Q2 buybacks ($688M H1); at last year's share count EPS would be ~$0.35
+  instead of $0.42 — debt-funded buybacks propping up the per-share
+  numbers while the core business is roughly flat. Free cash flow -9.0%
+  to $235.2M. Stockholders' deficit widened to $2.19B. No numeric
+  guidance given (verbal-only on the earnings call). Published:
+  https://financialreportinsights.com/companies/dbx/2026/q2.
+
+**This firing's contribution: DAKT, DAVE, DBX, all published cleanly
+with no collisions. Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS,
+CZNC, DAIO, CZWI, DAKT, DAVE, DBX = 11 new report-periods + 10/10
+hot-list rewrites + 1 live-data bug fix (CZNC units), well under the
+~40 cap. Next in file order after DBX: DCBO.**

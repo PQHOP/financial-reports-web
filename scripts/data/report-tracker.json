@@ -33915,5 +33915,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
+  },
+  "DAKT": {
+    "name": "Daktronics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dakt/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-05-02",
+      "filedAt": "2026-06-24"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 2027, quarter ending ~2026-10-31)",
+      "estimate": "2026-12-05",
+      "basis": "unusual fiscal year ending early May; a newer 10-Q for fiscal Q1 2027 (period end 2026-08-01, filed 2026-09-02) already exists but was not yet written up as of this check — worth a tier-0-style follow-up next firing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DAVE": {
+    "name": "Dave Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dave/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "~90-day cadence from Q2 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DBX": {
+    "name": "Dropbox, Inc. - Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dbx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "~90-day cadence from Q2 filing",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
   }
 }
