@@ -16595,3 +16595,76 @@ having explicitly reserved headroom for other concurrent firings, this
 firing did not dispatch any research subagents and made no
 tracker/report changes. Next in file order after DLPN remains: DLTH
 (then DMAA — verify SPAC status — DMAC).
+
+**New firing (this session) — network check passed (200 on sec.gov
+with required User-Agent, financialreportinsights.com reachable).
+Re-pulled git: still at c6ae8d9 (the 37/40 check-in above), no new
+commits from other firings. Re-ran `scan-recent-filings`: 0 fresh
+tier-0 candidates. Hot-list rewrite queue already at 10/10 for
+tonight.** With 3 report-periods of headroom left under the ~40 cap,
+did one small batch (3 companies, re-confirming the 9 known-pending
+FPI skips at the front of `next-batch` are all still correctly
+pending first) rather than exiting immediately, since the cap had not
+actually been reached yet.
+
+**Fourteenth batch — no collisions, all three clean.**
+- **DLTH** (Duluth Holdings) fiscal Q2 2026 (quarter ended
+  2026-08-02) — new company, outdoor/workwear apparel retailer.
+  Revenue -7.8% to $121.4M. Net income swung to +$18.4M from a prior-
+  year loss (EPS $0.50 vs a small loss), but $16.3M of that ($0.44 of
+  EPS) is a one-time IEEPA tariff refund (most of it cutting cost of
+  goods sold), not an operating improvement. Ex-refund, gross margin
+  was 59.6% vs 54.7%, operating income ~$2.8M vs $2.4M, adjusted
+  EBITDA ~$10.7M vs $12.0M. Online/direct-to-consumer sales -11.5%
+  while ad spend +12.9%. Inventory -15.5%, no revolver draw. FY2026
+  guidance: net sales held at $540-560M; adjusted EBITDA raised to
+  $38-42M from $28-32M, but the new range itself includes the
+  refunds, implying H2 adjusted EBITDA of $8.3-12.3M vs ~$16.7M a year
+  ago. Published: https://financialreportinsights.com/companies/dlth/2026/q2.
+- **DMAC** (DiaMedica Therapeutics) Q2 2026 — new company, clinical-
+  stage biopharma (rinvecalinase alfa / DM199 for ischemic stroke,
+  preeclampsia, fetal growth restriction), pre-revenue. Net loss
+  widened 31.7% to -$10.139M (R&D +40% to $8.153M) as ReMEDy2 stroke-
+  trial enrollment ramped (85% of 200 patients as of Aug 1, 2026;
+  interim analysis now expected Q1 2027, pushed from an earlier
+  target). Loss per share only -$0.19 vs -$0.18 because weighted
+  shares rose 25.5% on 2025 financings. Cash + marketable securities
+  $43.5M at June 30, down from $59.9M at year-end; H1 operating cash
+  burn $17.2M. No going-concern warning; management says cash lasts
+  "at least the next 12 months," $86.2M still available on the ATM
+  program. FDA-requested rat study for the preeclampsia program due
+  October 2026. Published:
+  https://financialreportinsights.com/companies/dmac/2026/q2.
+- **DMRC** (Digimarc) Q2 2026 — new company, digital-watermarking/
+  content-identification tech; completed a 2026-05-15 holding-company
+  reorganization (new filer CIK 2119322, "Digimarc Parent, Inc.",
+  still trades DMRC — noted in the tracker since it affects future
+  EDGAR lookups). Revenue -7.8% to $7.388M (subscription -19% to
+  $3.74M, services +8% to $3.65M); ARR -27% to $11.6M. Net loss
+  widened 47.4% to -$12.114M (diluted EPS -$0.54 vs -$0.38), including
+  a $5.4M one-time charge for the former CEO's stock awards vesting
+  early; non-GAAP net loss was a much smaller $1.7M (-$0.08/sh). Cash
+  $8.8M at June 30; the 10-Q carries a going-concern warning. A
+  2026-09-29 share sale (4.5M shares at $4.04, ~$18.2M gross) diluted
+  holders by roughly 20%. Published:
+  https://financialreportinsights.com/companies/dmrc/2026/q2.
+
+Also skipped without a subagent: **DMAA** (Drugs Made In America
+Acquisition Corp.) and **DMII** (Drugs Made In America Acquisition II
+Corp.) — both confirmed via SEC EDGAR company search as SIC "BLANK
+CHECKS" (SPACs), no operating business.
+
+**This firing's contribution: DLTH, DMAC, DMRC published cleanly with
+no collisions, plus 2 SPAC skips (DMAA, DMII). Running tonight total:
+CYPH, CYRX, CYTK, CZR, CZFS, CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI,
+DCBO, DCTH, DBVT, DCOY, DCX, DDI, DERM, DETX, DFDV, DFSC, DFTX, DGICA,
+DGII, DGNX, DGXX, DHC, DIBS, DIOD, DJCO, DJT, DKI, DKNG, DLHC, DLO,
+DLPN, DLTH, DMAC, DMRC = 40 new report-periods + 10/10 hot-list
+rewrites + 1 live-data bug fix, at 40/40 of the ~40 cap. Stopping here
+for the night — cap reached exactly; any later firing tonight should
+see this count and exit immediately with no further research. Note:
+**DMRA (Damora Therapeutics) was skipped over, not yet checked** —
+`next-batch` lists it between DMII and DMRC (DLTH, DMAA, DMAC, DMII,
+DMRA, DMRC, DNLI); this firing picked DLTH/DMAC/DMRC and the two SPAC
+skips but never actually reached DMRA. Next in file order for the
+next firing: DMRA, then DNLI.**

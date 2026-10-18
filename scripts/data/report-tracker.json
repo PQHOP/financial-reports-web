@@ -34559,5 +34559,83 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
+  },
+  "DLTH": {
+    "name": "Duluth Holdings Inc. - Class B",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dlth/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-02",
+      "filedAt": "2026-09-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2026)",
+      "estimate": "2026-12-04",
+      "basis": "quarter ends ~2026-11-01; Q2 10-Q filed 2026-09-04 about 33 days after quarter end, so Q3 10-Q estimated similarly after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DMAC": {
+    "name": "DiaMedica Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dmac/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "Q3 2025 10-Q filed 2025-11-12, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DMRC": {
+    "name": "Digimarc Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dmrc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-14"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 10-Q filed 2025-11-13, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DMAA": {
+    "name": "Drugs Made In America Acquisition Corp. - Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "SPAC (SEC SIC code: BLANK CHECKS), no operating business or financial results to analyze.",
+    "lastChecked": "2026-10-18"
+  },
+  "DMII": {
+    "name": "Drugs Made In America Acquisition II Corp. - Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "SPAC (SEC SIC code: BLANK CHECKS), no operating business or financial results to analyze.",
+    "lastChecked": "2026-10-18"
   }
 }
