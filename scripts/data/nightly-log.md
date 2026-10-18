@@ -16547,3 +16547,38 @@ the cap is now thin, this session is doing at most one more small
 pick (re-pulling first) and then stopping for the night regardless of
 the exact count reached, to leave headroom for any other concurrent
 firing's commits. Next in file order after DLO: DLPN.**
+
+- **DLPN** (Dolphin Entertainment) Q2 2026 — new company, small-cap PR/
+  marketing agency holding company (42West, The Door, Shore Fire Media,
+  Viewpoint, Elle Communications). Revenue +2.5% to $14.4M, all from the
+  agencies; payroll +10.3% and rising Socialyte litigation fees widened
+  the operating loss to -$1.0M (margin -7.1% vs -0.4%) and net loss to
+  -$1.6M. Diluted EPS held at -$0.13 only because share count rose 15%
+  on note conversions. Agencies' own segment profit fell 44% to $0.82M;
+  unallocated holding-company/content costs lost $1.30M against no
+  revenue. The subagent caught a discrepancy in the company's own
+  earnings release: its reconciliation adds back $360K of retention
+  bonuses to adjusted EBITDA despite the release's text saying they
+  were *not* added back — without that add-back, Q2 adjusted EBITDA is
+  about -$117K, not the reported +$243K; the report flags this rather
+  than repeating the inflated figure. H1 operating cash flow -$2.2M
+  (vs -$0.2M a year ago); debt $24.8M against $7.7M cash, $7.4M due
+  within 12 months; a new 12% loan in May kept $0.81M of a $2.0M draw
+  as fees/reserves; current liabilities exceed current assets by $6.8M;
+  equity down to $6.2M. No going-concern warning, covenants met at
+  6/30. Convertible notes could add ~5.8M shares (~44% dilution) on
+  top of today's 13.0M. No numeric guidance; CEO expects "meaningful
+  sequential improvement" in Q3. No collision. Published:
+  https://financialreportinsights.com/companies/dlpn/2026/q2.
+
+**This firing's contribution: DLO, DLPN, both published cleanly with
+no collisions. Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS,
+CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX,
+DDI, DERM, DETX, DFDV, DFSC, DFTX, DGICA, DGII, DGNX, DGXX, DHC, DIBS,
+DIOD, DJCO, DJT, DKI, DKNG, DLHC, DLO, DLPN = 37 new report-periods +
+10/10 hot-list rewrites + 1 live-data bug fix, at 37/40 of the ~40
+cap. Stopping here for the night per the plan noted above — close
+enough to the cap, with other overlapping firings possibly still
+active tonight, that pushing further risks the combined total
+exceeding ~40. Next in file order after DLPN: DLTH (then DMAA — likely
+a SPAC by name, verify before dispatching — DMAC).**
