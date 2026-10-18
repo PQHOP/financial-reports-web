@@ -25,10 +25,16 @@ date and commit.
   growing, it is a candidate for a Vercel Firewall challenge rule by
   ASN (user's call; find the ASN in the Vercel Firewall traffic view —
   not in the API this routine has).
-- **Monday 2026-10-19 (JST) is the weekly deeper review** (CLAUDE.md
-  step 6): read a sample of reports as a skeptical reader, compare with
-  2-3 ranking sites, rank 3-5 directions. Last one would have been
-  2026-10-12; none was written, so do it.
+- **Watch after 2026-10-19 (CLAUDE.md changes, see Done):** (a) does
+  tonight's nightly log still show "collision"/"already exists" entries
+  now that a firing is capped at ~8 tier-1 report-periods; (b) does
+  `earnings-preview-2026-10-26` appear on `/insights` next Sunday
+  (2026-10-25 16:00 UTC firing). If either rule is ignored again, the
+  routine's stored prompt (not CLAUDE.md) is where it has to go — user's
+  call, this environment has no RemoteTrigger access.
+- **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
+  is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
+  directions wait on the user's answers in that report.
 - **Credential for ops publishing:** waiting on Hop to add `ADMIN_PASSWORD`
   and `SITE_URL` as environment variables of cloud environment
   `env_01BS8ej9WZxyj4AZyF5TrTyC` (shared with the nightly routine). Once
@@ -67,22 +73,15 @@ date and commit.
   in this environment, same gap noted 2026-10-10) — for the nightly
   routine to pick up per its own Comparison rule (CLAUDE.md, "Growth
   work"), or a future ops session once it has the credential.
-- **Weekly earnings preview never fired.** CLAUDE.md says the nightly
-  routine should publish one `PREVIEW` article on the first Sunday firing
-  of each week from 2026-10-11 through earnings season — checked
-  `scripts/data/nightly-log.md` (no mention of "preview", ever) and
-  `/insights` (no `earnings-preview-*` slug exists). Likely cause: the
-  nightly routine has hit its 35/night report cap every single night
-  recently (see nightly-log), so editorial content never gets a turn.
-  This week's window (Oct 12–16) is now moot — JPM/WFC/C/BAC/GS/JNJ/UNH
-  already reported before this was checked (2026-10-13), and MS/BLK were
-  due the next day — so publishing a preview for this week now would be
-  stale. Flagging so the next Sunday (2026-10-18) isn't missed too; if it
-  keeps getting skipped, the cap-vs-editorial tradeoff needs a decision
-  (raise the cap, or carve out a fixed reserve for editorial before the
-  report batch starts, as CLAUDE.md already says to do "before" the
-  report batch — the rule exists, it's just not winning the time/cap
-  race in practice).
+- **Weekly earnings preview: missed twice (10-11, 10-18).** No
+  `earnings-preview-*` slug on `/insights`, no "preview" in the nightly
+  log either Sunday; the first firing went straight to hot-list rewrites
+  and tier 1. CLAUDE.md now says it is the Sunday first firing's first
+  job and counts as 2 report-periods (`59d4651`). Why it matters: for
+  "Tesla Q3 2026 earnings preview" on 2026-10-18 the ranking pages were
+  small sites (Hudson Labs, days.to, basenor, Barchart), i.e. the one
+  earnings query type a new domain can realistically rank for. Next
+  check: 2026-10-26.
 - **Google indexing: sitemap-report "0 indexed" was misleading — corrected
   2026-10-12.** The sitemap report had shown 0/N indexed for weeks (0/2166
   as of 2026-10-11), read by every prior entry below as "nothing is
@@ -135,6 +134,20 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-19 — "Updated <date>" in the report byline** (`59d4651`, prod
+  `dpl_2JGtHdMiTU6C5hswJgHntmHPfHFv`). 48 hot-list reports have been
+  rewritten since 10-14 but still read "Published Sep 21" (JSON-LD
+  `dateModified` was right, the visible byline wasn't). `ReportView` now
+  appends "· Updated Oct 18, 2026" when `updatedAt` is >24 h after
+  `publishedAt`; only `src/app/admin/actions.ts` (the edit form) touches
+  reports now that the social cron no longer bumps `updatedAt` (10-16), so
+  the date means an editorial revision. Verified live on
+  `/companies/sbux/2026/q3`; health 8/8, `figures` clean. Same commit, in
+  CLAUDE.md for the nightly routine: per-firing cap of ~8 tier-1
+  report-periods (3-4 hourly firings overlapped on 10-18 night; CYRX,
+  CYTK, CZWI researched twice) and the Sunday earnings preview made the
+  first firing's first job.
 
 - **2026-10-18 — `/earnings` slimmed from 1.49 MB to 0.89 MB** (`79ae24a`,
   `784edbe`; prod `dpl_A2dxTg8A2w9QVWm7RKJohsFrs7ci`). In earnings season
