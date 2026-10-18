@@ -16406,3 +16406,61 @@ bug fix, at 30/40 of the ~40 cap. Continuing. Next in file order after
 DIOD: DJCO (then DJT, DKI, DKNG, DLHC, DLO, DLPN, DLTH, DMAA, DMAC —
 DMAA looks like a SPAC by name, "Drugs Made In America Acquisition
 Corp.", to be verified before dispatching a subagent).**
+
+**Twelfth batch — no collisions, all three clean.**
+- **DJCO** (Daily Journal Corp.) fiscal Q3 2026 (quarter ended
+  2026-06-30) — new company, legal-newspaper publisher + court software
+  (Journal Technologies) that also holds a large marketable-securities
+  portfolio. Net loss -$10.9M (-$7.90/sh) vs net income +$14.4M
+  (+$10.47) a year ago, almost entirely a $24.1M pre-tax unrealized loss
+  on its six-stock portfolio (vs an $11.5M gain a year ago) — the
+  portfolio is worth $406.0M against a $139.1M cost basis, concentrated
+  in three US financial stocks and one foreign manufacturer. The actual
+  operating businesses improved: revenue +15.3% to $27.0M, operating
+  income +63% to $5.3M (margin 19.5% vs 13.8%). Journal Technologies
+  revenue +19.5% to $22.1M (e-filing fees +42.2%); newspaper segment
+  swung to a $0.5M profit from a $0.9M loss on cost cuts. G&A more than
+  doubled to $3.3M fixing internal-control material weaknesses
+  (disclosure controls still rated not effective). 9-month operating
+  cash flow $12.9M vs a $53.5M net loss; margin loan paid down to
+  $20.0M. Published: https://financialreportinsights.com/companies/djco/2026/q3.
+- **DJT** (Trump Media & Technology Group) Q2 2026 — new company, Truth
+  Social + bitcoin/crypto treasury. Net loss -$238.1M (-$0.86/sh) vs
+  -$20.0M (-$0.08) a year ago — 79% of it ($188.4M) is market-value
+  moves: a $116.7M unrealized loss on bitcoin/Cronos and a $71.8M
+  investment loss (mostly $73.7M of unrealized losses on bitcoin-linked
+  securities). Revenue +89% to $1.67M (barter ads, Truth+ subscriptions,
+  Truth.Fi ETF fees; Truth Social's own ad revenue fell); combined
+  segment EBITDA -$7.0M vs -$5.4M. Legal fees +$10.7M to $25.6M for
+  pre-DWAC-merger matters, now said concluded. Held ~11,554 BTC
+  (~$679M) at June 30, cost basis ~$106k/coin vs ~$58.8k price; grew to
+  ~14,139 BTC by July 31. Equity -38% in six months to $1.02B. Key risk:
+  holders of $1.0B convertible notes can demand cash repayment Nov 30,
+  2026; refinancing listed as a possible response. H1 operating cash
+  burn only $13.7M. TAE Technologies merger still pending; Truth Social
+  spin-off dropped June 10. Published:
+  https://financialreportinsights.com/companies/djt/2026/q2.
+- **DKI** (DarkIris) H1 FY2026 (six months ended 2026-03-31) — new
+  company, FPI (Hong Kong mobile-game publisher), 20-F/6-K filer,
+  fiscal year ends Sept 30. Revenue +13.9% to $5.93M on more paying
+  users (+13.3% to 39,115) and higher revenue per paying user (+16.7%
+  to $22.18), despite shutting its flagship game Floating Myth Dec 31,
+  2025. Gross margin 29.6% vs 27.9%, but opex jumped from $0.45M to
+  $3.67M ($2.13M of expensed game-enhancement costs, $0.80M first-time
+  advertising, ~$0.29M post-listing fees), swinging a $0.91M profit to a
+  $1.90M net loss (EPS -$1.51 after a May 2026 1-for-16 reverse split).
+  Cash fell to $0.47M from $1.80M; going-concern warning. Post-period:
+  raised ~$3.8M in an April private placement, paid for 10 film/TV
+  titles in shares, and raised $6M gross Oct 8 with warrants exercisable
+  at zero cost for up to ~52.4M Class A shares against ~2.57M
+  outstanding — dilution flagged as the bigger story than the revenue
+  growth. Published: https://financialreportinsights.com/companies/dki/2026/h1.
+
+**This firing's contribution: DJCO, DJT, DKI, all published cleanly
+with no collisions. Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS,
+CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX,
+DDI, DERM, DETX, DFDV, DFSC, DFTX, DGICA, DGII, DGNX, DGXX, DHC, DIBS,
+DIOD, DJCO, DJT, DKI = 33 new report-periods + 10/10 hot-list rewrites
++ 1 live-data bug fix, at 33/40 of the ~40 cap. Continuing with a
+smaller remaining batch given the cap is close. Next in file order
+after DKI: DKNG.**

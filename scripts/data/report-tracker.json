@@ -34405,5 +34405,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-19"
+  },
+  "DJCO": {
+    "name": "Daily Journal Corp. (S.C.)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/companies/djco/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026, FYE 2026-09-30)",
+      "estimate": "2026-12-15",
+      "basis": "FY ends Sept 30; 10-K normally filed around December",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DJT": {
+    "name": "Trump Media & Technology Group Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/companies/djt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "quarterly cadence from Q2 filing date",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DKI": {
+    "name": "DarkIris Inc. - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/companies/dki/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 FY2026 unaudited financial statements)",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026, FYE 2026-09-30)",
+      "estimate": "2027-01-30",
+      "basis": "FY2025 20-F filed 2026-01-30, same annual cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
   }
 }
