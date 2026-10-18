@@ -16097,3 +16097,73 @@ live-data bug fix, well under the ~40 cap. Given the other session's
 stand-down note above and this session's own now-clean run (0
 collisions in the last 6 picks), continuing. Next in file order after
 DCTH: DCOY (Decoy Therapeutics).**
+
+**Seventh batch (this session) — no collisions, all four clean.**
+- **DBVT** (DBV Technologies) Q2 2026 — new company, French clinical-stage
+  biopharma (VIASKIN peanut-allergy patch), pre-revenue. Net loss +20% to
+  -$50.4M as spending shifted from trials to launch prep (S&M $0.4M ->
+  $5.5M, G&A $8.5M -> $14.6M; R&D -7% to $31.2M as the EPOPEX study
+  ended). Loss per ADS fell from $0.31 to $0.12 only because weighted
+  shares more than tripled (433.5M vs 134.5M) — dilution, not
+  improvement, as the report states plainly. Cash $174.9M at June 30
+  (down from $194.2M despite $89.0M of warrant proceeds); H1 operating
+  burn $101.7M (~$51M/quarter). Management says cash lasts "into Q3
+  2027"; at the H1 burn rate the report calculates it would only reach
+  ~Q1 2027 unless quarterly burn falls to $35-44M — flagged as a real
+  tension. FDA warning letters to DBV's only patch manufacturer
+  (Fareva Amboise); BLA submitted 2026-09-29 (slipped from Q2 to Q3)
+  with Priority Review requested. Published:
+  https://financialreportinsights.com/companies/dbvt/2026/q2.
+- **DCOY** (Decoy Therapeutics, formerly Salarius Pharmaceuticals,
+  merged Nov 2025) Q2 2026 — new company, early clinical-stage biotech
+  (nasal antiviral program). Net loss -$2.37M vs -$0.96M a year ago —
+  not comparable, since the year-ago figure is Salarius alone before
+  the merger. Cash $8.29M ($2.7M restricted to a Gates grant); Q2 burn
+  ~$2.65M; management says cash lasts "into late 2026." June private
+  placement ($3.5M) and a September warrant repricing ($5.91 -> $3.25,
+  ~$3.85M raised) extended runway. Stockholders' equity $4.32M, close
+  to Nasdaq's $2.5M minimum; going-concern warning in the filing.
+  Subagent caught and corrected a filing error: the 10-Q's own "loss
+  from operations" line didn't subtract grant revenue, so the report
+  uses a corrected $2.40M operating loss instead. Published:
+  https://financialreportinsights.com/companies/dcoy/2026/q2.
+- **DCX** (Digital Currency X Technology, formerly Chijet Motor
+  Company — a Chinese EV maker that pivoted to a crypto treasury) H1
+  2026 — new company, no revenue. Net income $65.8M vs a $40.0M loss a
+  year ago, but entirely accounting noise: a $258.8M paper gain from
+  giving away the old Chijet EV group (assets $465.6M, liabilities
+  $723.5M) for $1 on 2026-03-20, offset by a $187.0M mark-to-market
+  loss on its only real asset — 157.45M EDGEAI tokens, which fell 46.5%
+  in the half to $215.0M (valued via PancakeSwap v3 with a 20%
+  illiquidity discount). Cash $1.34M. Class A shares outstanding went
+  from 19.56M to 351.58M after a $700M unit placement (paid partly in
+  more EDGEAI tokens, now ~649M tokens held); ~996M warrants
+  outstanding. EPS of $3.33 is based on the pre-dilution weighted share
+  count and doesn't reflect any of this. Published:
+  https://financialreportinsights.com/companies/dcx/2026/h1.
+- **DDI** (DoubleDown Interactive) Q2 2026 — new company, Korean mobile/
+  social-casino gaming (NYSE-listed ADS, IFRS/USD). Revenue +11.2% to
+  $94.3M, mostly from WHOW Games (acquired July 2025) — Germany revenue
+  went from $0.2M to $5.8M while core US revenue fell 3.4% to $58.5M.
+  Profit +50.5% to $32.9M, but operating profit grew only 12.6%
+  ($36.5M, 38.7% margin); ~70% of the extra profit came from a $7.6M
+  finance-item swing (FX gains, a non-recurring $2.85M liability
+  revaluation loss in Q2 2025) plus a lower tax rate (22.4% vs 28.6%).
+  Direct-to-consumer web-store sales reached 52.4% of social-casino
+  revenue, up from 15.4%, pulling down cost of revenue. iGaming
+  (SuprNation) still loss-making (-$1.0M pre-tax, narrowing from
+  -$2.2M). Covers the pending DoubleU Games buyout proposal at
+  $11.25/ADS (special-committee review ongoing) — the subagent's own
+  arithmetic from the balance sheet ($521M net cash ≈ $10.52/ADS)
+  implies the offer values the operating business ex-cash at only
+  ~$36M, flagged explicitly as arithmetic, not a forecast. Published:
+  https://financialreportinsights.com/companies/ddi/2026/q2.
+
+**This firing's running contribution tonight: CZR, DAIO, DAKT, DAVE,
+DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX, DDI = 12 new report-periods
+with zero collisions across the last 10 picks, plus the CZNC
+units-bug fix. Running tonight total across all firings: CYPH, CYRX,
+CYTK, CZR, CZFS, CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO, DCTH,
+DBVT, DCOY, DCX, DDI = 18 new report-periods + 10/10 hot-list rewrites
++ 1 live-data bug fix, under half the ~40 cap. Next in file order
+after DDI: DDOG (Datadog).**

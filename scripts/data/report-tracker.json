@@ -34047,5 +34047,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
+  },
+  "DBVT": {
+    "name": "DBV Technologies S.A. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dbvt/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-16"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "last year Q3 10-Q filed 2025-10-28, same cadence; also watch for BLA acceptance decision ~late Nov 2026 (submitted 2026-09-29 per 8-K)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DCOY": {
+    "name": "Decoy Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dcoy/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-12",
+      "basis": "last year Q3 10-Q filed 2025-11-14, this year Q2 filed 2026-08-12",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DCX": {
+    "name": "Digital Currency X Technology Inc. - Class A Ordinary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "H1",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dcx/2026/h1"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (H1 interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-09-18"
+    },
+    "nextExpectedFiling": {
+      "type": "20-F (FY2026)",
+      "estimate": "2027-04-30",
+      "basis": "FY2025 20-F filed 2026-04-30, same cadence; formerly Chijet Motor Company, pivoted to a crypto (EDGEAI token) treasury in 2026 after selling its EV business for  on 2026-03-20",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DDI": {
+    "name": "DoubleDown Interactive Co., Ltd. - American Depository Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/ddi/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 results)",
+      "estimate": "2026-11-10",
+      "basis": "Q1 reported 2026-05-12, Q2 2026-08-11, roughly 90-day cadence; also watch the pending DoubleU Games buyout proposal at $11.25/ADS, under special-committee review",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
   }
 }
