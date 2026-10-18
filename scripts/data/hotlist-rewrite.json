@@ -689,7 +689,8 @@
       "reportId": "cmubkfkh2000204l9a99gk5fw",
       "url": "https://financialreportinsights.com/companies/panw/2026/annual",
       "nextExpectedFiling": "2026-11-25",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-18"
     },
     {
       "ticker": "CRWD",
