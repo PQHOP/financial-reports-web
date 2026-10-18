@@ -645,7 +645,8 @@
       "reportId": "cmubk399k000004l94xpoqswa",
       "url": "https://financialreportinsights.com/companies/gild/2026/q2",
       "nextExpectedFiling": "2026-11-05",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-18"
     },
     {
       "ticker": "BKNG",
