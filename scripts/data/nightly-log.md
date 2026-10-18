@@ -16026,3 +16026,74 @@ burning real usage budget on redundant research. Worth checking whether
 the trigger is configured to fire more often than firings take to
 finish (tonight's first firing alone took over an hour just for the 10
 rewrites), which would explain stacking.
+
+**Sixth batch (this session, after re-pulling and seeing the other
+session's stand-down note above) — no collisions, all three clean.**
+- **DBGI** (Digital Brands Group) Q2 2026 — new company, small apparel
+  holding company (Bailey 44, DSTLD, Sundry), financially distressed.
+  Revenue -46.3% to $1.21M on fewer wholesale shipments; gross margin
+  26.8% vs 31.6%. Net loss widened to -$8.98M from -$2.12M on prepaid
+  collegiate/NIL marketing expensed at $2.8M (paid mostly in shares), a
+  $764K written-off prepaid-consulting balance, and a $1.77M
+  stock-linked-liability remeasurement charge. Cash $1.39M at June 30
+  (~$1.1M by Aug 19); H1 operating cash burn $10.3M; working-capital
+  deficit $12.85M, equity only $0.54M; 10-Q states substantial doubt
+  about going concern. $3.5M Bailey sellers' note in default; RallyTown
+  make-whole became ~$9.28M secured debt; new $3.53M convert due in
+  $1M installments Oct/Nov/Dec. Shares outstanding +149% in six months
+  (post 1-for-40 reverse split). Q3 guidance $8.5-11.0M. Report also
+  flags two unverified claims from September 8-Ks (a "$165M U.S.
+  Program" contract and a $77.58/share buyout proposal whose go-shop
+  ended Oct 5) as not yet in the financials, with no EDGAR follow-up.
+  Published: https://financialreportinsights.com/companies/dbgi/2026/q2.
+- **DCBO** (Docebo) Q2 2026 — new company, Canadian e-learning SaaS,
+  foreign private issuer (40-F/6-K, reports in USD/IFRS). Revenue +13%
+  to $68.7M, beating its own $66.7-66.9M guidance; adjusted EBITDA
+  $11.2M beat $10.9-11.1M guidance. FY revenue guidance raised to
+  $274.5-276.5M; EBITDA guidance held at $54.5-56.5M. IFRS net income
+  still fell 27% to $2.3M, diluted EPS $0.08 vs $0.10, on acquisition
+  amortization (365Talents, Zive), interest on $88M new borrowings, a
+  $2.3M FX loss and recurring restructuring charges. Adjusted EPS +20.7%
+  vs adjusted net income +5.4% — the gap is an 11% lower share count
+  from buybacks. Active customers fell to ~3,400 from ~4,000 while ARR
+  still grew (largest OEM customer fell from 8.4% to 2.5% of ARR);
+  reported ARR growth 9.5% vs company's own underlying 13.9%. Went from
+  net cash to ~$42M net debt. Hitting full-year EBITDA guidance needs
+  23-24% H2 margins vs 16.6% in H1. Published:
+  https://financialreportinsights.com/companies/dcbo/2026/q2.
+- **DCTH** (Delcath Systems) Q2 2026 — new company, commercial-stage
+  biopharma/device (HEPZATO KIT for liver-directed cancer treatment).
+  Revenue +20.6% to $29.1M (HEPZATO $27.2M, +20.7%, on ~30% higher
+  procedure volume — revenue per procedure fell, possibly 340B pricing
+  effective 2025-07-01, not broken out in the filing). Gross margin
+  89.8% vs 86.3%. Net income flat at $2.7M ($0.07 diluted EPS, same as
+  a year ago) only because stock comp fell $2.1M; cash costs rose ~51%
+  and adjusted EBITDA fell 22.5% to $7.6M. R&D +51% to $10.4M on new
+  Phase 2 trial enrollment (colorectal, breast cancer). Receivables
+  +36% in six months (~50 days of sales); two customers were 29.2% of
+  H1 revenue. FY guidance raised (revenue to $104-108M from "at least
+  $100M"; volume growth to at least 28% from 20%; gross margin to
+  86-89%) — but the new range implies $25-27M/quarter in H2, below
+  Q2's $29.1M. Cash $95.9M, no debt. Published:
+  https://financialreportinsights.com/companies/dcth/2026/q2.
+
+**Checked (not a bug): DBGI's `netIncomeYoyPct`/`epsYoyPct` were set
+despite both periods being losses** — unlike CZR/DAIO earlier tonight,
+which deliberately omitted those fields on loss-to-loss comparisons to
+avoid a misleading implied prior-year chart figure. Verified in
+`src/components/ReportCharts.tsx`: the year-over-year chart already
+skips any row where the current value is <= 0, so a negative
+`netIncome`/`epsDiluted` never gets its chart row drawn regardless of
+the YoY% supplied — no live-site bug here, this report's figures are
+fine as published.
+
+**This firing's total contribution tonight: CZR, DAIO, DAKT, DAVE, DBX,
+DBGI, DCBO, DCTH = 8 new report-periods published with no collisions,
+plus the CZNC units-bug fix (CYRX, CYTK, CZNC, CZWI, CZFS were
+collisions/other firings' work, recorded by them). Running tonight
+total: CYPH, CYRX, CYTK, CZR, CZFS, CZNC, DAIO, CZWI, DAKT, DAVE, DBX,
+DBGI, DCBO, DCTH = 14 new report-periods + 10/10 hot-list rewrites + 1
+live-data bug fix, well under the ~40 cap. Given the other session's
+stand-down note above and this session's own now-clean run (0
+collisions in the last 6 picks), continuing. Next in file order after
+DCTH: DCOY (Decoy Therapeutics).**
