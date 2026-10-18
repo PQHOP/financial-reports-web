@@ -15801,4 +15801,18 @@ last night's note, tracker entries unchanged. First real pick: CYPH.
   compliance Sep 2. No financial guidance; Phase 3 design agreed with FDA
   for sirexatamab, Fast Track granted. Published:
   https://financialreportinsights.com/companies/cyph/2026/q2.
+- **CYRX** (CryoPort) Q2 2026 — new company. Revenue +7.7% to $49.0M,
+  led by Life Sciences Services (+14.8%: BioStorage/BioServices +24.8%,
+  commercial cell/gene-therapy services +26.5%); the MVE freezer product
+  line was flat with margin down 2.7pts to 42.2%. Operating loss widened
+  slightly to -$10.0M from -$9.6M, but the loss from continuing
+  operations narrowed $3.8M on non-operating items: $1.7M more investment
+  income on CRYOPDP-sale cash and $2.6M smaller currency/investment
+  losses. Adjusted EBITDA turned positive (+$0.4M) partly on an
+  unexplained $1.1M "other adjustments" add-back — without it, roughly
+  -$0.8M. H1 operating cash flow +$4.9M but free cash flow ~-$14.6M after
+  $19.1M capex; $186.2M of converts due Dec 2026 to be repaid from cash.
+  FY guidance $192-196M (raised from $190-194M in Q1, not repeated in the
+  Q2 release). Published:
+  https://financialreportinsights.com/companies/cyrx/2026/q2.
 
