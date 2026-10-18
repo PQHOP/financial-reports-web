@@ -16582,3 +16582,16 @@ enough to the cap, with other overlapping firings possibly still
 active tonight, that pushing further risks the combined total
 exceeding ~40. Next in file order after DLPN: DLTH (then DMAA — likely
 a SPAC by name, verify before dispatching — DMAC).**
+
+**New firing (this session) — exited immediately per the cap rule, no
+research dispatched.** Network check passed (200 on sec.gov with
+required User-Agent, financialreportinsights.com reachable). Re-pulled
+git: still at 404794f (DLPN), no new commits from other firings since
+the note above. Re-ran `scan-recent-filings`: 0 fresh tier-0
+candidates (same as the prior check), so nothing available to justify
+exceeding the cap. Hot-list rewrite queue already at 10/10 for tonight.
+With tonight's total at 37/40 of the ~40 cap and the prior firing
+having explicitly reserved headroom for other concurrent firings, this
+firing did not dispatch any research subagents and made no
+tracker/report changes. Next in file order after DLPN remains: DLTH
+(then DMAA — verify SPAC status — DMAC).
