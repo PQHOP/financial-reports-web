@@ -15858,3 +15858,40 @@ record, not an error to retry.
   CET1 12.44%, ROTCE 20.99%. Published:
   https://financialreportinsights.com/companies/cznc/2026/q2.
 
+
+**Third concurrent firing's own pick (CZR) and skips (DAAQ, DBCA), added
+after re-pulling to pick up the CZFS commit above from yet another
+overlapping firing** — at least three sessions of the hourly cloud
+routine have now been running at once tonight (see the CYRX/CYTK
+collision note above); re-pulling immediately before every write from
+here on.
+- **CZR** (Caesars Entertainment) Q2 2026 — new company. Revenue +3.0%
+  to $2,993M, growth concentrated in Regional (+9.4%, +$135M: Caesars
+  Windsor consolidated from 2026-03-03, a northern Nevada tournament,
+  Lake Tahoe/New Orleans investment). Las Vegas revenue -3.5%, Adjusted
+  EBITDA -12.6% to $410M (fewer leisure visitors, lower occupancy/rate,
+  table hold 16.6% vs 21.1%). Caesars Digital revenue +2.3% but its
+  Adjusted EBITDA -15% on higher state gaming taxes and lower sportsbook
+  hold. Operating income $513M (17.1% margin vs 18.1%) against $573M
+  net interest on $11.8B debt + $13.2B VICI/GLPI lease obligations. Net
+  loss narrowed to -$62M (-$0.30/sh) from -$82M (-$0.39) — the pretax
+  loss was flat ($53M vs $52M); the whole improvement came from a $25M
+  tax-line swing. Pending Fertitta Gaming take-private at $31.00/share
+  cash (signed 2026-05-27, shareholder-approved 2026-09-22, FTC Second
+  Request issued 2026-09-14, outside date 2027-05-27 extendable to
+  2027-11-27, $450M reverse termination fee in certain cases); Icahn's
+  two board designees resigned 2026-09-16. No guidance, buybacks
+  suspended. Published:
+  https://financialreportinsights.com/companies/czr/2026/q2.
+
+Skipped without a subagent: **DAAQ** (Digital Asset Acquisition Corp. —
+SPAC mid-business-combination, 425 merger filings, trust-account
+interest only) and **DBCA** (D. Boral Acquisition I Corp. — SEC-coded
+"Blank Checks", filed S-4 for a business combination, no operating
+business).
+
+**This firing's net new contribution: CZR + 2 skips (CYRX and CYTK were
+collisions with other firings, already recorded by them). Running
+tonight total so far: CYPH, CYRX, CYTK, CZR, CZFS = 5 new report-periods
++ 10/10 hot-list rewrites, well under the ~40 cap. Next in file order
+after CZFS: CZNC.**
