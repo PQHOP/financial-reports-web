@@ -34135,5 +34135,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
+  },
+  "DERM": {
+    "name": "Journey Medical Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/derm/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-12"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-11",
+      "basis": "last year Q3 10-Q/8-K filed 2025-11-12, same cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DETX": {
+    "name": "Liberty Defense Holdings, Ltd. - Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/detx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (Q2 2026 interim financial statements)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-17"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 interim financial statements)",
+      "estimate": "2026-11-16",
+      "basis": "Q2 filed ~48 days after quarter-end, same cadence; CEO resigned 2026-10-13 effective 2026-10-31, COO becomes interim CEO - watch for leadership-transition commentary next quarter",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
+  },
+  "DFDV": {
+    "name": "DeFi Development Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/dfdv/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-16",
+      "basis": "Q1 filed 2026-05-19 (after a late-filing notice), Q2 filed 2026-08-13; preliminary Q3 estimates already given in an Oct 5 8-K (~2.56M SOL+equivalents worth $302M) but full financials not yet filed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
   }
 }

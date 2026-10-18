@@ -16167,3 +16167,60 @@ CYTK, CZR, CZFS, CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO, DCTH,
 DBVT, DCOY, DCX, DDI = 18 new report-periods + 10/10 hot-list rewrites
 + 1 live-data bug fix, under half the ~40 cap. Next in file order
 after DDI: DDOG (Datadog).**
+
+**Eighth batch (this session) — no collisions, all three clean.**
+- **DERM** (Journey Medical Corporation) Q2 2026 — new company,
+  commercial-stage dermatology specialty pharma. Revenue +23.3% to
+  $18.51M; Emrosi sales +189% to $8.07M (now 45% of product sales)
+  drove it, offsetting a 26% decline in Qbrexza (insurance coverage
+  shifted to lower-paying plans) and generic pressure on legacy
+  brands. First operating profit in this comparison, $0.46M vs a
+  -$2.88M loss a year ago, but ~$0.9M of interest on a $25M SWK loan
+  (12.75%+ rate) still left a net loss of -$0.31M (-$0.01/sh).
+  Coupons/rebates doubled to $68.2M (~79% of gross sales vs ~71% a
+  year ago). Cash $25.6M vs $25M debt; principal repayments start Feb
+  2027; still carries a going-concern warning. No numeric guidance;
+  watch Emrosi net revenue per prescription (~$224 in Q2 vs ~$208 in
+  Q1). Published: https://financialreportinsights.com/companies/derm/2026/q2.
+- **DETX** (Liberty Defense Holdings) Q2 2026 — new company, Canadian
+  FPI (IFRS/USD, 6-K filer), weapons/explosives-detection tech
+  (HEXWAVE). First quarter after an April 2026 Nasdaq IPO ($20.0M
+  gross). Revenue -90.2% to $42,202 — no HEXWAVE units shipped in Q2
+  (all six H1 units went in Q1), TSA development-contract revenue went
+  to nil. Net loss narrowed to -$2.21M from -$3.76M, but $1.41M of
+  that is a non-cash warrant gain from a CAD-to-USD functional-currency
+  switch; ex that, the loss was ~flat at ~-$3.62M. Cash $7.59M (up from
+  $0.32M at Dec 31 on IPO proceeds); H1 operating cash burn $7.97M.
+  Backlog $1.115M. Management says cash covers 12 months; the
+  subagent's own arithmetic (~$2.4M/quarter burn ex working-capital)
+  puts it closer to three quarters — flagged explicitly. CEO resigned
+  Oct 13 (effective Oct 31), COO becomes interim CEO. Two filing
+  discrepancies in the MD&A (an EPS table mismatch, a comprehensive-
+  vs-net-loss mismatch) were caught and the report used the income
+  statement's own figures. Published:
+  https://financialreportinsights.com/companies/detx/2026/q2.
+- **DFDV** (DeFi Development Corp., formerly Janover, a commercial
+  real-estate lending marketplace wound down 2026-03-31) Q2 2026 — new
+  company, now a Solana (SOL) crypto-treasury vehicle. Net loss -$27.3M
+  (-$1.00/sh) vs a $15.4M profit a year ago, mostly a $21.5M net loss
+  on digital assets ($17.6M realized losses selling/converting SOL,
+  $10.0M staking-token impairments, partly offset by $6.0M unrealized
+  gains). Revenue +66.9% to $3.3M (nearly all staking income) no
+  longer covers $4.6M of opex plus $3.7M of interest. Stockholders'
+  equity turned negative (-$12.0M vs +$99.3M at Dec 31); $101.6M of SOL
+  pledged against $89.8M of SOL/USDC loans, only $47.4M unencumbered.
+  Weighted basic shares +93.5% YoY; funding opex by selling new shares
+  while the stock trades at 0.8x net asset value. Dropped a planned
+  June 2027 forecast but kept a 1.0 SOL/share target by Dec 2028. An
+  Oct 5 8-K (preliminary, no financials) shows ~2.56M SOL+equivalents
+  worth $302M and a new 13%-coupon preferred with a $300M sale program.
+  Published: https://financialreportinsights.com/companies/dfdv/2026/q2.
+
+**This firing's running contribution tonight: CZR, DAIO, DAKT, DAVE,
+DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX, DDI, DERM, DETX, DFDV = 15 new
+report-periods with zero collisions across the last 13 picks, plus the
+CZNC units-bug fix. Running tonight total across all firings: CYPH,
+CYRX, CYTK, CZR, CZFS, CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO,
+DCTH, DBVT, DCOY, DCX, DDI, DERM, DETX, DFDV = 21 new report-periods +
+10/10 hot-list rewrites + 1 live-data bug fix, over halfway to the ~40
+cap. Next in file order after DFDV: DFSC.**
