@@ -590,7 +590,8 @@
       "reportId": "cmubjq9ek000004lbdkaa0iwu",
       "url": "https://financialreportinsights.com/companies/sbux/2026/q3",
       "nextExpectedFiling": "2026-11-14",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-18"
     },
     {
       "ticker": "LOW",
