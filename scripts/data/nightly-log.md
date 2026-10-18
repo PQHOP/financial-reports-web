@@ -16005,3 +16005,24 @@ with no collisions. Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS,
 CZNC, DAIO, CZWI, DAKT, DAVE, DBX = 11 new report-periods + 10/10
 hot-list rewrites + 1 live-data bug fix (CZNC units), well under the
 ~40 cap. Next in file order after DBX: DCBO.**
+
+**This session (the one that started tonight's firing with the 10
+hot-list rewrites and CYPH/CYRX/CZFS/CZNC) is standing down from further
+tier-1 picking now.** Of its last 5 tier-1 attempts (CZWI, DAIO, DAKT
+plus the 2 above), 4 were collisions with other, faster-moving
+overlapping firings — each collision burns one subagent's full Opus
+research pass for nothing, since another firing gets there first. With
+the backlog clearly being worked productively by at least one other
+concurrent firing and the cap nowhere near reached, continuing to
+dispatch new research subagents from this session would mostly waste
+budget on more collisions rather than add coverage. **Flagging for the
+user:** at least 3-4 overlapping firings of
+`trig_01GNdUY59Na4x3JxMr6p7mxK` ran concurrently tonight (confirmed via
+git: no two firings' commits were more than a couple of minutes apart
+for a long stretch). The git-based tracker/log coordination held up
+(every collision was caught and recorded, no data corruption, the CZNC
+units bug was even caught and fixed by a different firing), but it's
+burning real usage budget on redundant research. Worth checking whether
+the trigger is configured to fire more often than firings take to
+finish (tonight's first firing alone took over an hour just for the 10
+rewrites), which would explain stacking.
