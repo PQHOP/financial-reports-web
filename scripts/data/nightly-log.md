@@ -16280,5 +16280,70 @@ DFTX, DGICA = 24 new report-periods + 10/10 hot-list rewrites + 1
 live-data bug fix, at 24/40 of the ~40 cap. This session is stopping
 here for now — a good stopping point given the length of this run —
 and will resume or hand off to the next firing. Next in file order
-after DGICA/DGICB: DGII (DLT Resolution / DG-II — verify exact next
-ticker with next-batch).**
+after DGICA/DGICB: DGII.**
+
+**New firing (this session) — network check passed (200 on sec.gov with
+required User-Agent, financialreportinsights.com reachable).
+`scan-recent-filings` found 0 fresh tier-0 candidates. Hot-list rewrite
+queue already at 10/10 for tonight (done by an earlier firing) — none
+left to do. Re-pulled git (still at 77722b6, no new commits from other
+firings) before starting.**
+
+**Tenth batch — no collisions, all three clean.** `next-batch` lists 9
+known-pending FPIs first (BRAI, BTCT, CCHH, CDTG, CHNR, CLWT, CRE, CUPR,
+CURR) — re-confirmed via the tracker that all were checked within the
+last 5 days and none has a `nextExpectedFiling.estimate` due yet, so
+skipped past per the standing note. First real picks: DGII, DGNX, DGXX.
+- **DGII** (Digi International) fiscal Q3 2026 (quarter ended
+  2026-06-30, filed 2026-08-05) — new company. Revenue +29.0% to
+  $138.7M, net income +53.7% to $15.7M, diluted EPS +48% to $0.40,
+  operating margin 16.5% vs 13.9%. ARR +52% to $191M, mostly from
+  acquisitions (Jolt drove Solutions +41.5%; Particle doubled Products &
+  Services ARR to $60M). The 130bp gross-margin gain is mostly a
+  favorable comp against a prior-year inventory charge, not a real
+  improvement. 9-month operating cash flow $110.4M (2.85x net income),
+  helped by a one-time tax benefit (OBBBA) — cash taxes paid $2.2M vs
+  $12.9M a year ago. Adjusted EPS $0.75 vs GAAP $0.40. No buybacks,
+  diluted shares +3.4%. New $350M revolver signed Aug 27. Guidance
+  raised: FY26 revenue $529-533M (from $20-22% to $23-24% growth), ARR
+  growth "at least 27%". Published:
+  https://financialreportinsights.com/companies/dgii/2026/q3.
+- **DGNX** (Diginex Limited) FY2026 ANNUAL (fiscal year ended
+  2026-03-31, 20-F filed 2026-08-13) — new company, FPI (Hong
+  Kong/Singapore ESG software), 20-F/6-K filer. Revenue +77% to $3.62M,
+  but $1.6M was a one-off white-label license sale and $1.2M came from
+  three acquisitions (Matter, Plan A, The Remedy Project) — core
+  subscription revenue only ~$0.5M vs $0.4M. Net loss widened to -$31.1M
+  from -$5.2M on a $7.0M Matter goodwill impairment, $3.7M of M&A fees
+  and $5.6M stock comp. Adjusted EBITDA -$13.0M vs -$5.2M; operating
+  cash burn $14.1M against $4.9M cash at year-end. Going-concern doubt
+  and a material weakness (warrants misclassified as equity) flagged by
+  the auditor. Post-period: shareholders approved (Oct 8) an all-share
+  acquisition of Resulticks for 600M new shares (~12x the 50.1M
+  outstanding, a change of control), deadline Oct 30; CEO resigned Aug
+  31. Published: https://financialreportinsights.com/companies/dgnx/2026/annual.
+- **DGXX** (Digi Power X) Q2 2026 — new company, domestic 10-Q/10-K
+  filer (AI/crypto data-center infrastructure). Revenue -18.3% to
+  $6.63M (colocation -23.6% as one site was taken offline to rebuild for
+  AI; BTC mining nearly gone). First AI revenue $1.08M (GPU rental to
+  SubQ AI, ~5 weeks of a ~$19.6M/24-month contract). Net loss widened
+  48% to -$14.36M (depreciation, stock comp, a $5.0M warrant loss, a
+  $2.8M crypto revaluation loss); loss/share improved to -$0.17 only on
+  133% more weighted shares. Operating margin -153.4% vs -82.9%. The
+  company's "+$3.3M adjusted EBITDA" keeps in a $7.7M non-cash FX gain
+  on intercompany balances — without it, roughly -$4.4M (company's own
+  segment table shows -$11.1M). H1 capex $96.3M funded by $159.5M of
+  share sales; no debt; cash $128.1M. Cerebras Alabama contract
+  (~$1.1B/10yr): Phase 1 (15MW) due Dec 15, 2026; Phase 2 depends on
+  unsecured financing. Guidance: Q3 revenue "significantly" higher,
+  ~$140M annualized contracted revenue target for 2027. A filing
+  inconsistency (Q2 2025 net loss shown two ways, $10.39M vs $9.70M) was
+  caught; the income-statement figure was used. Published:
+  https://financialreportinsights.com/companies/dgxx/2026/q2.
+
+**This firing's contribution: DGII, DGNX, DGXX, all published cleanly
+with no collisions. Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS,
+CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX,
+DDI, DERM, DETX, DFDV, DFSC, DFTX, DGICA, DGII, DGNX, DGXX = 27 new
+report-periods + 10/10 hot-list rewrites + 1 live-data bug fix, at
+27/40 of the ~40 cap. Continuing. Next in file order after DGXX: DHC.**
