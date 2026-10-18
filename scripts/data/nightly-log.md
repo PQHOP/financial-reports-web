@@ -15816,3 +15816,22 @@ last night's note, tracker entries unchanged. First real pick: CYPH.
   Q2 release). Published:
   https://financialreportinsights.com/companies/cyrx/2026/q2.
 
+**Collision with another concurrent firing:** when this firing's subagent
+tried to publish CYTK Q2 2026, admin-publish rejected it — the report
+already existed, published ~2 minutes earlier (17:09:56 UTC) by what must
+be another, overlapping firing of the hourly cloud routine
+(`trig_01GNdUY59Na4x3JxMr6p7mxK`), since nothing from it had reached git
+yet as of this check (`git fetch origin master` showed no new commits).
+This session has no RemoteTrigger access to confirm or stop the other
+firing. CYTK Q2 2026 — revenue -57.1% to $28.6M, net loss -47.9% to
+-$198.8M, EPS -33.9% to -$1.50 (per the live page, both subagents'
+figures matched) — is now recorded in the tracker below from the facts
+this firing's subagent gathered; the other firing may also write a
+tracker entry for CYTK, which should be harmless (same facts) but could
+race on the commit — worth checking next firing. **Lesson for future
+firings:** if this session's own run time crosses an hour boundary during
+the operating window, assume a second hourly firing may now be running
+the same `next-batch` queue concurrently; re-pull from git before each
+publish and treat "already exists" from admin-publish as a collision to
+record, not an error to retry.
+
