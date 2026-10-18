@@ -33815,5 +33815,39 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
+  },
+  "DAAQ": {
+    "name": "Digital Asset Acquisition Corp. - Class A Ordinary shares",
+    "status": "skipped",
+    "skipReason": "SPAC in the process of a business combination (recent 425 merger-communication filings, no operating business); 10-Q shows only trust-account interest income, no operating revenue to analyze",
+    "lastChecked": "2026-10-18"
+  },
+  "DBCA": {
+    "name": "D. Boral Acquisition I Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "SPAC blank-check company (SEC SIC code: Blank Checks), filed S-4 for a business combination; no operating business/financial report to analyze",
+    "lastChecked": "2026-10-18"
+  },
+  "CZR": {
+    "name": "Caesars Entertainment, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/czr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-07-28"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "Q1 filed 2026-04-28, Q2 filed 2026-07-28, roughly 90-day cadence; also pending Fertitta Gaming take-private (signed 2026-05-27, shareholders approved 2026-09-22, FTC Second Request issued 2026-09-14) — watch for delisting after close, unlikely before 2027",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
   }
 }
