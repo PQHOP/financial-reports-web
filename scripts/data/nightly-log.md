@@ -15835,3 +15835,15 @@ the same `next-batch` queue concurrently; re-pull from git before each
 publish and treat "already exists" from admin-publish as a collision to
 record, not an error to retry.
 
+- **CZFS** (Citizens Financial Services) Q2 2026 — new company, bank. No
+  collision this time (czfs/2026/q1-q3 all 404'd before publishing). Net
+  income +20.4% to $10.2M, diluted EPS +20.5% to $2.12; net interest
+  income +8.7% to $25.7M, tax-equivalent NIM up to 3.67% from 3.47% as
+  funding costs fell and securities were rebuilt at higher yields.
+  Quarter-over-quarter NII has fallen three quarters running ($26.2M,
+  $26.1M, $25.7M), and non-performing assets rose $14.2M since December
+  to $43.4M (1.81% of loans, NPL coverage only ~57%); loans now equal
+  100% of deposits with borrowings up $84.6M since year-end. Uses the
+  simplified leverage-ratio framework (9.64%) instead of CET1. Published:
+  https://financialreportinsights.com/companies/czfs/2026/q2.
+
