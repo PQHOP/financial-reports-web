@@ -15914,3 +15914,41 @@ rewrites.
   quarter to $32.4M (1.79% of assets). Bank-level CET1 12.9%, ROTCE 3.03%
   vs 9.18% a year ago. Published (by another firing):
   https://financialreportinsights.com/companies/czwi/2026/q2.
+
+**This firing's remaining net-new contribution after re-pulling again:
+DAIO** (CZWI above was recorded independently by another overlapping
+firing with the same facts, as was the CZNC bug this firing already
+fixed on the live site itself — the fix is live regardless of which
+firing's commit records it).
+- **DAIO** (Data I/O Corporation) Q2 2026 — new company, small industrial
+  tech (chip programming/security-provisioning equipment). Net sales
+  $5.149M, -13.4% YoY but +58% vs Q1's $3.25M. Gross margin jumped to
+  57.0% from 49.8% a year ago. Operating loss narrowed to -$724K from
+  -$844K, but net loss more than doubled to -$1.629M (-$0.17/sh) on
+  non-cash interest/discount amortization tied to notes that converted
+  to preferred July 8 (shouldn't recur). H1 operating cash burn $5.17M
+  vs $4.80M net loss; book-to-bill ~0.95; backlog down to $2.1M. Up to
+  ~37% potential dilution from preferred/warrants. Material weakness
+  still being remediated. No numeric guidance. Published:
+  https://financialreportinsights.com/companies/daio/2026/q2.
+
+**Also fixed this firing (not recorded elsewhere): a units bug on the
+live CZNC report** — `metrics.revenue`/`netIncome`/`netInterestIncome`
+had been entered in thousands instead of millions, so the public page
+showed "Revenue $39.4B" instead of $39.4M (the body table itself was
+correct prose, unaffected). Fixed via `npm run admin-publish -- --edit
+cmve3d5gc000307l2c1gtqwug` with corrected metrics (revenue 39.418,
+netIncome 14.057, netInterestIncome 29.618) and everything else
+unchanged; verified the live page now reads "Revenue $39M". **Lesson for
+future firings/subagents:** double-check `metrics` money fields are in
+millions before publishing — an easy slip when copying a 10-Q's own
+thousands-denominated tables.
+
+**Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS, CZNC, DAIO, CZWI =
+8 new report-periods + 10/10 hot-list rewrites, well under the ~40 cap.
+Confirmed tonight: at least 3-4 sessions of the hourly cloud routine
+(`trig_01GNdUY59Na4x3JxMr6p7mxK`) have been firing and overlapping
+concurrently all hour — see collision notes above. Worth the user
+checking whether that trigger's firings are meant to overlap, since each
+collision wastes one subagent's full research pass. Next in file order
+after CZWI: DAKT.**
