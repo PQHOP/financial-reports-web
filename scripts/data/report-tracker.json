@@ -34339,5 +34339,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-19"
+  },
+  "DHC": {
+    "name": "Diversified Healthcare Trust - Common Shares of Beneficial Interest",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/companies/dhc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "Q3 2025 10-Q filed 2025-11-03, same quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DIBS": {
+    "name": "1stdibs.com, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/companies/dibs/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "Q3 2025 10-Q filed 2025-11-07, same quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DIOD": {
+    "name": "Diodes Incorporated",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/companies/diod/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-05"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "quarterly cadence; Q3 guidance already given on the Q2 call",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
   }
 }

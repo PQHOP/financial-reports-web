@@ -16347,3 +16347,62 @@ CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX,
 DDI, DERM, DETX, DFDV, DFSC, DFTX, DGICA, DGII, DGNX, DGXX = 27 new
 report-periods + 10/10 hot-list rewrites + 1 live-data bug fix, at
 27/40 of the ~40 cap. Continuing. Next in file order after DGXX: DHC.**
+
+**Eleventh batch — no collisions, all three clean.**
+- **DHC** (Diversified Healthcare Trust) Q2 2026 — new company,
+  healthcare REIT. Revenue -4.5% to $365.4M on asset sales (SHOP
+  communities 230->199, medical office/life science properties 92->67).
+  Net loss narrowed to -$37.4M (-$0.16/sh) from -$91.6M (-$0.38) — Q2
+  2025 carried a $31.0M impairment, a $7.4M loss on sales and $16.3M of
+  non-cash interest on now-repaid notes. Same-property SHOP NOI +37.2%
+  to $52.0M (revenue +6.6%, costs +1.9%; occupancy 83.1% vs 81.5%, rate
+  +6.2% to $5,715/mo); NOI margin 17.3% (+390bps). Normalized FFO
+  doubled to $0.16/sh ($38.9M), about half from lower interest expense;
+  excludes a $10.0M RMR incentive-fee accrual (H1 total $16.6M) deferred
+  to Q4. H1 operating cash flow $46.7M vs $59.4M of building
+  improvements — a one-time $27.2M AlerisLife final dividend covered the
+  gap. Net debt $2.33B, 7.1x annualized adjusted EBITDAre (down from
+  8.7x); next maturities 2028; Moody's upgraded to B3 in April. FY2026
+  guidance reaffirmed: Normalized FFO $0.56-0.62/sh, SHOP NOI
+  $185-195M — held only because DHC cut its occupancy-growth assumption
+  from ~300bps to ~200bps, not on stronger demand. Published:
+  https://financialreportinsights.com/companies/dhc/2026/q2.
+- **DIBS** (1stdibs.com) Q2 2026 — new company, online luxury
+  marketplace. Revenue +5.3% to $23.3M; net loss narrowed to -$1.0M
+  (-$0.03/sh) from -$4.3M (-$0.12); operating margin -8.8% vs -25.8%.
+  ~75% of the $3.7M smaller operating loss came from a $2.8M (34%) cut
+  in sales & marketing (less paid marketing, reorg headcount savings).
+  Gross margin 73.9% vs 71.8%. GMV +6.8% to $96.0M (above guidance) but
+  entirely from larger orders — AOV +~11% while orders -3.8% and Active
+  Buyers -10.4% to 57,663. Adjusted EBITDA +$1.3M (5.6% margin) vs
+  -$1.8M; stock comp $3.0M (12.9% of revenue) explains most of the GAAP
+  gap. FCF -$5.1M, ~$5.9M of which is a processor-receivable
+  reclassification, not a real cash drain. $20.7M of H1 buybacks (~22%
+  of year-end cash, shares -8.8%); $67.7M cash+investments left. Q3
+  guidance: GMV $89-94M, revenue $22.0-22.9M, adj. EBITDA margin -1% to
+  +2%. Published: https://financialreportinsights.com/companies/dibs/2026/q2.
+- **DIOD** (Diodes Incorporated) Q2 2026 — new company, semiconductors
+  (discrete/analog/mixed-signal). Revenue +21.7% to $445.5M on AI-server/
+  data-center/edge demand — units +24.8% while ASPs fell 2.5%, so all
+  growth was volume. Gross margin 33.1% vs 31.5%; operating income more
+  than tripled to $33.3M (margin 7.5% vs 2.6%) as opex grew only 7.9%.
+  GAAP EPS flat at $1.00 vs $0.99 only because last year had ~$43M of
+  one-off gains (investment markup + a subsidiary sale) vs a $20.0M
+  mark-to-market gain this year; non-GAAP EPS more than doubled to $0.70
+  from $0.32. H1 operating cash flow $132.8M vs $61.6M net income;
+  inventory +7% against ~22% sales growth, inventory days down to ~152,
+  distributor stock below normal range — a clean quarter on quality.
+  Q3 guidance ~$510M revenue (±3%, +30% YoY), 35.0% gross margin, $1.05
+  non-GAAP EPS. July 10: agreed to buy ElevATE Semiconductor for $250M
+  cash + up to $50M earnouts, pending regulatory approval. Published:
+  https://financialreportinsights.com/companies/diod/2026/q2.
+
+**This firing's contribution: DHC, DIBS, DIOD, all published cleanly
+with no collisions. Running tonight total: CYPH, CYRX, CYTK, CZR, CZFS,
+CZNC, DAIO, CZWI, DAKT, DAVE, DBX, DBGI, DCBO, DCTH, DBVT, DCOY, DCX,
+DDI, DERM, DETX, DFDV, DFSC, DFTX, DGICA, DGII, DGNX, DGXX, DHC, DIBS,
+DIOD = 30 new report-periods + 10/10 hot-list rewrites + 1 live-data
+bug fix, at 30/40 of the ~40 cap. Continuing. Next in file order after
+DIOD: DJCO (then DJT, DKI, DKNG, DLHC, DLO, DLPN, DLTH, DMAA, DMAC —
+DMAA looks like a SPAC by name, "Drugs Made In America Acquisition
+Corp.", to be verified before dispatching a subagent).**
