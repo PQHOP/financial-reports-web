@@ -15761,3 +15761,44 @@ usual, then continue the tier 1 backlog with `npm run next-batch`
 from where this firing left off: the ticker right after CYN in
 `us-listed.json` file order (CYPH) is next.
 
+### 2026-10-18 night (16:00 UTC 2026-10-18 → 22:59 UTC 2026-10-18 / 01:00–07:59 JST 2026-10-19)
+
+Network check passed (200 on sec.gov with the required User-Agent and on
+financialreportinsights.com). `npm run scan-recent-filings` found 0 fresh
+tier-0 candidates.
+
+**Hot-list rewrite (10/10 allotment used tonight):** SBUX Q3, LOW Q2, TGT
+Q2, PFE Q2, AMGN Q2, GILD Q2, BKNG Q2, ABNB Q2, DASH Q2, PANW ANNUAL — all
+rewritten to the current format (At a glance, quality-check section,
+guidance-vs-prior-guidance table) with every figure re-verified against
+the primary filing. Each correction found during the re-check is noted in
+the per-company subagent reports (not duplicated here); none were
+material restatements, mostly sourcing/attribution fixes (e.g. SBUX's
+China-deconsolidation timing, LOW's tariff-refund sentence not actually
+in the release, GILD's impairment-vs-guidance-gap explanation). Queue
+status after tonight: 48/121 done, 70 pending, 3 superseded. Skipped for
+now (nextExpectedFiling within 10 days): TSLA, NFLX, PG, WFC, IBM, NOW,
+GE, AXP, T, INTC, and others further down the list not yet reached.
+
+**Tier 1 backlog:** `next-batch` surfaces 9 already-tracker-"pending" FPIs
+first (BRAI, BTCT, CCHH, CDTG, CHNR, CLWT, CRE, CUPR, CURR) — all
+re-confirmed still have no 2026-period financials on EDGAR and none of
+their `nextExpectedFiling` estimates have passed yet, so skipped past per
+last night's note, tracker entries unchanged. First real pick: CYPH.
+
+- **CYPH** (Cypherpunk Technologies — formerly Leap Therapeutics, renamed
+  Nov 2025) Q2 2026 — new company. Not a shell/SPAC (10-Q checks "No" on
+  shell-company status): now runs a Zcash (ZEC) treasury alongside the
+  original oncology program (sirexatamab). Net income $39.4M ($0.18
+  diluted) vs a $16.6M loss a year ago, entirely a $46.0M unrealized gain
+  as ZEC rose from $243.35 to $400.09 in the quarter; ex-ZEC the quarter
+  was a ~$4.6M pretax loss, and H1 is still a $37.8M loss once Q1's
+  $77.6M ZEC loss is included. Operations used $6.1M of cash in H1; the
+  profit isn't cash. Diluted share count 217M vs 41M a year ago (pre-funded
+  warrants). August: $33.3M Zcash-mining-fleet purchase paid via a
+  pre-funded warrant to Winklevoss Treasury Investments (a 19.9% holder) —
+  a related-party deal. Nasdaq bid-price notice Jul 20, regained
+  compliance Sep 2. No financial guidance; Phase 3 design agreed with FDA
+  for sirexatamab, Fast Track granted. Published:
+  https://financialreportinsights.com/companies/cyph/2026/q2.
+
