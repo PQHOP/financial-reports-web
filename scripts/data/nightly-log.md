@@ -15846,4 +15846,15 @@ record, not an error to retry.
   100% of deposits with borrowings up $84.6M since year-end. Uses the
   simplified leverage-ratio framework (9.64%) instead of CET1. Published:
   https://financialreportinsights.com/companies/czfs/2026/q2.
+- **CZNC** (Citizens & Northern) Q2 2026 — new company, bank. No
+  collision. Net income +129.8% to $14.1M, EPS +97.5% to $0.79 (Q1 2026
+  was only $0.02 on a $10.06M charge-off on one Bucks County office
+  loan). The Susquehanna acquisition (closed 2025-10-01) lifted net
+  interest income +40.1% to $29.6M and NIM to 4.07% from 3.52%; Q2 also
+  had net recoveries and a $1.85M reserve release (ex-release EPS would
+  be ~$0.71, our estimate). ~15.7% share dilution from the deal, no
+  buybacks. Nonperforming assets 1.28% of assets vs 0.98% a year ago;
+  the $25M subordinated notes floated up to 6.25% from a fixed 3.25%.
+  CET1 12.44%, ROTCE 20.99%. Published:
+  https://financialreportinsights.com/companies/cznc/2026/q2.
 

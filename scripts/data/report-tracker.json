@@ -33815,5 +33815,27 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-18"
+  },
+  "CZNC": {
+    "name": "Citizens & Northern Corp",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-18",
+      "url": "https://financialreportinsights.com/companies/cznc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-07"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "Q2 earnings 8-K filed 2026-07-23, 10-Q 2026-08-07; similar cadence expected for Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-18"
   }
 }
