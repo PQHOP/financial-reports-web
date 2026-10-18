@@ -634,7 +634,8 @@
       "reportId": "cmu7677tl000204l5nog9ado6",
       "url": "https://financialreportinsights.com/companies/amgn/2026/q2",
       "nextExpectedFiling": "2026-11-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-18"
     },
     {
       "ticker": "GILD",
