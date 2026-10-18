@@ -656,7 +656,8 @@
       "reportId": "cmubk8dn8000204jg91kygmm8",
       "url": "https://financialreportinsights.com/companies/bkng/2026/q2",
       "nextExpectedFiling": "2026-11-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-18"
     },
     {
       "ticker": "ABNB",
