@@ -16993,3 +16993,31 @@ this firing, so only this log entry is being committed. Next firing:
 re-run `scan-recent-filings` first (EDGAR's index for 10-19/10-20 may
 post later tonight); otherwise the next workable items are DRIO and
 DRMA once the us-listed cap resets tomorrow night.
+
+**Seventh firing (07:04 JST, ~55 min left in tonight's window).** Network
+check passed (sec.gov: 403 without a UA header as expected, 200 with the
+required UA; financialreportinsights.com reachable). Repo was again in a
+detached-HEAD state at a stale commit (`1fa9668`) in the fresh container;
+`git checkout -B master origin/master` + `git pull --rebase` fast-forwarded
+cleanly to `454c0df` (the sixth firing's commit), no lost work. `npm
+install`'s incidental `package-lock.json` diff was discarded with `git
+checkout --` before touching anything else. Re-ran `scan-recent-filings`:
+0 fresh candidates — 2026-10-19/18/17 still show 0 filings (EDGAR's daily
+index for today/yesterday isn't posted yet), 10-16 through 10-13 show
+199-295 each, already processed. `next-batch -- --n 10` returned 10
+entries, all `4-us-listed-backlog` (BRAI...DRIO) — confirms tier 0, the
+10/10 hot-list rewrites, and S&P 500 tier-1 are still fully exhausted for
+tonight. Today is Tuesday JST, not Sunday, so no earnings preview is due.
+With the us-listed cap (10/10) and comparison cap (2/2) both already used
+tonight, nothing in the budget order is workable this firing either.
+
+**This firing's contribution: 0 new report-periods, 0 skips. Tonight's
+totals unchanged at 26/40 report-periods, 10/10 hot-list rewrites, 10/10
+us-listed cap, 2/2 comparisons.** Nothing was touched in
+`report-tracker.json` this firing, so only this log entry is being
+committed. The operating window closes at 07:59 JST, under an hour away,
+so no further firing is expected to find anything new tonight either.
+Next night: re-run `scan-recent-filings` first; the next workable
+us-listed items are DRIO and DRMA once that cap resets, and S&P 500
+tier-1 / hot-list rewrites should be re-checked in case new entries
+became due overnight.
