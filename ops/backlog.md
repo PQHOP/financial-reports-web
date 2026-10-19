@@ -6,6 +6,23 @@ date and commit.
 
 ## Next
 
+- **GSC screenshots from Hop, 2026-10-19 (Crawl stats to 10-17, Page
+  indexing):** 90 days 18.4K crawl requests (18,341 bare domain, 30
+  `www.`), avg response 160 ms, 100% 200s. Daily line: ~3.8K/day 9-19,
+  falling to ~0 by 10-01 and still flat at ~15/day through 10-17 — no
+  recovery yet, but the robots.txt fix (10-15) has only 2 days in the
+  data. Breakdown (90-day aggregate, so unchanged): Other file type 80%,
+  HTML 13%, JSON 4%, JS 2%; Refresh 94% / Discovery 6%; Desktop 85%.
+  Page indexing: ~2.45K known, ~0.6K indexed; not indexed: **Discovered –
+  currently not indexed 1,638 (rising)**, noindex 142 (intended thin
+  pages), Duplicate without user-selected canonical 21, Crawled –
+  currently not indexed 8 (validation Failed), Page with redirect 8,
+  other 4xx 1. Reading: Google knows the URLs but won't spend crawl on
+  them — supports the 10-19 us-listed cap. Next: ask Hop for the URL
+  list behind the 21 duplicates and the 8 crawled-not-indexed (click the
+  row) to see if they're a fixable canonical issue; next week's crawl
+  screenshot should include the "HTML" row's own chart.
+
 - **Hop's answers to the 2026-10-19 review (given 10-19, don't ask
   again): yes to all five.** (1) us-listed capped at ~10/night, budget to
   tier 0 + preview + comparisons + rewrites — in CLAUDE.md. (2) The two

@@ -923,7 +923,12 @@ format rules under "What makes a report worth reading here" address.
    requests/day and the "Other file type" share (target < 20%; it was 80%
    on 2026-10-15, almost all `?_rsc=` payloads, before `/*?_rsc=` and
    `/companies/*/write` were disallowed in robots.txt). If no screenshot
-   came in that week, say so in one line rather than guessing.
+   came in that week, say so in one line rather than guessing. The
+   breakdown percentages on that page cover the whole ~90-day window,
+   which is dominated by the September crawl spike, so they barely move
+   week to week (still 80% "Other file type" / 94% Refresh on 10-19): judge
+   the trend from the daily line, or from the per-row chart Hop gets by
+   clicking "Other file type" / "HTML".
 6. **Evaluation and direction (the main reason this routine runs on
    Fable, the user's request 2026-10-14).** Don't just do maintenance and
    report it: judge the site and say where it should go next.
