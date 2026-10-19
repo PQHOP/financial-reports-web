@@ -231,6 +231,19 @@ pull --rebase` and check that `/companies/<slug>/<year>/<period>` is
 still a 404; treat "already exists" as a collision to record from the
 live page, not an error to retry.
 
+**us-listed cap (since 2026-10-19, the user's choice): at most ~10
+report-periods per night from the `us-listed` part of tier 1.** The
+2026-10-19 ops review found the ~30 us-listed reports a night (DLPN,
+DMAC, DCOY…) bring no readers: Googlebot crawls ~15 URLs/day, so each new
+URL of a company nobody searches for dilutes a crawl budget that is
+already short, and that tier was the biggest usage cost of the system.
+The night's budget goes, in order, to: tier 0 fresh filings (hot list and
+S&P 500 first), the Sunday earnings preview, the 10 hot-list rewrites,
+comparisons (up to 2 a night, see "Comparison" below), any S&P 500 tier 1
+left, and only then ~10 us-listed companies. A night that ends under ~40
+because those ran out is expected — don't top it up with more us-listed.
+The us-listed backlog is postponed, not dropped.
+
 **Hot-list rewrite (temporary, from 2026-10-14 night): +10 per night on
 top of the ~40 cap, until the queue is empty.** For AdSense ("low value
 content"), the latest report of each hot-list company that predates the
@@ -736,7 +749,8 @@ the user is tracked at its end. Things future sessions should know:
     sites (Hudson Labs, days.to, Barchart previews ranked for TSLA on
     2026-10-18), so this is the cheapest page we publish that can rank
     this season.
-  - **Comparison** — at most one per firing, at most two per week: when
+  - **Comparison** — at most one per firing, at most two per night (raised
+    from two per week on 2026-10-19, paid for by the us-listed cap): when
     two companies in the same industry both have a current-period report
     with `metrics` and no comparison of that pair exists, publish a
     `COMPARISON` (`<a>-vs-<b>-<period>-<year>`) using only the two
@@ -928,6 +942,14 @@ format rules under "What makes a report worth reading here" address.
      and what we would stop doing to pay for it. Say plainly when
      something we're doing isn't working. Small ones go in the backlog;
      large ones go in "cần anh/chị quyết định".
+   - **Mondays also: draft outside posts (since 2026-10-19, the user's
+     choice).** Add a short section with 1-3 ready-to-paste drafts for the
+     user to post by hand (Reddit r/stocks / r/investing within their
+     self-promotion rules, Hacker News for a comparison): the week's
+     earnings preview and the best comparison or rewritten hot-list report,
+     each with title, 2-4 sentences of substance (a figure and why it
+     matters, not an ad) and the canonical link. Ops never posts anything
+     itself.
 
 **Autonomy rules (proposed 2026-10-04, accepted by the user by default):**
 - **Do without asking:** bug fixes; SEO changes; content and editorial

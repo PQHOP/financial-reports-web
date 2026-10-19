@@ -62,3 +62,31 @@ export function truncate(text: string, max: number): string {
   const lastSpace = cut.lastIndexOf(" ");
   return `${(lastSpace > max * 0.6 ? cut.slice(0, lastSpace) : cut).replace(/[\s,;:.]+$/, "")}…`;
 }
+
+// Splits the "At a glance" bullet list (a `**At a glance**` line or an
+// `## At a glance` heading, then a list) out of the report body, so the
+// report page can show it right under the headline instead of after the
+// figures, charts and opening paragraph. `rest` is the body without it;
+// `glance` is null (and `rest` the input) when there is no such list.
+export function splitAtAGlance(md: string): { glance: string | null; rest: string } {
+  const lines = md.split("\n");
+  const start = lines.findIndex((l) =>
+    /^(?:#{2,3}\s+|\*\*)At a glance:?(?:\*\*)?:?\s*$/i.test(l.replace(/\r$/, "").trim())
+  );
+  if (start === -1) return { glance: null, rest: md };
+  let i = start + 1;
+  while (i < lines.length && lines[i].trim() === "") i++;
+  const listStart = i;
+  const isItem = (l: string) => /^\s*(?:[-*+]|\d+[.)])\s+/.test(l);
+  if (listStart >= lines.length || !isItem(lines[listStart])) return { glance: null, rest: md };
+  let end = listStart;
+  while (end < lines.length) {
+    const l = lines[end];
+    if (isItem(l) || (/^\s+\S/.test(l) && end > listStart)) end++;
+    else if (l.trim() === "" && end + 1 < lines.length && isItem(lines[end + 1])) end++;
+    else break;
+  }
+  const glance = lines.slice(listStart, end).join("\n").trimEnd();
+  const rest = [...lines.slice(0, start), ...lines.slice(end)].join("\n").replace(/\n{3,}/g, "\n\n");
+  return { glance, rest };
+}

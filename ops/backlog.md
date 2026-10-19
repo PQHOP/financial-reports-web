@@ -6,6 +6,17 @@ date and commit.
 
 ## Next
 
+- **Hop's answers to the 2026-10-19 review (given 10-19, don't ask
+  again): yes to all five.** (1) us-listed capped at ~10/night, budget to
+  tier 0 + preview + comparisons + rewrites — in CLAUDE.md. (2) The two
+  10-19 nightly rules stay. (3) Hop does Bing Webmaster Tools (import from
+  GSC) and GSC "Request indexing" for ~10 URLs/day by hand — suggest the
+  day's best URLs in the report (homepage, `/companies/aapl`, `/learn`,
+  freshly rewritten hot-list reports). (4) Ops drafts outside posts on
+  Mondays, Hop posts — in CLAUDE.md. (5) "At a glance" box above the
+  figures — shipped 10-19 (see Done). Next deep review should check
+  whether US engaged sessions/time on report pages move after (5).
+
 - **From Hop, 2026-10-17 (don't ask again):** sitemap resubmitted in GSC
   on 10-17 — status Success, read 10-17, **2,609 discovered pages**.
   Manual actions: **No issues detected**. Security issues: **No issues

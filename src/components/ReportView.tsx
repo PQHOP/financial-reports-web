@@ -11,7 +11,7 @@ import { EDITORIAL_AUTHOR, SITE_NAME, SITE_SAME_AS, SITE_URL, reportByline } fro
 import { realCoverImage, reportSearchTitle } from "@/lib/reportMeta";
 import { reportPath, reportUrl } from "@/lib/reportPath";
 import { articleKindLabels, articlePath } from "@/lib/articles";
-import { tableOfContents } from "@/lib/markdown";
+import { splitAtAGlance, tableOfContents } from "@/lib/markdown";
 import { formatFilingDate, upcomingFiling } from "@/lib/tracker";
 import type { FullReport } from "@/lib/reportData";
 import {
@@ -262,7 +262,13 @@ export async function ReportView({ report }: { report: FullReport }) {
     : [];
   const cover = realCoverImage(report.coverImageUrl);
   const canonicalUrl = reportUrl(report);
-  const toc = tableOfContents(report.contentMd);
+  // System reports lead with their "At a glance" bullets, ahead of the
+  // figures and charts: a reader arriving from "<ticker> earnings" decides in
+  // the first few seconds whether the page answers it.
+  const { glance, rest: bodyMd } = isCommunity
+    ? { glance: null, rest: report.contentMd }
+    : splitAtAGlance(report.contentMd);
+  const toc = tableOfContents(bodyMd);
   const companyHref = `/companies/${report.company.slug}`;
 
   const jsonLd = {
@@ -363,6 +369,20 @@ export async function ReportView({ report }: { report: FullReport }) {
         </p>
       )}
 
+      {glance && (
+        <section
+          aria-label="At a glance"
+          className="rounded-lg border border-zinc-200 bg-white px-5 py-4"
+        >
+          <h2 className="text-sm font-semibold uppercase tracking-wide text-zinc-500">
+            At a glance
+          </h2>
+          <div className="mt-1">
+            <ReportContent markdown={glance} />
+          </div>
+        </section>
+      )}
+
       {metrics && <MetricsSnapshot metrics={metrics} />}
 
       {metrics && <YearOverYearChart metrics={metrics} />}
@@ -404,7 +424,7 @@ export async function ReportView({ report }: { report: FullReport }) {
       )}
 
       <div className="rounded-lg border border-zinc-200 bg-white p-4 sm:p-6">
-        <ReportContent markdown={report.contentMd} untrusted={isCommunity} />
+        <ReportContent markdown={bodyMd} untrusted={isCommunity} />
       </div>
 
       {nextFiling && isLatest && (
