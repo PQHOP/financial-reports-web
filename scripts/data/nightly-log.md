@@ -16744,3 +16744,65 @@ of headroom left — continuing with the remaining tier-0 candidates
 (6 us-listed new-company 10-K/10-Q filings: EWAV, PLUN, ILLU, EONR, NUCL,
 SAGU) and then the plain us-listed backlog (next in file order: DMRA,
 then DNLI) if time/cap allow.
+
+**Update, same firing — tier 0 fully cleared, then 8/8 tier-1 published
+(per-firing cap reached):** Of the 6 remaining tier-0 "new company"
+candidates, 4 were SPACs (EWAV, PLUN, ILLU, SAGU — all SIC "Blank
+Checks", skipped) and 2 were real companies, both published: **EONR**
+(EON Resources, small oil & gas) Q1 2026 — the flagged 10-K/A was
+actually a FY2025 depletion restatement, not new; pivoted to the real
+Q1 2026 10-Q instead (net loss nearly tripled to $5.77M on a $3.58M
+hedge loss; going-concern doubt persists, $22.6M working-capital
+deficit). **NUCL** (Eagle Nuclear Energy, pre-revenue uranium explorer,
+Feb 2026 de-SPAC) Q3 2026 — $4.35M "net income" is entirely a non-cash
+warrant-revaluation gain; flagged clearly in the report.
+
+Re-ran `scan-recent-filings` after the tracker updates (confirms the fix
+holds: 0 fresh candidates now that every Q3 2026 S&P 500 bank/REIT 8-K
+has been handled) and `next-batch -- --n 25` for the real tier-1 order.
+Skipped without a subagent (checked EDGAR company_tickers.json +
+submissions JSON directly): **DNMX** (SPAC), **DOGZ/DPRO/DPU/DOO/DOX/
+DOYU** (foreign private issuers — 20-F/40-F/6-K, no 10-K/10-Q).
+
+**8 opus subagents dispatched for the real tier-1 candidates, all
+succeeded** (hitting the ~8-per-firing tier-1 cap exactly):
+- **DMRA** (Damora Therapeutics — formerly Galecto, Nov 2025 reverse
+  merger) Q2 2026 — pre-revenue biotech, $31.2M net loss, $540.5M cash
+  funds into H2 2029; heavy dilution (1.6M→61.7M shares in 6 months)
+  flagged.
+- **DNLI** (Denali Therapeutics) Q2 2026 — first quarter with a product
+  on market: AVLAYAH (Hunter syndrome) got FDA accelerated approval in
+  March, $3.6M net sales; net loss widened to $127.6M on lower interest
+  income.
+- **DNTH** (Dianthus Therapeutics) Q2 2026 — loss widened to $50.2M as
+  claseprubart entered three late-stage trials at once; $1.19B cash
+  funds into 2030 after a $719M March offering.
+- **DNUT** (Krispy Kreme) Q2 2026 — revenue -12.8% (Japan/western-US JV
+  sales, McDonald's delivery cuts), net leverage down to 5.4x from asset
+  sales (not organic cash generation); dividend still suspended.
+- **DOCU** (DocuSign) Q2 2026 (fiscal Q2 FY27) — revenue +9.4%, operating
+  margin 13.4% vs 8.1%, heavy buybacks ($624M, more than FCF) driving
+  much of the EPS gain; guidance raised.
+- **DOMH** (Dominari Holdings) Q2 2026 — revenue -57% as underwriting/
+  carried-interest income dried up; swung to a $5.4M loss from a $16.6M
+  profit that had come mostly from an ABTC stake markup.
+- **DOMO** (Domo) Q2 2026 (fiscal Q2 FY27) — reported under forbearance
+  with a going-concern warning; **the operating business was sold to
+  Progress Software (closed 2026-09-22) and the remaining shell renamed
+  Huckleberry.ai, Inc. (ticker HUCK)** — noted in the tracker; `DOMO`
+  should be swapped for `HUCK` in `us-listed.json`/future scans.
+- **DORM** (Dorman Products) Q2 2026 — GAAP EPS +53% almost entirely
+  from a $98.1M IEEPA tariff-refund windfall after the Supreme Court
+  struck the tariffs down; underlying adjusted EPS actually fell
+  ($1.90 vs $2.06); full-year sales guidance cut.
+
+**Firing total: 24 new report-periods (14 tier-0 bank/REIT + EONR + NUCL
++ 8 tier-1) + 10/10 hot-list rewrites + 2 tier-0 holds (PRU, OXY) + 14
+skips (8 FPI re-confirms, 4 SPACs, 2 FPIs) + 1 scan-script bug fix, at
+24/40 of the ~40 cap.** Stopping here: the per-firing cap (~8 new
+tier-1 report-periods) is met exactly. 16 report-periods of headroom
+remain tonight for a later firing — next in file order after DORM:
+DOYU (skip, already confirmed FPI above skips itself in next-batch
+since now "skipped"), then continue from where `next-batch` left off
+(DOYU already skipped; check DPRO/DPU/DOO/DOX, also skipped — next
+real candidate is DRH, Diamondrock Hospitality).
