@@ -9,7 +9,7 @@ import sp500 from "../../../scripts/data/sp500.json";
 import { formatFilingDate, loadTracker } from "@/lib/tracker";
 import { reportPath } from "@/lib/reportPath";
 import { cleanCompanyName } from "@/lib/companyName";
-import { availableScorecards } from "@/lib/scorecard";
+import { seasonScorecard } from "@/lib/scorecard";
 import { scorecardPath } from "@/lib/scorecardPath";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
@@ -79,9 +79,8 @@ export default async function EarningsCalendarPage() {
     },
   });
   const byTicker = new Map(companies.map((c) => [c.ticker, c]));
-  // The newest period with enough results for a scorecard: what has already
-  // been reported this season, next to what is still to come.
-  const [scorecard] = await availableScorecards();
+  // What has already been reported this season, next to what is still to come.
+  const scorecard = await seasonScorecard([...WELL_KNOWN]);
 
   // Group by expected date; well-known names first within a day.
   const days = new Map<string, { featured: typeof upcoming; others: typeof upcoming }>();

@@ -22,6 +22,10 @@ const POPULAR_LIMIT = 16;
 // not the six micro-caps the backlog happened to publish last.
 const WELL_KNOWN: string[] = [...new Set([...POPULAR_TICKERS, ...sp500.map((c) => c.ticker)])];
 const SEASON_LIMIT = 6;
+// Newest well-known results to choose from; hot-list names come first within
+// this window so BAC and GS, published early on results night, aren't pushed
+// out by the dozen regional banks that followed them.
+const SEASON_POOL = 16;
 const LATEST_LIMIT = 6;
 const SEASON_ARTICLES = 4;
 const UPCOMING_DAYS = 7;
@@ -75,7 +79,7 @@ export default async function Home() {
   const [
     industries,
     latestCandidates,
-    season,
+    seasonPool,
     seasonArticles,
     scorecards,
     guides,
@@ -102,7 +106,7 @@ export default async function Home() {
     prisma.report.findMany({
       where: { ...systemReports, company: { ticker: { in: WELL_KNOWN } } },
       orderBy: { publishedAt: "desc" },
-      take: SEASON_LIMIT,
+      take: SEASON_POOL,
       include: { company: { select: { name: true, ticker: true, slug: true } } },
     }),
     prisma.article.findMany({
@@ -131,14 +135,25 @@ export default async function Home() {
     reportingSoon(),
   ]);
 
+  const hotRank = (ticker: string | null) => {
+    const i = ticker ? POPULAR_TICKERS.indexOf(ticker) : -1;
+    return i === -1 ? POPULAR_TICKERS.length : i;
+  };
+  const season = [...seasonPool]
+    .sort(
+      (a, b) =>
+        hotRank(a.company.ticker) - hotRank(b.company.ticker) ||
+        b.publishedAt.getTime() - a.publishedAt.getTime()
+    )
+    .slice(0, SEASON_LIMIT);
   // "Latest reports" skips what the season section already shows.
   const seasonIds = new Set(season.map((r) => r.id));
   const latest = latestCandidates.filter((r) => !seasonIds.has(r.id)).slice(0, LATEST_LIMIT);
   // The scorecard for the period the newest well-known result belongs to,
   // when enough companies have reported it; otherwise the newest scorecard.
-  const seasonPeriod = season[0]
-    ? scorecards.find((c) => c.year === season[0].year && c.period === season[0].period) ??
-      scorecards[0]
+  const newest = seasonPool[0];
+  const seasonPeriod = newest
+    ? scorecards.find((c) => c.year === newest.year && c.period === newest.period) ?? scorecards[0]
     : scorecards[0];
 
   const popular = popularCandidates

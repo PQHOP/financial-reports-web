@@ -157,3 +157,25 @@ export async function availableScorecards(): Promise<{ year: number; period: Rep
     .map((g) => ({ year: g.year, period: g.period, count: g._count._all }))
     .sort((a, b) => periodRank(b) - periodRank(a));
 }
+
+// The scorecard for the reporting period the newest result from one of the
+// given companies belongs to (hot list / S&P 500: the season's bellwethers),
+// falling back to the newest scorecard. `availableScorecards()[0]` alone
+// would pick "Full Year 2026" (odd-fiscal-year companies) in October.
+export async function seasonScorecard(
+  tickers: string[]
+): Promise<{ year: number; period: ReportPeriod; count: number } | null> {
+  const [cards, newest] = await Promise.all([
+    availableScorecards(),
+    prisma.report.findFirst({
+      where: { ...systemReports, company: { ticker: { in: tickers } } },
+      orderBy: { publishedAt: "desc" },
+      select: { year: true, period: true },
+    }),
+  ]);
+  return (
+    (newest && cards.find((c) => c.year === newest.year && c.period === newest.period)) ??
+    cards[0] ??
+    null
+  );
+}
