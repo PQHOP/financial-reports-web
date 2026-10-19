@@ -16940,3 +16940,28 @@ only this log entry is being committed. Next firing: re-run
 `scan-recent-filings` first in case EDGAR's index catches up further
 through the evening; otherwise the next workable items are DRIO and DRMA
 once the us-listed cap resets tomorrow night.
+
+**Fifth firing.** Network check passed (`curl` to sec.gov: 403 without a
+User-Agent header as expected — SEC's own response, not a proxy denial —
+then 200 with the required UA; financialreportinsights.com 200). `npm
+install` ran clean (only the unrelated `prisma generate` postinstall step
+failed for lack of a real `DATABASE_URL`, which admin-publish/
+scan-recent-filings don't need); it left `package-lock.json` modified by
+a different local npm version, discarded with `git checkout --` before
+touching anything else. `git pull --rebase origin master`: already up to
+date, no new commits. Re-ran `scan-recent-filings`: 0 fresh candidates
+(2026-10-19/18/17 all show 0 filings; 10-16/15/14/13 show 199-295 each,
+already processed). `next-batch -- --n 10` returned 10 entries, all
+`4-us-listed-backlog` (BRAI...DRIO) — confirms tier 0, the 10/10 hot-list
+rewrites, and S&P 500 tier-1 are still fully exhausted for tonight. Today
+is Monday (not Sunday), so no earnings preview is due. With the us-listed
+cap (10/10) and comparison cap (2/2) both already used tonight, nothing in
+the budget order is workable this firing either.
+
+**This firing's contribution: 0 new report-periods, 0 skips. Tonight's
+totals unchanged at 26/40 report-periods, 10/10 hot-list rewrites, 10/10
+us-listed cap, 2/2 comparisons — all caps/tiers that can be worked tonight
+remain exhausted.** Nothing was touched in `report-tracker.json` this
+firing, so only this log entry is being committed. Next firing: re-run
+`scan-recent-filings` first; otherwise the next workable items are DRIO
+and DRMA once the us-listed cap resets tomorrow night.
