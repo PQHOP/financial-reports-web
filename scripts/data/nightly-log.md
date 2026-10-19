@@ -16806,3 +16806,69 @@ DOYU (skip, already confirmed FPI above skips itself in next-batch
 since now "skipped"), then continue from where `next-batch` left off
 (DOYU already skipped; check DPRO/DPU/DOO/DOX, also skipped — next
 real candidate is DRH, Diamondrock Hospitality).
+
+**Second firing.** Network check passed, `git pull --rebase` clean (no
+new commits from elsewhere since the first firing), `npm install` + dummy-
+`DATABASE_URL` `prisma generate` for a fresh container (reverted the
+resulting incidental `package-lock.json` optional-dep diff). Re-ran
+`scan-recent-filings`: 0 fresh candidates (confirms the scan-script fix
+holds). All S&P 500 tier-1 names are done/skipped (no `3-sp500-backlog`
+entries left in `next-batch` output), so per the budget order ("tier 0,
+Sunday preview, hot-list rewrites, comparisons, S&P 500 tier-1, then
+us-listed") with tier 0 clear, no preview due (Monday, not Sunday), and
+10/10 rewrites already done this firing went to **comparisons** next: of
+tonight's 14 freshly-published Q3 2026 bank reports, wrote and published 1
+new `COMPARISON` article (the per-firing cap) — **BAC vs WFC Q3 2026**
+(https://financialreportinsights.com/insights/bac-vs-wfc-q3-2026), using
+only the two banks' own published Q3 2026 figures (no new EDGAR research):
+BofA's 16.8% profit decline is almost entirely a $1.2B AML penalty, but
+even adjusted for it, Wells Fargo's 16.3% ROTCE and improving 63%
+efficiency ratio beat BofA's 12.6% ROTCE and worsening 66% efficiency
+ratio. Live-page sanity check passed (200, Takeaway + Source filing
+present).
+
+Checked `next-batch -- --n 25`: the top 9 us-listed entries (BRAI, BTCT,
+CCHH, CDTG, CHNR, CLWT, CRE, CUPR, CURR) are all already-`pending` FPI
+skips re-confirmed earlier tonight/this week (`lastChecked` 2026-10-17/19,
+`nextExpectedFiling` estimates still in the future) — correctly still
+listed since `next-batch` re-lists anything not `done`/`skipped`, not
+re-researched. With the **us-listed cap (~10/night) already at 8/10** from
+this firing's own first batch (DMRA...DORM), only **2 more** report-periods
+of us-listed room remained tonight. Verified filer type on EDGAR directly
+(company_tickers.json + submissions JSON) for the next 6 real candidates
+before dispatching subagents: **DRH** and **DRS** are US-domestic 10-Q
+filers (good); **DRTS** (Alpha Tau Medical, Israel) and **DRUG** (Bright
+Minds Biosciences, Canada) are 6-K-only FPIs (skipped, no subagent spent);
+**DRIO** (DarioHealth) and **DRMA** (Dermata Therapeutics) are also
+US-domestic 10-Q filers but left for the next firing since the 2-report
+us-listed room was spent on DRH/DRS first.
+
+**2 opus subagents dispatched for DRH and DRS, both succeeded, both
+sanity-checked live:**
+- **DRH** (DiamondRock Hospitality) Q2 2026, new company — hotel REIT.
+  Revenue +4.1% to $318.3M; net income to common +135.7% to $90.5M ($0.44
+  diluted EPS), ~$0.15 of that EPS from a Courtyard NY Fifth Avenue sale
+  gain plus a Chicago property-tax settlement. Comparable RevPAR +7.0% to
+  $240.79; adjusted FFO/share $0.44 (+25.7%). FY2026 guidance raised
+  (RevPAR growth 2.5-4.0%, adjusted FFO/share $1.18-1.23), dividend raised
+  $0.09→$0.11. Published:
+  https://financialreportinsights.com/companies/drh/2026/q2.
+- **DRS** (Leonardo DRS) Q2 2026, new company — defense electronics.
+  Revenue +10.1% to $913M; net earnings +59.3% to $86M, diluted EPS $0.32
+  (+60%, adjusted EPS $0.35 +52%); ~$0.08 of the EPS gain from favorable
+  contract re-estimates and a lower tax rate, so underlying growth is
+  closer to 30%. Record funded backlog $5,092M (+16.9%), book-to-bill
+  1.2x. Pending $450M Raft acquisition closing Q4 2026. FY2026 guidance
+  raised. Published:
+  https://financialreportinsights.com/companies/drs/2026/q2.
+
+**This firing's contribution: 1 COMPARISON (BAC vs WFC Q3 2026) + 2 new
+us-listed report-periods (DRH, DRS) + 2 FPI skips (DRTS, DRUG), at
+26/40 of the ~40 report-period cap tonight (24 from the first firing + 2
+new this firing) and 10/10 of the ~10 us-listed-per-night cap (now
+fully used for tonight — no more us-listed candidates should be worked
+tonight even though plenty of overall-cap headroom remains).** Next in
+file order for a later firing (once there's budget outside the us-listed
+cap — S&P 500 tier-1 is empty, so later firings should check tier 0 again
+and otherwise hold): DRIO (DarioHealth) and DRMA (Dermata Therapeutics),
+both confirmed US-domestic 10-Q filers, ready to research next.
