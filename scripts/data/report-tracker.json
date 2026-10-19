@@ -34637,5 +34637,29 @@
     "status": "skipped",
     "skipReason": "SPAC (SEC SIC code: BLANK CHECKS), no operating business or financial results to analyze.",
     "lastChecked": "2026-10-18"
+  },
+  "EWAV": {
+    "name": "East West Ave Acquisition Corp.",
+    "status": "skipped",
+    "skipReason": "SPAC (SIC: Blank Checks), no operating business",
+    "lastChecked": "2026-10-19"
+  },
+  "PLUN": {
+    "name": "Plutonian Acquisition Corp. II",
+    "status": "skipped",
+    "skipReason": "SPAC (SIC: Blank Checks), no operating business",
+    "lastChecked": "2026-10-19"
+  },
+  "ILLU": {
+    "name": "Illumination Acquisition Corp. I",
+    "status": "skipped",
+    "skipReason": "SPAC (SIC: Blank Checks), no operating business",
+    "lastChecked": "2026-10-19"
+  },
+  "SAGU": {
+    "name": "Shreya Acquisition Group",
+    "status": "skipped",
+    "skipReason": "SPAC (SIC: Blank Checks), no operating business",
+    "lastChecked": "2026-10-19"
   }
 }
