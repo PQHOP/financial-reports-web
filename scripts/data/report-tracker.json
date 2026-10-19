@@ -34705,5 +34705,47 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-19"
+  },
+  "DNMX": {
+    "name": "Dynamix Corp III",
+    "status": "skipped",
+    "skipReason": "SPAC (SIC: Blank Checks), no operating business",
+    "lastChecked": "2026-10-19"
+  },
+  "DOGZ": {
+    "name": "Dogness (International) Corporation",
+    "status": "skipped",
+    "skipReason": "foreign private issuer (files 20-F/6-K, not 10-K/10-Q)",
+    "lastChecked": "2026-10-19"
+  },
+  "DPRO": {
+    "name": "Draganfly Inc.",
+    "status": "skipped",
+    "skipReason": "foreign private issuer (Canadian, files 6-K, no 10-K/10-Q on EDGAR)",
+    "lastChecked": "2026-10-19"
+  },
+  "DPU": {
+    "name": "Nexpu Ltd.",
+    "status": "skipped",
+    "skipReason": "foreign private issuer (files 6-K, no 10-K/10-Q on EDGAR)",
+    "lastChecked": "2026-10-19"
+  },
+  "DOO": {
+    "name": "BRP Inc.",
+    "status": "skipped",
+    "skipReason": "Canadian MJDS filer (40-F/6-K, not 10-K/10-Q)",
+    "lastChecked": "2026-10-19"
+  },
+  "DOX": {
+    "name": "Amdocs Limited",
+    "status": "skipped",
+    "skipReason": "foreign private issuer (Guernsey, files 6-K, no 10-K/10-Q on EDGAR)",
+    "lastChecked": "2026-10-19"
+  },
+  "DOYU": {
+    "name": "DouYu International Holdings Limited",
+    "status": "skipped",
+    "skipReason": "foreign private issuer (China ADR, files 20-F/6-K, not 10-K/10-Q)",
+    "lastChecked": "2026-10-19"
   }
 }
