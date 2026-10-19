@@ -7,12 +7,23 @@ import { articlePath } from "@/lib/articles";
 import { systemReports } from "@/lib/community";
 import type { Metadata } from "next";
 import hotList from "../../scripts/data/priority-tickers.json";
+import sp500 from "../../scripts/data/sp500.json";
 import { formatFilingDate, loadTracker } from "@/lib/tracker";
 import { cleanCompanyName } from "@/lib/companyName";
+import { periodLabels } from "@/lib/period";
+import { availableScorecards } from "@/lib/scorecard";
+import { scorecardPath } from "@/lib/scorecardPath";
 
 // Most-searched tickers first (same list the report backlog is worked in).
 const POPULAR_TICKERS: string[] = hotList.tickers;
 const POPULAR_LIMIT = 16;
+// Hot list plus the S&P 500: the companies people search for by name. Their
+// newest results lead the homepage so a results-day visitor sees BAC's Q3,
+// not the six micro-caps the backlog happened to publish last.
+const WELL_KNOWN: string[] = [...new Set([...POPULAR_TICKERS, ...sp500.map((c) => c.ticker)])];
+const SEASON_LIMIT = 6;
+const LATEST_LIMIT = 6;
+const SEASON_ARTICLES = 4;
 const UPCOMING_DAYS = 7;
 const UPCOMING_LIMIT = 12;
 
@@ -61,7 +72,17 @@ async function reportingSoon() {
 }
 
 export default async function Home() {
-  const [industries, latest, guides, briefs, popularCandidates, soon] = await Promise.all([
+  const [
+    industries,
+    latestCandidates,
+    season,
+    seasonArticles,
+    scorecards,
+    guides,
+    briefs,
+    popularCandidates,
+    soon,
+  ] = await Promise.all([
     prisma.industry.findMany({
       orderBy: { name: "asc" },
       include: {
@@ -75,9 +96,22 @@ export default async function Home() {
     prisma.report.findMany({
       where: systemReports,
       orderBy: { publishedAt: "desc" },
-      take: 6,
+      take: LATEST_LIMIT + SEASON_LIMIT,
       include: { company: { select: { name: true, ticker: true, slug: true } } },
     }),
+    prisma.report.findMany({
+      where: { ...systemReports, company: { ticker: { in: WELL_KNOWN } } },
+      orderBy: { publishedAt: "desc" },
+      take: SEASON_LIMIT,
+      include: { company: { select: { name: true, ticker: true, slug: true } } },
+    }),
+    prisma.article.findMany({
+      where: { kind: { in: ["COMPARISON", "PREVIEW"] } },
+      orderBy: { publishedAt: "desc" },
+      take: SEASON_ARTICLES,
+      select: { slug: true, kind: true, title: true },
+    }),
+    availableScorecards(),
     prisma.article.findMany({
       where: { kind: "GUIDE" },
       orderBy: { publishedAt: "desc" },
@@ -96,6 +130,16 @@ export default async function Home() {
     }),
     reportingSoon(),
   ]);
+
+  // "Latest reports" skips what the season section already shows.
+  const seasonIds = new Set(season.map((r) => r.id));
+  const latest = latestCandidates.filter((r) => !seasonIds.has(r.id)).slice(0, LATEST_LIMIT);
+  // The scorecard for the period the newest well-known result belongs to,
+  // when enough companies have reported it; otherwise the newest scorecard.
+  const seasonPeriod = season[0]
+    ? scorecards.find((c) => c.year === season[0].year && c.period === season[0].period) ??
+      scorecards[0]
+    : scorecards[0];
 
   const popular = popularCandidates
     .sort(
@@ -186,6 +230,43 @@ export default async function Home() {
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {season.length > 0 && (
+        <section className="flex flex-col gap-3">
+          <div className="flex items-baseline justify-between">
+            <h2 className="text-lg font-medium">Earnings season: latest results</h2>
+            {seasonPeriod && (
+              <Link
+                href={scorecardPath(seasonPeriod.year, seasonPeriod.period)}
+                className="text-sm text-zinc-500 hover:underline"
+              >
+                {`${periodLabels[seasonPeriod.period]} ${seasonPeriod.year} scorecard (${seasonPeriod.count} companies) →`}
+              </Link>
+            )}
+          </div>
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+            {season.map((report) => (
+              <li key={report.id}>
+                <ReportCard report={report} />
+              </li>
+            ))}
+          </ul>
+          {seasonArticles.length > 0 && (
+            <ul className="flex flex-wrap gap-2">
+              {seasonArticles.map((article) => (
+                <li key={article.slug}>
+                  <Link
+                    href={articlePath(article.kind, article.slug)}
+                    className="block rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm hover:border-zinc-400"
+                  >
+                    {article.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </section>
       )}
 
