@@ -16872,3 +16872,42 @@ file order for a later firing (once there's budget outside the us-listed
 cap — S&P 500 tier-1 is empty, so later firings should check tier 0 again
 and otherwise hold): DRIO (DarioHealth) and DRMA (Dermata Therapeutics),
 both confirmed US-domestic 10-Q filers, ready to research next.
+
+**Third firing.** Network check passed (SEC 403 without a UA header is
+SEC's own response, confirmed 200 with the UA; financialreportinsights.com
+200). `git pull --rebase` clean, no new commits. Re-ran
+`scan-recent-filings`: 0 fresh candidates (10-17/18/19 all show 0 filings —
+EDGAR's daily index for the current/just-elapsed days isn't posted yet).
+`next-batch -- --n 10` returned only `4-us-listed-backlog` entries (8
+already-skipped-FPI re-lists plus DRIO/DRMA) — confirms tier 0, hot-list
+rewrites (10/10 done), and S&P 500 tier-1 are all exhausted for tonight,
+and the us-listed cap (10/10) is already used, so none of DRIO/DRMA/FPIs
+could be worked this firing per the budget order.
+
+With 1 of the 2-per-night comparison slots still open, dispatched 1 opus
+subagent to write a **comparison** from already-published figures only (no
+new EDGAR research): **BNY Mellon vs State Street, Q3 2026** — both
+custody/trust banks, both published fresh tonight, no existing comparison
+for this pair. Subagent read both live report pages in full, found no
+efficiency ratio reported by either (used expenses/revenue as a stand-in,
+labeled as such), and flagged that BNY's net income is already
+common-shareholder net income while State Street's headline figure is
+total net income (gave both of State Street's numbers). Verdict: State
+Street had the stronger quarter (revenue +12.9% vs +11.7%, EPS +32.7% vs
++24.5%, NII +20.8% vs +15.1%, wider operating leverage, raised guidance);
+BNY still leads on profitability levels (38.5% pre-tax margin, 29.0%
+ROTCE). Published:
+https://financialreportinsights.com/insights/bny-vs-stt-q3-2026 — sanity
+check passed (200, Takeaway + both companies' related-report cards
+present, not truncated).
+
+**This firing's contribution: 1 COMPARISON (BNY vs STT Q3 2026), 0 new
+report-periods (none available to work within tonight's caps). Tonight's
+totals unchanged at 26/40 report-periods, 10/10 hot-list rewrites, 10/10
+us-listed cap, now 2/2 comparisons (cap reached for tonight).** Nothing
+further is workable tonight under the budget order: tier 0 empty, hot-list
+rewrites done, S&P 500 tier-1 empty, us-listed capped, comparisons capped.
+A later firing should re-run `scan-recent-filings` first (tier 0 can
+refill as EDGAR's daily index catches up through the evening) and
+otherwise hold — DRIO and DRMA remain next in file order once the
+us-listed cap resets tomorrow night.
