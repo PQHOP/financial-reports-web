@@ -34661,5 +34661,49 @@
     "status": "skipped",
     "skipReason": "SPAC (SIC: Blank Checks), no operating business",
     "lastChecked": "2026-10-19"
+  },
+  "EONR": {
+    "name": "EON Resources Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q1",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfharoc000507jmntec4kgu"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-03-31",
+      "filedAt": "2026-10-13"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q2 2026, overdue)",
+      "estimate": "2026-10-19",
+      "basis": "Q2 2026 10-Q was due around mid-August and has not been filed; late filer with ongoing FY2025 restatement (10-K/A filed same week)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "NUCL": {
+    "name": "Eagle Nuclear Energy Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhb63o000107l5dxcc5pw5"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-19"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY ending 2026-11-30)",
+      "estimate": "2027-02-28",
+      "basis": "fiscal year end 2026-11-30; first 10-K after Feb 2026 de-SPAC",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
   }
 }
