@@ -53,13 +53,34 @@ date and commit.
   growing, it is a candidate for a Vercel Firewall challenge rule by
   ASN (user's call; find the ASN in the Vercel Firewall traffic view —
   not in the API this routine has).
-- **Watch after 2026-10-19 (CLAUDE.md changes, see Done):** (a) does
-  tonight's nightly log still show "collision"/"already exists" entries
-  now that a firing is capped at ~8 tier-1 report-periods; (b) does
+- **Watch after 2026-10-19 (CLAUDE.md changes, see Done):** (a) **10-19
+  night: no collision** — the per-firing cap held (first firing 24 incl.
+  14 tier-0 banks + 8 tier-1, second 2 us-listed + 1 comparison, third 1
+  comparison, firings 4-7 exited with nothing workable); the night ended
+  at 26/40 because the us-listed cap (10/10) was reached and S&P 500
+  tier 1 is empty — expected under the 10-19 rules. (b) does
   `earnings-preview-2026-10-26` appear on `/insights` next Sunday
-  (2026-10-25 16:00 UTC firing). If either rule is ignored again, the
+  (2026-10-25 16:00 UTC firing). If that rule is ignored again, the
   routine's stored prompt (not CLAUDE.md) is where it has to go — user's
   call, this environment has no RemoteTrigger access.
+- **Nightly found and fixed a tier-0 blind spot (10-19 night, its own
+  commit `5dc995e`):** SEC `company_tickers.json` has one row per security,
+  so an issuer with preferred shares (SCHW-PJ, USB-PS…) overwrote its
+  common ticker in the CIK map and its earnings 8-Ks never reached tier 0
+  — for weeks. After the fix 22 candidates surfaced at once. Ops lesson:
+  a night with "0 tier-0 candidates" in mid-earnings-season is itself a
+  bug signal; `site-metrics` can't see it, so check the nightly log's
+  tier-0 count against the week's known reporters (this week: TSLA 10-21,
+  IBM/T/INTC 10-22). Also from that log: **DOMO's operating business was
+  sold; the shell is now Huckleberry.ai (HUCK)** — `us-listed.json` swap
+  is the nightly routine's, not ops'.
+- **GSC sitemap re-downloaded 2026-10-18 22:52 UTC** (first fetch since
+  10-16; 2,763 submitted, 0 errors). One data point, not a trend; if
+  `lastDownloaded` moves again by 10-21 the daily crawl is recovering.
+  `indexSample` on 10-20: `/learn` flipped from "Discovered – currently
+  not indexed" to "URL is unknown to Google" (homepage still Duplicate on
+  the 09-22 crawl; `/companies/aapl` still never crawled). Could be API
+  noise; watch two more days before reading anything into it.
 - **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
   is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
   directions wait on the user's answers in that report.
@@ -162,6 +183,20 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-20 — Homepage: "Earnings season: latest results" section**
+  (`7567cdf`, `8f9f967`; prod `dpl_DCVJSzcjxWce7gWQAmetRU9PUcFq`). On the
+  morning after 14 bank Q3 reports, the homepage's "Latest reports" showed
+  DRH, DRS, DOMO, DORM, DOCU, DNLI (the backlog's last six) and none of
+  BAC/WFC/GS/MS/C/SCHW. New section above it: the newest hot-list/S&P 500
+  reports (pool of 16 newest, hot-list tickers ranked first), a link to
+  that period's scorecard ("Q3 2026 scorecard (74 companies)") and the
+  latest COMPARISON/PREVIEW articles; "Latest reports" skips what it shows.
+  `/earnings` got an "Already reported: Q3 2026 scorecard" line via
+  `seasonScorecard()` in `src/lib/scorecard.ts` (the first version linked
+  "Full Year 2026": `availableScorecards()[0]` ranks ANNUAL above Q3).
+  Still ISR; two extra `prismaCached` reads on the homepage, one on
+  `/earnings`. Health 9/9 after both deploys.
 
 - **2026-10-19 — "Updated <date>" in the report byline** (`59d4651`, prod
   `dpl_2JGtHdMiTU6C5hswJgHntmHPfHFv`). 48 hot-list reports have been
