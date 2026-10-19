@@ -16965,3 +16965,31 @@ remain exhausted.** Nothing was touched in `report-tracker.json` this
 firing, so only this log entry is being committed. Next firing: re-run
 `scan-recent-filings` first; otherwise the next workable items are DRIO
 and DRMA once the us-listed cap resets tomorrow night.
+
+**Sixth firing.** Network check passed (`curl` to sec.gov: 403 without a
+User-Agent header as expected — SEC's own response, not a proxy denial —
+then 200 with the required UA; financialreportinsights.com reachable
+too). Repo was again in a detached-HEAD state at the tip of a fresh
+container; `git checkout -B master origin/master` reset it cleanly, no
+lost work (origin/master already carried the fifth firing's commit).
+`npm install` with a dummy `DATABASE_URL` for the fresh container; the
+incidental `package-lock.json` diff from a different local npm version
+was discarded with `git checkout --` before touching anything else.
+Re-ran `scan-recent-filings`: 0 fresh candidates (2026-10-19/18/17 still
+show 0 filings — EDGAR's daily index for today isn't posted yet; 10-16
+through 10-13 show 199-295 each, already processed). `next-batch -- --n
+15` returned 15 entries, all `4-us-listed-backlog` (BRAI...DSGN) —
+confirms tier 0, the 10/10 hot-list rewrites, and S&P 500 tier-1 are
+still fully exhausted for tonight. Today is Monday/Tuesday JST (not
+Sunday), so no earnings preview is due. With the us-listed cap (10/10)
+and comparison cap (2/2) both already used tonight, nothing in the
+budget order is workable this firing either.
+
+**This firing's contribution: 0 new report-periods, 0 skips. Tonight's
+totals unchanged at 26/40 report-periods, 10/10 hot-list rewrites, 10/10
+us-listed cap, 2/2 comparisons — all caps/tiers that can be worked
+tonight remain exhausted.** Nothing was touched in `report-tracker.json`
+this firing, so only this log entry is being committed. Next firing:
+re-run `scan-recent-filings` first (EDGAR's index for 10-19/10-20 may
+post later tonight); otherwise the next workable items are DRIO and
+DRMA once the us-listed cap resets tomorrow night.
