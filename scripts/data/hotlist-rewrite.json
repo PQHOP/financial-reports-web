@@ -830,7 +830,7 @@
       "reportId": "cmucsbikq000604jvx3t4mbd3",
       "url": "https://financialreportinsights.com/companies/blk/2026/q2",
       "nextExpectedFiling": "2026-11-05",
-      "status": "pending"
+      "status": "superseded"
     },
     {
       "ticker": "SCHW",
@@ -870,7 +870,7 @@
       "reportId": "cmucsj1qu000404lafehpe9lu",
       "url": "https://financialreportinsights.com/companies/pnc/2026/q2",
       "nextExpectedFiling": "2026-11-03",
-      "status": "pending"
+      "status": "superseded"
     },
     {
       "ticker": "TMUS",
