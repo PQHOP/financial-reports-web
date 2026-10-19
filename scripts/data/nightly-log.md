@@ -16668,3 +16668,79 @@ see this count and exit immediately with no further research. Note:
 DMRA, DMRC, DNLI); this firing picked DLTH/DMAC/DMRC and the two SPAC
 skips but never actually reached DMRA. Next in file order for the
 next firing: DMRA, then DNLI.**
+
+### 2026-10-19 night (16:00 UTC 2026-10-19 → 22:59 UTC 2026-10-19 / 01:00–07:59 JST 2026-10-20)
+
+New night, cap resets to ~40. Network check passed (200 on sec.gov with
+required User-Agent; financialreportinsights.com reachable). `npm
+install` + `npx prisma generate` (with a dummy `DATABASE_URL`, since
+admin-publish/scan-recent-filings need no real DB) needed to set up a
+fresh container. Repo was in a detached HEAD state pointing at
+`origin/master`'s tip; reset local `master` to track it cleanly, no lost
+work.
+
+**Hot-list rewrite (10/10 allotment used tonight, done first per the
+operating-window rule):** of the 70 pending items, skipped everything
+with `nextExpectedFiling` inside 10 days (deep earnings season — most of
+the hot list), and also skipped BLK and PNC: both were already
+republished 2026-10-15/16 in the current format (confirmed "At a glance"
+live), so marked `superseded` instead of rewriting. Rewrote: **CRWD**
+Q2, **ADI** Q3, **CMG** Q2, **LULU** Q2, **SCHW** Q2, **C** Q2, **USB**
+Q2, **CVS** Q2, **UPS** Q2, **FDX** ANNUAL — all 10 succeeded, each
+re-verified every figure against the primary filing (a few small
+corrections each, e.g. CMG's prior-year operating margin, SCHW's
+asset-yield claim, LULU's missing guidance cut), added At a glance/
+quality-check/"did last time's read hold up" sections, and passed the
+post-publish live-page check. Queue status after tonight: 58/121 done,
+58 pending, 5 superseded.
+
+**Tier 0 — `scan-recent-filings` initially reported 0 fresh candidates
+despite clear evidence of fresh S&P 500 earnings 8-Ks (two independent
+rewrite subagents, for SCHW and USB, found and read Q3 2026 earnings
+releases the scanner had missed).** Investigated and found a real bug in
+`loadCikTickerMap()`: SEC's `company_tickers.json` lists one row per
+listed security, so an issuer with preferred shares/warrants under the
+same CIK as its common stock (e.g. SCHW's CIK also has SCHW-PJ, USB's
+also has USB-PS) was overwriting the common ticker in the CIK→ticker map
+with whichever row came later in the file — silently dropping every such
+S&P 500 company's earnings 8-Ks from tier 0 for weeks. Fixed in
+`scripts/scan-recent-filings.ts` (keep the plain ticker, never let a
+suffixed one replace it) and committed. Re-ran the scan: **22 fresh
+candidates** surfaced, 16 of them S&P 500/hot-list earnings 8-Ks.
+
+Worked through all 16 Q3 2026 earnings-8-K candidates (hot list first,
+then the rest of S&P 500), writing from the 8-K Exhibit 99.1/99.2 since
+the full 10-Q isn't filed yet for any of them (each report says so):
+
+- **Published (14):** SCHW, USB, BAC, MS, C, GS, WFC (hot list), then
+  CFG, MTB, RF, TFC, BNY, PLD, STT (rest of S&P 500). Each report
+  includes At a glance, a quality-check section, "did last time's read
+  hold up" against the existing Q2 2026 report, a Takeaway and an
+  outlook. Notable figures: BAC's Q3 net income fell 16.8% on a $1.2B
+  AML penalty; Citi's EPS +53% (buybacks ~10 of 27 points ex a prior-year
+  write-down); Truist's reported EPS fell to $0.56 from $1.04 on a $1.4B
+  loss selling securities (adjusted EPS +12%); TFC also disclosed an
+  Oct 14 LightStream sale to Carlyle same week. Full list of canonical
+  URLs: /companies/{schw,usb,bac,ms,c,gs,wfc,cfg,mtb,rf,tfc,bny,pld,stt}/2026/q3.
+- **Held back, not published (2):** **PRU**'s Item-2.02 8-K was a
+  segment-recast preview of *Q2* figures, not Q3 results — the filing
+  itself says real Q3 results are scheduled for 2026-11-03 (now recorded
+  as `confirmed`). **OXY**'s Item-2.02 8-K was a non-numeric "pre-earnings
+  considerations" filing (explicitly states it is not an earnings
+  estimate) — no metrics to publish from. Both left `pending` with
+  corrected `nextExpectedFiling`.
+
+**Confirmed 8 more us-listed FPI skips (re-checked EDGAR directly,
+company_tickers.json + submissions JSON) before discovering the scan
+bug:** BRAI, BTCT, CCHH, CDTG, CHNR, CLWT, CRE, CUPR — all file 20-F/6-K,
+not 10-K/10-Q; matches each one's existing tracker entry exactly
+(`lastChecked` refreshed only, no change to the detailed skipReason).
+
+**Running tonight total: 14 new report-periods (SCHW, USB, BAC, MS, C,
+GS, WFC, CFG, MTB, RF, TFC, BNY, PLD, STT) + 10/10 hot-list rewrites + 2
+tier-0 holds (PRU, OXY, correctly not published) + 8 FPI skips
+re-confirmed + 1 scan-script bug fix, at 14/40 of the ~40 cap.** Plenty
+of headroom left — continuing with the remaining tier-0 candidates
+(6 us-listed new-company 10-K/10-Q filings: EWAV, PLUN, ILLU, EONR, NUCL,
+SAGU) and then the plain us-listed backlog (next in file order: DMRA,
+then DNLI) if time/cap allow.
