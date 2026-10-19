@@ -700,7 +700,8 @@
       "reportId": "cmucrrun3000004la6jucr1mc",
       "url": "https://financialreportinsights.com/companies/crwd/2026/q2",
       "nextExpectedFiling": "2026-11-26",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "LRCX",
@@ -740,7 +741,8 @@
       "reportId": "cmu76n5oc000004kwkjko4jzx",
       "url": "https://financialreportinsights.com/companies/adi/2026/q3",
       "nextExpectedFiling": "2026-12-15",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "HOOD",
@@ -790,7 +792,8 @@
       "reportId": "cmucs94dl000304jvy9129qhx",
       "url": "https://financialreportinsights.com/companies/cmg/2026/q2",
       "nextExpectedFiling": "2026-10-30",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "LULU",
@@ -800,7 +803,8 @@
       "reportId": "cmucs9mx1000404jve8lqjgdm",
       "url": "https://financialreportinsights.com/companies/lulu/2026/q2",
       "nextExpectedFiling": "2026-12-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "ISRG",
@@ -840,7 +844,8 @@
       "reportId": "cmucsinp5000304laazp59ijx",
       "url": "https://financialreportinsights.com/companies/schw/2026/q2",
       "nextExpectedFiling": "2026-11-05",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "C",
@@ -850,7 +855,8 @@
       "reportId": "cmucsiz2f000604lbp0uj9j8c",
       "url": "https://financialreportinsights.com/companies/c/2026/q2",
       "nextExpectedFiling": "2026-11-04",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "USB",
@@ -860,7 +866,8 @@
       "reportId": "cmucsia8i000704jvcu14l6gm",
       "url": "https://financialreportinsights.com/companies/usb/2026/q2",
       "nextExpectedFiling": "2026-11-04",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "PNC",
@@ -900,7 +907,8 @@
       "reportId": "cmucw3tn0000304jszsubd1ah",
       "url": "https://financialreportinsights.com/companies/cvs/2026/q2",
       "nextExpectedFiling": "2026-11-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "MDLZ",
@@ -970,7 +978,8 @@
       "reportId": "cmucwc4w8000404jsh0f0zaak",
       "url": "https://financialreportinsights.com/companies/ups/2026/q2",
       "nextExpectedFiling": "2026-11-04",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "FDX",
@@ -980,7 +989,8 @@
       "reportId": "cmucwdxrc000604js4m6e1pmk",
       "url": "https://financialreportinsights.com/companies/fdx/2026/annual",
       "nextExpectedFiling": "2027-02-20",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-19"
     },
     {
       "ticker": "DE",

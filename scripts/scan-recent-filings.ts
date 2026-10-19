@@ -120,8 +120,20 @@ async function loadCikTickerMap(): Promise<Map<string, string>> {
   if (!text) throw new Error("could not fetch SEC company_tickers.json");
   const raw = JSON.parse(text) as Record<string, { cik_str: number; ticker: string; title: string }>;
   const map = new Map<string, string>();
+  // SEC lists one row per listed security, so an issuer with preferred
+  // shares/warrants under the same CIK (e.g. SCHW's CIK also has SCHW-PJ,
+  // USB's also has USB-PS) appears multiple times. A later row for the
+  // same CIK must never clobber an already-mapped plain ticker — that
+  // silently dropped every such S&P 500 earnings 8-K from tier 0 for
+  // weeks (discovered 2026-10-19 while investigating why SCHW/USB's
+  // 10-15 earnings releases never surfaced as fresh candidates).
   for (const entry of Object.values(raw)) {
-    map.set(String(entry.cik_str), entry.ticker.toUpperCase());
+    const cik = String(entry.cik_str);
+    const ticker = entry.ticker.toUpperCase();
+    const existing = map.get(cik);
+    if (existing && !existing.includes("-")) continue; // keep the plain ticker already found
+    if (existing && ticker.includes("-")) continue; // don't replace a plain ticker with a suffixed one
+    map.set(cik, ticker);
   }
   return map;
 }
