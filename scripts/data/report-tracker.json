@@ -3760,22 +3760,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubcfzwf000004l2im6o231b"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfgvzj8000207l21udt2nfm"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-26",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-28; WFC typically reports Q3 in mid-to-late October",
+      "estimate": "2026-10-30",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-19"
   },
   "MRK": {
     "name": "Merck & Co.",
@@ -4024,44 +4024,44 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmube1sg6000604l8pbkchyqy"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfgu03s000308la7mmv8gor"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-03"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-30",
-      "basis": "prior-year Q3 10-Q filed 2025-10-31 plus ~90-day cadence",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-19"
   },
   "MS": {
     "name": "Morgan Stanley",
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmube3ak4000204l7d7jbfocc"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfgtr35000208lar16v5te3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-14"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-30",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-08-04; MS typically reports Q3 in late October",
+      "estimate": "2026-11-04",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-19"
   },
   "LLY": {
     "name": "Lilly (Eli)",
@@ -4374,22 +4374,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmua7oc1s000104l5db1s5qpn"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfgt9hm000108lavw11f077"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-30",
-      "basis": "~90 days after the Q2 filing, consistent with BAC quarterly cadence",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-19"
   },
   "CRM": {
     "name": "Salesforce",
@@ -5206,66 +5206,66 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucsinp5000304laazp59ijx"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfgt8wx000008laz5k15a00"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-07"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-05",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-07",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-19"
   },
   "C": {
     "name": "Citigroup Inc.",
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucsiz2f000604lbp0uj9j8c"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfgvxkg000107l2tm2q13zs"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-11-04",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-06",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-19"
   },
   "USB": {
     "name": "U.S. Bancorp",
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucsia8i000704jvcu14l6gm"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfgtp1h000007l260j30mmn"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-04",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-06",
+      "estimate": "2026-11-03",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-19"
   },
   "PNC": {
     "name": "PNC Financial Services Group",
