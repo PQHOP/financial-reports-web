@@ -7653,22 +7653,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/bny/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfh2xd8000107jml94ui6uf"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-15",
-      "basis": "Q2 earnings 8-K 07-15; Q3 10-Q ~10-30",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-19",
     "reports": [
       {
         "year": 2026,
@@ -8613,22 +8613,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cfg/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfh2lnb000007jm59v11yv1"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-03"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-16"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-15",
-      "basis": "earnings 8-Ks 04-16 and 07-16; 10-Q ~5 weeks later",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-19",
     "reports": [
       {
         "year": 2026,
@@ -12947,22 +12947,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/mtb/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfh29mh000007l5wtt9qp0a"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-16"
     },
     "nextExpectedFiling": {
-      "type": "8-K (Q3 2026 earnings)",
-      "estimate": "2026-10-15",
-      "basis": "based on July 15 timing of Q2 release",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-19"
   },
   "MPC": {
     "name": "Marathon Petroleum",
@@ -13742,17 +13742,17 @@
       "url": "https://financialreportinsights.com/companies/oxy/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02, pre-earnings considerations — not Q3 results)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-13"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-04",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "8-K (Item 2.02, Q3 2026 earnings release) + 10-Q",
+      "estimate": "2026-11-10",
+      "basis": "Occidental filed Q3 2025 results around 2025-11-12; this 8-K explicitly is not an earnings estimate",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-19"
   },
   "ODFL": {
     "name": "Old Dominion",
@@ -14302,22 +14302,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj8hfim000004lhvujoj9zq"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfh3sw1000408lateixvuel"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings (Q3 2026), 10-Q late Oct",
-      "estimate": "2026-10-15",
-      "basis": "Prologis press release 2026-09-03: Q3 results Oct 15, 2026",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-19"
   },
   "PRU": {
     "name": "Prudential Financial",
@@ -14329,17 +14329,17 @@
       "url": "https://financialreportinsights.com/reports/cmuj8etzf000104l69tdl0hn0"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
+      "type": "8-K (Item 2.02, segment-recast preview — not Q3 results)",
       "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "filedAt": "2026-10-15"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings (Q3 2026), 10-Q ~2026-11-04",
+      "type": "8-K (Item 2.02, Q3 2026 earnings release)",
       "estimate": "2026-11-03",
-      "basis": "Q3 2025 release 10-29; 2026 quarters ~5 days later (May 5, Aug 4)",
-      "confidence": "estimated"
+      "basis": "filing itself states Q3 results and financial supplement are scheduled for release 2026-11-03",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-19"
   },
   "PEG": {
     "name": "Public Service Enterprise Group",
@@ -14632,22 +14632,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk0tpsk000304l5kzfmkky7"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfh3ylk000207jm72wiclis"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-16"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K / 10-Q (Q3 2026)",
-      "estimate": "2026-10-17",
-      "basis": "Q2 earnings released 2026-07-17, ~90-day cadence",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-19"
   },
   "RPM": {
     "name": "RPM International Inc.",
@@ -15138,22 +15138,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1jl1k000804jf5qti3cqz"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfh3zwb000307jmqeaslm0q"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-14"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K (Q3 2026)",
-      "estimate": "2026-10-16",
-      "basis": "Q1/Q2 earnings released April 17 and July 16",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-19"
   },
   "STE": {
     "name": "Steris",
@@ -15600,22 +15600,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/tfc/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfh40yg000407jm472knknu"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-16"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-30",
-      "basis": "Q1/Q2 10-Qs filed ~2 weeks after earnings release (May 1, Jul 31); Q3 earnings 8-K expected ~2026-10-16 based on Apr 17/Jul 17 release pattern",
+      "estimate": "2026-11-03",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-19"
   },
   "TYL": {
     "name": "Tyler Technologies",
