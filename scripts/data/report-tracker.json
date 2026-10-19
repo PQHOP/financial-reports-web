@@ -34747,5 +34747,181 @@
     "status": "skipped",
     "skipReason": "foreign private issuer (China ADR, files 20-F/6-K, not 10-K/10-Q)",
     "lastChecked": "2026-10-19"
+  },
+  "DMRA": {
+    "name": "Damora Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhiv3a000108kx8yf6wxhh"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (next quarter)",
+      "estimate": "2026-11-10",
+      "basis": "~90 days after this 10-Q, typical quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DNLI": {
+    "name": "Denali Therapeutics Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhjqzb000508la9xlf02gz"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (next quarter)",
+      "estimate": "2026-11-05",
+      "basis": "~90 days after this 10-Q, typical quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DNTH": {
+    "name": "Dianthus Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhic6g000008kxwxp10aft"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (next quarter)",
+      "estimate": "2026-11-04",
+      "basis": "~90 days after this 10-Q, typical quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DNUT": {
+    "name": "Krispy Kreme, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhj0cy000208kxdmuf0baj"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (next quarter)",
+      "estimate": "2026-11-05",
+      "basis": "~90 days after this 10-Q, typical quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DOCU": {
+    "name": "DocuSign, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhjzw6000307l5ii38tm4q"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-09-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (next quarter)",
+      "estimate": "2026-12-04",
+      "basis": "~90 days after this 10-Q, typical quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DOMH": {
+    "name": "Dominari Holdings Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhjhb3000207l5ab806rus"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (next quarter)",
+      "estimate": "2026-11-12",
+      "basis": "~90 days after this 10-Q, typical quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DOMO": {
+    "name": "Domo, Inc. (now Huckleberry.ai, Inc. / HUCK, after 2026-09-22 asset sale to Progress Software)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhkmsr000507l5d8yj5i6u"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-09-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (next quarter)",
+      "estimate": "2026-12-10",
+      "basis": "~90 days after this 10-Q, typical quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
+  },
+  "DORM": {
+    "name": "Dorman Products, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-19",
+      "url": "https://financialreportinsights.com/reports/cmvfhk0c6000407l5bs8v4fcx"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": null,
+      "filedAt": "2026-08-04"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (next quarter)",
+      "estimate": "2026-11-04",
+      "basis": "~90 days after this 10-Q, typical quarterly cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-19"
   }
 }
