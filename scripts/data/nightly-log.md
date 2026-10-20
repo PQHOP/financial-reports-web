@@ -17246,3 +17246,26 @@ should re-run `scan-recent-filings` (tier 0 can refill as EDGAR's
 daily index updates through the evening) and otherwise stop/report
 nothing-to-do if tier 0 is still empty and no other tier has budget
 left.
+
+**Fifth firing.** Network check passed (sec.gov 403 without a UA as
+expected, 200 with the required UA; financialreportinsights.com 200).
+Repo was again in a detached HEAD at the current `origin/master` tip
+(683e72b); `git checkout -B master origin/master` fixed it, no stash
+needed (only an untracked `package-lock.json` diff from `npm install`,
+left alone). `scan-recent-filings` found 0 fresh candidates again
+(EDGAR's daily index for 2026-10-20 is still empty as of this scan —
+206-246 filings/day on the four prior days, 0 today, consistent with
+every scan tonight). `next-batch -- --n 15` confirmed S&P 500/hot list
+remain fully exhausted — all 15 printed candidates were
+`4-us-listed-backlog` (BRAI, BTCT, CCHH, CDTG, CHNR, CLWT, CRE, CUPR,
+CURR, DSY, DTI, DTIL, DTSQ, DTST, DUKR), and every other tier is
+already at tonight's cap: us-listed 10/10, comparisons 2/2, hot-list
+rewrites 10/10. Nothing published this firing — no tier had budget or
+a candidate to work with.
+
+**Running total tonight: still 14 report-periods, 2 skips, 10/10
+hot-list rewrites, 2/2 comparisons, 10/10 us-listed — all tonight's
+caps are now either spent or have no candidate, well under the ~40
+nightly ceiling.** Further firings tonight should keep re-running
+`scan-recent-filings` in case EDGAR's index fills in later in the
+evening; otherwise there is nothing left to do until tomorrow night.
