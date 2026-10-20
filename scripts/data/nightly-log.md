@@ -17151,4 +17151,25 @@ this firing researched 3 new us-listed tickers: DSP, DSWL, DSY.
   thin to analyze; its FY2026 20-F (year ended 2026-06-30) isn't filed
   yet, expected ~2026-10-31 (same cadence as last year's 20-F). Will
   retry once the 20-F lands.
+- **DTCX** (Datacentrex, Inc., formerly Thumzup Media; reverse
+  recapitalization with crypto miner Dogehash Technologies closed
+  2025-12-15) Q2 2026 — first report. Revenue flat at $1.91M but gross
+  margin fell to 10.7% from 48.2% on a 71% jump in power/hosting costs;
+  net loss widened to $5.47M on the fleet's two-year depreciation
+  schedule ($3.29M/quarter) plus stock pay. $51.9M cash at quarter-end,
+  of which $30M went into a 10.5% Eagle LNG stake on 2026-08-28 (after
+  the quarter).
+  [DTCX Q2 2026](https://financialreportinsights.com/companies/dtcx/2026/q2)
 
+This firing used all ~3 of tonight's remaining us-listed slots (DSP,
+DSWL, DTCX published; DSY researched but left pending — too thin a
+filing to write from, not a cap decision). **us-listed cap: 10/10 used
+tonight, no further us-listed publishes until tomorrow night.**
+Running total tonight after this firing: **14 report-periods published**
+(11 from the first firing + DSP, DSWL, DTCX), 2 skips (DSAC SPAC;
+DSY left pending with full detail in the tracker). 10/10 hot-list
+rewrites done. Well under the ~40 nightly cap, but us-listed is now
+fully used for tonight — any further firing tonight should move to
+remaining S&P 500 tier-1 backlog (checked empty by `next-batch` this
+firing, so likely none left), a comparison (0/2 used tonight), or stop
+if nothing else qualifies.
