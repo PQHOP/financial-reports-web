@@ -17290,3 +17290,29 @@ work with; report-tracker.json untouched.
 hot-list rewrites, 2/2 comparisons, 10/10 us-listed — unchanged from
 the fifth firing.** Nothing left to do until EDGAR's daily index
 refills or tomorrow night's window opens.
+
+**Seventh firing (07:04 JST, near the window's 07:59 close).** Network
+check passed (sec.gov 403 without a UA as expected, 200 with the
+required UA; both financialreportinsights.com and the vercel.app
+alias reachable). Repo was again in a detached HEAD at the current
+`origin/master` tip (319d173, matching the sixth firing's commit);
+`git checkout -B master origin/master` fixed it, clean tree
+otherwise. `npm install` hit its usual `prisma generate` failure
+(missing local `DATABASE_URL`, irrelevant to admin-publish/scan which
+need no DB) but `node_modules` was already populated from a prior
+firing. `scan-recent-filings` found 0 fresh candidates again (EDGAR's
+daily index for 2026-10-20 still shows 0 filings as of this scan).
+`next-batch -- --n 15` printed the same 15 `4-us-listed-backlog`
+candidates as the fifth and sixth firings (BRAI, BTCT, CCHH, CDTG,
+CHNR, CLWT, CRE, CUPR, CURR, DSY, DTI, DTIL, DTSQ, DTST, DUKR) —
+S&P 500/hot-list tier 1 is still fully exhausted, and every other tier
+is still at tonight's cap (us-listed 10/10, comparisons 2/2, hot-list
+rewrites 10/10). Nothing published this firing; report-tracker.json
+untouched.
+
+**Running total tonight: still 14 report-periods, 2 skips, 10/10
+hot-list rewrites, 2/2 comparisons, 10/10 us-listed — unchanged from
+the fifth and sixth firings.** With the window closing at 07:59 JST
+and nothing left available under any tier's cap, no further action
+this window; next night should start by re-running
+`scan-recent-filings` in case EDGAR's index for 10-20/10-21 fills in.
