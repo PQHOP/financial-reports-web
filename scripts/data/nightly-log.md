@@ -17173,3 +17173,36 @@ fully used for tonight — any further firing tonight should move to
 remaining S&P 500 tier-1 backlog (checked empty by `next-batch` this
 firing, so likely none left), a comparison (0/2 used tonight), or stop
 if nothing else qualifies.
+
+**Third firing.** Network check passed again (sec.gov 200 with the
+required UA, financialreportinsights.com 200), `npm install` run fresh
+(no `node_modules` in this container). `scan-recent-filings` found 0
+fresh candidates (tier 0 empty — EDGAR's daily index for 2026-10-20
+itself was empty when scanned, same as 10-17/10-18). `next-batch -- --n
+12` confirmed S&P 500/hot list still fully exhausted: every printed
+candidate was `4-us-listed-backlog` (BRAI, BTCT, CCHH, CDTG, CHNR,
+CLWT, CRE, CUPR, CURR, DSY, DTI, DTIL) — no new tier-1 room since
+us-listed is capped at 10/10 for tonight already.
+
+With tier 0/1 both exhausted for this firing, used the night's
+remaining comparison slot (0/2 used): **GS vs. MS Q3 2026** — both
+already published their Q3 2026 earnings-release reports on 2026-10-19
+with full `metrics`, no existing Q3 2026 comparison for this pair
+(only `gs-vs-ms-q2-2026` existed). Written entirely from the two
+reports' own published figures (no new SEC filing read): Goldman's
+23.0% revenue growth and 38.9% EPS growth vs. Morgan Stanley's 11.6%/
+8.2%, tracing the gap to Goldman's hedge-fund financing line (Equities
+financing +96%) plus a cycling nine-month tax benefit and buybacks,
+against Morgan Stanley's steadier Wealth-Management-driven growth and
+a carried-interest-reversal drag.
+[GS vs. MS Q3 2026](https://financialreportinsights.com/insights/gs-vs-ms-q3-2026)
+— spot-checked live post-publish (200, full content present, ends on
+the sourcing footnote, not truncated).
+
+**Running total tonight: still 14 report-periods** (a comparison
+article isn't a report-period), **1/2 comparisons used tonight**, 2
+skips, 10/10 hot-list rewrites done. Tier 0 and S&P-500 tier 1 remain
+exhausted; us-listed stays capped at 10/10 for tonight. Nothing left
+to publish from tiers 0/1 without exceeding tonight's us-listed cap —
+a further firing tonight should try one more comparison (1/2 slots
+left) or stop if none is found.
