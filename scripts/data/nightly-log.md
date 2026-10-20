@@ -17138,4 +17138,17 @@ this firing researched 3 new us-listed tickers: DSP, DSWL, DSY.
   after paying media sellers) grew a slower 24.5%, and a swing to a
   $1.8M GAAP net loss despite record revenue came down to +57% stock
   comp and TVision acquisition costs. [DSP Q2 2026](https://financialreportinsights.com/companies/dsp/2026/q2)
+- **DSWL** (Deswell Industries) FY2026 ANNUAL (year ended 2026-03-31) —
+  first report. Sales -9.3% to $61.3M, operating income -40% to $2.0M
+  (factories barely broke even, second half ran an operating loss), but
+  $8.3M of investment income (dividends/interest/securities gains) held
+  net income to only -4.6% at $10.6M; ~$82M cash/deposits/securities
+  with no debt.
+  [DSWL FY2026](https://financialreportinsights.com/companies/dswl/2026/annual)
+- **DSY** (Big Tree Cloud Holdings) — **skipped for now, left `pending`**:
+  only filing with financials covering any part of FY2026 is an H1 6-K
+  (period ended 2025-12-31) with no notes/MD&A/cash-flow statement, too
+  thin to analyze; its FY2026 20-F (year ended 2026-06-30) isn't filed
+  yet, expected ~2026-10-31 (same cadence as last year's 20-F). Will
+  retry once the 20-F lands.
 
