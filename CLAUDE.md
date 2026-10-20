@@ -57,7 +57,16 @@ visitor landing on the site sees analysis of a report that came out
    `scripts/data/recent-filings-candidates.json` (gitignored — a
    regenerated scan artifact, never commit it) sorted hot list → S&P 500 →
    us-listed, newest first within each. Work through that list before
-   touching the plain backlog below.
+   touching the plain backlog below. **Same-day filings come from live
+   sources since 2026-10-21** (ops fix): SEC only builds a day's daily
+   index at ~02:00 UTC the next day, so inside the window today's file
+   403s and the scan read every earnings day as "0 filings today" (on
+   2026-10-20, NFLX/GE/GM/RTX/ISRG and 15 other S&P 500 results were
+   invisible all night). Days newer than the newest daily index are now
+   read from EDGAR full-text search plus each hot-list company's
+   submissions JSON; `-- --no-live` turns that off. A scan printing
+   "0 filings" for today on a weekday in earnings season is a bug, not
+   a quiet day — say so in the nightly log.
 
    **`"done"` companies come back as `kind: "update"`** when the filing is
    newer than their tracker `lastFilingSeen.filedAt` (amendments
