@@ -17206,3 +17206,43 @@ exhausted; us-listed stays capped at 10/10 for tonight. Nothing left
 to publish from tiers 0/1 without exceeding tonight's us-listed cap —
 a further firing tonight should try one more comparison (1/2 slots
 left) or stop if none is found.
+
+**Fourth firing.** Network check passed (sec.gov 403 without UA as
+expected, 200 with the required UA; financialreportinsights.com 200).
+`scan-recent-filings` found 0 fresh candidates (tier 0 empty, same as
+every scan tonight). `next-batch -- --n 12` confirmed S&P 500/hot list
+still fully exhausted — every candidate printed was
+`4-us-listed-backlog` (BRAI, BTCT, CCHH, CDTG, CHNR, CLWT, CRE, CUPR,
+CURR, DSY, DTI, DTIL), and us-listed stays capped at 10/10 for
+tonight, so none of tier 0/1 was available this firing either.
+
+Used the night's last remaining comparison slot (1/2 used tonight):
+**FITB vs. RF Q3 2026** — both regional banks published their Q3 2026
+earnings-release reports in the last two days with full `metrics`, no
+existing comparison for this pair. Written entirely from the two
+reports' own published figures (no new SEC filing read, consistent
+with the GS vs MS precedent earlier tonight). Angle: Fifth Third's EPS
+fell 1.1% YoY despite 36.2% net income growth because the stock-funded
+Comerica acquisition added shares (+36.7%) as fast as profit, while
+Regions' EPS rose 16.4% on only 11.5% net income growth because
+buybacks cut its share count 4.3% — but once Fifth Third's merger
+charges are stripped out, its adjusted efficiency ratio (54.6%) and
+adjusted ROTCE (20.6%) are within a point or two of Regions' reported
+56.2%/21.3%, so the GAAP headline gap is mostly about where each bank
+sits in its own cycle, not which is better run this quarter. Also
+flagged the shared tangible-book-value hit from rising long rates
+(FITB -5% QoQ, RF -8% QoQ) and the comp-driven flattery in both banks'
+credit-quality YoY numbers.
+[FITB vs. RF Q3 2026](https://financialreportinsights.com/insights/fitb-vs-rf-q3-2026)
+— spot-checked live post-publish (cache-busted fetch, 52KB, full
+closing sentence present, not truncated).
+
+**Running total tonight: still 14 report-periods**, **2/2 comparisons
+used tonight (both slots now spent)**, 2 skips, 10/10 hot-list
+rewrites done. Tier 0 and S&P-500 tier 1 remain exhausted; us-listed
+capped at 10/10; comparisons now also capped at 2/2. Nothing left this
+firing could publish within tonight's caps — a further firing tonight
+should re-run `scan-recent-filings` (tier 0 can refill as EDGAR's
+daily index updates through the evening) and otherwise stop/report
+nothing-to-do if tier 0 is still empty and no other tier has budget
+left.
