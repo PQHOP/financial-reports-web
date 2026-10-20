@@ -17021,3 +17021,63 @@ Next night: re-run `scan-recent-filings` first; the next workable
 us-listed items are DRIO and DRMA once that cap resets, and S&P 500
 tier-1 / hot-list rewrites should be re-checked in case new entries
 became due overnight.
+
+### 2026-10-20 night (16:00 UTC 2026-10-20 → 22:59 UTC 2026-10-20 / 01:00–07:59 JST 2026-10-21)
+
+**First firing.** Network check passed (sec.gov: 403 without a UA header
+as expected, 200 with the required UA; financialreportinsights.com
+reachable). `npm install` needed a dummy `DATABASE_URL` for the
+`prisma generate` postinstall step (not used by admin-publish/
+scan-recent-filings). Repo was in a detached HEAD at a stale commit;
+`git stash` + `git checkout -B master origin/master` + `git stash pop`
+brought it current (origin had one new commit, an ops-backlog note,
+no conflict with tracker/rewrite files).
+
+Tier 0 (`scan-recent-filings`, 7-day window): 4 candidates.
+- **FAST** — 10-Q filed 2026-10-19 for the Q3 2026 period already
+  published (from the 10-14 earnings 8-K). Verified: every figure in
+  the 10-Q matches the live report exactly, no restatements. Only new
+  item (not material) is a one-line note that IEEPA tariff refunds were
+  "not material" with no receivable booked. No edit made — just updated
+  `lastFilingSeen`.
+- **FITB** — new period. Published Q3 2026 from the 8-K Item 2.02
+  earnings release (full 10-Q not yet filed). [FITB Q3 2026](https://financialreportinsights.com/companies/fitb/2026/q3)
+- **WRB** — new period. Published Q3 2026 from the 8-K Item 2.02
+  earnings release. [WRB Q3 2026](https://financialreportinsights.com/companies/wrb/2026/q3)
+- **RMCF** — brand-new company (first report). 10-Q filed 2026-10-19
+  covers fiscal Q2 FY2027 (quarter ended 2026-08-31; RMCF's fiscal year
+  ends Feb 28, so this is its calendar-2026 report). Weak quarter:
+  revenue -2.5%, bigger operating/net loss, going-concern warning,
+  loan covenants breached; sold and leased back its Durango factory to
+  a related party plus a new loan, both closing 2026-10-16 (after the
+  quarter). [RMCF FY2027 Q2](https://financialreportinsights.com/companies/rmcf/2027/q2)
+
+**Hot-list rewrites: 10/10 done tonight** (queue was 58 pending;
+skipped items due within 10 days per the skip rule). All verified
+against the original source filing, none superseded, all post-checked
+live with "At a glance" present and not truncated:
+NFLX Q2'26, GE Q2'26, UAL Q2'26 (queue's stored reportId was wrong —
+belonged to AXP; corrected to the real id), DE Q3'26, DUK Q2'26, SMCI
+FY2026 annual, ARM FY2026 annual, MRVL Q2'26 (fiscal Q2 FY2027), DELL
+Q2'26 (fiscal Q2 FY2027), HPQ Q3'26. Several rewrites caught and fixed
+figure errors from the old drafts (noted per-company in each subagent's
+report) — see `hotlist-rewrite.json` for reportIds. 48/121 remain
+pending.
+
+Tier 1 (us-listed backlog, 8 new companies dispatched — S&P 500/hot
+list fully exhausted per `next-batch`, so this firing's tier-1 budget
+went to fresh us-listed tickers never previously touched): DRIO, DRMA,
+DRVN, DSAC, DSC, DSGN, DSGR, DSGX. **DSAC: skipped** — pre-merger SPAC
+(blank-check company), no operating business or revenue; non-binding
+LOI with HubX (Turkey) signed 2026-09-08, no definitive agreement yet.
+The other 7 are still researching as of this log entry; will be
+recorded in the next update this same night once they land.
+
+No comparison attempted this firing (no quick same-industry,
+same-quarter pairing found without further research; will reconsider
+next firing). Not Sunday, so no earnings preview due.
+
+**Running total so far tonight: 4 report-periods published (FAST
+check/no-edit doesn't count, FITB Q3, WRB Q3, RMCF FY27-Q2), 1 skip
+(DSAC), 10/10 hot-list rewrites done, 0/2 comparisons, us-listed new
+companies still in flight.**

@@ -10594,17 +10594,17 @@
       "url": "https://financialreportinsights.com/companies/fast/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-14"
+      "filedAt": "2026-10-19"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026) then Q4/FY2026 earnings ~mid-Jan 2027",
+      "type": "Q4/FY2026 earnings 8-K",
       "estimate": "2027-01-15",
-      "basis": "10-Q expected within days; next earnings cycle per usual mid-Jan cadence",
+      "basis": "10-Q confirmed matches published Q3 report; next event is Q4/FY earnings per usual mid-Jan cadence",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-15",
+    "lastChecked": "2026-10-20",
     "reports": [
       {
         "year": 2026,
@@ -10745,28 +10745,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/fitb/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/fitb/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-19"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-16",
-      "basis": "Q1/Q2 releases 04-17, 07-17; 10-Q ~2.5 weeks later. Comerica acquired 2026-02-01",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q2 2026 10-Q filed 2026-08-04, ~2.5-3 weeks after the earnings 8-K",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-20",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/fitb/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-20",
+        "url": "https://financialreportinsights.com/companies/fitb/2026/q3"
       }
     ]
   },
@@ -16040,22 +16046,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/wrb/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/wrb/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-19"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-02",
-      "basis": "Q3 2025 earnings 8-K 2025-10-20, 10-Q filed 2025-11-03; Q2 2026 earnings came third Monday of July",
+      "estimate": "2026-11-03",
+      "basis": "Q3 2025 10-Q filed 2025-11-03; same pattern expected this year",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-20",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-20",
+        "url": "https://financialreportinsights.com/companies/wrb/2026/q3"
+      }
+    ]
   },
   "GWW": {
     "name": "W. W. Grainger",
@@ -34991,5 +35005,45 @@
       "filedAt": "2026-10-02"
     },
     "lastChecked": "2026-10-19"
+  },
+  "RMCF": {
+    "name": "Rocky Mountain Chocolate Factory, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/rmcf/2027/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-19"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2027, period ending 2026-11-30)",
+      "estimate": "2027-01-15",
+      "basis": "Estimated ~2.5 months after fiscal quarter end, company's usual cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20",
+    "notes": "Fiscal year ends Feb 28/29, so calendar-2026 coverage is satisfied by this fiscal-Q2-FY2027 report (quarter ended 2026-08-31). Small-cap, going-concern warning in the filing, loan covenants breached, sold and leased back its Durango factory post-quarter (to a related party) plus a new loan, both closing 2026-10-16."
+  },
+  "DSAC": {
+    "name": "Daedalus Special Acquisition Corp. - Class A Ordinary Shares",
+    "status": "skipped",
+    "skipReason": "Pre-merger SPAC (blank check company), no operating business or revenue. IPO closed 2025-12-10 ($250M gross + $6.85M private placement), trust ~$255.0M as of 2026-06-30. 24-month merger deadline ~2027-12-10. Non-binding LOI signed 2026-09-08 with HUBX Yazilim Hizmetleri A.S. (HubX, Turkey-based consumer-AI app co.) but no definitive agreement, no F-4 filed yet.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "quarterly cadence; revisit sooner if the HubX business combination closes",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20"
   }
 }

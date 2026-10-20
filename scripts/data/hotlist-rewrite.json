@@ -141,7 +141,8 @@
       "reportId": "cmu9y33iy000304l3wtus034x",
       "url": "https://financialreportinsights.com/companies/nflx/2026/q2",
       "nextExpectedFiling": "2026-10-16",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "ORCL",
@@ -422,7 +423,8 @@
       "reportId": "cmubdou2k000104l7pnic4eiz",
       "url": "https://financialreportinsights.com/companies/ge/2026/q2",
       "nextExpectedFiling": "2026-10-15",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "DIS",
@@ -782,7 +784,8 @@
       "reportId": "cmucrywz3000104jvgw8uqdy6",
       "url": "https://financialreportinsights.com/companies/ual/2026/q2",
       "nextExpectedFiling": "2026-10-15",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "CMG",
@@ -1000,7 +1003,8 @@
       "reportId": "cmucwf7nc000504l64a1lela1",
       "url": "https://financialreportinsights.com/companies/de/2026/q3",
       "nextExpectedFiling": "2026-12-19",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "MMM",
@@ -1040,7 +1044,8 @@
       "reportId": "cmucwnlf5000104jtym3j0lmw",
       "url": "https://financialreportinsights.com/companies/duk/2026/q2",
       "nextExpectedFiling": "2026-11-02",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "SMCI",
@@ -1050,7 +1055,8 @@
       "reportId": "cmucwnk11000804js0mm53xxa",
       "url": "https://financialreportinsights.com/companies/smci/2026/annual",
       "nextExpectedFiling": "2026-11-14",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "ARM",
@@ -1060,7 +1066,8 @@
       "reportId": "cmucwonl0000904js2rl6gjpe",
       "url": "https://financialreportinsights.com/companies/arm/2026/annual",
       "nextExpectedFiling": "2026-11-05",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "MRVL",
@@ -1070,7 +1077,8 @@
       "reportId": "cmuf1kqu6000004l43bsueuyg",
       "url": "https://financialreportinsights.com/companies/mrvl/2026/q2",
       "nextExpectedFiling": "2026-12-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "DELL",
@@ -1080,7 +1088,8 @@
       "reportId": "cmuf1kurm000104l4c3u7fxi6",
       "url": "https://financialreportinsights.com/companies/dell/2026/q2",
       "nextExpectedFiling": "2026-12-07",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "HPQ",
@@ -1090,7 +1099,8 @@
       "reportId": "cmuf1kymn000004kudtm65a2b",
       "url": "https://financialreportinsights.com/companies/hpq/2026/q3",
       "nextExpectedFiling": "2026-12-10",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-20"
     },
     {
       "ticker": "TTWO",
