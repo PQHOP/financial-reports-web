@@ -17067,17 +17067,54 @@ pending.
 Tier 1 (us-listed backlog, 8 new companies dispatched — S&P 500/hot
 list fully exhausted per `next-batch`, so this firing's tier-1 budget
 went to fresh us-listed tickers never previously touched): DRIO, DRMA,
-DRVN, DSAC, DSC, DSGN, DSGR, DSGX. **DSAC: skipped** — pre-merger SPAC
-(blank-check company), no operating business or revenue; non-binding
-LOI with HubX (Turkey) signed 2026-09-08, no definitive agreement yet.
-The other 7 are still researching as of this log entry; will be
-recorded in the next update this same night once they land.
+DRVN, DSAC, DSC, DSGN, DSGR, DSGX.
+
+- **DSAC: skipped** — pre-merger SPAC (blank-check company), no
+  operating business or revenue; trust ~$255.0M, 24-month deadline
+  ~2027-12-10; non-binding LOI with HubX (Turkey) signed 2026-09-08, no
+  definitive agreement yet.
+- **DRIO** Q2 2026 — revenue -3.6%, net loss narrowed 39%.
+  [DRIO Q2 2026](https://financialreportinsights.com/companies/drio/2026/q2)
+- **DRMA** Q2 2026 — pivoted from drug development to D2C skincare
+  (Tome) Sept 2025; going-concern warning, cash said to last only into
+  Q4 2026, Aug 2026 private placement raised ~$3.2M net.
+  [DRMA Q2 2026](https://financialreportinsights.com/companies/drma/2026/q2)
+- **DRVN** Q2 2026 — revenue +6.8%, income from continuing ops +126.8%
+  (prior year included a one-off car-wash divestiture gain); open
+  restatement/material-weakness disclosure, watch for further filing
+  delays. [DRVN Q2 2026](https://financialreportinsights.com/companies/drvn/2026/q2)
+- **DSC** Q2 2026 — Hangzhou-based FPI, Nasdaq IPO June 2026, first
+  report on the site; net loss driven by a RMB227.3M non-cash IPO
+  stock-comp charge, adjusted loss narrowed 61.5%.
+  [DSC Q2 2026](https://financialreportinsights.com/companies/dsc/2026/q2)
+- **DSGN** Q2 2026 — pre-revenue biotech, ~13 quarters of cash runway.
+  [DSGN Q2 2026](https://financialreportinsights.com/companies/dsgn/2026/q2)
+- **DSGR** Q2 2026 — revenue +11.0%, net income +69.8% (mostly a lower
+  tax rate); going-private deal with majority owner LKCM Headwater at
+  $35.00/share pending vote + HSR clearance — if it closes, coverage
+  ends. [DSGR Q2 2026](https://financialreportinsights.com/companies/dsgr/2026/q2)
+- **DSGX** (fiscal Q2 2027, quarter ended 2026-07-31, labeled 2026/Q2
+  per the site's fiscal-year convention) — revenue +11.8%, net income
+  +31.6%; files 40-F/6-K not 10-K/10-Q, so `scan-recent-filings` won't
+  catch its next filing automatically — recheck manually around early
+  December. [DSGX Q2 2026](https://financialreportinsights.com/companies/dsgx/2026/q2)
+
+All 7 publishes spot-checked live post-commit (cache-busted fetch,
+"At a glance" present, page length 60-90KB, not truncated).
 
 No comparison attempted this firing (no quick same-industry,
 same-quarter pairing found without further research; will reconsider
 next firing). Not Sunday, so no earnings preview due.
 
-**Running total so far tonight: 4 report-periods published (FAST
-check/no-edit doesn't count, FITB Q3, WRB Q3, RMCF FY27-Q2), 1 skip
-(DSAC), 10/10 hot-list rewrites done, 0/2 comparisons, us-listed new
-companies still in flight.**
+**Running total tonight: 11 report-periods published** (FITB Q3, WRB
+Q3, RMCF FY27-Q2, DRIO Q2, DRMA Q2, DRVN Q2, DSC Q2, DSGN Q2, DSGR Q2,
+DSGX Q2 — FAST's check/no-edit doesn't count as a new period), **2
+skips** (DSAC pre-merger SPAC; FAST not a skip, just verified), **10/10
+hot-list rewrites done, 0/2 comparisons used, 7/10 us-listed cap used.**
+Tier worked: 0 (fresh filings) + hot-list rewrite allotment + 1
+(2026 backlog, us-listed). Running total after tonight: companies done
+count and report-period count to be recomputed from `report-tracker.json`
+on request — see that file for authoritative per-ticker state. First
+firing done; subsequent firings tonight should check this entry's
+counts before picking up more work (remaining us-listed cap: ~3; tier-1
+per-firing cap already used for this firing).

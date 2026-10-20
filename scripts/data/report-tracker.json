@@ -35045,5 +35045,165 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-20"
+  },
+  "DRIO": {
+    "name": "DarioHealth Corp.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/drio/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-13",
+      "basis": "Q3 2025 10-Q filed 2025-11-13",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20"
+  },
+  "DRMA": {
+    "name": "Dermata Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/drma/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-11"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "Q3 2025 10-Q filed 2025-11-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20",
+    "notes": "Pivoted from drug development to direct-to-consumer skincare (Tome brand) Sept 2025. Going-concern warning, cash said to last only into Q4 2026; Aug 2026 private placement raised ~$3.2M net. Related-party marketing spend disclosed. Villani litigation/arbitration ongoing (preliminary injunction denied 2026-08-05)."
+  },
+  "DRVN": {
+    "name": "Driven Brands Holdings Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/drvn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-27",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Q3 2025 earnings 8-K 2025-11-04, 10-Q 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20",
+    "notes": "Open restatement (prior statements declared unreliable Feb 2026); 10-K and Q1 10-Q both filed late; material weaknesses not yet remediated per this 10-Q. Watch for further filing delays."
+  },
+  "DSC": {
+    "name": "DSC Holdings Ltd. - American Depositary Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/dsc/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (earnings release)",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-26"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (Q3 2026 earnings release)",
+      "estimate": "2026-11-26",
+      "basis": "Q2 results came 57 days after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20",
+    "notes": "FPI, Hangzhou/Beijing-based, Nasdaq IPO June 2026. No 20-F filed yet. Net loss dominated by a RMB227.3M non-cash IPO stock-comp charge; adjusted loss narrowed 61.5%."
+  },
+  "DSGN": {
+    "name": "Design Therapeutics, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/dsgn/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-03"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-04",
+      "basis": "Q3 2025 10-Q filed 2025-11-05",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20",
+    "notes": "Pre-revenue clinical-stage biotech. Cash + investments $207.4M, ~13 quarters of runway at current burn."
+  },
+  "DSGR": {
+    "name": "Distribution Solutions Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/dsgr/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-06"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-30",
+      "basis": "Q3 2025 10-Q filed 2025-10-30",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20",
+    "notes": "LKCM Headwater (~79% owner) agreed 2026-07-15 to take the company private at $35.00/share cash — pending majority-of-minority vote and HSR clearance. If it closes, DSGR delists and coverage ends. Lawson agreed to buy GradeEight (~$145M) 2026-10-12."
+  },
+  "DSGX": {
+    "name": "The Descartes Systems Group Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/dsgx/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "6-K (quarterly report)",
+      "periodEnd": "2026-07-31",
+      "filedAt": "2026-09-11"
+    },
+    "nextExpectedFiling": {
+      "type": "6-K (fiscal Q3 2027, quarter ending 2026-10-31)",
+      "estimate": "2026-12-05",
+      "basis": "usual quarterly gap after fiscal quarter end; unconfirmed estimate",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20",
+    "notes": "Canadian FPI filing 40-F/6-K, not 10-K/10-Q — scan-recent-filings' 10-K/10-Q scan will not pick up its next 6-K; recheck manually. Fiscal year ends Jan 31; this report covers fiscal Q2 2027 (quarter ended 2026-07-31), labeled 2026/Q2 on the site per the site's existing fiscal-year labeling convention (cf. WMT)."
   }
 }
