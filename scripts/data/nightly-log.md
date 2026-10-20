@@ -17118,3 +17118,24 @@ on request — see that file for authoritative per-ticker state. First
 firing done; subsequent firings tonight should check this entry's
 counts before picking up more work (remaining us-listed cap: ~3; tier-1
 per-firing cap already used for this firing).
+
+**Second firing:** `scan-recent-filings` found 0 fresh candidates
+(tier 0 empty). `next-batch` showed S&P 500/hot list fully exhausted —
+everything printed was `4-us-listed-backlog`. The first 9 entries in
+file order (BRAI, BTCT, CCHH, CDTG, CHNR, CLWT, CRE, CUPR, CURR) are all
+already tracker status `"pending"` with a `skipReason` from a check just
+1-2 days ago (2026-10-17/19) and a `nextExpectedFiling.estimate` that
+hasn't passed yet (all foreign private issuers with no 2026-period
+filing on EDGAR yet) — re-researching them today would reconfirm
+yesterday's finding with no new information, so this firing moved past
+them to the first genuinely new tickers instead of re-spending budget
+on unchanged cases; none of their tracker entries were touched. Only
+~3 us-listed slots remained in tonight's ~10 cap (7 already used), so
+this firing researched 3 new us-listed tickers: DSP, DSWL, DSY.
+
+- **DSP** (Viant Technology) Q2 2026 — first report. Revenue +33.9% to
+  $104.3M, but contribution-ex-TAC (the money Viant actually keeps
+  after paying media sellers) grew a slower 24.5%, and a swing to a
+  $1.8M GAAP net loss despite record revenue came down to +57% stock
+  comp and TVision acquisition costs. [DSP Q2 2026](https://financialreportinsights.com/companies/dsp/2026/q2)
+

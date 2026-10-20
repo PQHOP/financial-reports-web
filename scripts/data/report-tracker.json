@@ -35205,5 +35205,27 @@
     },
     "lastChecked": "2026-10-20",
     "notes": "Canadian FPI filing 40-F/6-K, not 10-K/10-Q — scan-recent-filings' 10-K/10-Q scan will not pick up its next 6-K; recheck manually. Fiscal year ends Jan 31; this report covers fiscal Q2 2027 (quarter ended 2026-07-31), labeled 2026/Q2 on the site per the site's existing fiscal-year labeling convention (cf. WMT)."
+  },
+  "DSP": {
+    "name": "Viant Technology Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-20",
+      "url": "https://financialreportinsights.com/companies/dsp/2026/q2"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-08-10"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-10",
+      "basis": "Q3 2026 guidance given for quarter ending Sept 30; prior 10-Qs filed ~40 days after quarter end",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-20"
   }
 }
