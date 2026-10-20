@@ -6,6 +6,20 @@ date and commit.
 
 ## Next
 
+- **Watch 2026-10-21 night: does tier 0 now see same-day filings?**
+  Ops fixed `scan-recent-filings` on 10-21 morning (`0104044`): SEC only
+  builds a day's daily index at ~02:00 UTC the next day, so inside the
+  window the scan always read today as "0 filings" — every "tier 0
+  empty" night this season was partly this. The 10-20 night's seven
+  firings missed NFLX, GE, GM, RTX, ISRG, SMCI, UAL, MMM (hot list) and
+  CB, COF, EFX, FDS, GPC, HAL, HAS, KEY, MSCI, NOC, STLD, SYF (S&P 500),
+  all filed 10-20; they surface as 10-20 candidates tonight via the
+  daily index anyway, plus whatever files 10-21 (TSLA after close) via
+  the new live sources. Check the nightly log's first firing: the scan
+  should print a "Live: EDGAR full-text search" line and tier 0 should
+  not be empty. If efts.sec.gov errors show up repeatedly, the hot-list
+  submissions pass still covers the ~120 names that matter most.
+
 - **Page indexing drill-down from Hop, 2026-10-20 (answers the 10-20
   "cần quyết định" item 1 — don't ask again).** Every example URL was
   last crawled Sep 20 – Oct 2, i.e. before the fixes; checked live 10-20,
@@ -209,6 +223,21 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-21 — tier 0 blind spot: same-day EDGAR filings** (`0104044`,
+  script only, no deploy). `form.YYYYMMDD.idx` is built at ~02:01 UTC
+  the next day (Last-Modified checked on 10-16 and 10-19's files), so the
+  nightly window never saw the current day; the script even had a
+  comment calling the 403 "today's index not published yet" and then
+  did nothing about it. Now days newer than the newest daily index are
+  read from EDGAR full-text search (`efts.sec.gov/LATEST/search-index`,
+  no `q`, `forms=`, `dateRange=custom`, 100/page, `_source.items` has
+  the 8-K items) plus the hot list's submissions JSON. Validation on
+  10-20 22:45 UTC: efts listed 218 8-K + 2 8-K/A for the day, identical
+  to the Latest Filings atom feed (which caps at ~600 entries, so it was
+  not usable alone); the hot-list submissions pass added 0 beyond efts.
+  Full 7-day scan now takes 30 s and printed 27 candidates for 10-20
+  where the night had 0. CLAUDE.md tier 0 paragraph updated.
 
 - **2026-10-20 — Homepage: "Earnings season: latest results" section**
   (`7567cdf`, `8f9f967`; prod `dpl_DCVJSzcjxWce7gWQAmetRU9PUcFq`). On the
