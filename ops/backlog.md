@@ -6,6 +6,32 @@ date and commit.
 
 ## Next
 
+- **Page indexing drill-down from Hop, 2026-10-20 (answers the 10-20
+  "cần quyết định" item 1 — don't ask again).** Every example URL was
+  last crawled Sep 20 – Oct 2, i.e. before the fixes; checked live 10-20,
+  all now correct:
+  - *Duplicate without user-selected canonical (21):* report URLs
+    (`/companies/{pep,cmi,see,iqv,msci,exe,mco,ew,ddog}/2026/q2`) crawled
+    Sep 26-27, right after the 09-25 URL move, plus `/companies/hal/2026`.
+    Live: self-referencing canonical, `www.` and `/reports/<id>` 308 to
+    it; year pages with one year of coverage are `noindex` on purpose.
+    Nothing to fix; wait for recrawl.
+  - *Crawled – currently not indexed (6 pending / 2 failed, validation
+    failed 10-05):* `opengraph-image?…`, `/feed.xml`, two old
+    `/reports/<id>`, `/learn/how-to-read-a-10-q`,
+    `/insights/hd-vs-low-q2-2026` — the first four aren't meant to be
+    indexed; the last two are real content to request indexing for.
+  - *Page with redirect (8):* `/reports/<id>` → canonical, intended.
+  - *Blocked 4xx (1):* old `pgr/2026/q2/opengraph-image?<hash>`, harmless.
+  - *noindex (142):* `/companies/*/2026` single-year pages and
+    `/companies/*/write`, intended.
+  - *Discovered – not indexed (1.64K, data as of 10-12):* includes
+    `/companies/aapl`, `/companies/a` — crawl budget, not a page defect.
+  - Hop accidentally clicked **Validate fix** on noindex, duplicate and
+    redirect (started 10-20). Harmless: the duplicate one even asks
+    Google to recrawl those 21; the noindex/redirect ones will end
+    "failed" because those states are intended — ignore that result.
+
 - **GSC screenshots from Hop, 2026-10-19 (Crawl stats to 10-17, Page
   indexing):** 90 days 18.4K crawl requests (18,341 bare domain, 30
   `www.`), avg response 160 ms, 100% 200s. Daily line: ~3.8K/day 9-19,
