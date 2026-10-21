@@ -774,7 +774,9 @@
       "reportId": "cmucrz5fc000104la42gvv1d5",
       "url": "https://financialreportinsights.com/companies/gm/2026/q2",
       "nextExpectedFiling": "2026-10-20",
-      "status": "pending"
+      "status": "superseded",
+      "supersededAt": "2026-10-21",
+      "supersededNote": "Q3 2026 report published 2026-10-21 in current format: /companies/gm/2026/q3"
     },
     {
       "ticker": "UAL",
@@ -1014,7 +1016,9 @@
       "reportId": "cmty7ekeq000004l5jgl5k8hc",
       "url": "https://financialreportinsights.com/companies/mmm/2026/q2",
       "nextExpectedFiling": "2026-10-20",
-      "status": "pending"
+      "status": "superseded",
+      "supersededAt": "2026-10-21",
+      "supersededNote": "Q3 2026 report published 2026-10-21 in current format: /companies/mmm/2026/q3"
     },
     {
       "ticker": "SO",
