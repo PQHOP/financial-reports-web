@@ -17572,10 +17572,55 @@ S&P 500 batch 3:
 All four published checked live (cache-busted fetch, 200, content
 intact) before being marked `"done"`.
 
-**Running total tonight: 22 report-periods (NFLX, TMO, T, GE, UAL,
+**FDS** — no new report: the 2026-10-20 10-K covers the same FY2026
+already published from the 2026-09-30 earnings 8-K. `lastFilingSeen`
+updated per the tier-0 same-period rule; not reviewed line-by-line
+for a material addition under tonight's time budget.
+
+S&P 500 batch 4:
+- **EFX (Equifax)** — Q3 2026, from the full 10-Q plus the same-day
+  earnings 8-K. Revenue $1.69B (+9.6%); GAAP operating margin 21.0%
+  vs 17.1% a year ago, mostly because Q3 2025 carried a $43.9M
+  severance charge (ex-that, growth ~15%). US mortgage revenue +15%,
+  down from +25% in Q2. FY revenue guidance cut to $6.646-6.676B from
+  $6.710-6.780B.
+  [EFX Q3 2026](https://financialreportinsights.com/companies/efx/2026/q3)
+- **GPC (Genuine Parts)** — Q3 2026, from the full 10-Q plus the
+  same-day earnings 8-K (guidance only). Sales $6.52B (+4.2%,
+  comparable sales +2.9%, ~2.5pts of it price). Net income -0.8%;
+  adjusted EPS +4.5% but adjusted pre-tax income only +1.9% — the
+  gain was mostly a lower tax rate and fewer shares. ~$250M of 9-month
+  operating cash flow came from an enlarged receivables-sale program;
+  without it, operating cash flow would be below net income. FY
+  adjusted-EPS guide narrowed to $7.50-7.75.
+  [GPC Q3 2026](https://financialreportinsights.com/companies/gpc/2026/q3)
+- **HAL (Halliburton)** — Q3 2026, from the 8-K earnings release
+  (10-Q not yet filed). Revenue $5.70B (+1.8%); GAAP net income
+  $417M vs just $18M a year ago (Q3 2025 carried $392M of one-off
+  charges). Adjusted EPS $0.60 (vs $0.58 a year ago, $0.55 in Q2) but
+  adjusted pre-tax income actually fell ~2% — the gain was a lower
+  tax rate and fewer shares. International revenue +9.5% (62% of
+  total) vs North America -8.6% on weaker US fracking.
+  [HAL Q3 2026](https://financialreportinsights.com/companies/hal/2026/q3)
+- **HAS (Hasbro)** — Q3 2026, from the 8-K earnings release (10-Q
+  not yet filed). Revenue $1.60B (+15.0%); Magic: The Gathering
+  revenue $616.1M (+34%), first quarter above $600M, ~2/3 of segment
+  operating profit. ~$55M of tariff refunds are NOT excluded from
+  adjusted figures — without them, adjusted operating profit would
+  have grown ~37% instead of 52%. FY guidance raised but still
+  implies Q4 revenue 4-10% below Q4 2025, which the report flags as
+  conflicting with management's "strong finish" language.
+  [HAS Q3 2026](https://financialreportinsights.com/companies/has/2026/q3)
+
+All four published checked live (cache-busted fetch, 200, content
+intact) before being marked `"done"`.
+
+**Running total tonight: 26 report-periods (NFLX, TMO, T, GE, UAL,
 ISRG, PM, GM, RTX, MMM, NEE, ABT, CME, DHR, TDY, MCO, ELV, NTRS, UDR,
-WAB, CB, COF), 2 skips (SMCI, COR).** One flagged follow-up: UDR needs
-an `--edit` on/after 2026-11-02 for final audited figures. Remaining
-tier-0 queue: 10 S&P 500 (EFX, FDS, GPC, HAL, HAS, KEY, MSCI, NOC,
-STLD, SYF), 8 us-listed. Continuing while the ~40 nightly cap and
-session time allow.
+WAB, CB, COF, EFX, GPC, HAL, HAS), 2 skips (SMCI, COR), 1 no-op
+(FDS, same period already published).** One flagged follow-up: UDR
+needs an `--edit` on/after 2026-11-02 for final audited figures.
+Remaining tier-0 queue: 5 S&P 500 (KEY, MSCI, NOC, STLD, SYF), 8
+us-listed. At 26/~40, continuing carefully while the nightly cap and
+session time allow — may need to stop before exhausting the S&P 500
+tier-0 queue tonight.
