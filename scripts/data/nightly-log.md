@@ -17932,3 +17932,16 @@ prior firing's decision to stop short of tier 1 for the sake of 2
 more. Stopping here; a later firing tonight should see 38/~40 +
 10/10 rewrites and exit immediately per the per-firing-cap rule,
 unless a fresh tier-0 candidate has appeared since.
+
+**New firing (19:04 UTC): re-ran `scan-recent-filings` — 0 fresh
+candidates.** Network check passed as usual (sec.gov 403 without UA
+then 200 with the required header; site reachable). Local checkout
+was a stale detached HEAD (`d5f227e`, same commit as origin/master at
+fetch time — `git checkout -B master origin/master` fixed it cleanly,
+no divergence to reconcile this time); the usual untracked
+`package-lock.json` diff from `npm install`'s postinstall failure
+(missing local `DATABASE_URL`, irrelevant here) was discarded.
+Main count still 38/~40, hot-list rewrites still 10/10 — both
+allotments exhausted and no fresh tier-0 work appeared, so per the
+per-firing-cap rule this firing exits immediately without touching
+tier 1/2. Nothing published this firing.
