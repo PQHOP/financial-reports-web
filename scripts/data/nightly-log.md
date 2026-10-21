@@ -17316,3 +17316,59 @@ the fifth and sixth firings.** With the window closing at 07:59 JST
 and nothing left available under any tier's cap, no further action
 this window; next night should start by re-running
 `scan-recent-filings` in case EDGAR's index for 10-20/10-21 fills in.
+
+### 2026-10-21 night (16:00 UTC 2026-10-21 → 22:59 UTC 2026-10-21 / 01:00–07:59 JST 2026-10-22)
+
+**First firing.** Network check passed (sec.gov: 403 without a UA
+header as expected — that's SEC's own response, not a proxy block —
+200 with the required UA; financialreportinsights.com reachable).
+`npm install` hit its usual `prisma generate` postinstall failure
+(missing local `DATABASE_URL`; irrelevant to admin-publish/scan, which
+need no DB) but `node_modules` was already populated. Repo was in a
+detached HEAD at the current `origin/master` tip (d67af50); `git
+checkout -B master origin/master` fixed it. An untracked
+`package-lock.json` diff from `npm install` (114 pruned lines, platform
+optional deps) was discarded with `git checkout -- package-lock.json`
+rather than committed.
+
+Tier 0 (`scan-recent-filings`, 7-day window + live EDGAR full-text
+search for today): **42 fresh candidates** — 12 hot-list, 22 S&P 500,
+8 us-listed, all but the 8 us-listed ones marked `[update]` (new Q3
+2026 period for a company already `"done"` on Q2). This is earnings
+season (mid-Oct–mid-Nov), so per CLAUDE.md tier 0 is the whole job
+tonight — tiers 1/2 and hot-list rewrites are not being touched while
+this queue has candidates.
+
+Published this firing (hot-list order, from `scan-recent-filings`'
+candidate list, all from 8-K Item 2.02 earnings-release exhibits since
+the full 10-Q isn't filed yet for any of the three):
+- **NFLX** — Q3 2026. Revenue $12.87B (+11.8%), operating margin 34.6%
+  (vs 33.2% guided; ~5pts of the YoY gain is the Brazil tax charge not
+  repeating), EPS $0.87 (+49%, per company's unrounded calc). FY
+  revenue guide held near $51.1B; ad revenue and FCF guides both cut
+  slightly. [NFLX Q3 2026](https://financialreportinsights.com/companies/nflx/2026/q3)
+- **TMO** — Q3 2026. Revenue $12.14B (+9.1%), organic growth 6%
+  (accelerating from 1% in Q1, 5% in Q2), adjusted EPS $6.68 (+15%) vs
+  GAAP EPS $4.64 (+8.7%) — the gap is a higher tax rate and more
+  interest expense, not operations. New formal guidance deferred to the
+  Oct 21 call (not yet covered by any source at publish time); report
+  uses July's guidance only, no invented figures.
+  [TMO Q3 2026](https://financialreportinsights.com/companies/tmo/2026/q3)
+- **T (AT&T)** — Q3 2026. Revenue $32.3B (+5.3%), best service-revenue
+  growth in 4+ years (+3.8%), record 769k internet net adds. GAAP EPS
+  $0.13 (-90%) on a $2.6B Mexico-wireless write-down + job-cut charges
+  vs. last year's $5.5B DIRECTV gain; adjusted EPS $0.65 (+20%). 2026
+  adjusted-EPS guide raised to "the $2.40 range" from $2.25-2.35.
+  [T Q3 2026](https://financialreportinsights.com/companies/t/2026/q3)
+
+All three sanity-checked live (cache-busted fetch, 200, content intact
+through the closing sentence) before being marked `"done"` here.
+`GE` (next in hot-list order) was dispatched in the same subagent
+batch and is still being researched/published — its result and the
+rest of the hot-list/S&P-500 tier-0 queue will be logged in this same
+night's entry by a later batch/firing.
+
+**Running total tonight: 3 report-periods (NFLX, TMO, T), 0 skips.**
+39 tier-0 candidates remain (9 hot-list incl. GE in flight, 22 S&P 500,
+8 us-listed) — continuing through them this firing while the ~40
+nightly cap and session time allow.
