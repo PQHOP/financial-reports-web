@@ -17527,8 +17527,55 @@ S&P 500 batch 2:
 All four published checked live (cache-busted fetch, 200, content
 intact) before being marked `"done"`.
 
-**Running total tonight: 18 report-periods (NFLX, TMO, T, GE, UAL,
-ISRG, PM, GM, RTX, MMM, NEE, ABT, CME, DHR, TDY, MCO, ELV, NTRS), 2
-skips (SMCI, COR).** Remaining tier-0 queue: 14 S&P 500, 8 us-listed.
-Continuing through S&P 500 while the ~40 nightly cap and session time
-allow.
+S&P 500 batch 3:
+- **UDR** — Q3 2026. **Note: published from an explicitly preliminary/
+  unaudited 8-K** (filed early alongside an Apollo JV deal
+  announcement for 19 communities, $1.34B at ~6% yield) with no total
+  revenue, cash flow or AFFO. The subagent disclosed this in the
+  report rather than fabricating revenue, and published only
+  netIncome ($214.9M, mostly $190.1M of property-sale gains) and
+  epsDiluted ($0.67). Same-store NOI growth was only 1.0% including
+  the 19 communities going into the JV (1.6% excluding them). Final,
+  audited results are due **2026-11-02** (company-confirmed) and
+  **must be published as an `--edit` of this same report**, adding
+  revenue/operatingMarginPct, not a new report — flagged in the
+  tracker.
+  [UDR Q3 2026](https://financialreportinsights.com/companies/udr/2026/q3)
+- **WAB (Wabtec)** — Q3 2026, from the full 10-Q plus the same-day
+  earnings 8-K. Sales $3.12B (+8.1%; organic +4.7%, down from 8.5% in
+  Q2, acquisitions +4.0%). GAAP operating margin 20.0% vs 17.0% a
+  year ago; net income +31.9%, adjusted EPS +22.0%. 12-month backlog
+  fell $148M from June (the Q2 report's watch item did not reverse);
+  total backlog a record $31.4B. FY adjusted-EPS guide raised to
+  $10.85-11.05.
+  [WAB Q3 2026](https://financialreportinsights.com/companies/wab/2026/q3)
+- **CB (Chubb)** — Q3 2026, from the 8-K earnings release plus the
+  financial supplement (10-Q not yet filed; insurer-industry
+  metrics). Revenue (reconstructed from component lines, same method
+  as the Q2 report) +0.3%; combined ratio 84.1% vs 81.8% a year ago
+  on $705M of catastrophe losses (vs $285M); underlying ratio ex-cat
+  flat at 82.6%. Core EPS +0.8%, entirely from 2.9% fewer shares.
+  Book value per share +5.1% YoY but -2.1% from June on a $4.48B
+  after-tax investment-portfolio loss as rates rose.
+  [CB Q3 2026](https://financialreportinsights.com/companies/cb/2026/q3)
+- **COF (Capital One)** — Q3 2026, from the 8-K earnings release plus
+  the financial supplement (10-Q not yet filed; bank-industry
+  metrics). Revenue $16.34B (+6.4%), NIM 8.41% (up from Q2, didn't
+  flatten as the Q2 report expected). US card net charge-offs fell to
+  3.98% (from 4.71% in Q2) with a $225M reserve release; auto
+  charge-offs rose to 1.59% with a reserve build. Pre-tax income
+  +4.3% only — most of the 16.1% EPS growth came from a lower tax
+  rate and 4.7% fewer shares. Discover integration costs rose to
+  $338M from $298M rather than winding down.
+  [COF Q3 2026](https://financialreportinsights.com/companies/cof/2026/q3)
+
+All four published checked live (cache-busted fetch, 200, content
+intact) before being marked `"done"`.
+
+**Running total tonight: 22 report-periods (NFLX, TMO, T, GE, UAL,
+ISRG, PM, GM, RTX, MMM, NEE, ABT, CME, DHR, TDY, MCO, ELV, NTRS, UDR,
+WAB, CB, COF), 2 skips (SMCI, COR).** One flagged follow-up: UDR needs
+an `--edit` on/after 2026-11-02 for final audited figures. Remaining
+tier-0 queue: 10 S&P 500 (EFX, FDS, GPC, HAL, HAS, KEY, MSCI, NOC,
+STLD, SYF), 8 us-listed. Continuing while the ~40 nightly cap and
+session time allow.
