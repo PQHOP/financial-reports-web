@@ -9803,6 +9803,17 @@
       }
     ]
   },
+  "DTSQ": {
+    "name": "DT Cloud Star Acquisition Corporation",
+    "status": "skipped",
+    "skipReason": "blank-check/SPAC shell company (confirmed from the 10-Q's own 'blank check company' language, no operating revenue, only trust-account interest income, going-concern doubt stated) -- not a meaningful fit for financial-report analysis; its 'revenue'/EPS would be trust interest and split redeemable/non-redeemable per-share figures, not comparable to an operating company and would corrupt peer tables/scorecards. Revisit if/when it completes a business combination.",
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
+    },
+    "lastChecked": "2026-10-21"
+  },
   "DTE": {
     "name": "DTE Energy",
     "status": "done",
