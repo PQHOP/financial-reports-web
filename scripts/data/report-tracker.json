@@ -10575,17 +10575,18 @@
       "url": "https://financialreportinsights.com/companies/fds/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-K",
       "periodEnd": "2026-08-31",
-      "filedAt": "2026-09-30"
+      "filedAt": "2026-10-20",
+      "note": "full FY2026 10-K now filed, same fiscal year already published from the 2026-09-30 earnings 8-K -- no new report per CLAUDE.md's same-period rule; not reviewed line-by-line for a material addition given the ~40 nightly cap, flagged here if a future run wants to --edit"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026 annual); Q1 FY2027 earnings ~December",
+      "type": "Q1 FY2027 earnings (8-K)",
       "estimate": "2026-12-15",
-      "basis": "FactSet typically reports fiscal Q1 results mid-December; full 10-K due within ~60 days of FYE under accelerated filer rules",
+      "basis": "FactSet typically reports fiscal Q1 results mid-December",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-01",
+    "lastChecked": "2026-10-21",
     "reports": [
       {
         "year": 2026,
