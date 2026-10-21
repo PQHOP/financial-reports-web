@@ -1168,7 +1168,8 @@
       "reportId": "cmuf1lprr000104jqb67rfb8j",
       "url": "https://financialreportinsights.com/companies/mar/2026/q2",
       "nextExpectedFiling": "2026-11-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "HLT",
@@ -1188,7 +1189,8 @@
       "reportId": "cmuf1lx35000104kwwrtc8bii",
       "url": "https://financialreportinsights.com/companies/orly/2026/q2",
       "nextExpectedFiling": "2026-11-06",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "AZO",
@@ -1208,7 +1210,8 @@
       "reportId": "cmuf1m3sc000304kuqkfmwtm0",
       "url": "https://financialreportinsights.com/companies/rost/2026/q2",
       "nextExpectedFiling": "2026-11-19",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "TJX",
@@ -1218,7 +1221,8 @@
       "reportId": "cmuf1m76p000404l4kx9qm9ng",
       "url": "https://financialreportinsights.com/companies/tjx/2026/q2",
       "nextExpectedFiling": "2026-11-18",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "DG",

@@ -17858,8 +17858,41 @@ last sentence):
   +2.3% vs +9.4% revenue).
   [LYV Q2 2026](https://financialreportinsights.com/companies/lyv/2026/q2)
 
-**Rewrites: 4 tonight, 4/121 total** (GM, MMM marked `superseded`
-rather than counted as rewrites). These do not count toward the ~40
-report-period cap (separate +10/night allotment). Continuing with the
-remaining eligible rewrite candidates (MAR, ORLY, ROST, TJX, DG, KR) up
-to the 10/night limit.
+Rewrote and re-verified batch 2 (same process as batch 1), all four
+checked live (cache-busted fetch, 200, "At a glance" present, content
+intact to the last sentence):
+- **MAR (Marriott)** — Q2 2026. Figures confirmed unchanged. New
+  quality-check section: credit-card fees ($73M) more than twice new
+  rooms' contribution ($30M) to the 13% fee-revenue growth; GAAP EPS
+  growth (+4.3%) came entirely from a lower tax rate and fewer shares
+  (pre-tax income -1%); added a "did management's own forecast hold
+  up?" section (Q2 beat every May guidance range).
+  [MAR Q2 2026](https://financialreportinsights.com/companies/mar/2026/q2)
+- **ORLY (O'Reilly)** — Q2 2026. Figures confirmed unchanged (one
+  rounding fix: operating margin fell slightly unrounded, 20.21% →
+  20.15%, though both round to 20.2%). New quality-check section:
+  buybacks ($1.51B) more than twice quarterly free cash flow ($693M);
+  inventory growing faster than sales; a renewable-energy tax-credit
+  timing benefit inflating H1 operating cash flow.
+  [ORLY Q2 2026](https://financialreportinsights.com/companies/orly/2026/q2)
+- **ROST (Ross Stores)** — Q2 2026. Figures confirmed unchanged (one
+  fix: diluted share count fell ~1.6%, not "about 3%" as the 10-Q's
+  own rounded text and the old report said). New quality-check
+  section: the 71% EPS jump is mostly a one-time $0.60 tariff refund
+  (+$0.11 tariff hit a year ago) — ex-refund EPS growth is ~32%,
+  ~23% adjusting both years; flagged that the refund will make FY2027
+  comparisons look ~7-8pts weaker than the underlying business.
+  [ROST Q2 2026](https://financialreportinsights.com/companies/rost/2026/q2)
+- **TJX** — Q2 2026 (fiscal-label fix: "Fiscal Q2 2026" → "Fiscal Q2
+  2027", the old title was wrong). Figures confirmed unchanged. New
+  quality-check section: $0.14 of the $1.36 EPS is a one-off net
+  tariff refund (adjusted EPS +11% to $1.22, still beat guidance);
+  full-year guide raised only by about the size of the Q2 beat, H2
+  comp outlook unchanged; H1 operating cash flow inflated by a $419M
+  settlement collection booked as a prior-year gain.
+  [TJX Q2 2026](https://financialreportinsights.com/companies/tjx/2026/q2)
+
+**Rewrites: 8 tonight, 8/121 total** (GM, MMM marked `superseded`
+rather than counted). These do not count toward the ~40 report-period
+cap (separate +10/night allotment). 2 remaining eligible candidates
+tonight (DG, KR) to reach the 10/night limit.
