@@ -17455,7 +17455,40 @@ intact) before being marked `"done"`. **Hot list's 12 tier-0 fresh
 filings are now fully worked through: 11 published, 1 skipped
 (SMCI).**
 
-**Running total tonight: 11 report-periods (NFLX, TMO, T, GE, UAL,
-ISRG, PM, GM, RTX, MMM, NEE), 1 skip (SMCI).** Remaining tier-0 queue:
-22 S&P 500, 8 us-listed. Moving to the S&P 500 fresh-filing batch next
-while the ~40 nightly cap and session time allow.
+Moved to the S&P 500 tier-0 batch (22 candidates, scan order):
+- **ABT** — Q3 2026, from the 8-K earnings release (10-Q not yet
+  filed). Revenue $13.01B (+14.5%), comparable sales +7.0% (up from
+  4.8% in Q2). GAAP net income -44.1% on $841M intangible amortization
+  and ~$670M of infant-formula (NEC/Gill) litigation settlements;
+  adjusted EPS $1.42 (+9.2%), mid-guidance. FY comparable-sales guide
+  cut to ~6.0% from 6.5-7.5%. A second same-day 8-K announced a
+  tax-free spin-off of the ~$8.5B Nutrition business by end of 2027.
+  [ABT Q3 2026](https://financialreportinsights.com/companies/abt/2026/q3)
+- **CME (CME Group)** — Q3 2026, from the 8-K earnings release (10-Q
+  not yet filed). Revenue $1.74B (+13.0%), avg. daily volume 29.4M
+  contracts (+16.3% YoY, a Q3 record, but -1% vs Q2). Net income
+  +14.2% GAAP vs +10.8% adjusted — last year had more one-off costs.
+  Operating margin 65.7%.
+  [CME Q3 2026](https://financialreportinsights.com/companies/cme/2026/q2)
+- **COR (Cencora)** — **skipped, not published.** The 2026-10-21 8-K
+  is an acquisition announcement (American Oncology Network, $2.4B)
+  plus a guidance update ("at least $17.90" FY2026 adjusted EPS) —
+  no Q4/FY2026 income statement at all. FY2026 results 8-K due
+  2026-11-04 per the filing itself (will be year 2026, period
+  ANNUAL); tracker set to that date, confidence `confirmed`.
+- **DHR (Danaher)** — Q3 2026, from the full 10-Q plus the same-day
+  earnings 8-K. Revenue $6.55B (+8.3%, 6.5pts from M&A incl. Masimo),
+  core growth only 3.0% (5.5% ex-respiratory). GAAP net income +32.9%
+  helped by a $0.37 discrete tax benefit; adjusted EPS $2.11 (+11.5%).
+  An $84M Masimo inventory charge cut margin 130bp; Diagnostics margin
+  fell to 21.3% from 27.0%. FY adjusted-EPS guide raised to
+  $8.57-8.62; FY core-growth guide cut to ~2.5% from 3-4%.
+  [DHR Q3 2026](https://financialreportinsights.com/companies/dhr/2026/q3)
+
+All three published checked live (cache-busted fetch, 200, content
+intact) before being marked `"done"`.
+
+**Running total tonight: 14 report-periods (NFLX, TMO, T, GE, UAL,
+ISRG, PM, GM, RTX, MMM, NEE, ABT, CME, DHR), 2 skips (SMCI, COR).**
+Remaining tier-0 queue: 18 S&P 500, 8 us-listed. Continuing through
+S&P 500 while the ~40 nightly cap and session time allow.
