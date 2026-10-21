@@ -4994,22 +4994,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucrz5fc000104la42gvv1d5"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvibhmyr000408lj2dz5v8pp"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-21"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-20",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-21",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "estimated, not confirmed by search; GM typically files its 10-K in late January",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-21"
   },
   "DAL": {
     "name": "Delta Air Lines, Inc.",
@@ -5038,22 +5038,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucrywz3000104jvgw8uqdy6"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvibghrr000108l81h71tizc"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-16"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-15",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-16",
+      "estimate": "2026-10-26",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1/99.2 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-21"
   },
   "CMG": {
     "name": "Chipotle Mexican Grill, Inc.",
@@ -5126,22 +5126,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucs8vnw000204la6957jfzn"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvibgd3d000008l8eep0nppz"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-21"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-21",
+      "estimate": "2026-10-27",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-21"
   },
   "SPGI": {
     "name": "S&P Global Inc.",
@@ -5396,22 +5396,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-23",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucw3orv000004jkdxyywpa8"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvibgmpv000208l87k6u7smp"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-24",
+      "estimate": "2026-10-28",
+      "basis": "full 10-Q not yet filed as of 2026-10-21 (release says it follows 'in the coming days'); report written from the Exhibit 99.1/99.2 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-21"
   },
   "LMT": {
     "name": "Lockheed Martin Corporation",

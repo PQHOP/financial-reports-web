@@ -17368,7 +17368,54 @@ batch and is still being researched/published — its result and the
 rest of the hot-list/S&P-500 tier-0 queue will be logged in this same
 night's entry by a later batch/firing.
 
-**Running total tonight: 3 report-periods (NFLX, TMO, T), 0 skips.**
-39 tier-0 candidates remain (9 hot-list incl. GE in flight, 22 S&P 500,
-8 us-listed) — continuing through them this firing while the ~40
-nightly cap and session time allow.
+Continued through the hot-list order:
+- **GE (GE Aerospace)** — Q3 2026, from the full 10-Q (already filed).
+  Revenue $14.12B (+15.9%), orders +49% to $19.0B, operating profit
+  +30%; GAAP net income only +6.1% because the legacy insurance book
+  swung to a $210M loss (reserve charge) and a $108M Bank BPH
+  litigation charge. FCF -14% as receivables absorbed ~$1.66B.
+  Adjusted EPS guide raised to $8.00-8.10. $11.75B CPP acquisition
+  noted. [GE Q3 2026](https://financialreportinsights.com/companies/ge/2026/q3)
+- **UAL** — Q3 2026, from the 8-K earnings release (10-Q not yet
+  filed). Revenue $17.88B (+17.4%, a record), capacity +1.3%, yield
+  +16.8%. Fuel cost +61.6% absorbed ~70% of the revenue gain. Adjusted
+  EPS fell 8.6% to $2.54 despite record revenue; GAAP EPS rose on
+  $294M of sale-leaseback gains and a lower tax rate. Q4 guide wide:
+  adjusted EPS $0.50-$1.50.
+  [UAL Q3 2026](https://financialreportinsights.com/companies/ual/2026/q3)
+- **ISRG** — Q3 2026, from the 8-K earnings release (10-Q not yet
+  filed). Revenue $3.05B (+21.7%), da Vinci procedures +14%, 546
+  system placements vs 427 a year ago. GAAP net income -25.8% on a
+  $450M antitrust settlement charge (pending court approval); non-GAAP
+  EPS +25%. Buybacks $2.94B in the quarter.
+  [ISRG Q3 2026](https://financialreportinsights.com/companies/isrg/2026/q3)
+- **PM** — Q3 2026, from the 8-K earnings release (10-Q not yet
+  filed). Revenue $11.44B (+5.5%), adjusted EPS $2.36 (+5.4%, beat
+  PMI's own guide); GAAP EPS fell 4.9% on a swing in investment/
+  securities income and a higher tax rate. Smoke-free revenue +6.3%
+  organic but slipped to 40.4% of total. FY adjusted EPS guide raised
+  to $8.29-8.44 on currency only.
+  [PM Q3 2026](https://financialreportinsights.com/companies/pm/2026/q3)
+
+All four sanity-checked live (cache-busted fetch, 200, content intact)
+before being marked `"done"`.
+
+- **GM** — Q3 2026, from the full 10-Q (already filed). Revenue
+  $50.0B (+2.9%); GAAP net income +151.3% to $3.34B, mostly easy
+  comparisons (lower warranty costs and smaller EV write-downs vs a
+  year ago) rather than operating strength — EBIT-adjusted was only
+  +21.6%. US sales to customers fell 5.5% even as wholesale shipments
+  rose 3.5%; US share fell to 16.1%. About a third of adjusted-EPS
+  growth came from buybacks (8% fewer shares); a new $20B buyback
+  authorization was approved. Guidance narrowed (midpoint unchanged),
+  implying a much weaker Q4 than Q3.
+  [GM Q3 2026](https://financialreportinsights.com/companies/gm/2026/q3)
+
+All five sanity-checked live (cache-busted fetch, 200, content intact)
+before being marked `"done"`.
+
+**Running total tonight: 8 report-periods (NFLX, TMO, T, GE, UAL,
+ISRG, PM, GM), 0 skips.** Remaining tier-0 queue: 4 more hot-list
+(RTX, MMM, NEE, SMCI), 22 S&P 500, 8 us-listed. Continuing through
+hot-list first, then S&P 500, while the ~40 nightly cap and session
+time allow.
