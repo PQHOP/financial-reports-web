@@ -17488,7 +17488,47 @@ Moved to the S&P 500 tier-0 batch (22 candidates, scan order):
 All three published checked live (cache-busted fetch, 200, content
 intact) before being marked `"done"`.
 
-**Running total tonight: 14 report-periods (NFLX, TMO, T, GE, UAL,
-ISRG, PM, GM, RTX, MMM, NEE, ABT, CME, DHR), 2 skips (SMCI, COR).**
-Remaining tier-0 queue: 18 S&P 500, 8 us-listed. Continuing through
-S&P 500 while the ~40 nightly cap and session time allow.
+S&P 500 batch 2:
+- **TDY (Teledyne)** — Q3 2026, from the 8-K earnings release (10-Q
+  not yet filed). Revenue $1.68B (+9.4%); GAAP EPS $5.82 beat its own
+  $5.10-5.25 guide, +25.2%. Most of the operating-income gain ($59.3M
+  of $64.4M) came from Digital Imaging (infrared). Both GAAP and
+  adjusted EPS include a ~$0.18/share Varex mark-to-market gain.
+  FY GAAP-EPS guide raised to $21.71-21.87. Pending $1.1B Varex
+  acquisition (shareholder vote Oct 28).
+  [TDY Q3 2026](https://financialreportinsights.com/companies/tdy/2026/q3)
+- **MCO (Moody's)** — Q3 2026, from the 8-K earnings release (10-Q
+  not yet filed). Revenue $2.02B (+0.8%); MIS ratings revenue -1%
+  (leveraged-loan/high-yield weak, investment-grade +18% on AI/
+  hyperscaler borrowing); MA analytics revenue +3% (ARR +8%). GAAP
+  EPS +17.8% almost entirely a $115M divestiture gain; adjusted EPS
+  +5.6%, mostly buybacks and a lower tax rate — adjusted operating
+  income was flat YoY. FY guidance reaffirmed but default-rate
+  assumption raised to ~3.8% from ~3%.
+  [MCO Q3 2026](https://financialreportinsights.com/companies/mco/2026/q3)
+- **ELV (Elevance Health)** — Q3 2026, from the 8-K earnings release
+  (10-Q not yet filed). Revenue $51.4B (+1.4%); benefit expense ratio
+  improved to 90.6% from 91.3%. GAAP EPS +17.9% but adjusted operating
+  gain was flat YoY ($1,337M vs $1,344M) — the GAAP gain came from
+  $1,037M of net investment income (+65.9%), not operations. Health
+  Benefits segment operating gain fell 27.5%. Guidance raised (adj.
+  EPS "at least $29.00" from $27.00) but 2027 starting point
+  unchanged, so most of the raise looks non-recurring.
+  [ELV Q3 2026](https://financialreportinsights.com/companies/elv/2026/q3)
+- **NTRS (Northern Trust)** — Q3 2026, from the 8-K earnings release
+  (10-Q not yet filed; bank-industry metrics). Revenue $2.29B
+  (+13.3%); GAAP EPS $3.40 (+48.5%), ~$3.20 (+40%) excluding $48.7M
+  of one-off gains (guardianship-business sale, Visa exchange).
+  Effective tax rate fell to 19.3% from 26.1% (~13 of the 40 points of
+  underlying EPS growth), buybacks added ~4 points. Provision $5.4M
+  after four straight quarters of reserve releases. CET1 12.4%.
+  [NTRS Q3 2026](https://financialreportinsights.com/companies/ntrs/2026/q3)
+
+All four published checked live (cache-busted fetch, 200, content
+intact) before being marked `"done"`.
+
+**Running total tonight: 18 report-periods (NFLX, TMO, T, GE, UAL,
+ISRG, PM, GM, RTX, MMM, NEE, ABT, CME, DHR, TDY, MCO, ELV, NTRS), 2
+skips (SMCI, COR).** Remaining tier-0 queue: 14 S&P 500, 8 us-listed.
+Continuing through S&P 500 while the ~40 nightly cap and session time
+allow.
