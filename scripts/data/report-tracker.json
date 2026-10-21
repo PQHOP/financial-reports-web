@@ -4916,6 +4916,29 @@
     },
     "lastChecked": "2026-09-22"
   },
+  "LRN": {
+    "name": "Stride, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvid8222000007jwmz1kdswy"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21",
+      "note": "fiscal year ends June 30; this filing is fiscal Q1 2027 per the company's own labeling (calendar quarter ended Sept 30, 2026)"
+    },
+    "nextExpectedFiling": {
+      "type": "Q2 FY2027 earnings (8-K)",
+      "estimate": "2027-01-28",
+      "basis": "estimated from past pattern (late January in 2026), not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-21"
+  },
   "LRCX": {
     "name": "Lam Research Corporation",
     "status": "done",
