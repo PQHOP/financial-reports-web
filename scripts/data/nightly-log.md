@@ -17815,3 +17815,51 @@ lighter-weight lock/claim step (e.g. the orchestrator writing a
 provisional tracker entry the moment a ticker is dispatched, not only
 after it publishes) if this keeps happening during earnings season
 when multiple hourly firings overlap.
+
+**New firing: tier-0 re-checked (0 fresh candidates — queue still
+empty), so moved to hot-list rewrites** per CLAUDE.md's "Deciding what
+to work on this run" order (tier 0 → hot-list rewrites → next-batch).
+Of 48 `pending` items in `hotlist-rewrite.json`, 33 fall within 10
+days of their own next expected filing and were left for tier 0 to
+replace naturally; of the 15 that don't, **GM and MMM were marked
+`superseded`** (not rewritten) — both already got fresh, current-format
+Q3 2026 reports published earlier tonight (see above), making their
+queued Q2 rewrite entries moot.
+
+Rewrote and re-verified against the primary filing, then published via
+`--edit` (same reportId/year/period), all four checked live
+(cache-busted fetch, 200, "At a glance" present, content intact to the
+last sentence):
+- **TTWO (Take-Two Interactive)** — FY2026 ANNUAL. Figures confirmed
+  unchanged; added the capitalized-development-spend note (GTA VI) and
+  flagged that the amortization of acquired game rights explains ~4.5
+  points of the gross-margin gain.
+  [TTWO FY2026 ANNUAL](https://financialreportinsights.com/companies/ttwo/2026/annual)
+- **WBD (Warner Bros. Discovery)** — Q2 2026. Figures confirmed
+  unchanged (net debt estimate tightened to ~$29.7B). **Material find:**
+  Skydance Corp (Paramount Skydance, PSKY) closed its acquisition of
+  WBD on 2026-10-06 ($31.01666668/share cash); WBD was delisted
+  (Form 25-NSE) and deregistered from SEC reporting (Form 15-12G/15-15D
+  filed 2026-10-16) — it will not file again. Report now says this was
+  WBD's last standalone quarter; tracker's `nextExpectedFiling` updated
+  to `confirmed`/none so future scans stop expecting a Q3 filing.
+  [WBD Q2 2026](https://financialreportinsights.com/companies/wbd/2026/q2)
+- **PSKY (Paramount Skydance Corporation)** — Q2 2026. Figures
+  confirmed unchanged. New quality-check section separates the 2025
+  merger revaluation's effect on reported Adjusted EBITDA from
+  underlying operating income (-10% ex-one-offs vs the headline +27%
+  EBITDA growth); added WBD-deal debt detail ($86.3B pro forma) and the
+  March 2027 antitrust trial date.
+  [PSKY Q2 2026](https://financialreportinsights.com/companies/psky/2026/q2)
+- **LYV (Live Nation Entertainment)** — Q2 2026. Figures confirmed
+  unchanged. New quality-check section traces the EPS jump to $1.05
+  mostly to a smaller minority-buyout accretion charge and one-off
+  below-the-line items, not operations (adjusted operating income only
+  +2.3% vs +9.4% revenue).
+  [LYV Q2 2026](https://financialreportinsights.com/companies/lyv/2026/q2)
+
+**Rewrites: 4 tonight, 4/121 total** (GM, MMM marked `superseded`
+rather than counted as rewrites). These do not count toward the ~40
+report-period cap (separate +10/night allotment). Continuing with the
+remaining eligible rewrite candidates (MAR, ORLY, ROST, TJX, DG, KR) up
+to the 10/night limit.

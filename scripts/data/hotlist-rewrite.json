@@ -1114,7 +1114,8 @@
       "reportId": "cmuf1l28f000204l4dnq5lkpf",
       "url": "https://financialreportinsights.com/companies/ttwo/2026/annual",
       "nextExpectedFiling": "2026-11-06",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "WBD",
@@ -1124,7 +1125,8 @@
       "reportId": "cmuf1l6dl000304l4rtr63qu9",
       "url": "https://financialreportinsights.com/companies/wbd/2026/q2",
       "nextExpectedFiling": "2026-11-05",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "PSKY",
@@ -1134,7 +1136,8 @@
       "reportId": "cmuf1lamy000104kusjvmu7eq",
       "url": "https://financialreportinsights.com/companies/psky/2026/q2",
       "nextExpectedFiling": "2026-11-09",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "LYV",
@@ -1144,7 +1147,8 @@
       "reportId": "cmuf1lejh000004jxsqajbn37",
       "url": "https://financialreportinsights.com/companies/lyv/2026/q2",
       "nextExpectedFiling": "2026-11-04",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "RCL",

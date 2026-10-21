@@ -5916,12 +5916,12 @@
       "filedAt": "2026-08-06"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-05",
-      "basis": "prior-year Q3 10-Q filed 2025-11-06",
-      "confidence": "estimated"
+      "type": "none (deregistered)",
+      "estimate": null,
+      "basis": "Acquired by Skydance Corp (Paramount Skydance, PSKY) 2026-10-06 at $31.01666668/share cash; delisted from Nasdaq (Form 25-NSE filed 2026-10-06) and deregistered from SEC reporting (Form 15-12G/15-15D filed 2026-10-16). Will not file further periodic reports — Q2 2026 is WBD's last standalone quarter.",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-24"
+    "lastChecked": "2026-10-21"
   },
   "PSKY": {
     "name": "Paramount Skydance Corporation",
