@@ -1088,6 +1088,28 @@
     },
     "lastChecked": "2026-09-18"
   },
+  "ADC": {
+    "name": "Agree Realty Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvid57su000507jwxcyzfjiw"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "estimated, not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-21"
+  },
   "ADM": {
     "name": "Archer-Daniels-Midland Company",
     "status": "done",
