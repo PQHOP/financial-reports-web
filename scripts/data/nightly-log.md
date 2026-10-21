@@ -17892,7 +17892,43 @@ intact to the last sentence):
   settlement collection booked as a prior-year gain.
   [TJX Q2 2026](https://financialreportinsights.com/companies/tjx/2026/q2)
 
-**Rewrites: 8 tonight, 8/121 total** (GM, MMM marked `superseded`
-rather than counted). These do not count toward the ~40 report-period
-cap (separate +10/night allotment). 2 remaining eligible candidates
-tonight (DG, KR) to reach the 10/night limit.
+Rewrote and re-verified the last two eligible candidates, both checked
+live (cache-busted fetch, 200, "At a glance" present, content intact
+to the last sentence):
+- **DG (Dollar General)** — Q2 2026. Figures confirmed unchanged.
+  Removed an unsupported claim in the old report (that the Supreme
+  Court struck down the IEEPA tariffs — not in either filing); fixed
+  "inventory flat" to inventory -0.9% YoY vs sales +5.2%. New
+  quality-check section: ex-tariff-refund-and-LIFO, operating profit
+  rose only ~9%, not the headline +29.2% — most of the 127bps margin
+  gain is the one-time refund (81bps) plus a smaller LIFO charge
+  (~43bps), not underlying improvement.
+  [DG Q2 2026](https://financialreportinsights.com/companies/dg/2026/q2)
+- **KR (Kroger)** — Q2 2026 (fiscal). Figures confirmed unchanged; old
+  report had no Source filing link at all, now has one. Fixed three
+  errors: called the quarter 13 weeks (it's 12; Kroger's fiscal
+  quarters are uneven lengths); understated the prior-year one-off
+  gap by ~$26M once investment gains are netted in; and read flat H2
+  EPS guidance as flat growth without adjusting for H2 being 24 weeks
+  vs H1's 28 (guidance actually implies ~6-15% higher EPS per week).
+  New quality-check section: sales growth is almost entirely fuel
+  (+25.6% on higher pump prices) — ex-fuel sales -0.5%, identical
+  sales only +0.2% (vs +3.4% a year ago); adjusted EPS growth is
+  entirely an 8.6% smaller share count, not operating improvement.
+  [KR Q2 2026](https://financialreportinsights.com/companies/kr/2026/q2)
+
+**Hot-list rewrites complete for tonight: 10 rewrites done (TTWO,
+WBD — note: acquired by Skydance/deregistered, see above — PSKY, LYV,
+MAR, ORLY, ROST, TJX, DG, KR), 2 superseded (GM, MMM) — hit the
+10/night cap. Queue status: 78/121 done total, 36 pending, 7
+superseded.** These do not count toward the ~40 report-period cap
+(separate allotment).
+
+**End of this firing.** Tier-0 fresh-filing queue empty (re-checked,
+0 candidates) and the hot-list rewrite allotment is used up for
+tonight. Main report-period count stands at **38/~40** (unchanged
+from before this firing — rewrites don't add to it), matching the
+prior firing's decision to stop short of tier 1 for the sake of 2
+more. Stopping here; a later firing tonight should see 38/~40 +
+10/10 rewrites and exit immediately per the per-firing-cap rule,
+unless a fresh tier-0 candidate has appeared since.

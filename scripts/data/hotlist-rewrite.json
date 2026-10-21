@@ -1232,7 +1232,8 @@
       "reportId": "cmuf1mcc3000204jqy0zkst8z",
       "url": "https://financialreportinsights.com/companies/dg/2026/q2",
       "nextExpectedFiling": "2026-12-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "KR",
@@ -1242,7 +1243,8 @@
       "reportId": "cmu8hbgby000004l5bdxg6m1j",
       "url": "https://financialreportinsights.com/companies/kr/2026/q2",
       "nextExpectedFiling": "2026-12-17",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-21"
     },
     {
       "ticker": "ULTA",
