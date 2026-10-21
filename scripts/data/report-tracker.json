@@ -8689,6 +8689,28 @@
       }
     ]
   },
+  "CLF": {
+    "name": "Cleveland-Cliffs Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvid77kw000607jw6sc6etcx"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-11",
+      "basis": "estimated, not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-21"
+  },
   "CLX": {
     "name": "Clorox",
     "status": "done",
