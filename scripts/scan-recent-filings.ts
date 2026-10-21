@@ -43,6 +43,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
+import { claimAge, readClaims, type Claim } from "./claims";
 
 const HERE = dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = join(HERE, "data");
@@ -273,6 +274,9 @@ async function main() {
     JSON.parse(readFileSync(join(DATA_DIR, "priority-tickers.json"), "utf8")).tickers,
   );
   const trackerFor = (ticker: string) => (ticker === "_meta" ? undefined : tracker[ticker]);
+  // Tickers another firing is researching right now (see scripts/claims.ts).
+  const claims = readClaims();
+  const claimedOut = new Map<string, Claim>();
 
   console.log(`Loading SEC CIK<->ticker map...`);
   const cikToTicker = await loadCikTickerMap();
@@ -294,6 +298,12 @@ async function main() {
     if (entry?.status === "done" && (!lastSeen || hit.filedDate <= lastSeen)) return;
     // Amendments rarely change the numbers a published report is built on.
     if (entry?.status === "done" && hit.form.endsWith("/A")) return;
+    // Another firing is researching this one right now (scripts/claims.ts).
+    const claim = claims.get(ticker);
+    if (claim) {
+      claimedOut.set(ticker, claim);
+      return;
+    }
 
     const earningsRelease = hit.form.replace(/\/A$/, "") === "8-K" && !forms.includes("8-K");
     if (earningsRelease) {
@@ -416,6 +426,12 @@ async function main() {
     );
   }
   if (candidates.length > 50) console.log(`  ...and ${candidates.length - 50} more`);
+  if (claimedOut.size > 0) {
+    console.log(
+      `\n${claimedOut.size} more claimed by another firing (left out; a claim expires after 3 h — see scripts/claims.ts):`,
+    );
+    for (const c of claimedOut.values()) console.log(`  ${c.ticker.padEnd(6)} ${claimAge(c)}${c.note ? `  ${c.note}` : ""}`);
+  }
 }
 
 main().catch((err) => {

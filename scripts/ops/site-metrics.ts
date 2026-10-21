@@ -279,9 +279,27 @@ const FIGURE_BAD_PATTERNS: [string, RegExp][] = [
   ["double-currency", /\$\$/],
   ["double-sign", /--\$|\+\+/],
 ];
+// Plus the newest reports from the feed: a bug in a brand-new page type or
+// a fresh publish (the night's mega-cap results) shows up the same morning,
+// not when the fixed samples happen to hit it.
+const FIGURE_NEWEST = 3;
+async function newestReportPaths(): Promise<string[]> {
+  try {
+    const res = await fetch(SITE_URL + "/feed.xml", { headers: { "User-Agent": "FinancialReportInsights ops-check" } });
+    const xml = await res.text();
+    return [...xml.matchAll(/<item>[\s\S]*?<link>([^<]+)<\/link>/g)]
+      .map((m) => m[1].replace(SITE_URL, ""))
+      .filter((p) => /^\/companies\/[^/]+\/\d{4}\/[a-z0-9]+$/.test(p))
+      .slice(0, FIGURE_NEWEST);
+  } catch {
+    return [];
+  }
+}
 async function figureSample() {
+  const newest = await newestReportPaths();
+  const paths = [...FIGURE_SAMPLE_PATHS, ...newest.filter((p) => !FIGURE_SAMPLE_PATHS.includes(p))];
   return Promise.all(
-    FIGURE_SAMPLE_PATHS.map(async (path) => {
+    paths.map(async (path) => {
       const res = await fetch(SITE_URL + path, { headers: { "User-Agent": "FinancialReportInsights ops-check" } });
       const html = await res.text();
       // Visible markup only: the RSC payload in <script> escapes "$" as "$$",
@@ -296,7 +314,7 @@ async function figureSample() {
       }
       if (strip.length < 3) issues.push(`figures strip has ${strip.length} items`);
       if (strip.some((v) => v.trim() === "" || v.trim() === "—")) issues.push("empty figure in strip");
-      return { path, status: res.status, strip, issues };
+      return { path, sample: newest.includes(path) ? "newest" : "fixed", status: res.status, strip, issues };
     })
   );
 }

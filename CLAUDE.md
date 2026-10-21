@@ -240,6 +240,22 @@ pull --rebase` and check that `/companies/<slug>/<year>/<period>` is
 still a 404; treat "already exists" as a collision to record from the
 live page, not an error to retry.
 
+**Claim before you dispatch (since 2026-10-22).** The per-firing cap
+doesn't cover tier 0, and on 2026-10-21 night two firings researched the
+same 8 us-listed tier-0 tickers at once (ADC, ACI, CLF, LRN, IRDM, PEGA,
+PENG: 7 wasted Opus passes). So, right before dispatching a batch of
+research subagents, run `npm run claim -- TICKER TICKER ...` — it writes
+one small file per ticker under `scripts/data/claims/`, commits and
+pushes (one file per ticker, so two firings claiming different tickers
+never conflict). `scan-recent-filings` and `next-batch` then leave those
+tickers out for the next 3 hours and print them as "claimed by another
+firing"; if the scan lists a ticker as claimed, don't research it. A
+claim expires on its own after 3 hours, so release is optional: `npm run
+claim -- --release --no-push TICKER ...` in the same push as the tracker
+update is tidy, and it's required when a subagent came back incomplete
+(so the next firing retries that ticker instead of waiting 3 hours).
+Only the orchestrator claims — never a research subagent.
+
 **us-listed cap (since 2026-10-19, the user's choice): at most ~10
 report-periods per night from the `us-listed` part of tier 1.** The
 2026-10-19 ops review found the ~30 us-listed reports a night (DLPN,
