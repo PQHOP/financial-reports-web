@@ -24,8 +24,10 @@ const WELL_KNOWN: string[] = [...new Set([...POPULAR_TICKERS, ...sp500.map((c) =
 const SEASON_LIMIT = 6;
 // Newest well-known results to choose from; hot-list names come first within
 // this window so BAC and GS, published early on results night, aren't pushed
-// out by the dozen regional banks that followed them.
-const SEASON_POOL = 16;
+// out by the dozen regional banks that followed them. Sized to a full
+// night's publishing (~40 cap): with 16, the 43-report night of 2026-10-21
+// pushed NFLX, GE and GM (reported the day before) out behind KEY.
+const SEASON_POOL = 40;
 const LATEST_LIMIT = 6;
 const SEASON_ARTICLES = 4;
 const UPCOMING_DAYS = 7;
