@@ -9979,28 +9979,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/elv/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvic5e48000808lj36nrbbfc"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-15"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "Q3 10-Qs 2025-10-21, 2024-10-17, 2023-10-18; same day as release",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release, update lastFilingSeen (and --edit if it adds material detail, e.g. Medicaid/Medicare cost commentary) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-21",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/elv/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/reports/cmvic5e48000808lj36nrbbfc"
       }
     ]
   },
@@ -13370,22 +13376,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/mco/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvic4xk2000708ljrjgi9yn9"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 day cadence from last 10-Q",
+      "estimate": "2026-10-28",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-21"
   },
   "MOS": {
     "name": "Mosaic Company (The)",
@@ -15393,22 +15399,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1ukf1000104jtfglt71y0"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvic4h68000608ljtgbynrso"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-28",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-27",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q2 pattern: 8-K on 07-22, 10-Q on 07-24",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-21"
   },
   "TER": {
     "name": "Teradyne",
