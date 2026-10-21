@@ -17945,3 +17945,111 @@ Main count still 38/~40, hot-list rewrites still 10/10 — both
 allotments exhausted and no fresh tier-0 work appeared, so per the
 per-firing-cap rule this firing exits immediately without touching
 tier 1/2. Nothing published this firing.
+
+**New firing (21:04 UTC).** Network check passed (sec.gov 403 without
+UA then 200 with the required header; site reachable). Repo was in a
+detached HEAD at a stale commit (`d5f227e`); `git fetch` pulled a newer
+`origin/master` (`54f1870`, the prior firing's check-in commit) and
+`git checkout -B master origin/master` fixed it; the usual untracked
+`package-lock.json` diff from `npm install`'s postinstall failure
+(missing local `DATABASE_URL`, irrelevant here) was discarded.
+
+Re-ran `scan-recent-filings`: **20 fresh candidates** — 8 hot-list,
+8 S&P 500, 4 us-listed. Of the 8 hot-list items, 3 (NFLX, UAL — both
+published earlier tonight from their 8-Ks — and JNJ, published
+2026-10-14) were their full 10-Q arriving for an **already-published**
+period, not a new one. Checked all three directly against the 10-Q's
+own income statement before touching the tracker:
+- **NFLX**: 10-Q net income $3,663.9M / diluted EPS $0.87
+  (3,663,927/4,195,127 thousand shares) — matches the published $0.87
+  exactly.
+- **UAL**: 10-Q net income $1,029M / diluted EPS $3.14 — matches the
+  published $1.0B/+8.5%/$3.14/+8.3% exactly.
+- **JNJ**: 10-Q net earnings $210M / diluted EPS $0.09 — matches the
+  published $210M/-95.9%/$0.09/-95.8% exactly (the $5.78B other-expense
+  charge was already fully reflected from the 8-K).
+
+No figures changed, nothing material added — updated only
+`lastFilingSeen` (now the 10-Q) and `nextExpectedFiling` (next NEW
+period, Q4/FY2026) for all three. No new report, per the "same period
+already published" rule.
+
+The remaining **5 hot-list items were genuinely new periods** (Q2→Q3,
+all mega-cap, all reported today) — this firing treated them as the
+tier-0 exception that may exceed the ~40/night cap by a few, given
+tonight's count was 38/~40 going in and these are exactly the
+highest-search-demand names the hot list exists for. Ran 5 Opus
+subagents in parallel, one per company, each from the day's 8-K Item
+2.02 earnings-release exhibit (full 10-Q not yet filed for any of
+them). All 5 finished, reported a clean `Canonical:`/`/reports/<id>`
+pair, and were sanity-checked live (cache-busted fetch, 200, "At a
+glance" and "Takeaway" present) before being marked `"done"`:
+
+- **IBM** — Q3 2026. Revenue $17.10B (+4.7%, 6% constant currency),
+  net income $2.19B (+25.6%) — almost entirely a $309M one-off tax
+  charge not repeating from Q3 2025, pre-tax income only +2.8%.
+  Adjusted EPS $2.95 (+11.3%). Mainframe software +9% (after -8.1% in
+  Q2); Consulting flat, segment profit -4.8%; IBM Z -20% but
+  Distributed Infrastructure +31%. FCF $3.03B (+27.6%); FCF guide
+  raised to "more than $1B" growth for the year; revenue guide held at
+  4-5% constant currency. Flagged unexplained 59% inventory growth and
+  a $575M minority-shareholder inflow pending the 10-Q.
+  [IBM Q3 2026](https://financialreportinsights.com/companies/ibm/2026/q3)
+- **META** — Q3 2026. Revenue $64.60B (+26.1%). GAAP net income $9.86B
+  (+264%) is a distortion: Q3 carries a ~$9.89B charge for the August
+  teen-mental-health state settlement (up to ~$18.59B total), while Q3
+  2025 carried a one-time $15.93B tax charge. Ex-charge operating
+  income $22.88B (+11.4%); ex-both-years EPS growth only +2.1%. Ad
+  revenue +25.9% (26% constant currency), DAP 3.64B (+3%). FCF -$2.12B
+  on $34.91B capex. 2026 capex guide raised to $135-145B; Reality Labs
+  loss guided $18-19B in 2026, ~$15B in 2027. Noted the announced
+  2027-01-19 Class C share issuance (economically a 2-for-1 split) will
+  need adjusting for in later per-share comparisons.
+  [META Q3 2026](https://financialreportinsights.com/companies/meta/2026/q3)
+- **TSLA** — Q3 2026. Revenue $28.05B (-0.2%), GAAP net income $787M
+  (-42.7%), GAAP diluted EPS $0.22 (-43.6%); non-GAAP EPS $0.48 (-4%).
+  Automotive gross margin ex-credits 18.1% (vs 15.4%); regulatory
+  credits $113M (-73%). Energy revenue $2.88B (-15.6%, partly
+  tariff-refund related) but energy gross margin recovered to ~33.1%
+  from 20.4% in Q2. FCF $1.53B (-62%) on capex $4.73B (+110%). R&D
+  +69%. Confirms Q2's read: credits kept falling, margins stayed
+  compressed; energy margin recovery was the one miss on Q2's
+  expectations.
+  [TSLA Q3 2026](https://financialreportinsights.com/companies/tsla/2026/q3)
+- **TXN** — Q3 2026. Revenue $6.06B (+27.7%), net income $2.43B
+  (+77.8%), diluted EPS $2.62 (+77.0%), operating margin 47.5% (vs
+  35.1%). Analog revenue $4.91B (+32%) at 51.0% margin; Embedded
+  Processing $858M (+21%) at 26.5%. Capex $463M, down sharply from
+  $1.20B a year ago. Q4 guide: revenue $5.80-6.30B, EPS $2.45-2.79
+  (flat at the midpoint vs Q3). Q2's forecast of growth slowing to
+  ~15% did not hold up — growth accelerated to 28% instead.
+  [TXN Q3 2026](https://financialreportinsights.com/companies/txn/2026/q3)
+- **LRCX (Lam Research)** — labeled **fiscal Q1 2027** (period ended
+  2026-09-27; Lam's fiscal year ends in late June, so this follows the
+  same fiscal-year convention as the prior `2026/annual` report, not
+  calendar Q3 2026). Revenue $8.22B (+54.4%), net income $2.75B
+  (+75.5%), diluted EPS $2.19 (+76.6%), operating margin 40.0% (vs
+  34.4%). Beat July's guidance midpoint ($8.10B/$2.15 EPS). China rose
+  to 35% of revenue (from 26% in the June quarter) as Taiwan fell to
+  18% (from 27%) — the report's Takeaway is about this concentration.
+  Dec-quarter guide: revenue $8.60B ± $400M, EPS $2.33 ± $0.15.
+  [LRCX Q1 FY2027](https://financialreportinsights.com/companies/lrcx/2027/q1)
+
+**Main report-period count: 38 → 43 tonight** (the 5 new-period
+publishes above; the 3 same-period confirmations don't count as new
+report-periods). This is "a few" over the ~40 cap, which CLAUDE.md's
+tier-0 hot-list/S&P-500 exception explicitly allows for a day like
+today (five mega-cap earnings releases, all hot-list, all reported
+same-day). Hot-list rewrites remain at 10/10 — allotment already used
+earlier tonight, not touched this firing. Stopping here for this
+firing: the remaining S&P 500 tier-0 candidates (CCI, CSX, GL, KMI,
+LUV, LVS, ROL, URI — 8 tickers, not yet researched) and 4 us-listed tier-0 candidates
+(EGP, INBS, TFIN, WGO) are left for a later firing tonight, since
+43/~40 is already past the nightly budget for anything beyond the
+highest-priority hot-list names. A later firing should re-run
+`scan-recent-filings`, see the count, and use judgment on whether any
+remaining sp500 tier-0 item is worth doing given the count is already
+over cap (CLAUDE.md doesn't explicitly say to stop tier 0 mid-queue,
+but the nightly cap's purpose — not burning the week's usage budget in
+one night during earnings season — argues for stopping here rather
+than clearing the full tier-0 queue).

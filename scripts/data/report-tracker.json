@@ -3637,44 +3637,72 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-20",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu9wzh5k000004l1ffgy1u1i"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/companies/meta/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-29",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-30",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release — same-period update only (lastFilingSeen) once it lands unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-20"
+    "lastChecked": "2026-10-21",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-20",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu9wzh5k000004l1ffgy1u1i"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/companies/meta/2026/q3"
+      }
+    ]
   },
   "TSLA": {
     "name": "Tesla, Inc.",
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-20",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu9x4dwu000104l3dnfj1om9"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/companies/tsla/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, Q3 2026 production/deliveries release)",
+      "type": "8-K (Item 2.02)",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-02"
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 earnings release (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "Tesla's 2026-10-02 8-K Ex.99.1 (production/deliveries) states Q3 2026 financial results will be announced after market close Wed 2026-10-21",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 update letter — same-period update only (lastFilingSeen) once it lands unless it changes a figure",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-10-03"
+    "lastChecked": "2026-10-21",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-20",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu9x4dwu000104l3dnfj1om9"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/companies/tsla/2026/q3"
+      }
+    ]
   },
   "AVGO": {
     "name": "Broadcom",
@@ -3930,22 +3958,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubd12sw000204l8ka5e0y7v"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/companies/ibm/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-23; IBM typically reports Q3 in mid-to-late October",
+      "estimate": "2026-10-23",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release — same-period update only (lastFilingSeen) once it lands unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-21",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-21",
+        "url": "https://financial-reports-web.vercel.app/reports/cmubd12sw000204l8ka5e0y7v"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/companies/ibm/2026/q3"
+      }
+    ]
   },
   "QCOM": {
     "name": "Qualcomm",
@@ -4199,14 +4241,14 @@
       "url": "https://financialreportinsights.com/reports/cmvib88dh000208ljz47wnyv9"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-20"
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
+      "type": "10-Q (Q4 2026 earnings 8-K)",
+      "estimate": "2027-01-20",
+      "basis": "Q3 2026 10-Q filed 2026-10-21, confirms the figures already published from the Exhibit 99 earnings release (no changes); next new period is Q4/FY2026 results, ~90 days out",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-21"
@@ -4403,17 +4445,17 @@
       "url": "https://financialreportinsights.com/companies/jnj/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-27",
-      "filedAt": "2026-10-13"
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "Q1 and Q2 10-Qs filed 8 days after their earnings 8-Ks (04-14→04-22, 07-15→07-23)",
+      "type": "10-Q (Q4 2026 / FY2026 earnings 8-K)",
+      "estimate": "2027-01-20",
+      "basis": "Q3 2026 10-Q filed 2026-10-21, confirms the figures already published from the Exhibit 99 earnings release (net earnings $210M, diluted EPS $0.09 — matches exactly); next new period is Q4/FY2026 results",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-14",
+    "lastChecked": "2026-10-21",
     "reports": [
       {
         "year": 2026,
@@ -4966,23 +5008,37 @@
     "name": "Lam Research Corporation",
     "status": "done",
     "latestReport": {
-      "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucrrbbq000004lbompuk8ci"
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/companies/lrcx/2027/q1"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-06-28",
-      "filedAt": "2026-08-07"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-27",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
       "type": "10-Q (fiscal Q1 FY2027)",
-      "estimate": "2026-10-21",
-      "basis": "prior-year cadence: FY2026 Q1 10-Q filed 2025-10-22 after FY2025 10-K filed 2025-08-08",
+      "estimate": "2026-11-10",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release — same-period update only (lastFilingSeen) once it lands unless it changes a figure; next NEW period is fiscal Q2 FY2027 (Dec 2026 quarter), expected ~late January 2027",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-21",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucrrbbq000004lbompuk8ci"
+      },
+      {
+        "year": 2027,
+        "period": "Q1",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/companies/lrcx/2027/q1"
+      }
+    ]
   },
   "KLAC": {
     "name": "KLA Corporation",
@@ -5011,22 +5067,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucrrd57000104lbsj7zszeg"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/companies/txn/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-23",
-      "basis": "calendar fiscal year; prior-year Q3 10-Q filed 2025-10-24, roughly 90 days after Q2 10-Q",
+      "estimate": "2026-10-24",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release — same-period update only (lastFilingSeen) once it lands unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-21",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucrrd57000104lbsj7zszeg"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/companies/txn/2026/q3"
+      }
+    ]
   },
   "HOOD": {
     "name": "Robinhood Markets, Inc.",
@@ -5126,14 +5196,14 @@
       "url": "https://financialreportinsights.com/reports/cmvibghrr000108l81h71tizc"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-20"
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-26",
-      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1/99.2 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
+      "type": "10-Q (Q4 2026 earnings 8-K)",
+      "estimate": "2027-01-20",
+      "basis": "Q3 2026 10-Q filed 2026-10-21, confirms the figures already published from the Exhibit 99 earnings release (no changes); next new period is Q4/FY2026 results, ~90 days out",
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-21"
