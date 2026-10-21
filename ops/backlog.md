@@ -6,19 +6,32 @@ date and commit.
 
 ## Next
 
-- **Watch 2026-10-21 night: does tier 0 now see same-day filings?**
-  Ops fixed `scan-recent-filings` on 10-21 morning (`0104044`): SEC only
-  builds a day's daily index at ~02:00 UTC the next day, so inside the
-  window the scan always read today as "0 filings" — every "tier 0
-  empty" night this season was partly this. The 10-20 night's seven
-  firings missed NFLX, GE, GM, RTX, ISRG, SMCI, UAL, MMM (hot list) and
-  CB, COF, EFX, FDS, GPC, HAL, HAS, KEY, MSCI, NOC, STLD, SYF (S&P 500),
-  all filed 10-20; they surface as 10-20 candidates tonight via the
-  daily index anyway, plus whatever files 10-21 (TSLA after close) via
-  the new live sources. Check the nightly log's first firing: the scan
-  should print a "Live: EDGAR full-text search" line and tier 0 should
-  not be empty. If efts.sec.gov errors show up repeatedly, the hot-list
-  submissions pass still covers the ~120 names that matter most.
+- **Watch 2026-10-22 night: do firings use `npm run claim`, and does
+  next-batch stop listing the waiting FPIs?** Ops shipped both on 10-22
+  morning (`6825a03`, scripts + CLAUDE.md only). Check the nightly log:
+  (a) a "Claim: ..." commit before each research batch and a "claimed by
+  another firing" line in later scans; no "already exists" collisions.
+  (b) `next-batch` no longer prints BRAI, BTCT, CCHH, CDTG, CHNR, CLWT,
+  CRE, CUPR, CURR, DSY (pending, next filing not due) at the top of the
+  us-listed backlog — before the fix they were re-confirmed as "nothing
+  yet" firing after firing (10-19, 10-20, 10-21 nights). If the routine
+  ignores the claim rule, the stored prompt is where it has to go (user's
+  call). Also from the 10-21 night: 8 S&P 500 tier-0 candidates (CCI,
+  CSX, GL, KMI, LUV, LVS, ROL, URI, all filed 10-21) were left
+  unresearched because the night was already at 43/~40 — they're still
+  inside the 7-day window and should surface first thing tonight. UDR
+  needs an `--edit` on/after 2026-11-02 (preliminary figures) — the
+  nightly's own follow-up, noted in its log.
+
+- **Tier 0 same-day fix confirmed working (10-21 night).** The first
+  firing's scan printed "Live: EDGAR full-text search" and 42 candidates
+  (12 hot-list, 22 S&P 500, 8 us-listed); NFLX, GE, GM, RTX, ISRG, UAL,
+  T, TMO, PM, MMM (10-20 filers) and TSLA, META, IBM, TXN, LRCX (10-21
+  after-close filers) were all live the same night: 43 report-periods,
+  the most ever, 3 over the cap via the hot-list exception. Downside
+  seen the same night: two firings worked the same 8 us-listed tier-0
+  tickers concurrently (7 wasted Opus passes, no duplicates went live)
+  → the claims mechanism above.
 
 - **Page indexing drill-down from Hop, 2026-10-20 (answers the 10-20
   "cần quyết định" item 1 — don't ask again).** Every example URL was
@@ -114,9 +127,9 @@ date and commit.
   IBM/T/INTC 10-22). Also from that log: **DOMO's operating business was
   sold; the shell is now Huckleberry.ai (HUCK)** — `us-listed.json` swap
   is the nightly routine's, not ops'.
-- **GSC sitemap re-downloaded 2026-10-18 22:52 UTC** (first fetch since
-  10-16; 2,763 submitted, 0 errors). One data point, not a trend; if
-  `lastDownloaded` moves again by 10-21 the daily crawl is recovering.
+- **GSC sitemap re-downloaded 2026-10-18 22:52 and again 2026-10-21
+  04:57 UTC** (2,832 submitted, 0 errors) — two fetches in three days
+  after none between 10-16 and 10-18; not daily yet, but moving.
   `indexSample` on 10-20: `/learn` flipped from "Discovered – currently
   not indexed" to "URL is unknown to Google" (homepage still Duplicate on
   the 09-22 crawl; `/companies/aapl` still never crawled). Could be API
@@ -223,6 +236,25 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-22 — claims between firings + waiting FPIs out of next-batch
+  + homepage pool** (`6825a03`, `d01c3db`; prod
+  `dpl_CcBjehtuMn1ii2MNWMifjaZXFNU5`). New `scripts/claims.ts` /
+  `npm run claim -- A B C`: one `scripts/data/claims/<TICKER>.json` per
+  ticker (no rebase conflicts between firings), committed and pushed
+  before research subagents are dispatched; `scan-recent-filings` and
+  `next-batch` leave claimed tickers out for 3 hours and print them;
+  `--release`, `--list`, `--no-push`. Tested locally: claim → scan
+  listed CSX/NFLX as "claimed by another firing", next-batch dropped
+  them; test commits were discarded. `next-batch` now also skips
+  `pending` entries whose `nextExpectedFiling.estimate` is in the future
+  (BRAI…DSY, ten FPIs, were the first ten us-listed picks every night).
+  `site-metrics` figures check adds the 3 newest reports from
+  `/feed.xml` (`sample: "newest"`); META/LRCX/TSLA Q3 clean on the first
+  run. Homepage `SEASON_POOL` 16 → 40: after the 43-report night the
+  section showed KEY instead of NFLX/GE/GM; live after deploy: META,
+  TSLA, NFLX, TMO, IBM, GE; health 9/9. CLAUDE.md: "Claim before you
+  dispatch" paragraph under the per-firing cap.
 
 - **2026-10-21 — tier 0 blind spot: same-day EDGAR filings** (`0104044`,
   script only, no deploy). `form.YYYYMMDD.idx` is built at ~02:01 UTC
