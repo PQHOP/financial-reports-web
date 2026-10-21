@@ -2730,9 +2730,9 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-12",
-      "url": "https://financial-reports-web.vercel.app/reports/cmty7ekeq000004l5jgl5k8hc"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvibp9rf000408l82s3gil7p"
     },
     "reports": [
       {
@@ -2750,21 +2750,29 @@
         "url": "https://financial-reports-web.vercel.app/reports/cmty7ekeq000004l5jgl5k8hc",
         "periodEnd": "2026-06-30",
         "filedAt": "2026-07-21"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/reports/cmvibp9rf000408l82s3gil7p",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-20"
       }
     ],
     "allAvailable2026QuartersCovered": true,
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-21"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-20",
-      "basis": "prior Q3 10-Q filed 2025-10-21",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-27",
+      "basis": "estimated, not confirmed by search; 3M typically files its 10-K in late January",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-13"
+    "lastChecked": "2026-10-21"
   },
   "MO": {
     "name": "Altria",
@@ -5602,22 +5610,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-23",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucwlcez000604l62n8s81rr"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvibp4rd000308l8qj07fk62"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-24",
+      "estimate": "2026-10-28",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99 earnings release, update lastFilingSeen (and --edit if it adds material detail, e.g. the FPL depreciation/NEER operating-income drivers) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-21"
   },
   "DUK": {
     "name": "Duke Energy Corporation",
