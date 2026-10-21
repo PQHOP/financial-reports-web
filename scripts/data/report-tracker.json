@@ -893,9 +893,9 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-13",
-      "url": "https://financial-reports-web.vercel.app/reports/cmtybdbea000004l73dxkuqoa"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvibxukm000508ljyjbnzqbk"
     },
     "reports": [
       {
@@ -913,22 +913,29 @@
         "url": "https://financial-reports-web.vercel.app/reports/cmtybdbea000004l73dxkuqoa",
         "periodEnd": "2026-06-30",
         "filedAt": "2026-07-28"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/reports/cmvibxukm000508ljyjbnzqbk",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-21"
       }
     ],
     "allAvailable2026QuartersCovered": true,
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28",
-      "note": "filedAt corrected 2026-09-13 — the previous 2026-07-16 date was the earnings-release 8-K, not the 10-Q itself"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-15",
-      "basis": "quarterly cadence from Q2 filing date",
+      "estimate": "2026-11-03",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-13"
+    "lastChecked": "2026-10-21"
   },
   "ACGL": {
     "name": "Arch Capital Group",
