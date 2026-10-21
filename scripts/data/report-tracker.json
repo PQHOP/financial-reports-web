@@ -5651,17 +5651,18 @@
       "url": "https://financial-reports-web.vercel.app/reports/cmucwnk11000804js0mm53xxa"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-31"
+      "type": "8-K (preliminary business update)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20",
+      "note": "2026-10-20 8-K is only a preliminary revenue/gross-margin range for Q1 FY2027 (unaudited, no net income/EPS/margins) -- deliberately not published as a report per CLAUDE.md's no-fabrication rule. Full results due on the Nov 3 earnings call per the filing itself."
     },
     "nextExpectedFiling": {
-      "type": "10-Q (fiscal Q1 FY2027)",
-      "estimate": "2026-11-14",
-      "basis": "fiscal year ends June 30; estimating ~45 days after fiscal Q1 FY2027 quarter end (2026-09-30) per typical 10-Q cadence. Note: company had a history of delayed filings (FY2024 10-K + 2 10-Qs filed late together 2025-02-25) but FY2025 and FY2026 10-Ks both landed on schedule",
-      "confidence": "estimated"
+      "type": "8-K earnings release (Q1 FY2027)",
+      "estimate": "2026-11-03",
+      "basis": "earnings call date stated in the 2026-10-20 preliminary-update 8-K itself",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-21"
   },
   "ARM": {
     "name": "Arm Holdings plc - American Depositary Shares",
