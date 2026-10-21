@@ -3958,22 +3958,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubdou2k000104l7pnic4eiz"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmviba7x7000308ljhq2ebp5b"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-16"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-15",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-16; GE typically reports Q3 in mid-October",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "estimated, not confirmed by search; GE typically files its 10-K in late January",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-21"
   },
   "DIS": {
     "name": "Walt Disney Company (The)",
