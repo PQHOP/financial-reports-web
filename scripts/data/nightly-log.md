@@ -17414,8 +17414,48 @@ before being marked `"done"`.
 All five sanity-checked live (cache-busted fetch, 200, content intact)
 before being marked `"done"`.
 
-**Running total tonight: 8 report-periods (NFLX, TMO, T, GE, UAL,
-ISRG, PM, GM), 0 skips.** Remaining tier-0 queue: 4 more hot-list
-(RTX, MMM, NEE, SMCI), 22 S&P 500, 8 us-listed. Continuing through
-hot-list first, then S&P 500, while the ~40 nightly cap and session
-time allow.
+Finished the rest of the hot-list order:
+- **RTX** — Q3 2026, from the full 10-Q plus the same-day earnings
+  8-K for adjusted figures. Revenue $24.97B (+11.1%, 12% organic).
+  GAAP net income +34.7% boosted by a ~$0.4B IEEPA tariff refund
+  ($0.25/share) net of a $363M Pratt & Whitney customer-bankruptcy
+  charge; adjusted EPS $2.26 (ex-bankruptcy charge, keeps the refund),
+  ~$2.01/+18% without the refund. Defense bookings ~$59B (Raytheon
+  $52.3B incl. $23B Tomahawk, $14.3B AMRAAM); backlog $340B, up from
+  $289B at Q2. FCF -47% on lower prepayments. Guidance raised again
+  to adjusted EPS $7.65-7.75.
+  [RTX Q3 2026](https://financialreportinsights.com/companies/rtx/2026/q3)
+- **MMM (3M)** — Q3 2026, from the full 10-Q plus the same-day
+  earnings 8-K. Revenue $6.58B (+1.0%, organic +3.3%, down from 5.4%
+  in Q2). GAAP EPS +70% almost entirely from a $281M mark-to-market
+  gain on 3M's Solventum stake (vs a $94M loss a year ago); adjusted
+  EPS $2.50 (+12%). FY adjusted-EPS guide raised to $9.10-9.15, about
+  $0.16 of the $0.25 raise from a non-GAAP accounting change rather
+  than operations (report's own estimate, stated as such). PFAS
+  liability $7.5B, $2.8B due within 12 months (up from $0.7B);
+  earplug accrual fell to $1.1B from $2.4B.
+  [MMM Q3 2026](https://financialreportinsights.com/companies/mmm/2026/q3)
+- **NEE (NextEra Energy)** — Q3 2026, from the 8-K earnings release
+  (10-Q not yet filed). Revenue $8.09B (+1.6%); GAAP net income +95.9%
+  almost entirely (~94%) a $2,246M after-tax hedge mark-to-market
+  gain. Adjusted EPS $1.24 (+9.7%). FPL net income +10.7%. NEER added
+  3.7 GW to backlog (now ~36.7 GW). FY guidance of $3.92-4.02
+  reaffirmed, aiming for the high end.
+  [NEE Q3 2026](https://financialreportinsights.com/companies/nee/2026/q3)
+- **SMCI** — **skipped, not published.** The 2026-10-20 8-K is only a
+  preliminary revenue/gross-margin range for Q1 FY2027 (unaudited, no
+  net income/EPS/segment detail) — publishing from it would mean
+  putting estimates into `metrics`, which CLAUDE.md's no-fabrication
+  rule rules out. Full results are on the Nov 3 earnings call per the
+  filing itself; tracker's `nextExpectedFiling` set to that date,
+  confidence `confirmed`.
+
+All three published checked live (cache-busted fetch, 200, content
+intact) before being marked `"done"`. **Hot list's 12 tier-0 fresh
+filings are now fully worked through: 11 published, 1 skipped
+(SMCI).**
+
+**Running total tonight: 11 report-periods (NFLX, TMO, T, GE, UAL,
+ISRG, PM, GM, RTX, MMM, NEE), 1 skip (SMCI).** Remaining tier-0 queue:
+22 S&P 500, 8 us-listed. Moving to the S&P 500 fresh-filing batch next
+while the ~40 nightly cap and session time allow.
