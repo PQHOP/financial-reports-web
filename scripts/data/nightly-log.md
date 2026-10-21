@@ -18053,3 +18053,20 @@ over cap (CLAUDE.md doesn't explicitly say to stop tier 0 mid-queue,
 but the nightly cap's purpose — not burning the week's usage budget in
 one night during earnings season — argues for stopping here rather
 than clearing the full tier-0 queue).
+
+**New firing (22:04 UTC).** Network check passed (sec.gov 403 without
+UA as expected, 200 with the required UA; financialreportinsights.com
+reachable). Pulled `origin/master` — no new commits since the prior
+firing's 43/~40 push (`27839a2`). Tonight's running total is still
+**43 report-periods**, already past the ~40 cap (the tier-0 mega-cap
+exception the prior firing used). Hot-list rewrites are at 10/10 for
+tonight. The window closes at 22:59 UTC, under an hour away. Per
+CLAUDE.md's cap rule ("later firings that night should see the count
+and exit immediately") and the prior firing's own note, this firing
+does no new research or publishing and exits immediately without
+touching tier 1/2 or the remaining tier-0 S&P 500 items (CCI, CSX, GL,
+KMI, LUV, LVS, ROL, URI) or us-listed items (EGP, INBS, TFIN, WGO) —
+those stay queued for tomorrow night's first firing, which should
+re-run `scan-recent-filings` fresh since some may no longer be
+candidates by then (newer filings, or the 7-day window moving).
+`report-tracker.json` untouched this firing (nothing researched).
