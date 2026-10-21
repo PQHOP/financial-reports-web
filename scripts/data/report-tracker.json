@@ -35468,5 +35468,71 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-20"
+  },
+  "IRDM": {
+    "name": "Iridium Communications Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmviddbda000007k3mf1x16xq"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q4 2026)",
+      "estimate": "2027-02-10",
+      "basis": "estimated from quarterly cadence (~90 days after Oct 20 filing), not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-21"
+  },
+  "PEGA": {
+    "name": "Pegasystems Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvide4ta000107k3m440u5gf"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-20",
+      "basis": "estimated, not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-21"
+  },
+  "PENG": {
+    "name": "Penguin Solutions, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvideefw000107jwojsg2okg"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-08-28",
+      "filedAt": "2026-10-20"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2027-01-08",
+      "basis": "estimated ~90 days after fiscal year end (Aug 28), not confirmed by search",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-21"
   }
 }

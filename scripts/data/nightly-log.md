@@ -17725,3 +17725,93 @@ audited figures. Remaining tier-0 queue: 4 us-listed (DTSQ, IRDM,
 PEGA, PENG). At 35/~40 (5 report-periods of headroom), finishing the
 last 4 us-listed tier-0 candidates to fully clear tonight's scan
 output before stopping.
+
+**Separate firing, same night: cleared the last 4 us-listed tier-0
+candidates (DTSQ, IRDM, PEGA, PENG).** This firing's own
+`scan-recent-filings` run returned the same 8 us-listed candidates
+(ADC, ACI, CLF, LRN, DTSQ, IRDM, PEGA, PENG) already seen above —
+confirming two firings were working the same tier-0 queue
+concurrently tonight (the per-firing-cap note's known overlap risk).
+Dispatched research subagents for all 8 in parallel; by the time each
+finished, 4 were already live from the other firing's faster
+sub-batches:
+- **ADC, CLF, LRN, ACI** — all four confirmed already published
+  (live page 200, "At a glance" present, content intact) before this
+  firing's subagents could submit. Recorded as collisions, not
+  re-published, not re-counted. Tracker entries for these were
+  already correct from the other firing; no changes needed here.
+
+Genuinely new from this firing:
+- **DTSQ (DT Cloud Star Acquisition Corporation)** — independently
+  confirmed **skipped**: a blank-check SPAC (Cayman Islands,
+  incorporated 2022-11-29), "neither engaged in any operations nor
+  generated any revenue to date" per its own 10-Q. Signed a Business
+  Combination Agreement with PrimeGen US, Inc. on 2026-02-02, not yet
+  closed. Nine-month net loss $95,883 (trust-account interest income
+  netted against operating costs); trust account ~$19.04M; extension
+  deadline 2026-10-26. Same conclusion the other firing's tracker
+  entry already reached — tracker left as-is (already `"skipped"`).
+- **IRDM (Iridium Communications)** — Q3 2026, from the full 10-Q.
+  Revenue $245.7M (+8.3%), but entirely from the July 2 Aireon
+  buyout (the remaining 60.5% stake) — pro forma revenue (Aireon
+  owned in both years) actually fell 1.4%. Net income $106.9M
+  (diluted EPS $0.98) is almost all a one-time $103.9M gain from
+  revaluing the pre-existing Aireon stake; pro forma net income was
+  only ~$2.1M vs $29.4M a year ago. Operating margin fell to 12.9%
+  from 30.9% on $21.3M of Rocket Lab-merger/Aireon-deal costs (margin
+  still only ~21.5% excluding them). Pending $27-cash-plus-stock
+  Rocket Lab merger (shareholder-approved, regulatory approvals
+  pending, expected to close mid-2027).
+  [IRDM Q3 2026](https://financialreportinsights.com/companies/irdm/2026/q3)
+- **PEGA (Pegasystems)** — Q3 2026, from the full 10-Q plus the
+  same-day earnings 8-K. Revenue $393.4M (+3.1%); Cloud revenue +19%
+  but total ACV growth slowed sharply to 6% (7% constant-currency) —
+  the filing itself blames AI-driven purchase scrutiny and the CFO
+  cites sales-execution issues. GAAP EPS fell to $0.08 from $0.24 on
+  a $16M securities-litigation settlement plus $13.3M legal fees and
+  a tax-rate swing; adjusted EPS +17% to $0.35, about half from an
+  8.4% lower share count. Buybacks ($432M YTD) exceeded free cash
+  flow ($290M) by ~$140M, cash fell from $426M to $310M. Ongoing
+  Appian litigation: retrial Jan 11 2027 with $284.6M + $1.36B in
+  potential damages sought.
+  [PEGA Q3 2026](https://financialreportinsights.com/companies/pega/2026/q3)
+- **PENG (Penguin Solutions)** — first-ever report, **fiscal 2026
+  ANNUAL** (fiscal year ended Aug 28, 2026), from the full 10-K plus
+  the Oct 6 earnings 8-K for FY2027 guidance (the 10-K itself gives
+  none). Revenue $1,731.5M (+26.5%) entirely from Integrated Memory
+  (+99.0%, AI-datacenter-driven DRAM/flash demand); Advanced Computing
+  fell 13.8% as a product line was discontinued and 2025's large
+  hyperscaler hardware sales didn't repeat. Diluted EPS $2.60 (vs
+  $0.28) includes a one-time $68.7M tax gain (effective rate -22.3%);
+  without it, net income is roughly $112M, not the reported $180.6M.
+  Operating cash flow went negative (-$151.9M) as inventory nearly
+  tripled and receivables rose 159%, both far outrunning sales
+  growth. FY2027 guide: ~40% revenue growth at the midpoint, adjusted
+  EPS $4.45.
+  [PENG FY2026 ANNUAL](https://financialreportinsights.com/companies/peng/2026/annual)
+
+All three published (IRDM, PEGA, PENG) checked live (cache-busted
+fetch, 200, content intact through the closing sentence, "At a
+glance" present) before being marked `"done"`.
+
+**Tier-0 fresh-filing queue is now fully cleared for tonight: all 8
+us-listed candidates from this scan resolved (4 published by the
+other firing, 3 published by this one, 1 skipped as a confirmed SPAC
+shell).**
+
+**Updated running total tonight: 38 report-periods** (the 35 above
+plus IRDM, PEGA, PENG — ADC/CLF/LRN/ACI are not double-counted, they
+were already in the 35), **3 skips (SMCI, COR, DTSQ), 1 no-op
+(FDS).** At 38/~40 (2 report-periods of headroom left, tier-0 queue
+empty), stopping here for the night rather than reaching into tier 1
+for the sake of 2 more — the standing follow-up (UDR `--edit` due
+2026-11-02) still applies. **Note for a future session:** two firings
+running `scan-recent-filings` within minutes of each other produced
+identical candidate lists and raced on 4 of 8 tickers — the
+per-firing cap's git-pull-before-publish discipline caught the
+collisions (no duplicate reports went live) but cost each racing
+subagent a full wasted Opus research pass. Worth considering a
+lighter-weight lock/claim step (e.g. the orchestrator writing a
+provisional tracker entry the moment a ticker is dispatched, not only
+after it publishes) if this keeps happening during earnings season
+when multiple hourly firings overlap.
