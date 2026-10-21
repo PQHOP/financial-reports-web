@@ -17669,14 +17669,59 @@ intact) before being marked `"done"`.
 published, 2 skipped (SMCI, COR — both correctly deferred to pending
 full results), 1 no-op (FDS — same fiscal year already published).**
 
-**Running total tonight: 31 report-periods (NFLX, TMO, T, GE, UAL,
+Us-listed tier-0 batch 1 (all four are brand-new company pages, first
+report ever on the site — not updates):
+- **ADC (Agree Realty)** — Q3 2026, from the full 10-Q plus the
+  same-day earnings 8-K. Revenue $213.9M (+16.7%); AFFO per share
+  $1.15 (+4.9%) — total AFFO +17.2% but diluted shares/units +11.7%
+  on forward equity settlements. ~Half of the $16.2M GAAP net-income
+  rise was one-off (insurance payout, no impairment this year). 99.8%
+  leased across 2,888 properties. FY AFFO guide nudged to
+  $4.58-4.59.
+  [ADC Q3 2026](https://financialreportinsights.com/companies/adc/2026/q3)
+- **CLF (Cleveland-Cliffs)** — Q3 2026, from the full 10-Q plus the
+  same-day earnings 8-K. Revenue $5.61B (+18.5%); swung to a $152M
+  profit from a $251M loss a year ago on steel-price recovery (ASP
+  $1,177/ton, +14%, vs HRC benchmark +42% — Cliffs' own price rose
+  less than the spot benchmark). Adjusted EBITDA $612M beat the
+  company's own $575M guide. YoY % figures omitted for net
+  income/EPS since the year-ago base was a loss (a % change there is
+  meaningless) — report says so.
+  [CLF Q3 2026](https://financialreportinsights.com/companies/clf/2026/q3)
+- **LRN (Stride)** — first-ever report, **fiscal Q1 2027** (fiscal
+  year ends June 30; calendar quarter ended Sept 30, 2026 — used the
+  company's own fiscal label, same convention as other off-calendar
+  companies on the site). Revenue $639.4M (+3.0%) entirely from
+  revenue-per-enrollment (+7.0%) outrunning a 2.5% enrollment
+  decline. GAAP operating income +22.2% almost entirely from a $17.6M
+  stock-comp swing (expense to credit on forfeitures) bigger than the
+  whole increase; on adjusted measures, operating income -3.1% and
+  EPS -9.9%. New CEO (started July 29) and activist Fivespan now
+  holds 2 board seats.
+  [LRN Q1 FY2027](https://financialreportinsights.com/companies/lrn/2027/q1)
+- **ACI (Albertsons)** — first-ever report, **fiscal Q2 2026**
+  (fiscal year runs Mar-Feb, company-numbered 12-week quarters that
+  don't map to calendar quarters — used the company's own label).
+  Revenue essentially flat (-0.1%) but operating income fell 41% to
+  $174.5M (margin 0.9%) on digital/delivery cost pressure, shrink,
+  and $42.4M of store impairments while fixed store costs didn't
+  flex down with softer sales. Identical sales -0.8% vs +2.2% a year
+  ago. Dividends+buybacks ($565M) exceeded YTD free cash flow
+  (~$311M); drew $400M on the credit line. Management withdrew its
+  FY2026 outlook pending a Q4 business review.
+  [ACI Q2 FY2026](https://financialreportinsights.com/companies/aci/2026/q2)
+
+All four published checked live (cache-busted fetch, 200, content
+intact) before being marked `"done"`. One stray scratch file
+(`sub.json`, a SEC submissions-JSON download from the LRN subagent)
+landed in the repo root instead of /tmp — deleted, never committed.
+
+**Running total tonight: 35 report-periods (NFLX, TMO, T, GE, UAL,
 ISRG, PM, GM, RTX, MMM, NEE, ABT, CME, DHR, TDY, MCO, ELV, NTRS, UDR,
-WAB, CB, COF, EFX, GPC, HAL, HAS, STLD, SYF, NOC, MSCI, KEY), 2 skips
-(SMCI, COR), 1 no-op (FDS).** One flagged follow-up: UDR needs an
-`--edit` on/after 2026-11-02 for final audited figures. Remaining
-tier-0 queue: 8 us-listed (LRN, ACI, ADC, CLF, DTSQ, IRDM, PEGA,
-PENG). At 31/~40 (9 report-periods of headroom left), continuing into
-the us-listed tier-0 queue — note the standing ~10/night us-listed cap
-would otherwise apply to tier-1 us-listed, but these are tier-0 fresh
-filings for companies not yet `"done"`, so they take priority over
-that cap per the earnings-season rule (tier 0 is the whole job).
+WAB, CB, COF, EFX, GPC, HAL, HAS, STLD, SYF, NOC, MSCI, KEY, ADC, CLF,
+LRN, ACI), 2 skips (SMCI, COR), 1 no-op (FDS).** One flagged
+follow-up: UDR needs an `--edit` on/after 2026-11-02 for final
+audited figures. Remaining tier-0 queue: 4 us-listed (DTSQ, IRDM,
+PEGA, PENG). At 35/~40 (5 report-periods of headroom), finishing the
+last 4 us-listed tier-0 candidates to fully clear tonight's scan
+output before stopping.

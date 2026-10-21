@@ -959,6 +959,29 @@
     },
     "lastChecked": "2026-09-19"
   },
+  "ACI": {
+    "name": "Albertsons Companies, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q2",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvid8kar000707jwk4tk7xou"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-12",
+      "filedAt": "2026-10-20",
+      "note": "fiscal year runs Mar-Feb with company-numbered quarters (Q1 16 weeks, Q2-Q4 12 weeks each) that don't align to calendar quarters; used the company's own 'second quarter of fiscal 2026' label rather than mapping to a calendar quarter"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 2026)",
+      "estimate": "2026-12-05",
+      "basis": "inferred from the 12-week quarter length after the 2026-09-12 Q2 period end; not stated by the company",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-21"
+  },
   "ACN": {
     "name": "Accenture plc",
     "status": "done",
