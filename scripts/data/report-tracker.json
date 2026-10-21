@@ -11315,28 +11315,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/gpc/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvicn4jq000c08l8y8xjihv8"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-21"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-20",
-      "basis": "Q3 2025 filed Tue 2025-10-21; 2026 Q1/Q2 on Tuesdays, 10-Q same day as 8-K",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-18",
+      "basis": "estimated, not confirmed by search; GPC typically files its 10-K in mid-February",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-21",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/gpc/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/reports/cmvicn4jq000c08l8y8xjihv8"
       }
     ]
   },
@@ -11435,28 +11441,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/hal/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvicmfs6000b08l8soy8ejsc"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-20"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~10-23",
-      "estimate": "2026-10-20",
-      "basis": "Halliburton IR release 2026-09-15: Q3 call Tue Oct 20, 2026",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-23",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1 earnings release, update lastFilingSeen (and --edit if it adds material detail, e.g. rig counts/product-line drivers) once it lands",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-21",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/hal/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/reports/cmvicmfs6000b08l8soy8ejsc"
       }
     ]
   },
@@ -11495,28 +11507,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/has/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-21",
+      "url": "https://financialreportinsights.com/reports/cmvicmebg000a08l8uobtefmx"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-28",
-      "filedAt": "2026-07-30"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-27",
+      "filedAt": "2026-10-20"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~11-04",
-      "estimate": "2026-10-22",
-      "basis": "Q3 2025 8-K 2025-10-23, 10-Q 11-05",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q not yet filed as of 2026-10-21; prior year's Q3 10-Q filed 2025-11-05; report written from the Exhibit 99.1 earnings release, update lastFilingSeen (and --edit if it adds material detail) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-21",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/has/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-21",
+        "url": "https://financialreportinsights.com/reports/cmvicmebg000a08l8uobtefmx"
       }
     ]
   },
