@@ -17615,12 +17615,68 @@ S&P 500 batch 4:
 All four published checked live (cache-busted fetch, 200, content
 intact) before being marked `"done"`.
 
-**Running total tonight: 26 report-periods (NFLX, TMO, T, GE, UAL,
+S&P 500 batch 5 (final batch — clears the rest of the S&P 500 tier-0
+queue):
+- **STLD (Steel Dynamics)** — Q3 2026, from the 8-K earnings release
+  (10-Q not yet filed). Revenue $6.51B (+34.8%), diluted EPS $5.26
+  (+92.0%) but **missed the company's own Sept 17 guidance of
+  $5.34-5.38** (aluminum-unit coolant issue, since fixed; release
+  doesn't fully address the gap). Gain was price-driven: steel ASP
+  $1,400/ton (+$281 YoY); external/flat-roll shipments actually fell
+  YoY, record total shipments came from processing divisions
+  (incl. New Process Steel since Dec 2025). Buybacks added ~5pts of
+  EPS growth.
+  [STLD Q3 2026](https://financialreportinsights.com/companies/stld/2026/q3)
+- **SYF (Synchrony)** — Q3 2026, from the 8-K earnings release (10-Q
+  not yet filed; bank-industry metrics). Net earnings -17.2% to
+  $892M — a $30M reserve build replaced last year's $152M release,
+  explaining ~$137M of the ~$185M drop after tax. NIM 15.50% (-12bps).
+  Purchase volume +8%. FY EPS guidance raised to ~$9.50 (top of prior
+  $9.25-9.50 range).
+  [SYF Q3 2026](https://financialreportinsights.com/companies/syf/2026/q3)
+- **NOC (Northrop Grumman)** — Q3 2026, from the full 10-Q plus the
+  same-day earnings release. Sales $11.12B (+6.7%); operating margin
+  11.4% vs 11.9% a year ago. EPS +2.9% came from tax, not operations
+  (effective rate 13.4% vs 16.9% on bigger research credits) — at
+  last year's rate EPS would have been ~$7.57 not $7.89. Record
+  backlog $109.6B (+15% from December). YTD cash conversion weak
+  (operating cash flow 0.44x net income); FY guidance raised.
+  [NOC Q3 2026](https://financialreportinsights.com/companies/noc/2026/q3)
+- **MSCI** — Q3 2026, from the full 10-Q plus the same-day earnings
+  8-K. Revenue $892.0M (+12.4%); organic recurring subscription Run
+  Rate growth 8.7% (up from 8.1% in Q2). Analytics segment margin
+  fell to 44.9% from 49.4% despite record sales. Sustainability and
+  Climate organic growth only 2.2% with negative net new sales.
+  Buybacks ($552.3M) exceeded Q3 free cash flow ($385.4M); revolver
+  balance rose. All three of the Q2 report's watch items went against
+  MSCI (Analytics margin, Sustainability growth, ETF fee rate).
+  [MSCI Q3 2026](https://financialreportinsights.com/companies/msci/2026/q3)
+- **KEY (KeyCorp)** — Q3 2026, from the 8-K earnings release (10-Q
+  not yet filed; bank-industry metrics). Revenue $2.04B (+8.4%,
+  record); NIM 2.95% and ROTCE 15.1%, both up. Credit improved
+  (nonaccrual inflows $165M vs $365M, under the $300M level the Q2
+  report flagged). But ~$1.5B of added paper losses on bonds/hedges
+  cut tangible book value per share 9% (to $12.35); on Q2's equity
+  base, ROTCE would have been ~14.5% not 15.1%. Key's own
+  loss-adjusted capital ratio fell to 9.0%, below its 9.5-10% target
+  range.
+  [KEY Q3 2026](https://financialreportinsights.com/companies/key/2026/q3)
+
+All five published checked live (cache-busted fetch, 200, content
+intact) before being marked `"done"`.
+
+**S&P 500 tier-0 queue is now fully cleared: 20 of 22 candidates
+published, 2 skipped (SMCI, COR — both correctly deferred to pending
+full results), 1 no-op (FDS — same fiscal year already published).**
+
+**Running total tonight: 31 report-periods (NFLX, TMO, T, GE, UAL,
 ISRG, PM, GM, RTX, MMM, NEE, ABT, CME, DHR, TDY, MCO, ELV, NTRS, UDR,
-WAB, CB, COF, EFX, GPC, HAL, HAS), 2 skips (SMCI, COR), 1 no-op
-(FDS, same period already published).** One flagged follow-up: UDR
-needs an `--edit` on/after 2026-11-02 for final audited figures.
-Remaining tier-0 queue: 5 S&P 500 (KEY, MSCI, NOC, STLD, SYF), 8
-us-listed. At 26/~40, continuing carefully while the nightly cap and
-session time allow — may need to stop before exhausting the S&P 500
-tier-0 queue tonight.
+WAB, CB, COF, EFX, GPC, HAL, HAS, STLD, SYF, NOC, MSCI, KEY), 2 skips
+(SMCI, COR), 1 no-op (FDS).** One flagged follow-up: UDR needs an
+`--edit` on/after 2026-11-02 for final audited figures. Remaining
+tier-0 queue: 8 us-listed (LRN, ACI, ADC, CLF, DTSQ, IRDM, PEGA,
+PENG). At 31/~40 (9 report-periods of headroom left), continuing into
+the us-listed tier-0 queue — note the standing ~10/night us-listed cap
+would otherwise apply to tier-1 us-listed, but these are tier-0 fresh
+filings for companies not yet `"done"`, so they take priority over
+that cap per the earnings-season rule (tier 0 is the whole job).
