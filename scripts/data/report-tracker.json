@@ -8267,17 +8267,18 @@
       "url": "https://financialreportinsights.com/companies/cor/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02, guidance/acquisition update, no results)",
+      "periodEnd": null,
+      "filedAt": "2026-10-21",
+      "note": "2026-10-21 8-K announces the American Oncology Network acquisition and raises FY2026 adjusted EPS guidance to 'at least $17.90' -- no Q4/FY2026 revenue, net income or EPS, so deliberately not published per CLAUDE.md's no-fabrication rule. FY2026 results 8-K due 2026-11-04 per the filing itself (year 2026, period ANNUAL when it lands, fiscal year ended 2026-09-30)."
     },
     "nextExpectedFiling": {
       "type": "8-K Item 2.02 (FY2026 results); 10-K ~2026-11-20",
       "estimate": "2026-11-04",
-      "basis": "FY ends Sep 30; prior-year results 8-K 2025-11-05, 10-K ~2 weeks later",
-      "confidence": "estimated"
+      "basis": "earnings-call date stated in the 2026-10-21 8-K Ex. 99.1 itself",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-21",
     "reports": [
       {
         "year": 2026,
