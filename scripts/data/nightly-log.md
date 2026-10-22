@@ -18817,3 +18817,23 @@ later firing tonight or tomorrow's first firing, which should re-run
 `scan-recent-filings` fresh. `report-tracker.json` untouched this
 firing (nothing researched). The `package-lock.json` diff from `npm
 install` was discarded rather than committed.
+
+**New firing (21:04 UTC).** Network check passed (sec.gov 403 without
+UA as expected — SEC's own response, not a proxy block — 200 with the
+required UA via `curl`; both financialreportinsights.com and the
+`.vercel.app` alias reachable). `git fetch` showed `origin/master` at
+`f7ff556` (a CLAUDE.md-only edit from a prior session, the temporary
+Big Tech week cap note — not applicable tonight), already matching
+local HEAD once fetched; no new commits to pull. No active claims in
+`scripts/data/claims/` (just the README). Independently re-verified
+tonight's total against `report-tracker.json` (counted entries with
+`latestReport.publishedAt == "2026-10-22"`): **40**, matching the log.
+Tonight's running total is still **40 report-periods**, the ~40 cap
+already reached by an earlier firing. Per CLAUDE.md's cap rule ("later
+firings that night should see the count and exit immediately"), this
+firing does no new research or publishing and exits immediately
+without touching tier 0/1/2 or the carried-over us-listed candidates
+(MAYS, VC, ARR, EGP, EPRT, INBS, LOAN, NTST, NVEC, TFIN, WFRD) — those
+stay queued for a later firing tonight or tomorrow's first firing,
+which should re-run `scan-recent-filings` fresh. `report-tracker.json`
+untouched this firing (nothing researched, nothing to commit there).
