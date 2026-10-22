@@ -18592,3 +18592,72 @@ being marked `"done"`. Claims released after.
 items from both today's and yesterday's scans are now fully cleared.
 Moving to us-listed tier-0 next (up to 10/night sub-cap; budget to the
 ~40 cap is 10 more).
+
+**Eighth batch (us-listed tier-0, first 5/10), same firing.** Claimed
+AAL, CACI, MOH, WCN, TCBI (pushed cleanly), ran 5 Opus subagents in
+parallel. All 5 finished with clean `Canonical:`/`/reports/<id>` pairs
+and were sanity-checked live before being marked `"done"`. Claims
+released after.
+
+- **AAL (American Airlines)** — Q3 2026, from the 10-Q plus the
+  same-day 8-K earnings release. Revenue +19.3% to $16.3B, above the
+  16-19% guide, entirely on pricing (yield +18.3%; load factor fell
+  2.6pts to 83.4%, passengers -0.6%). Fuel averaged $3.85/gal (vs
+  $2.37 a year ago, no hedges), adding $1.87B to the fuel bill;
+  operating margin only 0.7%. GAAP net loss $269M ($0.41/share) vs a
+  $114M loss a year ago. Interest expense ($435M) was nearly 4x
+  operating income; shareholders' equity remains a $4.2B deficit.
+  Full-year adjusted EPS guidance cut a third time to ($1.60)-($1.00).
+  [AAL Q3 2026](https://financialreportinsights.com/companies/aal/2026/q3)
+- **CACI (CACI International)** — first report on the site, fiscal
+  Q1 2027 (quarter ended 2026-09-30), from the 10-Q plus the same-day
+  8-K earnings release. Revenue +8.2% to $2,474.6M but only 2.1%
+  organic — the rest mostly the ARKA Group acquisition ($2.64B, March
+  2026). Operating margin improved to 10.0% from 9.3%, but interest
+  expense +58.6% held net income to +4.5% ($130.4M) and GAAP diluted
+  EPS to +3.7% ($5.84); adjusted EPS +11.8% to $7.66 as excluded
+  intangible amortization rose. Book-to-bill 2.0x, funded backlog
+  +14.8% to $6.2B. FY2027 guidance raised. Filing flags the government
+  funded only by a continuing resolution expiring 2026-12-11.
+  [CACI fiscal Q1 2027 (first report)](https://financialreportinsights.com/companies/caci/2027/q1)
+- **MOH (Molina Healthcare)** — first report on the site, Q3 2026,
+  from the 10-Q plus the prior-day 8-K earnings release. Revenue
+  -3.4% to $11,082M; net income fell 51.9% to $38M as the consolidated
+  medical care ratio rose to 92.9% from 92.6%, driven by Medicaid
+  (93.0% from 92.0%, on outpatient care and high-cost drugs) — Medicare
+  and Marketplace MCRs actually improved, mainly from favorable
+  risk-adjustment estimate changes, not underlying trend. Membership
+  fell 14% to 4.86M (Marketplace -62% on deliberate repricing). Tax
+  rate jumped to 28.5% from 10.1%. 2026 guidance includes known Q4
+  drags: a $1.50/share Florida Kids Medicaid start-up loss and a
+  $1.00/share MAPD exit loss.
+  [MOH Q3 2026 (first report)](https://financialreportinsights.com/companies/moh/2026/q3)
+- **WCN (Waste Connections)** — first report on the site, Q3 2026,
+  from the 10-Q plus the prior-day 8-K earnings release. Revenue +7.3%
+  to $2,638M, all from price (core price +5.5%, volume -1.2%).
+  Reported net income +25.5% to $359.2M and EPS +28.8% mostly reflects
+  a $60.1M impairment charge in Q3 2025 not repeating; adjusted net
+  income +7.2%, adjusted EPS +9.7% to $1.58. Adjusted EBITDA margin
+  held at 34.0% despite higher diesel costs (offset by lower insurance
+  and labor costs). YTD adjusted free cash flow flat ($1,090M vs
+  $1,084M) as capex rose 12.4%; debt rose to ~$9.43B (~2.8x guided
+  EBITDA) after buybacks/dividends/acquisitions exceeded FCF. Guidance
+  raised for the second time this year; dividend raised 10%.
+  [WCN Q3 2026 (first report)](https://financialreportinsights.com/companies/wcn/2026/q3)
+- **TCBI (Texas Capital Bancshares)** — first report on the site, Q3
+  2026, bank metrics, from the 10-Q plus the prior-day 8-K earnings
+  release. Net income to common -1.5% to $99.4M; diluted EPS +4.6% to
+  $2.28 entirely from buybacks (diluted shares -5.7%; new $200M
+  buyback authorized Oct 20). Net interest income hit a record $275.0M
+  (+1.2%); NIM 3.44% (vs 3.47% a year ago, up from 3.28% in Q2).
+  Credit quality is the thing to watch: criticized loans +48% YoY to
+  $782.4M, non-accrual loans up to $122.3M from $96.1M, 90+-day
+  past-due loans up to $53.2M from $19.4M at December — even as net
+  charge-offs stayed low (0.24%). CET1 12.2%; book value per share
+  fell on a $151.7M AOCI bond-related loss. TCBI's shares now trade on
+  the Texas Stock Exchange (TXSE) after an October 2026 listing
+  transfer.
+  [TCBI Q3 2026 (first report)](https://financialreportinsights.com/companies/tcbi/2026/q3)
+
+**Running report-period count: 30 → 35 tonight.** 5 of the 10/night
+us-listed sub-cap used. 5 more us-listed slots remain tonight.

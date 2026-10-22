@@ -16718,22 +16718,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/aal/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/aal/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "8-K/10-Q filed same day, ~13 weeks apart (04-23, 07-23); third-party calendars disagree (10-15 vs 10-22), unconfirmed by company",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-22"
   },
   "AAOI": {
     "name": "Applied Optoelectronics, Inc.",
@@ -35532,5 +35532,93 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-21"
+  },
+  "CACI": {
+    "name": "CACI International, Inc. Class A",
+    "status": "done",
+    "latestReport": {
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/caci/2027/q1"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q2 FY2027)",
+      "estimate": "2027-01-21",
+      "basis": "CACI fiscal year ends June 30; ~90 days after Q1 10-Q",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
+  },
+  "MOH": {
+    "name": "Molina Healthcare Inc",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/moh/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
+  },
+  "WCN": {
+    "name": "Waste Connections, Inc. Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/wcn/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-05",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
+  },
+  "TCBI": {
+    "name": "Texas Capital Bancshares, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/tcbi/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
   }
 }
