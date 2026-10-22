@@ -18837,3 +18837,21 @@ without touching tier 0/1/2 or the carried-over us-listed candidates
 stay queued for a later firing tonight or tomorrow's first firing,
 which should re-run `scan-recent-filings` fresh. `report-tracker.json`
 untouched this firing (nothing researched, nothing to commit there).
+
+**New firing (22:03 UTC).** Network check passed (sec.gov 403 without
+UA as expected — SEC's own response, not a proxy block — 200 with the
+required UA via `curl`; both financialreportinsights.com and the
+`.vercel.app` alias reachable). `git fetch` + `git checkout -B master
+origin/master` to `a7e2366` — no new commits beyond the prior firing's
+own no-op note. Independently re-verified tonight's total against
+`report-tracker.json` (counted entries with `latestReport.publishedAt
+== "2026-10-22"`): **40**, matching the log. Tonight's running total is
+still **40 report-periods**, the ~40 cap already reached by an earlier
+firing. Per CLAUDE.md's cap rule ("later firings that night should see
+the count and exit immediately"), this firing does no new research or
+publishing and exits immediately without touching tier 0/1/2 or the
+carried-over us-listed candidates (MAYS, VC, ARR, EGP, EPRT, INBS, LOAN,
+NTST, NVEC, TFIN, WFRD) — those stay queued for a later firing tonight
+(window closes 22:59 UTC) or tomorrow's first firing, which should
+re-run `scan-recent-filings` fresh. `report-tracker.json` untouched this
+firing (nothing researched, nothing to commit there).
