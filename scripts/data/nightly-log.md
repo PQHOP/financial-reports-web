@@ -18291,3 +18291,76 @@ PKG, ROP, SNA, TSCO, UNP, VLO from today, plus CCI, CSX, GL, KMI, LUV,
 LVS, ROL, URI left over from yesterday — 16 more sp500 candidates),
 then us-listed tier-0, within this same firing while the ~40 cap
 allows.
+
+**Fourth batch, same firing.** Claimed PCG, PHM, PKG, ROP, SNA (pushed
+cleanly), ran 5 Opus subagents in parallel — S&P 500 tier-0 items, all
+genuine new periods. All 5 finished with clean `Canonical:`/
+`/reports/<id>` pairs and were sanity-checked live (all 4 required
+sections present, nothing truncated) before being marked `"done"`.
+Claims released after.
+
+- **PCG (PG&E)** — Q3 2026, from the 10-Q plus the same-day 8-K
+  earnings release. Revenue -1.0% to $6.19B; GAAP diluted EPS fell to
+  $0.34 from $0.37, non-GAAP core EPS to $0.41 from $0.50 — operating
+  income actually rose 3.3%, but Q3 2025 had a one-time tax-method
+  catch-up that shrank this year's tax benefit. Wildfire Fund expense
+  +64% to $141M after Southern California Edison booked an Eaton-fire
+  receivable against the fund (10-Q warns of up to $3.7B more
+  accelerated write-downs of PG&E's stake). New $58M severance/
+  strategic-review charge. After the CA legislature ended its session
+  without changing wildfire-liability rules, PG&E launched a strategic
+  review (Sept 2), cut planned 2027 capex from $13.4B to $11.4B and
+  withdrew 2028-2030 guidance, while reaffirming 2026/2027 core EPS
+  guidance. 2027 rate case and wildfire-cost proposed decisions both
+  pending at the CPUC.
+  [PCG Q3 2026](https://financialreportinsights.com/companies/pcg/2026/q3)
+- **PHM (PulteGroup)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Revenue -9.8% to $3,973.8M, net income -18.8%
+  to $475.7M; diluted EPS fell less (-14.5% to $2.53) on a 5.2% lower
+  share count. Closings -8.7% to 6,876 homes; gross margin 24.8% (vs
+  26.2%, including a $26M land write-down). Net new orders -6.5% to
+  6,208 homes despite 7% more open communities — Florida was the only
+  region to grow, others down ~15%. Nine-month operating cash flow
+  ($637M) well below net income ($1,295M) on rising inventory spend;
+  buybacks ($1.03B YTD) exceeded operating cash flow, flipping the
+  company from net cash to net debt.
+  [PHM Q3 2026](https://financialreportinsights.com/companies/phm/2026/q3)
+- **PKG (Packaging Corp of America)** — Q3 2026, from the 8-K Item
+  2.02 earnings release (no 10-Q/cash-flow statement yet). Net sales
+  +12.5% to $2,601.7M; EPS ex special items $3.04 (vs $2.73), $0.13
+  above July's guidance. Price/mix added $0.79/share (reversing Q2's
+  -$0.11 drag), but costs clawed back $0.91 (labor/operating $0.28,
+  freight $0.26, fiber $0.12), leaving the legacy business only
+  $0.07/share ahead of a year ago — most of the gain is the acquired
+  Greif operations swinging from a $0.11 loss to $0.13 profit. Legacy
+  box shipments -0.5% even as total shipments +10.6%. Q4 guided to
+  $2.81 EPS on three mill outages and two fewer shipping days.
+  [PKG Q3 2026](https://financialreportinsights.com/companies/pkg/2026/q3)
+- **ROP (Roper Technologies)** — Q3 2026, from the 8-K Item 2.02
+  earnings release (no 10-Q yet). Revenue +7.6% to $2,171.8M (organic
+  +7%, up from 4.9% in Q2). GAAP net earnings +21.6% and diluted EPS
+  +32.6% to $4.88, both lifted by a $56.2M pre-tax gain on the Indicor
+  stake (ex that, net earnings +~6.5%). Adjusted EPS +15% to $5.89,
+  $0.09 above guidance, but ~60% of that growth is 8.3% fewer diluted
+  shares after debt-funded buybacks (net interest expense +19%,
+  adjusted EBITDA margin dipped to 39.8%). Full-year adjusted EPS
+  guidance raised to $22.35-22.40.
+  [ROP Q3 2026](https://financialreportinsights.com/companies/rop/2026/q3)
+- **SNA (Snap-on)** — fiscal Q3 2026 (quarter ended 2026-10-03), from
+  the 10-Q plus the same-day 8-K earnings release. Net sales -0.6%
+  (organic -2.8%); diluted EPS $4.64 vs $5.02 (last year included a
+  $0.31/share legal-settlement gain; ex that, EPS -1.5%). Tools Group
+  (franchise van network) -7.0% organic, margin down to 18.0% from
+  21.7%, as franchisees cut van stock on a diesel-price spike while
+  mechanics kept buying; Commercial & Industrial hit a record +7.4%
+  organic with an 18.5% margin (includes a one-time $5.1M building-sale
+  gain; ex that ~17.2%). Financial-services credit quality stayed
+  healthy (past-due receivables flat at 3.5%, originations improved
+  from Q2), supporting the destocking read over a demand problem.
+  [SNA Q3 2026](https://financialreportinsights.com/companies/sna/2026/q3)
+
+**Running report-period count: 13 → 18 tonight.** Continuing with the
+remaining S&P 500 tier-0 queue (TSCO, UNP, VLO from today, plus CCI,
+CSX, GL, KMI, LUV, LVS, ROL, URI left over from yesterday — 11 more
+sp500 candidates), then us-listed tier-0, within this same firing
+while the ~40 cap allows.

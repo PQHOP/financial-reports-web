@@ -14290,22 +14290,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj6okr5000304l51bmeietf"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/pkg/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-07"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings (Q3 2026), 10-Q ~2026-11-06",
-      "estimate": "2026-10-21",
-      "basis": "PCA press release 2026-09-17: Q3 results after close 10-21, call 10-22",
-      "confidence": "confirmed"
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings)",
+      "estimate": "2027-01-28",
+      "basis": "PKG's own quarterly cadence (Q2 on 07-23, Q3 on 10-22)",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "PH": {
     "name": "Parker Hannifin",
@@ -14356,22 +14356,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj7aagb000204kx69dlw606"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/pcg/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q + 8-K earnings (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "PG&E release: Q3 2026 earnings call Thu 2026-10-22 11:00 ET; 10-Q filed same day in Q1/Q2",
-      "confidence": "confirmed"
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "PSX": {
     "name": "Phillips 66",
@@ -14635,22 +14635,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj8lkap000004lbw9zqf7ep"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/phm/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-22"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings + 10-Q (Q3 2026)",
+      "type": "10-Q (Q3 2026, same period)",
       "estimate": "2026-10-22",
-      "basis": "PulteGroup release 2026-08-27: Q3 results before open Oct 22, 2026",
-      "confidence": "confirmed"
+      "basis": "PHM's Q2 10-Q was filed same-day as its earnings release; no new report needed, only lastFilingSeen update unless it adds material detail (cancellation rate, incentives)",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "PWR": {
     "name": "Quanta Services",
@@ -15009,22 +15009,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk0yenf000304jfxmrvdyco"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/rop/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q or earnings 8-K (Q3 2026)",
-      "estimate": "2026-10-23",
-      "basis": "company guided Q3 results for late October 2026",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure (segment organic-growth split pending)",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "SNDK": {
     "name": "Sandisk",
@@ -15229,22 +15229,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1cd39000104i1ccabhon7"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/sna/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-07-04",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-10-03",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~13-week cadence (04-23, 07-23)",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-15",
+      "basis": "Snap-on fiscal year ends ~Jan 2, 2027; 10-K usually lands mid-February",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "SW": {
     "name": "Smurfit Westrock",
