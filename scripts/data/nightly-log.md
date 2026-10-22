@@ -18661,3 +18661,97 @@ released after.
 
 **Running report-period count: 30 → 35 tonight.** 5 of the 10/night
 us-listed sub-cap used. 5 more us-listed slots remain tonight.
+
+**Ninth batch (us-listed tier-0, final 5/10), same firing.** Claimed
+GGG, HXL, MLI, RLI, WGO (pushed cleanly), ran 5 Opus subagents in
+parallel. All 5 finished with clean `Canonical:`/`/reports/<id>` pairs
+and were sanity-checked live before being marked `"done"`. Claims
+released after. This completes the 10/night us-listed sub-cap and
+reaches tonight's ~40 cap.
+
+- **GGG (Graco)** — first report on the site, Q3 2026, from the 10-Q
+  (earnings release filed as an exhibit to it). Sales +7.9% to
+  $586.4M (4pts organic, 4pts from acquisitions). GAAP net earnings
+  -11.7% to $121.6M (last year had a one-time $14.1M non-cash gain);
+  adjusted EPS +5.2% to $0.81 but adjusted net earnings +only 1.7% —
+  most of the EPS gain is 3.3% fewer shares from buybacks ($132M in
+  Q3). Gross margin fell to 50.5% from 53.2% on higher product costs
+  and lower-margin acquired businesses. Ex the Aug 31 Valco Melton
+  acquisition (~$462M, added $12M sales/$5M operating loss in its
+  first 4 weeks), Q3 sales of ~$574M missed Graco's own $580-600M Q2
+  guidance range. Cash fell from $624M to $140M; new $104M of
+  long-term debt. Full-year organic-growth outlook not repeated.
+  [GGG Q3 2026 (first report)](https://financialreportinsights.com/companies/ggg/2026/q3)
+- **HXL (Hexcel)** — first report on the site, Q3 2026, from the 10-Q
+  plus the same-day 8-K earnings release. Sales +8.8% to $496.4M.
+  Commercial Aerospace +20.5% (66.5% of sales, A350/787/A320/MAX all
+  growing) offset by Defense, Space & Other -8.7% (divested/closed
+  industrial units plus temporary F-35/fighter-program/launcher
+  softness). Adjusted operating margin 11.0%, below H1's ~13.7% on
+  seasonality and hiring ahead of demand. GAAP EPS +92.3% to $0.50
+  (last year had $8.8M of one-off charges); adjusted EPS +35.1% to
+  $0.50, of which only ~$0.07 is operational — tax rate fell
+  unexplained to 9.7% from 23.2% (~$0.04) and buybacks added ~$0.02.
+  2026 guidance unchanged; buyback authorization raised to $750M
+  though debt paydown comes first.
+  [HXL Q3 2026 (first report)](https://financialreportinsights.com/companies/hxl/2026/q3)
+- **MLI (Mueller Industries)** — first report on the site, Q3 2026,
+  from the 10-Q plus the 8-K earnings release (filed a day earlier).
+  Sales +31.6% to $1.42B, but copper averaging $6.48/lb (+34.2%,
+  pass-through pricing) explains $198.6M of the $340.8M increase vs
+  $83.5M from real volume and $52.2M from the Bison acquisition.
+  Operating income +only 2.0% as margin fell to 19.8% from 25.6% (a
+  $16.7M prior-year one-off gain not repeating, plus $9.4M of
+  acquisition-accounting charges); underlying growth estimated at
+  9-10% after adjusting both years. Piping Systems grew only on price/
+  Bison (unit volume fell); Industrial Metals had the real volume
+  growth (brass rod/wire, +64% sales) but weaker margin (8.2%); Climate
+  was the cleanest segment (+18.9% operating income). LIFO accounting
+  cost ~$37.8M of reported profit over nine months as copper costs
+  rose. Strong balance sheet: $1.48B cash vs $5.2M debt.
+  [MLI Q3 2026 (first report)](https://financialreportinsights.com/companies/mli/2026/q3)
+- **RLI (RLI Corp)** — first report on the site, Q3 2026, P&C insurer
+  metrics, from the 10-Q plus the 8-K earnings release (filed two days
+  earlier). Combined ratio rose to 86.2 from 85.1 (underwriting
+  income -$1.7M to $58.8M) even as net premiums written grew 5.4% to
+  $429.3M. GAAP net earnings -35.0% to $81.0M mostly because last
+  year had a $42.0M unrealized stock gain that didn't repeat; operating
+  EPS +4.9% on higher investment income, not underwriting. Reserve
+  releases ($22.9M pre-tax vs $15.5M a year ago) flatter the headline —
+  excluding them, current-year combined ratio is estimated at ~90.7
+  vs ~88.9, and casualty (now 62% of earned premium) would be above
+  100 without its own $8.2M release. Book value per share fell 9.4%
+  YoY to $18.49 on a June special dividend and $118M of after-tax
+  bond losses from rising rates.
+  [RLI Q3 2026 (first report)](https://financialreportinsights.com/companies/rli/2026/q3)
+- **WGO (Winnebago)** — first report on the site, FY2026 annual
+  (fiscal year ended 2026-08-29), from the 10-K plus the same-day 8-K
+  earnings release. Revenue -3.4% to $2.70B but operating income
+  +15.7% to $66.2M as opex was cut $23.8M. Motorhome RV carried the
+  year (operating income swung from a $7.3M loss to $33.2M profit,
+  +8.4% revenue despite Class A coach units -26%); Towable RV was the
+  weak spot (-13.9% revenue, fifth-wheel units -26%, margin down to
+  4.5% from 6.0%); Marine operating income -24.5%. Q4 alone was much
+  weaker than the full year (revenue -17%, adjusted EPS -31% to
+  $0.49). Dealer inventory shrank across every segment (towables
+  -4.5%, motorhomes -4.7%, marine -6.6%) — a sign of continued
+  channel caution, not just weak retail demand. GAAP EPS growth (+33%)
+  overstates the year; adjusted EPS grew only 7.2% (a $0.10 property
+  gain is in the GAAP figure, not the adjusted one). FY2027 guidance:
+  revenue $2.65-2.80B, adjusted EPS $1.65-2.25.
+  [WGO FY2026 (first report)](https://financialreportinsights.com/companies/wgo/2026/annual)
+
+**Running report-period count: 35 → 40 tonight — the ~40 nightly cap
+is reached.** Summary for tonight: 40 report-periods across 40
+companies (CMCSA, HON, LMT, PG, ALLE, BX, CBRE, DGX, DOV, HBAN, NDAQ,
+NSC, NVR, PCG, PHM, PKG, ROP, SNA, TSCO, UNP, VLO, CCI, CSX, GL, KMI,
+LUV, LVS, ROL, DOW, URI, AAL, CACI, MOH, WCN, TCBI, GGG, HXL, MLI, RLI,
+WGO), plus 2 hot-list rewrites (ULTA, GIS) and 15 rewrite-queue items
+marked superseded. EBAY was correctly deferred (preannouncement only,
+no figures to write from). Every S&P 500 tier-0 fresh-filing candidate
+from today's and yesterday's scans is now cleared; 10 of this batch's
+21 us-listed tier-0 candidates were done (the 10/night sub-cap), the
+rest (MAYS, VC, ARR, EGP, EPRT, INBS, LOAN, NTST, NVEC, TFIN, WFRD)
+carry over to a later firing. Stopping here for this firing per the
+nightly cap — later firings tonight should see 40/~40 and exit
+immediately without new research, per CLAUDE.md's cap rule.

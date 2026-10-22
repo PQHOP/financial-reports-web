@@ -35620,5 +35620,115 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-22"
+  },
+  "GGG": {
+    "name": "Graco Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/ggg/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-25",
+      "filedAt": "2026-10-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
+  },
+  "HXL": {
+    "name": "Hexcel Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/hxl/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
+  },
+  "MLI": {
+    "name": "Mueller Industries, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/mli/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-26",
+      "filedAt": "2026-10-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-05",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
+  },
+  "RLI": {
+    "name": "RLI Corp. Common Stock (DE)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/rli/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings)",
+      "estimate": "2027-01-28",
+      "basis": "quarterly cadence; unconfirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
+  },
+  "WGO": {
+    "name": "Winnebago Industries, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/wgo/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-08-29",
+      "filedAt": "2026-10-21"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-12-19",
+      "basis": "~90 days after FY2026 10-K; fiscal year ends late August",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-22"
   }
 }
