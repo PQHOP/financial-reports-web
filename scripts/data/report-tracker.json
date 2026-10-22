@@ -9339,60 +9339,44 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cci/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/cci/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "Q2 8-K 07-22, 10-Q ~2 weeks later",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "Q2 10-Q followed the earnings release by about two weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/cci/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "CSX": {
     "name": "CSX Corporation",
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/csx/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/csx/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-22"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "CSX press release 2026-09-21: Q3 results after close Wed Oct 21, 2026; 10-Q same day historically",
-      "confidence": "confirmed"
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/csx/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "CMI": {
     "name": "Cummins",
@@ -15713,22 +15697,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmukakxk6000104k1peakrnc7"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/tsco/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-27",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-26",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "prior-year Q3 release 2025-10-23; Q2 2026 release 2026-07-23",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "TT": {
     "name": "Trane Technologies",
@@ -15890,22 +15874,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/unp/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/unp/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "2026 filings landed Jan 27, Apr 23, Jul 23 — about 90 days apart",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-02",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-22"
   },
   "TSN": {
     "name": "Tyson Foods",
@@ -15978,22 +15962,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/vlo/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/vlo/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Files earnings 8-K and 10-Q same day, ~30 days after quarter-end (04-30 for Q1, 07-30 for Q2)",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-10-22",
+      "basis": "VLO's Q2 10-Q was filed same-day as its earnings release; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-22"
   },
   "VTR": {
     "name": "Ventas",

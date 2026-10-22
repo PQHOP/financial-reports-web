@@ -18364,3 +18364,73 @@ remaining S&P 500 tier-0 queue (TSCO, UNP, VLO from today, plus CCI,
 CSX, GL, KMI, LUV, LVS, ROL, URI left over from yesterday — 11 more
 sp500 candidates), then us-listed tier-0, within this same firing
 while the ~40 cap allows.
+
+**Fifth batch, same firing.** Claimed TSCO, UNP, VLO, CCI, CSX (pushed
+cleanly), ran 5 Opus subagents in parallel — the last of today's S&P
+500 tier-0 candidates plus 2 leftover from yesterday (CCI, CSX). All 5
+finished with clean `Canonical:`/`/reports/<id>` pairs and were
+sanity-checked live (all 4 required sections present, nothing
+truncated) before being marked `"done"`. Claims released after.
+
+- **TSCO (Tractor Supply)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Net sales +5.1% to $3,910.5M; comps +0.4%
+  (recovering from -1.5% in Q2, improving each month through the
+  quarter). Gross margin -91bps to 36.44% on transport/fuel costs and
+  price cuts; operating margin fell to 7.9% from 9.2%. Net income
+  -13.3% to $224.7M, diluted EPS -11.6% to $0.43 (buybacks cut the
+  share count 2.0%, softening the drop). Inventory +11.2% vs 5.1%
+  sales growth; nine-month free cash flow (~$231M) well below the
+  ~$720M paid in dividends/buybacks, funded by ~$470M of net
+  borrowing. FY guidance reaffirmed.
+  [TSCO Q3 2026](https://financialreportinsights.com/companies/tsco/2026/q3)
+- **UNP (Union Pacific)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Revenue +15.3% to $7,197M (more than 9 of the
+  15 points from fuel surcharges as diesel hit $4.21/gal, +64%);
+  carloads +6% (intermodal +11%). Operating ratio 59.1% (vs 59.2%);
+  adjusted 58.8% (vs 58.5%, fuel added 1.4pts). Net income +16.1% to
+  $2,076M, diluted EPS +15.9% to $3.49 — none of it from buybacks
+  (still paused) or tax (rate actually rose to 23.8%). On-time service
+  indexes fell sharply (intermodal 92 from 98, manifest 93 from 100).
+  No new detail on the NSC merger/STB review; merger costs $22M in Q3,
+  $93M YTD.
+  [UNP Q3 2026](https://financialreportinsights.com/companies/unp/2026/q3)
+- **VLO (Valero Energy)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Net income $6.83B (+524%) on refining margin
+  of $39.24/bbl (vs $13.14 a year ago, $23.62 in Q2) as the Gulf Coast
+  diesel-Brent spread widened to $72.27 from $21.05. Throughput -3.7%,
+  entirely the Benicia closure (other regions +~1% combined). Diluted
+  EPS $23.89 (+577%); share count fell to 285M from 309M but explains
+  only ~$1.79 of the $20.36 EPS increase — nearly all of the gain is
+  margin, not financial engineering. Renewable Diesel swung to a $353M
+  profit from a $28M loss; Ethanol +49% to $272M on record production.
+  [VLO Q3 2026](https://financialreportinsights.com/companies/vlo/2026/q3)
+- **CCI (Crown Castle)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release filed 2026-10-21 (no 10-Q yet). Site rental revenue -4.5% to
+  $966M on DISH churn; organic growth ex-DISH/Sprint slowed to 3.8%
+  from 4.2% in Q2 as new-tenant leasing fell to $16M from $20M (FY
+  leasing guided near the bottom of the $60-70M range). AFFO +8% to
+  $530M (AFFO/share +11% to $1.24), almost entirely from interest
+  expense falling 28% to $177M after debt paydown, not from the
+  towers business. GAAP net income -12.4% to $283M only because Q3
+  2025 had $46M of now-divested fiber income (tower income alone +2.2%).
+  Net debt 6.5x EBITDA (up from 6.3x); dividend held at $1.0625
+  (~86% of AFFO). FY guidance raised slightly.
+  [CCI Q3 2026](https://financialreportinsights.com/companies/cci/2026/q3)
+- **CSX (CSX Corporation)** — Q3 2026, from the 10-Q (filed 2026-10-21)
+  plus the same-day 8-K earnings release. Record revenue $4,017M
+  (+12%) on fuel surcharges plus volume (+4.7%) and pricing;
+  intermodal revenue +20%. Operating ratio improved to 60.9% from
+  69.7% (last year's quarter carried a $164M Quality Carriers goodwill
+  write-down — ex that, operating income +25%, EPS +~30%). GAAP net
+  income +51.6% to $1,052M, diluted EPS +54.1% to $0.57. Service got
+  much worse even as profit improved: carload trip-plan performance
+  fell to 73% from 83%, on-time train arrivals to 56% from 64%, dwell
+  +12% — the service recovery promised in Q2 did not arrive. COO Mike
+  Cory retired 2026-10-12 (separate 8-K).
+  [CSX Q3 2026](https://financialreportinsights.com/companies/csx/2026/q3)
+
+**Running report-period count: 18 → 23 tonight.** All of today's and
+yesterday's S&P 500 tier-0 candidates are now cleared (GL, KMI, LUV,
+LVS, ROL, URI from yesterday still need checking — re-running
+`scan-recent-filings` next to confirm which of those are still
+candidates and what's left in us-listed tier-0).
