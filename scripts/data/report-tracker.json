@@ -4417,23 +4417,23 @@
     "name": "Procter & Gamble",
     "status": "done",
     "latestReport": {
-      "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-20",
-      "url": "https://financial-reports-web.vercel.app/reports/cmua7gplj000004l58zyltwu2"
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/pg/2027/q1"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (fiscal Q1 FY2027)",
-      "estimate": "2026-10-22",
-      "basis": "PG fiscal-year-end late Oct 10-Q filings have historically landed in the fourth week of October",
+      "type": "10-Q (fiscal Q1 FY2027, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-20"
+    "lastChecked": "2026-10-22"
   },
   "JNJ": {
     "name": "Johnson & Johnson",
@@ -5483,22 +5483,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-23",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucw4h9w000204l6utioarty"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/cmcsa/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-23",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-02",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-22"
   },
   "CVS": {
     "name": "CVS Health Corporation",
@@ -5571,22 +5571,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-23",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucw5mui000404l65bbffghh"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/lmt/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-28",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-27",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-23",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-02",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-22"
   },
   "RTX": {
     "name": "RTX Corporation",
@@ -5615,22 +5615,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-23",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucwdusv000504js0hw7hqay"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/hon/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-23. Note: Aerospace segment spun off (HONA) 2026-06-29 and moves to discontinued operations starting Q3 2026, alongside a 1-for-2 reverse split effective the same date -- Q3 report will look structurally different (standalone ex-Aerospace)",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-05",
+      "basis": "calendar fiscal year; ~130 days after Q3 10-Q, typical annual-report cadence",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-22"
   },
   "UPS": {
     "name": "United Parcel Service",

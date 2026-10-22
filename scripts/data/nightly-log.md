@@ -18070,3 +18070,90 @@ those stay queued for tomorrow night's first firing, which should
 re-run `scan-recent-filings` fresh since some may no longer be
 candidates by then (newer filings, or the 7-day window moving).
 `report-tracker.json` untouched this firing (nothing researched).
+
+### 2026-10-22 night (16:00 UTC 2026-10-22 → 22:59 UTC 2026-10-22 / 01:00–07:59 JST 2026-10-23)
+
+**First firing.** Network check passed (sec.gov: 403 without a UA
+header as expected — SEC's own response, not a proxy block — 200 with
+the required UA; financialreportinsights.com and the `.vercel.app`
+alias both reachable). `npm install` hit its usual `prisma generate`
+postinstall failure (missing local `DATABASE_URL`; irrelevant to
+admin-publish/scan, which need no DB) but `node_modules` ended up
+populated. Repo was in detached HEAD at the prior firing's tip;
+`git checkout master && git merge --ff-only origin/master` fast-forwarded
+41 commits cleanly. An untracked `package-lock.json` diff from
+`npm install` (114 pruned lines) was discarded rather than committed.
+No active claims found (`scripts/data/claims/` only had its README).
+
+Tier 0 (`scan-recent-filings`, 7-day window + live EDGAR full-text
+search for today): **56 fresh candidates** — 8 hot-list, 27 S&P 500,
+21 us-listed. This is earnings season (mid-Oct–mid-Nov), so per
+CLAUDE.md tier 0 is the whole job tonight.
+
+Claimed CMCSA, HON, LMT, PG before dispatching (pushed cleanly), ran
+4 Opus subagents in parallel — all 4 hot-list items that turned out to
+be genuine **new periods** (their tracker entries were still on Q2
+2026 / FY2026 annual, not yet Q3). All 4 finished, reported clean
+`Canonical:`/`/reports/<id>` pairs, and were sanity-checked live
+(cache-busted fetch: "At a glance", "What the headline numbers hide",
+"Did last time's read hold up?", Takeaway all present, nothing
+truncated) before being marked `"done"`. Claims released after.
+
+- **CMCSA (Comcast)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Reported revenue -6.1% to $29.30B is mostly
+  the Versant spin-off and Sky Germany sale leaving the base; pro
+  forma revenue +0.5%, pro forma Adjusted EBITDA +0.8%. GAAP EPS +7.2%
+  to $0.97 came from a lower tax rate and fewer shares, not operations
+  — adjusted EPS actually fell 4.0% to $1.07. Broadband customer losses
+  (144k) worsened vs a year ago; Peacock stayed Adjusted-EBITDA
+  positive ($261M) but still includes $224M of World Cup revenue, so
+  Q4 is the cleaner read. Theme Parks EBITDA -17.1%. Buyback remains
+  suspended through the NBCUniversal/Sky separation.
+  [CMCSA Q3 2026](https://financialreportinsights.com/companies/cmcsa/2026/q3)
+- **HON (Honeywell)** — Q3 2026, from the 10-Q (full filing available
+  same day). First quarter without Aerospace (spun off June 29, now
+  discontinued ops). Sales $4.99B (+1.3% reported, +7% organic, every
+  segment growing). Segment margin +370bps to 21.3%, but ~$140M of the
+  $196M segment-profit gain is lower corporate overhead post-spinoffs,
+  not the businesses themselves (+5% own-profit growth). GAAP EPS -19.7%
+  to $2.40 (year-ago quarter had an $802M Resideo gain); adjusted EPS
+  +34% to $2.27. Guidance raised again: organic growth 4-5%, adjusted
+  EPS $8.40-8.45. 10-Q discloses a formal SEC investigation into
+  financial reporting at the former Performance Materials and
+  Technologies segment (not expected to be material).
+  [HON Q3 2026](https://financialreportinsights.com/companies/hon/2026/q3)
+- **LMT (Lockheed Martin)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Sales $20.71B (+11.3%, ~9.8% ex a one-time
+  $270M C-130 cost catch-up). Net earnings +14.0% to $1,845M, diluted
+  EPS +14.7% to $7.97; about 30% of the pre-tax profit increase came
+  from below-operating-profit items, plus a lower tax rate adding
+  ~$0.14 of EPS. Missiles and Fire Control sales +24% on PAC-3/THAAD/
+  GMLRS/PrSM ramps. Backlog hit a record $291.98B (+27% QoQ, +51% since
+  December) on the $52.5B PAC-3 MSE multi-year award. Full-year
+  guidance raised: EPS midpoint $30.55 (was $30.30), FCF midpoint
+  $7.9B (was $7.1B) — this time from more operating cash, not capex
+  cuts. F-35 Lot 20 costs now exceed authorized contract funding;
+  deliveries down to 94 from 143 YTD.
+  [LMT Q3 2026](https://financialreportinsights.com/companies/lmt/2026/q3)
+- **PG (Procter & Gamble)** — published as **fiscal Q1 2027** (quarter
+  ended 2026-09-30; P&G's fiscal year ends June 30, so this is the
+  first quarter after the FY2026 annual report already on the site),
+  from the 8-K Item 2.02 earnings release (no 10-Q yet). Net sales
+  +4.0% to $23.28B, organic sales +4% (volume +2.4pts, reversing
+  FY2026's flat volume). Gross margin -160bps to 49.8% on commodities
+  and reinvestment. Net earnings -0.4% to $4,731M; diluted EPS +1% to
+  $1.97 and core EPS $2.00, both entirely from a 1.2% lower share
+  count (currency-neutral core EPS flat). Full-year organic-growth and
+  EPS guidance held, but all-in sales guide raised to 2-4% on the
+  October 1 Thorne acquisition; after-tax cost headwind guidance rose
+  from $0.56 to $0.79/share (commodities ~$1.4B now vs ~$1.0B in July).
+  [PG Q1 FY2027](https://financialreportinsights.com/companies/pg/2027/q1)
+
+**Main report-period count: 0 → 4 tonight.** All four were same-day
+hot-list earnings, all genuine new periods (not the "same period
+already published" case). Hot-list rewrites: queue still has 36
+pending (not touched this firing — tier 0 fresh filings come first per
+CLAUDE.md's ordering; will do up to 10 next if tier-0 work leaves room
+in this firing or a later one tonight). Continuing with the remaining
+tier-0 queue (sp500 next, then us-listed, per CLAUDE.md priority)
+within this same firing while the ~40 cap allows.
