@@ -137,14 +137,17 @@ date and commit.
 - **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
   is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
   directions wait on the user's answers in that report.
-- **Credential for ops publishing:** waiting on Hop to add `ADMIN_PASSWORD`
-  and `SITE_URL` as environment variables of cloud environment
-  `env_01BS8ej9WZxyj4AZyF5TrTyC` (shared with the nightly routine). Once
-  present, ops can publish articles itself:
-  `PLAYWRIGHT_EXECUTABLE_PATH=/opt/pw-browsers/chromium npm run
-  admin-publish -- --article file.json` (and `--articles-dir
-  content/guides` for guides). Check `[ -n "$ADMIN_PASSWORD" ]` without
-  printing it.
+- **Credential for ops publishing:** Hop approved it on 2026-10-23, but
+  it has to be added by hand in the claude.ai UI (an agent writing the
+  password into the routine prompt was blocked as credential leakage).
+  Waiting on `ADMIN_PASSWORD`, `SITE_URL` and
+  `PLAYWRIGHT_EXECUTABLE_PATH=/opt/pw-browsers/chromium` as environment
+  variables of cloud environment `env_01BS8ej9WZxyj4AZyF5TrTyC` (shared
+  with the nightly routine). Once present, ops can publish articles
+  itself: `npm run admin-publish -- --article file.json` (and
+  `--articles-dir content/guides` for guides). Check
+  `[ -n "$ADMIN_PASSWORD" ]` without printing it. First use: the JPM vs
+  BAC comparison below, if the nightly routine hasn't done it.
 
 - **For the nightly routine (owner of `hotlist-rewrite.json`):** a
   read-only scan of all 90 `pending` items on 2026-10-17 found exactly one

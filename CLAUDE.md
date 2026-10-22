@@ -226,6 +226,18 @@ exit immediately). Tier 0 hot-list/S&P 500 items may exceed the cap by a
 few if they reported that day. If a firing ever exits early on a
 weekly-limit message again, lower the cap and note it here.
 
+**Temporary raise for Big Tech week (the user's choice, 2026-10-23):
+~50 per night for the nightly-log entries "10-26 night" through "10-30
+night"** (windows 01:00 JST 10-27 → 07:59 JST 10-31, covering US results
+days Mon 10-26 – Fri 10-30: MSFT, GOOGL, AMZN, AAPL and ~150 S&P 500).
+The user accepted the risk of hitting the weekly usage limit. The extra
+~10 go to tier 0 only (hot list, then S&P 500) — the ~10 us-listed cap
+and the per-firing ~8 for tier 1 are unchanged, and nothing is spent on
+tier 1 to fill the extra room. If a firing exits on a weekly-limit or
+session-limit message during that week, drop straight back to ~40 for
+the rest of the week. From the "10-31 night" entry the cap is ~40 again;
+delete this paragraph then.
+
 **Per-firing cap (since 2026-10-19): a firing publishes at most ~8 new
 report-periods from tier 1 and then commits, pushes and exits.** The
 routine fires hourly, but on 2026-10-18 night single firings kept going
