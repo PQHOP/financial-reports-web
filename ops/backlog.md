@@ -6,6 +6,31 @@ date and commit.
 
 ## Next
 
+- **Keep `scripts/data/earnings-dates.json` fresh (ops job, since
+  2026-10-23).** Before each heavy week, search the hot-list names due in
+  the next ~14 days and add every date a company's own release states;
+  leave out third-party calendars. Still missing as of 10-23 (no company
+  notice found): **GOOGL** (Alphabet usually announces ~1 week ahead; add
+  it the day it appears, also for the Sunday preview), F, UPS, PYPL, PFE,
+  PLTR, UBER, MCD, AMGN, QCOM, KLAC, RCL, CVX, CL. Entries whose date has
+  passed are ignored by the overlay and can be deleted when convenient.
+  **For the nightly routine:** AAPL reports **Mon 2026-11-02** (not
+  10-29/30 as the tracker estimated and the Big Tech week note assumes),
+  AMD 11-03 (tracker had 11-04 confirmed, that is the 10-Q), V 10-27
+  (tracker 11-12), CAT/LLY/MRK/GILD 10-29, SO/DUK/ABNB 11-05.
+
+- **10-22 night result (watch item from 10-22, part (a) answered):**
+  `npm run claim` was used before all 9 research batches ("Claimed …
+  pushed cleanly", "Claims released after"), no "already exists"
+  collision, and the 18:04/19:05/20:04/21:04 firings exited at once on
+  40/~40. 40 report-periods, all tier 0 (incl. the 8 S&P 500 left over
+  from 10-21: CCI, CSX, GL, KMI, LUV, LVS, ROL, URI); 2 hot-list rewrites
+  (ULTA, GIS) + 15 queue items set `superseded`. Part (b) (FPIs gone from
+  the top of the us-listed queue) could not be checked: tier 1 was never
+  reached. 11 us-listed tier-0 candidates carried over (MAYS, VC, ARR,
+  EGP, EPRT, INBS, LOAN, NTST, NVEC, TFIN, WFRD); EBAY deferred (8-K was
+  a preannouncement, results 10-29 per the log).
+
 - **Watch 2026-10-22 night: do firings use `npm run claim`, and does
   next-batch stop listing the waiting FPIs?** Ops shipped both on 10-22
   morning (`6825a03`, scripts + CLAUDE.md only). Check the nightly log:
@@ -239,6 +264,22 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-23 — company-announced earnings dates overlaid on the
+  tracker** (`7018d18`; prod `dpl_F15cPitbryiK1BiaCBP1u3HZZJ98`). Every
+  hot-list company page said "Estimated from past filing dates" going
+  into Big Tech week, so no `<title>` carried the date (only confirmed
+  dates go there), and NOW's estimate (10-22) had already passed so its
+  page showed no next date at all. New ops-owned
+  `scripts/data/earnings-dates.json` (31 hot-list names, each from the
+  company's release/IR page, with `source` + `checked`);
+  `loadTracker()` overlays them while the date is ahead, so company
+  pages, report pages, `/earnings` and the homepage all see `confirmed`.
+  Verified live: MSFT "Next Report Oct 28", V "Oct 27", AAPL "Nov 2",
+  AMD "Nov 3", NOW "Oct 28"; `/earnings` shows 62 "Confirmed" rows (was
+  ~28, mostly small companies). Health 9/9, `figures` 7/7 clean after
+  the deploy. Pure-function merge tested with a tsx script; tsc errors
+  unchanged (12 pre-existing `PageProps`).
 
 - **2026-10-22 — claims between firings + waiting FPIs out of next-batch
   + homepage pool** (`6825a03`, `d01c3db`; prod
