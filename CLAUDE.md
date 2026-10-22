@@ -829,6 +829,17 @@ the user is tracked at its end. Things future sessions should know:
   (from the tracker; only a `confirmed` date goes in the `<title>`), and a
   results-by-period table built from `metrics`. Industry pages show a peer
   table from the same `metrics` — another reason `metrics` must be set.
+  **Company-announced earnings dates (since 2026-10-23)** live in
+  `scripts/data/earnings-dates.json`, kept by the daily ops routine (the
+  nightly routine owns the tracker, so confirmed dates have their own
+  file). `loadTracker()` in `src/lib/tracker.ts` overlays them: while the
+  date is today or later, that company's `nextExpectedFiling` becomes the
+  announced date with `confidence: "confirmed"` on the company page, the
+  report page, `/earnings` and the homepage; a passed date is ignored.
+  Only dates a company's own release or IR page states (or a wire reprint
+  of it), with `source` and `checked`. Research subagents may still mark
+  `confirmed` in the tracker as before; the overlay wins only while its
+  date is ahead.
 - **Interest rates hub (`/rates`, `/rates/<country>`, since 2026-09-25):**
   central bank policy rates by country built by `src/lib/rates.ts` from
   the same daily `MacroSnapshot` as `/economy` (BIS/IMF policy rates, CPI,
