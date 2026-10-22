@@ -1254,7 +1254,8 @@
       "reportId": "cmuf1mflz000504l4wk2a99z9",
       "url": "https://financialreportinsights.com/companies/ulta/2026/q2",
       "nextExpectedFiling": "2026-12-03",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-22"
     },
     {
       "ticker": "EL",
@@ -1294,7 +1295,8 @@
       "reportId": "cmuf1muit000604l4jt2s4tqp",
       "url": "https://financialreportinsights.com/companies/gis/2026/q1",
       "nextExpectedFiling": "2026-12-16",
-      "status": "pending"
+      "status": "done",
+      "rewrittenAt": "2026-10-22"
     }
   ]
 }

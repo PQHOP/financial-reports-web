@@ -18505,3 +18505,50 @@ fresh-filing candidates (today's and yesterday's) are now cleared.
 Moving to the 10 hot-list rewrites next (per CLAUDE.md's ordering:
 tier-0 hot-list/S&P 500 first, rewrites next, then the rest of the
 batch), then us-listed tier-0 if budget allows.
+
+**Hot-list rewrite pass, same firing.** Before starting rewrites,
+cross-referenced all 36 `pending` items in `scripts/data/
+hotlist-rewrite.json` against the tracker: 15 already had a newer
+Q3-2026/fiscal-Q1-2027 report published since the queue was last
+touched (TSLA, PG, WFC, IBM, T, LRCX, TXN, ISRG, CMCSA, PM, LMT, RTX,
+HON, NEE, KMB) — these were set to `superseded` rather than rewritten.
+Of the remaining 21, 19 have a `nextExpectedFiling` within the next 10
+days (tier 0 will refresh them anyway per CLAUDE.md's skip rule) —
+left `pending`. Only **ULTA** and **GIS** were genuinely stale with no
+near-term refresh expected, so those are tonight's 2 rewrites (well
+under the 10/night allotment; the queue is mostly self-clearing this
+week because it's earnings season and most hot-list names are
+reporting Q3 anyway).
+
+- **ULTA (Ulta Beauty) Q2 2026 rewrite** — re-read the 10-Q (filed
+  2026-08-27) plus the same-day earnings release. Every existing
+  figure checked out against the filings (net sales $3,035.7M, +8.9%;
+  comps +3.8%; EPS $6.55, +13.3%). Added "At a glance", a
+  quality-check section (EPS growth almost entirely from a 4.5% lower
+  share count, not tax; buybacks partly debt-funded — short-term debt
+  $62.3M→$339.6M; cash conversion improved to 61% of net income from
+  56%), and a second-half outlook math-out from the raised guidance.
+  No "did last time hold up" section (only report on the site for
+  this company).
+  [ULTA Q2 2026 (rewritten)](https://financialreportinsights.com/companies/ulta/2026/q2)
+- **GIS (General Mills) Q1 2026 rewrite** — re-read the 10-Q (fiscal
+  Q1 2027, quarter ended 2026-08-30, filed 2026-09-23) plus the
+  same-day earnings release; fixed a wrong title (previously said
+  "Fiscal Q1 2026", corrected to "Fiscal Q1 2027") and a cut-off
+  outlook sentence. Added "At a glance" and a quality-check section
+  (a $29.5M hedge gain behind the flat reported gross margin; last
+  year's $1.43 EPS yogurt-divestiture gain explains most of this
+  year's EPS decline; cash conversion weakened — operating cash flow
+  only ~75% of net income, free cash flow ~52% of the ~95% full-year
+  target; inventory used $261M of cash vs $135M a year ago). Replaced
+  vague segment language ("double digits") with the 10-Q's exact
+  operating-unit figures.
+  [GIS Q1 FY2027 (rewritten)](https://financialreportinsights.com/companies/gis/2026/q1)
+
+**Hot-list rewrites: 2 tonight, 80/121 total done** (22 superseded, 19
+still pending — mostly waiting on their own near-term tier-0 refresh
+rather than needing a rewrite).
+
+**Running report-period count: still 28 tonight** (rewrites are a
+separate allotment, not counted in the ~40 cap). Moving to us-listed
+tier-0 next (up to the 10/night us-listed sub-cap), budget allowing.
