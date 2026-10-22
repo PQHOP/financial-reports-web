@@ -18552,3 +18552,43 @@ rather than needing a rewrite).
 **Running report-period count: still 28 tonight** (rewrites are a
 separate allotment, not counted in the ~40 cap). Moving to us-listed
 tier-0 next (up to the 10/night us-listed sub-cap), budget allowing.
+
+**Seventh batch, same firing.** Re-ran `scan-recent-filings` after the
+rewrite pass and caught **DOW and URI**, two S&P 500 tier-0 candidates
+from today's/yesterday's original scan output that were missed in the
+earlier sp500 batches (an orchestrator oversight, not a scan bug —
+both were in the very first scan printout of this firing). Claimed
+them, ran 2 Opus subagents in parallel. Both finished with clean
+`Canonical:`/`/reports/<id>` pairs and were sanity-checked live before
+being marked `"done"`. Claims released after.
+
+- **DOW (Dow Inc.)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Net sales +13.0% to $11,267M (local price
+  +14%, volume -1%, Asia Pacific volume -12% on the Middle East
+  conflict). Net income $458M vs $62M (+639%); GAAP diluted EPS $0.62
+  vs $0.08. Operating EBIT $887M (7.9% margin) vs Q3 2025's $180M
+  (1.8%), but down sharply from Q2's $1,648M — Packaging & Specialty
+  Plastics margin nearly halved to 10.1% from 20.0% quarter over
+  quarter, unexplained pending the 10-Q. Free cash flow $1.13B
+  (2x year-ago); no buybacks. "Transform to Outperform" self-help
+  language softened from ">$1.3B in-year" (July) to ">$1B EBITDA
+  uplift in both 2026 and 2027" — noted as a wording change, not
+  called a cut outright.
+  [DOW Q3 2026](https://financialreportinsights.com/companies/dow/2026/q3)
+- **URI (United Rentals)** — Q3 2026, from the 10-Q plus the same-day
+  8-K earnings release. Revenue +15.7% to $4,893M (rental revenue
+  +17.8%); net income +31.2% to $920M, diluted EPS +35.4% to $14.77
+  (adjusted EPS +32.9% to $15.55). Operating margin 28.8% (vs 26.3%).
+  Fleet productivity (rates/utilization/mix) accelerated to +6.5% from
+  +3.4% in Q2; average fleet size +7.9%. Specialty Rentals +34.7% with
+  margin +250bps — $527M of YTD acquisition spend (vs $22M a year
+  ago) muddies how much of that growth is organic. Buybacks added
+  ~4pts of EPS growth; receivables +23.3% since December, faster than
+  sales. Guidance raised for the third time this year; S&P upgraded
+  URI to BBB-.
+  [URI Q3 2026](https://financialreportinsights.com/companies/uri/2026/q3)
+
+**Running report-period count: 28 → 30 tonight.** All S&P 500 tier-0
+items from both today's and yesterday's scans are now fully cleared.
+Moving to us-listed tier-0 next (up to 10/night sub-cap; budget to the
+~40 cap is 10 more).

@@ -9778,30 +9778,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/dow/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/dow/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "10-Q the day after the 8-K (04-24, 07-24)",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-10-28",
+      "basis": "Q2 10-Q was filed 2026-07-24 after the Q2 earnings release; no new report needed, only lastFilingSeen update unless it changes a figure or explains the Q2->Q3 Packaging margin drop",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/dow/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "DHI": {
     "name": "D. R. Horton",
@@ -15902,22 +15894,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/uri/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/uri/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-22"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "Files 10-Q same day as earnings 8-K; Q1/Q2 2026 both filed together on 04-22 and 07-22, ~90-day cadence",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-22"
   },
   "UHS": {
     "name": "Universal Health Services",
