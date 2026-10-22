@@ -1439,22 +1439,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-17",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu5oiwao000604jm75flzi10"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/alle/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 days after Q2 filing date, calendar-year quarterly cadence",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-17"
+    "lastChecked": "2026-10-22"
   },
   "ALMU": {
     "name": "Aeluma, Inc.",
@@ -7747,30 +7747,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/bx/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/bx/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-07"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q2 earnings release 07-23, 10-Q 08-07; Q3 release likely late October, 10-Q ~11-06",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/bx/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "XYZ": {
     "name": "Block, Inc.",
@@ -8353,30 +8345,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cbre/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/cbre/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q3 2025 10-Q 2025-10-23; 2026 filings within a day of 2025 dates",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure (e.g. Telford liability)",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/cbre/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "CDW": {
     "name": "CDW Corporation",
@@ -9788,30 +9772,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/dov/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/dov/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q3 10-Qs 2025-10-23, 2024-10-24, same day as 8-K",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-05",
+      "basis": "calendar fiscal year; typical annual-report cadence after Q3",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/dov/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "DOW": {
     "name": "Dow Inc.",
@@ -14711,22 +14687,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj8lriw000004ig8063ezqk"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/dgx/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings + 10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Quest newsroom 2026-09-22: Q3 results Oct 22, 2026",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-02",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it adds the organic volume/customer split",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "Q": {
     "name": "Qnity Electronics",

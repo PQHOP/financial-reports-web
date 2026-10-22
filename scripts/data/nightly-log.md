@@ -18157,3 +18157,70 @@ CLAUDE.md's ordering; will do up to 10 next if tier-0 work leaves room
 in this firing or a later one tonight). Continuing with the remaining
 tier-0 queue (sp500 next, then us-listed, per CLAUDE.md priority)
 within this same firing while the ~40 cap allows.
+
+**Second batch, same firing.** Claimed ALLE, BX, CBRE, DGX, DOV (pushed
+cleanly), ran 5 Opus subagents in parallel — all S&P 500 tier-0 items,
+all genuine new periods (Q2 → Q3). All 5 finished, reported clean
+`Canonical:`/`/reports/<id>` pairs, and were sanity-checked live
+(cache-busted fetch: all 4 required sections present, nothing
+truncated) before being marked `"done"`. Claims released after.
+
+- **ALLE (Allegion)** — Q3 2026, from the 10-Q plus the same-day 8-K
+  earnings release. Revenue +9.6% to $1,172.6M (organic +7.2%: price
+  +3.8pts, volume +3.4pts). GAAP EPS +18.8% to $2.59 partly on a
+  one-time $19.9M IEEPA tariff refund in operating income (1.7 of the
+  2.5-point GAAP margin gain); adjusted EPS +13.0% to $2.60. Americas
+  margin 30.1% (+0.2pt); International organic -0.2% on weak Western
+  Europe volume. Guidance raised again: organic growth 5.0-6.0%,
+  adjusted EPS $9.05-9.10.
+  [ALLE Q3 2026](https://financialreportinsights.com/companies/alle/2026/q3)
+- **BX (Blackstone)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Fee-Related Earnings +6.2% to $1,572.1M, but
+  Distributable Earnings -9.2% to $1,715.7M as realized performance
+  revenues fell 38% (fewer asset sales); dividend cut to $1.12 from
+  $1.29. GAAP net income +6.0% to $662.4M on a $627.1M unrealized-gain
+  reversal offset by a swing in principal investment income. Total AUM
+  $1,368.3B (+10.2%) on $63.3B of quarterly inflows. Real Estate is the
+  weak segment: AUM -4%, management fees -9%. No dedicated
+  operatingMarginPct (not meaningful for an asset manager); AUM/FRE/DE
+  carried in the body instead.
+  [BX Q3 2026](https://financialreportinsights.com/companies/bx/2026/q3)
+- **CBRE (CBRE Group)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Revenue +12.7% to $11.52B; GAAP EPS +25.6% to
+  $1.52; core EPS +28.1% to $2.05. Critical infrastructure services
+  (data centers) +80% including the Pearce acquisition; leasing slowed
+  to +6% from +23.5% in Q2. About $93M of the $222M core-EBITDA
+  increase is one-time land/development sales (ex those, core EBITDA
+  +~17%). YTD operating cash flow only $182M vs $1,069M net income
+  (Q3 alone was positive, +$869M). Announced the Onnec acquisition
+  (~$610M) separately on 2026-10-20.
+  [CBRE Q3 2026](https://financialreportinsights.com/companies/cbre/2026/q3)
+- **DGX (Quest Diagnostics)** — Q3 2026, from the 8-K Item 2.02
+  earnings release (no 10-Q yet). Revenue +10.0% to $3,097M (lab
+  orders +14.5%, almost all organic; revenue-per-order -4.2%, a bigger
+  drop than Q2's -2.8%). Adjusted operating margin recovered to 16.7%
+  from 16.3% in Q2. GAAP EPS +28.7% to $2.78 overstates the gain
+  (smaller one-offs than a year ago); adjusted EPS +15.4% to $3.00 with
+  no tax/share-count help. Receivables +21.6% YTD vs 9.8% revenue
+  growth. Guidance raised again. Also discloses a 2026-10-21
+  cyberattack (Quanum LSM ordering system, some patient records
+  accessed) via a separate same-day 8-K.
+  [DGX Q3 2026](https://financialreportinsights.com/companies/dgx/2026/q3)
+- **DOV (Dover Corporation)** — Q3 2026, from the 10-Q plus the
+  same-day 8-K earnings release. Revenue +7.5% to $2,233.8M (organic
+  +7.1%, up from 4.8% in Q2). Bookings +15.5% to $2,310.1M, but Climate
+  & Sustainability Technologies alone supplied 58% of the order
+  increase and was the only segment with book-to-bill above 1.0 (down
+  from three segments in Q2); that segment's margin fell to 16.7% from
+  18.6%. GAAP EPS +13.6% to $2.50 helped by a lower tax rate and fewer
+  shares; adjusted EPS +9.9% to $2.88. FY guidance narrowed: adjusted
+  EPS $10.60-10.75 (up), GAAP EPS $8.93-9.08 (down, more restructuring
+  expected). Neither of Q2's two watch items (CST margin, European
+  vehicle-service demand) has turned yet.
+  [DOV Q3 2026](https://financialreportinsights.com/companies/dov/2026/q3)
+
+**Running report-period count: 4 → 9 tonight.** Continuing with the
+remaining S&P 500 tier-0 queue (EBAY, HBAN, NDAQ, NSC, NVR, PCG, PHM,
+PKG, ROP, SNA, TSCO, UNP, VLO from today, plus CCI, CSX, GL, KMI, LUV,
+LVS, ROL, URI left over from yesterday — 20 more sp500 candidates), then
+us-listed tier-0, within this same firing while the ~40 cap allows.
