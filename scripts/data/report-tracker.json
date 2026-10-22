@@ -9960,17 +9960,17 @@
       "url": "https://financialreportinsights.com/companies/ebay/2026/q2"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02/2.05 preannouncement + restructuring, no results)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
+      "type": "8-K (Item 2.02, Q3 2026 earnings release)",
       "estimate": "2026-10-29",
-      "basis": "prior Q3 10-Qs 2025-10-30, 2024-10-31; 8-K a day earlier",
+      "basis": "preannouncement filed 2026-10-22 said results would beat Aug guidance but gave no figures; last year's Q3 earnings release was 2025-10-29; actual results filing still pending",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-22",
     "reports": [
       {
         "year": 2026,
@@ -12026,30 +12026,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/hban/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/hban/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~10-28",
-      "estimate": "2026-10-20",
-      "basis": "Q3 2025 release 2025-10-17, 10-Q 10-28; Q2 2026 release 07-23",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/hban/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "HII": {
     "name": "Huntington Ingalls Industries",
@@ -13654,22 +13646,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/ndaq/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/ndaq/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-22"
   },
   "NTAP": {
     "name": "NetApp",
@@ -13792,22 +13784,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/nsc/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/nsc/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-21",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-02",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it explains the materials-and-other expense jump",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-22"
   },
   "NTRS": {
     "name": "Northern Trust",
@@ -13924,22 +13916,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/nvr/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/nvr/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-03",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-22"
   },
   "NXPI": {
     "name": "NXP Semiconductors",

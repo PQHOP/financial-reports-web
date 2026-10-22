@@ -18224,3 +18224,70 @@ remaining S&P 500 tier-0 queue (EBAY, HBAN, NDAQ, NSC, NVR, PCG, PHM,
 PKG, ROP, SNA, TSCO, UNP, VLO from today, plus CCI, CSX, GL, KMI, LUV,
 LVS, ROL, URI left over from yesterday — 20 more sp500 candidates), then
 us-listed tier-0, within this same firing while the ~40 cap allows.
+
+**Third batch, same firing.** Claimed EBAY, HBAN, NDAQ, NSC, NVR (pushed
+cleanly), ran 5 Opus subagents in parallel — S&P 500 tier-0 items, all
+genuine new periods except EBAY. 4 finished with clean
+`Canonical:`/`/reports/<id>` pairs and were sanity-checked live (all 4
+required sections present, nothing truncated) before being marked
+`"done"`. Claims released after.
+
+- **HBAN (Huntington Bancshares)** — Q3 2026, bank metrics, from the
+  8-K Item 2.02 earnings release (financial supplement included; no
+  10-Q yet). Net income +14.6% to $721M, net interest income +37.4% to
+  $2,069M mostly from the Cadence/Veritex acquisitions; diluted EPS
+  fell 19.5% to $0.33 on a 38% higher share count. NIM (FTE) 3.25%
+  (+4bp QoQ). Credit quality is the concern: net charge-offs 0.31% (vs
+  0.25% Q2), nonperforming assets 0.90% (vs 0.60% a year ago),
+  nonaccrual loans more than doubled to $1,697M; reserve ratio fell to
+  1.75%. ROTCE fell to 14.6%, CET1 10.1% (preliminary).
+  [HBAN Q3 2026](https://financialreportinsights.com/companies/hban/2026/q3)
+- **NDAQ (Nasdaq)** — Q3 2026, from the 8-K Item 2.02 earnings release
+  (no 10-Q yet). Net revenue +13% (14% organic). Index revenue +39% to
+  $286M on record ETP assets ($1.108T, +43%); Financial Technology
+  revenue +16% to $529M with ARR +18% to a record $1,954M (total ARR
+  $3,365M, +12%); Market Services (trading) revenue only +2% to $309M,
+  down from Q2, as options market share slipped to 28.1%. GAAP EPS
+  +31% to $0.96 vs non-GAAP EPS +18% to $1.04 — the gap is a $16M legal
+  settlement, no restructuring charges and investment income, partly
+  offset by a higher tax rate. 2026 opex guidance raised slightly.
+  [NDAQ Q3 2026](https://financialreportinsights.com/companies/ndaq/2026/q3)
+- **NSC (Norfolk Southern)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Record revenue $3,526M (+13.6%, ~8pts from
+  fuel surcharges). Operating ratio worsened to 67.4% from 64.6%
+  (adjusted 65.4% vs 63.3%). Net income +6.8% to $759M, diluted EPS
+  +6.6% to $3.37, adjusted EPS +9.7% to $3.62 (gap is $42M merger costs
+  + $28M East Palestine). No buybacks (barred by the pending UNP merger
+  agreement) and a flat tax rate, so none of the EPS growth is
+  financial engineering. "Materials and other" expense +52%
+  ($77M) unexplained pending the 10-Q. Merger: STB approval still
+  pending, $2.5B termination fee, no new timeline confirmed by a
+  filing.
+  [NSC Q3 2026](https://financialreportinsights.com/companies/nsc/2026/q3)
+- **NVR (NVR, Inc.)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q/cash-flow statement yet). New orders -7% to 4,391
+  homes (cancellation rate up to 21.0% from 19.4%, North East orders
+  -46%). Settlements -7% to 5,268; homebuilding revenue -8% to $2.35B.
+  Gross margin fell to 18.3% from 21.0% on higher lot costs, pricing
+  pressure and $24.8M of land-deposit write-downs. Net income -27.5% to
+  $248.6M; EPS fell less (-20.4% to $89.45) because of $1.23B of
+  buybacks YTD (~1.8x net income), which also drained homebuilding cash
+  to $1.09B from $1.88B at year-end. Backlog +10% in units but only +4%
+  in dollars (average price down 5.5%).
+  [NVR Q3 2026](https://financialreportinsights.com/companies/nvr/2026/q3)
+- **EBAY — deferred, not published.** The 2026-10-22 8-K (Item 2.02 and
+  2.05) was a preannouncement ("expects to report... above the
+  guidance ranges" given in August) plus a restructuring disclosure
+  (~9% workforce cut, $130-150M GAAP pre-tax charges, mostly Q4), with
+  no actual Q3 figures — no Exhibit 99.1, nothing to build a metrics
+  table from. Tracker set to lastFilingSeen (this preannouncement) and
+  nextExpectedFiling ~2026-10-29 (last year's Q3 release date) for the
+  real earnings 8-K, confidence "estimated". Will be picked up by a
+  future `scan-recent-filings` run once the actual results post.
+
+**Running report-period count: 9 → 13 tonight** (EBAY not counted, per
+above). Continuing with the remaining S&P 500 tier-0 queue (PCG, PHM,
+PKG, ROP, SNA, TSCO, UNP, VLO from today, plus CCI, CSX, GL, KMI, LUV,
+LVS, ROL, URI left over from yesterday — 16 more sp500 candidates),
+then us-listed tier-0, within this same firing while the ~40 cap
+allows.
