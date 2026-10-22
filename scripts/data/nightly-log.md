@@ -18771,3 +18771,26 @@ tomorrow's first firing, which should re-run `scan-recent-filings`
 fresh. `report-tracker.json` untouched this firing (nothing
 researched). An untracked `package-lock.json` diff from `npm install`
 was discarded rather than committed.
+
+**New firing (19:05 UTC).** Network check passed (sec.gov 403 without
+UA as expected — SEC's own response, not a proxy block — 200 with the
+required UA; both financialreportinsights.com and the `.vercel.app`
+alias reachable). Local repo was on a stale `master` branch pointer
+(`c781d95`, an old container snapshot) while the fetched `origin/master`
+tip (`ba69bad`) already contained everything, including the prior
+firing's no-op note — fixed with `git checkout -B master
+origin/master` rather than merging (the stale local pointer was never
+real divergent work, just an out-of-date ref). No new commits beyond
+`ba69bad`. Tonight's running total is still **40 report-periods**, the
+~40 cap already reached by an earlier firing, and hot-list rewrites are
+at 2/121 for tonight (well under the 10/night allotment, see that
+firing's note on why so few were due). Per CLAUDE.md's cap rule ("later
+firings that night should see the count and exit immediately") and the
+prior firing's own note, this firing does no new research or publishing
+and exits immediately without touching tier 0/1/2 or the carried-over
+us-listed candidates (MAYS, VC, ARR, EGP, EPRT, INBS, LOAN, NTST, NVEC,
+TFIN, WFRD) — those stay queued for a later firing tonight or tomorrow's
+first firing, which should re-run `scan-recent-filings` fresh.
+`report-tracker.json` untouched this firing (nothing researched). An
+untracked `package-lock.json` diff from `npm install` was discarded
+rather than committed.
