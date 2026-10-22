@@ -18794,3 +18794,26 @@ first firing, which should re-run `scan-recent-filings` fresh.
 `report-tracker.json` untouched this firing (nothing researched). An
 untracked `package-lock.json` diff from `npm install` was discarded
 rather than committed.
+
+**New firing (20:04 UTC).** Network check passed (sec.gov 403 without
+UA as expected — SEC's own response, not a proxy block — 200 with the
+required UA via `curl`; both financialreportinsights.com and the
+`.vercel.app` alias reachable). `npm install` run fresh in this
+container (needed a dummy local `DATABASE_URL` in `.env` purely to let
+the `prisma generate` postinstall step complete — `admin-publish.ts`,
+`scan-recent-filings.ts` and `claims.ts` don't touch Prisma at all, so
+this has no effect on publishing). `git fetch` showed `origin/master`
+had force-updated to `b866763` (identical content to the already-synced
+`ba69bad`, just the prior firing's own no-op commit); local HEAD was
+detached, fixed with `git checkout -B master origin/master`. No active
+claims in `scripts/data/claims/` (just the README). Tonight's running
+total is still **40 report-periods**, the ~40 cap already reached by an
+earlier firing. Per CLAUDE.md's cap rule ("later firings that night
+should see the count and exit immediately"), this firing does no new
+research or publishing and exits immediately without touching tier
+0/1/2 or the carried-over us-listed candidates (MAYS, VC, ARR, EGP,
+EPRT, INBS, LOAN, NTST, NVEC, TFIN, WFRD) — those stay queued for a
+later firing tonight or tomorrow's first firing, which should re-run
+`scan-recent-filings` fresh. `report-tracker.json` untouched this
+firing (nothing researched). The `package-lock.json` diff from `npm
+install` was discarded rather than committed.
