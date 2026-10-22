@@ -11518,30 +11518,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/gl/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/gl/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~11-05",
-      "estimate": "2026-10-21",
-      "basis": "Q3 2025 8-K 2025-10-22, 10-Q 11-05",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/gl/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "GDDY": {
     "name": "GoDaddy",
@@ -12806,30 +12798,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/kmi/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/kmi/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~10-23",
-      "estimate": "2026-10-21",
-      "basis": "Q2 8-K 07-22, 10-Q 07-24, +~91 days",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it explains the $138M Products segment accrual",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
-    "reports": [
-      {
-        "year": 2026,
-        "period": "Q2",
-        "publishedAt": "2026-09-25",
-        "url": "https://financialreportinsights.com/companies/kmi/2026/q2"
-      }
-    ]
+    "lastChecked": "2026-10-22"
   },
   "KKR": {
     "name": "KKR & Co.",
@@ -12948,22 +12932,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/lvs/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/lvs/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it explains the Marina Bay Sands mass-hold drop",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-22"
   },
   "LDOS": {
     "name": "Leidos",
@@ -14971,22 +14955,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk0xyd0000204jfwjwga2on"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/rol/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90-day cadence from 2026-07-23 filing; earnings 8-K typically a day earlier",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-10-23",
+      "basis": "ROL's Q2 10-Q followed its earnings release by one day; no new report needed, only lastFilingSeen update unless it explains the insurance/claims cost jump",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "ROP": {
     "name": "Roper Technologies",
@@ -15279,22 +15263,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1hp5x000004lb9r5c7xwp"
+      "period": "Q3",
+      "publishedAt": "2026-10-22",
+      "url": "https://financialreportinsights.com/companies/luv/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-21"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K / 10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q1/Q2 pattern: earnings release then 10-Q the next day",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-11-05",
+      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-22"
   },
   "SWK": {
     "name": "Stanley Black & Decker",

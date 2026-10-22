@@ -18434,3 +18434,74 @@ yesterday's S&P 500 tier-0 candidates are now cleared (GL, KMI, LUV,
 LVS, ROL, URI from yesterday still need checking — re-running
 `scan-recent-filings` next to confirm which of those are still
 candidates and what's left in us-listed tier-0).
+
+**Sixth batch, same firing.** Claimed GL, KMI, LUV, LVS, ROL (pushed
+cleanly), ran 5 Opus subagents in parallel — the last of yesterday's
+leftover S&P 500 tier-0 candidates. All 5 finished with clean
+`Canonical:`/`/reports/<id>` pairs and were sanity-checked live (all 4
+required sections present, nothing truncated) before being marked
+`"done"`. Claims released after.
+
+- **GL (Globe Life)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Revenue +5.5% to $1.60B, total premium +6.5%
+  (health premium +15.6% on United American's Medicare Supplement
+  book, +29%). GAAP net income fell 6.9% to $361.1M as United
+  American's health business flipped from a $16.1M profit to a $6.4M
+  loss (~$16M of large claims at the Evry young-group-health unit plus
+  ~$7M of late-booked Medicare Supplement claims from a CMS processing
+  delay). Operating EPS rose only because buybacks cut diluted shares
+  4.6%; total operating income fell 3.9%. 2026 guidance cut to
+  $15.35-15.65 (from $15.55-15.95 after Q2's raise); buyback plan
+  raised to $725-775M.
+  [GL Q3 2026](https://financialreportinsights.com/companies/gl/2026/q3)
+- **KMI (Kinder Morgan)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Revenue +9.3% to $4,531M; net income +21.7%
+  to $764M, adjusted EBITDA +9.5% to $2,180M. Products segment
+  reported EBDA fell to $172M from $288M on an unexplained $138M
+  legal/environmental accrual, offset by a $71M Tampa-terminals sale
+  gain and a $42M tax benefit so reported and adjusted EPS growth both
+  land near 21%. Project backlog jumped to $14.4B from $9.6B on two
+  new pipelines (Southeast Connector, Permian Link — the latter
+  serving a hyperscaler's data centers), both due 2030. 2026 guidance
+  raised again (Adjusted EBITDA beat now >6%, Adjusted EPS beat >13%).
+  [KMI Q3 2026](https://financialreportinsights.com/companies/kmi/2026/q3)
+- **LUV (Southwest Airlines)** — Q3 2026, from the 8-K Item 2.02
+  earnings release (no 10-Q yet). Record Q3 revenue $8.42B (+21.2%)
+  on capacity -0.4%; RASM +21.6% to 18.55¢, beating July's own
+  forecast. Fuel cost $3.92/gal (guided $3.70-3.75) added $821M of
+  expense, yet operating income rose to $379M from $35M; EPS $0.55,
+  adjusted $0.66. About $0.33 of that $0.66 adjusted EPS is one-time
+  gains from aircraft sales/sale-leasebacks sitting inside adjusted
+  operating income (not excluded as special items). Full-year adjusted
+  EPS guidance cut sharply to $2.60-2.85 from $3.25-4.25 in July on a
+  much higher assumed Q4 fuel price (~$4.55/gal).
+  [LUV Q3 2026](https://financialreportinsights.com/companies/luv/2026/q3)
+- **LVS (Las Vegas Sands)** — Q3 2026, from the 8-K Item 2.02 earnings
+  release (no 10-Q yet). Net revenue -3.5% to $3.216B; hold-adjusted
+  EBITDA ~$1,112M (-~14%, worse than Q2's ~6% hold-adjusted decline) —
+  unlike Q2, VIP luck was roughly neutral this quarter. Marina Bay
+  Sands EBITDA -20.6%: mass drop +12.6% but mass win rate fell to
+  18.7% from 24.5% (not captured by the VIP-only hold adjustment).
+  Macao revenue +1.8% but EBITDA -12.0% (margin 27.3% vs 31.5%) even as
+  volumes grew across VIP/mass/slots — margin stopped falling but
+  hasn't recovered. $950M of buybacks cut diluted shares 6.6%,
+  cushioning EPS; 2027 dividend raised 20% to $0.36/quarter; net debt
+  rose ~$0.7B.
+  [LVS Q3 2026](https://financialreportinsights.com/companies/lvs/2026/q3)
+- **ROL (Rollins)** — Q3 2026, from the 8-K Item 2.02 earnings release
+  (no 10-Q yet). Revenue +6.2% to $1,089.7M; organic growth slowed to
+  4.4% (from 6.6% in Q1, 5.7% in Q2), acquisitions added 1.8pts.
+  Operating margin -140bps to 20.5% as insurance/claims costs roughly
+  doubled ($18.1M to $36.8M) and fleet costs rose 18%; incremental
+  margin was -2.8% for the quarter. Net income -3.4% to $157.9M, EPS
+  $0.33 (vs $0.34). $120M of buybacks (vs $3.7M a year ago) and rising
+  short-term debt. No updated guidance; the release gives no path to
+  the prior 6%+ organic-growth target without a Q4 acceleration the
+  report calls unlikely.
+  [ROL Q3 2026](https://financialreportinsights.com/companies/rol/2026/q3)
+
+**Running report-period count: 23 → 28 tonight.** All S&P 500 tier-0
+fresh-filing candidates (today's and yesterday's) are now cleared.
+Moving to the 10 hot-list rewrites next (per CLAUDE.md's ordering:
+tier-0 hot-list/S&P 500 first, rewrites next, then the rest of the
+batch), then us-listed tier-0 if budget allows.
