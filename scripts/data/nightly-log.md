@@ -18755,3 +18755,19 @@ rest (MAYS, VC, ARR, EGP, EPRT, INBS, LOAN, NTST, NVEC, TFIN, WFRD)
 carry over to a later firing. Stopping here for this firing per the
 nightly cap — later firings tonight should see 40/~40 and exit
 immediately without new research, per CLAUDE.md's cap rule.
+
+**New firing (18:04 UTC).** Network check passed (sec.gov 403 without
+UA as expected, 200 with the required UA; both the custom domain and
+the `.vercel.app` alias reachable). `git fetch` + fast-forward to
+`origin/master` (`9c0c5f5`) — no new commits since the prior firing's
+40/~40 push. Tonight's running total is still **40 report-periods**,
+the ~40 cap already reached by an earlier firing. Per CLAUDE.md's cap
+rule ("later firings that night should see the count and exit
+immediately"), this firing does no new research or publishing and
+exits immediately without touching tier 0/1/2 or the carried-over
+us-listed candidates (MAYS, VC, ARR, EGP, EPRT, INBS, LOAN, NTST,
+NVEC, TFIN, WFRD) — those stay queued for a later firing tonight or
+tomorrow's first firing, which should re-run `scan-recent-filings`
+fresh. `report-tracker.json` untouched this firing (nothing
+researched). An untracked `package-lock.json` diff from `npm install`
+was discarded rather than committed.
