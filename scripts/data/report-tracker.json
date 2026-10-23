@@ -21656,22 +21656,36 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-10-03",
-      "url": "https://financialreportinsights.com/companies/appf/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/appf/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q1 and Q2 both released on the 4th Thursday of the month after quarter-end (Apr 23, Jul 23)",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-05",
+      "basis": "FY2025 10-K was filed 2026-02-05",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-03"
+    "lastChecked": "2026-10-23",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-03",
+        "url": "https://financialreportinsights.com/companies/appf/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-23",
+        "url": "https://financialreportinsights.com/companies/appf/2026/q3"
+      }
+    ]
   },
   "APOG": {
     "name": "Apogee Enterprises, Inc.",
