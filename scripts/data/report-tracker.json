@@ -31870,29 +31870,35 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-10-15",
-      "url": "https://financialreportinsights.com/companies/coco/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/coco/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "~90-day cadence; next filing likely within 10 days of 2026-10-15",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-18",
+      "basis": "FY2025 10-K was filed 2026-02-18",
       "confidence": "estimated"
     },
-    "note": "Coconut water/beverage company. Net sales +28.1% (volume +15%, private label +78.1%); net income more than doubled but ~$15.6M of that is a one-time tariff refund (Supreme Court struck the tariff down Feb 2026) — underlying EPS growth closer to +60%, not +116%. Raised full-year guidance; implied H2 gross margin ~35% (vs 1H) on rising costs and a bigger private-label mix. July 22: bought Thai coconut-water maker Copra for $175M + earnout, its first owned factory, adding direct coconut-price exposure.",
-    "lastChecked": "2026-10-15",
+    "note": "Q3 2026: net sales +33.7% to $243.8M (Copra acquisition ~16pts, organic +17.8%); gross margin flat at 38.0% as tariff relief was offset by Americas pricing, trucking costs and Copra mix. No one-off refund this quarter (unlike Q2's $15.6M tariff refund); $3.2M Copra deal costs + $4.5M hedging-loss swing. Guidance raised again to $810–820M sales / $170–175M Adj. EBITDA; Q4 gross margin guided ~33%.",
+    "lastChecked": "2026-10-23",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-10-15",
         "url": "https://financialreportinsights.com/companies/coco/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-23",
+        "url": "https://financialreportinsights.com/companies/coco/2026/q3"
       }
     ]
   },
