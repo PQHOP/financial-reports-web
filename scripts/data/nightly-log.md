@@ -19058,3 +19058,33 @@ report-periods published this firing** — tonight's running total stays
 firing's entry above). Nothing else to do within the caps; next firing
 should scan again for new tier-0 candidates (especially any non-us-listed
 ones, which aren't capped) before anything else.
+
+**New firing (19:03 UTC).** Network check passed (403 without UA as
+expected, 200 with the required UA; financialreportinsights.com 200).
+Re-ran `npm run scan-recent-filings`: 39 fresh candidates, only one not
+us-listed — **CME** (S&P 500, `kind: update`), the rest all
+`us-listed`/`new` (already over tonight's 10/10 us-listed cap, so not
+touched).
+
+**CME 10-Q (Q3 2026, filed today) checked, no new report:** same
+pattern as JBHT above — tracker already flagged this as the "10-Q
+arriving after the 8-K we already published from" case. Downloaded the
+10-Q directly (`curl` + UA + `html-to-text.mjs`) and compared its
+income statement line-by-line against the live report: total revenues
+$1,737.3M (+13.0%), net income $1,036.9M (+14.2%), diluted EPS $2.89
+(+16.1%) — all identical to what's already published from the 8-K
+Exhibit 99.1. CME reports as a single segment (10-Q states this
+explicitly), so there's no segment detail to add either. No figure
+changed, nothing material added, so per CLAUDE.md only
+`lastFilingSeen` was updated (10-Q, filed 2026-10-23) and
+`nextExpectedFiling` rolled forward to the Q4/FY2026 earnings 8-K
+(estimated ~2027-02-10, cadence-based, not yet confirmed). No edit, no
+new report-period.
+
+**Everything else still capped/exhausted:** us-listed 10/10, hot
+list/S&P 500 tier 1 fully done, hot-list rewrites all still within 10
+days of their next filing, comparisons 2/2 and not Sunday. So: **0
+further report-periods published this firing** — tonight's running
+total stays **18 report-periods** (tracker/log otherwise unchanged).
+Next firing should scan again for new tier-0 candidates (especially
+non-us-listed ones) before anything else.
