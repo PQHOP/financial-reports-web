@@ -35794,5 +35794,51 @@
     },
     "note": "Homebuilder. Q3 2026: net income -37.5% to $66.6M ($2.56 diluted EPS), revenue -4.9% to $1.08B. Gross margin -300bps to 20.9% as rate buydowns rose to $23.2M and lot costs increased, with rates above 7% at quarter-end. Moderate red flag: net orders -2.5% despite 5.6% more communities; sales per community down; backlog -6.5% units/-8.9% value, now below Q3 deliveries. YTD orders still +5%; cancellation rate flat.",
     "lastChecked": "2026-10-23"
+  },
+  "ALV": {
+    "name": "Autoliv, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/alv/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-18",
+      "basis": "FY2025 10-K was filed 2026-02-19 per this 10-Q",
+      "confidence": "estimated"
+    },
+    "note": "Auto safety-systems supplier. Q3 2026: sales -0.5% to $2,693M (-1.1% ex-FX) vs global light-vehicle production -1.9%; India +29% organic and Chinese OEMs ~+21% offset Europe weakness and global OEMs in China ~-29%. Diluted EPS -6.8% to $2.13, mainly a tax-rate jump to 32.5% (-$0.16) partly offset by buybacks (+$0.11). Adjusted operating margin 9.7% vs 10.0%. FY adjusted-margin guidance narrowed to ~10.5% (low end of prior range); organic sales (~0%) and operating cash flow (~$1.2B) guidance unchanged.",
+    "lastChecked": "2026-10-23"
+  },
+  "FAF": {
+    "name": "First American Corporation (New)",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/faf/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-19",
+      "basis": "typically reports Q4 mid-Feb, 10-K a few days later",
+      "confidence": "estimated"
+    },
+    "note": "Title insurer. Q3 2026: revenue +5.3% to $2.08B (revenue/order +13.2%, direct commercial revenue +20.9%) even as closed orders fell 4.9%. Diluted EPS fell to $1.72 from $1.84, mostly because last year's $19.1M Offerpad gain didn't repeat (ex-investment gains/losses pretax income +~4%). $364M after-tax unrealized bond loss made comprehensive income -$184M. Opened orders per day -8.2% (refi -16.4%) signals slower closings ahead.",
+    "lastChecked": "2026-10-23"
   }
 }
