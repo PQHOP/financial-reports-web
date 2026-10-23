@@ -9,15 +9,32 @@ date and commit.
 - **Keep `scripts/data/earnings-dates.json` fresh (ops job, since
   2026-10-23).** Before each heavy week, search the hot-list names due in
   the next ~14 days and add every date a company's own release states;
-  leave out third-party calendars. Still missing as of 10-23 (no company
-  notice found): **GOOGL** (Alphabet usually announces ~1 week ahead; add
-  it the day it appears, also for the Sunday preview), F, UPS, PYPL, PFE,
-  PLTR, UBER, MCD, AMGN, QCOM, KLAC, RCL, CVX, CL. Entries whose date has
-  passed are ignored by the overlay and can be deleted when convenient.
-  **For the nightly routine:** AAPL reports **Mon 2026-11-02** (not
-  10-29/30 as the tracker estimated and the Big Tech week note assumes),
-  AMD 11-03 (tracker had 11-04 confirmed, that is the 10-Q), V 10-27
-  (tracker 11-12), CAT/LLY/MRK/GILD 10-29, SO/DUK/ABNB 11-05.
+  leave out third-party calendars. 44 entries as of 10-24 (13 added
+  10-24: INTC 10-29, UPS/PYPL/RCL 10-27, ORLY/KLAC 10-28, CVX/CL 10-30,
+  PFE 11-03, UBER/QCOM 11-04, TTWO/PSKY 11-09). Still no company notice
+  as of 10-24: **GOOGL** (abc.xyz/investor lists nothing yet; third-party
+  calendars guess 10-28 — add it the day Alphabet posts it, also for the
+  Sunday preview), **META** (not searched yet — do it 10-25), F, MCD,
+  AMGN (investors.amgen.com 403s from this environment), LYV, PLTR
+  (every "Nov 2" source is a calendar; the 2025 Business Wire notice is
+  what the search engines return). Entries whose date has passed are
+  ignored by the overlay and can be deleted when convenient.
+  **For the nightly routine:** INTC reports **Thu 10-29** (tracker
+  estimated 10-23 — the 10-23 night scan correctly found nothing); AAPL
+  **Mon 11-02** (not 10-29/30 as the Big Tech week note assumes); AMD
+  11-03; V 10-27; CAT/LLY/MRK/GILD 10-29; SO/DUK/ABNB 11-05.
+
+- **Nightly capacity is going unused on non-peak nights (seen 10-23
+  night: 18/40).** With the hot list and S&P 500 fully `done` for 2026,
+  a night's new report-periods are tier-0 S&P 500/hot-list filings
+  (8 on a Thursday in earnings season) plus the ~10 us-listed cap; tier
+  2 (multi-year backfill) never opens because its gate is "every
+  us-listed company done or skipped", which at 10/night is years away.
+  So firings 3-6 each confirmed one 10-Q and exited. Proposed to the
+  user in the 2026-10-24 report: let tier 2 open for hot-list, then S&P
+  500, companies whenever tier 0 is empty and the us-listed cap is hit,
+  inside the ~40 cap. Waiting on the user; if yes, the CLAUDE.md tier-2
+  gate paragraph is the change.
 
 - **10-22 night result (watch item from 10-22, part (a) answered):**
   `npm run claim` was used before all 9 research batches ("Claimed …
@@ -264,6 +281,15 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-24 — 13 more company-announced earnings dates** (`7f78629`,
+  no deploy needed: `loadTracker()` reads the file from
+  raw.githubusercontent with a 15-minute revalidate, bundled copy only
+  as fallback). INTC/UPS/PYPL/RCL/ORLY/KLAC/CVX/CL/PFE/UBER/QCOM/TTWO/
+  PSKY now show "Next Report <date>" in their company-page `<title>` and
+  as Confirmed on `/earnings`. CLAUDE.md's Sunday-preview rule now says
+  to start from this file before searching calendars. ~35 web searches,
+  0 Opus.
 
 - **2026-10-23 — company-announced earnings dates overlaid on the
   tracker** (`7018d18`; prod `dpl_F15cPitbryiK1BiaCBP1u3HZZJ98`). Every
