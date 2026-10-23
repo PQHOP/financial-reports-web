@@ -35840,5 +35840,28 @@
     },
     "note": "Title insurer. Q3 2026: revenue +5.3% to $2.08B (revenue/order +13.2%, direct commercial revenue +20.9%) even as closed orders fell 4.9%. Diluted EPS fell to $1.72 from $1.84, mostly because last year's $19.1M Offerpad gain didn't repeat (ex-investment gains/losses pretax income +~4%). $364M after-tax unrealized bond loss made comprehensive income -$184M. Opened orders per day -8.2% (refi -16.4%) signals slower closings ahead.",
     "lastChecked": "2026-10-23"
+  },
+  "EAF": {
+    "name": "GrafTech International Ltd.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/eaf/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-12",
+      "basis": "annual cadence; earnings release usually early Feb, 10-K ~a week later",
+      "confidence": "estimated"
+    },
+    "note": "Graphite electrode manufacturer, distressed balance sheet. Q3 2026: volume flat (28.8k MT), realized price -7% (~$3,900/ton), net sales -2.7% to $140.2M. Net loss widened to $46.8M (incl. $13.9M Monterrey, Mexico plant closure charge, total closure cost est. $20-25M). RED FLAGS: debt principal $1,225M vs negative $388M equity; interest expense $25.9M vs only $8.6M adjusted EBITDA; liquidity fell to $241.9M after drawing the last $100M of its delayed-draw term loan; 9-month FCF -$118.8M; started an at-the-market equity program ($5.5M raised so far). Says it is in covenant compliance with adequate 12-month liquidity. FY volume guidance (+5-10%) kept; expects mid-single-digit Q4 price increase.",
+    "lastChecked": "2026-10-23"
   }
 }
