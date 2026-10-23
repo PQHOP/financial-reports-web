@@ -35771,5 +35771,28 @@
       "confidence": "estimated"
     },
     "lastChecked": "2026-10-22"
+  },
+  "MHO": {
+    "name": "M/I Homes, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/mho/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-19",
+      "basis": "typical cadence: Q4 earnings release ~late Jan, 10-K ~mid-to-late Feb",
+      "confidence": "estimated"
+    },
+    "note": "Homebuilder. Q3 2026: net income -37.5% to $66.6M ($2.56 diluted EPS), revenue -4.9% to $1.08B. Gross margin -300bps to 20.9% as rate buydowns rose to $23.2M and lot costs increased, with rates above 7% at quarter-end. Moderate red flag: net orders -2.5% despite 5.6% more communities; sales per community down; backlog -6.5% units/-8.9% value, now below Q3 deliveries. YTD orders still +5%; cancellation rate flat.",
+    "lastChecked": "2026-10-23"
   }
 }
