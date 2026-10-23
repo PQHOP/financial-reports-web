@@ -18855,3 +18855,69 @@ NTST, NVEC, TFIN, WFRD) — those stay queued for a later firing tonight
 (window closes 22:59 UTC) or tomorrow's first firing, which should
 re-run `scan-recent-filings` fresh. `report-tracker.json` untouched this
 firing (nothing researched, nothing to commit there).
+
+### 2026-10-23 night (16:00 UTC 2026-10-23 → 22:59 UTC 2026-10-23 / 01:00–07:59 JST 2026-10-24)
+
+**New firing (16:05 UTC).** Network check passed (sec.gov 403 without UA
+as expected — SEC's own response, not a proxy block — 200 with the
+required UA via `curl`; financialreportinsights.com reachable).
+`npm install` run fresh in this container (the `prisma generate`
+postinstall step fails for lack of a local `DATABASE_URL`, but
+`admin-publish.ts`/`scan-recent-filings.ts`/`claims.ts` don't touch
+Prisma, so this doesn't block publishing). No active claims found at
+start. We're in earnings season, so per CLAUDE.md tier 0 was the whole
+job tonight — no tier 1/2 touched.
+
+`npm run scan-recent-filings` found 65 candidates. Worked the hot list
+and S&P 500 portions (claimed tickers before dispatching, per the
+"claim before you dispatch" rule):
+
+**8 new report-periods published** (all research/writing done by Opus
+subagents, one company per subagent, run synchronously):
+- **AXP** Q3 2026 (hot list) — from the 8-K earnings release.
+  https://financialreportinsights.com/companies/axp/2026/q3
+- **OMC** Q3 2026 (S&P 500) — from the 10-Q.
+  https://financialreportinsights.com/companies/omc/2026/q3
+- **SLB** Q3 2026 (S&P 500) — from the 8-K earnings release.
+  https://financialreportinsights.com/companies/slb/2026/q3
+- **WDC** fiscal Q1 FY2027 (S&P 500) — from the 10-Q.
+  https://financialreportinsights.com/companies/wdc/2027/q1
+- **DECK** fiscal Q2 FY2027 (S&P 500) — from the 8-K earnings release.
+  https://financialreportinsights.com/companies/deck/2027/q2
+- **NEM** Q3 2026 (S&P 500) — from the 10-Q.
+  https://financialreportinsights.com/companies/nem/2026/q3
+- **FIX** Q3 2026 (S&P 500) — from the 10-Q.
+  https://financialreportinsights.com/companies/fix/2026/q3
+- **VRSN** Q3 2026 (S&P 500) — from the 10-Q.
+  https://financialreportinsights.com/companies/vrsn/2026/q3
+
+**11 same-period 10-Q edits** (tier 0's "already published from the
+earnings 8-K, now the full 10-Q has landed" case — these do NOT count
+toward the ~40 report-period cap, since they're not new periods, just
+the existing report getting the fuller filing's detail folded in once
+an Opus subagent confirmed it was materially new, per CLAUDE.md's
+"Only edit ... if the full filing changes a figure or adds something
+material" rule): **PM, IBM, LRCX, META, TSLA, ISRG** (hot list) and
+**DOW, HAL, LUV, ROL, SYF** (S&P 500). Each edit added segment/regional
+breakdowns, MD&A causal explanations, or cash-flow detail the earnings
+release didn't have (IBM: Software ARR + regions; LRCX: memory vs
+foundry mix; PM: pension-refund-flattered cash flow; META: where the
+$9.89bn settlement charge sits; TSLA: IEEPA tariff refund distorting
+margins; ISRG: US procedure slowdown + China; DOW: no Q2→Q3 bridge in
+the 10-Q, flagged as such; HAL: Mexico receivables + rig counts; LUV:
+revenue/cost breakdown; ROL: guidance cut; SYF: fraud losses doubling).
+`sourceUrl` on each was updated to the 10-Q. All were sanity-checked
+live (cache-busted fetch, "At a glance" present, not truncated) before
+moving on.
+
+Also: AXP's hot-list-rewrite queue item marked `superseded` (its fresh
+Q3 report is already in current format, so no separate rewrite needed).
+PM/IBM/LRCX/TSLA/ISRG were already `superseded` and META already `done`
+from an earlier firing — nothing left to do there.
+
+Tonight's running total: **8 report-periods** (well under the ~40 cap;
+earnings season means tier 0 alone could fill the rest of tonight).
+Claims released for all 19 tickers touched. Remaining S&P 500 tier-0
+items from the scan (e.g. further us-listed and S&P 500 candidates not
+yet worked) and the carried-over us-listed candidates from previous
+nights stay queued for a later firing tonight.
