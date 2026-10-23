@@ -8972,22 +8972,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/fix/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/reports/cmvl6g6az000408k308xauj8k"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q3 2025 10-Q 2025-10-23; 2026 10-Qs 04-23, 07-23 (Thursdays)",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-20",
+      "basis": "annual cadence; next NEW period is FY2026 annual results",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-23",
     "reports": [
       {
         "year": 2026,
@@ -16032,22 +16032,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/vrsn/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/reports/cmvl6g5t3000308k38egv2uq1"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 days after Q2 results, consistent with last year and third-party earnings-date trackers",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "annual cadence; next NEW period is FY2026 annual results",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-23"
   },
   "VRSK": {
     "name": "Verisk Analytics",
