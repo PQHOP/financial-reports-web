@@ -35863,5 +35863,51 @@
     },
     "note": "Graphite electrode manufacturer, distressed balance sheet. Q3 2026: volume flat (28.8k MT), realized price -7% (~$3,900/ton), net sales -2.7% to $140.2M. Net loss widened to $46.8M (incl. $13.9M Monterrey, Mexico plant closure charge, total closure cost est. $20-25M). RED FLAGS: debt principal $1,225M vs negative $388M equity; interest expense $25.9M vs only $8.6M adjusted EBITDA; liquidity fell to $241.9M after drawing the last $100M of its delayed-draw term loan; 9-month FCF -$118.8M; started an at-the-market equity program ($5.5M raised so far). Says it is in covenant compliance with adequate 12-month liquidity. FY volume guidance (+5-10%) kept; expects mid-single-digit Q4 price increase.",
     "lastChecked": "2026-10-23"
+  },
+  "AYI": {
+    "name": "Acuity Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/ayi/2026/annual"
+    },
+    "lastFilingSeen": {
+      "type": "10-K",
+      "periodEnd": "2026-08-31",
+      "filedAt": "2026-10-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (Q1 FY2027, quarter ending 2026-11-30)",
+      "estimate": "2027-01-07",
+      "basis": "files Q1 10-Q + earnings 8-K same early-Jan Thursday each year (2026-01-08 for Q1 FY2026)",
+      "confidence": "estimated"
+    },
+    "note": "Lighting/building-intelligence. FY2026 (ended 2026-08-31): sales +6.8% to $4.64B, diluted EPS +36.1% to $17.05 -- mostly a full year of the QSC acquisition, $51.3M IEEPA tariff refunds, and ~$84M of prior-year one-time costs not repeating. Pro forma (as if QSC owned all last year) sales +~2.1%, adjusted EPS +10.5%. Lighting (ABL) segment sales -1.0%, adjusted operating profit -2.5%; Intelligent Spaces (AIS) +44.8% full year / +16.6% Q4 on a like-for-like QSC basis. Operating cash flow 1.55x net income funded $287M buybacks + full term-loan repayment.",
+    "lastChecked": "2026-10-23"
+  },
+  "BAH": {
+    "name": "Booz Allen Hamilton Holding Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/bah/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23"
+    },
+    "nextExpectedFiling": {
+      "type": "10-Q (fiscal Q3 FY27, calendar Q4 2026, quarter ending 2026-12-31)",
+      "estimate": "2027-01-22",
+      "basis": "~90 days after this 10-Q; files results 8-K + 10-Q together, usually a Friday in late January",
+      "confidence": "estimated"
+    },
+    "note": "Government/defense consulting, fiscal Q2 FY27 (calendar Q3 2026). Revenue -3.9% to $2.78B (Civil & Commercial -15.1%, National Security +0.6%); headcount down to 31,000 from 32,500. Diluted EPS +5.6% to $1.50 only because tax rate fell to 9.0% from 24.9% -- pre-tax income -14.6%. FY adjusted EPS guidance raised to $6.50-6.70; revenue guidance narrowed to $11.3-11.6B. Debt-funded Defy Security + Ultra Mission Solutions acquisitions pushed net leverage to 3.3x from 2.5x. Flags: Dec 11 continuing-resolution funding deadline, executive-order risk to buybacks/dividends.",
+    "lastChecked": "2026-10-23"
   }
 }
