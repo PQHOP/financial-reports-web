@@ -34885,22 +34885,37 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q1",
-      "publishedAt": "2026-10-19",
-      "url": "https://financialreportinsights.com/reports/cmvfharoc000507jmntec4kgu"
+      "period": "Q2",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/eonr/2026/q2"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-03-31",
-      "filedAt": "2026-10-13"
+      "periodEnd": "2026-06-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q2 2026, overdue)",
-      "estimate": "2026-10-19",
-      "basis": "Q2 2026 10-Q was due around mid-August and has not been filed; late filer with ongoing FY2025 restatement (10-K/A filed same week)",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-14",
+      "basis": "45 days after 2026-09-30; company has filed late repeatedly",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-19"
+    "lastChecked": "2026-10-23",
+    "note": "Small, distressed late filer. Q2 2026: oil & gas sales +50% to $5.44M (oil ~$96/bbl), but production down 11% QoQ and opex per BOE up; operating loss widened to $1.27M. Net loss narrowed to $0.69M (from restated $2.96M) only because 2025 interest/debt-exchange charges dropped out, not from operating improvement. Red flags: going-concern doubt not alleviated, $22.6M working-capital deficit, material weaknesses in controls, White Lion equity line still frozen (S-1 not effective), post-quarter $1.5M loan at 28% interest, IRS exam opened on 2023 return. FY2025 restated (10-K/A Oct 13).",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q1",
+        "publishedAt": "2026-10-19",
+        "url": "https://financialreportinsights.com/reports/cmvfharoc000507jmntec4kgu"
+      },
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-10-23",
+        "url": "https://financialreportinsights.com/companies/eonr/2026/q2"
+      }
+    ]
   },
   "NUCL": {
     "name": "Eagle Nuclear Energy Corp.",
