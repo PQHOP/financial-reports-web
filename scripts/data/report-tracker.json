@@ -15266,17 +15266,17 @@
       "url": "https://financialreportinsights.com/companies/luv/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-21"
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026, same period)",
-      "estimate": "2026-11-05",
-      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
+      "type": "8-K Item 2.02 (Q4/FY2026)",
+      "estimate": "2027-01-22",
+      "basis": "~90 day cadence from Q3 earnings 8-K (2026-10-21); next NEW period is Q4/FY2026 results",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-23"
   },
   "SWK": {
     "name": "Stanley Black & Decker",
