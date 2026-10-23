@@ -19225,3 +19225,63 @@ further report-periods published this firing** (4 edits, uncounted) —
 tonight's running total stays **18 report-periods**. Next firing
 should scan again for new tier-0 candidates (especially non-us-listed
 ones) before anything else.
+
+**New firing (22:03 UTC, close to the window's 22:59 UTC end).** Network
+check passed (sec.gov 403 without UA as expected, 200 with the required
+UA via `curl`; financialreportinsights.com 200). `npm install` run fresh
+(the `prisma generate` postinstall step fails for lack of a local
+`DATABASE_URL` — harmless, doesn't block `admin-publish`/
+`scan-recent-filings`; `package-lock.json` churn from the install was
+reverted before claiming so the claim push wasn't blocked by a dirty
+working tree). No active claims found at start.
+
+`npm run scan-recent-filings` found 47 candidates: 46 us-listed (cap
+already 10/10 tonight, not touched) and one S&P 500 `kind: update` —
+**TDY** (Teledyne). Claimed TDY before dispatching, pushed the claim
+immediately (first push attempt failed because of the uncommitted
+`package-lock.json` change blocking the rebase; reverted it and
+retried successfully).
+
+**1 same-period 10-Q edit (not a new report-period, doesn't count
+toward the cap):** TDY's Q3 2026 10-Q (filed 2026-10-23) confirmed no
+headline figure changed from the Oct 21 earnings release ($1,684.9M
+revenue, $272.8M net income, $5.82 diluted EPS, 20.6% operating
+margin all match) but added material detail the 8-K-based report
+didn't have: a "Who bought more" section (US government sales +26.4%
+vs commercial +3.6%, 72% of the sales increase from government
+customers), Digital Imaging product-line detail, resolution of every
+item the old report flagged as pending (tariff refunds essentially
+done by Q3, the R&D decline traced to Aerospace & Defense Electronics
+specifically, the inventory build identified as mostly raw materials),
+new backlog/RPO ($5,514.4M, +6.5% in the quarter) and net-debt
+figures. It also corrected an error: the 10-Q shows Q3 2025 had a
+$7.2M debt-extinguishment gain the 8-K hadn't mentioned, which changes
+the non-GAAP EPS growth comparison from ~17% to ~20% — the report now
+flags this correction explicitly. `sourceUrl` updated to the 10-Q.
+Verified live (cache-busted fetch of the full JS payload, not just a
+plain-text grep): "Who bought more" and "Takeaway" sections present,
+metrics match the published JSON, body ends cleanly at a "Sources"
+line, nothing truncated. One minor style note: the report's opening
+bullets aren't under a literal "At a glance" heading (just three bold
+bullets right after the intro paragraph) — substantively present, not
+worth a re-edit tonight given the window was closing; worth a tidy-up
+in the next hot-list-rewrite-style pass if this company comes up
+again. https://financialreportinsights.com/companies/tdy/2026/q3
+
+Claim released for TDY. Tracker updated: `lastFilingSeen` set to the
+10-Q (periodEnd 2026-09-27, filedAt 2026-10-23); `nextExpectedFiling`
+rolled forward to the Q4/FY2026 earnings 8-K, estimated 2027-01-21
+(cadence-based, ~90 days out).
+
+**Everything else still capped/exhausted** (us-listed 10/10, S&P
+500/hot-list tier 1 done, hot-list rewrites all within 10 days of
+their next filing, comparisons 2/2, not Sunday) and no other
+non-us-listed tier-0 candidates in tonight's scan. Tonight's running
+total stays **18 report-periods** (this firing: 1 edit, uncounted).
+Window closes 22:59 UTC — this was the last firing of the night.
+**Tonight's final total: 18 report-periods published, across 6
+firings**, well under the ~40 cap (earnings season meant tier 0 alone
+filled most of the night; us-listed and comparison sub-caps did get
+maxed out). Next window (01:00–07:59 JST 2026-10-25) should start by
+re-scanning for fresh tier-0 candidates before falling back to
+tier 1.
