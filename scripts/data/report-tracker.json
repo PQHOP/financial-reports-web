@@ -12519,17 +12519,17 @@
       "url": "https://financialreportinsights.com/companies/jbl/2026/annual"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-K",
       "periodEnd": "2026-08-31",
-      "filedAt": "2026-09-30"
+      "filedAt": "2026-10-23"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026 annual)",
-      "estimate": "2026-10-27",
-      "basis": "8-K earnings release filed 2026-09-30; full 10-K typically follows ~4 weeks later",
+      "type": "8-K (Item 2.02, Q1 FY2027 earnings)",
+      "estimate": "2026-12-18",
+      "basis": "cadence-based from Q3 FY2026 8-K (2026-09-30) and typical ~11-week Jabil quarterly cadence",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-01",
+    "lastChecked": "2026-10-23",
     "reports": [
       {
         "year": 2026,
@@ -12801,17 +12801,17 @@
       "url": "https://financialreportinsights.com/companies/kmi/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-21"
+      "filedAt": "2026-10-23"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026, same period)",
-      "estimate": "2026-11-05",
-      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it explains the $138M Products segment accrual",
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings)",
+      "estimate": "2027-01-21",
+      "basis": "cadence-based from Q3 2026 8-K (2026-10-21), ~3 months out",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-23"
   },
   "KKR": {
     "name": "KKR & Co.",
@@ -12935,17 +12935,17 @@
       "url": "https://financialreportinsights.com/companies/lvs/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-21"
+      "filedAt": "2026-10-23"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026, same period)",
-      "estimate": "2026-11-05",
-      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it explains the Marina Bay Sands mass-hold drop",
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings)",
+      "estimate": "2027-01-21",
+      "basis": "cadence-based from Q3 2026 8-K (2026-10-21), ~3 months out",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-23"
   },
   "LDOS": {
     "name": "Leidos",
@@ -14650,17 +14650,17 @@
       "url": "https://financialreportinsights.com/companies/dgx/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-22"
+      "filedAt": "2026-10-23"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026, same period)",
-      "estimate": "2026-11-02",
-      "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it adds the organic volume/customer split",
+      "type": "8-K (Item 2.02, Q4 2026 earnings)",
+      "estimate": "2027-01-22",
+      "basis": "cadence-based from Q3 2026 8-K (2026-10-22), ~3 months out",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-23"
   },
   "Q": {
     "name": "Qnity Electronics",

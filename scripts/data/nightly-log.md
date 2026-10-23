@@ -19136,3 +19136,92 @@ tier-0 candidates (especially non-us-listed ones) before anything
 else; once no non-us-listed tier-0 items remain, there's genuinely
 nothing left within tonight's caps until the us-listed/comparison caps
 reset tomorrow.
+
+**New firing (21:05 UTC).** Network check passed (403 without UA as
+expected, 200 with the required UA; financialreportinsights.com 200).
+`npm install` hit the same pre-existing `DATABASE_URL`-less `prisma
+generate` postinstall failure — harmless, doesn't block
+`admin-publish`/`scan-recent-filings`. No active claims found at
+start. Re-ran `npm run scan-recent-filings`: 50 fresh candidates, 4 not
+us-listed (all S&P 500, all `kind: update`) — **DGX, JBL, KMI, LVS**
+— the rest all `us-listed`/mostly `new` (us-listed 10/10 cap already
+reached tonight, so not touched). Claimed DGX/JBL/KMI/LVS before
+dispatching.
+
+**4 same-period filing edits (not new report-periods, don't count
+toward the cap)** — all four were the "10-Q/10-K arriving weeks after
+the earnings 8-K we already published from" case, and all four turned
+out to have material new content the original report had explicitly
+flagged as pending, so all four got an Opus-subagent edit rather than
+a plain `lastFilingSeen` bump:
+
+- **DGX (Quest Diagnostics) Q3 2026 10-Q** — confirmed no headline
+  figure changed from the 8-K. The 10-Q gave the volume/customer
+  breakdown the Q3 report had explicitly said it couldn't check yet:
+  of the 14.5% requisition-volume growth, 9.5 points came from the new
+  Corewell Health and Fresenius Medical Care contracts; excluding them,
+  volume grew 5% (resolving the open "~4%?" watch item), and revenue
+  per requisition ex-mix actually rose 1.7%. Added those figures to
+  the metrics table, "Volume up, price per order down", and "Did last
+  time's read hold up?"; updated `sourceUrl` to the 10-Q. No new detail
+  on the Quanum/patient-data security incident disclosed the same day
+  as the 8-K — the 10-Q only cross-references the 8-K in its
+  forward-looking-statements boilerplate. Verified live (cache-busted
+  fetch): new figures present, old "10-Q will confirm it" language
+  gone, nothing truncated. https://financialreportinsights.com/companies/dgx/2026/q3
+- **KMI (Kinder Morgan) Q3 2026 10-Q** — confirmed no headline figure
+  changed. The 10-Q explained the $138M Products Pipelines charge the
+  release had left unexplained ("The release does not say what the
+  accrual is for"): a non-cash legal/environmental/other expense
+  accrual, entirely in the West Coast Refined Products sub-business,
+  which is why that unit's EBDA fell 96%/29% (3-/9-month). Updated the
+  Products Pipelines section and quality-check bullet with the
+  attribution; `sourceUrl` updated to the 10-Q. Verified live: new
+  explanation present, page not truncated.
+  https://financialreportinsights.com/companies/kmi/2026/q3
+- **LVS (Las Vegas Sands) Q3 2026 10-Q** — confirmed no headline figure
+  changed. Resolved the open question from last report (whether Marina
+  Bay Sands' mass-market win-rate drop, from 24.5% to 18.7%, was a luck
+  swing or more promotional play): the 10-Q's MD&A blames "lower win
+  percentages" with no mention of rebates/promotions, and win
+  percentages are defined net of discounts/comps, so rebates can't be
+  the direct cause — though the subagent flagged a ~$20M gross-to-net
+  gap the filing doesn't explain. Also checked and added the Singapore
+  8%→12% premium-play tax step-up, but correctly judged it immaterial
+  to the quarter (the threshold was crossed in both years, so it's
+  mostly a one-month timing shift, not a margin driver) rather than
+  overstating it. Updated cash-flow (9-month operating cash flow vs net
+  income), Macao cost detail, and the tax-rate explanation (corrected
+  from a Singapore-rate claim to the actual 10-Q reason). `sourceUrl`
+  updated to the 10-Q. Verified live: new sections present, nothing
+  truncated. https://financialreportinsights.com/companies/lvs/2026/q3
+- **JBL (Jabil) FY2026 10-K** — confirmed no headline/full-year figure
+  changed from the 8-K (10-K is audited). This report had explicitly
+  said segment results and the AI-revenue breakdown would have to wait
+  for the 10-K; now added: Intelligent Infrastructure revenue +45.1%
+  ($17,872M), segment income +61.0% ($1,069M), ~90% of the full year's
+  segment-income growth (confirming the Q3 report's ~89% pattern held
+  all year); Regulated Industries +6.9%/+8.7%; Connected Living &
+  Digital Commerce -3.9%/-3.8% (renamed Intelligent Devices and
+  Robotics from Sept 2026). Also resolved the "prepaid expenses more
+  than doubled, release doesn't explain it" open question: $3.4B of
+  the prepaid balance is customer-directed component purchases
+  (consignment inventory tied to Intelligent Infrastructure shipment
+  timing) where Jabil only books the net fee as revenue — not prepaid
+  supplier cash, but still cash tied up. `sourceUrl` updated to the
+  10-K. Verified live: segment table, prepaid explanation, and
+  "did last time's read hold up" all present, nothing truncated.
+  https://financialreportinsights.com/companies/jbl/2026/annual
+
+Claims released for all 4 tickers. Tracker updated for all four:
+`lastFilingSeen` set to the 10-Q/10-K just confirmed, `nextExpectedFiling`
+rolled forward to each company's next earnings 8-K (cadence-based,
+estimated).
+
+**Everything else still capped/exhausted:** us-listed 10/10, hot
+list/S&P 500 tier 1 fully done, hot-list rewrites all still within 10
+days of their next filing, comparisons 2/2 and not Sunday. So: **0
+further report-periods published this firing** (4 edits, uncounted) —
+tonight's running total stays **18 report-periods**. Next firing
+should scan again for new tier-0 candidates (especially non-us-listed
+ones) before anything else.
