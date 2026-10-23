@@ -1983,22 +1983,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-18",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu74m7au000404l77eqkwncr"
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/companies/axp/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "estimate": "2026-11-02",
+      "basis": "full 10-Q not yet filed as of 2026-10-23; report written from the Exhibit 99.1/99.2 earnings release — same-period update only (lastFilingSeen) once it lands unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-23"
   },
   "AXR": {
     "name": "AMREP Corporation",
