@@ -18921,3 +18921,100 @@ Claims released for all 19 tickers touched. Remaining S&P 500 tier-0
 items from the scan (e.g. further us-listed and S&P 500 candidates not
 yet worked) and the carried-over us-listed candidates from previous
 nights stay queued for a later firing tonight.
+
+**New firing (17:03 UTC).** Network check passed (sec.gov 403 without
+UA as expected, 200 with the required UA). `npm install` run fresh
+(needed a dummy local `DATABASE_URL` for the `prisma generate`
+postinstall step to succeed — publishing itself doesn't touch Prisma).
+No active claims found at start; claimed tickers before dispatching
+per the "claim before you dispatch" rule.
+
+`npm run scan-recent-filings` found 47 candidates: TXN (hot, update)
+plus 46 us-listed (3 updates to already-`"done"` companies, 43 new).
+Worked TXN first, then the 3 us-listed updates, then 7 of the new
+us-listed candidates (today's and yesterday's filings, in the scan's
+own newest-first order) — exactly filling the **10/night us-listed
+sub-cap** (0 used earlier tonight):
+
+- **TXN** — 10-Q same-period edit (not a new report, doesn't count
+  toward the cap): added regional revenue split, Silicon Labs deal
+  terms, dividend/buyback detail, CHIPS Act funding. Figures unchanged.
+  https://financialreportinsights.com/companies/txn/2026/q3
+- **APPF** Q3 2026 (us-listed, update — new quarter after the
+  published Q2): revenue +18.6%, net income +36.7% on falling R&D
+  spend (AI-tooling headcount efficiency) outpacing rising S&M; FY
+  guidance raised at the bottom, cut at the top (implies a Q4
+  slowdown). https://financialreportinsights.com/companies/appf/2026/q3
+- **COCO** Q3 2026 (us-listed, update): net sales +33.7% (Copra
+  acquisition ~16pts, organic +17.8%); gross margin flat at 38.0% as
+  tariff relief was offset by pricing/freight/mix; guidance raised
+  again. https://financialreportinsights.com/companies/coco/2026/q3
+- **EONR** Q2 2026 (us-listed, update — very late filer, distressed):
+  revenue +50% but production down and opex/BOE up; net loss narrowed
+  only on non-repeating prior-year financing charges. Going-concern
+  doubt, $22.6M working-capital deficit and control weaknesses flagged
+  in the body. https://financialreportinsights.com/companies/eonr/2026/q2
+- **ALV** Q3 2026 (us-listed, new): sales -0.5% vs global light-vehicle
+  production -1.9%; EPS -6.8% mainly on a tax-rate jump; FY adjusted
+  margin guidance narrowed to the low end.
+  https://financialreportinsights.com/companies/alv/2026/q3
+- **AYI** FY2026 annual (us-listed, new, 10-K): sales +6.8%, EPS +36.1%
+  — mostly a full year of the QSC acquisition and tariff refunds
+  (pro forma sales +~2.1%, adjusted EPS +10.5%); Lighting segment
+  actually shrank. https://financialreportinsights.com/companies/ayi/2026/annual
+- **BAH** Q3 2026 (us-listed, new): revenue -3.9%; EPS +5.6% entirely
+  from a lower tax rate while pre-tax income fell 14.6%; leverage rose
+  to 3.3x on debt-funded M&A. https://financialreportinsights.com/companies/bah/2026/q3
+- **EAF** Q3 2026 (us-listed, new): distressed graphite-electrode
+  maker — negative equity, interest expense exceeding adjusted EBITDA,
+  falling liquidity, negative FCF, new ATM equity program all flagged.
+  https://financialreportinsights.com/companies/eaf/2026/q3
+- **FAF** Q3 2026 (us-listed, new): revenue +5.3% on higher revenue
+  per title order despite fewer closed orders; EPS fell on a
+  non-repeating prior-year gain; opened orders -8.2% signals slower
+  closings ahead. https://financialreportinsights.com/companies/faf/2026/q3
+- **MHO** Q3 2026 (us-listed, new): net income -37.5% on rising
+  rate-buydown incentives and lot costs; orders/backlog softening
+  despite more communities (moderate red flag).
+  https://financialreportinsights.com/companies/mho/2026/q3
+- **RNG** Q3 2026 (us-listed, new): revenue +5.9%, above guidance; the
+  huge GAAP EPS jump (+3,321%) is ~96% a one-off tax valuation-allowance
+  release, flagged clearly in the report.
+  https://financialreportinsights.com/companies/rng/2026/q3
+
+All sanity-checked live (cache-busted fetch, "At a glance" present, not
+truncated) before the tracker was updated. Claims released for all 11
+tickers.
+
+Checked the hot-list-rewrite queue (18 pending): every single pending
+item's `nextExpectedFiling` falls within the next 10 days (2026-10-22
+through 2026-10-30), so per the "skip for now" rule none were rewritten
+this firing — they're expected to get picked up via tier 0 as new-format
+reports once they actually report.
+
+`next-batch -- --n 60` confirmed the hot list and S&P 500 are fully
+`"done"`/`"skipped"` for 2026 — the queue jumps straight from tier-0
+fresh filings to `4-us-listed-backlog`, so there's no tier-1 S&P 500
+work left to do; only the (now-capped) us-listed backlog remains in
+tier 1.
+
+**2 comparisons** (cap: 2/night, 0 used earlier tonight), using only
+each pair's own published figures:
+- **mho-vs-phm-q3-2026** — M/I Homes vs. PulteGroup, both Q3 2026:
+  PulteGroup held margin and let closings fall; M/I Homes held volume
+  by paying more in rate buydowns, so its margin and net income fell
+  further. https://financialreportinsights.com/insights/mho-vs-phm-q3-2026
+- **bah-vs-caci-q3-2026** — Booz Allen vs. CACI International, both
+  covering the quarter ended 2026-09-30 (CACI's fiscal Q1 FY27): CACI's
+  revenue and margin grew while Booz Allen's fell; Booz Allen's EPS win
+  was entirely a lower tax rate. Both flag the Dec 11 continuing-
+  resolution deadline. https://financialreportinsights.com/insights/bah-vs-caci-q3-2026
+
+**This firing: 10 report-periods + 2 comparisons** (plus the TXN edit,
+uncounted). **Tonight's running total: 18 report-periods** (well under
+the ~40 cap). us-listed sub-cap now 10/10 for tonight — no more
+us-listed work until tomorrow. Remaining candidates from tonight's scan
+(36 more us-listed, all "new") stay queued. Hot list and S&P 500 tier 1
+are fully clear; next firing should check for new tier-0 filings first,
+then fall back to tier 2 (multi-year backfill, S&P 500 first) once that
+and the us-listed cap leave nothing else to do.
