@@ -19088,3 +19088,51 @@ further report-periods published this firing** — tonight's running
 total stays **18 report-periods** (tracker/log otherwise unchanged).
 Next firing should scan again for new tier-0 candidates (especially
 non-us-listed ones) before anything else.
+
+**New firing (20:03 UTC).** Network check passed (403 without UA as
+expected, 200 with the required UA; financialreportinsights.com 200,
+vercel.app fallback also 200). No active claims. Re-ran `npm run
+scan-recent-filings`: 40 fresh candidates, only one not us-listed —
+**STLD** (S&P 500, `kind: update`), the rest all `us-listed`/`new`
+(already over tonight's 10/10 us-listed cap, so not touched).
+
+**STLD 10-Q (Q3 2026, filed today) checked — edited, not a new
+report-period:** tracker already flagged this as the "10-Q arriving
+after the 8-K we already published from" case, and the existing report
+explicitly noted the 10-Q's segment MD&A wasn't available yet.
+Downloaded the 10-Q directly (`curl` + UA + `html-to-text.mjs`) and
+confirmed the headline figures are identical to the 8-K release: total
+net sales $6,509.4M (+34.8%), net income attributable to Steel
+Dynamics $756.0M, diluted EPS $5.26 (+92%) — no metrics changed. But
+the 10-Q's MD&A and Note 8 have the full 4-segment breakdown (Steel,
+Metals Recycling, Steel Fabrication, Aluminum) with per-segment
+revenue, operating income, spreads and driver commentary that the
+report had flagged as missing — material new detail per CLAUDE.md, so
+dispatched an Opus subagent to rewrite the segment section from the
+10-Q and `--edit` the existing report (reportId
+`cmvicuwau000007jwy8yepgmt`) rather than publish a duplicate. Subagent
+replaced the "10-Q not yet filed" disclaimer, added a 4-segment table
+(Q3 + nine-month operating income) with driver sentences for each
+(steel spread +35%, recycling nonferrous spread +48% on copper,
+fabrication spread −18% on higher steel input cost, aluminum loss
+narrowing on volume), updated the source note and `sourceUrl` to the
+10-Q, and extended "What the headline numbers hide" (capitalized
+interest, other income, SG&A) — leaving title, summary, headline, "At
+a glance", Takeaway and `metrics` unchanged. I verified the live
+canonical page (`/companies/stld/2026/q3`, cache-busted) directly:
+every new section is present, nothing looks truncated, Takeaway reads
+cleanly. Tracker: `lastFilingSeen` set to 10-Q/2026-09-30/2026-10-23,
+`nextExpectedFiling` rolled to the Q4/FY2026 earnings 8-K (~2027-01-20,
+cadence-based, estimated). No new report-period — edit only, same as
+the TXN/JBHT/CME pattern.
+
+**Everything else still capped/exhausted:** us-listed 10/10, hot
+list/S&P 500 tier 1 fully done, hot-list rewrites all still within 10
+days of their next filing, comparisons 2/2 and not Sunday. So: **0
+further report-periods published this firing** — tonight's running
+total stays **18 report-periods** (tracker/log otherwise unchanged
+besides the STLD edit above). Next firing should scan again for new
+tier-0 candidates (especially non-us-listed ones) before anything
+else; once no non-us-listed tier-0 items remain, there's genuinely
+nothing left within tonight's caps until the us-listed/comparison caps
+reset tomorrow.
