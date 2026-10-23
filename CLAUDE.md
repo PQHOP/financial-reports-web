@@ -766,8 +766,10 @@ the user is tracked at its end. Things future sessions should know:
     from 2026-10-11 through the end of earnings season (roughly
     2026-11-20), if no `PREVIEW` article for that week exists yet
     (check `/insights`). Find which hot-list / S&P 500 companies report
-    Monday–Friday of the coming week (WebSearch an earnings calendar; use
-    only dates a source states). Keep the ones that already have a report
+    Monday–Friday of the coming week: start from
+    `scripts/data/earnings-dates.json` (company-announced dates, kept by
+    the ops routine), then WebSearch an earnings calendar for the rest;
+    use only dates a source states. Keep the ones that already have a report
     on the site (so there is a "last quarter" to anchor on); if fewer than
     3 qualify, skip the week. For each: expected report date, what the
     last published quarter showed (figures **only from our own published
