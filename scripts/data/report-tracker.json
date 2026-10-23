@@ -12483,17 +12483,17 @@
       "url": "https://financialreportinsights.com/companies/jbht/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-15"
+      "filedAt": "2026-10-23"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-23",
-      "basis": "10-Q will cover the same period already published from the 8-K, so only lastFilingSeen needs updating when it lands",
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings)",
+      "estimate": "2027-01-21",
+      "basis": "~90 days after the Q3 10-Q (2026-10-23); last year's Q4/annual earnings release pattern not re-checked",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-16",
+    "lastChecked": "2026-10-23",
     "reports": [
       {
         "year": 2026,

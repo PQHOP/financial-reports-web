@@ -19018,3 +19018,43 @@ us-listed work until tomorrow. Remaining candidates from tonight's scan
 are fully clear; next firing should check for new tier-0 filings first,
 then fall back to tier 2 (multi-year backfill, S&P 500 first) once that
 and the us-listed cap leave nothing else to do.
+
+**New firing (18:05 UTC).** Network check passed (403 without UA as
+expected, 200 with the required UA; financialreportinsights.com 200).
+`npm install` hit the same pre-existing `DATABASE_URL`-less `prisma
+generate` failure noted above — harmless, doesn't block
+`admin-publish`/`scan-recent-filings`. Re-ran `npm run
+scan-recent-filings`: 39 fresh candidates, only one not us-listed —
+**JBHT** (S&P 500), the rest all `us-listed`/`new`.
+
+**JBHT 10-Q (Q3 2026, filed today) checked, no new report:** tracker
+already flagged this as the "10-Q arriving after the 8-K we already
+published from" case. Downloaded the 10-Q directly (`curl` + UA +
+`html-to-text.mjs`) and compared its income statement line-by-line
+against the live report: revenue $3,676.8M (+20.4%), operating income
+$247.1M (+2%... matches $242.7M→$247.1M), net earnings $172.4M, diluted
+EPS $1.82 — all identical to what's already published from the 8-K.
+No figure changed, nothing material added, so per CLAUDE.md only
+`lastFilingSeen` was updated (10-Q, filed 2026-10-23) and
+`nextExpectedFiling` rolled forward to the Q4/FY2026 earnings 8-K
+(estimated ~2027-01-21, cadence-based, not yet confirmed). No edit, no
+new report-period.
+
+**Everything else this firing is capped out, not actually unblocked:**
+re-checked against CLAUDE.md's literal tier-2 condition ("once literally
+every company in both files is done or skipped for 2026") — the
+us-listed file still has dozens of `new`/pending entries (just over
+tonight's 10/10 cap, not actually done/skipped), so tier 2 multi-year
+backfill is **not** unlocked yet despite the previous entry's closing
+note suggesting falling back to it. Flagging that note as likely loose
+phrasing rather than acting on it, to avoid prematurely starting
+backfill before the 2026 backlog is actually clear. Hot-list rewrites:
+all 18 pending items still fall within 10 days of their next expected
+filing (unchanged since the last check this firing re-ran), so still
+correctly skipped. Comparisons and the Sunday preview don't apply
+(not Sunday, already 2/2 comparisons used tonight). So: **0 further
+report-periods published this firing** — tonight's running total stays
+**18 report-periods** (tracker/log otherwise unchanged from the prior
+firing's entry above). Nothing else to do within the caps; next firing
+should scan again for new tier-0 candidates (especially any non-us-listed
+ones, which aren't capped) before anything else.
