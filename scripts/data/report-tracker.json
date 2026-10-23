@@ -13656,22 +13656,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/nem/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-23",
+      "url": "https://financialreportinsights.com/reports/cmvl6gu96000508k34pas3djf"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-22"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-19",
+      "basis": "last year Q4 results/FY guidance released 2026-02-19; next NEW period is FY2026 annual results",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-23"
   },
   "NWSA": {
     "name": "News Corp (Class A)",
