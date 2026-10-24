@@ -19558,3 +19558,61 @@ rewrites all deferred, no clean second-comparison pairing, not Sunday
 UTC (no earnings preview due). Standing down; next hourly firing
 should re-scan fresh (more companies may file overnight) before
 reaching the same conclusion.
+
+**Fourth firing (19:04 UTC / 04:04 JST).** Network check passed (SEC
+403 without UA as expected, 200 with the required UA; both
+financialreportinsights.com and the `.vercel.app` alias reachable).
+Fetched master fresh (fast-forwarded cleanly to `81b768c`), no active
+claims. Re-ran `scan-recent-filings`: identical 36 us-listed-only
+candidates (BE through WFRD) — no new hot-list/S&P 500 filings.
+`next-batch -- --n 60` confirms the same picture again: tier-0 is all
+us-listed (tonight's 10/10 us-listed cap already spent by the first
+firing), tier-1 S&P 500 fully done (503/503), tier-1 remainder is
+us-listed backlog only (also capped). Hot-list rewrites re-checked:
+all 18 `pending` items still within 10 days of `nextExpectedFiling`
+(furthest is 10-30, 6 days out) — none eligible. Not a Sunday-UTC
+firing (still 2026-10-24 by UTC calendar) — no earnings preview due.
+
+Found the second comparison slot the prior two firings couldn't:
+scanned all S&P 500/hot-list companies with a Q3 2026 report published
+since 10-18, grouped by GICS sector, for a same-business pair with no
+existing comparison. **CSX and Norfolk Southern (NSC)** — both major
+eastern U.S. Class I freight railroads, direct competitors with
+overlapping territory, both published Q3 2026 on 10-22 — were the
+clear tight match (unlike the prior firing's Badger Meter/Roper and
+Kilroy/Agree Realty candidates, which were same-sector but different
+business models). Dispatched an Opus subagent to read both published
+report pages (curl + `html-to-text.mjs`, no new SEC research) and
+write the comparison from their own already-published figures only.
+Published:
+
+- **csx-vs-nsc-q3-2026** — "CSX vs Norfolk Southern Q3 2026: Same Fuel
+  Bill, Opposite Cost Stories." Revenue growth was nearly identical
+  (CSX +12.0%, NSC +13.6%) and the fuel-cost increase was almost the
+  same dollar amount at both; the gap is in non-fuel costs — CSX's
+  fell ~3% on 4.7% more freight, while NSC's rose 7.6% on a 52% jump
+  in its unexplained "materials and other" line. The operating-ratio
+  ranking flipped year over year: NSC was more efficient a year ago
+  (63.3% vs CSX's 65.1% adjusted), CSX leads now (60.9% vs NSC's
+  65.4%). Headline EPS growth points the wrong way at both: CSX's
+  +54% is flattered by a prior-year $164M write-down (~+30% without
+  it); NSC's +6.6% is held down by $42M of Union Pacific merger costs
+  and $28M of East Palestine derailment costs (+9.7% adjusted).
+  CSX's own service metrics (on-time carloads/containers) worsened
+  sharply; NSC's report has no comparable service stats, so the
+  article says the two can't be compared on service. NSC's pending
+  acquisition by Union Pacific (STB approval pending, $2.5B
+  termination fee, buybacks barred) is covered only as its own report
+  states it. Verified live (cache-busted fetch): "At a glance",
+  side-by-side table, "Takeaway", "What to watch next" and the closing
+  Sources line all present, not truncated.
+  https://financialreportinsights.com/insights/csx-vs-nsc-q3-2026
+
+**Tonight's running total: still 10 report-periods, 2/2 comparisons
+used** — tonight's comparison allotment is now fully spent. Nothing
+else available this firing: us-listed cap spent, S&P 500/hot-list
+tier 1 done, hot-list rewrites all deferred, not Sunday UTC. Only
+remaining live tracks for a later firing tonight are: a fresh
+hot-list/S&P 500 filing the scan hasn't seen yet, or the us-listed
+backlog once a new night's cap resets. Next firing should re-scan
+fresh before reaching the same conclusion.
