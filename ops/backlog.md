@@ -11,14 +11,16 @@ date and commit.
   the next ~14 days and add every date a company's own release states;
   leave out third-party calendars. 44 entries as of 10-24 (13 added
   10-24: INTC 10-29, UPS/PYPL/RCL 10-27, ORLY/KLAC 10-28, CVX/CL 10-30,
-  PFE 11-03, UBER/QCOM 11-04, TTWO/PSKY 11-09). Still no company notice
-  as of 10-24: **GOOGL** (abc.xyz/investor lists nothing yet; third-party
-  calendars guess 10-28 — add it the day Alphabet posts it, also for the
-  Sunday preview), **META** (not searched yet — do it 10-25), F, MCD,
-  AMGN (investors.amgen.com 403s from this environment), LYV, PLTR
-  (every "Nov 2" source is a calendar; the 2025 Business Wire notice is
-  what the search engines return). Entries whose date has passed are
-  ignored by the overlay and can be deleted when convenient.
+  PFE 11-03, UBER/QCOM 11-04, TTWO/PSKY 11-09; GOOGL + GOOG 10-28 added
+  10-25 from Alphabet's 10-06 notice, which plain searches missed until
+  the exact release title was searched). 47 entries. **META needs no
+  entry:** its Q3 2026 report is already on the site (reported 10-21).
+  Still no company notice as of 10-25: F, MCD, AMGN (investors.amgen.com
+  403s from this environment), LYV, PLTR (every "Nov 2" source is a
+  calendar; the 2025 Business Wire notice is what the search engines
+  return). Entries whose date has passed are ignored by the overlay and
+  can be deleted when convenient. Next sweep: before the 11-02 week
+  (AAPL/AMD/PFE/QCOM/UBER are in; look again for PLTR, F, MCD, AMGN).
   **For the nightly routine:** INTC reports **Thu 10-29** (tracker
   estimated 10-23 — the 10-23 night scan correctly found nothing); AAPL
   **Mon 11-02** (not 10-29/30 as the Big Tech week note assumes); AMD
@@ -220,6 +222,14 @@ date and commit.
   in this environment, same gap noted 2026-10-10) — for the nightly
   routine to pick up per its own Comparison rule (CLAUDE.md, "Growth
   work"), or a future ops session once it has the credential.
+- **Check 10-26 (Mon JST) morning: did `earnings-preview-2026-10-26`
+  appear on `/insights` after the Sunday 16:00 UTC firing?** The 10-25
+  ops run (07:40 JST Sunday) was before that firing, so it could not be
+  checked yet. If it exists, the homepage's "Reporting this week" header
+  links it automatically ("This week's earnings preview →", while < 8
+  days old, `currentPreview()` in `src/app/page.tsx`); confirm the link
+  renders. If it is missing a third time, the routine's stored prompt is
+  where the rule has to go (user's call).
 - **Weekly earnings preview: missed twice (10-11, 10-18).** No
   `earnings-preview-*` slug on `/insights`, no "preview" in the nightly
   log either Sunday; the first firing went straight to hot-list rewrites
@@ -281,6 +291,31 @@ date and commit.
   just build it.
 
 ## Done
+
+- **2026-10-25 — Homepage "Reporting this week" ranked by search demand
+  and grouped by day; follow-up 10-Qs dropped from both calendars; GOOGL
+  date** (`105f691`; prod `dpl_8MgWJ4zaCcPPTNYqizD2FfdJ24rT`). Going into
+  Big Tech week the homepage listed the first twelve covered companies
+  by date — COFS/BFST (weekend estimates), AZO, AMT, BKR, BRO, CDNS,
+  CINF, PFG, BMRC, CBK, then V — and nothing else: MSFT, GOOGL, AMZN,
+  KO, BA, MA, LLY were all outside the twelve. Now up to 18 names by hot
+  list rank → S&P 500 → rest (announced date before estimate), one row
+  per day, weekend estimates skipped, an "(est.)" note. Live after
+  deploy: Tue V KO MU(est.) PYPL · Wed MSFT GOOGL NOW · Thu AMZN LLY MA
+  MRK CAT COIN INTC · Fri XOM ABBV CVX VZ(est.). New
+  `isFollowUpFiling()` in `src/lib/tracker.ts`: a tracker "next filing"
+  that is the full 10-Q for the quarter already analyzed from the 8-K
+  ("10-Q (Q3 2026)" with latestReport Q3 2026) is not a results day —
+  BAC/WFC/GS/JPM/MS/UNH/AXP/PG/BLK/SCHW (51 of 980 entries in the
+  4-week window) were shown as "reporting" on Oct 30 – Nov 5 on
+  `/earnings` and would have been on the homepage too. Company pages
+  are untouched (there "next filing" is still accurate). Also: GOOGL and
+  GOOG in `earnings-dates.json` (Alphabet notice 10-06, call Wed 10-28);
+  live titles now "Next Report Oct 28". Still ISR (`revalidate 3600`),
+  no new DB reads (`publishedAt` added to an existing select). tsc 0
+  errors (after `next typegen`), eslint clean (one `react-hooks/purity`
+  hit on `Date.now()` in render, moved into a helper), health 8/8 and
+  `figures` 7/7 after the deploy.
 
 - **2026-10-24 — 13 more company-announced earnings dates** (`7f78629`,
   no deploy needed: `loadTracker()` reads the file from
