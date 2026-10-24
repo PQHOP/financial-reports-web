@@ -36006,5 +36006,38 @@
         "filedAt": "2026-10-23"
       }
     ]
+  },
+  "HCSG": {
+    "name": "Healthcare Services Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/hcsg/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Revenue $479.6M (+3.3%; EVS +2.6% to $217.2M, Dietary +3.9% to $262.4M). Net income -42.1% to $24.9M, diluted EPS $0.36 vs $0.59 — but Q3 2025 included a $34.2M Employee Retention Credit plus $5.3M interest on it; Q3 2026 includes a $6.1M recovery on previously-reserved Genesis bankruptcy receivables after Genesis plan approval 2026-10-14. Ex those one-offs, pre-tax income ~$27.6M vs ~$17.8M a year ago; segment margins rose (EVS 13.3% vs 10.7%, Dietary 8.7% vs 5.1%). Net receivables +10.1% since December vs +3.1% nine-month revenue growth. Bought NEXDINE Hospitality 2026-10-06 for $93.5M (expected >$150M/yr revenue add). Guidance: Q4 revenue $535-545M; 2027 growth outlook raised to low double digits."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings) then 10-K",
+      "estimate": "2027-02-10",
+      "basis": "FY2025 earnings 8-K filed 2026-02-11, 10-K 2026-02-13; FY2024 cycle was 2025-02-12/2025-02-14",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/hcsg/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
   }
 }

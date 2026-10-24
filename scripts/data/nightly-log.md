@@ -19356,3 +19356,20 @@ with the remaining claimed tickers.
 Tracker updated. **Tonight's running total: 3 report-periods**
 (us-listed 3/10 used). Continuing with HCSG, HTH, IART, KRC, ORC, QS,
 SIGI still claimed/in progress this firing.
+
+**4th report-period published this firing:**
+
+- **HCSG** (Healthcare Services Group, Inc.) — first report. Q3 2026
+  10-Q (also read the Oct 21 earnings 8-K Ex. 99.1 for guidance).
+  Revenue $479.6M (+3.3%). Net income -42.1% to $24.9M on two offsetting
+  one-offs: Q3 2025 had a $34.2M Employee Retention Credit, Q3 2026 has
+  a $6.1M recovery on previously-reserved Genesis bankruptcy
+  receivables. Ex those, pre-tax income actually rose (~$27.6M vs
+  ~$17.8M) and segment margins improved. Bought NEXDINE Hospitality for
+  $93.5M (Oct 6). Guidance: Q4 revenue $535-545M, 2027 growth outlook
+  raised to low double digits. Verified live: renders in full, not
+  truncated. https://financialreportinsights.com/companies/hcsg/2026/q3
+
+Tracker updated. **Tonight's running total: 4 report-periods**
+(us-listed 4/10 used). HTH still in progress; IART, KRC, ORC, QS, SIGI
+still claimed/queued this firing.
