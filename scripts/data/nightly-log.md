@@ -19373,3 +19373,20 @@ SIGI still claimed/in progress this firing.
 Tracker updated. **Tonight's running total: 4 report-periods**
 (us-listed 4/10 used). HTH still in progress; IART, KRC, ORC, QS, SIGI
 still claimed/queued this firing.
+
+**5th report-period published this firing:**
+
+- **HTH** (Hilltop Holdings Inc.) — first report (bank metrics). Q3 2026
+  10-Q. Income attributable to Hilltop $24.9M ($0.44 diluted) vs $45.8M
+  ($0.74) a year ago. NII +8.9% to $122.4M, NIM 3.33% vs 3.06%. Pre-tax
+  income fell on three fronts: broker-dealer structured-finance trading
+  revenue $3.7M vs $27.9M, a $10.2M credit-loss provision vs a $2.5M
+  release a year ago, and PrimeLending's pre-tax loss widening to
+  $10.8M (4th straight losing quarter, possible goodwill write-down up
+  to $13.1M flagged). CET1 fell to 18.28% from 20.33% on buybacks.
+  Verified live: renders in full, not truncated.
+  https://financialreportinsights.com/companies/hth/2026/q3
+
+Tracker updated. **Tonight's running total: 5 report-periods**
+(us-listed 5/10 used). Dispatching the remaining claimed tickers (IART,
+KRC, ORC, QS, SIGI) next to use up the rest of tonight's us-listed cap.

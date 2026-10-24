@@ -36039,5 +36039,38 @@
         "filedAt": "2026-10-23"
       }
     ]
+  },
+  "HTH": {
+    "name": "Hilltop Holdings Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/hth/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Income attributable to Hilltop $24.9M ($0.44 diluted) vs $45.8M ($0.74) a year ago. NII +8.9% to $122.4M, NIM 3.33% vs 3.06% on lower deposit costs and loan growth to $8.81B. Pre-tax income -$25.6M on: broker-dealer pre-tax income $6.8M vs $26.5M (structured finance trading $3.7M vs $27.9M); a $10.2M credit-loss provision vs a $2.5M release a year ago; PrimeLending pre-tax loss widened to $10.8M from $7.2M (4th straight losing quarter, possible goodwill write-down up to $13.1M flagged). CET1 fell to 18.28% from 20.33% on $114.5M of buybacks YTD. Dividend raised to $0.22. Management expects lower Q4 mortgage production."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings) then 10-K",
+      "estimate": "2027-01-29",
+      "basis": "Cadence-based: ~90 days after this filing, Q4 releases usually late January, 10-K ~3-4 weeks later; not search-confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/hth/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
   }
 }
