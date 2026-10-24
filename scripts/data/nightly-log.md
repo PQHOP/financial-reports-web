@@ -19616,3 +19616,34 @@ remaining live tracks for a later firing tonight are: a fresh
 hot-list/S&P 500 filing the scan hasn't seen yet, or the us-listed
 backlog once a new night's cap resets. Next firing should re-scan
 fresh before reaching the same conclusion.
+
+**Fifth firing (20:05 UTC / 05:05 JST).** Network check passed (SEC
+403 without UA as expected, 200 with the required UA; both
+financialreportinsights.com and the `.vercel.app` alias reachable).
+`npm install` run fresh in this container (same harmless
+`prisma generate`/`DATABASE_URL` postinstall failure as every other
+firing tonight — doesn't block `admin-publish`/`scan-recent-filings`;
+`.prisma/client` was already present from a prior generate).
+`package-lock.json` churn from the install reverted. Fetched master
+fresh (already at `e66685c`, the fourth firing's tip). No active
+claims (`scripts/data/claims/` has only `README.md`).
+
+Re-ran `scan-recent-filings`: identical 36 us-listed-only candidates
+(BE through WFRD) — no new hot-list/S&P 500 filings since the fourth
+firing. `next-batch -- --n 60` confirms the same picture: all tier-0
+candidates are us-listed (tonight's 10/10 us-listed cap already
+spent), tier-1 jumps straight to `4-us-listed-backlog` (S&P 500 fully
+done, 503/503). Hot-list rewrites re-checked: still all `pending`
+items within 10 days of `nextExpectedFiling` — none eligible. Still
+Saturday by UTC calendar (20:05 UTC 2026-10-24) despite JST having
+rolled over to Sunday 05:05 — no weekly earnings preview due, and
+tonight's 2/2 comparison allotment is already spent regardless.
+
+**Tonight's running total: unchanged at 10 report-periods, 2/2
+comparisons used.** Nothing available this firing under any tier or
+discretionary slot — identical conclusion to the fourth firing, nothing
+touched in `report-tracker.json`. Next firing should re-scan fresh
+before reaching the same conclusion; the only live tracks left tonight
+are a fresh hot-list/S&P 500 filing the scan hasn't seen yet, or the
+us-listed backlog once a new night's cap resets after the window ends
+(07:59 JST / 22:59 UTC).
