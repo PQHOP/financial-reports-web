@@ -19473,3 +19473,52 @@ firing — the night's us-listed allotment is spent. Claims released for
 all 10 tickers. The cloud routine's next hourly firing should re-run
 `scan-recent-filings` fresh (more companies may file overnight) before
 falling back further.
+
+**Second firing (17:04 UTC).** Network check passed again (same
+SEC/UA behavior as before). Checked out `master` fresh (fast-forwarded
+46 commits from the previous firing's pushes) and re-ran
+`scan-recent-filings`: same 36 us-listed-only candidates as before (BE
+through WFRD), no new hot-list/S&P 500 hits. `next-batch -- --n 60`
+confirms nothing beyond fresh-filing tier 0 (all us-listed) and the
+us-listed tier-1 backlog — S&P 500/hot-list tier 1 fully done, so
+tier-0/tier-1 us-listed is genuinely the only report-period work
+available right now, and tonight's us-listed cap (10/10) is already
+spent. No active claims found (claims dir clean).
+
+Checked the two remaining discretionary slots instead:
+- **Hot-list rewrites:** re-checked all 18 `pending` items against
+  `nextExpectedFiling` — every one is within 10 days (several already
+  past-due estimates for NOW/INTC/TMUS that haven't actually filed yet
+  per a live submissions check). Per the skip rule, none eligible
+  tonight — unchanged from the first firing's assessment.
+- **Comparisons (cap 2/night, 0 used tonight — the "2 comparisons"
+  logged earlier in this file belong to the 2026-10-23 night entry
+  above, not tonight):** found SIGI and WRB both have Q3 2026 reports
+  live (SIGI published this firing — see above; WRB on 10-20), same
+  industry (Financials/insurance), no existing comparison for the
+  pair. Dispatched an Opus subagent to read both published report
+  pages (curl + `html-to-text.mjs`, not WebFetch) and write a
+  comparison using only their own already-published figures — no new
+  SEC research. Published:
+  - **sigi-vs-wrb-q3-2026** — Selective Insurance vs. W. R. Berkley,
+    both Q3 2026: Selective's EPS +14% because a year-ago $40M reserve
+    charge didn't repeat; Berkley's EPS -11% because a year-ago $79M
+    investment gain didn't repeat — so the EPS headlines point the
+    wrong way on underwriting quality. Berkley's 90.8% combined ratio
+    (~9¢ underwriting profit per premium dollar) comfortably beats
+    Selective's 96.8% (~3¢), and Berkley's premiums are still growing
+    (+1.3%) while Selective is deliberately shrinking (-7.0%) to
+    improve margin. Verified live (cache-busted fetch): "At a glance",
+    side-by-side table, "Takeaway", "What to watch next" and the
+    closing Sources line all present, not truncated.
+    https://financialreportinsights.com/insights/sigi-vs-wrb-q3-2026
+
+**Tonight's running total: still 10 report-periods** (comparisons
+aren't counted in that total per convention) — **1/2 comparisons used
+tonight**. Nothing else available this firing: us-listed cap spent,
+S&P 500/hot-list tier 1 done, hot-list rewrites all deferred, not
+Sunday UTC. Next firing should re-scan fresh and, if still nothing new
+in tier 0, could use the second comparison slot (e.g. among tonight's
+new reports — BCPC/BMI/FPH/HCSG/HTH/IART/KRC/ORC/QS — once a same-
+industry pair with no existing comparison turns up) before standing
+down for the rest of the us-listed-capped night.
