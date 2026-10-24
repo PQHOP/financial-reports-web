@@ -36072,5 +36072,38 @@
         "filedAt": "2026-10-23"
       }
     ]
+  },
+  "KRC": {
+    "name": "Kilroy Realty Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/krc/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Revenue $271.6M (-2.9%). Net income available to common $15.5M ($0.13 diluted) vs $156.2M ($1.31) a year ago — Q3 2025 included a $110.5M gain on property sales, Q3 2026 had none. FFO (non-GAAP) -19.9% to $104.6M; NOI -8.3% to $173.2M; same-property NOI -2.4% on higher utilities/security/property tax. Interest expense +22.5% because Kilroy Oyster Point Phase 2 ($1.2B campus, 7% occupied/49% leased) became operating in Q1 and stopped capitalizing interest. Stabilized occupancy 76.9% at Sept 30 vs 81.6% at Dec 31 2025. East Village land under contract ~$19.5M vs $63.1M carrying value (points to a ~$44M Q4 loss if it closes, no impairment recorded yet). Sold $347.5M of assets YTD. Repaid $250M of notes; total debt ~$4.38B. No FFO guidance given."
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "Cadence-based: annual report ~4-6 weeks after Dec 31 year end; not search-confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/krc/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
   }
 }

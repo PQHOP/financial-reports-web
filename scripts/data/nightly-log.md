@@ -19390,3 +19390,20 @@ still claimed/queued this firing.
 Tracker updated. **Tonight's running total: 5 report-periods**
 (us-listed 5/10 used). Dispatching the remaining claimed tickers (IART,
 KRC, ORC, QS, SIGI) next to use up the rest of tonight's us-listed cap.
+
+**6th report-period published this firing:**
+
+- **KRC** (Kilroy Realty Corporation) — first report (REIT). Q3 2026
+  10-Q. Revenue $271.6M (-2.9%). Net income available to common $15.5M
+  ($0.13 diluted) vs $156.2M ($1.31) a year ago, mostly because Q3 2025
+  included a $110.5M property-sale gain that didn't repeat. FFO -19.9%
+  to $104.6M; same-property NOI -2.4%. Stabilized occupancy fell to
+  76.9% from 81.6% at year-end as the $1.2B Oyster Point Phase 2 campus
+  (7% occupied) became operating and stopped capitalizing interest.
+  East Village land under contract well below carrying value, pointing
+  to a possible ~$44M Q4 loss. Verified live: renders in full, not
+  truncated. https://financialreportinsights.com/companies/krc/2026/q3
+
+Tracker updated. **Tonight's running total: 6 report-periods**
+(us-listed 6/10 used). IART, ORC, QS, SIGI still in progress this
+firing.
