@@ -19462,3 +19462,14 @@ SAM, SLM, SPCX, SRCE, THRM, VC, WH, ARR, EGP, EPRT, INBS, LOAN, NTST,
 NVEC, TFIN, WFRD) stay queued for a later firing tonight or tomorrow's
 first firing (re-run `scan-recent-filings` fresh, since more may have
 newly filed by then).
+
+**This firing's work is done.** No further tier-0 candidates available
+(the 36 remaining us-listed candidates are past tonight's us-listed
+cap; no hot-list/S&P 500 fresh filings tonight); S&P 500 tier 1 fully
+done (503/503); hot-list rewrites all within 10 days of their next
+filing; not a Sunday-UTC firing (no earnings preview due). Comparisons
+and the us-listed tier-1 backlog were intentionally not touched this
+firing — the night's us-listed allotment is spent. Claims released for
+all 10 tickers. The cloud routine's next hourly firing should re-run
+`scan-recent-filings` fresh (more companies may file overnight) before
+falling back further.
