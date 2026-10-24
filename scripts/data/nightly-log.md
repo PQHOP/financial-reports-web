@@ -19677,3 +19677,31 @@ re-scan fresh before reaching the same conclusion; the only live
 tracks left tonight are a fresh hot-list/S&P 500 filing the scan
 hasn't seen yet, or the us-listed backlog once a new night's cap
 resets after the window ends (07:59 JST / 22:59 UTC).
+
+**Seventh firing (22:05 UTC / 07:05 JST).** Network check passed (SEC
+403 without UA as expected, 200 with the required UA; both
+financialreportinsights.com and the `.vercel.app` alias reachable).
+`npm install` run fresh (same harmless `prisma generate`/`DATABASE_URL`
+postinstall failure as every firing tonight — `.prisma/client` already
+present from a prior generate; `package-lock.json` churn reverted
+before proceeding). Fetched master fresh (already at `2b260d5`, the
+sixth firing's tip, no new commits). No active claims
+(`scripts/data/claims/` has only `README.md`).
+
+Re-ran `scan-recent-filings`: identical 36 us-listed-only candidates
+(BE through WFRD) — no new hot-list/S&P 500 filings since the sixth
+firing. `next-batch -- --n 60` confirms the same picture: all tier-0
+candidates are us-listed (tonight's 10/10 us-listed cap already
+spent), tier-1 jumps straight to `4-us-listed-backlog` (S&P 500 fully
+done, 503/503). Did not re-check hot-list rewrites or comparisons in
+detail — the prior three firings already established both are
+exhausted/ineligible for tonight and nothing changed upstream to
+revisit that.
+
+**Tonight's running total: unchanged at 10 report-periods, 2/2
+comparisons used.** Nothing available this firing either — identical
+conclusion to the fourth through sixth firings, nothing touched in
+`report-tracker.json`. The operating window closes at 07:59 JST /
+22:59 UTC, under an hour from this firing's start, so a further
+same-night firing is unlikely to find anything new; the us-listed
+backlog and hot-list rewrites resume once a new night's cap opens.
