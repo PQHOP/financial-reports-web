@@ -19285,3 +19285,57 @@ filled most of the night; us-listed and comparison sub-caps did get
 maxed out). Next window (01:00–07:59 JST 2026-10-25) should start by
 re-scanning for fresh tier-0 candidates before falling back to
 tier 1.
+
+### 2026-10-24 night (16:00 UTC 2026-10-24 → 22:59 UTC 2026-10-24 / 01:00–07:59 JST 2026-10-25)
+
+**New firing (16:04 UTC).** Network check passed (sec.gov 403 without UA
+as expected — SEC's own response, not a proxy block — 200 with the
+required UA via `curl`; both financialreportinsights.com and the
+`.vercel.app` alias reachable). `npm install` run fresh in this
+container (the `prisma generate` postinstall step fails for lack of a
+local `DATABASE_URL` — harmless, doesn't block `admin-publish`/
+`scan-recent-filings`; satisfied it with a dummy `DATABASE_URL` for the
+one-off `prisma generate` call). `package-lock.json` churn from the
+install reverted before checking out master cleanly. No active claims
+found at start.
+
+`npm run scan-recent-filings` found 46 fresh candidates, **all
+us-listed** (no hot-list/S&P 500 hits) — S&P 500 tier 1 is fully done
+(501 done + 2 skipped = 503/503) so nothing there either. Checked
+`scripts/data/hotlist-rewrite.json`: all 18 `pending` items have a
+`nextExpectedFiling` within the next 10 days (several already passed),
+so per CLAUDE.md's skip rule none were eligible for rewrite tonight.
+Not a Sunday firing by UTC calendar (still 2026-10-24, Saturday UTC,
+even though JST has rolled over to Sunday) — no weekly earnings preview
+due this firing.
+
+Since the us-listed cap (~10/night) starts fresh tonight and tier 0
+supplied 46 us-listed candidates, claimed the first 10 (newest-first)
+before dispatching: BCPC, BMI, FPH, HCSG, HTH, IART, KRC, ORC, QS, SIGI.
+
+**2 report-periods published this batch (Opus subagents, synchronous):**
+
+- **BCPC** (Balchem Corporation) — `kind: update`, new period (Q3 2026
+  10-Q after Q2 2026 was last published). Net sales $290.7M (+8.6%), net
+  earnings $46.7M (+16.0%), diluted EPS $1.46 (+17.7%). Operating margin
+  21.5% vs 20.4%, helped by a net ~+$2.1M one-off (a $4.0M legal
+  settlement gain net of a $1.9M impairment); ex-that, op margin ~20.8%,
+  EPS growth ~14%. Animal Nutrition & Health segment profit +82.8%.
+  Inventory +34.7% since December. Verified live (cache-busted fetch):
+  At a glance, metrics/segment tables, quality-check, "did last time's
+  read hold up", Takeaway all present, ends cleanly.
+  https://financialreportinsights.com/companies/bcpc/2026/q3
+- **BMI** (Badger Meter, Inc.) — first report. Q3 2026 10-Q. Net sales
+  $235.9M (+0.1%; ex the May 2026 UDlive acquisition, sales ~-2%).
+  Operating margin 20.2% vs 19.6%. Diluted EPS $1.24 (+4.2%, about half
+  from a lower share count via buybacks — only $34.7M left on the
+  authorization). Cash fell to $67.9M from $226.0M at year-end on
+  buybacks. No numeric guidance. Verified live: renders in full, not
+  truncated. https://financialreportinsights.com/companies/bmi/2026/q3
+
+Tracker updated for both (status `done`, `lastFilingSeen`,
+`nextExpectedFiling` estimated from filing cadence — not yet
+search-confirmed). Claims not yet released (FPH/HCSG/HTH/IART/KRC/ORC/
+QS/SIGI still in progress or queued this firing). **Tonight's running
+total: 2 report-periods** (us-listed 2/10 used). Continuing this firing
+with the remaining claimed tickers.

@@ -7525,23 +7525,23 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-10-07",
-      "url": "https://financialreportinsights.com/companies/bcpc/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/bcpc/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q (+8-K Ex. 99.1 earnings release)",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31",
-      "note": "Specialty ingredients/performance chemicals (Human Nutrition & Health, Animal Nutrition & Health, Specialty Products segments). Record sales $284.0M (+11.2%, mostly volume/mix +7.0pts plus price +2.7pts). Net earnings +16.6% to $44.6M, diluted EPS +18.8% to $1.39, operating margin 20.9% vs 20.1%. Animal Nutrition & Health segment profit +48.7% but off a low ~8% margin base. Margin gain came from overhead growing slower than sales, not gross margin (36.4%->36.5%, barely moved). Flagged: inventory +22.9% since December vs ~10% sales growth; buybacks added ~2pts of EPS growth; FCF fell to $36.2M from $40.7M on higher capex."
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Net sales $290.7M (+8.6%), net earnings $46.7M (+16.0%), diluted EPS $1.46 (+17.7%). Gross margin 36.4% vs 35.7%, operating margin 21.5% vs 20.4% (helped by a $4.0M legal settlement gain net of a $1.9M impairment, ~+$2.1M one-off; ex-that, op margin ~20.8%, EPS ~$1.41/+14%). Segments: Human Nutrition & Health +8.1% (volume/mix +12.7pts, price -4.4pts), Animal Nutrition & Health +11.7% (profit +82.8%, margin 10.8% vs 6.6%), Specialty Products +4.5%. Inventory $177.0M, +34.7% since December. No acquisition. Nine-month sales +9.3%, EPS $4.09 (+15.5%)."
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-30",
-      "basis": "Q1 10-Q/earnings filed 2026-04-30, Q2 filed 2026-07-31, same-day pattern",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-19",
+      "basis": "Balchem typically files its 10-K in late February; cadence-based, not search-confirmed",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-07",
+    "lastChecked": "2026-10-25",
     "reports": [
       {
         "year": 2026,
@@ -7550,6 +7550,14 @@
         "url": "https://financialreportinsights.com/companies/bcpc/2026/q2",
         "periodEnd": "2026-06-30",
         "filedAt": "2026-07-31"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/bcpc/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
       }
     ]
   },
@@ -35932,5 +35940,38 @@
     },
     "note": "Cloud communications (UCaaS). Q3 2026: revenue +5.9% to $676.0M, above top of guidance. GAAP operating margin 8.0% vs 4.8%; non-GAAP 24.7% vs 22.8%. GAAP net income/EPS (+3,144.5%/+3,321.1% YoY, $6.50 diluted EPS) are ~96% a one-off $544.9M tax valuation-allowance release -- excluding it, EPS was $0.28 vs $0.19. GAAP-vs-non-GAAP gap: $113.1M/qtr ($66.3M SBC, $33.3M amortization, $12.9M restructuring). FCF +21% to $156.8M (~$92M after SBC). ARR $2.80B, retention >99%. FY guidance raised again (revenue $2.650-2.657B, FCF $620-630M).",
     "lastChecked": "2026-10-23"
+  },
+  "BMI": {
+    "name": "Badger Meter, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/bmi/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Net sales $235.9M (+0.1%; ex the May 2026 UDlive acquisition, sales -~2%). Utility water $208.9M (-0.1%, uneven AMI project pacing); flow instrumentation $27.0M (+2.1%). Gross margin 41.9% vs 40.7%, operating margin 20.2% vs 19.6%. Net earnings $35.9M (+2.4%), diluted EPS $1.24 (+4.2%, about half from a 2.4% lower share count via buybacks: $55.5M in Q3, $119.0M nine-month, only $34.7M left on the $150M authorization). Cash fell to $67.9M from $226.0M at year-end. Nine-month sales -5.1%, EPS $3.19 vs $3.65. No numeric guidance given."
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-24",
+      "basis": "Cadence-based: BMI typically releases Q4/FY earnings late January and files its 10-K late February; not search-confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/bmi/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
   }
 }
