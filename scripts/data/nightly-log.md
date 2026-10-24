@@ -19407,3 +19407,58 @@ KRC, ORC, QS, SIGI) next to use up the rest of tonight's us-listed cap.
 Tracker updated. **Tonight's running total: 6 report-periods**
 (us-listed 6/10 used). IART, ORC, QS, SIGI still in progress this
 firing.
+
+**7th-10th report-periods published this firing (batch of 4):**
+
+- **IART** (Integra LifeSciences Holdings Corporation) — first report.
+  Q3 2026 10-Q (also read the Q3 earnings 8-K and the Oct 2
+  preliminary-results 8-K for guidance). Revenue $411.2M (+2.3%). July
+  17 flash flood at the Cincinnati plant cost ~$7M revenue; insurance
+  mostly offset the ~$22.2M restoration cost. GAAP net income $14.9M
+  vs a $5.4M loss a year ago, almost all from $14.7M of other income
+  (swap gains, insurance recovery, an arbitration win), not operations
+  — operating income $18.9M still below $23.0M interest expense. FDA
+  warning letters (2019/2023/2024) remain open, no new ones.
+  Guidance cut Oct 2 (FY revenue to $1.634-1.654B, adjusted EPS to
+  $2.30-2.40). $2.1B refinancing closed Oct 19. Verified live: renders
+  in full, not truncated. https://financialreportinsights.com/companies/iart/2026/q3
+- **QS** (QuantumScape Corporation) — first report. Pre-revenue EV
+  battery developer, Q3 2026 10-Q. Net loss $84.5M, down from $105.8M
+  a year ago (mostly lower non-cash stock comp and a milestone-award
+  reversal); omitted margin/growth metrics that don't apply to a
+  zero-revenue company and said so in the body. Cash/investments
+  $819.8M, down from $970.8M at year-end — roughly 3 years of runway
+  at the current burn rate. Oct 21: amended the PowerCo/Volkswagen
+  collaboration agreement, widening scope to non-auto uses; no
+  milestone payments while renegotiating. Verified live: renders in
+  full, not truncated. https://financialreportinsights.com/companies/qs/2026/q3
+- **SIGI** (Selective Insurance Group, Inc.) — first report (insurer
+  metrics). Q3 2026 10-Q. Combined ratio improved to 96.8% from 98.6%
+  — last year's quarter carried a $40M adverse-development charge that
+  didn't repeat. Net income $128.7M (+11.5%), diluted EPS $2.11 (+14%).
+  Net premiums written -7% as the company deliberately drops weaker
+  accounts; renewal price increases slowed to 5.6% from 9.6%. Cat
+  losses rose to $64.1M from $24.9M. Full-year combined-ratio guidance
+  held, investment-income guidance raised. Verified live: renders in
+  full, not truncated. https://financialreportinsights.com/companies/sigi/2026/q3
+- **ORC** (Orchid Island Capital, Inc.) — first report (mortgage REIT,
+  general metrics — no bank/insurer fields fit this business model).
+  Q3 2026 10-Q. Net loss $178.9M (-$0.90/sh) vs a $72.1M profit a year
+  ago as rising long-term rates (10-year Treasury 4.47%→5.29%) cut
+  $567.1M off its agency-MBS book value, only partly hedged. Book value
+  per share fell to $6.02 from $7.22 at June 30. Underlying net
+  interest income still +120% to $59.1M on a larger, more profitably
+  spread portfolio (GAAP spread 1.99% vs 1.20%). Earnings ex gains/
+  losses $0.27/sh, below the $0.30 paid in dividends. Verified live:
+  renders in full, not truncated. https://financialreportinsights.com/companies/orc/2026/q3
+
+Tracker updated for all four. **Tonight's running total: 10
+report-periods** — the ~10/night us-listed cap is now reached (10/10
+of tonight's tier-0 us-listed candidates published: BCPC, BMI, FPH,
+HCSG, HTH, IART, KRC, ORC, QS, SIGI). The remaining 36 us-listed
+tier-0 candidates from tonight's scan (BE, CRS, CURB, ENVA, ESI, EVI,
+FR, GTY, KALU, KNSL, LBRT, LNN, MAYS, MEDP, MSM, MXL, NP, OII, PINE, R,
+SAM, SLM, SPCX, SRCE, THRM, VC, WH, ARR, EGP, EPRT, INBS, LOAN, NTST,
+NVEC, TFIN, WFRD) stay queued for a later firing tonight or tomorrow's
+first firing (re-run `scan-recent-filings` fresh, since more may have
+newly filed by then).

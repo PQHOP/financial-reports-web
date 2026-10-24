@@ -36105,5 +36105,137 @@
         "filedAt": "2026-10-23"
       }
     ]
+  },
+  "IART": {
+    "name": "Integra LifeSciences Holdings Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/iart/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Revenue $411.2M (+2.3%, organic +2.5%). July 17 flash flood at Cincinnati plant cost ~$7M revenue; restoration costs ~$22.2M mostly offset by insurance, net special charge $0.8M; full capacity expected Q2 2027. Specialty Surgery +3.9% (Neuro +6.5% organic); Tissue Reconstruction -2.2%. GAAP net income $14.9M ($0.19/sh) vs a $5.4M loss a year ago, almost all from $14.7M of other income (swap income, insurance gain, ACell arbitration win) — operating income $18.9M still below $23.0M interest expense. Adjusted EPS $0.59 vs $0.54. FDA warning letters (2019/2023/2024) still open, no new ones; remediation costs falling. $2.1B refinancing closed Oct 19 (incl. $450M 9.5% notes due 2033). Guidance cut Oct 2: FY revenue to $1.634-1.654B, FY adjusted EPS to $2.30-2.40."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings) then 10-K",
+      "estimate": "2027-02-25",
+      "basis": "FY2025 earnings 8-K and 10-K both filed 2026-02-26",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/iart/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
+  },
+  "QS": {
+    "name": "QuantumScape Corporation",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/qs/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Pre-revenue. Net loss $84.5M, down from $105.8M a year ago; loss per share -$0.14 vs -$0.18. Opex fell to $92.4M from $115.0M (R&D -20% to $73.9M, G&A -19% to $18.5M), mostly non-cash (lower stock comp, an $8.1M reversal of milestone awards judged not probable). Cash/investments $819.8M, down from $970.8M at year-end; nine-month operating cash outflow $171.3M, roughly 3 years of runway (into late 2029) at the current burn rate. Oct 21: amended PowerCo/Volkswagen collaboration agreement, removing $7.0M of transition payments and widening scope to non-auto uses (data centers, robotics); no milestone payments while renegotiating. PowerCo paid $18.5M in Q3, $28.9M YTD (booked to equity, not revenue)."
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-24",
+      "basis": "FY2025 10-K filed 2026-02-25 per this 10-Q; ~365-day annual cadence",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/qs/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
+  },
+  "SIGI": {
+    "name": "Selective Insurance Group, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/sigi/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Combined ratio improved to 96.8% from 98.6% (underwriting income $37.4M vs $16.7M) — last year's quarter carried a $40M adverse-development charge (mostly commercial auto) that did not repeat. Net income $128.7M (+11.5%), diluted EPS $2.11 (+14%); operating EPS $2.37 (+35%, excludes $19.4M of pre-tax investment losses vs $8.1M of gains a year ago). Net premiums written -7% to $1.12B as the company deliberately drops weaker accounts; renewal price increases slowed to 5.6% from 9.6%. Catastrophe losses rose to $64.1M from $24.9M. Book value per share $55.02 (+1%); adjusted book value (ex unrealized bond losses) $62.00 (+11%). Guidance: full-year combined ratio range held at 96.5-97.5%, cat assumption cut to 5.5pts from 6.0; after-tax investment income guidance raised to $490M from $480M."
+    },
+    "nextExpectedFiling": {
+      "type": "8-K (Item 2.02, Q4/FY2026 earnings) then 10-K",
+      "estimate": "2027-01-28",
+      "basis": "Last cycle Q4 8-K 2026-01-29, 10-K 2026-02-09 (2025 cycle: 2025-01-29/2025-02-10)",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/sigi/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
+  },
+  "ORC": {
+    "name": "Orchid Island Capital, Inc.",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/orc/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Net loss $178.9M (-$0.90/sh) vs a $72.1M profit ($0.53) a year ago, as the 10-year Treasury rose from 4.47% to 5.29% and the Fed hiked in September, cutting $567.1M off agency MBS values; hedges offset only $335.4M of that. Book value per share fell to $6.02 from $7.22 at June 30 ($7.33 a year ago). Underlying interest business improved: net interest income +120% to $59.1M on a 45%-larger portfolio, GAAP spread widened to 1.99% from 1.20%. Earnings ex gains/losses $0.27/sh, below the $0.30 paid in dividends ($0.10/month, cut from $0.12 in April). Economic leverage rose to 8.6x from 7.3x at year-end. Bought back 4.95M shares at $6.30 in Q3, another 1.67M at $5.05 after quarter-end."
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-26",
+      "basis": "Cadence-based: 10-K usually late February after a late-January Q4 release; not search-confirmed",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/orc/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
   }
 }
