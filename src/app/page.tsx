@@ -8,7 +8,7 @@ import { systemReports } from "@/lib/community";
 import type { Metadata } from "next";
 import hotList from "../../scripts/data/priority-tickers.json";
 import sp500 from "../../scripts/data/sp500.json";
-import { formatFilingDate, loadTracker } from "@/lib/tracker";
+import { formatFilingDate, isFollowUpFiling, loadTracker } from "@/lib/tracker";
 import { cleanCompanyName } from "@/lib/companyName";
 import { periodLabels } from "@/lib/period";
 import { availableScorecards } from "@/lib/scorecard";
@@ -31,7 +31,8 @@ const SEASON_POOL = 40;
 const LATEST_LIMIT = 6;
 const SEASON_ARTICLES = 4;
 const UPCOMING_DAYS = 7;
-const UPCOMING_LIMIT = 12;
+const UPCOMING_LIMIT = 18;
+const PREVIEW_MAX_AGE_DAYS = 8;
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
 export const revalidate = 3600;
@@ -43,17 +44,42 @@ export const metadata: Metadata = {
   alternates: { canonical: "/" },
 };
 
-// Covered companies expected to report in the next week, well-known names
-// first: during earnings season this is what brings people back.
-async function reportingSoon() {
+function isWeekend(iso: string): boolean {
+  const day = new Date(`${iso}T00:00:00Z`).getUTCDay();
+  return day === 0 || day === 6;
+}
+
+type SoonItem = { ticker: string; slug: string; date: string; confirmed: boolean };
+
+// The week's earnings preview, while it is still this week's.
+function currentPreview<T extends { kind: string; publishedAt: Date }>(articles: T[]): T | undefined {
+  const cutoff = Date.now() - PREVIEW_MAX_AGE_DAYS * 86_400_000;
+  return articles.find((a) => a.kind === "PREVIEW" && a.publishedAt.getTime() > cutoff);
+}
+
+// Covered companies expected to report in the next week, grouped by day.
+// Picked by how much people search for them (hot list, then the S&P 500,
+// then the rest), a company's own announced date ahead of a cadence
+// estimate — not by date: ordered by date, the twelve slots going into the
+// week of 2026-10-26 (MSFT, GOOGL, AMZN, V, KO, BA) went to micro-caps
+// estimated for the weekend and Monday, and V was the only well-known name.
+// Weekend dates are cadence artifacts (no company reports on a Saturday),
+// so an estimate that lands on one is left out, as is the full 10-Q due for
+// a quarter we already covered from the earnings release (see
+// isFollowUpFiling): BAC does not "report" again on Oct 30.
+async function reportingSoon(): Promise<{ date: string; items: SoonItem[] }[]> {
   const tracker = await loadTracker();
   const today = new Date().toISOString().slice(0, 10);
   const until = new Date(Date.now() + UPCOMING_DAYS * 86_400_000).toISOString().slice(0, 10);
   const hot = new Map(POPULAR_TICKERS.map((t, i) => [t, i]));
+  const sp = new Set(sp500.map((c) => c.ticker));
+  const rank = (ticker: string) => hot.get(ticker) ?? (sp.has(ticker) ? 1_000 : 2_000);
   const upcoming = Object.entries(tracker)
     .filter(([ticker, e]) => {
       const d = e.nextExpectedFiling?.estimate;
-      return ticker !== "_meta" && e.status === "done" && !!d && d >= today && d <= until;
+      if (ticker === "_meta" || e.status !== "done" || !d || d < today || d > until) return false;
+      if (isFollowUpFiling(e)) return false;
+      return e.nextExpectedFiling?.confidence === "confirmed" || !isWeekend(d);
     })
     .map(([ticker, e]) => ({
       ticker,
@@ -62,8 +88,10 @@ async function reportingSoon() {
     }))
     .sort(
       (a, b) =>
+        rank(a.ticker) - rank(b.ticker) ||
+        Number(b.confirmed) - Number(a.confirmed) ||
         a.date.localeCompare(b.date) ||
-        (hot.get(a.ticker) ?? 1e9) - (hot.get(b.ticker) ?? 1e9)
+        a.ticker.localeCompare(b.ticker)
     );
   if (upcoming.length === 0) return [];
   const companies = await prisma.company.findMany({
@@ -71,10 +99,15 @@ async function reportingSoon() {
     select: { slug: true, ticker: true },
   });
   const slugs = new Map(companies.map((c) => [c.ticker, c.slug]));
-  return upcoming
+  const picked = upcoming
     .filter((u) => slugs.has(u.ticker))
     .slice(0, UPCOMING_LIMIT)
     .map((u) => ({ ...u, slug: slugs.get(u.ticker)! }));
+  const days = new Map<string, SoonItem[]>();
+  for (const item of picked) days.set(item.date, [...(days.get(item.date) ?? []), item]);
+  return [...days.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([date, items]) => ({ date, items }));
 }
 
 export default async function Home() {
@@ -115,7 +148,7 @@ export default async function Home() {
       where: { kind: { in: ["COMPARISON", "PREVIEW"] } },
       orderBy: { publishedAt: "desc" },
       take: SEASON_ARTICLES,
-      select: { slug: true, kind: true, title: true },
+      select: { slug: true, kind: true, title: true, publishedAt: true },
     }),
     availableScorecards(),
     prisma.article.findMany({
@@ -157,6 +190,8 @@ export default async function Home() {
   const seasonPeriod = newest
     ? scorecards.find((c) => c.year === newest.year && c.period === newest.period) ?? scorecards[0]
     : scorecards[0];
+
+  const weekPreview = currentPreview(seasonArticles);
 
   const popular = popularCandidates
     .sort(
@@ -206,28 +241,42 @@ export default async function Home() {
 
       {soon.length > 0 && (
         <section className="flex flex-col gap-3">
-          <div className="flex items-baseline justify-between">
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
             <h2 className="text-lg font-medium">Reporting this week</h2>
-            <Link href="/earnings" className="text-sm text-zinc-500 hover:underline">
-              Earnings calendar →
-            </Link>
-          </div>
-          <ul className="flex flex-wrap gap-2">
-            {soon.map((item) => (
-              <li key={item.ticker}>
-                <Link
-                  href={`/companies/${item.slug}`}
-                  className="block rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm hover:border-zinc-400"
-                >
-                  <span className="font-medium">{item.ticker}</span>{" "}
-                  <span className="text-zinc-500">
-                    {formatFilingDate(item.date, true)}
-                    {item.confirmed ? "" : " (est.)"}
-                  </span>
+            <div className="flex flex-wrap gap-x-4 text-sm text-zinc-500">
+              {weekPreview && (
+                <Link href={articlePath(weekPreview.kind, weekPreview.slug)} className="hover:underline">
+                  This week&apos;s earnings preview →
                 </Link>
+              )}
+              <Link href="/earnings" className="hover:underline">
+                Earnings calendar →
+              </Link>
+            </div>
+          </div>
+          <ul className="flex flex-col gap-2">
+            {soon.map((day) => (
+              <li key={day.date} className="flex flex-wrap items-center gap-2">
+                <span className="w-full text-sm font-medium text-zinc-700 sm:w-24">
+                  {formatFilingDate(day.date, true)}
+                </span>
+                {day.items.map((item) => (
+                  <Link
+                    key={item.ticker}
+                    href={`/companies/${item.slug}`}
+                    className="block rounded-full border border-zinc-200 bg-white px-4 py-1.5 text-sm hover:border-zinc-400"
+                  >
+                    <span className="font-medium">{item.ticker}</span>
+                    {item.confirmed ? "" : <span className="text-zinc-500"> (est.)</span>}
+                  </Link>
+                ))}
               </li>
             ))}
           </ul>
+          <p className="text-xs text-zinc-500">
+            Dates marked (est.) are our estimate from the company&apos;s past filing pattern;
+            the others are company-announced.
+          </p>
         </section>
       )}
 

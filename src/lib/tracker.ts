@@ -21,6 +21,7 @@ export type NextFiling = {
 export type TrackerEntry = {
   name?: string;
   status?: string;
+  latestReport?: { year?: number; period?: string };
   nextExpectedFiling?: NextFiling;
 };
 
@@ -94,6 +95,22 @@ export async function upcomingFiling(
   if (!next?.estimate) return null;
   const today = new Date().toISOString().slice(0, 10);
   return next.estimate >= today ? { ...next, estimate: next.estimate } : null;
+}
+
+// True when the next filing the tracker expects is the full 10-Q/10-K for a
+// period we have already analyzed from the earnings release (BAC's Q3 10-Q
+// landing two weeks after the Q3 report we wrote from its 8-K). It is a real
+// filing, but not a results day: calendars of "who reports this week" leave
+// it out. Detected from the filing label naming the latest report's period
+// ("10-Q (Q3 2026)" when latestReport is Q3 2026) or saying so outright.
+export function isFollowUpFiling(entry: TrackerEntry): boolean {
+  const label = entry.nextExpectedFiling?.type ?? "";
+  if (/same period/i.test(label)) return true;
+  const latest = entry.latestReport;
+  if (!latest?.year || !latest.period) return false;
+  const period = label.match(/\b(Q[1-4]|H1)\b/i)?.[1]?.toUpperCase();
+  const year = label.match(/\b(20\d{2})\b/)?.[1];
+  return period === latest.period.toUpperCase() && Number(year) === latest.year;
 }
 
 export function formatFilingDate(iso: string, weekday = false): string {

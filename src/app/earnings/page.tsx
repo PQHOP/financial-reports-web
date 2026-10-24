@@ -6,7 +6,7 @@ import { metricsHeadline, readMetrics } from "@/lib/metrics";
 import { periodLabels } from "@/lib/period";
 import hotList from "../../../scripts/data/priority-tickers.json";
 import sp500 from "../../../scripts/data/sp500.json";
-import { formatFilingDate, loadTracker } from "@/lib/tracker";
+import { formatFilingDate, isFollowUpFiling, loadTracker } from "@/lib/tracker";
 import { reportPath } from "@/lib/reportPath";
 import { cleanCompanyName } from "@/lib/companyName";
 import { seasonScorecard } from "@/lib/scorecard";
@@ -59,7 +59,10 @@ export default async function EarningsCalendarPage() {
         entry.status === "done" &&
         !!estimate &&
         estimate >= from &&
-        estimate <= to
+        estimate <= to &&
+        // the full 10-Q for a quarter already covered from its earnings
+        // release is a filing, not a results day
+        !isFollowUpFiling(entry)
       );
     })
     .map(([ticker, entry]) => ({ ticker, ...entry.nextExpectedFiling! }));
