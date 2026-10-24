@@ -19522,3 +19522,39 @@ in tier 0, could use the second comparison slot (e.g. among tonight's
 new reports — BCPC/BMI/FPH/HCSG/HTH/IART/KRC/ORC/QS — once a same-
 industry pair with no existing comparison turns up) before standing
 down for the rest of the us-listed-capped night.
+
+**Third firing (18:05 UTC / 03:05 JST).** Network check passed (SEC
+200 with UA header, financialreportinsights.com 200). Fetched master
+fresh (fast-forwarded cleanly), no active claims. Re-ran
+`scan-recent-filings`: identical 36 us-listed-only candidates (BE
+through WFRD) — no new hot-list/S&P 500 filings since the second
+firing. `next-batch -- --n 60` confirms the same picture: all tier-0
+candidates are us-listed (tonight's 10/10 us-listed cap already
+spent), tier-1 S&P 500 fully done (503/503), tier-1 remainder is
+us-listed backlog only (also capped).
+
+Looked for the second comparison slot per the prior firing's
+suggestion: checked tonight's 9 new reports (BCPC, BMI, FPH, HCSG,
+HTH, IART, KRC, ORC, QS) against already-published same-business
+peers. Nothing clean turned up — the closest candidates were
+Badger Meter (water metering/AMI) against Roper Technologies
+(diversified industrial/software conglomerate, Q3 2026, published
+10-22) and Kilroy Realty (office REIT, Q3 2026) against Agree Realty
+(net-lease retail REIT, Q3 2026) — both same broad GICS sector but
+different enough business models that a head-to-head wouldn't be the
+tight, substantive comparison the site's existing pairs are (BAC-WFC,
+GS-MS, HD-LOW: same business, same period). Declined to force a
+pairing rather than publish a weak one; the slot stays open for a
+tighter match a later firing turns up.
+
+Hot-list rewrites re-checked: still all 18 `pending` items within 10
+days of `nextExpectedFiling` (unchanged from the first two firings) —
+none eligible.
+
+**Tonight's running total: still 10 report-periods, 1/2 comparisons
+used.** Nothing available this firing under any tier or discretionary
+slot: tier 0/tier 1 us-listed cap spent, tier 1 S&P 500 done, hot-list
+rewrites all deferred, no clean second-comparison pairing, not Sunday
+UTC (no earnings preview due). Standing down; next hourly firing
+should re-scan fresh (more companies may file overnight) before
+reaching the same conclusion.
