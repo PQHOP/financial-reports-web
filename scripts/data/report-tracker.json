@@ -35973,5 +35973,38 @@
         "filedAt": "2026-10-23"
       }
     ]
+  },
+  "FPH": {
+    "name": "Five Point Holdings, LLC Class A Common Shares",
+    "status": "done",
+    "latestReport": {
+      "year": 2026,
+      "period": "Q3",
+      "publishedAt": "2026-10-25",
+      "url": "https://financialreportinsights.com/companies/fph/2026/q3"
+    },
+    "lastFilingSeen": {
+      "type": "10-Q",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-23",
+      "note": "Net loss attributable to the company $2.6M (-$0.04/share) vs net income $21.1M ($0.28) a year ago. Great Park Venture (37.5% owned) closed no land sales vs 326 homesites/$257.7M a year ago; FPH share of venture results went from +$70.1M to -$2.2M. Revenue +8.4% to $14.6M on Hearthstone (acquired 2025-07-31) being owned the full quarter ($6.5M revenue, $3.0M segment profit, $3.4B AUM). Nine-month revenue $42.1M (+23.4%), net income $6.1M (vs $47.7M). Operating cash flow -$73.4M (land development spend $118.3M); cash fell to $358.7M from $425.5M. LA County approved Valencia Homestead South village (3,600+ homesites). Management warned it may defer some Q4 2026 land sales."
+    },
+    "nextExpectedFiling": {
+      "type": "10-K (FY2026)",
+      "estimate": "2027-03-05",
+      "basis": "Last two 10-Ks filed 2025-02-24 (FY2024) and 2026-03-06 (FY2025) per EDGAR submissions",
+      "confidence": "estimated"
+    },
+    "lastChecked": "2026-10-25",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-25",
+        "url": "https://financialreportinsights.com/companies/fph/2026/q3",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-23"
+      }
+    ]
   }
 }

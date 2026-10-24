@@ -19339,3 +19339,20 @@ search-confirmed). Claims not yet released (FPH/HCSG/HTH/IART/KRC/ORC/
 QS/SIGI still in progress or queued this firing). **Tonight's running
 total: 2 report-periods** (us-listed 2/10 used). Continuing this firing
 with the remaining claimed tickers.
+
+**3rd report-period published this firing:**
+
+- **FPH** (Five Point Holdings, LLC Class A Common Shares) — first
+  report. Q3 2026 10-Q. Net loss attributable to the company $2.6M
+  (-$0.04/share) vs net income $21.1M ($0.28) a year ago — the Great
+  Park Venture closed no land sales this quarter vs 326 homesites/
+  $257.7M a year ago. Revenue still +8.4% to $14.6M on the Hearthstone
+  asset-management acquisition being owned the full quarter. Operating
+  cash flow -$73.4M on land-development spend; cash fell to $358.7M.
+  Management flagged possible deferral of Q4 2026 land sales. Verified
+  live: renders in full, not truncated.
+  https://financialreportinsights.com/companies/fph/2026/q3
+
+Tracker updated. **Tonight's running total: 3 report-periods**
+(us-listed 3/10 used). Continuing with HCSG, HTH, IART, KRC, ORC, QS,
+SIGI still claimed/in progress this firing.
