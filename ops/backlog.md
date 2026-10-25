@@ -115,10 +115,18 @@ date and commit.
   pages), Duplicate without user-selected canonical 21, Crawled –
   currently not indexed 8 (validation Failed), Page with redirect 8,
   other 4xx 1. Reading: Google knows the URLs but won't spend crawl on
-  them — supports the 10-19 us-listed cap. Next: ask Hop for the URL
-  list behind the 21 duplicates and the 8 crawled-not-indexed (click the
-  row) to see if they're a fixable canonical issue; next week's crawl
-  screenshot should include the "HTML" row's own chart.
+  them — supports the 10-19 us-listed cap.
+  **Follow-up from Hop, 2026-10-25 (don't ask again):** Page indexing
+  unchanged (Discovered – not indexed 1,631, noindex 144, duplicate 21,
+  redirect 8, crawled-not-indexed 8, 4xx 1). The 21 duplicates are
+  canonical report URLs, all **last crawled 2026-09-27**: `/companies/
+  {cmi,see,iqv,pep,msci,exe}/2026/q2`… — two days after the 09-25 move
+  off `/reports/<id>`. Google kept the already-indexed old `/reports/<id>`
+  as canonical (same reason those old URLs still earn impressions at
+  position ~5). Today the new URLs declare their own canonical
+  (`reportMetadata` in `ReportView.tsx`) and the old ones 308 to them, so
+  it resolves on recrawl; the validation Hop started 10-20 already asks
+  for that. Nothing to fix — check again only if still 21 by mid-November.
 
 - **Hop's answers to the 2026-10-19 review (given 10-19, don't ask
   again): yes to all five.** (1) us-listed capped at ~10/night, budget to
@@ -203,11 +211,22 @@ date and commit.
 - **Watch Googlebot crawl recovery (weekly, from Hop's Crawl stats
   screenshot).** Before 2026-10-15: ~15 crawls/day since 10-01 (was
   1,000-3,800), 80% "Other file type" (RSC `?_rsc=` payloads), 94%
-  Refresh. Fix deployed 2026-10-15 (`8ac8a8f`, see Done). Expect the
-  `_rsc` share to fall below 20% and HTML/Discovery to rise over 1-3
-  weeks as Google re-reads robots.txt. If total crawls/day stay ~15 after
-  2-3 weeks, the drop has another cause (sitemap staleness until
-  `e49183b`, low site authority) and needs a separate look.
+  Refresh. Fix deployed 2026-10-15 (`8ac8a8f`, see Done).
+  **Screenshots from Hop, 2026-10-25 (data to 10-21):** total still flat,
+  **17 crawl requests on 10-21** (90 days 18.4K, avg 160 ms, 100% 200s,
+  www. 30). "Other file type" row: 14.7K, and its **newest example is
+  10-01 20:52** (`/companies/trow/write?_rsc=…`, `/privacy?_rsc=…`) — the
+  `_rsc` crawling already stopped on 10-01, when pages went ISR, two weeks
+  before the robots.txt fix. HTML row: 2.43K, ~10-20/day since 10-01, avg
+  296 ms; newest examples 10-22 08:18 = WFC, GS, BAC, C, SCHW, USB, MTB, MS
+  Q3 reports (a week after publish) and `/companies/tsla` 05:56. Reading:
+  the daily crawl is now ~all HTML and goes to fresh hot-list pages; the
+  "80% Other file type" figure is a 90-day aggregate of the September
+  spike and is no longer a useful target — stop tracking it. Three weeks
+  at ~15/day with no waste left to remove means the cap is crawl demand
+  (low site authority), not a technical defect: levers are outside links
+  (Monday drafts), Request indexing on the best URLs, and not adding
+  low-demand URLs. Next screenshot: just the top chart (requests/day).
 - **Possible follow-up: `/companies/*/write` is force-dynamic.** Now
   disallowed and nofollowed, so crawler CPU is gone; real visitors still
   trigger one function run per view, which is fine at current traffic.
