@@ -118,6 +118,26 @@ visitor landing on the site sees analysis of a report that came out
    tier once triggered — keeping an already-published company's *current*
    year up to date beats adding another company's old history.
 
+   **Opened early for the hot list and S&P 500 (since 2026-10-25, the
+   user's choice).** S&P 500 tier 1 is 503/503 done and the us-listed cap
+   leaves most of the night unused (10-24 night: 10 of ~40, four firings
+   scanned and exited), so tier 2 now runs before the us-listed backlog is
+   cleared, but only as the night's last use of budget: after tier 0, the
+   Sunday preview, rewrites, comparisons and the ~10 us-listed. **At most
+   ~10 tier 2 report-periods per night**, inside the ~40 cap (never in the
+   Big Tech week's extra room), and they count toward the per-firing ~8.
+   Pick with `npm run next-batch -- --backfill --n 5` (hot list, then S&P
+   500, each with its most recent uncovered year before 2026, as an
+   ANNUAL report from that year's 10-K). Before dispatching, check the
+   live `/companies/<slug>` page: the tracker's `reports` array is
+   incomplete for older entries, and the live site wins. Record the
+   publish by appending to the entry's `reports` array (keep
+   `latestReport` pointing at the newest period, not the backfilled one).
+   If a year can't be published (no 10-K on EDGAR for it, company not yet
+   public), add `{"year": 2025, "reason": "..."}` to the entry's
+   `backfillSkip` array so `--backfill` moves on to the next year. Log
+   tier 2 in the nightly log as its own line ("Backfill: N tonight").
+
 ### The tracker file — read it first, update it after every company
 
 `scripts/data/report-tracker.json`, keyed by ticker, is the single source
@@ -173,6 +193,9 @@ yet.
    is concentrated on a few hundred well-known tickers.
 3. If you have direct evidence a company outside the printed batch has a
    fresh filing the scan missed, that outranks the batch order.
+   When the night's ~10 us-listed are done (or `next-batch` prints only
+   us-listed and that cap is reached), switch to `npm run next-batch --
+   --backfill --n 5` for tier 2 (see tier 2 above, up to ~10 a night).
 4. Once literally every company in both files is `"done"` or `"skipped"`
    for 2026, two ongoing tracks open up — Phase 2 freshness maintenance
    takes priority over tier 2 multi-year backfill when both apply to the
@@ -235,8 +258,13 @@ The user accepted the risk of hitting the weekly usage limit. The extra
 and the per-firing ~8 for tier 1 are unchanged, and nothing is spent on
 tier 1 to fill the extra room. If a firing exits on a weekly-limit or
 session-limit message during that week, drop straight back to ~40 for
-the rest of the week. From the "10-31 night" entry the cap is ~40 again;
-delete this paragraph then.
+the rest of the week. **Extended (the user's choice, 2026-10-25) to the
+entries "11-02 night" through "11-05 night"** (windows 01:00 JST 11-03 →
+07:59 JST 11-06: AAPL 11-02, AMD/PFE/BKNG 11-03, QCOM/UBER/ARM/DASH/CVS
+11-04, SO/DUK/ABNB 11-05), same rules. The "10-31 night" and "11-01
+night" entries (a weekend) are ~40, and from the "11-06 night" entry the
+cap is ~40 again; delete this paragraph then. A weekly-limit or
+session-limit exit in the first week also cancels the extension.
 
 **Per-firing cap (since 2026-10-19): a firing publishes at most ~8 new
 report-periods from tier 1 and then commits, pushes and exits.** The
@@ -277,8 +305,10 @@ already short, and that tier was the biggest usage cost of the system.
 The night's budget goes, in order, to: tier 0 fresh filings (hot list and
 S&P 500 first), the Sunday earnings preview, the 10 hot-list rewrites,
 comparisons (up to 2 a night, see "Comparison" below), any S&P 500 tier 1
-left, and only then ~10 us-listed companies. A night that ends under ~40
-because those ran out is expected — don't top it up with more us-listed.
+left, then ~10 us-listed companies, and last ~10 tier 2 backfill (hot
+list, then S&P 500; see tier 2 above). A night that ends under ~40
+because those ran out is expected — don't top it up with more us-listed
+or more backfill.
 The us-listed backlog is postponed, not dropped.
 
 **Hot-list rewrite (temporary, from 2026-10-14 night): +10 per night on

@@ -9,6 +9,11 @@
  *   3. sp500: scripts/data/sp500.json, in file order
  *   4. us-listed: scripts/data/us-listed.json, in file order
  *
+ * With --backfill it prints tier 2 instead: "done" hot-list then S&P 500
+ * companies, each with its most recent fiscal year before 2026 that has no
+ * report yet (from the entry's `reports` / `latestReport`, plus any years in
+ * `backfillSkip` that were already tried and found unpublishable).
+ *
  * Tickers already "done" or "skipped" in report-tracker.json are excluded
  * (tier 0 candidates are already filtered by the scan itself, and may include
  * done companies with a newer filing — those are kept on purpose), and so are
@@ -18,6 +23,7 @@
  *   npm run next-batch              # next 5
  *   npm run next-batch -- --n 10
  *   npm run next-batch -- --json    # machine-readable
+ *   npm run next-batch -- --backfill --n 10
  */
 import { existsSync, readFileSync } from "node:fs";
 import { join, dirname } from "node:path";
@@ -30,6 +36,9 @@ type Company = { ticker: string; name: string };
 type TrackerEntry = {
   status?: string;
   nextExpectedFiling?: { estimate?: string };
+  latestReport?: { year?: number };
+  reports?: { year?: number }[];
+  backfillSkip?: { year: number; reason?: string }[];
 };
 type Pick = { ticker: string; name: string; tier: string; note?: string };
 
@@ -42,6 +51,7 @@ function main() {
   const nIndex = args.indexOf("--n");
   const limit = nIndex >= 0 ? Number(args[nIndex + 1]) || 5 : 5;
   const asJson = args.includes("--json");
+  const backfill = args.includes("--backfill");
 
   const tracker = readJson<Record<string, TrackerEntry>>("report-tracker.json");
   const sp500 = readJson<Company[]>("sp500.json");
@@ -101,11 +111,39 @@ function main() {
     }
   }
 
+  if (backfill) {
+    // Tier 2 starts at the last full year before the 2026 coverage target and
+    // walks backward; 2021 is as far as EDGAR's inline-XBRL filings make the
+    // research method in CLAUDE.md practical.
+    const target = (entry: TrackerEntry) => {
+      const covered = new Set<number>();
+      for (const r of entry.reports ?? []) if (r.year) covered.add(r.year);
+      if (entry.latestReport?.year) covered.add(entry.latestReport.year);
+      for (const s of entry.backfillSkip ?? []) covered.add(s.year);
+      for (let year = 2025; year >= 2021; year--) if (!covered.has(year)) return year;
+      return undefined;
+    };
+    const pool = [...hot.map((t) => [t, "5-backfill-hot"]), ...sp500.map((c) => [c.ticker, "5-backfill-sp500"])];
+    for (const [ticker, tier] of pool) {
+      const entry = tracker[ticker];
+      if (seen.has(ticker) || entry?.status !== "done" || claims.has(ticker) || !names.has(ticker)) continue;
+      const year = target(entry);
+      if (year === undefined) continue;
+      seen.add(ticker);
+      picks.push({ ticker, name: names.get(ticker)!, tier, note: `FY${year} ANNUAL` });
+    }
+    print(picks.slice(0, limit), asJson);
+    return;
+  }
+
   for (const ticker of hot) add(ticker, "2-hot-list");
   for (const c of sp500) add(c.ticker, "3-sp500-backlog");
   for (const c of usListed) add(c.ticker, "4-us-listed-backlog");
 
-  const next = picks.slice(0, limit);
+  print(picks.slice(0, limit), asJson);
+}
+
+function print(next: Pick[], asJson: boolean) {
   if (asJson) {
     console.log(JSON.stringify(next, null, 2));
     return;
