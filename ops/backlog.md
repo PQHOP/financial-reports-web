@@ -246,6 +246,17 @@ date and commit.
   (free tier 100/day) and report confirmed subscribers weekly from the
   `Subscription` table (needs a small admin view or a `site-metrics`
   count — add one).
+- **X account created 2026-10-25 (@FinReportInsigh — X cut the handle
+  to 15 chars; name "Financial Report Insights"), developer app on the
+  Free tier, OAuth 1.0a keys set in Vercel production (`X_API_KEY`,
+  `X_API_SECRET`, `X_ACCESS_TOKEN`, `X_ACCESS_SECRET`), redeployed.**
+  `GET /2/users/me` works (200) but `POST /2/tweets` returns **402
+  "credits depleted"**: X's API now bills writes by credit and the Free
+  tier has none, so the social cron will log a 402 for X every night
+  until credits are bought. Buying credits costs money → the user's
+  call; asked 10-25. Until then X is configured-but-dead; Bluesky keeps
+  posting. If Hop declines, remove the four X env vars so the cron stops
+  trying (one less failing call per run).
 - **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
   is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
   directions wait on the user's answers in that report.
