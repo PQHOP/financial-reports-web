@@ -1166,15 +1166,35 @@ reach ~100/week and the hot-list rewrite queue is empty.
      each with title, 2-4 sentences of substance (a figure and why it
      matters, not an ad) and the canonical link. Ops never posts anything
      itself.
-   - **Every day with a hot-list or S&P 500 result (since 2026-10-25, the
-     user's choice; earnings season):** the same section, "Bài đăng ngoài
-     hôm nay", with 1-2 drafts from last night's tier 0 reports — one for
-     the r/stocks daily discussion thread (a comment: one figure, what it
-     means, the link), one for StockTwits/X with the cashtag (under 280
-     characters) — plus, in the week before results of a Big Tech name,
-     one from its what-to-watch note. The user posts within the day; a
-     draft older than a day is dead, so lead with yesterday's biggest
-     name. Keep the Monday deeper set.
+   - **Every day (since 2026-10-25, the user's choice): write the
+     copy-paste posts file `ops/posts/YYYY-MM-DD.md` (JST date, same as
+     the report) and commit it with the report.** The user posts by hand
+     on X (@FinReportInsigh — the X API now bills per post, so the
+     social cron's X leg is off; Bluesky still auto-posts) and on Reddit;
+     the file is what they copy from, so its format is strict:
+     - A one-line header with the date, then numbered blocks. Each block:
+       a label line (`### 1 · X · MSFT Q1 FY2027`), then the post text in
+       a fenced code block (```text) so it copies clean, nothing else.
+       No markdown inside the post text, no hashtags beyond one or two
+       cashtags (`$MSFT`), the canonical link last.
+     - **X posts (3–5 a day, ≤ 280 characters each, counting the link as
+       23):** one per hot-list/S&P 500 report from last night, biggest
+       name first — one figure, the one thing it hides or means, the
+       link; in the days before a Big Tech result, one from its
+       what-to-watch note; on days with no fresh result, the week's
+       preview or scorecard. Figures only from our own reports.
+     - **Reddit (1 a day, only when there is a real finding):** a comment
+       for the r/stocks daily discussion thread — 2–4 sentences, the
+       figure and why it matters, link last; no "check out my site".
+       Mark the subreddit and thread it belongs in.
+     - **Hacker News (rare):** only for a scorecard or comparison with a
+       data angle; "Show HN" wording, once per asset.
+     The morning report's "Bài đăng ngoài hôm nay" section then just
+     points at the file (`ops/posts/<date>.md`) and says how many posts
+     it holds; `scripts/ops/fetch-morning-report.ps1` copies the file to
+     `E:\FinancialReports\posts\` next to the report. A draft older than
+     a day is dead, so lead with yesterday's biggest name. Keep the
+     Monday deeper set.
    - **Linkable asset and outreach (from 2026-10-26, the user's choice).**
      `/scorecards/2026/q3` already updates itself from `metrics` as Q3
      reports land; make it the page people link to: a one-paragraph lead
