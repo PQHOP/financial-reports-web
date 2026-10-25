@@ -7,9 +7,11 @@ const LINKS = [
   { href: "/reports", label: "Reports" },
   { href: "/earnings", label: "Earnings" },
   { href: "/scorecards", label: "Scorecards" },
-  { href: "/economy", label: "Economy" },
-  { href: "/rates", label: "Rates" },
-  { href: "/world-risks", label: "Risks" },
+  { href: "/red-flags", label: "Red flags" },
+  { href: "/buybacks", label: "Buybacks" },
+  // /economy, /rates and /world-risks stay online but left the menu on
+  // 2026-10-25 (the user's choice): the site is about earnings, and none of
+  // the three drew readers.
   { href: "/insights", label: "Insights" },
   { href: "/learn", label: "Learn" },
 ];

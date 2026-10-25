@@ -695,6 +695,19 @@ this pipeline end to end in one session:
      The verdict must also appear in the body: end the quality-check
      section with one sentence that states it ("On balance the quarter is
      flattered: …"), so the badge and the text never disagree.
+   - **Capital returned (required since 2026-10-25 when the filing states
+     them; the user's choice):** `shareRepurchases` and `dividendsPaid`
+     (millions, the cash flow statement's figures for *this period* — for
+     a 10-Q that reports only year-to-date cash flows, derive the quarter
+     by subtracting the prior quarter's YTD when it's in the same filing,
+     otherwise give the YTD figure and say so in the body), and
+     `dilutedSharesYoyPct` (diluted weighted-average shares this period vs
+     the same period a year ago, %, negative = fewer shares). They feed
+     the "Capital returned" line in the report's figures block and the
+     `/buybacks` page (who repurchased most, whose share count shrank, and
+     how much of EPS growth the lower count explains) — the buyback-driven
+     EPS angle is part of "what the headline numbers hide", so mention it
+     in the quality check when `dilutedSharesYoyPct` is below about −2%.
    - **Banks and insurers add their industry's own fields** (all in
      `src/lib/metrics.ts`). They switch the report's figures strip, the
      company's results table and the industry page's peer table to that
@@ -926,6 +939,26 @@ the user is tracked at its end. Things future sessions should know:
   what-to-watch card, and the community "write" link demoted to a line at
   the bottom. Don't reintroduce tool-first layouts or backlog-ordered
   lists on landing pages.
+- **Red flags (`/red-flags`, since 2026-10-25, the user's choice):**
+  `src/lib/redFlags.ts` queries EDGAR full-text search (efts.sec.gov, the
+  same undocumented API `scan-recent-filings` uses) hourly through
+  `unstable_cache` for the last 14 days of 8-K Item 4.02 (non-reliance),
+  Item 4.01 (auditor change), NT 10-K / NT 10-Q (late filing) and
+  10-K/10-Q text containing "substantial doubt" + "going concern"; the
+  page explains each kind in plain words and links companies we cover to
+  their page. No DB writes, no model calls, one request per kind per hour.
+  A search that fails leaves its list empty with a note. Possible next
+  step (not built): the nightly writes a 2–3 sentence note for flags on
+  hot-list/S&P 500 names, stored as an Article so the page can show it.
+- **Buybacks (`/buybacks`, since 2026-10-25):** `src/lib/buybacks.ts`
+  builds, from `metrics` only, the current period's largest repurchases,
+  fastest-shrinking share counts and "EPS growth explained by fewer
+  shares"; `noindex` until ≥ 5 reports of one period carry the figures.
+- **Menu (since 2026-10-25, the user's choice):** Reports · Earnings ·
+  Scorecards · Red flags · Buybacks · Insights · Learn. `/economy`,
+  `/rates` and `/world-risks` stay online (and in the sitemap) but are
+  not in the menu: none of them drew readers in four weeks of GA4 and
+  they blur what the site is about. Don't add them back without data.
 - **Charts (since 2026-09-29)** live in `src/components/ReportCharts.tsx`,
   plain server-rendered HTML (no chart library, light-only palette):
   "this period vs a year ago" bars on every report (year-ago figure implied

@@ -50,6 +50,15 @@ export type ReportMetrics = {
   // states it, one sentence with the figure; the company page sets it next
   // to what the following period delivered.
   guidance?: string;
+
+  // Capital returned (since 2026-10-25): cash spent on share repurchases and
+  // on dividends in the period (millions, from the cash flow statement), and
+  // the change in diluted weighted-average shares vs a year earlier (%,
+  // negative = fewer shares, i.e. buybacks lifting EPS). Feed the figures
+  // block on reports and the /buybacks page.
+  shareRepurchases?: number;
+  dividendsPaid?: number;
+  dilutedSharesYoyPct?: number;
 };
 
 export type EarningsQuality = "clean" | "flattered" | "understated";
@@ -103,6 +112,9 @@ const NUMERIC_KEYS = [
   "bookValuePerShare",
   "bookValuePerShareYoyPct",
   "epsAdjusted",
+  "shareRepurchases",
+  "dividendsPaid",
+  "dilutedSharesYoyPct",
 ] as const;
 
 // Returns the cleaned metrics, null for "no metrics", or an error string.
@@ -264,6 +276,9 @@ export const METRIC_COLUMNS = {
   epsYoy: pct("epsYoyPct", "EPS YoY", "EPS YoY", true),
   epsAdjusted: perShare("epsAdjusted", "Adjusted EPS", "Adj. EPS"),
   operatingMargin: pct("operatingMarginPct", "Operating margin", "Op. margin"),
+  shareRepurchases: money("shareRepurchases", "Share repurchases", "Buybacks"),
+  dividendsPaid: money("dividendsPaid", "Dividends paid", "Dividends"),
+  dilutedSharesYoy: pct("dilutedSharesYoyPct", "Diluted shares YoY", "Shares YoY", true),
 
   netInterestIncome: money("netInterestIncome", "Net interest income", "NII", "netInterestIncomeYoyPct"),
   netInterestIncomeYoy: pct("netInterestIncomeYoyPct", "Net interest income YoY", "NII YoY", true),

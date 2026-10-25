@@ -17,6 +17,7 @@ import { splitAtAGlance, tableOfContents } from "@/lib/markdown";
 import { formatFilingDate, upcomingFiling } from "@/lib/tracker";
 import type { FullReport } from "@/lib/reportData";
 import {
+  METRIC_COLUMNS,
   metricsProfile,
   PROFILE_LAYOUT,
   readMetrics,
@@ -445,6 +446,27 @@ export async function ReportView({ report }: { report: FullReport }) {
         <section id="figures" className="flex flex-col gap-4 scroll-mt-4">
           <h2 className="text-lg font-medium">{companyLabel} {periodName} in figures</h2>
           <MetricsSnapshot metrics={metrics} />
+          {(metrics.shareRepurchases !== undefined ||
+            metrics.dividendsPaid !== undefined ||
+            metrics.dilutedSharesYoyPct !== undefined) && (
+            <p className="text-sm text-zinc-700">
+              <span className="font-medium text-zinc-900">Capital returned: </span>
+              {[
+                metrics.shareRepurchases !== undefined &&
+                  `buybacks ${METRIC_COLUMNS.shareRepurchases.value(metrics)}`,
+                metrics.dividendsPaid !== undefined &&
+                  `dividends ${METRIC_COLUMNS.dividendsPaid.value(metrics)}`,
+                metrics.dilutedSharesYoyPct !== undefined &&
+                  `diluted shares ${METRIC_COLUMNS.dilutedSharesYoy.value(metrics)} YoY`,
+              ]
+                .filter(Boolean)
+                .join(" · ")}
+              .{" "}
+              <Link href="/buybacks" className="underline">
+                Who is buying back most this period →
+              </Link>
+            </p>
+          )}
           <YearOverYearChart metrics={metrics} />
           {positions.length > 0 && primaryIndustry && (
             <PeerComparison
