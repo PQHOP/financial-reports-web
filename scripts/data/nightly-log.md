@@ -19886,3 +19886,22 @@ published — every discretionary track already used or deferred by the
 first firing. Nothing eligible under any track. **Tonight's running
 total unchanged at 10 report-periods.** Nothing touched in
 `report-tracker.json` this firing.
+
+**Fifth firing (20:04 UTC / 05:04 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA). `npm install`
+hit the same harmless `prisma generate`/`DATABASE_URL` postinstall
+failure as every other firing; HEAD had been left detached on
+`44d4883` from the prior firing, so this firing re-checked out `master`
+and fast-forwarded 18 commits to `9208cd2` (today's ops-routine work:
+red flags, buybacks, menu trim — unrelated to this routine) before
+`scan-recent-filings`. No active claims (`scripts/data/claims/` has
+only `README.md`). `scan-recent-filings` re-run fresh: same 36
+candidates, still all `us-listed` (no new hot-list/S&P 500 filing).
+`next-batch -- --n 60` confirms: tier 0 all us-listed, tier 1 straight
+into the paused us-listed backlog. `hotlist-rewrite.json` still 18
+`pending` (all within the 10-day skip window). Comparisons already
+2/2, what-to-watch 8/8, Sunday preview already published — every
+discretionary track already used or deferred by the first firing.
+Nothing eligible under any track. **Tonight's running total unchanged
+at 10 report-periods.** Nothing touched in `report-tracker.json` this
+firing.
