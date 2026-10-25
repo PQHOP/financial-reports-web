@@ -19858,3 +19858,17 @@ every discretionary track (preview, rewrites, comparisons, what-to-watch)
 already used or deferred by the first firing. **Tonight's running total
 unchanged at 10 report-periods.** Nothing touched in `report-tracker.json`
 this firing.
+
+**Third firing (18:04 UTC / 03:04 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA). `git fetch`/
+`pull --rebase` brought `master` to `dd760f7` (second firing's commit,
+no other firing's commits in between); `package-lock.json` churn from
+`npm install` reverted. No active claims. `scan-recent-filings` re-run
+fresh: same 36 candidates, still all `us-listed` (no new hot-list/S&P 500
+filing in the ~1 hour since the last check). `next-batch -- --n 60`
+confirms: tier 0 all us-listed, tier 1 straight into the paused
+us-listed backlog. Re-checked `hotlist-rewrite.json`: still 18 `pending`,
+all within the 10-day skip window. Comparisons already 2/2 for tonight,
+what-to-watch 8/8, preview already published. Nothing eligible under
+any track. **Tonight's running total unchanged at 10 report-periods.**
+Nothing touched in `report-tracker.json` this firing.
