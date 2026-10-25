@@ -132,3 +132,29 @@ model MacroSnapshot {
   data      Json
   updatedAt DateTime @updatedAt
 }
+
+// Opt-in "email me when you analyze <TICKER>'s next report" alerts (see
+// src/lib/alerts.ts). Double opt-in: a row exists from the first request but
+// only gets alerts once confirmedAt is set via the emailed link.
+model Subscription {
+  id            String    @id @default(cuid())
+  // Lower-cased.
+  email         String
+  // Upper-case ticker, or "*" for every system report (not "ALL": that is
+  // Allstate's ticker). The signup form only offers single tickers for now.
+  ticker        String
+  // Secret in the confirm and unsubscribe links.
+  token         String    @unique
+  confirmedAt   DateTime?
+  // When the latest confirmation request was made; a repeat request for a
+  // still-pending row moves it forward so the 24h rate limit counts it.
+  createdAt     DateTime  @default(now())
+  // publishedAt of the last report alerted to this row (see the alerts cron).
+  lastSentAt    DateTime?
+  // sha256(ip + secret) of the requester, used only to rate-limit.
+  submitterHash String?
+
+  @@unique([email, ticker])
+  @@index([ticker, confirmedAt])
+  @@index([submitterHash, createdAt])
+}

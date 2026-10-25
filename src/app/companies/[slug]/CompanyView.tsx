@@ -24,6 +24,7 @@ import type { ReportPeriod } from "@/generated/prisma/client";
 import { cleanCompanyName } from "@/lib/companyName";
 import { PeriodTrendChart } from "@/components/ReportCharts";
 import { QualityBadge } from "@/components/QualityBadge";
+import { AlertSignup } from "@/components/AlertSignup";
 
 const DESCRIPTION_MAX = 155;
 // A "what to watch" note (kind PREVIEW, tagged with the ticker) stays on the
@@ -266,6 +267,10 @@ export async function CompanyView({
             </div>
           )}
         </div>
+      )}
+
+      {source === "system" && company.ticker && (
+        <AlertSignup ticker={company.ticker} companyName={company.name} />
       )}
 
       {source === "system" && watch && (

@@ -10,6 +10,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EDITORIAL_AUTHOR, SITE_NAME, SITE_SAME_AS, SITE_URL, reportByline } from "@/lib/site";
 import { isGenericTitle, realCoverImage, reportHeadline, reportSearchTitle } from "@/lib/reportMeta";
 import { QualityBadge } from "@/components/QualityBadge";
+import { AlertSignup } from "@/components/AlertSignup";
 import { reportPath, reportUrl } from "@/lib/reportPath";
 import { articleKindLabels, articlePath } from "@/lib/articles";
 import { splitAtAGlance, tableOfContents } from "@/lib/markdown";
@@ -454,6 +455,10 @@ export async function ReportView({ report }: { report: FullReport }) {
             />
           )}
         </section>
+      )}
+
+      {!isCommunity && ticker && (
+        <AlertSignup ticker={ticker} companyName={report.company.name} />
       )}
 
       {nextFiling && isLatest && (

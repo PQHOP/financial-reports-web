@@ -1011,6 +1011,17 @@ the user is tracked at its end. Things future sessions should know:
   be set for `/api/cron/social` to run at all), `BLUESKY_HANDLE` +
   `BLUESKY_APP_PASSWORD`, `X_API_KEY` / `X_API_SECRET` / `X_ACCESS_TOKEN` /
   `X_ACCESS_SECRET`. With none of the social ones set the cron is a no-op.
+  `RESEND_API_KEY` (since 2026-10-25) switches on per-ticker email alerts:
+  the "Get an email when we analyze X's next report" form on company and
+  report pages (`src/components/AlertSignup.tsx`, renders nothing without
+  the key), `/api/alerts` (double opt-in, 5 per email and 20 per IP-hash
+  per day, honeypot), `/alerts/confirm` + `/alerts/unsubscribe`, and the
+  `/api/cron/alerts` cron (23:20 UTC, one email per confirmed subscriber
+  per new report, 200 per run; Resend's free tier is 100 a day). The
+  sending domain must be verified in Resend (DNS records); `ALERTS_FROM`
+  overrides the default `Financial Report Insights
+  <alerts@financialreportinsights.com>`. Needs a redeploy after setting
+  (the form is on ISR pages).
   `ADSENSE_CLIENT` (`pub-` + 16 digits) switches on Google AdSense: the
   loader tag in `<head>`, `/ads.txt`, and the ad/consent-banner hosts in
   the CSP (`src/lib/adsense.ts`, `next.config.ts`). Unset = no ads, strict
