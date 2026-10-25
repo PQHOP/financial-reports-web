@@ -205,6 +205,16 @@ date and commit.
   First things to verify 10-26: `earnings-preview-2026-10-26` exists;
   the nightly wrote watch notes for V/KO (10-27) and MSFT/GOOGL (10-28)
   and the cards show on `/companies/msft` etc.
+- **Bing Webmaster, screenshot from Hop 2026-10-25 (Search
+  Performance, 3 months):** 5 clicks, 346 impressions, CTR 1.45%.
+  Impressions were ~5–10/day through mid-October and rose from 10-18 to
+  ~45/day on 10-23 (the Q3 bank reports week); clicks on 4 days only.
+  Top keyword "fis 2026 revenue guidance full year total billion" at
+  position 3 (a real query answered by the FIS report). Bing's direct
+  traffic is marginal; its value is as the index behind Copilot/ChatGPT
+  search. Still to get from Hop: Site Explorer's indexed-page count and
+  the "AI Performance (beta)" tab (citations in Copilot/chat) — ask once
+  in the 10-26 report, then track both monthly, not weekly.
 - **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
   is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
   directions wait on the user's answers in that report.
