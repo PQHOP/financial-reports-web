@@ -19926,3 +19926,24 @@ skip window) — every discretionary track already used or deferred by
 the first firing. Nothing eligible under any track. **Tonight's
 running total unchanged at 10 report-periods.** Nothing touched in
 `report-tracker.json` this firing.
+
+**Seventh firing (22:04 UTC / 07:04 JST, near the window's 07:59 close).**
+Network check passed (sec.gov 403 without UA as expected — SEC's own
+response, not a proxy block — 200 with the required UA via `curl`).
+`npm install` hit the same harmless `prisma generate`/`DATABASE_URL`
+postinstall failure as every other firing tonight (doesn't block
+`admin-publish`/`scan-recent-filings`). `git fetch`/`pull --rebase`
+brought `master` to `2d61605` (sixth firing's commit plus 20 unrelated
+ops-routine commits from today — alerts, red flags, buybacks, menu
+trim); `package-lock.json` churn reverted. No active claims
+(`scripts/data/claims/` has only `README.md`). `scan-recent-filings`
+re-run fresh: same 36 candidates, still all `us-listed` (no new
+hot-list/S&P 500 filing). `next-batch -- --n 60` confirms: tier 0 all
+us-listed, tier 1 S&P 500 fully done (503/503) and straight into the
+(paused) us-listed backlog. `hotlist-rewrite.json` still 18 `pending`
+(all within the 10-day skip window). Comparisons already 2/2,
+what-to-watch 8/8, Sunday preview already published — every
+discretionary track already used or deferred by the first firing.
+Nothing eligible under any track, and the window closes in under an
+hour. **Tonight's running total unchanged at 10 report-periods.**
+Nothing touched in `report-tracker.json` this firing.
