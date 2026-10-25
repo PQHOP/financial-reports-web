@@ -19,7 +19,8 @@ import { scorecardPath } from "@/lib/scorecardPath";
 // `revalidate` export and was baked into the build as a static file, so
 // every report published after a deploy was missing until the next deploy.
 
-const STATIC_PAGES = ["/economy", "/world-risks", "/about", "/corrections", "/privacy", "/terms", "/contact"];
+// /buybacks joins this list once it has data (it is noindex until then).
+const STATIC_PAGES = ["/red-flags", "/economy", "/world-risks", "/about", "/corrections", "/privacy", "/terms", "/contact"];
 
 export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
   // Only list what has real content: companies/industries with no published
