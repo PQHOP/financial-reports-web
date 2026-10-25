@@ -2,8 +2,9 @@
 # copy-paste posts file (ops/posts/YYYY-MM-DD.md), both written and pushed by
 # the "Site Operations - Daily" cloud routine, to E:\FinancialReports\ (the
 # posts file under E:\FinancialReports\posts\).
-# Run by the Windows scheduled task "FRI Morning Report" at 08:00 JST and
-# hourly until noon; also when the PC wakes after a missed run. Reads straight
+# Run by the Windows scheduled task "FRI Morning Report" at 07:30 JST (the
+# ops routine fires 22:05 UTC = 07:05 JST and pushes by ~07:20) and hourly
+# until noon; also when the PC wakes after a missed run. Reads straight
 # from origin/master with `git show`, so the local working tree is untouched.
 $ErrorActionPreference = "Stop"
 # git prints UTF-8; without this PowerShell decodes it with the console code

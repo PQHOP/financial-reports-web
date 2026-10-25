@@ -1046,7 +1046,12 @@ the user is tracked at its end. Things future sessions should know:
 Since 2026-10-04 the user has delegated running the site itself, not just
 report coverage: deciding what to fix or build next, SEO, growth, new
 features and new finance areas, fixing breakage. A cloud routine ("Site
-Operations - Daily", 22:30 UTC = 07:30 JST, after the nightly report window)
+Operations - Daily", 22:05 UTC = 07:05 JST since 2026-10-26 — was 22:30
+UTC; moved so the report and posts file reach the user's PC by 07:30 JST,
+the user's choice 2026-10-25. It overlaps the nightly routine's 22:00 UTC
+firing by a few minutes: `git pull --rebase` before every push, and
+whatever that firing publishes after the ops run has read
+`nightly-log.md` is counted in the next morning's report)
 does one pass a day and leaves a morning report for the user. The nightly
 report cap was lowered from ~50 to ~35 the same day to pay for it (raised
 to ~40 on 2026-10-14). The routine (`trig_01NVjnTDJRERUM7UVfjW8iyZ`) runs on
@@ -1119,8 +1124,10 @@ reach ~100/week and the hot-list rewrite queue is empty.
    a public page that becomes dynamic can pause the whole site.
 5. Write the morning report to `ops/reports/YYYY-MM-DD.md` (JST date) and
    commit + push it. A local Windows scheduled task on the user's PC copies
-   it to `E:\FinancialReports\` at 08:00 JST
-   (`scripts/ops/fetch-morning-report.ps1`). **Write the report in
+   it (and the day's posts file) to `E:\FinancialReports\` at 07:30 JST,
+   retrying hourly until noon (`scripts/ops/fetch-morning-report.ps1`), so
+   the report and `ops/posts/<date>.md` must be pushed by 22:25 UTC —
+   write and push them before any optional extra work. **Write the report in
    Vietnamese** (the user reads it; the site itself stays English). Sections:
    tóm tắt 3 dòng; tiến độ mục tiêu (visits/month vs 10,000, AdSense
    readiness); traffic & SEO (with numbers vs last week); báo cáo tài chính
