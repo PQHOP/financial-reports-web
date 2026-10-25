@@ -6,6 +6,32 @@ date and commit.
 
 ## Next
 
+- **Company page: a 2-sentence text lead under the H1 for the search
+  snippet** (from the 10-26 Monday review). "`<Company>` reports `<period>`
+  on `<date>`. Last quarter revenue `<rose/fell>` N% to $Y and EPS …" built
+  from `metrics` + the tracker/earnings-dates overlay, placed above the
+  latest-results card. Today the snippet Google shows for "`<ticker>`
+  earnings" is the figures table. Small, ISR-safe (no new query).
+
+- **Outreach (from 10-26):** `ops/outreach.md` lists backlink targets with
+  3-line email drafts and the Google Publisher Center submission text. Each
+  Monday: ask how many were sent / replied, add 5 fresh targets, drop dead
+  ones. Checkpoint 11-22 needs ≥ 3 referring domains.
+
+- **GSC impressions will fall ~2/3 once Google recrawls
+  `/industries/uncategorized`** (noindex live since ~10-23; the 10-16–22
+  window still shows 12,852 bot impressions on it). Read the drop as
+  cleanup, not a ranking loss; judge progress on clicks and on report/
+  scorecard pages' impressions.
+
+- **Ops routine hygiene:** the container starts on a detached HEAD equal to
+  `origin/master`; `git push -u origin master` then pushes the stale local
+  `master` and is rejected as non-fast-forward (10-26: three rejected pushes
+  before `git checkout -B master`). First command of every run: `git
+  checkout -B master origin/master`. Also: read the full `vercel deploy`
+  output, not its tail — on 10-26 the command was re-run and produced two
+  production deployments of the same commit.
+
 - **Keep `scripts/data/earnings-dates.json` fresh (ops job, since
   2026-10-23).** Before each heavy week, search the hot-list names due in
   the next ~14 days and add every date a company's own release states;
@@ -401,6 +427,11 @@ date and commit.
   just build it.
 
 ## Done
+
+- 2026-10-26 (`d3a5c56`): scorecard page shows "Updated <date> · rebuilt
+  daily through the season" (date = newest report in the card); every
+  report's peer section links to its period's scorecard when one exists.
+  First step of the 10-26 "linkable asset" plan; homepage already linked it.
 
 - **2026-10-25 — Homepage "Reporting this week" ranked by search demand
   and grouped by day; follow-up 10-Qs dropped from both calendars; GOOGL
