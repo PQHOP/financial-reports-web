@@ -257,7 +257,27 @@ date and commit.
   call; asked 10-25. Until then X is configured-but-dead; Bluesky keeps
   posting. If Hop declines, remove the four X env vars so the cron stops
   trying (one less failing call per run).
-- **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
+- **New sections shipped 2026-10-25 night (Hop's choice from the "what
+  else to analyze" list):** `/red-flags` (EDGAR 8-K 4.02/4.01, NT
+  10-K/10-Q, going-concern text; hourly, no usage; live and answering
+  from Vercel — 73 filings on first render, covered names tagged) and
+  `/buybacks` (from the new `shareRepurchases` / `dividendsPaid` /
+  `dilutedSharesYoyPct` metrics; noindex until ≥5 reports of one period
+  carry them — expect that by 10-29). Menu is now Reports · Earnings ·
+  Scorecards · Red flags · Buybacks · Insights · Learn; `/economy`,
+  `/rates`, `/world-risks` stay online, out of the menu. **Ops
+  follow-ups:** (1) link `/red-flags` from the homepage (a small "Red
+  flags this week: N filings" line under the season block, built from
+  `fetchRedFlags()` — keep the homepage ISR; the data is cached hourly);
+  (2) add `/buybacks` to `STATIC_PAGES` in `src/lib/sitemapEntries.ts`
+  once it has data; (3) propose (don't build yet) nightly 2–3 sentence
+  notes for red flags on hot-list/S&P 500 names; (4) Reddit/X drafts:
+  the red-flags page is a natural weekly post ("N companies told the SEC
+  not to rely on their past numbers this week") — use it on quiet days;
+  (5) next on Hop's approved list: standing pair comparison pages
+  (`/compare/<a>-vs-<b>`, code only), then IPO S-1 reads when a notable
+  IPO files, then Form 4 insider transactions on company pages (code +
+  cron, no usage), then `/guidance` once ~3 weeks of guidance data exist. The 10-19 one
   is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
   directions wait on the user's answers in that report.
 - **Credential for ops publishing: in place since 2026-10-25.** Hop
