@@ -19905,3 +19905,24 @@ discretionary track already used or deferred by the first firing.
 Nothing eligible under any track. **Tonight's running total unchanged
 at 10 report-periods.** Nothing touched in `report-tracker.json` this
 firing.
+
+**Sixth firing (21:04 UTC / 06:04 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA via `curl`; both
+financialreportinsights.com and the `.vercel.app` alias reachable).
+`npm install` hit the same harmless `prisma generate`/`DATABASE_URL`
+postinstall failure as every other firing tonight (doesn't block
+`admin-publish`/`scan-recent-filings`); `git fetch` showed `master`
+already at `3488fcd` (fifth firing's commit, no other firing's commits
+in between), `package-lock.json` churn reverted. No active claims
+(`scripts/data/claims/` has only `README.md`). `scan-recent-filings`
+re-run fresh: same 36 candidates, still all `us-listed` (no new
+hot-list/S&P 500 filing in the ~1 hour since the last check).
+`next-batch -- --n 60` confirms: tier 0 straight into the (paused)
+us-listed allotment, tier 1 S&P 500 fully done (503/503), tier 1
+backlog jumps straight to the (paused) us-listed backlog. Comparisons
+already 2/2, what-to-watch 8/8, Sunday preview already published,
+hot-list rewrites all deferred (18 `pending`, all within the 10-day
+skip window) — every discretionary track already used or deferred by
+the first firing. Nothing eligible under any track. **Tonight's
+running total unchanged at 10 report-periods.** Nothing touched in
+`report-tracker.json` this firing.
