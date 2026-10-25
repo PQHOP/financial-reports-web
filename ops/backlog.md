@@ -186,6 +186,25 @@ date and commit.
   not indexed" to "URL is unknown to Google" (homepage still Duplicate on
   the 09-22 crawl; `/companies/aapl` still never crawled). Could be API
   noise; watch two more days before reading anything into it.
+- **Plan reset 2026-10-25 (evening, with Hop — "do everything you
+  can"; don't re-ask):** the 10-19 review's arithmetic still holds and
+  the Crawl stats (17 URLs/day, all HTML, no `_rsc` waste left) moved the
+  diagnosis from "technical" to "authority". Decided and written into
+  CLAUDE.md the same day: checkpoints table under the ops goals (grade
+  every run); tier 2 and us-listed **paused until the 11-20 night**;
+  nightly writes **company what-to-watch notes** (PREVIEW articles,
+  slug `what-to-watch-<ticker>-<period>-<year>`, shown on the company
+  page by the new amber card in `CompanyView.tsx`, deployed 10-25); ops
+  drafts outside posts **every day with a hot-list/S&P 500 result**, not
+  only Mondays; ops turns `/scorecards/2026/q3` into the linkable asset
+  and builds `ops/outreach.md` (15 newsletters/blogs with email drafts,
+  Google Publisher Center submission text) — first pass on 10-26. Hop
+  does by hand: posts the drafts, Request indexing 10/day, sends Bing
+  Webmaster's indexed-page count, creates an X account for the social
+  cron if willing (instructions given 10-25), submits Publisher Center.
+  First things to verify 10-26: `earnings-preview-2026-10-26` exists;
+  the nightly wrote watch notes for V/KO (10-27) and MSFT/GOOGL (10-28)
+  and the cards show on `/companies/msft` etc.
 - **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
   is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
   directions wait on the user's answers in that report.

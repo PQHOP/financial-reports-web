@@ -25,6 +25,31 @@ import { cleanCompanyName } from "@/lib/companyName";
 import { PeriodTrendChart } from "@/components/ReportCharts";
 
 const DESCRIPTION_MAX = 155;
+// A "what to watch" note (kind PREVIEW, tagged with the ticker) stays on the
+// company page for this long before the results it previews — and never
+// once the results themselves are published (see watchNote below).
+const WATCH_NOTE_MAX_AGE_DAYS = 21;
+const WATCH_NOTE_SLUG_PREFIX = "what-to-watch-";
+
+function watchCutoff(): Date {
+  return new Date(Date.now() - WATCH_NOTE_MAX_AGE_DAYS * 86_400_000);
+}
+
+// The per-company note if the nightly routine wrote one, else the weekly
+// preview that covers this ticker; nothing once a newer report is out.
+async function watchNote(ticker: string | null, latestPublishedAt: Date | undefined) {
+  if (!ticker) return null;
+  const notes = await prisma.article.findMany({
+    where: { kind: "PREVIEW", tickers: { has: ticker }, publishedAt: { gt: watchCutoff() } },
+    orderBy: { publishedAt: "desc" },
+    take: 4,
+    select: { slug: true, title: true, summary: true, publishedAt: true },
+  });
+  const note = notes.find((n) => n.slug.startsWith(WATCH_NOTE_SLUG_PREFIX)) ?? notes[0];
+  if (!note) return null;
+  if (latestPublishedAt && latestPublishedAt > note.publishedAt) return null;
+  return note;
+}
 
 const rank = (r: { year: number; period: ReportPeriod }) =>
   r.year * 10 + periodOrder.indexOf(r.period);
@@ -100,14 +125,15 @@ export async function CompanyView({
   const company = await getCompany(slug);
   if (!company) notFound();
 
-  const [community, next] = await Promise.all([
+  const system = company.reports;
+  const [community, next, watch] = await Promise.all([
     prisma.report.findMany({
       where: { companyId: company.id, ...communityReports },
       orderBy: [{ year: "desc" }, { publishedAt: "desc" }],
     }),
     upcomingFiling(company.ticker),
+    watchNote(company.ticker, system[0]?.publishedAt),
   ]);
-  const system = company.reports;
   const shown = source === "community" ? community : system;
   const sourceQuery = source === "community" ? "?source=community" : "";
   const companyHref = `/companies/${company.slug}`;
@@ -215,6 +241,20 @@ export async function CompanyView({
             </div>
           )}
         </div>
+      )}
+
+      {source === "system" && watch && (
+        <Link
+          href={articlePath("PREVIEW", watch.slug)}
+          className="flex flex-col gap-1 rounded-lg border border-amber-200 bg-amber-50 p-4 text-amber-950 hover:border-amber-400"
+        >
+          <span className="text-xs font-medium uppercase tracking-wide text-amber-800">
+            Before the next results · what to watch
+          </span>
+          <span className="font-semibold">{watch.title}</span>
+          <span className="text-sm">{watch.summary}</span>
+          <span className="mt-1 text-sm font-medium underline">Read the preview →</span>
+        </Link>
       )}
 
       {source === "system" && (

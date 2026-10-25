@@ -118,14 +118,21 @@ visitor landing on the site sees analysis of a report that came out
    tier once triggered — keeping an already-published company's *current*
    year up to date beats adding another company's old history.
 
-   **Opened early for the hot list and S&P 500 (since 2026-10-25, the
-   user's choice).** S&P 500 tier 1 is 503/503 done and the us-listed cap
+   **Opened early for the hot list and S&P 500 (the user's choice,
+   2026-10-25) — but paused from the "10-25 night" through the "11-19
+   night" entries (same day, same user, after the Crawl stats review):**
+   Googlebot reads ~17 URLs a day and every new URL competes with that
+   day's hot-list results pages, so during earnings season the spare
+   budget goes to the company what-to-watch notes (see "Growth work")
+   instead of old fiscal years. From the "11-20 night" entry tier 2 runs
+   as written here. S&P 500 tier 1 is 503/503 done and the us-listed cap
    leaves most of the night unused (10-24 night: 10 of ~40, four firings
-   scanned and exited), so tier 2 now runs before the us-listed backlog is
+   scanned and exited), so tier 2 runs before the us-listed backlog is
    cleared, but only as the night's last use of budget: after tier 0, the
-   Sunday preview, rewrites, comparisons and the ~10 us-listed. **At most
-   ~10 tier 2 report-periods per night**, inside the ~40 cap (never in the
-   Big Tech week's extra room), and they count toward the per-firing ~8.
+   Sunday preview, rewrites, comparisons, what-to-watch notes and the
+   us-listed allotment. **At most ~10 tier 2 report-periods per night**,
+   inside the ~40 cap (never in the Big Tech week's extra room), and they
+   count toward the per-firing ~8.
    Pick with `npm run next-batch -- --backfill --n 5` (hot list, then S&P
    500, each with its most recent uncovered year before 2026, as an
    ANNUAL report from that year's 10-K). Before dispatching, check the
@@ -193,9 +200,11 @@ yet.
    is concentrated on a few hundred well-known tickers.
 3. If you have direct evidence a company outside the printed batch has a
    fresh filing the scan missed, that outranks the batch order.
-   When the night's ~10 us-listed are done (or `next-batch` prints only
-   us-listed and that cap is reached), switch to `npm run next-batch --
-   --backfill --n 5` for tier 2 (see tier 2 above, up to ~10 a night).
+   When the night's us-listed allotment is done (or `next-batch` prints
+   only us-listed and that cap is reached), the spare budget goes to the
+   company what-to-watch notes (see "Growth work") while tier 2 is
+   paused, and otherwise to `npm run next-batch -- --backfill --n 5` for
+   tier 2 (see tier 2 above, up to ~10 a night).
 4. Once literally every company in both files is `"done"` or `"skipped"`
    for 2026, two ongoing tracks open up — Phase 2 freshness maintenance
    takes priority over tier 2 multi-year backfill when both apply to the
@@ -304,12 +313,19 @@ URL of a company nobody searches for dilutes a crawl budget that is
 already short, and that tier was the biggest usage cost of the system.
 The night's budget goes, in order, to: tier 0 fresh filings (hot list and
 S&P 500 first), the Sunday earnings preview, the 10 hot-list rewrites,
-comparisons (up to 2 a night, see "Comparison" below), any S&P 500 tier 1
-left, then ~10 us-listed companies, and last ~10 tier 2 backfill (hot
-list, then S&P 500; see tier 2 above). A night that ends under ~40
+comparisons (up to 2 a night, see "Comparison" below), company
+what-to-watch notes (up to ~8 a night, see "Growth work"), any S&P 500
+tier 1 left, then the us-listed allotment, and last ~10 tier 2 backfill
+(hot list, then S&P 500; see tier 2 above). A night that ends under ~40
 because those ran out is expected — don't top it up with more us-listed
 or more backfill.
 The us-listed backlog is postponed, not dropped.
+**The us-listed allotment is 0 from the "10-25 night" through the
+"11-19 night" entries (the user's choice, 2026-10-25):** the 10-25 Crawl
+stats review found Googlebot reading ~17 URLs/day, all of them HTML and
+mostly that week's hot-list results pages, so a us-listed URL nobody
+searches for now costs a crawl of a page people do. From the "11-20
+night" entry the allotment is ~10 again.
 
 **Hot-list rewrite (temporary, from 2026-10-14 night): +10 per night on
 top of the ~40 cap, until the queue is empty.** For AdSense ("low value
@@ -818,6 +834,32 @@ the user is tracked at its end. Things future sessions should know:
     sites (Hudson Labs, days.to, Barchart previews ranked for TSLA on
     2026-10-18), so this is the cheapest page we publish that can rank
     this season.
+  - **Company what-to-watch note (since 2026-10-25, the user's choice;
+    earnings season only).** A short `PREVIEW` article for one company
+    that reports in the next 2–4 days, shown on its company page (the
+    amber "Before the next results · what to watch" card in
+    `CompanyView.tsx`, which picks the newest `PREVIEW` tagged with the
+    ticker and hides it once a newer report is published). Why: searches
+    for "`<ticker>` earnings preview" / "what to watch" peak in the days
+    before results and are answered by small sites, and the company page
+    is a URL Googlebot already reads, so this adds demand without adding
+    a low-demand URL. Rules: up to ~8 a night, after comparisons and
+    before any tier 1/tier 2 pick; they count as report-periods. Pick
+    companies from `/earnings` (hot list first, then S&P 500) whose
+    results are due in 2–4 days and that already have a report on the
+    site; skip one that already has a note for this period. Slug
+    `what-to-watch-<ticker>-<period>-<year>` (lower-case ticker, the
+    period we will publish, e.g. `what-to-watch-msft-q1-2027`), kind
+    `PREVIEW`, `tickers: ["<TICKER>"]`, title "`<Company> (<TICKER>)`
+    earnings preview: what to watch in `<period>`", 400–700 words: the
+    date and source of the date, what last quarter showed (figures
+    **only from our own published report**, linked), management's own
+    guidance as our report quoted it, and 2–3 specific things to watch,
+    each tied to a figure. No analyst consensus unless a named source
+    was fetched. Same research-subagent rules as reports (Opus, stop
+    rather than publish partial work, never touch the tracker or the
+    nightly log). Publish with `--article`; post-check that
+    `/companies/<slug>` shows the card. Log as "Watch notes: N tonight".
   - **Comparison** — at most one per firing, at most two per night (raised
     from two per week on 2026-10-19, paid for by the us-listed cap): when
     two companies in the same industry both have a current-period report
@@ -952,6 +994,29 @@ month. Pick each day's work by which of these it moves most. Context: as of
 previously been flagged at risk of "low value content", which the report
 format rules under "What makes a report worth reading here" address.
 
+**Checkpoints (set 2026-10-25 after the Crawl stats review; grade them
+every run, in the "tiến độ mục tiêu" section, and say plainly when one
+is missed).** "Visits" = GA4 sessions excluding the bot-only countries
+(a country with 0 engaged sessions that week is excluded); also report
+engaged sessions. The 10-25 recomputation: Google alone cannot carry a
+six-week-old domain to 10,000 by 01-04 (crawl ~17 URLs/day, ~600 pages
+indexed, 0 referring domains); the plan is community distribution by the
+user (Reddit/HN/StockTwits, drafted by ops), backlinks to
+`/scorecards/2026/q3` and the previews, and what-to-watch notes on
+company pages, with tier 2 and us-listed paused until 11-20.
+
+| By | Google clicks/week | Pages indexed | Visits/28 days | Also |
+|---|---|---|---|---|
+| 2026-11-08 | ≥ 20 | ≥ 800 | ≥ 700 | ≥ 5 outside posts made; crawl ≥ 30/day |
+| 2026-11-22 | ≥ 100 | ≥ 1,200 | ≥ 1,500 | ≥ 3 referring domains |
+| 2026-12-06 | ≥ 300 | ≥ 1,800 | ≥ 3,500 | below this, 10,000 by 01-04 is off: say so and propose a new date |
+| 2027-01-04 | ≥ 1,000 | ≥ 2,500 | ≥ 10,000 | |
+
+Pages indexed comes from the user's Page indexing screenshot (ask for it
+weekly, with Crawl stats); referring domains from Search Console Links
+(same). AdSense: propose applying around 2026-11-20 if engaged sessions
+reach ~100/week and the hot-list rewrite queue is empty.
+
 **Each run:**
 1. `npm run site-metrics` (`scripts/ops/site-metrics.ts`): live health
    check of key pages, last Vercel production deployments, Search Console
@@ -1035,6 +1100,28 @@ format rules under "What makes a report worth reading here" address.
      each with title, 2-4 sentences of substance (a figure and why it
      matters, not an ad) and the canonical link. Ops never posts anything
      itself.
+   - **Every day with a hot-list or S&P 500 result (since 2026-10-25, the
+     user's choice; earnings season):** the same section, "Bài đăng ngoài
+     hôm nay", with 1-2 drafts from last night's tier 0 reports — one for
+     the r/stocks daily discussion thread (a comment: one figure, what it
+     means, the link), one for StockTwits/X with the cashtag (under 280
+     characters) — plus, in the week before results of a Big Tech name,
+     one from its what-to-watch note. The user posts within the day; a
+     draft older than a day is dead, so lead with yesterday's biggest
+     name. Keep the Monday deeper set.
+   - **Linkable asset and outreach (from 2026-10-26, the user's choice).**
+     `/scorecards/2026/q3` already updates itself from `metrics` as Q3
+     reports land; make it the page people link to: a one-paragraph lead
+     naming the day's count and the biggest sector moves, an "updated
+     daily through the season" line, and a link from the homepage season
+     block and from every Q3 report's peer section. Then build
+     `ops/outreach.md`: 15 small finance newsletters/blogs/podcast
+     show-notes that link to earnings coverage (find them by searching
+     who linked to similar scorecards or previews), each with a 3-line
+     email draft the user can send. Google Publisher Center: draft the
+     submission text (publication name, description, the `/insights`
+     and `/reports` section URLs) in `ops/outreach.md`; the user submits.
+     Report weekly how many were sent and which replied.
 
 **Autonomy rules (proposed 2026-10-04, accepted by the user by default):**
 - **Do without asking:** bug fixes; SEO changes; content and editorial
