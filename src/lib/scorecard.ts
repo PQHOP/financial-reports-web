@@ -62,6 +62,9 @@ export type Scorecard = {
   topOverall: ScorecardEntry[];
   bottomOverall: ScorecardEntry[];
   quality: QualitySummary;
+  // When the newest report in this scorecard was published: the page says
+  // so, since the table is rebuilt from every new report through the season.
+  updatedAt: Date | null;
 };
 
 function qualitySummary(entries: ScorecardEntry[]): QualitySummary {
@@ -122,6 +125,7 @@ export async function buildScorecard(year: number, period: ReportPeriod): Promis
       period: true,
       summary: true,
       metrics: true,
+      publishedAt: true,
       company: {
         select: {
           name: true,
@@ -135,10 +139,12 @@ export async function buildScorecard(year: number, period: ReportPeriod): Promis
 
   const bySector = new Map<string, { name: string; slug: string; entries: ScorecardEntry[] }>();
   const all: ScorecardEntry[] = [];
+  let updatedAt: Date | null = null;
   for (const r of rows) {
     const m = readMetrics(r.metrics);
     const sector = r.company.industries.find((i) => i.slug !== UNCATEGORIZED_SLUG);
     if (!m || !sector) continue;
+    if (!updatedAt || r.publishedAt > updatedAt) updatedAt = r.publishedAt;
     const entry: ScorecardEntry = {
       id: r.id,
       year: r.year,
@@ -178,6 +184,7 @@ export async function buildScorecard(year: number, period: ReportPeriod): Promis
     topOverall: ranked.slice(0, 10),
     bottomOverall: ranked.slice(-10).reverse(),
     quality: qualitySummary(all),
+    updatedAt,
   };
 }
 

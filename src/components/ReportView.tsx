@@ -26,6 +26,9 @@ import {
 } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
 import { PeerStrip, PeerStripLegend, YearOverYearChart } from "@/components/ReportCharts";
+import type { ReportPeriod } from "@/generated/prisma/client";
+import { availableScorecards } from "@/lib/scorecard";
+import { scorecardPath } from "@/lib/scorecardPath";
 import {
   formatPeerValue,
   latestPerCompany,
@@ -123,11 +126,15 @@ function PeerComparison({
   label,
   industry,
   year,
+  scorecard,
 }: {
   positions: PeerPosition[];
   label: string;
   industry: { name: string; slug: string };
   year: number;
+  // The season scorecard for this report's period, when enough companies
+  // have reported for one to exist.
+  scorecard: { year: number; period: ReportPeriod; count: number } | null;
 }) {
   return (
     <section className="flex flex-col gap-2">
@@ -164,6 +171,21 @@ function PeerComparison({
         we&apos;ve analyzed; fiscal calendars differ, so periods are not always the
         same months.
       </p>
+      {scorecard && (
+        <p className="text-sm text-zinc-700">
+          <Link
+            href={scorecardPath(scorecard.year, scorecard.period)}
+            className="font-medium text-blue-700 hover:underline"
+          >
+            {periodLabels[scorecard.period]} {scorecard.year} scorecard: all{" "}
+            {scorecard.count} companies by sector →
+          </Link>{" "}
+          <span className="text-zinc-500">
+            (median growth, margins and earnings quality, updated daily through the
+            season)
+          </span>
+        </p>
+      )}
     </section>
   );
 }
@@ -183,7 +205,7 @@ export async function ReportView({ report }: { report: FullReport }) {
       new Date(report.publishedAt).getTime() >
     24 * 60 * 60 * 1000;
   const ticker = report.company.ticker;
-  const [companyReports, industryReports, communityCount, related, nextFiling, peerReports] =
+  const [companyReports, industryReports, communityCount, related, nextFiling, peerReports, scorecards] =
     await Promise.all([
       // Sibling periods come from the same side (ours or community) as this one.
       prisma.report.findMany({
@@ -239,7 +261,12 @@ export async function ReportView({ report }: { report: FullReport }) {
               company: { select: { name: true, ticker: true } },
             },
           }),
+      // Periods with a season scorecard (a cached groupBy), so the peer
+      // section can send readers to the whole-market view of this period.
+      isCommunity ? Promise.resolve([]) : availableScorecards(),
     ]);
+  const scorecard =
+    scorecards.find((c) => c.year === report.year && c.period === report.period) ?? null;
 
   const rank = (r: { year: number; period: FullReport["period"] }) =>
     r.year * 10 + periodOrder.indexOf(r.period);
@@ -474,6 +501,7 @@ export async function ReportView({ report }: { report: FullReport }) {
               label={ticker ?? cleanCompanyName(report.company.name)}
               industry={primaryIndustry}
               year={report.year}
+              scorecard={scorecard}
             />
           )}
         </section>

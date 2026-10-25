@@ -163,6 +163,26 @@ export default async function ScorecardPage({ params }: { params: Params }) {
             </>
           )}
         </p>
+        <p className="mt-2 text-sm text-zinc-500">
+          {card.updatedAt && (
+            <>
+              Updated{" "}
+              <time dateTime={card.updatedAt.toISOString()}>
+                {card.updatedAt.toLocaleDateString("en-US", {
+                  year: "numeric",
+                  month: "short",
+                  day: "numeric",
+                  timeZone: "UTC",
+                })}
+              </time>
+              .{" "}
+            </>
+          )}
+          This scorecard is rebuilt from every {label} report as it is published,
+          daily through the earnings season, so the count and the sector medians
+          move as more companies report. Each row links to the report its figures
+          come from.
+        </p>
       </div>
 
       {card.quality.total >= MIN_QUALITY_ENTRIES && (
