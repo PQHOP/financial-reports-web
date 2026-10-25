@@ -28,7 +28,6 @@ const SEASON_LIMIT = 6;
 // night's publishing (~40 cap): with 16, the 43-report night of 2026-10-21
 // pushed NFLX, GE and GM (reported the day before) out behind KEY.
 const SEASON_POOL = 40;
-const LATEST_LIMIT = 6;
 const SEASON_ARTICLES = 4;
 const UPCOMING_DAYS = 7;
 const UPCOMING_LIMIT = 18;
@@ -38,9 +37,9 @@ const PREVIEW_MAX_AGE_DAYS = 8;
 export const revalidate = 3600;
 
 export const metadata: Metadata = {
-  title: { absolute: "Financial Report Insights: Earnings Reports Explained in Plain English" },
+  title: { absolute: "Financial Report Insights: What the Earnings Headlines Hide" },
   description:
-    "Plain-English analysis of US company earnings, built from each company's own SEC filing: what the numbers were, what drove them, and what management expects next.",
+    "Plain-English analysis of US company earnings, built from each company's own SEC filing, with a verdict on whether the reported numbers flatter or understate the business: one-offs, adjusted vs GAAP, buybacks and tax rates.",
   alternates: { canonical: "/" },
 };
 
@@ -113,7 +112,6 @@ async function reportingSoon(): Promise<{ date: string; items: SoonItem[] }[]> {
 export default async function Home() {
   const [
     industries,
-    latestCandidates,
     seasonPool,
     seasonArticles,
     scorecards,
@@ -131,12 +129,6 @@ export default async function Home() {
           select: { id: true },
         },
       },
-    }),
-    prisma.report.findMany({
-      where: systemReports,
-      orderBy: { publishedAt: "desc" },
-      take: LATEST_LIMIT + SEASON_LIMIT,
-      include: { company: { select: { name: true, ticker: true, slug: true } } },
     }),
     prisma.report.findMany({
       where: { ...systemReports, company: { ticker: { in: WELL_KNOWN } } },
@@ -174,6 +166,9 @@ export default async function Home() {
     const i = ticker ? POPULAR_TICKERS.indexOf(ticker) : -1;
     return i === -1 ? POPULAR_TICKERS.length : i;
   };
+  // Only well-known names make the homepage (2026-10-25): a "latest reports"
+  // list of whatever the backlog published last showed micro-caps nobody
+  // searches for; /reports still lists everything.
   const season = [...seasonPool]
     .sort(
       (a, b) =>
@@ -181,9 +176,6 @@ export default async function Home() {
         b.publishedAt.getTime() - a.publishedAt.getTime()
     )
     .slice(0, SEASON_LIMIT);
-  // "Latest reports" skips what the season section already shows.
-  const seasonIds = new Set(season.map((r) => r.id));
-  const latest = latestCandidates.filter((r) => !seasonIds.has(r.id)).slice(0, LATEST_LIMIT);
   // The scorecard for the period the newest well-known result belongs to,
   // when enough companies have reported it; otherwise the newest scorecard.
   const newest = seasonPool[0];
@@ -230,12 +222,13 @@ export default async function Home() {
 
       <section>
         <h1 className="text-3xl font-semibold tracking-tight">
-          Earnings reports, explained in plain English
+          What the earnings headlines hide
         </h1>
         <p className="mt-2 max-w-2xl text-zinc-600">
-          Each analysis is built from the company&apos;s own SEC filing: what
-          the numbers were, what drove them, and what management expects next.
-          Sources are linked on every report.
+          Every analysis is built from the company&apos;s own SEC filing, says
+          what drove the numbers, and checks whether they flatter or understate
+          the business: one-offs, adjusted versus GAAP, buybacks and tax rates
+          doing the work. Sources are linked on every report.
         </p>
       </section>
 
@@ -301,16 +294,21 @@ export default async function Home() {
 
       {season.length > 0 && (
         <section className="flex flex-col gap-3">
-          <div className="flex items-baseline justify-between">
-            <h2 className="text-lg font-medium">Earnings season: latest results</h2>
-            {seasonPeriod && (
-              <Link
-                href={scorecardPath(seasonPeriod.year, seasonPeriod.period)}
-                className="text-sm text-zinc-500 hover:underline"
-              >
-                {`${periodLabels[seasonPeriod.period]} ${seasonPeriod.year} scorecard (${seasonPeriod.count} companies) →`}
+          <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
+            <h2 className="text-lg font-medium">Latest results</h2>
+            <div className="flex flex-wrap gap-x-4 text-sm text-zinc-500">
+              {seasonPeriod && (
+                <Link
+                  href={scorecardPath(seasonPeriod.year, seasonPeriod.period)}
+                  className="hover:underline"
+                >
+                  {`${periodLabels[seasonPeriod.period]} ${seasonPeriod.year} scorecard (${seasonPeriod.count} companies) →`}
+                </Link>
+              )}
+              <Link href="/reports" className="hover:underline">
+                All reports →
               </Link>
-            )}
+            </div>
           </div>
           <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {season.map((report) => (
@@ -335,26 +333,6 @@ export default async function Home() {
           )}
         </section>
       )}
-
-      <section className="flex flex-col gap-3">
-        <div className="flex items-baseline justify-between">
-          <h2 className="text-lg font-medium">Latest reports</h2>
-          <Link href="/reports" className="text-sm text-zinc-500 hover:underline">
-            All reports →
-          </Link>
-        </div>
-        {latest.length === 0 ? (
-          <p className="text-zinc-500">No reports yet.</p>
-        ) : (
-          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {latest.map((report) => (
-              <li key={report.id}>
-                <ReportCard report={report} />
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
 
       {briefs.length > 0 && (
         <section className="flex flex-col gap-3">

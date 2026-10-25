@@ -565,7 +565,17 @@ this pipeline end to end in one session:
    for a one-off item like an acquisition, restructuring, or guidance cut,
    lead with whatever the filing itself emphasizes). What every report
    should still have, however it's organized:
-   - A clear headline (what happened and what drove it)
+   - A clear headline (what happened and what drove it). **Since
+     2026-10-25 the JSON `title` itself is that headline**, e.g. "Tesla
+     Q3 2026: flat revenue, $447M of tariff refunds flattered margins" —
+     ≤ 110 characters, company name (not just the ticker) and period
+     first, then the finding with its figure. Never the old form "TSLA —
+     Q3 2026 Financial Report Analysis": the report page renders the title
+     as its H1, and for older generic titles `reportHeadline()` in
+     `src/lib/reportMeta.ts` derives the H1 from the summary's first
+     clause instead, so the summary must also open with the finding
+     ("<Company>'s Q3 2026 revenue was flat at $28.05B and EPS fell 44%
+     to $0.22 as R&D rose 69%; …").
    - A metrics table (GFM: Metric | This period | Same period last year |
      YoY Change) with revenue, margin, net income/profit, EPS or
      equivalent, plus 1-2 metrics specific to the industry (e.g. NIM+NPL
@@ -656,6 +666,35 @@ this pipeline end to end in one session:
      newsletter draft and future sector scorecards, so they must match the
      metrics table in the report body exactly. Unknown keys are rejected
      (a typo fails the publish instead of silently dropping the figure).
+   - **Earnings quality and guidance (required on every new report and
+     every rewrite since 2026-10-25, the user's choice):** four more
+     `metrics` keys, all in `src/lib/metrics.ts`:
+     - `earningsQuality`: `"clean"` | `"flattered"` | `"understated"` —
+       the verdict the quality-check section reaches. *Clean*: reported
+       growth ≈ underlying growth, no material one-off in either year, EPS
+       growth mostly from operations. *Flattered*: reported profit/EPS
+       look better than the business — a one-off gain, a prior-year charge
+       that didn't recur, a lower tax rate, buybacks or a reserve release
+       did much of the work, or the adjusted figure excludes recurring
+       costs. *Understated*: reported figures look worse than the business
+       — one-off charges, settlements, impairments, FX, or a prior-year
+       gain making the comparison harsh. When flattered and understated
+       both apply, pick the one that moves EPS more.
+     - `earningsQualityNote`: ≤ 200 characters, the deciding figure in
+       plain words, e.g. "EPS +31% but pretax income +1.6% once a $982M
+       GBTG sale gain and restructuring are set aside". It is shown next
+       to the verdict on the report, the company page and the scorecard.
+     - `epsAdjusted`: the company's own adjusted/non-GAAP diluted EPS when
+       it reports one (omit otherwise); the scorecard ranks the largest
+       GAAP-vs-adjusted gaps from it.
+     - `guidance`: ≤ 240 characters, management's guidance for the next
+       period or year as the filing/release states it, with the figure
+       ("FY2026 revenue $415–425B (was $410–420B); Q4 operating margin
+       ~27%"); omit when none is given. The company page sets it against
+       what the next period delivered.
+     The verdict must also appear in the body: end the quality-check
+     section with one sentence that states it ("On balance the quarter is
+     flattered: …"), so the badge and the text never disagree.
    - **Banks and insurers add their industry's own fields** (all in
      `src/lib/metrics.ts`). They switch the report's figures strip, the
      company's results table and the industry page's peer table to that
@@ -871,6 +910,22 @@ the user is tracked at its end. Things future sessions should know:
     `metrics` for the same quarter (kind `SCORECARD`, table of revenue
     growth / operating margin / EPS growth by company, top and bottom
     movers with the reason from each report).
+- **Report and homepage layout (since 2026-10-25, the user's choice: the
+  site's identity is "what the headline numbers hide").** The report
+  page runs story first: kicker (company · period), H1 = the finding
+  (`reportHeadline()`), date/byline (linked to `/about#how-reports-are-
+  made`), "At a glance", the earnings-quality badge, a collapsed "In this
+  report" list, the body, and only then "<Company> <period> in figures"
+  (figures strip, year-ago chart, peer strip). The homepage leads with
+  "What the earnings headlines hide", shows only well-known names
+  (reporting this week, popular companies, latest results from the hot
+  list/S&P 500, the season scorecard), and no longer has a "Latest
+  reports" list of whatever the backlog published last. The company page
+  has the quality badge on the latest-results card, a "What management
+  promised, and what it delivered" table from `guidance`, the
+  what-to-watch card, and the community "write" link demoted to a line at
+  the bottom. Don't reintroduce tool-first layouts or backlog-ordered
+  lists on landing pages.
 - **Charts (since 2026-09-29)** live in `src/components/ReportCharts.tsx`,
   plain server-rendered HTML (no chart library, light-only palette):
   "this period vs a year ago" bars on every report (year-ago figure implied

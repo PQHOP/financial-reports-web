@@ -37,7 +37,46 @@ export type ReportMetrics = {
   catastropheLosses?: number;
   bookValuePerShare?: number;
   bookValuePerShareYoyPct?: number;
+
+  // Earnings quality (since 2026-10-25): the report's verdict on whether the
+  // reported figures flatter or understate the underlying business, the
+  // one-line reason with the deciding figure, and adjusted EPS when the
+  // company reports one. These feed the quality badge on report and company
+  // pages and the "reported vs underlying" section of the scorecards.
+  epsAdjusted?: number;
+  earningsQuality?: EarningsQuality;
+  earningsQualityNote?: string;
+  // Management's guidance for the next period as the filing or release
+  // states it, one sentence with the figure; the company page sets it next
+  // to what the following period delivered.
+  guidance?: string;
 };
+
+export type EarningsQuality = "clean" | "flattered" | "understated";
+
+export const EARNINGS_QUALITY: Record<
+  EarningsQuality,
+  { label: string; description: string; className: string }
+> = {
+  clean: {
+    label: "Clean",
+    description: "The reported figures match the underlying business: no material one-offs, and profit growth came from operations.",
+    className: "border-emerald-200 bg-emerald-50 text-emerald-900",
+  },
+  flattered: {
+    label: "Flattered",
+    description: "The reported figures look better than the underlying business: one-off gains, a prior-year charge that did not recur, a lower tax rate, buybacks or reserve releases did much of the work.",
+    className: "border-rose-200 bg-rose-50 text-rose-900",
+  },
+  understated: {
+    label: "Understated",
+    description: "The reported figures look worse than the underlying business: one-off charges, settlements, impairments or a harsh prior-year comparison pulled them down.",
+    className: "border-sky-200 bg-sky-50 text-sky-900",
+  },
+};
+
+const TEXT_KEYS = ["earningsQualityNote", "guidance"] as const;
+const TEXT_MAX = 240;
 
 const NUMERIC_KEYS = [
   "revenue",
@@ -63,6 +102,7 @@ const NUMERIC_KEYS = [
   "catastropheLosses",
   "bookValuePerShare",
   "bookValuePerShareYoyPct",
+  "epsAdjusted",
 ] as const;
 
 // Returns the cleaned metrics, null for "no metrics", or an error string.
@@ -87,7 +127,7 @@ export function parseMetricsInput(
   // Reject unknown keys on input: a typo ("nimPct") would otherwise be
   // dropped silently and the figure would never show up anywhere.
   if (strict) {
-    const known = new Set<string>([...NUMERIC_KEYS, "currency"]);
+    const known = new Set<string>([...NUMERIC_KEYS, ...TEXT_KEYS, "currency", "earningsQuality"]);
     const unknown = Object.keys(source).filter((key) => !known.has(key));
     if (unknown.length > 0) {
       return { error: `Unknown metrics field(s): ${unknown.join(", ")}.` };
@@ -104,6 +144,22 @@ export function parseMetricsInput(
   }
   if (typeof source.currency === "string" && /^[A-Z]{3}$/.test(source.currency)) {
     out.currency = source.currency;
+  }
+  for (const key of TEXT_KEYS) {
+    const value = source[key];
+    if (value === undefined || value === null || value === "") continue;
+    if (typeof value !== "string") return { error: `Metrics field "${key}" must be a string.` };
+    if (value.length > TEXT_MAX) {
+      return { error: `Metrics field "${key}" must be at most ${TEXT_MAX} characters.` };
+    }
+    out[key] = value.trim();
+  }
+  const quality = source.earningsQuality;
+  if (quality !== undefined && quality !== null && quality !== "") {
+    if (typeof quality !== "string" || !(quality in EARNINGS_QUALITY)) {
+      return { error: `Metrics field "earningsQuality" must be one of ${Object.keys(EARNINGS_QUALITY).join(", ")}.` };
+    }
+    out.earningsQuality = quality as EarningsQuality;
   }
   return { metrics: Object.keys(out).length > 0 ? out : null };
 }
@@ -206,6 +262,7 @@ export const METRIC_COLUMNS = {
   netIncome: money("netIncome", "Net income", "Net income", "netIncomeYoyPct"),
   eps: perShare("epsDiluted", "Diluted EPS", "Diluted EPS", "epsYoyPct"),
   epsYoy: pct("epsYoyPct", "EPS YoY", "EPS YoY", true),
+  epsAdjusted: perShare("epsAdjusted", "Adjusted EPS", "Adj. EPS"),
   operatingMargin: pct("operatingMarginPct", "Operating margin", "Op. margin"),
 
   netInterestIncome: money("netInterestIncome", "Net interest income", "NII", "netInterestIncomeYoyPct"),
@@ -245,7 +302,7 @@ export const PROFILE_LAYOUT: Record<
   }
 > = {
   general: {
-    snapshot: [C.revenue, C.netIncome, C.eps, C.operatingMargin],
+    snapshot: [C.revenue, C.netIncome, C.eps, C.epsAdjusted, C.operatingMargin],
     history: [C.revenue, C.revenueYoy, C.netIncome, C.eps, C.operatingMargin],
     peers: [C.revenue, C.revenueYoy, C.operatingMargin, C.epsYoy],
     peerSort: (a, b) => (b.revenueYoyPct ?? -Infinity) - (a.revenueYoyPct ?? -Infinity),

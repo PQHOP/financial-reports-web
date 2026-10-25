@@ -4,8 +4,14 @@
 import type { ReportPeriod } from "@/generated/prisma/client";
 import { prismaCached as prisma } from "@/lib/prisma";
 import { systemReports } from "@/lib/community";
-import { readMetrics, type ReportMetrics } from "@/lib/metrics";
+import { readMetrics, type EarningsQuality, type ReportMetrics } from "@/lib/metrics";
 import { median, periodRank } from "@/lib/peers";
+
+// The "reported vs underlying" section needs this many labelled reports
+// before it says anything about the season.
+export const MIN_QUALITY_ENTRIES = 5;
+const QUALITY_LIST = 8;
+const GAP_LIST = 10;
 
 const UNCATEGORIZED_SLUG = "uncategorized";
 // A scorecard page only exists once this many sector-classified companies
@@ -36,6 +42,17 @@ export type SectorScore = {
   bottom: ScorecardEntry[];
 };
 
+// Earnings-quality verdicts across the period's labelled reports, plus the
+// reports where GAAP and adjusted EPS differ most (gap as % of adjusted EPS;
+// positive = GAAP above adjusted, i.e. one-off gains in the reported figure).
+export type QualitySummary = {
+  total: number;
+  counts: Record<EarningsQuality, number>;
+  flattered: ScorecardEntry[];
+  understated: ScorecardEntry[];
+  gaps: { entry: ScorecardEntry; gapPct: number }[];
+};
+
 export type Scorecard = {
   year: number;
   period: ReportPeriod;
@@ -44,7 +61,29 @@ export type Scorecard = {
   sectors: SectorScore[];
   topOverall: ScorecardEntry[];
   bottomOverall: ScorecardEntry[];
+  quality: QualitySummary;
 };
+
+function qualitySummary(entries: ScorecardEntry[]): QualitySummary {
+  const counts: Record<EarningsQuality, number> = { clean: 0, flattered: 0, understated: 0 };
+  const labelled = entries.filter((e) => e.m.earningsQuality);
+  for (const e of labelled) counts[e.m.earningsQuality!] += 1;
+  const gaps = entries
+    .flatMap((entry) => {
+      const { epsDiluted, epsAdjusted } = entry.m;
+      if (epsDiluted === undefined || epsAdjusted === undefined || epsAdjusted === 0) return [];
+      return [{ entry, gapPct: ((epsDiluted - epsAdjusted) / Math.abs(epsAdjusted)) * 100 }];
+    })
+    .sort((a, b) => Math.abs(b.gapPct) - Math.abs(a.gapPct))
+    .slice(0, GAP_LIST);
+  return {
+    total: labelled.length,
+    counts,
+    flattered: labelled.filter((e) => e.m.earningsQuality === "flattered").slice(0, QUALITY_LIST),
+    understated: labelled.filter((e) => e.m.earningsQuality === "understated").slice(0, QUALITY_LIST),
+    gaps,
+  };
+}
 
 function nums(entries: ScorecardEntry[], key: keyof ReportMetrics): number[] {
   return entries.map((e) => e.m[key]).filter((v): v is number => typeof v === "number");
@@ -138,6 +177,7 @@ export async function buildScorecard(year: number, period: ReportPeriod): Promis
     sectors,
     topOverall: ranked.slice(0, 10),
     bottomOverall: ranked.slice(-10).reverse(),
+    quality: qualitySummary(all),
   };
 }
 

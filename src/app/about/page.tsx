@@ -15,13 +15,65 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <StaticPage title={`About ${SITE_NAME}`} updated="September 28, 2026">
+    <StaticPage title={`About ${SITE_NAME}`} updated="October 25, 2026">
       <p>
         {SITE_NAME} publishes plain-English analysis of the earnings reports
         that publicly listed companies file with regulators. Each report
         covers what the company earned, what changed compared with the same
-        period a year earlier, what management said drove the change, and
-        what it expects next.
+        period a year earlier, what management said drove the change, what
+        it expects next, and whether the reported figures flatter or
+        understate the business.
+      </p>
+
+      <h2 id="how-reports-are-made">How each report is made</h2>
+      <p>
+        Every report starts from the primary document the company filed
+        with the SEC (the 10-Q, 10-K or the earnings release attached to
+        its 8-K), not from a press summary. The filing is read in full and
+        linked at the bottom of the report as &quot;Source filing&quot;, so
+        any figure can be checked against the original. Each report then
+        works through the same checklist:
+      </p>
+      <ul>
+        <li>
+          <strong>What moved and why</strong>, tied to the line item or the
+          management sentence that explains it, with the same-period figures
+          from a year earlier alongside.
+        </li>
+        <li>
+          <strong>What the headline numbers hide</strong>: cash generated
+          versus profit reported; the gap between GAAP and
+          &quot;adjusted&quot; figures and exactly what was excluded;
+          one-off gains or charges in either year; receivables or inventory
+          growing faster than sales; how much of the growth in earnings per
+          share came from buybacks, a lower tax rate or lower interest
+          rather than from operations; and guidance now versus guidance
+          before.
+        </li>
+        <li>
+          <strong>An earnings-quality verdict</strong> (since October 2026):
+          <em>Clean</em> when the reported figures match the underlying
+          business, <em>Flattered</em> when one-offs, tax, buybacks or
+          reserve releases did much of the work, <em>Understated</em> when
+          one-off charges or a harsh comparison pulled them down. The
+          deciding figure is stated next to the verdict.
+        </li>
+        <li>
+          <strong>Did last time&apos;s read hold up?</strong> When we covered
+          the previous period, the report says whether what it told readers
+          to watch actually happened.
+        </li>
+        <li>
+          <strong>Management&apos;s guidance</strong>, quoted as the filing
+          states it, and set against what the next period delivered on the
+          company&apos;s page.
+        </li>
+      </ul>
+      <p>
+        Figures are never estimated to fill a gap: if a filing cannot be
+        found or read, the company is skipped rather than guessed at.
+        Reports are edited when a later filing changes a figure, and the
+        &quot;Updated&quot; date on the report says when.
       </p>
 
       <h2>What you will find here</h2>

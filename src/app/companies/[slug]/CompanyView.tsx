@@ -23,6 +23,7 @@ import { articlePath } from "@/lib/articles";
 import type { ReportPeriod } from "@/generated/prisma/client";
 import { cleanCompanyName } from "@/lib/companyName";
 import { PeriodTrendChart } from "@/components/ReportCharts";
+import { QualityBadge } from "@/components/QualityBadge";
 
 const DESCRIPTION_MAX = 155;
 // A "what to watch" note (kind PREVIEW, tagged with the ticker) stays on the
@@ -149,6 +150,21 @@ export async function CompanyView({
   // period decides, so an older report without them just shows dashes.
   const historyLayout =
     PROFILE_LAYOUT[history.length > 0 ? metricsProfile(history[0].metrics!) : "general"];
+  // Guidance stored on one period's report, set against the period after it
+  // (history is newest first). The newest report's own guidance has no
+  // "delivered" yet.
+  const promises = history.flatMap(({ report, metrics: m }, i) => {
+    if (!m?.guidance) return [];
+    const next = i > 0 ? history[i - 1] : undefined;
+    return [
+      {
+        said: report,
+        guidance: m.guidance,
+        delivered: next?.report,
+        deliveredHeadline: next?.metrics ? metricsHeadline(next.metrics) : "",
+      },
+    ];
+  });
 
   const years = Array.from(new Set(shown.map((r) => r.year))).sort((a, b) => b - a);
 
@@ -215,6 +231,15 @@ export async function CompanyView({
               <span className="line-clamp-4 text-sm text-zinc-700 sm:line-clamp-none">
                 {latestTakeaway ?? latest.summary}
               </span>
+              {latestMetrics?.earningsQuality && (
+                <span className="mt-1">
+                  <QualityBadge
+                    quality={latestMetrics.earningsQuality}
+                    note={latestMetrics.earningsQualityNote}
+                    compact
+                  />
+                </span>
+              )}
               <span className="mt-1 text-sm font-medium text-blue-700">
                 Read the full analysis →
               </span>
@@ -255,6 +280,48 @@ export async function CompanyView({
           <span className="text-sm">{watch.summary}</span>
           <span className="mt-1 text-sm font-medium underline">Read the preview →</span>
         </Link>
+      )}
+
+      {source === "system" && promises.length > 0 && (
+        <section className="flex flex-col gap-2">
+          <h2 className="text-lg font-medium">What management promised, and what it delivered</h2>
+          <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
+            <table className="w-full text-sm">
+              <thead className="bg-zinc-50 text-left text-zinc-600">
+                <tr>
+                  <th className="px-3 py-2 font-semibold">Said after</th>
+                  <th className="px-3 py-2 font-semibold">Guidance, as the filing stated it</th>
+                  <th className="px-3 py-2 font-semibold">What the next period showed</th>
+                </tr>
+              </thead>
+              <tbody>
+                {promises.map((row) => (
+                  <tr key={row.said.id} className="border-t border-zinc-100 align-top">
+                    <td className="whitespace-nowrap px-3 py-2">
+                      <Link href={reportPath({ ...row.said, company })} className="text-blue-700 hover:underline">
+                        {periodShort(row.said)}
+                      </Link>
+                    </td>
+                    <td className="px-3 py-2 text-zinc-700">{row.guidance}</td>
+                    <td className="px-3 py-2">
+                      {row.delivered ? (
+                        <Link href={reportPath({ ...row.delivered, company })} className="text-blue-700 hover:underline">
+                          {periodShort(row.delivered)}: {row.deliveredHeadline}
+                        </Link>
+                      ) : (
+                        <span className="text-zinc-500">Not reported yet</span>
+                      )}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p className="text-xs text-zinc-500">
+            Guidance is quoted from the filing or earnings release our report was built on; the
+            next period&apos;s figures are as that period&apos;s filing reported them.
+          </p>
+        </section>
       )}
 
       {source === "system" && (
@@ -348,13 +415,6 @@ export async function CompanyView({
             Community ({community.length})
           </Link>
         </nav>
-        <Link
-          href={`${companyHref}/write`}
-          rel="nofollow"
-          className="rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white"
-        >
-          Write your own report
-        </Link>
       </div>
 
       {source === "community" && (
@@ -405,6 +465,14 @@ export async function CompanyView({
           </ul>
         </section>
       )}
+
+      <p className="text-sm text-zinc-500">
+        Have your own take on {cleanCompanyName(company.name)}?{" "}
+        <Link href={`${companyHref}/write`} rel="nofollow" className="underline">
+          Write a community report
+        </Link>
+        .
+      </p>
     </div>
   );
 }

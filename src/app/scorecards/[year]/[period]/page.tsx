@@ -4,11 +4,12 @@ import type { Metadata } from "next";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { periodLabels } from "@/lib/period";
 import { periodFromSlug, reportPath } from "@/lib/reportPath";
-import { buildScorecard, type ScorecardEntry } from "@/lib/scorecard";
+import { buildScorecard, MIN_QUALITY_ENTRIES, type ScorecardEntry } from "@/lib/scorecard";
 import { scorecardPath } from "@/lib/scorecardPath";
-import { formatPct } from "@/lib/metrics";
+import { EARNINGS_QUALITY, formatPct, formatPerShare } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
 import { RankedBarChart } from "@/components/ReportCharts";
+import { QualityBadge } from "@/components/QualityBadge";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
 export const revalidate = 21600;
@@ -84,6 +85,27 @@ function MoversTable({ entries }: { entries: ScorecardEntry[] }) {
   );
 }
 
+function QualityList({ title, entries }: { title: string; entries: ScorecardEntry[] }) {
+  if (entries.length === 0) return null;
+  return (
+    <div>
+      <h3 className="text-sm font-semibold text-zinc-700">{title}</h3>
+      <ul className="mt-1 flex flex-col gap-2 text-sm">
+        {entries.map((e) => (
+          <li key={e.id}>
+            <Link href={reportPath(e)} className="font-medium text-blue-700 hover:underline">
+              {name(e)}
+            </Link>
+            {e.m.earningsQualityNote && (
+              <span className="text-zinc-600"> — {e.m.earningsQualityNote}</span>
+            )}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
 function MoverList({ title, entries }: { title: string; entries: ScorecardEntry[] }) {
   return (
     <div>
@@ -142,6 +164,72 @@ export default async function ScorecardPage({ params }: { params: Params }) {
           )}
         </p>
       </div>
+
+      {card.quality.total >= MIN_QUALITY_ENTRIES && (
+        <section id="quality" className="flex flex-col gap-3 scroll-mt-4">
+          <h2 className="text-lg font-medium">Reported vs underlying: earnings quality</h2>
+          <p className="text-sm text-zinc-700">
+            Each report ends with a verdict on whether the reported figures match the
+            underlying business. Of the {card.quality.total} {label} reports labelled so
+            far: {card.quality.counts.clean} clean, {card.quality.counts.flattered} flattered
+            (one-offs, tax, buybacks or reserve releases did much of the work) and{" "}
+            {card.quality.counts.understated} understated (one-off charges or a harsh
+            comparison pulled them down).
+          </p>
+          <div className="flex flex-wrap gap-2">
+            {(Object.keys(EARNINGS_QUALITY) as (keyof typeof EARNINGS_QUALITY)[]).map((q) => (
+              <QualityBadge key={q} quality={q} note={`${card.quality.counts[q]}`} compact />
+            ))}
+          </div>
+          <div className="flex flex-col gap-4 rounded-lg border border-zinc-200 bg-white p-4">
+            <QualityList title="Flattered" entries={card.quality.flattered} />
+            <QualityList title="Understated" entries={card.quality.understated} />
+          </div>
+          {card.quality.gaps.length > 0 && (
+            <>
+              <h3 className="text-sm font-semibold text-zinc-700">
+                Largest gaps between GAAP and adjusted EPS
+              </h3>
+              <div className="overflow-x-auto rounded-lg border border-zinc-200 bg-white">
+                <table className="w-full text-sm">
+                  <thead className="bg-zinc-50 text-left text-zinc-600">
+                    <tr>
+                      <th className="px-3 py-2 font-semibold">Company</th>
+                      <th className="px-3 py-2 text-right font-semibold">GAAP EPS</th>
+                      <th className="px-3 py-2 text-right font-semibold">Adjusted EPS</th>
+                      <th className="px-3 py-2 text-right font-semibold">Gap</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {card.quality.gaps.map(({ entry, gapPct }) => (
+                      <tr key={entry.id} className="border-t border-zinc-100">
+                        <td className="px-3 py-2">
+                          <Link href={reportPath(entry)} className="text-blue-700 hover:underline">
+                            {name(entry)}
+                          </Link>{" "}
+                          <span className="text-zinc-500">{cleanCompanyName(entry.company.name)}</span>
+                        </td>
+                        <td className="px-3 py-2 text-right tabular-nums">
+                          {formatPerShare(entry.m.epsDiluted!, entry.m.currency)}
+                        </td>
+                        <td className="px-3 py-2 text-right tabular-nums">
+                          {formatPerShare(entry.m.epsAdjusted!, entry.m.currency)}
+                        </td>
+                        <td className="px-3 py-2 text-right tabular-nums">{formatPct(gapPct)}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              <p className="text-xs text-zinc-500">
+                Gap is GAAP minus adjusted, as a share of adjusted EPS: positive means one-off
+                gains lifted the reported figure, negative means the company&apos;s adjusted
+                figure excludes charges the GAAP figure carries.
+              </p>
+            </>
+          )}
+        </section>
+      )}
 
       <section className="flex flex-col gap-2">
         <h2 className="text-lg font-medium">Sectors at a glance</h2>

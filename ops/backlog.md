@@ -215,6 +215,27 @@ date and commit.
   search. Still to get from Hop: Site Explorer's indexed-page count and
   the "AI Performance (beta)" tab (citations in Copilot/chat) — ask once
   in the 10-26 report, then track both monthly, not weekly.
+- **Identity reset shipped 2026-10-25 evening (Hop: "do both
+  packages"):** site now positions as "what the earnings headlines hide".
+  Shipped in code: finding-style H1 on every report (`reportHeadline()`;
+  new reports write the finding as `title`), story-first report layout
+  (figures/charts/peers moved below the body, TOC collapsed), homepage
+  without the backlog-ordered "Latest reports", `metrics` gained
+  `earningsQuality`/`earningsQualityNote`/`epsAdjusted`/`guidance` with a
+  badge on report + company pages, a "Reported vs underlying" section on
+  scorecards (renders once ≥5 labelled reports exist for the period —
+  expect it on `/scorecards/2026/q3` by 10-28), a "promised vs delivered"
+  table on company pages, an About "How each report is made" section
+  linked from every byline, and (gated on `RESEND_API_KEY`) per-ticker
+  email alerts. **Ops follow-ups:** (1) watch US engaged sessions and
+  time on report pages for two weeks — the first measurable effect of the
+  layout change; (2) once labelled reports exist, link the scorecard's
+  `#quality` section from the homepage season block; (3) backfill
+  `earningsQuality` on hot-list reports needs a metrics-only edit path in
+  `scripts/admin-publish.ts` (`--metrics-only`?) — build it, then the
+  nightly can label ~10 a night from each report's own quality section
+  (no filing read); (4) ask Hop for a Resend account (free tier) and
+  `RESEND_API_KEY` + `CRON_SECRET` check so alerts go live.
 - **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
   is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
   directions wait on the user's answers in that report.

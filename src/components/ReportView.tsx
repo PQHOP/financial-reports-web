@@ -8,7 +8,8 @@ import { ReportCard } from "@/components/ReportCard";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { EDITORIAL_AUTHOR, SITE_NAME, SITE_SAME_AS, SITE_URL, reportByline } from "@/lib/site";
-import { realCoverImage, reportSearchTitle } from "@/lib/reportMeta";
+import { isGenericTitle, realCoverImage, reportHeadline, reportSearchTitle } from "@/lib/reportMeta";
+import { QualityBadge } from "@/components/QualityBadge";
 import { reportPath, reportUrl } from "@/lib/reportPath";
 import { articleKindLabels, articlePath } from "@/lib/articles";
 import { splitAtAGlance, tableOfContents } from "@/lib/markdown";
@@ -270,11 +271,19 @@ export async function ReportView({ report }: { report: FullReport }) {
     : splitAtAGlance(report.contentMd);
   const toc = tableOfContents(bodyMd);
   const companyHref = `/companies/${report.company.slug}`;
+  // The H1 states the finding. Older reports' stored titles are generic, so
+  // theirs comes from the summary's first clause, and the summary itself is
+  // then left out of the header rather than shown twice.
+  const headline = isCommunity ? report.title : reportHeadline(report);
+  const summaryInHeader = isCommunity || !isGenericTitle(report.title);
+  const companyLabel = ticker
+    ? `${cleanCompanyName(report.company.name)} (${ticker})`
+    : cleanCompanyName(report.company.name);
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Article",
-    headline: report.title,
+    headline,
     description: report.summary,
     datePublished: new Date(report.publishedAt).toISOString(),
     dateModified: new Date(report.updatedAt).toISOString(),
@@ -314,8 +323,11 @@ export async function ReportView({ report }: { report: FullReport }) {
             },
           ]}
         />
-        <h1 className="mt-2 text-2xl font-semibold leading-tight">
-          {report.title}
+        <p className="mt-3 text-sm font-medium text-zinc-600">
+          {companyLabel} · {periodName} earnings analysis
+        </p>
+        <h1 className="mt-1 text-2xl font-semibold leading-tight">
+          {headline}
         </h1>
         <p className="mt-2 text-sm text-zinc-500">
           {periodLabels[report.period]} · Fiscal year {report.year} · Published{" "}
@@ -341,14 +353,23 @@ export async function ReportView({ report }: { report: FullReport }) {
               </time>
             </>
           ) : null}{" "}
-          by {reportByline(report)}
+          by{" "}
+          {isCommunity ? (
+            reportByline(report)
+          ) : (
+            <Link href="/about#how-reports-are-made" className="underline">
+              {reportByline(report)}
+            </Link>
+          )}
           {isCommunity ? (
             <span className="ml-2 rounded-full bg-amber-100 px-2 py-0.5 text-xs text-amber-900">
               Community
             </span>
           ) : null}
         </p>
-        <p className="mt-3 text-base text-zinc-700">{report.summary}</p>
+        {summaryInHeader && (
+          <p className="mt-3 text-base text-zinc-700">{report.summary}</p>
+        )}
       </div>
 
       {report.status === "PENDING" && (
@@ -383,17 +404,8 @@ export async function ReportView({ report }: { report: FullReport }) {
         </section>
       )}
 
-      {metrics && <MetricsSnapshot metrics={metrics} />}
-
-      {metrics && <YearOverYearChart metrics={metrics} />}
-
-      {positions.length > 0 && primaryIndustry && (
-        <PeerComparison
-          positions={positions}
-          label={ticker ?? cleanCompanyName(report.company.name)}
-          industry={primaryIndustry}
-          year={report.year}
-        />
+      {metrics?.earningsQuality && (
+        <QualityBadge quality={metrics.earningsQuality} note={metrics.earningsQualityNote} />
       )}
 
       {cover && (
@@ -406,26 +418,43 @@ export async function ReportView({ report }: { report: FullReport }) {
       )}
 
       {toc.length >= MIN_TOC_HEADINGS && (
-        <nav
-          aria-label="In this report"
-          className="rounded-lg border border-zinc-200 bg-white px-5 py-4 text-sm"
-        >
-          <div className="font-medium text-zinc-800">In this report</div>
-          <ul className="mt-2 flex flex-col gap-1 text-zinc-600">
-            {toc.map((item) => (
-              <li key={item.id} className={item.level === 3 ? "pl-4" : ""}>
-                <a href={`#${item.id}`} className="hover:text-zinc-900 hover:underline">
-                  {item.text}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        // Collapsed: the story comes first, the map of it is there for whoever
+        // wants a section (the 2026-10-25 layout change, "story before tools").
+        <details className="rounded-lg border border-zinc-200 bg-white px-5 py-3 text-sm">
+          <summary className="cursor-pointer font-medium text-zinc-800">In this report</summary>
+          <nav aria-label="In this report">
+            <ul className="mt-2 flex flex-col gap-1 text-zinc-600">
+              {toc.map((item) => (
+                <li key={item.id} className={item.level === 3 ? "pl-4" : ""}>
+                  <a href={`#${item.id}`} className="hover:text-zinc-900 hover:underline">
+                    {item.text}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </details>
       )}
 
       <div className="rounded-lg border border-zinc-200 bg-white p-4 sm:p-6">
         <ReportContent markdown={bodyMd} untrusted={isCommunity} />
       </div>
+
+      {metrics && (
+        <section id="figures" className="flex flex-col gap-4 scroll-mt-4">
+          <h2 className="text-lg font-medium">{companyLabel} {periodName} in figures</h2>
+          <MetricsSnapshot metrics={metrics} />
+          <YearOverYearChart metrics={metrics} />
+          {positions.length > 0 && primaryIndustry && (
+            <PeerComparison
+              positions={positions}
+              label={ticker ?? cleanCompanyName(report.company.name)}
+              industry={primaryIndustry}
+              year={report.year}
+            />
+          )}
+        </section>
+      )}
 
       {nextFiling && isLatest && (
         <aside className="rounded-lg border border-blue-200 bg-blue-50 px-4 py-3 text-sm text-blue-950">
