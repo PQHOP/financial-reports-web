@@ -19705,3 +19705,143 @@ conclusion to the fourth through sixth firings, nothing touched in
 22:59 UTC, under an hour from this firing's start, so a further
 same-night firing is unlikely to find anything new; the us-listed
 backlog and hot-list rewrites resume once a new night's cap opens.
+
+### 2026-10-25 night (16:00 UTC 2026-10-25 → 22:59 UTC 2026-10-25 / 01:00–07:59 JST 2026-10-26)
+
+**First firing (16:04 UTC / 01:04 JST).** Network check passed (sec.gov
+403 without UA as expected — SEC's own response, not a proxy block —
+200 with the required UA via `curl`; both financialreportinsights.com
+and the `.vercel.app` alias reachable). `npm install` run fresh (same
+harmless `prisma generate`/`DATABASE_URL` postinstall failure as every
+other night — doesn't block `admin-publish`/`scan-recent-filings`;
+`package-lock.json` churn reverted). Checked out `master` fresh
+(fast-forwarded 14 commits to `9208cd2`). No active claims
+(`scripts/data/claims/` has only `README.md`).
+
+**Special rules in effect from tonight through the "11-19 night" entry
+(the user's 2026-10-25 choices, per CLAUDE.md):** the us-listed
+allotment is **0** (was ~10) and tier 2 multi-year backfill is
+**paused**. Tonight is not yet Big Tech week's raised cap (~50 starts
+"10-26 night") — tonight's cap is the normal ~40.
+
+`npm run scan-recent-filings` found the same 36 fresh candidates as
+every firing of the prior (2026-10-24) night, **all us-listed** (no
+hot-list/S&P 500 hits) — S&P 500 tier 1 is fully done (503/503). Since
+tonight's us-listed allotment is 0, none of these 36 are eligible.
+`next-batch -- --n 60` confirms the same picture: tier 0 all us-listed,
+tier 1 jumps straight to the (paused-for-us-listed) backlog.
+
+Checked `scripts/data/hotlist-rewrite.json`: all 18 `pending` items'
+`nextExpectedFiling` estimates fall within the next 10 days (several
+already past-due without a new filing yet) — per the skip rule, none
+eligible tonight.
+
+**Sunday earnings preview (first firing's first job, per CLAUDE.md):**
+no `PREVIEW` article existed yet for the coming week. Confirmed via
+`scripts/data/earnings-dates.json` that 29 S&P 500/hot-list companies
+report Mon 10-26–Fri 10-30 (Big Tech week: MSFT, GOOGL/GOOG, AMZN,
+plus V, MA, LLY, KO, XOM, ABBV, MRK, NOW, BA, CAT, SPGI, GILD, HOOD,
+COIN, CMG, HLT, MDLZ, MO, INTC, UPS, PYPL, RCL, ORLY, KLAC, CVX, CL —
+all 29 already have a published quarter to anchor on). Dispatched an
+Opus subagent (figures/guidance only from our own already-published
+reports, no new SEC research). Published:
+
+- **earnings-preview-2026-10-26** — "Earnings week ahead: Microsoft,
+  Alphabet and Amazon lead 29 companies reporting Oct 26–30" (~3,400
+  words): a day-by-day calendar table, 14 full write-ups (Big Tech,
+  payments, drugmakers, industrials, tech/consumer) each with last
+  quarter's figures and management's own guidance/outlook, then a
+  15-company short-mention list. Cross-cutting theme: MSFT/GOOGL/AMZN's
+  June-quarter profits were flattered by markups on private stakes
+  (OpenAI/Anthropic, SpaceX), and GOOGL/AMZN capex outran operating
+  cash flow, so the piece tells readers to judge this print on
+  operating income/cash flow rather than headline EPS. Verified live
+  (cache-busted fetch): full body present through the closing section,
+  not truncated. https://financialreportinsights.com/insights/earnings-preview-2026-10-26
+  (counts as **2 report-periods** per CLAUDE.md.)
+
+**Company what-to-watch notes (new track since today, 2026-10-25; cap
+~8/night — used the full allotment this firing):** picked the 8
+hot-list companies reporting in the 2–4 day window (10-27 to 10-29)
+ranked highest by `priority-tickers.json` search-demand order that
+didn't already have a note: MSFT, AMZN, GOOGL, LLY, V, MA, KO, MRK.
+Dispatched 4 Opus subagents (2 companies each, same sourcing rule — our
+own published report only, no consensus). All 8 published and verified
+live (cache-busted fetch, full body, amber card showing on the company
+page):
+
+- **what-to-watch-msft-q1-2027** — Cloud gross margin vs 66%, capex vs
+  Q4's $35.8B and FCF, reported-vs-adjusted EPS gap from OpenAI/
+  Anthropic stake gains. https://financialreportinsights.com/insights/what-to-watch-msft-q1-2027
+- **what-to-watch-amzn-q3-2026** — AWS growth vs 36.8%/underlying
+  margin ~38.1%, North America margin ex the $640M tariff refund
+  (~7.3% underlying), capex vs operating cash flow/debt/receivables.
+  https://financialreportinsights.com/insights/what-to-watch-amzn-q3-2026
+- **what-to-watch-googl-q3-2026** — Cloud margin (35.6%) now carrying
+  Wiz/TPU sales, capex vs operating cash flow (Q2: $44.9B vs $39.1B)
+  plus the $5.2B EU fine, Search paid-clicks growth vs Q2's +13%.
+  https://financialreportinsights.com/insights/what-to-watch-googl-q3-2026
+- **what-to-watch-lly-q3-2026** — Q3 revenue vs the $21.1–22.1B/quarter
+  implied by FY guidance, US price (-3% in Q2) as discounted obesity
+  volume starts, deal/acquisition charges the EPS guide excludes.
+  https://financialreportinsights.com/insights/what-to-watch-lly-q3-2026
+- **what-to-watch-v-q4-2026** — whether the margin recovery (59.1% vs
+  60.7%) is durable once one-offs roll off, client incentives (28.7%
+  of gross revenue), international transaction revenue (+6%) vs
+  cross-border volume (+14%). https://financialreportinsights.com/insights/what-to-watch-v-q4-2026
+- **what-to-watch-ma-q3-2026** — cross-border volume growth (12%, down
+  from 15%), rebate ratio (52.4%, up from 49.9%), currency's share of
+  growth. https://financialreportinsights.com/insights/what-to-watch-ma-q3-2026
+- **what-to-watch-ko-q3-2026** — Asia Pacific volume/price-mix split,
+  EMEA margin (42.4% vs 44.1%) as World Cup marketing fades, currency's
+  share of EPS growth. https://financialreportinsights.com/insights/what-to-watch-ko-q3-2026
+- **what-to-watch-mrk-q3-2026** — first full quarter of Januvia/Bridion
+  generic competition ($926M of Q2 sales), new-drug offset (Winrevair/
+  Welireg/Capvaxive/Ohtuvayre, ~$1.25B in Q2) vs FY guidance, adjusted
+  gross margin vs the ~81% guide. https://financialreportinsights.com/insights/what-to-watch-mrk-q3-2026
+
+(Each counts as **1 report-period** per CLAUDE.md — **8 report-periods**
+from this track tonight.)
+
+**Comparisons (cap 2/night):** scanned Q3-2026-reported companies
+(via `/scorecards/2026/q3`) for same-business pairs with no existing
+comparison. Found two tight matches and dispatched one Opus subagent
+each (figures only from the two published reports, no new research):
+
+- **hal-vs-slb-q3-2026** — "Halliburton vs SLB Q3 2026: Same 2% Growth,
+  Opposite North America Stories." Both companies grew ~2% like for
+  like, but HAL's North America fell 8.6% (less fracking) while SLB's
+  rose 13% ex-ChampionX (chemicals, artificial lift, data centers);
+  international reversed the other way. HAL's EPS headline (+2,400%
+  GAAP) is flattered by a lower tax rate and buybacks (adjusted pretax
+  profit actually -2%); SLB's GAAP EPS is held down by a $187M pension
+  charge, its -7% adjusted EPS the honest read. Both paid out more than
+  free cash flow YTD; SLB's net debt rose $7.42B→$9.25B before Kelvion.
+  Verified live (cache-busted fetch): full body, not truncated.
+  https://financialreportinsights.com/insights/hal-vs-slb-q3-2026
+- **hon-vs-mmm-q3-2026** — "Honeywell vs 3M Q3 2026: Both Sales Rose
+  ~1%, but Organic Growth Was 7% vs 3.3%." Both reported ~1% headline
+  sales growth masking very different underlying stories (divestiture
+  drag at both). Honeywell's margin gain is mostly a one-off ~$140M
+  lower corporate overhead; 3M's comes from its own segment results.
+  Honeywell's GAAP EPS -20% (prior-year one-time gain); 3M's GAAP EPS
+  +70% (a $281M Solventum stake gain) — adjusted EPS is the fair number
+  for both (Honeywell +34%, 3M +12%, ~3pts of the latter from
+  buybacks). Both raised EPS guidance; only Honeywell raised organic-
+  growth guidance. Verified live (cache-busted fetch): full body, not
+  truncated. https://financialreportinsights.com/insights/hon-vs-mmm-q3-2026
+
+(Comparisons aren't counted in the report-period total per convention.)
+
+**Tonight's running total: 10 report-periods** (2 for the earnings
+preview + 8 what-to-watch notes), **2/2 comparisons used, us-listed
+0/0 (paused), tier 2 backlog paused.** Nothing touched in
+`report-tracker.json` this firing (no fresh-filing/tier-1 research was
+done — everything published tonight was editorial content built from
+already-published figures). All of tonight's discretionary tracks are
+now exhausted: Sunday preview done, hot-list rewrites all deferred,
+comparisons 2/2, what-to-watch 8/8, S&P 500 tier 1 fully done, and both
+us-listed and tier 2 are paused through "11-19 night". A later firing
+tonight should re-run `scan-recent-filings` fresh (a new hot-list/S&P
+500 filing would still be fair game) but otherwise has nothing left to
+do under tonight's paused tiers.
