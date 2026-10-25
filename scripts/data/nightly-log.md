@@ -19845,3 +19845,16 @@ us-listed and tier 2 are paused through "11-19 night". A later firing
 tonight should re-run `scan-recent-filings` fresh (a new hot-list/S&P
 500 filing would still be fair game) but otherwise has nothing left to
 do under tonight's paused tiers.
+
+**Second firing (17:04 UTC / 02:04 JST).** Network check passed (sec.gov
+200 with the required UA). `git fetch`/`log` confirm `master` already
+at `bff77d6` (first firing's commit) with no other firing's commits in
+between. `scan-recent-filings` re-run fresh: same 36 candidates as the
+first firing, still all `us-listed` (no new hot-list/S&P 500 filing).
+`next-batch -- --n 60` confirms the same picture: tier 0 all us-listed,
+tier 1 straight into the (paused) us-listed backlog. No active claims.
+Nothing eligible under tonight's paused us-listed/tier-2 tiers and
+every discretionary track (preview, rewrites, comparisons, what-to-watch)
+already used or deferred by the first firing. **Tonight's running total
+unchanged at 10 report-periods.** Nothing touched in `report-tracker.json`
+this firing.
