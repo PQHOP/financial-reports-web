@@ -234,8 +234,18 @@ date and commit.
   `earningsQuality` on hot-list reports needs a metrics-only edit path in
   `scripts/admin-publish.ts` (`--metrics-only`?) — build it, then the
   nightly can label ~10 a night from each report's own quality section
-  (no filing read); (4) ask Hop for a Resend account (free tier) and
-  `RESEND_API_KEY` + `CRON_SECRET` check so alerts go live.
+  (no filing read); (4) **alerts are live since 2026-10-25 evening:**
+  Hop created the Resend account, added the domain's DNS records
+  (`resend._domainkey` TXT, `send.` MX/TXT resolve) and a send-only
+  `RESEND_API_KEY` (production env, set with `vercel env add`); the form
+  renders on company and report pages and `/api/alerts` answers. Not yet
+  verified end to end (no real signup sent). Next: Hop signs up for one
+  ticker with his own address and reports whether the confirmation
+  arrives; if Resend returns 403 the domain is still "pending" in the
+  Resend dashboard. Then watch the Resend dashboard for the daily count
+  (free tier 100/day) and report confirmed subscribers weekly from the
+  `Subscription` table (needs a small admin view or a `site-metrics`
+  count — add one).
 - **Next weekly deeper review: Monday 2026-10-26 (JST).** The 10-19 one
   is in `ops/reports/2026-10-19.md` ("Đánh giá & hướng đi"); its ranked
   directions wait on the user's answers in that report.
