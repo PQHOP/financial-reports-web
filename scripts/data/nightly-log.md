@@ -19872,3 +19872,17 @@ all within the 10-day skip window. Comparisons already 2/2 for tonight,
 what-to-watch 8/8, preview already published. Nothing eligible under
 any track. **Tonight's running total unchanged at 10 report-periods.**
 Nothing touched in `report-tracker.json` this firing.
+
+**Fourth firing (19:04 UTC / 04:04 JST).** Network check passed (sec.gov
+403 without UA, 200 with the required UA). `git fetch` showed `master`
+already at `c091dc0` (third firing's commit); `git checkout --
+package-lock.json` reverted `npm install` churn, nothing else to pull/
+rebase. No active claims. `scan-recent-filings` re-run fresh: same 36
+candidates, still all `us-listed` (no new hot-list/S&P 500 filing).
+`next-batch -- --n 60` confirms: tier 0 all us-listed, tier 1 straight
+into the paused us-listed backlog. `hotlist-rewrite.json` still 18
+`pending`. Comparisons 2/2, what-to-watch 8/8, preview already
+published — every discretionary track already used or deferred by the
+first firing. Nothing eligible under any track. **Tonight's running
+total unchanged at 10 report-periods.** Nothing touched in
+`report-tracker.json` this firing.
