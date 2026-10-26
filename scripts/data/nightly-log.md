@@ -20116,15 +20116,47 @@ comparison for tonight's 2/night cap.
   was invented for it). Live page checked (200, Takeaway present, not
   truncated).
 
+Checked tier 1: **S&P 500 is confirmed 503/503 `done`/`skipped`** (501
+done, 2 skipped) — no S&P 500 tier 1 work remains at all, only the
+paused `us-listed` backlog is left in that tier. Found one more
+genuine upcoming-new-period hot-list candidate inside the 2–4 day
+what-to-watch window that EL's rejection left room for: **CL**
+(Colgate-Palmolive, last published Q2 2026, Q3 2026 confirmed for
+2026-10-30 per `scripts/data/earnings-dates.json`, 4 days out).
+Dispatched a what-to-watch subagent for it — published:
+https://financialreportinsights.com/insights/what-to-watch-cl-q3-2026
+(last quarter's figures — revenue $5,361M +4.9%, organic +2.4%, GAAP
+EPS -5.5% vs. Base Business EPS +8% with the $129M restructuring
+charge explaining the gap — 2026 guidance quoted from our Q2 report,
+and three things to watch: North American volume after a 3.9% Q2
+drop, whether cost savings keep funding higher advertising, and
+organic growth's volume/price mix against the 1–4% guided range).
+Live page and company-page card checked. This is the 8th what-to-watch
+note tonight, at the ~8/night cap.
+
 **Tonight's running total after second firing: 1 report-period (VZ) +
-7 what-to-watch notes (AAPL, COIN, KLAC, HOOD, F, CMG, MO) + 2
-comparisons (AXP vs. COF, T vs. VZ) = 10 report-periods.** Comparisons
-now at cap (2/2) for tonight. What-to-watch notes at 7/~8 (SO prepared
-but held, EL correctly declined for date reasons — both queued for
-later in the week). `report-tracker.json` also updated for EL
-(`lastChecked` 2026-10-26). Hot-list rewrites still 0/10 (unchanged).
-us-listed 0, tier 2 backfill 0 (both paused through "11-19 night").
-Well under the ~50 Big Tech week cap (~40 extra tier-0 room unused
-since tonight's tier 0 is all paused us-listed). Moving on to check
-S&P 500 tier 1 (2026 coverage) for this firing's ~8-report-period
-allotment.
+8 what-to-watch notes (AAPL, COIN, KLAC, HOOD, F, CMG, MO, CL) + 2
+comparisons (AXP vs. COF, T vs. VZ) = 11 report-periods.** Both the
+what-to-watch cap (~8/night) and the comparison cap (2/night) are now
+reached for tonight. SO and EL were correctly declined for date
+reasons (10 and 7 days out respectively) and are queued for later in
+the week once inside the 2–4 day window. `report-tracker.json` also
+updated for CL (`lastChecked` 2026-10-26). Hot-list rewrites still
+0/10 (all 18 pending items remain inside the 10-day skip window — NOW/
+INTC/TMUS/MDLZ/AZO's `nextExpectedFiling` estimates have technically
+passed, but that's a stale-estimate issue, not a missed filing:
+`scan-recent-filings`'s EDGAR-sourced live check found nothing new for
+any hot-list company tonight, so their actual Q3 earnings genuinely
+haven't been filed yet — a Phase 2 freshness sweep, once triggered,
+should tighten these estimates). us-listed 0, tier 2 backfill 0 (both
+paused through "11-19 night"). With S&P 500 tier 1 complete, tier 0
+exhausted (only paused `us-listed` filings left), rewrites blocked by
+the skip window, and both the what-to-watch and comparison caps hit,
+there is no more in-scope work this firing under the current priority
+rules — well under the ~50 Big Tech week cap, but the cap was never
+the limiting factor tonight. This firing ends here; a later firing
+should re-run `scan-recent-filings` for after-hours filings and
+re-check whether any hot-list `nextExpectedFiling` has moved into the
+2–4 day what-to-watch window (MU/PYPL/BA/HOOD/SPGI/RCL/HLT are all
+~1 day out already and may need notes very soon, if indeed their
+results haven't already been covered by tier 0 by then).
