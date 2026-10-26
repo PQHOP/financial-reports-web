@@ -20355,3 +20355,30 @@ for a follow-up `--edit` once its 10-Q lands (~10-28) to add revenue.
 A later firing should re-check NUE (10-Q expected ~11-10, same period)
 and WELL/PFG (10-Qs expected imminently, same period) and update
 `lastFilingSeen` only when those land, not publish new reports.
+
+Marked AZO's `hotlist-rewrite.json` item `done` (`rewrittenAt:
+2026-10-26`): the materiality-check edit above independently brought
+that exact report into the current format, so the scheduled hot-list
+rewrite for AZO is already satisfied — a later firing doing hot-list
+rewrites would otherwise redo it for nothing.
+
+Re-ran `scan-recent-filings` fresh (~12 min after the first check,
+still within the sixth firing): 63 candidates, one more hot-list/S&P
+500 item had landed — **BRO** (Brown & Brown, 10-Q, [update], new
+period since last report was Q2) — rest (62) all `us-listed` (paused).
+Claimed, researched and published: **BRO Q3 2026** —
+https://financialreportinsights.com/companies/bro/2026/q3 ("Brown &
+Brown Q3 2026: revenue up 7.4% on acquisitions, organic growth just
+1.2%, EPS dips to $0.67" — $156M of the revenue increase was
+acquisitions (mostly Accession), diluted EPS fell 1.5% against a
+year-ago quarter that had ~$29M of one-off interest income plus a
+smaller earn-out charge; verdict: understated). Sanity-checked (HTTP
+200, "At a glance"/"Takeaway" present, not truncated) before updating
+the tracker. Claim released.
+
+**1 more report-period — running total 19 → 20 tonight.** Still well
+under the ~50 cap. This closes out the sixth firing: committing and
+pushing the tracker/log/hotlist-rewrite updates now. A later firing
+should re-run `scan-recent-filings` fresh for the remainder of the
+window (closes 07:59 JST) — more S&P 500 companies may still report
+today.
