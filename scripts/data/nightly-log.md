@@ -19947,3 +19947,108 @@ discretionary track already used or deferred by the first firing.
 Nothing eligible under any track, and the window closes in under an
 hour. **Tonight's running total unchanged at 10 report-periods.**
 Nothing touched in `report-tracker.json` this firing.
+
+### 2026-10-26 night (16:00 UTC 2026-10-26 → 22:59 UTC 2026-10-26 / 01:00–07:59 JST 2026-10-27)
+
+**Big Tech week raise in effect for this entry through "10-30 night"
+(the user's 2026-10-23 choice, extended 2026-10-25): ~50 report-periods
+tonight, with the extra ~10 reserved for tier 0 (hot list/S&P 500)
+only.** us-listed allotment stays **0** (10-25 night through 11-19
+night) and tier 2 backfill stays paused over the same span.
+
+**First firing (16:06 UTC / 01:06 JST).** Network check passed
+(sec.gov 403 without UA as expected — SEC's own response, not a proxy
+block — 200 with the required UA via `curl`; both
+financialreportinsights.com and the `.vercel.app` alias reachable).
+`npm install` hit the same harmless `prisma generate`/`DATABASE_URL`
+postinstall failure as every other firing (doesn't block
+`admin-publish`/`scan-recent-filings`). HEAD was detached on the
+previous firing's commit; checked out `master` and fast-forwarded to
+`a698939` (today's ops-routine work — alerts, red flags, buybacks,
+menu trim, sitemap/X-post-length rules — unrelated to this routine).
+No active claims (`scripts/data/claims/` has only `README.md`).
+
+`scan-recent-filings` (tier 0): 40 candidates. Only one hot-list/S&P
+500 item — **VZ** (8-K Item 2.02, filed 2026-10-26, `kind: "update"`,
+new period since the tracker's `latestReport` was Q2) — the rest are
+all `us-listed` (paused). Claimed VZ, researched and published it from
+the Exhibit 99.1 earnings release (full 10-Q not yet filed, noted in
+the body): **Verizon Q3 2026** —
+https://financialreportinsights.com/companies/vz/2026/q3 ("Verizon Q3
+2026: 406,000 phone adds and EPS up 6.8%, but revenue per account fell
+1.9%" — best Q3 phone net adds in 5 years and raised FY guidance, but
+ARPA fell 1.9% and fixed-wireless adds dropped 39%; verdict: clean).
+Live page checked post-publish (At a glance + Takeaway present, body
+not truncated). Released the VZ claim and updated its tracker entry
+(`latestReport` → Q3, `lastFilingSeen` → the 8-K, `nextExpectedFiling`
+→ the full 10-Q est. 2026-10-30, same pattern as BAC/WFC/GS/TMO/NEE).
+`next-batch -- --n 10` confirmed nothing else outside the paused
+us-listed backlog.
+
+Hot-list rewrite queue: still 18 `pending`, all with
+`nextExpectedFiling` inside the 10-day skip window (10-22 through
+10-30) — none rewritten tonight, as expected.
+
+Comparisons (cap 2/night): checked `/insights` for existing
+same-industry pairs against this week's freshly-reported names; found
+no clear uncovered pair in the few minutes available (BAC/WFC,
+GS/MS, KO/PEP, HD/LOW, V/MA, HON/MMM, CSX/NSC, HAL/SLB, MAR/HLT and
+several others already exist). 0/2 done — left for a later firing.
+
+Company what-to-watch notes (cap ~8/night, earnings-season priority
+given Big Tech week): checked all hot-list companies with
+`nextExpectedFiling` 2026-10-28 to 2026-10-30 (2-4 days out) that
+already have a published report. Of the top 8 by hot-list rank
+(AAPL, COIN, KLAC, HOOD, F, CMG, MO, SO), live-page-checked each:
+MSFT/AMZN/GOOGL/MA/KO already have company-specific notes from an
+earlier session; AAPL/COIN/KLAC/HOOD/F/CMG did not (only the generic
+weekly-preview card, or nothing). Dispatched 6 Opus research subagents
+in this firing for AAPL (FY2026 annual), COIN (Q3 2026), KLAC (fiscal
+Q1 FY2027), HOOD (Q3 2026), F (Q3 2026) and CMG (Q3 2026) — running in
+background; MO and SO left for a later firing. Results (publish or
+incomplete) will be recorded as they land, in this same entry.
+
+All 6 what-to-watch subagents finished and were published, each
+sanity-checked live on its company page:
+
+- **AAPL** — https://financialreportinsights.com/insights/what-to-watch-aapl-annual-2026
+  (FY2026 Q4/annual; confirmed date Mon 2026-11-02 per Apple's own IR
+  notice via MacTrast — 7 days out, later than our 10-30 estimate, but
+  published anyway given the research was already done and Big Tech
+  week's demand; tracker's `nextExpectedFiling` corrected to 11-02,
+  `confirmed`).
+- **COIN** — https://financialreportinsights.com/insights/what-to-watch-coin-q3-2026
+  (Q3 2026; confirmed Thu 2026-10-29 per Coinbase's own Business Wire
+  release — matched our estimate; tracker marked `confirmed`).
+- **KLAC** — https://financialreportinsights.com/insights/what-to-watch-klac-q1-2027
+  (fiscal Q1 FY2027; confirmed Wed 2026-10-28 per KLA's own IR release —
+  a day earlier than our 10-29 estimate; tracker corrected to 10-28,
+  `confirmed`; guidance table sourced from KLA's own July 2026 earnings
+  release since our FY2026 annual report had no quarterly outlook).
+- **HOOD** — https://financialreportinsights.com/insights/what-to-watch-hood-q3-2026
+  (Q3 2026; confirmed Tue 2026-10-27 per Robinhood's own IR/GlobeNewswire
+  release — 1 day out, not 2-4 as assumed when dispatched, so this one
+  needed to land tonight; tracker corrected to 10-27, `confirmed`).
+- **F** — https://financialreportinsights.com/insights/what-to-watch-f-q3-2026
+  (Q3 2026; no confirmed date found on Ford's newsroom/IR or in
+  `scripts/data/earnings-dates.json` — note says "date not yet
+  confirmed" and gives our ~10-28 estimate for reference; tracker
+  unchanged, stays `estimated`).
+- **CMG** — https://financialreportinsights.com/insights/what-to-watch-cmg-q3-2026
+  (Q3 2026; confirmed Wed 2026-10-28 per Chipotle's own newsroom release
+  — 2 days earlier than our 10-30 estimate; tracker corrected to 10-28,
+  `confirmed`).
+
+MO and SO (also in the top-8 what-to-watch candidates) were not
+dispatched this firing — left for a later firing tonight if budget
+allows.
+
+**Tonight's running total: 1 report-period (VZ) + 6 what-to-watch
+notes = 7 report-periods.** `report-tracker.json` updated for VZ,
+AAPL, COIN, KLAC, HOOD, CMG (all `lastChecked` 2026-10-26). Comparisons
+0/2 (none dispatched this firing, no clear uncovered pair found in the
+time available). Hot-list rewrites 0/10 (all 18 pending items still
+inside the 10-day skip window). us-listed 0 (paused through "11-19
+night"). Tier 2 backfill 0 (paused through "11-19 night"). `git commit`
++ `push` of `report-tracker.json` and `nightly-log.md` to follow this
+entry.

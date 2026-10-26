@@ -785,11 +785,11 @@
     },
     "nextExpectedFiling": {
       "type": "10-K (FY2026 Annual)",
-      "estimate": "2026-10-30",
-      "basis": "Apple's fiscal year ends late September; prior FY10-Ks have filed late Oct/early Nov",
-      "confidence": "estimated"
+      "estimate": "2026-11-02",
+      "basis": "Apple's own IR announcement, reprinted by MacTrast: results after close Mon 2026-11-02, call 2pm PT/5pm ET",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-13"
+    "lastChecked": "2026-10-26"
   },
   "ABAT": {
     "name": "American Battery Technology Company",
@@ -4542,22 +4542,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubimcf0000004l9qh092k6n"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/reports/cmvpghgie000008jrgfw5sz2a"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-30",
-      "basis": "~90-day cadence from Q2 filing (filed 2026-07-31)",
+      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-26"
   },
   "UBER": {
     "name": "Uber Technologies, Inc.",
@@ -4620,10 +4620,10 @@
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-29",
-      "basis": "~91-day cadence from Q2 filing (filed 2026-07-30)",
-      "confidence": "estimated"
+      "basis": "Coinbase's own 2026-10-14 Business Wire release: results after close Thu 2026-10-29, X Q&A 2pm PT",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-26"
   },
   "INTC": {
     "name": "Intel Corporation",
@@ -5056,11 +5056,11 @@
     },
     "nextExpectedFiling": {
       "type": "10-Q (fiscal Q1 FY2027)",
-      "estimate": "2026-10-29",
-      "basis": "prior-year cadence: FY2026 Q1 10-Q filed 2025-10-30 after FY2025 10-K filed 2025-08-08",
-      "confidence": "estimated"
+      "estimate": "2026-10-28",
+      "basis": "KLA's own IR announcement 2026-10-01 (press release 522): results after close Wed 2026-10-28, webcast 2pm PT",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-26"
   },
   "TXN": {
     "name": "Texas Instruments Incorporated",
@@ -5114,11 +5114,11 @@
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-30",
-      "confidence": "estimated"
+      "estimate": "2026-10-27",
+      "basis": "Robinhood's own IR/GlobeNewswire release: results after close Tue 2026-10-27, call 5pm ET",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-26"
   },
   "F": {
     "name": "Ford Motor Company",
@@ -5224,11 +5224,11 @@
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-30",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-31",
-      "confidence": "estimated"
+      "estimate": "2026-10-28",
+      "basis": "Chipotle's own newsroom release 2026-09-01: results ~4:10pm ET Wed 2026-10-28, call 4:30pm ET",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-26"
   },
   "LW": {
     "name": "Lamb Weston Holdings, Inc.",
