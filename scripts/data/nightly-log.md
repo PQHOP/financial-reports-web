@@ -20195,3 +20195,33 @@ firing. A later firing should re-run `scan-recent-filings` fresh and
 re-check whether MU/PYPL/BA/SPGI/RCL/HLT report before the window
 closes (07:59 JST) — if so, they become ordinary tier-0 updates once
 filed, not what-to-watch notes.
+
+**Fourth firing (19:04 UTC / 04:04 JST).** Network check passed (same
+pattern as every other firing: sec.gov 403 without UA, 200 with it;
+site and `.vercel.app` alias both reachable). `npm install` hit the
+same harmless postinstall failure. `git status` showed only the
+incidental `package-lock.json` diff from `npm install`; reverted it.
+`git pull --rebase` confirmed `master` already at `0dd7a18` (third
+firing's commit), nothing new from another firing. No active claims.
+
+`scan-recent-filings` re-run fresh: 40 candidates, still all
+`us-listed` (paused, allotment 0) — no new hot-list/S&P 500 filing
+since the third firing's check. `next-batch -- --n 10` confirms the
+same ordering. Re-verified from the tracker directly: S&P 500 tier 1
+is 501 done + 2 skipped = 503/503, confirmed complete. Re-checked all
+18 `hotlist-rewrite.json` pending items' `nextExpectedFiling` against
+today's date (2026-10-27 JST) — every one is still inside the 10-day
+skip window (MU/PYPL/BA/HOOD/SPGI/RCL/HLT are now 0 days out, i.e.
+reporting today, which is also too close for a what-to-watch note even
+ignoring the cap). What-to-watch (8/8) and comparisons (2/2) are both
+already at tonight's cap from the second firing. Sunday preview already
+published this week; us-listed and tier 2 backfill remain paused.
+
+**Nothing eligible under any track — tonight's running total unchanged
+at 11 report-periods** (1 report-period VZ + 8 what-to-watch notes + 2
+comparisons), well under the ~50 Big Tech week cap but genuinely
+out of in-scope work, not cap-limited. No tracker changes this firing;
+only this log entry needs committing. A later firing should re-run
+`scan-recent-filings` once MU/PYPL/BA/HOOD/SPGI/RCL/HLT's results
+actually land — they report today and should surface as ordinary tier-0
+updates as soon as EDGAR shows the filing.
