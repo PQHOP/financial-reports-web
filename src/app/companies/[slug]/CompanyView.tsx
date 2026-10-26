@@ -25,6 +25,7 @@ import { cleanCompanyName } from "@/lib/companyName";
 import { PeriodTrendChart } from "@/components/ReportCharts";
 import { QualityBadge } from "@/components/QualityBadge";
 import { AlertSignup } from "@/components/AlertSignup";
+import { companyLead } from "@/lib/companyLead";
 
 const DESCRIPTION_MAX = 155;
 // A "what to watch" note (kind PREVIEW, tagged with the ticker) stays on the
@@ -144,6 +145,13 @@ export async function CompanyView({
   const latest = system[0];
   const latestMetrics = latest ? readMetrics(latest.metrics) : null;
   const latestTakeaway = latest ? takeaway(latest.contentMd) : null;
+  // Two plain sentences for the search snippet, from stored figures only.
+  const lead = companyLead({
+    name: cleanCompanyName(company.name),
+    latest: latest ? { year: latest.year, period: latest.period } : undefined,
+    metrics: latestMetrics,
+    next,
+  });
   const history = system
     .map((r) => ({ report: r, metrics: readMetrics(r.metrics) }))
     .filter((row) => row.metrics);
@@ -214,6 +222,9 @@ export async function CompanyView({
               </span>
             ))}
         </p>
+        {source === "system" && lead && (
+          <p className="mt-3 max-w-3xl text-base text-zinc-800">{lead}</p>
+        )}
       </div>
 
       {source === "system" && (latest || next) && (

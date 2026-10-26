@@ -148,7 +148,7 @@ async function indexSample() {
           siteUrl: GSC_SITE,
         });
         const r = data.inspectionResult?.indexStatusResult ?? {};
-        return { path, verdict: r.verdict, coverageState: r.coverageState, lastCrawlTime: r.lastCrawlTime ?? null };
+        return { path, verdict: r.verdict, coverageState: r.coverageState, lastCrawlTime: r.lastCrawlTime ?? null, googleCanonical: r.googleCanonical ?? null, userCanonical: r.userCanonical ?? null };
       } catch (e) {
         return { path, error: e instanceof Error ? e.message : String(e) };
       }
