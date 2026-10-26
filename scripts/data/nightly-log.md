@@ -20057,17 +20057,24 @@ remaining top-8 candidates) plus 1 comparison subagent:
   finished draft is in this session's scratchpad only (not committed);
   a later firing around 11-01 to 11-03 should redo this note when SO is
   properly inside the window.
-- **Comparison (1/2 for tonight):** dispatched AXP vs. COF (American
-  Express vs. Capital One, both Q3 2026, no existing comparison on
-  `/insights`) — result pending as of this log entry; will be recorded
-  once it lands.
+- **Comparison (1/2 for tonight):** AXP vs. COF (American Express vs.
+  Capital One) published —
+  https://financialreportinsights.com/insights/axp-vs-cof-q3-2026
+  ("American Express vs. Capital One Q3 2026: Amex grew faster,
+  Capital One earned more from it" — Amex revenue +8.9% but adjusted
+  pre-provision profit −5%; Capital One revenue +6.4% but pre-provision
+  profit +3.8% and US card charge-offs down 0.65pts; both EPS gains
+  leaned on lower tax rates and buybacks rather than operations).
+  Live page checked (Takeaway present, not truncated).
 
 **Tonight's running total: 1 report-period (VZ) + 7 what-to-watch
-notes published (AAPL, COIN, KLAC, HOOD, F, CMG, MO) = 8 report-periods,
-plus 1 comparison pending.** `report-tracker.json` updated for VZ,
-AAPL, COIN, KLAC, HOOD, CMG, MO, SO (all `lastChecked` 2026-10-26; SO's
-date corrected even though its note wasn't published). Hot-list
-rewrites 0/10 (all 18 pending items still inside the 10-day skip
-window). us-listed 0 (paused through "11-19 night"). Tier 2 backfill 0
-(paused through "11-19 night"). `git commit` + `push` of
-`report-tracker.json` and `nightly-log.md` to follow.
+notes published (AAPL, COIN, KLAC, HOOD, F, CMG, MO) + 1 comparison
+(AXP vs. COF) = 9 report-periods.** `report-tracker.json` updated for
+VZ, AAPL, COIN, KLAC, HOOD, CMG, MO, SO (all `lastChecked` 2026-10-26;
+SO's date corrected to the confirmed 11-05 even though its note wasn't
+published — held for a firing closer to that date). Hot-list rewrites
+0/10 (all 18 pending items still inside the 10-day skip window).
+us-listed 0 (paused through "11-19 night"). Tier 2 backfill 0 (paused
+through "11-19 night"). This firing is ending here; later firings
+tonight should re-run `scan-recent-filings` for any after-hours Big
+Tech/S&P 500 filings that land later in the 16:00-22:59 UTC window.
