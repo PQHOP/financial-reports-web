@@ -20160,3 +20160,38 @@ re-check whether any hot-list `nextExpectedFiling` has moved into the
 2–4 day what-to-watch window (MU/PYPL/BA/HOOD/SPGI/RCL/HLT are all
 ~1 day out already and may need notes very soon, if indeed their
 results haven't already been covered by tier 0 by then).
+
+**Third firing (18:04 UTC / 03:04 JST).** Network check passed (sec.gov
+403 without UA as expected — SEC's own response, not a proxy block —
+200 with the required UA via `curl`; both financialreportinsights.com
+and the `.vercel.app` alias reachable). `npm install` hit the same
+harmless `prisma generate`/`DATABASE_URL` postinstall failure as every
+other firing (doesn't block `admin-publish`/`scan-recent-filings`).
+HEAD was detached on the second firing's commit; checked out `master`
+and reverted the incidental `package-lock.json` diff from `npm
+install`. `git fetch` confirmed `master` already at `784a5fe` (second
+firing's commit), no other firing's commits in between. No active
+claims (`scripts/data/claims/` has only `README.md`).
+
+`scan-recent-filings` re-run fresh: 39 candidates, still all
+`us-listed` (no new hot-list/S&P 500 filing in the ~1 hour since the
+last check) — us-listed allotment is 0 through "11-19 night", so none
+eligible. `next-batch -- --n 10` confirms the same: tier 0 straight
+into the paused us-listed candidates, S&P 500 tier 1 fully done
+(503/503). Re-checked `hotlist-rewrite.json`: still 18 `pending`, and
+re-verified each one's `nextExpectedFiling.estimate` against today's
+date — all 18 (including SO at exactly 10 days out) remain inside the
+10-day skip window, so none eligible for rewrite tonight either.
+Comparisons already 2/2 and what-to-watch already 8/8 for tonight
+(both set by the second firing) — re-checked MU/PYPL/BA/SPGI/RCL/HLT
+(all ~1 day from reporting per the tracker) but the what-to-watch cap
+leaves no room, and none of them filed anything new tonight per the
+scan above, so there's no tier-0 report to publish for them either.
+Sunday preview already published earlier this week; tier 2 backfill
+paused. Nothing eligible under any track. **Tonight's running total
+unchanged at 11 report-periods** (1 report-period VZ + 8 what-to-watch
+notes + 2 comparisons). Nothing touched in `report-tracker.json` this
+firing. A later firing should re-run `scan-recent-filings` fresh and
+re-check whether MU/PYPL/BA/SPGI/RCL/HLT report before the window
+closes (07:59 JST) — if so, they become ordinary tier-0 updates once
+filed, not what-to-watch notes.
