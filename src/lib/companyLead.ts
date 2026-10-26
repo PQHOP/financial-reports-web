@@ -26,6 +26,11 @@ function periodPhrase(r: { year: number; period: ReportPeriod }): string {
   }
 }
 
+// "Goldman Sachs'" rather than "Goldman Sachs's".
+function possessive(name: string): string {
+  return /s$/i.test(name) ? `${name}'` : `${name}'s`;
+}
+
 function moved(pct: number | undefined, verb = "was"): string {
   if (pct === undefined) return verb;
   if (pct > 0) return `rose ${formatPct(pct, false)} to`;
@@ -74,7 +79,7 @@ function lastPeriodSentence(
     parts.length === 1
       ? parts[0]
       : `${parts.slice(0, -1).join(", ")} and ${parts[parts.length - 1]}`;
-  return `In ${periodPhrase(latest)}, ${name}'s ${body}.`;
+  return `In ${periodPhrase(latest)}, ${possessive(name)} ${body}.`;
 }
 
 function nextSentence(
@@ -91,11 +96,11 @@ function nextSentence(
       nextExpectedFiling: next,
     });
   if (followUp) {
-    return `${name}'s full ${periodPhrase(latest)} filing is expected around ${date}; our analysis below is from the earnings release.`;
+    return `${possessive(name)} full ${periodPhrase(latest)} filing is expected around ${date}; our analysis below is from the earnings release.`;
   }
   return next.confidence === "confirmed"
     ? `${name} reports its next results on ${date} (company-confirmed date).`
-    : `${name}'s next results are expected around ${date}, estimated from past filing dates.`;
+    : `${possessive(name)} next results are expected around ${date}, estimated from past filing dates.`;
 }
 
 export function companyLead(input: {
