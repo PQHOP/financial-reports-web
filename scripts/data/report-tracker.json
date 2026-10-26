@@ -4048,10 +4048,10 @@
       "filedAt": "2026-07-23"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-23; NOW typically reports Q3 in mid-to-late October",
-      "confidence": "estimated"
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "ServiceNow press release: results announced Oct 28 2026 after close",
+      "confidence": "confirmed"
     },
     "lastChecked": "2026-09-22"
   },
@@ -4640,10 +4640,10 @@
       "filedAt": "2026-07-24"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-23",
-      "basis": "~91-day cadence from Q2 filing (filed 2026-07-24)",
-      "confidence": "estimated"
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Intel press release (Oct 6 2026): results Oct 29 2026 after close",
+      "confidence": "confirmed"
     },
     "lastChecked": "2026-09-21"
   },
@@ -5471,10 +5471,10 @@
       "filedAt": "2026-07-23"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-23; prior-year Q3 10-Q filed 2025-10-23",
-      "confidence": "estimated"
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-28",
+      "basis": "T-Mobile Business Wire release: earnings call Oct 28 2026 4:30pm ET",
+      "confidence": "confirmed"
     },
     "lastChecked": "2026-09-22"
   },
@@ -5537,10 +5537,10 @@
       "filedAt": "2026-07-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-26",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-28",
-      "confidence": "estimated"
+      "type": "8-K earnings (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Mondelez press release (Oct 15 2026): results Oct 29 2026 4:05pm ET",
+      "confidence": "confirmed"
     },
     "lastChecked": "2026-09-23"
   },

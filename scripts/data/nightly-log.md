@@ -20377,8 +20377,29 @@ smaller earn-out charge; verdict: understated). Sanity-checked (HTTP
 the tracker. Claim released.
 
 **1 more report-period — running total 19 → 20 tonight.** Still well
-under the ~50 cap. This closes out the sixth firing: committing and
+under the ~50 cap.
+
+Checked the remaining hot-list-rewrite pending items (17, after AZO):
+13 already had an estimated/confirmed `nextExpectedFiling` 0-9 days
+out (inside the 10-day skip window). The other 4 (NOW, INTC, TMUS,
+MDLZ) had estimates that had already passed with no filing yet
+(tracker still shows Q2 as latest) — WebSearched each company's own
+announcement rather than guess: **NOW** reports 2026-10-28, **INTC**
+2026-10-29, **TMUS** 2026-10-28, **MDLZ** 2026-10-29 (all per the
+companies' own press releases) — updated the tracker's
+`nextExpectedFiling` to these confirmed dates. All 17 remaining items
+are therefore inside the 10-day skip window — **0 rewrites eligible
+tonight**, correctly none attempted.
+
+Re-ran `scan-recent-filings` once more before closing out: 63
+candidates, no new hot-list/S&P 500 items (same 62 `us-listed`, still
+paused). S&P 500 tier 1 remains 503/503 complete; us-listed and tier 2
+backfill remain paused through "11-19 night"; what-to-watch (8/8) and
+comparisons (2/2) already at tonight's cap from the second firing;
+Sunday preview already published this week. Nothing else eligible
+under any track — this closes out the sixth firing: committing and
 pushing the tracker/log/hotlist-rewrite updates now. A later firing
 should re-run `scan-recent-filings` fresh for the remainder of the
-window (closes 07:59 JST) — more S&P 500 companies may still report
-today.
+window (closes 07:59 JST) — NOW/INTC/TMUS/MDLZ and the day-0 names
+(MU/PYPL/BA/HOOD/SPGI/RCL/HLT) report over the next 1-3 days and
+should surface as ordinary tier-0 updates once filed.
