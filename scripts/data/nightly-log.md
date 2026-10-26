@@ -20403,3 +20403,24 @@ should re-run `scan-recent-filings` fresh for the remainder of the
 window (closes 07:59 JST) — NOW/INTC/TMUS/MDLZ and the day-0 names
 (MU/PYPL/BA/HOOD/SPGI/RCL/HLT) report over the next 1-3 days and
 should surface as ordinary tier-0 updates once filed.
+
+**Seventh firing (22:06 UTC):** network check passed (SEC 200 with UA,
+financialreportinsights.com 200). Re-ran `scan-recent-filings` fresh: 62
+candidates, same set as the sixth firing's close — all `us-listed`, no
+new hot-list/S&P 500 items. `next-batch -- --n 5` printed only those same
+`us-listed` `0-fresh-filing` candidates (ABOS, AEYE, AGYS, BBLG, BOH),
+which fall under the us-listed-allotment-0 pause (10-25 night through
+11-19 night) exactly like the sixth firing's 62. S&P 500 tier 1 still
+503/503; us-listed and tier 2 backfill still paused; what-to-watch (8/8)
+and comparisons (2/2) still at tonight's cap; Sunday preview already
+published this week; hot-list rewrites still 0 eligible (all 17 inside
+the 10-day skip window per the sixth firing's check minutes earlier, and
+nothing changed since). **Nothing eligible under any track — no
+report-periods published this firing; running total unchanged at 20
+report-periods tonight.** Window closes 22:59 UTC / 07:59 JST, ~50
+minutes out at the time of this check — not enough runway for a new
+tier-0 item to land and be researched end-to-end even if one did
+surface. No tracker changes. A later firing (next window, "10-27 night")
+should re-run `scan-recent-filings` fresh — NOW/INTC/TMUS/MDLZ (10-28/
+10-29) and the day-0 names (MU/PYPL/BA/HOOD/SPGI/RCL/HLT) report over the
+next 1-3 days and should surface as ordinary tier-0 updates once filed.
