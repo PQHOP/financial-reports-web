@@ -42,12 +42,18 @@ date and commit.
   days the Reddit block names the specific earnings thread (e.g. the
   "$MSFT earnings" thread) rather than the daily discussion.
 
-- **Company page: a 2-sentence text lead under the H1 for the search
-  snippet** (from the 10-26 Monday review). "`<Company>` reports `<period>`
-  on `<date>`. Last quarter revenue `<rose/fell>` N% to $Y and EPS …" built
-  from `metrics` + the tracker/earnings-dates overlay, placed above the
-  latest-results card. Today the snippet Google shows for "`<ticker>`
-  earnings" is the figures table. Small, ISR-safe (no new query).
+- **Company-page text lead shipped 10-27 (`e3e6ccf`, `3306e41`;
+  `src/lib/companyLead.ts`).** Measure: GSC CTR and clicks on
+  `/companies/<slug>` URLs (not report URLs) in the 11-02 and 11-09 runs
+  against this week's 0 clicks on 211 (`mrsh`) / 66 (`mcd` Q2) / 58 (`zts`)
+  impressions. If Google's snippet for "`<ticker>` earnings" is still the
+  figures table by 11-15, try moving the lead above the subtitle line.
+- **Homepage "Duplicate, Google chose different canonical" (recrawled
+  10-25, same verdict as 09-22).** `site-metrics` now records
+  `googleCanonical`/`userCanonical` in `indexSample` (10-27): read it
+  next run. If Google's pick is `www.` or the `.vercel.app` alias, both
+  already 308/canonical to the bare domain, so it resolves on recrawl;
+  if it is something else, that's a real fix.
 
 - **Outreach (from 10-26):** `ops/outreach.md` lists backlink targets with
   3-line email drafts and the Google Publisher Center submission text. Each
@@ -464,6 +470,12 @@ date and commit.
 
 ## Done
 
+- 2026-10-27 — Company page: two-sentence text lead under the H1 (next
+  results date, confirmed vs estimated vs "full filing pending", and last
+  period's revenue/NII/premiums + EPS from `metrics`), for the search
+  snippet of "`<ticker>` earnings". `site-metrics` `indexSample` now
+  includes Google's chosen canonical. `e3e6ccf`, `3306e41`; deploys
+  `dpl_69xHJpesMN3i5d2kSgPnjFphxvhj`, `dpl_DQr4DV1AZ8HHBEcFV5mwpaFd9c7k`.
 - 2026-10-26 (`d3a5c56`): scorecard page shows "Updated <date> · rebuilt
   daily through the season" (date = newest report in the card); every
   report's peer section links to its period's scorecard when one exists.
