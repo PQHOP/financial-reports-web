@@ -20264,3 +20264,94 @@ only this log entry needs committing. A later firing (ideally after
 earnings 8-Ks land per their estimated dates) should re-run
 `scan-recent-filings` fresh — those should surface as ordinary tier-0
 updates as soon as EDGAR shows the filing.
+
+**Sixth firing (21:05 UTC / 06:05 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA; both
+financialreportinsights.com and the `.vercel.app` alias reachable).
+`npm install` hit the same harmless `prisma generate`/`DATABASE_URL`
+postinstall failure as every other firing; ran `prisma generate` with a
+placeholder `DATABASE_URL` instead (doesn't block `admin-publish`/
+`scan-recent-filings`, no real DB credentials needed). `git status`
+showed only the incidental `package-lock.json` diff from `npm install`;
+reverted it. `git pull --ff-only` confirmed `master` already at
+`ddaf228` (fifth firing's commit), nothing new from another firing. No
+active claims.
+
+`scan-recent-filings` re-run fresh (an hour after the fifth firing):
+70 candidates, and this time **9 hot-list/S&P 500 items** had filed —
+**AZO** (10-K, FY2026 annual, [update]), **ARE, CDNS, CINF, HIG, NUE,
+PFG, PSA, WELL** (all [update], Q3 2026) — the rest (61) all
+`us-listed` (paused). Claimed all 9. Checked the tracker: AZO's new
+10-K covers the same FY2026 period already published from its earnings
+8-K on 2026-09-24 (**same period** case — materiality check, not a new
+report), the other 8 were all previously Q2 2026 (**new period** case
+— new Q3 2026 reports). Dispatched 9 Opus subagents (8 new-report, 1
+materiality-check) synchronously; all 9 finished and were sanity-checked
+(fetched each canonical URL cache-busted: all HTTP 200, "At a glance"
+and "Takeaway" present, not truncated) before touching the tracker.
+
+Published (8 new report-periods, all Q3 2026):
+- **ARE** — https://financialreportinsights.com/companies/are/2026/q3
+  — net loss widened to $3.74/share on $637.9M of property write-downs
+  (421 Park Drive, Palo Alto/San Carlos); adjusted FFO/share fell 30.6%
+  to $1.54. Verdict: understated.
+- **CDNS** — https://financialreportinsights.com/companies/cdns/2026/q3
+  — revenue +22% to $1.633B (above guidance), but GAAP EPS flat at
+  $1.05 on a $42.2M restructuring charge and higher tax rate; non-GAAP
+  EPS +9.3% to $2.11. Verdict: understated.
+- **CINF** — https://financialreportinsights.com/companies/cinf/2026/q3
+  — net income fell 59% to $459M purely because Q3 2025 had $853M of
+  investment gains that didn't repeat; operating EPS flat ($2.86 vs
+  $2.85); catastrophe losses rose to $280M from $95M. Verdict:
+  understated.
+- **HIG** — https://financialreportinsights.com/companies/hig/2026/q3
+  — EPS +28% to $4.82, but almost entirely a one-off $497M pre-tax gain
+  from ending the Berkshire asbestos reinsurance treaty; core EPS fell
+  2.5% to $3.50. Verdict: flattered.
+- **NUE** — https://financialreportinsights.com/companies/nue/2026/q3
+  — EPS more than doubled to $5.80 from $2.63 on sales +32% to $11.25B
+  as steel mill prices rose $195/ton YoY; clean quarter. Verdict: clean.
+- **PFG** — https://financialreportinsights.com/companies/pfg/2026/q3
+  — GAAP profit tripled ($631.9M) almost entirely on an $818.2M
+  non-cash derivative gain tied to reinsured legacy annuity/life
+  blocks, partly offset by a $276.7M loss on selling the Chilean
+  annuities business; operating earnings +1.7%, operating EPS +6% (on
+  a 3.7% smaller share count). Verdict: flattered. Revenue/
+  operatingMarginPct omitted — the 8-K earnings release has no
+  consolidated income statement and IR's financial supplement 403'd;
+  flag for an `--edit` once the 10-Q lands (~10-28) to fill those in.
+- **PSA** — https://financialreportinsights.com/companies/psa/2026/q3
+  — EPS fell 35.5% to $1.69 on $114.6M of NSA/PS Canada deal costs plus
+  extra depreciation; core FFO/share +0.7% to $4.34; FY guidance raised.
+  Verdict: understated.
+- **WELL** — https://financialreportinsights.com/companies/well/2026/q3
+  — normalized FFO/share +24.6% to $1.67, but NAREIT (standard) FFO/
+  share grew only 18.3% once $124.7M of deal/legal costs (incl. HC-One
+  restructuring) are counted; FY normalized FFO guidance raised while
+  NAREIT FFO guidance was cut. Verdict: flattered.
+
+Edited, not a new report-period (**AZO** —
+https://financialreportinsights.com/companies/azo/2026/annual): the
+new FY2026 10-K confirmed all headline figures already published from
+the earnings 8-K, but added material detail (currency +$254.4M sales,
+tariff refunds +$96.0M operating profit, a $128.0M larger LIFO charge
+than last year, true cash flow figures, $2,013.2M of buybacks cutting
+diluted shares 2.2%) and the report was still in the pre-2026-10-25
+format (no "At a glance", no quality-check, no earnings-quality/
+capital-returned metrics). Rewrote to the current format: underlying
+operating profit grew ~2%, not the reported 3.1%, once currency,
+tariffs and LIFO are backed out. Verdict: flattered. Also surfaced
+(not actioned): a same-day separate 8-K reports CFO Jamere Jackson's
+resignation effective 2026-11-25, unrelated to results per the company.
+
+All 9 tickers' `lastFilingSeen`/`nextExpectedFiling`/`lastChecked`
+updated in the tracker; claims released. **8 new report-periods this
+firing — running total 11 → 19 tonight** (1 VZ + 8 what-to-watch + 2
+comparisons + 8 new Q3 2026 reports; AZO edit not counted as a new
+report-period, consistent with the same-period-edit convention). Well
+under the ~50 Big Tech week cap, and these are tier-0 items so they
+don't count against the per-firing ~8 cap either. PFG flagged above
+for a follow-up `--edit` once its 10-Q lands (~10-28) to add revenue.
+A later firing should re-check NUE (10-Q expected ~11-10, same period)
+and WELL/PFG (10-Qs expected imminently, same period) and update
+`lastFilingSeen` only when those land, not publish new reports.

@@ -1873,22 +1873,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-17",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu5oigkr000404jmfx3007ik"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/companies/are/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-03"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-02",
-      "basis": "~90 days after Q2 filing date, calendar-year quarterly cadence",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "Q2 10-Q filed 2026-08-03; prior FY10-K filed late January",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-17"
+    "lastChecked": "2026-10-26"
   },
   "ARES": {
     "name": "Ares Management Corporation",
@@ -6195,17 +6195,17 @@
       "url": "https://financialreportinsights.com/reports/cmuf1m0r3000204kwb8l6ppqa"
     },
     "lastFilingSeen": {
-      "type": "8-K (FY2026 earnings release)",
+      "type": "10-K",
       "periodEnd": "2026-08-29",
-      "filedAt": "2026-09-22"
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026)",
-      "estimate": "2026-10-26",
-      "basis": "prior 10-Ks filed 2025-10-27, 2024-10-28",
+      "type": "8-K earnings (Q1 FY2027)",
+      "estimate": "2026-12-15",
+      "basis": "AutoZone typically reports fiscal Q1 earnings in mid-December",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-24"
+    "lastChecked": "2026-10-26"
   },
   "ROST": {
     "name": "Ross Stores",
@@ -8107,28 +8107,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cdns/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/companies/cdns/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-26",
-      "basis": "Q2 release 07-27, 10-Q 07-29; Q3 release likely last week of October",
+      "type": "8-K Item 2.02 (Q4/FY2026 earnings)",
+      "estimate": "2027-02-25",
+      "basis": "Q4 2025 results reported ~late February",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-26",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/cdns/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-26",
+        "url": "https://financialreportinsights.com/companies/cdns/2026/q3"
       }
     ]
   },
@@ -8742,28 +8748,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cinf/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/companies/cinf/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-27"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-26",
-      "basis": "Q3 2025 10-Q 2025-10-27 (Monday); 10-Q same day as release",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "typical late Jan/Feb annual filing cadence",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-26",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/cinf/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-26",
+        "url": "https://financialreportinsights.com/companies/cinf/2026/q3"
       }
     ]
   },
@@ -11612,28 +11624,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/hig/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/companies/hig/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q1/Q2 2026 filed ~23 days after quarter-end with the 8-K; Q3 2025 10-Q 2025-10-27",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-25",
+      "basis": "prior 10-K filed late February",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-26",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/hig/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-26",
+        "url": "https://financialreportinsights.com/companies/hig/2026/q3"
       }
     ]
   },
@@ -13868,22 +13886,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/nue/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/companies/nue/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-07-04",
-      "filedAt": "2026-08-12"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-10-03",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
+      "type": "10-Q (Q3 2026, same period)",
       "estimate": "2026-11-10",
-      "basis": "~90 day cadence from last 10-Q",
+      "basis": "10-Q typically follows the 8-K earnings release by 2-3 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-26"
   },
   "NVR": {
     "name": "NVR, Inc.",
@@ -14440,22 +14458,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj7ftzd000004l0y7zdum65"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/companies/pfg/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings (Q3 2026), 10-Q ~2026-10-28",
-      "estimate": "2026-10-26",
-      "basis": "Q2 release Mon 07-27 after close, 10-Q two days later",
+      "type": "10-Q (Q3 2026, same period - edit to add revenue)",
+      "estimate": "2026-10-28",
+      "basis": "Q2 release Mon 07-27 after close, 10-Q filed two days later",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-26"
   },
   "PGR": {
     "name": "Progressive Corporation",
@@ -14587,22 +14605,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj8kvf0000004jpykrfn4mn"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/companies/psa/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "10-Q + 8-K earnings (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "Q1/Q2 2026 results 04-27, 07-29 after close",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-12",
+      "basis": "PSA filed FY2025 10-K on 2026-02-12",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-26"
   },
   "PHM": {
     "name": "PulteGroup",
@@ -16378,22 +16396,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/well/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-26",
+      "url": "https://financialreportinsights.com/companies/well/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-26"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "Q3 2025 8-K 2025-10-27, 10-Q 2025-10-28; 2026 pattern Q1 04-28/29, Q2 07-27/28",
+      "type": "10-Q (Q3 2026, same period)",
+      "estimate": "2026-10-27",
+      "basis": "Q2 10-Q filed the day after its earnings 8-K",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-26"
   },
   "WY": {
     "name": "Weyerhaeuser",
