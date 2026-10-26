@@ -6,6 +6,42 @@ date and commit.
 
 ## Next
 
+- **Hop's answers to the 10-26 report (given 10-26, don't ask again):**
+  (1) X on the free account refused the drafts: four of five 10-26 X
+  posts were 285–408 as X counts them. Fixed in the file the same day;
+  `npm run check-posts` now enforces ≤ 260 (CLAUDE.md). (2) Hop didn't
+  understand what the outreach emails were for: explain in one plain
+  sentence each time (a link from another site is what tells Google a new
+  domain is worth crawling; we have 0) and ask for at most one email a
+  day, best target first. (3) Screenshots, 10-26: **indexed 648**
+  (checkpoint 11-08 ≥ 800); not indexed 2.48K = **Discovered – currently
+  not indexed 2,297** (was 1,631 in the 10-25 screenshot), noindex 144,
+  duplicate 21, crawled-not-indexed 9 (validation Failed), redirect 8,
+  4xx 1. Crawl stats 90 days: 18.4K requests, avg response 160 ms, 100%
+  200; the daily line has been flat near zero since 10-01 (~17/day,
+  checkpoint ≥ 30); www host 30. (4) Request indexing done for the 10
+  URLs in the 10-26 report. (5) Hop wants the report to bring actions
+  worth more than waiting: rule added in CLAUDE.md step 6.
+- **Sitemap trimmed to hot list + S&P 500 (shipped 10-26, see CLAUDE.md
+  "Thin pages").** ~3,000 → ~1,300 URLs. Measure: in the Page indexing
+  screenshot, "Discovered – currently not indexed" should stop growing
+  and Indexed should rise toward 800 by 11-08 on S&P 500 pages; if
+  Indexed hasn't moved by 11-15, say so and look at internal links next.
+- **Linkable data story after Big Tech week (target publish ~11-06):**
+  once ≥ 60 Q3 reports carry `earningsQuality`, an `/insights` article
+  "How much of Q3 2026 EPS growth was real? We read N S&P 500 filings":
+  share flattered / clean / understated, the 10 biggest gaps with each
+  report's deciding figure, by sector, links to each report and to
+  `/scorecards/2026/q3`. This is the asset for Show HN, r/investing and
+  the outreach emails (a finding people quote, not "please link our
+  site"). Draft the posts for it in that day's posts file.
+- **Results-day timing (from 10-26):** MSFT/GOOGL file ~20:05 UTC Wed
+  10-28, the 21:00 UTC nightly firing publishes, the 22:05 UTC ops run
+  writes the posts, Hop posts at ~07:30 JST = 22:30 UTC, 2–3 hours after
+  results, when the r/stocks earnings threads are busiest. On results
+  days the Reddit block names the specific earnings thread (e.g. the
+  "$MSFT earnings" thread) rather than the daily discussion.
+
 - **Company page: a 2-sentence text lead under the H1 for the search
   snippet** (from the 10-26 Monday review). "`<Company>` reports `<period>`
   on `<date>`. Last quarter revenue `<rose/fell>` N% to $Y and EPS …" built

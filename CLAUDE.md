@@ -968,6 +968,12 @@ the user is tracked at its end. Things future sessions should know:
   reason it must be complete.
 - **Thin pages stay out of the index:** companies/industries/years with no
   report are `noindex` and absent from `sitemap.xml`. Don't add them back.
+  **Since 2026-10-26 the sitemap also lists company, year and report URLs
+  only for the hot list and the S&P 500** (`WELL_KNOWN` in
+  `src/lib/sitemapEntries.ts`): Googlebot reads ~17 URLs/day with 2,297
+  "Discovered – currently not indexed", and 1,704 of ~3,000 sitemap URLs
+  were small us-listed companies. Those pages stay live and indexable;
+  they're just not advertised. Revisit when crawl is well above 100/day.
 - **Report URLs (since 2026-09-25):** our own analyses live at
   `/companies/<slug>/<year>/<period>` (`reportPath()` in
   `src/lib/reportPath.ts` — build every report link with it, never by hand).
@@ -1198,6 +1204,22 @@ reach ~100/week and the hot-list rewrite queue is empty.
      and what we would stop doing to pay for it. Say plainly when
      something we're doing isn't working. Small ones go in the backlog;
      large ones go in "cần anh/chị quyết định".
+   - **Actions, not waiting (the user's request, 2026-10-26).** Hop read
+     a report that graded checkpoints as "đang trượt" and otherwise
+     waited for Google to recrawl, and asked for actions worth more than
+     waiting. So every checkpoint graded as behind gets, in the same
+     section, what ops does *today or tomorrow* to move it, with the
+     expected effect and how we'll know. "Wait for the recrawl", "watch
+     two more days" or "check again in November" is never the only line
+     about a goal that is behind. In "cần anh/chị quyết định": at most 3
+     items, most valuable first, each opening with one plain sentence on
+     what it is and which goal it moves (on 10-26 Hop asked what the
+     outreach emails were for), plus how many minutes it takes him;
+     recurring chores (screenshots, Request indexing) go in one line at
+     the end, not as decisions. Before calling a page weak, check the
+     live page: the 10-26 review said report titles get cut in search
+     results, but the `<title>` was already the short "Tesla, Inc. (TSLA)
+     Q3 2026 Earnings: Revenue $28.0B (-0.2%)".
    - **Mondays also: draft outside posts (since 2026-10-19, the user's
      choice).** Add a short section with 1-3 ready-to-paste drafts for the
      user to post by hand (Reddit r/stocks / r/investing within their
@@ -1217,8 +1239,10 @@ reach ~100/week and the hot-list rewrite queue is empty.
        a fenced code block (```text) so it copies clean, nothing else.
        No markdown inside the post text, no hashtags beyond one or two
        cashtags (`$MSFT`), the canonical link last.
-     - **X posts (3–5 a day, ≤ 280 characters each, counting the link as
-       23):** one per hot-list/S&P 500 report from last night, biggest
+     - **X posts (3–5 a day, ≤ 260 characters each as X counts them —
+       run `npm run check-posts -- ops/posts/<date>.md` and fix every
+       `OVER` before committing; on 10-26 four of five drafts were
+       285–408 and X refused them on Hop's free account):** one per hot-list/S&P 500 report from last night, biggest
        name first — one figure, the one thing it hides or means, the
        link; in the days before a Big Tech result, one from its
        what-to-watch note; on days with no fresh result, the week's

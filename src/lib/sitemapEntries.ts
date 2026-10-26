@@ -8,6 +8,8 @@ import { loadMacro } from "@/lib/macroStore";
 import { buildRates } from "@/lib/rates";
 import { availableScorecards } from "@/lib/scorecard";
 import { scorecardPath } from "@/lib/scorecardPath";
+import hotList from "../../scripts/data/priority-tickers.json";
+import sp500 from "../../scripts/data/sp500.json";
 
 // Served by src/app/sitemap.xml/route.ts, a force-dynamic Route Handler
 // cached on the CDN for 10 minutes (see the note there for why not ISR).
@@ -18,6 +20,15 @@ import { scorecardPath } from "@/lib/scorecardPath";
 // metadata-file convention) until 2026-10-14, which on Next 16 ignored its
 // `revalidate` export and was baked into the build as a static file, so
 // every report published after a deploy was missing until the next deploy.
+
+// Company, year and report URLs only for the hot list and the S&P 500 (since
+// 2026-10-26). Googlebot reads ~17 URLs a day and had 2,297 "Discovered –
+// currently not indexed"; 1,704 of the ~3,000 URLs here were small us-listed
+// companies nobody searches for, competing with the MSFT/GOOGL pages people
+// do. Those pages stay live and indexable (linked from industry pages); they
+// just aren't advertised. Revisit once crawl is well above 100/day.
+const WELL_KNOWN = new Set<string>([...hotList.tickers, ...sp500.map((c) => c.ticker)]);
+const isWellKnown = (ticker: string | null) => ticker !== null && WELL_KNOWN.has(ticker);
 
 // /buybacks joins this list once it has data (it is noindex until then).
 const STATIC_PAGES = ["/red-flags", "/economy", "/world-risks", "/about", "/corrections", "/privacy", "/terms", "/contact"];
@@ -38,6 +49,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
       where: { reports: { some: systemReports } },
       select: {
         slug: true,
+        ticker: true,
         industries: { select: { slug: true } },
         reports: { where: systemReports, select: { year: true, publishedAt: true, updatedAt: true } },
       },
@@ -50,7 +62,7 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
         period: true,
         publishedAt: true,
         updatedAt: true,
-        company: { select: { slug: true } },
+        company: { select: { slug: true, ticker: true } },
       },
     }),
     prisma.article.findMany({
@@ -79,7 +91,10 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
     }
   }
 
-  const companyYearEntries = companies.flatMap((company) => {
+  const listedCompanies = companies.filter((c) => isWellKnown(c.ticker));
+  const listedReports = reports.filter((r) => isWellKnown(r.company.ticker));
+
+  const companyYearEntries = listedCompanies.flatMap((company) => {
     const perYear = new Map<number, number>();
     for (const r of company.reports) perYear.set(r.year, (perYear.get(r.year) ?? 0) + 1);
     const years = [...perYear.keys()].filter((year) =>
@@ -157,14 +172,14 @@ export async function buildSitemapEntries(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
-    ...companies.map((company) => ({
+    ...listedCompanies.map((company) => ({
       url: `${SITE_URL}/companies/${company.slug}`,
       lastModified: companyLastMod.get(company.slug),
       changeFrequency: "weekly" as const,
       priority: 0.7,
     })),
     ...companyYearEntries,
-    ...reports.map((report) => ({
+    ...listedReports.map((report) => ({
       url: reportUrl(report),
       lastModified: new Date(report.updatedAt ?? report.publishedAt),
       changeFrequency: "monthly" as const,
