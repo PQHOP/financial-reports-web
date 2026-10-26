@@ -20225,3 +20225,42 @@ only this log entry needs committing. A later firing should re-run
 `scan-recent-filings` once MU/PYPL/BA/HOOD/SPGI/RCL/HLT's results
 actually land — they report today and should surface as ordinary tier-0
 updates as soon as EDGAR shows the filing.
+
+**Fifth firing (20:04 UTC / 05:04 JST).** Network check passed (same
+pattern as every other firing: sec.gov 403 without UA, 200 with it;
+site and `.vercel.app` alias both reachable). `npm install` hit the
+same harmless postinstall failure (no `DATABASE_URL`; doesn't block
+`admin-publish`/`scan-recent-filings`). HEAD was detached on the
+previous firing's commit; checked out `master` and fast-forwarded
+cleanly to `0febd9a` (fourth firing's commit) via `git pull --ff-only`
+— nothing new from another firing. `npm install` left an incidental
+`package-lock.json` diff; reverted. No active claims
+(`scripts/data/claims/` has only `README.md`).
+
+`scan-recent-filings` re-run fresh: 43 candidates, all `us-listed`
+(allotment 0 through "11-19 night") — still no new hot-list/S&P 500
+filing. `next-batch -- --n 10` confirms the same ordering, straight
+into paused us-listed candidates. Checked the tracker directly for
+MU/PYPL/BA/HOOD/SPGI/RCL/HLT (flagged by the fourth firing as ~0 days
+out): all still `status: "done"` with `nextExpectedFiling.estimate`
+of **2026-10-27** (tomorrow, not today — HOOD's is `confirmed` from
+its own IR release: results after close Tue 2026-10-27), so the scan
+correctly finds nothing filed yet rather than missing anything. S&P
+500 tier 1 remains 503/503 complete. Re-verified all 18
+`hotlist-rewrite.json` pending items (including MU/PYPL/BA, which are
+also in this queue): every one's `nextExpectedFiling` is still inside
+the 10-day skip window (several, including MU/PYPL/BA, are literally
+1 day out), so none eligible for rewrite tonight. What-to-watch (8/8)
+and comparisons (2/2) both already at tonight's cap from the second
+firing. Sunday preview already published this week; us-listed and
+tier 2 backfill remain paused.
+
+**Nothing eligible under any track — tonight's running total unchanged
+at 11 report-periods** (1 report-period VZ + 8 what-to-watch notes + 2
+comparisons), well under the ~50 Big Tech week cap but genuinely out
+of in-scope work, not cap-limited. No tracker changes this firing;
+only this log entry needs committing. A later firing (ideally after
+2026-10-27 JST, once HOOD/PYPL/BA/SPGI/RCL/HLT/MU's actual filings or
+earnings 8-Ks land per their estimated dates) should re-run
+`scan-recent-filings` fresh — those should surface as ordinary tier-0
+updates as soon as EDGAR shows the filing.
