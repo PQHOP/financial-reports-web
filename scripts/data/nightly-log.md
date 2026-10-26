@@ -20067,14 +20067,64 @@ remaining top-8 candidates) plus 1 comparison subagent:
   leaned on lower tax rates and buybacks rather than operations).
   Live page checked (Takeaway present, not truncated).
 
-**Tonight's running total: 1 report-period (VZ) + 7 what-to-watch
-notes published (AAPL, COIN, KLAC, HOOD, F, CMG, MO) + 1 comparison
-(AXP vs. COF) = 9 report-periods.** `report-tracker.json` updated for
-VZ, AAPL, COIN, KLAC, HOOD, CMG, MO, SO (all `lastChecked` 2026-10-26;
-SO's date corrected to the confirmed 11-05 even though its note wasn't
-published — held for a firing closer to that date). Hot-list rewrites
-0/10 (all 18 pending items still inside the 10-day skip window).
-us-listed 0 (paused through "11-19 night"). Tier 2 backfill 0 (paused
-through "11-19 night"). This firing is ending here; later firings
-tonight should re-run `scan-recent-filings` for any after-hours Big
-Tech/S&P 500 filings that land later in the 16:00-22:59 UTC window.
+**Tonight's running total after first firing: 1 report-period (VZ) + 7
+what-to-watch notes published (AAPL, COIN, KLAC, HOOD, F, CMG, MO) + 1
+comparison (AXP vs. COF) = 9 report-periods.** `report-tracker.json`
+updated for VZ, AAPL, COIN, KLAC, HOOD, CMG, MO, SO (all `lastChecked`
+2026-10-26; SO's date corrected to the confirmed 11-05 even though its
+note wasn't published — held for a firing closer to that date). Hot-list
+rewrites 0/10 (all 18 pending items still inside the 10-day skip
+window). us-listed 0 (paused through "11-19 night"). Tier 2 backfill 0
+(paused through "11-19 night"). First firing ended here.
+
+**Second firing (17:04 UTC / 02:04 JST).** `git pull --rebase`
+(fast-forward only, no conflicts). `scan-recent-filings`: 39 candidates,
+all `us-listed` (paused through "11-19 night") — no new hot-list/S&P
+500 tier 0 work. `next-batch -- --n 10` confirmed the same (first 10
+entries all `us-listed` fresh filings). No active claims.
+
+Checked the remaining hot-list companies with a `nextExpectedFiling`
+2–4 days out for a genuine *new* upcoming period (not just the 10-Q
+catching up to an already-published 8-K-sourced report, which doesn't
+need a what-to-watch note): BAC/WFC/GS/TMO/NEE/VZ all have their Q3
+2026 already published from the earnings 8-K, so their pending 10-Q
+isn't new results. Two did qualify — **EL** (Estée Lauder, last
+published report is the FY2026 ANNUAL, next is a genuinely new period,
+fiscal Q1 FY2027) and **CL** (Colgate-Palmolive, last published Q2
+2026, next is Q3 2026). Dispatched one what-to-watch subagent for EL
+(the higher hot-list rank) and, in the same batch, one comparison
+subagent for **T vs. VZ** (both Q3 2026 published, no existing
+comparison, and timely given tonight's VZ publish) — the 2nd
+comparison for tonight's 2/night cap.
+
+- **EL — not published.** The subagent found Estée Lauder's own
+  2026-10-19 press release confirming the fiscal Q1 FY2027 earnings
+  webcast for **Monday 2026-11-02** (matches
+  `scripts/data/earnings-dates.json`), not our stale 10-29 estimate —
+  7 days out, outside the 2–4 day what-to-watch window. Correctly
+  stopped without publishing. Tracker's `nextExpectedFiling` for EL
+  corrected to 11-02, `confirmed`, citing the press release. Queue this
+  note for a firing around 10-30/10-31 night instead.
+- **T vs. VZ** — published:
+  https://financialreportinsights.com/insights/t-vs-vz-q3-2026
+  ("AT&T vs. Verizon Q3 2026: AT&T grew revenue 5.3% to Verizon's 1.5%,
+  but Verizon's profit was cleaner" — AT&T had the stronger business
+  quarter on revenue/wireless-service growth and a record 769K internet
+  adds; Verizon had the stronger numbers, clean EPS growth, 25.2% margin
+  and EBITDA +8.0% vs. AT&T's +5.4%, with leverage falling while AT&T's
+  rose; AT&T's report predates the earnings-quality field so no verdict
+  was invented for it). Live page checked (200, Takeaway present, not
+  truncated).
+
+**Tonight's running total after second firing: 1 report-period (VZ) +
+7 what-to-watch notes (AAPL, COIN, KLAC, HOOD, F, CMG, MO) + 2
+comparisons (AXP vs. COF, T vs. VZ) = 10 report-periods.** Comparisons
+now at cap (2/2) for tonight. What-to-watch notes at 7/~8 (SO prepared
+but held, EL correctly declined for date reasons — both queued for
+later in the week). `report-tracker.json` also updated for EL
+(`lastChecked` 2026-10-26). Hot-list rewrites still 0/10 (unchanged).
+us-listed 0, tier 2 backfill 0 (both paused through "11-19 night").
+Well under the ~50 Big Tech week cap (~40 extra tier-0 room unused
+since tonight's tier 0 is all paused us-listed). Moving on to check
+S&P 500 tier 1 (2026 coverage) for this firing's ~8-report-period
+allotment.

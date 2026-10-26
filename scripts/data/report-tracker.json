@@ -6311,11 +6311,11 @@
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q1 FY2027)",
-      "estimate": "2026-10-29",
-      "basis": "prior-year Q1 10-Q filed 2025-10-30",
-      "confidence": "estimated"
+      "estimate": "2026-11-02",
+      "basis": "Estée Lauder's own press release 2026-10-19 confirming the fiscal Q1 FY2027 webcast for 2026-11-02, 8:30am ET (https://www.elcompanies.com/en/news-and-media/newsroom/press-releases/2026/10-19-2026-213519457); matches scripts/data/earnings-dates.json",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-24"
+    "lastChecked": "2026-10-26"
   },
   "CL": {
     "name": "Colgate-Palmolive",
