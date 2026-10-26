@@ -20039,16 +20039,35 @@ sanity-checked live on its company page:
   — 2 days earlier than our 10-30 estimate; tracker corrected to 10-28,
   `confirmed`).
 
-MO and SO (also in the top-8 what-to-watch candidates) were not
-dispatched this firing — left for a later firing tonight if budget
-allows.
+**Second batch, same firing.** Re-ran `scan-recent-filings`: no new
+hot-list/S&P 500 candidates (VZ dropped off since it's now done with no
+newer filing; the 39 remaining candidates are all `us-listed`,
+paused). Dispatched 2 more what-to-watch subagents (MO, SO — the
+remaining top-8 candidates) plus 1 comparison subagent:
 
-**Tonight's running total: 1 report-period (VZ) + 6 what-to-watch
-notes = 7 report-periods.** `report-tracker.json` updated for VZ,
-AAPL, COIN, KLAC, HOOD, CMG (all `lastChecked` 2026-10-26). Comparisons
-0/2 (none dispatched this firing, no clear uncovered pair found in the
-time available). Hot-list rewrites 0/10 (all 18 pending items still
-inside the 10-day skip window). us-listed 0 (paused through "11-19
-night"). Tier 2 backfill 0 (paused through "11-19 night"). `git commit`
-+ `push` of `report-tracker.json` and `nightly-log.md` to follow this
-entry.
+- **MO** — https://financialreportinsights.com/insights/what-to-watch-mo-q3-2026
+  (Q3 2026; confirmed Thu 2026-10-29 per Altria's own Business Wire
+  release — 1 day later than our 10-28 estimate; tracker corrected to
+  10-29, `confirmed`).
+- **SO** — **prepared but NOT published.** The subagent found Southern
+  Company's confirmed earnings date is **Thursday 2026-11-05** (per the
+  company's own 2026-09-25 announcement), not our 10-28 estimate — 10
+  days out, outside the 2-4 day window the what-to-watch rule requires.
+  Tracker's `nextExpectedFiling` corrected to 11-05, `confirmed`. The
+  finished draft is in this session's scratchpad only (not committed);
+  a later firing around 11-01 to 11-03 should redo this note when SO is
+  properly inside the window.
+- **Comparison (1/2 for tonight):** dispatched AXP vs. COF (American
+  Express vs. Capital One, both Q3 2026, no existing comparison on
+  `/insights`) — result pending as of this log entry; will be recorded
+  once it lands.
+
+**Tonight's running total: 1 report-period (VZ) + 7 what-to-watch
+notes published (AAPL, COIN, KLAC, HOOD, F, CMG, MO) = 8 report-periods,
+plus 1 comparison pending.** `report-tracker.json` updated for VZ,
+AAPL, COIN, KLAC, HOOD, CMG, MO, SO (all `lastChecked` 2026-10-26; SO's
+date corrected even though its note wasn't published). Hot-list
+rewrites 0/10 (all 18 pending items still inside the 10-day skip
+window). us-listed 0 (paused through "11-19 night"). Tier 2 backfill 0
+(paused through "11-19 night"). `git commit` + `push` of
+`report-tracker.json` and `nightly-log.md` to follow.

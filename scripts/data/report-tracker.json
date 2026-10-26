@@ -2842,11 +2842,11 @@
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
-      "confidence": "estimated"
+      "estimate": "2026-10-29",
+      "basis": "Altria's own Business Wire release 2026-10-15: press release ~7am ET, webcast 9am ET, Thu 2026-10-29",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-26"
   },
   "MSB": {
     "name": "Mesabi Trust",
@@ -5714,11 +5714,11 @@
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-30",
-      "confidence": "estimated"
+      "estimate": "2026-11-05",
+      "basis": "Southern Company's own announcement 2026-09-25: results by 7:30am ET, call 1pm ET, Thu 2026-11-05",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-26"
   },
   "NEOG": {
     "name": "Neogen Corporation",
