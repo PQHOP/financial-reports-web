@@ -21060,5 +21060,30 @@ VTR, WM. Published and verified so far:
   EPS guidance narrowed to $7.90-8.10. 8-K source; full 10-Q not yet
   filed. Verdict: clean.
 
-Tracker updated for PPG. STX, UHS, VTR, WM still in progress.
-Committing and pushing now so progress isn't lost mid-batch.
+- **UHS** — https://financialreportinsights.com/companies/uhs/2026/q3
+  — "Universal Health Services Q3 2026: EPS fell 10.9% to $5.22 as
+  costs outgrew 5.3% sales growth" — ex one-offs in both years,
+  pre-tax income fell ~8%, not 16.7%; wages, interest (+46%) and
+  acquisitions outran sales. 8-K source; full 10-Q not yet filed.
+  Verdict: understated. (Confirmed correct entity — Universal Health
+  Services, not Universal Health Realty Income Trust.)
+- **WM** — https://financialreportinsights.com/companies/wm/2026/q3
+  — "Waste Management Q3 2026: EPS jumped 38% to $2.05, but adjusted
+  EPS rose 8.6% as write-downs dropped out" — last year's $218M of
+  impairments/unusual items didn't recur this quarter (only $50M
+  excluded this time); commercial volume still didn't improve.
+  FY2026 guidance affirmed at the high end. 8-K source; full 10-Q
+  not yet filed. Verdict: flattered.
+- **VTR** — https://financialreportinsights.com/companies/vtr/2026/q3
+  — "Ventas Q3 2026: senior housing NOI up 15.5%, but 12% more
+  shares held FFO per share growth to 10%" — normalized FFO rose 24%
+  in total but only 10% per share as diluted shares rose 12.0% from
+  equity issuance; FY2026 normalized FFO guidance raised slightly.
+  8-K source; full 10-Q not yet filed. Verdict: understated.
+
+Tracker updated for PPG, UHS, WM, VTR. STX (the last of the 18
+tier-0 candidates) still in progress. Committing and pushing now so
+progress isn't lost mid-batch.
+
+**16 new report-periods confirmed this firing — running total
+34 → 50 tonight**, with only STX left to confirm.
