@@ -21117,3 +21117,34 @@ the 8-K we already published its Q3 2026 report from — a same-period
 update, so only `lastFilingSeen` was updated, no new report, no
 subagent spent. Claimed BKR and dispatched 1 Opus research subagent
 against its fresh 8-K earnings release.
+
+Published and verified:
+
+- **BKR** — https://financialreportinsights.com/companies/bkr/2026/q3
+  — "Baker Hughes Q3 2026: Chart lifts revenue 14% to $8.0B, but
+  deal costs cut EPS 33% to $0.41" — revenue growth is almost all
+  the newly acquired Chart Industries (closed 2026-07-16); without
+  it, revenue grew ~2%. GAAP EPS fell on $158M of deal costs, Chart
+  amortization and tripled interest expense; adjusted EPS still rose
+  3%. 8-K source; full 10-Q not yet filed. Verdict: understated.
+
+Tracker updated, claim released. Re-ran `scan-recent-filings` once
+more (21:38 UTC): 114 candidates, all `us-listed` (paused) — no
+further hot-list/S&P 500 filings tonight. Nothing else eligible:
+us-listed allotment is 0, tier 2 backfill paused, and
+what-to-watch/comparison caps were already hit by the second firing.
+Ending this firing here.
+
+**18 new report-periods confirmed this firing — running total
+34 → 52 tonight.** This is the window's last entry at the Big Tech
+week's raised cap (reverts to ~40 from "10-28 night"); 52 is a few
+over the ~50 ceiling, consistent with the "tier 0 may exceed the cap
+by a few" allowance — every one of tonight's 18 new reports (HOOD, V,
+ACGL, BXP, CSGP, EQT, ESS, EXR, FE, FFIV, NXPI, OKE, PPG, STX, UHS,
+VTR, WM, BKR) was a hot-list or S&P 500 company that genuinely
+reported today. No skips this firing; WELL and HBAN needed only
+`lastFilingSeen` updates (same period already published from an
+earlier 8-K). A later firing this window should re-run
+`scan-recent-filings` fresh one more time before 22:59 UTC in case
+any further filings land in the last hour, but should expect to find
+nothing left to do given tonight's count.
