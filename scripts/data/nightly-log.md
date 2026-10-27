@@ -20798,3 +20798,23 @@ hot-list/S&P 500 filings, and re-check `/earnings` for any what-to-watch
 candidates that may open up if a cap resets are mis-tracked (they
 don't reset mid-night) — otherwise the next opportunity for this
 firing's categories is tomorrow night.
+
+**Third firing (18:07 UTC / 03:07 JST).** Network check passed (same
+sec.gov 403-without-UA / 200-with-UA pattern). Repo was HEAD-detached
+again on the second firing's commit (fresh container); checked out
+`master` and fast-forwarded cleanly to `7fe44ea` (no intervening ops
+commits this time). `npm install`'s usual harmless
+`prisma generate`/`DATABASE_URL` postinstall failure recurred; doesn't
+block `admin-publish`/`scan-recent-filings`. No active claims.
+
+Re-ran `scan-recent-filings` fresh: 87 candidates (ARCC, AWI, BFH, CTS,
+DORM, FMAO, HRI, HYMC, INIO, ITRI, ... and 77 more), every one
+`us-listed` — no new hot-list/S&P 500 filings since the second firing's
+check. `next-batch -- --n 10` confirmed the same: all `0-fresh-filing`
+(us-listed), no `1-pending-overdue` items. With the us-listed allotment
+at 0 and tier 2 paused (both through "11-19 night"), and
+what-to-watch/comparisons already at tonight's caps per the previous
+firing, nothing is eligible this firing. No tracker changes; running
+total stays **33 tonight**. Committing and pushing nightly-log.md only.
+A later firing should re-run `scan-recent-filings` fresh again for any
+new hot-list/S&P 500 filings landing later tonight.
