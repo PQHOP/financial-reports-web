@@ -48,12 +48,21 @@ date and commit.
   against this week's 0 clicks on 211 (`mrsh`) / 66 (`mcd` Q2) / 58 (`zts`)
   impressions. If Google's snippet for "`<ticker>` earnings" is still the
   figures table by 11-15, try moving the lead above the subtitle line.
-- **Homepage "Duplicate, Google chose different canonical" (recrawled
-  10-25, same verdict as 09-22).** `site-metrics` now records
-  `googleCanonical`/`userCanonical` in `indexSample` (10-27): read it
-  next run. If Google's pick is `www.` or the `.vercel.app` alias, both
-  already 308/canonical to the bare domain, so it resolves on recrawl;
-  if it is something else, that's a real fix.
+- **Industry audit (10-28).** 846 of the 1,347 companies with a report
+  sit in `Uncategorized` (expected: us-listed seed has no sector). Only
+  one hot-list name was among them, ARM, fixed to Information Technology
+  via `/admin/companies` the same day; MOH (S&P 500 since 2022 but absent
+  from `scripts/data/sp500.json`, so also outside `WELL_KNOWN` and the
+  sitemap) fixed to Health Care. The 10-27 night's CNC-vs-MOH subagent
+  also claimed MOH's H1 report is truncated: there is no MOH H1 report
+  (404; MOH has Q3 only, CNC has Q2 and Q3), so nothing to fix. Open
+  question: `sp500.json` is a 503-row snapshot that misses at least MOH,
+  so other current constituents may be seeded as us-listed too — when
+  convenient, diff it against the current S&P 500 list and add the
+  missing ones (slug, sector) so they get a sector, the sitemap and the
+  hot-list/S&P 500 tier-0 treatment. Reusable one-off: the Playwright
+  script pattern (login, scrape `/admin/companies`, submit the edit form)
+  lives in the 10-28 report; not committed.
 
 - **Outreach (from 10-26):** `ops/outreach.md` lists backlink targets with
   3-line email drafts and the Google Publisher Center submission text. Each
