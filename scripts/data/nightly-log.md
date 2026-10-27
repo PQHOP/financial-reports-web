@@ -20847,3 +20847,49 @@ eligible this firing. No tracker changes; running total stays
 **33 tonight**. Committing and pushing nightly-log.md only. A later
 firing should re-run `scan-recent-filings` fresh again for any new
 hot-list/S&P 500 filings landing later tonight.
+
+**Fifth firing (20:04 UTC / 05:04 JST).** Network check passed (sec.gov
+403 without UA as expected — SEC's own response, not a proxy block — 200
+with the required UA via `curl`; financialreportinsights.com 200). Repo
+was HEAD-detached on the fourth firing's commit (fresh container);
+checked out `master` and fast-forwarded to `7b85536` (no intervening ops
+commits this time). `npm install`'s postinstall `prisma generate` step
+failed on the usual missing-`DATABASE_URL` (harmless, doesn't block
+`admin-publish`/`scan-recent-filings`); ran `DATABASE_URL=<dummy> npx
+prisma generate` directly to get the client generated. No active claims.
+
+Re-ran `scan-recent-filings` fresh: 91 candidates — **1 new S&P 500
+tier-0 item, EXE (Expand Energy)**, `[update]`, 8-K (Item 2.02) filed
+today; rest `us-listed` (paused per the "10-25 night" → "11-19 night"
+pause). `next-batch -- --n 10` confirmed EXE as the only
+hot-list/S&P-500 candidate. Claimed EXE, found the 8-K's Exhibit 99.1
+on EDGAR myself (accession 0000895126-26-000067), dispatched 1 Opus
+research subagent against it (full 10-Q not yet filed). Sanity-checked
+the live canonical page myself (HTTP 200, "At a glance"/Takeaway/
+quality-check section all present, final paragraph not cut off) before
+touching the tracker. Published:
+
+- **EXE** — https://financialreportinsights.com/companies/exe/2026/q3
+  — "Expand Energy Q3 2026: adjusted EPS up 50% to $1.46 as hedges and
+  liquids offset cheaper gas" — GAAP EPS fell 1.8% to $2.24 only
+  because last year's unrealized hedge gain was twice as big ($1.30/sh
+  vs $0.66/sh this year); adjusted EPS rose 50.5% on hedge cash
+  settlements, higher oil/NGL prices and 2.8% more output. FY2026
+  capex guidance raised to ~$3B (was $2.75-2.95B) after the
+  debt-funded Twin Eagle acquisition pushed net debt from $3.1B to
+  $4.66B. 8-K source; full 10-Q not yet filed. Verdict: understated.
+
+Tracker entry updated (`latestReport`, `lastFilingSeen`,
+`nextExpectedFiling`, `lastChecked`, `reports` array). Claim released.
+
+**1 new report-period this firing — running total 33 → 34 tonight.**
+Well under the ~50 Big Tech week cap (this is the window's last entry
+at the raised cap; reverts to ~40 from "10-28 night").
+
+Remaining ~90 candidates are all `us-listed`, paused through "11-19
+night"; tier 2 backfill also paused over the same span.
+What-to-watch/comparison caps (8/night, 2/night) were already hit by
+the second firing. Nothing further to pick this firing. Committing and
+pushing report-tracker.json and nightly-log.md. A later firing this
+window should re-run `scan-recent-filings` fresh for any further
+hot-list/S&P 500 filings landing later tonight.
