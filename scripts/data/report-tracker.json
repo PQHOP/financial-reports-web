@@ -1634,22 +1634,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-18",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu756pr1000504l77godudcu"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/amt/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-26",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-27"
   },
   "AMZN": {
     "name": "Amazon.com, Inc.",
@@ -8448,22 +8448,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cnc/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/cnc/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "Q1 04-28, Q2 07-28 on results day; aggregators list Oct 27 (unconfirmed)",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-05",
+      "basis": "~365-day cadence; usual early-Feb FY earnings/10-K pattern",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -8508,22 +8508,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cnp/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/cnp/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-23",
-      "basis": "Q3 2025 10-Q 2025-10-23; ~90-day cadence",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-25",
+      "basis": "~365-day cadence from FY2025 10-K filing",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -8908,22 +8908,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cms/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/cms/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "Q1 04-28, Q2 07-28, same day as 8-K",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "~365-day cadence from FY2025 10-K filing",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -9215,22 +9215,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/glw/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/glw/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "Q3 2025 10-Q 2025-10-31; Q2 2026 8-K 07-28, 10-Q a day later",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -10056,22 +10056,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/ecl/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/ecl/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "Q2 8-K 07-28, 10-Q 08-06; CoolIT acquisition closed 07-02, in Q3",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks (Q2 pattern: 8-K 07-28, 10-Q 08-06)",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -11236,22 +11236,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/fcx/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/fcx/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02, Q3 operational update, no financials)",
+      "type": "8-K (Item 2.02)",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-02"
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026 earnings)",
-      "estimate": "2026-10-27",
-      "basis": "FCX's 2026-10-02 operational-update 8-K Ex.99.1 states Q3 2026 earnings release before market open Tue 2026-10-27",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-10-03",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -11702,22 +11702,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/hca/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/hca/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~10-28",
-      "estimate": "2026-10-23",
-      "basis": "Q3 2025 8-K 2025-10-24, 10-Q 10-30",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -11972,22 +11972,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/hubb/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/hubb/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q next day",
-      "estimate": "2026-10-27",
-      "basis": "Q2 8-K 07-28, 10-Q 07-29; ~90-day cadence",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,

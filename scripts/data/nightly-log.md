@@ -20521,3 +20521,75 @@ Well under the ~50 Big Tech week cap.
 
 Next in this firing: the 17 S&P 500 tier-0 candidates (AMT, CMS, CNC,
 CNP, ECL, FCX, GLW, HCA, HUBB, IQV, ITW, IVZ, JCI, PCAR, PNR, SHW, XYL).
+
+Researched and published all 17 S&P 500 tier-0 candidates in two waves
+of 9 (this entry) and 8 (next), 9 parallel Opus subagents each, same
+sanity-check protocol (HTTP 200, "At a glance"/Takeaway/quality-check
+present, not truncated, checked by the orchestrator before touching
+the tracker). First wave of 9 — AMT, CMS, CNC, CNP, ECL, FCX, GLW,
+HCA, HUBB — all Q3 2026:
+
+- **AMT** — https://financialreportinsights.com/companies/amt/2026/q3
+  — "American Tower Q3 2026: EPS fell 9.9% on paper losses, AFFO per
+  share rose 3.2% as U.S. leasing stalled" — unrealized equity-
+  investment losses, a straight-line-rent reversal and a higher tax
+  rate dragged GAAP EPS down; AFFO/share still grew. 8-K source, full
+  10-Q not yet filed. Verdict: understated.
+- **CMS** — https://financialreportinsights.com/companies/cms/2026/q3
+  — "CMS Energy Q3 2026: $456M NorthStar write-down cut EPS to $0.39;
+  adjusted EPS rose 55% to $1.44" — exiting the non-utility NorthStar
+  renewables arm drove a $456M (post-minority-interest) write-down;
+  utility earnings rose $86M on rates and demand. 10-Q source.
+  Verdict: understated.
+- **CNC** — https://financialreportinsights.com/companies/cnc/2026/q3
+  — "Centene Q3 2026: $311M of severance drove a $0.14 loss; adjusted
+  EPS rose to $0.58 and guidance went up" — GAAP loss from a
+  cost-cutting charge against a prior-year quarter that had a $6.7B
+  goodwill write-down; adjusted pre-tax earnings rose ~38%, partly
+  helped by a low 14.5% adjusted tax rate. 10-Q source. Verdict:
+  understated.
+- **CNP** — https://financialreportinsights.com/companies/cnp/2026/q3
+  — "CenterPoint Energy Q3 2026: EPS up 11% to $0.50 on Houston rate
+  recovery; 2026 guidance raised" — pre-tax income rose 44% but net
+  income only 13% because last year had a one-time state deferred-tax
+  benefit. 10-Q source. Verdict: understated.
+- **ECL** — https://financialreportinsights.com/companies/ecl/2026/q3
+  — "Ecolab Q3 2026: organic sales up 7% on 5% pricing, but CoolIT
+  deal costs cut GAAP EPS 5% to $1.95" — CoolIT acquisition financing
+  and deal costs pulled GAAP EPS down while adjusted EPS grew in line
+  with guidance. 8-K source, full 10-Q not yet filed. Verdict:
+  understated.
+- **FCX** — https://financialreportinsights.com/companies/fcx/2026/q3
+  — "Freeport-McMoRan Q3 2026: EPS up 76% to $0.81 as $6.54 copper
+  offset 23% lower sales" — a 40% higher realized copper price offset
+  lower volumes; profit mix shifted toward the wholly-owned, low-tax
+  US mines, cutting the effective tax rate and partners' pre-tax
+  share. 8-K source, full 10-Q not yet filed. Verdict: clean.
+- **GLW** — https://financialreportinsights.com/companies/glw/2026/q3
+  — "Corning Q3 2026: AI fiber lifts sales 18% and core EPS 36% to
+  $0.91, while Solar still loses money" — Optical Communications (Gen
+  AI products, enterprise networks) drove almost all the growth;
+  Solar's ramp, flagged last quarter as improving "starting in Q3",
+  did not happen. 8-K source, full 10-Q not yet filed. Verdict:
+  flattered.
+- **HCA** — https://financialreportinsights.com/companies/hca/2026/q3
+  — "HCA Healthcare Q3 2026: EPS up 4.5% to $7.27 only on buybacks;
+  profit fell 3.9% on a ~$400M uninsured hit" — patients losing
+  exchange coverage cost ~$400M of pre-tax income; all of the EPS
+  growth came from an 8.0% lower share count. 8-K source, full 10-Q
+  not yet filed. Verdict: flattered.
+- **HUBB** — https://financialreportinsights.com/companies/hubb/2026/q3
+  — "Hubbell Q3 2026: sales up 25% on data centers and NSI, but GAAP
+  EPS rose just 3.6% to $4.94" — Electrical Solutions margin recovered
+  strongly on data-center demand; a higher tax rate and NSI-acquisition
+  debt interest held GAAP EPS back. 8-K source, full 10-Q not yet
+  filed. Verdict: understated.
+
+All 9 tickers' tracker entries updated (`latestReport`,
+`lastFilingSeen`, `nextExpectedFiling`, `lastChecked`). Claims released.
+
+**9 new report-periods this firing — running total 7 → 16 tonight.**
+Well under the ~50 Big Tech week cap.
+
+Next: the remaining 8 S&P 500 tier-0 candidates (IQV, ITW, IVZ, JCI,
+PCAR, PNR, SHW, XYL).
