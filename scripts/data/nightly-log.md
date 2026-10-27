@@ -21148,3 +21148,18 @@ earlier 8-K). A later firing this window should re-run
 `scan-recent-filings` fresh one more time before 22:59 UTC in case
 any further filings land in the last hour, but should expect to find
 nothing left to do given tonight's count.
+
+**Final check this window (22:04 UTC / 07:04 JST, ~55 min left).**
+Network check passed (sec.gov 403 without UA as expected, 200 with
+the required UA). Re-ran `scan-recent-filings` fresh as suggested by
+the previous firing: **114 candidates, all `us-listed`** — no new
+hot-list or S&P 500 items. Confirmed against this entry: tonight's
+52 report-periods already exceed the ~50 Big Tech week ceiling
+(within the "tier 0 may exceed by a few" allowance), the 12 remaining
+hot-list rewrites were already correctly skipped this window, and
+what-to-watch/comparison caps were already hit by an earlier firing.
+us-listed stays at its 0 allotment (10-25 night through 11-19 night)
+and tier 2 backfill stays paused. Nothing eligible to publish or
+skip this firing — no tracker changes. Ending the window here with
+**52 report-periods tonight**, the last entry at the Big Tech week's
+raised cap; reverts to ~40 from "10-28 night".
