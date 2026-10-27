@@ -21,7 +21,7 @@ What we offer (pick one per target, never all three):
 
 | # | Target | Contact / form | Sent on | Replied | Result |
 |---|--------|----------------|---------|---------|--------|
-| 1 | Abnormal Returns | tadas@abnormalreturns.com | | | |
+| 1 | Abnormal Returns | tadas@abnormalreturns.com | 2026-10-27 | | |
 | 2 | The Transcript | admin@theweeklytranscript.com | | | |
 | 3 | Deep Quarry | Substack message | | | |
 | 4 | A Peek Behind the Numbers | behindthenumbers@btnresearch.com | | | |

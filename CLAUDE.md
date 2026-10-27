@@ -1216,7 +1216,10 @@ reach ~100/week and the hot-list rewrite queue is empty.
      what it is and which goal it moves (on 10-26 Hop asked what the
      outreach emails were for), plus how many minutes it takes him;
      recurring chores (screenshots, Request indexing) go in one line at
-     the end, not as decisions. Before calling a page weak, check the
+     the end, not as decisions. Request indexing has a small daily quota
+     on this property: on 2026-10-27 the 4th URL got "Quota Exceeded",
+     so list the URLs most valuable first, and carry what wasn't
+     submitted over to the next day's list. Before calling a page weak, check the
      live page: the 10-26 review said report titles get cut in search
      results, but the `<title>` was already the short "Tesla, Inc. (TSLA)
      Q3 2026 Earnings: Revenue $28.0B (-0.2%)".

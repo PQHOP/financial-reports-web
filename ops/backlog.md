@@ -322,7 +322,11 @@ date and commit.
   "credits depleted"**: X's API now bills writes by credit and the Free
   tier has none, so the social cron will log a 402 for X every night
   until credits are bought. Buying credits costs money → the user's
-  call; asked 10-25. Until then X is configured-but-dead; Bluesky keeps
+  call; asked 10-25. **Hop declined on 2026-10-27 (no X credits); the
+  four env vars are still in Vercel production — removing them was
+  blocked by the local session's permission check, so Hop removes them
+  or allows it.** Posting on X stays manual from `ops/posts/`. Until
+  removed X is configured-but-dead; Bluesky keeps
   posting. If Hop declines, remove the four X env vars so the cron stops
   trying (one less failing call per run).
 - **New sections shipped 2026-10-25 night (Hop's choice from the "what
