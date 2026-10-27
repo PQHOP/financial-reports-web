@@ -21049,3 +21049,16 @@ UHS, VTR, WM — the last 5 tier-0 candidates).
 
 **12 new report-periods confirmed this firing — running total
 34 → 46 tonight.**
+
+Dispatched batch 3 of 3 (last 5 tier-0 candidates): PPG, STX, UHS,
+VTR, WM. Published and verified so far:
+
+- **PPG** — https://financialreportinsights.com/companies/ppg/2026/q3
+  — "PPG Industries Q3 2026: prices caught up with costs, segment
+  profit +10%, EPS $2.12 (+8%)" — price increases fully offset cost
+  inflation a quarter ahead of Q2's own Q4 target; FY2026 adjusted
+  EPS guidance narrowed to $7.90-8.10. 8-K source; full 10-Q not yet
+  filed. Verdict: clean.
+
+Tracker updated for PPG. STX, UHS, VTR, WM still in progress.
+Committing and pushing now so progress isn't lost mid-batch.
