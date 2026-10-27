@@ -20818,3 +20818,32 @@ firing, nothing is eligible this firing. No tracker changes; running
 total stays **33 tonight**. Committing and pushing nightly-log.md only.
 A later firing should re-run `scan-recent-filings` fresh again for any
 new hot-list/S&P 500 filings landing later tonight.
+
+**Fourth firing (19:04 UTC / 04:04 JST).** Network check passed
+(sec.gov 403 without UA as expected, 200 with the required UA via
+`curl`). Repo was HEAD-detached on the third firing's commit (fresh
+container); checked out `master` and fast-forwarded 28 commits to
+`912e7a2` (today's ops routine work — company-lead rewrite,
+CompanyView tweak, `ops/posts/2026-10-27.md`, `ops/reports/2026-10-27.md`
+— unrelated to this routine). `npm install`'s usual harmless `prisma
+generate`/`DATABASE_URL` postinstall failure recurred; doesn't block
+`admin-publish`/`scan-recent-filings`. No active claims
+(`scripts/data/claims/` has only `README.md`).
+
+Re-ran `scan-recent-filings` fresh: 89 candidates (AMKR, ARCC, AWI,
+BFH, CTS, DORM, FMAO, HRI, HYMC, INIO, ITRI, JAKK, LECO, LXP, NAUT, NE,
+PII, REXR, RLYB, SFD, SMPL, SXC, TNL, VMI, WHR, WVE, ZURA, ... and 62
+more), every one `us-listed` — no new hot-list/S&P 500 filings since
+the third firing's check. `next-batch -- --n 200` confirmed the same:
+every candidate is `0-fresh-filing` tagged `us-listed`, zero
+`1-pending-overdue`, zero hot-list/sp500-backlog items. With the
+us-listed allotment at 0 and tier 2 paused (both through "11-19
+night"), hot-list rewrites all correctly skipped (all 12 remaining
+pending items' `nextExpectedFiling` falls within the next 10 days —
+NOW 10-22, INTC 10-23, TMUS 10-22, MDLZ 10-26, MU/F/MO/SO 10-27–10-28,
+KLAC/HOOD/EL 10-29, CL 10-30), and what-to-watch/comparison caps
+(8/night, 2/night) already hit by the second firing, nothing is
+eligible this firing. No tracker changes; running total stays
+**33 tonight**. Committing and pushing nightly-log.md only. A later
+firing should re-run `scan-recent-filings` fresh again for any new
+hot-list/S&P 500 filings landing later tonight.
