@@ -20593,3 +20593,78 @@ Well under the ~50 Big Tech week cap.
 
 Next: the remaining 8 S&P 500 tier-0 candidates (IQV, ITW, IVZ, JCI,
 PCAR, PNR, SHW, XYL).
+
+Second wave of 8 S&P 500 tier-0 candidates — IQV, ITW, IVZ, JCI, PCAR,
+PNR, SHW, XYL — same parallel-Opus-subagent / orchestrator-sanity-check
+protocol:
+
+- **IQV** — https://financialreportinsights.com/companies/iqv/2026/q3
+  — "IQVIA Q3 2026: revenue up 8% and clinical bookings up 15% to
+  $3.2B, but pretax profit fell 5%" — EPS growth came from a $42M
+  affiliate gain and 2.7% fewer shares rather than operations; backlog
+  written down ~$2.1B on an inactive-trial review. Segments now just
+  Commercial/R&D Solutions (restructured from three, since 2026-01-01).
+  8-K source. Verdict: flattered.
+- **ITW** — https://financialreportinsights.com/companies/itw/2026/q3
+  — "Illinois Tool Works Q3 2026: EPS +7% to $3.00, about 10%
+  excluding a prior-year tax benefit" — last year had a $27M one-time
+  tax benefit; ex that, EPS growth is closer to 10%. 8-K source.
+  Verdict: understated.
+- **IVZ** — https://financialreportinsights.com/companies/ivz/2026/q3
+  — "Invesco Q3 2026: adjusted EPS up 18% to $0.72 on $35.1B of
+  inflows; GAAP EPS dipped on a tax comparison" — last year's quarter
+  had a one-off tax benefit; AUM $2,537.8B (+19.4%), inflows mostly
+  ETF/index. Flagged a 2026-10-26 preferred-share refinancing as a
+  possible Q4 charge. 8-K source. Verdict: understated.
+- **JCI** — https://financialreportinsights.com/companies/jci/2026/q4
+  — fiscal Q4/FY2026 (JCI's fiscal year ends Sept 30; this is a new
+  period after our existing fiscal-Q3 report, published as "Q4" since
+  the release leads with quarterly, not full-year, figures) — "Johnson
+  Controls fiscal Q4 2026: orders up 44%, adjusted EPS +32% to $1.66;
+  FY27 guided to $6.15–$6.30" — most of the GAAP jump is prior-year
+  restructuring/impairment charges not recurring; FY2027 guidance
+  initiated. 8-K source. Verdict: flattered.
+- **PCAR** — https://financialreportinsights.com/companies/pcar/2026/q3
+  — "PACCAR Q3 2026: net income up 44% to $847.5M as U.S. truck
+  deliveries rose 39% and truck margin hit 8.1%" — clean quarter
+  against a weak year-ago base, no one-offs in either period. 8-K
+  source. Verdict: clean.
+- **PNR** — https://financialreportinsights.com/companies/pnr/2026/q3
+  — "Pentair Q3 2026: Pool sales fell 18% as destocking ended;
+  adjusted EPS $1.18 beat guidance" — adjusted figure beat guidance
+  but leans on tariff refunds and a lower share count; distributor
+  destocking in Pool said to be complete. 8-K source. Verdict:
+  understated.
+- **SHW** — https://financialreportinsights.com/companies/shw/2026/q3
+  — "Sherwin-Williams Q3 2026: sales +7.9%, but gross margin fell 1.4
+  pts and only buybacks lifted EPS" — raw-material/supply-chain costs
+  widened the margin gap from last quarter; buybacks (shares -2.5%)
+  carried EPS growth. 8-K source. Verdict: clean.
+- **XYL** — https://financialreportinsights.com/companies/xyl/2026/q3
+  — "Xylem Q3 2026: orders +10% organic, sales flat; GAAP EPS +34%
+  leans on one-offs, guidance cut" — adjusted operating income was
+  flat; EPS growth came from a tariff refund, a smaller loss on
+  business sales, lower restructuring, a lower tax rate and fewer
+  shares. Full-year guidance cut. 8-K source. Verdict: flattered.
+
+All 8 tickers' tracker entries updated (`latestReport`,
+`lastFilingSeen`, `nextExpectedFiling`, `lastChecked`). Claims
+released.
+
+**8 new report-periods this firing — running total 16 → 24 tonight.**
+Still well under the ~50 Big Tech week cap.
+
+**Tier 0 fully cleared for this firing: all 24 hot-list/S&P 500 fresh
+filings from tonight's `scan-recent-filings` are now published.**
+Remaining candidates (~80) are all `us-listed`, paused through the
+"11-19 night" entry — consistent with every firing since 10-25.
+hotlist-rewrite.json: 12 pending remain (5 superseded by tonight's
+reports, per the first batch). Sunday preview not applicable (today is
+Tuesday). What-to-watch notes and comparisons are ops-routine/other-day
+tasks, not reassessed this firing. Given tier 0 absorbed the whole
+night's effort so far (24/~50), ending this firing here: committing
+and pushing the tracker/log updates. A later firing this window should
+re-run `scan-recent-filings` fresh (BOH, CLS, BRX and other us-listed
+names from 10-26/10-27 may have grown the candidate pool, but the
+us-listed allotment stays 0) and check for any new hot-list/S&P 500
+filings that landed since this check.

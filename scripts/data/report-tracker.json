@@ -12144,22 +12144,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/itw/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/itw/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~11-05",
-      "estimate": "2026-10-27",
-      "basis": "Q1 release 04-30, Q2 07-28 (~91 days)",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -12390,22 +12390,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/ivz/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/ivz/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~11-03",
-      "estimate": "2026-10-28",
-      "basis": "Q2 8-K 07-28, 10-Q 08-04; ~90-day cadence",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -12450,22 +12450,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/iqv/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/iqv/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "Q3 2025 10-Q 2025-10-28; Q2 2026 07-28",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -12642,22 +12642,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/jci/2026/q3"
+      "period": "Q4",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/jci/2026/q4"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (FY2026); 10-K ~11-13",
-      "estimate": "2026-11-04",
-      "basis": "FY2025 earnings 8-K 2025-11-05, 10-K 11-14",
+      "type": "10-K (FY2026)",
+      "estimate": "2026-11-17",
+      "basis": "fiscal-year-end 10-K typically follows the Q4/FY earnings 8-K by ~3 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-27",
     "reports": [
       {
         "year": 2026,
@@ -14266,22 +14266,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj6otry000404l5j5ql98r3"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/pcar/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings (Q3 2026), 10-Q ~2026-10-29",
-      "estimate": "2026-10-21",
-      "basis": "Q3 2025 8-K 2025-10-21, 10-Q 2025-10-30",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-27"
   },
   "PKG": {
     "name": "Packaging Corporation of America",
@@ -14332,22 +14332,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj7ausk000004kzttlym0y5"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/pnr/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "10-Q + 8-K earnings (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "Q1/Q2 2026 10-Q same day as release, 4th Tuesday after quarter end; Q3 2025 10-Q 2025-10-21",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Q2 pattern: 10-Q filed same day as earnings 8-K (2026-07-28)",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-27"
   },
   "PCG": {
     "name": "PG&E Corporation",
@@ -15139,22 +15139,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk16mfz000604l58kg1i3b7"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/shw/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "Q1 and Q2 both filed same-day as 8-K, ~90-day cadence",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-27"
   },
   "SPG": {
     "name": "Simon Property Group",
@@ -16622,22 +16622,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/xyl/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/xyl/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
       "estimate": "2026-10-28",
-      "basis": "Earnings 8-K and 10-Q filed same day each quarter, 91 days apart (04-28, 07-28)",
+      "basis": "Q2 report's own estimate",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-27"
   },
   "YUM": {
     "name": "Yum! Brands",
