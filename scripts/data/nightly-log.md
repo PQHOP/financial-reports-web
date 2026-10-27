@@ -20893,3 +20893,101 @@ the second firing. Nothing further to pick this firing. Committing and
 pushing report-tracker.json and nightly-log.md. A later firing this
 window should re-run `scan-recent-filings` fresh for any further
 hot-list/S&P 500 filings landing later tonight.
+
+**Sixth firing (21:03 UTC / 06:03 JST).** Network check passed
+(sec.gov 403 without UA as expected, 200 with the required UA via
+`curl`). Repo was HEAD-detached on the fifth firing's commit (fresh
+container); checked out `master` and fast-forwarded cleanly to
+`07a7f27` (claim commit from this firing itself, see below — no
+intervening ops commits). `npm install`'s usual harmless `prisma
+generate`/`DATABASE_URL` postinstall failure recurred; doesn't block
+`admin-publish`/`scan-recent-filings`. Found a stale `EXE.json` claim
+file left over from the fifth firing (claim release wasn't pushed);
+harmless since EXE is already `"done"` and filtered out regardless,
+left it to expire on its own.
+
+Re-ran `scan-recent-filings` fresh: 132 candidates — **2 hot-list**
+(HOOD, V, both `[update]`) and **16 S&P 500** (ACGL, BXP, CSGP, EQT,
+ESS, EXR, FE, FFIV, NXPI, OKE, PPG, STX, UHS, VTR, WELL, WM, all
+`[update]`), rest `us-listed` (paused per the "10-25 night" →
+"11-19 night" pause). WELL's "update" is the 10-Q now landing a day
+after the 8-K we already published its Q3 report from — a
+same-period update, not a new report, unless the full filing adds
+something material (checking separately, see below). Claimed the 18
+hot-list/S&P 500 tickers. Still inside the Big Tech week raise
+(~50 tonight, extra ~10 for tier 0 only) — this is its last entry, and
+tier 0 may exceed the cap by a few when today's results justify it,
+so working the full batch rather than stopping partway.
+
+Dispatched 6 parallel Opus research subagents (batch 1 of 3):
+HOOD, V, ACGL, BXP, CSGP, EQT — one per company, against each one's
+8-K (Item 2.02) earnings release (or 10-Q where already filed), for
+Q3 2026 (EQT's subagent confirmed its 8-K was a real earnings release
+with revenue/EPS, not the narrow derivatives-only update from
+10-13). Sanity-checked each live canonical page myself before
+touching the tracker. Published and verified so far from batch 1:
+
+- **HOOD** — https://financialreportinsights.com/companies/hood/2026/q3
+  — "Robinhood Q3 2026: revenue rose 12% to a record $1.42B, but EPS
+  fell 16% to $0.51 on taxes and a fund loss" — a $67M mark-down on
+  its RVI fund stake and a tax rate up to 23.8% from 12.3% drove the
+  EPS decline; pre-tax income before the mark-down rose 9%. Event
+  contract revenue still 12% of revenue; margin loan book hit a
+  record $22.1B. 8-K source; full 10-Q not yet filed. Verdict:
+  understated.
+- **EQT** — https://financialreportinsights.com/companies/eqt/2026/q3
+  — "EQT Corporation Q3 2026: EPS fell 17% to $0.44 as gas volume
+  dropped 8% and prices slipped" — tax rate fell to 20.1% from 24.1%
+  and a $30M non-cash hedge gain lifted GAAP EPS above the $0.42
+  adjusted figure; announced an agreement to buy Range Resources (no
+  terms given yet). 8-K source; full 10-Q not yet filed. Verdict:
+  flattered.
+- **ACGL** — https://financialreportinsights.com/companies/acgl/2026/q3
+  — "Arch Capital Q3 2026: EPS fell 15.7% to $3.00 as $234M of
+  catastrophe losses cut underwriting profit 19%" — investment marks
+  swung from a $210M gain to a $99M loss and cat losses tripled; a
+  $1.43B buyback (9.2% fewer shares) held operating EPS to a 3.6%
+  decline. 8-K source; full 10-Q not yet filed. Verdict: understated.
+
+Batch 1's other three also reported back and were verified live:
+
+- **CSGP** — https://financialreportinsights.com/companies/csgp/2026/q3
+  — "CoStar Group Q3 2026: Homes.com cuts swing it to a $74M profit,
+  but bookings fell to $37M" — swing from a $31M Q3-2025 loss to $74M
+  profit is operational (Adjusted EBITDA +$115M, almost all from
+  residential turning profitable as marketing spend fell), but net
+  new bookings dropped to $37M from $69M in Q2. FY2026 guidance raised
+  across revenue/EBITDA/EPS. 8-K source; full 10-Q not yet filed.
+  Verdict: clean.
+- **BXP** — https://financialreportinsights.com/companies/bxp/2026/q3
+  — "BXP Q3 2026: FFO rose 8.6% to $1.89 a share, but same-property
+  cash NOI slipped 0.3%" — GAAP EPS swung to $0.71 from a loss mainly
+  because ~$214M of impairments hit Q3 2025; same-property cash NOI
+  fell as non-cash rent from free-rent periods rose to $46.5M. FY2026
+  FFO guidance raised. 8-K source; full 10-Q not yet filed. Verdict:
+  flattered.
+- **V** — https://financialreportinsights.com/companies/v/2026/annual
+  — "Visa fiscal 2026: revenue +15% to $45.9B; GAAP EPS +21% but
+  adjusted +16% as litigation charges shrank" — published as ANNUAL
+  (fiscal year ended Sept 30, 2026; the release leads on full-year
+  figures and gives only full-year cash flows) rather than a separate
+  Q4, so the eventual FY2026 10-K is a same-period update per the
+  tier-0 rule. Litigation charges fell to $1.7B from $2.5B and a
+  $314M tax benefit explain most of the GAAP/adjusted EPS growth gap;
+  buybacks cut shares 3.0%. 8-K source; full 10-K not yet filed.
+  Verdict: flattered.
+
+Tracker entries updated for all six batch-1 companies (`latestReport`,
+`lastFilingSeen`, `nextExpectedFiling`, `lastChecked`, `reports`
+array). Committing and pushing report-tracker.json and
+nightly-log.md now before starting batch 2 of 3 (ESS, EXR, FE, FFIV,
+NXPI, OKE) and batch 3 (PPG, STX, UHS, VTR, WM; WELL handled
+separately as a same-period filing-seen update, not a new report).
+
+**6 new report-periods confirmed this firing — running total
+34 → 40 tonight.** 11 more tier-0 candidates (batches 2-3) still to
+come; already at the night's normal ~40 cap, but still inside the
+Big Tech week's +10 tier-0-only allowance (this is the window's last
+night at that raise) and all remaining candidates are today's
+hot-list/S&P 500 earnings, so continuing per the "tier 0 may exceed
+the cap by a few" rule.
