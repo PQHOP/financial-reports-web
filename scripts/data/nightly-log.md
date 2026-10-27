@@ -20668,3 +20668,133 @@ re-run `scan-recent-filings` fresh (BOH, CLS, BRX and other us-listed
 names from 10-26/10-27 may have grown the candidate pool, but the
 us-listed allotment stays 0) and check for any new hot-list/S&P 500
 filings that landed since this check.
+
+**Second firing (17:04 UTC / 02:04 JST).** Network check passed (same
+sec.gov 403-without-UA / 200-with-UA pattern as the first firing).
+Pulled master (fast-forwarded 24 commits — today's ops routine work,
+unrelated). Re-ran `scan-recent-filings` fresh: 83 candidates, all
+`us-listed` (ARCC, AWI, BFH, DORM, HRI, ... — no new hot-list/S&P 500
+filings since the first firing). `next-batch -- --n 100` confirmed:
+every candidate is either `0-fresh-filing` (us-listed) or
+`4-us-listed-backlog`; S&P 500 tier 1 is fully 503/503 done, no
+`1-pending-overdue` items. With the us-listed allotment at 0 and tier 2
+paused (both through "11-19 night"), and no hot-list/S&P 500 fresh
+filings to work, correcting the previous firing's note: what-to-watch
+notes and comparisons are *not* ops-routine-only — CLAUDE.md's own
+budget order sends spare nightly-routine capacity to them before
+us-listed/tier 2 when tier 0 is otherwise empty. Did that work instead.
+
+**Hot-list rewrite check:** all 12 remaining `hotlist-rewrite.json`
+pending items (NOW, INTC, MU, KLAC, HOOD, F, TMUS, MDLZ, MO, SO, EL,
+CL) have `nextExpectedFiling` within the next 10 days (this week's/next
+week's Big Tech and hot-list earnings) — correctly skipped per the
+"skip for now" rule; 0 rewrites done tonight, queue still 12 pending.
+
+**7 what-to-watch notes** (hot-list companies reporting in 2-3 days per
+the live `/earnings` page, confirmed dates, each already has a
+published report and no existing note for the upcoming period — WFC,
+GS, BAC, VZ were excluded as already having published Q3 via 8-K; CL
+excluded as already having a note; AMZN/COIN/LLY/MA/MO/MRK excluded as
+already noted), via 7 parallel Opus subagents, each sanity-checked by
+the orchestrator (HTTP 200, full body through the closing sentence and
+disclaimer line, no truncation) on top of the subagent's own
+cache-busted check:
+
+- **CAT** — https://financialreportinsights.com/insights/what-to-watch-cat-q3-2026
+  — reports Thu Oct 29 before the open (Caterpillar's own advisory).
+  Recaps Q2 (sales +24%, op margin 20.9% or ~19% ex a $392M tariff
+  refund, EPS +68%, backlog $72.1B); guidance ~$600M of Q3 tariff
+  costs, "slight" dealer restocking, FY growth "mid-to-high teens"
+  with no further refunds assumed; watches: margin ex-refund,
+  Construction Industries' 35% growth/23% margin as stocking ends,
+  backlog growth.
+- **GILD** — https://financialreportinsights.com/insights/what-to-watch-gild-q3-2026
+  — reports Thu Oct 29 after close (Gilead's own release). Q2 GAAP
+  EPS -$8.45 was almost entirely $11.18B of acquired-IPR&D expense
+  (Arcellx/Tubulis/Ouro) plus a $1.75B Trodelvy write-off; ex those,
+  ~$2.33 vs $2.01 a year earlier. FY guidance (base sales ex-Veklury
+  $29.8-30.1B, GAAP loss/share -$3.75 to -$3.40) quoted; watches:
+  guidance range, Biktarvy/Yeztugo growth, further deal charges and
+  balance-sheet strain ($3.18B cash, $26.2B debt).
+- **INTC** — https://financialreportinsights.com/insights/what-to-watch-intc-q3-2026
+  — reports Thu Oct 29 after close (Intel's own Oct 6 release). Q2
+  revenue +25.4% to $16.1B but a $12.5B non-cash charge on shares
+  escrowed to the Commerce Department produced GAAP EPS -$2.16
+  ($0.42 non-GAAP); growth was price (+27%) not volume (-8%).
+  Guidance: revenue $15.8-16.8B, GAAP gross margin ~41.0%; watches:
+  whether the escrow charge swings again (143M shares, $15.6B
+  liability outstanding), margin vs 41%, PC unit volumes.
+- **MDLZ** — https://financialreportinsights.com/insights/what-to-watch-mdlz-q3-2026
+  — reports Thu Oct 29, 4:05pm ET (Mondelez's own Oct 15 release). Q2
+  diluted EPS +144.9% to $1.20 was mostly an $827M cocoa-hedge paper
+  gain (vs a $93M loss a year ago) plus a non-recurring pension
+  charge; adjusted EPS flat at $0.73, adjusted operating income -4.8%.
+  FY guidance: organic revenue growth ≥2% (raised), adjusted EPS flat
+  to +5% CC, ~$3B FCF; watches: cocoa costs vs margin, Europe
+  pricing/volume, marketing spend vs FCF pace.
+- **ABBV** — https://financialreportinsights.com/insights/what-to-watch-abbv-q3-2026
+  — reports Fri Oct 30 before the open (AbbVie's own Oct 1 release).
+  Confirmed via EDGAR the Oct 5 8-K (accession 0001551152-26-000030):
+  $216M pretax IPR&D/milestones charge ($0.11/share) cut Q3 adjusted
+  EPS guidance to $3.73-3.77 and FY to $13.76-13.96; filing states Q3
+  results "have not been finalized." Q2 revenue +10.2% to $16.99B,
+  Skyrizi+Rinvoq +~24% to $8.03B; watches: results vs the cut
+  guidance range, Skyrizi/Rinvoq growth durability, Apogee-deal
+  effects on debt/interest (deal closed 9/3 per 8-K
+  0001104659-26-104940).
+- **CVX** — https://financialreportinsights.com/insights/what-to-watch-cvx-q3-2026
+  — reports Fri Oct 30, 11am ET call. Q2 EPS +321% to $6.11 driven by
+  first full quarter of Hess production, an oil-price spike and wide
+  refining margins against a weak prior-year base (~$1.4-1.5B of
+  timing effects + a lower 27% vs 39% tax rate); ex-timing Q2 was
+  ~$10.6B. Diluted shares +14.5% from Hess stock issuance. Guidance:
+  $2.5-3.0B of Q3 buybacks. Watches: durability of the $10.6B base,
+  production >4M bbl/d, FCF vs buybacks/dividends/debt.
+- **XOM** — https://financialreportinsights.com/insights/what-to-watch-xom-q3-2026
+  — reports Fri Oct 30 (ExxonMobil's own Oct 16 release). Q2 EPS
+  +112% to $3.48 on a $3.18B refining-margin tailwind and $4.65B of
+  higher Upstream crude prices, plus a lower 23.4% tax rate and 3.6%
+  fewer shares — volumes actually fell. $2.56B hedge-timing gain
+  roughly offset ~$2.5B of impairments/reserves. Capex $27-29B and
+  $20B buybacks reaffirmed for FY2026. Watches: refining-margin
+  durability, hedge-gain reversal, buyback pace ($5B/qtr needed) vs
+  H1 FCF of $19.3B.
+
+**2 comparisons** (both same exact period, same narrow industry, same
+night's/recent S&P 500 publishes, neither previously covered — checked
+against the live `/insights` listing first):
+
+- **AMT vs. CCI** — https://financialreportinsights.com/insights/amt-vs-cci-q3-2026
+  — "CCI's 10.7% AFFO gain came from debt cuts, not towers." Crown
+  Castle's AFFO/share grew faster than American Tower's (10.7% vs
+  3.2%) almost entirely from post-fiber-sale debt paydown (interest
+  -28%, shares -2.5%); CCI's own tower Adjusted EBITDA fell 6.3%. Both
+  show the same DISH-churn/weak-leasing pattern. Takeaway: AMT in
+  better shape right now (data centers +17.4%, leverage 4.9x vs 6.5x,
+  dividend 62% of AFFO vs ~86%).
+- **CNC vs. MOH** — https://financialreportinsights.com/insights/cnc-vs-moh-q3-2026
+  — "Both lost Medicaid margin; only Centene could offset it." Both
+  insurers' Medicaid costs rose faster than state rates (Molina's MCR
+  +1.0pt to 93.0%; Centene's +0.2pt to 93.6%), but Centene's
+  Medicare/Marketplace businesses offset it (adjusted EPS +16% to
+  $0.58, guidance raised $0.40) while Molina's gains were mostly
+  one-off true-ups (adjusted EPS -50% to $0.89, guidance only
+  reaffirmed). Flags two site issues worth a daily-ops look: Molina's
+  Q3 report has no industry classification (so no peer table) and its
+  H1 is truncated mid-sentence.
+
+All 7 what-to-watch tickers' claims released. Tracker untouched (none
+of these are new reports or filing-tracker events).
+
+**9 article-equivalent report-periods this firing — running total
+24 → 33 tonight.** Still well under the ~50 Big Tech week cap.
+
+Nothing further to pick: tier 0 is empty (us-listed only, paused),
+hot-list rewrites all correctly skipped (<10 days out), what-to-watch
+and comparison caps (8/night, 2/night) both now hit for tonight. Ending
+this firing here: committing and pushing nightly-log.md. A later firing
+this window should re-run `scan-recent-filings` fresh for any new
+hot-list/S&P 500 filings, and re-check `/earnings` for any what-to-watch
+candidates that may open up if a cap resets are mis-tracked (they
+don't reset mid-night) — otherwise the next opportunity for this
+firing's categories is tomorrow night.
