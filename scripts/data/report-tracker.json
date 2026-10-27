@@ -12109,9 +12109,9 @@
       "url": "https://financialreportinsights.com/companies/hban/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-22"
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026, same period)",
@@ -12119,7 +12119,7 @@
       "basis": "full Q3 10-Q typically follows the earnings 8-K by 1-2 weeks; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-27"
   },
   "HII": {
     "name": "Huntington Ingalls Industries",
@@ -15190,23 +15190,31 @@
     "name": "Seagate Technology",
     "status": "done",
     "latestReport": {
-      "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk16h2s000004i1fakfien6"
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/stx/2027/q1"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-07-03",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-10-02",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K (fiscal Q1 2027)",
-      "estimate": "2026-10-28",
-      "basis": "prior-year Q1 FY earnings 8-K filed 2025-10-28",
+      "type": "10-Q (fiscal Q1 2027)",
+      "estimate": "2026-11-05",
+      "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-27",
+    "reports": [
+      {
+        "year": 2027,
+        "period": "Q1",
+        "publishedAt": "2026-10-27",
+        "url": "https://financialreportinsights.com/companies/stx/2027/q1"
+      }
+    ]
   },
   "SRE": {
     "name": "Sempra",

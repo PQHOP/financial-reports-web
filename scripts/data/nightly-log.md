@@ -21085,5 +21085,35 @@ Tracker updated for PPG, UHS, WM, VTR. STX (the last of the 18
 tier-0 candidates) still in progress. Committing and pushing now so
 progress isn't lost mid-batch.
 
-**16 new report-periods confirmed this firing — running total
-34 → 50 tonight**, with only STX left to confirm.
+STX also reported back and was verified live:
+
+- **STX** — https://financialreportinsights.com/companies/stx/2027/q1
+  — "Seagate Technology Q1 FY2027: revenue up 61% to $4.23B, EPS
+  tripled to $7.59 on a 57% gross margin" — published as **fiscal
+  2027 Q1** (quarter ended Oct 2, 2026), not calendar 2026 Q4: the
+  subagent matched the site's existing convention for off-calendar
+  fiscal reporters (WDC's identical quarter end is at
+  `/companies/wdc/2027/q1`; STX's own FY2026 10-K is at `2026/annual`
+  already). Year-ago quarter had an extra (14th) week, so per-week
+  growth was ~73% not 61%; both revenue and adjusted EPS beat prior
+  guidance. 8-K source; full 10-Q not yet filed. Verdict:
+  understated.
+
+Tracker entry updated. All 18 original tier-0 candidates (2 hot-list,
+16 S&P 500) now done — 17 new reports (WELL needed only a
+`lastFilingSeen` update, no new report).
+
+**17 new report-periods confirmed this firing — running total
+34 → 51 tonight.** Slightly over the night's normal ~50 cap, within
+the "tier 0 may exceed the cap by a few" allowance — every one of
+these is a hot-list/S&P 500 company that actually reported today,
+and this is the last night of the Big Tech week raise.
+
+Re-ran `scan-recent-filings` fresh with ~1.5 hours left in the
+window: **2 more new S&P 500 tier-0 items appeared — BKR (Baker
+Hughes) and HBAN (Huntington Bancshares)**, both `[update]`; rest
+unchanged `us-listed`. HBAN's filing is a 10-Q arriving 5 days after
+the 8-K we already published its Q3 2026 report from — a same-period
+update, so only `lastFilingSeen` was updated, no new report, no
+subagent spent. Claimed BKR and dispatched 1 Opus research subagent
+against its fresh 8-K earnings release.
