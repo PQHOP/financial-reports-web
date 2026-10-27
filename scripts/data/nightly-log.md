@@ -20991,3 +20991,61 @@ Big Tech week's +10 tier-0-only allowance (this is the window's last
 night at that raise) and all remaining candidates are today's
 hot-list/S&P 500 earnings, so continuing per the "tier 0 may exceed
 the cap by a few" rule.
+
+Also updated WELL's `lastFilingSeen` only (no new report): today's
+10-Q is the same Q3 2026 period we already published from yesterday's
+8-K.
+
+Dispatched batch 2 of 3 (6 more parallel Opus subagents): ESS, EXR,
+FE, FFIV, NXPI, OKE. Published and verified so far:
+
+- **ESS** — https://financialreportinsights.com/companies/ess/2026/q3
+  — "Essex Property Trust Q3 2026: EPS fell 41% to $1.52 on lost sale
+  gains; Core FFO rose 0.8% to $4.00" — GAAP EPS fell mostly because
+  Q3 2025 had a $62.3M property-sale gain and this quarter took a
+  $10.7M impairment; Core FFO guidance raised slightly. 8-K source;
+  full 10-Q not yet filed. Verdict: understated.
+- **EXR** — https://financialreportinsights.com/companies/exr/2026/q3
+  — "Extra Space Storage Q3 2026: EPS up 50% on a lapped sale loss;
+  Core FFO +4.3% to $2.17" — EPS growth mostly reflects a $105M
+  property-sale loss in Q3 2025 not recurring; same-store NOI grew
+  4.6% and FY2026 Core FFO guidance raised to $8.40-8.50. 8-K source;
+  full 10-Q not yet filed. Verdict: flattered.
+
+The other four batch-2 companies also reported back and were
+verified live:
+
+- **FE** — https://financialreportinsights.com/companies/fe/2026/q3
+  — "FirstEnergy Q3 2026: EPS up 26% to $0.96, but smaller charges,
+  tax and weather did much of the work" — of the 15-cent EPS rise,
+  about 5 cents came from net tax benefits and weather vs a year ago,
+  leaving underlying growth closer to 12%; 2026 Core EPS guidance
+  reaffirmed, now seen at/above the $2.72 midpoint. 8-K source; full
+  10-Q not yet filed. Verdict: flattered.
+- **FFIV** — https://financialreportinsights.com/companies/ffiv/2026/annual
+  — "F5 fiscal 2026: revenue up 11% to $3.42B on hardware, but Q4
+  EPS slipped to $3.23 as costs outran sales" — published as ANNUAL
+  (fiscal year ended Sept 30, 2026; cash flows in the release are
+  full-year only), so the eventual 10-K is a same-period update. Q4
+  alone: GAAP EPS fell 0.9% as opex rose 17.8% and the tax rate
+  jumped. 8-K source; full 10-K not yet filed. Verdict: understated.
+- **NXPI** — https://financialreportinsights.com/companies/nxpi/2026/q3
+  — "NXP Semiconductors Q3 2026: revenue up 19% to $3.79B as direct
+  sales caught up with distributors" — clean quarter: EPS growth
+  tracked operating income growth with no material one-offs; Q2's
+  concern about distributor-led growth resolved (direct +18.0% vs
+  distributor +20.3%). Full 10-Q filed directly (not just an 8-K).
+  Verdict: clean.
+- **OKE** — https://financialreportinsights.com/companies/oke/2026/q3
+  — "ONEOK Q3 2026: EPS up 43% to $2.13, but about 7% without a
+  one-time $336M tax benefit" — a noncash tax benefit tied to the
+  Apollo minority-investment reorganization supplied $0.53 of the
+  $0.64 EPS increase; FY2026 EBITDA guidance raised to $8.5-8.6B.
+  8-K source; full 10-Q not yet filed. Verdict: flattered.
+
+Tracker entries updated for all four. Batch 2 (6 of 6) complete.
+Committing and pushing now before deciding on batch 3 (PPG, STX,
+UHS, VTR, WM — the last 5 tier-0 candidates).
+
+**12 new report-periods confirmed this firing — running total
+34 → 46 tonight.**
