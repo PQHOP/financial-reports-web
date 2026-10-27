@@ -20424,3 +20424,100 @@ surface. No tracker changes. A later firing (next window, "10-27 night")
 should re-run `scan-recent-filings` fresh — NOW/INTC/TMUS/MDLZ (10-28/
 10-29) and the day-0 names (MU/PYPL/BA/HOOD/SPGI/RCL/HLT) report over the
 next 1-3 days and should surface as ordinary tier-0 updates once filed.
+
+### 2026-10-27 night (16:00 UTC 2026-10-27 → 22:59 UTC 2026-10-27 / 01:00–07:59 JST 2026-10-28)
+
+**Still inside the Big Tech week raise (the user's 2026-10-23 choice,
+extended 2026-10-25): this is the last entry of that window — ~50
+report-periods tonight, extra ~10 reserved for tier 0 (hot list/S&P
+500) only.** us-listed allotment stays **0** (10-25 night through
+11-19 night) and tier 2 backfill stays paused over the same span. From
+the "10-28 night" entry the cap reverts to ~40.
+
+**First firing (16:06 UTC / 01:06 JST).** Network check passed
+(sec.gov 403 without UA as expected — SEC's own response, not a proxy
+block — 200 with the required UA via `curl`; financialreportinsights.com
+200). Repo was HEAD-detached on the previous firing's commit; checked
+out `master` and fast-forwarded 15 commits to `1089be8` (today's ops
+routine work — company-lead rewrite, CompanyView tweak — unrelated to
+this routine). `npm install` hit the usual harmless `prisma
+generate`/`DATABASE_URL` postinstall failure; doesn't block
+`admin-publish`/`scan-recent-filings`. No active claims
+(`scripts/data/claims/` has only `README.md`).
+
+`scan-recent-filings` (tier 0): 105 candidates — **7 hot-list** (BA,
+HLT, KO, PYPL, RCL, SPGI, UPS, all `[update]`) and **17 S&P 500**
+(AMT, CMS, CNC, CNP, ECL, FCX, GLW, HCA, HUBB, IQV, ITW, IVZ, JCI,
+PCAR, PNR, SHW, XYL, all `[update]`), rest `us-listed` (paused per the
+"10-25 night" → "11-19 night" pause, consistent with every firing
+since). Claimed the 7 hot-list tickers, dispatched 7 parallel Opus
+research subagents (one per company), all against the 8-K (Item 2.02)
+earnings release or, where already filed, the 10-Q, for Q3 2026.
+Sanity-checked every live canonical page myself (HTTP 200, "At a
+glance"/Takeaway/quality-check present, not truncated) before touching
+the tracker. All 7 published:
+
+- **BA** — https://financialreportinsights.com/companies/ba/2026/q3 —
+  "Boeing Q3 2026: revenue up 3.9% to $24.2B, but a $252M lab-sale gain
+  made most of its $354M operating profit" — net loss narrowed to
+  $116M from $5,337M (last year's loss was mostly the 777X charge);
+  without the $252M HRL Laboratories sale gain, operating profit was
+  ~$102M. 8-K source; full 10-Q not yet filed. Verdict: flattered.
+- **HLT** — https://financialreportinsights.com/companies/hlt/2026/q3
+  — "Hilton Q3 2026: RevPAR up 5.8% and EPS up 33% to $2.37, but
+  adjusted EPS rose a more modest 16%" — $81M of the $132M operating-
+  income rise was owner-reimbursement programs swinging positive (a
+  timing effect); tax rate fell to 25.8% from 30.3% and diluted shares
+  fell 4.6%. Full 10-Q was already filed same day; adjusted EPS/
+  guidance/buybacks taken from the same-day earnings-release 8-K, body
+  says which figure came from which document. Verdict: flattered.
+- **KO** — https://financialreportinsights.com/companies/ko/2026/q3 —
+  "Coca-Cola Q3 2026: 7% organic growth, 2 points of it shipment
+  timing; full-year EPS outlook raised again" — reported EPS +8% vs.
+  comparable currency-neutral +9%, close because a $192M pension
+  charge and last year's $393M Nigeria charge roughly offset; diluted
+  shares flat. 8-K source; full 10-Q not yet filed. Verdict: clean.
+- **PYPL** — https://financialreportinsights.com/companies/pypl/2026/q3
+  — "PayPal Q3 2026: adjusted EPS +8% to $1.45 came from 10.6% fewer
+  shares; revenue grew 2%" — GAAP EPS fell 3.8% on a $178M
+  restructuring charge and a higher tax rate; all of the adjusted
+  per-share gain came from buybacks (shares −10.6%). 8-K source; full
+  10-Q not yet filed. Verdict: understated.
+- **RCL** — https://financialreportinsights.com/companies/rcl/2026/q3
+  — "Royal Caribbean Q3 2026: EPS up 12% to $6.45, but only $0.10 of a
+  $0.26 beat lifts the full year" — revenue +8.8% on +8.4% capacity,
+  net yield +0.9%; unit costs ex-fuel fell 1.9% partly on expenses
+  shifting into Q4. Buybacks/dividends given as 9-month YTD (body says
+  so). 8-K source; full 10-Q not yet filed. Verdict: clean.
+- **SPGI** — https://financialreportinsights.com/companies/spgi/2026/q3
+  — "S&P Global Q3 2026: EPS up 26% on a $200M sale gain; adjusted EPS
+  +9% as Ratings stalled at +2%" — GAAP EPS jump mostly a $200M Energy
+  disposal gain; Ratings transaction revenue growth fell from +25% to
+  +1% (as last quarter's report flagged as a risk). Guidance raised on
+  revenue/adjusted EPS, GAAP EPS guidance cut on less expected disposal
+  gain. 8-K source; full 10-Q not yet filed. Verdict: flattered.
+- **UPS** — https://financialreportinsights.com/companies/ups/2026/q3
+  — "United Parcel Service Q3 2026: EPS fell 11.6% to $1.37, but
+  stripping one-offs shows ~17% growth" — last year's adjusted EPS
+  included a $0.30 one-time sale-leaseback gain; this quarter carries
+  a $182M Supply Chain Solutions goodwill write-down. U.S. Domestic
+  margin widened to 7.0% but daily volume still fell 3.3% (last
+  quarter's flagged risk did not resolve). Raised FY targets. 8-K
+  source; full 10-Q not yet filed. Verdict: understated.
+
+5 of the 7 (BA, PYPL, SPGI, RCL, HLT) were also pending items in
+`hotlist-rewrite.json` from the old-format queue — marked `superseded`
+there instead of separately rewritten, since today's new-format report
+already supersedes the old Q2 one. `hotlist-rewrite.json` pending count:
+17 → 12.
+
+All 7 tickers' tracker entries updated (`latestReport`,
+`lastFilingSeen`, `nextExpectedFiling` estimated at ~1-2 weeks out for
+the full 10-Q where only the 8-K has landed so far, `lastChecked`).
+Claims released after publish.
+
+**7 new report-periods this firing — running total 0 → 7 tonight.**
+Well under the ~50 Big Tech week cap.
+
+Next in this firing: the 17 S&P 500 tier-0 candidates (AMT, CMS, CNC,
+CNP, ECL, FCX, GLW, HCA, HUBB, IQV, ITW, IVZ, JCI, PCAR, PNR, SHW, XYL).

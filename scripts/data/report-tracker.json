@@ -3768,22 +3768,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubc7lso000004jsb9gjpk61"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/ko/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-07-03",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-10-02",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "~90 days after Q2 2026 10-Q filed 2026-07-29; KO typically reports Q3 in late October",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-27"
   },
   "PEP": {
     "name": "PepsiCo",
@@ -4682,44 +4682,44 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubjafse000004jn3nelxhuk"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/pypl/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "~91-day cadence from Q2 filing (filed 2026-07-28)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-27"
   },
   "BA": {
     "name": "Boeing Company",
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-21",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubji0rh000204jpntujfdf0"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/ba/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "~91-day cadence from Q2 filing (filed 2026-07-28)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-21"
+    "lastChecked": "2026-10-27"
   },
   "NKE": {
     "name": "Nike, Inc.",
@@ -5301,22 +5301,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucsazaa000504jv5pq3fp1s"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/spgi/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-28",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-27"
   },
   "BLK": {
     "name": "BlackRock, Inc.",
@@ -5637,22 +5637,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-23",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucwc4w8000404jsh0f0zaak"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/ups/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-04",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-05",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-27"
   },
   "FDX": {
     "name": "FedEx",
@@ -6072,22 +6072,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-24",
-      "url": "https://financialreportinsights.com/reports/cmuf1li7j000004jqc3saa60e"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/rcl/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "prior-year Q3 10-Q filed 2025-10-28",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-24"
+    "lastChecked": "2026-10-27"
   },
   "CCL": {
     "name": "Carnival Corporation",
@@ -6146,22 +6146,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-24",
-      "url": "https://financialreportinsights.com/reports/cmuf1ltfc000004kwpbnamydu"
+      "period": "Q3",
+      "publishedAt": "2026-10-27",
+      "url": "https://financialreportinsights.com/companies/hlt/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-28"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-27"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "~90-day cadence (Q1 04-28, Q2 07-28)",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "Hilton's FY results typically land early-to-mid February",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-24"
+    "lastChecked": "2026-10-27"
   },
   "ORLY": {
     "name": "O'Reilly Automotive",

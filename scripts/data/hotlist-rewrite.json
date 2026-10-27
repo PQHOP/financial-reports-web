@@ -562,7 +562,7 @@
       "reportId": "cmubjafse000004jn3nelxhuk",
       "url": "https://financialreportinsights.com/companies/pypl/2026/q2",
       "nextExpectedFiling": "2026-10-27",
-      "status": "pending"
+      "status": "superseded"
     },
     {
       "ticker": "BA",
@@ -572,7 +572,7 @@
       "reportId": "cmubji0rh000204jpntujfdf0",
       "url": "https://financialreportinsights.com/companies/ba/2026/q2",
       "nextExpectedFiling": "2026-10-27",
-      "status": "pending"
+      "status": "superseded"
     },
     {
       "ticker": "NKE",
@@ -829,7 +829,7 @@
       "reportId": "cmucsazaa000504jv5pq3fp1s",
       "url": "https://financialreportinsights.com/companies/spgi/2026/q2",
       "nextExpectedFiling": "2026-10-27",
-      "status": "pending"
+      "status": "superseded"
     },
     {
       "ticker": "BLK",
@@ -1158,7 +1158,7 @@
       "reportId": "cmuf1li7j000004jqc3saa60e",
       "url": "https://financialreportinsights.com/companies/rcl/2026/q2",
       "nextExpectedFiling": "2026-10-27",
-      "status": "pending"
+      "status": "superseded"
     },
     {
       "ticker": "MAR",
@@ -1179,7 +1179,7 @@
       "reportId": "cmuf1ltfc000004kwpbnamydu",
       "url": "https://financialreportinsights.com/companies/hlt/2026/q2",
       "nextExpectedFiling": "2026-10-27",
-      "status": "pending"
+      "status": "superseded"
     },
     {
       "ticker": "ORLY",
