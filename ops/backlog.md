@@ -323,12 +323,11 @@ date and commit.
   tier has none, so the social cron will log a 402 for X every night
   until credits are bought. Buying credits costs money → the user's
   call; asked 10-25. **Hop declined on 2026-10-27 (no X credits); the
-  four env vars are still in Vercel production — removing them was
-  blocked by the local session's permission check, so Hop removes them
-  or allows it.** Posting on X stays manual from `ops/posts/`. Until
-  removed X is configured-but-dead; Bluesky keeps
-  posting. If Hop declines, remove the four X env vars so the cron stops
-  trying (one less failing call per run).
+  four X env vars were removed from Vercel production the same day**
+  (takes effect at the next production deploy; after that the cron's X
+  leg is a no-op). Posting on X stays manual from `ops/posts/`; Bluesky
+  keeps auto-posting. Buying credits later needs new keys from the X
+  developer portal (Vercel secrets can't be read back).
 - **New sections shipped 2026-10-25 night (Hop's choice from the "what
   else to analyze" list):** `/red-flags` (EDGAR 8-K 4.02/4.01, NT
   10-K/10-Q, going-concern text; hourly, no usage; live and answering
