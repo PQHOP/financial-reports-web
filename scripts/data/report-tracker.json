@@ -8511,22 +8511,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/cvna/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsknv2c000308l6zxnyagtr"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "Q3 2025 10-Q 2025-10-29; 10-Q same day as results",
+      "type": "8-K earnings / 10-K (FY2026)",
+      "estimate": "2027-02-20",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -10205,22 +10205,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/ebay/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsknk73000108l661ychj13"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02/2.05 preannouncement + restructuring, no results)",
+      "type": "8-K (2.02)",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-22"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K (Item 2.02, Q3 2026 earnings release)",
+      "type": "10-Q (Q3 2026, full filing)",
       "estimate": "2026-10-29",
-      "basis": "preannouncement filed 2026-10-22 said results would beat Aug guidance but gave no figures; last year's Q3 earnings release was 2025-10-29; actual results filing still pending",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-22",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -10619,22 +10619,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/eqix/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskoiec000408l63hlllf2o"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "10-Q on earnings day ~13 weeks after quarter end (2025-10-29)",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-15",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -12166,22 +12166,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/hona/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsknu1w000208l6nhmh3ng4"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-27",
-      "filedAt": "2026-08-05"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-26",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-11-04",
-      "basis": "Q2 results 39 days after quarter-end; Q3 ends 2026-09-26",
+      "type": "10-Q (Q3 2026, full filing)",
+      "estimate": "2026-10-29",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
