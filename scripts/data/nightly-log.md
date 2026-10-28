@@ -21949,3 +21949,56 @@ GEN×2); claims released.
 **Running total: 42 report-periods tonight** (36 → 42). Within the
 Big Tech week ~50 cap, 8 of headroom left. Four S&P 500 candidates
 remain from this scan: MAA, MGM, RJF, VICI.
+
+**Final sub-batch: MAA, MGM, RJF, VICI.** Claimed and dispatched all
+four as parallel Opus subagents. All four finished within budget;
+self-reported live checks, independently re-verified (200, "At a
+glance" present, not truncated) before touching the tracker.
+
+- **MAA — Q3 2026.** Revenue $560.1M (+1.0%), Core FFO per share
+  $2.10 (-2.8%, landed at the midpoint of July guidance), same-store
+  NOI -1.8% as new-lease pricing weakened further (-6.0% vs -5.3% in
+  Q2); FY2026 Core FFO guidance narrowed/lowered slightly. Earnings
+  quality: clean. https://financialreportinsights.com/companies/maa/2026/q3
+- **MGM — Q3 2026.** Revenue $4,211.9M (-0.9%), net loss narrowed to
+  -$17.1M from -$285.3M only because last year's $256M goodwill
+  write-down and $93M Empire City write-down didn't recur — adjusted
+  EPS and adjusted EBITDA both actually fell (-20.4% EBITDA); Strip
+  RevPAR -8%. Also covers the People/Barry Diller standstill
+  amendment clearing the way for buybacks. Earnings quality:
+  flattered. https://financialreportinsights.com/companies/mgm/2026/q3
+- **RJF — FY2026 ANNUAL** (fiscal year ended Sept 30; today's 8-K
+  covers both fiscal Q4 and the full fiscal year, so published as
+  ANNUAL with Q4 figures broken out in the body, matching how VISA's
+  September fiscal year-end is handled on this site). Net revenues
+  $15,791M (+12.3%), diluted EPS $11.91 (+15.6%, ~8.3% ex a
+  non-recurring legal charge and a loan-loss reserve release).
+  Earnings quality: flattered.
+  https://financialreportinsights.com/companies/rjf/2026/annual
+- **VICI — Q3 2026.** Revenue $1,065.5M (+5.8%), AFFO per share $0.62
+  (+4.3%, beat guidance), but diluted EPS fell 56.4% on a $458.0M
+  non-cash tenant-credit reserve charge (mostly a Caesars rating
+  downgrade tied to its pending acquisition — Caesars pays 38% of
+  VICI's rent); FY2026 AFFO guidance raised. Earnings quality:
+  understated. https://financialreportinsights.com/companies/vici/2026/q3
+
+Tracker updated for all four; claims released.
+
+**Running total: 46 report-periods tonight** (42 → 46). Within the
+Big Tech week ~50 cap (4 of headroom left) — stopping new tier-0
+dispatches here for this firing rather than pushing closer to the
+cap. Will re-scan once more to log what's left for the next firing,
+but won't publish further this firing.
+
+**Rough edge worth carrying forward:** two research subagents this
+firing (KLAC, Ford) reported shared-scratchpad filename collisions
+with each other's temp files mid-run (both caught and recovered by
+re-downloading into their own folder before publishing, so no bad
+data went live) — future subagent prompts should be told explicitly
+to use a ticker-named subfolder under their own scratch directory,
+not generic filenames, to avoid this. Also two subagents (Ford, RJF)
+needed one `--edit` each to fix a missing `**At a glance**` markdown
+heading that stopped the At-a-glance box from rendering — both
+caught by the subagent's own live-page check before handing back, so
+no broken pages went live, but worth flagging the markdown heading
+requirement more explicitly in future prompts.

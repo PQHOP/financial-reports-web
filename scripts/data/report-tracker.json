@@ -13776,22 +13776,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/mgm/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskvziz000308jsypke88nd"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-20",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-28"
   },
   "MCHP": {
     "name": "Microchip Technology",
@@ -15173,22 +15173,40 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk0ng5a000104l5ayysl98p"
+      "period": "ANNUAL",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskw9ld000408jswwn0xn6v"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-09-27",
+        "url": "https://financialreportinsights.com/reports/cmuk0ng5a000104l5ayysl98p",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      },
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvskw9ld000408jswwn0xn6v",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026 Annual)",
-      "estimate": "2026-10-22",
-      "basis": "fiscal year ends September 30; prior earnings releases came Jan 28, Apr 22, Jul 22, so Q4/FY annual results estimated late October 2026",
+      "type": "10-K (FY2026, full filing)",
+      "estimate": "2026-11-15",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-28"
   },
   "RDDT": {
     "name": "Reddit, Inc.",
@@ -16660,22 +16678,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/vici/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskvz4n000208js8hifio56"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Q3 2025 filed 2025-10-30; third-party calendars (MarketBeat) list 10/29/2026 but VICI has not announced",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-20",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-28"
   },
   "VMC": {
     "name": "Vulcan Materials Company",
