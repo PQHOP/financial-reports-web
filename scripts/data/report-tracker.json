@@ -1221,12 +1221,12 @@
       "filedAt": "2026-08-03"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-01",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
-      "confidence": "estimated"
+      "type": "10-Q / earnings 8-K (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Ameren own 2026-10-14 announcement (PR Newswire/finviz): Q3 2026 earnings webcast 2026-11-06 9am CT/10am ET; results typically released the evening before the call per 2025 pattern (Q3 2025: results 2025-11-05, call 2025-11-06)",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-28"
   },
   "AEP": {
     "name": "American Electric Power Company, Inc.",
@@ -14064,12 +14064,12 @@
       "filedAt": "2026-08-03"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-01",
-      "basis": "~90 day cadence from last 10-Q",
-      "confidence": "estimated"
+      "type": "8-K earnings release (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Norwegian Cruise Line own 2026-10-15 GlobeNewswire release: results released 2026-10-29 6:30am ET before market open, call 8:30am ET (reprinted by cruiseindustrynews.com, finviz, Seatrade Cruise News)",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-28"
   },
   "NRG": {
     "name": "NRG Energy",
