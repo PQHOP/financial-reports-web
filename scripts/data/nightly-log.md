@@ -21517,3 +21517,78 @@ tier 2 backfill is paused through 11-19 night, and the Sunday preview
 doesn't apply (today is Wednesday). Wrapping up this firing: 26
 report-periods, 1 comparison, 1 watch note. Committing and pushing
 final tracker/log state.
+
+**Next firing (17:05 UTC / 02:05 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA). Found repo HEAD
+detached on an older commit (`b38c294`, matching origin at the time)
+with local branch `master` stale at a much earlier commit (`ddaf228`,
+missing everything from the "sixth firing" onward) — a leftover from
+an earlier checkout in this container. Working tree was clean in both
+cases; reset local `master` to `origin/master` (`b38c294`) to recover,
+no work lost. `npm install` hit the usual harmless `prisma generate`/
+`DATABASE_URL` postinstall failure; reverted the incidental
+`package-lock.json` diff before continuing.
+
+Re-ran `scan-recent-filings`: 133 candidates, all `us-listed` (0
+allotment through "11-19 night") — confirms tier 0 for hot-list/S&P
+500 is genuinely exhausted for tonight. Tier 1 S&P 500 confirmed
+501 done + 2 skipped = 503/503. Hot-list rewrite queue: still 12
+pending, all within the "skip for now" 10-day window, no change.
+
+**Comparison (2/2 used tonight — cap reached):** published Amphenol
+vs. TE Connectivity Q3 2026 —
+https://financialreportinsights.com/insights/aph-vs-tel-q3-2026 —
+both reported fresh Q3/fiscal-Q4 2026 results tonight, same industry
+(electronic connectors/components). APH organic growth 37% vs TEL's
+13.4%; similar incremental margins (~33¢ vs ~31¢ per added revenue
+dollar) despite very different starting margins; opposite
+earnings-quality verdicts (APH understated on a one-off tax
+settlement + deal costs, TEL flattered by a tax-rate gain). The
+subagent caught and fixed a URL mistake in my brief (TEL's "Q3 2026"
+page is fiscal Q3, April-June; the quarter comparable to APH's
+calendar Q3 is TEL's fiscal Q4 2026, published today) rather than
+publishing a mislabeled comparison — noted for future tickers with a
+non-calendar fiscal year. Not counted as a report-period.
+
+**Company what-to-watch notes (4 dispatched, 3 published, 1/8 → 4/8
+used tonight):**
+- **EL** — https://financialreportinsights.com/insights/what-to-watch-el-q1-2027
+  — confirmed report date Mon 2026-11-02 before market open (Estée
+  Lauder's own 2026-10-19 release). From our FY2026 annual report:
+  adjusted operating margin recovery to 11.2%, FY2027 guidance
+  (organic growth 3-5%, adjusted EPS $3.10-3.35), and whether makeup
+  (flat, loss-making) returns to growth.
+- **FANG** — https://financialreportinsights.com/insights/what-to-watch-fang-q3-2026
+  — confirmed Mon 2026-11-02 after close (company's 2026-09-30
+  release). From our Q2 2026 report: Waha gas prices vs. hedges,
+  production vs. guidance, and how free cash flow splits between
+  buybacks and debt paydown now the 50% payout floor is gone.
+- **L** (Loews) — https://financialreportinsights.com/insights/what-to-watch-l-q3-2026
+  — confirmed Mon 2026-11-02 (company's 2026-10-13 release; corrects
+  the tracker's 11-01 estimate). From our Q2 2026 report: CNA's
+  underlying loss ratio (64.1% vs 61.5%), another legacy mass-tort
+  charge, and reliance on investment income.
+- **AEE** (Ameren) — declined. Tracker's 11-01 estimate was stale;
+  Ameren's own 2026-10-14 release confirms an 11-06 webcast (results
+  likely 11-05, outside the 2-4 day window today). Tracker corrected
+  to 11-05/confirmed; retry window ~10-31 to 11-03.
+- **NCLH** (Norwegian Cruise Line) — declined. Tracker's 11-01
+  estimate was stale; the company's own 2026-10-15 release confirms
+  results **tomorrow, 2026-10-29** before market open — too close
+  (1 day) for a what-to-watch note, but this means NCLH should surface
+  as an ordinary tier-0 fresh filing in tomorrow's scan. Tracker
+  corrected to 10-29/confirmed.
+
+Tracker updated for AEE and NCLH only (corrected `nextExpectedFiling`
++ `lastChecked`); EL/FANG/L needed no tracker change (watch notes
+aren't report-periods). All 5 tickers' claims released, APH/TEL
+claims released after the comparison published.
+
+**This firing: 0 report-periods, 1 comparison, 3 watch notes, 2
+tracker corrections.** Running total tonight unchanged at 26
+report-periods (comparisons/watch notes don't count against the
+report-period cap, and both the comparison cap (2/night) and the
+watch-note allotment (4/8 used) still have room, but every other
+track — tier 0 hot-list/S&P 500, tier 1 S&P 500, us-listed, tier 2
+backfill, hot-list rewrite — is exhausted or paused for tonight. No
+further work available this firing; ending here and pushing.
