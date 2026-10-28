@@ -4022,5 +4022,37 @@
     "country": "United States",
     "exchange": "NYSE",
     "industry": "Health Care"
+  },
+  {
+    "slug": "be",
+    "name": "Bloom Energy",
+    "ticker": "BE",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Industrials"
+  },
+  {
+    "slug": "p",
+    "name": "Everpure",
+    "ticker": "P",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
+  },
+  {
+    "slug": "ilmn",
+    "name": "Illumina",
+    "ticker": "ILMN",
+    "country": "United States",
+    "exchange": "NASDAQ",
+    "industry": "Health Care"
+  },
+  {
+    "slug": "twlo",
+    "name": "Twilio",
+    "ticker": "TWLO",
+    "country": "United States",
+    "exchange": "NYSE",
+    "industry": "Information Technology"
   }
 ]
