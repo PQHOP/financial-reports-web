@@ -21258,3 +21258,43 @@ earlier read of mine: PSX's 10-Q looked like a same-period update at
 first glance (it had an [update] tag) but its tracker entry is still
 at Q2 2026 — PSX needs a genuine new Q3 2026 report, moved into the
 next subagent batch instead.
+
+Second batch of 5 claimed and dispatched: CHRW, FLEX, FTV, GEHC, GEV.
+Published and verified (all 5, canonical URL 200 after publish):
+
+- **CHRW** — https://financialreportinsights.com/companies/chrw/2026/q3
+  — "C.H. Robinson Q3 2026: truckload profit per load up 17%, lifting
+  EPS 24.6% to $1.67 on 10% fewer staff" — adjusted gross profit +14.5%
+  while average headcount fell 10.4%; operating cash flow only 43% of
+  net income YTD, with buybacks/dividends funded by debt (now $1.87B).
+  Covers the pending RXO acquisition (merger agreement 2026-10-04).
+  8-K source; full 10-Q not yet filed. Verdict: clean.
+- **FLEX** — https://financialreportinsights.com/companies/flex/2027/q2
+  — "Flex Q2 FY2027: sales up 25% to $8.49B; $110M of spin-off and deal
+  costs held GAAP EPS to $0.70" — published as fiscal Q2 FY2027
+  (quarter ended Sep 25, 2026); ex one-offs pretax profit grew ~50% vs
+  GAAP EPS +35%. No segment detail in the release (comes with the
+  10-Q). 8-K source. Verdict: understated.
+- **FTV** — https://financialreportinsights.com/companies/ftv/2026/q3
+  — "Fortive Q3 2026: GAAP EPS up 63% to $0.57, but adjusted net
+  earnings rose just 3.1% as buybacks did the work" — GAAP EPS laps a
+  $38M spin-off cost and adds an $18M tariff refund; 8.8% fewer shares
+  drove most of adjusted EPS growth. FY2026 adjusted EPS guidance
+  raised to $3.10-3.14. 10-Q source. Verdict: flattered.
+- **GEHC** — https://financialreportinsights.com/companies/gehc/2026/q3
+  — "GE HealthCare Q3 2026: revenue up 7.2%, tax releases lifted GAAP
+  EPS 39% vs 25% adjusted" — foreign tax reserve releases cut the tax
+  rate to 17.1% from 27.8%; organic orders growth slowed to 4.0% from
+  11.1% in Q2, book-to-bill fell to 1.03x. Agreed to buy SOFIE
+  Biosciences for $945M. 10-Q source. Verdict: flattered.
+- **GEV** — https://financialreportinsights.com/companies/gev/2026/q3
+  — "GE Vernova Q3 2026: revenue +27% to $12.6B, EPS nearly tripled to
+  $4.81 as backlog hit $197B" — pretax income +139% on Gas Power price
+  and volume with no deal gain; a lower tax rate added ~$0.76 of the
+  $3.17 EPS rise. FY2026 guidance raised across revenue, margin and
+  free cash flow. 10-Q source. Verdict: clean.
+
+Tracker updated for all 5; claims released. No skips this batch.
+
+**10 new report-periods confirmed this firing — running total 5 → 10
+tonight.** Continuing with further batches.
