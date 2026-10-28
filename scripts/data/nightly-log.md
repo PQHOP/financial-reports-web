@@ -21346,3 +21346,45 @@ Tracker updated for all 5; claims released. No skips this batch.
 
 **15 new report-periods confirmed this firing — running total 10 → 15
 tonight.** Continuing with further batches.
+
+Fourth batch of 5 claimed and dispatched: LII, MAS, NI, ODFL, OTIS.
+Published and verified (all 5, canonical URL 200 after publish):
+
+- **LII** — https://financialreportinsights.com/companies/lii/2026/q3
+  — "Lennox International Q3 2026: sales up 10% but EPS fell 13% to
+  $6.41 as residential margins sank" — residential segment margin
+  fell 4.9 points to 18.7% on price cuts to win back share plus
+  tariff/inflation costs; tax rate jumped to 24.6% from 18.1%. FY2026
+  adjusted EPS guidance cut a second time to $21.00-21.50. 8-K source;
+  full 10-Q not yet filed. Verdict: understated.
+- **MAS** — https://financialreportinsights.com/companies/mas/2026/q3
+  — "Masco Q3 2026: prices lift operating profit 12%, buybacks push
+  EPS up 30% to $1.17" — no net tariff refund this quarter (unlike
+  Q2's $95M); a $13M Bristan sale gain, lower tax rate and 6.2% fewer
+  shares (partly debt-funded) drove the rest of the EPS gain over
+  adjusted pretax income's +13.7%. 10-Q source. Verdict: flattered.
+- **NI** — https://financialreportinsights.com/companies/ni/2026/q3
+  — "NiSource Q3 2026: EPS up 35% to $0.27, but a $43M Ohio
+  property-tax settlement did much of the work" — without the
+  settlement, pretax income would have fallen ~15% instead of rising;
+  NIPSCO operating income fell 4.1% despite 11.8% higher industrial
+  electric sales. Signed a 788 MW data-center deal with Microsoft;
+  first 2027 guidance given. 10-Q source. Verdict: flattered.
+- **ODFL** — https://financialreportinsights.com/companies/odfl/2026/q3
+  — "Old Dominion Q3 2026: EPS up 28.9% to $1.65, but fuel surcharges
+  drove most of 13.1% revenue growth" — ex-fuel yield rose only 5.1%
+  vs 13.3% with fuel; tons per day turned positive YoY in September
+  after a soft Q2. No one-off accounting items. 8-K source; full 10-Q
+  not yet filed. Verdict: flattered.
+- **OTIS** — https://financialreportinsights.com/companies/otis/2026/q3
+  — "Otis Worldwide Q3 2026: sales up 6% but adjusted EPS flat at
+  $1.05; Service margin recovers to 24.2%" — GAAP EPS +14% driven by
+  a tax benefit replacing prior-year restructuring charges; China new
+  equipment sales fell >20%. FY2026 guidance maintained (free cash
+  flow narrowed to the bottom of range). 8-K source; full 10-Q not yet
+  filed. Verdict: flattered.
+
+Tracker updated for all 5; claims released. No skips this batch.
+
+**20 new report-periods confirmed this firing — running total 15 → 20
+tonight.** Continuing with further batches.

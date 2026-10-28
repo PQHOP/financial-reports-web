@@ -13234,22 +13234,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/lii/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/lii/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "~90 day cadence from last 10-Q",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/lii/2026/q3"
+      }
+    ]
   },
   "LIN": {
     "name": "Linde plc",
@@ -13446,22 +13454,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/mas/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/mas/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "Masco usual 10-K filing cadence",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/mas/2026/q3"
+      }
+    ]
   },
   "MKC": {
     "name": "McCormick & Company",
@@ -13914,22 +13930,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/ni/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/ni/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-04",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-20",
+      "basis": "NiSource usual 10-K filing cadence",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/ni/2026/q3"
+      }
+    ]
   },
   "NDSN": {
     "name": "Nordson Corporation",
@@ -14164,22 +14188,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/odfl/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/odfl/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-04",
-      "basis": "~90 day cadence from last 10-Q",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/odfl/2026/q3"
+      }
+    ]
   },
   "OMC": {
     "name": "Omnicom Group",
@@ -14436,22 +14468,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj6q05w000504l58pfflez0"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/otis/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings / 10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "2026 cadence: Q1 Apr 22/23, Q2 Jul 22/23",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/otis/2026/q3"
+      }
+    ]
   },
   "PCAR": {
     "name": "Paccar",
