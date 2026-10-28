@@ -1411,22 +1411,40 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-17",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu5ohcpu000204jmh6ayokjf"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsjutbj000208jggn0fpu3i"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-17",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu5ohcpu000204jmh6ayokjf",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-05"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvsjutbj000208jggn0fpu3i",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
+      "type": "10-Q (Q3 2026, full filing)",
       "estimate": "2026-11-04",
-      "basis": "~90 days after Q2 filing date, calendar-year quarterly cadence",
+      "basis": "Q2 10-Q filed Aug 5, ~90 days after; earnings 8-K already out, 10-Q typically follows within days",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-17"
+    "lastChecked": "2026-10-28"
   },
   "ALL": {
     "name": "Allstate",
@@ -2412,22 +2430,40 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-18",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu71rfto000104jp8b3edoqp"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsju84p000008jg011p2qg9"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-18",
+        "url": "https://financial-reports-web.vercel.app/reports/cmu71rfto000104jp8b3edoqp",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-23"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvsju84p000008jg011p2qg9",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
+      "type": "10-Q (Q3 2026, full filing)",
       "estimate": "2026-10-29",
-      "basis": "Q3 10-Qs have landed in late October in each of the prior three years (2025-10-30, 2024-10-30)",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-28"
   },
   "GRDX": {
     "name": "GridAI Technologies Corp.",
@@ -2906,10 +2942,10 @@
     "name": "Microsoft Corporation",
     "status": "done",
     "latestReport": {
-      "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-12",
-      "url": "https://financial-reports-web.vercel.app/reports/cmty7bh91000004l3r0wxrx4l"
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsjtq3o000008jsar848w59"
     },
     "reports": [
       {
@@ -2943,21 +2979,29 @@
         "url": "https://financial-reports-web.vercel.app/reports/cmty7bh91000004l3r0wxrx4l",
         "periodEnd": "2026-06-30",
         "filedAt": "2026-07-29"
+      },
+      {
+        "year": 2027,
+        "period": "Q1",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvsjtq3o000008jsar848w59",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
       }
     ],
     "allAvailable2026QuartersCovered": true,
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q1 FY2027 — out of 2026-coverage scope)",
+      "type": "10-Q (Q1 FY2027, full filing)",
       "estimate": "2026-10-29",
-      "basis": "prior Q1 FY10-Qs filed ~Oct 29",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-13"
+    "lastChecked": "2026-10-28"
   },
   "MWYN": {
     "name": "Marwynn Holdings, Inc.",
@@ -5509,22 +5553,40 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucsisns000504lbzr1v96zt"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsju8rh000108jg8p6fe98f"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucsisns000504lbzr1v96zt",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-23"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvsju8rh000108jg8p6fe98f",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "T-Mobile Business Wire release: earnings call Oct 28 2026 4:30pm ET",
-      "confidence": "confirmed"
+      "type": "10-K (FY2026)",
+      "estimate": "2027-01-28",
+      "basis": "estimated, not confirmed by a search",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-28"
   },
   "CMCSA": {
     "name": "Comcast Corporation",

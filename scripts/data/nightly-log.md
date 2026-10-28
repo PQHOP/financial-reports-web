@@ -21726,3 +21726,64 @@ cleared, tier 1 S&P 500 503/503, us-listed and tier 2 paused,
 comparisons 2/2, watch notes 7/8 with none eligible, hot-list rewrite
 queue entirely in its skip window. Nothing further to do tonight
 short of a genuine new filing landing; committing and pushing.
+
+**Next firing (20:04 UTC / 05:04 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA; both
+financialreportinsights.com and the vercel.app alias 200). `npm
+install` succeeded (430 packages, usual harmless
+`prisma generate`/`DATABASE_URL` postinstall failure); the incidental
+`package-lock.json` diff was reverted before any commit. Session
+started on a stale detached HEAD (an unpushed orphan commit "fifth
+firing, nothing eligible" dated 2026-10-26, already superseded by
+later pushes) — reset to `origin/master` cleanly, no work lost.
+
+Re-ran `scan-recent-filings`: 150 candidates, and this time tier 0
+was NOT exhausted — **today is Wednesday of Big Tech week** and four
+genuinely-new-period 8-K (2.02) earnings releases landed today:
+**GOOGL** (hot list), **MSFT** (hot list), **TMUS** (hot list), and
+**ALGN** (S&P 500). Claimed all four, dispatched 4 Opus subagents in
+parallel (one per company), all four finished cleanly within budget
+and each self-reported a passing live sanity check; I re-verified
+each canonical URL (200, "At a glance" present, not truncated) before
+touching the tracker. Published:
+
+- **GOOGL — Q3 2026** (new period, written from the 8-K Ex-99.1; no
+  10-Q yet). Revenue $127,577M (+24.7%), operating margin 31.8%, net
+  income $26,468M (−24.3%), diluted EPS $2.12 (−26.1%) — the drop is
+  an $8.7B loss on equity securities vs a $10.7B gain a year ago;
+  ex-that and ex- the year-ago EC fine, underlying EPS grew ~8%.
+  Google Cloud revenue more than doubled (+102.6%) with margin 36.2%.
+  Earnings quality: understated.
+  https://financialreportinsights.com/companies/googl/2026/q3
+- **MSFT — Q1 FY2027** (new period, out of "2026" labeling scope but
+  a legitimate fresh-filing update; written from the 8-K Ex-99.1, no
+  10-Q yet). Revenue $92,279M (+18.8%), operating margin 49.8%, net
+  income $36,629M (+32.0%), diluted EPS $4.92 (+32.3%, +18.4% ex a
+  non-recurring prior-year $3.1B OpenAI loss). Azure +48%. Capex
+  doubled to $39.4B, free cash flow fell 27%. Earnings quality:
+  flattered. https://financialreportinsights.com/companies/msft/2027/q1
+- **TMUS — Q3 2026** (new period; the 10-Q was also filed today, so
+  this one has the full filing, not just the 8-K). Revenue $23,584M
+  (+7.4%), net income $3,455M (+27.3%), diluted EPS $3.22 (+33.6%,
+  ~+25% ex a 2025 software write-off and buybacks). Postpaid net
+  account adds fell 31% y/y and churn ticked up. Earnings quality:
+  flattered. https://financialreportinsights.com/companies/tmus/2026/q3
+- **ALGN — Q3 2026** (new period, written from the 8-K Ex-99.1, no
+  10-Q yet; also covers the same-day CEO-change 8-K). Revenue
+  $1,014.8M (+1.9%), net income $135.0M (+138.0%), diluted EPS $1.90
+  (+143.6%, +12% ex Q3-2025's one-off charges and the lower tax
+  rate). FY2026 revenue guide cut to ~+2% (was +3–4%). Earnings
+  quality: flattered. https://financialreportinsights.com/companies/algn/2026/q3
+
+Tracker updated for all four (latestReport, reports[], lastFilingSeen,
+nextExpectedFiling, lastChecked); claims released. The remaining 146
+candidates from this scan are all `us-listed` (0 allotment through
+"11-19 night").
+
+**This firing: 4 new report-periods (GOOGL, MSFT, TMUS, ALGN), all
+tier 0 fresh-filing updates for Big Tech week.** Running total **30
+report-periods** tonight (26 → 30), within the Big Tech week ~50 cap
+(10-26 night through 10-30 night) and well under it. Tier 1 S&P 500
+still 503/503; us-listed/tier 2 paused through 11-19; comparisons
+already 2/2 for tonight; watch notes 7/8 with none eligible; hot-list
+rewrite queue entirely in its skip window. Committing and pushing.
