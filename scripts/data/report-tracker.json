@@ -12379,17 +12379,17 @@
       "url": "https://financialreportinsights.com/companies/itw/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-05",
-      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-01",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -14571,17 +14571,17 @@
       "url": "https://financialreportinsights.com/companies/pcar/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-05",
-      "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-01",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27"
+    "lastChecked": "2026-10-28"
   },
   "PKG": {
     "name": "Packaging Corporation of America",
