@@ -14086,12 +14086,12 @@
       "filedAt": "2026-08-04"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-02",
-      "basis": "~90 day cadence from last 10-Q",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 (Q3 2026 earnings release)",
+      "estimate": "2026-11-09",
+      "basis": "NRG's own press release 'NRG Energy to Report Third Quarter 2026 Financial Results on November 9, 2026' (2026-10-26, Business Wire), confirmed via Yahoo Finance reprint",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-28"
   },
   "NUE": {
     "name": "Nucor",
