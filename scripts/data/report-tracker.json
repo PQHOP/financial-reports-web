@@ -1894,11 +1894,11 @@
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-02",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
-      "confidence": "estimated"
+      "estimate": "2026-11-03",
+      "basis": "Aptiv's own release 'Aptiv to Release Third Quarter 2026 Financial Results on November 3, 2026' (2026-10-07), confirmed via finviz wire reprint",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-19"
+    "lastChecked": "2026-10-28"
   },
   "ARE": {
     "name": "Alexandria Real Estate Equities",
@@ -14671,9 +14671,9 @@
       "url": "https://financialreportinsights.com/companies/ppg/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -14681,7 +14681,7 @@
       "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -16651,9 +16651,9 @@
       "url": "https://financialreportinsights.com/companies/wm/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -16661,7 +16661,7 @@
       "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
