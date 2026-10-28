@@ -48,21 +48,34 @@ date and commit.
   against this week's 0 clicks on 211 (`mrsh`) / 66 (`mcd` Q2) / 58 (`zts`)
   impressions. If Google's snippet for "`<ticker>` earnings" is still the
   figures table by 11-15, try moving the lead above the subtitle line.
-- **Industry audit (10-28).** 846 of the 1,347 companies with a report
-  sit in `Uncategorized` (expected: us-listed seed has no sector). Only
-  one hot-list name was among them, ARM, fixed to Information Technology
-  via `/admin/companies` the same day; MOH (S&P 500 since 2022 but absent
-  from `scripts/data/sp500.json`, so also outside `WELL_KNOWN` and the
-  sitemap) fixed to Health Care. The 10-27 night's CNC-vs-MOH subagent
-  also claimed MOH's H1 report is truncated: there is no MOH H1 report
-  (404; MOH has Q3 only, CNC has Q2 and Q3), so nothing to fix. Open
-  question: `sp500.json` is a 503-row snapshot that misses at least MOH,
-  so other current constituents may be seeded as us-listed too — when
-  convenient, diff it against the current S&P 500 list and add the
-  missing ones (slug, sector) so they get a sector, the sitemap and the
-  hot-list/S&P 500 tier-0 treatment. Reusable one-off: the Playwright
-  script pattern (login, scrape `/admin/companies`, submit the edit form)
-  lives in the 10-28 report; not committed.
+- **S&P 500 list vs `scripts/data/sp500.json` (10-29, done for 4 of 6).**
+  Diffed the 503-row snapshot against Wikipedia's current constituent
+  table: joined since the snapshot — BE (Industrials), P (Everpure,
+  Information Technology), ILMN (Health Care), TWLO (Information
+  Technology), SKYD (Skydance, Communication Services), VYLR (Vylor,
+  Consumer Staples); left — BLDR, CTVA, TAP, PSKY, TTD, WBD. MOH is in
+  neither (the 10-28 note calling it a current member was stale). The
+  four that exist in the directory got their sector via `/admin/companies`
+  and were appended to `sp500.json` (`34d5a20`) so they get S&P 500
+  tier-0 treatment and `WELL_KNOWN` sitemap status; the six departed names
+  stay in the file (the seed never deletes; they still have reports and
+  readers). **Open:** SKYD and VYLR are not in the company directory at
+  all (`/companies/skyd`, `/companies/vylr` 404) — likely ticker changes
+  (PSKY → SKYD?) rather than new listings; verify on EDGAR / the SEC
+  ticker map before adding via `/admin/companies/new` (needs name, slug,
+  exchange, sector), so the nightly scan can pick up their filings.
+  Reusable one-off: the Playwright "login, scrape `/admin/companies`,
+  submit the edit form" script is in the 10-29 report's Cập nhật
+  section (not committed). The earlier industry audit (10-28): 846 of
+  1,347 companies with a report sit in `Uncategorized` by design; ARM and
+  MOH were fixed that day.
+- **Data story "How much of Q3 2026 EPS growth was real" — threshold met
+  10-29:** `/scorecards/2026/q3` shows 234 Q3 companies and **92 with a
+  verdict** (17 clean / 39 flattered / 36 understated); the backlog gate
+  was ≥ 60. Keep the planned publish date (~11-06, after AMZN 10-29,
+  AAPL 11-02, AMD 11-03) so the piece includes Big Tech; by then the
+  count will be well past 150. Figures from `metrics` only; link every
+  report and the scorecard.
 
 - **Outreach (from 10-26):** `ops/outreach.md` lists backlink targets with
   3-line email drafts and the Google Publisher Center submission text. Each
