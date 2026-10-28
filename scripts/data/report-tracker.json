@@ -3885,9 +3885,9 @@
       "url": "https://financialreportinsights.com/reports/cmvfgvzj8000207l21udt2nfm"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-13"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -3895,7 +3895,7 @@
       "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-19"
+    "lastChecked": "2026-10-28"
   },
   "MRK": {
     "name": "Merck & Co.",
@@ -5148,9 +5148,9 @@
       "url": "https://financialreportinsights.com/companies/hood/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -5158,7 +5158,7 @@
       "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -5354,9 +5354,9 @@
       "url": "https://financialreportinsights.com/companies/spgi/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -5364,7 +5364,7 @@
       "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27"
+    "lastChecked": "2026-10-28"
   },
   "BLK": {
     "name": "BlackRock, Inc.",
@@ -8190,9 +8190,9 @@
       "url": "https://financialreportinsights.com/companies/cdns/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-26"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "8-K Item 2.02 (Q4/FY2026 earnings)",
@@ -8200,7 +8200,7 @@
       "basis": "Q4 2025 results reported ~late February",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-26",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -12091,9 +12091,9 @@
       "url": "https://financialreportinsights.com/companies/hubb/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -12101,7 +12101,7 @@
       "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -15216,9 +15216,9 @@
       "url": "https://financialreportinsights.com/reports/cmvl6efg6000008k39jfuh1e0"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-23"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -15226,7 +15226,7 @@
       "basis": "full 10-Q not yet filed as of 2026-10-23; report written from the Exhibit 99 earnings release — same-period update only (lastFilingSeen) once it lands unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-23"
+    "lastChecked": "2026-10-28"
   },
   "STX": {
     "name": "Seagate Technology",
@@ -16135,9 +16135,9 @@
       "url": "https://financialreportinsights.com/companies/vlo/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-22"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026, same period)",
@@ -16145,7 +16145,7 @@
       "basis": "VLO's Q2 10-Q was filed same-day as its earnings release; no new report needed, only lastFilingSeen update unless it changes a figure",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-22"
+    "lastChecked": "2026-10-28"
   },
   "VTR": {
     "name": "Ventas",

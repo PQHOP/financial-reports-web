@@ -21250,3 +21250,11 @@ Tracker updated for all 5; claims released. No skips this batch.
 tonight.** Continuing with further batches while the cap (~50
 tonight, see cap note above) and session budget allow — many more
 genuine new-period S&P 500 names remain in tonight's scan output.
+
+Also updated `lastFilingSeen` only (no new report, same period already
+published from an earlier 8-K) for 7 more tier-0 names whose 10-Q
+landed today: **HOOD, SPGI, WFC, CDNS, HUBB, SLB, VLO**. Correcting an
+earlier read of mine: PSX's 10-Q looked like a same-period update at
+first glance (it had an [update] tag) but its tracker entry is still
+at Q2 2026 — PSX needs a genuine new Q3 2026 report, moved into the
+next subagent batch instead.
