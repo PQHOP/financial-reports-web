@@ -4114,22 +4114,40 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmubdhyt6000105jnv2z2q5me"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskajhq000308jgnj2d2hax"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmubdhyt6000105jnv2z2q5me",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-23"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvskajhq000308jgnj2d2hax",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K earnings (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "ServiceNow press release: results announced Oct 28 2026 after close",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026, full filing)",
+      "estimate": "2026-10-29",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-28"
   },
   "GE": {
     "name": "GE Aerospace",
@@ -5305,22 +5323,40 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucs94dl000304jvy9129qhx"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskal3x000408jg6cvnot49"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucs94dl000304jvy9129qhx",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-31"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvskal3x000408jg6cvnot49",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "Chipotle's own newsroom release 2026-09-01: results ~4:10pm ET Wed 2026-10-28, call 4:30pm ET",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026, full filing)",
+      "estimate": "2026-10-29",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-10-26"
+    "lastChecked": "2026-10-28"
   },
   "LW": {
     "name": "Lamb Weston Holdings, Inc.",
