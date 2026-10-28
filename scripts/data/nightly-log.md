@@ -21825,6 +21825,71 @@ lastFilingSeen, nextExpectedFiling) and for ITW/PCAR
 INVH) plus 2 same-period `lastFilingSeen` touches (ITW, PCAR).**
 Running total **31 report-periods** tonight (26 → 31), within the
 Big Tech week ~50 cap. All other tracks remain exhausted, capped, or
-paused as before. Committing and pushing; ending this firing here —
-re-scanning again found no further non-us-listed candidates beyond
-what's now handled.
+paused as before. Committing and pushing.
+
+**Did not end the firing — re-scanned once more (9 min later, 20:18
+UTC) and hit a much bigger wave: 19 more non-us-listed candidates**
+from after-close earnings landing in a cluster (5 hot list, 14 S&P
+500). Per the standing priority, tier 0 fresh filings during earnings
+season take precedence over everything else and don't count toward
+the per-firing ~8 tier-1 cap, and the Big Tech week ~50 nightly cap
+still has plenty of headroom (31/50), so kept working batch after
+batch instead of stopping.
+
+**Batch: hot-list tier 0 (5 new-period reports).** Claimed and
+dispatched CMG, F, FDX, KLAC, NOW as 5 parallel Opus subagents. All
+five finished cleanly within budget; each self-reported a passing
+live sanity check and I independently re-verified every canonical URL
+(200, "At a glance" present, not truncated) before touching the
+tracker.
+
+- **CMG — Q3 2026.** Revenue $3,293.2M (+9.6%, mostly new
+  restaurants), comps +2.1% (third straight quarter of positive
+  transaction growth), restaurant-level margin down to 23.3% (labor
+  and other opex up, food cost tailwind from pricing/tariff relief),
+  net income $339.9M (-11.1%), diluted EPS $0.27 (-6.9%, smaller drop
+  than net income due to buybacks). Earnings quality: flattered.
+  https://financialreportinsights.com/companies/cmg/2026/q3
+- **F — Q3 2026.** Revenue $49,526M (-2.0%), net income $2,049M
+  (-16.3%), diluted EPS $0.50 (-16.7%) vs adjusted EPS $0.49 (+8.9%)
+  — the GAAP/adjusted divergence is almost entirely a year-ago one-time
+  tax benefit; Ford Blue and Ford Pro combined earned 13% less,
+  offset by Ford Credit (+27%) and a smaller Model e loss. Earnings
+  quality: understated. https://financialreportinsights.com/companies/f/2026/q3
+- **FDX — Q3 2026 (not FY2027 — FedEx changed its fiscal year-end to
+  December 31 this quarter, confirmed from the same-day 8-K recasting
+  prior quarters; correctly labeled year=2026, period=Q3 to match
+  FedEx's own release wording and avoid a bad slug).** Revenue
+  $22,855M (+11.9%), adjusted EPS $3.74 (+27.6%) vs GAAP diluted EPS
+  $1.21 (-55.7%) — the GAAP number absorbed a $1,238M non-cash
+  markdown of the FedEx Freight stake, partly offset by a $627M bond
+  tender gain; U.S. Domestic segment margin (6.4%) came in below the
+  7% the annual report said to watch. Earnings quality: understated.
+  https://financialreportinsights.com/companies/fdx/2026/q3
+- **KLAC — fiscal Q1 2027** (confirmed from the release's own fiscal
+  labeling; FY2026 ANNUAL already covers fiscal year ended June 30
+  2026). Revenue $4,136.0M (+28.9%, all from Semiconductor Process
+  Control), operating margin 45.0%, net income $1,548.6M (+38.1%),
+  diluted EPS $1.18 (+38.8%). Earnings quality: clean. Note: the
+  subagent flagged that another subagent's shared-scratchpad file got
+  overwritten mid-run (Ford's data landed in KLA's temp folder); it
+  caught this, re-downloaded everything into its own subfolder and
+  confirmed the KLA figures were unaffected before publishing — worth
+  telling future research subagents to use a ticker-named subfolder
+  under their scratch dir, not shared filenames.
+  https://financialreportinsights.com/companies/klac/2027/q1
+- **NOW — Q3 2026.** Revenue $4,106M (+20.5%), cRPO +20.5% (beat
+  guidance), GAAP operating margin fell to 9.4% (non-GAAP 32.5%) on
+  a jump in acquisition-intangible amortization and severance, net
+  income $277M (-44.8%), GAAP diluted EPS $0.27 (-43.8%) vs non-GAAP
+  EPS $1.00 (+5.3%). Earnings quality: understated. FY2026 guidance
+  raised slightly. https://financialreportinsights.com/companies/now/2026/q3
+
+Tracker updated for all five; claims released.
+
+**Running total after this batch: 36 report-periods tonight**
+(31 → 36). Still well under the Big Tech week ~50 cap. Moving on to
+the 14 S&P 500 candidates from the same scan next, checking each
+against the tracker first to separate genuinely-new periods from
+same-period 10-Q catch-ups (as done for ITW/PCAR above) before
+dispatching.

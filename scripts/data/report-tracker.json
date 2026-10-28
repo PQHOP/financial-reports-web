@@ -5146,23 +5146,41 @@
     "name": "KLA Corporation",
     "status": "done",
     "latestReport": {
-      "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucrs5fs000204lbvnperwow"
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskbbv4000508jgsbin9jdp"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucrs5fs000204lbvnperwow",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-08-06"
+      },
+      {
+        "year": 2027,
+        "period": "Q1",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvskbbv4000508jgsbin9jdp",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-06"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (fiscal Q1 FY2027)",
-      "estimate": "2026-10-28",
-      "basis": "KLA's own IR announcement 2026-10-01 (press release 522): results after close Wed 2026-10-28, webcast 2pm PT",
-      "confidence": "confirmed"
+      "type": "10-Q (fiscal Q1 FY2027, full filing)",
+      "estimate": "2026-10-29",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-10-26"
+    "lastChecked": "2026-10-28"
   },
   "TXN": {
     "name": "Texas Instruments Incorporated",
@@ -5235,22 +5253,40 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-22",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucrz2eo000404lb1pwpoky3"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskbeaq000608jgoxggi9rr"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q2",
+        "publishedAt": "2026-09-22",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucrz2eo000404lb1pwpoky3",
+        "periodEnd": "2026-06-30",
+        "filedAt": "2026-07-29"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvskbeaq000608jgoxggi9rr",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-07-29",
+      "type": "10-Q (Q3 2026, full filing)",
+      "estimate": "2026-10-29",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-22"
+    "lastChecked": "2026-10-28"
   },
   "GM": {
     "name": "General Motors Company",
@@ -5805,22 +5841,40 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-23",
-      "url": "https://financial-reports-web.vercel.app/reports/cmucwdxrc000604js4m6e1pmk"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvskc6d4000108jsjnhwm5cn"
     },
+    "reports": [
+      {
+        "year": 2026,
+        "period": "ANNUAL",
+        "publishedAt": "2026-09-23",
+        "url": "https://financial-reports-web.vercel.app/reports/cmucwdxrc000604js4m6e1pmk",
+        "periodEnd": "2026-05-31",
+        "filedAt": "2026-07-20"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/reports/cmvskc6d4000108jsjnhwm5cn",
+        "periodEnd": "2026-09-30",
+        "filedAt": "2026-10-28"
+      }
+    ],
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-05-31",
-      "filedAt": "2026-07-20"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-K (transition report, June-December 2026)",
       "estimate": "2027-02-20",
-      "basis": "FedEx changed its fiscal year end to December 31 (from May 31); next filing is a seven-month transition 10-K covering June-December 2026, estimated ~90 days after period end per typical annual-report cadence -- unconfirmed, first filing under the new fiscal calendar",
+      "basis": "FedEx changed its fiscal year end to December 31 (from May 31); confirmed by the 2026-10-28 8-K recasting prior quarters as continuing operations under the new calendar; next filing is a seven-month transition 10-K covering June-December 2026 -- estimate unconfirmed",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-28"
   },
   "DE": {
     "name": "Deere & Company",
