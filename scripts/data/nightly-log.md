@@ -21456,3 +21456,33 @@ tonight.** Rest of the rescan (133 candidates) is entirely
 `us-listed`, which stays at its 0 allotment through "11-19 night".
 Every S&P 500/hot-list tier-0 fresh filing for today is now cleared.
 Checking the hot-list rewrite queue next.
+
+**Hot-list rewrite queue (12 pending):** all 12 remaining items'
+`nextExpectedFiling` fall within the next 10 days (today 2026-10-28;
+dates range 2026-10-22 through 2026-10-30 — several already overdue
+estimates, none yet superseded by a fresh tier-0 filing except one),
+so per the "skip for now" rule all stay pending except **HOOD**,
+which already has a newer Q3 2026 report live in the current format
+(published 2026-10-27) — set to `superseded`. Rewrite count stays 0
+tonight.
+
+**Comparison (1/2 used tonight, 1/1 this firing):** published
+AEP vs. NiSource Q3 2026 — https://financialreportinsights.com/insights/aep-vs-ni-q3-2026
+— both companies reported Q3 2026 tonight, same industry (regulated
+utilities), using only the two reports' own published figures. Both
+quarters are rated "flattered" in their own reports, but for
+different reasons (AEP: weather + lower tax rate on top of a genuine
+capex/demand growth story; NiSource: a one-off Ohio property-tax
+settlement masking softer underlying NIPSCO operations) — the
+article concludes AEP's quarter is the better quality. Not counted
+as a report-period.
+
+**Company what-to-watch notes:** checked /earnings-equivalent via the
+tracker's `nextExpectedFiling` dates 2-4 days out among `done`
+companies. Filtered out several stale estimates where the company
+already published its *next* quarter (WFC/GS/BAC/VZ/PLD/SLB all show
+Q3 already done despite a 10-30 estimate still on file — those
+estimates need refreshing, not a what-to-watch note) and three that
+already have a note (ABBV, XOM, CL — `what-to-watch-<ticker>-q3-2026`
+already live). Dispatched 4 for genuinely upcoming Q3 2026 reports
+with no existing note: CHTR, D (Dominion Energy), KKR, MRNA.
