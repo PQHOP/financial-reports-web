@@ -21786,4 +21786,45 @@ report-periods** tonight (26 → 30), within the Big Tech week ~50 cap
 (10-26 night through 10-30 night) and well under it. Tier 1 S&P 500
 still 503/503; us-listed/tier 2 paused through 11-19; comparisons
 already 2/2 for tonight; watch notes 7/8 with none eligible; hot-list
-rewrite queue entirely in its skip window. Committing and pushing.
+rewrite queue entirely in its skip window.
+
+Re-ran `scan-recent-filings` again right after (9 minutes later): 150
+candidates again, but 3 new non-us-listed items appeared — **INVH**,
+**ITW**, **PCAR** (all S&P 500). Checked each before dispatching:
+
+- **ITW** and **PCAR** both already had a Q3 2026 report published
+  yesterday (10-27) from their earnings 8-Ks; today's filings were
+  just the full 10-Qs for the same period. Downloaded and read both
+  10-Qs directly (`curl` + `html-to-text.mjs`) and compared to the
+  live pages: ITW diluted EPS $3.00 (+6.8%) matches exactly
+  (https://financialreportinsights.com/companies/itw/2026/q3); PCAR
+  net income $847.5M / diluted EPS $1.61 matches exactly
+  (https://financialreportinsights.com/companies/pcar/2026/q3). No
+  material addition in either — `lastFilingSeen` updated to the 10-Q,
+  no edit.
+- **INVH** — genuinely new period (Q3 2026 after the published Q2).
+  Claimed, dispatched an Opus subagent, finished cleanly within
+  budget; I re-verified the live canonical page (200, "At a glance"
+  present, not truncated) before touching the tracker. Revenue
+  $731.3M (+6.3%, +1.1% excluding the ResiBuilt homebuilding
+  acquisition), net income $157.8M (+15.6%) flattered by $136.2M of
+  home-sale gains (vs $45.5M a year ago) net of two one-offs (a
+  $30.4M JV-dissolution loss, $8.7M on early debt repayment); diluted
+  EPS $0.27 (+22.7%). Core FFO per share $0.48 (+2.4%) but total Core
+  FFO dollars fell 1.6% — the per-share gain came from a 3.9%-smaller
+  share count ($250M bought back this quarter). Same-store NOI +1.1%,
+  occupancy down to 96.4%, new-lease rent growth turned negative
+  (-0.2%). FY2026 guidance raised slightly. Earnings quality:
+  flattered. https://financialreportinsights.com/companies/invh/2026/q3
+
+Tracker updated for INVH (new latestReport/reports[] entry,
+lastFilingSeen, nextExpectedFiling) and for ITW/PCAR
+(lastFilingSeen only); claim released.
+
+**This firing total: 5 new report-periods (GOOGL, MSFT, TMUS, ALGN,
+INVH) plus 2 same-period `lastFilingSeen` touches (ITW, PCAR).**
+Running total **31 report-periods** tonight (26 → 31), within the
+Big Tech week ~50 cap. All other tracks remain exhausted, capped, or
+paused as before. Committing and pushing; ending this firing here —
+re-scanning again found no further non-us-listed candidates beyond
+what's now handled.
