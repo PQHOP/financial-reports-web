@@ -21686,3 +21686,43 @@ and tier 2 paused, comparisons 2/2, watch notes 7/8 with no eligible
 candidate left in the 2-4 day window, hot-list rewrite queue entirely
 in its skip window. Nothing further to do tonight short of a genuine
 new filing landing; committing and pushing final state.
+
+**Next firing (19:05 UTC / 04:05 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA via `curl`;
+financialreportinsights.com and the vercel.app alias both 200).
+`npm install` succeeded (430 packages); usual harmless `prisma
+generate`/`DATABASE_URL` postinstall failure, incidental
+`package-lock.json` diff reverted before any push. Repo in sync with
+origin.
+
+Re-ran `scan-recent-filings`: 143 candidates. Only two outside
+`us-listed`: **KO** (hot list) and **CB** (S&P 500), both `[update]`
+10-Qs for Q3 2026 — a quarter already published from each company's
+earnings 8-K. Rather than assume, downloaded and read both 10-Qs
+directly (`curl` + `html-to-text.mjs`) and compared the income
+statement to what's already live:
+
+- **KO** — 10-Q net operating revenues $13,380M and diluted EPS $0.93
+  match the published report exactly (https://financialreportinsights.com/companies/ko/2026/q3).
+  No material addition found; `lastFilingSeen` updated to the 10-Q
+  (filed 2026-10-28), no edit.
+- **CB** — 10-Q net premiums earned $14,924M and diluted EPS $7.30
+  match the published report exactly (https://financialreportinsights.com/reports/cmvicdf9u000908l8d2xaehex).
+  No material addition found; `lastFilingSeen` updated to the 10-Q
+  (filed 2026-10-28), no edit.
+
+The remaining 141 candidates are all `us-listed` (0 allotment through
+"11-19 night"). Confirms tier 0 for hot-list/S&P 500 is genuinely
+exhausted again. Tier 1 S&P 500 still 503/503; hot-list rewrite queue
+still 12 pending, all within the "skip for now" 10-day window (no
+change since last firing); comparisons already 2/2 for tonight;
+watch notes 7/8 with no eligible candidate in the 2-4 day window per
+the last firing's check (same calendar day, window unchanged).
+
+**This firing: 0 new report-periods (2 same-period `lastFilingSeen`
+touches: KO, CB).** Running total unchanged at **26 report-periods**
+tonight. Every track remains exhausted, capped, or paused: tier 0
+cleared, tier 1 S&P 500 503/503, us-listed and tier 2 paused,
+comparisons 2/2, watch notes 7/8 with none eligible, hot-list rewrite
+queue entirely in its skip window. Nothing further to do tonight
+short of a genuine new filing landing; committing and pushing.

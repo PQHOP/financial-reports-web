@@ -3805,9 +3805,9 @@
       "url": "https://financialreportinsights.com/companies/ko/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-10-02",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -3815,7 +3815,7 @@
       "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27"
+    "lastChecked": "2026-10-28"
   },
   "PEP": {
     "name": "PepsiCo",
@@ -8717,9 +8717,9 @@
       "url": "https://financialreportinsights.com/reports/cmvicdf9u000908l8d2xaehex"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-20"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -8727,7 +8727,7 @@
       "basis": "full 10-Q not yet filed as of 2026-10-21; report written from the Exhibit 99.1/99.2 earnings release (revenue was reconstructed by summing component lines, same method as the Q2 report), update lastFilingSeen (and --edit if it adds material detail, e.g. the minority-interest swing or molestation-reserve run-off) once it lands",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-21",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
