@@ -1594,12 +1594,12 @@
       "filedAt": "2026-08-04"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-02",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "estimate": "2026-11-03",
+      "basis": "AMETEK own PR Newswire release 2026-10-15 (via finviz): Q3 2026 earnings call Tue 2026-11-03, 8:30am ET, before market open",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-28"
   },
   "AMGN": {
     "name": "Amgen",
@@ -1638,12 +1638,12 @@
       "filedAt": "2026-08-04"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-02",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 earnings release (Q3 2026)",
+      "estimate": "2026-10-29",
+      "basis": "Ameriprise own Business Wire announcement 2026-09-24: Q3 2026 press release ~8:15am ET, investor call ~9:00am ET, 2026-10-29",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-28"
   },
   "AMT": {
     "name": "American Tower Corporation",
@@ -5835,12 +5835,12 @@
       "filedAt": "2026-08-04"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-02",
-      "basis": "calendar fiscal year; ~90 days after Q2 10-Q filed 2026-08-04",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 earnings release (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "Duke Energy own announcement 2026-10-06 (via finviz): Q3 2026 results release 7am ET, call 10am ET, 2026-11-05; matches scripts/data/earnings-dates.json (checked 2026-10-23)",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-23"
+    "lastChecked": "2026-10-28"
   },
   "SMCI": {
     "name": "Supermicro",
