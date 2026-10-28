@@ -21590,5 +21590,40 @@ report-periods (comparisons/watch notes don't count against the
 report-period cap, and both the comparison cap (2/night) and the
 watch-note allotment (4/8 used) still have room, but every other
 track — tier 0 hot-list/S&P 500, tier 1 S&P 500, us-listed, tier 2
-backfill, hot-list rewrite — is exhausted or paused for tonight. No
-further work available this firing; ending here and pushing.
+backfill, hot-list rewrite — is exhausted or paused for tonight.
+
+Used the remaining watch-note headroom (4 of ~8/night) on 4 more
+genuinely-new-period S&P 500 candidates: **AME** and **IDXX**
+published, **AMP** and **DUK** correctly declined (both had stale
+tracker estimates — AMP reports *tomorrow*, 10-29, too close for a
+note; DUK reports 11-05, over a week out).
+
+- **AME** (Ametek) — https://financialreportinsights.com/insights/what-to-watch-ame-q3-2026
+  — confirmed Tue 2026-11-03 before market open (company's 2026-10-15
+  release; corrects the tracker's 11-02 estimate by a day). From our
+  Q2 2026 report: whether the 28.2% order surge converts to sales or
+  is pull-forward, whether "high single digits" Q3 guidance was
+  conservative, and the pending Indicor acquisition's effect on debt/
+  tax/EPS quality.
+- **IDXX** (Idexx Laboratories) — https://financialreportinsights.com/insights/what-to-watch-idxx-q3-2026
+  — confirmed Mon 2026-11-02 before market open (company's own
+  scheduling notice). From our Q2 2026 report: CAG diagnostics
+  recurring growth (10.3% organic), premium instrument installed-base
+  growth (~11%), and whether FY guidance moves.
+- **AMP** (Ameriprise Financial) — declined. Real date is tomorrow,
+  2026-10-29 (company's 2026-09-24 announcement) — tracker's 11-02
+  estimate was stale by 4 days. Should surface as an ordinary tier-0
+  fresh filing in tomorrow night's scan instead.
+- **DUK** (Duke Energy) — declined. Real date is 2026-11-05
+  (company's 2026-10-06 announcement, matches `earnings-dates.json`)
+  — tracker's 11-02 estimate was stale by 3 days; retry window
+  ~10-30 to 11-03.
+
+Tracker corrected for AME, AMP, DUK (`nextExpectedFiling` +
+`lastChecked`); all 4 tickers' claims released.
+
+**Final tonight: 26 report-periods, 2/2 comparisons, 7/8 watch notes
+(EL, FANG, L, AME, IDXX published; AEE, NCLH, AMP, DUK correctly
+declined with tracker corrections), 0 tier-2 backfill (paused),
+0 us-listed (paused).** Every available track for tonight is now
+either exhausted, capped, or paused. Ending here and pushing.
