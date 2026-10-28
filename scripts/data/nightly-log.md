@@ -21388,3 +21388,50 @@ Tracker updated for all 5; claims released. No skips this batch.
 
 **20 new report-periods confirmed this firing — running total 15 → 20
 tonight.** Continuing with further batches.
+
+Fifth batch of 5 claimed and dispatched: PSX, SW, TEL, TER, VRT — this
+clears the rest of tonight's S&P 500 tier-0 new-period list from the
+original scan. Published and verified (all 5, canonical URL 200 after
+publish):
+
+- **PSX** — https://financialreportinsights.com/companies/psx/2026/q3
+  — "Phillips 66 Q3 2026: a $38-a-barrel refining margin lifts EPS to
+  $14.08 from $0.32 a year ago" — realized refining margin rose to
+  $38.00/bbl from $24.08 in Q2 and $12.15 a year ago; the huge YoY
+  jump is flattered mainly by comparison to a weak Q3 2025 ($948M
+  impairment + $241M legal charge), not by this quarter's own
+  figures. Buybacks rose to $2.27B from $379M. 8-K source; full 10-Q
+  not yet filed. Verdict: flattered.
+- **SW** — https://financialreportinsights.com/companies/sw/2026/q3
+  — "Smurfit Westrock Q3 2026: Adjusted EBITDA fell 7.5% to $1.2B as
+  costs outran prices; 2026 outlook cut to $4.7B" — missed its own
+  July guidance by ~$95M; energy and freight costs (-$88M each)
+  outran a $111M price gain; FY2026 guidance cut from $4.9-5.1B.
+  8-K source; full 10-Q not yet filed. Verdict: flattered.
+- **TEL** — https://financialreportinsights.com/companies/tel/2026/q4
+  — "TE Connectivity Q4 FY2026: sales up 12% to $5.31B as data-center
+  connectors grew 34%; tax gain lifts EPS" — published as fiscal Q4
+  FY2026 (quarter ended Sep 25, 2026); a $59M tax-allowance release
+  cut the tax rate to 16.3% from 26.0%, flattering GAAP EPS +39%
+  against adjusted EPS +21%. Orders +29% to $6.1B. 8-K source; full
+  10-K not yet filed. Verdict: flattered.
+- **TER** — https://financialreportinsights.com/companies/ter/2026/q3
+  — "Teradyne Q3 2026: revenue up 70% to $1.31B on AI chip test,
+  beating the top of its own guidance" — operating margin rose from
+  18.9% to 30.8% on operating leverage, no major one-offs; inventory
+  up 51% since December. 8-K source; full 10-Q not yet filed.
+  Verdict: clean.
+- **VRT** — https://financialreportinsights.com/companies/vrt/2026/q3
+  — "Vertiv Q3 2026: sales jump 61% to $4.31B, beating its own
+  guidance by $463M as orders more than double" — organic growth 55%
+  vs 34-36% guided; FY2026 guidance raised across every line;
+  deferred revenue (customer prepayments) up 127% since year-end to
+  $4.12B. 8-K source; full 10-Q not yet filed. Verdict: clean.
+
+Tracker updated for all 5; claims released. No skips this batch.
+
+**25 new report-periods confirmed this firing — running total 20 → 25
+tonight.** This clears every genuine new-period S&P 500 name from the
+original tier-0 scan (plus the 7 same-period lastFilingSeen-only
+updates earlier). Re-running `scan-recent-filings` before deciding
+what's next.

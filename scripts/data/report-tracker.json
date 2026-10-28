@@ -14608,22 +14608,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuj7a4vw000104kxvbxglu6g"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/psx/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q + 8-K earnings (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "Phillips 66 release 2026-09-16: Q3 results Oct 28, 2026",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/psx/2026/q3"
+      }
+    ]
   },
   "PNW": {
     "name": "Pinnacle West Capital",
@@ -15497,22 +15505,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1dklo000504jfmq3lx4bz"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/sw/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Q1 release 04-30, Q2 release 07-29, ~90-day cadence",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/sw/2026/q3"
+      }
+    ]
   },
   "SOLV": {
     "name": "Solventum",
@@ -15805,22 +15821,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q3",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1uep0000004jt8plymkue"
+      "period": "Q4",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/tel/2026/q4"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-26",
-      "filedAt": "2026-07-24"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-25",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-K (FY2026 Annual)",
-      "estimate": "2026-11-15",
-      "basis": "fiscal year ends late September; estimated mid-November 10-K based on prior-year pattern",
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2027-01-28",
+      "basis": "company guided Q1 FY2027 results in the release; full 10-K/10-Q for Q4 not yet filed",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q4",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/tel/2026/q4"
+      }
+    ]
   },
   "TDY": {
     "name": "Teledyne Technologies",
@@ -15849,22 +15873,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1ykij000104jsbkpb52kg"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/ter/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-28",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-27",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "earnings 8-K (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "prior-year pattern suggests late-October results",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/ter/2026/q3"
+      }
+    ]
   },
   "TPL": {
     "name": "Texas Pacific Land Corporation",
@@ -16394,22 +16426,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/vrt/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/vrt/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "Third-party calendars (MarketBeat/TipRanks) list 2026-10-28; 2026 filings ~90 days apart (Apr 22, Jul 29)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/vrt/2026/q3"
+      }
+    ]
   },
   "VTRS": {
     "name": "Viatris",
