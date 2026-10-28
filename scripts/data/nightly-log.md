@@ -21298,3 +21298,51 @@ Tracker updated for all 5; claims released. No skips this batch.
 
 **10 new report-periods confirmed this firing — running total 5 → 10
 tonight.** Continuing with further batches.
+
+Third batch of 5 claimed and dispatched: GNRC, GRMN, IEX, IP, LH.
+Published and verified (all 5, canonical URL 200 after publish):
+
+- **GNRC** — https://financialreportinsights.com/companies/gnrc/2026/q3
+  — "Generac Q3 2026: record $1.29B sales, up 16%, as data-center
+  backlog nearly triples to $4.5B" — EPS +63% but pretax income +83%:
+  a lower prior-year tax rate (15.0% vs 23.9% now) flatters the
+  comparison; a new $14.3M clean-energy warranty charge is excluded
+  from adjusted figures. Receivables up 40% since December vs 13%
+  sales growth. 8-K source; full 10-Q not yet filed. Verdict:
+  understated.
+- **GRMN** — https://financialreportinsights.com/companies/grmn/2026/q3
+  — "Garmin Q3 2026: watches lifted sales 12% and operating income
+  34%, helped by $33M of tariff refunds" — underlying EPS growth
+  closer to ~27% once the one-off tariff refund, a lower tax rate and
+  FX gains are set aside; FY2026 guidance raised to ~$8.15B revenue /
+  $10.80 pro forma EPS. 10-Q source. Verdict: flattered. (One title
+  typo caught and fixed via `--edit` before this check.)
+- **IEX** — https://financialreportinsights.com/companies/iex/2026/q3
+  — "IDEX Corporation Q3 2026: sales +8% to $952M, EPS +15% to $1.95
+  as AI-driven Health & Science grew 13%" — beat its own July guidance
+  (8% organic vs 5-7% guided); no one-time tariff refund this quarter
+  (unlike Q2) yet margin still expanded, though FMT chemical/ag/energy
+  volumes keep falling. 8-K source; full 10-Q not yet filed. Verdict:
+  clean.
+- **IP** — https://financialreportinsights.com/companies/ip/2026/q3
+  — "International Paper Q3 2026: $1.1B loss on a $1.38B Europe
+  write-down; North America profit doubled to $427M" — the GAAP loss
+  is mostly a non-cash EMEA (ex-DS Smith) goodwill write-down;
+  adjusted EPS turned positive at $0.37 mainly because last year's
+  $675M of mill-closure depreciation didn't recur — like-for-like
+  pretax profit actually fell ~24%. IP dropped European/company-wide
+  guidance ahead of the planned DS Smith plc split. 8-K source; full
+  10-Q not yet filed (company states ~11-04). Verdict: understated.
+- **LH** — https://financialreportinsights.com/companies/lh/2026/q3
+  — "Labcorp Q3 2026: revenue +6.9% and adjusted EPS +14.5%, but GAAP
+  pretax profit fell 2.7%" — costs excluded from adjusted figures rose
+  44% to $167.9M; at last year's tax rate GAAP EPS would have been
+  flat, with the rest of the reported 3.3% gain coming from fewer
+  shares. Free cash flow rose 47% mostly from paying suppliers later;
+  receivables up 14.7% since year-end. 8-K source; full 10-Q not yet
+  filed. Verdict: flattered.
+
+Tracker updated for all 5; claims released. No skips this batch.
+
+**15 new report-periods confirmed this firing — running total 10 → 15
+tonight.** Continuing with further batches.
