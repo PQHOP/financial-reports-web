@@ -21435,3 +21435,24 @@ tonight.** This clears every genuine new-period S&P 500 name from the
 original tier-0 scan (plus the 7 same-period lastFilingSeen-only
 updates earlier). Re-running `scan-recent-filings` before deciding
 what's next.
+
+Re-scan found one S&P 500 name I'd missed from the original batch
+plan: **BSX** (Boston Scientific, new period, Q2→Q3). Claimed and
+dispatched, published and verified:
+
+- **BSX** — https://financialreportinsights.com/companies/bsx/2026/q3
+  — "Boston Scientific Q3 2026: cyberattack held sales growth to
+  1.5%, GAAP EPS fell 22% to $0.40" — the Aug 25 cyberattack disrupted
+  manufacturing/shipping; growth came in well below the 3-5% guided
+  in July before the attack; FY2026 guidance cut a second time
+  (organic growth ~3.75%, was 5-6%). GAAP EPS hit by $183M of
+  restructuring/litigation/impairment charges vs an $8M credit a year
+  ago. 8-K source; full 10-Q not yet filed. Verdict: understated.
+
+Tracker updated; claim released.
+
+**26 new report-periods confirmed this firing — running total 25 → 26
+tonight.** Rest of the rescan (133 candidates) is entirely
+`us-listed`, which stays at its 0 allotment through "11-19 night".
+Every S&P 500/hot-list tier-0 fresh filing for today is now cleared.
+Checking the hot-list rewrite queue next.
