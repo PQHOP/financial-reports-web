@@ -11297,17 +11297,17 @@
       "url": "https://financialreportinsights.com/companies/fe/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-05",
-      "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-15",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -15828,17 +15828,17 @@
       "url": "https://financialreportinsights.com/reports/cmvfh3zwb000307jmqeaslm0q"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-14"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-01",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-19"
+    "lastChecked": "2026-10-28"
   },
   "STE": {
     "name": "Steris",
@@ -16491,17 +16491,17 @@
       "url": "https://financialreportinsights.com/companies/vtr/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-05",
-      "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-15",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
