@@ -22059,3 +22059,34 @@ its skip window. Next firing should re-scan for anything still
 dripping in after this one (after-hours earnings sometimes trickle
 past 21:00 UTC) but should not publish further tonight unless it's a
 hot-list/S&P 500 name — the night's budget is spent.
+
+**Next firing (re-scan): one genuinely-new S&P 500 tier-0 candidate
+found — TYL.** `npm run scan-recent-filings` turned up 201 fresh
+candidates, but only one (TYL, S&P 500) was not us-listed; us-listed
+is paused through 11-19 so none of the other 200 were touched.
+Claimed TYL, confirmed `/companies/tyl/2026/q3` was still a 404, then
+dispatched and published it as this firing's sole tier-0 S&P 500
+item exceeding the ~50 cap by one (per CLAUDE.md: "Tier 0 hot-list/
+S&P 500 items may exceed the cap by a few if they reported that
+day").
+
+- **TYL — Q3 2026.** Revenue $647.6M (+8.7%, +6.3% organic), SaaS
+  revenue +21.2% to $242.2M, recurring revenue +11.0% to $568.8M
+  (ARR $2.28B, +11%); gross margin rose to 49.1% from 47.2%, GAAP
+  operating margin 18.1% (from 16.4%), net income $95.1M (+12.7%),
+  diluted EPS $2.33 (+20.7%) vs non-GAAP EPS $3.52. A 7.1% smaller
+  share count (from $1.12B of buybacks YTD, $379.1M in Q3, partly
+  funded by $1.44B of new convertible notes) added ~8 points to EPS
+  growth, roughly offset by ~5 points of lost net-interest income
+  from that same debt — no other one-offs this quarter. FY2026
+  guidance: revenue range trimmed at the top to $2.535–2.565B (was
+  $2.535–2.575B), non-GAAP EPS unchanged at $12.95–13.20. Earnings
+  quality: clean. https://financialreportinsights.com/companies/tyl/2026/q3
+
+Tracker updated for TYL; claim released.
+
+**Final running total for 10-28 night: 51 report-periods** (50 → 51)
+— one over the Big Tech week cap, as CLAUDE.md allows for a same-day
+S&P 500 filer. No further tier-0 candidates outstanding after this
+check (all 200 remaining candidates from the scan are us-listed,
+paused through 11-19). Stopping here for the night.

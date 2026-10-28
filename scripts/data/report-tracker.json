@@ -16323,22 +16323,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/tyl/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "/companies/tyl/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "Tyler releases earnings and files the 10-Q same day, end of month after quarter-end (2026-04-29, then 2026-07-29)",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-15",
+      "basis": "Tyler files its 10-K roughly mid-February after fiscal year end (prior FY2025 10-K filed 2026-02-ish); refine with a search closer to the date",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-28"
   },
   "UDR": {
     "name": "UDR, Inc.",
