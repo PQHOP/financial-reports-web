@@ -8692,12 +8692,12 @@
       "filedAt": "2026-07-24"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-30",
-      "basis": "quarterly cadence; Q3 results historically late October. Cox/Liberty Broadband closed 2026-08-19 — Q3 includes Cox from that date and may file later",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "company-announced via PR Newswire release 2026-10-07",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -9822,12 +9822,12 @@
       "filedAt": "2026-07-31"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
+      "type": "8-K Item 2.02 (Q3 2026)",
       "estimate": "2026-10-30",
-      "basis": "~90-day cadence; Q2 8-K and 10-Q same day. NextEra merger approved by shareholders 2026-09-03, closing expected H2 2027",
-      "confidence": "estimated"
+      "basis": "company-announced via Business Wire release 2026-10-07",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -13034,12 +13034,12 @@
       "filedAt": "2026-08-06"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026); 10-Q ~11-06",
-      "estimate": "2026-10-30",
-      "basis": "Q2 8-K 07-30; Q3 2025 10-Q 2025-11-07",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-11-09",
+      "basis": "company-announced via Business Wire release 2026-09-29",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -13676,12 +13676,12 @@
       "filedAt": "2026-07-31"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-30",
-      "basis": "~90 day cadence from last 10-Q",
-      "confidence": "estimated"
+      "type": "8-K Item 2.02 (Q3 2026)",
+      "estimate": "2026-11-06",
+      "basis": "company-announced via Newswire release 2026-10-13",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-28"
   },
   "TAP": {
     "name": "Molson Coors Beverage Company",

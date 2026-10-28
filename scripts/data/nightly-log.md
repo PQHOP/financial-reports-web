@@ -21486,3 +21486,34 @@ estimates need refreshing, not a what-to-watch note) and three that
 already have a note (ABBV, XOM, CL — `what-to-watch-<ticker>-q3-2026`
 already live). Dispatched 4 for genuinely upcoming Q3 2026 reports
 with no existing note: CHTR, D (Dominion Energy), KKR, MRNA.
+
+**Result: 1 of 4 published, 3 correctly declined.** The tracker's
+`nextExpectedFiling` estimates for CHTR, KKR and MRNA turned out to
+be stale (all showed ~10-30, inherited from generic cadence math) —
+each subagent WebSearched the company's own IR announcement before
+writing anything and found the real date is much further out (CHTR
+and MRNA: Nov 6; KKR: Nov 9 — all 9-12 days away, outside the 2-4 day
+window), so each correctly stopped without publishing. Refreshed all
+three tracker entries' `nextExpectedFiling` to the confirmed dates
+(`confidence: "confirmed"`) so they aren't picked again until the
+window is right. Published:
+
+- **D** — https://financialreportinsights.com/insights/what-to-watch-d-q3-2026
+  — "Dominion Energy (D) earnings preview: what to watch in Q3 2026"
+  — confirmed report date Friday 2026-10-30 (Business Wire release
+  2026-10-07). From our own Q2 report: operating EPS pace toward the
+  $3.45-3.69 FY guidance, the $11.7B offshore wind cost estimate's
+  thin contingency, and Virginia data-center load growth (+92.9%
+  high-load customer revenue). Tracker `nextExpectedFiling` set to
+  confirmed 2026-10-30.
+
+Watch-note count: **1 tonight** (toward the ~8/night cap; 3 slots
+freed up for re-dispatch around their now-confirmed dates in early
+November instead of being wasted on premature notes).
+
+**Tier-0, comparison and watch-note work for this firing is now
+complete.** us-listed stays at 0, tier 1 (S&P 500) is fully done,
+tier 2 backfill is paused through 11-19 night, and the Sunday preview
+doesn't apply (today is Wednesday). Wrapping up this firing: 26
+report-periods, 1 comparison, 1 watch note. Committing and pushing
+final tracker/log state.
