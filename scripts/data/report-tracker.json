@@ -1233,22 +1233,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-18",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu74erbh000304l7l5avtkj4"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/aep/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-26",
+      "basis": "AEP usual 10-K filing cadence late Feb",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/aep/2026/q3"
+      }
+    ]
   },
   "AES": {
     "name": "AES Corporation",
@@ -1686,22 +1694,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-19",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu8jebm3000004jqfainbc4y"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/aon/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-19"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/aon/2026/q3"
+      }
+    ]
   },
   "AOS": {
     "name": "A. O. Smith",
@@ -1793,22 +1809,30 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-18",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu76h46g000704l7hqd7g1st"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/aph/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the earnings 8-K by about a week; same period already published",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-28",
+    "reports": [
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/aph/2026/q3"
+      }
+    ]
   },
   "APO": {
     "name": "Apollo Global Management",
@@ -6906,29 +6930,35 @@
     "name": "Automatic Data Processing",
     "status": "done",
     "latestReport": {
-      "year": 2026,
-      "period": "ANNUAL",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/adp/2026/annual"
+      "year": 2027,
+      "period": "Q1",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/adp/2027/q1"
     },
     "lastFilingSeen": {
-      "type": "10-K",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-05"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q1 FY2027)",
-      "estimate": "2026-10-28",
-      "basis": "last year's Q1 earnings 8-K 2025-10-29, 10-Q 2025-10-31",
+      "type": "10-Q (Q1 FY2027)",
+      "estimate": "2026-11-05",
+      "basis": "full 10-Q typically follows the 8-K by about a week",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
         "period": "ANNUAL",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/adp/2026/annual"
+      },
+      {
+        "year": 2027,
+        "period": "Q1",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/adp/2027/q1"
       }
     ]
   },
@@ -7755,28 +7785,34 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/biib/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/companies/biib/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "10-Q filed same day as earnings release (04-29, 07-29), late-month Wednesday",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-04",
+      "basis": "Biogen usual 10-K filing cadence early Feb",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
         "period": "Q2",
         "publishedAt": "2026-09-25",
         "url": "https://financialreportinsights.com/companies/biib/2026/q2"
+      },
+      {
+        "year": 2026,
+        "period": "Q3",
+        "publishedAt": "2026-10-28",
+        "url": "https://financialreportinsights.com/companies/biib/2026/q3"
       }
     ]
   },

@@ -21163,3 +21163,90 @@ and tier 2 backfill stays paused. Nothing eligible to publish or
 skip this firing — no tracker changes. Ending the window here with
 **52 report-periods tonight**, the last entry at the Big Tech week's
 raised cap; reverts to ~40 from "10-28 night".
+
+### 2026-10-28 night (16:00 UTC 2026-10-28 → 22:59 UTC 2026-10-28 / 01:00–07:59 JST 2026-10-29)
+
+**Cap note:** the previous entry said the Big Tech week raise reverts
+to ~40 from this entry, but CLAUDE.md's "Temporary raise for Big Tech
+week" paragraph explicitly lists the raise as covering nightly-log
+entries **"10-26 night" through "10-30 night"** at ~50 (windows 01:00
+JST 10-27 → 07:59 JST 10-31) — this entry ("10-28 night") is inside
+that range. Treating the previous entry's note as a miscount and
+following CLAUDE.md as written: tonight's cap is **~50**, extra ~10
+reserved for tier 0 only, same as the last few nights. Flagging this
+discrepancy here so it doesn't recur; the "10-29 night" and "10-30
+night" entries should also be ~50 per CLAUDE.md, reverting to ~40 from
+"10-31 night" (a weekend) as the next paragraph there already says.
+
+**First firing (16:05 UTC / 01:05 JST).** Network check passed
+(sec.gov 403 without UA as expected — SEC's own response, not a proxy
+block — 200 with the required UA via `curl`; financialreportinsights.com
+and the vercel.app alias both 200). `npm install` succeeded (430
+packages); only the `postinstall` `prisma generate` step failed for
+lack of `DATABASE_URL`, irrelevant here since admin-publish/scan
+scripts need no DB client. Repo was HEAD-detached with an uncommitted
+`package-lock.json` npm-install artifact; discarded it, fast-forwarded
+`master` to the detached commit and pushed cleanly — all in sync with
+origin.
+
+Ran `scan-recent-filings`: a very large Oct-28 S&P 500 earnings day —
+162 fresh candidates (3 hot-list [HOOD, SPGI, WFC], ~31 more S&P 500,
+~128 us-listed). Of the S&P 500 batch, several are same-period
+updates (10-Q/second filing confirming a quarter already published
+from an earlier 8-K) needing only a `lastFilingSeen` touch: HOOD,
+SPGI, WFC, CDNS, HUBB, SLB, PSX, VLO. The rest are genuine new
+periods (Q3 2026, or Q1 FY2027 for ADP). Claimed and dispatched Opus
+subagents for the first 5 new-period names (file order): ADP, AEP,
+AON, APH, BIIB.
+
+Published and verified (all 5, canonical URL 200 after publish):
+
+- **ADP** — https://financialreportinsights.com/companies/adp/2027/q1
+  — "Automatic Data Processing Q1 FY2027: EPS +14% to $2.83;
+  client-fund interest drove ~half the profit gain" — published as
+  fiscal Q1 FY2027 (quarter ended Sep 30, 2026; ADP's FY ends June
+  30), since the site only had ADP's FY2026 annual report. Of the
+  $147.4M pre-tax profit rise, $69.2M came from net client-funds
+  interest; without it pre-tax profit grew ~7.5%. Diluted shares -2.2%
+  added ~2.5 pts of EPS growth. 8-K source; full 10-Q not yet filed.
+  Verdict: clean.
+- **AEP** — https://financialreportinsights.com/companies/aep/2026/q3
+  — "American Electric Power Q3 2026: EPS up 19% to $2.16 on a hot
+  summer; $100B capex plan lifts outlook" — $118M of revenue came
+  from hotter weather, and a lower 9.5% tax rate (vs 12.4%) added
+  ~$0.07 of EPS; operating EPS $2.23. FY2026 operating EPS guidance
+  raised to at or above $6.55; 2027-2031 growth raised to 9-11% on a
+  new $100B capital plan. 10-Q source. Verdict: flattered.
+- **AON** — https://financialreportinsights.com/companies/aon/2026/q3
+  — "Aon plc Q3 2026: adjusted EPS up 10%, but a $24M one-off and
+  deal-cash interest did much of the work" — $48M of the $77M rise in
+  adjusted pretax profit was a one-off reinsurance-revenue reversal
+  plus interest on cash pre-raised for the USI acquisition; without
+  them adjusted operating income grew ~3%. 8-K source; full 10-Q not
+  yet filed (same-period update only when it lands). Verdict:
+  flattered.
+- **APH** — https://financialreportinsights.com/companies/aph/2026/q3
+  — "Amphenol Q3 2026: sales up 65% to $10.23B on 37% organic growth,
+  with orders still 19% ahead of shipments" — beat its own July
+  guidance; book-to-bill 1.19; margin held on much smaller tariff
+  refunds ($15M vs $80M in Q2); Q4 guidance implies only ~1.7%
+  sequential growth, which the report flags. Figures are post the
+  2026-09-03 2-for-1 split (our live Q2 report is pre-split — noted).
+  8-K source; full 10-Q not yet filed. Verdict: understated.
+- **BIIB** — https://financialreportinsights.com/companies/biib/2026/q3
+  — "Biogen Q3 2026: revenue up 10.6% on Apellis drugs, but a $284M
+  RayThera charge drove a $0.14 loss" — product revenue was flat
+  excluding the newly-acquired Apellis drugs; GAAP EPS absorbs $284M
+  of acquired-R&D/IPR&D charges (mostly RayThera), $195M inventory
+  step-up and $66.5M restructuring; adjusted EPS $2.62. FY2026
+  non-GAAP EPS guidance low end raised to $12.20. SPINRAZA's 60.8% US
+  growth partly reflects one-time distributor stocking for a
+  high-dose switch (flagged, per Q2's own watch item). 10-Q source.
+  Verdict: understated.
+
+Tracker updated for all 5; claims released. No skips this batch.
+
+**5 new report-periods confirmed this firing — running total 0 → 5
+tonight.** Continuing with further batches while the cap (~50
+tonight, see cap note above) and session budget allow — many more
+genuine new-period S&P 500 names remain in tonight's scan output.
