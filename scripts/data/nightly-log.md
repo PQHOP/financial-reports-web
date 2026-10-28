@@ -21893,3 +21893,59 @@ the 14 S&P 500 candidates from the same scan next, checking each
 against the tracker first to separate genuinely-new periods from
 same-period 10-Q catch-ups (as done for ITW/PCAR above) before
 dispatching.
+
+**Checked all 14 S&P 500 candidates against the tracker before
+dispatching anything.** 6 were same-period 10-Q catch-ups for a
+quarter already published from yesterday's 8-K
+(**BKR, CFG, EQT, ESS, OKE, PLD**) — downloaded and read each 10-Q
+directly and compared diluted EPS / net income to the live page: all
+six matched exactly (BKR $0.41, CFG $1.41, EQT $0.44, ESS $1.52, OKE
+$2.13, PLD $0.86). No material addition in any; `lastFilingSeen`
+updated to the 10-Q for all six, no edits needed.
+
+The other 8 were genuinely new periods: **CVNA, EBAY, EQIX, GEN,
+HONA, MAA, MGM, RJF, VICI**. Claimed and dispatched the first 5 as
+parallel Opus subagents (MAA/MGM/RJF/VICI held for the next
+sub-batch). All five finished within budget; self-reported live
+checks, independently re-verified (200, "At a glance" present, not
+truncated) before touching the tracker.
+
+- **CVNA — Q3 2026.** Record 217,385 retail units sold (+39.4%),
+  revenue $8,040M (+42.4%), but total gross profit per car fell $365
+  to $6,997 as loan-sale margins thinned; net income $289M (+91.4%)
+  flattered by a year-ago one-time $154M charge that didn't recur.
+  Earnings quality: flattered.
+  https://financialreportinsights.com/companies/cvna/2026/q3
+- **EBAY — Q3 2026.** GMV $23.2B (+15%) beat guidance, revenue
+  $3,206M (+13.7%); GAAP EPS fell 12.6% to $1.11 purely on a tax-rate
+  comparison (non-GAAP EPS +11.9%) — pretax income actually rose
+  6.5%. Also covers the Oct-22 restructuring announcement (~9% of
+  workforce). Earnings quality: understated.
+  https://financialreportinsights.com/companies/ebay/2026/q3
+- **EQIX — Q3 2026.** Revenue $2,571M (+11.0%), record $533M
+  bookings, FFO/share +20%, but a one-time $54M atNorth JV fee
+  flattered EPS (+29.4% reported vs ~21% underlying); FY2026 guidance
+  raised for the third straight quarter. Earnings quality: flattered.
+  https://financialreportinsights.com/companies/eqix/2026/q3
+- **GEN — Q1 AND Q2 FY2027 (two reports, one gap-filled).**
+  Discovered Q1 FY2027 (10-Q filed 2026-08-07) had never been
+  published — only the FY2026 ANNUAL was live — so the subagent
+  published both: Q1 FY2027 (revenue $1,336M +6.3%, EPS $0.36 +65%,
+  flattered by a lower tax rate) and today's Q2 FY2027 8-K (revenue
+  $1,369M +12.2%, first clean comparison since the MoneyLion deal,
+  EPS $0.48 +122%, flattered by a year-ago investment write-down).
+  Both earnings quality: flattered.
+  https://financialreportinsights.com/companies/gen/2027/q1 and
+  https://financialreportinsights.com/companies/gen/2027/q2
+- **HONA — Q3 2026.** Honeywell Aerospace (the spin-off, not HON).
+  Sales $4,644M (+2.4%), net income +12.7%, but adjusted EBIT only
+  +0.9% once ~$50M of one-time tariff refunds are set aside. Earnings
+  quality: flattered.
+  https://financialreportinsights.com/companies/hona/2026/q3
+
+Tracker updated for all six report-periods (CVNA, EBAY, EQIX, HONA,
+GEN×2); claims released.
+
+**Running total: 42 report-periods tonight** (36 → 42). Within the
+Big Tech week ~50 cap, 8 of headroom left. Four S&P 500 candidates
+remain from this scan: MAA, MGM, RJF, VICI.
