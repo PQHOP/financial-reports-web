@@ -21627,3 +21627,62 @@ Tracker corrected for AME, AMP, DUK (`nextExpectedFiling` +
 declined with tracker corrections), 0 tier-2 backfill (paused),
 0 us-listed (paused).** Every available track for tonight is now
 either exhausted, capped, or paused. Ending here and pushing.
+
+**Next firing (18:05 UTC / 03:05 JST).** Network check passed
+(sec.gov 403 without UA as expected, 200 with the required UA;
+financialreportinsights.com and the vercel.app alias both 200).
+Repo was HEAD-detached at the previous firing's last commit, in
+sync with origin; checked out `master` properly. `npm install`
+succeeded; the usual harmless `prisma generate`/`DATABASE_URL`
+postinstall failure and incidental `package-lock.json` diff
+(reverted before any push).
+
+Re-ran `scan-recent-filings`: 139 candidates. Of the S&P 500/hot-list
+portion, only two: **PPG** and **WM**, both same-period updates (10-Q
+confirming the Q3 2026 already published from an earlier 8-K) —
+updated `lastFilingSeen` to the 10-Q (filed 2026-10-28) for both, no
+new report needed. Everything else in the rescan (137 candidates) is
+`us-listed` (0 allotment through "11-19 night"). Confirms tier 0 for
+hot-list/S&P 500 is genuinely exhausted for tonight; tier 1 S&P 500
+still 503/503; hot-list rewrite queue still 12 pending, all within
+the "skip for now" 10-day window; comparisons already 2/2 for
+tonight.
+
+**Watch-note slot (7/8 → tried to fill the 8th, 3 declines, still
+7/8 used):** checked the tracker for `done` companies whose
+`nextExpectedFiling.estimate` falls 2-4 days out, filtering out ones
+whose "next" filing is actually just a same-period 10-Q catch-up for
+an already-published quarter (same mistake flagged last firing for
+WFC/GS/BAC/etc. — this time AXP, CMCSA, LMT, NSC, UNP all matched
+that same-period pattern and were excluded before dispatch). Of the
+genuinely-new-period candidates with an `estimated` (unconfirmed)
+date in the window, tried three, file order, each correctly declined
+after a real WebSearch against the company's own announcement:
+
+- **APTV** — declined. Real date confirmed Tue 2026-11-03 (Aptiv's
+  own 2026-10-07 release), one day later than the tracker's 11-02
+  guess — outside the window. Tracker corrected to 11-03/confirmed.
+- **CLX** (Clorox) — declined. Real date confirmed Mon 2026-11-02
+  (Clorox's own 2026-10-12 release) — the tracker's estimate was
+  actually right, just one day outside today's 2-4 day window.
+  Tracker corrected to 11-02/confirmed (was already estimated-11-02,
+  now confirmed).
+- **NRG** (NRG Energy) — declined. Real date confirmed Mon 2026-11-09
+  (NRG's own 2026-10-26 release) — a full week later than the
+  tracker's 11-02 cadence guess. Tracker corrected to 11-09/confirmed.
+
+All three claims released; no new watch note published this firing,
+but three more stale `nextExpectedFiling` estimates caught and fixed
+(each would otherwise have kept surfacing as false "2-4 days out"
+candidates on 10-30/10-31). AAPL and AXP checked and already have
+notes/are same-period, so skipped without dispatch.
+
+**This firing: 0 report-periods, 0 comparisons (cap already reached),
+0 new watch notes (3 correctly declined, tracker corrected), 2
+same-period `lastFilingSeen` touches (PPG, WM).** Running total
+unchanged at 26 report-periods. Every track remains exhausted,
+capped, or paused: tier 0 cleared, tier 1 S&P 500 503/503, us-listed
+and tier 2 paused, comparisons 2/2, watch notes 7/8 with no eligible
+candidate left in the 2-4 day window, hot-list rewrite queue entirely
+in its skip window. Nothing further to do tonight short of a genuine
+new filing landing; committing and pushing final state.
