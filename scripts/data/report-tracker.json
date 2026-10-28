@@ -8938,10 +8938,10 @@
     "nextExpectedFiling": {
       "type": "8-K Item 2.02 / 10-Q (Q1 FY2027)",
       "estimate": "2026-11-02",
-      "basis": "FY26 10-Qs filed ~30-34 days after quarter end, same day as 8-K",
-      "confidence": "estimated"
+      "basis": "Clorox's own press release 'Clorox Announces November 2 Webcast of First-Quarter Fiscal Year 2027 Results' (2026-10-12), via PRNewswire/finviz reprint",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
