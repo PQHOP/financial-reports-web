@@ -22001,4 +22001,61 @@ needed one `--edit` each to fix a missing `**At a glance**` markdown
 heading that stopped the At-a-glance box from rendering — both
 caught by the subagent's own live-page check before handing back, so
 no broken pages went live, but worth flagging the markdown heading
-requirement more explicitly in future prompts.
+requirement more explicitly in future prompts. Starting with the
+ORLY/AWK/EG/FTNT batch, prompts explicitly told each subagent to use
+its own scratch subfolder and to use the `**At a glance**` heading —
+no collisions or missing-heading edits in that batch.
+
+**Re-scanned once more before dispatching the next batch:** found 4
+more genuinely-new-period candidates (**ORLY** hot list, **AWK**,
+**EG**, **FTNT**, all S&P 500) plus 3 more same-period 10-Q
+catch-ups (**FE, STT, VTR** — all three checked and confirmed to
+match their already-published 8-K-sourced reports exactly: FE $0.96,
+STT $3.69, VTR $0.13 diluted EPS; `lastFilingSeen` updated, no
+edits). Publishing the 4 new-period candidates would land tonight at
+exactly 50 — the Big Tech week cap — so claimed and dispatched them
+as this firing's last batch rather than stopping short, since ORLY
+is a hot-list name reporting today.
+
+- **ORLY — Q3 2026.** Comparable store sales +7.2% (accelerating
+  from Q2's 6.0%), revenue $5,121M (+8.8%), diluted EPS $0.97
+  (+14.1%, ~+10% excluding a $39M one-time tariff refund); FY2026
+  guidance raised across the board. Earnings quality: flattered.
+  https://financialreportinsights.com/companies/orly/2026/q3
+- **AWK — Q3 2026.** Revenue $1,510M (+4.1%), GAAP diluted EPS $1.94
+  (flat) understated by a weather swing and lost note interest —
+  adjusted EPS $2.00 (+5.8%); 2026 adjusted EPS guidance narrowed
+  slightly higher. Earnings quality: understated.
+  https://financialreportinsights.com/companies/awk/2026/q3
+- **EG — Q3 2026.** Net premiums written $2,968M (-20.9%), combined
+  ratio worsened to 107.1% on $322M of cat losses and a $268M
+  adverse reserve charge (mostly reinsurance-segment casualty);
+  diluted EPS $6.12 (+0.5%) only because share count fell 9.2% —
+  net income actually fell 8.6%. Notably, this report found the Q2
+  report's "reserve development netted to zero" read did NOT hold up
+  — Q2 actually included $200M+ of gross casualty strengthening,
+  offset elsewhere. Earnings quality: flattered.
+  https://financialreportinsights.com/companies/eg/2026/q3
+- **FTNT — Q3 2026.** Revenue $2,078.4M (+20.5%), billings +29.2%,
+  GAAP diluted EPS $0.86 (+38.7%, +24% ex a lower tax rate and a
+  one-time escrow-settlement gain); product gross margin fell to
+  64.4% from 69.8% in Q2 on memory-chip costs, as warned last
+  quarter. Earnings quality: flattered.
+  https://financialreportinsights.com/companies/ftnt/2026/q3
+
+Tracker updated for all four; claims released.
+
+**Final running total for 10-28 night: 50 report-periods** (46 → 50)
+— exactly the Big Tech week cap (10-26 night through 10-30 night).
+Stopping here for this firing: every genuinely-new tier-0 candidate
+from tonight's scans has been published, all 11 same-period 10-Q
+catch-ups confirmed and tracker-updated (ITW, PCAR, BKR, CFG, EQT,
+ESS, OKE, PLD, FE, STT, VTR — each individually verified against its
+already-live report before touching the tracker), and the cap is
+reached. Tier 1 S&P 500
+still 503/503; us-listed/tier 2 paused through 11-19; comparisons
+2/2; watch notes 7/8 with none eligible; hot-list rewrite queue in
+its skip window. Next firing should re-scan for anything still
+dripping in after this one (after-hours earnings sometimes trickle
+past 21:00 UTC) but should not publish further tonight unless it's a
+hot-list/S&P 500 name — the night's budget is spent.

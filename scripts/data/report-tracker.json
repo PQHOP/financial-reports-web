@@ -2011,22 +2011,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-18",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu75h52m000604l75u8q5a1p"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsl72u8000b08jghbda9omy"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "quarterly cadence from lastFilingSeen.filedAt (~90 days); calendar fiscal year",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-15",
+      "basis": "estimated, not confirmed by a search",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-18"
+    "lastChecked": "2026-10-28"
   },
   "AXP": {
     "name": "American Express Company",
@@ -10715,22 +10715,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/eg/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsl6vsv000a08jghbl2w7vc"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-03"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "10-Q ~5 days after 8-K (Q2 8-K 07-29, 10-Q 08-03)",
+      "type": "10-Q (Q3 2026, full filing)",
+      "estimate": "2026-11-02",
+      "basis": "Q2 10-Q landed 5 days after its 8-K",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
@@ -11400,22 +11400,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/ftnt/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-28",
+      "url": "https://financialreportinsights.com/reports/cmvsl6kd9000908jgxf8aqqsu"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "type": "8-K (2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-11-04",
-      "basis": "Q3 2025 8-K 2025-11-05; 10-Q a day after 8-K",
+      "type": "10-Q (Q3 2026, full filing)",
+      "estimate": "2026-10-29",
+      "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-28",
     "reports": [
       {
         "year": 2026,
