@@ -1029,7 +1029,8 @@
    "reportId": "cmucwlui6000704js4naxpu6o",
    "url": "https://financialreportinsights.com/companies/so/2026/q2",
    "nextExpectedFiling": "2026-10-28",
-   "status": "pending"
+   "status": "done",
+   "rewrittenAt": "2026-10-29"
   },
   {
    "ticker": "NEE",
@@ -1267,7 +1268,8 @@
    "reportId": "cmuf1mjt3000304jqoxu5jwj3",
    "url": "https://financialreportinsights.com/companies/el/2026/annual",
    "nextExpectedFiling": "2026-10-29",
-   "status": "pending"
+   "status": "done",
+   "rewrittenAt": "2026-10-29"
   },
   {
    "ticker": "CL",
