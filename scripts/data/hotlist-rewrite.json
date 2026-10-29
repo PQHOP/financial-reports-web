@@ -542,7 +542,8 @@
    "reportId": "cmubj2yiy000104jpduk38f4s",
    "url": "https://financialreportinsights.com/companies/intc/2026/q2",
    "nextExpectedFiling": "2026-10-23",
-   "status": "pending"
+   "status": "done",
+   "rewrittenAt": "2026-10-29"
   },
   {
    "ticker": "MU",
