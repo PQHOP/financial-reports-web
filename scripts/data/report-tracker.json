@@ -16125,22 +16125,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1zaxy000004jtdoo7wa9w"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/txt/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-07-04",
-      "filedAt": "2026-07-28"
+      "periodEnd": "2026-10-03",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-27",
-      "basis": "~90-day cadence from 2026-07-28 filing",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-05",
+      "basis": "annual cadence ~90 days after Q3 10-Q",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-29"
   },
   "TKO": {
     "name": "TKO Group Holdings",
