@@ -1945,22 +1945,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-19",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu8lljmb000204i929q8euod"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/ares/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-07"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-11-05",
-      "basis": "prior-year Q3 10-Q filed 2025-11-06; ~90-day cadence from 2026-08-07",
+      "estimate": "2026-11-07",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-19"
+    "lastChecked": "2026-10-29"
   },
   "ANET": {
     "name": "Arista Networks, Inc.",
