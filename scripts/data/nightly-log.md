@@ -22178,3 +22178,63 @@ comparisons/watch notes are at or near their own nightly caps (1/2 and
 firing this window should re-run `scan-recent-filings` in case any
 after-hours earnings trickle in past 21:00 UTC, but should expect little
 left to do beyond that.
+
+**Second firing (17:04 UTC / 02:04 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA; both
+financialreportinsights.com and the vercel.app alias 200). `npm install`
+clean (430 packages, `postinstall` prisma-generate fails for lack of
+`DATABASE_URL` as expected — irrelevant to admin-publish/scan). Local
+`master` had a stale ref again (same prior-container-snapshot artifact
+as the first firing); `git fetch` + `checkout -B master origin/master`
+fixed it cleanly, no lost work. `claims/` had 20 entries all from
+2026-10-27, long past their 3h expiry — left alone (scripts ignore
+expired claims; not the orchestrator's file to clean up).
+
+Re-ran `scan-recent-filings`: 247 fresh candidates, 245 us-listed
+(paused). Only 2 non-us-listed, both `[sp500] [update]` kind: **DECK**
+(10-Q, filed 2026-10-29) and **DHI** (8-K Item 2.02, filed 2026-10-29).
+Claimed both before dispatching.
+
+- **DECK** — same-period catch-up only. The new 10-Q's Q1 FY2027
+  (quarter ended 2026-09-30) figures (net sales $1,480,554K, net income
+  $313,135K, diluted EPS $2.31, HOKA +6.8%/UGG +3.5% by brand) match the
+  already-published report (written from the 10-22 8-K/Ex-99.1) exactly
+  — no material new figure or segment detail. Updated `lastFilingSeen`
+  only (10-Q, periodEnd 2026-09-30, filedAt 2026-10-29); no edit, no new
+  report-period.
+- **DHI** — genuine new period: the 8-K is D.R. Horton's Q4/full fiscal-year
+  2026 earnings release (FY ends Sep 30), not a repeat of the already-published
+  Q3. Dispatched an Opus subagent; published as ANNUAL. Verified live
+  (At a glance, full-year + Q4 tables, Takeaway, quality-check section with
+  "flattered" verdict, "Did last time's read hold up?", FY2027 guidance
+  table all present, not truncated):
+  https://financialreportinsights.com/companies/dhi/2026/annual
+  Net income fell 19% to $2.89B, EPS fell 13% to $10.11 (buybacks — 8%
+  fewer shares — held the EPS drop below the profit drop); Q4 alone was
+  softer still (orders -7.3%, cancellations 23% vs 20%, margin compression)
+  as the release itself flagged incentive-driven conditions continuing into
+  FY2027. `nextExpectedFiling` set to 2027-01-19 (Q1 FY2027 8-K/10-Q),
+  confidence `confirmed` — the release states the full FY2027 reporting
+  calendar (Q2 04-20, Q3 07-22, Q4/FY 10-26).
+
+**1 new report-period this firing — running total 35 → 36 tonight.**
+
+**Comparison (2/2 cap tonight, reached):** published **Eli Lilly vs
+Merck, Q3 2026** — written directly by the orchestrator (no subagent
+needed; uses only each company's own just-published Q3 2026 figures, no
+new filing research) since both are hot-list pharma peers that reported
+the same day with opposite-direction earnings-quality verdicts (Lilly
+*understated* — a $4.2B acquired-IPR&D charge held 39% revenue growth to
+16% EPS growth; Merck *flattered* — ~$550M of purchase-timing revenue and
+a falling tax rate cushioned a steeper underlying profit decline).
+Published, verified live:
+https://financialreportinsights.com/insights/lly-vs-mrk-q3-2026
+
+Checked the 2-4 day what-to-watch window (AAPL/MAR/EL, all reporting
+2026-11-02): AAPL and EL already have current notes, MAR got one in the
+first firing — nothing left to publish there tonight.
+
+**Running total: 36 report-periods, 2/2 comparisons, 5/5 rewrites (116/121
+total), 1 what-to-watch note.** us-listed and tier 2 backfill stay
+paused/0 through 11-19. Nothing else found to work on — DECK/claims
+released below, ending this firing here.
