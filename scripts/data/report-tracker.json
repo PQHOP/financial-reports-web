@@ -12636,22 +12636,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/ice/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/ice/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Q2 earnings release schedules Q3 call Oct 29; 10-Q same day as release in Q1/Q2",
-      "confidence": "confirmed"
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-04",
+      "basis": "annual cadence ~90 days after Q3 10-Q",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-29",
     "reports": [
       {
         "year": 2026,
@@ -13260,22 +13260,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/lhx/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/lhx/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-07-03",
-      "filedAt": "2026-07-30"
+      "periodEnd": "2026-10-02",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 / 10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Q3 2025 8-K and 10-Q both 2025-10-30",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-10",
+      "basis": "annual cadence ~90 days after Q3 10-Q",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-29",
     "reports": [
       {
         "year": 2026,
@@ -13446,22 +13446,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/lin/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/lin/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "~90 day cadence from last 10-Q",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-20",
+      "basis": "annual cadence ~90 days after Q3 10-Q",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-29"
   },
   "L": {
     "name": "Loews Corporation",
