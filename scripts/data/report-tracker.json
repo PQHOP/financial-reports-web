@@ -17046,22 +17046,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/wtw/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/wtw/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Q1/Q2 10-Q and earnings 8-K each filed same day (Apr 30, Jul 30), ~90 days apart",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-20",
+      "basis": "annual cadence ~90 days after Q3 10-Q",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-29"
   },
   "WDAY": {
     "name": "Workday, Inc.",
