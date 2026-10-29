@@ -22238,3 +22238,81 @@ first firing — nothing left to publish there tonight.
 total), 1 what-to-watch note.** us-listed and tier 2 backfill stay
 paused/0 through 11-19. Nothing else found to work on — DECK/claims
 released below, ending this firing here.
+
+**Third firing (18:04 UTC / 03:04 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA; financialreportinsights.com
+200). `npm install` + `prisma generate` ran clean once a dummy
+`DATABASE_URL` was supplied (postinstall has no DB access in this
+container either way — irrelevant to admin-publish/scan). Repo was in a
+detached-HEAD state pointing at the same commit as `origin/master` (a
+prior-container-snapshot artifact, not lost work); `git checkout -B
+master origin/master` fixed it. The 20 stale claims from 2026-10-27 in
+`scripts/data/claims/` were left alone as before.
+
+Re-ran `scan-recent-filings`: 249 fresh candidates, **all us-listed**
+(paused through 11-19) — zero hot-list/S&P 500 items. `next-batch -- --n
+5` confirmed the same: only us-listed candidates printed, nothing in
+tier 1 hot-list/S&P 500 left to pick. Tier 0 and tier 1 are both still
+fully cleared for tonight.
+
+Checked the 2-4 day what-to-watch window more broadly than the previous
+firing (cross-referenced the tracker's own `nextExpectedFiling` for every
+S&P 500 ticker, not just `earnings-dates.json`): besides AAPL/MAR/EL
+(already handled), found CLX, ON, SBAC, SYY, EG, PGR, UDR with an
+estimated-or-confirmed date landing 2-5 days out. Excluded EG, PGR and
+UDR — each already has its *current* quarter published (EG and PGR from
+earlier 8-Ks, UDR a preliminary release pending a 11-02 `--edit`), so
+their listed "next filing" is a same-period 10-Q catch-up, not a new
+results event worth previewing. For the remaining four, confirmed exact
+dates via WebSearch (all stale/estimated in the tracker before this):
+**CLX, ON, SBAC all confirmed for Monday 2026-11-02** (each via the
+company's own press release); **SYY's estimate was wrong — corrected
+from 11-02 to the company-confirmed 2026-11-03** (5 days out from today,
+just outside the 2-4 day window, so left for tomorrow's firing to pick
+up). Updated `nextExpectedFiling`/`lastChecked` for ON, SBAC, SYY in the
+tracker to reflect this (CLX was already `confirmed`).
+
+Claimed CLX, ON, SBAC and dispatched 3 Opus subagents (one per company,
+synchronous). All three finished cleanly, no incomplete returns, and all
+verified live (full content, company-page card showing):
+
+- **CLX** — https://financialreportinsights.com/insights/what-to-watch-clx-q1-2027
+  (Q1 FY2027, Nov 2). Anchors on the FY2026 annual report: net sales -5.4%
+  to $6.72B, diluted EPS -26% to $4.81 (adjusted $5.53), ~7.5pts of the
+  -8% organic decline from an ERP-related retailer destocking comp. Watches
+  whether organic growth beats that bounce-back, whether gross margin holds
+  near 42% now the GOJO acquired-inventory step-up has passed, and whether
+  Purell's profit (added $211M sales/$6M net earnings last year) outweighs
+  the debt taken on to buy it.
+- **ON** — https://financialreportinsights.com/insights/what-to-watch-on-q3-2026
+  (Q3 2026, Nov 2). Anchors on Q2: revenue +9.2% to $1,603.5M, GAAP EPS
+  $0.56 vs $0.41, "Other"/AI-datacenter end market +33.6% q/q while auto
+  -2.0%. Watches the 40-42% Q3 gross-margin guide against falling inventory,
+  whether auto reverses or "Other" keeps carrying all the growth, and the
+  GAAP-vs-adjusted gap from Synaptics-deal/restructuring costs.
+- **SBAC** — https://financialreportinsights.com/insights/what-to-watch-sbac-q3-2026
+  (Q3 2026, Nov 2). Anchors on Q2: revenue +2.3% to $715.3M, domestic
+  leasing -3.7% (Sprint/EchoStar cancellations) vs international leasing
+  +30.5% (Millicom towers), AFFO/share -3.8% (-6.0% ex-FX). Watches US
+  leasing decline pace against guidance, net cash interest after the July
+  $3.5B refinancing (first full quarter) and the Nov 9 tower-securities
+  refinancing, and AFFO/share with/without the currency tailwind against
+  full-year guidance. Flagged one transient issue: a plain fetch of
+  `/companies/sbac/2026/q2` briefly served ON's Q2 page content instead of
+  SBAC's (cache-busted retry got the correct page, and 3 follow-up checks
+  from the orchestrator all returned the correct SBAC page) — a
+  cross-company CDN mixup is a step worse than the known same-company
+  stale-cache quirk already noted in CLAUDE.md; not investigated further,
+  flagging in case it recurs.
+
+**What-to-watch notes: 3 new tonight (CLX, ON, SBAC), on top of the 1 new
++ 1 pre-existing from earlier firings (MAR + AAPL) — 4 new notes tonight
+total, well inside the ~8/night cap.**
+
+**Running total: 36 report-periods + 2/2 comparisons + 5/5 rewrites
+(116/121 total) + 4 what-to-watch notes tonight.** Nothing else found to
+work on: tier 0/tier 1 hot-list/S&P 500 fully cleared, us-listed and tier
+2 backfill stay paused/0 through 11-19, comparisons and rewrites both at
+cap, and the what-to-watch window is otherwise exhausted (SYY left for
+tomorrow once it's inside the 2-4 day window). Claims released, ending
+this firing here.

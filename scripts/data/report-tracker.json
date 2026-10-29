@@ -14438,12 +14438,12 @@
       "filedAt": "2026-08-03"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
+      "type": "8-K Item 2.02 (Q3 2026 earnings release)",
       "estimate": "2026-11-02",
-      "basis": "~90 day cadence from last 10-Q",
-      "confidence": "estimated"
+      "basis": "onsemi's own Oct 15 2026 announcement: Q3 2026 (ended Oct 2) results after market close Mon 2026-11-02, call 5pm ET",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-25"
+    "lastChecked": "2026-10-29"
   },
   "OKE": {
     "name": "Oneok",
@@ -15515,12 +15515,12 @@
       "filedAt": "2026-08-06"
     },
     "nextExpectedFiling": {
-      "type": "10-Q or earnings 8-K (Q3 2026)",
+      "type": "8-K Item 2.02 (Q3 2026 earnings release)",
       "estimate": "2026-11-02",
-      "basis": "Q2 earnings 8-K filed 2026-08-03, ~90-day cadence",
-      "confidence": "estimated"
+      "basis": "SBA Communications' own Oct 14 2026 press release: Q3 2026 results after market close Mon 2026-11-02, call 5pm ET",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-29"
   },
   "SLB": {
     "name": "Schlumberger",
@@ -15949,12 +15949,12 @@
       "filedAt": "2026-08-21"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (fiscal Q1 2027)",
-      "estimate": "2026-11-02",
-      "basis": "fiscal year ends late June; estimated late Oct/early Nov earnings",
-      "confidence": "estimated"
+      "type": "10-Q (fiscal Q1 FY2027)",
+      "estimate": "2026-11-03",
+      "basis": "Sysco's own Oct 13 2026 announcement: fiscal Q1 2027 results conference call/webcast Tue 2026-11-03 10am ET (corrects prior 11-02 estimate)",
+      "confidence": "confirmed"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-29"
   },
   "TROW": {
     "name": "T. Rowe Price",
