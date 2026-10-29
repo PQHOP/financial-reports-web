@@ -924,7 +924,8 @@
    "reportId": "cmucw56s4000304l6qxla5ai9",
    "url": "https://financialreportinsights.com/companies/mdlz/2026/q2",
    "nextExpectedFiling": "2026-10-26",
-   "status": "pending"
+   "status": "done",
+   "rewrittenAt": "2026-10-29"
   },
   {
    "ticker": "MO",
