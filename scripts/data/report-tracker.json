@@ -17112,22 +17112,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/xel/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/xel/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "~90 day gap after 2026-07-30 Q2 filing, late-October release pattern in past years",
+      "estimate": "2026-11-07",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-29"
   },
   "XYL": {
     "name": "Xylem Inc.",
