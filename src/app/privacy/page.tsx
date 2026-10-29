@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { StaticPage } from "@/components/StaticPage";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export const metadata: Metadata = {
   title: "Privacy policy",

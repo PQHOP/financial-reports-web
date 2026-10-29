@@ -6,7 +6,7 @@ export const size = ogSize;
 export const contentType = "image/png";
 
 // Cached like the report page itself (ISR, purged on publish).
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return [];

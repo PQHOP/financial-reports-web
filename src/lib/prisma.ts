@@ -32,7 +32,7 @@ if (process.env.NODE_ENV !== "production") {
 // `prisma`; every write path calls invalidateDbCache() so publishes show up
 // immediately rather than after the TTL.
 export const DB_CACHE_TAG = "db";
-const DB_CACHE_SECONDS = 15 * 60;
+const DB_CACHE_SECONDS = 24 * 60 * 60;
 const READ_OPERATIONS = new Set([
   "findUnique",
   "findUniqueOrThrow",

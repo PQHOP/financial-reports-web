@@ -2,6 +2,20 @@
 
 # Financial Report Insights
 
+> **Development stopped (2026-10-30, the user's decision).** The goal was
+> income, and at ~40 real sessions/week with ~0 Google clicks the site was
+> not on a path to earn more than it costs. Both cloud routines are
+> disabled (nightly `trig_01GNdUY59Na4x3JxMr6p7mxK`, ops
+> `trig_01NVjnTDJRERUM7UVfjW8iyZ`) and the local "FRI Morning Report"
+> scheduled task is disabled. The site stays online as is, on Vercel
+> **Hobby** (downgraded from Pro the same day, so going over a limit
+> pauses the site); to stay under it, ISR was raised to 7 days (1 day for
+> date-sensitive pages), the DB data cache to 1 day and the sitemap/feed
+> CDN cache to 1 day. Shorten them again only if publishing resumes. Everything
+> below — the standing priority, nightly cap, ops routine, checkpoints —
+> is **suspended**: don't treat it as a default background task, don't
+> re-enable a routine or publish reports unless the user asks.
+
 A site that publishes financial-report analysis for publicly listed companies,
 organized by industry -> company -> year -> report. Public pages are
 read-only; all authoring happens under `/admin` (password-protected) or via

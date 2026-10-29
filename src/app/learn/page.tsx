@@ -3,7 +3,7 @@ import { prismaCached as prisma } from "@/lib/prisma";
 import { ArticleList } from "@/components/ArticleList";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export const metadata: Metadata = {
   title: "Learn: how to read earnings reports",

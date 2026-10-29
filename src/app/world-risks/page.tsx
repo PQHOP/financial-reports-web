@@ -23,7 +23,7 @@ import mapJson from "@/data/world-map.json";
 
 // Cached on the CDN for 15 minutes; the feeds themselves are cached for
 // 10-60 minutes in Next's data cache (src/lib/worldRisks.ts).
-export const revalidate = 900;
+export const revalidate = 86400;
 
 const map = mapJson as MapData;
 

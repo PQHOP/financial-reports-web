@@ -8,7 +8,7 @@ export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return [];

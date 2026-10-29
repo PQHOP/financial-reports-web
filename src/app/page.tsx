@@ -34,7 +34,7 @@ const UPCOMING_LIMIT = 18;
 const PREVIEW_MAX_AGE_DAYS = 8;
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 export const metadata: Metadata = {
   title: { absolute: "Financial Report Insights: What the Earnings Headlines Hide" },

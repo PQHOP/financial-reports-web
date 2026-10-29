@@ -4,7 +4,7 @@ import { StaticPage } from "@/components/StaticPage";
 import { SITE_NAME } from "@/lib/site";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export const metadata: Metadata = {
   title: "Terms of use",

@@ -8,7 +8,7 @@ import { formatMoneyMillions, formatPct } from "@/lib/metrics";
 import { cleanCompanyName } from "@/lib/companyName";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   const data = await buildBuybacks();

@@ -18,7 +18,7 @@ import {
 import { SITE_NAME, SITE_SAME_AS, SITE_URL } from "@/lib/site";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 const RECENT_DAYS = 45;
 

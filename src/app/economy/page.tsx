@@ -9,7 +9,7 @@ import bundledWeo from "@/data/macro.json";
 import mapJson from "@/data/world-map.json";
 
 // Served from the CDN cache; the daily macro cron calls invalidateDbCache().
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 const map = mapJson as MapData;
 // The WEO edition year is the first forecast year.

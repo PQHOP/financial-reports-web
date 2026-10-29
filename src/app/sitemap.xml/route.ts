@@ -9,8 +9,9 @@ import { buildSitemapEntries } from "@/lib/sitemapEntries";
 // Google's daily download was the build-time copy, missing all 40 reports
 // published that night. `s-maxage` without stale-while-revalidate makes the
 // CDN refetch synchronously once it expires, so a sitemap is never older
-// than 10 minutes and generation costs at most ~6 function runs per hour
-// per region. The exception to the "no force-dynamic" rule in CLAUDE.md is
+// than a day (raised from 10 minutes on 2026-10-30, when publishing stopped and
+// the team moved to Hobby) and generation costs ~1 function run per day per
+// region. The exception to the "no force-dynamic" rule in CLAUDE.md is
 // deliberate and documented there.
 export const dynamic = "force-dynamic";
 
@@ -43,7 +44,7 @@ export async function GET() {
   return new Response(xml, {
     headers: {
       "Content-Type": "application/xml; charset=utf-8",
-      "Cache-Control": "public, max-age=0, s-maxage=600, must-revalidate",
+      "Cache-Control": "public, max-age=0, s-maxage=86400, must-revalidate",
       "X-Sitemap-Generated": new Date().toISOString(),
     },
   });

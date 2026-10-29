@@ -4,7 +4,7 @@ import { prismaCached as prisma } from "@/lib/prisma";
 import { ArticleView } from "@/components/ArticleView";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return [];

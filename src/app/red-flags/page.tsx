@@ -7,7 +7,7 @@ import { FLAG_KINDS, fetchRedFlags, type FlagKind, type RedFlag } from "@/lib/re
 
 // Cached on the CDN for an hour; the EDGAR searches themselves are cached for
 // an hour in Next's data cache (src/lib/redFlags.ts). No database writes.
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 const KIND_ORDER: FlagKind[] = ["non-reliance", "auditor-change", "late-filing", "going-concern"];
 const MAX_ROWS = 40;

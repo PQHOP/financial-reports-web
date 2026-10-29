@@ -2,7 +2,7 @@ import { CompanyYearView, companyYearMetadata } from "./CompanyYearView";
 
 // ISR, purged on publish; ?source=community is rewritten to ./community in
 // next.config.ts (see ../page.tsx).
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return [];

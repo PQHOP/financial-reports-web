@@ -6,7 +6,7 @@ import { availableScorecards } from "@/lib/scorecard";
 import { scorecardPath } from "@/lib/scorecardPath";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export const metadata: Metadata = {
   title: "Earnings Scorecards: Every Sector, Every Quarter",

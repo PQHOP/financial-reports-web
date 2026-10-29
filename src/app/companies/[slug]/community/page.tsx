@@ -3,7 +3,7 @@ import { CompanyView, companyMetadata } from "../CompanyView";
 // The community view of the company page. Public URL stays
 // /companies/<slug>?source=community (rewritten here in next.config.ts);
 // canonical points at the system view.
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return [];

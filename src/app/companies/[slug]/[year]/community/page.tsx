@@ -2,7 +2,7 @@ import { CompanyYearView, companyYearMetadata } from "../CompanyYearView";
 
 // Community view of the year page; public URL stays
 // /companies/<slug>/<year>?source=community (rewritten in next.config.ts).
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return [];

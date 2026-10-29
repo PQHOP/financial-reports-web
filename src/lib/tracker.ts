@@ -34,7 +34,7 @@ export type AnnouncedDate = {
 
 async function fetchJson<T>(url: string, fallback: T): Promise<T> {
   try {
-    const res = await fetch(url, { next: { revalidate: 900 } });
+    const res = await fetch(url, { next: { revalidate: 86400 } });
     if (res.ok) return (await res.json()) as T;
   } catch {
     // fall through to the bundled copy

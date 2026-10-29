@@ -7,7 +7,7 @@ import { systemReports } from "@/lib/community";
 import { cleanCompanyName } from "@/lib/companyName";
 
 // Cached on the CDN (ISR); publishes purge it via invalidateDbCache().
-export const revalidate = 3600;
+export const revalidate = 86400;
 
 function escapeXml(value: string): string {
   return value
@@ -78,7 +78,7 @@ ${items
   return new Response(xml, {
     headers: {
       "Content-Type": "application/rss+xml; charset=utf-8",
-      "Cache-Control": "public, s-maxage=600, stale-while-revalidate=3600",
+      "Cache-Control": "public, s-maxage=86400, stale-while-revalidate=3600",
     },
   });
 }

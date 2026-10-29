@@ -4,7 +4,7 @@ import { CompanyView, companyMetadata } from "./CompanyView";
 // invalidateDbCache(), so the timer only refreshes date-based bits like the
 // next expected filing. ?source=community is rewritten to ./community in
 // next.config.ts, so this page never reads the query string.
-export const revalidate = 21600;
+export const revalidate = 604800;
 
 export function generateStaticParams() {
   return [];
