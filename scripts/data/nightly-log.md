@@ -22158,9 +22158,23 @@ direction EPS distortions (Carrier: $3.1B Europe writedown + tariff-refund
 tailwind; Trane: tax-rate drop + buybacks). Published, verified live:
 https://financialreportinsights.com/insights/carr-vs-tt-q3-2026
 
-**Company what-to-watch notes: dispatched 2 (AAPL FQ4 2026, MAR Q3 2026)**
-— both hot-list, confirmed to report Nov 2 2026 (3-4 day window), neither
-already had a note for that period (checked EL — already covered by an
-existing what-to-watch-el-q1-2027 note). Same-day S&P500 reporters ABBV/
-CL/CVX/XOM/D are only 1 day out, inside tomorrow's tier-0 scan rather than
-the 2-4 day preview window, so skipped for a note. Results pending.
+**Company what-to-watch notes: 1 published, 1 already existed.** AAPL
+already had one (`what-to-watch-aapl-annual-2026`, published 10-26, card
+live on its company page) — the subagent caught this and correctly
+published nothing rather than duplicate it. MAR did not, and now does:
+https://financialreportinsights.com/insights/what-to-watch-mar-q3-2026
+(verified live, company-page card confirmed showing). Same-day S&P500
+reporters ABBV/CL/CVX/XOM/D are only 1 day out, inside tomorrow's tier-0
+scan rather than the 2-4 day preview window, so skipped for a note.
+
+**Firing summary: 35 new report-periods + 5 hot-list rewrites + 1
+comparison + 1 what-to-watch note.** Tier 0 (hot-list/S&P 500) and the
+hot-list rewrite queue (bar CL, correctly deferred) are both fully
+cleared for tonight. Nightly cap is ~50 (Big Tech week); 35 report-
+periods leaves headroom, but there's nothing left to spend it on tonight
+— us-listed and tier 2 backfill both stay paused/0 through 11-19, and
+comparisons/watch notes are at or near their own nightly caps (1/2 and
+1 new + 1 pre-existing respectively). Ending this firing here. A later
+firing this window should re-run `scan-recent-filings` in case any
+after-hours earnings trickle in past 21:00 UTC, but should expect little
+left to do beyond that.
