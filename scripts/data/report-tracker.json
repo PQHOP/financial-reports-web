@@ -16700,22 +16700,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/vmc/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/vmc/2026/q3"
     },
     "lastFilingSeen": {
       "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-29"
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Q3 10-Qs filed 2025-10-30, 2024-10-30, 2023-10-27; 2026 Q1/Q2 both filed on the 29th",
+      "type": "10-K (FY2026)",
+      "estimate": "2027-02-15",
+      "basis": "annual cadence ~90 days after Q3 10-Q",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-29"
   },
   "VMRK": {
     "name": "Vivmark Residential",
@@ -16892,22 +16892,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-29",
-      "url": "/companies/wst/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/wst/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-23"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-22",
-      "basis": "Q1 10-Q/8-K filed 04-23, Q2 filed 07-23; fourth Thursday of October pattern",
+      "estimate": "2026-11-07",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-29"
+    "lastChecked": "2026-10-29"
   },
   "WELL": {
     "name": "Welltower",
