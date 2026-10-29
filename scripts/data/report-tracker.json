@@ -2453,9 +2453,9 @@
       }
     ],
     "lastFilingSeen": {
-      "type": "8-K (2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-28"
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026, full filing)",
@@ -2463,7 +2463,7 @@
       "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-28"
+    "lastChecked": "2026-10-29"
   },
   "GRDX": {
     "name": "GridAI Technologies Corp.",
@@ -4649,9 +4649,9 @@
       "url": "https://financialreportinsights.com/reports/cmvpghgie000008jrgfw5sz2a"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-26"
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -4659,7 +4659,7 @@
       "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-26"
+    "lastChecked": "2026-10-29"
   },
   "UBER": {
     "name": "Uber Technologies, Inc.",
@@ -5276,9 +5276,9 @@
       }
     ],
     "lastFilingSeen": {
-      "type": "8-K (2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-28"
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026, full filing)",
@@ -5286,7 +5286,7 @@
       "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-28"
+    "lastChecked": "2026-10-29"
   },
   "GM": {
     "name": "General Motors Company",
@@ -5382,9 +5382,9 @@
       }
     ],
     "lastFilingSeen": {
-      "type": "8-K (2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-28"
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026, full filing)",
@@ -5392,7 +5392,7 @@
       "basis": "earnings 8-K filed 2026-10-28; 10-Q typically follows within a day or two",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-28"
+    "lastChecked": "2026-10-29"
   },
   "LW": {
     "name": "Lamb Weston Holdings, Inc.",
@@ -9456,9 +9456,9 @@
       "url": "https://financialreportinsights.com/companies/glw/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -9466,7 +9466,7 @@
       "basis": "full 10-Q usually follows the earnings 8-K by ~1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-29",
     "reports": [
       {
         "year": 2026,
@@ -9546,9 +9546,9 @@
       "url": "https://financialreportinsights.com/companies/csgp/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-27"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -9556,7 +9556,7 @@
       "basis": "10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-27",
+    "lastChecked": "2026-10-29",
     "reports": [
       {
         "year": 2026,
@@ -16306,9 +16306,9 @@
       "url": "https://financialreportinsights.com/reports/cmvfh40yg000407jm472knknu"
     },
     "lastFilingSeen": {
-      "type": "8-K (Item 2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-16"
+      "filedAt": "2026-10-28"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
@@ -16316,7 +16316,7 @@
       "basis": "typical 10-Q timing after the earnings 8-K; the full 10-Q will supersede this 8-K-sourced report for lastFilingSeen",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-19"
+    "lastChecked": "2026-10-29"
   },
   "TYL": {
     "name": "Tyler Technologies",
