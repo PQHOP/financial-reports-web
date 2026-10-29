@@ -1646,22 +1646,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-18",
-      "url": "https://financial-reports-web.vercel.app/reports/cmu75suds000004l5ffq2xevh"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/amp/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 earnings release (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "Ameriprise own Business Wire announcement 2026-09-24: Q3 2026 press release ~8:15am ET, investor call ~9:00am ET, 2026-10-29",
-      "confidence": "confirmed"
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks",
+      "confidence": "estimated"
     },
-    "lastChecked": "2026-10-28"
+    "lastChecked": "2026-10-29"
   },
   "AMT": {
     "name": "American Tower Corporation",
@@ -1742,9 +1742,9 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-12",
-      "url": "https://financial-reports-web.vercel.app/reports/cmty7ftee000104l5xvfhymew"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/aos/2026/q3"
     },
     "reports": [
       {
@@ -1766,17 +1766,17 @@
     ],
     "allAvailable2026QuartersCovered": true,
     "lastFilingSeen": {
-      "type": "8-K/10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
       "type": "10-Q (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "quarterly cadence from Q2 filing date",
+      "estimate": "2026-11-07",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-13"
+    "lastChecked": "2026-10-29"
   },
   "APA": {
     "name": "APA Corporation",
@@ -7119,22 +7119,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-25",
-      "url": "https://financialreportinsights.com/companies/avy/2026/q2"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/avy/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-08-04"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "8-K Item 2.02 (Q3 2026)",
-      "estimate": "2026-10-28",
-      "basis": "earnings 8-K ~5 days before the 10-Q; Q2 10-Q filed ~35 days after quarter end; Q3 10-Q ~2026-11-03",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-25",
+    "lastChecked": "2026-10-29",
     "reports": [
       {
         "year": 2026,
