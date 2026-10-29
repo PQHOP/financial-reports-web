@@ -14905,17 +14905,17 @@
       "url": "https://financialreportinsights.com/companies/pfg/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "8-K (2.02)",
+      "type": "10-Q",
       "periodEnd": "2026-09-30",
-      "filedAt": "2026-10-26"
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q (Q3 2026, same period - edit to add revenue)",
-      "estimate": "2026-10-28",
-      "basis": "Q2 release Mon 07-27 after close, 10-Q filed two days later",
+      "type": "8-K (2.02) Q4 2026 / FY2026 earnings",
+      "estimate": "2027-01-28",
+      "basis": "Q3 release Mon 10-26 after close; Q4/FY release typically late Jan, ~90 days out",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-10-26"
+    "lastChecked": "2026-10-29"
   },
   "PGR": {
     "name": "Progressive Corporation",

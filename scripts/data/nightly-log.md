@@ -22316,3 +22316,68 @@ work on: tier 0/tier 1 hot-list/S&P 500 fully cleared, us-listed and tier
 cap, and the what-to-watch window is otherwise exhausted (SYY left for
 tomorrow once it's inside the 2-4 day window). Claims released, ending
 this firing here.
+
+**Fourth firing (19:04 UTC / 04:04 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA). `npm install` ran
+clean (531 packages). Local `master` was detached-HEAD pointing at the
+same commit as `origin/master` again (same recurring prior-container-
+snapshot artifact as every firing tonight, not lost work); `git checkout
+master && git reset --hard origin/master` fixed it. The 19 stale claims
+from 2026-10-27 in `scripts/data/claims/` were left alone as before (long
+past 3h expiry, scripts ignore them).
+
+Re-ran `scan-recent-filings`: 255 fresh candidates, 254 us-listed
+(paused). Exactly one hot-list/S&P 500 item: **PFG**, kind `update` — the
+10-Q (filed 2026-10-29) for the Q3 2026 period already published from the
+10-26 earnings 8-K. The tracker's own `nextExpectedFiling` note from the
+first firing had already flagged this as "same period - edit to add
+revenue," since the published report explicitly said in its body that
+total revenue, the consolidated income statement and the segment-level
+MD&A weren't available yet pending the 10-Q. Confirmed via the live page
+and the new 10-Q text that this qualifies as "adds something material"
+under CLAUDE.md's same-period rule, not a no-op update.
+
+Found the report id (`cmvpr61ya000108l9cmbxni5w`) via the admin dashboard
+(no scripted lookup for this; wrote a throwaway Playwright script in
+scratch, not committed). Claimed PFG, dispatched one Opus subagent to
+read the 10-Q and edit the report via `--edit`. It finished cleanly, and
+I re-verified the live page myself (cache-busted fetch): the two "10-Q
+isn't filed yet" sentences are gone, the Key metrics table now leads with
+Total revenues (GAAP) $4,616.4M (+25.4%), page title is now "...Revenue
+$4.6B (+25.4%)", source filing points at the 10-Q, and the body ends
+cleanly on the Outlook's "Noise:" bullet (not truncated). Verified live:
+https://financialreportinsights.com/companies/pfg/2026/q3
+
+What was added: GAAP total revenue $4,616.4M (+25.4%, mostly the same
+funds-withheld-derivative swing already covered), segment operating
+revenues $4,275.0M (+9.7%) and pre-tax income $838.8M vs $248.4M; a new
+"Where the revenue came from" section breaking out premiums (+$365M,
+matched by a similar rise in benefits/reserves from pension-risk-transfer
+annuities), fees (+1.4%), and net investment income (-3%); the 10-Q's tax
+detail (29% effective rate vs 6%, 30 points of the swing from a
+non-deductible Chile-sale loss costing $314.2M after tax); a cash-
+conversion line ($3.79B YTD operating cash flow vs $1.44B net income);
+and the Principal Asset Management AUM rollforward (-$11.2B net flows,
+-$5.9B markets, -$3.5B currency, -$2.2B disposed operations, $25.8B YTD
+outflows). The 10-Q doesn't break outflows down by client/mandate or
+explain Investment Management's profit decline beyond what was already
+known — the report now says so plainly instead of promising the 10-Q
+would show it. Title, summary, Takeaway and the earnings-quality verdict
+(flattered) and note are unchanged, since the 10-Q didn't change the
+deciding figure. Updated the tracker: `lastFilingSeen` (10-Q, filed
+2026-10-29), `nextExpectedFiling` (8-K Q4/FY2026 earnings, estimated
+2027-01-28), `lastChecked` 2026-10-29. This is an edit of an
+already-counted report-period, so it does **not** add to tonight's
+report-period count.
+
+Re-ran `scan-recent-filings` once more after the edit: 255 candidates, all
+us-listed — tier 0 fully cleared again. Checked the what-to-watch window:
+SYY (2026-11-03) is still 5 days out, just outside the 2-4 day window —
+left for tomorrow as the third firing noted. Nothing else eligible:
+comparisons at 2/2 cap, rewrites 5/5 done (116/121, CL correctly
+deferred), us-listed/tier 2 paused through 11-19.
+
+**Running total: still 36 report-periods (PFG was an edit, not a new
+period) + 2/2 comparisons + 5/5 rewrites (116/121 total) + 4 what-to-watch
+notes tonight, plus the PFG Q3 2026 revenue enrichment.** Claim released,
+ending this firing here.
