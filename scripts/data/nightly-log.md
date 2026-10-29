@@ -22142,6 +22142,25 @@ through tier 0 instead. Dispatched rewrites (as this firing's first-firing
 (Q2 2026), MU (FY2026 ANNUAL), MDLZ (Q2 2026), SO (Q2 2026), EL (FY2026
 ANNUAL) — in progress, to be confirmed and logged by the next update.
 
-Tier 2 backfill and us-listed stay paused/0 through 11-19. Comparisons and
-what-to-watch notes not yet attempted this firing (today is not Sunday —
-no earnings-preview job).
+Tier 2 backfill and us-listed stay paused/0 through 11-19. Today is not
+Sunday, so no earnings-preview job.
+
+**Hot-list rewrites: 5/5 done tonight (116/121 total; 1 pending — CL,
+correctly skipped this round since its 10-30 nextExpectedFiling is inside
+the 10-day window).** INTC, MU, MDLZ, SO, EL all confirmed live and
+complete via post-publish fetch.
+
+**Comparison (1/2 cap tonight): CARR vs TT, Q3 2026** — written directly
+by the orchestrator (no subagent needed; uses only the two companies' own
+just-published Q3 2026 figures, no new filing research) since both are
+HVAC peers that reported the same day with record backlogs but opposite-
+direction EPS distortions (Carrier: $3.1B Europe writedown + tariff-refund
+tailwind; Trane: tax-rate drop + buybacks). Published, verified live:
+https://financialreportinsights.com/insights/carr-vs-tt-q3-2026
+
+**Company what-to-watch notes: dispatched 2 (AAPL FQ4 2026, MAR Q3 2026)**
+— both hot-list, confirmed to report Nov 2 2026 (3-4 day window), neither
+already had a note for that period (checked EL — already covered by an
+existing what-to-watch-el-q1-2027 note). Same-day S&P500 reporters ABBV/
+CL/CVX/XOM/D are only 1 day out, inside tomorrow's tier-0 scan rather than
+the 2-4 day preview window, so skipped for a note. Results pending.
