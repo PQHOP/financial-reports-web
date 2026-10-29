@@ -15955,22 +15955,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmuk1tx07000104jyn5nn3vfq"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/trow/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-31"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q or earnings 8-K (Q3 2026)",
-      "estimate": "2026-10-30",
-      "basis": "Q1/Q2 late-month cadence (04-30, 07-31)",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-29"
   },
   "TPR": {
     "name": "Tapestry, Inc.",
@@ -16213,22 +16213,22 @@
     "status": "done",
     "latestReport": {
       "year": 2026,
-      "period": "Q2",
-      "publishedAt": "2026-09-27",
-      "url": "https://financialreportinsights.com/reports/cmukajyv8000004le64x31nqr"
+      "period": "Q3",
+      "publishedAt": "2026-10-29",
+      "url": "https://financialreportinsights.com/companies/tt/2026/q3"
     },
     "lastFilingSeen": {
-      "type": "10-Q",
-      "periodEnd": "2026-06-30",
-      "filedAt": "2026-07-30"
+      "type": "8-K (Item 2.02)",
+      "periodEnd": "2026-09-30",
+      "filedAt": "2026-10-29"
     },
     "nextExpectedFiling": {
-      "type": "10-Q + earnings 8-K (Q3 2026)",
-      "estimate": "2026-10-29",
-      "basis": "prior-year Q3 filed 2025-10-30; unconfirmed third-party mention of 2026-11-04",
+      "type": "10-Q (Q3 2026)",
+      "estimate": "2026-11-07",
+      "basis": "full 10-Q typically follows the earnings 8-K by 1-2 weeks",
       "confidence": "estimated"
     },
-    "lastChecked": "2026-09-27"
+    "lastChecked": "2026-10-29"
   },
   "TDG": {
     "name": "TransDigm Group",
