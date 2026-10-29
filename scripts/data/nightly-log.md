@@ -22090,3 +22090,58 @@ Tracker updated for TYL; claim released.
 S&P 500 filer. No further tier-0 candidates outstanding after this
 check (all 200 remaining candidates from the scan are us-listed,
 paused through 11-19). Stopping here for the night.
+
+### 2026-10-29 night (16:00 UTC 2026-10-29 → 22:59 UTC 2026-10-29 / 01:00–07:59 JST 2026-10-30)
+
+**Cap tonight: ~50** (Big Tech week raise, last entry at this level per
+CLAUDE.md — "10-26 night" through "10-30 night" — reverts to ~40 from
+"10-31 night").
+
+**First firing (16:10 UTC / 01:10 JST).** Network check passed (sec.gov
+403 without UA as expected, 200 with the required UA; financialreportinsights.com
+200). `npm install` ran clean (430 packages; `postinstall` prisma-generate
+step fails for lack of `DATABASE_URL`, irrelevant — admin-publish/scan
+need no DB). Repo had a stale local `master`/`origin/master` ref from a
+prior container snapshot (50 commits behind); `git fetch` + reset fixed
+it, no lost work (just a cache artifact, not an unpushed commit).
+
+`scan-recent-filings` found a very large Oct-29 earnings day: 10 hot-list
+and 32 S&P 500 fresh filings (242 more us-listed, left untouched — paused
+through 11-19). Of the hot-list/S&P 500 batch, 7 were same-period
+catch-ups (10-Q confirming a quarter already published from an earlier
+8-K: CMG, F, GOOGL, VZ, GLW, CSGP, TFC) — `lastFilingSeen` updated only,
+no new report. The remaining 40 were genuine new Q3 2026 periods. Claimed
+and dispatched Opus subagents in batches of 5–6, verified each live page
+(At a glance + Takeaway present, page not truncated) before marking the
+tracker done, committing and pushing after every batch:
+
+- **Hot list (6):** DASH, CAT, LLY, MA, MO, MRK.
+- **S&P 500 (29):** AMP, AOS, ARES, AVY, BAX, BG, BLDR, BMY, CARR, CRH,
+  CTSH, EME, HII, HSY, HWM, ICE, INCY, KIM, LHX, LIN, NCLH, PWR, TROW, TT,
+  TXT, VMC, WEC, WST, WTW, XEL.
+
+All 35 verified live, no skips, no incomplete subagent returns. Notable
+reads: GOOGL/F/VZ/CMG/CSGP/TFC/GLW all already current from yesterday's
+Big Tech wave; CRH and LHX both confirmed via their stated fiscal
+period-end rather than assumed calendar-quarter dates; HII, EME, PWR all
+record backlogs on data-center/infrastructure demand.
+
+**35 new report-periods this firing — running total 0 → 35 tonight.**
+
+Re-ran `scan-recent-filings` once more: 241 candidates remain, all
+`us-listed` (paused) — no further hot-list/S&P 500 items. Tier 0 for
+hot-list/S&P 500 is fully cleared for tonight.
+
+**Hot-list rewrite queue:** checked `scripts/data/hotlist-rewrite.json`
+(11 pending). Five were already superseded by tonight's/yesterday's fresh
+Q3/Q1 current-format reports (NOW, KLAC, F, MO, TMUS) — marked
+`superseded`, no rewrite needed. CL's `nextExpectedFiling` (2026-10-30) is
+inside the 10-day skip window — left pending, will get a new-format report
+through tier 0 instead. Dispatched rewrites (as this firing's first-firing
++10 allotment, separate from the 35 above) for the remaining 5: INTC
+(Q2 2026), MU (FY2026 ANNUAL), MDLZ (Q2 2026), SO (Q2 2026), EL (FY2026
+ANNUAL) — in progress, to be confirmed and logged by the next update.
+
+Tier 2 backfill and us-listed stay paused/0 through 11-19. Comparisons and
+what-to-watch notes not yet attempted this firing (today is not Sunday —
+no earnings-preview job).
