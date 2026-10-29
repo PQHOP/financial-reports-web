@@ -552,7 +552,8 @@
    "reportId": "cmupqdhvc000104l0wg9keh78",
    "url": "https://financialreportinsights.com/companies/mu/2026/annual",
    "nextExpectedFiling": "2026-10-27",
-   "status": "pending"
+   "status": "done",
+   "rewrittenAt": "2026-10-29"
   },
   {
    "ticker": "PYPL",
